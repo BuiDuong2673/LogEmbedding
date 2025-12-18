@@ -1,0 +1,28 @@
+2023-09-21T17:21:53.6985147Z ##[group]Run python -m pip install --pre --find-links wheelhouse/artifact/ tables
+2023-09-21T17:21:53.6985816Z [36;1mpython -m pip install --pre --find-links wheelhouse/artifact/ tables[0m
+2023-09-21T17:21:53.7034771Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2023-09-21T17:21:53.7035114Z env:
+2023-09-21T17:21:53.7035407Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.9.13\x64
+2023-09-21T17:21:53.7035818Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.9.13\x64/lib/pkgconfig
+2023-09-21T17:21:53.7037924Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.9.13\x64
+2023-09-21T17:21:53.7038304Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.9.13\x64
+2023-09-21T17:21:53.7038664Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.9.13\x64
+2023-09-21T17:21:53.7038955Z ##[endgroup]
+2023-09-21T17:22:09.1563680Z Looking in links: wheelhouse/artifact/
+2023-09-21T17:22:10.4355061Z Processing d:\a\pytables\pytables\wheelhouse\artifact\tables-3.8.1.dev0-cp39-cp39-win_amd64.whl
+2023-09-21T17:22:10.7984526Z Collecting numpy>=1.19.0 (from tables)
+2023-09-21T17:22:10.7987895Z   Obtaining dependency information for numpy>=1.19.0 from https://files.pythonhosted.org/packages/97/43/4cd9dc8c051537ed0613fcfc4229dfb9eb39fe058c8d42632977465bfdb5/numpy-1.26.0-cp39-cp39-win_amd64.whl.metadata
+2023-09-21T17:22:10.8761161Z   Downloading numpy-1.26.0-cp39-cp39-win_amd64.whl.metadata (61 kB)
+2023-09-21T17:22:10.9124163Z      ---------------------------------------- 61.1/61.1 kB 1.6 MB/s eta 0:00:00
+2023-09-21T17:22:11.0265313Z Collecting numexpr>=2.6.2 (from tables)
+2023-09-21T17:22:11.0268486Z   Obtaining dependency information for numexpr>=2.6.2 from https://files.pythonhosted.org/packages/22/45/336708903fb50fd460b20e2361237e9b0524863fd2fccf31ac5ec9b391e0/numexpr-2.8.6-cp39-cp39-win_amd64.whl.metadata
+2023-09-21T17:22:11.0456613Z   Downloading numexpr-2.8.6-cp39-cp39-win_amd64.whl.metadata (8.2 kB)
+2023-09-21T17:22:11.0591543Z Requirement already satisfied: packaging in c:\hostedtoolcache\windows\python\3.9.13\x64\lib\site-packages (from tables) (23.1)
+2023-09-21T17:22:11.1088373Z Collecting py-cpuinfo (from tables)
+2023-09-21T17:22:11.1268252Z   Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+2023-09-21T17:22:11.2042519Z Downloading numexpr-2.8.6-cp39-cp39-win_amd64.whl (94 kB)
+2023-09-21T17:22:11.2252108Z    ---------------------------------------- 95.0/95.0 kB 5.3 MB/s eta 0:00:00
+2023-09-21T17:22:11.2526315Z Downloading numpy-1.26.0-cp39-cp39-win_amd64.whl (15.8 MB)
+2023-09-21T17:22:11.5592714Z    ---------------------------------------- 15.8/15.8 MB 43.5 MB/s eta 0:00:00
+2023-09-21T17:22:11.8304556Z Installing collected packages: py-cpuinfo, numpy, numexpr, tables
+2023-09-21T17:22:20.7437588Z Successfully installed numexpr-2.8.6 numpy-1.26.0 py-cpuinfo-9.0.0 tables-3.8.1.dev0

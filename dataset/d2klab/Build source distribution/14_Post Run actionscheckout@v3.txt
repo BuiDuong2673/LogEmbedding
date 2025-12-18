@@ -1,0 +1,15 @@
+2023-09-21T13:03:53.7031490Z Post job cleanup.
+2023-09-21T13:03:53.8322759Z [command]/usr/bin/git version
+2023-09-21T13:03:53.8403245Z git version 2.42.0
+2023-09-21T13:03:53.8476830Z Temporarily overriding HOME='/home/runner/work/_temp/9938bc00-dca0-4d04-b211-61af9319094c' before making global git config changes
+2023-09-21T13:03:53.8482639Z Adding repository directory to the temporary git global config as a safe directory
+2023-09-21T13:03:53.8493269Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/PyTables/PyTables
+2023-09-21T13:03:53.8568520Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-09-21T13:03:53.8631587Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-09-21T13:03:53.8969391Z Entering 'c-blosc'
+2023-09-21T13:03:53.9108766Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-09-21T13:03:53.9214450Z http.https://github.com/.extraheader
+2023-09-21T13:03:53.9240399Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2023-09-21T13:03:53.9288639Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-09-21T13:03:53.9584127Z Entering 'c-blosc'
+2023-09-21T13:03:53.9619592Z http.https://github.com/.extraheader
