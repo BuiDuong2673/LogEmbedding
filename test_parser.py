@@ -122,4 +122,6 @@ if __name__ == "__main__":
     print("\n" + "="*70)
     print("✓ Template extraction completed successfully!")
     print("✓ Check 'dataset/templates/' directory for output files")
+    print("  - *_templates.json (templates + up to 5 examples/cluster)")
+    print("  - *_cluster_examples.json (ALL examples per cluster)")
     print("="*70 + "\n")

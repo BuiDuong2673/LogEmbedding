@@ -1,9 +1,18 @@
 """Log template extraction using Drain algorithm."""
+import sys
 import os
 import json
-from typing import Dict, List, Tuple
+from pathlib import Path
+from typing import Dict, List, Tuple, Optional
 from drain3 import TemplateMiner
 from drain3.template_miner_config import TemplateMinerConfig
+
+
+# Allow running this file directly via `python helper/log_parser.py`
+# by ensuring the project root is on sys.path.
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
 
 
 class LogParser:
@@ -112,6 +121,84 @@ class LogParser:
             self.log_to_template[log_line.strip()] = cluster_id
         
         return self.templates
+
+    def get_cluster_examples(self, *, sort_examples: bool = False) -> Dict[int, List[str]]:
+        """Group all parsed log lines by cluster ID.
+
+        Notes:
+            This uses the keys of `self.log_to_template`, so the examples are unique
+            by exact log line string.
+
+        Args:
+            sort_examples (bool): Sort examples alphabetically for stable output.
+
+        Returns:
+            Dict[int, List[str]]: Mapping cluster_id -> list of log lines.
+        """
+        cluster_to_examples: Dict[int, List[str]] = {}
+        for log_line, cluster_id in self.log_to_template.items():
+            cluster_to_examples.setdefault(cluster_id, []).append(log_line)
+
+        if sort_examples:
+            for cluster_id in cluster_to_examples:
+                cluster_to_examples[cluster_id].sort()
+
+        return cluster_to_examples
+
+    def save_cluster_examples(
+        self,
+        output_path: str,
+        *,
+        sort_clusters_by_count: bool = True,
+        sort_examples: bool = False,
+        include_statistics: bool = True,
+    ) -> None:
+        """Save *all* clustered log examples to a JSON file.
+
+        This is separate from `save_templates()` so the template file can stay small.
+
+        Args:
+            output_path (str): Path to save the clustered examples JSON.
+            sort_clusters_by_count (bool): Output clusters ordered by descending count.
+            sort_examples (bool): Sort example strings for stable output.
+            include_statistics (bool): Include summary statistics section.
+        """
+        output_dir = os.path.dirname(output_path)
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
+
+        cluster_to_examples = self.get_cluster_examples(sort_examples=sort_examples)
+
+        cluster_items = list(self.templates.items())
+        if sort_clusters_by_count:
+            cluster_items.sort(key=lambda x: x[1].get("count", 0), reverse=True)
+
+        clusters_output: Dict[str, Dict] = {}
+        for cluster_id, data in cluster_items:
+            all_examples = cluster_to_examples.get(cluster_id, [])
+            clusters_output[str(cluster_id)] = {
+                "template": data.get("template", ""),
+                "count": data.get("count", 0),
+                "unique_examples_count": len(all_examples),
+                "examples": all_examples,
+            }
+
+        output_data: Dict[str, object] = {
+            "config": {
+                "depth": self.depth,
+                "sim_th": self.sim_th,
+                "max_children": self.max_children,
+            },
+            "clusters": clusters_output,
+        }
+
+        if include_statistics:
+            output_data["statistics"] = self.get_template_statistics()
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(output_data, f, ensure_ascii=False, indent=2)
+
+        print(f"Cluster examples saved to: {output_path}")
     
     def get_template_statistics(self) -> Dict:
         """Get statistics about extracted templates.
@@ -152,7 +239,9 @@ class LogParser:
             output_path (str): Path to save the templates.
         """
         # Create directory if it doesn't exist
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        output_dir = os.path.dirname(output_path)
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
         
         # Prepare data for JSON serialization
         output_data = {
@@ -257,8 +346,12 @@ def parse_client_logs(client_name: str, output_dir: str = "dataset/templates") -
         print(f"   {template_info['template']}")
     
     # Save templates
-    output_path = os.path.join(output_dir, f"{client_name}_templates.json")
-    parser.save_templates(output_path)
+    templates_output_path = os.path.join(output_dir, f"{client_name}_templates.json")
+    parser.save_templates(templates_output_path)
+
+    # Save all clustered examples
+    examples_output_path = os.path.join(output_dir, f"{client_name}_cluster_examples.json")
+    parser.save_cluster_examples(examples_output_path)
     
     return parser
 
