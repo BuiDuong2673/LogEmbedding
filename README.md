@@ -1,5 +1,18 @@
 # LogEmbedding
 
+## Layout
+
+Key folders/files:
+
+```text
+dec2vec/                 dec2vec core library (federated SGNS)
+dec2vec/checkpoints/     dec2vec checkpoints (.npz + .json)
+docs/                    design docs (see docs/dec2vec.md)
+scripts/dec2vec/         runnable dec2vec utilities (train/infer/embed/retrieve)
+helper/                  parsing + vocab helpers
+models/                  existing Doc2Vec embedder (unchanged)
+```
+
 ## Dataset
 This file shows the sources of `dataset/` folder.
 
@@ -28,4 +41,12 @@ Link: https://github.com/dwyl/english-words
 ## Execution
 ```python
 python central_server_program.py
+```
+
+## dec2vec
+
+See `docs/dec2vec.md`. Quick start:
+
+```bash
+/home/zhaos/miniconda3/envs/nlp/bin/python scripts/dec2vec/train_dec2vec.py --clients maryangel101 d2klab --rounds 1
 ```

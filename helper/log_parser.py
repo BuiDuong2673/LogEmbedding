@@ -3,7 +3,9 @@ import sys
 import os
 import json
 from pathlib import Path
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple, Optional, Iterable
+from collections import Counter
+import random
 from drain3 import TemplateMiner
 from drain3.template_miner_config import TemplateMinerConfig
 
@@ -66,10 +68,16 @@ class LogParser:
                 }
             ]
         })
-        
-        self.template_miner = TemplateMiner(config=config)
-        self.templates = {}
-        self.log_to_template = {}
+
+        self._template_miner_config = config
+        self.template_miner = TemplateMiner(config=self._template_miner_config)
+        self.templates: Dict[int, Dict] = {}
+        self.log_to_template: Dict[str, int] = {}
+        self.template_to_cluster_id: Dict[str, int] = {}
+        self.exact_template_to_cluster_id: Dict[str, int] = {}
+        # When rebuilding the matcher from examples, Drain internal cluster IDs won't
+        # match saved cluster IDs. This mapping converts Drain cluster_id -> saved cluster_id.
+        self.drain_cluster_id_to_stable_cluster_id: Dict[int, int] = {}
     
     def parse_log_line(self, log_line: str) -> Tuple[str, int]:
         """Parse a single log line and return its template.
@@ -83,8 +91,156 @@ class LogParser:
         result = self.template_miner.add_log_message(log_line)
         cluster_id = result["cluster_id"]
         template = result["template_mined"]
+
+        # Keep a stable lookup by template string
+        if template and cluster_id is not None:
+            self.template_to_cluster_id[template] = cluster_id
         
         return template, cluster_id
+
+    def rebuild_matcher_from_templates(self) -> None:
+        """Rebuild internal Drain matcher using the currently loaded templates.
+
+        This enables matching/classification after loading templates from JSON
+        without re-parsing the full raw log dataset.
+        """
+        self.template_miner = TemplateMiner(config=self._template_miner_config)
+        self.template_to_cluster_id = {}
+        self.exact_template_to_cluster_id = {}
+        self.drain_cluster_id_to_stable_cluster_id = {}
+
+        # First build a deterministic mapping from exact saved template text -> cluster_id.
+        # If duplicates exist, keep the cluster with the higher count.
+        for cluster_id, data in self.templates.items():
+            template_text = (data or {}).get("template")
+            if not template_text:
+                continue
+
+            prev_id = self.exact_template_to_cluster_id.get(template_text)
+            if prev_id is None:
+                self.exact_template_to_cluster_id[template_text] = cluster_id
+            else:
+                prev_count = int(self.templates.get(prev_id, {}).get("count", 0))
+                new_count = int((data or {}).get("count", 0))
+                if new_count > prev_count:
+                    self.exact_template_to_cluster_id[template_text] = cluster_id
+
+        # Feed templates as "messages" to create clusters.
+        for cluster_id, data in self.templates.items():
+            template_text = (data or {}).get("template")
+            if not template_text:
+                continue
+
+            result = self.template_miner.add_log_message(template_text)
+            mined_template = result.get("template_mined")
+            if mined_template:
+                # Map mined template string back to original cluster ID.
+                # If duplicates exist, keep the cluster with higher count.
+                prev_id = self.template_to_cluster_id.get(mined_template)
+                if prev_id is None:
+                    self.template_to_cluster_id[mined_template] = cluster_id
+                else:
+                    prev_count = int(self.templates.get(prev_id, {}).get("count", 0))
+                    new_count = int((data or {}).get("count", 0))
+                    if new_count > prev_count:
+                        self.template_to_cluster_id[mined_template] = cluster_id
+
+    @staticmethod
+    def _iter_selected_clusters(
+        clusters: Dict[str, Dict],
+        *,
+        max_clusters: Optional[int],
+        sort_by_count: bool,
+    ) -> Iterable[Tuple[int, Dict]]:
+        items: List[Tuple[int, Dict]] = [
+            (int(cid), payload) for cid, payload in (clusters or {}).items() if payload is not None
+        ]
+        if sort_by_count:
+            items.sort(key=lambda x: int((x[1] or {}).get("count", 0)), reverse=True)
+        if max_clusters is not None:
+            items = items[: max_clusters]
+        return items
+
+    def rebuild_matcher_from_cluster_examples(
+        self,
+        clusters: Dict[str, Dict],
+        *,
+        examples_per_cluster: int = 20,
+        max_clusters: Optional[int] = None,
+        seed: int = 0,
+        sort_by_count: bool = True,
+    ) -> None:
+        """High-coverage rebuild: feed sampled real examples to Drain.
+
+        This tends to achieve much higher match coverage vs feeding only template strings.
+
+        Args:
+            clusters: The `clusters` dict from `*_cluster_examples.json`.
+            examples_per_cluster: How many examples to sample per cluster.
+            max_clusters: Optional cap on number of clusters to include.
+            seed: RNG seed for stable sampling.
+            sort_by_count: Prefer high-frequency clusters first.
+        """
+        self.template_miner = TemplateMiner(config=self._template_miner_config)
+        self.template_to_cluster_id = {}
+        self.drain_cluster_id_to_stable_cluster_id = {}
+
+        rng = random.Random(seed)
+
+        votes: Dict[int, Counter] = {}
+        for stable_cluster_id, payload in self._iter_selected_clusters(
+            clusters, max_clusters=max_clusters, sort_by_count=sort_by_count
+        ):
+            examples: List[str] = list((payload or {}).get("examples", []))
+            if not examples:
+                continue
+
+            if examples_per_cluster <= 0:
+                continue
+
+            take = min(examples_per_cluster, len(examples))
+            sampled = rng.sample(examples, k=take) if len(examples) >= take else examples
+
+            for line in sampled:
+                if not line or not str(line).strip():
+                    continue
+
+                res = self.template_miner.add_log_message(str(line).strip())
+                drain_cluster_id = int(res.get("cluster_id"))
+                mined_template = res.get("template_mined")
+
+                votes.setdefault(drain_cluster_id, Counter())[stable_cluster_id] += 1
+                if mined_template:
+                    prev = self.template_to_cluster_id.get(mined_template)
+                    if prev is None:
+                        self.template_to_cluster_id[mined_template] = stable_cluster_id
+
+        # Finalize Drain-cluster -> stable-cluster mapping by majority vote.
+        for drain_cluster_id, counter in votes.items():
+            stable_cluster_id, _ = counter.most_common(1)[0]
+            self.drain_cluster_id_to_stable_cluster_id[drain_cluster_id] = stable_cluster_id
+
+    @staticmethod
+    def _cluster_to_template_str(cluster: object) -> Optional[str]:
+        """Best-effort extraction of the template string from a Drain3 cluster."""
+        if cluster is None:
+            return None
+
+        # Most common in drain3: LogCluster.get_template()
+        getter = getattr(cluster, "get_template", None)
+        if callable(getter):
+            try:
+                return getter()
+            except Exception:
+                pass
+
+        # Fallbacks (depending on drain3 version)
+        for attr in ("template", "template_mined"):
+            value = getattr(cluster, attr, None)
+            if isinstance(value, str) and value:
+                return value
+
+        return None
     
     def parse_logs(self, log_lines: List[str]) -> Dict:
         """Parse multiple log lines and extract templates.
@@ -281,8 +437,21 @@ class LogParser:
             int(cluster_id): template_data
             for cluster_id, template_data in data["templates"].items()
         }
+
+        # Rebuild a matcher so we can classify new inputs using match().
+        self.rebuild_matcher_from_templates()
         
         print(f"Loaded {len(self.templates)} templates from {input_path}")
+
+    def load_cluster_examples(self, input_path: str) -> Dict[str, Dict]:
+        """Load cluster examples from `*_cluster_examples.json`.
+
+        Returns:
+            Dict[str, Dict]: The `clusters` mapping.
+        """
+        with open(input_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("clusters", {})
     
     def match_log_to_template(self, log_line: str) -> Tuple[str, int, float]:
         """Match a new log line to an existing template.
@@ -293,15 +462,35 @@ class LogParser:
         Returns:
             Tuple[str, int, float]: Template string, cluster ID, and confidence score.
         """
+        # Deterministic fast-path: if input exactly equals a saved template text,
+        # return that mapping without invoking fuzzy matching.
+        exact_id = self.exact_template_to_cluster_id.get(log_line)
+        if exact_id is not None:
+            template = self.templates.get(exact_id, {}).get("template", log_line)
+            return template, exact_id, 1.0
+
         result = self.template_miner.match(log_line)
-        
-        if result:
-            cluster_id = result.cluster_id
-            template = self.templates.get(cluster_id, {}).get("template", "Unknown")
-            confidence = 1.0  # Drain doesn't provide confidence, set to 1.0 if matched
-            return template, cluster_id, confidence
-        else:
+
+        if not result:
             return "No match", -1, 0.0
+
+        drain_cluster_id = getattr(result, "cluster_id", None)
+        if isinstance(drain_cluster_id, int) and drain_cluster_id in self.drain_cluster_id_to_stable_cluster_id:
+            stable_cluster_id = self.drain_cluster_id_to_stable_cluster_id[drain_cluster_id]
+            template = self.templates.get(stable_cluster_id, {}).get("template")
+            if template:
+                return template, stable_cluster_id, 1.0
+
+        mined_template = self._cluster_to_template_str(result)
+        if mined_template and mined_template in self.template_to_cluster_id:
+            stable_cluster_id = self.template_to_cluster_id[mined_template]
+            template = self.templates.get(stable_cluster_id, {}).get("template", mined_template)
+            return template, stable_cluster_id, 1.0
+
+        # Fallback: if we cannot map, return Drain's cluster_id (may differ from saved IDs)
+        cluster_id = getattr(result, "cluster_id", -1)
+        template = self.templates.get(cluster_id, {}).get("template", mined_template or "Unknown")
+        return template, int(cluster_id) if cluster_id is not None else -1, 1.0
 
 
 def parse_client_logs(client_name: str, output_dir: str = "dataset/templates") -> LogParser:

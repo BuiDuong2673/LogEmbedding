@@ -18,6 +18,7 @@ def train_and_save():
     print("PHASE 2: Training Doc2Vec Embedding Model")
     print("="*70)
     
+    
     # Train for maryangel101
     embedder = train_client_embedder(
         client_name="maryangel101",
