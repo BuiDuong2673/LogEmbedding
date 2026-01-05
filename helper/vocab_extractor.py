@@ -1,6 +1,8 @@
 """Extract vocabulary from the dataset."""
 import os
 import re
+import json
+import inflect
 
 from helper.global_vocab_processor import GlobalVocabProcessor
 
@@ -16,6 +18,8 @@ class VocabExtractor:
         self.global_vocab_processor = GlobalVocabProcessor()
         # Extract the vocab indices if not extracted yet
         _ = self.global_vocab_processor.get_global_vocab()
+        # Initialize unknown words variable
+        self.unknown_words = []
     
     def read_dataset_file(self, file_path: str) -> list:
         """Read a dataset file and return its lines.
@@ -105,6 +109,14 @@ class VocabExtractor:
                 words.extend(split_camel)
             # Store the word into the word_dict
             for i, word in enumerate(words):
+                # # Check if the word have singular form
+                # p = inflect.engine()
+                # singular_word = p.singular_noun(word)
+                # # If yes, replace the word with its singular form
+                # if singular_word:
+                #     print(f"Singular word: {singular_word}")
+                #     word = singular_word
+                #     words[i] = word
                 # Only add unique words
                 if word_dict.get(word):
                     word_dict[word]["freq"] += 1
@@ -123,7 +135,7 @@ class VocabExtractor:
         word_dict = dict(sorted(word_dict.items(), key=lambda item: item[1]["freq"], reverse=True))
         return word_dict
     
-    def add_word_index(self, word_dict: dict) -> dict:
+    def add_word_global_index(self, word_dict: dict) -> dict:
         """Add global word index to each word in the word dictionary
 
         Args:
@@ -135,18 +147,24 @@ class VocabExtractor:
         """
         unknown_num = 0
         unknown_words = []
+        unknown_words_indices = []
         known_words_indices = []
         for word in word_dict.keys():
             word_index = self.global_vocab_processor.get_word_index(word.lower())
-            if word_index == -1:
-                word_dict[word]["index"] = -unknown_num
-                unknown_num += 1
+            if word_index == -1:  # if word not found
+                word_dict[word]["index"] = f"unk_{unknown_num}"
                 # Store unknown words
                 unknown_words.append(word)
+                unknown_words_indices.append(f"unk_{unknown_num}")
+                unknown_num += 1
             else:
-                known_words_indices.append(word_index)
-                word_dict[word]["index"] = word_index
-        return word_dict, known_words_indices, unknown_words
+                word_dict[word]["index"] = f"{word_index}"
+                known_words_indices.append(f"{word_index}")
+        # Join the known words and unknown words indices lists
+        words_indices = known_words_indices + unknown_words_indices
+        # Store unknown words (for analysis)
+        self.unknown_words = unknown_words
+        return word_dict, words_indices
 
     def change_context_words_to_indices(self, word_dict: dict) -> dict:
         """Change context words to indices in the word dictionary
@@ -179,19 +197,27 @@ class VocabExtractor:
         # Create word dictionary
         word_dict = self.create_word_dict(data)
         # Add index to each word
-        word_dict, known_words_indices, unknown_words = self.add_word_index(word_dict)
+        word_dict, words_indices = self.add_word_global_index(word_dict)
         # Change context words to indices
         word_dict = self.change_context_words_to_indices(word_dict)
-        return word_dict, known_words_indices, unknown_words
+        return word_dict, words_indices
 
 
 if __name__ == "__main__":
     extractor = VocabExtractor(client_name="maryangel101")
-    vocab, known, unknown = extractor.get_vocab()
-    # Visualize the first 10 known words and unknown words
-    print("First 10 known words:")
-    print(known[:10])
-    print(f"Num known words: {len(known)}")
-    print("\nFirst 10 unknown words:")
-    print(unknown[:10])
-    print(f"Num unknown words: {len(unknown)}")
+    vocab_dict, words_indices = extractor.get_vocab()
+    # Temporary store the vocab in a json file
+    with open("vocab.json", "w") as f:
+        json.dump(vocab_dict, f)
+    # Visualize the known, unknown words info
+    known_count = 0
+    unknown_count = 0
+    for index in words_indices:
+        if index.startswith("unk_"):
+            unknown_count += 1
+        else:
+            known_count += 1
+    print(f"Num known words: {known_count}")
+    print(f"Num unknown words: {unknown_count}")
+
+    print(f"First 10 unknown words: {extractor.unknown_words[:10]}")
