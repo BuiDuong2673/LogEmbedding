@@ -1,0 +1,459 @@
+2023-09-21T17:21:33.0044780Z ##[section]Starting: Prepare job test_wheels
+2023-09-21T17:21:33.0048039Z Evaluating strategy
+2023-09-21T17:21:33.0063005Z Creating job 'ubuntu-latest_3_8_x64'
+2023-09-21T17:21:33.0067419Z Evaluating display name
+2023-09-21T17:21:33.0068976Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0069108Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0069137Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0069173Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0069330Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0069354Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0069382Z ##[debug]....=> Object
+2023-09-21T17:21:33.0069416Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0069437Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0069488Z ##[debug]..=> '3.8'
+2023-09-21T17:21:33.0069507Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0069526Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0069548Z ##[debug]....=> Object
+2023-09-21T17:21:33.0069561Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0069607Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0069624Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0069643Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0069662Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0069683Z ##[debug]....=> Object
+2023-09-21T17:21:33.0069695Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0069715Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0069729Z ##[debug]..=> 'ubuntu-latest'
+2023-09-21T17:21:33.0069755Z ##[debug]=> 'Test 3.8 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0069795Z Result: 'Test 3.8 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0069867Z Evaluating timeout
+2023-09-21T17:21:33.0069917Z Evaluating cancel timeout
+2023-09-21T17:21:33.0069937Z Evaluating continue on error
+2023-09-21T17:21:33.0069963Z Evaluating target
+2023-09-21T17:21:33.0070410Z Evaluating: matrix.os
+2023-09-21T17:21:33.0070435Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0070456Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0070482Z ##[debug]..=> Object
+2023-09-21T17:21:33.0070501Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0070522Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0070555Z ##[debug]=> 'ubuntu-latest'
+2023-09-21T17:21:33.0070577Z Result: 'ubuntu-latest'
+2023-09-21T17:21:33.0070920Z Creating job 'ubuntu-latest_3_9_x64'
+2023-09-21T17:21:33.0074493Z Evaluating display name
+2023-09-21T17:21:33.0075033Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0075113Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0075136Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0075162Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0075217Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0075237Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0075263Z ##[debug]....=> Object
+2023-09-21T17:21:33.0075300Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0075321Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0075353Z ##[debug]..=> '3.9'
+2023-09-21T17:21:33.0075369Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0075388Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0075409Z ##[debug]....=> Object
+2023-09-21T17:21:33.0075421Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0075441Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0075455Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0075472Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0075490Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0075510Z ##[debug]....=> Object
+2023-09-21T17:21:33.0075541Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0075560Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0075573Z ##[debug]..=> 'ubuntu-latest'
+2023-09-21T17:21:33.0075596Z ##[debug]=> 'Test 3.9 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0075631Z Result: 'Test 3.9 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0075692Z Evaluating timeout
+2023-09-21T17:21:33.0075711Z Evaluating cancel timeout
+2023-09-21T17:21:33.0075732Z Evaluating continue on error
+2023-09-21T17:21:33.0075755Z Evaluating target
+2023-09-21T17:21:33.0076127Z Evaluating: matrix.os
+2023-09-21T17:21:33.0076179Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0076208Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0076244Z ##[debug]..=> Object
+2023-09-21T17:21:33.0076268Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0076298Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0076324Z ##[debug]=> 'ubuntu-latest'
+2023-09-21T17:21:33.0076356Z Result: 'ubuntu-latest'
+2023-09-21T17:21:33.0076721Z Creating job 'ubuntu-latest_3_10_x64'
+2023-09-21T17:21:33.0080524Z Evaluating display name
+2023-09-21T17:21:33.0081217Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0081316Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0081338Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0081368Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0081426Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0081446Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0081472Z ##[debug]....=> Object
+2023-09-21T17:21:33.0081497Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0081519Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0081564Z ##[debug]..=> '3.10'
+2023-09-21T17:21:33.0081581Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0081600Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0081642Z ##[debug]....=> Object
+2023-09-21T17:21:33.0081656Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0081682Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0081698Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0081716Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0081734Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0081754Z ##[debug]....=> Object
+2023-09-21T17:21:33.0081771Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0081791Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0081806Z ##[debug]..=> 'ubuntu-latest'
+2023-09-21T17:21:33.0081831Z ##[debug]=> 'Test 3.10 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0081867Z Result: 'Test 3.10 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0081941Z Evaluating timeout
+2023-09-21T17:21:33.0081961Z Evaluating cancel timeout
+2023-09-21T17:21:33.0081981Z Evaluating continue on error
+2023-09-21T17:21:33.0082003Z Evaluating target
+2023-09-21T17:21:33.0082319Z Evaluating: matrix.os
+2023-09-21T17:21:33.0082341Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0082361Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0082387Z ##[debug]..=> Object
+2023-09-21T17:21:33.0082403Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0082425Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0082442Z ##[debug]=> 'ubuntu-latest'
+2023-09-21T17:21:33.0082463Z Result: 'ubuntu-latest'
+2023-09-21T17:21:33.0082749Z Creating job 'ubuntu-latest_3_11_x64'
+2023-09-21T17:21:33.0086485Z Evaluating display name
+2023-09-21T17:21:33.0087249Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0087333Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0087358Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0087387Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0087447Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0087470Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0087496Z ##[debug]....=> Object
+2023-09-21T17:21:33.0087520Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0087541Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0087580Z ##[debug]..=> '3.11'
+2023-09-21T17:21:33.0087599Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0087635Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0087657Z ##[debug]....=> Object
+2023-09-21T17:21:33.0087674Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0087708Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0087730Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0087757Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0087789Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0087824Z ##[debug]....=> Object
+2023-09-21T17:21:33.0087844Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0087878Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0087926Z ##[debug]..=> 'ubuntu-latest'
+2023-09-21T17:21:33.0087950Z ##[debug]=> 'Test 3.11 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0087987Z Result: 'Test 3.11 x64 wheels for ubuntu-latest'
+2023-09-21T17:21:33.0088045Z Evaluating timeout
+2023-09-21T17:21:33.0088067Z Evaluating cancel timeout
+2023-09-21T17:21:33.0088088Z Evaluating continue on error
+2023-09-21T17:21:33.0088110Z Evaluating target
+2023-09-21T17:21:33.0088483Z Evaluating: matrix.os
+2023-09-21T17:21:33.0088508Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0088528Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0088554Z ##[debug]..=> Object
+2023-09-21T17:21:33.0088570Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0088590Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0088622Z ##[debug]=> 'ubuntu-latest'
+2023-09-21T17:21:33.0088642Z Result: 'ubuntu-latest'
+2023-09-21T17:21:33.0088913Z Creating job 'windows-latest_3_8_x64'
+2023-09-21T17:21:33.0092388Z Evaluating display name
+2023-09-21T17:21:33.0092828Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0092903Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0092925Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0092949Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0092995Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0093015Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0093039Z ##[debug]....=> Object
+2023-09-21T17:21:33.0093075Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0093096Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0093130Z ##[debug]..=> '3.8'
+2023-09-21T17:21:33.0093148Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0093169Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0093193Z ##[debug]....=> Object
+2023-09-21T17:21:33.0093206Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0093226Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0093241Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0093258Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0093280Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0093300Z ##[debug]....=> Object
+2023-09-21T17:21:33.0093329Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0093349Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0093362Z ##[debug]..=> 'windows-latest'
+2023-09-21T17:21:33.0093386Z ##[debug]=> 'Test 3.8 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0093421Z Result: 'Test 3.8 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0093470Z Evaluating timeout
+2023-09-21T17:21:33.0093487Z Evaluating cancel timeout
+2023-09-21T17:21:33.0093506Z Evaluating continue on error
+2023-09-21T17:21:33.0093529Z Evaluating target
+2023-09-21T17:21:33.0093814Z Evaluating: matrix.os
+2023-09-21T17:21:33.0093836Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0093855Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0093878Z ##[debug]..=> Object
+2023-09-21T17:21:33.0093893Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0093936Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0093952Z ##[debug]=> 'windows-latest'
+2023-09-21T17:21:33.0093973Z Result: 'windows-latest'
+2023-09-21T17:21:33.0094205Z Creating job 'windows-latest_3_9_x64'
+2023-09-21T17:21:33.0098059Z Evaluating display name
+2023-09-21T17:21:33.0098717Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0098800Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0098823Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0098851Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0098901Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0098922Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0098948Z ##[debug]....=> Object
+2023-09-21T17:21:33.0098989Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0099011Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0099300Z ##[debug]..=> '3.9'
+2023-09-21T17:21:33.0099320Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0099341Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0099363Z ##[debug]....=> Object
+2023-09-21T17:21:33.0099377Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0099398Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0099413Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0099436Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0099454Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0099474Z ##[debug]....=> Object
+2023-09-21T17:21:33.0099502Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0099522Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0099535Z ##[debug]..=> 'windows-latest'
+2023-09-21T17:21:33.0099559Z ##[debug]=> 'Test 3.9 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0099594Z Result: 'Test 3.9 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0099648Z Evaluating timeout
+2023-09-21T17:21:33.0099823Z Evaluating cancel timeout
+2023-09-21T17:21:33.0099844Z Evaluating continue on error
+2023-09-21T17:21:33.0099866Z Evaluating target
+2023-09-21T17:21:33.0100209Z Evaluating: matrix.os
+2023-09-21T17:21:33.0100233Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0100252Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0100278Z ##[debug]..=> Object
+2023-09-21T17:21:33.0100295Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0100330Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0100348Z ##[debug]=> 'windows-latest'
+2023-09-21T17:21:33.0100370Z Result: 'windows-latest'
+2023-09-21T17:21:33.0100636Z Creating job 'windows-latest_3_10_x64'
+2023-09-21T17:21:33.0104069Z Evaluating display name
+2023-09-21T17:21:33.0104505Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0104578Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0104600Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0104625Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0104674Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0104694Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0104717Z ##[debug]....=> Object
+2023-09-21T17:21:33.0104751Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0104773Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0104805Z ##[debug]..=> '3.10'
+2023-09-21T17:21:33.0104822Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0104847Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0104869Z ##[debug]....=> Object
+2023-09-21T17:21:33.0104882Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0104901Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0104915Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0104931Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0104949Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0104969Z ##[debug]....=> Object
+2023-09-21T17:21:33.0104996Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0105015Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0105029Z ##[debug]..=> 'windows-latest'
+2023-09-21T17:21:33.0105053Z ##[debug]=> 'Test 3.10 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0105088Z Result: 'Test 3.10 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0105138Z Evaluating timeout
+2023-09-21T17:21:33.0105155Z Evaluating cancel timeout
+2023-09-21T17:21:33.0105176Z Evaluating continue on error
+2023-09-21T17:21:33.0105198Z Evaluating target
+2023-09-21T17:21:33.0105482Z Evaluating: matrix.os
+2023-09-21T17:21:33.0105505Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0105524Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0105547Z ##[debug]..=> Object
+2023-09-21T17:21:33.0105562Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0105597Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0105612Z ##[debug]=> 'windows-latest'
+2023-09-21T17:21:33.0105633Z Result: 'windows-latest'
+2023-09-21T17:21:33.0105866Z Creating job 'windows-latest_3_11_x64'
+2023-09-21T17:21:33.0109573Z Evaluating display name
+2023-09-21T17:21:33.0110121Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0110199Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0110222Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0110248Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0110322Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0110342Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0110367Z ##[debug]....=> Object
+2023-09-21T17:21:33.0110388Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0110409Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0110442Z ##[debug]..=> '3.11'
+2023-09-21T17:21:33.0110458Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0110477Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0110497Z ##[debug]....=> Object
+2023-09-21T17:21:33.0110510Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0110529Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0110560Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0110578Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0110597Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0110617Z ##[debug]....=> Object
+2023-09-21T17:21:33.0110629Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0110649Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0110662Z ##[debug]..=> 'windows-latest'
+2023-09-21T17:21:33.0110686Z ##[debug]=> 'Test 3.11 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0110720Z Result: 'Test 3.11 x64 wheels for windows-latest'
+2023-09-21T17:21:33.0110771Z Evaluating timeout
+2023-09-21T17:21:33.0110789Z Evaluating cancel timeout
+2023-09-21T17:21:33.0110826Z Evaluating continue on error
+2023-09-21T17:21:33.0110849Z Evaluating target
+2023-09-21T17:21:33.0111137Z Evaluating: matrix.os
+2023-09-21T17:21:33.0111161Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0111181Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0111206Z ##[debug]..=> Object
+2023-09-21T17:21:33.0111222Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0111248Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0111265Z ##[debug]=> 'windows-latest'
+2023-09-21T17:21:33.0111286Z Result: 'windows-latest'
+2023-09-21T17:21:33.0111558Z Creating job 'macos-latest_3_8_x64'
+2023-09-21T17:21:33.0114977Z Evaluating display name
+2023-09-21T17:21:33.0115386Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0115462Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0115484Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0115508Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0115550Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0115575Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0115598Z ##[debug]....=> Object
+2023-09-21T17:21:33.0115616Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0115637Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0115664Z ##[debug]..=> '3.8'
+2023-09-21T17:21:33.0115680Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0115716Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0115737Z ##[debug]....=> Object
+2023-09-21T17:21:33.0115749Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0115768Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0115782Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0115798Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0115816Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0115836Z ##[debug]....=> Object
+2023-09-21T17:21:33.0115848Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0115867Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0115880Z ##[debug]..=> 'macos-latest'
+2023-09-21T17:21:33.0115900Z ##[debug]=> 'Test 3.8 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0115946Z Result: 'Test 3.8 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0115998Z Evaluating timeout
+2023-09-21T17:21:33.0116021Z Evaluating cancel timeout
+2023-09-21T17:21:33.0116041Z Evaluating continue on error
+2023-09-21T17:21:33.0116065Z Evaluating target
+2023-09-21T17:21:33.0116359Z Evaluating: matrix.os
+2023-09-21T17:21:33.0116381Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0116401Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0116426Z ##[debug]..=> Object
+2023-09-21T17:21:33.0116442Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0116464Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0116485Z ##[debug]=> 'macos-latest'
+2023-09-21T17:21:33.0116504Z Result: 'macos-latest'
+2023-09-21T17:21:33.0116752Z Creating job 'macos-latest_3_9_x64'
+2023-09-21T17:21:33.0120098Z Evaluating display name
+2023-09-21T17:21:33.0120512Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0120587Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0120608Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0120632Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0120671Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0120690Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0120714Z ##[debug]....=> Object
+2023-09-21T17:21:33.0120731Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0120766Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0120794Z ##[debug]..=> '3.9'
+2023-09-21T17:21:33.0120810Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0120829Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0120849Z ##[debug]....=> Object
+2023-09-21T17:21:33.0120861Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0120881Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0120894Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0120910Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0120929Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0120949Z ##[debug]....=> Object
+2023-09-21T17:21:33.0120961Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0120997Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0121011Z ##[debug]..=> 'macos-latest'
+2023-09-21T17:21:33.0121035Z ##[debug]=> 'Test 3.9 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0121068Z Result: 'Test 3.9 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0121112Z Evaluating timeout
+2023-09-21T17:21:33.0121130Z Evaluating cancel timeout
+2023-09-21T17:21:33.0121150Z Evaluating continue on error
+2023-09-21T17:21:33.0121172Z Evaluating target
+2023-09-21T17:21:33.0121449Z Evaluating: matrix.os
+2023-09-21T17:21:33.0121473Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0121492Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0121516Z ##[debug]..=> Object
+2023-09-21T17:21:33.0121532Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0121552Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0121584Z ##[debug]=> 'macos-latest'
+2023-09-21T17:21:33.0121603Z Result: 'macos-latest'
+2023-09-21T17:21:33.0121829Z Creating job 'macos-latest_3_10_x64'
+2023-09-21T17:21:33.0125163Z Evaluating display name
+2023-09-21T17:21:33.0125693Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0125772Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0125796Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0125820Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0125862Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0125883Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0125908Z ##[debug]....=> Object
+2023-09-21T17:21:33.0125942Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0125964Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0125996Z ##[debug]..=> '3.10'
+2023-09-21T17:21:33.0126012Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0126031Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0126051Z ##[debug]....=> Object
+2023-09-21T17:21:33.0126063Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0126083Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0126097Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0126112Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0126132Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0126153Z ##[debug]....=> Object
+2023-09-21T17:21:33.0126181Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0126202Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0126216Z ##[debug]..=> 'macos-latest'
+2023-09-21T17:21:33.0126238Z ##[debug]=> 'Test 3.10 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0126270Z Result: 'Test 3.10 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0126315Z Evaluating timeout
+2023-09-21T17:21:33.0126356Z Evaluating cancel timeout
+2023-09-21T17:21:33.0126376Z Evaluating continue on error
+2023-09-21T17:21:33.0126398Z Evaluating target
+2023-09-21T17:21:33.0126687Z Evaluating: matrix.os
+2023-09-21T17:21:33.0126709Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0126728Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0126752Z ##[debug]..=> Object
+2023-09-21T17:21:33.0126767Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0126787Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0126803Z ##[debug]=> 'macos-latest'
+2023-09-21T17:21:33.0126821Z Result: 'macos-latest'
+2023-09-21T17:21:33.0127068Z Creating job 'macos-latest_3_11_x64'
+2023-09-21T17:21:33.0130457Z Evaluating display name
+2023-09-21T17:21:33.0130860Z Evaluating: format('Test {0} {1} wheels for {2}', matrix.python-version, matrix.arch, matrix.os)
+2023-09-21T17:21:33.0130933Z ##[debug]Evaluating format:
+2023-09-21T17:21:33.0130953Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0130977Z ##[debug]..=> 'Test {0} {1} wheels for {2}'
+2023-09-21T17:21:33.0131015Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0131034Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0131058Z ##[debug]....=> Object
+2023-09-21T17:21:33.0131074Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0131095Z ##[debug]....=> 'python-version'
+2023-09-21T17:21:33.0131123Z ##[debug]..=> '3.11'
+2023-09-21T17:21:33.0131138Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0131173Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0131193Z ##[debug]....=> Object
+2023-09-21T17:21:33.0131206Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0131225Z ##[debug]....=> 'arch'
+2023-09-21T17:21:33.0131240Z ##[debug]..=> 'x64'
+2023-09-21T17:21:33.0131256Z ##[debug]..Evaluating Index:
+2023-09-21T17:21:33.0131274Z ##[debug]....Evaluating matrix:
+2023-09-21T17:21:33.0131294Z ##[debug]....=> Object
+2023-09-21T17:21:33.0131306Z ##[debug]....Evaluating String:
+2023-09-21T17:21:33.0131325Z ##[debug]....=> 'os'
+2023-09-21T17:21:33.0131338Z ##[debug]..=> 'macos-latest'
+2023-09-21T17:21:33.0131359Z ##[debug]=> 'Test 3.11 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0131405Z Result: 'Test 3.11 x64 wheels for macos-latest'
+2023-09-21T17:21:33.0131450Z Evaluating timeout
+2023-09-21T17:21:33.0131466Z Evaluating cancel timeout
+2023-09-21T17:21:33.0131486Z Evaluating continue on error
+2023-09-21T17:21:33.0131509Z Evaluating target
+2023-09-21T17:21:33.0131793Z Evaluating: matrix.os
+2023-09-21T17:21:33.0131815Z ##[debug]Evaluating Index:
+2023-09-21T17:21:33.0131834Z ##[debug]..Evaluating matrix:
+2023-09-21T17:21:33.0131859Z ##[debug]..=> Object
+2023-09-21T17:21:33.0131874Z ##[debug]..Evaluating String:
+2023-09-21T17:21:33.0131894Z ##[debug]..=> 'os'
+2023-09-21T17:21:33.0131909Z ##[debug]=> 'macos-latest'
+2023-09-21T17:21:33.0131928Z Result: 'macos-latest'
+2023-09-21T17:21:33.0135453Z ##[section]Finishing: Prepare job test_wheels

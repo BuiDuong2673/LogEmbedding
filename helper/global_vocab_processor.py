@@ -1,0 +1,47 @@
+"""Every actions with global vocabulary."""
+from typing import Dict
+import json
+import os
+
+
+class GlobalVocabProcessor:
+    """Process global vocabulary."""
+    def __init__(self):
+        """Initialize the GlobalVocabProcessor."""
+        self.global_vocab = {}
+        self.original_vocab_file_path = "dataset/words_alpha.txt"
+
+    def get_global_vocab(self) -> Dict[str, int]:
+        """Load vocabulary from a text file and return a mapping word -> index."""
+        # Link to store the vocabulary
+        out_path = "dataset/global_vocab_index.json"
+        # Check if the vocab index already extracted
+        if os.path.exists(out_path):
+            try:
+                with open(out_path, "r", encoding="utf-8") as json_file:
+                    self.global_vocab = json.load(json_file)
+                print(f"Loaded already extracted global vocab from {out_path}")
+                return self.global_vocab
+            except json.JSONDecodeError:
+                self.global_vocab = {}
+        # If not, create the vocab index from the text file
+        print(f"Extracting global vocab from {self.original_vocab_file_path}...")
+        vocab = {}
+        with open(self.original_vocab_file_path, 'r', encoding='utf-8') as f:
+            for index, line in enumerate(f):
+                word = line.strip()
+                if word:
+                    vocab[word] = index
+        self.global_vocab = vocab
+        # Store the vocab indices in JSON format for later use
+        with open(out_path, "w", encoding="utf-8") as json_file:
+            json.dump(self.global_vocab, json_file, ensure_ascii=False, indent=4)
+        return self.global_vocab
+
+    def get_word_index(self, word: str) -> int:
+        """Get the index of a word in the global vocabulary.
+
+        Args:
+            word (str): The word to look up.
+        """
+        return self.global_vocab.get(word, -1)  # Return -1 if word not found

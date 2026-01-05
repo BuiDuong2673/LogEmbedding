@@ -1,0 +1,35 @@
+2023-09-21T12:55:27.4803887Z ##[section]Starting: Prepare job build_wheels_windows
+2023-09-21T12:55:27.4807021Z Evaluating strategy
+2023-09-21T12:55:27.4819849Z Creating job 'windows-latest_win_amd64'
+2023-09-21T12:55:27.4824538Z Evaluating display name
+2023-09-21T12:55:27.4825485Z Evaluating: format('Build wheels for {0} on {1}', matrix.arch, matrix.os)
+2023-09-21T12:55:27.4825623Z ##[debug]Evaluating format:
+2023-09-21T12:55:27.4825671Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4825722Z ##[debug]..=> 'Build wheels for {0} on {1}'
+2023-09-21T12:55:27.4825810Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4825854Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4825902Z ##[debug]....=> Object
+2023-09-21T12:55:27.4825941Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4825995Z ##[debug]....=> 'arch'
+2023-09-21T12:55:27.4826045Z ##[debug]..=> 'win_amd64'
+2023-09-21T12:55:27.4826801Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4826846Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4826893Z ##[debug]....=> Object
+2023-09-21T12:55:27.4826921Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4826970Z ##[debug]....=> 'os'
+2023-09-21T12:55:27.4827003Z ##[debug]..=> 'windows-latest'
+2023-09-21T12:55:27.4827059Z ##[debug]=> 'Build wheels for win_amd64 on windows-latest'
+2023-09-21T12:55:27.4827169Z Result: 'Build wheels for win_amd64 on windows-latest'
+2023-09-21T12:55:27.4827290Z Evaluating timeout
+2023-09-21T12:55:27.4827544Z Evaluating cancel timeout
+2023-09-21T12:55:27.4827580Z Evaluating continue on error
+2023-09-21T12:55:27.4827616Z Evaluating target
+2023-09-21T12:55:27.4828509Z Evaluating: matrix.os
+2023-09-21T12:55:27.4828561Z ##[debug]Evaluating Index:
+2023-09-21T12:55:27.4828597Z ##[debug]..Evaluating matrix:
+2023-09-21T12:55:27.4828642Z ##[debug]..=> Object
+2023-09-21T12:55:27.4828674Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4828711Z ##[debug]..=> 'os'
+2023-09-21T12:55:27.4828755Z ##[debug]=> 'windows-latest'
+2023-09-21T12:55:27.4828796Z Result: 'windows-latest'
+2023-09-21T12:55:27.4831333Z ##[section]Finishing: Prepare job build_wheels_windows

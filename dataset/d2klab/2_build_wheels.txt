@@ -1,0 +1,99 @@
+2023-09-21T12:55:27.4803472Z ##[section]Starting: Prepare job build_wheels
+2023-09-21T12:55:27.4806681Z Evaluating strategy
+2023-09-21T12:55:27.4818780Z Creating job 'ubuntu-latest_x86_64'
+2023-09-21T12:55:27.4821676Z Evaluating display name
+2023-09-21T12:55:27.4822483Z Evaluating: format('Build {0} wheels for {1}', matrix.os, matrix.arch)
+2023-09-21T12:55:27.4822565Z ##[debug]Evaluating format:
+2023-09-21T12:55:27.4822593Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4822623Z ##[debug]..=> 'Build {0} wheels for {1}'
+2023-09-21T12:55:27.4822725Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4822749Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4822779Z ##[debug]....=> Object
+2023-09-21T12:55:27.4822801Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4822835Z ##[debug]....=> 'os'
+2023-09-21T12:55:27.4822875Z ##[debug]..=> 'ubuntu-latest'
+2023-09-21T12:55:27.4822910Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4822943Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4822977Z ##[debug]....=> Object
+2023-09-21T12:55:27.4822999Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4823062Z ##[debug]....=> 'arch'
+2023-09-21T12:55:27.4823091Z ##[debug]..=> 'x86_64'
+2023-09-21T12:55:27.4823127Z ##[debug]=> 'Build ubuntu-latest wheels for x86_64'
+2023-09-21T12:55:27.4823195Z Result: 'Build ubuntu-latest wheels for x86_64'
+2023-09-21T12:55:27.4823303Z Evaluating timeout
+2023-09-21T12:55:27.4823331Z Evaluating cancel timeout
+2023-09-21T12:55:27.4823356Z Evaluating continue on error
+2023-09-21T12:55:27.4823380Z Evaluating target
+2023-09-21T12:55:27.4823912Z Evaluating: matrix.os
+2023-09-21T12:55:27.4823951Z ##[debug]Evaluating Index:
+2023-09-21T12:55:27.4823989Z ##[debug]..Evaluating matrix:
+2023-09-21T12:55:27.4824029Z ##[debug]..=> Object
+2023-09-21T12:55:27.4824059Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4824111Z ##[debug]..=> 'os'
+2023-09-21T12:55:27.4824133Z ##[debug]=> 'ubuntu-latest'
+2023-09-21T12:55:27.4824165Z Result: 'ubuntu-latest'
+2023-09-21T12:55:27.4824828Z Creating job 'ubuntu-latest_aarch64'
+2023-09-21T12:55:27.4828402Z Evaluating display name
+2023-09-21T12:55:27.4829252Z Evaluating: format('Build {0} wheels for {1}', matrix.os, matrix.arch)
+2023-09-21T12:55:27.4829386Z ##[debug]Evaluating format:
+2023-09-21T12:55:27.4829425Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4829463Z ##[debug]..=> 'Build {0} wheels for {1}'
+2023-09-21T12:55:27.4829539Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4829568Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4829612Z ##[debug]....=> Object
+2023-09-21T12:55:27.4829645Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4829678Z ##[debug]....=> 'os'
+2023-09-21T12:55:27.4829721Z ##[debug]..=> 'ubuntu-latest'
+2023-09-21T12:55:27.4829761Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4829787Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4829845Z ##[debug]....=> Object
+2023-09-21T12:55:27.4829867Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4829897Z ##[debug]....=> 'arch'
+2023-09-21T12:55:27.4829920Z ##[debug]..=> 'aarch64'
+2023-09-21T12:55:27.4829955Z ##[debug]=> 'Build ubuntu-latest wheels for aarch64'
+2023-09-21T12:55:27.4830023Z Result: 'Build ubuntu-latest wheels for aarch64'
+2023-09-21T12:55:27.4830124Z Evaluating timeout
+2023-09-21T12:55:27.4830169Z Evaluating cancel timeout
+2023-09-21T12:55:27.4830205Z Evaluating continue on error
+2023-09-21T12:55:27.4830239Z Evaluating target
+2023-09-21T12:55:27.4830976Z Evaluating: matrix.os
+2023-09-21T12:55:27.4831038Z ##[debug]Evaluating Index:
+2023-09-21T12:55:27.4831086Z ##[debug]..Evaluating matrix:
+2023-09-21T12:55:27.4831142Z ##[debug]..=> Object
+2023-09-21T12:55:27.4831218Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4831267Z ##[debug]..=> 'os'
+2023-09-21T12:55:27.4831306Z ##[debug]=> 'ubuntu-latest'
+2023-09-21T12:55:27.4831361Z Result: 'ubuntu-latest'
+2023-09-21T12:55:27.4832137Z Creating job 'macos-latest_x86_64'
+2023-09-21T12:55:27.4836713Z Evaluating display name
+2023-09-21T12:55:27.4837609Z Evaluating: format('Build {0} wheels for {1}', matrix.os, matrix.arch)
+2023-09-21T12:55:27.4837714Z ##[debug]Evaluating format:
+2023-09-21T12:55:27.4837761Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4837835Z ##[debug]..=> 'Build {0} wheels for {1}'
+2023-09-21T12:55:27.4837908Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4837946Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4837999Z ##[debug]....=> Object
+2023-09-21T12:55:27.4838034Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4838073Z ##[debug]....=> 'os'
+2023-09-21T12:55:27.4838115Z ##[debug]..=> 'macos-latest'
+2023-09-21T12:55:27.4838150Z ##[debug]..Evaluating Index:
+2023-09-21T12:55:27.4838186Z ##[debug]....Evaluating matrix:
+2023-09-21T12:55:27.4838219Z ##[debug]....=> Object
+2023-09-21T12:55:27.4838237Z ##[debug]....Evaluating String:
+2023-09-21T12:55:27.4838294Z ##[debug]....=> 'arch'
+2023-09-21T12:55:27.4838317Z ##[debug]..=> 'x86_64'
+2023-09-21T12:55:27.4838348Z ##[debug]=> 'Build macos-latest wheels for x86_64'
+2023-09-21T12:55:27.4838411Z Result: 'Build macos-latest wheels for x86_64'
+2023-09-21T12:55:27.4838497Z Evaluating timeout
+2023-09-21T12:55:27.4838530Z Evaluating cancel timeout
+2023-09-21T12:55:27.4838562Z Evaluating continue on error
+2023-09-21T12:55:27.4838594Z Evaluating target
+2023-09-21T12:55:27.4839212Z Evaluating: matrix.os
+2023-09-21T12:55:27.4839256Z ##[debug]Evaluating Index:
+2023-09-21T12:55:27.4839287Z ##[debug]..Evaluating matrix:
+2023-09-21T12:55:27.4839321Z ##[debug]..=> Object
+2023-09-21T12:55:27.4839346Z ##[debug]..Evaluating String:
+2023-09-21T12:55:27.4839398Z ##[debug]..=> 'os'
+2023-09-21T12:55:27.4839430Z ##[debug]=> 'macos-latest'
+2023-09-21T12:55:27.4839462Z Result: 'macos-latest'
+2023-09-21T12:55:27.4842217Z ##[section]Finishing: Prepare job build_wheels
