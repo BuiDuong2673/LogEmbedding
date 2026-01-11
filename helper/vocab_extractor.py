@@ -60,11 +60,29 @@ class VocabExtractor:
                 if lines:  # Only add if lines are not empty
                     all_lines.extend(lines)
         return all_lines        
+
+    def tokenize_line(self, line: str) -> list[str]:
+        """Tokenize a log line into tokens.
+
+        Uses the same rules as the existing Word2Vec vocab builder:
+        - split on spaces/underscores/hyphens
+        - split camelCase
+        """
+        parts = re.split(r'[\s_-]+', line)
+        words: list[str] = []
+        for part in parts:
+            if not part:
+                continue
+            split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
+            words.extend(split_camel)
+        return [w for w in words if w]
     
-    def delete_time_stamp(self, log_lines: list) -> list:
+    def delete_time_stamp(self, log_lines: list, deduplicate: bool = True) -> list:
         """Delete the time stamp from each log line.
         Args:
             log_lines (list): The list of log lines.
+            deduplicate (bool): Whether to deduplicate lines. Word2Vec used
+                deduplication; Doc2Vec needs order and duplicates.
         Returns:
             list: The list of log lines without the time stamp.
         """
@@ -81,11 +99,16 @@ class VocabExtractor:
             r'\s*'                                 # trailing spaces
         )
 
+        seen = set()
         for line in log_lines:
-            new_line = timestamp_pattern.sub('', line)
-            # Only add unique lines
-            if new_line not in new_log_lines:
-                new_log_lines.append(new_line)
+            new_line = timestamp_pattern.sub('', line).strip('\n')
+            if not new_line:
+                continue
+            if deduplicate:
+                if new_line in seen:
+                    continue
+                seen.add(new_line)
+            new_log_lines.append(new_line)
         return new_log_lines
     
     def create_word_dict(self, log_lines: list, window_size: int=1) -> dict:
@@ -100,13 +123,7 @@ class VocabExtractor:
         # Initialize the unique words dict
         word_dict = {}
         for line in log_lines:
-            # Split on spaces, underscores, hyphens
-            parts = re.split(r'[\s_-]+', line)
-            # Split camelCase
-            words = []
-            for part in parts:
-                split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
-                words.extend(split_camel)
+            words = self.tokenize_line(line)
             # Store the word into the word_dict
             for i, word in enumerate(words):
                 # # Check if the word have singular form
@@ -193,7 +210,7 @@ class VocabExtractor:
         """
         data = self.load_client_dataset()
         # Delete time stamps
-        data = self.delete_time_stamp(data)
+        data = self.delete_time_stamp(data, deduplicate=True)
         # Create word dictionary
         word_dict = self.create_word_dict(data)
         # Add index to each word
