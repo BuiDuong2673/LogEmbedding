@@ -1,0 +1,19 @@
+Cache restored from key: node-cache-Linux-x64-yarn-<SEQ>
+##[group]Run actions/cache@v4
+path: **/node_modules
+key: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-<SEQ>
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-<SEQ>
+Received <NUM> of <NUM> (<NUM>.<NUM>%), <NUM>.<NUM> MBs/sec
+/usr/bin/tar: <*> Cannot hard link to <*> No such file or directory
+/usr/bin/tar: <*> Cannot mkdir: No such file or directory
+/usr/bin/tar: Exiting with failure status due to previous errors
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code <NUM>
+Cache not found for input keys: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-<SEQ>
+##[group]Run rm -rf build
+[<NUM>;1mrm -rf build[0m
+shell: /usr/bin/bash -e {<NUM>}
+##[group]Run yarn install --frozen-lockfile

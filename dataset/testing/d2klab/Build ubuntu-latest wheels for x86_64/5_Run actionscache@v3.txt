@@ -1,0 +1,11 @@
+##[group]Run actions/cache@v3
+with:
+path: hdf5_build
+key: Linux-x86_-77425-deps-cache-8d725f46350 4fb4a518 c7aa8a 175f884 e833458e323218616.-95915.44410--23438-1220c0488 28fdce aa66d4b4f3c8
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+env:
+HDF5_VERSION: +98939.+17786.-18749-63736
+MACOSX_DEPLOYMENT_TARGET: +80494.+89514
+CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-*
