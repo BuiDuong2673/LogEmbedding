@@ -92,48 +92,6 @@ class CentralServerProgram:
             W1 = np.mean(client_W1_list, axis=0)
             W2 = np.mean(client_W2_list, axis=0)
         return W1, W2
-    
-    def test_analogy(
-            self, W1: np.array, W2: np.array, center_word: str, pos_sample_word: str, neg_sample_word: str, top_k=3):
-        """Test analogy: a is to b as c is to ?"""
-        # Get indices representation of the words
-        # Read global vocab
-        with open("dataset/global_vocab_index.json", "r", encoding="utf-8") as file:
-            global_vocab = json.load(file)
-        for word, global_idx in global_vocab.items():
-            if word == center_word:
-                center_idx = self.full_vocab.get(f"{global_idx}")
-            elif word == pos_sample_word:
-                pos_sample_idx = self.full_vocab.get(f"{global_idx}")
-            elif word == neg_sample_word:
-                neg_sample_idx = self.full_vocab.get(f"{global_idx}")
-            else:
-                continue
-        if center_idx == None or pos_sample_idx == None or neg_sample_idx == None:
-            print(f"Error: cannot perform test because some words not found. center_idx = {center_idx},"
-                  f"pos_sample_idx = {pos_sample_idx} and neg_sample_idx = {neg_sample_idx}")
-            return
-        
-        # Get embeddings
-        center_embedding = W1[center_idx, :]
-        pos_sample_embedding = W1[pos_sample_idx, :]  
-        neg_sample_embedding = W1[neg_sample_idx, :]
-
-        norm_center = np.linalg.norm(center_embedding)
-        norm_pos = np.linalg.norm(pos_sample_embedding)
-        norm_neg = np.linalg.norm(neg_sample_embedding)
-
-        if norm_center > 0 and norm_pos > 0 and norm_neg > 0:
-            cosine_sim_pos = np.dot(center_embedding, pos_sample_embedding) / (norm_center * norm_pos)
-            cosine_sim_neg = np.dot(center_embedding, neg_sample_embedding) / (norm_center * norm_neg)
-        else:
-            cosine_sim_pos, cosine_sim_neg = 0, 0
-        
-        print(f"Cosine_sim between {center_word} and {pos_sample_word} is: {cosine_sim_pos}")
-        print(f"Cosine_sim between {center_word} and {neg_sample_word} is: {cosine_sim_neg}")
-
-
-
 
 
 if __name__ == "__main__":
@@ -143,10 +101,5 @@ if __name__ == "__main__":
     # Save W1, W2 for testing
     os.makedirs("models", exist_ok=True)
 
-    np.save("models/W1.npy", W1)
-    np.save("models/W2.npy", W2)
-
-    center_word = "error"
-    pos_word = "runtime"
-    neg_word = "success"
-    central_server_program.test_analogy(W1, W2, center_word=center_word, pos_sample_word=pos_word, neg_sample_word=neg_word)
+    np.save("models/W1_word2vec.npy", W1)
+    np.save("models/W2_word2vec.npy", W2)

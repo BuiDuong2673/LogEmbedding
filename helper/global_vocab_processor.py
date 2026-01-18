@@ -48,6 +48,9 @@ class GlobalVocabProcessor:
 
     def add_common_words_to_global_vocab(self) -> None:
         """Add common words of all clients into the global vocabulary."""
+        # Check if global_vocab_index.json exists
+        if os.path.exists("dataset/global_vocab_index.json"):
+            return
         # Get unknown word list of dk2lab
         dk2lab_unknown_word = []
         with open("dataset/d2klab_new_word_dict.json", "r", encoding="utf-8") as json_file:

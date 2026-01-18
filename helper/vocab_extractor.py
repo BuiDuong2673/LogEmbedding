@@ -4,6 +4,11 @@ import re
 import json
 
 from helper.global_vocab_processor import GlobalVocabProcessor
+from helper.create_training_dataset import TrainingDatasetCreator
+
+
+NUM_CONTEXT_WORDS = 2
+CLIENT_LIST = ["d2klab", "maryangel101"]
 
 
 class VocabExtractor:
@@ -16,7 +21,7 @@ class VocabExtractor:
         self.client_name = client_name
         self.global_vocab_processor = GlobalVocabProcessor()
         # Extract the vocab indices if not extracted yet
-        _ = self.global_vocab_processor.get_global_vocab()
+        self.global_vocab = self.global_vocab_processor.get_global_vocab()
         # Initialize unknown words variable
         self.unknown_words = []
     
@@ -41,58 +46,22 @@ class VocabExtractor:
 
     def load_client_dataset(self) -> None:
         """Load the dataset for the specified client, maryangel101."""
-        # Implementation to load dataset
-        # Read all file in the dataset folder
+        # Collect list of training log files
+        training_paths = TrainingDatasetCreator().get_file_list_from_folder(os.path.join("dataset", "training", self.client_name))
+        # Combine all log lines into a list
         all_lines = []
-        client_dataset_path = os.path.join("dataset", self.client_name)
-        dataset_paths = []
-        for subdir in os.listdir(client_dataset_path):
-            full_path = os.path.join(client_dataset_path, subdir)
+        for file_path in training_paths:
+            lines = self.read_dataset_file(file_path)
+            if lines:  # Only add if lines are not empty
+                all_lines.extend(lines)
+        return all_lines
 
-            if os.path.isdir(full_path):
-                dataset_paths.append(full_path)
-
-        for dataset_path in dataset_paths:
-            for filename in os.listdir(dataset_path):
-                file_path = os.path.join(dataset_path, filename)
-                lines = self.read_dataset_file(file_path)
-                if lines:  # Only add if lines are not empty
-                    all_lines.extend(lines)
-        return all_lines        
-    
-    def delete_time_stamp(self, log_lines: list) -> list:
-        """Delete the time stamp from each log line.
-        Args:
-            log_lines (list): The list of log lines.
-        Returns:
-            list: The list of log lines without the time stamp.
-        """
-        # Initialize new list
-        new_log_lines = []
-        # Initialize timestamp patterns
-        # Matches almost all ISO-8601 timestamps
-        timestamp_pattern = re.compile(
-            r'\d{4}-\d{2}-\d{2}'                   # YYYY-MM-DD
-            r'[T\s]'                               # T or space
-            r'\d{2}:\d{2}:\d{2}'                   # HH:MM:SS
-            r'(?:\.\d+)?'                          # optional .fractional seconds
-            r'(?:Z|[+-]\d{2}:\d{2})?'              # optional timezone (Z or +hh:mm)
-            r'\s*'                                 # trailing spaces
-        )
-
-        for line in log_lines:
-            new_line = timestamp_pattern.sub('', line)
-            # Only add unique lines
-            if new_line not in new_log_lines:
-                new_log_lines.append(new_line)
-        return new_log_lines
-    
-    def create_word_dict(self, log_lines: list, window_size: int=1) -> dict:
-        """Store unique words, their neighbors within window size, and frequency
+    def create_word_dict(self, log_lines: list, num_context_words: int=NUM_CONTEXT_WORDS) -> dict:
+        """Store unique words, their neighbors within num_context_words, and frequency
 
         Args:
             log_lines (list): The list of log lines
-            window_size (int): The size of the context window
+            num_context_words (int): The number of context words to consider
         Returns:
             dict: The word dictionary
         """
@@ -108,23 +77,15 @@ class VocabExtractor:
                 words.extend(split_camel)
             # Store the word into the word_dict
             for i, word in enumerate(words):
-                # # Check if the word have singular form
-                # p = inflect.engine()
-                # singular_word = p.singular_noun(word)
-                # # If yes, replace the word with its singular form
-                # if singular_word:
-                #     print(f"Singular word: {singular_word}")
-                #     word = singular_word
-                #     words[i] = word
                 # Only add unique words
                 if word_dict.get(word):
                     word_dict[word]["freq"] += 1
                 else:
                     # Initialize word
                     word_dict[word] = {"freq": 1, "context_words": []}
-                # Add context words within window size
-                start_idx = max(0, i - window_size)
-                end_idx = min(len(words), i + window_size + 1)
+                # Add context words within num_context_words
+                start_idx = max(0, i - num_context_words)
+                end_idx = min(len(words), i + num_context_words + 1)
                 for j in range(start_idx, end_idx):
                     if j != i:
                         context_word = words[j]
@@ -149,7 +110,7 @@ class VocabExtractor:
         unknown_words_indices = []
         known_words_indices = []
         for word in word_dict.keys():
-            word_index = self.global_vocab_processor.get_word_index(word.lower())
+            word_index = self.global_vocab.get(word.lower(), -1)
             if word_index == -1:  # if word not found
                 word_dict[word]["index"] = f"unk_{unknown_num}"
                 # Store unknown words
@@ -191,8 +152,6 @@ class VocabExtractor:
             list: The list of unknown words
         """
         data = self.load_client_dataset()
-        # Delete time stamps
-        data = self.delete_time_stamp(data)
         # Create word dictionary
         word_dict = self.create_word_dict(data)
         # Add index to each word
