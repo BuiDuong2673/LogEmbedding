@@ -1,8 +1,10 @@
 """Manage client actions."""
 import json
+import re
 import numpy as np
 from helper.vocab_extractor import VocabExtractor
 from embedding_techniques.word2vec import Word2Vec
+from embedding_techniques.sent2vec import Sent2Vec
 
 
 class ClientProgram:
@@ -119,6 +121,152 @@ class ClientProgram:
                         total_loss += loss
             avg_loss = total_loss / num_pairs
             print(f"Epoch {epoch + 1}/{num_epochs}, Average Loss: {avg_loss:.4f}")
+        return avg_loss, W1, W2
+    
+    def load_sentences_as_word_indices(self) -> list[list[int]]:
+        """Load sentences from dataset and convert them to word index lists.
+        
+        This method should be called after change_to_internal_common_indices() 
+        to ensure word_dict uses common indices.
+        
+        Returns:
+            list[list[int]]: List of sentences, each sentence is a list of word indices.
+        """
+        # Load raw log lines
+        log_lines = self.vocab_extractor.load_client_dataset()
+        # Delete timestamps
+        log_lines = self.vocab_extractor.delete_time_stamp(log_lines)
+        
+        sentences = []
+        for line in log_lines:
+            # Split on spaces, underscores, hyphens
+            parts = re.split(r'[\s_-]+', line)
+            # Split camelCase
+            words = []
+            for part in parts:
+                split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
+                words.extend(split_camel)
+            
+            # Convert words to indices
+            word_indices = []
+            for word in words:
+                if word in self.word_dict:
+                    word_idx = self.word_dict[word]["index"]
+                    # Handle both int and string indices
+                    if isinstance(word_idx, (int, np.integer)):
+                        word_indices.append(int(word_idx))
+                    elif isinstance(word_idx, str):
+                        # Try to convert string to int
+                        try:
+                            word_indices.append(int(word_idx))
+                        except (ValueError, TypeError):
+                            # Skip if cannot convert (e.g., "unk_123" format)
+                            continue
+            
+            # Only add non-empty sentences
+            if len(word_indices) > 0:
+                sentences.append(word_indices)
+        
+        return sentences
+    
+    def generate_sentence_pairs(self, sentences: list[list[int]], window_size: int = 1) -> list[tuple[list[int], list[int]]]:
+        """Generate sentence pairs for training Sent2Vec.
+        
+        Args:
+            sentences (list[list[int]]): List of sentences as word index lists.
+            window_size (int): Number of surrounding sentences to consider as context.
+        
+        Returns:
+            list[tuple[list[int], list[int]]]: List of (sentence, context_sentence) pairs.
+        """
+        training_pairs = []
+        
+        for i, sentence in enumerate(sentences):
+            # Get context sentences within window
+            start_idx = max(0, i - window_size)
+            end_idx = min(len(sentences), i + window_size + 1)
+            
+            for j in range(start_idx, end_idx):
+                if j != i:
+                    context_sentence = sentences[j]
+                    training_pairs.append((sentence, context_sentence))
+        
+        return training_pairs
+    
+    def perform_sent2vec_embedding(self, W1: np.array, W2: np.array, num_neg_samples: int=5, 
+                                   num_epochs: int=10, learning_rate: float=0.01,
+                                   word_ngrams: int=2, dropout_k: int=2, bucket_size: int=2000000,
+                                   window_size: int=1):
+        """Perform one round Sent2Vec embedding.
+        
+        Args:
+            W1 (np.array): embedding matrix to embed words and n-grams into vectors.
+            W2 (np.array): context matrix (weight of the sentence being in a context).
+            num_neg_samples (int): number of negative samples should we consider.
+            num_epochs (int): number of training epochs should we perform.
+            learning_rate (float): Learning rate for the optimizer.
+            word_ngrams (int): max length of word n-gram [default: 2].
+            dropout_k (int): number of n-grams dropped when training [default: 2].
+            bucket_size (int): number of hash buckets for n-gram vocabulary [default: 2000000].
+            window_size (int): number of surrounding sentences to consider as context [default: 2].
+        """
+        # Initialize Sent2Vec model
+        model = Sent2Vec(W1, W2, word_ngrams=word_ngrams, dropout_k=dropout_k, bucket_size=bucket_size)
+        
+        # Load sentences as word index lists
+        sentences = self.load_sentences_as_word_indices()
+        if len(sentences) == 0:
+            print(f"Warning: No sentences found for client {self.client_name}")
+            return 0.0, W1, W2
+        
+        # Generate sentence pairs
+        training_pairs = self.generate_sentence_pairs(sentences, window_size=window_size)
+        
+        if len(training_pairs) == 0:
+            print(f"Warning: No training pairs generated for client {self.client_name}")
+            return 0.0, W1, W2
+        
+        # Adjust negative samples
+        actual_negative_samples = min(num_neg_samples, max(1, len(sentences) - 2))
+        
+        # Training loop
+        for epoch in range(num_epochs):
+            total_loss = 0
+            num_pairs = 0
+            
+            for sentence_indices, context_sentence_indices in training_pairs:
+                # Generate negative samples (random sentences)
+                negative_samples = []
+                if actual_negative_samples > 0:
+                    # Select random sentences as negative samples
+                    possible_negative_sentences = [
+                        s for s in sentences 
+                        if s != sentence_indices and s != context_sentence_indices
+                    ]
+                    if len(possible_negative_sentences) >= actual_negative_samples:
+                        negative_indices = np.random.choice(
+                            len(possible_negative_sentences),
+                            size=actual_negative_samples,
+                            replace=False
+                        )
+                        negative_samples = [possible_negative_sentences[i] for i in negative_indices]
+                    else:
+                        negative_samples = possible_negative_sentences
+                
+                # Train on this pair
+                if len(negative_samples) > 0:
+                    loss, W1, W2 = model.train_with_negative_sampling(
+                        sentence_indices,
+                        context_sentence_indices,
+                        negative_samples,
+                        learning_rate
+                    )
+                    total_loss += loss
+                    num_pairs += 1
+            
+            avg_loss = total_loss / num_pairs if num_pairs > 0 else 0.0
+            print(f"Epoch {epoch + 1}/{num_epochs}, Average Loss: {avg_loss:.4f}, Pairs: {num_pairs}")
+        
         return avg_loss, W1, W2
 
 

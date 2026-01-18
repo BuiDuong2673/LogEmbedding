@@ -1,6 +1,7 @@
 """Manage central server actions."""
 import json
 import os
+import sys
 import numpy as np
 from helper.global_vocab_processor import GlobalVocabProcessor
 from client_program import ClientProgram
@@ -131,8 +132,63 @@ class CentralServerProgram:
         
         print(f"Cosine_sim between {center_word} and {pos_sample_word} is: {cosine_sim_pos}")
         print(f"Cosine_sim between {center_word} and {neg_sample_word} is: {cosine_sim_neg}")
-
-
+    
+    def execute_decentralize_sent2vec(self, embedding_dim: int=500, num_neg_samples: int=5, 
+                                     num_epochs: int=50, learning_rate: float=0.01,
+                                     word_ngrams: int=2, dropout_k: int=2, bucket_size: int=2000000,
+                                     window_size: int=1):
+        """Perform a decentralize Sent2Vec embedding model training.
+        
+        Args:
+            embedding_dim (int): Dimension of embedding vectors [default: 500].
+            num_neg_samples (int): Number of negative samples [default: 5].
+            num_epochs (int): Number of global training epochs [default: 50].
+            learning_rate (float): Learning rate for training [default: 0.01].
+            word_ngrams (int): Max length of word n-gram [default: 2].
+            dropout_k (int): Number of n-grams dropped when training [default: 2].
+            bucket_size (int): Number of hash buckets for n-gram vocabulary [default: 2000000].
+            window_size (int): Number of surrounding sentences to consider as context [default: 2].
+        """
+        # Prepare a common vocab which contains indices for all clients' words.
+        _ = self.get_all_client_vocabs()
+        # Initialize W1, W2
+        vocab_size = len(self.full_vocab)
+        # W₁: Input embeddings (V × N) - Xavier initialization
+        W1 = np.random.normal(0, 0.1, (vocab_size, embedding_dim))
+        # W₂: Output embeddings (N × V) - Xavier initialization  
+        W2 = np.random.normal(0, 0.1, (embedding_dim, vocab_size))
+        
+        client_W1_list = []
+        client_W2_list = []
+        
+        for epoch in range(num_epochs):
+            # Update clients' word dict with common vocab
+            for client in self.client_list:
+                client_program = ClientProgram(client_name=client)
+                _ = self.send_common_indices_to_client(client_name=client, client_program=client_program)
+                client_avg_loss, client_W1, client_W2 = client_program.perform_sent2vec_embedding(
+                    W1=W1.copy(), W2=W2.copy(), 
+                    num_neg_samples=num_neg_samples, 
+                    num_epochs=5,
+                    learning_rate=learning_rate,
+                    word_ngrams=word_ngrams,
+                    dropout_k=dropout_k,
+                    bucket_size=bucket_size,
+                    window_size=window_size
+                )
+                client_W1_list.append(client_W1)
+                client_W2_list.append(client_W2)
+                print("----------------------------------------------------------------")
+                print(f"Epoch: {epoch} Client {client} average loss: {client_avg_loss}.")
+                print("----------------------------------------------------------------")
+            
+            # Aggregate models: average all client models
+            W1 = np.mean(client_W1_list, axis=0)
+            W2 = np.mean(client_W2_list, axis=0)
+            client_W1_list = []
+            client_W2_list = []
+        
+        return W1, W2
 
 
 
