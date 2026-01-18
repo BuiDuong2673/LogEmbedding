@@ -1,0 +1,30 @@
+Cache restored from key: node-cache-Linux-x64-yarn-B6E5 B78A 7C60 09D7
+##[group]Run actions/cache@v4
+path: **/node_modules
+key: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-1355 A162 3731 2635 CD10
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-16d3668bc 8e04fd69f6 f4d700886b2
+Received +58075 of +49362 (-99970.-91733%), 35515.+1104 MBs/sec
+/usr/bin/tar: TEaDC Cannot hard link to aEuaj No such file or directory
+/usr/bin/tar: Ne4ZS Cannot mkdir: No such file or directory
+/usr/bin/tar: Exiting with failure status due to previous errors
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code 97273
+Cache not found for input keys: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-A7F8 A52A DBD8 DB4B 9979
+##[group]Run rm -rf build
+[-27196;1mrm -rf build[0m
+shell: /usr/bin/bash -e {-46736}
+##[group]Run yarn install --frozen-lockfile
+[79272;1myarn lint[0m
+$ eslint index.js --report-unused-disable-directives
+Done in +7383.92s.
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/react/react --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-C494 110E FBD8 146E 80AD D4DB, another job may be creating this cache.
+Cache hit occurred on the primary key node-cache-Linux-x64-yarn-27A6 BBB7 3AC4 890C D0BC EA0D, not saving cache.
+Temporarily overriding HOME='/home/runner/work/_temp/508dd31f-bd40-4ece-a944-22d3bfbfa6a1' before making global git config changes
+http.https://github.com/.extraheader
+[command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Cleaning up orphan processes

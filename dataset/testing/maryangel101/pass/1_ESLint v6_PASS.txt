@@ -1,0 +1,30 @@
+Cache restored from key: node-cache-Linux-x64-yarn-f918abad76f 38c95637 be979d d033d3fd8ee
+##[group]Run actions/cache@v4
+path: **/node_modules
+key: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-880bbdd53 c21a18 c7e7f89
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-f18860df9a9e a7d47a ff4af9 55beae9e0b
+Received +73272 of +40222 (+9992.-9925%), -88192.38406 MBs/sec
+/usr/bin/tar: FMfsd Cannot hard link to gZ5TD No such file or directory
+/usr/bin/tar: upF1F Cannot mkdir: No such file or directory
+/usr/bin/tar: Exiting with failure status due to previous errors
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code +84608
+Cache not found for input keys: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-678043 572443f9a2 238405e927
+##[group]Run rm -rf build
+[72674;1mrm -rf build[0m
+shell: /usr/bin/bash -e {-23384}
+##[group]Run yarn install --frozen-lockfile
+[+99672;1myarn lint[0m
+$ eslint index.js --report-unused-disable-directives
+Done in 35013.90s.
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/react/react --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-6CAF 8CE2 1998 7F8C 1B4F, another job may be creating this cache.
+Cache hit occurred on the primary key node-cache-Linux-x64-yarn-8233 9863 7873 A0ED, not saving cache.
+Temporarily overriding HOME='/home/runner/work/_temp/d312a0ab-d850-4bdc-9c68-ad340b679447' before making global git config changes
+http.https://github.com/.extraheader
+[command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Cleaning up orphan processes

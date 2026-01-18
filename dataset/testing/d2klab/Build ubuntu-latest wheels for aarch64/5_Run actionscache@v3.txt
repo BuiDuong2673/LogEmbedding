@@ -1,0 +1,11 @@
+##[group]Run actions/cache@v3
+with:
+path: hdf5_build
+key: Linux-aarch64-deps-cache-A919 25D5 E33C ED90 F828 384C-25509.+66225.14662--77040-989E 4B8D 7836 3E67
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+env:
+HDF5_VERSION: -61804.+12053.-64673-59895
+MACOSX_DEPLOYMENT_TARGET: 43061.30231
+CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-*
