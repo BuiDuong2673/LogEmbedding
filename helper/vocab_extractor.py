@@ -14,7 +14,7 @@ CLIENT_LIST = ["d2klab", "maryangel101"]
 class VocabExtractor:
     def __init__(self, client_name: str) -> None:
         """Initialize the VocabExtractor with a client name.
-        
+
         Args:
             client_name (str): The name of the client.
         """
@@ -82,15 +82,19 @@ class VocabExtractor:
                     word_dict[word]["freq"] += 1
                 else:
                     # Initialize word
-                    word_dict[word] = {"freq": 1, "context_words": []}
+                    word_dict[word] = {"freq": 1, "context_words": set()}
                 # Add context words within num_context_words
                 start_idx = max(0, i - num_context_words)
                 end_idx = min(len(words), i + num_context_words + 1)
                 for j in range(start_idx, end_idx):
-                    if j != i:
-                        context_word = words[j]
-                        if context_word not in word_dict[word]["context_words"]:
-                            word_dict[word]["context_words"].append(context_word)
+                    if j == i:
+                        continue
+                    context_word = words[j]
+                    # Optional: skip empty or special tokens
+                    if not context_word.strip():
+                        continue
+                    # Use a set to avoid excessive growth
+                    word_dict[word]["context_words"].add(context_word)
         # Sort word_dict
         word_dict = dict(sorted(word_dict.items(), key=lambda item: item[1]["freq"], reverse=True))
         return word_dict
@@ -143,9 +147,12 @@ class VocabExtractor:
             word_dict[word]["context_words"] = context_indices
         return word_dict
     
-    def get_vocab(self):
+    def get_vocab(self, num_context_words: int=NUM_CONTEXT_WORDS) -> tuple[dict, list]:
         """Run the Word2Vec embedding process
-        
+
+        Args:
+            num_context_words (int): The number of context words to consider.
+
         Returns:
             dict: The word dictionary with context words as indices
             list: The list of known words' indices
@@ -153,7 +160,7 @@ class VocabExtractor:
         """
         data = self.load_client_dataset()
         # Create word dictionary
-        word_dict = self.create_word_dict(data)
+        word_dict = self.create_word_dict(data, num_context_words)
         # Add index to each word
         word_dict, words_indices = self.add_word_global_index(word_dict)
         # Change context words to indices

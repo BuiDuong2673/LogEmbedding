@@ -45,31 +45,13 @@ class GlobalVocabProcessor:
             word (str): The word to look up.
         """
         return self.global_vocab.get(word, -1)  # Return -1 if word not found
+    
 
-    def add_common_words_to_global_vocab(self) -> None:
+    def add_common_words_to_global_vocab(self, common_unknown_words) -> None:
         """Add common words of all clients into the global vocabulary."""
         # Check if global_vocab_index.json exists
         if os.path.exists("dataset/global_vocab_index.json"):
             return
-        # Get unknown word list of dk2lab
-        dk2lab_unknown_word = []
-        with open("dataset/d2klab_new_word_dict.json", "r", encoding="utf-8") as json_file:
-            client_words_dict = json.load(json_file)
-        for word in client_words_dict.keys():
-            if self.global_vocab.get(word) is None:
-                dk2lab_unknown_word.append(word)
-        # Get unknown word list of maryangel101
-        maryangel101_unknown_word = []
-        with open("dataset/maryangel101_new_word_dict.json", "r", encoding="utf-8") as json_file:
-            client_words_dict = json.load(json_file)
-        for word in client_words_dict.keys():
-            if self.global_vocab.get(word) is None:
-                maryangel101_unknown_word.append(word.lower())
-        # Find common unknown words between clients
-        common_unknown_words = []
-        for word in dk2lab_unknown_word:
-            if word in maryangel101_unknown_word:
-                common_unknown_words.append(word.lower())
         # Add common unknown words into dictionary
         for word in common_unknown_words:
             self.global_vocab[word] = len(self.global_vocab)
@@ -82,7 +64,7 @@ class GlobalVocabProcessor:
     def get_global_vocab(self) -> Dict[str, int]:
         """Get the global vocabulary."""
         self.set_indices_for_global_vocab()
-        self.add_common_words_to_global_vocab()
+        # self.add_common_words_to_global_vocab()
         return self.global_vocab
 
 if __name__ == "__main__":

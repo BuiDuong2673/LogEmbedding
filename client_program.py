@@ -5,22 +5,39 @@ from helper.vocab_extractor import VocabExtractor
 from embedding_techniques.word2vec import Word2Vec
 
 
+NUM_CONTEXT_WORDS = 2
+
+
 class ClientProgram:
     """Client program to manage local vocabulary."""
-    def __init__(self, client_name: str):
-        """Initialize the ClientProgram."""
+    def __init__(self, client_name: str, num_context_words: int=NUM_CONTEXT_WORDS):
+        """Initialize the ClientProgram.
+
+        Args:
+            client_name (str): The name of the client.
+            num_context_words (int): The number of context words to consider.
+        """
         self.client_name = client_name
+        self.num_context_words = num_context_words
         # Extract the vocab.
         self.vocab_extractor = VocabExtractor(client_name=self.client_name)
-        self.word_dict, self.words_indices = self.vocab_extractor.get_vocab()
+        self.word_dict, self.words_indices = self.vocab_extractor.get_vocab(num_context_words=self.num_context_words)
+
+    def get_client_unknown_words(self):
+        """Help extending the library by providing the list of unknown words to the central server."""
+        unknown_words = []
+        for word, word_info in self.word_dict.items():
+            if word_info["index"].startswith("unk_"):
+                unknown_words.append(word)
+        return unknown_words
 
     def get_client_global_vocab(self):
         """Provide client's globally known words to the central server."""
         # Save the word_dict to a json file
-        file_path = f"dataset/{self.client_name}_word_dict.json"
-        with open(file_path, 'w', encoding='utf-8') as file:
-            json.dump(self.word_dict, file, ensure_ascii=False, indent=4)
-        print(f"Saved {self.client_name} vocab into {file_path}.")
+        # file_path = f"dataset/{self.client_name}_word_dict.json"
+        # with open(file_path, 'w', encoding='utf-8') as file:
+        #     json.dump(self.word_dict, file, ensure_ascii=False, indent=4)
+        # print(f"Saved {self.client_name} vocab into {file_path}.")
         # Visualize the data information
         print(f"Client {self.client_name}:")
         known_word_indices = []
@@ -32,7 +49,7 @@ class ClientProgram:
                 known_word_indices.append(index)
         print(f"Num known words: {len(known_word_indices)}")
         print(f"Num unknown words: {len(unknown_word_indices)}")
-        return self.words_indices
+        return self.word_dict, self.words_indices
 
     def change_to_internal_common_indices(self, indices_dict: dict) -> dict:
         """Change the initial global indices to internal indices.
@@ -56,7 +73,7 @@ class ClientProgram:
             for global_context_index in global_context_word_indices:
                 common_context_index = indices_dict.get(global_context_index)
                 new_word_dict[word]["context_words"].append(common_context_index)
-        # Save the new_word_dict to a json file
+        # # Save the new_word_dict to a json file
         with open(f"dataset/{self.client_name}_new_word_dict.json", "w", encoding="utf-8") as json_file:
             json.dump(new_word_dict, json_file, ensure_ascii=False, indent=4)
         print(f"Save the vocab to path: dataset/{self.client_name}_new_word_dict.json")
@@ -74,7 +91,7 @@ class ClientProgram:
                 training_pairs.append((center_word, context_word))
         return training_pairs
     
-    def perform_word2vec_embedding(self, W1: np.array, W2: np.array, num_neg_samples: int=5, num_epochs: int=10,
+    def perform_word2vec_embedding(self, word_dict: dict, W1: np.array, W2: np.array, num_neg_samples: int=5, num_epochs: int=10,
                                    learning_rate: float=0.01):
         """Perform one round Word2Vec embedding.
         
@@ -88,18 +105,18 @@ class ClientProgram:
         # Initialize word2vec model
         model = Word2Vec(W1, W2)
         # Adjust negative samples if vocabulary is small
-        actual_negative_samples = min(num_neg_samples, max(1, len(self.word_dict) - 2))
+        actual_negative_samples = min(num_neg_samples, max(1, len(word_dict) - 2))
         # Training loop
         for epoch in range(num_epochs):
             # Initialize number of pairs
             num_pairs = 0
             total_loss = 0
-            for center_word, info in self.word_dict.items():
+            for center_word, info in word_dict.items():
                 center_idx = info["index"]
                 context_idxs = info["context_words"]
                 num_pairs += len(context_idxs)
                 if actual_negative_samples >= 0:
-                    possible_negative_indices = [i for i in range(len(self.word_dict)) if i != center_idx and i not in context_idxs]
+                    possible_negative_indices = [i for i in range(len(word_dict)) if i != center_idx and i not in context_idxs]
                     if len(possible_negative_indices) >= actual_negative_samples:
                         negative_idx = np.random.choice(
                             possible_negative_indices, 

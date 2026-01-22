@@ -5,6 +5,10 @@ import numpy as np
 from helper.global_vocab_processor import GlobalVocabProcessor
 from client_program import ClientProgram
 
+
+NUM_CONTEXT_WORDS = 2
+
+
 class CentralServerProgram:
     """Central server program to manage global vocabulary."""
     def __init__(self):
@@ -14,6 +18,15 @@ class CentralServerProgram:
         self.vocab_global_index = self.global_vocab_processor.get_global_vocab()
         # Define client list
         self.client_list = ["maryangel101", "d2klab"]
+        # Get clients' unknown words
+        client_unknown_sets = []
+        for client in self.client_list:
+            client_program = ClientProgram(client_name=client)
+            unknown_words = client_program.get_client_unknown_words()
+            client_unknown_sets.append(set(unknown_words))
+        # Add client common unknown words to the global vocab
+        common_unknown_words = set.intersection(*client_unknown_sets)
+        self.global_vocab_processor.add_common_words_to_global_vocab(common_unknown_words)
         # Initialize full vocab
         self.full_vocab = {}
         # Initialize onehot embedding
@@ -21,14 +34,15 @@ class CentralServerProgram:
         # Initialize the dictionary to store client vocab
         self.client_vocab = {}
 
-    def get_all_client_vocabs(self):
+
+    def get_all_client_vocabs(self, num_context_words: int=NUM_CONTEXT_WORDS):
         """Get the vocabulary for each client."""
         full_vocab = {}
         reserved_index = 0
         for client in self.client_list:
             # Call the client program to get its vocab's global indices
-            client_program = ClientProgram(client_name=client)
-            word_indices = client_program.get_client_global_vocab()
+            client_program = ClientProgram(client_name=client, num_context_words=num_context_words)
+            _, word_indices = client_program.get_client_global_vocab()
             # Store client vocab in class variable
             self.client_vocab[client] = word_indices
             # Store all words with their internal common index
@@ -61,13 +75,14 @@ class CentralServerProgram:
                 new_index = self.full_vocab.get(old_index)
             indices_dict[old_index] = new_index
         # Update client word dict with new indices
-        client_program.change_to_internal_common_indices(indices_dict)
+        new_word_dict = client_program.change_to_internal_common_indices(indices_dict)
+        return new_word_dict
     
     def execute_decentralize_word2vec(self, embedding_dim: int=500, num_neg_samples: int=5, num_epochs: int=50,
-                                      learning_rate: float=0.01):
+                                      learning_rate: float=0.01, num_context_words: int=NUM_CONTEXT_WORDS):
         """Perform a decentralize word2vec embedding model training."""
         # Prepare a common vocab which contains indices for all clients' words.
-        _ = self.get_all_client_vocabs()
+        _ = self.get_all_client_vocabs(num_context_words=num_context_words)
         # Initialize W1, W2
         vocab_size = len(self.full_vocab)
         # W₁: Input embeddings (V × N) - Xavier initialization
@@ -79,10 +94,10 @@ class CentralServerProgram:
         for epoch in range(num_epochs):
             # Update clients' word dict with common vocab
             for client in self.client_list:
-                client_program = ClientProgram(client_name=client)
-                _ = self.send_common_indices_to_client(client_name=client, client_program=client_program)
+                client_program = ClientProgram(client_name=client, num_context_words=num_context_words)
+                word_dict = self.send_common_indices_to_client(client_name=client, client_program=client_program)
                 client_avg_loss, client_W1, client_W2 = client_program.perform_word2vec_embedding(
-                    W1=W1.copy(), W2=W2.copy(), num_neg_samples=num_neg_samples, num_epochs=5,
+                    word_dict=word_dict, W1=W1.copy(), W2=W2.copy(), num_neg_samples=num_neg_samples, num_epochs=5,
                     learning_rate=learning_rate)
                 client_W1_list.append(client_W1)
                 client_W2_list.append(client_W2)
@@ -91,6 +106,11 @@ class CentralServerProgram:
                 print("----------------------------------------------------------------")
             W1 = np.mean(client_W1_list, axis=0)
             W2 = np.mean(client_W2_list, axis=0)
+        # Delete new_word_dict.json file
+        for client in self.client_list:
+            file_path = f"dataset/{client}_new_word_dict.json"
+            if os.path.exists(file_path):
+                os.remove(file_path)
         return W1, W2
 
 
