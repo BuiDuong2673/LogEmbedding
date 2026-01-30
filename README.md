@@ -33,6 +33,22 @@ Link: https://github.com/dwyl/english-words
 ```
 
 ## Execution
-```python
-python central_server_program.py
+To run the training process, we have to run central server program and client programs at the same time. This can be done by:
+1. Create a new terminal for running central server program
+````cmd
+[terminal 1] python central_server_program.py
+```
+
+2. For each client, create a new terminal and run the client program
+
+Client: maryangel101
+
+````cmd
+[terminal 2] python client_program.py maryangel101
+```
+
+Client: 
+
+````cmd
+[terminal 3] python client_program.py d2klab
 ```
