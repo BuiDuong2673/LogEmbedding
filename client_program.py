@@ -9,25 +9,28 @@ from network_communication import send_message, receive_message
 
 HOST = "127.0.0.1"
 PORT = 5000
+NUM_CONTEXT_WORDS = 2
 
 
 class ClientProgram:
     """Handle client tasks."""
     
-    def __init__(self, client_name: str):
+    def __init__(self, client_name: str, num_context_words: int):
         """Initialize ClientProgram class.
         
         Args:
             client_name (str): the name of the client.
+            num_context_words (int): [EXPERIMENT] the number of words around central word that is considered similar.
         """
         self.client_name = client_name
         self.word_dict = {}
         self.word_indices = []
+        self.num_context_words = num_context_words
     
     def get_initial_vocab(self) -> tuple[dict, list]:
         """Get the initial word_dict and word_indices represented by global indices."""
         vocab_extractor = VocabExtractor(client_name=self.client_name)
-        word_dict, word_indices = vocab_extractor.get_vocab()
+        word_dict, word_indices = vocab_extractor.get_vocab(num_context_words=self.num_context_words)
         return word_dict, word_indices
 
     def change_global_indices_to_internal(self, old_word_dict: dict, indice_map: dict) -> dict:
@@ -191,5 +194,5 @@ if __name__ == "__main__":
         raise ValueError("Missing client name. Usage: python client_program.py <client_name>")
     client_name = sys.argv[1]
     # Call ClientProgram class to handle the traning process
-    client_program = ClientProgram(client_name=client_name)
+    client_program = ClientProgram(client_name=client_name, num_context_words=NUM_CONTEXT_WORDS)
     client_program.training()

@@ -147,17 +147,8 @@ class VocabExtractor:
             word_dict[word]["context_words"] = context_indices
         return word_dict
     
-    def get_vocab(self, num_context_words: int=NUM_CONTEXT_WORDS) -> tuple[dict, list]:
-        """Run the Word2Vec embedding process
-
-        Args:
-            num_context_words (int): The number of context words to consider.
-
-        Returns:
-            dict: The word dictionary with context words as indices
-            list: The list of known words' indices
-            list: The list of unknown words
-        """
+    def get_vocab(self, num_context_words: int=NUM_CONTEXT_WORDS):
+        """Run the Word2Vec embedding process."""
         data = self.load_client_dataset()
         # Create word dictionary
         word_dict = self.create_word_dict(data, num_context_words)
@@ -170,7 +161,7 @@ class VocabExtractor:
 
 if __name__ == "__main__":
     extractor = VocabExtractor(client_name="maryangel101")
-    vocab_dict, words_indices = extractor.get_vocab()
+    vocab_dict, words_indices = extractor.get_vocab(NUM_CONTEXT_WORDS)
     # Temporary store the vocab in a json file
     with open("vocab.json", "w") as f:
         json.dump(vocab_dict, f)
