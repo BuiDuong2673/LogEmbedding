@@ -18,6 +18,13 @@ Link: https://github.com/D2KLab/gha-dataset/tree/master
 "dataset/d2klab"
 ```
 
+## ByteLuo1029: LogSage
+Link: https://github.com/ByteLuo1029/dataset/tree/main/dataset
+```python
+"dataset/logsage"
+```
+
+
 ### dwyl: english-words
 Link: https://github.com/dwyl/english-words
 
