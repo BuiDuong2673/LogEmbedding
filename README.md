@@ -47,7 +47,7 @@ Client: maryangel101
 [terminal 2] python client_program.py maryangel101
 ```
 
-Client: 
+Client: d2klab
 
 ````cmd
 [terminal 3] python client_program.py d2klab
