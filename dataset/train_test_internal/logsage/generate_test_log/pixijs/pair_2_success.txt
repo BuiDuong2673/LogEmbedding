@@ -1,0 +1,121 @@
+Requested labels: ubuntu--99134.31247
+Job defined at: pixijs/pixijs/.github/workflows/pull-name.yml@refs/pull/-74111/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -5243 (hosted)
+Current runner version: '+89642.+31773.+20160'
+##[group]Operating System
+Ubuntu
+17139.+78314.4688
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--50055.54688
+Version: 95458.+56739.+4211
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/8506.-81244/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250316.12191
+##[group]Runner Image Provisioner
+168.51.38.178
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:1C1C 2899 600B 4839 B3F0
+Source commit SHA: 3C57 D182 DEA8 4FBD
+Download action repository 'clowdhaus/actions@v0.11765.51197' (SHA:2B73 28CC FCB1 5E32 D792)
+Complete job name: Check
+##[group]Run JB7Sw
+with:
+repository: pixijs/pixijs
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -90948
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: pixijs/pixijs
+##[group]Getting Git version info
+Working directory is '/home/runner/work/pixijs/pixijs'
+[command]/usr/bin/git version
+git version -43202.+57919.+48562
+Temporarily overriding 12AYe before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/pixijs/pixijs
+Deleting the contents of '/home/runner/work/pixijs/pixijs'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/pixijs/pixijs
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/pixijs/pixijs/.git/
+[command]/usr/bin/git remote add origin https://github.com/pixijs/pixijs
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local Wpt2o JaUQO
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp vDMHh
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp dKs2L && git config --local --unset-all 01wni || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+15592 fetch --no-tags --prune --no-recurse-submodules --depth=85930 origin +7057 4B9A F780 10EB 6E8E FCDB:refs/remotes/pull/-41980/merge
+From https://github.com/pixijs/pixijs
+* [new ref] 94554e3c01b 9f95cb 4c8b648 f5be0a57c381 72db004-> pull/+43759/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-7794/merge
+Note: switching to 'refs/remotes/pull/+54480/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 0046a70 Merge b43e6c5ed7 7c3fbc7 794624af78a 0a6c383c9beb into EBD6 C21D 20F5 AEDD
+[command]/usr/bin/git log 73213 --format=%H
+F083 7E4F 3CC6 BEAB
+on-fail-message: Your PR title doesn't match the required format. The title should be in this format:
+```
+chore: update Text docs
+fix: text not rendering
+feat: add new feature to Text
+breaking: remove Text#resolution
+title-regex: ^(chore|feat|fix|breaking)?(!)?\:\s.*$
+github-token: ***
+on-fail-request-changes: false
+on-fail-add-comment: true
+on-fail-fail-action: true
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

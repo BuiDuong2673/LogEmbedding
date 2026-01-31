@@ -1,6 +1,7 @@
 """Handle client tasks."""
 import sys
 import socket
+import json
 import numpy as np
 from helper.vocab_extractor import VocabExtractor
 from helper.network_communication import send_message, receive_message
@@ -10,6 +11,7 @@ from embedding_techniques.word2vec import Word2Vec
 HOST = "127.0.0.1"
 PORT = 5000
 NUM_CONTEXT_WORDS = 2
+WHICH_TRAIN_SET = "train_test_internal"
 
 
 class ClientProgram:
@@ -29,7 +31,7 @@ class ClientProgram:
     
     def get_initial_vocab(self) -> tuple[dict, list]:
         """Get the initial word_dict and word_indices represented by global indices."""
-        vocab_extractor = VocabExtractor(client_name=self.client_name)
+        vocab_extractor = VocabExtractor(client_name=self.client_name, which_train_set=WHICH_TRAIN_SET)
         word_dict, word_indices = vocab_extractor.get_vocab(num_context_words=self.num_context_words)
         return word_dict, word_indices
 
@@ -109,7 +111,7 @@ class ClientProgram:
             print(f"Epoch {epoch + 1}/{num_epochs}, Average Loss: {avg_loss:.4f}")
         return avg_loss, W1, W2
     
-    def training(self) -> None:
+    def training(self, num_neg_samples: int=5, num_epochs: int=10, learning_rate: float=0.01) -> None:
         """Run the entire training process from Client side."""
         # Get initial vocab
         initial_word_dict, initial_word_indices = self.get_initial_vocab()
@@ -137,12 +139,19 @@ class ClientProgram:
             # Save the new vocab for later use
             self.word_dict = word_dict
             self.word_indices = word_indices
+            save_path = f"dataset/{self.client_name}_word_dict.json"
+            with open(save_path, "w", encoding="utf-8") as json_file:
+                json.dump(word_dict, json_file, indent=4, ensure_ascii=False)
+            print(f"Saved final client word dict to: {save_path}.")
             # Train word2vec model
             while True:
                 _, W1, W2 = self.train_word2vec(
                     word_dict=word_dict,
                     W1=initial_W1,
-                    W2=initial_W2
+                    W2=initial_W2,
+                    num_neg_samples=num_neg_samples,
+                    num_epochs=num_epochs,
+                    learning_rate=learning_rate
                 )
 
                 # Send weight update to central server
@@ -164,28 +173,6 @@ class ClientProgram:
                     W2 = np.array(msg["W2"])
                 else:
                     raise ValueError(f"Unexpected message type: {msg.get('type')}, expected AGGREGATED_WEIGHTS")
-    
-    def internal_index_to_word(self, internal_index: int) -> str:
-        """Find the word that is represented by the internal index.
-        
-        Args:
-            internal_index (int): the internal index representation of the word.
-        """
-        target_word = ""
-        for word, word_info in self.word_dict.items():
-            if word_info.get("index") == internal_index:
-                target_word = word
-        return target_word
-
-    def word_to_internal_index(self, word: str) -> int:
-        """Find the internal index represention of a word.
-        
-        Args:
-            word (str): the word that we want to find its index.
-        """
-        # Get all the information of the word
-        word_info = self.word_dict.get(word)
-        return word_info.get("index")
 
 
 if __name__ == "__main__":
@@ -195,4 +182,6 @@ if __name__ == "__main__":
     client_name = sys.argv[1]
     # Call ClientProgram class to handle the traning process
     client_program = ClientProgram(client_name=client_name, num_context_words=NUM_CONTEXT_WORDS)
-    client_program.training()
+    client_program.training(
+        num_neg_samples=5, num_epochs=5, learning_rate=0.01
+    )

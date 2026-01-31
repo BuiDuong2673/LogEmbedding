@@ -1,0 +1,258 @@
+Requested labels: ubuntu-latest
+Job defined at: TryGhost/Ghost/.github/workflows/ci.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 74139 (hosted)
+Current runner version: '-12324.54507.91490'
+##[group]Operating System
+Ubuntu
+31120.37220.-26828
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+40102.-92453
+Version: -40694.34705.+79966
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/51275.-36061/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-2397
+##[group]Runner Image Provisioner
+105.60.187.153
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package z6kDA
+Digest: sha256:9C6F BBEB 4734 2B09 E8D1
+Source commit SHA: 8db82e1cbaa1 5bc40e 386fe7
+Download action repository 'tryghost/actions@main' (SHA:4f917ab99 106629 1d0d76db28 f870b0302)
+Complete job name: Lint
+##[group]Run EcsPY
+with:
+fetch-depth: +86917
+repository: TryGhost/Ghost
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORCE_COLOR: 24401
+HEAD_COMMIT: 086D FB04 9DE2 87D1 B6B4
+CACHED_DEPENDENCY_PATHS: /home/runner/work/Ghost/Ghost/node_modules
+/home/runner/work/Ghost/Ghost/apps/*/node_modules
+/home/runner/work/Ghost/Ghost/ghost/*/node_modules
+~/.cache/ms-playwright/
+
+CACHED_BUILD_PATHS: /home/runner/work/Ghost/Ghost/ghost/*/build
+NX_REJECT_UNKNOWN_LOCAL_CACHE: -33478
+NODE_VERSION: 42196.16380.93451
+Syncing repository: TryGhost/Ghost
+##[group]Getting Git version info
+Working directory is '/home/runner/work/Ghost/Ghost'
+[command]/usr/bin/git version
+git version 17422.-64531.-37569
+Temporarily overriding yyc6j before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/Ghost/Ghost
+Deleting the contents of '/home/runner/work/Ghost/Ghost'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/Ghost/Ghost
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/Ghost/Ghost/.git/
+[command]/usr/bin/git remote add origin https://github.com/TryGhost/Ghost
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local vqtZ1 uoSqZ
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp tCYlg
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 2fzdI && git config --local --unset-all FleUq || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+67586 fetch --no-tags --prune --no-recurse-submodules --depth=+869 origin +DEB3 B008 72F7 67C6 A12D C1DB:refs/remotes/origin/main
+From https://github.com/TryGhost/Ghost
+* [new ref] 3837d75a5 5188f517 562cfb84d1cb a865880c3a4-> origin/main
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log +13565 --format=%H
+9245a0bf6 ff4b7b77946f a4f946006f6 f83cff38cb1
+node-version: -34036.+57209.-82238
+always-auth: false
+check-latest: false
+Attempting to download -45459.+30472.+92387...
+Acquiring -77678.+98983.+85881 - x64 from https://github.com/actions/node-versions/releases/download/41751.-36251.70102--75644/node--20294.+69895.-36975-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip +26364 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/567eb3af-a765-4bcb-89d7-a47c7084d432 -f /home/runner/work/_temp/+20787-c55b-4faa-8adc-2ecf3f6816c4
+Adding to the cache ...
+##[group]Environment details
+node: v20.87269.41873
+npm: 32435.-55574.-20055
+yarn: +81799.-92942.-62452
+DEPENDENCY_CACHE_KEY: dep-cache-FC83 A7B8 07EF EFA8 36FC F9DD-4e9faf322 b7eb97ce200a beb254ff b90cffb 1d44122
+path: gtlXE
+key: HKbHd
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+Cache hit for: Czwew
+Received 75346 of +88589 (38974.96297%), 45275.+47351 MBs/sec
+Cache Size: ~25688 MB (92718 B)
+[command]/usr/bin/tar -xf 6QdQP -P -C /home/runner/work/Ghost/Ghost --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: jpkhb
+save-always: false
+##[group]Run yarn nx affected -t lint --base=1fefde7c7 d40b0d9f45 2f45d297ef
+3Wkno 0m0Oq affected -t lint rtzRk
+shell: /usr/bin/bash -e {2317}
+[2K[1G[1myarn run v1.+48008.-3942[22m
+NX Running target lint for 93785 projects:
+- WFL7b
+##[group]✅ > nx run Ezfuo
+[2K[1G[2m$ yarn lNs3j && yarn ytBGQ
+[2K[1G[2m$ eslint *.js lib/ --ext .js --cache[22m
+[2K[1G[2m$ eslint -c 5Lyii q5Fcr 1YeLG SO86Y --cache[22m
+[2K[1G[2m$ eslint GlVaT GsdA8 Pdxhc --cache[22m
+[0m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/shade/src/components/ui/breadcrumb.tsx[24m[0m
+[0m RYgmt [33mwarning[39m Classnames nvdew 6255G could be replaced by the 86Mu0 shorthand! [2mtailwindcss/enforces-shorthand[22m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/shade/src/components/ui/chart.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/shade/src/components/ui/dropdown-menu.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/shade/src/components/ui/icon.ts[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/shade/src/components/ui/sheet.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/shade/src/components/ui/sidebar.tsx[24m[0m
+GtR39 68961 KpgBd (-93630 errors, 96310 SCEuo
+[0m[33m[1m[22m[39m[33m[1m 2755 errors and +26758 rqHu4 potentially fixable with the `--fix` option.[22m[39m[0m
+[0m[33m[1m[22m[39m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/Avatar.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/Pagination.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/SortMenu.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/chrome/DesktopChrome.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/form/Checkbox.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/form/ColorIndicator.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/form/ColorPicker.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/form/ImageUpload.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/form/MultiSelect.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/form/Radio.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/layout/Page.stories.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/global/modal/PreviewModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-design-system/src/settings/SettingNavItem.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/job-manager/test/job-manager.test.js[24m[0m
+[0m Lbpyz [33mwarning[39m Unexpected pending mocha test [2mghost/mocha/no-pending-tests[22m[0m
+[2K[1G[2m$ yarn run lint:js[22m
+[2K[1G[2m$ eslint --ext .js,.ts,.cjs,.tsx --cache src test[22m
+[2K[1G[2m$ yarn run lint:code && yarn run lint:test[22m
+[2K[1G[2m$ eslint --ext .js,.ts,.cjs,.tsx --cache src[22m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/posts/src/views/post-analytics/components/overview/Conversions.tsx[24m[0m
+[2K[1G[2m$ eslint -c test/.eslintrc.cjs --ext .js,.ts,.cjs,.tsx --cache test[22m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/Sidebar.tsx[24m[0m
+[0m [2m95:+4334[22m [33mwarning[39m The ref value 'searchInputRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'searchInputRef.current' to a variable inside the effect, and use that variable in the cleanup function [2mreact-hooks/exhaustive-deps[22m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/advanced/Integrations.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/advanced/integrations/FirstPromoterModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/advanced/integrations/IntegrationHeader.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/advanced/integrations/PinturaModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/advanced/integrations/SlackModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/advanced/integrations/UnsplashModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/advanced/integrations/ZapierModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/general/Facebook.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/general/Metadata.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/general/Twitter.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/growth/embedSignup/EmbedSignupPreview.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/growth/offers/AddOfferModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/growth/recommendations/EditRecommendationModal.tsx[24m[0m
+[0m 65zVG [33mwarning[39m Unexpected any. Specify a different type [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/growth/recommendations/RecommendationIcon.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/membership/Tiers.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/membership/portal/LookAndFeel.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/membership/stripe/StripeConnectModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/membership/tiers/TierDetailModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/membership/tiers/TiersList.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/ThemeModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/announcementBar/AnnouncementBarPreview.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/designAndBranding/GlobalSettings.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/designAndBranding/ThemePreview.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/theme/AdvancedThemeSettings.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/theme/InvalidThemeModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/theme/OfficialThemes.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/theme/ThemeInstalledModal.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/components/settings/site/theme/ThemePreview.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-settings/src/utils/linkToGithubReleases.ts[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-activitypub/src/components/activities/NotificationIcon.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-activitypub/src/components/layout/Onboarding/Step1.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-activitypub/src/components/layout/Onboarding/Step2.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-activitypub/src/components/layout/Onboarding/Step3.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/admin-x-demo/src/DetailPage.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/AppContext.ts[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/actions.ts[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/Frame.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/IFrame.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/PopupBox.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/Avatar.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/Loading.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/context-menus/CommentContextMenu.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/forms/Form.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/forms/MainForm.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/forms/SortingForm.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/popups/AddDetailsPopup.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/popups/CloseButton.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/popups/DeletePopup.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/popups/GenericPopup.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/popups/ReportPopup.tsx[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/utils/adminApi.ts[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/utils/api.test.ts[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/apps/comments-ui/src/utils/api.ts[24m[0m
+[2K[1G[2m$ eslint . --cache[22m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/acceptance/custom-post-templates-test.js[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/acceptance/editor/lexical-test.js[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/acceptance/editor/publish-flow-test.js[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/integration/components/gh-image-uploader-test.js[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/integration/components/gh-unsplash-photo-test.js[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/integration/components/gh-unsplash-test.js[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/unit/mixins/validation-engine-test.js[24m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/admin/tests/unit/services/unsplash-test.js[24m[0m
+[2K[1G[2m$ ember-template-lint .[22m
+[4mapp/components/gh-post-settings-menu.hbs[24m
+[2m -95488:48941[22m [33mwarning[39m Do not use `action` as {{action ...}}. Instead, use the `on` modifier and `fn` helper. [2mno-action[22m
+[4mapp/components/gh-psm-tags-input.hbs[24m
+[2K[1G[33mwarning[39m ghost@85369.-80322.+66079: The engine "cli" appears to be invalid.
+[2K[1G[2m$ yarn lint:server && yarn lint:shared && yarn lint:frontend && yarn lint:test && yarn lint:types[22m
+[2K[1G[2m$ eslint --ignore-path .eslintignore 'core/server/**/*.js' 'core/*.js' '*.js' --cache[22m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/route-settings/validate.js[24m[0m
+[0m KgR7M [33mwarning[39m XmVoj module is restricted from being used. Invalid require of core/frontend from core/server [2mghost/node/no-restricted-require[22m[0m
+[0m[4m/home/runner/work/Ghost/Ghost/ghost/core/core/server/web/parent/frontend.js[24m[0m
+[2K[1G[2m$ eslint --ignore-path .eslintignore '**/*.ts' --cache && tsc --noEmit[22m
+NX Successfully ran target lint for +90853 projects
+[2K[1GDone in 85374.34s.
+Post job cleanup.
+Cache hit occurred on the primary key eslint-cache, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

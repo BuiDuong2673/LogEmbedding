@@ -1,0 +1,40 @@
+2023-09-21T13:05:35.6122950Z ##[group]Run python -m pip install --upgrade cibuildwheel
+2023-09-21T13:05:35.6123380Z [36;1mpython -m pip install --upgrade cibuildwheel[0m
+2023-09-21T13:05:35.6690640Z shell: /bin/bash -e {0}
+2023-09-21T13:05:35.6690880Z env:
+2023-09-21T13:05:35.6691080Z   HDF5_VERSION: 1.14.1-2
+2023-09-21T13:05:35.6691320Z   MACOSX_DEPLOYMENT_TARGET: 10.9
+2023-09-21T13:05:35.6691570Z   CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-* 
+2023-09-21T13:05:35.6691810Z   CIBW_BUILD: cp*
+2023-09-21T13:05:35.6692080Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:05:35.6692430Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig
+2023-09-21T13:05:35.6692770Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:05:35.6693090Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:05:35.6693440Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:05:35.6693690Z ##[endgroup]
+2023-09-21T13:05:41.4406830Z Collecting cibuildwheel
+2023-09-21T13:05:41.4410040Z   Obtaining dependency information for cibuildwheel from https://files.pythonhosted.org/packages/a6/d3/6882ec437b47e7e5aca04ad1c604e06ee1c0a1c5ab0c4bebc25cfd93a4fa/cibuildwheel-2.16.0-py3-none-any.whl.metadata
+2023-09-21T13:05:41.4987800Z   Downloading cibuildwheel-2.16.0-py3-none-any.whl.metadata (22 kB)
+2023-09-21T13:05:41.5772930Z Collecting bashlex!=0.13 (from cibuildwheel)
+2023-09-21T13:05:41.5835740Z   Downloading bashlex-0.18-py2.py3-none-any.whl (69 kB)
+2023-09-21T13:05:41.5990290Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.5/69.5 kB 5.7 MB/s eta 0:00:00
+2023-09-21T13:05:41.6367040Z Collecting bracex (from cibuildwheel)
+2023-09-21T13:05:41.6370290Z   Obtaining dependency information for bracex from https://files.pythonhosted.org/packages/2b/f5/8f99837b32e2badc189382774dbe6227fa01e1e928a7eff857fdc89d8a75/bracex-2.4-py3-none-any.whl.metadata
+2023-09-21T13:05:41.6437590Z   Downloading bracex-2.4-py3-none-any.whl.metadata (3.6 kB)
+2023-09-21T13:05:41.6536700Z Requirement already satisfied: certifi in /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages (from cibuildwheel) (2023.7.22)
+2023-09-21T13:05:41.7008560Z Collecting filelock (from cibuildwheel)
+2023-09-21T13:05:41.7015640Z   Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/5e/5d/97afbafd9d584ff1b45fcb354a479a3609bd97f912f8f1f6c563cb1fae21/filelock-3.12.4-py3-none-any.whl.metadata
+2023-09-21T13:05:41.7107280Z   Downloading filelock-3.12.4-py3-none-any.whl.metadata (2.8 kB)
+2023-09-21T13:05:41.7725390Z Collecting packaging>=20.9 (from cibuildwheel)
+2023-09-21T13:05:41.7796720Z   Downloading packaging-23.1-py3-none-any.whl (48 kB)
+2023-09-21T13:05:41.7888920Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 6.6 MB/s eta 0:00:00
+2023-09-21T13:05:41.8321640Z Collecting platformdirs (from cibuildwheel)
+2023-09-21T13:05:41.8325090Z   Obtaining dependency information for platformdirs from https://files.pythonhosted.org/packages/14/51/fe5a0d6ea589f0d4a1b97824fb518962ad48b27cd346dcdfa2405187997a/platformdirs-3.10.0-py3-none-any.whl.metadata
+2023-09-21T13:05:41.8379320Z   Downloading platformdirs-3.10.0-py3-none-any.whl.metadata (11 kB)
+2023-09-21T13:05:41.8917660Z Downloading cibuildwheel-2.16.0-py3-none-any.whl (71 kB)
+2023-09-21T13:05:41.9011550Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.1/71.1 kB 10.1 MB/s eta 0:00:00
+2023-09-21T13:05:41.9072870Z Downloading bracex-2.4-py3-none-any.whl (11 kB)
+2023-09-21T13:05:41.9185720Z Downloading filelock-3.12.4-py3-none-any.whl (11 kB)
+2023-09-21T13:05:41.9290410Z Downloading platformdirs-3.10.0-py3-none-any.whl (17 kB)
+2023-09-21T13:05:42.0687800Z Installing collected packages: platformdirs, packaging, filelock, bracex, bashlex, cibuildwheel
+2023-09-21T13:05:42.3763800Z Successfully installed bashlex-0.18 bracex-2.4 cibuildwheel-2.16.0 filelock-3.12.4 packaging-23.1 platformdirs-3.10.0

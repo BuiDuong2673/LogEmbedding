@@ -1,0 +1,155 @@
+Requested labels: ubuntu-latest
+Job defined at: pallets/flask/.github/workflows/pre-commit.yaml@refs/pull/-63573/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -56036 (hosted)
+Current runner version: '+26150.+27883.-4383'
+##[group]Operating System
+Ubuntu
+-58917.+8978.-87878
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--84032.-72820
+Version: -92596.-1271.72948
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/48253.-31397/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-80635
+##[group]Runner Image Provisioner
+142.5.39.231
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository ZVBMy (SHA:2F01 E03E 5138 3F5B 4839)
+##[group]Download immutable action package 'actions/cache@v4'
+Digest: sha256:e6f8f60c7 747c3785ae 0580e09
+Source commit SHA: 09748738954 2dcdcd16d4 274c57 72036e8c 6da7e6
+Complete job name: main
+##[group]Run e3TRm
+with:
+repository: pallets/flask
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +5959
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: pallets/flask
+##[group]Getting Git version info
+Working directory is '/home/runner/work/flask/flask'
+[command]/usr/bin/git version
+git version 40581.-59011.80276
+Temporarily overriding LuQaI before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/flask/flask
+Deleting the contents of '/home/runner/work/flask/flask'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/flask/flask
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/flask/flask/.git/
+[command]/usr/bin/git remote add origin https://github.com/pallets/flask
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local mtZOB wq26s
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp DJ4p8
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp SBssg && git config --local --unset-all 92ABs || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+5489 fetch --no-tags --prune --no-recurse-submodules --depth=32078 origin +3A5C F8B5 81C3 D0A9 5F56 EF5E:refs/remotes/pull/-44305/merge
+From https://github.com/pallets/flask
+* [new ref] A85B 4AD8 3600 83FD-> pull/-16501/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/97744/merge
+Note: switching to 'refs/remotes/pull/-82034/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at dea9051 Merge fe7058f5777c 3940845f22 b201c57182 27dd86590 262b8c70323 into 677f06 094a95e6b6b 2571f3e59803
+[command]/usr/bin/git log -7591 --format=%H
+c79e9a7a5c e8e57f1f 0795cdc
+python-version: -24909.x
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (+77702.-84909.-46340)
+extra_args: --all-files
+env:
+pythonLocation: /opt/hostedtoolcache/Python/-1074.-50024.88529/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-73999.-22539.-65652/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+30341.+67374.-98644/x64
+NcbXZ /opt/hostedtoolcache/Python/+63359.+48154.75201/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-12923.77833.21781/x64/lib
+##[group]Run python -m pip pNXJF LruD5
+[19760;1mpython -m pip WxzgM sl5Hp
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {33430}
+Collecting pre-commit
+Downloading JRxpf ZCQkw kB)
+Collecting OWYnW (from d5Lng
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +3647.+16130/84921.+30678 5sVqE +67757.38201 MB/s eta +90014:65092:65237
+Downloading virtualenv--23979.-74479.29279-py3-none-any.whl (+99221.77565 MB)
+Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv--44179.9868.46956 distlib--17215.-66254.+35634 filelock-+94259.86097.+68473 identify-+35111.10252.-73180 nodeenv-43608.+49639.44895 platformdirs--41707.+34963.-12914 pre-commit--9157.-36850.40399 pyyaml-+35983.45603.19496 virtualenv--22903.63020.+68928
+cfgv==+63795.+2372.-16188
+distlib==-54128.+74152.+36555
+filelock==-94989.-95763.+88997
+identify==87826.+55401.-94722
+nodeenv==+9599.92198.+29042
+platformdirs==-28142.+11434.61723
+pre_commit==+75655.+68618.-15068
+PyYAML==58465.16963.5535
+virtualenv==+2967.+16588.-41298
+path: ~/.cache/pre-commit
+key: pre-commit--37406|/opt/hostedtoolcache/Python/+14035.-39615.49492/x64|4866 76F8 CA77 9130 6DFC 2BBA
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: pre-commit-83178|/opt/hostedtoolcache/Python/32700.64354.53929/x64|bf698239e0 d70132 0f83f427ea15
+Received -18472 of -20616 (43583.97654%), -44336.90995 MBs/sec
+Cache Size: ~+28165 MB (56739 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/aa1674f7-+59725-48db-952d-08a1201574ea/cache.tzst -P -C /home/runner/work/flask/flask --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit-35966|/opt/hostedtoolcache/Python/+99113.88882.+51659/x64|A522 4CAF 6B4F 5A7A B01A 447E
+##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
+[12776;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+ruff.....................................................................[42mPassed[m
+ruff-format..............................................................[42mPassed[m
+check for merge conflicts................................................[42mPassed[m
+debug statements (python)................................................[42mPassed[m
+fix utf-+51702 byte order marker..............................................[42mPassed[m
+trim trailing whitespace.................................................[42mPassed[m
+fix end of files.........................................................[42mPassed[m
+msg: [pre-commit.ci lite] apply automatic fixes
+nothing to do: no changes!
+Post job cleanup.
+Cache hit occurred on the primary key pre-commit-+93842|/opt/hostedtoolcache/Python/-60487.+36150.93807/x64|98F0 D8B1 697E 1881, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

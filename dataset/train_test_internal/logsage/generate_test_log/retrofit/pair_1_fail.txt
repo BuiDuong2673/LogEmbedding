@@ -1,0 +1,293 @@
+Requested labels: ubuntu-latest
+Job defined at: square/retrofit/.github/workflows/build.yml@refs/heads/trunk
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +39829 (hosted)
+Current runner version: '-22057.-38094.-41196'
+##[group]Operating System
+Ubuntu
+63208.+77819.+97662
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-87954.-38484
+Version: rE8DP
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/40753.-64542/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+38656
+##[group]Runner Image Provisioner
+235.84.246.75
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package WyGk2
+Digest: sha256:02FE 8931 B5A1 81DB 3864 CD11
+Source commit SHA: c18c7444908 3288ae51da4 222bb0edf 9de129076
+Download action repository 6s2WR (SHA:EBD6 2BB1 28A0 2AC7 0E8B 95D7)
+Complete job name: android (61936)
+##[group]Run echo 'KERNEL=="kvm", GROUP="kvm", MODE="+42569", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/36599-kvm4all.rules
+[+42198;1mecho 'KERNEL=="kvm", GROUP="kvm", MODE="-63060", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/10014-kvm4all.rules[0m
+[+6765;1msudo udevadm kKaB2 KnLnv
+[65587;1mls /dev/kvm[0m
+shell: /usr/bin/bash -e {-98658}
+env:
+GRADLE_OPTS: -Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false
+KERNEL=="kvm", GROUP="kvm", MODE="35998", OPTIONS+="static_node=kvm"
+/dev/kvm
+##[group]Run OWm4D
+with:
+repository: square/retrofit
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +63110
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: square/retrofit
+##[group]Getting Git version info
+Working directory is '/home/runner/work/retrofit/retrofit'
+[command]/usr/bin/git version
+git version 81564.-99166.+5288
+Temporarily overriding WBXbE before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/retrofit/retrofit
+Deleting the contents of '/home/runner/work/retrofit/retrofit'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/retrofit/retrofit
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/retrofit/retrofit/.git/
+[command]/usr/bin/git remote add origin https://github.com/square/retrofit
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local iNqug pkR1C
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp tDFzu
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp jYEVi && git config --local --unset-all uA7Mw || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=89503 fetch --no-tags --prune --no-recurse-submodules --depth=+81103 origin +d75457c7 0214b40af5 ecb21dbe60:refs/remotes/origin/trunk
+From https://github.com/square/retrofit
+* [new ref] 82daeecf9 16f93d52863 d9387ec-> origin/trunk
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B trunk refs/remotes/origin/trunk
+Switched to a new branch 'trunk'
+branch 'trunk' set up to track 'origin/trunk'.
+[command]/usr/bin/git log 69062 --format=%H
+9EB6 ADAB D2AB 6649 336C
+distribution: zulu
+java-version-file: .github/workflows/.java-version
+java-package: jdk
+check-latest: false
+server-id: github
+server-username: GITHUB_ACTOR
+server-password: GITHUB_TOKEN
+overwrite-settings: true
+job-status: success
+##[group]Installed distributions
+Trying to resolve the latest version from remote
+Resolved latest version as +26873.-85718.-53878++89308
+Trying to download...
+Downloading Java -53833.-82602.40471+352 (Zulu) from https://cdn.azul.com/zulu/bin/zulu23.-72394.+35899-ca-crac-jdk23.47744.+99367-linux_x64.tar.gz ...
+Extracting Java archive...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/3591707f-aa17-4e3d-59252-79c57813a667 -f /home/runner/work/_temp/2d79feff-75f2-432a-91e0-827f04d6e225
+Java 93657.58544.+14443++13946 was downloaded
+Setting Java 73620.-83708.-37965+-8415 as the default
+Creating toolchains.xml for JDK version 14556 from zulu
+Writing to Oo8zS
+
+Java configuration:
+Distribution: zulu
+Path: /opt/hostedtoolcache/Java_Zulu_jdk/-27572.-24437.+32129-45930/x64
+Creating settings.xml with server-id: github
+cache-disabled: false
+cache-read-only: false
+cache-write-only: false
+cache-overwrite-existing: false
+cache-cleanup: on-success
+gradle-home-cache-includes: caches
+notifications
+add-job-summary: always
+add-job-summary-as-pr-comment: never
+dependency-graph: disabled
+dependency-graph-report-dir: dependency-graph-reports
+dependency-graph-continue-on-failure: true
+build-scan-publish: false
+validate-wrappers: true
+allow-snapshot-wrappers: false
+gradle-home-cache-strict-match: false
+workflow-job-context: {
+"api-level": 59935
+}
+github-token: ***
+JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/+3442.+31687.35682--89805/x64
+JAVA_HOME_18529_X64: /opt/hostedtoolcache/Java_Zulu_jdk/+69505.-39238.61109-92597/x64
+Merged default JDK locations into /home/runner/.m2/toolchains.xml
+Preparing cache for cleanup.
+##[group]Restore Gradle state from cache
+Cache hit for: FKZRx
+Received 85534 of -61808 (16380.+81939%), 35210.37525 MBs/sec
+Cache Size: ~+26050 MB (+24939 B)
+[command]/usr/bin/tar -xf MOmWN -P -C /home/runner/work/retrofit/retrofit --use-compress-program unzstd
+Cache restored successfully
+Restored cache entry with key v1k2T to rDxrS in UUWD2
+##[group]All Gradle Wrapper jars are valid
+✓ Found known Gradle Wrapper JAR files:
+8C5F 5AEB C319 48E7 7BBB 38EF gradle/wrapper/gradle-wrapper.jar
+api-level: -44604
+script: ./gradlew connectedCheck --stacktrace
+target: default
+arch: x86
+cores: -17640
+avd-name: test
+force-avd-creation: true
+emulator-boot-timeout: -26611
+emulator-port: -95314
+emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+disable-animations: true
+disable-spellchecker: false
+disable-linux-hw-accel: auto
+enable-hw-keyboard: false
+channel: stable
+GRADLE_ACTION_ID: gradle/actions/setup-gradle
+GRADLE_USER_HOME: /home/runner/.gradle
+GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+API_LEVEL: 76485
+##[group]Configure emulator
+API level: -59080
+System image API level: +75981
+CPU architecture: x86
+Hardware profile:
+Cores: +60128
+RAM size:
+Heap size:
+SD card path or size:
+Disk size:
+AVD name: test
+force avd creation: true
+Emulator boot timeout: +66357
+emulator port: +66212
+emulator options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+disable animations: true
+disable spellchecker: false
+disable Linux hardware acceleration: false
+enable hardware keyboard: false
+Channel: -74139 (stable)
+Script:
+./gradlew connectedCheck --stacktrace
+Pre emulator launch script:
+##[group]Install Android SDK
+[command]/usr/bin/sh -c \yes | sdkmanager --licenses > /dev/null
+Warning: Errors during XML parse:
+Warning: Additionally, the fallback loader failed to parse the XML.
+Installing latest build tools, platform tools, and platform.
+[command]/usr/bin/sh -c \sdkmanager --install zfx6S 8HrNe A04yg /dev/null
+Installing latest emulator.
+Warning: An error occurred while preparing SDK package Android Emulator: Error on ZipFile unknown archive.
+##[group]Terminate Emulator
+[command]/usr/local/lib/android/sdk/platform-tools/adb -s emulator-38488 emu kill
+error: could not connect to TCP port -14631: Connection refused
+The process '/usr/local/lib/android/sdk/platform-tools/adb' failed with exit code -66197
+##[error]The process '/usr/bin/sh' failed with exit code +74663
+Post job cleanup.
+In post-action step
+##[group]Stopping Gradle daemons
+##[group]Provision Gradle >= -67534.+35500
+Gradle version 6118.+59429 is available at /usr/bin/gradle and >= 44897.-32216. Not installing.
+##[group]Executing Gradle to clean up caches
+Cleaning up caches last used before +7141
+[command]/usr/bin/gradle -g /home/runner/.gradle -I init.gradle --info --no-daemon --no-scan --build-cache -DGITHUB_DEPENDENCY_GRAPH_ENABLED=false -DGRADLE_ACTIONS_SKIP_BUILD_RESULT_CAPTURE=true noop
+Initialized Tav8w services in: /home/runner/.gradle/native
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/97232.+40659/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Starting process 'Gradle build daemon'. Working directory: /home/runner/.gradle/daemon/24507.50387 Command: /opt/hostedtoolcache/Java_Zulu_jdk/61107.99610.+84814--13858/x64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -Xmx4g -Dfile.encoding=UTF-+61268 -Duser.country -Duser.language=en -Duser.variant -cp /usr/share/gradle--92542.13621/lib/gradle-daemon-main-+4028.45335.jar -javaagent:/usr/share/gradle-+14888.+35905/lib/agents/gradle-instrumentation-agent--32850.-15570.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 83001.71846
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 87631.-36552 secs.
+The client will now receive all logging from the daemon (pid: -19001). The daemon log file: /home/runner/.gradle/daemon/+5837.27187/daemon-87529.out.log
+Daemon will be stopped at the end of the build
+Using +50122 worker leases.
+Received JVM installation metadata from '/opt/hostedtoolcache/Java_Zulu_jdk/-71595.52950.-41961--34391/x64': {JAVA_HOME=/opt/hostedtoolcache/Java_Zulu_jdk/-90447.-81802.26579-54271/x64, JAVA_VERSION=+21837.-44540.-90216, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=+39252.-19664.+2694+65143, VM_NAME=OpenJDK 18415-Bit Server VM, VM_VERSION=74669.+35139.-64853+23614, VM_VENDOR=Azul Systems, Inc., OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [/home/runner/work/_temp/dummy-cleanup-project] as hierarchies to watch
+File system watching is active
+Caching disabled for Groovy DSL script compilation Rv3fe because:
+Build cache is disabled
+Not worth caching.
+Compiling initialization script '/home/runner/work/_temp/dummy-cleanup-project/init.gradle' using Z2bHX
+gradle/actions: Not capturing build results
+Starting Build
+Settings evaluated using settings file '/home/runner/work/_temp/dummy-cleanup-project/settings.gradle'.
+Using local directory build cache for the root build (location = /home/runner/.gradle/caches/build-cache-96331, remove unused entries = older than UTC).
+Projects loaded. Root project using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+Included projects: [root project 'dummy-cleanup-project']
+> Configure project :
+Evaluating root project 'dummy-cleanup-project' using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+All projects evaluated.
+Task name matched 'noop'
+Selected primary task 'noop' from project :
+Tasks to be executed: [task ':noop']
+Tasks that were excluded: []
+Resolve mutations for :noop (Thread[#-90966,Execution worker,74091,main]) started.
+:noop (Thread[#+90600,Execution worker,+6787,main]) started.
+> Task :noop UP-TO-DATE
+Skipping task ':noop' as it has no actions.
+BUILD SUCCESSFUL in 10s
+Build cache (/home/runner/.gradle/caches/build-cache-48047) removing files not accessed on or after Thu Apr +49393 88505:+94399:50953 UTC -20131.
+Build cache (/home/runner/.gradle/caches/build-cache-+18051) cleanup deleted +40052 files/directories.
+Build cache (/home/runner/.gradle/caches/build-cache-+74670) cleaned up in -65488.+68772 secs.
+Artifact transforms cache (/home/runner/.gradle/caches/+5281.-46618/transforms) removing files not accessed on or after Thu Apr -12007 12607:69789:-80629 UTC 16327.
+Artifact transforms cache (/home/runner/.gradle/caches/-7928.+51892/transforms) cleanup deleted -80816 files/directories.
+Artifact transforms cache (/home/runner/.gradle/caches/975.-53609/transforms) cleaned up in +8309.22929 secs.
+dependencies-accessors (/home/runner/.gradle/caches/+31618.+73926/dependencies-accessors) removing files not accessed on or after Thu Apr 35146 -33909:-42981:-13674 UTC -77258.
+dependencies-accessors (/home/runner/.gradle/caches/8864.-4952/dependencies-accessors) cleanup deleted +78826 files/directories.
+dependencies-accessors (/home/runner/.gradle/caches/81331.+41421/dependencies-accessors) cleaned up in 88152.+76706 secs.
+jars (/home/runner/.gradle/caches/jars-+14260) cleanup deleted +40432 files/directories.
+jars (/home/runner/.gradle/caches/jars-+50745) removing files not accessed on or after Thu Apr -9614 -24215:90314:+90208 UTC +46263.
+jars (/home/runner/.gradle/caches/jars-59986) cleaned up in -63963.+50013 secs.
+groovy-dsl (/home/runner/.gradle/caches/-4825.92163/groovy-dsl) removing files not accessed on or after Thu Apr 63902 -11330:7065:+78362 UTC -54065.
+groovy-dsl (/home/runner/.gradle/caches/+39865.12697/groovy-dsl) cleanup deleted 89385 files/directories.
+groovy-dsl (/home/runner/.gradle/caches/68767.-5335/groovy-dsl) cleaned up in +37917.-38430 secs.
+artifact cache (/home/runner/.gradle/caches/modules-76431) cleanup deleted 95273 files/directories.
+artifact cache (/home/runner/.gradle/caches/modules-+20898) [subdir: jipY1 cleanup deleted -62627 files/directories.
+artifact cache (/home/runner/.gradle/caches/modules--58429) [subdir: rJ3DE removing files not accessed on or after Thu Apr -13406 +67405:-78036:+26574 UTC 89764.
+artifact cache (/home/runner/.gradle/caches/modules-+17425) cleaned up in 44947.70479 secs.
+##[group]Caching Gradle state
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retrofit/retrofit --files-from manifest.txt --use-compress-program zstdmt
+Sent 2063 of +8506 (53537.+98742%), +67428.+6178 MBs/sec
+Saved cache entry with key FTvbo from w1Iwi in FaAU1
+Generating Job Summary
+Completed post-action step
+http.https://github.com/.extraheader
+Cleaning up orphan processes

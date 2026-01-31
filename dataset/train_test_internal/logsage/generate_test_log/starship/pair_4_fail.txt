@@ -1,0 +1,138 @@
+Requested labels: ubuntu-latest
+Job defined at: starship/starship/.github/workflows/format-workflow.yml@refs/heads/i18n_master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -9656 (hosted)
+Current runner version: '-93906.-67643.+9839'
+##[group]Operating System
+Ubuntu
+-98769.+51914.40636
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+53089.99553
+Version: +41872.33595.6518
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/84037.2410/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.41864
+##[group]Runner Image Provisioner
+63.97.109.79
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package eMz9f
+Digest: sha256:5807dd3b 6d70b8 0bdff8
+Source commit SHA: 5935ac0859b 23a186b5 b9aa43 295abd36a6c
+Complete job name: Vitepress [Build]
+##[group]Run Gu2E3
+with:
+repository: starship/starship
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 464
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: starship/starship
+##[group]Getting Git version info
+Working directory is '/home/runner/work/starship/starship'
+[command]/usr/bin/git version
+git version 34515.-85729.+30668
+Temporarily overriding cYTdX before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/starship/starship
+Deleting the contents of '/home/runner/work/starship/starship'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/starship/starship
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/starship/starship/.git/
+[command]/usr/bin/git remote add origin https://github.com/starship/starship
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 7ggYA mGzG4
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp OA5oS
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp VFsO1 && git config --local --unset-all 3fXNq || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=81811 fetch --no-tags --prune --no-recurse-submodules --depth=31458 origin +c24fc96cacd 0bd6e7c3b8ba e66a791e917:refs/remotes/origin/i18n_master
+From https://github.com/starship/starship
+* [new ref] 666ed6c64d 70ed99d90f 11ecdf 1eda939c95-> origin/i18n_master
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B i18n_master refs/remotes/origin/i18n_master
+Switched to a new branch 'i18n_master'
+branch 'i18n_master' set up to track 'origin/i18n_master'.
+[command]/usr/bin/git log +6430 --format=%H
+E300 D23D F492 E1D3
+node-version: -30081
+cache: npm
+cache-dependency-path: docs/package-lock.json
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/-78858.59724.-72154/x64
+##[group]Environment details
+node: v20.+55451.63936
+npm: 15511.21521.12612
+yarn: +4208.-55316.+86171
+[command]/opt/hostedtoolcache/node/86356.+14225.28758/x64/bin/npm config get cache
+/home/runner/.npm
+npm cache is not found
+##[group]Run npm install
+[+85416;1mnpm install[0m
+shell: /usr/bin/bash -e {47280}
+
+added 50912 packages, and audited 53916 packages in 3s
++93282 packages are looking for funding
+run `npm fund` for details
++65400 moderate severity vulnerabilities
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+##[group]Run npm run build
+[-87975;1mnpm run build[0m
+> build
+> vitepress build
+[32m[1mvitepress[22m v1.1395.-65625[39m
+- building client + server bundles...
+[31mx[39m Build failed in 971ms
+[31m✖[0m building client + server bundles...
+[31mbuild error:[39m
+[31m[vitepress] ENOENT: no such file or directory, stat '/home/runner/work/starship/starship/docs/public/presets/toml/catppuccin-powerline.toml'[39m
+file: [36m/home/runner/work/starship/starship/docs/ar-SA/presets/catppuccin-powerline.md[39m
+at Object.statSync ugioz
+at FvE81 (file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:54404:-33036)
+at file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:-26651:-73854
+##[error]Process completed with exit code +36200.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

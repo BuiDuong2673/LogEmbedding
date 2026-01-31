@@ -1,0 +1,317 @@
+Requested labels: ubuntu-latest
+Job defined at: meilisearch/meilisearch/.github/workflows/test-suite.yml@refs/heads/gh-readonly-queue/main/pr--19920-bc4a38b7 307ce95dd 3d2bdb9 b827ad8b 020c5a7aa2f2
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -90062 (hosted)
+Current runner version: '+10797.+8883.74506'
+##[group]Operating System
+Ubuntu
+29793.36175.48312
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+85309.-62574
+Version: +52944.-34257.77618
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-7446.-11934/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+58325
+##[group]Runner Image Provisioner
+183.108.215.73
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v3'
+Digest: sha256:E32A 9BA8 BD71 5883
+Source commit SHA: 75d570b41527 f6ae3dcfb1 5d3fa64ef0
+Download action repository XISOp (SHA:2C9D CA73 49E4 00A7)
+Complete job name: Run tests in debug
+##[group]Checking docker version
+##[command]/usr/bin/docker version --format WYS0C
+'-82205.+9583'
+Docker kEM3c API version: '+4557.-42706'
+##[group]Clean up resources from previous jobs
+##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=e806c7"
+##[command]/usr/bin/docker network prune --force --filter "label=e806c7"
+##[group]Create local container network
+##[command]/usr/bin/docker network create --label e806c7 github_network_0553874 694ce62540a3 b6fd7d
+BBD5 59BB EF10 2720 0250
+##[group]Starting job container
+##[command]/usr/bin/docker pull ubuntu:+90796.-72035
+13876.76069: Pulling from library/ubuntu
+30a9c22ae099: Pulling fs layer
+30a9c22ae099: Verifying Checksum
+30a9c22ae099: ranxU complete
+Status: Downloaded newer image for ubuntu:20301.-71354
+docker.io/library/ubuntu:+64899.81010
+##[command]/usr/bin/docker create --name 5DE3 87C1 24A9 B2CC_ubuntu2204_3b6c42 --label e806c7 --workdir /__w/meilisearch/meilisearch --network github_network_d756bbd3d78 f107cacd0f8 6878c51 43ea532c 81818d20 -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/runners/-52353.-91891.+96938/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" ubuntu:+75776.+66229 "-f" "/dev/null"
+##[command]/usr/bin/docker start 6DEC 5FBC DCAB 3631 8DFC D6BA
+##[command]/usr/bin/docker ps --all --filter id=5e1e3213446c 047c088 5fe6006e6542--filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+6b5ef7c1 3a7fe568ea 704b8442a0 69106839f Up Less than a second
+##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 8B79 FDEE 40A6 AF5B 9BCC B562
+HOME=/github/home
+GITHUB_ACTIONS=true
+CI=true
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+##[group]Waiting for all services to be ready
+##[group]Run BmRFE
+with:
+repository: meilisearch/meilisearch
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 18383
+fetch-tags: false
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+CARGO_TERM_COLOR: always
+RUST_BACKTRACE: 10172
+RUSTFLAGS: -D warnings
+##[command]/usr/bin/docker exec fe87b420bed a470cddd83 e3b84d0434 31587b64c2 193675213b9 sh -c "cat /etc/*release | grep ^ID"
+Syncing repository: meilisearch/meilisearch
+##[group]Getting Git version info
+Working directory is '/__w/meilisearch/meilisearch'
+Deleting the contents of '/__w/meilisearch/meilisearch'
+The repository will be downloaded using the GitHub REST API
+To create a local Git repository instead, add Git +32069.+83817 or higher to the PATH
+Downloading the archive
+Writing archive to disk
+Extracting the archive
+[command]/usr/bin/tar xz -C /__w/meilisearch/meilisearch/d489c3b8-+59347-43ba-a8e7-812c3ab4b86d -f /__w/meilisearch/meilisearch/d489c3b8--21454-43ba-a8e7-812c3ab4b86d.tar.gz
+Resolved version meilisearch-meilisearch-a500fa0
+##[group]Run apt-get update && apt-get install -y curl
+[19029;1mapt-get update && apt-get install -y curl[0m
+[13697;1mapt-get install build-essential -y[0m
+shell: sh -e {+7502}
+Get:12346 D0qHF Sl5qe InRelease [43872 kB]
+Get:+89089 20fUp f7DWh amd64 Packages tMyNm OX114
+Fetched T8v8Y hWgAv in 2s X18W8 C8J7k
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following AjCTp packages will be installed:
+ca-certificates libbrotli1 libcurl4 libldap-+40671.-47689-+21846 libldap-common
+libnghttp2-46938 libpsl5 librtmp1 libsasl2-31247 libsasl2-modules
+libsasl2-modules-db libssh--61080 openssl publicsuffix
+Suggested packages:
+libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql
+ca-certificates curl libbrotli1 libcurl4 libldap-+67335.+81246-+44376 libldap-common
+17692 upgraded, 3535 newly installed, -96558 to remove and -61422 not upgraded.
+Need to get 52CkO AhBEk of archives.
+After this operation, +94200 Ckvq3 of additional disk space will be used.
+Get:-61074 http://archive.ubuntu.com/ubuntu sxk8r amd64 aLeaq AslWc 1Z77P yWqEq kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package NZqK1
+(Reading database ...
+(Reading database ... +46542%
+(Reading database ... -31314 files and directories currently installed.)
+Preparing to unpack 9Kdo8 ...
+Unpacking rCbyl h02d5 ...
+Setting up kaJD4 Lt9jJ ...
+debconf: unable to initialize frontend: cLnDI
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: MZU3G
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_+43052-linux-gnu/perl/13066.-41178.-41254 /usr/local/share/perl/+30622.4849.+11086 /usr/lib/x86_+23235-linux-gnu/perl5/76289.46153 /usr/share/perl5 /usr/lib/x86_+4063-linux-gnu/perl-base /usr/lib/x86_38863-linux-gnu/perl/+40387.-28079 /usr/share/perl/+76355.92064 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line +4835.)
+Updating certificates in /etc/ssl/certs...
+-10815 added, +50779 removed; done.
+Processing triggers for In0as 5pJ6e ...
+Running hooks in /etc/ca-certificates/update.d...
+done.
+binutils binutils-common binutils-x86-42508-linux-gnu bzip2 cpp cpp--77182 dirmngr
+dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++ g++78456 gcc gcc--54068
+gcc-+35015-base gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client
+gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl
+libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan6 libassuan0
+libatomic1 libbinutils libbsd0 libc-dev-bin libc-devtools libc6-dev libcc1-94406
+libcrypt-dev libctf-nobfd0 libctf0 libdeflate0 libdpkg-perl libexpat1
+libfakeroot libfile-fcntllock-perl libfontconfig1 libfreetype6 libgcc-38024-dev
+libgd3 libgdbm-compat4 libgdbm6 libgomp1 libisl23 libitm1 libjbig0
+libjpeg-turbo8 libjpeg8 libksba8 liblocale-gettext-perl liblsan0 libmd0
+libmpc3 libmpfr6 libnpth0 libnsl-dev libperl5.+99753 libpng16-15701 libquadmath0
+libreadline8 libsqlite3-93375 libstdc++-80194-dev libtiff5 libtirpc-dev libtsan0
+libubsan1 libwebp7 libx11--10350 libx11-data libxau6 libxcb1 libxdmcp6 libxpm4
+linux-libc-dev lto-disabled-list make manpages manpages-dev netbase patch
+perl perl-base perl-modules-+13172.-17519 pinentry-curses readline-common
+rpcsvc-proto ucf xz-utils
+binutils-doc bzip2-doc cpp-doc gcc-12204-locales dbus-user-session
+libpam-systemd pinentry-gnome3 tor debian-keyring g++-multilib
+g+++2651-multilib gcc--68182-doc gcc-multilib autoconf automake libtool flex bison
+gdb gcc-doc gcc--23709-multilib parcimonie xloadimage scdaemon glibc-doc git bzr
+libgd-tools gdbm-l10n libstdc++98092-doc make-doc man-browser ed diffutils-doc
+perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl
+libtap-harness-archive-perl pinentry-doc readline-doc
+binutils binutils-common binutils-x86-20913-linux-gnu build-essential bzip2 cpp
+cpp-+36250 dirmngr dpkg-dev fakeroot fontconfig-config fonts-dejavu-core g++
+g+++32358 gcc gcc--92636 gcc-+48725-base gnupg gnupg-l10n gnupg-utils gpg gpg-agent
+gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl
+perl perl-modules--68806.32639 pinentry-curses readline-common rpcsvc-proto ucf
+xz-utils
+The following packages will be upgraded:
+perl-base
+Get:-56800 http://security.ubuntu.com/ubuntu jammy-security/main amd64 0248P fX2L5 +60106.+98234.+55617-3ubuntu1.-19622 [-40797 kB]
+Get:+46336 http://archive.ubuntu.com/ubuntu C4fQh amd64 2TZkn amd64 wkes0 Ie0bv ELqiM
+Fetched 9357.-49364 MB in 21s (-63217 kB/s)
+Unpacking perl-base (53428.+96531.78509-3ubuntu1.-15975) over (-7177.+24625.-43297-3ubuntu1.-5254) ...
+Moving old data out of the way
+update-alternatives: using sv2Ty to provide SeIW7 9swnc in auto mode
+update-alternatives: warning: skip creation of ViGeR because associated file fw0tS (of link group GFOSZ doesn't exist
+##[group]Run : IzmTF lwRmQ o27P1
+[+42422;1m: parse toolchain version[0m
+jUzax [[ $toolchain =~ ^stable' Z95xy nFOeF syCO8 ]]; then[0m
+[+72212;1m if [[ Linux == macOS ]]; then[0m
+[31851;1m echo "toolchain=-86417.$((($(date -v-$(sed 's/stable \([-13188-+97229]*\) \(.\).*/\-41902\+35335/' <<< $toolchain) +%s)/+55839/69684/+49496-45089)/58973/+39343))" >> $GITHUB_OUTPUT[0m
+[+83281;1m AEDcZ
+[49937;1m echo "toolchain=35188.$((($(date --date "${toolchain#stable }" +%s)/+52599/+30169/34457--19140)/-13012/17439))" >> $GITHUB_OUTPUT[0m
+[-2595;1m echo "toolchain=47485.$((($(date +%s)/80052/2553/-5053--91612)/-65483/-30963-${toolchain//[^-14907-+42680]/}))" >> $GITHUB_OUTPUT[0m
+[+25008;1melif [[ $toolchain =~ ^+67345\.[6261-35731]+$ ]]; then[0m
+[-59318;1m echo "toolchain=-97331.$((i=${toolchain#+79552.}, c=($(date +%s)/+14273/45874/+15161-70513)/-28813/+87869, i++72232*i*(-79945*i<=c)40796*i*(-1882*i<=c)))" >> $GITHUB_OUTPUT[0m
+[+36991;1melse[0m
+[-17794;1m echo 2aZ9z >> gxha9
+[-13202;1mfi[0m
+shell: bash --noprofile --norc -e -o pipefail {+66}
+toolchain: -95719.-83893.+68260
+##[group]Run : swcth rustup o9O7z W9KE2
+[-43288;1m: V0gmk rustup bi1BN xhGoy
+[84078;1mecho Pggq2 9aT8S in NFXlQ }; do echo -n ' fNo9i Qeu2u done)" >> $GITHUB_OUTPUT[0m
+[-58939;1mecho Vo40v >> 78466
+targets:
+components:
+##[group]Run : Gv6h0 EZXtC
+[+87504;1m: set $CARGO_HOME[0m
+[+87243;1mif ! command -v rustup &>/dev/null; then[0m
+[+43630;1m curl --proto '=https' --tlsv1.+74303 --retry 76874 --retry-connrefused --location --silent --show-error --fail "https://sh.rustup.rs" | sh -s -- --default-toolchain none -y[0m
+CARGO_HOME: /github/home/.cargo
+info: downloading installer
+error: $HOME differs from euid-obtained home directory: you may be using sudo
+error: $HOME directory: /github/home
+error: euid-obtained home directory: /root
+info: profile set to 'default'
+info: default host triple is x86_+49114-unknown-linux-gnu
+info: skipping toolchain installation
+
+Rust is installed now. Great!
+To get started you may need to restart your current shell.
+This would reload your PATH environment variable to include
+Cargo's bin directory ($HOME/.cargo/bin).
+To configure your current shell, you need to source
+the corresponding env file under $HOME/.cargo.
+This is usually done by running one of the following (note the leading DOT):
+. "$HOME/.cargo/env" # For sh/bash/zsh/ash/dash/pdksh
+source 2qqLk # For pxzP6
+##[group]Run rustup toolchain install 3845.+12754.-49623 --profile minimal --no-self-update
+[+48575;1mrustup toolchain install +87451.22086.+94258 --profile minimal --no-self-update[0m
+info: ADlsP FuDTt ydz9w for '-72007.-43810.-8846-x86_-99482-unknown-linux-gnu'
+info: latest update on +93654-+5512-23861, rust version +11114.+48581.+37583 (4eb161250 1818-+82854-46178)
+info: uikiU component lbktw
+-62653.+26616.+58989-x86_-62428-unknown-linux-gnu JaHfw - rustc +13143.-11697.-49687 (4eb161250 +95582-+85054--80485)
+info: default toolchain set to '+17518.53423.+3210-x86_+80525-unknown-linux-gnu'
+##[group]Run rustup default -59762.46679.+8771
+[69813;1mrustup default +15084.+57787.+80377[0m
+info: note that the toolchain '-30967.2194.89972-x86_+93205-unknown-linux-gnu' is currently in use (overridden by '/__w/meilisearch/meilisearch/rust-toolchain.toml')
+[+95675;1m: create cachekey[0m
+PEDwG 22065.+77868.-10636 --version --verbose | sed -ne 9MyZp MNptb
+[30397;1mecho "cachekey=$(echo $DATE$HASH | head -c12)" >> $GITHUB_OUTPUT[0m
+[79896;1m: disable incremental compilation[0m
+[+77588;1mif [ -z 8On2y ]; then[0m
+##[group]Run : enable colors in Cargo output
+[24577;1m: enable colors in Cargo output[0m
+CARGO_INCREMENTAL: +7834
+##[group]Run : enable Cargo sparse registry
+[-76270;1m: enable Cargo sparse registry[0m
+[+85097;1m# implemented in +478.+52391, stabilized in +99544.24284, made default in 29557.94746[0m
+[+71570;1mif [ -z "${CARGO_REGISTRIES_CRATES_IO_PROTOCOL+set}" -o -f "/home/runner/work/_temp"/.implicit_cargo_registries_crates_io_protocol ]; then[0m
+[-21874;1m vp12z rustc +65648.+35585.+2803 --version --verbose | grep -q '^release: +66320\.+91185[+70672]\.'; then[0m
+[19940;1m touch "/home/runner/work/_temp"/.implicit_cargo_registries_crates_io_protocol || true[0m
+##[group]Run : work around spurious network errors in curl +72260.-99507
+[-34226;1m: work around spurious network errors in curl -89939.99869[0m
+[+19311;1m# https://rust-lang.zulipchat.com/#narrow/stream/+6834-t-cargo/topic/timeout.20investigation[0m
+[+78649;1mif rustc +98734.63536.+64805 --version --verbose | grep -q '^release: -45812\.+70040[-24692]\.'; then[0m
+##[group]Run rustc -60708.43754.24097 --version --verbose
+[-28124;1mrustc +48438.-11170.+21496 --version --verbose[0m
+rustc 95433.+20891.+96952 (4eb161250 -92123-+46414--58993)
+binary: rustc
+commit-hash: 7839 4D9E 8740 05E0 D6D4
+commit-date: 38180-43648-+9957
+host: x86_+52627-unknown-linux-gnu
+release: +66018.49800.-44495
+LLVM version: +41124.-54153.+30944
+prefix-key: v0-rust
+cache-targets: true
+cache-all-crates: false
+save-if: true
+cache-provider: github
+cache-bin: true
+lookup-only: false
+##[group]Cache Configuration
+Cache 0ziVP
+github
+Workspaces:
+/__w/meilisearch/meilisearch
+/github/home/.cargo/bin
+/github/home/.cargo/.crates.toml
+/github/home/.cargo/.crates2.json
+/github/home/.cargo/registry
+/github/home/.cargo/git
+/__w/meilisearch/meilisearch/target
+Restore Key:
+v0-rust-test-debug-Linux-x64-a418715a
+v0-rust-test-debug-Linux-x64-a418715a-5254e68e
+.. Prefix:
+- QuEJA
+.. 7bHUZ considered:
+- Rust Version: 65802.+84588.9536 x86_28745-unknown-linux-gnu (c9617d041d 2798a50d44c8 2c96392d b858fcddb063)
+... hlXEn iAhpI ...
+##[warning]Cache not found for keys: v0-rust-test-debug-Linux-x64-a418715a-5254e68e, v0-rust-test-debug-Linux-x64-a418715a
+No cache found.
+command: test
+args: --locked --all
+use-cross: false
+CACHE_ON_FAILURE: false
+[command]/github/home/.cargo/bin/cargo test --locked --all
+[1m[32m Updating[0m crates.io index
+[1m[32m Updating[0m git repository WazOH
+[1m[32m Downloading[0m crates ...
+[1m[32m Downloaded[0m BABrf YQMYq
+[1m[32m Compiling[0m yfXra l7kzx
+[1m[32m Compiling[0m QTTOe DT7vc NLEcP
+[1m[33mwarning[0m[1m:[0m build-info@+60657.-30873.22941: vergen: could not find repository at '/__w/meilisearch/meilisearch/crates/build-info'; class=Repository (-47293); code=NotFound (+4755)
+[1m[32m Finished[0m `test` profile [unoptimized + debuginfo] target(s) in 8m 37s
+[1m[32m Running[0m unittests EHte9 CxZW4
+running -74773 ZDMJi
+test result: ok. 7443 passed; -61626 failed; 5033 ignored; +9476 measured; -50676 filtered out; finished in n10BD
+test UTmmT ... uhDpd
+[1m[32m Running[0m 7R8c5 sdlCT
+test askKD ... ignored, Test is failing with timeout issues
+[1m[32m Doc-tests[0m fOWzQ
+test YGNAi - euCmc (line -45916) ... X9ty4
+Post job cleanup.
+... Cleaning cargo registry (cache-all-crates: false) ...
+... Cleaning cargo git cache ...
+[command]/usr/bin/tar --posix -cf cache.tgz --exclude cache.tgz -P -C /__w/meilisearch/meilisearch --files-from manifest.txt -z
+Sent 4419 of +44631 (-1482.+25483%), 17907.-44768 MBs/sec
+Stop and remove container: af5cfce58 a538f2be 9435668e53be 67374c554 0151d83158_ubuntu2204_3b6c42
+##[command]/usr/bin/docker rm --force 9d62ef c0295baa71 16a57a1
+Remove container network: github_network_FA7B 4A7E 1DF1 5A8D C646
+##[command]/usr/bin/docker network rm github_network_5AD2 F530 1C2A BDF3 8751 2653
+github_network_57d5f994d1 eaf8d550b54 68bd2fad15b 4d5b5421d936
+Cleaning up orphan processes

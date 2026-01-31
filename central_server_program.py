@@ -15,7 +15,7 @@ class CentralServerProgram:
 
     def __init__(self):
         """Initialize CentralServerProgram class."""
-        self.client_list = ["maryangel101", "d2klab"]
+        self.client_list = ["maryangel101", "d2klab", "logsage"]  # ["maryangel101", "d2klab", "logsage"]
         self.client_sockets = {}
         self.client_vocabs = {}
         self.indice_map = {}
@@ -23,29 +23,27 @@ class CentralServerProgram:
         self.embed_dimension = 500
         self.num_epochs = 50
 
-    
-    def aggregate_vocab(self) -> tuple[dict]:
+    def aggregate_vocab(self) -> dict:
         """Aggregate all clients vocabs and form a new set of internal indices."""
-        indice_map= {}
+        indice_map = {}
         reserved_index = 0
-        # Retrieving each client list of global indices representation of client vocab.
         for client, client_word_indices in self.client_vocabs.items():
-            print(f"Client {client}, number of words: {len(client_word_indices)} ")
-            # Loop through each word indice
+            print(f"Client {client}, number of words: {len(client_word_indices)}")
             for word_index in client_word_indices:
                 if word_index.startswith("unk_"):
-                    # If the word is not globally known, we have to add the client's name to it
-                    indice_map[f"{client}_{word_index}"] = reserved_index
-                    reserved_index += 1
+                    # Make unknown words unique per client
+                    key = f"{client}_{word_index}"
+                    if key not in indice_map:
+                        indice_map[key] = reserved_index
+                        reserved_index += 1
                 else:
-                    # Check if the full vocab already contain this word or not. If not, add
                     if word_index not in indice_map:
                         indice_map[word_index] = reserved_index
                         reserved_index += 1
-        # Save the aggregated vocab as class variable
-        self.indice_map= indice_map
+        self.indice_map = indice_map
         print(f"Aggregated vocab: number of words: {len(indice_map)}")
-        # Save the vocab for later inspection
+
+        # Save for later inspection
         save_path = "dataset/all_indice_map.json"
         with open(save_path, "w", encoding="utf-8") as json_file:
             json.dump(indice_map, json_file, indent=4, ensure_ascii=False)

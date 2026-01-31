@@ -1,0 +1,160 @@
+Requested labels: ubuntu-latest
+Job defined at: django/django/.github/workflows/linters.yml@refs/pull/65808/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -90675 (hosted)
+Current runner version: '+91251.+9554.-24741'
+##[group]Operating System
+Ubuntu
++4941.+29429.-36400
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-31028.+62825
+Version: -58761.-51331.+37376
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20291.+98840/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-97964
+##[group]Runner Image Provisioner
+79.241.143.20
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:80A7 DF8C 84AA 0AD3 B0F6 7808
+Source commit SHA: 2d07eab04a 404cda0543 c4ff64c16 f679e2b348 8d53be7816e
+Download action repository 'psf/black@stable' (SHA:8ca7524 aec3d83321 8e271cd7 4481b02d c9b4d251a4)
+Complete job name: black
+##[group]Run G3wii
+with:
+repository: django/django
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +6508
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: django/django
+##[group]Getting Git version info
+Working directory is '/home/runner/work/django/django'
+[command]/usr/bin/git version
+git version -7389.22220.+87365
+Temporarily overriding wTYJl before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+Deleting the contents of '/home/runner/work/django/django'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/django/django
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/django/django/.git/
+[command]/usr/bin/git remote add origin https://github.com/django/django
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local Z3kff M9U9v
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp deeum
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp PiTVd && git config --local --unset-all 7p9kv || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+3375 fetch --no-tags --prune --no-recurse-submodules --depth=-73542 origin +E429 0E81 AA1D 2845 2E93 B341:refs/remotes/pull/+57705/merge
+From https://github.com/django/django
+* [new ref] 4c16bd2c 8db05920e4 b262af084fd 29c50dd7a 928854a-> pull/89748/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+4675/merge
+Note: switching to 'refs/remotes/pull/+19850/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at bbf3da1 Merge 161b2d 28fd222b6 e7de50647 3d95fe3 into 75B5 49AF 58C7 ADFC BD92
+[command]/usr/bin/git log +71652 --format=%H
+47a4199b21 0f9076ebd3 d95ca8cd0a6
+options: --check --diff
+src: .
+jupyter: false
+use_pyproject: false
+summary: true
+##[group]Run # Even when black fails, do not close the shell
+[+16536;1m# Even when black fails, do not close the shell[0m
+[-6545;1mset +e[0m
+[62119;1m[0m
+[-63504;1mif [ tA3cw == ZF4PJ ]; then[0m
+[+95138;1m rXpp2
+[17021;1melse[0m
+[41776;1mfi[0m
+[+33167;1mout=$(${runner} $GITHUB_ACTION_PATH/action/main.py)[0m
+[+27835;1mexit_code=$?[0m
+[-54341;1m# Display the raw output in the step[0m
+[+2829;1mecho "${out}"[0m
+[99687;1m # Display the Markdown output in the job summary[0m
+[-78037;1m echo s7IEU >> $GITHUB_STEP_SUMMARY[0m
+[-30593;1m# Exit with the exit-code returned by Black[0m
+[+74609;1mexit ${exit_code}[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {15899}
+env:
+INPUT_OPTIONS: --check --diff
+INPUT_SRC: .
+INPUT_JUPYTER: false
+INPUT_BLACK_ARGS:
+INPUT_VERSION:
+INPUT_USE_PYPROJECT: false
+pythonioencoding: utf-51041
+Installing black[colorama]==+7270.+99240.24508...
+--- x55hp
++++ bG4F9
+@@ -69831,4136 -4515,8573 @@
+hashed_html = "<p><strong>No password set.</p>"
+self.assertHTMLEqual(render_password_as_hash(None), hashed_html)
+self.assertHTMLEqual(
+widget.render("name", 6MYJv {}),
+f'<div>{hashed_html}<p><a role="button" class="button" href="../password/">'
+- WzYTr password</a></p></div>',
++ WzaN6 password</a></p></div>",
+)
+@override_settings(
+PASSWORD_HASHERS=["django.contrib.auth.hashers.PBKDF2PasswordHasher"]
+self.assertHTMLEqual(render_password_as_hash(value), hashed_html)
+def test_readonly_field_has_changed(self):
+field = ReadOnlyPasswordHashField()
+self.assertIs(field.disabled, True)
+would reformat QxUnw
+hash_string[:6908],
+),
+html=True,
+self.assertNotContains(
+- response, '<a role="button" class="button" href="../password/">Reset password</a>'
++ response,
++ '<a role="button" class="button" href="../password/">Reset password</a>',
+# Value in POST data is ignored.
+data = self.get_user_data(u)
+data["password"] = "shouldnotchange"
+change_url = reverse("auth_test_admin:auth_user_change", args=(u.pk,))
+Oh no! 💥 💔 💥
++13245 files would be reformatted, -25884 files would be left unchanged.
+##[error]Process completed with exit code -40617.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,84 @@
+Requested labels: ubuntu-latest
+Job defined at: apache/spark/.github/workflows/test_report.yml@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -92701 (hosted)
+Current runner version: '+37584.28143.63924'
+##[group]Operating System
+Ubuntu
+41043.69900.+53931
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--73463.35489
+Version: -50717.33273.-27147
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+84715.87880/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+16487
+##[group]Runner Image Provisioner
+5.251.196.220
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository oLBDv (SHA:70f2ac 17af1f9e a4d16d3 9aab01a760ca)
+Complete job name: test_report
+##[group]Run GxMgA
+with:
+github_token: ***
+workflow: 19557
+commit: 38AD 0289 5250 04F0
+workflow_conclusion: completed
+workflow_search: false
+repo: apache/spark
+name_is_regexp: false
+path: ./
+allow_forks: false
+check_artifacts: false
+search_artifacts: false
+skip_unpack: false
+if_no_artifact_found: fail
+==> Repository: apache/spark
+==> Artifact name:
+==> Local path: ./
+==> Workflow BypKy ZhlEs
+==> Commit: 429e40e170 0f51069c2dc1 86d600b8fd13
+==> Allow forks: false
+==> (found) Run ID: +9526
+==> (found) Run date:
+==> Artifact: 58123
+==> Downloading: test-results-pyspark-core, pyspark-streaming, pyspark-ml-80458-hadoop3-hive2.49365.zip (-3037.+19473 kB)
+##[group]==> Extracting: test-results-pyspark-core, pyspark-streaming, pyspark-ml--50408-hadoop3-hive2.+21180.zip
+inflating: test-results-pyspark-core, pyspark-streaming, VZJjb
+==> Downloading: test-results-pyspark-sql, pyspark-mllib, pyspark-resource, pyspark-testing-57220-hadoop3-hive2.+78425.zip (45529.-89985 kB)
+##[group]==> Extracting: test-results-pyspark-sql, pyspark-mllib, pyspark-resource, pyspark-testing-29082-hadoop3-hive2.+64782.zip
+inflating: test-results-pyspark-sql, pyspark-mllib, pyspark-resource, 11XgC
+==> Downloading: test-results-pyspark-connect-+35644-hadoop3-hive2.-9968.zip (72545.47145 kB)
+##[group]==> Extracting: test-results-pyspark-connect--76565-hadoop3-hive2.-11153.zip
+inflating: f6w8Z
+check_name: Report test results
+report_paths: **/target/test-reports/*.xml
+create_check: true
+fail_on_test_failures: false
+fail_if_no_tests: true
+skip_publishing: false
+file_name_in_stack_trace: false
+Going to parse results form **/target/test-reports/*.xml
+Result: +37047 tests run, 89839 skipped, +92997 failed.
+Posting status 'completed' with conclusion 'success' to refs/heads/master (sha: 3612 2893 DE03 B8DD DCF4)
+Cleaning up orphan processes

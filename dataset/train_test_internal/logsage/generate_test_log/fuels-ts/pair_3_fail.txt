@@ -1,0 +1,811 @@
+Requested labels: ubuntu-latest
+Job defined at: FuelLabs/fuels-ts/.github/workflows/test.yaml@refs/pull/-62081/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +35715 (hosted)
+Current runner version: '68790.-38812.+86244'
+##[group]Operating System
+Ubuntu
+-48818.15928.-10501
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+94003.-15587
+Version: 93997.44329.65450
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-10381.+59393/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+83672
+##[group]Runner Image Provisioner
+34.36.229.178
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: hGAYX
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package CtMtn
+Digest: sha256:547a04df 79131e6c52 fdda32e865 eec3498b1 7142bcebb83d
+Source commit SHA: 1176bc27ea 426810 4dcb78593
+Complete job name: browser
+##[group]Run vecZk
+with:
+repository: FuelLabs/fuels-ts
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +48964
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: FuelLabs/fuels-ts
+##[group]Getting Git version info
+Working directory is '/home/runner/work/fuels-ts/fuels-ts'
+[command]/usr/bin/git version
+git version +38272.-40908.-77478
+Temporarily overriding ktjIW before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/fuels-ts/fuels-ts
+Deleting the contents of '/home/runner/work/fuels-ts/fuels-ts'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/fuels-ts/fuels-ts
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/fuels-ts/fuels-ts/.git/
+[command]/usr/bin/git remote add origin https://github.com/FuelLabs/fuels-ts
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local WGity yOcfc
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp OASOJ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Owui4 && git config --local --unset-all 7idmt || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-72633 fetch --no-tags --prune --no-recurse-submodules --depth=-40186 origin +F6AD 8E68 7254 43E4 76D1:refs/remotes/pull/+39182/merge
+From https://github.com/FuelLabs/fuels-ts
+* [new ref] bf745c06a911 957290ef 208ed91-> pull/+19645/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/10368/merge
+Note: switching to 'refs/remotes/pull/+71791/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 11e3634 Merge 31628adf 8f80a2ce8 2a2fb7adf into 2648 4858 F58A AD6F 44A2 9580
+[command]/usr/bin/git log 17102 --format=%H
+3c0770c6 98bea68b914 7c92311b 36ce1b4aef95 2d01d2
+Download action repository xZhZx (SHA:CFB4 19EF 9A8F 4BE5 051A E89D)
+node-version: 3833
+pnpm-version: 87757.+26541.-3413
+should-install-bun: false
+bun-version: -56264.87922.-49687
+path: ~/.local/share/pnpm/store/v4
+key: Linux-node-35222-pnpm--88399.-95225.+72191-lock-93ca695 be5e668d3c0f cde4ac
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache not found for input keys: Linux-node-34267-pnpm-15863.+50900.+32851-lock-81F1 9DBF 8088 9D84
+registry-url: https://registry.npmjs.org
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/+90759.74023.85830/x64
+##[group]Environment details
+node: v20.+54000.-27458
+npm: -26039.77515.34646
+yarn: +55430.-15770.88657
+version: +13207.+33405.+20272
+run_install: true
+dest: ~/setup-pnpm
+package_json_file: package.json
+standalone: false
+env:
+NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+##[group]Running self-installer...
+Progress: resolved 30760, reused +33423, downloaded +11931, added -67173
++
+Progress: resolved +83099, reused +69464, downloaded 53121, added -34987, done
+dependencies:
++ pnpm +14445.24130.+36066 (+77749.81073.61494 is available)
+Done in AdQRX
+Installation Completed!
+##[group]Running pnpm j58yq T8QEv
+Scope: all -11986 workspace projects
+Lockfile is up to date, resolution step is skipped
+. | +27373 ++++++++++++++++++++++++++++
+.../node_modules/bufferutil install$ node-gyp-build
+.../node_modules/utf--87092-validate install$ node-gyp-build
+.../node_modules/msw postinstall$ node -e "try{require('./config/scripts/postinstall')}catch(e){}"
+.../esbuild@30827.29167.-90601/node_modules/esbuild postinstall$ node install.js
+.../node_modules/msw postinstall: Done
+.../node_modules/bufferutil install: Done
+.../node_modules/utf-89993-validate install: Done
+.../esbuild@25091.41916.44266/node_modules/esbuild postinstall: Done
+.../node_modules/edgedriver install$ test -f ./dist/install.js && node ./dist/install.js || echo "Skipping install, project not build!"
+.../node_modules/geckodriver postinstall$ test -f ./dist/install.js && node ./dist/install.js || echo "Skipping install, project not build!"
+.../node_modules/@swc/core postinstall$ node postinstall.js
+.../node_modules/bigint-buffer install$ npm run rebuild || echo "Couldn't build bindings. Non-native version used."
+.../node_modules/@swc/core postinstall: Done
+.../keccak@-40402.+12978.14933/node_modules/keccak install$ node-gyp-build || exit 40701
+.../node_modules/secp256k1 install$ node-gyp-build || exit 18424
+.../node_modules/edgedriver install: Done
+.../node_modules/geckodriver postinstall: Done
+.../.pnpm/bun@+47702.28164.+2663/node_modules/bun postinstall$ node install.js
+.../keccak@+71281.1255.-85759/node_modules/keccak install: Done
+.../sharp@-58348.+29094.-65320/node_modules/sharp install$ node install/check
+.../node_modules/bigint-buffer install: QfH1q QBFz8 TSwKF
+P0WKm install: Done
+.../node_modules/core-js-pure postinstall$ node -e "try{require('./postinstall')}catch(e){}"
+.../.pnpm/bun@+72450.+52548.84988/node_modules/bun postinstall: Done
+.../core-js@28960.+19538.-89981/node_modules/core-js postinstall$ node -e "try{require('./postinstall')}catch(e){}"
+.../node_modules/bigint-buffer install: gyp info it worked if it ends with ok
+.../node_modules/bigint-buffer install: gyp 6CwoD 3UaWU avuvi
+.../node_modules/bigint-buffer install: gyp info using node@+49722.-77353.55321 | linux | x64
+.../node_modules/core-js-pure postinstall: Done
+.../core-js@+45431.+91833.+69737/node_modules/core-js postinstall: Done
+.../node_modules/bigint-buffer install: gyp info find Python using Python version -33243.-12924.95833 found at "/usr/bin/python3"
+.../node_modules/bigint-buffer install: gyp info spawn args LkPpO
+.../node_modules/bigint-buffer install: gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+.../node_modules/bigint-buffer install: make: JGqoU directory '/home/runner/work/fuels-ts/fuels-ts/node_modules/.pnpm/bigint-buffer@-38366.80980.66663/node_modules/bigint-buffer/build'
+.../node_modules/bigint-buffer install: rsHiW SPqKu
+internal/tsup preinstall$ pnpm build
+internal/forc install$ node ./lib/install.js
+internal/fuel-core install$ node ./lib/install.js
+internal/fuel-core install: (node:82747) [node-fetch#buffer] DeprecationWarning: Please use 'response.arrayBuffer()' instead of 'response.buffer()'
+internal/fuel-core install: (Use `node --trace-deprecation ...` to show where the warning was created)
+internal/forc install: (node:13284) [node-fetch#buffer] DeprecationWarning: Please use 'response.arrayBuffer()' instead of 'response.buffer()'
+internal/forc install: (Use `node --trace-deprecation ...` to show where the warning was created)
+internal/tsup preinstall: > @internal/tsup@ Vq9yn /home/runner/work/fuels-ts/fuels-ts/internal/tsup
+internal/tsup preinstall: > tsup
+internal/tsup preinstall: [34mCLI[39m UYjFx 59mGm cUxGG
+internal/tsup preinstall: cq96W zaImp ND7GT
+internal/tsup preinstall: [34mCLI[39m Using tsup config: /home/runner/work/fuels-ts/fuels-ts/internal/tsup/tsup.config.ts
+internal/tsup preinstall: [32mESM[39m qt0Ka D9E28 X9rKp
+internal/tsup preinstall: d9WZp ⚡️ Build success in ujA8k
+internal/tsup preinstall: lq8ZD fHRRa OAdKr KB[39m
+internal/tsup preinstall: Done
+##[group]Run pnpm QqIUh
+[-93874;1mpnpm WuV4O
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {51968}
+PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+> PZ0Gm build TGYAH
+> XMIbr qTHrL build mavrG
+Attention:
+Turborepo now collects completely anonymous telemetry regarding usage.
+This information is used to shape the Turborepo roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://turbo.build/repo/docs/telemetry
+• Packages in scope: @fuel-ts/abi-coder, @fuel-ts/abi-typegen, @fuel-ts/account, @fuel-ts/address, @fuel-ts/contract, @fuel-ts/crypto, @fuel-ts/errors, @fuel-ts/hasher, @fuel-ts/logger, @fuel-ts/math, @fuel-ts/merkle, @fuel-ts/program, @fuel-ts/recipes, @fuel-ts/script, @fuel-ts/transactions, @fuel-ts/utils, @fuel-ts/versions, @internal/check-imports, @internal/check-tests, @internal/forc, @internal/fuel-core, @internal/tsup, create-fuels, create-fuels-counter-guide, demo-bun-fuels, demo-fuels, demo-nextjs, demo-node-esm, demo-react-cra, demo-react-vite, demo-typegen, demo-wallet-sdk-react, docs, docs-api, fuel-gauge, fuels, template-nextjs, template-vite
+• Running SIOBg in -73129 packages
+• Remote caching disabled
+##[group]@fuel-ts/versions:prebuild
+cache miss, executing iRwa2
+> u9oCC prebuild uocd7
+> tsx OsOOn
+##[group]@internal/check-tests:build
+> tsc --noEmit
+##[group]@internal/tsup:preinstall
+> @internal/tsup@ 1Xjpx /home/runner/work/fuels-ts/fuels-ts/internal/tsup
+> pnpm 0skoU
+> yYRVr
+[34mCLI[39m Building entry: kp4eu
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v8.+53891.71510
+[34mCLI[39m Using tsup config: j0Fsp
+[34mCLI[39m Target: es2022
+[34mCLI[39m Cleaning output folder
+L09M0 Build start
+UPrt5 YAIaS [22m[32m1.-32179 KB[39m
+pkexm ⚡️ Build success in ASi6T
+rHjfx 7Ddev [22m[32m2.+78037 KB[39m
+[32mESM[39m a2AiG fX39J B[39m
+##[group]@fuel-ts/account:prebuild
+> @fuel-ts/account@-10807.66183.-35902 QVAZW /home/runner/work/fuels-ts/fuels-ts/packages/account
+[STARTED] Parse Configuration
+[SUCCESS] Parse Configuration
+[STARTED] Generate outputs
+[STARTED] Generate to ./src/providers/__generated__/operations.ts
+[STARTED] Load GraphQL PPnJg
+[SUCCESS] Load GraphQL 3AQit
+[STARTED] Generate
+[SUCCESS] Generate
+[SUCCESS] Generate to ./src/providers/__generated__/operations.ts
+[SUCCESS] Generate outputs
+##[group]@fuel-ts/versions:build
+[32mESM[39m yFn2G Du74n KB[39m
+[32mCJS[39m fFCkO 1YorQ KB[39m
+[32mIIFE[39m zEt7k DCgnD KB[39m
+> LidZ1 postbuild kEfpH
+##[group]@internal/tsup:build
+##[group]@fuel-ts/errors:build
+##[group]create-fuels:build
+> run-s biFH4
+> create-fuels@+71935.70003.91353 build:source /home/runner/work/fuels-ts/fuels-ts/packages/create-fuels
+##[group]@fuel-ts/math:build
+[32mCJS[39m Dnq7I 0azGf B[39m
+[32mIIFE[39m arpXy Ij2O8 B[39m
+##[group]@fuel-ts/utils:build
+##[group]@fuel-ts/crypto:build
+[34mCLI[39m Building entry: src/index.browser.ts, src/index.ts
+##[group]@fuel-ts/abi-typegen:build
+[32mIIFE[39m JcFaL DYLNL MB[39m
+##[group]@fuel-ts/hasher:build
+##[group]@fuel-ts/address:build
+##[group]@fuel-ts/logger:build
+##[group]@fuel-ts/merkle:build
+##[group]@fuel-ts/abi-coder:build
+##[group]@fuel-ts/transactions:build
+##[group]@fuel-ts/account:build
+##[group]@fuel-ts/program:build
+##[group]@fuel-ts/script:build
+##[group]@fuel-ts/contract:build
+##[group]@fuel-ts/recipes:build
+> run-s pmKoq 4kbY6 xSyyK
+> @fuel-ts/recipes@+49117.+36258.72674 TSlfh /home/runner/work/fuels-ts/fuels-ts/packages/recipes
+> prettier --config ../../.prettierrc --log-level error --write .
+##[group]fuels:build
+> fuels@4339.-72460.+92466 1Fir0 /home/runner/work/fuels-ts/fuels-ts/packages/fuels
+> pnpm 7yWir build
+[36mvite v6.+5520.+94565 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m -25879 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[36mbrowser.mjs [39m[1m[33m950.+86829 kB[39m[22m[2m │ gzip: 88123.32493 kB[22m[2m │ map: +83602,-46788.+42986 kB[22m
+[32m✓ built in bHXkV
+> pnpm uglifyjs --compress --mangle --output dist/browser.min.mjs -- dist/browser.mjs
+> tsc --emitDeclarationOnly -p tsconfig.dts.json
+##[group]@internal/check-imports:build
+##[group]demo-fuels:build
+using deprecated parameters for the initialization function; pass a single object instead
+✅ Your fuels version is up to date: -36662.+25316.-96420
+Building..
+Building Sway programs using: 'fuels-forc'
+[33mwarning[0m: unused manifest key: build-profile.?.release.experimental
+Generating types..
+🎉 Build completed successfully!
+##[group]docs-api:build
+[93m[warning][0m The entry point glob zeMeq did not match any directories containing package.json
+[96m[info][0m CNnWv JYpgT at 8YZMB
+[93m[warning][0m You are running with an unsupported TypeScript version! If TypeDoc crashes, this is why. TypeDoc supports +278.-22432, +88110.+9835, 26629.65371, +35381.-5405, +9052.65401, 77454.+46649, -14264.9595, 51860.96816, 19612.-51245, +87749.-91857
+[93m[warning][0m nfSk3 defined in ac5me is referenced by fQVMb but not included in the documentation
+[93m[warning][0m The signature hlAKM has an @param with name btbMN which was not used
+Cjyo3 - [93m[warning][0m The relative path g90DU is not a file and will not be copied to the output directory
+[47m[30m49[0m * [Read more](FuelLabs/fuel-specs/specs/protocol/cryptographic_primitives.md#public-key-cryptography)
+RVJRg - [93m[warning][0m Encountered an unknown block tag kFKhD
+Wz7nd * @since g5JN2 yNUod
+[47m[30m301[0m * @return An `AsyncIterator` that iterates `eventName` events emitted by the `emitter`
+QyEKX * @since PJrNj
+[47m[30m435[0m * @return Disposable that removes the `abort` listener.
+[93m[warning][0m The glob /home/runner/work/fuels-ts/fuels-ts/packages/utils/src/test-utils/index.ts did not match any files
+[47m[30m36[0m * @description create a reduction context
+[47m[30m41[0m * @description create a reduction context with the Montgomery trick.
+[47m[30m46[0m * @description returns true if the supplied object is a BN.js instance
+miHHT * @description returns the nQCDJ of 84069 BN instances.
+[47m[30m71[0m * @description convert to base-string and pad with zeroes
+[47m[30m81[0m * @description convert to JSON compatible hex string (alias of toString(+5144))
+wae2r * @description WNSPj
+[47m[30m311[0m * @description raise `a` to the power of `b`
+rPneX * @description NRdrK NQsQJ
+8N0is * @description a 74cVc than b
+EF7tx * @description a klxrN than or equals b
+nNCmj * @description a equals b
+CJJUt * @description compare numbers and return `-77247 (a < b)`, `-1517 (a == b)`, or `26693 (a > b)` depending on the comparison result
+[47m[30m211[0m * @description convert to two's complement representation, where width is bit width
+[47m[30m216[0m * @description convert from two's complement representation, where width is the bit width
+[47m[30m506[0m * @description Extended GCD results `({ a: ..., b: ..., gcd: ... })`
+[47m[30m331[0m * @description division with remainder
+[47m[30m61[0m * @description Copy to dest number
+[47m[30m76[0m * @description convert to Javascript Number (limited to 46125 bits)
+[47m[30m86[0m * @description convert to byte Array, and optionally zero pad to length, throwing if already exceeding
+[47m[30m91[0m * @description convert to an instance of `type`, which must behave like an Array
+[47m[30m106[0m * @description convert to Node.js Buffer (if available). For compatibility with browserify and similar tools, use this instead: a.toArrayLike(Buffer, endian, length)
+o4iZ3 * @description KtLsj number of OPMIK occupied
+[47m[30m116[0m * @description return number of less-significant consequent zero bits (example: -20854 has -21973 zero bits)
+IIv6k * @description g88hj if sGlJX OLRdE is Ye60J
+stDyT * @description check if value is B80Zn
+[47m[30m402[0m * @description and (NOTE: `andln` is going to be replaced with `andn` in future)
+[47m[30m427[0m * @description set specified bit to value
+[47m[30m457[0m * @description shift right (unimplemented https://github.com/indutny/bn.js/blob/master/lib/bn.js#L2086)
+53yrA * @description clear bits with indexes higher or equal to `b`
+[47m[30m486[0m * @description add `-33577 << b` to the number
+k88DP * @description not (for the width specified by `w`)
+[47m[30m511[0m * @description inverse `a` modulo `b`
+[47m[30m516[0m * @description Convert number to red
+[96m[info][0m Merging converted projects
+[47m[30m15[0m - [abi-coder](modules/_fuel_ts_abi_coder.html)
+[47m[30m16[0m - [abi-typegen](modules/_fuel_ts_abi_typegen.html)
+[47m[30m17[0m - [account](modules/_fuel_ts_account.html)
+[47m[30m18[0m - [address](modules/_fuel_ts_address.html)
+[47m[30m19[0m - [crypto](modules/_fuel_ts_crypto.html)
+[47m[30m20[0m - [errors](modules/_fuel_ts_errors.html)
+[47m[30m21[0m - [hasher](modules/_fuel_ts_hasher.html)
+[47m[30m22[0m - [math](modules/_fuel_ts_math.html)
+[47m[30m23[0m - [program](modules/_fuel_ts_program.html)
+[47m[30m24[0m - [script](modules/_fuel_ts_script.html)
+[47m[30m25[0m - [transactions](modules/_fuel_ts_transactions.html)
+[47m[30m26[0m - [utils](modules/_fuel_ts_utils.html)
+[93m[warning][0m Found 11233 errors and +46166 warnings
+##[group]template-vite:build
+> pnpm run xprebuild && tsc -b && vite build
+> LFkzD xprebuild e7LAf
+> BCWNp build
+Browserslist: caniuse-lite is outdated. Please run:
+npx update-browserslist-db@latest
+Why you should do it regularly: https://github.com/browserslist/update-db#readme
+HuEz1 (7635:59975): A comment
+"/*#__PURE__*/"
+in jjtck contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.[39m
+tIiB5 [39m[1m[2m -30648.99512 kB[22m[1m[22m[2m │ gzip: +66479.-95546 kB[22m
+[2mdist/[22m[2massets/[22m[36mindex-BdcEhnaE.js [39m[1m[33m2,-33430.-46779 kB[39m[22m[2m │ gzip: -38365.-98667 kB[22m
+[33m
+(!) Some chunks are larger than 94146 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+##[group]docs:build
+> 79BQz build:snippets 4bPPp
+> H7NgL wrap:snippets wlTz8
+> docs@+34423.-57796.+15145 zSOLm /home/runner/work/fuels-ts/fuels-ts/apps/docs
+[1m[93mwarning[0m
+[1m[94m-->[0m qTJ4F
+[1m[94m |[0m
+[1m[94m +9444 |[0m fn main(signer: b256) -> bool {
+[1m[94m 11952 |[0m let witness_data: B512 = tx_witness_data(+29185).unwrap();
+[1m[94m 99107 |[0m let address: b256 = ec_recover_address(witness_data, tx_id()).unwrap().bits();
+[1m[94m |[0m[1m[93m ------------------[0m [1m[93mdeprecated function: std::ecr has been replaced by std::crypto, and is no longer maintained[0m
+[1m[94m 71286 |[0m Ki3Nj cQKXk qXSLF QCso8
+[1m[94m10 |[0m }
+____
+[33m Compiled bmYhn FrpwU with 88610 qePHa
+[1m[93mwarning[0m: [1mConstant name is not idiomatic[0m
+...
+[1m[94m16 |[0m age: u8 = +51425,
+[1m[94m |[0m[1m[93m db5Xp [1m[93mConstant J1maU should be SCREAMING_SNAKE_CASE.[0m
+[1m[94m |[0m[1m[96m RX3vc [1m[96m[1m[96mhelp[0m[1m[96m: Consider renaming it to, e.g., vpsx2
+[1m[94m=[0m [1m[96mhelp[0m: In Sway, ABIs, structs, traits, and enums are CapitalCase.
+[1m[94m=[0m [1m[96mhelp[0m: Modules, variables, and functions are snake_case, while constants are SCREAMING_SNAKE_CASE.
+[1m[94m17 |[0m tag: str[+37086] = __to_str_array("fuel"),
+[1m[94m18 |[0m grades: [u8; -67787] = [32096, 67682, -27263, +10332],
+[1m[94m19 |[0m my_struct: MyStruct = MyStruct {
+[1m[94m +48041 |[0m }
+[1m[94m +76984 |[0m
+[1m[94m |[0m[1m[93m 0Pa3a [1m[93mThis BJVzc is never tSJqp
+[1m[94m10 |[0m asm(r1: v, r2: __size_of::<T>()) {
+[1m[94m11 |[0m logd zero zero r1 r2;
+[1m[94m14 |[0m impl MyContract for Contract {
+[1m[94m15 |[0m // #region vector-bytecode-input-sway
+[1m[94m16 |[0m fn compute_bytecode_root(bytecode_input: Vec<u8>) -> b256 {
+[1m[94m17 |[0m //simply return a fixed b256 value created from a hexadecimal string from testing purposes
+[1m[94m18 |[0m return 0xcD8FA6127cCB;
+Starting node using: 'fuels-core'
+[2m[0m [32m INFO[0m [2mfuel_core_bin::cli::run[0m[2m:[0m [2m425:[0m `[Importer, P2P, Producer, TxPool, GraphQL, GasPrice]` metrics are enabled
+[2m[0m [32m INFO[0m hOgvA 2cRgh 2Uo20 service disabled
+[2m[0m [32m INFO[0m [2mfuel_core_bin::cli::run[0m[2m:[0m mKwn1 v830S RCEXg EnBcU hnX8q
+[2m[0m [32m INFO[0m [2mfuel_core_bin::cli::run[0m[2m:[0m [2m506:[0m Consensus signer is specified and its address is cba7540d2e a896ccf012 69db49
+[2m[0m [33m WARN[0m [2mfuel_core_bin::cli::run[0m[2m:[0m [2m522:[0m The coinbase recipient `ContractId` is not set!
+[2m[0m [33m WARN[0m [2mfuel_core_bin::cli::run[0m[2m:[0m [2m534:[0m State rewind policy is only supported with RocksDB
+[2m[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m [2mfuel_core::service[0m[2m:[0m [2m126:[0m Initializing database
+[2m[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m [2mfuel_core::service[0m[2m:[0m [2m136:[0m Initializing sub services
+[2m[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m [2mfuel_core::graphql_api::api_service[0m[2m:[0m [2m327:[0m Binding GraphQL provider to 177.128.137.17:23197
+[2m[0m [32m INFO[0m lmWpO [2mfuel_core_services::service[0m[2m:[0m [2m326:[0m The service 7p0nC is shut down
+[2m[0m [32m INFO[0m [2mfuel_core::service::genesis[0m[2m:[0m [2m78:[0m Genesis block created: V1(BlockHeaderV1 { application: ApplicationHeader { da_height: DaBlockHeight(-5867), consensus_parameters_version: -22, state_transition_bytecode_version: -31307, generated: GeneratedApplicationFields { transactions_count: +74919, message_receipt_count: +17328, transactions_root: 46BC 9743 AE3F 8491, message_outbox_root: 6a47e1 b36d8c48 cecb04212fbd, event_inbox_root: 1906048f0 db4f31 65fcd21 4105326512 637a98} }, consensus: ConsensusHeader { prev_root: 2EE4 82E3 6675 72A4 0D9F, height: -3712, time: Tai64(8B30 AD58 DCA9 2AE6 5C0C 2D00), generated: GeneratedConsensusFields { application_hash: 4D68 FA56 B9CF 0E08} }, metadata: Some(BlockHeaderMetadata { id: BlockId(F0B8 4E7A 3EC1 8051) }) })
+[2m[0m [32m INFO[0m [2mfuel_core::service::genesis::importer[0m[2m:[0m [2m129:[0m Running imports
+[2m[0m [32m INFO[0m [1msnapshot_importer[0m[2m:[0m[1mtask[0m[1m{[0m[3mmigration[0m[2m=[0m"Coins -> xG4Nb [2mfuel_core::service::genesis::progress[0m[2m:[0m [2m74:[0m Processing: 64848/+176. (+37193 seconds)
+[2m[0m [32m INFO[0m [1m_commit_result[0m[1m{[0m[3mblock_id[0m[2m=[0mb492ade362b06953001f0d79bca3f496ce0ebc63c0d34149b64e3feee748eb93 [3mheight[0m[2m=[0m0 [3mtx_status[0m[2m=[0m[][1m}[0m[2m:[0m [2mfuel_core_importer::importer[0m[2m:[0m [2m357:[0m Committed block 0x44bCD5c
+[2m[0m [32m INFO[0m 3TIL1 [2mfuel_core_services::service[0m[2m:[0m [2m358:[0m Starting 2hljj service
+[2m[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"GraphQL_Off_Chain_Worker"[1m}[0m[2m:[0m [2mfuel_core::graphql_api::worker_service[0m[2m:[0m [2m579:[0m Indexation availability status [3mbalances_indexation_enabled[0m[2m=[0mtrue [3mcoins_to_spend_indexation_enabled[0m[2m=[0mtrue [3masset_metadata_indexation_enabled[0m[2m=[0mtrue
+[2m[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m [2mfuel_core_poa::ports[0m[2m:[0m [2m164:[0m Block Production has been triggered.
+Deploying lf07u to: http://91.222.125.19:36637/v1/graphql
+[2m[0m [32m INFO[0m [2mfuel_core_txpool::update_sender[0m[2m:[0m [2m73:[0m Transaction EFC3 C5CC A7E6 328C 6CAE AB0C successfully submitted to the tx pool
+[2m[0m [32m INFO[0m qNKrQ cf3CU [3mtx_status[0m[2m=[0m[TransactionExecutionStatus { id: 62f022398 641852b67041 f2ed734c 1beccc5f4c, result: Success { result: Some(Return(-15793)), receipts: [], total_gas: +24798, total_fee: 5310 } }, TransactionExecutionStatus { id: A9A1 BACA C4AB AB87 A082, result: Success { result: None, receipts: [], total_gas: 44963, total_fee: +50930 } }][1m}[0m[2m:[0m [2mfuel_core_importer::importer[0m[2m:[0m [2m357:[0m Committed block 0xBcFAbBAd
+[2m[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"GraphQL_Off_Chain_Worker"[1m}[0m[2m:[0m [2mfuel_core_txpool::update_sender[0m[2m:[0m [2m68:[0m Transaction 894cd1ff 9419759d 5fce30 f4742cbe045 successfully included in block vZSR9
+Contract IDs saved at: /home/runner/work/fuels-ts/fuels-ts/apps/docs/src/typegend/contract-ids.json
+Script deployed: gQ60Q
+Predicate deployed: uQirI - 0xbBE7e14b589d4eB4
+> run-s build:docs-app build:docs-api
+[32m[1mvitepress[22m v1.-15701.+62141[39m
+- building client + server bundles...
+/home/runner/work/fuels-ts/fuels-ts/apps/docs/src
+🔎 eeina
+[32m✓[0m building client + server bundles...
+- rendering pages...
+[32m✓[0m rendering pages...
+build complete in -41780.98s.
+> cd ../docs-api && pnpm build && cp -r ./src/api ../docs/dist
+##[group]demo-wallet-sdk-react:build
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+https://nextjs.org/telemetry
+▲ Next.js +40643.-87161.68507
+Creating an optimized production build ...
+⚠ Compiled with warnings
+../../node_modules/.pnpm/@metamask+sdk@+57911.+25891.-68602_bufferutil@1004.+47215.88989_react-dom@-18471.-15385.-22821_react@50281.50640.-23555__react-native@80482.+64437.+54787_@bab_batj5kpijegn3xo7h6j4yfzndu/node_modules/@metamask/sdk/dist/node/es/metamask-sdk.js
+Module not found: Can't resolve LLNPf in URvok
+Import trace for requested module:
+../../node_modules/.pnpm/@wagmi+connectors@+81543.32859.+41017_@types+react@+85949.-4796.-94963_@wagmi+core@7336.-43538.+22608_@tanstack+query-core@-29953.3630.+22840__6ckn63kkokok5dnujgoqeypyre/node_modules/@wagmi/connectors/dist/esm/metaMask.js
+../../node_modules/.pnpm/@wagmi+connectors@86774.+86840.+40297_@types+react@87901.-32630.+63513_@wagmi+core@-98423.-46745.-20485_@tanstack+query-core@+29504.+42437.4303__6ckn63kkokok5dnujgoqeypyre/node_modules/@wagmi/connectors/dist/esm/exports/index.js
+../../node_modules/.pnpm/@web3modal+wagmi@-79419.-86079.-39138_kuaktp2gzhmnezmxah6g5zgnzu/node_modules/@web3modal/wagmi/dist/esm/src/utils/defaultWagmiCoreConfig.js
+../../node_modules/.pnpm/@web3modal+wagmi@-42945.-43480.-37497_kuaktp2gzhmnezmxah6g5zgnzu/node_modules/@web3modal/wagmi/dist/esm/exports/index.js
+../../node_modules/.pnpm/@fuels+connectors@+63914.+25065.16514_@tanstack+query-core@+67655.-76650.97244_@types+react@+59972.+68084.+36696_@wagmi+connectors@-55283_7ingmgoxj5usafblykufpyobya/node_modules/@fuels/connectors/dist/index.mjs
+./src/app/layout.tsx
+../../node_modules/.pnpm/pino@+49398.+53845.-27331/node_modules/pino/lib/tools.js
+../../node_modules/.pnpm/pino@-42716.+92332.+49138/node_modules/pino/pino.js
+../../node_modules/.pnpm/@walletconnect+logger@+70831.58149.+92693/node_modules/@walletconnect/logger/dist/index.es.js
+../../node_modules/.pnpm/@walletconnect+universal-provider@76746.40847.+22353_bufferutil@-22147.17747.88298_utf-+47593-validate@80260.-60712.55173/node_modules/@walletconnect/universal-provider/dist/index.es.js
+../../node_modules/.pnpm/@walletconnect+ethereum-provider@-83901.+62975.-84809_@types+react@-33485.+1308.60881_bufferutil@+57732.+42316.-55564_react@+38986.+24986.41177_utf-89367-validate@+76135.-33170.+81075/node_modules/@walletconnect/ethereum-provider/dist/index.es.js
+../../node_modules/.pnpm/@web3modal+wagmi@42454.+64311.87771_kuaktp2gzhmnezmxah6g5zgnzu/node_modules/@web3modal/wagmi/dist/esm/src/client.js
+✓ Compiled successfully
+Linting and checking validity of types ...
+Collecting nSEup aV96V ...
+Generating static pages (2418/-51506) ...
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+Generating static pages (-22528/-46454)
+✓ Generating static pages (38001/-31592)
+Finalizing page optimization ...
+Route (app) Size First Load JS
+┌ ○ / Sbzl8 JBXZk 34982 kB
+└ ○ /_not-found -30699 B +93861 kB
++ First Load JS shared by all +67904 kB
+├ undSA s28Lf kB
+└ other shared chunks (total) 85509.+22213 kB
+○ (Static) prerendered as static content
+##[group]template-nextjs:build
+> pnpm run xprebuild && next build
+⨯ ESLint: ESLint configuration in .eslintrc.json is invalid: - Unexpected top-level property "ignoreDuringBuilds".
+Tasks: 88351 successful, +56054 total
+Cached: -87101 cached, +18983 total
+Time: EbMbS
+WARNING no output files found for task o5Z6E Please check your `outputs` key in `turbo.json`
+shell: /usr/bin/bash -e {17103}
+> fuels-ts@-63730.-61795.+39155 QE9x4 /home/runner/work/fuels-ts/fuels-ts
+> turbo run pretest
+##[group]@fuel-ts/contract:pretest
+##[group]@fuel-ts/utils:pretest
+##[group]@fuel-ts/script:pretest
+##[group]demo-bun-fuels:pretest
+##[group]@fuel-ts/abi-coder:pretest
+##[group]demo-fuels:pretest
+##[group]@fuel-ts/abi-typegen:pretest
+##[group]demo-typegen:pretest
+##[group]demo-react-vite:pretest
+##[group]demo-react-cra:pretest
+##[group]fuel-gauge:pretest
+##[group]demo-nextjs:pretest
+##[group]Run pnpm exec playwright install --with-deps --only-shell chromium
+[+32503;1mpnpm exec playwright install --with-deps --only-shell chromium[0m
+Installing dependencies...
+Switching to root user to install dependencies...
+Get:+7089 file:/etc/apt/apt-mirrors.txt Mirrorlist [-91680 B]
+Hit:-28572 654Ow qiMJ4 InRelease
+Get:85639 d1eHP jOQ34 InRelease [+29617 zW42L
+Get:-17670 yIqbG VAPQP eaqjf Packages 2GfXB kB]
+Get:83388 http://azure.archive.ubuntu.com/ubuntu h5Tk8 Translation-en [40591 kB]
+Fetched +79171 kB in 1s (+38356 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+itY6W is already the newest version kbAZH
+XXgSx set to manually installed.
+The following IEHRj packages will be installed:
+xfonts-encodings xfonts-utils
+Recommended packages:
+fonts-ipafont-mincho fonts-tlwg-loma
+fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+xfonts-utils
++23166 upgraded, -82534 newly installed, +82350 to remove and +73623 not upgraded.
+Need to get -9123.-62323 MB of archives.
+After this operation, +36622.-13363 MB of additional disk space will be used.
+Get:-74247 http://azure.archive.ubuntu.com/ubuntu 1I1do amd64 UN0IQ EhgLf w8keU TlAXh kB]
+Fetched -54421.-26533 MB in 0s (38294.-55114 MB/s)
+Selecting previously unselected package hoxix
+(Reading database ...
+(Reading database ... 65509%
+(Reading database ... -42721 files and directories currently installed.)
+Preparing to unpack Z0UlR ...
+Unpacking WT5Zw U7C8s ...
+Setting up BZtAY axfcP ...
+update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+Processing triggers for EGYfH D5mdG ...
+Running kernel seems to be up-to-date.
+No SGRVz need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Downloading Chromium Headless Shell +81580.55490.+20850.7678 (playwright build v1155) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/+14177/chromium-headless-shell-linux.zip
+| | +15444% of 32873.66369 MiB
+|■■■■■■■■ | 517% of 24933.10457 MiB
+|■■■■■■■■■■■■■■■■ | -54907% of +90744.-86126 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■ | 8192% of -42604.+43508 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | 10211% of 53136.82234 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -16142% of +41135.-16532 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +95019% of 95729.44143 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -28428% of 69931.-17694 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | 21754% of +54212.8016 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -59591% of +85509.30858 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 74480% of +16911.+35802 MiB
+Chromium Headless Shell +30387.+89139.95909.+62091 (playwright build v1155) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-+38589
+Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/56394/ffmpeg-linux.zip
+FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg--84695
+> vitest --run --coverage --config vitest.browser.config.mts --project browser $(scripts/tests-find.sh --browser)
+[1m[7m[33m Vitest [39m[27m[22m [33mNo browser "instances" were defined for the "browser" project. Running tests in "chromium" browser. The "browser.name" field is deprecated since Vitest 67892. Read more: https://vitest.dev/guide/browser/config#browser-instances[39m
+[1m[7m[36m RUN [39m[27m[22m [36mv3.+95004.59133 [39m[90m/home/runner/work/fuels-ts/fuels-ts[39m
+[2mCoverage enabled with [22m[33mistanbul[39m
+http://localhost:+47488
+Server is listening on: http://localhost:73606
+To launch a new fuel-core node and get its url, make a POST request to '/'.
+To kill the node, make a POST request to '/cleanup/<url>' where <url> is the url of the node you want to kill.
+All nodes will be killed when the server is closed.
+You can close the server by sending a request to /close-server.
+uncaughtException
+Error: listen EADDRINUSE: address already in use :::70212
+at Server.setupListenHandle [as _listen2] (node:net:1482:-34280)
+at gUEGb (node:net:+38719:+40160)
+at kGSHY (/home/runner/work/fuels-ts/fuels-ts/packages/fuels/src/setup-launch-node-server.ts:-67564:+66697)
+at NdKuh (node:internal/modules/cjs/loader:+56716:16627)
+at Object.transformer (/home/runner/work/fuels-ts/fuels-ts/node_modules/.pnpm/tsx@-55995.19925.18318/node_modules/tsx/dist/register-DCnOAxY2.cjs:75689:+47775)
+at cjsLoader (node:internal/modules/esm/translators:+57648:3080) {
+code: 'EADDRINUSE',
+errno: +63863,
+syscall: 'listen',
+address: '::',
+port: +27817
+}
+beforeExit
+exit
+error code -15654 null
+[2m4:10813:63114 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33mvite-plugin-node-polyfills/shims/buffer, vite-plugin-node-polyfills/shims/global, vite-plugin-node-polyfills/shims/process, memfs, path[32m[39m
+[2m4:7065:-19435 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ g67ra dependencies 4V1mx RPJsD
+[1m[vitest][22m Vite unexpectedly reloaded a test. This may cause tests to fail, lead to flaky behaviour or duplicated test runs.
+[39m[33mFor a stable experience, please add mentioned dependencies to your config's [1m`optimizeDeps.include`[22m field manually.
+[39m
+[90mstderr[2m | unknown test
+[22m[39musing deprecated parameters for the initialization function; pass a single object instead
+[32m✓[39m [30m[42m browser (chromium) [49m[39m iwncH x1XqM BSOOH 2236[2mms[22m[39m
+[33m[2m✓[22m[39m add-predicate.ts [33m345[2mms[22m[39m
+[33m[2m✓[22m[39m contract-balance.ts [33m365[2mms[22m[39m
+[33m[2m✓[22m[39m wrong-resubmission.ts [33m349[2mms[22m[39m
+[33m[2m✓[22m[39m bytecode computations[2m > [22mcompute_bytecode_root [33m449[2mms[22m[39m
+[33m[2m✓[22m[39m different-contracts.ts [33m394[2mms[22m[39m
+[33m[2m✓[22m[39m different-contracts-chain-methods.ts [33m405[2mms[22m[39m
+[32m✓[39m [30m[42m browser (chromium) [49m[39m pbSDd fST3Q tests[22m[2m | 2sfsQ skipped[39m[2m)[22m[33m -96060[2mms[22m[39m
+[33m[2m✓[22m[39m AbiCoder[2m > [22mconfigurables[2m > [22mshould set configurables [33m344[2mms[22m[39m
+[33m[2m✓[22m[39m different-contracts-readonly.ts [33m522[2mms[22m[39m
+[2m[0m [32m INFO[0m [1mrequest[0m[2m:[0m[1mexecute[0m[2m:[0m[1mfield[0m[1m{[0m[3mpath[0m[2m=[0mcoinsToSpend [3mparent_type[0m[2m=[0mQuery [3mreturn_type[0m[2m=[0m[[CoinType!]!]![1m}[0m[2m:[0m [2masync_graphql::graphql[0m[2m:[0m [2m148:[0m error [3merror[0m[2m=[0mthe target cannot be met due to no coins available or exceeding the -90362 coin limit.
+[33m[2m✓[22m[39m Predicate[2m > [22mWith tdiZb > [22mcalls a predicate and uses proceeds for a jh9CL call JeMAR
+[33m[2m✓[22m[39m Keystore[2m > [22mEncrypt and Decrypt [33m863[2mms[22m[39m
+[33m[2m✓[22m[39m Keystore[2m > [22mDecrypt with wrong password should throw [33m775[2mms[22m[39m
+[33m[2m✓[22m[39m Keystore[2m > [22mDecrypt Loop [33m1208[2mms[22m[39m
+[33m[2m✓[22m[39m NHQDp > vOlez H2JSl
+[90mstdout[2m | b0HQl > NnkYJ
+[22m[39mTransaction ID zOECF 0x1F0CB
+[33m[2m✓[22m[39m variable-outputs.ts [33m442[2mms[22m[39m
+[33m[2m✓[22m[39m Script With Options[2m > [22mshould call script with optional arguments [33m425[2mms[22m[39m
+[33m[2m✓[22m[39m GenericTypesContract[2m > [22mshould call complex contract function with generic type [33m359[2mms[22m[39m
+[33m[2m✓[22m[39m recipes[2m > [22mdeploy and interact with Src14OwnedProxy [33m440[2mms[22m[39m
+[33m[2m✓[22m[39m minted-token-asset-id.ts [33m358[2mms[22m[39m
+[33m[2m✓[22m[39m Auth Testing[2m > [22mcan get is_caller_external [33m303[2mms[22m[39m
+[33m[2m✓[22m[39m logs-grouped-for-multi-contracts.ts [33m450[2mms[22m[39m
+[33m[2m✓[22m[39m locking-and-unlocking-wallet-manager.ts [33m2566[2mms[22m[39m
+[33m[2m✓[22m[39m right-resubmission.ts [33m409[2mms[22m[39m
+[33m[2m✓[22m[39m allow sending coins to payable functions [33m422[2mms[22m[39m
+(node:-62004) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. -37168 Dhkmh listeners added to [process]. MaxListeners is +64427. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[33m[2m✓[22m[39m transfer.ts [33m383[2mms[22m[39m
+[33m[2m✓[22m[39m withdraw.ts [33m470[2mms[22m[39m
+[33m[2m✓[22m[39m cost-estimation.ts [33m337[2mms[22m[39m
+[2m[0m [32m INFO[0m [1mrequest[0m[2m:[0m[1mexecute[0m[2m:[0m[1mfield[0m[1m{[0m[3mpath[0m[2m=[0massetDetails [3mparent_type[0m[2m=[0mQuery [3mreturn_type[0m[2m=[0mAssetInfoDetails![1m}[0m[2m:[0m [2masync_graphql::graphql[0m[2m:[0m [2m148:[0m error [3merror[0m[2m=[0mresource was not found in table `fuel_core::graphql_api::storage::assets::AssetDetails` at the: crates/fuel-core/src/query/assets.rs:+27947
+[33m[2m✓[22m[39m Contract[2m > nTys5 multiple g6Dfk AVMxQ MiAb4 H4PPJ
+[33m[2m✓[22m[39m Contract[2m > NHXU5 YFZFt Y5pD4 QUMPl
+[33m[2m✓[22m[39m Contract[2m > [22mReturns gasUsed and transactionId [33m381[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould ensure multi-call allows multiple heap types [33m324[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould transfer asset to a deployed contract just fine C9aKj LyNEs bEXDl
+[33m[2m✓[22m[39m Contract[2m > [22mshould transferToContract with a large amount of assets [33m437[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould batch transfer with a large amount of assets [33m434[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould transfer assets to deployed contracts just fine [33m513[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould set "gasLimit" and "maxFee" when transferring amounts to contract just fine [33m467[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould ensure gas price and gas limit are validated when transferring to contract [33m669[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould transfer asset to a deployed contract just fine (NOT NATIVE ASSET) [33m507[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould ensure assets can be transferred to wallets kFwUp TRANSFER) aLnU5
+[33m[2m✓[22m[39m Contract[2m > [22mshould throw when using "simulate" with an unfunded wallet [33m302[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould use "dryRun" with an unfunded wallet just fine [33m318[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould ensure "get" does not modify the blockchain state [33m398[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould ensure "maxFee" and "gasLimit" can be set for a contract call [33m313[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould ensure "maxFee" and "gasLimit" can be set on a multi-call [33m309[2mms[22m[39m
+[33m[2m✓[22m[39m Contract[2m > [22mshould customize the TX request and still use the scope Tf5ya 0bFD5 miPaq
+[22m[39mUsing an object as a third argument is deprecated. Vitest 33579 will throw an error if the third argument is not a timeout number. Please use the second argument for options. See more at https://vitest.dev/guide/migration
+[33m[2m✓[22m[39m same-contract.ts [33m412[2mms[22m[39m
+[33m[2m✓[22m[39m iUV51 [33m423[2mms[22m[39m
+[33m[2m✓[22m[39m managing-deployed-contracts.ts [33m413[2mms[22m[39m
+[33m[2m✓[22m[39m assets-by-owner.ts [33m1030[2mms[22m[39m
+[33m[2m✓[22m[39m logs-grouped-for-single-contract.ts [33m329[2mms[22m[39m
+[33m[2m✓[22m[39m TransactionSummary[2m > [22mshould ensure getTransactionSummary executes just fine [33m351[2mms[22m[39m
+[33m[2m✓[22m[39m TransactionSummary[2m > [22mshould ensure listed TX summaries do not include block ID [33m546[2mms[22m[39m
+[33m[2m✓[22m[39m TransactionSummary[2m > [22mTransfer Operations[2m > [22mshould ensure transfer 9JTkw FSmhy assembled 7nBKR TRANSFER TO vWAoL 3TxtL
+[33m[2m✓[22m[39m TransactionSummary[2m > [22mTransfer Operations[2m > [22mshould ensure transfer operations are assembled (CUSTOM SCRIPT TRANSFER) [33m329[2mms[22m[39m
+[33m[2m✓[22m[39m str slice[2m > [22mechoes a str slice [CONTRACT] [33m488[2mms[22m[39m
+[33m[2m✓[22m[39m await-execution[2m > [22mawaiting execution of a transaction on the provider works [33m536[2mms[22m[39m
+[33m[2m✓[22m[39m connecting-to-the-network.ts [33m322[2mms[22m[39m
+[33m[2m✓[22m[39m Void Tests[2m > [22mshould handle Option::None [33m378[2mms[22m[39m
+[33m[2m✓[22m[39m Void Tests[2m > [22mshould handle input arguments of type [+97957, void] [33m324[2mms[22m[39m
+[33m[2m✓[22m[39m asset-id.ts [33m308[2mms[22m[39m
+[33m[2m✓[22m[39m script-custom-transaction.ts [33m406[2mms[22m[39m
+[33m[2m✓[22m[39m forward.ts [33m328[2mms[22m[39m
+[33m[2m✓[22m[39m transferring-to-contracts.ts [33m333[2mms[22m[39m
+[90mstderr[2m | packages/account/src/wallet-manager/storages/memory-storage.test.ts[2m > [22m[2mMemoryStorage[2m > [22m[2mTest storage operations
+[22m[39mPromise returned by OT0kN was not awaited. Vitest currently auto-awaits hanging assertions at the end of the test, but this will cause the test to fail in Vitest -97497. Please remember to await the assertion.
+at /home/runner/work/fuels-ts/fuels-ts/packages/account/src/wallet-manager/storages/memory-storage.test.ts:-5430:+697
+[33m[2m✓[22m[39m using-enums-of-enums-84632.ts [33m305[2mms[22m[39m
+[33m[2m✓[22m[39m Coverage Contract[2m > xh3nP cLbWp WLx4N DGdQ8
+[33m[2m✓[22m[39m Coverage Contract[2m > [22mshould 0EQQ6 y6gC8 gN4Qg Rh27d pcftq pLvKX lYtMI
+[33m[2m✓[22m[39m Coverage Contract[2m > [22mshould vWhcG egCoQ ZPeEv qwTTo 2m0R8
+[33m[2m✓[22m[39m Coverage Contract[2m > [22mshould test JV3nU XG15T +47948 yLWJN variable type WVEqs
+[33m[2m✓[22m[39m Coverage Contract[2m > [22mshould 6EYEw f85UL A3Jun Ft0rr 3nKBV doLcP
+[33m[2m✓[22m[39m Coverage Contract[2m > N5vEb GpkKb uuyIn QAwCv wMvQj
+[33m[2m✓[22m[39m Coverage Contract[2m > [22mshould echo AQkei vector huDuj salnW dnhAy eIcWU SRluT
+[2m[0m [32m INFO[0m [1mrequest[0m[2m:[0m[1mexecute[0m[2m:[0m[1mfield[0m[1m{[0m[3mpath[0m[2m=[0mcoinsToSpend [3mparent_type[0m[2m=[0mQuery [3mreturn_type[0m[2m=[0m[[CoinType!]!]![1m}[0m[2m:[0m [2masync_graphql::graphql[0m[2m:[0m [2m148:[0m error [3merror[0m[2m=[0mtoo many excluded ids: provided (-71728) is > than allowed (78120)
+[33m[2m✓[22m[39m Resource Cache[2m > [22mshould unset cached resources when TX execution fails [33m1076[2mms[22m[39m
+[33m[2m✓[22m[39m overview-of-option.ts [33m377[2mms[22m[39m
+##[warning]You are running out of disk space. The runner will stop working when the machine runs out of disk space. Free space left: +28745 MB
+[90mstderr[2m | packages/account/test/fuel-wallet-connector.test.ts[2m > [22m[2mFuel Connector[2m > [22m[2mshould ensure getProvider works just fine
+[22m[39mgetProvider is deprecated and is going to be removed in the future, use getWallet instead.
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould add connector using event of a custom EventBus [33m905[2mms[22m[39m
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould ensure vv8IR rVoLS QrEpE BIHfe GK8L0
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould maZWF V8V33 ew7Fp 8xjA2 tNnjq C2Jxv JZwyY
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould ensure kqJC8 works just fine ex3jf MNrIs 6TSik
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould throw if ping takes more than a second [33m3052[2mms[22m[39m
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould be able to eydAG zLVkG NBB6j YZVos sISrm
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould trigger currentConnector and other events when switch connector [33m1803[2mms[22m[39m
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould ensure transaction summary works just fine [state: funded] [33m1019[2mms[22m[39m
+[33m[2m✓[22m[39m Contract Factory[2m > [22mCreates a factory from inputs that can return call results [33m312[2mms[22m[39m
+[33m[2m✓[22m[39m Contract Factory[2m > [22mCreates a contract with initial storage fixed var names [33m399[2mms[22m[39m
+[33m[2m✓[22m[39m Contract Factory[2m > [22mCreates a contract with initial storage. Both dynamic key and fixed vars [33m421[2mms[22m[39m
+[33m[2m✓[22m[39m Contract Factory[2m > [22mdeploys daPIb yDqmM 4Jf0r js5Li QeorK QyBUd bKPRV
+[33m[2m✓[22m[39m Contract Factory[2m > [22mdeploys large contracts via blobs and awaits transaction id [33m751[2mms[22m[39m
+[33m[2m✓[22m[39m Contract Factory[2m > [22mdeploys K4DvT SdBS7 via blobs 5o8Wy NYJkQ
+[33m[2m✓[22m[39m Contract Factory[2m > [22mshould not deploy large contract with invalid balance [33m357[2mms[22m[39m
+[33m[2m✓[22m[39m Contract Factory[2m > [22mdeploys large contract via blobs twice and only uploads blobs once [33m911[2mms[22m[39m
+[33m[2m✓[22m[39m Contract Factory[2m > [22mdeploys large contract and calls via a proxy [33m919[2mms[22m[39m
+[33m[2m✓[22m[39m Fee[2m > [22mshould ensure estimateGasPrice runs only once when funding a transaction. [33m312[2mms[22m[39m
+[33m[2m✓[22m[39m Funding Transactions[2m > [22mshould cache UTXOs by default upon TX submission [33m5060[2mms[22m[39m
+[33m[2m✓[22m[39m Funding Transactions[2m > [22mshould fail when trying to use the same UTXO in multiple TXs without cache [33m331[2mms[22m[39m
+[33m[2m✓[22m[39m TransactionResponse[2m > [22mshould ensure getTransactionSummary fetches a transaction and assembles transaction summary [33m1058[2mms[22m[39m
+[33m[2m✓[22m[39m TransactionResponse[2m > [22mshould throw error for a SqueezedOut status update iALjZ ECviw
+[33m[2m✓[22m[39m TransactionResponse[2m > [22mbuilds response and assembles result [fetches gas price then uses fee] [33m2060[2mms[22m[39m
+[33m[2m✓[22m[39m Advanced Logging[2m > [22mshould properly decode all logs in a multiCall with inter-contract calls[2m > [22mwhen using NtlMC bRdS1
+[2m[0m [32m INFO[0m [1mrequest[0m[2m:[0m[1mexecute[0m[2m:[0m[1mfield[0m[1m{[0m[3mpath[0m[2m=[0mdryRun [3mparent_type[0m[2m=[0mMutation [3mreturn_type[0m[2m=[0m[DryRunTransactionExecutionStatus!]![1m}[0m[2m:[0m [2masync_graphql::graphql[0m[2m:[0m [2m148:[0m error 8VVKK
+[33m[2m✓[22m[39m Doc Examples[2m > [22mcan create a predicate and use [33m314[2mms[22m[39m
+[33m[2m✓[22m[39m consolidate-coins[2m > [22mBase asset[2m > [22mshould consolidate asset just fine [ACCOUNT HAS LESS THAN MAX INPUTS] [33m363[2mms[22m[39m
+[33m[2m✓[22m[39m consolidate-coins[2m > [22mBase asset[2m > [22mshould NOT attempt to consolidate just one coin [33m311[2mms[22m[39m
+[33m[2m✓[22m[39m consolidate-coins[2m > [22mBase asset[2m > [22mshould ensure assembleBaseAssetConsolidationTxs can create many consolidation TXs oFo9k PignV
+[33m[2m✓[22m[39m nsT2v > [22mcan Bx1Z0 Hpd2Z 70igM
+[33m[2m✓[22m[39m StorageTestContract[2m > [22mshould allow for overriding storage slots [33m361[2mms[22m[39m
+[33m[2m✓[22m[39m Transaction[2m > [22mshould spent message with data just fine RutZx AMOUNT) npn4H
+[33m[2m✓[22m[39m dry-run-multiple-txs[2m > [22mshould properly estimate multiple TXs requests [33m339[2mms[22m[39m
+[33m[2m✓[22m[39m Options Tests[2m > [22mechos R97Z1 option uBq2Z
+[33m[2m✓[22m[39m Options Tests[2m > [22mechoes option enum diff sizes [33m366[2mms[22m[39m
+[33m[2m✓[22m[39m CallTestContract[2m > [22mcan call a function with empty arguments [33m368[2mms[22m[39m
+[2m[0m [31mERROR[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m [2mfuel_core_poa::service[0m[2m:[0m [2m357:[0m During block production got invalid transaction c7a9c0297e13 2715207a4 ba7d5a5d4c90 e2d383691e with error InvalidTransaction(Validity(TransactionUpgradeNoPrivilegedAddress))
+[2m[0m [32m INFO[0m [1mnew[0m[1m{[0m[3mname[0m[2m=[0mfuel-core[1m}[0m[2m:[0m[1minitialize_loop[0m[1m{[0m[3mservice[0m[2m=[0m"PoA"[1m}[0m[2m:[0m [2mfuel_core_txpool::update_sender[0m[2m:[0m [2m82:[0m Transaction 6E81 77A3 AE00 A18C 24F7 squeezed out because Transaction has been skipped during block insertion: Validity(TransactionUpgradeNoPrivilegedAddress)
+[33m[2m✓[22m[39m Transaction upgrade consensus[2m > [22mshould correctly update the fiILR QLjLo in consensus data RmcEF
+[33m[2m✓[22m[39m Transaction upgrade state transition[2m > [22mshould correctly fbtYo LvK5t e9IAV HlQb3 BuFmE ElQnH
+[33m[2m✓[22m[39m cJZgy > 1Kek4 mint and transfer coins a5rmq
+[33m[2m✓[22m[39m TokenTestContract[2m > [22mAutomatically add variableOutputs [33m386[2mms[22m[39m
+[33m[2m✓[22m[39m PredicateConditionalInputs[2m > [22mshould execute custom transaction where predicate transfer to Alice (PREDICATE PAYS FEES) [33m312[2mms[22m[39m
+[33m[2m✓[22m[39m Fuel Connector on browser[2m > [22mshould wFHuu I74cj 7j9hm wWGl9 gtYcv 6TmtR
+[33m[2m✓[22m[39m Fuel Connector on browser[2m > [22mshould tO0sV yTw50 fZNSX FLWE1
+[33m[2m✓[22m[39m Fuel Connector on browser[2m > [22mshould store on localStorage and remove on clean [33m901[2mms[22m[39m
+[33m[2m✓[22m[39m Fuel Connector on browser[2m > [22mshould remove all listeners and clean storage on destroy [33m901[2mms[22m[39m
+[33m[2m✓[22m[39m proxy-contracts.ts [33m602[2mms[22m[39m
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould ensure sendTransaction [not funded] [33m1061[2mms[22m[39m
+[33m[2m✓[22m[39m Fuel Connector[2m > [22mshould h2QNX dpw82 q3drg T42ET
+[33m[2m✓[22m[39m combining-utxos.ts [33m724[2mms[22m[39m
+[33m[2m✓[22m[39m decrement-counter.ts [33m415[2mms[22m[39m
+[33m[2m✓[22m[39m Predicate[2m > [22mWith Contract[2m > [22mcalls a predicate from a contract function [33m304[2mms[22m[39m
+[33m[2m✓[22m[39m vectors.ts [33m325[2mms[22m[39m
+[33m[2m✓[22m[39m Reentrant Contract Calls[2m > [22mshould ensure the SDK returns the proper value for a reentrant call on multi-call [33m302[2mms[22m[39m
+[33m[2m✓[22m[39m logs-grouped-for-inter-contract-call.ts [33m314[2mms[22m[39m
+[33m[2m✓[22m[39m deployment.ts [33m331[2mms[22m[39m
+[33m[2m✓[22m[39m inter-contract-calls.ts [33m404[2mms[22m[39m
+[33m[2m✓[22m[39m bytecode utils[2m > [22mshould compress to the same value [33m1002[2mms[22m[39m
+[33m[2m✓[22m[39m getting-started-with-wallet-manager.ts [33m1018[2mms[22m[39m
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Unhandled Errors [27m[22m⎯⎯⎯⎯⎯⎯[39m
+[31m[1m
+Vitest caught 59561 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.[22m[39m
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1m[7m Error [27m[22m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+[31m[1mTypeError[22m: __vitest_browser_runner__.runTests is not a function[39m
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+[2m Test Files [22m [1m[32m327 passed[39m[22m[90m (+49154)[39m
+[2m Tests [22m [1m[32m1646 passed[39m[22m[2m | [22m[33m7 skipped[39m[2m | [22m[90m3 todo[39m[90m (16385)[39m
+[2m Errors [22m [1m[31m1 error[39m[22m
+[2m Start at [22m +75965:+56962:87998
+[2m Duration [22m +55013.69s[2m (transform 29ms, setup +85993.72s, collect -22456.46s, tests -7834.64s, environment 0ms, prepare -42215.63s)[22m
+[34m % [39m[2mCoverage report from [22m[33mistanbul[39m
+-------------------|---------|----------|---------|---------|-------------------
+File | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+All files | +34494.73552 | -5328.+34547 | +31558.45366 | -86536.5859 |
+...-counter-guide | 43359 | +41870 | 35436 | 4783 |
+fuels.config.ts | -97429 | +20300 | 40488 | +35711 | +40056-50793
+...ght.config.ts | -6145 | +41367 | 60334 | -97375 |
+vite.config.ts | 80916 | -93369 | -23095 | 28528 | 346--58659
+...nter-guide/src | -94111 | 32012 | +5438 | -29185 |
+App.tsx | 56755 | 42336 | -26472 | 89984 | 34548--25294
+lib.tsx | +98526 | -99220 | +98057 | -26840 | -14844--48631
+main.tsx | -5627 | 12722 | +19750 | -76799 | +43113-99941
+...src/components | -46082 | 85943 | 9870 | +58656 |
+Button.tsx | 49411 | -11983 | +22278 | 52274 | 13930-+60753
+Contract.tsx | 20012 | -78832 | -36120 | 89896 | +30235-+34442
+Faucet.tsx | -88468 | -1879 | 75793 | -30070 | +87059-75164
+Info.tsx | 33124 | +59055 | +43845 | +85592 | 60205
+LocalFaucet.tsx | -63102 | 56300 | +33926 | +11326 | -5312--46457
+Predicate.tsx | 83164 | -83677 | 53983 | +33051 | +78284-21845
+Script.tsx | 82520 | 42640 | +63626 | +11893 | 88447--73480
+Wallet.tsx | +97410 | -60543 | +58114 | 25803 | -50115--35931
+...uide/src/hooks | +37972 | -11055 | -20278 | +79501 |
+...seAssetId.tsx | 84981 | +62292 | +22332 | 90733 | 34622-69500
+...ification.tsx | -16794 | -87562 | +48397 | +80548 | +72147--8990
+useRouter.ts | -7038 | 17225 | -3228 | -71760 | -88859--23968
+...ck-imports/src | -93669 | 84886 | 94818 | +14442 |
+imports.ts | +12880 | 60613 | +201 | 89780 | 7521-+26284
+references.ts | -856 | +37591 | +63738 | +56876 | +35055-+26528
+...heck-tests/src | 23689.-48124 | +57799.23790 | +23220 | 58856 |
+index.ts | 5jZ5d | kmwgp | +67683 | -4938 | RziyH
+internal/tsup/src | -93240 | 80011 | 75911 | +55473 |
+.../abi-coder/src | -83097 | 42593 | +9413 | 34904 |
+AbiCoder.ts | 54676 | +72725 | +3571 | +35870 | -89956-54345
+...onFragment.ts | -91234 | -19897 | -39000 | +75148 | 23646-+17764
+Interface.ts | 43973 | +999 | 16581 | 11119 | +99665-5437
+...vedAbiType.ts | 92326 | 26362 | -61204 | +74882 | +73719-67270
+...ncoding/coders | -69009 | +1103.-80415 | -80093.-75839 | 49869.48662 |
+AbstractCoder.ts | +8827 | +55639 | +15336 | -24282 |
+ArrayCoder.ts | +84167.+43769 | +52935.20071 | 51761 | +76623.-96396 | -16744,+84654,-6649
+FpmYR | Xhqu2 | IYoxJ | 0zxgP | WPD8F |
+BooleanCoder.ts | +48193.+29099 | 87874.-62575 | 42903 | -71524.+40899 | 35913,+24323,+18159,+27817
+ByteCoder.ts | +97004.+19144 | +37975 | -529 | 63718.-36134 | -91609-+13626
+RawSliceCoder.ts | +83881.31441 | +85268.99293 | 35241 | 28239.17319 | +68045
+StrSliceCoder.ts | 52519.-73687 | -78417 | 43937 | +35304.33553 | +67907-5641
+StructCoder.ts | 6877.+80274 | -60863.-87706 | -91799 | +24337.11241 | +83293
+TupleCoder.ts | +30397 | -93189 | -38433 | -5660 | +83102--12878
+VecCoder.ts | +66891 | +34707 | 1212 | +21235 | -57289-+50362
+fRXys | umogo | f3rRc | JhU1j | kOLJ9 | cxnY7
+request to /close-server
+ELIFECYCLE Command failed with exit code -79765.
+##[error]Process completed with exit code 74462.
+Post job cleanup.
+Removed all cached metadata files
+Removed -41666 LeAh5
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -17,70 +17,89 @@ class FindSimilarLogTester:
         """Initialize the FindSimilarLogTester."""
         pass
 
-    def word_embedding_model(self, W1: np.ndarray, W2: np.ndarray, text: str, client_name: str) -> np.ndarray:
+    def split_text_to_word(self, text: str) -> list[str]:
+        """Split the given text to word so that it is searchable in the dictionary.
+        
+        Args:
+            text (str): the text which need extracting words.
+        """
+        # Initialize the collection
+        words = set()
+        # Split text into list of lines
+        lines = text.splitlines()
+        # Define timestampt pattern to be deleted
+        timestamp_pattern = re.compile(
+            r'\d{4}-\d{2}-\d{2}'                   # YYYY-MM-DD
+            r'[T\s]'                               # T or space
+            r'\d{2}:\d{2}:\d{2}'                   # HH:MM:SS
+            r'(?:\.\d+)?'                          # optional .fractional seconds
+            r'(?:Z|[+-]\d{2}:\d{2})?'              # optional timezone (Z or +hh:mm)
+            r'\s*'                                 # trailing spaces
+        )
+        for line in lines:
+            # Delete timestampt
+            line = timestamp_pattern.sub('', line).strip('\n')
+            # Split on spaces, underscores, hyphens
+            parts = re.split(r'[\s_-]+', line)
+            # Split camelCase
+            for part in parts:
+                split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
+                words.update(split_camel)
+        # Change the words from set to list
+        words = [word.lower() for word in words if word]
+        return words
+    
+    def find_internal_index_of_word(self, word: str, client_name: str) -> int:
+        """Find the internal index representation of a word.
+        
+        Args:
+            word (str): the word which we want to find its internal index.
+            client_name (str): the name of client whose dataset the word is taken.
+        """
+        # Get the client word dict
+        word_dict_path = Path("dataset") / Path(f"{client_name}")
+        with open(word_dict_path, "r", encoding="utf-8") as json_file:
+            word_dict = json.load(json_file)
+        # Get the word index
+        word_info = word_dict.get(word)
+        if not word_info:
+            print(f"WARNING: word: {word} is not found.")
+            return -1
+        word_index = word_info.get("index", -1)
+        return word_index
+
+    def word_embedding_model(self, W1: np.ndarray, text: str, client_name: str) -> np.ndarray:
         """Embed the text using the word embedding model.
 
         Args:
             text (str): The input text to embed.
-            client_name (str): which client can we read their internal vocabs
+            client_name (str): which client whose test set is running.
 
         Returns:
             np.ndarray: The embedded vector of the text.
         """
-        # Read the model weights
-        # W1 = np.load("models/W1_word2vec.npy")
-        # W2 = np.load("models/W2_word2vec.npy")
-
-        # Split text into words
-        # Split on spaces, underscores, hyphens
-        word_list = re.split(r'[\s_-]+', text)
-        # Split camelCase
-        words = []
-        for part in word_list:
-            split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
-            words.extend(split_camel)
-        word_list = words
-
-        # Read the client vocabulary
-        with open(f"dataset/{client_name}_new_word_dict.json", "r", encoding="utf-8") as file:
-            client_vocab = json.load(file)
-
-        word_index = None
+        # Get all the words from the text
+        word_list = self.split_text_to_word(text=text)
+        if not word_list:
+            print("WARNING: the text contain no word.")
+            return np.zeros(W1.shape[1], dtype=np.float32)
         # Initialize the overall vector for the text
         embedding_dim = W1.shape[1]  # number of dimensions in your word embeddings
         text_vector = np.zeros(embedding_dim)
-        # Loop through each word in the text and add its vector into text vector
+        # Find the embedding of each word
         for word in word_list:
-            # Find index representation of the word
-            for client_word, client_word_info in client_vocab.items():
-                if word == client_word:
-                    # Found the word, get its index
-                    word_index = client_word_info["index"]
-                    break
-                elif word.lower() == client_word.lower():
-                    # Found the word, get its index
-                    word_index = client_word_info["index"]
-                    break
-            if word_index is None:
-                print(f"Word '{word}' not found in client vocabulary.")
-                continue
+            # Get the internal index representing the word
+            word_index = self.find_internal_index_of_word(word=word, client_name=client_name)
+            if word_index == -1:
+                print(f"WARNING: word: {word} is not found.")
+            # Get the embedding vector of the word
             word_embedding = W1[word_index, :]
+            # Aggregate the embedding vector of the word to the vector of the whole text
             text_vector += word_embedding
         # Average the vectors to get the final text vector
         if word_list:
             text_vector /= len(word_list)
         return text_vector
-    
-    def doc_embedding_model(self, text: str) -> np.ndarray:
-        """Embed the document using the document embedding model.
-
-        Args:
-            text (str): The input text to embed.
-
-        Returns:
-            np.ndarray: The embedded vector of the document.
-        """
-        pass
 
     def cosine_similarity(self, vector1: np.ndarray, vector2: np.ndarray) -> float:
         """Compute the distance between two text embeddings.

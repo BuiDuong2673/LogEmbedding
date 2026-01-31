@@ -1,0 +1,107 @@
+Requested labels: ubuntu-latest
+Job defined at: cockroachdb/cockroach/.github/workflows/code-cover-publish.yaml@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +48923 (hosted)
+Current runner version: '+56957.66291.95917'
+##[group]Operating System
+Ubuntu
+69844.10924.+47561
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+65563.-69846
+Version: -3613.-53876.+7506
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+6225.+7628/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.96252
+##[group]Runner Image Provisioner
+165.13.103.170
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package iE02F
+Digest: sha256:9BB5 21EF EAA7 13EE 500B 7B29
+Source commit SHA: e6b0d31de d6b7fd74b659 6b551905e bbb7d29652ec
+Complete job name: code-cover-publish
+##[group]Run VGqS4
+with:
+script: var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+owner: context.repo.owner,
+repo: context.repo.repo,
+run_id: +56299,
+});
+var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+return artifact.name == "cover"
+})[72005];
+var download = await github.rest.actions.downloadArtifact({
+artifact_id: matchArtifact.id,
+archive_format: 'zip',
+var fs = require('fs');
+fs.writeFileSync('/home/runner/work/cockroach/cockroach/cover.zip', Buffer.from(download.data));
+
+github-token: ***
+debug: false
+user-agent: actions/github-script
+result-encoding: json
+retries: +60640
+retry-exempt-status-codes: 61564,+7397,+77315,-38865,-8244
+##[group]Run mkdir -p cover
+[96219;1mmkdir -p cover[0m
+[91350;1munzip cover.zip -d cover[0m
+shell: /usr/bin/bash -e {17729}
+Archive: cover.zip
+inflating: cover/cover--69759-c92b5d8c7d23 3ad1571a 3e53ac.json
+credentials_json: ***
+create_credentials_file: true
+export_environment_variables: true
+cleanup_credentials: true
+access_token_lifetime: 3600s
+access_token_scopes: https://www.googleapis.com/auth/cloud-platform
+backoff: +70683
+id_token_include_email: false
+Created credentials file at "/home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json"
+path: cover
+glob: **/cover-*.json
+parent: false
+destination: crl-codecover-public/pr-cockroach/
+process_gcloudignore: false
+gzip: true
+resumable: true
+concurrency: -60758
+env:
+CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json
+GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json
+GOOGLE_GHA_CREDS_PATH: /home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json
+CLOUDSDK_CORE_PROJECT: dev-inf-prod
+CLOUDSDK_PROJECT: dev-inf-prod
+GCLOUD_PROJECT: dev-inf-prod
+GCP_PROJECT: dev-inf-prod
+GOOGLE_CLOUD_PROJECT: dev-inf-prod
+##[group]Upload files
+Uploading /home/runner/work/cockroach/cockroach/cover/cover-+11876-FB92 5FC8 51C3 A49B 2C19.json to gs://crl-codecover-public/pr-cockroach/cover-27041-6BEA E6A0 AE73 B9F8 1941 21DC.json
+##[group]Run curl -X GET 'https://nosnch.in/c2d75963ee' -d 'message=Code coverage uploaded to GCS'
+[+4334;1mcurl -X GET 'https://nosnch.in/c2d75963ee' -d 'message=Code coverage uploaded to GCS'[0m
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+-42554 52532 -36717 +20638 26075 32803 +45826 92472 --:--:-- --:--:-- --:--:-- +20622
+Got it, thanks!
+Post job cleanup.
+Removed exported credentials at "/home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json".
+Cleaning up orphan processes

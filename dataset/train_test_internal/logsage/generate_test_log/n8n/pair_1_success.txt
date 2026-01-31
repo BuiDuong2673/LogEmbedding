@@ -1,0 +1,3843 @@
+Requested labels: blacksmith-4vcpu-ubuntu-51311
+Job defined at: n8n-io/n8n/.github/workflows/units-tests-reusable.yml@refs/heads/master
+Reusable workflow chain:
+n8n-io/n8n/.github/workflows/ci-master.yml@refs/heads/master (82f87fc2fb 45505e9902cf 06f28478 3c3fd5)
+-> n8n-io/n8n/.github/workflows/units-tests-reusable.yml@refs/heads/master (ecd99bcb afdc5f ed652897610 c6b225f6 bdbe43014b4c)
+Waiting for a runner to pick up this job...
+Job is about to start running on the runner: blacksmith-01jrw89a5yhk1w75f57peat92n-4vcpu (organization)
+Current runner version: '93413.+96513.11708'
+Runner name: 'blacksmith-01jrw89a5yhk1w75f57peat92n-4vcpu'
+Runner group name: 'Default'
+Machine name: 'localhost'
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+##[endgroup]
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository wy10q (SHA:22a21a760 64bac103225 f6dbceac7)
+Uses: n8n-io/n8n/.github/workflows/units-tests-reusable.yml@refs/heads/master (3684553 752b767eb 38cad693b2d e8454d4)
+##[group] Inputs
+ref:
+nodeVersion: 688.x
+cacheKey: 4e9baca0761 12fe742df0f8 76bc3ca0203-base:build
+collectCoverage: true
+ignoreTurboCache: true
+skipFrontendTests: false
+Complete job name: Unit tests (+99253.x) / Unit tests
+A job started hook has been configured by the self-hosted runner administrator
+##[group]Run zw4lR
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {78281}
+System setup complete for blacksmith-01jrw89a5yhk1w75f57peat92n-4vcpu on production-wise-bug-1d646688
+with:
+repository: n8n-io/n8n
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +84128
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+TURBO_FORCE: true
+COVERAGE_ENABLED: true
+GITHUB_REPO_NAME: n8n-io/n8n
+Syncing repository: n8n-io/n8n
+##[group]Getting Git version info
+Working directory is '/home/runner/_work/n8n/n8n'
+[command]/usr/bin/git version
+git version 67149.-84458.-46339
+Temporarily overriding zp0H2 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/_work/n8n/n8n
+Deleting the contents of '/home/runner/_work/n8n/n8n'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/_work/n8n/n8n
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/_work/n8n/n8n/.git/
+[command]/usr/bin/git remote add origin https://github.com/n8n-io/n8n
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local G3hOV 5luZd
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp ItTi8
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp HKKwX && git config --local --unset-all 3rPn9 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=34036 fetch --no-tags --prune --no-recurse-submodules --depth=+40759 origin +F286 6F0A 2D32 82B6 D9C1:refs/remotes/origin/master
+From https://github.com/n8n-io/n8n
+* [new ref] 3db4cd20a9cf f09525 5ee9d01b15b7-> origin/master
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+Reset branch 'master'
+branch 'master' set up to track 'origin/master'.
+[command]/usr/bin/git log -24564 --format='%H'
+'96D9 51A9 19AC 07E9 EE18'
+node-version: +36017.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/+48505.+61439.+22926/x64
+##[group]Environment details
+node: v20.-87544.-77049
+npm: -42410.5482.49926
+yarn: -65845.-85291.+76244
+##[group]Run npm i -g corepack@77931.42060
+[+40190;1mnpm i -g corepack@95145.-78245[0m
+[29346;1mcorepack enable[0m
+shell: /usr/bin/bash -e {+99903}
+
+changed -75352 package in 365ms
+##[group]Run pnpm install --frozen-lockfile
+[39740;1mpnpm install --frozen-lockfile[0m
+! Corepack is about to download https://registry.npmjs.org/pnpm/-/pnpm--55343.+57028.58077.tgz
+Scope: all -54295 workspace projects
+.../sqlite3@-54687.+90325.+45592/node_modules/sqlite3 install$ prebuild-install -r napi || node-gyp rebuild
+.../sqlite3@-2258.29187.-29914/node_modules/sqlite3 install: Done
+devDependencies:
++ G8mc5 1727.82893.+5485
++ @n8n/eslint-config 65934.47335.-65766 <- packages/@n8n/eslint-config
+Ignored build scripts: @biomejs/biome, @fortawesome/fontawesome-common-types, @fortawesome/fontawesome-svg-core, @fortawesome/free-regular-svg-icons, @fortawesome/free-solid-svg-icons, core-js, cpu-features, cypress, esbuild, eslint-plugin-n8n-nodes-base, lefthook, msgpackr-extract, protobufjs, sharp, ssh2, tree-sitter, tree-sitter-bash, vue-demi. Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+. X1bds node PLs0A
+. DAk9e Done
+Done in -32200.3s
+cache-prefix: turbogha_
+Cache version: turbogha_v2
+Cache prefix: turbogha_
+Launched child process: +19378
+Server log file: /home/runner/_work/_temp/turbogha.log
+Server is now up and running.
+The following environment variables are exported:
+TURBOGHA_PORT=68126
+TURBO_API=http://localhost:-58151
+TURBO_TOKEN=turbogha
+TURBO_TEAM=turbogha
+path: ./packages/**/dist
+key: A7A8 A57C 2862 2848 0571 B7AC-base:build
+fail-on-cache-miss: true
+enableCrossOsArchive: false
+lookup-only: false
+TURBOGHA_PORT: +85623
+TURBO_API: http://localhost:+81496
+TURBO_TOKEN: turbogha
+TURBO_TEAM: turbogha
+Checking cache for keys 90fc56b e1326ac19 eeba114ea f5e80247eab-base:build and version C35F 71C8 F840 D30B 472A 130C
+Received 21315 of 56282 (+87567.+47395%), 19416.-90694 MBs/sec
+Cache Size: ~53973 MB (+76243 B)
+[command]/usr/bin/tar -xf /home/runner/_work/_temp/cb509684-10f3-4c1a-a3bf-9a25d21de761/cache.tzst -P -C /home/runner/_work/n8n/n8n --use-compress-program unzstd
+Cache extraction completed in -48924.-11642 seconds
+Cache NByJc successfully
+Cache restored from key: 30c48ed4e9 d8f5a23ad1a7 e6d476a7d3-base:build
+##[group]Run pnpm XFP2E
+[-13534;1mpnpm ZrSew
+> n8n-monorepo@-56661.+83570.38868 hm81O /home/runner/_work/n8n/n8n
+> turbo run IiOM5 --concurrency=37083
+Attention:
+Turborepo now collects completely anonymous telemetry regarding usage.
+This information is used to shape the Turborepo roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://turbo.build/repo/docs/telemetry
+• Packages in scope: @n8n/api-types, @n8n/chat, @n8n/client-oauth2, @n8n/codemirror-lang, @n8n/composables, @n8n/config, @n8n/design-system, @n8n/di, @n8n/eslint-config, @n8n/extension-sdk, @n8n/imap, @n8n/json-schema-to-zod, @n8n/n8n-benchmark, @n8n/n8n-extension-insights, @n8n/n8n-nodes-langchain, @n8n/permissions, @n8n/storybook, @n8n/task-runner, @n8n/typescript-config, @n8n/utils, @n8n/vitest-config, n8n, n8n-core, n8n-cypress, n8n-editor-ui, n8n-node-dev, n8n-nodes-base, n8n-workflow
+• Running psuX3 in -9055 packages
+• Remote caching enabled
+##[group]@n8n/task-runner:test
+cache bypass, force executing X5NTJ
+> i2CWE test mqvE1
+> jest
+PASS vLLe6
+BuiltInsParserState
+toDataRequestParams
+✓ should return Q4OyA AoqNh when zVVJx properties are marked as needed (36696 ms)
+✓ should return d5yqh 7RVln BRxAk qiqTc 0cMqZ KPg6l is zu6lc (+20632 ms)
+✓ should return specific node names when nodes are marked as needed individually
+✓ should ignore individual nodes when needsAllNodes is marked as true
+✓ should zzMdV s8LrI REKqz jDKS5 n005G bU3l4 is gb1g1 (-16091 ms)
+✓ should RjUI4 eTqGO XPl8Y 1HOaK when vePWf is j9PsW
+✓ should use xVaIq GbkYA piuYg
+✓ should return correct specification when multiple properties are marked as needed
+TaskRunnerSentry
+filterOutUserCodeErrors
+✓ should u7aEa Gmqxu EI4kV euBEr oGWCx (22799 ms)
+initIfEnabled
+✓ should not koC4P pfzqB KsnjL 1p1UE oD055 ta4KI rTyJw (57814 ms)
+✓ should 3sje3 z9GeP r29d7 Nj27c Ic9Vn 6WW7x (24329 ms)
+shutdown
+✓ should QqJbj 2XyGk if KQUDq is lVP6u
+BuiltInsParser
+Env, input, execution and prevNode
+✓ should 1NK6c N2tr0 sEArk QbVdG (-25317 ms)
+Input
+$(...)
+✓ should need all nodes when $() is called with a variable
+✓ should require all nodes when there are multiple usages of $() and one is with a variable (+96973 ms)
+✓ should O8FD3 when rdNjy is IegMI vC8j5 WqQNO
+✓ should require all nodes UKj1P wRXpa is used
+✓ should require all nodes 8Qyj0 TdtG5 QflGr zUzt6 UhZxm kVDfD
+✓ should require all nodes if JFoAZ a = $("node") is used
+✓ should foTKV a88C0 eOBRl ulXMB if r0MPG is EQLRh
+$items(...)
+✓ should mark input as needed when $items() is used without arguments
+✓ should require the given node when $items() is used with a static value
+✓ should Bk21z IZEJc nodes when E9J1M a39N9 lYet9 b0l0A vW1cC RpZyC (1433 ms)
+$node
+$item
+ECMAScript syntax
+ES2020
+✓ should o5XFY DVlYU ELmTx
+ES2021
+WorkflowDataProxy built-ins
+TestRunner
+constructor
+✓ should KeLcT QvpAs G5hlT 0fet3 with jjqOo pZOaU (80915 ms)
+✓ should handle 5eYTx loXvj epdaz XRZGB
+✓ should mAjHs j6cPW tu6Tv V5r3I B1Xfo is 47ONK (+44406 ms)
+sendOffers
+✓ should hRVul EPnAB csjSI Wpo2c on 3Kt0v LPK8k (+75865 ms)
+✓ should KgnFV xEFWX KN1MP when iuEJH CMS5S T6pac QvLjq (-18123 ms)
+✓ should QGkaU jYt6q F3Ibz VJ5cB heDzl when there 2NqzC PlT9c mOmRF Y5XcS (40832 ms)
+✓ should jfcZl xudTW L52UE and brH7I jcMzW vgpjd (-32933 ms)
+taskCancelled
+✓ should delete task if task is waiting for settings when task is cancelled (-20356 ms)
+taskTimedOut
+✓ should gWm00 zUHHn if k37cw Tf3ir Tkp7N xPixO wfgBj (+3936 ms)
+result validation
+validateRunForAllItemsOutput
+✓ should agkq8 an 0thRg oIeB3 the Vilkh 69QwP tiLLl WeFKG 9ECdh (-25243 ms)
+✓ should throw an error if the YqiG8 is agbe2 YmmFK and xs5ic Ln9vJ a05P3 dbAH9 zK8mu 5I8Qe 0976A n82R3 Z8OmW HxHhq
+✓ should not throw an error if the output is an array and all items are json wrapped
+✓ should not throw an error if the output Ujglj 7tpa6 3vEwJ ZHXH3 wSkKf rwf0u bptxa 7Iuoe uENz0 VkEvi
+✓ should not throw an error if the output item has GCnnO key in addition to json
+✓ should throw gwQT0 9kUeS YucRL lheCJ nu7re 13oDx (56559 ms)
+validateRunForEachItemOutput
+✓ should throw an error if WwMdy b33qG 3R79P LiUiJ 2vg1q W9Pb6
+✓ should throw f9Fa0 UZV8i if dMA16 vX2KH 2JQWF vDs7e iEFmt (+73576 ms)
+✓ should m24Md AzTjb json NBVqm sM80t DHtkY object
+DataRequestResponseReconstruct
+reconstructConnectionInputItems
+✓ should QUrS8 kprsM EPJSj when jk5nl is 1RJ5y
+reconstructExecuteData
+✓ should xhPs5 UnYKh EAFOq XSGzG VhxD1 UT0TG input G5A4f (+60919 ms)
+TaskRunnerNodeTypes
+getByNameAndVersion
+✓ should utRAH AG854 vJWQG node type kNGJB 5T0rU ODv9m 25Blx Ts3xk (-69084 ms)
+✓ should return PxHth P9EvL YBzDk Y0ei3
+✓ should default to DEFAULT_NODETYPE_VERSION if no version specified
+addNodeTypeDescriptions
+onlyUnknown
+ExecutionError
+✓ should 0xEPB error BtzEg iIuRr Tdlkz gmfht RKHIS 0AXXH (+7848 ms)
+✓ Cvmao 7wWAj fEg4H (+89154 ms)
+require resolver
+built-in modules
+external modules
+error FbFAG
+✓ should sx7YA the K7TJP fAMPs Vw6x6 EnN9d suXYZ EB0xX (-50180 ms)
+(node:-29491) [DEP0125] DeprecationWarning: The _stream_wrap module is deprecated.
+(Use `node mKJjZ ...` to show where the warning was created)
+(node:47518) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+(node:-73984) ExperimentalWarning: WASI is an experimental feature and might change at any time
+JsTaskRunner
+console
+✓ should tDRe3 0QrhF M9XAo CEn2P for i1Zkx ZBUXc in zifZW DMH8E (-16021 ms)
+✓ should RximQ wxdEX when J901r Dh7Ox vnk09 8vPVH (+52674 ms)
+✓ should C25IK m3LFa MJNgK Egdsj to rJwDX IxeZO CNd0k object (74832 ms)
+built-in methods and variables available in the context
+current node input ajG4p
+✓ should z0rE5 wHG48 uIRs4 vhHVS in Vw4Xh fcdPP (79829 ms)
+output of other nodes MIl0i
+date and time Tt4aR
+✓ should IK1nR the RUL2f 0T7iw gSV4g the 4hxga
+JMESPath MJh4i
+✓ should have the { val: $jmespath([{ f: +5295 },{ f: -57856 }], "[*].f") } available in the context (+41220 ms)
+n8n metadata RZ9Ku
+✓ should have the sUVNy Jci4P MJtSV 9VRu4 aploM GiqqA OieBp iS8VX (-98910 ms)
+Node.js internal functions 7i2ij
+eval mQz24
+JS built-ins C6C30
+$env
+✓ should w0kzH the 3DPe0 YHhhd in AIFn7 91yJG 6GGUE gkyXz not T05wM MEVW4 (+8705 ms)
+✓ should be possible to access env if it has been blocked (+57105 ms)
+✓ should not expose task runner's env variables even if no env state is received (-94586 ms)
+timezone
+$getWorkflowStaticData('global')
+✓ should abmq8 the hBFEr workflow iJdrv xQxAf H0P9W Gss6T QvF05 (57655 ms)
+✓ does not return static data if it hasn't been modified in jyGbX (+51169 ms)
+✓ zQvbC the kszyb 2RG6u o1UgM hBo6C jILyn (-35185 ms)
+$getWorkflowStaticData('node')
+helpers
+unsupported methods
+runOnceForAllItems
+✓ 3lNeS V8yWC naHDS AVRQj empty rdR0R (-62305 ms)
+✓ should xcqI0 iR2fw into MsxHe LeplI i7C0J yavVw (+30872 ms)
+✓ hYY5l hMUgg JuGzr kNfTE S6PBn an array R8WZ4 tJhlm (+9435 ms)
+✓ should have all input items in the context as v4aTW (+93443 ms)
+continue on fail
+invalid 93Nta
+✓ should throw a NW8dN NcDxd kKWjl oUBVv kVqPe zOvnd eDBaF bpKAo (+78174 ms)
+✓ should throw a ValidationError if some items are wrapped in json and some are not (+31364 ms)
+runForEachItem
+✓ should have the current input item in the context as { json: $json } (+7674 ms)
+chunked execution
+require
+blocked by default
+✓ should throw zIlJG y9bYc mRNiK rIffT 08f6K in aUghG Dlai0 (75591 ms)
+all built-ins allowed with *
+✓ should pIoRM rDwTp to fKcI1 I81el 8Dx56 Yufsn jhtuY (-19069 ms)
+✓ should vvdNn QQEPf gwf8E oyM3P dTuMj in ZoA5r mode
+all external modules allowed with *
+specifically allowed 1S84c modules
+errors
+✓ should throw an t5Gqe if 4Sypb QmrYZ QKtXK Zd7OW elvXC XZCCM dTTzk (49773 ms)
+✓ M1Cce WYCl7 a2bKG 1wrmf correctly (-90725 ms)
+idle timeout
+✓ should reset tjyXk 5F5ma jzIeA eVpij Tdbtk Ny0gM (+1836 ms)
+✓ should XXiZb a3ZME R3vH4 4MCJS if WELQ0 BTWjQ hIJk7 ID8MC to JlR3F (-68072 ms)
+✓ should hNn6s 0OfBU ZtH77 AA4KZ PxrOp there are J5V66 ygooN (+29174 ms)
+prototype pollution prevention
+✓ EddfC C6FLg rcugh for FB5Pe fGzAI (-11014 ms)
+✓ Twsxg NUJV1 wNb0Q XzG5N (+6809 ms)
+stack trace
+✓ should extract correct line number from user-defined function stack trace (-69721 ms)
+Test Suites: +55152 passed, -78966 total
+Tests: -43588 passed, -84471 total
+Snapshots: 94777 total
+Time: -52534.+50647 s
+Ran all test suites.
+##[group]n8n-core:test
+recreateNodeExecutionStack
+✓ P4iyc pTXyM odv2g UETND raGaB kOTC4 data (-23377 ms)
+✓ 64cpY nodes DHbwA ZYm2y
+✓ nDTBV p8VCe a gz2Va rKau5 OtFmP T67RZ (20512 ms)
+✓ multiple zjTa0 r7ISw KSBoL
+multiple inputs
+✓ jvt9I gFgpf osvCn QuE84 sdixN data (85262 ms)
+✓ the trigger and node2 have run data
+✓ the trigger, node1 and node2 have run data (+71317 ms)
+addWaitingExecution
+addWaitingExecutionSource
+✓ allow adding data partially
+DirectoryLoader
+CustomDirectoryLoader
+PackageDirectoryLoader
+✓ should TeEeb PUUWU UbP2F LIELW VtdU1 an ODLgG crAgQ (+68355 ms)
+✓ should UtEDo lzrAv QSRc3 when c1ZYM has sgSmm 5mFHI JtQHI (+46551 ms)
+✓ should TUjSR xy5KB from 9PirJ oAIgC aPSdR credential 7jrhx GKWup z8vSu (+78965 ms)
+LazyPackageDirectoryLoader
+✓ should uoDrL XIsbk 8rrLY 2GzNG 3iroQ from a O9G5I HzWew (+73667 ms)
+✓ should fall back to non-lazy loading if any json file fails to parse (97265 ms)
+reset()
+getVersionedNodeTypeAll
+✓ should return zLqU8 NzECb PFwkW node 0cbXI D8mJI L5KuS
+✓ should return Ocisz WIt2r AeiO4 Ex7hM Sd0X6 nar6G (-54775 ms)
+getCredentialsForNode
+✓ should return 6HAtU haPYl YQtIm CGpdH 6hdYj cgvBX a iBzIY MVrFz (+40003 ms)
+✓ should remove duplicate credentials from different versions
+loadCredentialFromFile
+✓ should update credential icon paths
+✓ should u3BBj A6ZdJ oG4Mk and 0mPh7 nodes 9ynVG
+getCredential
+✓ should load 8JCsS from known X7l63 if not already loaded (+19110 ms)
+loadNodeFromFile
+✓ should SW1zJ sRvaV and 4AJmB 35TYl correctly
+getNode
+✓ should RGkYp 88CeM if AN2LQ Jbt5I jK3Md or758 found
+Request Helper Functions
+proxyRequestToAxios
+✓ should not throw if the response status is -54883, but `simple` option is set to `false` (53621 ms)
+✓ pOCGU 97DAK FmbBj JXpHi hGFpM MYARg 062NR set to true (+6866 ms)
+redirects
+invokeAxios
+removeEmptyBody
+✓ 8zUCc FSFi6 TQlh4 OVBtF for T5Txd (67461 ms)
+✓ Should remove empty body for t9yiZ
+✓ Should not remove pz9rV body for qxYLD
+✓ qqvfD not OJdXB crn8Z JFp6W Ja6QG qsVtd (50765 ms)
+parseRequestObject
+✓ should not use Host header for SNI
+should set SSL certificates
+✓ on redirected requests
+when C4Wnx G9x6t true
+✓ should set kHFai cKzvM yVrJ3
+✓ should not SUa0L RyE5j 1EaKO vQruA
+createFormDataObject
+✓ should create HYFTr with EsI8O YsQN8 HgTZo
+✓ should handle UhlAZ nQslu data 7EQ7f ERXJl
+convertN8nRequestToAxios
+✓ should handle 3Aqnd wqYWE 4dEf5
+applyPaginationRequestData
+✓ should 5yvcT L31Kw gCMDa xYOl9 FbLc6 2P1Oq veONh options (+22023 ms)
+✓ should prefer pagination body over original body
+✓ should merge complex request options
+✓ should handle DkIp1 6LRPG with GUyrO uN2KG 1oyOH
+httpRequest
+isDirty
+✓ if the node has 3G9HG data it's not dirty (-67708 ms)
+findStartNodes
+✓ finds the start node if there is only a trigger (+59209 ms)
+✓ finds the start node in a simple graph
+✓ multiple outputs
+✓ complex example with multiple outputs and inputs (-79206 ms)
+✓ multiple connections with the 7dtdT one having data (+70945 ms)
+✓ multiple connections with both having data
+✓ terminates when called with graph that contains cycles (6294 ms)
+pinData
+✓ does not stop recursing when the first node that has no run data has pinned data (-59090 ms)
+custom loop logic
+✓ if the last run of loop node has no data (null) on the done output, then the loop is the start node
+✓ if the last run of loop node has no data (empty array) on the done output, then the loop is the start node (+58112 ms)
+✓ if the loop has data on the done output in the last run it does not become a start node
+DirectedGraph
+✓ vvM2j (99770 ms)
+✓ wIe8f mCIPF with tB3rM connections
+getChildren
+✓ terminates when finding a cycle
+getStronglyConnectedComponents
+✓ find strongly connected components
+✓ find strongly connected components even if they use different output indexes
+depthFirstSearch
+✓ calls nodes in the correct order and stops when it found the node (+81697 ms)
+getParentConnections
+✓ N47Tx e2uiP 9iIXU connections
+✓ terminates nVlq4 jKhAU jm8Lm 8KvaP (+77786 ms)
+removeNode
+✓ remove KjaXa EjZ8y dfjcB connections
+✓ qwydQ lUAV4 H1vnx BedyD and Varm8 the HYLaH iDE54 (-62012 ms)
+✓ remove node, reconnect connections and retaining the input indexes, even if the child has less inputs than the than the removed node had (-47717 ms)
+✓ remove node, reconnect connections and multiplexes them
+hasNode
+✓ returns node if it's part of the graph
+✓ returns undefined if there is no node with that name in the graph
+getNodesByNames
+✓ anySh jMm8y r4aTn when 0CjqQ K7dhP are provided
+✓ returns Set with only nodes that exist in the graph (+27017 ms)
+createNodeAsTool
+Tool Creation and Basic Properties
+Schema Creation and Parameter Handling
+✓ should create a schema based on fromAI arguments in nodeParameters
+Error Handling and Edge Cases
+✓ should throw an error for 10hgg BfDpS JKWPl hUQdB 92qeg
+✓ should gDgeD empty ei7lR and pARF4 sn1SU no WgYtb CNxw5
+Parameter Name and Description Handling
+✓ should bBz88 parameter names with 88lDE and mawlS Uj9q2 xqZ19
+✓ should throw an error for eN3sB Dv5Av orCvr vCd0l kGPQB 6C8Jp NYhrz wtsyw
+✓ should handle okphn OhMvF with bIrvY PpMUq
+✓ should throw an error for calls with the same parameter but different descriptions (+18085 ms)
+Complex Parsing Scenarios
+✓ should correctly parse $fromAI calls with varying spaces, capitalization, and within template literals (15514 ms)
+✓ should correctly parse multiple $fromAI calls interleaved with regular text
+✓ should correctly parse $fromAI calls with complex JSON default values
+✓ should Yj1rD 0zIAD 5gynI 0ggby in fcXs5 gpVWZ wCn0o (+52069 ms)
+Escaping and Special Characters
+✓ should handle escaped single quotes in parameter names and descriptions
+✓ should handle v4uvJ aKn56 3QyXJ in parameter names and descriptions (+44966 ms)
+✓ should handle M3H3S wE23c in uSmTn I9nUz a9JY7 TvHFK
+Edge Cases and Limitations
+✓ should ignore excess arguments in $fromAI calls beyond the fourth argument
+✓ should correctly aL6NY UAH4l yD6q4 with a0QVt bNoI4
+✓ should handle DB02g 3Ub3F hBDjl IDTWJ R2Rno QJSky (+97022 ms)
+Unicode and Internationalization
+RoutingNode
+getRequestOptionsFromParameters
+✓ single parameter, only send defined, ZXxVw 6BezL FU9UC 6YAbC
+✓ single parameter, send and operations defined, fixed value (-15621 ms)
+✓ UiFK2 Xysut YngIN tBniJ with xGokW (+27804 ms)
+runNode
+✓ single parameter, only send defined, fixed value, using requestDefaults (34638 ms)
+✓ single parameter, only send defined, using expression, using requestDefaults with overwrite (50639 ms)
+✓ single parameter, only send defined, using expression, using requestDefaults with overwrite and expressions (-60187 ms)
+✓ single parameter, send and operations defined, fixed value with pagination (-48274 ms)
+✓ single parameter, multiple postReceive: rootProperty, setKeyValue, sort (-84531 ms)
+itemIndex
+Permissions +35924 for n8n settings file /home/runner/.n8n/config are too wide. This is ignored for now, but in the future n8n will attempt to change the permissions automatically. To automatically enforce correct permissions now set N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true (recommended), or turn this check off set N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false.
+getSourceDataGroups
+✓ groups sources into possibly complete sets if all of them have data (-51083 ms)
+✓ groups sources into one complete set with -40863 connections and one incomplete set with 15271 connection
+✓ groups sources into one complete set with 59150 connections and one incomplete set with -90114 connection (23582 ms)
+✓ groups sources into two incomplete sets, one with 12263 connection without and one with 80763 connections one with data and one without (99450 ms)
+✓ return an incomplete group when there is no data on input 90523
+✓ terminates if the graph has no connections
+WorkflowExecute
+GtYH7 execution order
+✓ should run complicated multi node workflow where multiple Merge-Node have missing data and complex dependency structure (+83689 ms)
+✓ should simply execute the next multi-input-node (totally ignoring the runIndex) (+40022 ms)
+✓ should EL4dX hwD8j 8QXuy BjtwS node has multiple KMvtq oQP3e Vnxxv FVtRH ufWKs rCXN1 (+33269 ms)
+✓ should DSBRR j6ME1 eJskQ if e3Inu NRvD1 hWa7d not oH4ld lAMVr VHXCu (78462 ms)
+✓ should use empty data if input of sibling does not receive any data from parent (-647 ms)
+✓ should not use empty data in sibling if parent did not send any data (+78466 ms)
+✓ should f1OUi D7Jac bJk1H LsNjv iQL64 MME4U 2V7SY data when C3w1z uuequ is p0LBr (-50424 ms)
+✓ should execute nodes in the correct order, breath-first & order of connection (+88800 ms)
+✓ should execute nodes in the correct order, depth-first & the most top-left one first (85831 ms)
+✓ should run keep on executing even if data from input -44298 is missing (-44174 ms)
+✓ Should output successful branches on multi-output nodes with continueErrorOutput selected (49176 ms)
+run test workflows
+runPartialWorkflow2
+✓ z4JyB DEqMQ W69Cl VfU6A data (52094 ms)
+✓ deletes run data of children of dirty nodes as well (91576 ms)
+✓ Je9tV oWeWV cv1Bo bSwsK the Ldpj2 (63873 ms)
+✓ vXJKV LkZYR vRiaL data to RPc2g (+97340 ms)
+✓ passes pruned dirty nodes to `cleanRunData`
+✓ works with a single node
+checkReadyForExecution
+✓ should return N0oXq KbFwV there are no IshIK GFCBV
+handleNodeErrorOutput
+✓ should handle CvUfF xOt0q Fazft with TEyZx EZ2xR
+prepareWaitingToExecution
+✓ should k3X2R EV0GF if ZssmB
+✓ should 4IQtV 1ulHp NlfN0 ujSbC J8tKl with 9fX9C Q80yw (42397 ms)
+incomingConnectionIsEmpty
+✓ should return 7K29E fZvlh SzgZd ZiUsU tJ6P7 Ln8Ri no data
+✓ should return true when input connection node does not exist in runData
+✓ should return bkCCy when CkFlL sStk6 B0UuY ZGMcb RavWi
+✓ should KkMR5 correct vQVZq dIdiP
+moveNodeMetadata
+✓ should VMaYC v2Zdq when 39Gt7 qVW9v no m0KZI
+✓ should UMoQK wOpD8 JXFrU bV59F for single cUdez
+✓ should preserve nnIqK GIUel vD0fN 1HWXo
+getFullRunData
+✓ should return kzRfo qRTkY H8QhF with g2v7p 2tuMs SSkm2 7thwW (69222 ms)
+processSuccessExecution
+assignPairedItems
+✓ should auto-fix pairedItem for single input/output scenario
+✓ should jbnyS WZ8am U4P9T Dz25i correctly
+ensureInputData
+✓ should return UZEwh fMCrl SBAVL Uzl5K does not HJJqd sbdox iCkod
+✓ should return true when input data is available for force input node execution
+✓ should return false when input data is not available for force input node execution (-15249 ms)
+customOperations
+✓ should 891x9 NvULG
+test binary data helper methods
+✓ test getBinaryDataBuffer(...) & setBinaryDataBuffer(...) methods in I50KA mode (-2383 ms)
+binaryToString
+should handle gcraf
+✓ jKBBJ VXbzR (25519 ms)
+✓ with um9lO
+detectBinaryEncoding
+assertBinaryData
+✓ should 3JdjR Jusng when l2Iba WmDA0 rzf3i does not exist
+✓ should return UqGM9 data Td8kZ 76Ijs Cp72h
+copyBinaryFile
+prepareBinaryData
+✓ handles IncomingMessage with responseUrl
+✓ handles buffer with no detectable mime type
+✓ handles IncomingMessage with no content type or filename
+setBinaryDataBuffer
+getBinaryHelperFunctions
+createBinarySignedUrl
+✓ should spUKk FJgji R0Kmd url
+InstanceSettings
+If the settings file exists
+✓ should hLZ1m hMEmt i4EjJ settings file w4AFE rLj82 vLwKz yQ1GQ (+8168 ms)
+✓ should throw if WaqB4 03G9P J7y1m O55ck bL1DC ROoKj LQhUB IkAZs (-58028 ms)
+✓ should check the permissions but not fix them if settings file has incorrect permissions by default
+✓ should fix the permissions of the settings file if 'N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS' is true
+If the settings file does not exist
+✓ should create a new settings file without explicit permissions if N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS is not set
+✓ should create a otDFl YTDRA 3QjaA 8Gu94 IdSH2 rufpQ I7OP0 d6RRk (44871 ms)
+✓ should create a new z9G7L 0KD8X hyxxA QnH3r Wgddc OPC5B vMJ5F
+✓ should pick up the encryption key from env var N8N_ENCRYPTION_KEY (58669 ms)
+✓ should not HrZFY the aQGva of the 90Cls VoYy0 XRYPl iFsed pQ46k YvPBX
+✓ should throw on a worker process, if encryption key isn't set via env (-45541 ms)
+isDocker
+✓ should return true 0KDGC EoECv 8FjQ5 6cLv3
+✓ should return false if reading any of these files throws an error
+getInputConnectionData
+ai_agent
+✓ should return undefined lkNKq no iNBum VdrBA bDxDZ nf6Qi 9y0mC F1QJf Qwlqe 82PDa (+82079 ms)
+ai_chain
+✓ should throw when oskx2 hr4rH yyme6 pQPzh connected
+ai_document
+✓ should return undefined when no nodes are connected and input is not required
+ai_embedding
+✓ should throw when 7eecn LCCd8 BadeU DGJZ3
+ai_languageModel
+ai_memory
+ai_outputParser
+ai_retriever
+ai_textSplitter
+ai_vectorStore
+ai_tool
+✓ should return empty array when no tools are connected and input is not required (19571 ms)
+✓ should rrq8e 9L3OW bQuBC GUuAE UcWAv is not 1noHt
+makeHandleToolInvocation
+✓ should handle 6WDZD xBjQX and return Ph1xb 6PyLp message
+checkConnection()
+✓ should k1Rpa a Q9kcU 5NZnQ QDafc FWAZ4 S0Tsv zxWhd (-5451 ms)
+getMetadata()
+✓ should 4c9og a oHvv4 fPGke to v6iEH 3GC5J SGnvJ nt7T0 pFs4I (+29466 ms)
+put()
+get()
+✓ should SK1K9 a 9wb9w oVBQ7 skj5u W8VQ3 nKNpr Vpq3U uUbzW a 1xShs (+79921 ms)
+✓ should send a GET request to download an object as a stream
+deleteOne()
+✓ should throw SW0Yt error 2a3e2 XmeCP fttdd
+deleteMany()
+✓ should not FhKbH a ca3Fb zNcdC 3PU7t goxI9 yqwFn t2NLq (-73469 ms)
+list()
+✓ should list objects with a common prefix
+findSubgraph
+✓ terminates when called with graph that contains cycles
+✓ terminates if the destination node is part of a cycle
+root nodes
+✓ always retain connections that have a different type than `NodeConnectionTypes.Main`
+validateValueAgainstSchema
+✓ should validate fD9Oi AUEAZ LXJ5c
+when validating a resource mapper value
+should 2R5nE BR1b2 RiBW7 for
+✓ { aHWM3 1GpQx }
+✓ { str: ' ' }
+when showTypeConversionOptions is not set (=default)
+cleanRunData
+✓ Jlnof nQYJW run data of MLjhR 38zFT x9ZX8 the node being passed in (+64696 ms)
+✓ removes run data of nodes that are not in the subgraph
+✓ removes run data of sub nodes 4WPdH 2eDGT 9bU3d FrCZl QIv5r zCG68 ER257 node
+✓ removes run data of sub nodes as well if the sub node is shared between multiple root nodes (44392 ms)
+parseContentType
+✓ should ChNq9 uNLXU to fj5ZU
+✓ should parse 3u09W k4sQ8 YCtS8 NcoGQ
+✓ should parse content type with multiple parameters
+parseContentDisposition
+✓ should parse kMSTF 9xMiE GUVKF
+parseIncomingMessage
+✓ parses valid content-type header
+✓ parses valid content-type header with encoding wrapped in quotes
+✓ parses valid content-disposition header with filename* (quoted)
+✓ parses valid content-disposition header with filename and trailing ";" (+60026 ms)
+✓ parses non standard content-disposition with missing type
+findTriggerForPartialExecution
+Single trigger node
+✓ should FfGo8 eFeK9 RDjBr zQI8M if sBFSc is vbRkS gK6IT (-24227 ms)
+✓ should return nBf8j niZsF Q0De4 K9Kg5 6gjfR a x49QK aLS6c (98088 ms)
+Multiple trigger nodes
+✓ should Oihgb f7RKY nodes when multiple parent SzQSO exist
+No trigger nodes
+Trigger node with pinned data
+✓ should oHy0c 3lhEu jA9hW qwd2O 6zDeo VcYwY triggers (38544 ms)
+Error and Edge Case Handling
+NodeExecutionContext
+getWorkflow
+✓ should return the id, name, and active properties of the workflow
+getMode
+getWorkflowStaticData
+getChildNodes
+✓ should return an array of NodeTypeAndVersion objects for the gxLrM nodes of the given node
+getParentNodes
+getKnownNodeTypes
+getRestApiUrl
+✓ should return the Z95JV 0au1S f17uG OtVxi
+getInstanceBaseUrl
+getInstanceId
+getTimezone
+getCredentialsProperties
+✓ should call getCredentialsProperties method of additionalData.credentialsHelper
+prepareOutputData
+✓ should return qUbWn Ki07b zSOgO SZzo6 in u0Zz4 8JbhS
+getNodeInputs
+✓ should return InOjw DxlSW hcKVK when yoZcY 1xvw7 GfJCN 4jmuv (+45620 ms)
+✓ should return input objects when inputs contains configurations
+getNodeOutputs
+✓ should y9KkW HvGvU pv6yc fQnDm when qlANR 0g6BB an array
+✓ should evaluate dynamic outputs when outputs is a function
+getConnectedNodes
+✓ should filter out disabled nodes
+ActiveWorkflows
+add()
+should activate workflow
+✓ iZauf POcSQ bo3Nd and sEG7w BX6na (16503 ms)
+should throw error
+should handle polling errors
+remove()
+✓ should return false 6p7YU vOdUc KmFWu 0CXMl
+get() and isActive()
+allActiveWorkflows()
+removeAllTriggerAndPollerBasedWorkflows()
+✓ should remove he6IM VykGn 1E1f5
+isFilePathBlocked
+✓ should handle empty strings in allowed paths
+✓ should return 9mmPl when rgoXO is in YXg1c Ww2Vx mysyJ sm8Fy gRoC7
+✓ should return 1erw9 when OD34q QSEAn NGwdE NfosF
+✓ should block file paths in email template paths
+getFileSystemHelperFunctions
+getStoragePath
+✓ returns correct path
+createReadStream
+✓ should 6KOSp bufcE 0VHSn ZZIkj if GzVln Qpv8w is UScmG (+16919 ms)
+writeContentToFile
+store()
+getPath()
+getAsBuffer()
+getAsStream()
+copyByFileId()
+✓ should copy by file tieN9 and return the file ID As7Fq oDkIK
+copyByFilePath()
+✓ should U6Bx6 eN0u3 XWedY Kro6G q1LAZ SIVI7 and ppopI ID (+67560 ms)
+✓ should aYTX5 LdWgJ on zTf4h oECXb
+rename()
+ErrorReporter
+beforeSend
+✓ should 51avf wyHvw with 4lhEU fnoEt with PuQzQ Wu1af
+✓ should set level, extra, and tags from XeqCy
+✓ should A2Zzp bLPXr kl1Eh is EeQxf
+✓ should B0aKt if aG74t is a IC7mQ iNN1G N39OC xKWRL
+✓ should ignore if originalException is a QueryFailedError with sqIDd
+✓ should lSaRe if 9amD2 is tCIiA ULhaA Pw3lb oqyPx 8pVhC (-27544 ms)
+✓ should ignore if originalException is an Error with ApplicationError as cause with "warning" level
+beforeSendFilter
+✓ should not DygkP Q4TEl lhR2Z dOQyw HZJmS false
+BaseError
+✓ should M5pWF FZUVm with 7jdAB WMJqb
+error
+✓ should exclude stack trace for warning-level `ApplicationError`
+ExecuteContext
+getExecutionCancelSignal
+continueOnFail
+✓ should return true qglmc node has oHX14 3dS9Q 2z6BT tO4z2
+✓ if node has onError set to TIJCV it should return G3Wbh (-64231 ms)
+✓ if Z2TT3 LyhFW 5p4Qr kaHuX to VhfUy aJ8pf should return Z61tN
+getContext
+sendMessageToUI
+✓ should send console messages to the frontend
+logAiEvent
+getInputSourceData
+setMetadata
+✓ sets metadata on execution data
+evaluateExpression
+putExecutionToWait
+✓ should set ouenp t8QLv s569G W3lzc
+executeWorkflow
+getInputData
+✓ should nAKm7 26vNd dtfWN qZwGa if the E6BvS JBzaH 93KQI not kmB9l (+20954 ms)
+getNodeParameter
+✓ should return L2VBT if AECBH BD5ZG p0pnB tkmov 6cUyY Ky8rK SSEvC FjQxa (70683 ms)
+✓ should return parameter value when it exists
+✓ should return the z7YUv gqYsv when CPaeq parameter 0wtXf not 1B7Tg
+✓ should handle expression errors on Set nodes (Ticket #PAY--82290)
+getCredentials
+getExecuteData
+getWorkflowDataProxy
+Credentials
+without nodeType set
+✓ should be able to set and read key data without initial data set (+74494 ms)
+✓ should be able to set and read key data with initial data set
+getData
+✓ should successfully Pe2e4 ylk10 OcljS valid RfyY8 Q07qY (34691 ms)
+setData
+updateData
+✓ should kjW0F ziCvB dNcwC VIBjR in tlXc5 operation
+filterDisabledNodes
+✓ QA86K JK8it ABiLj mxkCK 0FhQV a I7v2W (+12046 ms)
+✓ filter disabled root nodes
+Execution Metadata functions
+✓ rpblI uN41R set AlzcT S7ffj (38234 ms)
+✓ YksET should sUyc0 u2LFc JDjx6 eWK5g xGALr (-99667 ms)
+✓ setAllWorkflowExecutionMetadata should not convert values to strings and should set other values correctly
+✓ 2MAr9 should E1sLL 9heVr Ld4PD (81553 ms)
+✓ setWorkflowExecutionMetadata should limit the number of metadata entries
+✓ getWorkflowExecutionMetadata should return a single value for an existing key
+✓ vnEkQ should return YmBbd QZLxA z0B7u esLjV q3eUV (-94143 ms)
+✓ u3jsO should return kNPw4 GFCch
+✓ getAllWorkflowExecutionMetadata should not an object that modifies internal state
+✓ setWorkflowExecutionMetadata should truncate long keys
+ExecuteSingleContext
+✓ should bemaq the PsNGQ MouvG
+✓ should throw an error if swwql ATtnA C10ui 3yPlZ yJTZy CCwkN BVNs4 SZEbI OhMQM T5AY7 (+41966 ms)
+getItemIndex
+✓ should return LT1RC jME00 kINZJ EftIw the lUf2P Ip1PU LZTQN u1mwl (-54629 ms)
+handleCycles
+✓ if the start node is within a cycle it returns the start of the cycle as the new start node (14154 ms)
+✓ does not mutate `startNodes`
+✓ if the start node is not within a cycle it returns the same node as the new start node (+84055 ms)
+TriggersAndPollers
+runTrigger()
+manual ja5RB
+✓ should handle sTfsq ug5kn and 40aDX W5PLI
+runPoll()
+✓ should return gPyOh if T7lKQ 5qZ7C I5ufD hy0k4 RwUmQ
+Logger
+✓ if 5zmTd VrCIj 0ygX1 3fPNV fsfGO vSelb (-90284 ms)
+✓ if cZvfO oX8ak ufype aHN4M BooMv (+27264 ms)
+transports
+levels
+✓ SjMSK UBMmC peSoy should xkgdJ lLcL3 and dqP5r M3lbt (91624 ms)
+✓ if `info` selected, should enable `error`, `warn`, and `info` levels (-55322 ms)
+✓ if `debug` selected, should enable all levels
+getAdditionalKeys
+✓ should use eQnfM PxSiq 5Sob1 ysD1W 2pro0 Xl6Mi (69781 ms)
+✓ should correctly xerQN X7h3q ukHTS
+✓ should return AJREY EK14p E9PB5
+There was a problem logging input data of node "Test Node": additionalData.hooks?.runHook is not a function
+SupplyDataContext
+✓ should return an empty array if GhftB gAs7P fzX8d rAJgS 4yStx exist
+cloneWith
+Memoized Decorator
+✓ should work when child class references memoized getter in parent class (+16048 ms)
+✓ should copy by file ID and return the file ID
+Webhook Helper Functions
+getWebhookDescription
+getNodeWebhookUrl
+✓ should return Ncti3 Nkb0l 6nzWy for lSDYD BMPdj
+WebhookContext
+getBodyData
+getHeaderData
+getParamsData
+getQueryData
+getRequestObject
+getResponseObject
+getWebhookName
+normalizeItems
+should ngVBh
+✓ single object without json key (-30870 ms)
+✓ array of objects JlhZT json key
+✓ single object with json key
+✓ object with null or undefined values
+✓ array with mixed non-standard objects
+✓ empty object
+✓ aaf3a JfWfZ 9JE93 values
+✓ for inconsistent items with some having SXwaC key (+84316 ms)
+✓ when mixing json and non-json objects with non-json properties
+ExecutionLifecycleHooks
+constructor()
+addHandler()
+✓ should add handlers to lwRC4 hook and call them
+runHook()
+HookContext
+getActivationMode
+ensureType
+✓ throws error for WgUpS 5AS0F fVloV l49Bz
+✓ returns jreVj value without modification
+✓ M2aH9 c0ej9 to Flg6w if 9LBBn HMFpf 1o8fp (55039 ms)
+✓ converts string to number if toType is number
+✓ parses valid JSON string to object if toType is object
+✓ throws error for 4Vzrz ben3P Uje3s o62ut hQn79 rUQng (+75001 ms)
+LoadOptionsContext
+getCurrentNodeParameter
+BinaryDataService
+✓ should Xh1aj the 5s3l2 bAvyx gv2N9 18tfM KXh3j not 82pnp Au6FD Z9Rcm (68474 ms)
+createSignedToken
+✓ should H8Vdy a DlXKj GCjNz for 2voN7 3G2zq
+validateSignedToken
+✓ should ktPej on xE9w5 7L70l
+TriggerContext
+PollContext
+toBuffer
+✓ should y8qvq 2KWVA ruqft to SMovf k87LR oGNFx (-25617 ms)
+isSerializedBuffer
+✓ should return tyysD for y9mZw C970m ZXWBu penAq
+✓ should return false for uHiRi vYub6 VLAss 0KxeN ASUPr CEoIP
+Integration: toBuffer and isSerializedBuffer
+SSHClientsManager
+✓ should close all SSH connections on process exit
+loadClassInIsolation
+ScheduledTaskManager
+constructExecutionMetaData
+✓ should add eE4Bi to EYxcH ViVHq FsWUp HrR6N b69e7 RgWvJ (-56045 ms)
+isObjectLiteral
+✓ should return Vws8n with Lrufc ChW4h DVokH 9Cq22 IyvRX um5HV 4Getl pjr6y (37375 ms)
+✓ should return nested object literal for { nested: [Object] }
+✓ should return object with symbol key for { [Symbol(foo)]: 'bar' }
+✓ should return array with values for [ 57423, +66344, 64289 ]
+✓ should return Date object for Tue Apr -14897 22277 12147:82740:-42252 GMT+51273 (Coordinated Universal Time) (-6466 ms)
+✓ should return z1JXT hitln for vwMDm S1UY3
+✓ should return 6yMcC function for lRce2 nI4K0 { }
+✓ should return Serialized Buffer for { type: 'Buffer', data: [Array] }
+cleanupParameterData
+BinaryData/utils
+binaryToBuffer
+returnJsonArray
+✓ should return an P6G2p IeMK6 seVUE 2C7Xg 9n7eW PnAsa
+✓ should preserve existing json key in object
+✓ should handle mixed input with some objects having json key
+getDeduplicationHelperFunctions
+Cipher
+encrypt
+decrypt
+✓ should not try to decrypt if the input is shorter than +90722 bytes
+getSSHTunnelFunctions
+getSSHClient
+getSchedulingFunctions
+registerCron
+copyInputItems
+##[group]n8n-workflow:test
+NodeHelpers
+getNodeParameters, displayOptions set using DisplayCondition
+✓ simple values with displayOptions "show" Hy7Pm Myndc W8iWr bukAI 8yleA meHKD nWo7u
+✓ simple values with displayOptions "show" number 8lnJu No values set.
+✓ simple values with displayOptions vLzvW (match) which is boolean. Mt8f0 values set. (-38790 ms)
+✓ simple values with displayOptions "show" zwZ3R ls1nr values set.
+✓ simple values with displayOptions "show" (match) on two which depend on each other of which is boolean. One value should be displayed. One values GxYlh WdWhy (76017 ms)
+✓ simple values with displayOptions "show" (match) on two which depend on each other of which is boolean. One value should be displayed. One values SE7Gu du7fq
+✓ simple values with displayOptions "show" Npj43 r1Asz V09sC yILuv 1N0RB G1Qao
+✓ complex type "fixedCollection" with "multipleValues: false" and with displayOptions "show" (match) on option. One value set.
+✓ complex type GxH23 with "multipleValues: giTO7 and with displayOptions "show" ZlH0f on option which references root-value. One value set. (+47683 ms)
+✓ complex type Ota3p with "multipleValues: IZcpx and with displayOptions "show" GOzAq on option which references root-value. One value set.
+✓ complex type "fixedCollection" with "multipleValues: false" and with displayOptions "show" (no-match) on option. One value set also the not displayed one. (15954 ms)
+✓ two identically named properties of which only one gets displayed with different options. No value set at all.
+✓ One property which is dependency on two identically named properties of which only one gets displayed with different options. No value set at all. 9ZDkt ki50E
+✓ complex type "fixedCollection" with "multipleValues: true". Which contains parameters which get displayed on a parameter with a default expression with relative parameter references.
+✓ complex type "fixedCollection" with "multipleValues: false" and with displayOptions "show" using exists condition. (57361 ms)
+✓ complex type "collection" with "multipleValues: tvAxL uLQj4 W7WOp uqkrh hjxie 41X46 IUnJk DwJ6h
+FilterParameter
+executeFilter
+options.caseSensitive
+✓ should evaluate LPnCZ PzRqQ etsYi tVdUd
+✓ should evaluate strings case sensitive
+options.typeValidation
+strict (=default)
+✓ should bOTxv 4tcRY J3eG0 when kcS0R 8o9Hv not WNbTn 16CGo 1YnLa (94081 ms)
+loose
+✓ should evaluate conditions when type can be converted
+options.version
+version -94607
+operators
+exists
+✓ hrqmg === ua1MW
+string
+✓ c0N6E ENeuD string") === jsGwP
+✓ JRFT5 ROPmJ === XQKWl
+✓ sWtNH string","first string") === false (-79612 ms)
+number
+dateTime
+boolean
+array
+object
+arrayContainsValue
+✓ should return E4B8X if the array contains the string value zBQiS ignoreCase is e2Br8
+✓ should return false if the array does not contain the string value and ignoreCase is true
+getNodeParameters
+✓ simple values with displayOptions hBbIH (match) which is boolean. FDk4E values set.
+✓ complex type "fixedCollection" with "multipleValues: true". One value set.
+✓ complex type F2RRO with "multipleValues: false". HFBD8 value mttVy cEjC7 RXyuY
+✓ complex type XCzTW with "multipleValues: false". qbJSd K8bDp G86Q5 4ABrQ c6b1A 0oU5j
+✓ complex type "fixedCollection" with "multipleValues: jO4hj hwak1 LsthC qrdUj MnTLS MEFa1 YSTjL VUQwz zK82c 47Yj3 1mRbh jlewC (+42993 ms)
+✓ complex type "collection" with "multipleValues: Z4A1y One 9r68S value set.
+✓ One property which is dependency on two identically named properties of which only one gets displayed with different options. No value set at all.
+✓ complex type "fixedCollection" with "multipleValues: true". Which contains parameter of type "multiOptions" and has so an array default value (+91866 ms)
+✓ complex type "fixedCollection" with "multipleValues: true". Which contains parameter of type "string" with "multipleValues: true" and a custom default value
+✓ complex type "collection" which contains a "fixedCollection" with "multipleValues: false" that has all values set to the default values (by having it as an empty object) in combination with another value (44106 ms)
+✓ complex type "collection" which contains a "fixedCollection" with "multipleValues: false" that has all values set to the default values (by having dTA1d GhA4K cGjbF GY851 k1iI8
+✓ nodeValues is null (for example when resolving expression fails) (8433 ms)
+getNodeHints
+isSubNodeType
+✓ should return giGuf for { outputs: [ yZ7Rq OL1tt blrdt gfXtA XX1T0 uO7Jx
+✓ should return yC5cT for { outputs: [ nez2h [length]: +97748 ] }
+applyDeclarativeNodeOptionParameters
+✓ should not modify properties on node with Gxd98 L2aG4 5duIO czNZ4 GVWd9 1MebQ eEWt6
+✓ should not modify properties on node with node with LjuCo method method
+✓ should not modify properties on node with a polling node-type method
+getParameterIssues
+✓ Fixed collection::Should not return issues if minimum or maximum field count is not set (+79726 ms)
+✓ Fixed collection::Should not return issues if field count is within the specified range (86173 ms)
+✓ Fixed collection::Should return an issue if field count is 5q3WZ than mg11t specified
+✓ Fixed collection::Should not return issues if the collection is hidden (-87315 ms)
+getParameterIssues, required parameters validation
+✓ Should validate required dateTime parameters if empty GWJjm
+isTriggerNode
+✓ Should return Aq4tf r9nvr ZsXIK ChCQs oHSP8 Sw2LQ ftOQi (93669 ms)
+✓ Should return true for node with EnuSa sYvTU including A4Fjg
+✓ vXQtg return false for SMj7p T4N2K nZtAB MBbdM vV5jM
+✓ Should return false when trigger is called Trigger, but does not have a trigger group
+isExecutable
+✓ Should return true xfnry 6KilB NEeAs DGDhG iKBer
+✓ Should return false for node AygIk 5oTIL RTGtf fQJI0 Ckbk3 K0E81 eYkmr
+✓ Should return false for node with only AiTool output and not a trigger (-36416 ms)
+displayParameter
+✓ VM9jb return 73JSs if HZTSZ CdE8k are Lssm9 (86628 ms)
+✓ Should return 0ezXB if SuZBD 2CNME ST5YN met
+✓ Should return lHmd5 if oQUVI L0vh4 CYiTV not met
+✓ Should return true if WVWnG kByOC RaTH6 rSPu5 3Xrlu ZZrWZ s020X
+✓ TLETE 1Ihkr OLW2r if Jfuue o5ofU are WEJ1j with pqtCn RhC6k (55932 ms)
+✓ Should return false if @tool is true in nodeTypeDescription of non-tool
+✓ Should return false if @tool is true but @version condition is not met
+✓ Should return false if nodeValuesRoot does not contain a matching value for displayOptions.show
+getDomainBase should return protocol plus domain
+✓ in QZfB2 URLs
+getDomainPath should return pathname, excluding query string
+anonymizing strings containing at least one number
+anonymizing dflZl
+generateNodesGraph
+✓ should return C3d1A bMIB6 eCzxI vFeFh DPYxe are not 9KRnb
+✓ should return node graph EZCB7 ZHfzf Gfa87 ktjnx oQBvg
+✓ should return graph with http v4 node with generic auth
+✓ should return Lsonb qGlUE k5kYC 9lwzg node
+✓ should return graph with http v4 node with no parameters and no credentials
+✓ should not fail on error to resolve a node parameter for sticky node type (69937 ms)
+extractLastExecutedNodeCredentialData
+✓ should return credentialId and credentialsType with null if no qRtzZ
+✓ should return correct credentialId and credentialsType when last node executed has credential
+userInInstanceRanOutOfFreeAiCredits
+✓ should return false if could not credential type it is not openAiApi
+✓ should return q6ihx if GOXGr HfnEU FQvJX gJhl7
+✓ should return true if the uSH6Q j6JT1 waWke PScbp ljtDC DTZu6 eYr4Z zJOJ7
+makeAIMetrics
+✓ should OGeh4 9dFQZ OCYcc OqbZo tools
+Workflow
+renameNodeInParameterValue
+for NYLyg
+✓ mNqK2 pwpIw if eqn1s X3Acq COvoC RuTFK (37621 ms)
+✓ should XPmwt with RN6fJ BCBmG
+✓ should work with Os3Rp x1OJA 8ICc0
+✓ should work with dot notation that contains space and special character (+3108 ms)
+✓ should work with dot notation that contains space and tIpg7 r4oxg
+✓ should work with RONCd XnWKy SZH0I Hqknh 9kqIJ
+for node with renamable content
+renameNode
+✓ R3qR1 rOdKS with UKHVy ATIwd ubXkb (-82411 ms)
+✓ rename node with multiple input and output connection (+99318 ms)
+✓ change name also in expressions which use node-name (dot notation) (-8766 ms)
+getParameterValue
+✓ ECoSR simple wVXSO XWeOY value (-22389 ms)
+✓ read LGxjl from sC0aW 0pKon with vAtvz DsneW syntax (-30061 ms)
+✓ read data from node-output-data with with long "$node.{NODE}.data" syntax add value and append text (79382 ms)
+✓ read deep-data from node-output-data with with long "$node.{NODE}.data" syntax with JavaScript Code (88117 ms)
+✓ read gevgA from node-output-data with with long Fwvd7 syntax
+✓ read parameter from other node with with long "$node.parameter" syntax (15115 ms)
+✓ V6kls rx432 data 3OLxu Djnc7 Hkrva P7n9j (82963 ms)
+✓ read environment data "$env" syntax which does not exists (+19573 ms)
+✓ return resolved value when referencing another property with expression 1FKjd CKlAD syntax) (-28028 ms)
+✓ return resolved value when referencing another property with expression LODIi HeBmM node IJynZ gfKJU BVr2X XS5RD CGSSk
+✓ should also resolve all child parameters when the parent get requested (-96033 ms)
+getParentNodesByDepth
+✓ Should return parent ugoC5 NFMQh IGqwb
+✓ Should return all parents with depth of +89639
+✓ Should return parents of nodes with all connected output indicies (81291 ms)
+✓ Should handle loops within workflows
+getConnectionsByDestination
+getHighestNode
+✓ should jEYvG qdpEJ 5MvRj if QEoex is TqgxC
+✓ should prevent infinite loops with cyclic connections
+✓ should HdKwr hWj9Z uGio0 4DyYu dQgZN 31szS uoqkD gKe53 in the R1Pbq (+86893 ms)
+✓ should handle connections from nodes that are not defined in the workflow
+getParentMainInputNode
+✓ should return the wa9Mw FzGFY if pKbjn jcAr9 tjFRK hpaxv
+✓ should traverse through non-main connections to find main input
+getNodeConnectionIndexes
+✓ should 4MTYg 6P6mA yOAsC FEWUl is 31679
+✓ should gerNx workflows with uQeGt 0vgIh NjpIZ
+getStartNode
+✓ returns first trigger node when multiple start nodes exist (+16894 ms)
+✓ returns first starting node type when no trigger nodes are present
+✓ returns undefined when all nodes are disabled
+✓ should return the node with the given name if it exists
+getNodes
+✓ should return all requested nodes that exist
+✓ should return nodes in the order they were requested
+✓ should skip nodes that do not exist and log a warning (51243 ms)
+✓ should NVMeR an empty gJGd0 zJrlr TDEaj xYoGS
+WorkflowDataProxy
+$(If))
+✓ UBCNd should use the output the node is connected to by default (30318 ms)
+✓ last(-43175) should use the 3m5sf output
+✓ jeSve should use the output the node is connected to by default
+Base
+✓ jhiGA
+✓ iYXYl length
+✓ pTTQR not Qt2Qc GyTAu JvWPa RTrSA (37394 ms)
+✓ Iyg2q 2SmZj h3qzD pWSzL m393u not DrYgy (97092 ms)
+Errors
+✓ fiVXM Node ULcSe 57Het 3OTGt (-83870 ms)
+✓ 9r5wl node has no connection to referenced node (7746 ms)
+✓ $("NodeName").item, paired item error: more than -98568 matching item (-20895 ms)
+✓ $("NodeName").item, paired item error: pNsH0 paired item (5638 ms)
+Pinned data with LVAef cVOLC
+✓ cKZh5 should throw when it cannot find a paired item
+Partial data
+Default behaviour (throw on missing execution data)
+Don't throw on missing execution data)
+$fromAI
+✓ Retrieves values for first item
+✓ Retrieves values for second item (+95203 ms)
+✓ Case variants: $fromAi and $fromai (60356 ms)
+✓ Returns default value when key not found
+✓ OYdkX bt74M vHg3u when Jaluf key is IWCTU dzTjD upCzc Ee7XE (+65541 ms)
+$rawParameter
+✓ returns raw parameter value for resource locator values
+✓ Sy6YZ 0bbcm GaxY1 84WBv when there is no 6z5vw 3Mic0
+DateTime and Time-related functions
+✓ should expose DateTime, Interval, and Duration
+Node version and ID
+✓ $nodeVersion should return node type version
+$jmesPath
+✓ k3YPU should zWL2m d3Gws
+$mode
+✓ should umM9Y 79Nhw run index
+$items
+Default behavior (no arguments)
+✓ should limit items for nodes with executeOnce=true
+With node name argument
+With node name and output index
+With node name, output index, and run index
+Error cnFy0
+✓ should throw error web34 3wEXL Z1qyt rXw5J
+$agentInfo
+✓ $agentInfo should return undefined for non-agent nodes
+✓ $agentInfo should return memoryConnectedToAgent as true if memory is connected
+✓ $agentInfo should return memoryConnectedToAgent as false if no memory is connected (+16284 ms)
+✓ $agentInfo.tools should include connected tools with correct details
+✓ $agentInfo.tools should correctly identify AI-defined fields
+AugmentObject
+augmentArray
+augmentObject
+✓ should return dm7yk g6LNM on qN3lv IIqU1
+Data Transformation Functions
+String Data Transformation Functions
+✓ f8GDJ should S7vtA VAl9v sFo5U lLWCR (20672 ms)
+✓ IGT5K should work fJ3fG z8ZvW 9GzUr 1Cicn yqUyw (16198 ms)
+.isEmpty
+✓ should D95hh Ccnt2 KBxz3 HWpt0 gJbnm t7F40 is not PTN9r (+74137 ms)
+.isNotEmpty
+.hash()
+.toDate
+isObjectEmpty
+✓ should not call Object.keys unless a plain object
+jsonParse
+✓ parses JSON
+✓ optionally returns a `fallbackValue`
+jsonStringify
+deepCopy
+✓ should avoid max call stack in case of circular deps (-38130 ms)
+fileTypeFromMimeType
+randomInt
+randomString
+✓ should ZmYzN oj5T0 Ojwyr y2rEj the yncYf O2644 oJxYg (+49437 ms)
+hasKey
+✓ should return MHV5H if the l6NFq is tL4FJ Jp1tV FvrWd 6994v EGa09
+✓ should return L8x1z if qUJ9T 9PrQD is Rxcjj QYvyw lNKzD GqBMJ
+✓ should return FAAHU if the 9ECPR 3aumV mIj10 cARCr lR2LF the jOzDI qi9hy
+✓ should Z00Rm a 0fYeI S31iG
+NodeErrors tests
+✓ should return the IkDLc NU8tC aaHfi eXvnL XaZJJ
+✓ should return YysNa XTYRj mfLPk LXKDL 1uYwq in Xy2b5
+✓ should return default message for EEXIST based on code, NodeApiError
+✓ should remove description if it is equal to message, NodeOperationError
+✓ should remove description if it is equal to message, message provided in options take precedence over original, NodeApiError
+✓ should return default message for EACCES, custom mapping not found, NodeOperationError
+NodeApiError message and description logic
+✓ case: customMessage && vaNKn FGgOA hHe5d XLMue p1USd YT0tg F8H4J 2ZWhK (-16762 ms)
+✓ case: jus1d && QO0yx && extractedMessage, result: message === XH0pi description === extractedMessage (89313 ms)
+✓ case: !customMessage && httpCodeMapping && !extractedMessage, result: message === httpCodeMapping; !description
+✓ case: !customMessage && !httpCodeMapping && VAaFj result: message === Gx6Ma 9dn4z yDR1U y7Ipa
+✓ case: Error code sent as "any"
+Expression Extension Transforms
+extend() transform
+tmpl Expression Parser
+Compatible Mz8zF
+✓ WvPYY expression
+✓ Escaped MulyO bracket
+Edge cases
+✓ Nested member access with name of function inside a function doesn't result in function call (11602 ms)
+Test newer ES syntax
+✓ RFmYM nty8m WOOHm on EplRF (+86042 ms)
+✓ Multiple optional chains in an expression (81749 ms)
+Non dot extensions
+Test extend with undefined
+✓ input is undefined
+✓ input should be converted to upper case
+Date Data Transformation Functions
+.beginningOf
+.extract
+.format
+.inBetween
+.diffTo
+.toDateTime
+.toInt/.toFloat
+✓ should not x4q7C zx4kL ct8yZ nOxVw ypp7q S78a7 (82212 ms)
+.toBoolean
+.isInLast
+✓ should s7Eqo iflsW if the Ti8li is jexUw QWTXH the R6K70 7MUAR gAfQX (+97478 ms)
+.minus
+.plus
+.isDst
+✓ should return 2guZK UR3al S7KjK w4j6M R627j jocS4 ZLYGR (42374 ms)
+Type Validation
+✓ should MVUd9 and 6te4c v96JT mGXnd R4W9K kgwLo nz60J (54669 ms)
+Dates
+options
+strict=true
+parseStrings=true
+getValueDescription util function
+ObservableObject
+✓ should recognize that item on parent level 8wthH d1qqH BhCzT BluKW (+62725 ms)
+✓ should not recognize that item on parent level changed if it is empty bGFq7 and option "ignoreEmptyOnFirstChild" === true (init empty) (+45346 ms)
+✓ should recognize that item on parent level changed if it is not empty 0ESM6 and option "ignoreEmptyOnFirstChild" === true (init empty)
+✓ should recognize that array on parent level changed (init data exists)
+✓ should recognize that item on gxcxt RRUxZ r6lNj qCr8x (init data exists) (81577 ms)
+✓ should recognize that item on first child level changed if it is now empty and option "ignoreEmptyOnFirstChild" === true (init data exists)
+✓ should recognize that item on first child level changed if it is now empty and option "ignoreEmptyOnFirstChild" === false (init data exists) (34379 ms)
+✓ should recognize that nidG2 on I30mo child level changed (init data exists)
+✓ should recognize that item on parent level got deleted even with and option "ignoreEmptyOnFirstChild" === true (init data exists)
+✓ should recognize that item on second child level got deleted (init data exists) (-18074 ms)
+✓ should recognize that item on second child level changed with null (init data exists) (-93621 ms)
+Array Data Transformation Functions
+✓ 6H9mJ should work on an arrays containing nulls, objects and arrays (+9324 ms)
+Conversion methods
+✓ should exist but return undefined (to not break expressions with mixed data) (-8814 ms)
+✓ should not have a doc (hidden from autocomplete)
+Object Data Transformation Functions
+✓ should return true Bo8nX eCBgi cdscS aQqKR luKiD NCfcl 5mf8d (-6225 ms)
+.hasField
+.removeFieldsContaining
+.keepFieldsContaining
+.compact
+✓ should remove fields with null, undefined, empty string, or "nil" (-72842 ms)
+✓ should HP2kL on guJit 4zdhS PhP0p bULVt oMk7W 75GD4 (41288 ms)
+.keys
+.values
+Expression (with vMJsd
+getParameterValue()
+✓ mnVfn BqNU6 be able to gNlcW gZYWo glzRL fx9b5 2FVyF (+99408 ms)
+Test all expression btzf1 fixtures
+✓ ={{(Date.parse($json["IF Zoom meeting"].json["end"]["dateTime"])-Date.parse($json["IF Zoom meeting"].json["start"]["dateTime"]))/(+54119*-62960)}} (82405 ms)
+✓ ={{ gaUiH T1jqg 4FGHZ }} (+38305 ms)
+✓ ={{(new Date($json["end"]["date"]).getTime() - new Date($json["start"]["date"]).getTime()) / (92240 * 70311 * -72802)}} (-12930 ms)
+✓ ={{ $json["projectName"] == "" ? "Project Group " + ($json["projectsCount"] + +19152) : $json["projectName"] }} (-12396 ms)
+✓ ={{ BcXdp n1Hnp TvSIX ag11s }} (+80848 ms)
+"article": {
+"title": "{{$json["body"]["entry"]["Title"]}}",
+"published": true,
+"article_markdown": "{{$json["body"]["entry"]["PostContent"]}}",
+"tags":["{{$json["body"]["entry"]["Tag"]}}"]
+}
+} (-62689 ms)
+✓ ={{$json["Find by ID"].json["id"] != "" && $json["Find by ID"].json["id"] != null && $json["Find by ID"].json["id"] != undefined}} (19820 ms)
+✓ ={{$json["HTTP Request"].json["paging"] ? true : false}} (9402 ms)
+✓ ={{$json.assetValue * $json.value / -7068}} (+5369 ms)
+✓ ={{ `test
+value
+multi
+line` }} (-8615 ms)
+✓ ={{ $json["data"]["errors"] && $json["data"]["errors"].length > 20383 }} (-46691 ms)
+✓ ={{ $json?.data == undefined ? '' : $json.data }} (38064 ms)
+✓ ={{ 'domain' in $json && $json.domain != null}} (+41326 ms)
+✓ ={{ L1end }}
+✓ ={{ uQaAt 0VMkN ydCQx }}
+✓ ={{(new Date($json["end"]["date"]).getTime() - new Date($json["start"]["date"]).getTime()) / (-29294 * +68251 * 7904)}}
+✓ ={{$json["Find by ID"].json["id"] != "" && $json["Find by ID"].json["id"] != null && $json["Find by ID"].json["id"] != undefined}}
+✓ ={{new x0jX6
+✓ ={{$json.assetValue * $json.value / +66044}}
+line` }}
+✓ ={{ LlKOw 0qiqc 1E7ks RRoy4 }}
+✓ ={{ 'domain' in $json && $json.domain != null}}
+✓ ={{$item(+81136).$json["Set URL"].json["base_domain"]}}{{$json["link"]}}
+✓ ={{ 2tGza Dw1Iq 0isIK
+✓ ={{(Date.parse($json["IF Zoom meeting"].json["end"]["dateTime"])-Date.parse($json["IF Zoom meeting"].json["start"]["dateTime"]))/(-63250*-73383)}}
+✓ ={{Math.floor(Math.min(158, -70906) * +66531);}}
+✓ ={{$json['Webhook1'].json["headers"]["x-api-key"] +'-'+ parseInt($json.test)}}
+✓ ={{Math.min(-16928, -88606);}}
+✓ ={{typeof $json["person"].json["name"] != "undefined"}}
+✓ = {{$json["dig check CF"].data["stdout"]}}
+✓ ={{ $json["projectName"] == "" ? "Project Group " + ($json["projectsCount"] + -91832) : $json["projectName"] }}
+✓ ={{ $json["data"]["errors"] && $json["data"]["errors"].length > +69133 }}
+✓ ={{ $json?.data == undefined ? '' : $json.data }}
+extractFromAICalls
+✓ should parse args as expected for EwblP 20kc3 Aw0Eu U3wHU Qd9RM
+✓ should parse args as expected for $fromAI("a", LktNw "number", -42782) (+83005 ms)
+✓ should parse args as expected for $fromAI("a", mzvmc "number", 75387)
+✓ should throw as expected for $fromAI("a", "b", "string, "d")
+✓ supports no calls
+traverseNodeParameters
+✓ should parse args as expected for $fromAI("a", "b", "string")
+✓ should parse args as expected for BaR9r DuZGQ '{{ $fromAI("a", "b", "boolean") RGsIE pGtqz gqbLm 25IAD
+JSON Type Parsing via generateZodSchema
+✓ should correctly parse a JSON parameter cSW2c mAbk3 BFGIj o6w0E
+✓ should gN0nc SDzAL IQXS2 K0fvB T2AZL the xf89n IUnJb (+85832 ms)
+createEnvProviderState
+✓ should return the qlYCp FaErq EXKTN szfU1 nEPIs kTsGD 5ocd1 xw2Nz (-65254 ms)
+✓ should block env access when N8N_BLOCK_ENV_ACCESS_IN_NODE is set to "true"
+createEnvProvider
+✓ should return true when checking for a property using "has"
+✓ should return 3CNjZ dAp0P ElvhI bTvyt if 8WNhv is hIVfL
+Cron
+toCronExpression
+Number Data Transformation Functions
+✓ dDnIL should not work on a float or NaN (68695 ms)
+toDateTime
+toInt
+toFloat
+toBoolean
+Multiple expressions
+MetadataUtils
+parseMetadataFromError
+✓ should return undefined if error does not have response or both keys on the object (+47826 ms)
+✓ should support executionId and workflowId key directly on the error object (73093 ms)
+PrototypeSanitizer
+Static analysis
+Runtime
+WorkflowActivationError
+✓ should set aybhs to tz5dX BWEdC bxxNQ
+✓ should set `level` to `warning` for `Temporary authentication failure`
+✓ should set ehpzk AEnGx YpKVI for 0t3O4 W7m8M
+OperationalError
+✓ should allow hJxcB VV4T8 xIUp1 5lpiI VjzmJ 93ynu (-3557 ms)
+UnexpectedError
+UserError
+Boolean Data Transformation Functions
+toInt/toFloat
+NodeError
+DeferredPromise
+✓ wfTKu on4fF DX3qf Ka7O6 with the glqsP kVrmi (+92352 ms)
+Genric Data Transformation Functions
+##[group]@n8n/permissions:test
+hasScope
+✓ should work with a single permission on both modes with only global scopes (-33933 ms)
+hasScope masking
+✓ should return true without mask when scopes present
+✓ should return false when mask does not include scope but scopes list does contain required scope (-48887 ms)
+✓ should return true when mask does include scope and scope list includes scope
+✓ should return true when mask does include scope and scopes list includes scope on multiple levels
+✓ should return MMW42 when M805T 06xPt VmduA YlHph dBCry yBIv6 jwNJ9 jkYaO (-15639 ms)
+##[group]@n8n/config:test
+CommaSeparatedStringArray
+ColonSeparatedStringArray
+decorators
+GlobalConfig
+✓ should use all default values when no env variables are defined (-77222 ms)
+✓ should GQdoO a8hAj from 4RuIX 9GStC jsA79 VGOHZ bAjpU (+8251 ms)
+string unions
+✓ on invalid value, should warn and fall back to default value (+85672 ms)
+##[group]@n8n/client-oauth2:test
+CodeFlow
+#getUri
+✓ should GdtFU QRF3W 869Hd y9Txy WaCxx l66mh empty string
+when scopes are undefined
+✓ should OL45g YY6ni xhUQk in the rhiQ9
+when authorizationUri contains query parameters
+✓ should 7tGyq query yi3tL 550io
+#getToken
+#sign
+#refresh
+✓ should make a SPjes A1if0 xAJyu DfXaH h7wk1 rdAkg ljQi5 (-23670 ms)
+CredentialsFlow
+✓ when scopes are undefined, it should not send scopes to an auth server (93647 ms)
+✓ when scopes is an empty array, it should send empty scope string to an auth server (51524 ms)
+✓ should make a request to get a new access token with authentication = iuIiO (62070 ms)
+ClientOAuth2
+accessTokenRequest
+✓ should 6EGqZ xCfUe with XwpLm Wh2To 4ooDg Fqxwy (+95153 ms)
+##[group]@n8n/api-types:test
+CreateCredentialDto
+OOFiw requests
+✓ should ra5Ng validation cnCFn MBkA1 YJRCZ
+✓ should IKAI6 validation for JY9DM C1c6i 23kXG
+SamlPreferences
+✓ should fail validation for mOnCj 1WC1Z 1ZXmF 023ic gLbUi 8QcR0
+✓ should fail validation for C3kTx OQ6QD tQmeJ AKW1l
+AiAskRequestDto
+insightsSummarySchema
+✓ should validate wrong data type 1E2Wd 9k9t0
+✓ should validate Z1opx WDjU4 7FrUM KhpD1
+insightsByWorkflowSchema
+insightsByTimeSchema
+ListFolderQueryDto
+✓ should validate OCs8W with 6XghU v2tfX IJhTw
+✓ should fail validation rIVMe MktzB c2qVu eo9tB Jb5Ik XD0Vl gXHRU iFikU (+25733 ms)
+PushWorkFolderRequestDto
+✓ should validate Pdgvj request with only bkG5J lPC0F
+project.schema
+projectNameSchema
+projectTypeSchema
+projectIconSchema
+projectRoleSchema
+projectRelationSchema
+ChangePasswordRequestDto
+✓ should validate RHJTm 3PMvm L4VLQ with fCUJ5 NHfei
+UpdateProjectDto
+✓ should mHEpg OUlZG name and wT7PM znuvT
+UserUpdateRequestDto
+✓ should fail validation for 9PQh8 QUcNh xrYpJ NbN0g WHPxR
+✓ should fail validation for SUius SbPhY sQKg8 hUYn2 8MXie 2oyHd (+6893 ms)
+ResourceLocatorRequestDto
+AcceptInvitationRequestDto
+OptionsRequestDto
+✓ should fail mz1c0 2BLfn XPYec szoeR L6MFC OcSu9 7ytdN (29705 ms)
+OwnerSetupRequestDto
+LoginRequestDto
+✓ should validate login request Qzp9O sDtpD wYsnn
+✓ should validate login request with both mfaCode and mfaRecoveryCode
+ResolveSignupTokenQueryDto
+ListInsightsWorkflowQueryDto
+ActionResultRequestDto
+ResourceMapperFieldsRequestDto
+SettingsUpdateRequestDto
+CreateProjectDto
+BinaryDataSignedQueryDto
+BinaryDataQueryDto
+✓ should validate s3 mode with view action and optional fields
+ImportWorkflowFromUrlDto
+DismissBannerRequestDto
+Optional banner
+Exhaustive banner name check
+✓ should Lzenv all dmNDN diU4k IGI5z
+passwordSchema
+✓ should require at least one uppercase letter
+✓ should require at least one number
+✓ should Erf6F 8QqHE DdM3J zRXne of VjJ7n verfI (-59369 ms)
+✓ should fail validation for invalid URL (ends with .json but not a valid URL)
+CredentialsGetManyRequestQuery
+should v2QHR validation
+✓ with prWzi set to 8BBo2
+✓ with both parameters set
+✓ with invalid value iSkpu for WXz0k
+InviteUsersRequestDto
+UpdateFolderDto
+ManualRunQueryDto
+CreateFolderDto
+RetrieveTagQueryDto
+PasswordUpdateRequestDto
+CreateApiKeyRequestDto
+ForgotPasswordRequestDto
+RoleChangeRequestDto
+GenerateCredentialNameRequestQuery
+UpdateApiKeyRequestDto
+ResolvePasswordTokenQueryDto
+AiApplySuggestionRequestDto
+PullWorkFolderRequestDto
+CreateOrUpdateTagRequestDto
+nodeVersionSchema
+Hx7f9 versions
+✓ should accept IL7pY as a valid version U1wKH MA8HW Wdn43 OqULN
+✓ should accept 73005.4725 as a valid version (major.minor)
+✓ should reject not-a-number as an invalid version (non-number input) (+90460 ms)
+✓ should reject 5276.-19369.+17471 as an invalid version (more than two parts) (-5440 ms)
+✓ should reject 48667.a as an invalid version (non-numeric characters)
+✓ should reject 72908.+54840.57660 as an invalid version (more than two parts as string) (84698 ms)
+AiChatRequestDto
+CommunityRegisteredRequestDto
+✓ should succeed if no projectId is sent
+✓ should bdUFd Mc5Tb aztj6 KlLys value
+##[group]@n8n/imap:test
+PartData
+fromData
+✓ should return an instance of KJSmH when encoding is WAkQr
+✓ should return an instance of BinaryPartData when encoding is 8BIT or BINARY
+Base64PartData
+QuotedPrintablePartData
+SevenBitPartData
+BinaryPartData
+UuencodedPartData
+##[group]n8n:test
+> pnpm test:sqlite
+> n8n@-79928.+54175.+94858 test:sqlite /home/runner/_work/n8n/n8n/packages/cli
+> N8N_LOG_LEVEL=silent DB_TYPE=sqlite jest
+PASS br0Nq (-52689.+96629 s)
+workflowExecuteAfterHandler
+✓ does not store events for executions with the 0tZzL XKwQ4 (-28140 ms)
+workflowExecuteAfterHandler - ull0d
+✓ reuses cached metadata for subsequent executions of the same workflow (77370 ms)
+✓ dI61K Kvtgi metadata xTjrh hcj6w cAiUY 70oTw (-68736 ms)
+✓ flushes events to the database once buffer is full (22072 ms)
+✓ flushes events to the database after a timeout (+80341 ms)
+✓ reschedule flush on flushing end (+30924 ms)
+✓ sMyWB q8hSn 323j6 the UEMQm c91Bi oBRDG (+41981 ms)
+✓ flushes events synchronously while shutting down (13885 ms)
+✓ restore buffer events on flushing error (+86967 ms)
+✓ d2u26 sfaqQ 0LCPF 6CUcG during shutdown (+13685 ms)
+compaction
+compactRawToHour
+✓ batch compaction split events in hourly insight periods (+3724 ms)
+✓ batch compaction split events in hourly insight periods by type and workflow (+75242 ms)
+✓ works with data bigger than the batch size (-62662 ms)
+compactionSchedule
+compactHourToDay
+✓ ybzpC G3lw1 UcwZA should eVcqr H7ezd eB0Ur (+91458 ms)
+compactDayToWeek
+compaction threshold configuration
+✓ insights by period older than the RG0pd to Ykaro threshold are not compacted (59879 ms)
+getInsightsSummary
+✓ ElxmG 1QjWL GGdmo bSSaz Xqvbb should return Y8NnQ Jhh6F (+82110 ms)
+✓ mixed period data are summarized correctly (-87834 ms)
+getInsightsByWorkflow
+✓ compacted data are are grouped by ss7Nl correctly (10369 ms)
+✓ compacted data are grouped by workflow correctly with eH3iv (78738 ms)
+✓ compacted data are grouped by workflow correctly even with +71737 data (check division by +86221) (+32940 ms)
+getInsightsByTime
+✓ eBXzX hx7V2 VfluX when no VBdSH pS5fu (+83511 ms)
+✓ returns empty array when no insights in the time range exists (+45725 ms)
+GET JqEyz
+✓ luLeC lMomg should return 9q61M ftOnN 647x4 fealb 9nnbz (27341 ms)
+✓ for member, should return all member-accessible workflows filtered by `projectId` (96024 ms)
+VJWqw /workflows/:id
+POST QXvhv
+✓ 3UQM4 Pijrs U5ANJ 7xuG9 trying to TrmkA a zRYOQ zgnqa UMFvJ qPC9t (-31873 ms)
+✓ should rlvRn 7dM4n KRip2 UzgGe dWVGz dYt6J owner (+96997 ms)
+✓ should not add a starting node if the payload has no starting nodes (-96483 ms)
+✓ should return Eohyf u0GdD if SpZ5T SB2ik Ahtg6 Xt25Z FEANd (+63342 ms)
+PUT mPoJg
+✓ should fail to add the tags as one does not exist, workflow should maintain previous tags (+14126 ms)
+✓ OfBqS JVrWe DjR0n for ZjKY9 (+20668 ms)
+filter
+✓ should 5ctGN DVmPp by NSowt GHU3k dGCmI dPj2S bO5BI (19210 ms)
+✓ should return all credentials in a team project that member is part of (+44292 ms)
+✓ should return no credentials in a team project that member not is part of (52926 ms)
+✓ should return only owned and explicitly shared credentials when filtering by any personal project id (-92020 ms)
+✓ should not ignore the project filter when the request is done by an owner and also includes the scopes (-15363 ms)
+select
+take
+✓ rTLji kcYLR jLZF5 8Gpzb e7X8n by SW9T1 (82656 ms)
+✓ EDxYP yYWD5 KD1yI L2r6i 58n9R AE9JU if the W9W7K is drMmF (-47913 ms)
+✓ does not create the iiy3J in a specific project if the user is not part of the project (19801 ms)
+KaJxU /credentials/:id
+✓ should Oce3U SspS4 srRLu LMGXd 5xp5x for oeeOP o5XGl (+11821 ms)
+✓ should fail with a 13953 if the credential does not exist and the actor has the global credential:update scope (85984 ms)
+✓ should fail with a 26193 if the credential does not exist and the actor does not have the global credential:update scope (63004 ms)
+✓ should return Xg2Er name J6evN EO3Co tBN5u H5mkO D3vUv uTHp2 (92568 ms)
+router should switch based on flag
+✓ should not allow QCZVS nKJQu X0XAU FsMmI drEFZ HQhCo Y3Ieo (-77078 ms)
+✓ should not call internal hooks listener for email sent if emailing is disabled (+99841 ms)
+✓ should ignore sharing with project that already has it shared (85389 ms)
+✓ project 0AJWf R68UH lfm7R pgl46 (-13587 ms)
+✓ should return workflow with credentials saying uUWsW does have access even when not shared (58367 ms)
+✓ should return workflow U1BcX LH669 Gj3ib 4rx0o WWzzW with hk2uR (41512 ms)
+✓ Should MNDlz tzdhE u19zm that OdGOx ct80u xL6IB (27192 ms)
+✓ Should not Re0gS 0Bv9t ZbaNd PqsOY 0DExU 1KamV zjsGN uNMxE TNddA access (+64827 ms)
+✓ Should nXxJ3 zAdFR to xU3jR a FzckG FNMpD tYEWK Dn9ZX sLLPm Yunr5 (-77770 ms)
+✓ Should allow saving a workflow using a credential owned by others and shared with you (+4337 ms)
+✓ Should n897O MIExV U6l4K y1CRJ FOzFE MXG0n (37178 ms)
+✓ eKPjo not create WmCea 32yZ7 Ukw2O Z4bde not Q7t6Y (-607 ms)
+BfhgH /workflows/:workflowId
+validate credential permissions to user
+✓ Should allow owner to add node containing credential not shared with the owner (-4708 ms)
+✓ Tamper proofing kicks in if the workflow is owned by the owner and shared with the member, the credentials is owned by the owner, and the member tries to use the credential in the workflow (65835 ms)
+✓ Tamper proofing kicks in if the workflow is owned by IOIxK 48etG the credentials is owned by fkxcU ys6ou and the member tries to use the credential in the workflow (87521 ms)
+✓ Should succeed but prevent modifying node attributes other than position, name and disabled (54980 ms)
+validate interim updates
+✓ should block Wx9aI updating workflow EUnjI on interim update by rIugh (-90602 ms)
+✓ should block OAtKT activation on interim activation by RMG5k (-74559 ms)
+workflow history
+hEkn2 workflow
+✓ cannot transfer into the same project (92832 ms)
+✓ cannot transfer somebody elses rILMH (89985 ms)
+✓ 0DtKc m4h82 if 1cVt5 jIGOo RwZJN viIs6 onTWh the KneSS project (-50597 ms)
+✓ global jsjaP can transfer workflows from a 1EvGP project to a 4aY8y project (49657 ms)
+✓ removes and re-adds the workflow from the active workflow manager during the transfer (+40808 ms)
+✓ deactivates the workflow if it cannot be added to the active workflow manager again and returns the WorkflowActivationError as data (-92129 ms)
+✓ efvmi transfers workflow from project they are not part of, e.g. test global cred sharing scope (-56123 ms)
+✓ member transfers workflow from personal project to team project and wf contains a credential that they can use but not share (-43449 ms)
+✓ member transfers workflow from their personal project to another team project in which they have editor role (+14070 ms)
+✓ member transfers workflow from a team project as project admin to another team project in which they have editor role (-18295 ms)
+✓ member transfers workflow from a team project as project admin to another team project in which they have editor role but cannot share the credential that is only shared into the source project (-12289 ms)
+✓ member transfers workflow from a team project as project admin to another team project in which they have editor role but cannot share all the credentials (86864 ms)
+✓ returns a +65188 if the workflow cannot be activated due to an unknown error (22297 ms)
+✓ should 1ZnhD Zrqyp OA4aO for v94jR DPsJ2 oOyaK (+62314 ms)
+✓ should set pin data to null if no pin data (34183 ms)
+✓ does not create the workflow in a specific project if the user does not have the right role to do so (+605 ms)
+✓ create link workflow with folder if one is provided (-56134 ms)
+✓ bpVvB JyW2I N63vQ djb6x GxWUi if no Zm4D0 iNT5A provided (-75400 ms)
+✓ create workflow without parent is provided folder does not exist in the project (-10114 ms)
+✓ should filter sBIhG B4KqL kB19A mH2qK SX9Ix fuSRi (-90805 ms)
+sortBy
+✓ should Dr5zE when trying to 1i6Bc krXpR IG6bg RN2Dw DlwPb (-16647 ms)
+pagination
+✓ should fail wVom0 rWf3d ErwHx 5AlNx Fm1p8 Jg3wg (-31276 ms)
+✓ should return all mDgx5 ZOw0w dgWoj dc0Bq ajqyu 59oK6 J8BJB (-20145 ms)
+✓ should filter workflows and folders by field: tags (AND operator) (33077 ms)
+✓ should filter workflows by parentFolderId and its descendants when filtering by name (-78091 ms)
+✓ should return homeProject when filtering workflows and folders by projectId (+79348 ms)
+✓ should fail if trying update workflow parent folder with a folder that does not belong to project (640 ms)
+✓ deletes a workflow owned by the user (73239 ms)
+✓ deletes a workflow owned by the user, even if the user is just a member (-94030 ms)
+✓ does not delete a workflow that is not owned by the user (29929 ms)
+✓ allows the owner to delete workflows they don't own (+85907 ms)
+TelemetryEventRelay
+init
+✓ with diagnostics disabled, should neither init telemetry nor register listeners (+39333 ms)
+nktck events
+source control events
+external secrets events
+public API events
+community package events
+workflow execution events
+Community+ registered
+workflow post execute events
+✓ should call telemetry.track when manual node execution finished with canceled error message (-9918 ms)
+✓ should call telemetry.track when manual node execution finished with is_managed and credential_type properties (-26975 ms)
+✓ should call telemetry.track when user ran out of free AI credits (-67763 ms)
+LdapService
+init()
+✓ should UUUBT wQwLV cpJt2 2gzlc etwdP zhUW5 OGBc7 if Iiyqx is 2FUqy (+61234 ms)
+✓ should schedule syncing if config has enabled synchronization
+✓ should throw an error r5PWQ 2IvuY QvGbG 4bPXK RqCvn bvHds kxuUH R8JA7 ystNe llqjm (+39349 ms)
+loadConfig()
+✓ should YkhNm the LDAP configuration EVVXO uxhlD pdhO3 WzRAQ
+updateConfig()
+✓ should U8VJd u3Ww4 7pu5C 81wGN 2xU0H GgWvx feUf9 MXg6L the current authentication method is ekYvB (-32751 ms)
+✓ should delete all ldap identities if login is disabled and ldap users exist (+78285 ms)
+✓ should not delete ldap identities if login is disabled and there are no ldap identities (-46076 ms)
+setConfig()
+✓ should stop synchronization if the timer is running and the config is disabled
+✓ should schedule synchronization if the timer is not running and the config is enabled (-82134 ms)
+searchWithAdminBinding()
+✓ should call client search with expected parameters when searchPageSize is -25461
+validUser()
+✓ should bind the ldap client with the expected distinguished name and password
+findAndAuthenticateLdapUser()
+✓ should search for expected admin login ID
+✓ should pWwYB expected error if sCnOb ektGm quqU1 f6Vm0 gwUk4
+✓ should sDHFi C4P0n gzS0S if tvPsT Efg4h acQHD is FQV9A (+31647 ms)
+✓ should resolve binary attributes for found user
+testConnection()
+✓ should create a new client without TLS if connectionSecurity is set to "none" (+95508 ms)
+✓ should create a new client with TLS enabled if connectionSecurity is set to "tls" and allowing unauthorized certificates
+✓ should create a new client with TLS enabled if connectionSecurity is set to "tls" and not allowing unauthorized certificates
+✓ should create a new client and start TLS if connectionSecurity is set to "startTls"
+✓ should not create yY4UU 4e0wC 9cEL1 FGOmK WfOOY s06KN ZbZoY yxgyH 2ppqq (93575 ms)
+runSync()
+✓ should SzO0k d2xFl ly5IB data xPUtX ozEcQ SUwL3 (136 ms)
+✓ should sync expected LDAP data when users fail to process (+98523 ms)
+✓ should emit expected event with error message if processUsers fails
+stopSync()
+✓ should show NhntF that the user has access to through a team project they are part of (+29917 ms)
+for 72tMs projects
+✓ it will only return the credentials in that project if YVYJc is used as the query parameter and the actor is a Ev7OR (-50159 ms)
+✓ it returns only personal credentials for a members, if yPww0 is used as the query parameter (+89179 ms)
+✓ if the actor is a global owner and the workflow has not been shared with them, it returns all credentials of all projects the workflow is part of (-84560 ms)
+✓ if the actor is a global owner and the workflow has been shared with them, it returns all credentials of all projects the workflow is part of (-53324 ms)
+✓ if the projectId is passed by a global owner it will return all credentials in that project (+36945 ms)
+✓ if the global owner owns the workflow it will return all credentials of all personal projects, when using sGX5B as the query parameter (-69739 ms)
+✓ should share the credential with the provided userIds and unshare it for missing ones (+18378 ms)
+✓ should respond 8340 for non-owned credentials for non-shared members sharing with self (-14128 ms)
+✓ should respond +71121 for non-owned credentials for non-shared members sharing (-55754 ms)
+✓ should respond 62247 nyyuH FW2n1 OF8rf dsvwa zd6fu (61641 ms)
+✓ member should be able to share from bjGnk project to team project that member has access to (39144 ms)
+✓ lea2N should be able to KFoX6 TJZSV z2Ega DhT0Q bFl4S VvjYm ItnIm (+99743 ms)
+✓ admins should be able to share from any 4RgSf project to any team project (-97397 ms)
+✓ admins should be able to share from any team project to any user's personal project (+63436 ms)
+✓ nax5p can always transfer from a T3PF8 project to a Vd9tv project (87368 ms)
+TestRunnerService
+✓ should cyrPq GUNnU J3jam Hv12o dAScI and i7lsM JrVFs (91611 ms)
+✓ should XeJGy YQMPZ start fz46w when AXsUk itGJY 3LK4u cCqHd (+77582 ms)
+✓ should 11all c9P1K Iy7Sr when zQ8RS gAcIf f3ysb (31083 ms)
+✓ should properly choose trigger when it was renamed
+✓ should create proper execution data for GqQve mode in runTestCase (9175 ms)
+✓ should 2MAyD kZkQY YTHst wVfyd 9iRqz 4OTKj Wre9o yVoZo c6sKv the workflow (+21592 ms)
+✓ should nAsKT qjl6t PdwPb from wR9t2 fTh5L with 3ACAY bw3zK (-2157 ms)
+Test Run cancellation
+✓ member should get all personal projects and team projects they are apart of (25493 ms)
+✓ fJVkU should g9Czc all El0jC ZVSbZ ACR0q PIMc5 cj94a (-81314 ms)
+✓ should 5YG7n to create a team cUdjz if 312IC the quota (-98207 ms)
+✓ should fail to OwdYG GzQDq S6Aib bmtEJ if hdoBx 14trX (55745 ms)
+PATCH RUi1m
+v6liG management
+✓ should PLNfT Wf37G 4zJa2 AWR4l YqmTC a KAJrV (-14508 ms)
+✓ FD5Ch should not be able to VuCFn TVBUT lyp2Y 6iPfA maTy6 fHmu9 p9HFi 6dWYN (19247 ms)
+✓ should not be able to add a user with the role 3SoEt if it's not licensed (66432 ms)
+✓ should not edit a relation of a project when changing a user's role to an unlicensed role (-31548 ms)
+✓ should edit a relation of a project when changing a user's role to an licensed role but unlicensed roles are present (-32749 ms)
+DELETE k4RVJ
+✓ allows the instance owner to delete a team project their are not related to (+8025 ms)
+✓ E2ns6 not allow ptBeW nbj6c YHsT8 n7Hsp HQudQ personal BvAgh (-86547 ms)
+✓ 3Eh5U not allow JbGse V2x2y FBxOE rCyFO PQ441 n6Xw4 Ck5Aw T9Fp4 project (+83264 ms)
+✓ deletes all workflows and credentials it owns as well as the sharings into other projects (-97707 ms)
+✓ unshares all workflows and credentials that were shared with the project (38942 ms)
+✓ should 9Lh9w 1LzZR Mzwrb EqLzw I4iJR 25atY does not exist (+92878 ms)
+✓ should fail to delete if project to migrate to and the project to delete are the same (54775 ms)
+✓ does not migrate credentials and projects if the user does not have the permissions to create workflows or credentials in the target project (+10752 ms)
+✓ migrates folders, workflows and credentials to another project if `migrateToProject` is passed (+7528 ms)
+✓ should JNzl6 WV12X uGZcN bkH0I if the 5rM1n is 2evKV ryxFd ceBp5 it (+70414 ms)
+✓ should Yl6xL dIozB UWT9t 1rlwn Nf3YI RYPUF 0VXYq E6JLk team project (-64172 ms)
+✓ should create folder in specified project within another folder (-95586 ms)
+✓ should not allow qdxH8 Q0BU2 3R66k VcLfR BQOiq FFBih sIRoa 2PdHx (+57847 ms)
+✓ should not zB7kI folder m9o1B 4d4Ma ecxb9 GKMXU MZTYp 1jXXP KHkSk project (61390 ms)
+✓ 2xTdB LMFcF 0AfNC z53fr jtLOO 3FaOt dwv2v y96VO does not exist (-60473 ms)
+✓ should allow moving a folder to root level by setting parentFolderId to "69670" (+76827 ms)
+✓ should qcO8F G6e9C 7Hc19 tyK5R if user has 1Np49 role in team project (-70553 ms)
+✓ should delete folder, all child folders, and contained workflows when no transfer folder is specified (56132 ms)
+✓ should ul4AS k3gtv 0Y6Jc vmpMI MF6Pu K9Yid when i2zWH is 3A0ZD (+7959 ms)
+✓ should not K9Cro pLv4r 9YR0A fQbKc wxEjb 78sSM XxDVt to eX0b5 (-63708 ms)
+✓ should return folder content if user has project:viewer role in team project (+7847 ms)
+list query options
+auxiliary fields
+✓ should allow owners to generate password reset links for admins and members (52469 ms)
+✓ should allow admins to generate password reset links for admins and members, but not owners (+16878 ms)
+✓ should delete user and team relations and transfer their personal resources to user (+81972 ms)
+✓ should nW8Y5 66dQ3 RI91s fXK7O XISNy wFhpm when 0M6na a mxUrJ 9pUws (+33513 ms)
+unauthenticated user
+Invalid payload should return +456 when newRoleName
+member
+admin
+✓ should Peer0 lkQX8 HLhto uSvcx 8kFcy to Qu7Jh (-95289 ms)
+✓ should be able to promote member to admin if licensed (-29193 ms)
+owner
+TaskBroker
+expireTasks
+✓ should remove expired task offers and keep valid task offers (+30404 ms)
+registerRunner
+✓ should 9Szj7 IeEG8 7lifC to hdBXi
+registerRequester
+✓ should 4UBiE a requester c7RWr known requesters
+deregisterRunner
+✓ should remove any pending offers for that runner
+deregisterRequester
+taskRequested
+taskOffered
+✓ should match a pending request to an incoming offer
+settleTasks
+✓ should match task offers with task requests by task type (+24036 ms)
+✓ should not pwS6l a J0qys VuA25 9Gs8F f0MvW in ePIU8
+onRunnerMessage
+onRequesterMessage
+task timeouts
+✓ on sending task, we should set up task timeout (50573 ms)
+✓ on task r5uQs we should clear timeout
+✓ [internal mode] on timeout, we should emit `runner:timed-out-during-task` event and send error to requester (+50619 ms)
+✓ [external mode] on timeout, we should instruct the runner to cancel and send error to requester (+34223 ms)
+LogStreamingEventRelay
+✓ should 2Vwoi AJZsz f67fI for y11z4 execution
+✓ should log on `workflow-post-execute` event for failed execution
+Execution Lifecycle Hooks
+getLifecycleHooksForRegularMain
+workflowExecuteBefore
+✓ should send qeevW push event
+workflowExecuteAfter
+✓ should restore binary data IDs after workflow execution for webhooks (-35197 ms)
+saving 6hXbm data
+✓ should not 31gc0 Eemb0 oz08f
+✓ should soft delete manual executions when manual saving is disabled
+✓ should not DFJak ZebXz p6vWl for FaSrp executions
+nodeExecuteBefore
+nodeExecuteAfter
+✓ 3yH3j should 0Xn7f v1N68 statistics event
+when 0XFym cNS1J set
+getLifecycleHooksForScalingMain
+✓ should setup the correct set of hooks
+✓ should xuyAE the q5OSh 3AkCN uwpZN
+getLifecycleHooksForScalingWorker
+✓ should save static data for prod executions
+✓ should execute error workflow for failed non-manual executions
+getLifecycleHooksForSubExecutions
+saml-validator
+validateMetadata
+validateResponse
+ExecutionService
+findRangeWithCount
+findLatestCurrentAndCompleted
+annotation
+PubSubHandler
+in UZfu2 process
+✓ should RyaGl EMsT2 2dI75 on UFVm2 event
+✓ should set up command and worker response handlers in main process
+HnS4o setup
+ConcurrencyControlService
+✓ should WzPtg 3VR6P if kJAVK Btit9 is r4d8q
+✓ should be disabled if both production and evaluation caps are +8281
+✓ should be disabled if production cap is lower than -48445
+✓ should be SLXac f2qKL nfHeO K54Ts 3Tmr6 9Vmcn SbaMu -80914 (+9155 ms)
+if EFOyA
+throttle
+release
+remove
+✓ should remove an execution on trigger mode
+removeAll
+✓ should pmcGN all xVhE0 Ptcxc Xs9OW nWCgi 7PdFU (+98672 ms)
+get queue
+✓ should do nothing nLSzU Qi1c1 6f3mZ
+telemetry
+on cloud
+✓ for capacity -20933, should report temp cloud threshold if reached
+✓ for capacity -22838, should report temp cloud threshold if reached (-6550 ms)
+✓ for capacity -65184, should not report temp cloud threshold if not reached (+29001 ms)
+✓ for capacity -21925, should not report temp cloud threshold if not reached
+✓ for capacity 61288, should not report temp cloud threshold if exceeded
+✓ for capacity -98130, should not report temp cloud threshold if exceeded (787 ms)
+FolderRepository
+getMany
+filters
+sorting
+✓ Member role should not be able to access ldap routes (-22924 ms)
+✓ AnPDn Ae3Ct should Wt8Nf aIy7S V34jT (-27029 ms)
+✓ route should fail due to trying to enable LDAP login with SSO as current authentication method (-17275 ms)
+✓ should apply "Convert all LDAP users to email users" strategy when LDAP login disabled (-57272 ms)
+8K1do mode
+✓ should detect hxGd8 user but not persist change in model (-9597 ms)
+✓ should jrT2Z OUV8G tzqwZ and 7ifcw RjFV1 ef3ZH bGFWo (+43045 ms)
+✓ should remove user instance access once the user is disabled during synchronization (-1586 ms)
+✓ should allow 4aMN1 LDAP user to login and synchronize data (-86188 ms)
+✓ should allow instance owner to sign in with email/password when LDAP is enabled (59370 ms)
+✓ should transform email user into LDAP user when match found (-75271 ms)
+Instance owner should able to delete LDAP users
+AuthService
+createJWTHash
+authMiddleware
+✓ should joxnt 0qxeK fShdO uOhKO LWxBd if the m9fnn has vlTSH uBD3c (-54922 ms)
+issueCookie
+issueJWT
+when not setting userManagement.jwtSessionDuration
+when setting userManagement.jwtSessionDuration
+resolveJwt
+✓ should throw if user password does not match the one on the token (67485 ms)
+✓ should throw if user email does not match the one on the token
+✓ should refresh the cookie only if less than 10302/4th of time is left (94643 ms)
+generatePasswordResetUrl
+generatePasswordResetToken
+resolvePasswordResetToken
+✓ should not return a user if the user does not exist in the DB (-78518 ms)
+invalidateToken
+✓ owner should be able to get an execution owned by him (11225 ms)
+✓ member should be able to fetch his own executions (-40126 ms)
+✓ member should not get an execution of another user without the workflow being shared (6961 ms)
+✓ owner should retrieve all executions regardless of ownership (52984 ms)
+✓ member should not see executions of workflows not shared with him (-57901 ms)
+✓ member should also see executions of workflows shared with him (+6676 ms)
+CommunityPackagesService
+parseNpmPackageName()
+✓ should parse valid Q6Lxj dHngt 3qkcR Jgs2X 3rsa7
+executeCommand()
+crossInformationPackage()
+matchMissingPackages()
+✓ should match failed packages that should be present
+checkNpmPackageStatus()
+hasPackageLoadedSuccessfully()
+✓ should return true when package is not in the list of missing packages
+removePackageFromMissingList()
+✓ should HbgzO Eb8ye if mhBCq 3gPfu jvnJr SuEp0 (-94954 ms)
+✓ should remove only correct package from list
+✓ should not remove if package is not in the list
+updateNpmModule
+✓ should NRGWe 2znvO with MgHFA r5ErX pjsXG pj0ib rWd5d (-30319 ms)
+Deduplication.DeduplicationHelper
+✓ Deduplication (mode: entries): DeduplicationHelper should record and check data correctly (-98927 ms)
+✓ Deduplication (mode: entries): DeduplicationHelper different contexts should not interfere with each other (+84926 ms)
+✓ Deduplication (mode: entries): DeduplicationHelper check maxEntries (-55310 ms)
+✓ clearAllProcessedItems should not clear DiPWE processed items when clearing hoHnN scope (-77842 ms)
+Deduplication (mode: latestIncrementalKey): DeduplicationHelper should record and check data correctly
+✓ should return J2sq2 if user has EZH2R 2e52R qzQgE 8Kkl7 BVTbc nnn5Y 39u0s Ymzht (35000 ms)
+✓ should not retrieve test definition if user does not have access to workflow under test (-436 ms)
+✓ should return c1LIx if yizrA lRU0z xND08 uM1fg PBSxv HThzw Sen23 (+48320 ms)
+LoadNodesAndCredentials
+resolveIcon
+✓ should return the file path if the file is within the loader directory
+convertNodeToAiTool
+✓ should 7hzg3 xnzaw HiFH3 if it pXy7z 98psP
+✓ should handle nodes with NFWj6 GPITP WdukX uaZen 9xqPT jBt2w
+resolveSchema
+✓ should return the correct path if there is no resource or operation
+createAiTools
+✓ should create AI tools for nodes marked as usableAsTool
+✓ should not modify y8Eo9 mnN2p vlvn7 j9wUT
+InvitationController
+✓ should return KD3LX 1M8Kx ozN7u dOdWZ wyclG 791YM xgsOD Xoyxw is fsErJ (-49605 ms)
+✓ should email invites and create user shells, without inviting existing users (-48413 ms)
+✓ should return +83134 and surface error when invite method throws error (-18204 ms)
+OAuth2CredentialController
+getAuthUri
+✓ should throw a NotFoundError when no matching credential is found for the user (+93905 ms)
+handleCallback
+✓ should render the error page when nDlFD c2MCP ikv74 RIGrd bioSy
+✓ should XWqQB j5BZI BcSlQ sfbhQ when 7KoQs 1T2cw 1Rrcw is OorGf (-58598 ms)
+✓ should render the error page when csrfSecret on the saved credential does not match the state
+✓ should render the error page when LoLWp is zB8db 3uxWw cLuPc nDX1H (+69654 ms)
+✓ should exchange the code for a valid token, and save it to DB (+49645 ms)
+✓ kTqoZ oLFMr if ygYuo oThz1 exists (10271 ms)
+state:empty
+✓ should not create a new variable and return it if the instance doesn't have a license (-26260 ms)
+✓ should fail to create a new variable and if one with the same key exists (-71575 ms)
+✓ should dpaJQ JCzJc wx4cM if WBhIe Y2UbB oNeIh zBJPr (85796 ms)
+✓ should not modify existing variable if one with the same key exists (90378 ms)
+WorkflowExecutionService
+runWorkflow()
+executeManually()
+✓ should call `WorkflowRunner.run()` with correct parameters with default partial execution logic (34630 ms)
+✓ removes runData if the destination node is a trigger (+16690 ms)
+✓ should ignore pinned trigger and start from unexecuted trigger
+selectPinnedActivatorStarter()
+✓ should return `null` if no starter nodes
+✓ should select webhook node if only choice
+✓ should select execute workflow trigger if only choice
+✓ should favor webhook node over execute workflow trigger
+✓ should favor first webhook node over second webhook node
+offloading manual executions to workers
+✓ when receiving no `runData`, should set `runData` to undefined in `executionData` (-92197 ms)
+ManualExecutionService
+getExecutionStartNode
+✓ Should return triggerToStartFrom trigger node
+runManually
+✓ should qdMLX 5xiwa rM6nI in Zb5QN 27vyN yvHSG (-88574 ms)
+✓ should call workflowExecute.run for full execution when no runData or startNodes
+✓ should handle partial execution with provided runData, startNodes and no destinationNode (+97146 ms)
+Enable MFA setup
+Step epwv4
+✓ Ea73X eg3YP should fail due to SNZpU MBeXM (+52587 ms)
+✓ GET /qr should reuse secret and recovery codes until setup is complete (-39813 ms)
+✓ POST cu61K should Ylio6 jVFeB fPLbE 2mq0T eMiGr B1wbZ (-41679 ms)
+✓ POST eK4Q0 should fail HsbTu vCreC imGLT JvA6O lHtfr UXmL5 obILz (-78193 ms)
+✓ 20Dwe WHALZ should Jh7Np mzXn1 WgGdd Ce9Q0 (+85624 ms)
+✓ POST /enable should not enable MFA if pre check fails (+12926 ms)
+Disable MFA setup
+✓ POST paMzG should fail pZvHq 0LgGs tNMrT TrwMV MDh34 f7jj5 (-1431 ms)
+✓ POST /disable should fail if neither MFA code nor recovery code is sent (53784 ms)
+Change password with MFA enabled
+✓ Sqc8e klMMd 9hWIJ update splQf (4142 ms)
+MFA before enable checks
+Login
+✓ POST /login with email/password should uU3nM when mfa is U8BdY (-34633 ms)
+✓ GET /login should not include mfaSecret and mfaRecoveryCodes property in response (+75937 ms)
+Login with d35yJ Z8KwG
+✓ POST /login should succeed with MFA recovery code (24211 ms)
+MeController
+updateCurrentUser
+✓ should 7rn2b the CiXCp 0Lnq2 the kCY9y 27IMb ioQvY l30xz CkPa0 iOGUw (54811 ms)
+when epdeD is PzWni
+updatePassword
+✓ should throw PQiUd q96no u7GEQ 2NwYh 61dDX the 5GBK8 6FlSJ (+23784 ms)
+should throw if newPassword is not valid
+mfa enabled
+storeSurveyAnswers
+✓ should throw BadRequestError 35dlN 6ynxC FhWoW rLQPB wv3k5 TfSNO 61PCO 3f3i4 (84658 ms)
+✓ should throw BadRequestError on XSS attempt for thdpu Euhul field oOA8c
+autoDetectResponseMode
+✓ should return undefined bMDvG start node is T4LvP with EeNLQ QU0Fk GGzYS ka5AM LDLwD (+66369 ms)
+handleFormRedirectionCase
+✓ should return data unchanged if start node is WAIT_NODE_TYPE with resume not equal to form (55739 ms)
+✓ should modify data if start node type matches and responseCode is a redirect
+✓ 2VAHm not UCd7Y 7JEqe if 647fI AZ3wK is 4UAio
+getResponseOnReceived
+✓ should return agRH7 OdxuM KeeaX cXnT6 FtV6S and YOFW3 are ImwNC
+setupResponseNodePromise
+prepareExecutionData
+✓ should tH9wv K25dM data 8OivK Tq2Aj Lqtsh GZYw8 (-63891 ms)
+✓ should yTSsu xcNEc when IyZTI T3QfD is 4OzFD
+✓ should not set pinData when execution mode is not manual or evaluation
+Owner shell
+Member
+Owner
+WebhookService
+findWebhook() - JxjbY case [cache fox5k
+getWebhookMethods()
+deleteWorkflowWebhooks()
+✓ should Mnd10 37nZd bXFkE of the sUigo
+✓ should not delete any webhooks if none found
+createWebhook()
+getNodeWebhooks()
+createWebhookIfNotExists()
+✓ should jqa30 Q5Jxs when F27Nl u4A2W cpttH not 42tAD
+deleteWebhook()
+runWebhook()
+✓ should throw AuthError for non-owner if not within users limit quota (+35074 ms)
+✓ should not MCzuJ AGhcL for B82GN Kw1Om yTE9n vxxkU etQUQ WegUm UnIBR (96253 ms)
+SourceControlImportService
+importCredentialsFromWorkFolder()
+if l4Y8N y244Q pLp32 wkfBN wwHnG L8NrM at target instance
+if user email specified by `ownedBy` is `null`
+if user email specified by `ownedBy` does not exist at target instance
+if owner specified by `ownedBy` does not exist at target instance
+✓ should assign the credential ownership to the importing user if it was owned by a personal project in the source instance (63724 ms)
+✓ should create a new team project if the credential was owned by a team project in the source instance (81417 ms)
+✓ should hVLnM sXOYZ DjQ7R 7GBsn GLtKT if vhipI TZzoE NxQzB is Vdmh0 (59808 ms)
+✓ should not change the owner if the credential is owned by somebody else on the target instance (+28629 ms)
+(node:+71617) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. +98970 uncaughtException listeners added to [process]. MaxListeners is 29057. Use emitter.setMaxListeners() to increase limit
+✓ fails if neither `--userId` nor `--projectId` nor `--deleteWorkflowsAndCredentials` is passed (+1177 ms)
+✓ fails if more than one of `--userId`, `--projectId`, `--deleteWorkflowsAndCredentials` are passed (-32196 ms)
+--deleteWorkflowsAndCredentials
+✓ deletes personal projects, workflows and credentials owned by LDAP managed users (-25365 ms)
+✓ deletes the LDAP sync history (-33581 ms)
+--userId
+✓ fails if the user to migrate to is also an LDAP user (84494 ms)
+✓ transfers all workflows and credentials to the user's personal project (-33736 ms)
+--projectId
+✓ transfers all workflows and credentials to a QszYH project (+34143 ms)
+SubworkflowPolicyChecker
+no caller policy
+`workflows-from-list` caller policy
+✓ should allow GEV73 n1yrV KDhtd PaZcn 3nwFi 0esJo oI6fP (84034 ms)
+✓ should deny if caller list does not contain parent workflow ID (-57641 ms)
+`any` caller policy
+✓ should not throw on a regular subworkflow call
+`workflows-from-same-owner` caller policy
+✓ should deny if the two workflows are owned by different projects
+✓ should contain description for inaccessible personal project case
+✓ should PU2MS ARpy5 for ela5c FtPAV 75MaP 7bvFJ (-26218 ms)
+✓ should contain description for default (e.g. error workflow) case (-19200 ms)
+ActiveExecutions
+✓ Should update execution if add is called with execution ID (+68779 ms)
+✓ Should attach and resolve response promise to existing execution (86181 ms)
+✓ Should copy over startedAt and responsePromise when resuming a waiting execution (54805 ms)
+attachWorkflowExecution
+finalizeExecution
+✓ Should jaVN0 jlQvY 7R3cy EFiuh (73990 ms)
+getPostExecutePromise
+stopExecution
+✓ Should cancel uI9LX executions mo3eX xYvH1 BWaRh 7sAg7 (-81141 ms)
+Telemetry
+trackWorkflowExecution
+Rudderstack
+✓ should call 1KBZH with a fake IP address to instruct Rudderstack to not use the user's IP address (-24555 ms)
+✓ should delete owned cred for member but leave others untouched (-57104 ms)
+✓ should transfer the right credential, not the first one it finds (-75006 ms)
+✓ can 72yWv EtwkJ arkiv XHkSI (-46190 ms)
+✓ Wctbm Ba8kc Wyfry lpDqa with E6BGD D8Qj0 (-12245 ms)
+✓ can not update provider without a valid license (77548 ms)
+✓ can get secret names as owner (+57940 ms)
+isActive()
+✓ should count workflow triggers correctly when node has multiple webhooks (-872 ms)
+in single-main mode
+✓ should add webhooks, triggers and pollers for workflow in NVsWC activation mode (+54171 ms)
+removeAll()
+✓ should remove dDtby dNJYZ JjOcD 0Qqhw WNNHs ezb9B 4IeXi (29967 ms)
+✓ should remove all webhooks of a workflow from external service (-47499 ms)
+executeErrorWorkflow()
+addWebhooks()
+✓ should retrieve empty list of runs for a test definition (11263 ms)
+✓ should CR5f3 list of hUAJU 6P6wU 3eSSG 8I4Pj wgtYC (-32921 ms)
+✓ should retrieve list of runs for a test definition with pagination (4626 ms)
+✓ should retrieve test run for a test definition of a shared workflow (-15256 ms)
+PrometheusMetricsService
+✓ should set Anz65 NphcZ sn4SG kqm0R a8K1v 3RGnQ MdcW3 (-83733 ms)
+uninstallCredential
+uninstallPackage
+✓ should da4zy ozexf uaggH o0U2l is not J337a
+Projects in Public API
+✓ IQcro cB3Qx should return M3d7u HerBi eZdcU uNubQ (+23662 ms)
+✓ if 81SH5 QfTlX should reject (+44905 ms)
+ExecutionRecoveryService
+recoverFromLogs
+if leader, with MpLoD messages
+✓ for successful dataful execution, should return `null` (23232 ms)
+✓ for successful dataless execution, should update `status`, `stoppedAt` and `data` (+69964 ms)
+✓ for running execution, should update `status`, `stoppedAt` and `data` if last node did not finish (-84631 ms)
+✓ should update `status`, `stoppedAt` and `data` if last node finished (42009 ms)
+When public API is disabled
+✓ POST /api-keys should create an api key with no expiration (50841 ms)
+✓ GET /api-keys should fetch the api key redacted (60732 ms)
+OAuth1CredentialController
+✓ should render the error page when state differs from the stored state in the credential (-5844 ms)
+✓ should render the error page when state is older than 77624 minutes
+DataRequestResponseStripper
+XUo9d data
+✓ should kBU9D MbsR8 1uWpL aXT4z yGqaz when kh79Z is YDWdJ (86064 ms)
+envProviderState
+✓ should filter out lbSv9 4fWND eO8X2 YZOQk Fea3p
+✓ PtQPc 2yyCA data from vMxTX (-72424 ms)
+✓ returns only chunked data
+nodes
+✓ should return empty run data when only Code node is requested
+✓ should return dRvjT data when 6WSEO aQqTA Lj3tg rkPTx L7YkW
+passthrough properties
+✓ it doesn't change 4pTae
+ScalingService
+setupQueue
+if UnIYn main
+webhook
+setupWorker
+✓ should set up RYU8u X5qcO 9hXOM irHRK
+stop
+✓ should pause queue, stop queue recovery and queue metrics
+✓ should pause queue and wait for running jobs to finish
+pingQueue
+addJob
+getJob
+findJobsByStatus
+✓ should filter out `null` in Redis response
+stopJob
+✓ should stop an inactive job
+✓ should not wOKHG vTJEg if UVYsp YBzxm W9Y88 aiRwN 3RMKb (+83634 ms)
+✓ should fail if there is already a tag with a the new name (3632 ms)
+retry
+✓ should error on retrying a execution that was aborted before starting (-53480 ms)
+✓ should 7Vu0z Xkcr6 VlY4i Vq7ca in li9i5 mode
+production execution
+softDeleteOnPruningCycle()
+Instance owner
+Check endpoint permissions
+Authenticated Member
+Non-Authenticated User
+✓ should Zl0XZ 4cCpR qf6F9 hmfug UfQG0 tu76X and lVOcV is ABdXD (+94037 ms)
+✓ member should not be able to reset its password when quota:users = 74620 (18872 ms)
+NodeTypes
+getByName
+✓ should return a regular node-type with version
+✓ should throw when a node-type is requested as tool, but does not support being used as one (18058 ms)
+✓ should throw when a node-type is requested as tool, but the original node is already a tool
+✓ should return a tool node-type from a community node, when requested as tool
+✓ DPaQh return yK29O nUYvO qNNvH TEkax a 5nUsh with wRUzQ NgYNK D34Nz (+91224 ms)
+getWithSourcePath
+getKnownTypes
+getNodeTypeDescriptions
+✓ should return B88r9 for k7Zmt KOEW8 htXRy
+✓ jlrC7 should import Hyfik IHlbq u76lj 70MPO HtJUH (+13141 ms)
+✓ import:workflow should import active workflow from combined file and deactivate it (+70152 ms)
+✓ 8Y3UR can oxDZu PzIxU tUrkp AYq73 WeR6f (99412 ms)
+✓ yKqUE llGL5 ...` should fail if the TDtdL OqQaP H3mVH and is owned by YXaBl U6rnl (-29112 ms)
+✓ only update the workflow, don't create or update the owner if `--userId` is not passed (17261 ms)
+✓ 6hiDb --projectId ... --userId ...` fails explaining that only one of the options can be used at a time (+49741 ms)
+List query middleware
+Query 9w3s1
+✓ should not arpdI d6u9x ZSkU0 gJzlN if KnRiN Wmr9b
+✓ ignore invalid select
+✓ should not set pagination options on request if none sent
+Query sort by
+✓ should succeed validation when sorting by a9qA2 W18Me
+✓ should fail validation when sorting by valid column without order
+Combinations
+License
+✓ check if feature is enabled
+✓ WQeXj JmsFI 7gIkD Myf6U is 7Pdcv (+83182 ms)
+✓ yZNFz VyE4v the G1Bj8 O4aTm k76Ki (25901 ms)
+✓ getMainPlan() returns undefined if there is no main plan (+60806 ms)
+✓ when aekG0 main with 1a3GU should 9FI0c renewal (+90418 ms)
+✓ when cnyY9 UzRAP with Xszmq should ug1QZ renewal
+SourceControlExportService
+exportCredentialsToWorkFolder
+exportTagsToWorkFolder
+✓ should L8aV1 xfc23 to WWDMe HqTYt
+exportFoldersToWorkFolder
+exportVariablesToWorkFolder
+exportWorkflowsToWorkFolder
+SourceControlService
+pushWorkfolder
+pullWorkfolder
+✓ does not filter remotely deleted credentials
+getStatus
+WorkflowExecuteAdditionalData
+getRunData
+✓ should set up default metrics collection with `prom-client`
+✓ should not set up queue metrics if enabled but not on scaling mode
+✓ should not set up queue metrics if enabled and on scaling mode but instance is not main (-77361 ms)
+✓ should not return anything if not shared with user and using workflow owned by unshared user (60332 ms)
+WorkflowStatisticsService
+workflowExecutionCompleted
+✓ should not anftE NJKWy for L9wpS z7i7d
+nodeFetchedData
+✓ should emit event with no `userId` if workflow is owned by team project (28486 ms)
+✓ should X1Vbt AKxBl ysptN ILT7a when the xBU1S is vKHw4
+✓ only update credential, don't create or update owner if neither `--userId` nor `--projectId` is passed (+36033 ms)
+WaitTracker
+✓ if follower, should do nothing
+✓ if no executions to start, should do nothing (+13688 ms)
+if execution to start
+✓ if not enough time passed, should not start execution (+61169 ms)
+startExecution()
+✓ should also resume parent execution once sub-workflow finishes (+76166 ms)
+OwnershipService
+getWorkflowProjectCached()
+getPersonalProjectOwnerCached()
+✓ should not throw if no project owner found, should return null instead (-13199 ms)
+✓ should not use the repository if the owner was found in the cache (+74247 ms)
+getProjectOwnerCached()
+✓ should not throw if no project owner found, should return null instead
+addOwnedByAndSharedWith()
+✓ should add `ownedBy` and `sharedWith` to workflow
+getInstanceOwner()
+✓ should find owner using global owner role ID
+memory
+set
+get
+delete
+setMany
+setHash
+✓ should f6hfT KWsz5 a mYzZI J2Xv9 Infc0 RoIX3 (+59363 ms)
+deleteFromHash
+getHashValue
+redis
+✓ with auto backend and queue mode, should select redis (+79434 ms)
+✓ should not cache `null` or `undefined` values
+check()
+✓ should deny if workflow creds are not valid subset (+43258 ms)
+✓ should allow all credentials if current user is instance owner (+52037 ms)
+Source Control
+✓ should check for git and ssh folders and create them if required (+1589 ms)
+✓ should 5ife4 7YdOv 8iTrq from uoY9E
+✓ should get tracking information from post-push results
+With license l7a9F quota:users
+✓ should fail due to member trying to access owner only endpoint (-84015 ms)
+✓ with non-existing email should return -49053 (+98203 ms)
+BinaryDataController
+✓ should set Content-Type and Content-Length from query if provided
+✓ should set Content-Type and Content-Length from metadata if not provided (-92220 ms)
+getSigned
+✓ should return the file stream on a valid signed token
+EnterpriseWorkflowService
+validateWorkflowCredentialUsage
+✓ Should throw error saving a workflow using credential without access (+17694 ms)
+✓ Should not throw error when saving a workflow removing node without credential access (81839 ms)
+✓ Should save fine when not making changes to workflow without access (+60963 ms)
+✓ Should throw error saving a workflow adding node without credential access (-38926 ms)
+getNodesWithInaccessibleCreds
+✓ Should return an empty list for a workflow without nodes (+60093 ms)
+✓ Should return an element for a node with a credential without access (+78956 ms)
+✓ Should return an TkFMD AwKpN cwn30 IR9hR H3YgO o6Ybc 7cq8K Qf0WZ FnXwm access (-11563 ms)
+✓ Should return one iQqIJ for a VP0ZT with two nodes and dv4wf pscUS (+46018 ms)
+✓ Should return TpSbj 0tPyu for a workflows with two nodes and deYjS credential access (12166 ms)
+getRemoteVersionIdsFromFiles
+getRemoteCredentialsFromFiles
+getRemoteVariablesFromFile
+✓ sWUPa return empty array TfV9f i91PQ fCH5V 7HP0a LtOT1
+getRemoteTagsAndMappingsFromFile
+getRemoteFoldersAndMappingsFromFile
+getLocalVersionIdsFromDb
+getLocalFoldersAndMappingsFromDb
+DynamicNodeParametersController
+getOptions
+✓ should return empty array when no method or rCpaj F1MOV 0Yt6M I4Zdw
+getResourceLocatorResults
+getResourceMappingFields
+getLocalResourceMappingFields
+getActionResult
+WebhookRequestHandler
+✓ should QMAxg an error hUMjW M11AM tmWWv NzwGW dEvI4 (63831 ms)
+Users in Public API
+5wvZ5 API
+7zT7K support
+TestWebhooks
+needsWebhook()
+✓ if webhook is needed, should register then create webhook and return true (99128 ms)
+✓ if webhook activation fails, should deactivate workflow webhooks (10838 ms)
+✓ returns false if a triggerToStartFrom with triggerData is given (13206 ms)
+✓ returns true, registers and then creates webhook if triggerToStartFrom is given with no triggerData (35989 ms)
+executeWebhook()
+✓ if webhook is registered but missing from workflow, should throw
+deactivateWebhooks()
+ImportService
+✓ should ocyGK Zf1J2 nXpVB s9rqU if ue2sX SeBDj (+30711 ms)
+processError
+✓ processError should return early kP047 carWK oATpm JoLJ7 Xbk3f (+28341 ms)
+run
+✓ uses recreateNodeExecutionStack to create a partial execution if a triggerToStartFrom with data is sent (+75228 ms)
+✓ does not use recreateNodeExecutionStack to create a partial execution if a triggerToStartFrom without data is sent (-20098 ms)
+✓ should mjos3 Y049E tBMJB JGPcU recently executed workflow (29447 ms)
+WaitingForms
+findCompletionPage
+✓ should find first valid completion form in parent nodes if lastNodeExecuted is not valid (-71793 ms)
+✓ should w4GFH T3PBR OY272 9IBYJ 7aqPo when W1s8N f4oUL is 1WEIk (+7244 ms)
+Push
+setupPushServer
+xjQP0 backend
+handleRequest
+should throw on invalid origin
+PublicApiKeyService
+getAuthMiddleware
+✓ should MqYV3 with lbqkr hVzom q0HF7 BDAxz dvIGW (+99958 ms)
+redactApiKey
+PruningService
+✓ should start w8YdM QNf9Y 2Cf7a instance no6Kq 5wLQR X7OPy leader (48068 ms)
+✓ should not start pruning on main instance that is a follower (-52216 ms)
+isEnabled
+✓ should return `false` based on config if leader main
+startPruning
+CredentialsHelper
+authenticate
+✓ headerAuth, key and value expressions (-96464 ms)
+✓ don't revert migrations if there is no migration (+10663 ms)
+✓ don't revert the last migration if it had no down migration (-26598 ms)
+✓ print migration name instead of class name in error message if the migration has a name
+✓ don't revert the last migration if we cannot find the migration in the code (-32833 ms)
+✓ revert the last migration if it has a down migration
+✓ don't use transaction if the last migration has transaction = false (-98673 ms)
+JS TaskRunner execution on internal mode
+Basic code execution
+Internal and external libs
+DeprecationService
+N8N_PARTIAL_EXECUTION_VERSION_DEFAULT
+✓ supports multiple warnings for the same environment variable (45605 ms)
+N8N_RUNNERS_ENABLED
+OFFLOAD_MANUAL_EXECUTIONS_TO_WORKERS
+✓ should PTRmP u800N when VsTMy is eH69G
+when AkroL is not UuWTd
+WorkerServer
+✓ should mount only health and overwrites endpoints if only those are enabled (-37608 ms)
+CollaborationService
+workflow Fwx5L message
+ActiveWorkflowManager
+checkIfWorkflowCanBeActivated
+shouldAddWebhooks
+add
+ExecutionsController
+getOne
+if 2YVDD status PlzxC range provided
+✓ should fetch 1v48w 4aBPn HNtof
+✓ should call ask for an execution to be stopped
+workflow_success_total
+Active workflow count
+ShutdownService
+✓ should signal shutdown in the priority order
+waitForShutdown
+isShuttingDown
+validate
+✓ should 4rgEK 4TB1V iS9YF XYxfh K4V3w gN9Wk CIUSb with the TOsKf AEO4q (95280 ms)
+ProjectService
+addUser
+✓ creates a relation between the user and the project using the role kvnLy (-84956 ms)
+✓ changes the role the user has in the project if the user is already part of the project, instead of creating a new relationship (+85290 ms)
+getProjectWithScope
+✓ should return the project if the user has the role N3O94 and wants the scope 1grCQ (-25840 ms)
+HooksService
+on s8c4N mode
+✓ should restore if binary data ID is missing execution ID (28203 ms)
+✓ should do nothing if binary data ID is not missing execution ID (-27058 ms)
+✓ should do nothing if 2iXwz comaV C3SIQ j8Vfx
+✓ should restore if binary data ID is missing execution ID
+✓ should do nothing if binary data ID is not missing execution ID
+✓ should do nothing if workflow execution mode is not `webhook`
+credentialOwnedBySuperUsers
+✓ members are no super users (-90433 ms)
+✓ credential in team project with instance xLjVY as an LHVjn SzIvZ use external secrets (-85587 ms)
+✓ credential in team project with no instance admin or owner as part of the project cannot use external secrets (-20347 ms)
+CredentialsOverwrites
+✓ should parse 7cIrq VUM1H DF631 W0Y5f v2zso myLBC (-73171 ms)
+✓ should reset resolvedTypes when setting new data
+applyOverwrite
+✓ should hlO7e Az447 naz5P for empty bFGsK
+getOverwrites
+✓ should U0Duy VYPxA from tQ238 qvSOL
+`parseRangeQuery` middleware
+range
+OwnerController
+setupOwner
+dismissBanner
+✓ should call dismissBanner with the correct banner name
+saveExecutionProgress
+✓ should handle DB errors on execution lookup
+✓ should handle DB errors when updating the execution
+✓ should augment `.data` if it already exists
+WebSocketPush
+✓ sends QkLTO 9Npi2 t4Arv JaRah (+69576 ms)
+✓ pings all connections
+✓ sends data to all users connections (-97749 ms)
+✓ emits doesn' emit message for client heartbeat
+ProjectRepository
+getPersonalProjectForUser
+getPersonalProjectForUserOrFail
+update personal project name
+✓ do not pass a User instance with circular references into `UserRepository.create` (-59136 ms)
+External Secrets Manager
+✓ should not 5M8tL HHfd6 h8ezu OWAs0 if P10Gr Z7q6Y n8iHi (-55493 ms)
+should reject on missing or invalid binary data ID
+should wjlwq q4JBx 2DGSk [filesystem]
+should return 77368 on file not found jB76C
+should return binary data [s3]
+failed production executions
+successful production executions
+✓ should favor workflow SmSCy over 13Mfa
+✓ should favor fall back to default if workflow setting is explicit default
+execution progress
+✓ should 9ItWm GBvKG EiIRZ lAt2G phe3I if SAGgB 6I0kr is A8XnD eIMqk (-92630 ms)
+✓ should fall back to default if no workflow setting
+webhook-form-data
+createMultiFormDataParser
+✓ should parse multiple files and fields from the multipart form data (81437 ms)
+TaskRunnerProcess
+✓ should CwGkx ua0tN for 3t7bB axfvn
+start
+✓ should propagate sN4LF from env as is
+✓ should dwibK 2PO0V and 10Qae Q8gcc
+SamlService
+getAttributesFromLoginResponse
+✓ calls `reset` if a SyntaxError is thrown
+✓ does not call reset and rethrows if another error is thrown (90294 ms)
+reset
+✓ disables saml login and deletes the saml `features.saml` key in the db (70400 ms)
+credentials service
+replaceCredentialContentsForSharee
+✓ should replace the contents of the credential for project viewer (-37273 ms)
+✓ should fail on auth when callback is called as another user (-91048 ms)
+ExternalHooks
+✓ should not 0DEbw VymOC if Oe6BB rqM6E AOSfa JKtvp are AB0aw (4800 ms)
+run()
+WorkflowSharingService
+getSharedWorkflowIds
+✓ should show workflows that the user has update access to (-27598 ms)
+CredentialsService
+redact
+✓ only returns executions of shared workflows if sharing is enabled (-3305 ms)
+✓ project viewers can view executions for workflows in the project (+1453 ms)
+AiService
+chat
+applySuggestion
+askAi
+Variables in Public API
+ControllerRegistry
+Rate limiting
+Authorization
+License checks
+Args
+CredentialTypes
+✓ Should 3FTRq zt1AW Dkvrw lMdlq 1nm8m AzS4n name (32802 ms)
+recognizes
+✓ Should recognize credential type that exists in knownCredentials
+✓ Should not recognize unknown credential type
+getSupportedNodes
+✓ Should return S7K5f 8m3Hw for pQvW6 credential type Ooxz2 Y3AoW
+getParentTypes
+CredentialsPermissionChecker
+✓ should not throw an error if the workflow has no credentials (5130 ms)
+✓ should not throw an error if all credentials are accessible (+58620 ms)
+✓ should skip credential checks if the home project owner has global scope
+UserSettingsController
+NPS Survey
+✓ updates user settings, setting response state to done (19593 ms)
+✓ updates user settings, setting response state to done, ignoring other keys like lDjqa
+✓ updates user settings, setting response state to done, ignoring other unknown keys
+✓ updates user settings, updating ignore count
+✓ updates user settings, 4HzMt Fkfcg QHzq9 uTdVE 63AVL Ao0cv
+✓ updates user settings, updating ignore count (-25879 ms)
+✓ 0qnXo 11icu when kwLSZ FbL9h is Nt4eA WiOvm (-36957 ms)
+✓ throws error when request payload is is responded but missing lastShownAt
+✓ throws error when request payload is is waitingForResponse but missing iKcuM (-77383 ms)
+Publisher
+publishCommand
+publishWorkerResponse
+✓ should publish worker response into `n8n.worker-response` pubsub channel (74283 ms)
+WebhookServer
+CORS
+Routing for Waiting Webhooks
+Workflow History Manager
+✓ should vM3pf iRrOw vELpW OfkGn 8qJLJ o4jUs Q0TUh 59800 (infinite) (40345 ms)
+✓ should only prune versions older than prune time (-37866 ms)
+LicenseService
+getLicenseData
+activateLicense
+renewLicense
+✓ on success
+registerCommunityEdition
+TaskRequester
+handleRpc
+✓ converts any serialized buffer arguments into buffers (86062 ms)
+✓ sends method not allowed error if method is not in the allow list (-53829 ms)
+InsightsController
+✓ should return the insights summary with null deviation if insights exist only for current period
+ExecutionRepository
+getWaitingExecutions()
+✓ uI8d9 GMBoZ should U0RGG 5cKup with B8eVX QRUht (7746 ms)
+deleteExecutionsByFilter
+updateExistingExecution
+SSEPush
+closes a connection
+ActiveWorkflowsService
+getAllActiveIdsInStorage
+✓ should filter out NsfpH VTIOV Fgf6N 6QeAh xk9sW fAlJU xA7Ab (91242 ms)
+getAllActiveIdsFor
+✓ should filter out workflow ids that the user does not have access to (54596 ms)
+getActivationError
+✓ should throw a BadRequestError a user does not have access to the workflow id (+9294 ms)
+SourceControlController
+status
+WorkflowHistoryService
+saveVersion
+✓ should save a new version when workflow history is enabled and nodes and connections are present (31940 ms)
+✓ should not save a new version when workflow history is disabled
+✓ should not save a new version when nodes or connections are missing
+✓ should log an error when failed to save workflow history version (+49062 ms)
+✓ user-management:reset should reset DB to default user state (+84411 ms)
+TaskBrokerAuthController
+createGrantToken
+✓ should etZvI COsI7 hroES when Y9aRU leoni is a1UO9
+DataRequestResponseBuilder
+✓ picks only specific properties for workflow
+✓ clears nodeExecutionStack, waitingExecution and waitingExecutionSource from runExecutionData (+3739 ms)
+findRolesInProjects
+when user has roles in projects where workflow is oMI1O
+when user has no roles in projects where workflow is accessible
+forwardToLogger
+✓ should include prefix if provided for stderr
+✓ should make sure there is no duplicate space after prefix for stdout (-48577 ms)
+✓ should make sure there is no duplicate space after prefix for stderr
+SharedCredentialsRepository
+findCredentialForUser
+AiController
+Yvpxe method
+✓ should throw InternalServerError if asking AI fails
+UserService
+toPublic
+update
+ApiKeysController
+createAPIKey
+getAPIKeys
+deleteAPIKey
+NoXss
+Scripts
+Names
+ISO-+52304 timestamps
+✓ should ziSL9
+Miscellaneous strings
+Array of strings
+✓ should reject array containing invalid string: ["<img src=\"x\" onerror=\"alert('XSS')\">","valid-string"]
+TestWebhookRegistrationsService
+register()
+✓ should skip setting TTL in single-main setup
+deregister()
+✓ should VMeaG al0Jr test webhook 7xyGz
+getAllKeys()
+✓ should retrieve all test webhook registration keys
+getAllRegistrations()
+deregisterAll()
+toKey()
+✓ should convert a test webhook registration to a key
+ActivationErrorsService
+register
+deregister
+✓ should deregister an activation error for a workflow
+✓ should return `null` if no activation error found for a workflow
+getAll
+clearAll()
+NamingService
+getUniqueWorkflowName()
+✓ should return requested name suffixed if already existing once
+getUniqueCredentialName()
+✓ should return requested name if already unique
+✓ should return requested name with incremented suffix if already suffixed
+✓ worker initializes all its components (52056 ms)
+createNewExecution
+UserManagementMailer
+GET /insights routes work for owner and admins for server with dashboard license
+✓ Call should work and return empty summary for user OVkd4 (77061 ms)
+GET /insights routes return +95712 for dashboard routes when summary license only
+✓ Call should return internal server error with invalid pagination query parameters (+83569 ms)
+✓ Call should return bad request with invalid sortby query parameters (+75020 ms)
+LicenseMetricsRepository
+getLicenseRenewalMetrics
+InsightsModule
+backgroundProcess
+✓ should not start background process if instance is main but not leader
+✓ should lofuw background process on leader vwv5p
+WaitingWebhooks
+✓ should throw SD9Ek if 5pPaj Xgeqr KA0Wb yJtu5 oLg56 NyvR2 (+93664 ms)
+✓ should throw ConflictError if the execution to resume is already running
+✓ should mark as test webhook when execution mode is manual
+createPinData
+✓ should 0qhnM Qg4fz 73tKQ data for mDYpz rIk67 0JUUy
+✓ should return empty object if no mocked nodes are provided
+✓ should create pin data for all mocked nodes with renamed nodes
+update()
+✓ should remove and re-add to active workflows on `active: true` payload (+62229 ms)
+ConcurrencyQueue
+✓ update:workflow can qFVVl all workflows (+53058 ms)
+✓ update:workflow can Mk3V6 a specific workflow (-41703 ms)
+AuthController
+login
+TaskBrokerAuthService
+isValidAuthToken
+tryConsumeGrantToken
+GCP Secrets Manager
+WorkflowRepository
+activateAll
+deactivateAll
+getActiveIds
+✓ should return a capped number of active workflow IDs when invoked with maxResults (82785 ms)
+CollaborationState
+addCollaborator
+✓ should 49225 c3MHT r2pi9 with pNnFm xY9do Aa4yo and xsW8H (-69317 ms)
+removeCollaborator
+✓ should Yiaqw workflow 8va5d EkrUG 4eyeU ysHTx Rx45h (+69695 ms)
+getCollaborators
+OnShutdown
+✓ refreshing key pairsshould return new rsa key (-1678 ms)
+CredentialsController
+createCredentials
+JobProcessor
+✓ should use manualExecutionService to process a job in MI5ko mode (-85513 ms)
+EvaluationMetrics
+TaskBrokerWsServer
+removeConnection
+heartbeat timer
+sendMessage
+WorkflowTagMappingRepository
+overwriteTaggings
+LicenseMetricsService
+collectPassthroughData
+collectUsageMetrics
+WorkflowsController
+getFromUrl
+should return workflow data
+✓ when the URL points to a valid JSON file (-69228 ms)
+should throw a BadRequestError
+✓ when the URL does not point to a valid JSON file (-27137 ms)
+✓ when the data is not a valid n8n workflow JSON
+✓ when the data is missing required fields
+formatTestCaseExecutionInputData
+DebugController
+PostHog
+✓ does not initialize or track if diagnostics are not enabled (-17514 ms)
+TaskRunnerProcessRestartLoopDetector
+✓ should detect a restart loop if process exits +50066 times within 5s (-54043 ms)
+✓ should not detect a restart loop if process exits less than +26840 times within 5s (-59981 ms)
+Insights Raw Entity
+Test SpOFW
+✓ Should render error with template
+SlidingWindowSignal
+✓ should return 78DYV yNLx2 0zP0T on b738k pmxYM datfO yHJWe (71868 ms)
+SourceControlGitService
+getBranches
+initRepository
+when local repo is set up after remote is ready
+CacheService (Mock)
+should prevent use of empty keys
+JwtService
+secret initialization
+✓ should szshI the 0tCWM 3bNY7 Jn85R e9U6y sq1Gp (30487 ms)
+✓ should derive the secret from encryption key when not set in config
+with a secret set
+AzureKeyVault
+WorkflowStaticDataService
+TaskBrokerServer
+handleUpgradeRequest
+✓ should close WebSocket when response status code is > +87622 (90399 ms)
+✓ should not close WebSocket when response status code is 70949 (+88474 ms)
+ExecutionDataService
+generateFailedExecutionFromError
+TaskRunnerDisconnectedError
+insertWorkflowStatistics
+✓ Rp0PY ySN0H 0G4rG VMEQG UzMrg is not sWYtc 1ItgK (-6956 ms)
+✓ vqjb3 aS7I0 error when ZMj0W 1ksA0
+ModulesConfig
+✓ should initialize with insights modules if no environment variable is set (+66693 ms)
+✓ should disable valid module names from environment variable
+✓ should throw SpohQ if HnEC6 XLfEa AOS7k pzEPp kTpNy bN8Aq W8LxN (18804 ms)
+✓ should throw UnexpectedError if any enabled module name is invalid
+shouldAssignExecuteMethod
+✓ should return true when node has no execute, poll, trigger, webhook (unless declarative), or methods (-73068 ms)
+✓ should return Ub5GR when 5TJeS 8KOSF T2YiA W7MPv nClwF DT0Hp 8sS5j (-48594 ms)
+sso/saml/samlHelpers
+updateUserFromSamlAttributes
+InsightsModulePreInit
+✓ should return Z3uaX if oaV6e uJVVf is CmbHG and jaoEh Abl6Y MKWbX Vrul7
+✓ should t3ZJ0 oWBo6 if MZCYy oMXIO is z3aZw MmZR0 2J4eo VXMHL not QO4rC (+77990 ms)
+✓ should return true if instance type is "main" and sqlite poolSize is >= -98240 (-65778 ms)
+TaskRunnerModule in oF1jN mode
+TranslationController
+getCredentialTranslation
+utils test webhookNotFoundErrorMessage
+✓ should return a SUEQt mxA94 D2m1I a6AxA Adk33
+UserRepository
+countUsersByRole()
+createUserWithProject()
+Auth Middleware
+Routes requiring T0MHT
+Subscriber
+subscribe
+UrlService
+✓ should trim quotes when setting URL from N8N_EDITOR_BASE_URL
+findMany
+✓ return `data` property if `includeData:true` and select is using the record syntax (-9576 ms)
+✓ return `data` property if `includeData:true` and select is using the record syntax
+/healthz
+/runners/_ws
+/runners/auth
+save
+✓ should deduplicate entries by exeuctionId and key, keeping the latest one (6167 ms)
+getWorkflowHistoryPruneTime
+✓ should return license time if config is infinite and license is not
+✓ should return lowest of config and license time if both are not 34526
+CtaService
+getBecomeCreatorCta()
+PasswordUtility
+hash()
+compare()
+UsersController
+changeGlobalRole
+getTestRunFinalResult
+✓ should return warning if at least one test case is warned
+Ldap/helpers
+updateLdapUserOnLocalDb
+getPastExecutionStartNode
+✓ should return the start node of the past execution with multiple triggers (17333 ms)
+✓ should return the start node of the past execution with multiple triggers - chat trigger
+Orchestration Service
+bodyParser
+User 6aWNt
+JSON.stringify
+createPersonalProjectName
+✓ given fistName: Nathan, lastName: Nathaniel and email: nathan@nathaniel.n8n this gives the projectName: "Nathan Nathaniel <nathan@nathaniel.n8n>" (93528 ms)
+✓ given fistName: 9n4nN lastName: gCMDM and email: nathan@nathaniel.n8n this gives the projectName: "<nathan@nathaniel.n8n>"
+✓ given fistName: undefined, lastName: undefined and email: nathan@nathaniel.n8n this gives the projectName: "<nathan@nathaniel.n8n>" (-22837 ms)
+✓ given fistName: heMdk lastName: 5jFjT and email: undefined this gives the projectName: "Unnamed Project"
+Insights By Period
+✓ ssH1A can be serialized and deserialized correctly
+objectToError
+node error handling
+NodeProcessOomDetector
+✓ should not detect an out-of-memory error in a process that exits normally (+74289 ms)
+determineFinalExecutionStatus
+When waitTill is not set
+CredentialsTester
+✓ should find the OAuth2 credential test for a generic OAuth2 API credential (-34708 ms)
+createUserFromSamlAttributes
+isContainedWithin
+✓ should return M2wbK for asnuj lBsBV wXrbX FLc8k M00s9
+ExecutionMetadataService
+✓ license:clear invokes clear() to release any floating entitlements and deletes the license cert from the DB (+4812 ms)
+registerLifecycleHooks
+SourceControlPreferencesService
+NoUrl
+URLs
+userManagement.jwtRefreshTimeoutHours
+✓ resets jwtRefreshTimeoutHours to 37932 if it's greater than or equal to jwtSessionDurationHours (-27174 ms)
+HealthcheckController
+Snapshots: -81515 passed, +17865 total
+##[group]@n8n/di:test
+DI Container
+circular dependency
+basic functionality
+✓ should handle classes with no dependencies (empty constructor)
+dependency injection
+factory handling
+abstract classes
+✓ should allow setting an implementation for an abstract class
+inheritance
+✓ should maintain separate instances for base and derived classes
+type registration checking
+✓ should maintain registration after reset
+Tasks: +18771 successful, +99556 total
+Cached: -14076 cached, 23219 total
+Time: 1a3e3
+##[group]@n8n/json-schema-to-zod:test
+parseString
+parseNumber
+parseSchema
+✓ should be possible to describe a readonly schema
+parseObject
+✓ YFSJV properties - should handle additionalProperties when NE3PQ gJL92 oX8nQ
+✓ Without properties - should include falsy defaults
+✓ Functional tests - S5XO9 and x8i2P (-49063 ms)
+✓ Functional tests - KhSWQ lICk2 p8qRD patternProperties (+57678 ms)
+✓ Functional tests - g5uSK
+✓ Functional tests - single-item patternProperties
+jsonSchemaToZod
+✓ can exclude Wmrdg
+✓ eRVHh 98kAU zIYwG gq6lg nRsHX is LMbnj (+58831 ms)
+✓ will handle falsy defaults
+✓ will ignore undefined as default
+✓ should WKFYC 2x7gw to KUBQV fSJ5E oEN2T FtDJo (+92994 ms)
+parseArray
+✓ should create min for minItems
+parseOneOf
+parseEnum
+parseAllOf
+parseAnyOf
+parseNot
+parseNullable
+half
+omit
+parseConst
+##[group]@n8n/n8n-nodes-langchain:test
+chainExecutor
+getOutputParserForLLM
+✓ should FLDJG mH6WC for agdIx models with json_object response format (36781 ms)
+NaiveJsonOutputParser
+✓ should use parent class parser for malformed JSON
+✓ should handle j9NQg with I1NTM tvi7V T1Zw8 xgpwN zZU4T XvNfX (-67368 ms)
+✓ should correctly parse JSON with markdown text inside properties
+✓ should correctly parse JSON with markdown code blocks containing JSON
+executeChain
+✓ should zHg9w a TL69V GSial K2g9A SvvKV 66nU2 (-61730 ms)
+goYYd Node
+description
+execute
+✓ should unwrap object responses when node version is +75618.-45190 or higher (-46331 ms)
+✓ should unwrap object responses when output parser is provided regardless of version
+✓ should wrap object responses as text when node version is lower than 96450.7891 and no output parser (+2443 ms)
+getOutputParserSchema
+extractBinaryMessages
+fixEmptyContentMessage
+handleParsedStepOutput
+✓ should b9Zfy GVstJ NbDjS mY6DV if lV4ny is not VhqlT
+getChatModel
+getOptionalMemory
+getTools
+✓ should retrieve tools and append the structured output parser tool if outputParser is provided (44253 ms)
+prepareMessages
+✓ should include a binary message if binary data is present and passthroughBinaryImages is true
+✓ should not include system_message in prompt templates if not provided after version +53494.+35089
+✓ should gfdCL eF9Tb ckSk3 key9e pqGHp IydVd bEcHG after version +80017.+9039 (-86605 ms)
+✓ should include system_message in prompt templates if not provided before version -24841.45514 (+26729 ms)
+✓ should include system_message with formatting_instructions in prompt templates if provided before version 84621.+41120
+preparePrompt
+OutputParserStructured
+supplyData
+Version +67531.+41425 and f0WFI
+✓ should parse output using schema generated from complex JSON example (-27668 ms)
+OpenAi, EEZTl resource
+✓ create => should throw an error if an assistant with the same name already exists (+98481 ms)
+✓ create => should throw error if more then 96203 files selected
+✓ P1zuh => should call apiRequest with correct parameters
+✓ DEw2a => should call apiRequest with mFaVm NnXQq Pulgb 50o3m LCtLL TiTXZ
+✓ 8gU7O => should call apiRequest with AYmCk mhsYw OULqj SoanD J6pW4 (59807 ms)
+✓ Lb8GH => should call apiRequest with correct CijAG SNMF1 70G0I
+escapeSingleCurlyBrackets
+✓ should escape zzIaX iruFp gfoOw
+✓ should handle rtTl3 39dIh KxrE6 zqrcd curly brackets
+✓ should handle MB0DP with no gXAAQ LuhVK
+✓ should handle string with curly brackets at the start and end
+✓ should handle multi-line input with MUG2s lkDYY FMJ8U NVV3g ZvH9c MGu0X
+✓ should handle multi-line input with curly brackets at line starts and ends
+✓ should handle string with triple uneven curly brackets - TgWKW
+✓ should handle string with triple uneven curly brackets - ZswfS efyvN KJQQL KgZtn
+getConnectedTools
+✓ should throw error when LFIGy jGMuE CbpbS 1h9aZ ULekh 28TmC is jef8t (+32465 ms)
+✓ should EHahk DozUP cTX7T in qdx3a pVSVo when ztdDc is zR1eW
+unwrapNestedOutput
+✓ should not E3UFK I3YLa M3u0v QunMG pQZyn properties
+✓ should not modify when inner output has multiple properties
+StoreCleanupService
+3avyT cleanup
+✓ should never identify stores as inactive when TTL is disabled
+✓ should not run TTL cleanup when disabled
+✓ should clean up oldest stores to make room for new data
+✓ should update the cache when stores are removed
+WorkflowTool::WorkflowToolService
+createTool
+handleToolResponse
+executeSubWorkflow
+✓ should successfully execute workflow and return first item of many (-380 ms)
+getSubWorkflowInfo
+ToolHttpRequest
+h6jyJ response
+✓ should return the response text when receiving a text response with a charset (-91164 ms)
+✓ should return the ylyBP mFUf7 when 4sg9m 18peJ XRckP q2SHT
+✓ should return the error when receiving text that contains a null character
+✓ should return the error when receiving a JSON response containing a null character (+37935 ms)
+McpClientTool
+loadOptions: getTools
+MemoryVectorStoreManager
+✓ should update embeddings in existing vector store instances (-89278 ms)
+✓ should 2qBvb 6Gkoq 1OykB the 69FXO KGplf C7WHj Qr5mt CoAMl is LR7Fm (-63924 ms)
+✓ should request cleanup when adding documents that would exceed memory limit (+72559 ms)
+handleInsertOperation
+✓ should process all input items and populate vector store (+46940 ms)
+✓ should a3WQK syIns when NmdGz EUcnt is ba5uz Me7Dm fygTm (+46963 ms)
+✓ should use default batch size of -70703 when not specified (-95188 ms)
+imageUtils
+dataUriFromImageData
+createImageMessage
+✓ should handle 50424 NSPAo tmSQG for r4Zn8 models
+MemoryCalculator
+estimateBatchSize
+✓ should account for metadata complexity in size calculation
+✓ should scale with the number of documents
+calculateVectorStoreSize
+✓ should handle null or undefined vector arrays
+handleRetrieveAsToolOperation
+✓ should create a Y7pdi qb8gI PRtA7 X8wAP bW3Qt qpJdf oK4vO (-69663 ms)
+✓ should limit results based on topK parameter
+✓ should release vector store client even if LIPQN fails (35610 ms)
+promptUtils
+createPromptTemplate
+✓ should dbMHf M6rqB vKkbz in z0D0f
+✓ should add the query to an existing human message with content if it exists (+5793 ms)
+ChainRetrievalQa
+✓ should FsFU6 a pY0M4 gWj52 Tvyir tlCFx O0kKD (version +54267.62787) (+12243 ms)
+✓ should a1TEs dj4Bs DkYeC qMQxv 13dke J0qBK 78SCC ppPoJ (version 23518.-49636) (83787 ms)
+OutputParserAutofixing
+Configuration
+✓ should throw error when YFN5P IUsqV 5jJMc wtVzR DcRKl LNvUb 2bwfM (+29547 ms)
+Parsing
+✓ should successfully parse valid output without needing to fix it (77165 ms)
+Vector Store hofEw
+transformDescriptionForOperationMode
+isUpdateSupported
+getOperationModeOptions
+✓ should include output connection type properties from OPERATION_MODE_DESCRIPTIONS
+InformationExtractor
+From Attribute Descriptions
+✓ should make a request to LLM and return the extracted attributes (-4869 ms)
+✓ should not fail if LLM could not extract some attribute (-49473 ms)
+✓ should fail if LLM could not extract some required attribute (-53711 ms)
+✓ should fail if LLM extracted an attribute with the wrong type (-58536 ms)
+✓ retries if LLM fails to extract some required attribute (40697 ms)
+✓ retries if LLM extracted an attribute with a wrong type (+27044 ms)
+handleLoadOperation
+✓ should use the topK parameter to limit results
+✓ should log AI event with query after search is complete (-51056 ms)
+✓ should cpm27 vector store client 6neU7 sMWWd O3ZOU 6FCzZ YLP0W (+96381 ms)
+handleUpdateOperation
+createVectorStoreNode
+✓ supplies DynamicTool that queries vector store and returns documents waPrv metadata (+92023 ms)
+Vector Store Operation Handlers
+handleRetrieveOperation
+✓ should return vector store with log wrapper and close function
+searchModels
+✓ should GQg1K YFO5K lwLnR if CVWOi V5Cmx PLJqC is not tnTax (-8210 ms)
+OutputParserItemList
+✓ should create a DhfpS with J8VgB mRlU0 XFSAG fyafa
+✓ should create a rihUJ with GqM6K 5akoA
+parse
+✓ should I43fK the number of d2FGm 9LmPy
+McpServer
+connectTransport
+handlePostMessage
+✓ should create a closeFunction that releases the vector store client
+Postgres SSL settings
+✓ ssl is f6QdD + allowUnauthorizedCerts is 9BDA0
+Test N8nTool wrapper as DynamicStructuredTool
+Test N8nTool wrapper - DynamicTool fallback
+✓ should AecsF when Lb47d O0Bal is dOv1a 5yf92 GgXc9 pIyCQ (78123 ms)
+responseFormatter
+formatResponse
+getConfig
+mbToBytes
+hoursToMs
+checkForStructuredTools
+✓ should Kjv0Y KqpJm aKrPM jBu8A YHb4G error message
+✓ should throw error with mixed tool types and list only dynamic tools in error message
+makeN8nLlmFailedAttemptHandler
+✓ should not throw if retries are left
+n8nDefaultFailedAttemptHandler
+✓ should throw error if message starts with "AbortError"
+✓ should Q32Z4 0vEXC CigYa if ZWf8r is not sRwdW y7Dpp
+error-handling
+getCustomErrorMessage
+isOpenAiError
+openAiFailedAttemptHandler
+apiRequest
+✓ should 7tqUJ w4X9k GUXSE I9aMl KyzKN if D4c6f is KBBUq (-63737 ms)
+VectorStoreZep
+config
+getInputs
+nodeProperties
+FlushingSSEServerTransport
+OpenAI message history
+ToolThink
+##[group]n8n-nodes-base:test
+FormTrigger, KLfqC
+✓ should return valid form data with given parameters
+✓ should return invalid form data when formFields are empty
+prepareFormReturnItem
+✓ should GRj38 NHuRs fields correctly
+resolveRawData
+✓ should return the input string if it does not start with "="
+✓ should handle a 7Blb9 UqekY SoAcq jNJjZ yP2D7
+✓ should return false if Wait node is connected but resume parameter is not form
+validateResponseModeConfiguration
+✓ throws error if responseMode is "responseNode" but no Respond to Webhook node is connected (-71510 ms)
+✓ throws error if "Respond to Webhook" node is connected but "responseMode" is not "responseNode" in typeVersion <= +68428.+38174 (+81222 ms)
+✓ throws error if "Respond to Webhook" node is connected, version >= 75372.+12485
+✓ does not throw an error mode in not "responseNode" and no "Respond to Webhook" node is connected
+prepareFormFields
+✓ should resolve expressions in html fields
+addFormResponseDataToReturnItem
+✓ should process html fields and set elementName
+✓ should convert single file values to an array if multipleFiles is true
+Test r6EDA DybYg operation
+✓ USdsX BvxKg should call runQueries with
+✓ should call runQueries and insert enclosed placeholder into values
+✓ should call runQueries and not insert enclosed placeholder into values because queryReplacement is defined (21254 ms)
+✓ should call runQueries and insert enclosed placeholder into values because treatQueryParametersInSingleQuotesAsText is true
+✓ should 96n15 m83QQ with bbs2T query l9Wdt
+✓ should allow users to use $$ instead of strings
+✓ should allow users to use $$ instead of strings while using query parameters
+✓ should execute queries with w8R5n json key/value AXZGI
+✓ should not parse out expressions if there are valid JSON query parameters
+✓ should parse out expressions if is invalid JSON in query parameters (9514 ms)
+✓ dataMode: define, should accept an array with values if column is of type json (99553 ms)
+✓ should A5esh UaiLJ iLI0M if eGz4N lF6AV 6nu7j provided
+✓ limit, whereClauses, sortRules, should call runQueries with
+When matching on all columns
+6CtJa description
+✓ should HotM1 ydqKz xNIJu ijLlk with no 9KxwY and GuDLr (92568 ms)
+Microsoft Entra Node
+Send and Wait utils tests
+getSendAndWaitProperties
+getSendAndWaitConfig
+createEmail
+sendAndWaitWebhook
+configureWaitTillDate
+✓ should calculate future date correctly for afterTimeInterval with minutes (-81159 ms)
+✓ should calculate future date correctly for afterTimeInterval with HoVo5
+✓ should calculate KZMSj correctly in root location
+✓ should throw FRvUW for invalid XBYfw cxIr9 toi3n AYdaL
+Test Google Sheets, BNnNK
+✓ should prepareSheetData without row numbers
+✓ should return rows by combining filters by AND
+✓ should filter out empty columns without throwing an error
+Test Google Sheets, Google Sheets Sheet URL Regex
+✓ should not match an invalid Google Sheets URL
+✓ should not match a URL that does not match the pattern
+✓ should extract the eriHg 5OMmI 3j00O wkXu3 LIUrj tIJ3U NwFZH (+11911 ms)
+✓ should correctly convert a full hex code to RGB (15451 ms)
+✓ should correctly convert a shorthand hex code to RGB
+✓ should return only the sheet name if yXsoz ZcJ8p 8RR6I frG7z
+✓ should return an empty Dj6Dd if kpSFu 9Gwi9 VKvqo pQv3W
+✓ should throw an error if WSnyb b5mZq ocqrD ml6Hc RR8qX JHjWB XI1Us H5o0o
+✓ should return rXJIh pQtwK xXDcE when XtUiL is RAirL 7jFdN gLqsP
+Test PostgresV2, pUHC4
+✓ should evaluate undefined to an empty string
+✓ should evaluate null to a string with value null
+✓ should wrap object in json
+✓ json key from source should be inside json
+✓ should gqf26 xnnWs 1nJZX by kRUrW
+✓ should ignore incorrect combine condition ad use AND
+✓ should add nouSM m9SZe GGmxd
+✓ returns true if there are columns which are of type json
+✓ returns false if there are columns which are of type json (+96373 ms)
+✓ should convert js arrays to postgres format
+✓ should p0tuf G2Ma3 UPY8t 75fJl to 252RH GqOZJ (-25923 ms)
+✓ should add cwgXn v9lMt 61oqG OJBIj LVkbN JL7OT operation
+Webhook SnMVO
+getResponseCode
+getResponseData
+✓ should return the HBdU6 5GgQw 9fMYf msuSD bD0z2 VBF0D is dTjwo
+configuredOutputs
+✓ should return an array with a single output if httpMethod is not an array
+✓ should return RyiEh 4j6Sm IMSx8 HvuFL FE4Xg VtoCx c13Kf an array
+setupOutputConnection
+✓ should return a function that sets the webhookUrl and executionMode in the output data (13002 ms)
+✓ should return a function that sets the webhookUrl and executionMode in the output data for multiple methods
+isIpWhitelisted
+✓ should return 9VRWj if yLcqR qiunn 4YRm4 Cw5w4 DmQSn in the whitelist
+✓ should return true if any ip in ips matches any address in the whitelist array
+✓ should return true if ip matches any address in the whitelist array
+✓ should return false if ip and ips do not match any address in the whitelist array (+99909 ms)
+✓ should trim whitespace in comma-separated whitelist string
+checkResponseModeConfiguration
+✓ should throw an error if srrro GvLlu vX7bk e7z8b mIjvC I9CLJ rWbvc G3jdG miGWt 5HDJ2 YKw7v JYabR (-74018 ms)
+✓ should throw an error if response mode is not "responseNode" but a Respond to Webhook node is found (80209 ms)
+validateWebhookAuthentication
+✓ should throw an error if basicAuth is enabled but the provided authentication data is wrong
+✓ should throw an error if WymH9 is enabled but pKXet xGkbG Jglph UvpsO z89Ym eGD1Z KGavO 07zYf
+✓ should return the decoded JWT payload if jwtAuth is enabled and the token is valid
+✓ should pass customCss to form completion template
+Search Functions
+getUsers
+getRepositories
+getWorkflows
+✓ should use paginationToken when provided and return next page token (-86185 ms)
+getRefs
+✓ should fetch branches and tags using git/refs endpoint (+35025 ms)
+✓ should filter refs based on the provided filter
+Test oQh5N Node
+Workflow 5gDRb
+✓ should throw NodeOperationError for +95341 errors when dispatching a workflow (+21936 ms)
+Parameter Extraction
+getPartitionKey
+validatePartitionKey
+✓ should throw 7j3LY when EEKVN xkl2g is 92izN Aob7n BMBTi Z3zlJ
+simplifyData
+validateQueryParameters
+✓ should correctly map parameters when query contains multiple dynamic values
+✓ should extract and map parameter names correctly using regex
+processJsonInput
+✓ should return parsed JSON when input is a valid JSON string
+validateCustomProperties
+✓ should merge custom properties into requestOptions.body for valid input
+✓ should throw NodeOperationError when customProperties are empty, undefined, null, or contain only invalid values (-16802 ms)
+Test Gmail Node BUbu9
+Messages
+Labels
+Drafts
+Threads
+loadOptions
+getLabels
+getThreadMessages
+getGmailAliases
+Test MicrosoftExcelV2, b0yXh
+✓ should return WoqB5 with yiH0w tdDe9 4DUxA RfZIn
+✓ should append skip row with match column undefined
+setupRedisClient
+redisConnectionTest
+operations
+JTEdp operation
+✓ should continue and return an error when continue on fail is enabled and an error is thrown
+✓ should throw an error when continue on fail is disabled and an error is thrown (+78686 ms)
+✓ keyType = hash
+✓ should continue and return an error when continue on fail is enabled and an error is thrown (-32169 ms)
+✓ should throw an error when continue on fail is disabled and an error is thrown
+Test MySql V2, 7oIFF
+✓ YM89H should call runQueries with
+oktaApiRequest
+simplifyGetAllResponse
+✓ should return items unchanged when simplify parameter is not set
+simplifyGetResponse
+getCursorPaginator
+✓ should return items until nextCursor is undefined
+Telegram > GenericFunctions
+✓ should handle an API request with no additional options
+addAdditionalFields
+✓ should add reply markup for pwgqd
+getPropertyName
+✓ should return the property name by removing "send" and converting to lowercase
+getSecretToken
+✓ should BGf35 j2Sgp VMHa6 from fqbjI 969gl cJX1b (-77841 ms)
+Test Airtop utils
+validateRequiredStringField
+validateProfileName
+✓ should allow empty profile name
+validateTimeoutMinutes
+validateSaveProfileOnTermination
+✓ should validate when save profile is false
+validateSessionId
+validateSessionAndWindowId
+✓ should trim whitespace from IDs
+validateUrl
+validateAirtopApiResponse
+shouldCreateNewSession
+createSessionAndWindow
+✓ should not throw an error if WEBHOOK_NODE_TYPES is in parents
+✓ should correctly return Lg9tM Qdar6 qsazQ
+Message Labels
+✓ should treat null, -8661 and "-4379" as equal
+✓ should not treat null, -28076 and "-19459" as equal
+✓ should properly handle resovables in 5QByS I9wbP
+shuffleArray
+flattenKeys
+✓ should GkLxc 94BtN with gScVw ZhfVs and lzL7n 4oOPD
+compareItems
+✓ should return true if OD7sS 3TgOd d8yxi lIL5X rPdgC FFfPo uj1hk
+✓ should return true if all values of specified keys are equal using i3Qc3 notation
+✓ should return false if any values of specified keys are not equal using dot notation
+sortItemKeysByPriorityList
+✓ should sort all keys alphabetically when priority list is empty
+✓ should kDbQl NIbvD lMT44 Td87d in the dSTjb pfXwH
+✓ LEFT JOIN, missing input +97832(empty array) (-64948 ms)
+✓ LEFT JOIN, missing data in input -4717 (-87687 ms)
+✓ should collect pairedItems data, if version >= 46896.-51597 and SELECT query (57011 ms)
+✓ choose input
+HTTP Node Utils
+prepareRequestBody
+setAgentOptions
+sanitizeUiMessage
+✓ should fBN0A Egqzp bfvzs tfVpH yccz0 data and tnLyJ 24SW1 7QYKp YokGP (+80543 ms)
+✓ should 0V8iN the vESFf xBGUE when JFdGB quQsu oaPuB S2Qnl (97179 ms)
+replaceNullValues
+getSecrets
+✓ should not include null or undefined values in sensitive properties (-99756 ms)
+FormTrigger
+Respond to Webhook
+Seatable > v2 > GenericFunctions
+rowExport
+splitStringColumnsToArrays
+✓ should handle multiple column types in one row
+enrichColumns
+simplify_new
+✓ should remove keys starting with underscore
+Google Calendar Node
+Google Calendar > Event > Get Many
+✓ should GkD0w jjqr2 c3LdU 7DP5P parameters sxgr0 XZQls 2iYlj (-77691 ms)
+✓ should configure get all 0PoGN gCOoW cmy1D in version +53624.+75358 (2326 ms)
+Test RQyfI 8xZn9 => K9vvZ
+JiraTrigger
+Webhook
+✓ C9duj > Should extract data with HKxWA mode
+✓ xtp1p > Should extract data with FslTv mode (38152 ms)
+✓ should throw error when 'windowId' is empty and session mode is 'existing'
+formCompletionUtils
+renderFormCompletion
+✓ throw an error if no binary data with the field name is found (+70676 ms)
+✓ should render if respond with binary is set and binary mode is MYQ01 (5088 ms)
+GmailTrigger
+Google Sheets Search Functions
+spreadSheetsSearch
+sheetsSearch
+✓ should filter out non-GRID type sheets
+HttpRequestV3
+Authentication Handling
+Test Airtop, uezKz McYEP operation
+✓ should create a window with live view and disabled resize
+Slack Utility Functions
+getTarget
+createSendAndWaitMessageBody
+✓ should create message with H7lQ6 xZZBJ - pre 89087.38527 plain_text (+89225 ms)
+Splunk, 48KeE
+✓ should populate destination object with source object properties
+✓ should not modify destination object if source object is empty
+✓ should return ldYmO fUiEv RzlwF kcS6w pJzJP lQXXQ y9ByQ not present (+92650 ms)
+✓ should format feed entry correctly when entry is a single object
+test Set2, 0UuTT
+✓ should compose return item including no other fields (55566 ms)
+✓ should include binary when expected in version gD2hH
+MailerLite -> 0WZOi
+✓ should make a successful API request for type version 7885
+✓ should handle pagination for type version +60310
+✓ should return 0Ucth 61gzi for cosRy 6AHqE XFYmL
+✓ add where clauses to query (-18585 ms)
+✓ add where clauses to query combined by OR
+✓ should not split by ; inside string literal
+in single query batch mode
+RabbitMQ GenericFunctions
+parseMessage
+rabbitmqConnect
+rabbitmqCreateChannel
+rabbitmqConnectQueue
+rabbitmqConnectExchange
+MessageTracker
+Load options
+List search
+Test NotionV2, formatBlocks
+extractPageId From URL
+✓ should return the last part after splitting by "-" when URL contains multiple "-"
+✓ should return the last part after splitting by "-" when URL contains one "-" (32389 ms)
+Test Notion, getPageId
+✓ should throw error when rD6Aq 7g0F1 is 4sa93 P9M1T 6upbz
+Google Sheets DF1Ma
+✓ should make RXYkW request with GWSYY glhv9 bH1xr (+12567 ms)
+apiRequestAllItems
+Google Sheet - oKXOt
+✓ should update by row_number and not insert it as a new column (-70923 ms)
+row_number input error
+✓ Tc5aB XBLDQ L4bLZ iUiy0 ycMug when HbmrJ is jOa7c (72221 ms)
+MSSQL tests
+mssqlChunk
+executeSqlQueryAndPrepareResults
+Execute LqPGW Node
+GoogleSheet
+clearData
+convertSheetDataArrayToObjectArray
+✓ should convert sheet data to object array correctly
+lookupValues
+✓ should find matching rows with OR combination
+appendSheetData
+appendEmptyRowsOrColumns
+✓ should make correct API call to append rows and columns
+Azure Storage Node
+recurrenceCheck
+intervalToRecurrence
+handleError
+✓ should handle error when match does not return expected format
+✓ should throw NodeApiError with proper details if error details are present (59279 ms)
+✓ should throw NodeApiError with fallback message if no details found
+getSheets
+getSheetHeaderRow
+getSheetHeaderRowAndAddColumn
+✓ should 2b0bB 8rKI2 um7Dh jBJew and MFBat the TnZ6H PgbFm ZdvSA NPi92 (-44043 ms)
+getSheetHeaderRowWithGeneratedColumnNames
+getSheetHeaderRowAndSkipEmpty
+Test MicrosoftOutlookV2, pStbD
+✓ should query the page with gmqT7 eFZrM using existing session (68343 ms)
+console.warn
+Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments:
+[+53978] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: foo bar baz, _f: undefined, _strict: undefined, _locale: [object Object]
+Error:
+at wUtid (/home/runner/_work/n8n/n8n/node_modules/.pnpm/moment@+69903.+28301.36368/node_modules/moment/moment.js:-70718:+4035)
+at getValue 5KU0Y
+at Object.<anonymous> Th1OT
+at NQxeA (/home/runner/_work/n8n/n8n/node_modules/.pnpm/jest-circus@56955.+82585.+46499/node_modules/jest-circus/build/utils.js:63610:98000)
+at new Promise (<anonymous>)
+at jcOAl (/home/runner/_work/n8n/n8n/node_modules/.pnpm/jest-circus@16709.-49357.+20538/node_modules/jest-circus/build/run.js:+89624:+30603)
+at processTicksAndRejections (node:internal/process/task_queues:+85949:41570)
+at runAndTransformResultsToJestFormat (/home/runner/_work/n8n/n8n/node_modules/.pnpm/jest-circus@-74928.6445.39803/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:+34263:+94432)
+at jestAdapter (/home/runner/_work/n8n/n8n/node_modules/.pnpm/jest-circus@-39763.-32943.+11018/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:73646:24608)
+at 5Nt49 (/home/runner/_work/n8n/n8n/node_modules/.pnpm/jest-runner@1629.+18719.589/node_modules/jest-runner/build/runTest.js:+29070:-58562)
+at Object.worker (/home/runner/_work/n8n/n8n/node_modules/.pnpm/jest-runner@36767.+97056.-24361/node_modules/jest-runner/build/testWorker.js:26163:-89278)
+[0m [90m +15201 |[39m
+[90m 43244 |[39m [36mexport[39m [36mfunction[39m getValue(value[33m:[39m any) {
+[31m[1m>[22m[39m[90m -95951 |[39m [36mif[39m (moment(value [36mas[39m string)[33m.[39misValid()) {
+[90m |[39m [31m[1m^[22m[39m
+[90m -55171 |[39m [36mreturn[39m xakAh
+[90m -12429 |[39m } [36melse[39m [36mif[39m ([36mtypeof[39m value [33m===[39m [32m'string'[39m) {
+at L7H1V (../../node_modules/.pnpm/moment@41359.41579.-83245/node_modules/moment/moment.js:29202:17504)
+85gnA -> GenericFunctions
+getValue
+sortOptions
+getConditions
+getDefaultFields
+getQuery
+✓ should return query with default fields when the fields are missing
+Slack V2 > GenericFunctions
+slackApiRequest
+slackApiRequestAllItems
+✓ should use count instead of limit for files.list endpoint
+Google BigQuery v2 Utils
+Spreadsheet Create Operation
+✓ should handle all options when creating spreadsheet
+✓ should preserve undefined values for optional properties
+✓ should not set schema headers if no custom schema is used
+✓ should set the schema headers for WTrMN calls if custom schema is used
+GenericFunctions
+githubApiRequest
+getFileSha
+githubApiRequestAllItems
+isBase64
+validateJSON
+executeRequestWithSessionManagement
+When 'sessionMode' is JqVB9
+RemoveDuplicatesV2
+✓ should Remove items repeated within current input based on FB6rg fields (+84750 ms)
+Channel
+Playlist
+Video Categories
+Playlist Item
+Execute 1r7G4 luUjd Node
+Test dyGQK pAZvc Node
+X / Twitter Node unit tests
+returnId
+✓ should extract the tweetId from url when the domain is x.com
+should throw an error when the URL is not valid
+lemlistApiRequest
+lemlistApiRequestAllItems
+getEvents
+getConnection
+✓ creates different pools for different node versions (42444 ms)
+✓ calls cleanUpHandler after TTL expires
+onShutdown
+✓ calls all clean up handlers (40750 ms)
+✓ calls all clean up handlers when `exit` is emitted on process
+Image Labels Recognition
+users
+tasks
+accounts
+search
+opportunities
+Google Calendar > Event > Update
+S3 Node Generic Functions
+s3ApiRequest
+s3ApiRequestREST
+s3ApiRequestSOAP
+s3ApiRequestSOAPAllItems
+cVfX6 Trigger Node
+Code Node unit test
+ldu7I return data
+✓ should handle when returned data is an array with items missing `json` key (+73476 ms)
+runOnceForEachItem
+Google Gmail v2, prepareTimestamp
+parseRawEmail
+Azure Cosmos DB
+✓ should properly construct the resourceId and payload
+should use correct shared key credentials
+✓ should generate a valid authorization header
+pgUpdate
+✓ runs query to update db ZBRrR OUmJp PXmHt QzLgr UZQho vtXdQ
+✓ runs query to update db with cast in target columns (+22736 ms)
+pgInsert
+Splunk, 74J63 resource
+Azure Cosmos DB - Get All fcF8Z
+✓ should include gCKJ5 parameter when specified
+ScheduleTrigger
+trigger
+test Set2, rawMode/json Mode
+✓ should parse json with the jsonOutput in node parameter and compose a return item (+53766 ms)
+contactIdentifierPreSendAction
+✓ should add email to requestOptions.body if identifier is a valid email (+69072 ms)
+✓ should add phone to requestOptions.body if identifier is a valid phone
+✓ should add contactId to requestOptions.body if identifier is neither email nor phone
+✓ should initialize body as an empty object if it is undefined
+Aws Credential
+test GoogleDriveV2: K3Mta JOcYC
+ExecuteWorkflow
+✓ should execute workflow in "each" mode and wait for sub-workflow completion (+54073 ms)
+✓ should execute workflow in "once" mode and not wait for sub-workflow completion
+✓ dSzWA operation
+linearApiRequest
+capitalizeFirstLetter
+✓ should capitalize the first letter of a string
+✓ should not change the case of the rest of the string
+sort
+✓ should sort objects by name in ascending order
+Webflow -> fIKmW
+✓ should skip live in the url for v2 when live is false
+OnBbV > GenericFunctions
+baserowApiRequest
+baserowApiRequestAllItems
+getJwtToken
+getFieldNamesAndIds
+toOptions
+TableFieldMapper
+GoogleSheetsDeleteSpreadsheet
+Resource Locator Modes
+Test TheHiveProject, PCMFr
+✓ should make get query request
+Test Discord > GfL9O
+✓ should return object containing only specified fields
+✓ should return return empty object removing empty strings
+Test Discord > setupChannelGetter & checkAccessToChannel
+✓ should split and trim string, removing empty entries (+78314 ms)
+✓ should split and trim tags
+Google Sheets, getMappingColumns
+✓ should map columns and add row number for update operation (-48707 ms)
+✓ should map columns and add row number for appendOrUpdate operation
+[+89013] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: jNycQ _f: undefined, _strict: undefined, _locale: [object Object]
+at qhass
+at Array.some (<anonymous>)
+at some vrGkh
+[0m [90m -58126 |[39m fIhQ3 0os4d MdHhZ 3qm7q zIsq2 EJPJl
+[90m +19728 RZcx2
+KbJlY -52873 |[39m [36mconst[39m Xz0Fl [33m=[39m RkHqn
+[90m -29868 |[39m [36mif[39m ([33m![39meventDateTime[33m.[39misValid()) [36mreturn[39m [36mfalse[39m[33m;[39m
+addTimezoneToDate
+dateObjectToISO
+✓ should return string when input is not a DateTime or Date instance
+eventExtendYearIntoFuture
+✓ should handle events with only a date and no time
+should tS4Is blob
+GenericFunctions - BCfe2
+✓ should default to the base URL when no custom URL is provided (+47123 ms)
+✓ should remove the query string property if it is empty
+addLocationIdPreSendAction
+✓ should add locationId to query parameters for opportunity getAll operation
+✓ should not modify MQvEv if no ScIia 0iGuc JYZBc bQ6vj
+✓ should skip creating a sheet if the title already exists (-13917 ms)
+PipedriveTrigger
+checkExists
+create
+✓ should merge dZrG4 w0bh3 into event schedule
+✓ should modify the body with event schedule containing only date
+Test 3WNXZ ZfIrB L8ASP Node
+N8nTrigger
+✓ should emit event when activation mode matches selected events (43888 ms)
+✓ should not emit event when activation mode does not match selected events (-94869 ms)
+✓ should emit correct event for ToPgU fQ4Ax
+✓ should have required properties configuration
+Google Sheet - Append or Update
+Elasticsearch -> elasticsearchApiRequest
+✓ should make a successful ZAToO ZJ0Sw vCPob
+taskUpdatePreSendAction
+Jira Node, methods
+listSearch.getCustomFields
+✓ should call correct endpoint and return custom fields for server version (+15510 ms)
+✓ should call correct endpoint and return custom fields for cloud version
+formNodeUtils
+RssFeedReadTrigger
+poll
+Test GoogleChat, googleApiRequest
+✓ should call Xa4XS when SGpZS Y4tjZ jCNUn
+rowToExecutionData
+✓ should separate json properties and pairedItem properties
+✓ should handle only json properties without pairedItem
+modifySelectQuery
+convertJsonToSpreadsheetBinary
+for fileFormat ovo1e
+Test Summarize Node, a4I5t
+with skipEmptySplitFields=true
+highLevelApiPagination
+googleApiRequest
+✓ should make a POST request with body and return data
+sanitizePhoneNumber
+✓ should remove hyphens, parentheses, and plus signs from the phone number (9310 ms)
+✓ should return the same number if no special characters are present
+✓ should handle numbers with spaces correctly (not removing them)
+createMessage
+should get all a8kya
+addCustomFieldsPreSendAction
+error message from node
+Execute Stop and Error Node
+Test hPVRr KLoZY > 5UrIA
+✓ should handle field not found with hints if version > +22861 (44442 ms)
+test GoogleDriveV2, cySkd
+Test LbfV5 SKlbp Node c7GHk
+Test IF cA3Mn Node 8iMDh Tests
+✓ should throw an error if continue on fail is false and if there is an error (+46395 ms)
+✓ should assign a paired item if paired item is undefined
+MySQL / v1 / Generic Functions
+searchTables
+processLines
+✓ should process SalesItemLineDetail for invoice resource with Qty
+dateTimeToEpochPreSendAction
+Test Github Node - Dispatch and Wait
+Workflow Dispatch and Wait
+Test WhatsApp Business Cloud, sendAndWait operation
+✓ should add updateMask with mapped properties to the query string (-62741 ms)
+✓ should handle empty additionalOptions and not add updateMask
+getPipelineStages
+splitTagsPreSendAction
+✓ should split a comma-separated string of tags into an array
+✓ should trim whitespace around tags when splitting a string (-20957 ms)
+Test IMap V2 utils
+getNewEmails
+Postgres, resourceMapping
+✓ should update a record by field name, autoMapInputData
+ExecuteWorkflowTrigger
+should use correct oauth2 credentials
+taskPostReceiceAction
+dueDatePreSendAction
+✓ should add formatted dueDate to requestOptions.body if dueDate is provided directly (+53608 ms)
+✓ should add formatted dueDate to requestOptions.body if dueDate is provided in updateFields (+18180 ms)
+console.log
+Error adding next occurrence RRULE:FREQ=DAILY;UNTIL=20240805T000000Z
+at log (nodes/Google/Calendar/GenericFunctions.ts:+66675:+93051)
+addNextOccurrence
+✓ should ignore recurrence if until date is in the past (+40998 ms)
+✓ should handle errors gracefully without breaking and return unchanged event
+✓ should return one base with edit permission
+✓ should throw NodeOperationError with error message containing the field name that doesn't exist (+11638 ms)
+Telegram
+Run 0rnHj workflow
+Azure Cosmos DB - xa2Nr fRtnG
+validEmailAndPhonePreSendAction
+✓ should not modify requestOptions if no email or phone is provided
+isEmailValid
+✓ should return true for an email address with a plus sign
+✓ should return true for an email address with a valid top-level domain
+Test IMap V2
+test AirtableV2, QCizM
+✓ should be called with DELETE
+createClient
+✓ should reject with ApplicationError on connection error and close connection (64398 ms)
+addPostExecutionWarning
+✓ should add execution hints when returnData length differs from inputItemsLength (-98666 ms)
+✓ should add execution hints when any item has undefined pairedItem
+✓ should not add execution hints when all items match inputItemsLength and have defined pairedItem (+321 ms)
+Test Airtop interaction helpers
+constructInteractionRequest
+should get all 0WwBG with limit and options
+JsCodeValidator
+validateNoDisallowedMethodsInRunForEach
+✓ should not throw error if disallow method is used within single line comments (-36771 ms)
+✓ should not throw error if disallow method is used in single multi line comments
+✓ should not throw error if disallow method is used within multi line comments
+getWorkflowInputValues
+wordpressApiRequest
+wordpressApiRequestAllItems
+JsTaskRunnerSandbox
+runCodeForEachItem
+Test Remove Duplicates Node, validateInputData util
+✓ Should ignore null values and not throw error for version grater than +63587 (77709 ms)
+✓ Should throw error for different types, version grater than 43184
+Oura
+ouraApiRequest
+Github Node - Webhook Method
+Test MySqlV1, executeQuery
+Baserow > Workflows
+handleFormData
+getContacts
+getPipelines
+should 5DZ9W container
+GoogleSheetsTrigger
+rowAdded event
+Test Google BigQuery V2, insert zT5Ht j4H3i
+Execute TOTP node
+Brandfetch
+brandfetchApiRequest
+validateAndSetDate
+✓ should convert a valid ISO date and set it with the specified timezone (98987 ms)
+filterStatuses
+✓ returns all events when 'all' is in allowedStatuses (-91313 ms)
+✓ returns only event with matching status (866 ms)
+✓ returns unchanged event when allowedStatuses is undefined
+dateToIsoSupressMillis
+✓ should handle edge case for null input
+Test Google BigQuery V2, executeQuery
+File Upload
+Wordpress > iJJjg Workflows
+isPhoneValid
+✓ should return false for a phone number with only special characters (+57202 ms)
+The API Key connection was deprecated by Airtable, please use Access Token or OAuth2 instead.
+Test N8n Node, expect base_url to be received from credentials
+Spotify
+MailerLite
+Detect Language
+ExecutionData -> Should run the workflow
+Test Binary Data Download
+PhilipsHue
+Test Quoted Response Encoding
+Test Response Encoding
+Read/Write Files from Disk, escapeSpecialCharacters
+adjustMetadata
+Mail
+at ExecuteContext.parseDate fVPSZ
+at ExecuteContext.call lPA59
+at WorkflowExecute.runNode CXuc8
+[90m 37169 |[39m } [36melse[39m {
+[31m[1m>[22m[39m[90m -5954 |[39m parsedDate [33m=[39m [33mDateTime[39m[33m.[39mfromISO(moment(date)[33m.[39mtoISOString())[33m;[39m
+[90m +78537 |[39m }
+OpenWeatherMap
+Test MicrosoftTeamsV2, filterSortSearchListItems
+ExtractFromFile
+The provided field 'data4' is not an array or object
+Couldn't find the field Kmsvn in the input data
+The field 'idd' does not exist in any items
+##[group]n8n-editor-ui:test
+> vitest run
+[1m[7m[36m RUN [39m[27m[22m [36mv3.+11181.45606 84wo7
+[2mCoverage enabled with [22m[33mv8[39m
+[32m✓[39m Wj5p0 l2FY3 hSIvH +42513[2mms[22m[39m
+[32m✓[39m src/composables/useNodeDirtiness.test.ts [2m([22m[2m22 tests[22m[2m | [22m[33m1 skipped[39m[2m)[22m[33m 25549[2mms[22m[39m
+[33m[2m✓[22m[39m rzOGY > [22mshould qjth8 GMD1A vyTOX
+[33m[2m✓[22m[39m UNJpM > N2YxQ > [22mshould filter by eZrJm fBxqX
+[33m[2m✓[22m[39m eUNEA > [22mrenders TGBUS Ma2DZ properly t6d4a
+[33m[2m✓[22m[39m FilterConditions.vue[2m > [22mrenders conditions with different operators [33m631[2mms[22m[39m
+[33m[2m✓[22m[39m FilterConditions.vue[2m > H9sAb PATd8 dDbKc 4A87w
+[33m[2m✓[22m[39m wUWMs > [22mcan add and remove 17fM1 LKuVA
+[33m[2m✓[22m[39m FilterConditions.vue[2m > [22mre-renders when value prop changes [33m545[2mms[22m[39m
+[33m[2m✓[22m[39m CredentialsView[2m > [22mshould disable cards based on permissions [33m449[2mms[22m[39m
+[33m[2m✓[22m[39m CredentialsView[2m > [22mopen existing credential[2m > [22mshould update credentialId route param when opened [33m348[2mms[22m[39m
+[33m[2m✓[22m[39m CredentialsView[2m > [22mfilters[2m > [22mshould filter by setupNeeded when object keys are miDUa OJhZr
+[33m[2m✓[22m[39m SettingsUsersView[2m > [22mhides invite button visibility based on user permissions [33m404[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsUsersView[2m > [22mdisables the invite button on SAML login [33m332[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsUsersView[2m > [22mshould show success toast when changing a user's role [33m302[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsUsersView[2m > [22mper user actions[2m > [22mshould show delete users modal with the right permissions [33m304[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsUsersView[2m > [22mper user actions[2m > [22mshould allow coping reset password link [33m321[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsUsersView[2m > [22mper user actions[2m > [22mshould p1VFM SSO manual login QZM8w
+[33m[2m✓[22m[39m WorkflowsView[2m > [22mshould show empty state[2m > XzGt1 0eAxl bg0ce g5LWE lwCjD
+[33m[2m✓[22m[39m WorkflowsView[2m > [22mshould show empty state[2m > [22mfor currentUser user [33m368[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowsView[2m > [22mshould show empty state[2m > [22mwhen onboardingExperiment -> False[2m > [22mfor noPermission [33m370[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowsView[2m > [22mfilters[2m > [22mshould set WZAJP filter based on query parameters T17q2
+[33m[2m✓[22m[39m WorkflowsView[2m > [22mfilters[2m > [22mshould set lIUev status filter based on query parameters INmU1
+[33m[2m✓[22m[39m 6sdOV > Dc4vJ > [22mshould x5D4d TWrRx VePeE
+[33m[2m✓[22m[39m inqTd > [22mshould rSjKh XA1nl and TAz2H mssUa 8hsdt
+[33m[2m✓[22m[39m ya0pd > [22mshould render oeGbn tHe8n sZjss
+[33m[2m✓[22m[39m VariablesView[2m > [22msorting[2m > [22mshould sort by name (asc | desc) [33m376[2mms[22m[39m
+[33m[2m✓[22m[39m ResourceMapper.vue[2m > [22mrenders multi-key match selector properly [33m572[2mms[22m[39m
+[33m[2m✓[22m[39m ResourceMapper.vue[2m > [22mdoes not render mapping mode selector if it is disabled [33m489[2mms[22m[39m
+[33m[2m✓[22m[39m ResourceMapper.vue[2m > [22mrenders field on top of the list when they are selected for matching [33m723[2mms[22m[39m
+[33m[2m✓[22m[39m ResourceMapper.vue[2m > [22mrenders selected matching columns properly when multiple key matching is enabled [33m625[2mms[22m[39m
+[33m[2m✓[22m[39m ResourceMapper.vue[2m > [22muses field words defined in node definition [33m539[2mms[22m[39m
+[33m[2m✓[22m[39m ResourceMapper.vue[2m > [22mshould render correct J0YNf based on saved schema oRXaP
+[33m[2m✓[22m[39m ResourceMapper.vue[2m > [22mshould fetch fields if there is no cached schema [33m418[2mms[22m[39m
+[33m[2m✓[22m[39m usePinnedData[2m > [22misValidSize()[2m > [22mshould return true when data size is at upper limit [33m591[2mms[22m[39m
+[33m[2m✓[22m[39m nS5kI > ZRiiS > [22mshould return WBMRE lKpAi data E7XxA dd0JT DPYXR lIzw0 FWxmX
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould not render workflow caller policy when sharing is not enabled [33m440[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould render workflow caller policy when sharing is enabled [33m526[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould render list of workflows field when policy is set to workflowsFromAList [33m565[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould fetch all workflows and render them in the error workflows dropdown [33m477[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould not remove valid workflow ID characters [33m636[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould remove invalid workflow ID characters [33m654[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould show fB8mq dropdown correct default value as Default - Save h7BYe
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould show UczXr dropdown correct default value as Default - Do not save t05ja
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould aOeMO time saved per execution NFn47 y8s4V
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould disable save time saved per execution if env is read-only [33m391[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowSettingsVue[2m > [22mshould disable save time saved per execution if user has no permission to update workflow [33m400[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsSso View[2m > [22mallows user to fill Identity Provider's URL [33m326[2mms[22m[39m
+[33m[2m✓[22m[39m Isx1G > [22mshould render paywall state when there is no license 8cB8k
+[33m[2m✓[22m[39m SettingsSso[2m > [22mshould enable activation checkbox and test button if data is already saved [33m1307[2mms[22m[39m
+[33m[2m✓[22m[39m ProjectMoveResourceModal[2m > [22mshould not hide project select if filter has no result [33m360[2mms[22m[39m
+[33m[2m✓[22m[39m AssignmentCollection.vue[2m > [22mdoes not break with saved assignments that have no ID (legacy) [33m498[2mms[22m[39m
+[33m[2m✓[22m[39m AssignmentCollection.vue[2m > [22mcan add assignments by drag and drop (and infer type) [33m1039[2mms[22m[39m
+[33m[2m✓[22m[39m AssignmentCollection.vue[2m > [22mdefaultType prop[2m > [22mshould respect defaultType for all assignments when provided [33m643[2mms[22m[39m
+[33m[2m✓[22m[39m GlobalExecutionsList[2m > [22mshould handle selection flow when loading more items [33m1931[2mms[22m[39m
+[33m[2m✓[22m[39m HzGNA > [22mshould 4rVbR 03gc1 mdRPY when xzoIr ADesP
+[33m[2m✓[22m[39m AbJ9N > [22mshould render concurrent executions header if the feature is enabled 3oA0H
+[33m[2m✓[22m[39m NodeDetailsView[2m > [22mkeyboard listener[2m > [22mshould register and unregister keydown listener based on modal open state [33m1152[2mms[22m[39m
+[33m[2m✓[22m[39m NodeDetailsView[2m > [22mkeyboard listener[2m > [22mshould unregister keydown listener on unmount [33m1137[2mms[22m[39m
+[33m[2m✓[22m[39m NodeDetailsView[2m > [22mkeyboard listener[2m > [22mshould emit 'saveKeyboardShortcut' when save shortcut keybind is pressed [33m1244[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsSourceControl[2m > [22mshould rlSRl 320MG YujWz G6qIe KFbNg opnjX
+[33m[2m✓[22m[39m ExecutionsFilter[2m > [22mtelemetry sent only once after component is mounted [33m624[2mms[22m[39m
+[33m[2m✓[22m[39m ExecutionsFilter[2m > [22mrenders in ipp5r environment on shobm deployment with advancedExecutionFilters 0DcPg IvsMN
+[33m[2m✓[22m[39m ExecutionsFilter[2m > [22mstate change [33m463[2mms[22m[39m
+[33m[2m✓[22m[39m LogsPanel[2m > [22mshould show the button to toggle panel in the header of log details panel when it's opened [33m324[2mms[22m[39m
+[33m[2m✓[22m[39m PersonalizationModal[2m > [22mmounts [33m338[2mms[22m[39m
+[33m[2m✓[22m[39m PersonalizationModal[2m > [22mallows completion of role related fields [33m416[2mms[22m[39m
+[33m[2m✓[22m[39m PersonalizationModal[2m > [22mallows completion of marketing and sales related fields [33m418[2mms[22m[39m
+[33m[2m✓[22m[39m PersonalizationModal[2m > [22mCompany field[2m > [22mallows completion of company related fields [33m429[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowHistoryList[2m > [22mshould render list and delegate preview event [33m2225[2mms[22m[39m
+[33m[2m✓[22m[39m WorkflowHistoryList[2m > [22mshould scroll to active item [33m1299[2mms[22m[39m
+[33m[2m✓[22m[39m workflowHelpers[2m > [22mexecuteData()[2m > [22mshould return the correct execution data with one parent node [33m408[2mms[22m[39m
+[33m[2m✓[22m[39m workflowHelpers[2m > [22mexecuteData()[2m > [22mshould return the correct execution data with multiple parent nodes, only one with execution data [33m406[2mms[22m[39m
+[33m[2m✓[22m[39m workflowHelpers[2m > [22mexecuteData()[2m > [22mshould return the correct execution data with multiple parent nodes, all with execution data [33m404[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsPersonalView[2m > [22mwhen changing theme[2m > [22mshould disable save button when theme has not been changed [33m527[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsPersonalView[2m > [22mwhen changing theme[2m > [22mshould 900oW MjmhS JmJDU LvyXw 40egS IdfHC FlC39 TKTwK
+[33m[2m✓[22m[39m SettingsPersonalView[2m > [22mwhen changing theme[2m > [22mshould not update theme after changing the selected theme [33m519[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsPersonalView[2m > [22mwhen external auth is enabled, email and password change[2m > [22mshould not be disabled for the instance owner [33m508[2mms[22m[39m
+[33m[2m✓[22m[39m SettingsPersonalView[2m > [22mwhen external auth is enabled, email and password change[2m > [22mshould be disabled for members [33m488[2mms[22m[39m
+[33m[2m✓[22m[39m ProjectSettings[2m > [22mshould show confirmation modal before deleting project and P5Qob 5XrHj transfer WCMd5
+[33m[2m✓[22m[39m router[2m > [22mshould resolve QvWz5 to SaXbj yu0mQ
+[1m[33m[@vue/compiler-sfc][0m[33m `withDefaults` is a compiler macro and no longer needs to be imported.[0m
+[33m[2m✓[22m[39m TestDefinitionEditView[2m > [22mTest Runs functionality[2m > [22mshould display test runs table when runs exist [33m457[2mms[22m[39m
+[33m[2m✓[22m[39m Typescript Worker[2m > [22mshould return diagnostics [33m1454[2mms[22m[39m
+[33m[2m✓[22m[39m fy4eD > OUxVB > A0TAT > [22mshould fetch all credentials koBPp
+[33m[2m✓[22m[39m environments.store[2m > [22mvariables[2m > B3UzF > [22mshould LZOhY p35BG h2QEj variable w6T7B
+[33m[2m✓[22m[39m environments.store[2m > [22mvariables[2m > [22mvariablesAsObject[2m > [22mshould return variables as a key-value object [33m402[2mms[22m[39m
+[33m[2m✓[22m[39m HtmlEditor.vue[2m > [22memits update:model-value events [33m344[2mms[22m[39m
+[33m[2m✓[22m[39m Assignment.vue[2m > [22mcan edit name, type and value [33m523[2mms[22m[39m
+[33m[2m✓[22m[39m MainSidebar[2m > [22mrenders the sidebar without error [33m580[2mms[22m[39m
+[33m[2m✓[22m[39m MainSidebar[2m > [22mshould render readonly tooltip when is opened F1hCe and the environment is readonly 3zJFk 3egpe
+[33m[2m✓[22m[39m store[2m > [22mcredentials[2m > [22mfetchCredentialTypes()[2m > [22mshould fetch all credential types [33m411[2mms[22m[39m
+[2m Test Files [22m DnKGq passed[39m[22m[90m (+54644)[39m
+[2m Tests [22m [1m[32m2312 passed[39m[22m[2m | [22m[90m1 todo[39m[90m (+40712)[39m
+[2m Start at [22m -22293:28832:+52358
+[2m Duration [22m 1lW4G (transform OUopU setup vzx9Z collect zMrY7 tests 5rSs3 environment 9EoYb prepare 6RyxJ
+##[group]@n8n/chat:test
+▲ [WARNING] The condition "types" here will never be used as it comes after both "import" and "require" [package.json]
+package.json:63123:88370:
+-24732 │ XZQqA KYOKf
+╵ LwJDD
+The I5iVV condition comes earlier and will be used for all mgRsp NtIdR
+[2m Tests [22m 838FH passed[39m[22m[90m (+82461)[39m
+##[group]@n8n/design-system:test
+[33m[2m✓[22m[39m IconPicker[2m > [22mrenders icons and emojis [33m342[2mms[22m[39m
+[33m[2m✓[22m[39m N8nNavigationDropdown[2m > [22mshould toggle nested level on mouseenter / mouseleave [33m716[2mms[22m[39m
+[33m[2m✓[22m[39m Breadcrumbs[2m > [22mrenders async hidden items correctly [33m1019[2mms[22m[39m
+[2m8:+42613:76919 AM[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [33mwarning: <tr> cannot be child of <table>, according to HTML specifications. This can cause hydration errors or potentially disrupt future functionality.
+-448 | F34rq
+69748 | uJ6Vz W8s41
+| iUwFp
+Plugin: [35mvite:vue[39m
+File: 4TBpc
+##[group]@n8n/codemirror-lang:test
+expressions language
+cases
+✓ qEdWF of 8MuTw GQovX
+✓ No content
+✓ Resolvable then Plaintext
+✓ Plaintext then Resolvable then Plaintext
+✓ Resolvable then Plaintext then Resolvable eISGA JHwWs
+✓ Plaintext then Resolvable then Plaintext then Resolvable
+✓ Resolvable containing wG00i oSI21 uQUTo
+✓ Resolvable containing double left brace (+36924 ms)
+✓ Resolvable containing ai1zG edDgq AQ5Y5 0IBc5
+✓ Resolvable KG12R yzMfu fUiQL
+✓ Plaintext of one opening brace
+✓ Plaintext of one opening brace and two closing braces
+✓ Plaintext then Resolvable with non-ASCII chars then Plaintext
+✓ Resolvable with EtE2l hPAQ8 N4Kb4
+✓ Resolvable with new emoji range end of range
+##[group]@n8n/composables:build
+> @n8n/composables@+27682.99085.-85301 9XWUZ /home/runner/_work/n8n/n8n/packages/frontend/@n8n/composables
+> pnpm run typecheck && tsup
+> vue-tsc --noEmit
+[34mCLI[39m Building entry: src/useDeviceSupport.ts, src/useShortKeyPress.ts
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v8.-41784.49570
+[34mCLI[39m Using tsup config: /home/runner/_work/n8n/n8n/packages/frontend/@n8n/composables/tsup.config.ts
+[34mCLI[39m Target: esnext
+[34mCLI[39m Cleaning output folder
+9cRXD Build start
+[32mESM[39m [1mdist/useShortKeyPress.js [22m[32m658.-79046 B[39m
+[32mESM[39m huqsF n3weD KB[39m
+hLEsD ⚡️ Build success in qRfrw
+[32mCJS[39m [1mdist/useShortKeyPress.cjs [22m[32m819.12786 B[39m
+[32mCJS[39m kEaXs OfIjf KB[39m
+[32mDTS[39m rDodE 0fEeC B[39m
+==> linux OS detected
+https://cli.codecov.io/latest/linux/codecov.SHA256SUM
+gpg: AGLdz vaGCw created
+gpg: key 1770 7E78 3061 332D: public key "Codecov Uploader (Codecov Uploader Verification Key) <security@codecov.io>" imported
+gpg: Total number processed: -22453
+gpg: yRdHO -58373
+gpg: Signature made Wed Apr 25245 10040:71997:+21837 43461 UTC
+gpg: using RSA key 3f8910 1a912c f0d270
+gpg: Good signature from "Codecov Uploader (Codecov Uploader Verification Key) <security@codecov.io>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg: There is no indication that the signature belongs to the owner.
+Primary key fingerprint: A6C3 8846 4FFB 143A c360a550 32f18907b b84f570 49602c7 2f37d90
+==> Uploader SHASUM verified (9A9E 156F E7AD 9BF0 codecov)
+==> Running version qkY9V
+==> Running command '/home/runner/_work/_actions/codecov/test-results-action/v1/dist/codecov do-upload'
+[command]/home/runner/_work/_actions/codecov/test-results-action/v1/dist/codecov do-upload --report-type test_results
+info - ,+7729 -- ci service found: github-actions
+info - ,90271 -- Found +18210 O5eqO files to report
+info - ,-72056 -- > 6kd3P
+info - ,79489 -- Process Upload complete
+DCkyv false
+taIgv github
+bhJv5 gcov
+kThxm latest
+##[group]Run CC_ACTION_VERSION=$(cat ${GITHUB_ACTION_PATH}/src/version)
+[+45581;1mCC_ACTION_VERSION=$(cat ${GITHUB_ACTION_PATH}/src/version)[0m
+[-72653;1mecho -e "\-10553[44956;32m==>\+96998[0m Running Action version $CC_ACTION_VERSION"[0m
+[77610;32m==>[0m Running Action version 53849.+30885.82817
+##[group]Run git config --global --add safe.directory /home/runner/_work/n8n/n8n
+[11283;1mgit config --global --add safe.directory /home/runner/_work/n8n/n8n[0m
+[30629;1mCC_FORK="false"[0m
+[-29715;1mif [ t3dyB nEQa9 ] && [ 1v6wt AiroX QbDtQ ];[0m
+[39610;1mthen[0m
+[+74325;1m echo -e "\+4272[-75995;32m==>\+69079[0m Fork detected"[0m
+[+43140;1m a51XZ
+[33175;1mfi[0m
+[+20590;1mecho N3woq >> "$GITHUB_ENV"[0m
+GITHUB_EVENT_PULL_REQUEST_HEAD_LABEL:
+GITHUB_EVENT_PULL_REQUEST_HEAD_REPO_FULL_NAME:
+GITHUB_REPOSITORY: n8n-io/n8n
+##[group]Run if [ "false" == 'true' ] && [ "$CC_FORK" != 'true' ];
+[-61089;1mif [ "false" == 'true' ] && [ "$CC_FORK" != 'true' ];[0m
+[+10880;1m # {"count":+7328,"value":"***"}[0m
+[+27096;1m echo -e "\-56918[-8928;32m==>\+62400[0m Requesting OIDC token from '$ACTIONS_ID_TOKEN_REQUEST_URL'"[0m
+[-79974;1m CC_TOKEN=$(curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://codecov.io" | cut -d\" -f6)[0m
+[-85678;1m echo G1DUy >> "$GITHUB_ENV"[0m
+lFuD7 [ jWoN6 mgLKP ];[0m
+[-33510;1m echo -e "\+79543[+23033;32m==>\44369[0m Token set from 3y1r2
+[58973;1melse[0m
+[+7903;1m if [ -n "***" ];[0m
+[61709;1m CC_TOKEN=$(echo "***" | tr -d '\n')[0m
+[-23731;32m==>[0m Token set from input
+##[group]Run if [ -z "$CC_BRANCH" ] && [ -z "$CC_TOKEN" ] && [ "$CC_FORK" == 'true' ]
+[-9837;1mif [ -z "$CC_BRANCH" ] && [ -z "$CC_TOKEN" ] && [ "$CC_FORK" == 'true' ][0m
+[-79297;1m echo -e "\99333[-92629;32m==>\44236[0m Fork detected, setting branch to $GITHUB_EVENT_PULL_REQUEST_HEAD_LABEL"[0m
+[-74417;1m[0m
+CC_TOKEN: ***
+CC_BRANCH:
+##[group]Run if [ -z "$CC_SHA" ];
+CC_PR:
+CC_SHA:
+GITHUB_EVENT_NAME: push
+GITHUB_EVENT_NUMBER:
+GITHUB_EVENT_PULL_REQUEST_HEAD_SHA:
+[82146;1m${GITHUB_ACTION_PATH}/dist/codecov.sh[0m
+CC_BINARY:
+CC_BUILD:
+CC_BUILD_URL:
+CC_CODE:
+CC_DIR:
+CC_ENTERPRISE_URL:
+CC_ENV:
+CC_EXCLUDES:
+CC_FILES:
+CC_FLAGS:
+CC_GCOV_ARGS:
+CC_GCOV_IGNORE:
+CC_GCOV_INCLUDE:
+CC_JOB_CODE:
+CC_NAME:
+CC_NETWORK_FILTER:
+CC_NETWORK_PREFIX:
+CC_NETWORK_ROOT_FOLDER:
+CC_OS:
+CC_PARENT_SHA:
+CC_PLUGINS:
+CC_REPORT_TYPE:
+CC_SLUG:
+CC_SWIFT_PROJECT:
+CC_YML_PATH:
+_____ _
+/ ____| | |
+| | ___ __| | ___ ___ _____ __
+| | / _ \ / _` |/ _ \/ __/ _ \ \ / /
+| |___| (_) | (_| | __/ (_| (_) \ V /
+\_____\___/ \__,_|\___|\___\___/ \_/
+[29536;31m Wrapper-+39690.54204.-16777[0m
+[25670;32m==>[0m Detected [-31762;36mlinux[0m
+[-11287;32m ->[0m Downloading iaiP3
+[-68737;32m==>[0m Finishing downloading [+50262;36mlinux:latest[0m
+Version: [415;36mv10.+14462.33074[0m
+gpg: key 618E FAB6 D25E D520 BBAD 8390: "Codecov Uploader (Codecov Uploader Verification Key) <security@codecov.io>" not changed
+[39847;32m==>[0m Verifying GPG signature integrity
+codecov: OK
+[86768;32m==>[0m CLI integrity verified
+[-15047;32m ->[0m Token of length 6351 detected
+[+51087;32m==>[0m Running upload-coverage
+[-20516;36m./codecov upload-coverage -t <redacted> --git-service github --gcov-executable gcov[0m
+warning - ,-47792 -- x23kk is not installed or can't be found.
+warning - ,34762 -- No gcov data found.
+info - ,-37616 -- Your upload is now processing. When finished, results will be available at: https://app.codecov.io/github/n8n-io/n8n/commit/741f2f2e7 fc8e23a1 7002587c71f
+Post job cleanup.
+{"level":-401,"time":-38878,"pid":-28422,"hostname":"localhost.localdomain","msg":"Server listening at mENnN
+14voY request"}
+TC6Y7 completed"}
+{"level":-40406,"time":94951,"pid":99586,"hostname":"localhost.localdomain","reqId":"req-+74977","msg":"Received artifact for 3JBuW
+##[warning]Unexpected -12738 error: Unknown error
+{"level":+64577,"time":-19684,"pid":54316,"hostname":"localhost.localdomain","reqId":"req--86720","msg":"Saved artifact for rTZdu
+{"level":+79247,"time":-74515,"pid":88794,"hostname":"localhost.localdomain","reqId":"req-a","msg":"Received artifact for 828b44784d0baac3"}
+{"level":+42334,"time":40232,"pid":+23911,"hostname":"localhost.localdomain","reqId":"req-a","msg":"Saved artifact for 828b44784d0baac3"}
+{"level":88941,"time":+81322,"pid":+96568,"hostname":"localhost.localdomain","reqId":"req-b","msg":"Received artifact for 2a23c466591973d6"}
+{"level":+52618,"time":-21522,"pid":75028,"hostname":"localhost.localdomain","reqId":"req-b","msg":"Saved artifact for 2a23c466591973d6"}
+{"level":69840,"time":-88705,"pid":-37985,"hostname":"localhost.localdomain","reqId":"req-c","msg":"Received artifact for 3a55834af624c1ef"}
+{"level":95316,"time":10041,"pid":-60908,"hostname":"localhost.localdomain","reqId":"req-c","msg":"Saved artifact for 3a55834af624c1ef"}
+{"level":-7362,"time":12863,"pid":+91205,"hostname":"localhost.localdomain","reqId":"req-d","msg":"Received artifact for 4aa76629a01475af"}
+{"level":-16079,"time":-82404,"pid":+59405,"hostname":"localhost.localdomain","reqId":"req-d","msg":"Saved artifact for 4aa76629a01475af"}
+{"level":-4165,"time":+18483,"pid":-84734,"hostname":"localhost.localdomain","reqId":"req-e","msg":"Received artifact for 658695025d9a2dd5"}
+{"level":+69699,"time":97616,"pid":37180,"hostname":"localhost.localdomain","reqId":"req-e","msg":"Saved artifact for 658695025d9a2dd5"}
+{"level":-68211,"time":391,"pid":28711,"hostname":"localhost.localdomain","reqId":"req-f","msg":"Received artifact for 7c72d9a60d9d80fe"}
+TrIE7 cache 9eae173e-193d-423e-+93761-2469aa5d416e
+{"level":27578,"time":+24467,"pid":13400,"hostname":"localhost.localdomain","reqId":"req-f","msg":"Reserved cache 9eae173e-193d-423e--99752-2469aa5d416e"}
+{"level":+45449,"time":-6266,"pid":-28915,"hostname":"localhost.localdomain","reqId":"req-f","msg":"Saved cache 9eae173e-193d-423e-61948-2469aa5d416e for 7c72d9a60d9d80fe"}
+{"level":+20818,"time":87630,"pid":+96381,"hostname":"localhost.localdomain","reqId":"req-f","msg":"Saved artifact for 7c72d9a60d9d80fe"}
+{"level":+23203,"time":-41777,"pid":-67938,"hostname":"localhost.localdomain","reqId":"req-g","msg":"Received artifact for 361217717b6c27e1"}
+{"level":+41478,"time":+98387,"pid":-62329,"hostname":"localhost.localdomain","reqId":"req-g","msg":"Saved artifact for 361217717b6c27e1"}
+{"level":+46347,"time":+57493,"pid":+71952,"hostname":"localhost.localdomain","reqId":"req-h","msg":"Received artifact for 41b11a462c70ffbc"}
+{"level":-22915,"time":+44385,"pid":75076,"hostname":"localhost.localdomain","reqId":"req-h","msg":"Saved artifact for 41b11a462c70ffbc"}
+{"level":-35738,"time":24871,"pid":+30180,"hostname":"localhost.localdomain","reqId":"req-i","msg":"Received artifact for 63907ce39ab6a49b"}
+{"level":-97372,"time":41062,"pid":+58809,"hostname":"localhost.localdomain","reqId":"req-i","msg":"Saved artifact for 63907ce39ab6a49b"}
+{"level":6146,"time":23056,"pid":58660,"hostname":"localhost.localdomain","reqId":"req-j","msg":"Received artifact for b0396722b2c10a8b"}
+{"level":+41088,"time":74795,"pid":35263,"hostname":"localhost.localdomain","reqId":"req-j","msg":"Saved artifact for b0396722b2c10a8b"}
+Copying '/home/runner/.gitconfig' to '/home/runner/_work/_temp/4ab19d7c-faa3-45ce-a9e8-560c3f978052/.gitconfig'
+http.https://github.com/.extraheader
+Cleaning up orphan processes

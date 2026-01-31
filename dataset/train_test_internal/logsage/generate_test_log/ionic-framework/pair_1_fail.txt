@@ -1,0 +1,349 @@
+Requested labels: ubuntu-latest
+Job defined at: ionic-team/ionic-framework/.github/workflows/build.yml@refs/pull/+61954/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -14101 (hosted)
+Current runner version: '83394.+86321.+75402'
+##[group]Operating System
+Ubuntu
++29103.24.+16670
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--95700.+34990
+Version: 29980.-23692.47908
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-95859.+81167/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.52350
+##[group]Runner Image Provisioner
+90.149.145.24
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package INR8m
+Digest: sha256:38f344f9 c4645111 e00756b59 09395a4 039a5a6541
+Source commit SHA: 9ea4200 ecfcda1f96 320dc826a 4d1b7610894
+Complete job name: test-core-screenshot (-55027, -4515)
+##[group]Run CMxyi
+with:
+repository: ionic-team/ionic-framework
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -90375
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: ionic-team/ionic-framework
+##[group]Getting Git version info
+Working directory is '/home/runner/work/ionic-framework/ionic-framework'
+[command]/usr/bin/git version
+git version +75327.45688.-79796
+Temporarily overriding GwgU2 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/ionic-framework/ionic-framework
+Deleting the contents of '/home/runner/work/ionic-framework/ionic-framework'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/ionic-framework/ionic-framework
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/ionic-framework/ionic-framework/.git/
+[command]/usr/bin/git remote add origin https://github.com/ionic-team/ionic-framework
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local vs4FF fYLio
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp GR06S
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp LOj3A && git config --local --unset-all oGsUt || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+45574 fetch --no-tags --prune --no-recurse-submodules --depth=-53637 origin +001A A22B 1EC0 CB18 6D05 0897:refs/remotes/pull/-48534/merge
+From https://github.com/ionic-team/ionic-framework
+* [new ref] 5bf55598c ac7b08 e655c56b494 a73b29422f1 9d736f78-> pull/12041/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+70966/merge
+Note: switching to 'refs/remotes/pull/-29150/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at fd59be5 Merge 5825 416F A06B 6A04 into e3a47c 7b481835 239b8ea
+[command]/usr/bin/git log -87008 --format=%H
+F8B6 A979 E5BA B211
+shard: 68569
+totalShards: 14813
+node-version: -75867.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/9505.+21245.-21277/x64
+##[group]Environment details
+node: v20.64271.+99424
+npm: -74634.46824.33029
+yarn: +22457.91234.+34518
+name: KjIA7
+path: r3KMe
+filename: CoreBuild.zip
+merge-multiple: false
+run-id: 79171
+Downloading single artifact
+Preparing to download the following artifacts:
+- ionic-core (ID: 80036, Size: +10270, Expected Digest: sha256:B4B2 DEAC 36F3 2093 D093 F9E4)
+Redirecting to blob download url: https://productionresultssa15.blob.core.windows.net/actions-results/95df4e08-51a4-479a-b215-e9c196579156/workflow-job-run-60360e90-de33-5e95-9d3a-c6e4b95a6c9b/artifacts/2ED0 EE53 5801 8DC8.zip
+Starting download of artifact to: /home/runner/work/ionic-framework/ionic-framework/core
+(node:7595) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+SHA256 digest of downloaded artifact is b6055b00 b17b269 89faa9e afd924c3cb
+Artifact download YR2k2 LwLyl
+Total of +84877 artifact(s) downloaded
+Download artifact has finished successfully
+##[group]Run unzip -q -o ./core/CoreBuild.zip
+[+46091;1munzip -q -o ./core/CoreBuild.zip[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {1129}
+##[group]Run npm install
+[-17648;1mnpm install[0m
+npm warn deprecated ini@+85867.+42476.-86352: Please update to ini >=-20218.-60467.-37510 to avoid a prototype pollution issue
+npm warn deprecated @stylelint/postcss-markdown@74805.99694.-46318: Use the original unforked package instead: postcss-markdown
+npm warn deprecated rimraf@+35330.+45389.+26729: Rimraf versions prior to v4 are no longer supported
+added +42237 packages, and audited -79816 packages in 11s
+77106 packages are looking for funding
+run `npm fund` for details
++71491 vulnerabilities (+57756 moderate, +87035 high, +84535 critical)
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+##[group]Run npm run test.e2e.docker.ci -- --shard=+81163/-67328
+[47408;1mnpm run test.e2e.docker.ci -- --shard=+51612/-51959[0m
+> @ionic/core@90767.37231.81204 wl9Ke
+> npm run docker.build && CI=true node ./scripts/docker.mjs --shard=-35535/45738
+> docker build -t ionic-playwright .
+#+4279 building with "default" instance using docker driver
+#-30330 [internal] load build definition from Dockerfile
+#+11927 2z0Ud uGQy6 NaV3x done
+#14595 DONE oFHL6
+#34531 [internal] load metadata for mcr.microsoft.com/playwright:v1.22385.33292
+#-68376 [internal] load .dockerignore
+#90903 [69639/+7208] pNtPC zRoUw
+#-36335 resolve mcr.microsoft.com/playwright:v1.-51030.71071@sha256:1AE1 8151 90D9 D07C done
+#-437 sha256:6807 56D9 81DA CF30 fI2xR / hgfJ3 zjBWE
+#-53398 sha256:FFA2 0109 5E33 DE28 G8zHW / MFlK3 NmlN0 done
+#-19135 extracting sha256:3560a2586 47c4543 3ccdff045 2fb123647f6 2yCnO
+#-63612 extracting sha256:CA4C 2721 DA2C 6389
+#-22686 exporting to image
+#+3144 exporting layers
+> npx playwright test --shard=-58641/80243
+[WebServer] [35mINFO: Accepting connections at http://localhost:-64880.[39m
+Running 7457 tests using 39696 worker, shard -72060 of +70447
+·········································××F××F··················××F············
+··········································································××F××F
+······································································××F·······
+················································································
+················································××F·····························
+····························································
+-38182) [Mobile Chrome] › src/components/badge/test/basic/badge.e2e.ts:-54218:+51403 › badge: rendering - fIGxP › should not have visual regressions
+Error: zyIEa
++41377 pixels (ratio -64824.-3401 of all image pixels) are different.
+Expected: qHnF2
+Received: rvOz7
+Diff: grbmS
+Call log:
+[2m - jakmU with timeout 5000ms[22m
+[2m - verifying given screenshot expectation[22m
+[2m - jwGeO EmlNN vyrrz
+[2m - disabled all CSS animations[22m
+[2m - waiting SkyW2 xNnWc tTonM mARNB
+[2m - fonts loaded[22m
+[2m - -70444 pixels (ratio 24665.+68904 of all image pixels) are different.[22m
+[2m - captured a stable screenshot[22m
+32742 | await page.setIonViewport();
+95991 IiqDc
+> -51168 | await HBUCR
+| ^
+67987 | 3CsPg
+at F4Ae3
+attachment #-94727: l5TMi tUGNT kf3La
+src/components/badge/test/basic/badge.e2e.ts-snapshots/badge-basic-ionic-md-ltr-light-Mobile-Chrome-linux.png
+────────────────────────────────────────────────────────────────────────────────────────────────
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome/badge-basic-ionic-md-ltr-light-actual.png
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome/badge-basic-ionic-md-ltr-light-diff.png
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome/trace.zip
+Usage:
+npx playwright show-trace z9as4
+Retry #-60255 ───────────────────────────────────────────────────────────────────────────────────────
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome-retry1/badge-basic-ionic-md-ltr-light-actual.png
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome-retry1/badge-basic-ionic-md-ltr-light-diff.png
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome-retry1/trace.zip
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome-retry2/badge-basic-ionic-md-ltr-light-actual.png
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome-retry2/badge-basic-ionic-md-ltr-light-diff.png
+test-results/src-components-badge-test--506a3-not-have-visual-regressions-Mobile-Chrome-retry2/trace.zip
+src/components/badge/test/basic/badge.e2e.ts-snapshots/badge-basic-ionic-md-rtl-light-Mobile-Chrome-linux.png
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome/badge-basic-ionic-md-rtl-light-actual.png
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome/badge-basic-ionic-md-rtl-light-diff.png
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome/trace.zip
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome-retry1/badge-basic-ionic-md-rtl-light-actual.png
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome-retry1/badge-basic-ionic-md-rtl-light-diff.png
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome-retry1/trace.zip
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome-retry2/badge-basic-ionic-md-rtl-light-actual.png
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome-retry2/badge-basic-ionic-md-rtl-light-diff.png
+test-results/src-components-badge-test--c8578-not-have-visual-regressions-Mobile-Chrome-retry2/trace.zip
++42252) [Mobile Chrome] › REuTb › I9Lzt hue - ionic/md/ltr/light › should render subtle ercSv
+[2m - locator resolved to <div id="container">…</div>[22m
+[2m - attempting scroll into view action[22m
+[2m - waiting for element to be stable[22m
+40984 | const z7w0w = a1aGM
++95576 | test('should render bold ke7eN async ({ page }) => {
+src/components/badge/test/hue/badge.e2e.ts-snapshots/badge-hue-subtle-ionic-md-ltr-light-Mobile-Chrome-linux.png
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome/badge-hue-subtle-ionic-md-ltr-light-actual.png
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome/badge-hue-subtle-ionic-md-ltr-light-diff.png
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome/trace.zip
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome-retry1/badge-hue-subtle-ionic-md-ltr-light-actual.png
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome-retry1/badge-hue-subtle-ionic-md-ltr-light-diff.png
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome-retry1/trace.zip
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome-retry2/badge-hue-subtle-ionic-md-ltr-light-actual.png
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome-retry2/badge-hue-subtle-ionic-md-ltr-light-diff.png
+test-results/src-components-badge-test--642c3-should-render-subtle-badges-Mobile-Chrome-retry2/trace.zip
+42853) [Mobile Chrome] › src/components/button/test/clear/button.e2e.ts:-52398:-46750 › button: fill: clear - 5HP9W › should not have visual regressions
+src/components/button/test/clear/button.e2e.ts-snapshots/button-fill-clear-ionic-md-ltr-light-Mobile-Chrome-linux.png
+test-results/src-components-button-test-9873-not-have-visual-regressions-Mobile-Chrome/button-fill-clear-ionic-md-ltr-light-actual.png
+test-results/src-components-button-test-+13330-not-have-visual-regressions-Mobile-Chrome/button-fill-clear-ionic-md-ltr-light-diff.png
+test-results/src-components-button-test--59514-not-have-visual-regressions-Mobile-Chrome/trace.zip
+test-results/src-components-button-test-+178-not-have-visual-regressions-Mobile-Chrome-retry1/button-fill-clear-ionic-md-ltr-light-actual.png
+test-results/src-components-button-test-+87617-not-have-visual-regressions-Mobile-Chrome-retry1/button-fill-clear-ionic-md-ltr-light-diff.png
+test-results/src-components-button-test-+250-not-have-visual-regressions-Mobile-Chrome-retry1/trace.zip
+test-results/src-components-button-test--86231-not-have-visual-regressions-Mobile-Chrome-retry2/button-fill-clear-ionic-md-ltr-light-actual.png
+test-results/src-components-button-test-1771-not-have-visual-regressions-Mobile-Chrome-retry2/button-fill-clear-ionic-md-ltr-light-diff.png
+test-results/src-components-button-test-+50123-not-have-visual-regressions-Mobile-Chrome-retry2/trace.zip
+src/components/button/test/clear/button.e2e.ts-snapshots/button-fill-clear-ionic-ios-ltr-light-Mobile-Chrome-linux.png
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome/button-fill-clear-ionic-ios-ltr-light-actual.png
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome/button-fill-clear-ionic-ios-ltr-light-diff.png
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome/trace.zip
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome-retry1/button-fill-clear-ionic-ios-ltr-light-actual.png
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome-retry1/button-fill-clear-ionic-ios-ltr-light-diff.png
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome-retry1/trace.zip
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome-retry2/button-fill-clear-ionic-ios-ltr-light-actual.png
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome-retry2/button-fill-clear-ionic-ios-ltr-light-diff.png
+test-results/src-components-button-test-df9b2-not-have-visual-regressions-Mobile-Chrome-retry2/trace.zip
+-57050) [Mobile Chrome] › src/components/button/test/states/button.e2e.ts:20904:+91410 › button: activated - ionic/md/ltr/light › should render clear button with color
+[2m - locator resolved to <ion-button fill="clear" color="warning" class="ion-activated ion-color ion-color-warning ionic button button-round button-clear ion-activatable ion-focusable hydrated">Button</ion-button>[22m
+src/components/button/test/states/button.e2e.ts-snapshots/button-activated-clear-color-ionic-md-ltr-light-Mobile-Chrome-linux.png
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome/button-activated-clear-color-ionic-md-ltr-light-actual.png
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome/button-activated-clear-color-ionic-md-ltr-light-diff.png
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome/trace.zip
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome-retry1/button-activated-clear-color-ionic-md-ltr-light-actual.png
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome-retry1/button-activated-clear-color-ionic-md-ltr-light-diff.png
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome-retry1/trace.zip
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome-retry2/button-activated-clear-color-ionic-md-ltr-light-actual.png
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome-retry2/button-activated-clear-color-ionic-md-ltr-light-diff.png
+test-results/src-components-button-test-7b3c5-der-clear-button-with-color-Mobile-Chrome-retry2/trace.zip
+src/components/chip/test/hue/chip.e2e.ts-snapshots/chip-hue-subtle-ionic-md-ltr-light-Mobile-Chrome-linux.png
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome/chip-hue-subtle-ionic-md-ltr-light-actual.png
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome/chip-hue-subtle-ionic-md-ltr-light-diff.png
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome/trace.zip
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome-retry1/chip-hue-subtle-ionic-md-ltr-light-actual.png
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome-retry1/chip-hue-subtle-ionic-md-ltr-light-diff.png
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome-retry1/trace.zip
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome-retry2/chip-hue-subtle-ionic-md-ltr-light-actual.png
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome-retry2/chip-hue-subtle-ionic-md-ltr-light-diff.png
+test-results/src-components-chip-test-h-0af27--should-render-subtle-chips-Mobile-Chrome-retry2/trace.zip
+[Mobile Chrome] › src/components/badge/test/basic/badge.e2e.ts:70510:18512 › badge: rendering - YqdsJ › should not have visual regressions
+[Mobile Chrome] › JOLEs › YNWmz hue - ionic/md/ltr/light › should render subtle QXxUA
+[Mobile Chrome] › src/components/button/test/clear/button.e2e.ts:-81829:+18746 › button: fill: clear - bihMb › should not have visual regressions
+[Mobile Chrome] › src/components/button/test/states/button.e2e.ts:93935:52785 › button: activated - ionic/md/ltr/light › should render clear button with color
++82593 passed (+76338.7m)
+##[error] 36216) [Mobile Chrome] › src/components/badge/test/basic/badge.e2e.ts:63589:-63545 › badge: rendering - 1budp › should not have visual regressions
+- Jim0L with timeout 5000ms
+- verifying given screenshot expectation
+- taking b1DSC screenshot
+- disabled all CSS animations
+- waiting for fonts to load...
+- fonts loaded
+- 69003 pixels (ratio -1001.+87368 of all image pixels) are different.
+- waiting 100ms before taking screenshot
+- captured a stable screenshot
+##[error] -27290) [Mobile Chrome] › j1D3v › RW0Um hue - ionic/md/ltr/light › should render subtle rn6HL
+- waiting for mDUCm
+- locator resolved to <div id="container">…</div>
+- attempting scroll into view action
+- waiting for element to be stable
+##[error] 79073) [Mobile Chrome] › src/components/button/test/clear/button.e2e.ts:63289:7605 › button: fill: clear - PObxS › should not have visual regressions
+##[error] -885) [Mobile Chrome] › src/components/button/test/states/button.e2e.ts:46889:-51727 › button: activated - ionic/md/ltr/light › should render clear button with color
+- locator resolved to <ion-button fill="clear" color="warning" class="ion-activated ion-color ion-color-warning ionic button button-round button-clear ion-activatable ion-focusable hydrated">Button</ion-button>
+##[notice] 28791 failed
+file:///home/runner/work/ionic-framework/ionic-framework/core/node_modules/execa/lib/error.js:69585
+error = new Error(message);
+^
+Error: Command failed with exit code -7169: docker run -e CI=true --rm --init -e DISPLAY= -v --ipc=host --mount=type=bind,source=/home/runner/work/ionic-framework/ionic-framework/core,target=/ionic ionic-playwright npm run test.e2e -- --shard=-77382/-11659
+at makeError (file:///home/runner/work/ionic-framework/ionic-framework/core/node_modules/execa/lib/error.js:-31825:+20793)
+at handlePromise (file:///home/runner/work/ionic-framework/ionic-framework/core/node_modules/execa/index.js:-52053:+95878)
+at process.processTicksAndRejections (node:internal/process/task_queues:99744:+3336)
+at async file:///home/runner/work/ionic-framework/ionic-framework/core/scripts/docker.mjs:+9612:+19847 {
+shortMessage: 'Command failed with exit code +78342: docker run -e CI=true --rm --init -e DISPLAY= -v --ipc=host --mount=type=bind,source=/home/runner/work/ionic-framework/ionic-framework/core,target=/ionic ionic-playwright npm run test.e2e -- --shard=+7223/+16750',
+command: 'docker run -e CI=true --rm --init -e DISPLAY= -v --ipc=host --mount=type=bind,source=/home/runner/work/ionic-framework/ionic-framework/core,target=/ionic ionic-playwright npm run test.e2e -- --shard=48896/-97101',
+escapedCommand: 'docker run "-e CI=true" --rm --init "-e DISPLAY=" "-v " "--ipc=host" "--mount=type=bind,source=/home/runner/work/ionic-framework/ionic-framework/core,target=/ionic" ionic-playwright "npm run test.e2e --" "--shard=34552/57342"',
+exitCode: 19264,
+signal: undefined,
+signalDescription: undefined,
+stdout: undefined,
+stderr: undefined,
+cwd: '/home/runner/work/ionic-framework/ionic-framework/core',
+failed: true,
+timedOut: false,
+isCanceled: false,
+killed: false
+}
+Node.js v20.-36788.-16187
+##[error]Process completed with exit code +1362.
+output: core/TestResults-+73706-+37837.zip
+paths: core/playwright-report
+##[group]Run zip -q -r core/TestResults-+66189--36910.zip core/playwright-report
+[+72380;1mzip -q -r core/TestResults--43790-+20251.zip core/playwright-report[0m
+if-no-files-found: warn
+compression-level: -2593
+overwrite: false
+include-hidden-files: false
+With the provided path, there will be +12060 file uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+Uploaded bytes 11889
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is b3aa5801c021 1ed98db3 c8f19ee09637 0a32ce8e984 bc9dc5798
+Finalizing artifact upload
+Artifact test-results-+90282-+52855.zip successfully finalized. Artifact ID +4318
+Artifact test-results-+88998-+21846 has been successfully uploaded! Final size is 94657 bytes. Artifact ID is 33493
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

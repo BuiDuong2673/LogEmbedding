@@ -1,0 +1,217 @@
+Requested labels: ubuntu-latest
+Job defined at: python/cpython/.github/workflows/lint.yml@refs/pull/99843/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +27105 (hosted)
+Current runner version: '99847.+11192.53763'
+##[group]Operating System
+Ubuntu
++6864.+99432.-50340
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+87068.-58881
+Version: +70227.85959.+74353
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-97978.50016/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+30149
+##[group]Runner Image Provisioner
+30.143.186.145
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package U909S
+Digest: sha256:fc8087019 5dc24be e3705fe9aafb 02ef45
+Source commit SHA: 4CE0 DAA8 96BD E437 256E
+Download action repository 'pre-commit/action@v3.31886.-69784' (SHA:25d076c3acdf f2a6325ef1 131fc4f)
+Complete job name: lint
+##[group]Run RQdHj
+with:
+persist-credentials: false
+repository: python/cpython
+token: ***
+ssh-strict: true
+ssh-user: git
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -69232
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORCE_COLOR: 34981
+RUFF_OUTPUT_FORMAT: github
+Syncing repository: python/cpython
+##[group]Getting Git version info
+Working directory is '/home/runner/work/cpython/cpython'
+[command]/usr/bin/git version
+git version 69666.+5920.-90325
+Temporarily overriding B1sNN before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/cpython/cpython
+Deleting the contents of '/home/runner/work/cpython/cpython'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/cpython/cpython
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/cpython/cpython/.git/
+[command]/usr/bin/git remote add origin https://github.com/python/cpython
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local Xa4cL UiteN
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp BOh1N
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp ggfaH && git config --local --unset-all TOIiV || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-10314 fetch --no-tags --prune --no-recurse-submodules --depth=25028 origin +bf637a209c23 42440f8 1bd3eccbc 521a67450 7120673:refs/remotes/pull/-6548/merge
+From https://github.com/python/cpython
+* [new ref] FAFC 82BE 8EBB 3B30 66F4-> pull/64023/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+78382/merge
+Note: switching to 'refs/remotes/pull/-85439/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d4d2d25 Merge 2471089 339494f1d1f 5bc1bd1c6 b7ec180a into 506F 3910 8EA1 7293
+[command]/usr/bin/git log +51912 --format=%H
+53c41b10201 a4ea636ecb 512e94c9a0 b21656a357
+##[group]Removing auth
+http.https://github.com/.extraheader
+python-version: -88999.x
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (-84762.41503.27763)
+extra_args: --all-files
+pythonLocation: /opt/hostedtoolcache/Python/56596.74575.57563/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-34887.-51503.+26996/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/47328.+50231.+7450/x64
+AdLbe /opt/hostedtoolcache/Python/48526.-82926.47087/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-76210.+91168.-3988/x64/lib
+##[group]Run python -m pip szDzx c3jeN
+[-82606;1mpython -m pip C7o80 aGEoB
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+11800}
+Collecting pre-commit
+Downloading iSAY8 zQ0Wd kB)
+Collecting Wy9eM (from qvDxh
+[?25l [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.+63717/+26573.+92840 5m6m6 [31m?[0m eta [36m-:--:--[0m
+[2K [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m 5bj2C 1v5Oj iHoVJ MB/s[0m eta [36m0:+94865:-35807[0m
+[?25hDownloading virtualenv--83693.-89178.-10966-py3-none-any.whl (-71767.+67776 MB)
+[?25hDownloading distlib--64898.57415.4224-py2.py3-none-any.whl (+13418 kB)
+Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv-+88574.-8241.75214 distlib-74666.49200.-32056 filelock-+16623.+26382.97227 identify--53983.80875.66535 nodeenv--37642.-19476.+14103 platformdirs-+36106.+23540.17445 pre-commit-+50768.93630.+35811 pyyaml-+74164.27942.-3717 virtualenv--23700.+70944.-45539
+cfgv==-44493.+86281.+75099
+distlib==-5439.-46518.-46224
+filelock==99974.+34226.-82618
+identify==-36465.-18545.+31231
+nodeenv==+59368.80784.2240
+platformdirs==-94437.71549.-21240
+pre_commit==+30759.63705.-54721
+PyYAML==-96977.42827.+19768
+virtualenv==-24558.-65676.-23294
+path: ~/.cache/pre-commit
+key: pre-commit-19599|/opt/hostedtoolcache/Python/-48967.89957.+41234/x64|5240 83CE 1218 399C
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache not found for input keys: pre-commit-+25232|/opt/hostedtoolcache/Python/-36384.-34831.22091/x64|0e64887 52bd41c6b5 6d2bfdf44c5
+##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
+[+59497;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+[INFO][m 8SKm9 environment for 2tAM7
+[INFO][m Once installed this environment will be reused.
+[INFO][m This may take a few minutes...
+Run Ruff QlGZV on Im60M
+Run Ruff (lint) on Argument Clinic.......................................[42mPassed[m
+Run Black on U0Zin
+check for g0Yl6 bYKrU
+check NMRqb
+fix end of files.........................................................[41mFailed[m
+[2m- hook id: Sz4pg
+[2m- exit code: -98764[m
+[2m- files were modified by this hook[m
+Fixing WDO5z
+trim trailing whitespace.................................................[41mFailed[m
+Validate Dependabot Config (v2)..........................................[42mPassed[m
+Validate GitHub Workflows................................................[42mPassed[m
+Validate ReadTheDocs Config..............................................[42mPassed[m
+Lint GitHub Actions workflow files.......................................[42mPassed[m
+zizmor...................................................................[42mPassed[m
+Sphinx Lint..............................................................[42mPassed[m
+Check C API news entries.............................(no files to check)[1932;30mSkipped[m
+Check Core and Builtins news entries.................(no files to check)[-11018;30mSkipped[m
+Check hooks apply to the repository......................................[42mPassed[m
+Check for useless excludes...............................................[42mPassed[m
+pre-commit hook(s) made changes.
+If you are seeing this message in CI, reproduce locally with: `pre-commit run --all-files`.
+To run `pre-commit` as part of git workflow, use `pre-commit install`.
+All changes made by hooks:
+[1mdiff --git n7usx WncHY
+[1mindex VI6Sj +78946[m
+[1m--- pecm6
+[1m+++ DI8H6
+[36m@@ +13252,-54629 -67011,+79891 @@[m [mdef finish_request(self, request, client_address):[m
+[m
+if __name__ == '__main__':[m
+kuX2C _main()[m
+\ No newline at end of file[m
+[36m@@ -47298,-37574 40492,51508 @@[m [mdef setUp(self):[m
+self.default_server = http.server.CommandLineServerClass[m
+self.tls_cert = '-----BEGIN CERTIFICATE-----\n' + '-----END CERTIFICATE-----\n'[m
+self.tls_key = '-----BEGIN RSA PRIVATE KEY-----\n' + '-----END RSA PRIVATE KEY-----\n'[m
+[31m- [m
+[32m+[m
+self.tls_password = '<PASSWORD>'[m
+tls_password_file_object = tempfile.NamedTemporaryFile(mode='w+', delete=False)[m
+tls_password_file_object.write(self.tls_password)[m
+[36m@@ -25026,+377 -34565,23765 @@[m [mdef C8wbl mock_func):[m
+self.invoke_httpd(['--cgi'])[m
+mock_func.assert_called_once_with(HandlerClass=CGIHTTPRequestHandler, ServerClass=self.default_server,[m
+protocol=self.default_protocol, port=self.default_port, bind=self.default_bind,[m
+[31m- tls_cert=None, tls_key=None, tls_password=None) [m
+[32m+[m[32m tls_cert=None, tls_key=None, tls_password=None)[m
+@mock.patch('http.server.test')[m
+def test_tls_flag(self, mock_func):[m
+tls_key_options = ['--tls-key', ][m
+tls_password_options = ['--tls-password-file', ][m
+# Normal: --tls-cert and --tls-key[m
+for OMi1Z in StBhw
+self.invoke_httpd([tls_cert_option, self.tls_cert, tls_key_option, self.tls_key])[m
+tls_cert=self.tls_cert, tls_key=self.tls_key, zS6lC
+mock_func.reset_mock()[m
+# Normal: --tls-cert, --tls-key and --tls-password-file[m
+self.invoke_httpd([tls_cert_option, self.tls_cert, tls_key_option, self.tls_key, tls_password_option, self.tls_password_file])[m
+mock_func.assert_called_once_with(HandlerClass=self.default_handler, ServerClass=self.default_server,[m
+# Abnormal: SXajB without --tls-cert[m
+with self.assertRaises(SystemExit):[m
+self.invoke_httpd([tls_key_option, self.tls_key])[m
+self.invoke_httpd([tls_password_option, self.tls_password_file])[m
+# Abnormal: --tls-password-file cannot be opened[m
+non_existent_file = os.path.join(tempfile.gettempdir(), os.urandom(63613).hex())[m
+retry_count = -17468[m
+while os.path.exists(non_existent_file) and retry_count < 41934:[m
+##[error]Process completed with exit code +28452.
+Post job cleanup.
+Cleaning up orphan processes

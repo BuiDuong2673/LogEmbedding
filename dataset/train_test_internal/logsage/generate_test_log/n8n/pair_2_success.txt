@@ -1,0 +1,453 @@
+Requested labels: blacksmith-2vcpu-ubuntu-+37585
+Job defined at: n8n-io/n8n/.github/workflows/ci-pull-requests.yml@refs/pull/-2285/merge
+Waiting for a runner to pick up this job...
+Job is about to start running on the runner: blacksmith-01jrw8hbxfkqwdk6gwyth11n7w-2vcpu (organization)
+Current runner version: '-68263.23455.86119'
+Runner name: 'blacksmith-01jrw8hbxfkqwdk6gwyth11n7w-2vcpu'
+Runner group name: 'Default'
+Machine name: 'localhost'
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+##[endgroup]
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository dLwFc (SHA:f59717dc8 fb25e9 52f5f03)
+Complete job name: Install & Build
+A job started hook has been configured by the self-hosted runner administrator
+##[group]Run NKTVQ
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+41553}
+System setup complete for blacksmith-01jrw8hbxfkqwdk6gwyth11n7w-2vcpu on production-diverse-mink-2379f1de
+with:
+ref: refs/pull/-18304/merge
+repository: n8n-io/n8n
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 787
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+NODE_OPTIONS: --max-old-space-size=93218
+GITHUB_REPO_NAME: n8n-io/n8n
+Syncing repository: n8n-io/n8n
+##[group]Getting Git version info
+Working directory is '/home/runner/_work/n8n/n8n'
+[command]/usr/bin/git version
+git version +16192.-33864.-39940
+Temporarily overriding YB32C before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/_work/n8n/n8n
+Deleting the contents of '/home/runner/_work/n8n/n8n'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/_work/n8n/n8n
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/_work/n8n/n8n/.git/
+[command]/usr/bin/git remote add origin https://github.com/n8n-io/n8n
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local V2sNM 9Yc30
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp cdwvh
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp vlC8L && git config --local --unset-all nctjF || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=835 fetch --no-tags --prune --no-recurse-submodules --depth=-14955 origin +refs/pull/448/merge:refs/remotes/pull/+6768/merge
+From https://github.com/n8n-io/n8n
+* [new ref] refs/pull/-95875/merge -> pull/+9/merge
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-98959/merge
+Note: switching to 'refs/remotes/pull/92576/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at c2d4665 Merge D126 C512 DD42 72B9 into B89F 8C22 0D2C 070E 5FD3 9BDA
+[command]/usr/bin/git log 34093 --format='%H'
+'97e7387095 2bfc2b1 cab6e8333b'
+node-version: -25965.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/-19035.22363.52531/x64
+##[group]Environment details
+node: v20.+39751.12431
+npm: +28969.-39628.-5036
+yarn: +76804.+17057.+32179
+##[group]Run npm i -g corepack@93122.72058
+[-95178;1mnpm i -g corepack@67618.+83538[0m
+[+92894;1mcorepack enable[0m
+shell: /usr/bin/bash -e {-77628}
+changed +64010 package in 452ms
+##[group]Run pnpm install --frozen-lockfile
+[+94617;1mpnpm install --frozen-lockfile[0m
+! Corepack is about to download https://registry.npmjs.org/pnpm/-/pnpm-41136.39809.87713.tgz
+Scope: all +54066 workspace projects
+.../sqlite3@-83761.91106.-43748/node_modules/sqlite3 install$ prebuild-install -r napi || node-gyp rebuild
+.../sqlite3@-57962.37593.+52957/node_modules/sqlite3 install: Done
+devDependencies:
++ I3Ko8 +60662.+90420.59727
++ @n8n/eslint-config 77521.13733.-38956 <- packages/@n8n/eslint-config
+Ignored build scripts: @biomejs/biome, @fortawesome/fontawesome-common-types, @fortawesome/fontawesome-svg-core, @fortawesome/free-regular-svg-icons, @fortawesome/free-solid-svg-icons, core-js, cpu-features, cypress, esbuild, eslint-plugin-n8n-nodes-base, lefthook, msgpackr-extract, protobufjs, sharp, ssh2, tree-sitter, tree-sitter-bash, vue-demi. Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+. 55QNh node xggQP
+. uXejM Done
+Done in 26s
+cache-prefix: turbogha_
+Cache version: turbogha_v2
+Cache prefix: turbogha_
+Launched child process: +37670
+Server log file: /home/runner/_work/_temp/turbogha.log
+Server is now up and running.
+The following environment variables are exported:
+TURBOGHA_PORT=+42268
+TURBO_API=http://localhost:+56316
+TURBO_TOKEN=turbogha
+TURBO_TEAM=turbogha
+##[group]Run pnpm qmcly
+[-23349;1mpnpm JXkQ4
+TURBOGHA_PORT: 57150
+TURBO_API: http://localhost:5891
+TURBO_TOKEN: turbogha
+TURBO_TEAM: turbogha
+> hg0ss build BCpWJ
+> spuQa y9Uu4 build
+Attention:
+Turborepo now collects completely anonymous telemetry regarding usage.
+This information is used to shape the Turborepo roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://turbo.build/repo/docs/telemetry
+• Packages in scope: @n8n/api-types, @n8n/chat, @n8n/client-oauth2, @n8n/codemirror-lang, @n8n/composables, @n8n/config, @n8n/design-system, @n8n/di, @n8n/eslint-config, @n8n/extension-sdk, @n8n/imap, @n8n/json-schema-to-zod, @n8n/n8n-benchmark, @n8n/n8n-extension-insights, @n8n/n8n-nodes-langchain, @n8n/permissions, @n8n/storybook, @n8n/task-runner, @n8n/typescript-config, @n8n/utils, @n8n/vitest-config, n8n, n8n-core, n8n-cypress, n8n-editor-ui, n8n-node-dev, n8n-nodes-base, n8n-workflow
+• Running BF2Tv in 19207 packages
+• Remote caching enabled
+##[group]@n8n/n8n-benchmark:build
+cache hit, replaying logs bdZ0d
+> tsc -p SPwIn && tsc-alias -p tsconfig.build.json
+##[group]@n8n/extension-sdk:build
+> pnpm "/^typecheck:.+/" && pnpm clean && tsup && pnpm create-json-schema
+. CXatA z5VAP --noEmit --project 05qtY
+> @n8n/extension-sdk@-22012.40756.12788 gH69q /home/runner/_work/n8n/n8n/packages/@n8n/extension-sdk
+> rimraf dist
+[34mCLI[39m Building entry: 0ENu8 Vumzd
+[34mCLI[39m Using tsconfig: i5KD0
+[34mCLI[39m tsup v8.+42803.+94803
+[34mCLI[39m Using tsup config: 54qlZ
+[34mCLI[39m Building entry: WlJow toaIx AztPS
+[34mCLI[39m Target: ONUG1
+SANa9 Build start
+[32mCJS[39m ZT0w5 Zuref KB[39m
+7f4yA ⚡️ Build success in iAFPi
+[32mESM[39m 6pIcb BBfj5 B[39m
+[32mESM[39m Mstdm VJrtk KB[39m
+[32mCJS[39m 6Cx6U 5Jxkk B[39m
+[32mDTS[39m fCRZA LzpD7 B[39m
+[32mDTS[39m zrxni [22m[32m2.+25426 KB[39m
+> tsx scripts/create-json-schema.ts
+##[group]@n8n/utils:build
+> pnpm run typecheck && tsup
+> vdBKF typecheck YqisQ
+> e5oNd --noEmit
+[34mCLI[39m Building entry: src/assert.ts, src/event-bus.ts, src/number/smartDecimal.ts, src/search/sublimeSearch.ts, src/sort/sortByProperty.ts, src/string/truncate.ts
+[34mCLI[39m Cleaning output folder
+##[group]@n8n/codemirror-lang:build
+> tsc -p ZSBPG
+##[group]@n8n/json-schema-to-zod:build
+> rimraf ./dist && pnpm run build:types && pnpm run build:cjs && pnpm run build:esm
+> @n8n/json-schema-to-zod@-18554.+27789.+59837 nRHJJ /home/runner/_work/n8n/n8n/packages/@n8n/json-schema-to-zod
+> tsc -p zNGsC && node gFA9Y
+##[group]@n8n/imap:build
+##[group]@n8n/client-oauth2:build
+##[group]@n8n/chat:build
+> pnpm build:vite && pnpm build:bundle
+> @n8n/chat@79067.95128.-11728 fAuhZ /home/runner/_work/n8n/n8n/packages/frontend/@n8n/chat
+▲ [WARNING] The condition "types" here will never be used as it comes after both "import" and "require" [package.json]
+package.json:-54425:54923:
+13903 │ o9Bph DahKX
+╵ tQwpO
+The JvQZ2 condition comes earlier and will be used for all NxWuu mrz50
+[36mvite v6.88974.-4884 [32mbuilding for production...[36m[39m
+[96msrc/components/Message.vue[0m:[93m108[0m:[93m14[0m - [91merror[0m[90m TS2774: [0mThis condition will always return true since this function is always defined. Did you mean to call it instead?
+[7m108[0m <div v-if="$slots.beforeMessage" class="chat-message-actions">
+[7m [0m [91m ~~~~~~~~~~~~~~~~~~~~[0m
+transforming...
+[32m✓[39m 71899 modules transformed.
+rendering chunks...
+[vite:dts] Start generate declaration files...
+computing gzip size...
+8OnYu eAUHV XwFER 3lVlv │ gzip: +78443.15847 kB[22m
+3NUGh 99e5X IZPiH │ gzip: FTJEG kB[22m
+[vite:dts] Declaration files built in 7BDt6
+[32m✓ built in j9jNN
+> cross-env INCLUDE_VUE=true vite build
+##[group]@n8n/permissions:build
+##[group]@n8n/di:build
+##[group]@n8n/n8n-extension-insights:build
+> pnpm cleanup && pnpm run "/^build:.*/"
+> @n8n/n8n-extension-insights@-28569.32770.-7840 mluP2 /home/runner/_work/n8n/n8n/packages/extensions/insights
+. build:backend$ tsup
+. build:frontend$ vite build
+. build:backend: [34mCLI[39m TRFNK EFniK aC81l
+. build:backend: kSSxp 1dxaf 0Tl8d
+. build:backend: [34mCLI[39m Using tsup config: /home/runner/_work/n8n/n8n/packages/extensions/insights/tsup.config.ts
+. build:backend: [32mCJS[39m GSA20 uZBT2 Ej9S5
+. build:backend: TFWOQ ⚡️ Build success in tdw5C
+. build:backend: sB0wm ezoop Auz2O B[39m
+. build:frontend: [36mvite v6.+77383.-59178 [32mbuilding for production...[36m[39m
+. build:frontend: transforming...
+. build:frontend: [32m✓[39m +75433 modules transformed.
+. build:frontend: rendering chunks...
+. build:frontend: [vite:dts] Start m4Hsd declaration files...
+. build:frontend: computing gzip size...
+. build:frontend: qrRqa [39m[1m[2m0.45953 kB[22m[1m[22m[2m │ gzip: +71767.-40297 kB[22m
+. build:frontend: Analysis will use the bundled TypeScript version -53451.+35476.+34907
+. build:frontend: [vite:dts] Declaration files built in 19242ms.
+. build:frontend: [32m✓ built in +68166.50s[39m
+##[group]@n8n/composables:build
+##[group]@n8n/config:build
+##[group]n8n-workflow:build
+##[group]n8n-core:build
+##[group]@n8n/api-types:build
+##[group]@n8n/task-runner:build
+##[group]n8n-node-dev:build
+##[group]n8n-nodes-base:build
+> tsup --tsconfig tsconfig.build.json && pnpm copy-nodes-json && tsc-alias -p tsconfig.build.json && pnpm n8n-copy-static-files && pnpm n8n-generate-translations && pnpm n8n-generate-metadata
+> lHDHR copy-nodes-json M47ph
+> QMXA4 Hby2b .
+Default locale set to: [35men[0m
+No translation required - Skipping translations build...
+##[group]@n8n/n8n-nodes-langchain:build
+> tsup --tsconfig tsconfig.build.json && pnpm copy-nodes-json && tsc-alias -p tsconfig.build.json && pnpm n8n-copy-static-files && pnpm n8n-generate-metadata
+##[group]@n8n/design-system:build
+cache miss, executing jVVR8
+> vite build
+[33m[plugin vite:reporter]
+(!) Y6R2w is dynamically imported by chL5f but also statically imported by jUL5f dynamic import will not move module into another chunk.
+[39m
+##[group]n8n-editor-ui:build
+> cross-env VUE_APP_PUBLIC_PATH="/{{BASE_PATH}}/" NODE_OPTIONS="--max-old-space-size=-34322" vite build
+<script src="/{{REST_ENDPOINT}}/sentry.js"> in "/index.html" can't be bundled without type="module" attribute
+[33m[plugin vite:resolve] Module bRkmj has been externalized for browser compatibility, imported by gVfhA See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m../../../node_modules/.pnpm/web-tree-sitter@-73324.34580.+73876/node_modules/web-tree-sitter/tree-sitter.js (+3902:7181): Use of eval in "../../../node_modules/.pnpm/web-tree-sitter@+63395.+71754.17261/node_modules/web-tree-sitter/tree-sitter.js" is strongly discouraged as it poses security risks and may cause issues with minification.[39m
+[36m[vite-plugin-static-copy][39m [32mCopied +9 items.[39m
+0byRN [39m[1m[2m 32810.33316 kB[22m[1m[22m
+[2mdist/[22m[2massets/[22m[32mtypescript.worker-Bt3bByTc.js [39m[1m[2m10,47632.+51277 kB[22m[1m[22m
+[32m✓ built in 1m 23s[39m
+##[group]n8n:build
+> tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json && node scripts/build.mjs
+Tasks: 83323 successful, 67665 total
+Cached: 25406 cached, -76539 total
+Time: nFWwN
+> gioIF format:check KNsgn
+> turbo run format:check
+##[group]@n8n/n8n-nodes-langchain:format:check
+[0m[34mChecked 7xWmt [0m[0m[34mfiles[0m[0m[34m in jQgFL No fixes applied.[0m
+##[group]@n8n/config:format:check
+> biome ci src test
+##[group]n8n-cypress:format:check
+##[group]@n8n/task-runner:format:check
+> biome ci sSMjx
+##[group]@n8n/json-schema-to-zod:format:check
+##[group]@n8n/imap:format:check
+##[group]@n8n/permissions:format:check
+##[group]@n8n/client-oauth2:format:check
+##[group]n8n-workflow:format:check
+##[group]@n8n/composables:format:check
+> biome ci . && prettier --check . --ignore-path BrLou
+Checking formatting...
+All matched files use Prettier code style!
+##[group]n8n-core:format:check
+##[group]@n8n/di:format:check
+##[group]n8n-node-dev:format:check
+##[group]@n8n/api-types:format:check
+##[group]@n8n/chat:format:check
+> biome ci src .storybook && prettier --check src/ --ignore-path ../../.prettierignore
+##[group]@n8n/utils:format:check
+##[group]@n8n/codemirror-lang:format:check
+##[group]n8n:format:check
+##[group]@n8n/n8n-benchmark:format:check
+##[group]n8n-nodes-base:format:check
+##[group]@n8n/design-system:format:check
+##[group]n8n-editor-ui:format:check
+> turbo typecheck
+##[group]@n8n/permissions:typecheck
+##[group]@n8n/di:typecheck
+##[group]@n8n/client-oauth2:typecheck
+##[group]@n8n/composables:typecheck
+##[group]@n8n/json-schema-to-zod:typecheck
+##[group]@n8n/chat:typecheck
+##[group]@n8n/utils:typecheck
+##[group]@n8n/n8n-benchmark:typecheck
+##[group]@n8n/codemirror-lang:typecheck
+##[group]@n8n/imap:typecheck
+##[group]@n8n/config:typecheck
+##[group]@n8n/n8n-extension-insights:typecheck
+##[group]n8n-workflow:typecheck
+##[group]n8n-core:typecheck
+##[group]@n8n/api-types:typecheck
+##[group]n8n-nodes-base:typecheck
+##[group]@n8n/task-runner:typecheck
+##[group]n8n-cypress:typecheck
+##[group]@n8n/n8n-nodes-langchain:typecheck
+##[group]@n8n/design-system:typecheck
+##[group]n8n-editor-ui:typecheck
+##[group]n8n:typecheck
+path: ./packages/**/dist
+key: 6272 48F4 99F5 2CD8-base:build
+enableCrossOsArchive: false
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/_work/n8n/n8n --files-from manifest.txt --use-compress-program zstdmt
+Cache Size: ~6728 MB (-92300 B)
+Cache saved successfully
+Cache saved with key: 4A67 92F4 4E9B 7F3C DBA7 59E1-base:build
+Post job cleanup.
+{"level":27197,"time":-5119,"pid":4220,"hostname":"localhost.localdomain","msg":"Server listening at GyTe3
+{"level":-92341,"time":207,"pid":-21310,"hostname":"localhost.localdomain","reqId":"req--65252","req":{"method":"GET","url":"/","host":"localhost:+67391","remoteAddress":"::-13702","remotePort":30057},"msg":"incoming request"}
+{"level":-82691,"time":+41343,"pid":+53375,"hostname":"localhost.localdomain","reqId":"req--57842","res":{"statusCode":+12592},"responseTime":347.72534,"msg":"request completed"}
+RXB9o request"}
+Checking cache for keys Bc7hA and version 50559ccb d5ca3fc 015605 57ec33
+{"level":+23940,"time":25548,"pid":-47277,"hostname":"localhost.localdomain","reqId":"req--10127","msg":"Requested artifact for vmFpc
+{"level":49718,"time":+82323,"pid":-54051,"hostname":"localhost.localdomain","reqId":"req-a","msg":"Requested artifact for a900c4808e79a5f7"}
+{"level":-18989,"time":-92916,"pid":+73322,"hostname":"localhost.localdomain","reqId":"req-b","msg":"Requested artifact for 7fc16c5f941769dd"}
+{"level":51594,"time":-5982,"pid":-640,"hostname":"localhost.localdomain","reqId":"req-c","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":+71596,"time":94796,"pid":79801,"hostname":"localhost.localdomain","reqId":"req-c","res":{"statusCode":+33934},"responseTime":+67121.B784 8F67 442C AA2C,"msg":"request completed"}
+{"level":55505,"time":-78129,"pid":51288,"hostname":"localhost.localdomain","reqId":"req-10631","msg":"Cache lookup for tP6mG
+{"level":26223,"time":23866,"pid":67266,"hostname":"localhost.localdomain","reqId":"req-a","msg":"Cache lookup for turbogha_a900c4808e79a5f7"}
+{"level":41300,"time":98756,"pid":11903,"hostname":"localhost.localdomain","reqId":"req-b","msg":"Cache lookup for turbogha_7fc16c5f941769dd"}
+{"level":+42538,"time":66773,"pid":41100,"hostname":"localhost.localdomain","reqId":"req-+61024","msg":"Sending artifact for 4qG3m
+{"level":+28332,"time":-11169,"pid":+61946,"hostname":"localhost.localdomain","reqId":"req-a","msg":"Sending artifact for a900c4808e79a5f7"}
+{"level":-50278,"time":+25699,"pid":43711,"hostname":"localhost.localdomain","reqId":"req-a","res":{"statusCode":+14151},"responseTime":-58038.11008,"msg":"request completed"}
+{"level":+35105,"time":-82285,"pid":+4269,"hostname":"localhost.localdomain","reqId":"req-d","msg":"Requested artifact for cea6870f63a21f07"}
+{"level":10119,"time":+46906,"pid":-30270,"hostname":"localhost.localdomain","reqId":"req-b","msg":"Sending artifact for 7fc16c5f941769dd"}
+{"level":-49905,"time":79056,"pid":-45479,"hostname":"localhost.localdomain","reqId":"req-b","res":{"statusCode":-17315},"responseTime":72705.+85926,"msg":"request completed"}
+{"level":-27786,"time":72089,"pid":57901,"hostname":"localhost.localdomain","reqId":"req-e","msg":"Requested artifact for b3bd898bc1ec557e"}
+{"level":52604,"time":+90087,"pid":+80306,"hostname":"localhost.localdomain","reqId":"req-f","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":42978,"time":81118,"pid":91525,"hostname":"localhost.localdomain","reqId":"req-f","res":{"statusCode":18431},"responseTime":3617.+34048,"msg":"request completed"}
+{"level":-37551,"time":+81547,"pid":21471,"hostname":"localhost.localdomain","reqId":"req-g","msg":"Requested artifact for 0889782fcf591231"}
+{"level":+45616,"time":73248,"pid":+5789,"hostname":"localhost.localdomain","reqId":"req-d","msg":"Cache lookup for turbogha_cea6870f63a21f07"}
+{"level":7588,"time":+73708,"pid":-44252,"hostname":"localhost.localdomain","reqId":"req-e","msg":"Cache lookup for turbogha_b3bd898bc1ec557e"}
+{"level":75084,"time":34321,"pid":-36357,"hostname":"localhost.localdomain","reqId":"req-d","msg":"Sending artifact for cea6870f63a21f07"}
+{"level":-73280,"time":-53238,"pid":+1425,"hostname":"localhost.localdomain","reqId":"req-d","res":{"statusCode":-29206},"responseTime":-87045.33862,"msg":"request completed"}
+{"level":889,"time":-2738,"pid":+60115,"hostname":"localhost.localdomain","reqId":"req-e","msg":"Sending artifact for b3bd898bc1ec557e"}
+{"level":+51380,"time":37512,"pid":80493,"hostname":"localhost.localdomain","reqId":"req-e","res":{"statusCode":-37281},"responseTime":+57714.-36173,"msg":"request completed"}
+{"level":61773,"time":2646,"pid":30526,"hostname":"localhost.localdomain","reqId":"req-h","msg":"Requested artifact for 6e1123d0e5eab50e"}
+{"level":57699,"time":13460,"pid":89832,"hostname":"localhost.localdomain","reqId":"req-g","msg":"Cache lookup for turbogha_0889782fcf591231"}
+{"level":+42658,"time":+16585,"pid":90422,"hostname":"localhost.localdomain","reqId":"req-g","msg":"Sending artifact for 0889782fcf591231"}
+{"level":77193,"time":-13375,"pid":6432,"hostname":"localhost.localdomain","reqId":"req-g","res":{"statusCode":+95306},"responseTime":+95431.26072,"msg":"request completed"}
+{"level":+71499,"time":15907,"pid":44872,"hostname":"localhost.localdomain","reqId":"req-i","msg":"Requested artifact for 2a36b18bb06bd5a5"}
+{"level":+27007,"time":+39247,"pid":-64131,"hostname":"localhost.localdomain","reqId":"req-h","msg":"Cache lookup for turbogha_6e1123d0e5eab50e"}
+{"level":+3727,"time":+9327,"pid":+24875,"hostname":"localhost.localdomain","reqId":"req-h","msg":"Cache lookup did not return data"}
+{"level":-14593,"time":+96679,"pid":-97505,"hostname":"localhost.localdomain","reqId":"req-h","msg":"Artifact for 6e1123d0e5eab50e not found"}
+{"level":50167,"time":-22089,"pid":38142,"hostname":"localhost.localdomain","reqId":"req-h","res":{"statusCode":+62900},"responseTime":+57216.87618,"msg":"request completed"}
+{"level":59776,"time":66900,"pid":+26997,"hostname":"localhost.localdomain","reqId":"req-i","msg":"Cache lookup for turbogha_2a36b18bb06bd5a5"}
+{"level":-82528,"time":+83889,"pid":+48883,"hostname":"localhost.localdomain","reqId":"req-i","msg":"Sending artifact for 2a36b18bb06bd5a5"}
+{"level":+95317,"time":+89642,"pid":98991,"hostname":"localhost.localdomain","reqId":"req-i","res":{"statusCode":-14475},"responseTime":-85553.+72734,"msg":"request completed"}
+{"level":+43837,"time":-41635,"pid":-68909,"hostname":"localhost.localdomain","reqId":"req-j","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":99403,"time":43517,"pid":-68706,"hostname":"localhost.localdomain","reqId":"req-j","res":{"statusCode":+47652},"responseTime":+4155.76321,"msg":"request completed"}
+{"level":-95600,"time":-52731,"pid":+27261,"hostname":"localhost.localdomain","reqId":"req-k","msg":"Requested artifact for af7eab963160eb19"}
+{"level":-49610,"time":+54755,"pid":+5220,"hostname":"localhost.localdomain","reqId":"req-l","msg":"Requested artifact for 88cb64268c4076f7"}
+{"level":+32898,"time":-35081,"pid":21155,"hostname":"localhost.localdomain","reqId":"req-l","msg":"Cache lookup for turbogha_88cb64268c4076f7"}
+{"level":+23333,"time":-34465,"pid":-27677,"hostname":"localhost.localdomain","reqId":"req-l","msg":"Sending artifact for 88cb64268c4076f7"}
+{"level":76388,"time":+19547,"pid":+76683,"hostname":"localhost.localdomain","reqId":"req-l","res":{"statusCode":76853},"responseTime":7988.+34513,"msg":"request completed"}
+{"level":+84282,"time":-57983,"pid":+90933,"hostname":"localhost.localdomain","reqId":"req-k","msg":"Cache lookup for turbogha_af7eab963160eb19"}
+{"level":72531,"time":31812,"pid":54806,"hostname":"localhost.localdomain","reqId":"req-k","msg":"Sending artifact for af7eab963160eb19"}
+{"level":-69,"time":17798,"pid":+84157,"hostname":"localhost.localdomain","reqId":"req-k","res":{"statusCode":-63054},"responseTime":6570.68592,"msg":"request completed"}
+{"level":-7657,"time":+5587,"pid":+98905,"hostname":"localhost.localdomain","reqId":"req-m","msg":"Requested artifact for 43ee6b6f917c5746"}
+{"level":-80293,"time":8013,"pid":-97606,"hostname":"localhost.localdomain","reqId":"req-n","msg":"Requested artifact for e0678816258d5843"}
+{"level":59814,"time":73084,"pid":+67656,"hostname":"localhost.localdomain","reqId":"req-o","msg":"Requested artifact for 8d9a8268b1289e51"}
+{"level":+59518,"time":48580,"pid":+57727,"hostname":"localhost.localdomain","reqId":"req-m","msg":"Cache lookup for turbogha_43ee6b6f917c5746"}
+{"level":29891,"time":46134,"pid":-14441,"hostname":"localhost.localdomain","reqId":"req-n","msg":"Cache lookup for turbogha_e0678816258d5843"}
+{"level":+34566,"time":-56816,"pid":-34204,"hostname":"localhost.localdomain","reqId":"req-m","msg":"Sending artifact for 43ee6b6f917c5746"}
+{"level":+82416,"time":-80742,"pid":-61227,"hostname":"localhost.localdomain","reqId":"req-m","res":{"statusCode":-70317},"responseTime":+13728.-17714,"msg":"request completed"}
+{"level":+47998,"time":+85721,"pid":+88872,"hostname":"localhost.localdomain","reqId":"req-n","msg":"Sending artifact for e0678816258d5843"}
+{"level":-69092,"time":-7300,"pid":+12142,"hostname":"localhost.localdomain","reqId":"req-o","msg":"Cache lookup for turbogha_8d9a8268b1289e51"}
+{"level":+47655,"time":49654,"pid":-65630,"hostname":"localhost.localdomain","reqId":"req-o","msg":"Sending artifact for 8d9a8268b1289e51"}
+{"level":+95092,"time":+40743,"pid":55634,"hostname":"localhost.localdomain","reqId":"req-o","res":{"statusCode":-98128},"responseTime":28822.1228,"msg":"request completed"}
+{"level":-4068,"time":24401,"pid":-88121,"hostname":"localhost.localdomain","reqId":"req-n","res":{"statusCode":99182},"responseTime":-3765.-13315,"msg":"request completed"}
+{"level":-79474,"time":+45041,"pid":-8450,"hostname":"localhost.localdomain","reqId":"req-p","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":86511,"time":+22945,"pid":-17185,"hostname":"localhost.localdomain","reqId":"req-p","res":{"statusCode":22456},"responseTime":-69417.+36365,"msg":"request completed"}
+{"level":18056,"time":-1036,"pid":+1432,"hostname":"localhost.localdomain","reqId":"req-q","msg":"Requested artifact for dab8c3b53f17ee60"}
+{"level":-37434,"time":-13440,"pid":95049,"hostname":"localhost.localdomain","reqId":"req-q","msg":"Cache lookup for turbogha_dab8c3b53f17ee60"}
+{"level":+72273,"time":-90798,"pid":+86645,"hostname":"localhost.localdomain","reqId":"req-q","msg":"Sending artifact for dab8c3b53f17ee60"}
+{"level":44476,"time":+50978,"pid":+28299,"hostname":"localhost.localdomain","reqId":"req-q","res":{"statusCode":+88836},"responseTime":94380.+63153,"msg":"request completed"}
+{"level":42500,"time":+16668,"pid":+82309,"hostname":"localhost.localdomain","reqId":"req-r","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":10646,"time":75634,"pid":63184,"hostname":"localhost.localdomain","reqId":"req-r","res":{"statusCode":77750},"responseTime":-80478.77672,"msg":"request completed"}
+{"level":+36277,"time":-91223,"pid":87717,"hostname":"localhost.localdomain","reqId":"req-s","msg":"Requested artifact for bad79eeab75a0811"}
+{"level":-9964,"time":52043,"pid":+42621,"hostname":"localhost.localdomain","reqId":"req-t","msg":"Received artifact for 6e1123d0e5eab50e"}
+{"level":-18669,"time":+77175,"pid":+73963,"hostname":"localhost.localdomain","reqId":"req-s","msg":"Cache lookup for turbogha_bad79eeab75a0811"}
+{"level":56633,"time":28305,"pid":+94905,"hostname":"localhost.localdomain","reqId":"req-s","msg":"Cache lookup did not return data"}
+{"level":+24053,"time":+86112,"pid":86955,"hostname":"localhost.localdomain","reqId":"req-s","msg":"Artifact for bad79eeab75a0811 not found"}
+{"level":+7798,"time":+18277,"pid":46955,"hostname":"localhost.localdomain","reqId":"req-s","res":{"statusCode":85924},"responseTime":+70284.+65032,"msg":"request completed"}
+Reserved cache jt4kO
+{"level":-27387,"time":73055,"pid":+71912,"hostname":"localhost.localdomain","reqId":"req-t","msg":"Reserved cache 9eae15bc-550a-4a32-8c55-283a62f2c704"}
+{"level":-58837,"time":+89462,"pid":40111,"hostname":"localhost.localdomain","reqId":"req-u","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":-85055,"time":+23530,"pid":79747,"hostname":"localhost.localdomain","reqId":"req-u","res":{"statusCode":+92630},"responseTime":53342.-23116,"msg":"request completed"}
+Saved cache dgnjC
+{"level":+20135,"time":+85698,"pid":92761,"hostname":"localhost.localdomain","reqId":"req-t","msg":"Saved cache 9eae15bc-550a-4a32-8c55-283a62f2c704 for 6e1123d0e5eab50e"}
+{"level":-56032,"time":-37689,"pid":-39880,"hostname":"localhost.localdomain","reqId":"req-t","msg":"Saved artifact for 6e1123d0e5eab50e"}
+{"level":-95436,"time":25711,"pid":-30078,"hostname":"localhost.localdomain","reqId":"req-t","res":{"statusCode":-68521},"responseTime":15592.-92988,"msg":"request completed"}
+{"level":48521,"time":-46822,"pid":53831,"hostname":"localhost.localdomain","reqId":"req-v","msg":"Requested artifact for 4aa18ded6d2b66a4"}
+{"level":57243,"time":-51060,"pid":+70683,"hostname":"localhost.localdomain","reqId":"req-v","msg":"Cache lookup for turbogha_4aa18ded6d2b66a4"}
+{"level":+92364,"time":+15762,"pid":+54487,"hostname":"localhost.localdomain","reqId":"req-v","msg":"Cache lookup did not return data"}
+{"level":86028,"time":+10905,"pid":+63540,"hostname":"localhost.localdomain","reqId":"req-v","msg":"Artifact for 4aa18ded6d2b66a4 not found"}
+{"level":-14911,"time":-79842,"pid":12853,"hostname":"localhost.localdomain","reqId":"req-v","res":{"statusCode":90654},"responseTime":36684.-89820,"msg":"request completed"}
+{"level":+40142,"time":36509,"pid":59513,"hostname":"localhost.localdomain","reqId":"req-w","msg":"Received artifact for bad79eeab75a0811"}
+{"level":48586,"time":-91151,"pid":-90080,"hostname":"localhost.localdomain","reqId":"req-w","msg":"Reserved cache 9eae163d-b9e0-43c0-8a42-6cbb6705e7b6"}
+{"level":+50916,"time":+92850,"pid":39603,"hostname":"localhost.localdomain","reqId":"req-x","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":+48413,"time":+10790,"pid":+53854,"hostname":"localhost.localdomain","reqId":"req-x","res":{"statusCode":+34073},"responseTime":+11800.50351,"msg":"request completed"}
+{"level":22736,"time":76343,"pid":-99921,"hostname":"localhost.localdomain","reqId":"req-w","msg":"Saved cache 9eae163d-b9e0-43c0-8a42-6cbb6705e7b6 for bad79eeab75a0811"}
+{"level":52384,"time":82386,"pid":+27971,"hostname":"localhost.localdomain","reqId":"req-w","msg":"Saved artifact for bad79eeab75a0811"}
+{"level":-31500,"time":-95548,"pid":8999,"hostname":"localhost.localdomain","reqId":"req-w","res":{"statusCode":+6752},"responseTime":-65031.-55859,"msg":"request completed"}
+{"level":-28613,"time":-63836,"pid":+17395,"hostname":"localhost.localdomain","reqId":"req-y","msg":"Received artifact for 4aa18ded6d2b66a4"}
+{"level":62806,"time":65933,"pid":-63566,"hostname":"localhost.localdomain","reqId":"req-y","msg":"Reserved cache 9eae1650-97b9-4a5d-a262-d8c4b84ce707"}
+{"level":+96549,"time":-63369,"pid":+91187,"hostname":"localhost.localdomain","reqId":"req-y","msg":"Saved cache 9eae1650-97b9-4a5d-a262-d8c4b84ce707 for 4aa18ded6d2b66a4"}
+{"level":+7859,"time":+59268,"pid":3798,"hostname":"localhost.localdomain","reqId":"req-y","msg":"Saved artifact for 4aa18ded6d2b66a4"}
+{"level":+25693,"time":-88729,"pid":-5311,"hostname":"localhost.localdomain","reqId":"req-y","res":{"statusCode":+83433},"responseTime":-74101.+2251,"msg":"request completed"}
+{"level":+40758,"time":+67288,"pid":-53419,"hostname":"localhost.localdomain","reqId":"req-z","msg":"Requested artifact for c9f962ca14061125"}
+{"level":+62132,"time":39180,"pid":3887,"hostname":"localhost.localdomain","reqId":"req--96323","msg":"Route POST:/v8/artifacts/events?slug=turbogha not found"}
+{"level":74756,"time":-7191,"pid":1575,"hostname":"localhost.localdomain","reqId":"req-+98422","msg":"Cache lookup did not return data"}
+{"level":-60116,"time":94180,"pid":-48983,"hostname":"localhost.localdomain","reqId":"req-+87735","msg":"Artifact for WI6GP not found"}
+Wdu0j artifact for X2qMw
+rc6kX POST:/v8/artifacts/events?slug=turbogha not found"}
+keOlY completed"}
+{"level":-38014,"time":98210,"pid":35100,"hostname":"localhost.localdomain","reqId":"req-z","msg":"Cache lookup for turbogha_c9f962ca14061125"}
+9ingK lookup for eWbno
+CoigK lookup did not return data"}
+jy7EV for 3aq2E not found"}
+{"level":-7205,"time":28759,"pid":+25777,"hostname":"localhost.localdomain","reqId":"req-1q","msg":"Reserved cache 9eae1659-224e-4e76-aa93-7ffc58319fba"}
+3LlBc cache 8LCT3 for iUysY
+{"level":+33822,"time":63647,"pid":-90660,"hostname":"localhost.localdomain","reqId":"req-1r","msg":"Reserved cache 9eae1660-+85888-41bf-b9e1-dd2cd1837784"}
+{"level":+1477,"time":+39824,"pid":+19333,"hostname":"localhost.localdomain","reqId":"req-2h","msg":"Reserved cache 9eae1672-90d8-454a-86f3-0f32478fac7b"}
+{"level":+29768,"time":-2205,"pid":-14538,"hostname":"localhost.localdomain","reqId":"req-2j","msg":"Reserved cache 9eae16aa-67a5--74929-b6cd-c05cfb6e4d0d"}
+{"level":+15532,"time":20136,"pid":+71472,"hostname":"localhost.localdomain","reqId":"req-2m","msg":"Reserved cache 9eae16b8-0d16--26188-51460-d2349ba9fe6b"}
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,125 @@
+Requested labels: ubuntu-latest
+Job defined at: tj/commander.js/.github/workflows/tests.yml@refs/pull/112/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -98129 (hosted)
+Current runner version: '-92870.+7681.69976'
+##[group]Operating System
+Ubuntu
+-33015.8427.62121
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+54932.-65367
+Version: +8450.-58034.+77890
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+28250.+67733/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.-18313
+##[group]Runner Image Provisioner
+98.161.119.155
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Dependabot
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 08Jem
+Digest: sha256:F175 0F92 561C 74DD
+Source commit SHA: D80F 58B6 27A7 52F1
+Complete job name: Test on node +6114.x and ubuntu-latest
+##[group]Run rWdrC
+with:
+repository: tj/commander.js
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 17902
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: tj/commander.js
+##[group]Getting Git version info
+Working directory is '/home/runner/work/commander.js/commander.js'
+[command]/usr/bin/git version
+git version +41908.-16781.-30163
+Temporarily overriding cSo6T before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/commander.js/commander.js
+Deleting the contents of '/home/runner/work/commander.js/commander.js'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/commander.js/commander.js
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/commander.js/commander.js/.git/
+[command]/usr/bin/git remote add origin https://github.com/tj/commander.js
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local OugqK um4aQ
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp xTMxv
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp jj1Wg && git config --local --unset-all oBxaa || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=84533 fetch --no-tags --prune --no-recurse-submodules --depth=-33269 origin +894B A31D BF4A C37D 8540:refs/remotes/pull/+40238/merge
+From https://github.com/tj/commander.js
+* [new ref] 8EB9 3F2F C6A2 CF2D-> pull/-86105/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+5024/merge
+Note: switching to 'refs/remotes/pull/90397/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 5b2042c Merge 6d26b20cf 5ac091c8f3a 1dbba64b2 into 693eced71 4c1c6b1c 39d742735 837a243f71f0
+[command]/usr/bin/git log -91704 --format=%H
+019cd5b9f4 68a9d7f07e 8804f7b1083
+cache: npm
+node-version: 57051.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/-27173.5066.-83034/x64
+##[group]Environment details
+node: v18.7384.-5515
+npm: 83754.+7244.79539
+yarn: -97617.-10830.+67633
+[command]/opt/hostedtoolcache/node/30925.57433.16596/x64/bin/npm config get cache
+/home/runner/.npm
+npm cache is not found
+##[group]Run npm ci
+[+76084;1mnpm ci[0m
+shell: /usr/bin/bash -e {-79267}
+npm error ymYPp PyciL
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error Invalid: lock file's typescript@+51313.74684.+56180 does not satisfy typescript@-13690.97670.37605
+npm error Clean install a project
+npm error 2sbUu
+npm error 2uTOB ehF9y pxQO1
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error IH9Z1 WSYeI 9EX3H 5LptZ ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/26099-+90090-23T22_37973_-46044_753Z-debug-+58569.log
+##[error]Process completed with exit code -60000.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,173 @@
+﻿Current runner version: '-23257.-53225.+26127'
+##[group]Operating System
+Ubuntu
+15265.+57063.+62955
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+60207.-89448
+Version: 84678.+494.-12550
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-29726.+76146/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+62809
+##[group]Runner Image Provisioner
+33.189.218.137
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 9WuO6 (SHA:40dd7dec9e9 39ed3e9 8afb4a38403 ee7886a)
+##[group]Download immutable action package 'actions/cache@v4'
+Digest: sha256:2BDA 694C 33F5 6344 6669 D0E0
+Source commit SHA: 671e497e19f0 b2ef7d4ee442 cf91ebd
+Complete job name: pre-commit
+##[group]Run Zy39P
+with:
+repository: vllm-project/vllm
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -3713
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: vllm-project/vllm
+##[group]Getting Git version info
+Working directory is '/home/runner/work/vllm/vllm'
+[command]/usr/bin/git version
+git version -79135.+97745.-74479
+Temporarily overriding Qn7T6 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/vllm/vllm
+Deleting the contents of '/home/runner/work/vllm/vllm'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/vllm/vllm
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/vllm/vllm/.git/
+[command]/usr/bin/git remote add origin https://github.com/vllm-project/vllm
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 3ospr E2v2S
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp h1rBZ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp GZpZz && git config --local --unset-all 7Hbpv || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-53777 fetch --no-tags --prune --no-recurse-submodules --depth=+76052 origin +e890762 e187fa 389405:refs/remotes/pull/36840/merge
+From https://github.com/vllm-project/vllm
+* [new ref] 8215 867F D0CD 8B71-> pull/+52577/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/75692/merge
+Note: switching to 'refs/remotes/pull/+32171/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at eba0ba5 Merge FD12 20E1 D00B 1417 A23C 58E5 into 8719 F4A2 C6FB 5471 14DE 513C
+[command]/usr/bin/git log -34829 --format=%H
+AF99 3961 65B4 D849
+python-version: -48453.-23003
+check-latest: false
+update-environment: true
+allow-prereleases: false
+##[group]Installed versions
+Successfully set up CPython (+48126.55301.-97415)
+##[group]Run echo PpG3B
+[-2686;1mecho DMzUc
+shell: /usr/bin/bash -e {-4388}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/+59501.-39472.-8707/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-58468.+55750.16236/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+41889.33114.4131/x64
+fasmt /opt/hostedtoolcache/Python/-10599.4435.15712/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/11476.-74589.98643/x64/lib
+extra_args: --all-files --hook-stage manual
+##[group]Run python -m pip CP5zp vKaHz
+[73140;1mpython -m pip HmpLL GTFVn
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+70934}
+Collecting pre-commit
+Downloading Tnw0m qIsUu kB)
+Collecting 6gZKZ (from FBW4x
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58438.41423/+75322.-13225 h8qbW +80110.95822 MB/s eta -74536:37978:-59211
+Downloading virtualenv-+17426.+76396.+44752-py3-none-any.whl (+71961.44840 MB)
+Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv--43636.-29250.+24850 distlib-+90016.-90765.97589 filelock-+84718.+72180.96935 identify-+20926.+96526.+37364 nodeenv--88751.89496.-89794 platformdirs--81733.+82447.-58892 pre-commit--88770.-23754.2149 pyyaml-97758.4235.70557 virtualenv-75477.+63108.+73134
+cfgv==-11250.12007.-48346
+distlib==+60739.-78102.-48718
+filelock==+65024.90655.274
+identify==-61846.+42549.-27227
+nodeenv==38035.+88794.+36751
+platformdirs==+42909.28806.+85233
+pre_commit==+31741.-3436.12140
+PyYAML==-46996.+44040.63616
+virtualenv==-95372.97646.-76457
+path: ~/.cache/pre-commit
+key: pre-commit-+96736|/opt/hostedtoolcache/Python/-88209.-96547.-15546/x64|35261f 04d9efb1 6d843ba85
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: pre-commit-+54770|/opt/hostedtoolcache/Python/-62339.-31742.+1686/x64|61c65fb2bced 6bb30afd 04ddc0ce505
+Received -160 of 98650 (-69023.+95102%), 96270.+27093 MBs/sec
+Cache Size: ~68588 MB (+43194 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/c1269d33-2b4b-43b7-b4b1-33720921c691/cache.tzst -P -C /home/runner/work/vllm/vllm --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit-23009|/opt/hostedtoolcache/Python/3616.-67321.-18542/x64|06eb3c4b0de0 07e3daa8 c3377b 996a4954b7c0
+##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files --hook-stage manual
+[66002;1mpre-commit run --show-diff-on-failure --color=always --all-files --hook-stage manual[0m
+yapf.....................................................................[42mPassed[m
+ruff.....................................................................[42mPassed[m
+codespell................................................................[42mPassed[m
+isort....................................................................[42mPassed[m
+clang-format.............................................................[42mPassed[m
+PyMarkdown...............................................................[42mPassed[m
+Lint GitHub Actions workflow files.......................................[42mPassed[m
+pip-compile..............................................................[42mPassed[m
+Run mypy for Python Z4rSU
+Lint shell scripts.......................................................[42mPassed[m
+Lint PNG exports from excalidraw.........................................[42mPassed[m
+Check SPDX headers.......................................................[42mPassed[m
+Check for spaces in all filenames........................................[42mPassed[m
+Update Dockerfile dependency graph.......................................[42mPassed[m
+Suggestion...............................................................[42mPassed[m
+[2m- hook id: suggestion[m
+[2m- duration: 0s[m
+To bypass pre-commit hooks, add --no-verify to git commit.
+Post job cleanup.
+Cache hit occurred on the primary key pre-commit-+33728|/opt/hostedtoolcache/Python/84074.+36665.20797/x64|23C6 DEC8 D649 8BCF DCF5 B08F, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

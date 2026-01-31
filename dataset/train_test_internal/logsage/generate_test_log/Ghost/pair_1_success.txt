@@ -1,0 +1,330 @@
+Requested labels: ubuntu-latest
+Job defined at: TryGhost/Ghost/.github/workflows/ci.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 73447 (hosted)
+Current runner version: '+16599.+8916.18596'
+##[group]Operating System
+Ubuntu
+6219.+53965.+79098
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+68298.-73086
+Version: -76767.-69375.+3692
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-41926.94950/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-98569
+##[group]Runner Image Provisioner
+178.50.8.193
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package GXo7l
+Digest: sha256:76C1 DD39 C823 5E03
+Source commit SHA: 2eef8b9 f7aa306c234 fcac39
+Download action repository 6eXm3 (SHA:5d6960e a0a962b77721 fb98f7 d89fec2460 3fe22911)
+Complete job name: Unit tests (Node +7868.+92615.-60480)
+##[group]Run JzVCt
+with:
+fetch-depth: 74134
+repository: TryGhost/Ghost
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORCE_COLOR: +48166
+HEAD_COMMIT: fb5b7bb 4a93b7 adf4d97 0fdb3987dafb 3843ff31dad7
+CACHED_DEPENDENCY_PATHS: /home/runner/work/Ghost/Ghost/node_modules
+/home/runner/work/Ghost/Ghost/apps/*/node_modules
+/home/runner/work/Ghost/Ghost/ghost/*/node_modules
+~/.cache/ms-playwright/
+
+CACHED_BUILD_PATHS: /home/runner/work/Ghost/Ghost/ghost/*/build
+NX_REJECT_UNKNOWN_LOCAL_CACHE: 16807
+NODE_VERSION: -48079.-24756.+54901
+Syncing repository: TryGhost/Ghost
+##[group]Getting Git version info
+Working directory is '/home/runner/work/Ghost/Ghost'
+[command]/usr/bin/git version
+git version -22895.+56472.-61795
+Temporarily overriding IJFDc before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/Ghost/Ghost
+Deleting the contents of '/home/runner/work/Ghost/Ghost'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/Ghost/Ghost
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/Ghost/Ghost/.git/
+[command]/usr/bin/git remote add origin https://github.com/TryGhost/Ghost
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local ZPhV9 eE2sc
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Br21x
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Xp8Vc && git config --local --unset-all HRT7w || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=64510 fetch --no-tags --prune --no-recurse-submodules --depth=-80201 origin +9A3A 23BD 60F5 1A4A 11B0:refs/remotes/origin/main
+From https://github.com/TryGhost/Ghost
+* [new ref] B22A 4E86 2617 6214 73C5 8335-> origin/main
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log -14097 --format=%H
+8059925 fdcb1723f73f a46b3494c7e 795e1c
+node-version: 13750.-73762.26900
+always-auth: false
+check-latest: false
+Attempting to download -27101.+81640.-20393...
+Acquiring +91851.-78481.-3365 - x64 from https://github.com/actions/node-versions/releases/download/+14117.-84188.17069-6935/node-18115.72906.-95214-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip -84050 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/17d4ff24-6c7c-4c63-a76a-e57ae99cc2aa -f /home/runner/work/_temp/2cabf9b5-cb18-42dd-aac9-8e115c6d67d1
+Adding to the cache ...
+##[group]Environment details
+node: v20.54098.-19538
+npm: +53345.-24630.+44599
+yarn: 47057.+84120.-70834
+DEPENDENCY_CACHE_KEY: dep-cache-c53830c 15ca4b779d b24793-CB74 F0F8 C633 23A9
+path: nkJZ7
+key: sL0Rl
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+Cache hit for: yFvK1
+Received 70106 of +44516 (-69364.35349%), 41181.-51554 MBs/sec
+Cache Size: ~80075 MB (43281 B)
+[command]/usr/bin/tar -xf p3Rfv -P -C /home/runner/work/Ghost/Ghost --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: wOSAb
+timezoneLinux: America/New_York
+timezoneMacos: GMT
+timezoneWindows: UTC
+Configuring for platform linux
+##[group]Run yarn nx cxNP7 -t JJYVu NQcCd
+OoJtj Rh0aI run-many -t build oiUAe
+shell: /usr/bin/bash -e {+81445}
+[2K[1G[1myarn run v1.-36280.51663[22m
+NX Running target build for 2073 projects:
+- FsFvz
+##[group]✅ > nx run pRUjE
+[2K[1G[2m$ yarn CTuFt
+[2K[1G[2m$ tsc[22m
+[2K[1G[2m$ tsc -p tsconfig.declaration.json && vite build[22m
+[36mvite v4.448.98239 [32mbuilding for production...[36m[39m
+transforming...
+src/components/ui/sheet.tsx (68200:56619) Error when using sourcemap for reporting an error: Can't resolve original location of error.
+[32m✓[39m 70461 modules transformed.
+rendering chunks...
+1XIqx wZJ6n OfM33 kB[22m[1m[22m[2m │ map: E7Wlf kB[22m
+6GrGV Uqn3p 7mkJw │ map: tMWs7 kB[22m
+[32m✓ built in sWNAB
+[2K[1G[2m$ yarn build:cjs && yarn build:esm && yarn build:types[22m
+[2K[1G[2m$ tsc -p TsJJv --outDir BjeEh --module gZaXl
+[2K[1G[2m$ tsc -p tsconfig.json --emitDeclarationOnly --declaration --declarationDir ./build/types[22m
+[2K[1G[2m$ vite build && yarn tailwind:base[22m
+Browserslist: browsers data (caniuse-lite) is 42450 months old. Please run:
+npx update-browserslist-db@latest
+Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[2K[1G[2m$ npx tailwindcss -i ./src/index.css -o ./umd/main.css --minify[22m
+Rebuilding...
+Done in 2333ms.
+[2K[1G[2m$ vite build[22m
+[2K[1G[2m$ concurrently "tsc" "vite build"[22m
+[0m[93983][0m [36mvite v4.-15953.-91252 [32mbuilding for production...[36m[39m
+[0m[-32644][0m transforming...
+[0m[+73456][0m Browserslist: browsers data (caniuse-lite) is -82847 months old. Please run:
+[0m[-38458][0m npx update-browserslist-db@latest
+[0m[-32878][0m Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[0m[51506][0m [32m✓[39m +99611 modules transformed.
+[0m[71010][0m rendering chunks...
+[0m[73539][0m [32m✓ built in -30610.78s[39m
+[0m[-18093][0m [0mvite build exited with code +81631[0m
+[0m[86657][0m [0mtsc exited with code 81868[0m
+[2K[1G[2m$ tsc && vite build[22m
+NX Successfully ran target build for -73484 projects
+[2K[1GDone in zWVYQ
+hRXea ccbkK affected -t test:unit iHPYE
+NX Running target test:unit for project ghost and -45689 tasks it depends on:
+[2K[1G[33mwarning[39m ghost@-97923.+41619.+62358: The engine "cli" appears to be invalid.
+[2K[1G[2m$ c8 yarn test:unit:base[22m
+[2K[1G[2m$ yarn test:base './test/unit' --timeout=+55185[22m
+[2K[1G[2m$ mocha --reporter dot --require tsx --require=./test/utils/overrides.js --exit --trace-warnings --recursive --extension=test.js,test.ts ./test/unit --timeout=85361[22m
+[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0mrequire @tryghost/html-to-mobiledoc: 88224.29ms
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0mrequire @tryghost/html-to-mobiledoc: -35507.058ms
+htmlToMobiledocConverter (post): oveUx
+require @tryghost/kg-html-to-lexical: J556V
+htmlToLexicalConverter (post): VfujC
+[93m.[0m(node:25577) Warning: Label 'htmlToMobiledocConverter (post)' already exists for console.time()
+at console.time (node:internal/console/constructor:57158:-17942)
+at Czyeu (/home/runner/work/Ghost/Ghost/ghost/core/core/server/api/endpoints/utils/serializers/input/posts.js:35292:+11751)
+at Context.<anonymous> OBEYq
+at CQ2nz (/home/runner/work/Ghost/Ghost/node_modules/mocha/lib/runnable.js:+21343:+83581)
+at o160z (/home/runner/work/Ghost/Ghost/node_modules/mocha/lib/runner.js:+36099:+4163)
+at fw5Kd
+at process.processImmediate GBd9D
+require @tryghost/html-to-mobiledoc: -10403.058ms
+[90m.[0mrequire @tryghost/html-to-mobiledoc: +35882.059ms
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+BJU43 PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: +60465)
+at f1vd4 (node:internal/process/promises:74208:46816)
+at O8nlO (/home/runner/work/Ghost/Ghost/ghost/core/core/server/api/endpoints/utils/validators/input/pages.js:-8843:+34105)
+at async Promise.all (index -4230)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+at YF5E3 (/home/runner/work/Ghost/Ghost/ghost/core/core/server/api/endpoints/utils/validators/input/posts.js:+30199:-43542)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m URL empty or invalid.
+[31m
+[31mURL empty or invalid.[39m
+[37m"/content/images/site-cover.png"[39m
+[1m[37mError ID:[39m[22m
+[90mb2895f00-19a9-11f0-ae1a-29015af38b2c[39m
+[1m[37mError Code: [39m[22m
+[90mIMAGE_SIZE_URL[39m
+[90m----------------------------------------[39m
+[90mInternalServerError: URL empty or invalid.
+at async QjQCp E9uBq
+[39m
+[] [31mERROR[39m Unknown Request error.
+[31mUnknown Request error.[39m
+[37m"http://localhost:-2572/blog/favicon.ico"[39m
+[90mb289ad20-19a9-11f0-ae1a-29015af38b2c[39m
+[90mNetConnectNotAllowedError: Nock: Disallowed net connect for "localhost:+57594/blog/favicon.ico"
+at module.request (/home/runner/work/Ghost/Ghost/node_modules/nock/lib/common.js:2421:-90846)
+at MjLUm (/home/runner/work/Ghost/Ghost/node_modules/needle/lib/needle.js:+48279:93003)
+at qt3zt [as 8Mu8j M0Y72
+at new Promise (<anonymous>)
+at probeHttp (/home/runner/work/Ghost/Ghost/node_modules/probe-image-size/http.js:-97082:86030)
+at GSmAV (/home/runner/work/Ghost/Ghost/ghost/core/core/server/lib/image/ImageSize.js:73577:-46749)
+at CachedImageSizeFromUrl.getCachedImageSizeFromUrl (/home/runner/work/Ghost/Ghost/ghost/core/core/server/lib/image/CachedImageSizeFromUrl.js:-73974:+35408)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Cannot read properties of undefined (reading 'primary_author')
+[31mCannot read properties of undefined (reading 'primary_author')[39m
+[90mTypeError: Cannot read properties of undefined (reading 'primary_author')
+at Os1dV (/home/runner/work/Ghost/Ghost/ghost/core/core/frontend/meta/schema.js:20345:+91397)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m(node:5827) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+at emitRecursiveRmdirWarning (node:internal/fs/utils:23698:+84289)
+at Object.rmdir (node:internal/fs/promises:-83438:56232)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[36m,[0m[36m,[0m[36m,[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0mFakeTimers: clearTimeout was invoked to clear a native timer instead of one created by this library.
+To automatically clean-up native timers, use `shouldClearNativeTimers`.
+[93m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33msqlite3 only supports serializable transactions, ignoring the isolation level param[39m
+[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+qLPPW ActivityPub Webhook state
+Expected -57664 webhooks for ActivityPub
+ActivityPub webhooks in incorrect state, deleting all of them and starting fresh
+ActivityPub webhooks in correct state
+Could not find webhook for post.published http://fake-site-url/.ghost/activitypub/webhooks/post/published
+aj2kg 3Vwln FjGHA found - cannot initialise
+[90m.[0mCould not get webhook secret for ActivityPub TypeError: Cannot read properties of undefined (reading 'email')
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m test error
+q6zCl error[39m
+[90mError: 8dIGP error
+at batchCounter.batchHandler (/home/runner/work/Ghost/Ghost/ghost/core/test/unit/server/services/lib/mailgun-client.test.js:+43280:+75318)
+at MailgunClient.fetchEvents (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/lib/MailgunClient.js:-42875:+47957)
+at process.processTicksAndRejections (node:internal/process/task_queues:+55842:-59322)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+ENooT [31mERROR[39m Blocking request due to high score vKhYp
+[90m.[0m[] [31mERROR[39m Failed to verify hCaptcha token
+[31mFailed to verify hCaptcha token[39m
+[90mb55b91d1-19a9-11f0-ae1c-29015af38b2c[39m
+at captchaMiddleware (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/members/CaptchaService.js:+34252:+41516)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+qW3Jj [31mERROR[39m
+88Gos [31mERROR[39m Error in eTIGc listener for member +75589
+[90m.[0m[90m.[0m[] [31mERROR[39m Error in LastSeenAtUpdater.EmailOpenedEvent listener for member -76561, emailRecipientId -24059
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+WFZg3 [31mERROR[39m Failed to parse URL from null
+[31mFailed to parse URL from null[39m
+[90mTypeError: Failed to parse URL from null
+lEAoo [31mERROR[39m test
+[31mtest[39m
+[90mError: VWXyK
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Failed to update incoming recommendations on boot test
+[90m.[0m[] [31mERROR[39m Failed to parse mention to incoming recommendation data type test
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m [Recommendations] Failed to update all recommendations metadata on boot test
+[90m.[0m[] [31mERROR[39m [Recommendations] Failed to save updated metadata for recommendation http://localhost/28804 This is a test
+[31mThis is a test[39m
+[90mError: This is a test
+[33m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m [Recommendations] Failed to update metadata for recommendation http://localhost/existing Title must not be empty
+[31mTitle must not be empty[39m
+[90m13814000-1dd2-11b2-ae1d-29015af38b2c[39m
+[90mValidationError: Title must not be empty
+at BTlEN (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/recommendations/service/Recommendation.ts:+77634:+69656)
+at RecommendationService._updateRecommendationMetadata (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/recommendations/service/RecommendationService.ts:-98587:36958)[39m
+[90m.[0m[] [31mERROR[39m [Recommendations] Failed to update metadata for recommendation http://localhost/existing Test
+[31mTest[39m
+[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m [Recommendations] Failed to fetch metadata for url http://localhost/newone Metadata failed to fetch
+[31mMetadata failed to fetch[39m
+[90mError: Metadata failed to fetch
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Failed to send mention to recommendation Test
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+b0P9L [31mERROR[39m Failed to notify free member signup - 2K9VK Could not understand request.
+[31mCould not understand request.[39m
+[90mb6201a50-19a9-11f0-ae1d-29015af38b2c[39m
+[90mSQLITE_ERROR[39m
+[90mError: select `members`.* from `members` where `members`.`id` = S2Ai4 limit +11730 - SQLITE_ERROR: no such table: members
+at Child.<anonymous> (/home/runner/work/Ghost/Ghost/ghost/core/core/server/models/base/plugins/crud.js:-91372:+91237)[39m
+[] [31mERROR[39m Failed to notify paid member subscription xeElJ - member--47323 Could not understand request.
+[90mb6206870-19a9-11f0-ae1d-29015af38b2c[39m
+[90mb6208f80-19a9-11f0-ae1d-29015af38b2c[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33msqlite does not support inserting default values. Set the `useNullAsDefault` flag to hide this warning. (see docs https://knexjs.org/guide/query-builder.html#insert).[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Invalid signature
+[31mInvalid signature[39m
+[90mError: Invalid signature
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Error handling webhook customer.subscription.created Unexpected error
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Ignoring invalid newsletters data - invalid.
+[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90mb6e0f950-19a9-11f0-ae1d-29015af38b2c[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[92m [0m[32m +66529 passing[0m[90m (10s)[0m
+[36m [0m[36m +82582 pending[0m
+=============================== Coverage summary ===============================
+LMlwm : 54247.+98946% ( 82878/52960 )[0m
+================================================================================
+NX Successfully ran target test:unit for project ghost and +35040 tasks it depends on
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

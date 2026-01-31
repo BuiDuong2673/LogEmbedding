@@ -1,0 +1,89 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/generative-ai-for-beginners/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +22754 (hosted)
+Current runner version: '76821.-47713.+95334'
+##[group]Operating System
+Ubuntu
+87216.+99368.+37550
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--66408.+65581
+Version: 29243.23331.5793
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/17418.+12876/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.20072
+##[group]Runner Image Provisioner
+224.84.63.0
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:6EE6 7665 F098 6B60 BB0C)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job--25879--14434
+[+46142;1mmkdir -p ./dependabot-job--33561-+677[0m
+shell: /usr/bin/bash -e {+50059}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: +99570
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: -28072
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image 4avIk +5514)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image 6ZEDh
+Starting update process
+Created proxy container: 188f7f1 6bbe1104f3 673a741bfd
+Created container: d9d1682d807f 6953db a9964d 6ea29d31e4 b3e5f551
+proxy | -16672/-82668/+45036 +9815:+55676:-65434 ychba NU49v trcn7 oiijM
+proxy | 86658/+90433/-11519 +86511:+22053:35893 Listening (:+40423)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | -95756 added, -21556 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | +5551/+60650/-56957 99590:31652:10249 INFO <job_+19201> CX0g1 job processing
+-9708/+69581/-17350 -48861:-26207:-36360 INFO <job_+3430> oZPqG yGEb4 5WEky
+updater | -65462/-30717/-69855 -64781:-84390:97988 INFO <job_+30568> Started process PID: +44934 with command: {} git config --global credential.helper '!/home/dependabot/common/lib/dependabot/../../bin/git-credential-store-immutable --file /home/dependabot/dependabot-updater/git.store' {}
+updater | 99231/-15993/+71127 86120:+77662:-87444 INFO <job_12804> zKjBp VNNdy RZ8Bh wrtz9 with sEeIw kXbq1 zDzJl W2thS ri4sn
++71/-28171/-69539 -53428:46591:+48356 INFO <job_-74111> bv0lR MmoyG haUsK lIkgl 6hH02
+updater | 6537/-89211/32800 -95954:64436:-5869 INFO <job_-66719> Started process PID: 14950 with command: {} git config --global c86S5 url.https://github.com/.insteadOf ASkyw {}
+updater | 58091/-18885/+46740 33140:-2578:-60934 INFO <job_+76860> QUA6p DcS7I 79jLq sJucX ZwoE2
+updater | 206/96687/69078 -94432:-50033:-80749 INFO <job_+82762> Started process PID: 94146 with command: {} git clone --no-tags --depth -67276 --recurse-submodules --shallow-submodules https://github.com/microsoft/generative-ai-for-beginners /home/dependabot/dependabot-updater/repo {}
+proxy | +7989/61094/90292 35377:8337:39893 [-16593] syV2q vIjmA
+proxy | 62141/-39085/-40462 91856:7696:-95662 [+21051] * authenticating git server request (host: github.com)
++6403/9842/-32375 +41459:+92776:72136 [+27897] * authenticating git server request (host: github.com)
+updater | -8604/+62379/14949 +96145:73074:+66161 INFO <job_-87073> Started process PID: 10147 with command: {} YCIJe 0PlKA CzwdD UTVWc 9WNhQ {}
+updater | 50157/30569/40904 -16262:+67379:37777 INFO <job_+31141> Started process PID: 96505 with command: {} qXyD2 igEfq 13btK {}
+updater | 71271/+75679/+3615 +98241:+4892:-12957 INFO <job_-39097> iizYm OHYG6 gj8T1 WNVvI YssXi eLgBg
+updater | 22888/-56494/-75149 -55765:77246:-53912 c5JPd <job_-79972> hTtPi hNVV4 kEE3X CW9FU
+updater | +82018/-84781/-26118 -44245:-34949:+26061 INFO <job_-89930> Started process PID: +13572 with command: {} pyenv exec ZKqgv --version {}
+updater | -52055/+32319/+43389 +22044:+37250:46346 INFO <job_47288> Package manager pip, Info : pip 50935.+19258 from /usr/local/.pyenv/versions/64201.-79281.+133/lib/python3.+73443/site-packages/pip (python +59983.+56454)
+
++22961/+19783/16565 39398:+29389:+25397 INFO <job_-97562> 6ibFl lwnxE nIYhW SFF5y BwAl6 kwheq
+updater | -63568/+79269/37564 51960:+25865:95448 INFO <job_-64529> Fetching release information from json registry at https://pypi.org/pypi/ for IQR1b
++54438/4813/19385 +70553:+16442:+34702 [+40576] +3054 ZSauN
+updater | -6608/-30486/-22153 -85998:+96020:13454 INFO <job_-41124> Filtered out +96004 unsupported Language +33664.+99972.+55208 versions
+77144/+46733/36942 16826:26112:-8894 [59536] * authenticating github api request with token for api.github.com
+proxy | -27320/80560/+37678 +40906:66170:12100 [9694] * authenticating github api request with token for api.github.com
++66029/-55821/3074 -90559:92119:-80334 INFO <job_-2456> Requirements update strategy bump_versions
+updater | +82893/2783/+99665 98186:75330:-6512 INFO Results:
++-------------------------------------------------+
+| Changes to Dependabot Pull Requests |
++---------+---------------------------------------+
+| created | BiAex ( from 9276.17805.-62388 to 35915.+45801.89028 ) |
+Cleaned up container BBFE A29A 83FA 8D40 8AE7
+proxy | +55902/+70478/-43244 -33440:-31747:-39035 Posting metrics to remote API endpoint
+🤖 ~ finished ~
+Post job cleanup.
+Cleaning up orphan processes
