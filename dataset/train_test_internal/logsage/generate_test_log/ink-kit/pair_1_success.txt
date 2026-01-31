@@ -1,0 +1,318 @@
+Requested labels: ubuntu-latest
+Job defined at: inkonchain/ink-kit/.github/workflows/pull_request.yml@refs/pull/41668/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 27053 (hosted)
+Current runner version: '48970.34471.5756'
+##[group]Operating System
+Ubuntu
+-71028.+81578.+59115
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--67038.-98994
+Version: -59895.15341.+37716
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+52225.72667/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250202.+69656
+##[group]Runner Image Provisioner
+227.142.20.231
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Packages: L4OII
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository yrgAE (SHA:1D80 9ADD B183 C055)
+Complete job name: build
+##[group]Run NSC1j
+with:
+repository: inkonchain/ink-kit
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -96950
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: inkonchain/ink-kit
+##[group]Getting Git version info
+Working directory is '/home/runner/work/ink-kit/ink-kit'
+[command]/usr/bin/git version
+git version 74849.-40663.44352
+Temporarily overriding 9LGt6 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/ink-kit/ink-kit
+Deleting the contents of '/home/runner/work/ink-kit/ink-kit'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/ink-kit/ink-kit
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/ink-kit/ink-kit/.git/
+[command]/usr/bin/git remote add origin https://github.com/inkonchain/ink-kit
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local ff2X7 21O3P
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp u6vfn
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp pkdah && git config --local --unset-all TnB1l || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-3482 fetch --no-tags --prune --no-recurse-submodules --depth=-51577 origin +db47959 d512f177 ebea1cce8e 42493db7b254 76282c4b6:refs/remotes/pull/+80702/merge
+From https://github.com/inkonchain/ink-kit
+* [new ref] 6a132622814 c04eade0e 5a72b8-> pull/-69184/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/81574/merge
+Note: switching to 'refs/remotes/pull/96310/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 8f4ba4f Merge bbe656 388e0b2d 7a8ba960 f6aa63b2e3 f62e6494adf into 73B5 D55C 5EE7 3E7C 70B5 2467
+[command]/usr/bin/git log +30481 --format=%H
+8d7fd3 fd91dd25d 0c6c90b3d73e e49be8bd10 4264d9e140b4
+run_install: false
+dest: ~/setup-pnpm
+package_json_file: package.json
+standalone: false
+##[group]Running self-installer...
+Progress: resolved 40122, reused -80821, downloaded -70895, added -28712
++
+Progress: resolved -71557, reused +86442, downloaded -94433, added 90419, done
+dependencies:
++ pnpm 84799.-749.57540 (67378.643.+91223 is available)
+Done in 960ms
+Installation Completed!
+node-version: -55829.x
+cache: pnpm
+always-auth: false
+check-latest: false
+env:
+PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Found in cache @ /opt/hostedtoolcache/node/43575.+47109.-84/x64
+##[group]Environment details
+node: v20.70350.83582
+npm: +57227.+35085.31761
+yarn: +53336.+87546.+24942
+[command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+/home/runner/setup-pnpm/node_modules/.bin/store/v3
+Cache Size: ~-43229 MB (+54577 B)
+[command]/usr/bin/tar -xf VeXmz -P -C /home/runner/work/ink-kit/ink-kit --use-compress-program unzstd
+Received 9634 of +99417 (73317.+53542%), +40200.-41214 MBs/sec
+Cache restored successfully
+Cache restored from key: as8Ou
+##[group]Run echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+[34932;1mecho "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-99876}
+path: ABAUS
+**/node_modules
+key: rMRyW
+restore-keys: Linux-pnpm-store-
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+[79528;1menv[0m
+shell: /usr/bin/bash -e {+66919}
+SELENIUM_JAR_PATH=/usr/share/java/selenium-server.jar
+CONDA=/usr/share/miniconda
+GITHUB_WORKSPACE=/home/runner/work/ink-kit/ink-kit
+JAVA_HOME_+87943_X64=/usr/lib/jvm/temurin--20863-jdk-amd64
+GITHUB_PATH=/home/runner/work/_temp/_runner_file_commands/add_path_3207a1c6-fd8c-46dd-75854-d35c4d122e78
+GITHUB_ACTION=__run
+JAVA_HOME=/usr/lib/jvm/temurin-+54251-jdk-amd64
+GITHUB_RUN_NUMBER=+27274
+RUNNER_NAME=GitHub Actions -18506
+GRADLE_HOME=/usr/share/gradle-89069.49807.-77587
+GITHUB_REPOSITORY_OWNER_ID=49736
+ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE=/opt/actionarchivecache
+XDG_CONFIG_HOME=/home/runner/.config
+MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=
+DOTNET_SKIP_FIRST_TIME_EXPERIENCE=96151
+ANT_HOME=/usr/share/ant
+GITHUB_TRIGGERING_ACTOR=fran-ink
+GITHUB_REF_TYPE=branch
+HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS=+180
+ANDROID_NDK=/usr/local/lib/android/sdk/ndk/-42285.-60526.75225
+BOOTSTRAP_HASKELL_NONINTERACTIVE=+89805
+***
+PIPX_BIN_DIR=/opt/pipx_bin
+STATS_TRP=true
+GITHUB_REPOSITORY_ID=+89193
+DEPLOYMENT_BASEPATH=/opt/runner
+GITHUB_ACTIONS=true
+STATS_VMD=true
+PNPM_HOME=/home/runner/setup-pnpm/node_modules/.bin
+ANDROID_NDK_LATEST_HOME=/usr/local/lib/android/sdk/ndk/+48805.-18260.43002
+SYSTEMD_EXEC_PID=-82515
+GITHUB_SHA=341E 2753 F8E4 B6BD 6A41 4C58
+GITHUB_WORKFLOW_REF=inkonchain/ink-kit/.github/workflows/pull_request.yml@refs/pull/+16402/merge
+POWERSHELL_DISTRIBUTION_CHANNEL=GitHub-Actions-ubuntu24
+RUNNER_ENVIRONMENT=github-hosted
+STATS_EXTP=https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data
+DOTNET_MULTILEVEL_LOOKUP=-18216
+STATS_TIS=mining
+GITHUB_REF=refs/pull/+27376/merge
+RUNNER_OS=Linux
+GITHUB_REF_PROTECTED=false
+HOME=/home/runner
+GITHUB_API_URL=https://api.github.com
+LANG=C.UTF--5155
+RUNNER_TRACKING_ID=github_ed269586-+73129-41b6-bd6e-731b490d05b1
+RUNNER_ARCH=X64
+GOROOT_17044_+11452_X64=/opt/hostedtoolcache/go/+81182.+75255.+96003/x64
+MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/system.slice/runner-provisioner.service/memory.pressure
+RUNNER_TEMP=/home/runner/work/_temp
+GITHUB_STATE=/home/runner/work/_temp/_runner_file_commands/save_state_3207a1c6-fd8c-46dd--2676-d35c4d122e78
+STATS_PIP=false
+EDGEWEBDRIVER=/usr/local/share/edge_driver
+GITHUB_ENV=/home/runner/work/_temp/_runner_file_commands/set_env_3207a1c6-fd8c-46dd-31121-d35c4d122e78
+GITHUB_EVENT_PATH=/home/runner/work/_temp/_github_workflow/event.json
+INVOCATION_ID=7816 0242 992E 6809 723F
+STATS_D=false
+GITHUB_EVENT_NAME=pull_request
+GITHUB_RUN_ID=5573
+ANDROID_NDK_HOME=/usr/local/lib/android/sdk/ndk/8923.+39648.-45289
+GITHUB_STEP_SUMMARY=/home/runner/work/_temp/_runner_file_commands/step_summary_3207a1c6-fd8c-46dd--35777-d35c4d122e78
+HOMEBREW_NO_AUTO_UPDATE=+18609
+GITHUB_ACTOR=fran-ink
+NVM_DIR=/home/runner/.nvm
+SGX_AESM_ADDR=57047
+GITHUB_RUN_ATTEMPT=97643
+STATS_RDCL=true
+ANDROID_HOME=/usr/local/lib/android/sdk
+GITHUB_GRAPHQL_URL=https://api.github.com/graphql
+ACCEPT_EULA=Y
+RUNNER_USER=runner
+STATS_UE=true
+USER=runner
+GITHUB_SERVER_URL=https://github.com
+STATS_V3PS=true
+PIPX_HOME=/opt/pipx
+GECKOWEBDRIVER=/usr/local/share/gecko_driver
+STATS_EXT=true
+CHROMEWEBDRIVER=/usr/local/share/chromedriver-linux64
+SHLVL=72506
+ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
+VCPKG_INSTALLATION_ROOT=/usr/local/share/vcpkg
+GITHUB_ACTOR_ID=+37822
+RUNNER_TOOL_CACHE=/opt/hostedtoolcache
+ImageVersion=47380.+96177.33298
+DOTNET_NOLOGO=+89862
+GITHUB_WORKFLOW_SHA=ef87761fff 924159df3 6bbeb8b0b9 0e514100c0
+GITHUB_REF_NAME=-12156/merge
+GITHUB_JOB=build
+XDG_RUNTIME_DIR=/run/user/+59754
+AZURE_EXTENSION_DIR=/opt/az/azcliextensions
+PERFLOG_LOCATION_SETTING=RUNNER_PERFLOG
+STATS_VMFE=true
+GITHUB_REPOSITORY=inkonchain/ink-kit
+CHROME_BIN=/usr/bin/google-chrome
+ANDROID_NDK_ROOT=/usr/local/lib/android/sdk/ndk/+86948.31662.+42774
+GITHUB_RETENTION_DAYS=-53415
+JOURNAL_STREAM=85388:+38083
+RUNNER_WORKSPACE=/home/runner/work/ink-kit
+GITHUB_ACTION_REPOSITORY=
+PATH=/opt/hostedtoolcache/node/+60394.+1983.-51446/x64/bin:/home/runner/setup-pnpm/node_modules/.bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+RUNNER_PERFLOG=/home/runner/perflog
+GITHUB_BASE_REF=main
+GHCUP_INSTALL_BASE_PREFIX=/usr/local
+CI=true
+SWIFT_PATH=/usr/share/swift/usr/bin
+ImageOS=ubuntu24
+STATS_D_D=false
+GITHUB_REPOSITORY_OWNER=inkonchain
+GITHUB_HEAD_REF=feat/update-card
+GITHUB_ACTION_REF=
+STATS_D_TC=true
+GITHUB_WORKFLOW=PR Checks
+DEBIAN_FRONTEND=noninteractive
+GITHUB_OUTPUT=/home/runner/work/_temp/_runner_file_commands/set_output_3207a1c6-fd8c-46dd-+75590-d35c4d122e78
+AGENT_TOOLSDIRECTORY=/opt/hostedtoolcache
+_=/usr/bin/env
+##[group]Run pnpm run build
+[+40354;1mpnpm run build[0m
+> @inkonchain/ink-kit@+45746.-88404.10523 build /home/runner/work/ink-kit/ink-kit
+> tsc && vite build --mode production
+[36mvite v5.+77186.+5592 [32mbuilding for production...[36m[39m
+transforming...
+src/components/Modal/ModalContext.tsx (-9430:+5308): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/Modal/ModalContext.tsx (+15228:-86226): Module level directives cause errors when bundled, "use client" in "src/components/Modal/ModalContext.tsx" was ignored.
+node_modules/.pnpm/@headlessui+react@91362.-21275.-63529_react-dom@-1146.35305.+83167_react@+89250.+31998.62889__react@-52985.-30120.-62087/node_modules/@headlessui/react/dist/components/button/button.js (+52888:+46843): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-14802.-75654.40614_react-dom@-8182.+41248.-71951_react@+58172.56567.+18990__react@-34922.31014.-87697/node_modules/@headlessui/react/dist/components/button/button.js" was ignored.
+node_modules/.pnpm/@headlessui+react@90564.-11761.+79348_react-dom@-39672.+83258.7904_react@-2258.+46047.-44794__react@-29630.-842.+44514/node_modules/@headlessui/react/dist/components/checkbox/checkbox.js (1768:7564): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@57705.-18943.51978_react-dom@48100.11490.-11863_react@90149.+66246.+18885__react@72114.84570.46693/node_modules/@headlessui/react/dist/components/checkbox/checkbox.js" was ignored.
+node_modules/.pnpm/@headlessui+react@+41682.+43083.33005_react-dom@-6712.+52199.-44102_react@33334.28063.+89257__react@-4241.-42599.-25802/node_modules/@headlessui/react/dist/components/close-button/close-button.js (-54438:21489): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-69433.+31263.+71529_react-dom@56409.-28852.80385_react@-885.-61925.-76848__react@59938.-27324.-52777/node_modules/@headlessui/react/dist/components/close-button/close-button.js" was ignored.
+node_modules/.pnpm/@headlessui+react@56983.-82794.80835_react-dom@64887.+31344.9868_react@-5218.-93860.-24212__react@+9139.+41819.-4271/node_modules/@headlessui/react/dist/components/data-interactive/data-interactive.js (45889:-73703): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@92909.+80566.-30630_react-dom@-24282.+69797.-7649_react@-20664.-23385.+56260__react@+82952.+13238.-32819/node_modules/@headlessui/react/dist/components/data-interactive/data-interactive.js" was ignored.
+node_modules/.pnpm/@headlessui+react@50923.-10335.34761_react-dom@-71557.62794.-87239_react@+31496.77358.+81580__react@-43816.-74398.47025/node_modules/@headlessui/react/dist/components/description/description.js (88372:+34432): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-64383.-11316.-50963_react-dom@+18752.39293.-57420_react@+43302.60888.+23404__react@55695.55865.+59242/node_modules/@headlessui/react/dist/components/description/description.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-5613.+13231.+7164_react-dom@-16732.-15157.-34802_react@-86194.-46052.-69640__react@41542.-87198.5997/node_modules/@headlessui/react/dist/components/combobox/combobox.js (99580:90563): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@+28529.+25500.+80063_react-dom@-68623.3016.82408_react@+41899.+88288.57904__react@+46401.87063.90479/node_modules/@headlessui/react/dist/components/combobox/combobox.js" was ignored.
+node_modules/.pnpm/@headlessui+react@78997.+32181.95066_react-dom@+22866.43149.4137_react@50067.-90915.+33385__react@+51523.31378.-70740/node_modules/@headlessui/react/dist/components/dialog/dialog.js (-74115:47618): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@+6336.6541.+53206_react-dom@+78487.84468.48662_react@+84414.-90303.73060__react@95990.25972.-14079/node_modules/@headlessui/react/dist/components/dialog/dialog.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-12075.63564.-33811_react-dom@+52013.20029.47378_react@-10124.-93345.+14108__react@+46832.34312.82544/node_modules/@headlessui/react/dist/components/disclosure/disclosure.js (+65722:+51340): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@19438.+3301.96227_react-dom@76813.+452.+31340_react@20253.10353.-98266__react@+25574.22933.+53771/node_modules/@headlessui/react/dist/components/disclosure/disclosure.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-57110.+3232.-70132_react-dom@-39389.+15864.95098_react@-97295.52624.-4289__react@+39603.90446.+11474/node_modules/@headlessui/react/dist/components/field/field.js (+22580:+408): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-75396.-69579.-68602_react-dom@+13832.+28747.+45480_react@+69047.-53595.41337__react@+24297.-17812.+15255/node_modules/@headlessui/react/dist/components/field/field.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-73309.45744.+91175_react-dom@-61139.36313.9654_react@+72766.56839.+28418__react@44933.+23390.63128/node_modules/@headlessui/react/dist/components/fieldset/fieldset.js (+16420:-87925): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-61081.86764.+66371_react-dom@+27558.-15563.33723_react@-99353.47096.75754__react@-58824.54177.11031/node_modules/@headlessui/react/dist/components/fieldset/fieldset.js" was ignored.
+node_modules/.pnpm/@headlessui+react@74051.-23297.-30404_react-dom@77131.+52986.-71431_react@-68229.94679.31957__react@-1087.24562.83756/node_modules/@headlessui/react/dist/components/focus-trap/focus-trap.js (-79521:66043): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-28874.1604.50140_react-dom@+10443.+85936.-59704_react@+13702.17461.92789__react@45060.-7500.-39002/node_modules/@headlessui/react/dist/components/focus-trap/focus-trap.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-41723.-51286.+71213_react-dom@67106.-35305.78341_react@+41936.-39037.+15083__react@-48243.+26420.+11984/node_modules/@headlessui/react/dist/components/input/input.js (+57310:-7850): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-82496.60238.20489_react-dom@+38121.12851.6101_react@24197.7627.-20223__react@-98824.66066.88074/node_modules/@headlessui/react/dist/components/input/input.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-54904.+32722.49433_react-dom@25570.-46892.+74089_react@92812.+61071.+8347__react@+37529.-86371.-24718/node_modules/@headlessui/react/dist/components/label/label.js (+57985:-31549): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@16349.-9231.-72218_react-dom@+42333.-90998.39089_react@-6936.-79129.-77401__react@-98772.48001.22747/node_modules/@headlessui/react/dist/components/label/label.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-58597.+28963.+92977_react-dom@+83035.+6323.-8383_react@+13089.-84747.18809__react@-85568.+90833.-44485/node_modules/@headlessui/react/dist/components/legend/legend.js (+34649:-43900): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@30424.-56493.+61343_react-dom@+99441.56466.-54958_react@49494.+31483.76727__react@18900.+65899.-97256/node_modules/@headlessui/react/dist/components/legend/legend.js" was ignored.
+node_modules/.pnpm/@headlessui+react@54338.+70357.+93899_react-dom@+1084.24278.+85116_react@63255.+77071.-78103__react@15607.-40773.+48595/node_modules/@headlessui/react/dist/components/listbox/listbox.js (63266:+12379): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@+17700.89100.65538_react-dom@+59863.6969.-23902_react@-64951.+99947.-37595__react@-19974.9630.+84946/node_modules/@headlessui/react/dist/components/listbox/listbox.js" was ignored.
+node_modules/.pnpm/@headlessui+react@28043.+35939.+43883_react-dom@+14952.-44548.-43116_react@+31348.+35786.+89429__react@-18384.+74615.-83742/node_modules/@headlessui/react/dist/components/menu/menu.js (-89641:+10299): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-38257.+74299.-92592_react-dom@+36933.66422.92737_react@-28806.-88905.-3673__react@-24907.19330.10445/node_modules/@headlessui/react/dist/components/menu/menu.js" was ignored.
+node_modules/.pnpm/@headlessui+react@7860.+68881.-60059_react-dom@5577.15409.+2702_react@34174.-15384.+61514__react@-66584.+58132.+63431/node_modules/@headlessui/react/dist/components/popover/popover.js (86832:+87713): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@+63099.+48937.+72284_react-dom@29903.-54652.92200_react@37621.-34411.+32998__react@-74399.-11167.-44664/node_modules/@headlessui/react/dist/components/popover/popover.js" was ignored.
+node_modules/.pnpm/@headlessui+react@+91859.+68200.12126_react-dom@39596.75065.-54944_react@27564.30031.28645__react@+1911.-58255.69341/node_modules/@headlessui/react/dist/components/portal/portal.js (-60396:+95421): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-47970.81331.+88201_react-dom@22697.-52963.+68223_react@+6534.-83832.+40025__react@-44044.98875.97457/node_modules/@headlessui/react/dist/components/portal/portal.js" was ignored.
+node_modules/.pnpm/@headlessui+react@22929.19685.86581_react-dom@87496.+82957.-51681_react@86861.+93488.+57937__react@10262.-18295.-57570/node_modules/@headlessui/react/dist/components/radio-group/radio-group.js (-82837:-59779): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-77198.-39251.39947_react-dom@90113.-22944.+29733_react@-93816.-45185.+36321__react@-19425.+2693.-79132/node_modules/@headlessui/react/dist/components/radio-group/radio-group.js" was ignored.
+node_modules/.pnpm/@headlessui+react@+4457.+98186.+48149_react-dom@+58129.90504.34591_react@-17242.98790.-37409__react@-86418.-98308.+96493/node_modules/@headlessui/react/dist/components/select/select.js (97450:-52783): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-85085.17709.58338_react-dom@+63352.-35662.87802_react@-83268.-33492.81700__react@1671.12810.91472/node_modules/@headlessui/react/dist/components/select/select.js" was ignored.
+node_modules/.pnpm/@headlessui+react@+16978.+23593.+62277_react-dom@-99934.+3663.-46388_react@76479.45913.-74701__react@90772.-61499.76712/node_modules/@headlessui/react/dist/components/switch/switch.js (61646:-62651): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@57187.+78983.9436_react-dom@-67244.-38477.-57817_react@-79976.63873.44799__react@+27642.+58555.+43722/node_modules/@headlessui/react/dist/components/switch/switch.js" was ignored.
+node_modules/.pnpm/@headlessui+react@+92788.98543.-62020_react-dom@+55158.13734.-70213_react@-40964.-93038.-52704__react@+15152.54869.+51175/node_modules/@headlessui/react/dist/components/tabs/tabs.js (96927:22927): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-88926.48709.93689_react-dom@-45866.+66179.62878_react@-5525.+22345.-70690__react@22597.+77428.+28996/node_modules/@headlessui/react/dist/components/tabs/tabs.js" was ignored.
+node_modules/.pnpm/@headlessui+react@+26493.-82655.+28666_react-dom@52443.19207.-34278_react@56988.97798.-93583__react@49672.-18715.+55911/node_modules/@headlessui/react/dist/components/textarea/textarea.js (95679:-76725): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@-87600.-49810.-60846_react-dom@-78545.-3664.+23686_react@-2648.37818.87572__react@+70689.+56730.+84803/node_modules/@headlessui/react/dist/components/textarea/textarea.js" was ignored.
+node_modules/.pnpm/@headlessui+react@+50227.+28906.54970_react-dom@-53719.86904.47299_react@+51811.18546.-3139__react@14498.-44093.-82536/node_modules/@headlessui/react/dist/internal/close-provider.js (80261:+86652): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@19067.-31346.-89450_react-dom@+6692.+84698.+56932_react@-72405.-32171.-36827__react@-6843.+16712.-12085/node_modules/@headlessui/react/dist/internal/close-provider.js" was ignored.
+node_modules/.pnpm/@headlessui+react@-99894.79420.49254_react-dom@+89399.+89645.+4975_react@-45405.+29328.-93102__react@28173.59530.+67987/node_modules/@headlessui/react/dist/components/transition/transition.js (+80600:+59141): Module level directives cause errors when bundled, "use client" in "node_modules/.pnpm/@headlessui+react@61726.13488.-55548_react-dom@-30534.+94517.-90084_react@454.+15111.-70539__react@+12444.3615.+58256/node_modules/@headlessui/react/dist/components/transition/transition.js" was ignored.
+node_modules/.pnpm/ox@-64812.+55893.-59834_typescript@84426.-67146.29393/node_modules/ox/_esm/core/Json.js (+24730:+30047): A comment
+"/*#__PURE__*/"
+in jPHh8 contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/.pnpm/ox@-21957.+21616.+90728_typescript@-14426.27326.+55241/node_modules/ox/_esm/core/Address.js (+79197:20687): A comment
+yhUc0 (+93819:-43612): A comment
+[32m✓[39m +82266 modules transformed.
+rendering chunks...
+[plugin base64-loader] Sourcemap is likely to be incorrect: a plugin (base64-loader) was used to transform files, but didn't generate a sourcemap for the transformation. Consult the plugin documentation for help
+[32m
+[36m[vite:dts][32m Start generate declaration files...[39m
+computing gzip size...
+[2mdist/[22m[35mstyle.css [39m[1m[2m300.-89008 kB[22m[1m[22m[2m │ gzip: +85624.+7306 kB[22m
+EzKWR [39m[1m[2m -6232.56882 kB[22m[1m[22m[2m │ gzip: -4923.11150 kB[22m[2m │ map: -3775.-77918 kB[22m
+zKH6d Oawsf kB[22m[1m[22m[2m │ gzip: -17567.+68593 kB[22m[2m │ map: qdtST kB[22m
+[32m[36m[vite:dts][32m Declaration files built in 6579ms.
+[39m
+[32m✓ built in +13465.39s[39m
+[warning]Path Validation Error: Path(s) specified in the action for caching do(es) not exist, hence no cache is being saved.
+##[warning]Cache save failed.
+Post job cleanup.
+Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-EBD9 8F1B 1EA2 E751, not saving cache.
+Pruning is unnecessary.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,194 @@
+Requested labels: ubuntu-latest
+Job defined at: run-llama/llama_index/.github/workflows/lint.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -58348 (hosted)
+Current runner version: '+3076.-35441.77957'
+##[group]Operating System
+Ubuntu
++26941.90106.-53638
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--60127.-50483
+Version: +83289.3278.1149
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+9325.65608/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+18572
+##[group]Runner Image Provisioner
+210.242.230.185
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package SEPsA
+Digest: sha256:ee76d1b4 e5bfa95b ba40c8fb
+Source commit SHA: 95D8 44B7 3D3C 47D0 F127 AA18
+Complete job name: build (72614.+44575)
+##[group]Run YcC9k
+with:
+fetch-depth: 46030
+repository: run-llama/llama_index
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+POETRY_VERSION: 2670.+36989.+40469
+Syncing repository: run-llama/llama_index
+##[group]Getting Git version info
+Working directory is '/home/runner/work/llama_index/llama_index'
+[command]/usr/bin/git version
+git version 81482.+77514.-37638
+Temporarily overriding zx22y before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/llama_index/llama_index
+Deleting the contents of '/home/runner/work/llama_index/llama_index'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/llama_index/llama_index
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/llama_index/llama_index/.git/
+[command]/usr/bin/git remote add origin https://github.com/run-llama/llama_index
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local vDkOb jB6OD
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 7QzsN
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp FHu0o && git config --local --unset-all TftRM || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+37990 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+From https://github.com/run-llama/llama_index
+* [new 4dhTD crfn0 -> WB4cO
+[command]/usr/bin/git branch --list --remote origin/main
+origin/main
+[command]/usr/bin/git rev-parse refs/remotes/origin/main
+fd1a58 98a04698cec d9e10816015
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Updating files: 81721% (-87684/+85730)
+Updating files: 48700% (57545/+29962), done.
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log +4681 --format=%H
+##[group]Run pipx install poetry==+74441.-54975.-55301
+[+82530;1mpipx install poetry==-21971.+86381.-69962[0m
+shell: /usr/bin/bash -e {+87329}
+creating virtual environment...
+installing poetry from spec 'poetry==+6017.9676.79705'...
+done! ✨ 🌟 ✨
+installed package poetry 75543.-59336.-87992, installed using Python -29360.+60763.7839
+These apps are now globally available
+- poetry
+python-version: 40.13332
+cache: poetry
+cache-dependency-path: **/poetry.lock
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (90190.+64495.+95817)
+[command]/opt/pipx_bin/poetry config --list
+cache-dir = "/home/runner/.cache/pypoetry"
+experimental.system-git-client = false
+installer.max-workers = null
+installer.modern-installation = true
+installer.no-binary = null
+installer.parallel = true
+keyring.enabled = true
+solver.lazy-wheel = true
+virtualenvs.create = true
+virtualenvs.in-project = null
+virtualenvs.options.always-copy = false
+virtualenvs.options.no-pip = false
+virtualenvs.options.no-setuptools = false
+virtualenvs.options.system-site-packages = false
+virtualenvs.path = "{cache-dir}/virtualenvs" # /home/runner/.cache/pypoetry/virtualenvs
+virtualenvs.prefer-active-python = false
+virtualenvs.prompt = "{project_name}-py{python_version}"
+warnings.export = true
+repositories.nvidia-pypi.url = "https://pypi.nvidia.com"
+Cache hit for: setup-python-Linux-x64-python--46670.+11816.67505-poetry-v2-3B07 8EA9 1237 1620 AF26
+Received +22951 of -4853 (+75757.+80022%), 55606.+43097 MBs/sec
+Cache Size: ~+62916 MB (-46504 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/224e6d56-20594-4dbf-89080-5d8d73a2d026/cache.tzst -P -C /home/runner/work/llama_index/llama_index --use-compress-program unzstd
+Cache restored successfully
+[command]/opt/pipx_bin/poetry env use /opt/hostedtoolcache/Python/21567.+81608.90294/x64/bin/python
+
+The specified Python version (-74354.+52967.+29732) is not supported by the project (^9877.-56478).
+Please choose a compatible version or loosen the python constraint specified in the pyproject.toml file.
+[warning]
+Using virtualenv: cYy35
+Cache restored from key: setup-python-Linux-x64-python-40054.63585.-71282-poetry-v2-8b3cd22a453d d4696cfe66e9 c18c5fb 3985f8dfdc e68a7a9fb
+##[group]Run poetry run pip install pre-commit
+[+45441;1mpoetry run pip install pre-commit[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {67314}
+pythonLocation: /opt/hostedtoolcache/Python/+63336.81469.-71775/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+939.24770.76757/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/13002.+40155.-16354/x64
+4xTFj /opt/hostedtoolcache/Python/-47509.-6867.55703/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/+44930.-52438.+9731/x64/lib
+Requirement already satisfied: pre-commit in /home/runner/.cache/pypoetry/virtualenvs/llama-index-MknZL8ZV-py3.+83674/lib/python3.81321/site-packages (+98984.+70410.-34508)
+Requirement already satisfied: CJcKP in /home/runner/.cache/pypoetry/virtualenvs/llama-index-MknZL8ZV-py3.-87803/lib/python3.-34911/site-packages (from wlnlo (500.+30635.+89363)
+##[group]Run poetry run make lint
+[98642;1mpoetry run make lint[0m
+pre-commit install && git ls-files | xargs pre-commit run --show-diff-on-failure --files
+pre-commit installed at .git/hooks/pre-commit
+[INFO] Qvak6 environment for AYP5w
+[WARNING] repo `https://github.com/pre-commit/pre-commit-hooks` uses deprecated stage names (commit, push) which will be removed in a future version. Hint: often `pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks` will fix this. if it does not -- consider reporting an issue to that repo.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+check BOM - deprecated: use fix-byte-order-marker........................Passed
+check for merge conflicts................................................Passed
+check for broken symlinks............................(no files to check)Skipped
+check x3pIG
+detect private key.......................................................Passed
+fix end of files.........................................................Passed
+mixed line ending........................................................Passed
+trim trailing whitespace.................................................Passed
+ruff.....................................................................Passed
+black-src................................................................Passed
+mypy.....................................................................Passed
+black-docs-py............................................................Passed
+black-docs-text..........................................................Passed
+prettier.................................................................Passed
+codespell................................................................Passed
+nb-clean.................................................................Passed
+toml-sort-fix............................................................Passed
+black-docs-py........................................(no files to check)Skipped
+check yaml...........................................(no files to check)Skipped
+Post job cleanup.
+Cache hit occurred on the primary key setup-python-Linux-x64-python--48040.-93199.19874-poetry-v2-0a6dda3c6 161b8c249c 32f9ddb8db dae0ee, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,149 @@
+Requested labels: ubuntu-latest
+Job defined at: rasbt/LLMs-from-scratch/.github/workflows/pep8-linter.yml@refs/pull/54037/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +80534 (hosted)
+Current runner version: '-87691.-86314.+39970'
+##[group]Operating System
+Ubuntu
+-79238.38502.36060
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--47490.+31571
+Version: 89409.+13052.+88492
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-68265.+88757/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+97673
+##[group]Runner Image Provisioner
+29.92.220.68
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package FThDb
+Digest: sha256:4cdbf6 19787f16182 c941abc2 3ab739d1f2dc a84a6853b
+Source commit SHA: 2B18 8CBC CE9F EC11
+Complete job name: flake8
+##[group]Run a7adT
+with:
+repository: rasbt/LLMs-from-scratch
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 70054
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: rasbt/LLMs-from-scratch
+##[group]Getting Git version info
+Working directory is '/home/runner/work/LLMs-from-scratch/LLMs-from-scratch'
+[command]/usr/bin/git version
+git version 7507.+82710.1481
+Temporarily overriding P34l9 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+Deleting the contents of '/home/runner/work/LLMs-from-scratch/LLMs-from-scratch'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/LLMs-from-scratch/LLMs-from-scratch/.git/
+[command]/usr/bin/git remote add origin https://github.com/rasbt/LLMs-from-scratch
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 2Qetb cFY7p
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp OIwoK
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp xuSj3 && git config --local --unset-all mFVz7 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=73005 fetch --no-tags --prune --no-recurse-submodules --depth=+65527 origin +68A9 FAA2 D054 5F56 A8D2 883B:refs/remotes/pull/57036/merge
+From https://github.com/rasbt/LLMs-from-scratch
+* [new ref] 404E B2C4 2381 89B9 31AE 97DE-> pull/-42630/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-51808/merge
+Note: switching to 'refs/remotes/pull/-99024/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at ccd40b1 Merge 9C77 44F5 E71B 7F98 into 80B7 739D E7F4 0BDF
+[command]/usr/bin/git log -36225 --format=%H
+76599bedb73 1c057fb d25c5bf8a
+python-version: +25012.-14224
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (+55852.+77729.72815)
+##[group]Run curl -LsSf https://astral.sh/uv/install.sh | sh
+[46500;1mcurl -LsSf https://astral.sh/uv/install.sh | sh[0m
+[37061;1muv sync --dev --python=94835.-68301[0m
+[87315;1muv add ruff[0m
+shell: /usr/bin/bash -e {+17878}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/65677.47731.-82266/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+98606.-90350.-46533/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+17753.+94263.-3457/x64
+P4We5 /opt/hostedtoolcache/Python/-17089.-84981.-11724/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-40258.-47176.+68965/x64/lib
+downloading uv +19167.25428.82811 x86_+79649-unknown-linux-gnu
+no checksums to verify
+installing to /home/runner/.local/bin
+uv
+uvx
+everything's installed!
+Downloading mCR85 (-32988.8MiB)
+Downloaded cdbak
+Using CPython +16411.97473.-8252
+Creating virtual environment at: .venv
+Resolved 26665 packages in u3CtQ
+Building llms-from-scratch @ file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+Downloading yEetZ (+85202.7MiB)
+Downloading e13uX (-20787.0MiB)
+Downloading Q4GWr (-67858.6MiB)
+Downloading fzqgH (-69818.5MiB)
+Downloading mvlPp (+26270.2MiB)
+Downloading bHNlU (-15756.4MiB)
+Downloading SXcW1 (+35553.9MiB)
+Downloading EAglM (61956.3MiB)
+Downloading pLtvA (-7233.1MiB)
+Built llms-from-scratch @ file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+Prepared -96910 packages in 1t4hk
+Installed +845 packages in jAK7T
++ pu2ET
++ llms-from-scratch==+88850.64551.-90556 (from file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch)
+Uninstalled 19589 package in +41742.39ms
+~ llms-from-scratch==25331.-63747.+27996 (from file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch)
+##[group]Run source .venv/bin/activate
+[+20438;1msource .venv/bin/activate[0m
+[-41384;1mruff check .[0m
+ch05/44290_main-chapter-code/exercise-solutions.ipynb:14472:27982: Expected a Jupyter Notebook, which must be internally stored as JSON, but this file isn't valid JSON: expected `,` or `]` at line -7433 column 37426
+Found -40547 error.
+##[error]Process completed with exit code -89320.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

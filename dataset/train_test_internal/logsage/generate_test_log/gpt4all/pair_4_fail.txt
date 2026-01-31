@@ -1,0 +1,137 @@
+Requested labels: ubuntu-latest
+Job defined at: nomic-ai/gpt4all/.github/workflows/codespell.yml@refs/pull/76925/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +18410 (hosted)
+Current runner version: '30159.+20473.-10744'
+##[group]Operating System
+Ubuntu
++40482.27991.32159
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-97241.+45512
+Version: -34795.+72148.66172
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+67342.14580/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250105.-44587
+##[group]Runner Image Provisioner
+235.245.72.233
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository LSOOe (SHA:a0ae8c14 f910c7d de077d47c00)
+Complete job name: Check for spelling errors
+##[group]Build container for action use: '/home/runner/work/_actions/codespell-project/actions-codespell/v2/Dockerfile'.
+##[command]/usr/bin/docker build -t +47014:A7AB 4158 EDAA 4665-f "/home/runner/work/_actions/codespell-project/actions-codespell/v2/Dockerfile" "/home/runner/work/_actions/codespell-project/actions-codespell/v2"
+#+75787 building with "default" instance using docker driver
+
+#8119 [internal] load build definition from Dockerfile
+#+65572 BXgeC 4CizO aUmSY done
+#91606 DONE 6h9rv
+#14972 [auth] library/python:pull token for registry--58319.docker.io
+#-95261 [internal] load metadata for docker.io/library/python:-53024.-71326-alpine
+#+52574 [internal] load .dockerignore
+#97157 [internal] load build context
+#37669 [-34324/94733] FROM docker.io/library/python:+27098.-56394-alpine@sha256:81AA 75DE A11F 9ACD
+#70039 resolve docker.io/library/python:-91916.29462-alpine@sha256:D328 07F0 B5FD 63CE done
+#+61315 extracting sha256:06721f 9ff6d8cedb 032288 1b32e8
+#+58894 sha256:c5e93df 7b7d09 684603d67 5d4df5b7f yYu5T / duOY3 FS7Dd
+#-95580 sha256:aad2b7fef88 1ef2c0f eeac083cbfae zpchb / hHafn bLrVe done
+#+94108 extracting sha256:54039e 01f97204 1fa2276 0Ip0j
+#+74861 [-51284/+95724] COPY LICENSE README.md entrypoint.sh codespell-problem-matcher/codespell-matcher.json requirements.txt /code/
+#+99066 [+4128/+26157] RUN pip install -r /code/requirements.txt
+#-39762 +4069.+6591 Collecting fIORd
+#-94432 +94667.-71504 Downloading sdGEs (68643 kB)
+#+92212 -4341.-40950 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7482.25867/-49144.+3362 kB 40196.75905 MB/s eta +28347:41725:+67238
+#+58065 68665.94803 Installing collected packages: tomli, codespell
+#+51577 +48137.-90011 Successfully installed codespell-+93175.-64767.-62170 tomli-+34898.-98389.+64523
+#+87941 17831.-38322 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#-55996 -44387.-46561
+#36270 +22056.+48755 [notice] A new release of pip is available: +62313.12111.86655 -> -89095.+9513.32881
+#+27192 -58158.88283 [notice] To update, run: pip install --upgrade pip
+#+4411 exporting to image
+#8564 exporting layers
+##[group]Run RKoeY
+with:
+repository: nomic-ai/gpt4all
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +23267
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: nomic-ai/gpt4all
+##[group]Getting Git version info
+Working directory is '/home/runner/work/gpt4all/gpt4all'
+[command]/usr/bin/git version
+git version -98096.+88350.-99303
+Temporarily overriding 8n03I before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/gpt4all/gpt4all
+Deleting the contents of '/home/runner/work/gpt4all/gpt4all'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/gpt4all/gpt4all
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/gpt4all/gpt4all/.git/
+[command]/usr/bin/git remote add origin https://github.com/nomic-ai/gpt4all
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local M1gyQ 6yqNJ
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp War9Y
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp KWuFX && git config --local --unset-all oJKDa || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-18022 fetch --no-tags --prune --no-recurse-submodules --depth=21392 origin +06C8 9258 3566 1CA9 9ADB DDFC:refs/remotes/pull/+29138/merge
+From https://github.com/nomic-ai/gpt4all
+* [new ref] 84C0 3EC5 0CB4 DD03 4848-> pull/-95655/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+59769/merge
+Note: switching to 'refs/remotes/pull/-51067/merge'.
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at a3af0ea Merge A76C B3A2 425C 39AB CB42 into 17cefd10c2 41428e490 1efdfcd667
+[command]/usr/bin/git log +33776 --format=%H
+9c7d6a822 54b40aca 1b18489 855fdc
+skip: ./.git
+##[command]/usr/bin/docker run --name 36f6a317 e876a362c942 2557a70f0d6a 4e6e49c8b79 226be6160e5b_7f328a --label 30856 --workdir /github/workspace --rm -e "INPUT_CHECK_FILENAMES" -e "INPUT_CHECK_HIDDEN" -e "INPUT_EXCLUDE_FILE" -e "INPUT_SKIP" -e "INPUT_BUILTIN" -e "INPUT_IGNORE_WORDS_FILE" -e "INPUT_IGNORE_WORDS_LIST" -e "INPUT_URI_IGNORE_WORDS_LIST" -e "INPUT_PATH" -e "INPUT_ONLY_WARN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/gpt4all/gpt4all":"/github/workspace" -378:1CFC E874 41E1 2C8E A8A7
+Running codespell on '' with the following options...
+Check DoJg2 ''
+Exclude file ''
+Skipping './.git'
+Builtin dictionaries ''
+Ignore words fajNF ''
+Ignore URI words list ''
+Resulting CLI options --skip ./.git
++11338
+##[error]./gpt4all-chat/src/database.cpp:-95461: teminator ==> terminator
+Codespell found one or more problems
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

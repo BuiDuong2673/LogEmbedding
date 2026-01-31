@@ -1,0 +1,142 @@
+Requested labels: ubuntu-latest
+Job defined at: open-webui/open-webui/.github/workflows/format-backend.yaml@refs/pull/+48652/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 42771 (hosted)
+Current runner version: '-67312.-61153.96642'
+##[group]Operating System
+Ubuntu
++38088.+32008.-74382
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-59084.+69095
+Version: -82958.31122.13257
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-83233.77026/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.34863
+##[group]Runner Image Provisioner
+233.112.229.198
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package lJtCL
+Digest: sha256:8558db1 4c5f1b1c35 558b115dd 2147019bab
+Source commit SHA: B2D7 C471 FB3E DF5D 085E
+Complete job name: Format Backend (33019.+54810.x)
+##[group]Run Y8uT6
+with:
+repository: open-webui/open-webui
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -18840
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: open-webui/open-webui
+##[group]Getting Git version info
+Working directory is '/home/runner/work/open-webui/open-webui'
+[command]/usr/bin/git version
+git version +91311.+79554.-36666
+Temporarily overriding IGq1I before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/open-webui/open-webui
+Deleting the contents of '/home/runner/work/open-webui/open-webui'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/open-webui/open-webui
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/open-webui/open-webui/.git/
+[command]/usr/bin/git remote add origin https://github.com/open-webui/open-webui
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local eaLVO GoA0z
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp U02r8
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp oqEPr && git config --local --unset-all LQcds || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+16165 fetch --no-tags --prune --no-recurse-submodules --depth=32670 origin +eddb8ae c7804e3a6891 5f6f985a65:refs/remotes/pull/+15134/merge
+From https://github.com/open-webui/open-webui
+* [new ref] 5AE2 BE7E FCA3 058D-> pull/-7916/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/43370/merge
+Note: switching to 'refs/remotes/pull/96114/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d6ed133 Merge 9A65 F073 666D F390 into 9516 F098 EC38 E581
+[command]/usr/bin/git log -84305 --format=%H
+f6d3c9 ba8cff27ff90 06ccbbbdada2 f85848e
+python-version: +77489.+71580.x
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (-57697.-15681.-54660)
+##[group]Run python -m pip install --upgrade pip
+[+8389;1mpython -m pip install --upgrade pip[0m
+[+95980;1mpip install black[0m
+shell: /usr/bin/bash -e {-11649}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/48762.+62682.+47291/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-26592.66756.81688/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/27432.56690.34337/x64
+9JiyC /opt/hostedtoolcache/Python/+2358.-42765.-76294/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-65209.88371.+2871/x64/lib
+Requirement already satisfied: pip in /opt/hostedtoolcache/Python/-6622.-69246.+13301/x64/lib/python3.+48443/site-packages (25381.-58095.+88188)
+Collecting black
+Downloading 6uRnN A50RZ kB)
+Collecting 2b6AI (from black)
+Downloading black-+45965.69132.+39911-cp311-cp311-manylinux_72561_+17872_x86_69748.manylinux2014_x86_55892.manylinux_-42636_27153_x86_7799.whl (+12470.96173 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +73000.97013/+49571.+85978 MB 97671.+45823 MB/s eta -98450:+58987:-82443
+Installing collected packages: platformdirs, pathspec, packaging, mypy-extensions, click, black
+Successfully installed black--37292.+35148.-21991 click-+2656.-38003.263 mypy-extensions-36548.+64312.-47914 packaging-+57913.-11987 pathspec--80808.+72605.+55106 platformdirs--42280.34959.44387
+##[group]Run npm run format:backend
+[37398;1mnpm run format:backend[0m
+> open-webui@-41847.+15262.42086 format:backend
+> black . --exclude ".venv/|/venv/"
+All done! ✨ 🍰 ✨
++30470 files left unchanged.
+##[group]Run git diff --exit-code
+[+87609;1mgit diff --exit-code[0m
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

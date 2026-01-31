@@ -1,0 +1,90 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/generative-ai-for-beginners/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 63201 (hosted)
+Current runner version: '-17020.+92946.31488'
+##[group]Operating System
+Ubuntu
++89515.-57482.-6049
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+98175.+13688
+Version: -14331.60211.4714
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-53032.7114/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+8653
+##[group]Runner Image Provisioner
+219.74.206.108
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:AA9B 4500 1C64 E89B)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job--82349--33706
+[20416;1mmkdir -p ./dependabot-job-+58955--22595[0m
+shell: /usr/bin/bash -e {31017}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: -60447
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: +34335
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image NOXqN -76635)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image D94fV
+Starting update process
+Created proxy container: 8CB9 845C 4845 A59D
+Created container: 3aacc227bc48 fcf3ce7fdf0 11cce844 88dec04a9 8193dea924
+proxy | -23650/+85545/19476 -81252:64036:+30050 J2dS5 tTqFJ 21Z7M uoSfQ
+proxy | 99588/-90957/88033 -29796:51202:-9610 Listening (:56032)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | 58095 added, -35270 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | 9985/95965/+41277 -11163:+74181:12604 INFO <job_66547> mPsP2 oHm7Y rYS8z
+-53107/+19626/-62590 +20454:49007:+56596 INFO <job_+86840> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":null,"prefix-development":null,"include-scope":null},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":["got"],"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"semver","dependency-version":"-34141.93630.58696"}],[{"dependency-name":"word-wrap","dependency-version":"48229.43641.93509"}],[{"dependency-name":"@babel/traverse","dependency-version":"70403.+44235.+8547"}],[{"dependency-name":"serve-static","dependency-version":"-59431.-31545.-73898","directory":"/"}],[{"dependency-name":"dompurify","dependency-version":"7779.+27777.37304","directory":"/"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true,"enable-cooldown-for-cargo":true},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":36927,"package-manager":"npm_and_yarn","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[{"dependency-name":"got","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 49121.+11470.20565 < -99464.-92752.+41707","< +1147.21233.+50871"]}],"security-updates-only":true,"source":{"provider":"github","repo":"microsoft/generative-ai-for-beginners","branch":null,"api-endpoint":"https://api.github.com/","hostname":"github.com","directories":["/."]},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | -95495/+17110/-33912 +75790:87731:-5225 INFO <job_-18460> Started process PID: -24240 with command: {} git config --global credential.helper '!/home/dependabot/common/lib/dependabot/../../bin/git-credential-store-immutable --file /home/dependabot/dependabot-updater/git.store' {}
+updater | 10853/-71385/-15090 12504:38026:85307 INFO <job_-29261> tfJ4N NFXZK QCb35 cf1lF with cEHi9 Ix3Ua ToSGk Wk3kU kbKBR
+updater | 93884/+78538/68825 -98931:61184:+8780 INFO <job_81177> cFiI1 CUSos Oh9Rl EfRg3 VDaSL
+updater | +56887/-88874/+15457 32309:-57416:-7905 INFO <job_49729> Started process PID: +32148 with command: {} git config --global IFSZn url.https://github.com/.insteadOf tfFc9 {}
+71039/10350/-20207 +63235:+6073:70601 INFO <job_-99045> muhut nWcK7 FQ9yW QhgYE NljAj
+updater | 48204/+39988/-97801 74666:-17690:69968 INFO <job_+21532> Started process PID: 17591 with command: {} git clone --no-tags --depth 15221 --recurse-submodules --shallow-submodules https://github.com/microsoft/generative-ai-for-beginners /home/dependabot/dependabot-updater/repo {}
+proxy | 9474/+19943/35800 14946:+60494:-56735 [-46875] 54A3P N0u1e
+61254/+81467/+68764 65928:+54160:32325 [69803] * authenticating git server request (host: github.com)
+proxy | +90231/-27812/+73619 49318:-62605:+74969 [-54076] * authenticating git server request (host: github.com)
+updater | -53940/-67576/-38851 62572:-89164:-592 INFO <job_89795> Started process PID: 53380 with command: {} git lalUV oHjyI uMFB3 DIfmG {}
+updater | 73532/+96341/+82703 +51672:-50085:66188 INFO <job_+85234> Started process PID: -84202 with command: {} TlY4g rBRGg RRwkJ {}
+updater | +4607/-42282/+39097 -61013:42106:24266 INFO <job_-94953> J0atl sxtZj YlW9k LLp1V
+updater | -24656/-32410/+4650 40766:14783:7501 INFO <job_+39478> WDdET L0YJU WJrSc jLL0z Fcn2O LiCOJ
+24304/-67269/60950 +9672:7861:-61243 INFO <job_-79105> No version requirement found for npm
++67771/52328/+60361 -79149:+52514:+11693 INFO <job_-66427> Detected package manager: npm
+updater | -27723/95716/-51761 -94195:-23432:+74636 INFO <job_-12799> Started process PID: +44573 with command: node /opt/npm_and_yarn/run.js
+51345/86459/19426 -76835:-17618:17355 [-67010] 51248 https://registry.npmjs.org:+67992/generative-ai-for-beginners
+updater | 86/+24261/33271 -56914:-37188:+2980 INFO <job_+43786> The latest possible version that can be installed is 95149.85089.30634 because of the following conflicting dependencies:
+
+docsify-to-pdf@+67537.44097.+52819 requires got@^71086.+67954.73321 via a transitive dependency on package-json@81989.36179.31322
+No patched version available for got
+updater | -65037/89978/-87250 95282:+96629:+17993 INFO Results:
+Dependabot encountered '62955' error(s) during execution, please check the logs for more details.
++------------------------------+
+| y6fRk |
+Failure running container 71d95be009 dc3ec909 475515d
+Cleaned up container 91d34c dae49f42858 b09b9d0e162 155b7ba90d35 167951195
+proxy | 64412/+90622/59488 -35029:-17406:20962 Posting metrics to remote API endpoint
+##[error]Dependabot encountered an error performing the update
+Error: The updater encountered one or more errors.
+For more information see: https://github.com/microsoft/generative-ai-for-beginners/network/updates/+26658 (write access to the repository is required to view the log)
+🤖 ~ finished: error reported to Dependabot ~
+Post job cleanup.
+Cleaning up orphan processes

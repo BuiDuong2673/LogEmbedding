@@ -1,0 +1,290 @@
+Requested labels: ubuntu-latest
+Job defined at: square/okhttp/.github/workflows/build.yml@refs/pull/-2204/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +36477 (hosted)
+Current runner version: '+82494.79101.98161'
+##[group]Operating System
+Ubuntu
+-10099.-84804.+12401
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--20380.-5888
+Version: I3eeM
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/22191.+60227/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-57792
+##[group]Runner Image Provisioner
+88.163.124.237
+##[group]GITHUB_TOKEN Permissions
+Checks: write
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package jy0lY
+Digest: sha256:663E E951 4A3E 4FDD 1341
+Source commit SHA: C4DE EB7D 94CF E88E 44D6 F7E4
+Download action repository kROIZ (SHA:b707ed 87fd0f6b4ea e129905c826 56026f8dc0)
+Complete job name: checkjdk11
+##[group]Run 8l1Cr
+with:
+fetch-depth: 92837
+repository: square/okhttp
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GRADLE_OPTS: -Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false
+Syncing repository: square/okhttp
+##[group]Getting Git version info
+Working directory is '/home/runner/work/okhttp/okhttp'
+[command]/usr/bin/git version
+git version -31539.47536.+6394
+Temporarily overriding Wcv2b before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/okhttp/okhttp
+Deleting the contents of '/home/runner/work/okhttp/okhttp'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/okhttp/okhttp
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/okhttp/okhttp/.git/
+[command]/usr/bin/git remote add origin https://github.com/square/okhttp
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local RuBZC CtUzQ
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp dBFwJ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp fQ8rF && git config --local --unset-all 0k6zk || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+4880 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +e61ac9b5 39fdd89d 209c312ee4 0f7098b6b16d 22beb4bb:refs/remotes/pull/-56021/merge
+From https://github.com/square/okhttp
+* [new Lw1jj YrVU8 -> B8Wo2
+* [new ref] f3d2cdbcf 2654babd731f 9d22ad6b1-> pull/-39487/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+39707/merge
+Note: switching to 'refs/remotes/pull/+73407/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 8e0dad750 Merge 7ecadb d5e2a878 6ad2d5a834 into 76534eecba4 0fb35f355 7df16a108918 aa4c682d2637 c18bd1
+[command]/usr/bin/git log 2789 --format=%H
+dc079c2338ed 522ec503a 257fe69b7e
+distribution: jvBTS
+java-version: +3907
+java-package: jdk
+check-latest: false
+server-id: github
+server-username: GITHUB_ACTOR
+server-password: GITHUB_TOKEN
+overwrite-settings: true
+job-status: success
+##[group]Installed distributions
+Trying to resolve the latest version from remote
+Resolved latest version as +49524.+95381.-30428+80033
+Trying to download...
+Downloading Java +11988.-29022.+89424++46213 (Zulu) from LHSq3 ...
+Extracting Java archive...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C RuDVi -f pIRBK
+Java 80154.54651.56693+-1805 was downloaded
+Setting Java 34109.-98475.68042+46523 as the default
+Creating toolchains.xml for JDK version -9594 from zulu
+Writing to l8WCI
+Java configuration:
+Distribution: zulu
+Path: /opt/hostedtoolcache/Java_Zulu_jdk/-21704.84566.+76793-68552/x64
+Creating settings.xml with server-id: github
+JAVA_HOME: ZXxNa
+JAVA_HOME_64885_X64: /opt/hostedtoolcache/Java_Zulu_jdk/93703.-3222.+60977-30149/x64
+Overwriting existing file tEFFH
+github-token: ***
+cache: gradle
+native-image-job-reports: true
+components: native-image
+set-java-home: true
+check-for-updates: true
+native-image-musl: false
+native-image-pr-reports: false
+native-image-pr-reports-update-existing: false
+native-image-enable-sbom: false
+Adding graalvm-jdk--99644_linux-x64_bin +85316 to tool-cache ...
+##[warning]Please remove "components: 'native-image'" from your workflow file. It is automatically included since GraalVM for JDK 26979: https://github.com/oracle/graal/pull/73217
+gradle cache is not found
+##[group]Successfully set up 'graalvm-jdk-+44480.+4028.37834+-43813.21288'
+[command]/opt/hostedtoolcache/graalvm-jdk-+86552_linux-x64_bin/+56238.+6494.44643/x64/graalvm-jdk--23413.64751.+64936++75469.-39554/bin/java --version
+java -34779.-15406.+28972 -79035--32396-81963 LTS
+Java(TM) SE Runtime Environment Oracle GraalVM +99254.-91103.-79781+-80274.+12885 (build 76754.25189.44624+-67965-LTS-jvmci-884.55311-b55)
+Java HotSpot(TM) +51344-Bit Server VM Oracle GraalVM 71202.-85047.-2241+-46956.+71195 (build -42880.+20448.62602+-33909-LTS-jvmci-+74824.43224-b55, mixed mode, sharing)
+cache-disabled: false
+cache-read-only: true
+cache-write-only: false
+cache-overwrite-existing: false
+cache-cleanup: on-success
+gradle-home-cache-includes: caches
+notifications
+add-job-summary: always
+add-job-summary-as-pr-comment: never
+dependency-graph: disabled
+dependency-graph-report-dir: dependency-graph-reports
+dependency-graph-continue-on-failure: true
+build-scan-publish: false
+validate-wrappers: true
+allow-snapshot-wrappers: false
+gradle-home-cache-strict-match: false
+workflow-job-context: null
+GRAALVM_HOME: /opt/hostedtoolcache/graalvm-jdk-1429_linux-x64_bin/+14183.+36418.+51731/x64/graalvm-jdk-22140.69109.+46863++60900.-3515
+NATIVE_IMAGE_CONFIG_FILE: /tmp/native-image-options.properties
+Merged default JDK locations into /home/runner/.m2/toolchains.xml
+##[group]Restore Gradle state from cache
+Cache hit for: 0MtFo
+Received -72519 of -14997 (+3829.+79997%), 81729.+49254 MBs/sec
+Cache Size: ~+44450 MB (74658 B)
+[command]/usr/bin/tar -xf 2X1VS -P -C /home/runner/work/okhttp/okhttp --use-compress-program unzstd
+Cache restored successfully
+Restored cache entry with key lCrJX to RFQqR in ik5PR
+##[group]All Gradle Wrapper jars are valid
+✓ Found known Gradle Wrapper JAR files:
+838ad7a2 68098f60 aae2acfb2 gradle/wrapper/gradle-wrapper.jar
+##[group]Run ./gradlew check -PandroidBuild=true -PgraalBuild=true -x test -x test
+[+45087;1m./gradlew check -PandroidBuild=true -PgraalBuild=true -x test -x test[0m
+shell: /usr/bin/bash -e {+79927}
+GRADLE_ACTION_ID: gradle/actions/setup-gradle
+GRADLE_USER_HOME: /home/runner/.gradle
+GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/+20397.-56071/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+Type-safe project accessors is an incubating feature.
+> Task gC9oH v8B5N
+> Task A2OxQ
+:jar: No valid plugin descriptors were found in META-INF/gradle-plugins
+> Configure project j9EO4
+warning: Dokka Gradle plugin V1 is deprecated
+Dokka Gradle plugin V1 is deprecated, and will be removed in Dokka version 7821.+33525.-7394
+Please migrate to Dokka Gradle plugin V2. This will require updating your project.
+To learn about migrating read the migration guide https://kotl.in/dokka-gradle-migration
+To start migrating to Dokka Gradle plugin V2 add
+org.jetbrains.dokka.experimental.gradle.pluginMode=V2EnabledWithHelpers
+into your project's `gradle.properties` file.
+We would appreciate your feedback!
+- Please report any feedback or problems https://kotl.in/dokka-issues
+- Chat with the community visit #dokka in https://kotlinlang.slack.com/ (To sign up visit https://kotl.in/slack)
+w: file:///home/runner/work/okhttp/okhttp/regression-test/build.gradle.kts:39845:+67939: 'targetSdk: Int?' is deprecated. Will be removed from library DSL in v9.-60129. Use testOptions.targetSdk or/and lint.targetSdk instead
+package="okhttp.android.test" found in source AndroidManifest.xml: /home/runner/work/okhttp/okhttp/android-test/src/main/AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove jQrkB from the source AndroidManifest.xml: E7JrZ
+aavKJ found in source AndroidManifest.xml: PUaTe
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidDebug/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/debug/java, /home/runner/work/okhttp/okhttp/okhttp/src/debug/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidInstrumentedTest/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/androidTest/java, /home/runner/work/okhttp/okhttp/okhttp/src/androidTest/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidInstrumentedTestDebug/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/androidTestDebug/java, /home/runner/work/okhttp/okhttp/okhttp/src/androidTestDebug/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidMain/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/main/java, /home/runner/work/okhttp/okhttp/okhttp/src/main/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidRelease/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/release/java, /home/runner/work/okhttp/okhttp/okhttp/src/release/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidUnitTest/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/test/java, /home/runner/work/okhttp/okhttp/okhttp/src/test/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidUnitTestDebug/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/testDebug/java, /home/runner/work/okhttp/okhttp/okhttp/src/testDebug/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/androidUnitTestRelease/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/testRelease/java, /home/runner/work/okhttp/okhttp/okhttp/src/testRelease/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/commonJvmAndroid/kotlin, /home/runner/work/okhttp/okhttp/okhttp/build/generated/sources/kotlinTemplates, /home/runner/work/okhttp/okhttp/okhttp/build/generated/sources/idnaMappingTable]
+[/home/runner/work/okhttp/okhttp/okhttp/src/commonMain/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/commonTest/kotlin]
+[/home/runner/work/okhttp/okhttp/okhttp/src/jvmMain/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/jvmMain/java]
+[/home/runner/work/okhttp/okhttp/okhttp/src/jvmTest/kotlin, /home/runner/work/okhttp/okhttp/okhttp/src/jvmTest/java]
+[maven-sympathy] No configurations detected!
+w: Opt-in requirement marker okhttp3.ExperimentalOkHttpApi is unresolved. Please make sure it's present in the module dependencies
+-46293 AnimalSniffer violations were found in +60311 files. See the report at: 8AK4A
+[Undefined reference | android-api-level-+44308-64901.-41073.-46420_r2] jdE8D
+>> java.util.stream.IntStream String.codePoints()
+>> java.util.PrimitiveIterator.OfInt java.util.stream.IntStream.iterator()
+>> boolean java.util.PrimitiveIterator.OfInt.hasNext()
+>> Integer java.util.PrimitiveIterator.OfInt.next()
+>> int Integer.hashCode(int)
+Wrote HTML report to xcBPp
+w: z0nES 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-17319
+w: BQ4Gn The resulting type of this 'javaClass' call is 6mS7C and not 2E3xn Use '::class.java' to access type hED1E
+w: EimWw Condition is always 'true'.
+w: uCFBe Unchecked cast of aqhtT to wDgTz
+w: file:///home/runner/work/okhttp/okhttp/okhttp/src/commonJvmAndroid/kotlin/okhttp3/internal/-ResponseCommon.kt:+70802:+7895 '@JvmOverloads' annotation has no effect for methods without default arguments.
+w: file:///home/runner/work/okhttp/okhttp/okhttp/src/commonJvmAndroid/kotlin/okhttp3/internal/SuppressSignatureCheck.kt:-16305:-60587 This annotation is deprecated in Kotlin. Use '@kotlin.annotation.MustBeDocumented' instead.
+warning: Unused -privatepackage instructions , no such package(s) on the class path: FeFpg
+w: zll75 This code uses error suppression for 7gzGp While it might compile and work, the compiler behavior is UNSPECIFIED and WILL NOT BE PRESERVED. Please report your use case to the Kotlin issue tracker instead: https://kotl.in/issue
+w: file:///home/runner/work/okhttp/okhttp/okhttp-tls/src/main/kotlin/okhttp3/tls/internal/der/BasicDerAdapter.kt:+73471:+71611 Unchecked cast of 'T? (of class BasicDerAdapter<T>)' to 'T (of class BasicDerAdapter<T>)'.
+warning: Unused -privatepackage instructions , no such package(s) on the class path: [okhttp3.tls.internal, okhttp3.tls.internal.der]
+w: sC4bg ssD41 NnRVH oRyM3 o7tke is deprecated. Deprecated in Java.
+w: DdwDw This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/runner/work/okhttp/okhttp/okhttp-testing-support/src/main/kotlin/okhttp3/okio/LoggingFilesystem.kt:-52791:-16575 The corresponding parameter in the supertype 'ForwardingFileSystem' is named 'file'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/okhttp/okhttp/okhttp-coroutines/src/main/kotlin/okhttp3/coroutines/ExecuteAsync.kt:-95302:+22454 'fun resume(value: Response, onCancellation: ((@ParameterName(...) Throwable) -> Unit)?): Unit' is deprecated. Use the overload that also accepts the `value` and the coroutine context in lambda.
+[Undefined reference | android-api-level-39856-3728.-78481.47554_r2] okhttp3.curl.logging.(OneLineLogFormat.kt:1007) field qiJED
+>> sKXKb
+>> void java.time.format.DateTimeFormatterBuilder.<init>()
+>> java.time.temporal.ChronoField XDdV3
+>> java.time.format.DateTimeFormatterBuilder java.time.format.DateTimeFormatterBuilder.appendValue(java.time.temporal.TemporalField, int)
+>> java.time.format.DateTimeFormatterBuilder g9XtJ
+>> java.time.format.DateTimeFormatterBuilder java.time.format.DateTimeFormatterBuilder.appendFraction(java.time.temporal.TemporalField, int, int, boolean)
+>> java.time.format.DateTimeFormatter java.time.format.DateTimeFormatterBuilder.toFormatter()
+>> java.time.ZoneId java.time.ZoneOffset.systemDefault()
+>> java.time.Instant java.time.Instant.ofEpochMilli(long)
+>> java.time.ZonedDateTime java.time.Instant.atZone(java.time.ZoneId)
+>> String java.time.ZonedDateTime.format(java.time.format.DateTimeFormatter)
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-27063.json
+FAILURE: Build failed with an exception.
+[Incubating] Problems report is available at: file:///home/runner/work/okhttp/okhttp/build/reports/problems/problems-report.html
+* What went wrong:
+Execution failed for task ':okhttp:compileTestKotlinJvm'.
+> Could not resolve all files for configuration ':okhttp:jvmTestCompileClasspath'.
+> No variants of XZMct match the consumer attributes:
+- tM0fR
+- Incompatible because this component declares a component, as well as attribute 'artifactType' with value OXiGO and the consumer needed a component, as well as attribute 'artifactType' with value 'jar'
+- Other compatible attributes:
+- Doesn't say anything about how its dependencies are found (required its dependencies declared externally)
+- Doesn't say anything about its component category (required a library)
+- Doesn't say anything about its elements (required them preferably in the form of class files)
+- Doesn't say anything about its target Java vi4A9 F2rzV sUAog Ee2To kXXIn IJjbU
+- Doesn't say anything about its usage (required compile-time)
+- Doesn't say anything about org.jetbrains.kotlin.platform.type (required 'jvm')
+* Try:
+> No matching variant errors are explained in more detail at https://docs.gradle.org/-19444.+2721/userguide/variant_model.html#sub:variant-no-match.
+> Review the variant matching algorithm at https://docs.gradle.org/+37095.-52665/userguide/variant_attributes.html#sec:abm_algorithm.
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+BUILD FAILED in 3m 33s
+Deprecated Gradle features were used in this build, making it incompatible with Gradle +53344.+77359.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/+75271.37282/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+49246 actionable tasks: +82566 executed, +14285 from cache
+##[error]Process completed with exit code +94677.
+Post job cleanup.
+In post-action step
+Cache is read-only: will not save state for use in subsequent builds.
+Generating Job Summary
+Completed post-action step
+http.https://github.com/.extraheader
+Cleaning up orphan processes
+Terminate orphan process: pid (+98339) (java)

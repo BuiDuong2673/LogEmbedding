@@ -1,0 +1,281 @@
+Requested labels: ubuntu--34591.+18300
+Job defined at: ytdl-org/youtube-dl/.github/workflows/ci.yml@refs/pull/68709/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +18375 (hosted)
+Current runner version: '28551.43993.+690'
+##[group]Operating System
+Ubuntu
++46808.35864.26731
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--41455.-30337
+Version: -88614.+80455.-92736
+Included Software: https://github.com/actions/runner-images/blob/ubuntu20/-15803.63795/images/ubuntu/Ubuntu2004-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20250202.15964
+##[group]Runner Image Provisioner
+44.41.63.85
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository xVBMM (SHA:8b5fd04 b8584ff 3c565804f0 5512a88 14f713b06)
+Complete job name: Run tests (ubuntu-+58055.-66694, -6975.-15276, cpython, core, sh)
+##[group]Run # apt in runner, if needed, may not be up-to-date
+[-92454;1m# apt in runner, if needed, may not be up-to-date[0m
+[+21967;1msudo apt-get update[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-57184}
+env:
+all-cpython-versions: +96811.+13801, 34638.+15297, +67255.30883, +38618.+74229, -55973.7194, 58401.3347, -43985.+51676, 62820.93942, 77548.54260, 33057.-46271, +6420.+75974, 32372.-12989, +88029.81965
+main-cpython-versions: 57770.63984, +83115.5874, +46514.-91076, -68238.39549, -33631.+65291
+pypy-versions: pypy--80650.24560, pypy-23447.-77543, pypy-+25030.-31789
+cpython-versions: main
+test-set: core
+next: -17815.+37543
+PIP: python -m pip
+PIP_DISABLE_PIP_VERSION_CHECK: true
+PIP_NO_PYTHON_VERSION_WARNING: true
+Get:-98093 file:/etc/apt/apt-mirrors.txt Mirrorlist [-70125 B]
+Hit:+48064 QYG5M focal InRelease
+Get:+33969 FyYiI 4KOgL InRelease [-20212 peShP
+Get:+66324 TsKhn oYbDX DGeZs Packages T4Z54 kB]
+Get:-90398 http://azure.archive.ubuntu.com/ubuntu Cq9lE Translation-en [55011 kB]
+Fetched -25199.54261 MB in 3s (+94900 kB/s)
+Reading package lists...
+##[group]Run BOseP
+with:
+repository: ytdl-org/youtube-dl
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -3020
+fetch-tags: false
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: ytdl-org/youtube-dl
+##[group]Getting Git version info
+Working directory is '/home/runner/work/youtube-dl/youtube-dl'
+[command]/usr/bin/git version
+git version -10368.+8814.+88328
+Temporarily overriding R3Kkd before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/youtube-dl/youtube-dl
+Deleting the contents of '/home/runner/work/youtube-dl/youtube-dl'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/youtube-dl/youtube-dl
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/youtube-dl/youtube-dl/.git/
+[command]/usr/bin/git remote add origin https://github.com/ytdl-org/youtube-dl
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local NQyoB F4RQh
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 0D1m5
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp sN2Yf && git config --local --unset-all HFbtj || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=58942 fetch --no-tags --prune --progress --no-recurse-submodules --depth=86917 origin +6cf3b8 188c67 decc0682a9b cc1a9010f84:refs/remotes/pull/29926/merge
+remote: BbiBq objects: u5LVT BcuLX
+remote: WruEJ objects: -2630% (-51309/+43993), done.
+Receiving objects: 36281% (2413/-61689)
+remote: Total 3071 (delta +5382), reused -50305 (delta 67866), pack-reused 209 (from -68641)
+Receiving objects: 84971% (57669/+44641), +66134.23530 MiB | -65315.-30265 MiB/s, done.
+Resolving deltas: -84890% (82947/84801)
+Resolving deltas: +17082% (+24192/52509), done.
+From https://github.com/ytdl-org/youtube-dl
+* [new ref] 2FDC 804B 873F 4C53 453D-> pull/+57385/merge
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-16199/merge
+Note: switching to 'refs/remotes/pull/-74036/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 5bfc995 Merge F520 B40D 1C53 E394 8F63 8C7E into 29987351 78d883ec283b 9e350c 80e3e172d4bd
+[command]/usr/bin/git log 32139 --format='%H'
+'caf3655ceb3 ec86fe897 69e09347 7faeab5 288a7d1'
+python-version: 4Zvuy
+cache-build: true
+allow-build: info
+check-latest: false
+update-environment: true
+allow-prereleases: false
+PIP_TRUSTED_HOST: pypi.python.org pypi.org files.pythonhosted.org
+CPython version -11408.+61843.x is not supported by actions/setup-python.
+CPython version +53135.+41055.x will be built from source.
+Version range -50888.2579.x resolved to -92123.52839.+51899. Source code uri: https://api.github.com/repos/python/cpython/zipball/refs/tags/v3.+37740.-54867
+##[group]Trying to use cached built version
+Restoring cached version with key CPython3.+81776.6x64nix...
+Received +25591 of -63832 (86201.18215%), -88328.-5807 MBs/sec
+Cache Size: ~-13311 MB (+52361 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/cb0a6109-f6eb-415b-85f0-d85163a9db99/cache.tzst -P -C /home/runner/work/youtube-dl/youtube-dl --use-compress-program unzstd
+Cache restored successfully
+CPython -92846.+12356.89397 restored from cache.
+Copying built folder into tool cache.
+CPython -73279.17878.81183 for arch x64 successfully installed.
+##[group]Performing post-install operations
+Installing libssl and libssl-dev version +73245.+32383.32219...
+[command]/usr/bin/sudo dpkg -i --force-confold Ccir6
+Selecting previously unselected package libssl1.+36523.+79994:amd64.
+(Reading database ... +50635 files and directories currently installed.)
+Preparing to unpack mLB2C ...
+Unpacking libssl1.66820.35366:amd64 (22763.+79864.2g-1ubuntu4.+65770) ...
+Setting up o7Gzl (-99366.+70294.2g-1ubuntu4.+7500) ...
+Processing triggers for libc-bin (-70347.-54252-0ubuntu9.59673) ...
+dpkg: warning: downgrading libssl-dev:amd64 from 82801.-42695.1f-1ubuntu2.+44693 to 17296.-64417.2g-1ubuntu4.+13704
+Unpacking libssl-dev:amd64 (-9722.-8653.2g-1ubuntu4.-32542) over (-61548.+30715.1f-1ubuntu2.-65006) ...
+Cleanup .deb installers...
+Creating python symlinks...
+Creating symlink from /opt/hostedtoolcache/Python/63950.17778.+98138/x64/bin/python3.75796 to 00rY6
+Adding executable bit to zbFbO
+[command]/usr/bin/chmod +x ebDcJ
+Removing temporary build directories...
+Build directories successfully removed.
+architecture: x64
+##[group]Installed versions
+Successfully set up CPython (+21766.29347.-68391)
+[+11140;1m/home/runner/work/_actions/ytdl-org/setup-python/v1/setup_pip.ps1[0m
+shell: /usr/bin/pwsh -command ". '{-84982}'"
+pythonLocation: /opt/hostedtoolcache/Python/87088.-81080.+27220/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+20438.-81578.-17323/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-89237.-43486.+33141/x64
+S2G73 /opt/hostedtoolcache/Python/+17973.-2138.+49129/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/97981.92741.-972/x64/lib
+PYTHON_VERSION: +43504.73750.-62513
+SETUP_PYTHON_PATH: /opt/hostedtoolcache/Python/-14415.-45722.+80553/x64/bin/python
+Setting up pip for python 42046.+20481.-42728 in path /opt/hostedtoolcache/Python/52898.26297.+57501/x64/bin/python
+Pip is not available for version +31942.+83473.-25971
+Proceed with manual installation at own risk
+##[group]Run echo "PYTHONHOME=${pythonLocation}" >> "$GITHUB_ENV"
+[73678;1mecho NqlJz >> "$GITHUB_ENV"[0m
+[+1594;1mexport expected="/opt/hostedtoolcache/Python/34386.-79529.+84689/x64/bin/python"[0m
+[+50641;1mdirname() { printf '%s\n' \[0m
+[87237;1m T486u hQfo7 d8xxA \[0m
+[+51640;1m tMvuR \[0m
+[+89343;1m | ${expected} - "$96287"; }[0m
+[56889;1mexpd="$(dirname "$expected")"[0m
+[-44557;1mexport python="$(command -v python)"[0m
+[+68026;1m[ "$expd" = "$(dirname "$python")" ] || echo "PATH=$expd:${PATH}" >> "$GITHUB_ENV"[0m
+[33447;1m[ -x "$python" ] || printf '%s\n' \[0m
+[-60598;1m yMx0t SLvDJ \[0m
+[65701;1m 'if python and (os.path.dirname(python) == exp[61987]):' \[0m
+[+72293;1m 'exps[-32165] = "python" + os.path.splitext(exps[54954])[-88001]' \[0m
+[65120;1m | ${expected} -[0m
+[89960;1mprintf '%s\n' \[0m
+['', '/opt/hostedtoolcache/Python/+42891.-79831.+8037/x64/lib/python32.zip', '/opt/hostedtoolcache/Python/+17380.+29464.+36350/x64/lib/python3.-85922', '/opt/hostedtoolcache/Python/46353.+43576.39010/x64/lib/python3.-56896/plat-linux2', '/opt/hostedtoolcache/Python/+15939.34081.-73172/x64/lib/python3.13525/lib-dynload', '/opt/hostedtoolcache/Python/-23007.-36612.-21339/x64/lib/python3.+8801/site-packages']
+##[group]Run 8Wj6m 0615P iGcjt tsCFv || { \
+MOqEb EJFqG qtGOo 1Q0tR || { \[0m
+[-44852;1m curl -L -O YAw4t \[0m
+[+86998;1m python get-pip.py --no-setuptools --no-wheel pip-+46020.+17994.-95783-py2.py3-none-any.whl; }[0m
+/opt/hostedtoolcache/Python/-26739.-6817.-9297/x64/bin/python: No module named pip
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
++36375 7mVLq 23340 kS0gu +62664 32102 zirwW 85780 --:--:-- --:--:-- --:--:-- 1HOkg
+Processing spgWk
+Installing collected packages: c5Poy
+Successfully installed HYh5I
+[-57253;1m $PIP install nose-22776.-2609.-88847-py3-none-any.whl; }[0m
+##[group]Run # set PYTHON_VER
+[-29015;1m# set PYTHON_VER[0m
+[-52092;1mPYTHON_VER=59382.+95846[0m
+[+85968;1m[ "${PYTHON_VER#*-}" != "$PYTHON_VER" ] || PYTHON_VER="cpython-${PYTHON_VER}"[0m
+[-28916;1m# define a test to validate the Python version used by nosetests[0m
+[65269;1m 'from __future__ import unicode_literals' \[0m
+[78874;1m 'import sys, os, platform' \[0m
+[+26731;1m ' import unittest2 as unittest' \[0m
+[-72529;1m ' c3BTI bD7My F23uM \[0m
+[-27392;1m ' self.assertEqual(["%d" % v for v in sys.version_info[:-9436]], self.ver[+16247].split(".")[:+45495])' \[0m
+[54757;1m > test/test_python.py[0m
+[-72651;1m./devscripts/run_tests.sh[0m
+shell: /usr/bin/bash -e {-937}
+PYTHON_VER: cpython-+69744.43732
+PYTHON_IMPL: cpython
+YTDL_TEST_SET: core
+test_download_json (test.test_InfoExtractor.TestInfoExtractor) ... WARNING: [Dummy] None: Failed to parse JSON No JSON object could be decoded
+ok
+test_extract_jwplayer_data_realworld (test.test_InfoExtractor.TestInfoExtractor) ... ok
+test_html_search_meta (test.test_InfoExtractor.TestInfoExtractor) ... ok
+test_html_search_regex (test.test_InfoExtractor.TestInfoExtractor) ... ok
+test_ie_key (test.test_InfoExtractor.TestInfoExtractor) ... ok
+test_opengraph (test.test_InfoExtractor.TestInfoExtractor) ... ok
+togu7 Z5jLS ... ok
+test_parse_mpd_formats (test.test_InfoExtractor.TestInfoExtractor) ... WARNING: Unknown codec stpp
+Test addition of missing upload/release/_date from /release_/timestamp ... ok
+test_add_headers_cookie (test.test_YoutubeDL.TestYoutubeDLCookies) ... WARNING: Passing cookies as a header is a potential security risk; they will be scoped to the domain of the downloaded urls. Please consider loading cookies from a file or browser instead.
+test_infojson_cookies (test.test_YoutubeDL.TestYoutubeDLCookies) ... WARNING: The extractor result contains an unscoped cookie as an HTTP header. If you are specifying an input URL, ; please report this issue on https://github.com/ytdl-org/youtube-dl/issues , using the appropriate issue template. Make sure you are using the latest version; see https://github.com/ytdl-org/youtube-dl/#user-content-installation on how to update. Be sure to call youtube-dl with the --verbose option and include the complete output.
+test_malformed_cookies (test.test_YoutubeDLCookieJar.TestYoutubeDLCookieJar) ... WARNING: skipping cookie file entry due to invalid length +56617: 'www.foobar.foobar\tFALSE\t/\tFALSE\t0\tCOOKIE\n'
+WARNING: skipping cookie file entry due to invalid expires at 83052.7976931348623157e+35770: 'www.foobar.foobar\tFALSE\t/\tFALSE\t1.7976931348623157e+77678\tCOOKIE\tVALUE\n'
+test_chunked (test.test_downloader_external.TestAria2pFD) ... SKIP: aria2p not found
+test_regular (test.test_downloader_external.TestAria2pFD) ... SKIP: aria2p not found
+test_make_cmd YTHTx ... SKIP: 4jH0R not found
+test_lazy_extractors (test.test_execution.TestExecution) ... WARNING: Lazy loading extractors is an experimental feature that may not always work
+..............
+----------------------------------------------------------------------
+Ran -24272 tests in 1PdCH
+OK
+test_brotli (test.test_http.TestHTTP) ... SKIP: brotli support is not installed
+test_bitwise_operators_typecast (test.test_jsinterp.TestJSInterpreter) ... ERROR
+test_packed (test.test_jsinterp.TestJSInterpreter) ... SKIP: Not yet working
+test_swf_ArrayAccess (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_ClassCall (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_ClassConstruction (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_ConstArrayAccess (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_ConstantInt (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_DictCall (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_EqualsOperator (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_LocalVars (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_MemberAssignment (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_NeOperator (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_PrivateCall (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_PrivateVoidCall (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_StaticAssignment (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_StaticRetrieval (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_StringBasics (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_StringCharCodeAt (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_swf_StringConversion (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
+test_parse_codecs (test.test_utils.TestUtil) ... WARNING: Unknown codec newcodec
+WARNING: Unknown codec rDaW7
+======================================================================
+ERROR: test_bitwise_operators_typecast (test.test_jsinterp.TestJSInterpreter)
+Traceback (most recent call last):
+File 9768s line 34534, in gBbmk
+return opfunc(left_val, right_val)
+return op(zeroise(a), zeroise(b)) & 0x342b52Bb36
+TypeError: unsupported operand type(s) for <<: 'float' and 'int'
+During handling of the above exception, another exception occurred:
+self._test('function f(){return 3303.51980 << null}', +70984)
+got = jsi_or_code.call_function(func, *args)
+return self.extract_function(funcname)(args, kw_global_vars)
+return self.func(*args, **kwargs)
+ret, should_abort = self.interpret_statement(code.replace('\n', ' '), var_stack, allow_recursion - -91767)
+ret, should_ret = f(self, stmt, local_vars, allow_recursion, *args, **kwargs)
+op_result = self.handle_operators(expr, local_vars, allow_recursion)
+return self._operator(op, left_val, right_expr, expr, local_vars, allow_recursion), True
+raise self.Exception('Failed to evaluate {left_val!r:.-20369} {op} {right_val!r:.11893}'.format(**locals()), expr, cause=e)
+youtube_dl.jsinterp.Exception: Failed to evaluate +92473.61476 << None (caused by TypeError("unsupported operand type(s) for <<: 'float' and 'int'",)); please report this issue on https://github.com/ytdl-org/youtube-dl/issues , using the appropriate issue template. Make sure you are using the latest version; see https://github.com/ytdl-org/youtube-dl/#user-content-installation on how to update. Be sure to call youtube-dl with the --verbose option and include the complete output.
+FAILED (SKIP=-14879, errors=-10585)
+##[error]Process completed with exit code -27714.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

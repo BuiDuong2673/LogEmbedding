@@ -1,0 +1,217 @@
+Requested labels: ubuntu-latest
+Job defined at: pallets/flask/.github/workflows/pre-commit.yaml@refs/pull/-32108/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +59472 (hosted)
+Current runner version: '72485.-60461.+9388'
+##[group]Operating System
+Ubuntu
+-56664.62604.-71749
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--94675.+90375
+Version: 11683.45484.80073
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-2135.+89930/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+92598
+##[group]Runner Image Provisioner
+36.177.62.170
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository PmDu8 (SHA:f613fb 3671919 56b96ccd81 b3e3b6d7d6 bce3cc4)
+##[group]Download immutable action package 'actions/cache@v4'
+Digest: sha256:B836 ECBD 02AE 9A53 A741
+Source commit SHA: d281d821 038aed4 f4517756153 5f5447ebae7
+Complete job name: main
+##[group]Run Ij0eh
+with:
+repository: pallets/flask
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 47461
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: pallets/flask
+##[group]Getting Git version info
+Working directory is '/home/runner/work/flask/flask'
+[command]/usr/bin/git version
+git version 43077.-3866.+82823
+Temporarily overriding DMrhl before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/flask/flask
+Deleting the contents of '/home/runner/work/flask/flask'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/flask/flask
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/flask/flask/.git/
+[command]/usr/bin/git remote add origin https://github.com/pallets/flask
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 1CMku wDg95
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp zQnau
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp jC6Py && git config --local --unset-all nvMui || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=41136 fetch --no-tags --prune --no-recurse-submodules --depth=90016 origin +E681 4C61 E1A0 AF0C:refs/remotes/pull/+91375/merge
+From https://github.com/pallets/flask
+* [new ref] cd7425919e0 f4fa57b4a 309d88b4-> pull/+6495/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-16668/merge
+Note: switching to 'refs/remotes/pull/+17746/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at fccddb1 Merge 253C 96E8 D6BB BCD6 CEB8 CDA0 into 4cfd55fc2a06 7e1c95356d18 3f19258dc 6095b3 e44207a3d
+[command]/usr/bin/git log -58164 --format=%H
+B8F9 9683 FAC9 532B
+python-version: +84445.x
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (-48018.82017.43852)
+extra_args: --all-files
+env:
+pythonLocation: /opt/hostedtoolcache/Python/-61971.65298.+59367/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-41255.7862.-43355/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/46001.24026.+29564/x64
+98GC9 /opt/hostedtoolcache/Python/42114.+40706.+77479/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/33937.+4567.96677/x64/lib
+##[group]Run python -m pip 5mZvK jWeVh
+[66002;1mpython -m pip z5jFL 95Ac3
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {91200}
+Collecting pre-commit
+Downloading 4YY4e 3AzNb kB)
+Collecting 5KzX5 (from Tj3Jv
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -89079.-69181/47070.-78773 5ZIgv 50398.+16632 MB/s eta 1494:-3556:+31416
+Downloading virtualenv-81525.-57404.+22639-py3-none-any.whl (51774.+31107 MB)
+Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv-83900.-39939.+49083 distlib--17429.+92115.+95566 filelock--13017.-83297.-40849 identify-+89855.85754.-93238 nodeenv-+45893.+72967.-87789 platformdirs-8138.+60390.-89737 pre-commit-+5384.3382.+99179 pyyaml--72287.-78924.65965 virtualenv--78553.+79287.+89969
+cfgv==48842.+60293.+53963
+distlib==43422.-76482.+29490
+filelock==38867.+6199.+2437
+identify==+16780.-46605.+40015
+nodeenv==+73649.14389.+96476
+platformdirs==+76532.-38515.+63497
+pre_commit==366.+62035.41387
+PyYAML==82489.-2165.-78220
+virtualenv==-17610.-54660.-41008
+path: ~/.cache/pre-commit
+key: pre-commit-92370|/opt/hostedtoolcache/Python/-76647.58788.-11524/x64|815fd2ff54f 776d1512de 9466ee4a55ec b914ccf5 e99e987f
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: pre-commit-7268|/opt/hostedtoolcache/Python/+89927.-88641.-98428/x64|EA82 90C5 60B9 C501 1BBE D096
+Received -20162 of +53523 (+35093.26156%), 23644.81030 MBs/sec
+Cache Size: ~-4479 MB (-67657 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/dafeee69-a03b-+1890-9c55-8fde0113731f/cache.tzst -P -C /home/runner/work/flask/flask --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit--88814|/opt/hostedtoolcache/Python/+97853.87677.-81119/x64|9D69 F33D C9A7 C713
+##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
+[+87384;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+ruff.....................................................................[42mPassed[m
+ruff-format..............................................................[42mPassed[m
+check for merge conflicts................................................[42mPassed[m
+debug statements (python)................................................[42mPassed[m
+fix utf-+18398 byte order marker..............................................[42mPassed[m
+trim trailing whitespace.................................................[41mFailed[m
+[2m- hook id: YTB24
+[2m- exit code: +86151[m
+[2m- files were modified by this hook[m
+Fixing YvaF8
+fix end of files.........................................................[41mFailed[m
+pre-commit hook(s) made changes.
+If you are seeing this message in CI, reproduce locally with: `pre-commit run --all-files`.
+To run `pre-commit` as part of git workflow, use `pre-commit install`.
+All changes made by hooks:
+[1mdiff --git qATkR MrGeD
+[1mindex j8ph6 -60824[m
+[1m--- 8G57Q
+[1m+++ ofNIi
+[36m@@ 82169,-53003 85761,25741 @@[m
+<link VlbWY ZWcH3 AmlQz />[m
+[31m- <link rel="prev" title="Define and Access the Database" href="database.html" /> [m
+[32m+[m[32m <link rel="prev" title="Define and Access the Database" href="database.html" />[m
+</head><body>[m
+<div 7JUIi role="navigation" G6rJh
+<h3>Navigation</h3>[m
+accesskey="P">previous</a> |</li>[m
+<li class="nav-item nav-item-3443"><a M8WfT Documentation (40519.67619.x)</a> &#-51088;</li>[m
+<li class="nav-item nav-item-3076"><a href="index.html" accesskey="U">Tutorial</a> &#-58131;</li>[m
+[31m- <li class="nav-item nav-item-this"><a href="">Blueprints and Views</a></li> [m
+foZAa <li class="nav-item nav-item-this"><a 3X0vj 4bAYo j0i5P
+</ul>[m
+[31m- </div> [m
+[32m+[m[32m </div>[m
+[m
+<div 1y2qg
+<div class="body" role="main">[m
+[31m- [m
+[32m+[m
+<section UVSQT
+<h1>Blueprints and Views<a class="headerlink" href="#blueprints-and-views" title="Link to this heading">¶</a></h1>[m
+<p>A view function is the code you write to respond to requests to your[m
+[36m@@ 77089,99405 +50478,5566 @@[m [mblueprint.</p>[m
+<span id="sidebar-top"></span>[m
+<p class="logo"><a GrgaN
+<img class="logo" QRfSK alt="Logo of Flask"/>[m
+</a></p>[m
+<h3>Contents</h3>[m
+<ul>[m
+Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> -36416.86015.-98162.[m
+</div>[m
+</body>[m
+[31m-</html>[m
+\ No newline at end of file[m
+[32m+[m[32m</html>[m
+<link rel="next" title="Application Structure and Lifecycle" href="lifecycle.html" />[m
+[31m- <link rel="prev" title="Signals" href="signals.html" /> [m
+[32m+[m[32m <link rel="prev" title="Signals" href="signals.html" />[m
+<a href="signals.html" title="Signals"[m
+[32m+[m[32m <li class="nav-item nav-item-this"><a dPDND d33Lw
+78x5T dPZKR class="headerlink" ls0gZ title="Link to this heading">¶</a></h1>[m
+<p>This page introduces using the <a class="reference internal" href="api.html#flask.views.View" title="flask.views.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> and <a class="reference internal" href="api.html#flask.views.MethodView" title="flask.views.MethodView"><code class="xref py py-class docutils literal notranslate"><span class="pre">MethodView</span></code></a>[m
+[36m@@ 63960,+76819 81914,+48760 @@[m [mprovide get (list) and post (create) methods.</p>[m
+<link rel="next" title="Deploying to Production" href="deploying/index.html" />[m
+[31m- <link rel="prev" title="Single-Page Applications" href="patterns/singlepageapplications.html" /> [m
+[32m+[m[32m <link rel="prev" title="Single-Page Applications" href="patterns/singlepageapplications.html" />[m
+<a href="patterns/singlepageapplications.html" title="Single-Page Applications"[m
+<p>Web applications face many types of potential security problems, and it can be[m
+[36m@@ -2341,+73093 65939,+42984 @@[m [mabout copying code in general.</p>[m
+##[error]Process completed with exit code -85111.
+msg: [pre-commit.ci lite] apply automatic fixes
+skip: triggered by a bot
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

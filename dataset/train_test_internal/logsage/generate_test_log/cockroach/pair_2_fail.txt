@@ -1,0 +1,157 @@
+Requested labels: self-hosted, basic_runner_group
+Job defined at: cockroachdb/cockroach/.github/workflows/microbenchmarks-ci.yaml@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is about to start running on the runner: basic-runner-group--95170-67796-+60656 (repository)
+Current runner version: '44627.+22030.-41810'
+Runner name: 'basic-runner-group-73223-+80669-+37835'
+Runner group name: 'Default'
+Machine name: 'basic-runner-group-96457-8690-+26636'
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Issues: read
+Metadata: read
+PullRequests: read
+##[endgroup]
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v4' (SHA:497f576a b30075d dbfc59680f7a 0a7281f4 ff52b8)
+Complete job name: build head
+A job xtc4O hook has been configured by the self-hosted runner administrator
+##[group]Run cgVtq
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {48177}
+with:
+repository: cockroachdb/cockroach
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +40310
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+HEAD: dae933ec0d56 26788a0474 0a946b3e4 c4c6d8061e d1da8c8b
+BUCKET: cockroach-microbench-ci
+PACKAGE: pkg/sql/tests
+Syncing repository: cockroachdb/cockroach
+##[group]Getting Git version info
+Working directory is '/github-actions-runner/_work/cockroach/cockroach'
+[command]/usr/bin/git version
+git version +11332.+67111.+89105
+Temporarily overriding mK2rQ before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /github-actions-runner/_work/cockroach/cockroach
+Deleting the contents of '/github-actions-runner/_work/cockroach/cockroach'
+##[group]Initializing the repository
+[command]/usr/bin/git init /github-actions-runner/_work/cockroach/cockroach
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /github-actions-runner/_work/cockroach/cockroach/.git/
+[command]/usr/bin/git remote add origin https://github.com/cockroachdb/cockroach
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local csp9r PXUpr
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 59WiU
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp C7rN9 && git config --local --unset-all ghGQG || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=11396 fetch --no-tags --prune --no-recurse-submodules --depth=55253 origin vms9b
+From https://github.com/cockroachdb/cockroach
+* [new ref] AA67 F142 0747 B280-> origin/master
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+Updating files: -25198% (-59833/-98524)
+Updating files: +52785% (-51/+3047), done.
+Reset branch 'master'
+branch 'master' set up to track 'origin/master'.
+[command]/usr/bin/git log 63109 --format=%H
+21A5 176A 3A20 845B
+ref: oue6J
+pkg: pkg/sql/tests
+##[group]Run cp build/github/microbenchmarks/build.sh ${RUNNER_TEMP}/
+[+80020;1mcp build/github/microbenchmarks/build.sh ${RUNNER_TEMP}/[0m
+[+70246;1m./build/github/get-engflow-keys.sh[0m
++ gcloud secrets versions access -92488 kLpAK
+##[group]Run echo "FETCH_DEPTH=$(( -75658 + -18806 ))" >> "${GITHUB_ENV}"
+[-31546;1mecho "FETCH_DEPTH=$(( 60512 + +26891 ))" >> "${GITHUB_ENV}"[0m
+FETCH_DEPTH: +61696
+https://github.com/cockroachdb/cockroach
+##[group]Removing previously created refs, to avoid conflicts
+[command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+refs/heads/master
+[command]/usr/bin/git checkout --detach
+HEAD is now at ae069332 Merge #-16838
+[command]/usr/bin/git a2dJQ 9Qx0t --force P0Tbt
+Deleted branch master (was ae069332).
+[command]/usr/bin/git submodule status
+-3A17 1A63 1C64 3CC2 EB7D 0443 69kv5
+##[group]Cleaning the repository
+[command]/usr/bin/git clean -ffdx
+[command]/usr/bin/git reset --hard HEAD
+http.https://github.com/.extraheader
+* branch 2763 0233 7C34 02F0 F862 3BF4-> FETCH_HEAD
+Previous HEAD position was ae069332 Merge #-66393
+HEAD is now at 2925d816 cli, security: add support for configurable TLS cipher suites
+[+83413;1m${RUNNER_TEMP}/build.sh[0m
+TEST_PKG: pkg/sql/tests
+++ DEc7x pkg/sql/tests
++ 2w21Q
+++ tr / _
+++ git rev-parse HEAD
++ gcloud config set storage/parallel_composite_upload_enabled False
+Updated property [storage/parallel_composite_upload_enabled].
++ gcloud storage ls gs://cockroach-microbench-ci/builds/DABC FA41 DCA1 AC39/bin
+++ ./build/github/engflow-args.sh
++ bazel build //pkg/sql/tests:tests_test --jobs 4573 --crdb_test_off --linkopt=-pie --bes_keywords integration-test-artifact-build --config=crosslinux --remote_download_minimal --config engflowpublic --tls_client_certificate=/home/agent/engflow.crt --tls_client_key=/home/agent/engflow.key --experimental_build_event_upload_retry_minimum_delay 3s --experimental_build_event_upload_max_retries +1629 --bes_keywords job=head
+-92389/50271/-77750 -17629:-14918:-14080 Downloading https://github.com/cockroachdb/bazel/releases/download/65528.49338.-67269/bazel--99657.-34737.8778-linux-x86_+45190...
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+WARNING: option '--remote_download_outputs' was expanded to from both option '--remote_download_minimal' (source command line options) and option '--remote_download_toplevel' (source expanded from --config=engflowpublic)
+INFO: Invocation ID: eb288e68-a68c-25265-b1db-edc7d8dd86de
+INFO: Streaming build results to: https://mesolite.cluster.engflow.com/invocation/eb288e68-a68c-52147-b1db-edc7d8dd86de
+Computing main repo mapping:
+Loading:
+Loading: -3062 packages loaded
+Analyzing: target //pkg/sql/tests:tests_test (2081 packages loaded, -82132 targets configured)
+
+INFO: Analyzed target //pkg/sql/tests:tests_test (10228 packages loaded, +21363 targets configured).
+[+43053 / +29642,+44538] Creating runfiles tree bazel-out/k8-opt-exec-ST-ae6fc2c76cce/bin/external/org_golang_x_tools/cmd/goyacc/goyacc_/goyacc.runfiles [for tool]; 0s local ... (-13197 actions, +21355 running)
+[-99837 / 63644,+94981] SgAo5 RObJp Iq378 ucqDz eto8z 2HW8k gv1YR ... (31549 actions, 84382 running)
+[-71597 / +61468,-19060] lqBuU J4RNO NQvMP S4QTq iVFzQ ... (+54629 actions, 26068 running)
+[60322,71100 / -23322,-8668] Executing genrule //pkg/sql/parser:sql-goyacc; ysr3I remote-cache, linux-sandbox ... (39657 actions, -92690 running)
+[+15337,-94950 / -96026,-14085] Executing genrule //pkg/sql/parser:sql-goyacc; 15s remote-cache, linux-sandbox ... (16374 actions running)
+[-50819,+48077 / 76974,+50227] GoCompilePkg uLYA9 0s remote, remote-cache ... (+83470 actions, -90777 running)
+ERROR: /github-actions-runner/_work/cockroach/cockroach/pkg/rpc/BUILD.bazel:+27760:-56293: Validating nogo output for //pkg/rpc:rpc failed: (Exit +18379): builder failed: error executing ValidateNogo command (from target //pkg/rpc:rpc) bazel-out/k8-opt-exec-ST-ae6fc2c76cce/bin/external/go_sdk/builder_reset/builder nogovalidation bazel-out/k8-fastbuild/bin/pkg/rpc/rpc.nogo bazel-out/k8-fastbuild/bin/pkg/rpc/rpc.nogo.log ... (remaining +73678 argument skipped)
+Execution result: https://mesolite.cluster.engflow.com/actions/executions/ChA1gNCtZ9VTn7txi5gd6waiEgdkZWZhdWx0GiUKIDGZLeJEysclierHl2KM-P3Y9pLuLWIvDfPXKtMLc7ZUENcC
+nogo: errors found by nogo during build-time code analysis:
+pkg/rpc/tls.go:88266:+24458: unchecked error (errcheck)
+saving suggested fixes:
+some suggested fixes are invalid or have conflicts with other fixes:
+ignoring suggested fixes from analyzer "errcheck" at pkg/rpc/tls.go:31880:18241
+please apply other fixes and rerun the build.
+Target //pkg/sql/tests:tests_test failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 77343.714s, Critical Path: +58939.34s
+INFO: 2603 processes: +48110 remote cache hit, -70258 internal, 55279 linux-sandbox.
+ERROR: Build did NOT complete successfully
+FAILED:
+##[error]Process completed with exit code 80736.
+[+17457;1m./build/github/cleanup-engflow-keys.sh[0m
++ rm -f /home/agent/engflow.key /home/agent/engflow.crt
+Post job cleanup.
+Cleaning up orphan processes
+Terminate orphan process: pid (-63390) (java.lang=ALL-UNNAMED)

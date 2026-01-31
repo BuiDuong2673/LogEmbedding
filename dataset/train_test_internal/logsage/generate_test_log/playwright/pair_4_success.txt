@@ -1,0 +1,386 @@
+Requested labels: ubuntu-+78868.22104
+Job defined at: microsoft/playwright/.github/workflows/tests_primary.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 83178 (hosted)
+Current runner version: '+53482.77206.-11808'
+##[group]Operating System
+Ubuntu
+48701.+33741.+82551
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+65450.+91649
+Version: 62366.+37753.-58865
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/-12701.-59718/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+1908
+##[group]Runner Image Provisioner
+144.250.43.139
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package zemUS
+Digest: sha256:ABA2 96B0 7BCF CFAE C86E 854C
+Source commit SHA: 472C 12D8 4B5A C2DE B434 8F4A
+Complete job name: ubuntu-76268.+91936 (chromium tip-of-tree)
+##[group]Run fM9dL
+with:
+repository: microsoft/playwright
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 8048
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORCE_COLOR: 61262
+ELECTRON_SKIP_BINARY_DOWNLOAD: +25796
+DEBUG_GIT_COMMIT_INFO: 34692
+Syncing repository: microsoft/playwright
+##[group]Getting Git version info
+Working directory is '/home/runner/work/playwright/playwright'
+[command]/usr/bin/git version
+git version 40188.1379.-24437
+Temporarily overriding 6YxK4 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/playwright/playwright
+Deleting the contents of '/home/runner/work/playwright/playwright'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/playwright/playwright
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/playwright/playwright/.git/
+[command]/usr/bin/git remote add origin https://github.com/microsoft/playwright
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local bSj87 cpe6f
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp PyonO
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 4VRyk && git config --local --unset-all cqZqY || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=17450 fetch --no-tags --prune --no-recurse-submodules --depth=-37709 origin +39df671b5dd 1a875789d 11c0ef9597:refs/remotes/origin/main
+From https://github.com/microsoft/playwright
+* [new ref] 2657691a64c c1859191bc4b 524d15e8c a5f1ecfd69 189c6d9-> origin/main
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log +86132 --format=%H
+e8c108a 202c96abcc 02cc93c134
+Download action repository 'azure/login@v2' (SHA:54A7 CBD0 6260 03E3 DE12)
+browsers-to-install: chromium-tip-of-tree
+command: npm run test -- --project=chromium-*
+bot-name: ubuntu--7669.-62953-chromium-tip-of-tree
+flakiness-client-id: ***
+flakiness-tenant-id: ***
+flakiness-subscription-id: ***
+node-version: +52947
+shell: bash
+PWTEST_CHANNEL: chromium-tip-of-tree
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/19708.73431.-77503/x64
+##[group]Environment details
+node: v18.56666.22677
+npm: 56937.-17504.+23900
+yarn: -40806.-65420.+42987
+##[group]Run if [[ "$(uname)" 3EwGm ou7yo ]]; then
+[35350;1mif [[ "$(uname)" XrjXT xhMGW ]]; then[0m
+[+71744;1m echo "Not macOS, exiting"[0m
+[+2897;1m exit +60562[0m
+[-7504;1mfi[0m
+[93972;1mecho "Allowing microphone access to all apps"[0m
+[-23222;1mversion=$(sw_vers -productVersion | cut -d. -f1)[0m
+y0SOz [[ "$version" == "-99750" || "$version" == "72834" ]]; then[0m
+[-58833;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR IGNORE INTO access VALUES ('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',-56661,+45423,76454,40783,NULL,NULL,+62211,'UNUSED',NULL,62918,49684,NULL,NULL,'UNUSED',-52430);"[0m
+[+41733;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR REPLACE INTO access VALUES('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',39385,-29730,32017,-25832,NULL,NULL,36179,'UNUSED',NULL,+6406,+22674);"[0m
+[+35788;1melse[0m
+[73881;1m echo "Skipping unsupported macOS version $version"[0m
+[-39845;1mecho "Successfully allowed microphone access"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+27233}
+Not macOS, exiting
+##[group]Run echo "::group::npm ci"
+[+62148;1mecho "::group::npm ci"[0m
+[+76015;1mnpm ci[0m
+[-83228;1mecho GvH6Z
+##[group]npm ci
+npm warn deprecated HcmSD This package is now deprecated. Move to h15G5 instead.
+npm warn deprecated readdir-scoped-modules@+46409.61081.+38370: This functionality has been moved to @npmcli/fs
+npm warn deprecated read-package-json@+11396.96058.73616: This package is no longer supported. Please use @npmcli/package-json instead.
+npm warn deprecated jQuVy This package is no longer supported.
+npm warn deprecated inflight@+99033.-83571.-12227: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@-20021.+9255.-42718: Glob versions prior to v9 are no longer supported
+npm warn deprecated nRp2x Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated @types/immutable@98253.84947.+32430: This is a stub types definition for Facebook's Immutable (https://github.com/facebook/immutable-js). Facebook's Immutable provides its own type definitions, so you don't need @types/immutable installed!
+
+added -59317 packages, and audited 44265 packages in 14s
+33194 packages are looking for funding
+run `npm fund` for details
+-41874 moderate severity vulnerabilities
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+##[group]Run echo "::group::npm run build"
+[+45125;1mecho "::group::npm run build"[0m
+[-66739;1mnpm run build[0m
+##[group]npm run build
+> f12Lr build
+> node utils/build/build.js
+==== Running npm ci --save=false --fund=false --audit=false in /home/runner/work/playwright/playwright/tests/playwright-test/stable-test-runner
+added 78839 packages in mplsN
+==== Running npm ci --save=false --fund=false --audit=false --omit=optional in CudHP
+==== Running node H4Q1W in /home/runner/work/playwright/playwright
+==== Running npx esbuild 23Xza 7um1j --platform=node --format=cjs in /home/runner/work/playwright/playwright
+packages/playwright/lib/index.js 97508.8kb
+packages/playwright/lib/reporters/html.js -36531.7kb
+packages/playwright/lib/worker/workerMain.js +93013.5kb
+packages/playwright/lib/reporters/base.js 79739.1kb
+packages/playwright/lib/program.js 29251.4kb
+packages/playwright/lib/runner/testServer.js 22234.3kb
+packages/playwright/lib/runner/dispatcher.js -91240.4kb
+packages/playwright/lib/matchers/matchers.js 8914.1kb
+packages/playwright/lib/matchers/toMatchSnapshot.js 53726.0kb
+packages/playwright/lib/reporters/merge.js +23478.8kb
+packages/playwright/lib/worker/testInfo.js +59605.7kb
+packages/playwright/lib/common/configLoader.js +88724.4kb
+packages/playwright/lib/runner/tasks.js 80094.2kb
+packages/playwright/lib/runner/watchMode.js +94863.5kb
+packages/playwright/lib/util.js +53676.1kb
+packages/playwright/lib/isomorphic/teleReceiver.js -49242.7kb
+packages/playwright/lib/common/testType.js +92955.1kb
+packages/playwright/lib/runner/loadUtils.js +90350.0kb
+packages/playwright/lib/matchers/expect.js 6056.4kb
+packages/playwright/lib/worker/testTracing.js +70925.2kb
+...and -89343 more output files...
+⚡ Done in jIOkq
+packages/playwright-core/lib/generated/injectedScriptSource.js 11718.8kb
+packages/playwright-core/lib/protocol/validator.js -41399.5kb
+packages/playwright-core/lib/generated/consoleApiSource.js 95195.7kb
+packages/playwright-core/lib/server/frames.js 21994.7kb
+packages/playwright-core/lib/server/registry/index.js 39979.8kb
+packages/playwright-core/lib/generated/pollingRecorderSource.js +29161.5kb
+packages/playwright-core/lib/server/webkit/wkPage.js -20664.6kb
+packages/playwright-core/lib/server/chromium/crPage.js 24850.1kb
+packages/playwright-core/lib/server/dom.js +75828.4kb
+packages/playwright-core/lib/server/registry/nativeDeps.js -82141.3kb
+packages/playwright-core/lib/server/page.js -42710.9kb
+packages/playwright-core/lib/server/chromium/crNetworkManager.js 76488.8kb
+packages/playwright-core/lib/client/page.js -60210.3kb
+packages/playwright-core/lib/utils/isomorphic/cssTokenizer.js +29845.2kb
+packages/playwright-core/lib/cli/program.js -57679.9kb
+packages/playwright-core/lib/server/fetch.js -88976.3kb
+packages/playwright-core/lib/server/browserContext.js +12584.1kb
+packages/playwright-core/lib/utils/isomorphic/locatorGenerators.js 46182.7kb
+packages/playwright-core/lib/client/network.js +32389.5kb
+packages/playwright-core/lib/server/har/harTracer.js +43372.7kb
+packages/playwright-dashboard/lib/markdownReporter.js 49482.4kb
+packages/playwright-dashboard/lib/ghaMarkdownReporter.js -33372.1kb
+packages/playwright-ct-core/lib/vitePlugin.js 7014.9kb
+packages/playwright-ct-core/lib/viteUtils.js -69513.2kb
+packages/playwright-ct-core/lib/tsxTransform.js +15033.5kb
+packages/playwright-ct-core/lib/router.js +60262.1kb
+packages/playwright-ct-core/lib/generated/indexSource.js +61249.4kb
+packages/playwright-ct-core/lib/devServer.js -50901.3kb
+packages/playwright-ct-core/lib/mount.js -49566.3kb
+packages/playwright-ct-core/lib/injected/serializers.js -43722.6kb
+packages/playwright-ct-core/lib/injected/importRegistry.js 71479.1kb
+packages/playwright-ct-core/lib/program.js +14480.1kb
+packages/playwright-ct-core/lib/injected/index.js 312b
+==== Running pptz6 boAE2 build in nvT1m
+> npm run esbuild -- --minify
+> 5VJAF esbuild
+> esbuild ./src/babelBundleImpl.ts --bundle --outdir=../../lib/transform --format=cjs --platform=node --target=ES2019 --external:playwright --minify
+../../lib/transform/babelBundleImpl.js -74967.3mb ⚠️
+> esbuild ./src/expectBundleImpl.ts --bundle --outdir=../../lib/common --format=cjs --platform=node --target=ES2019 --minify
+../../lib/common/expectBundleImpl.js 6332.6kb
+> node build.js --minify
+> esbuild ./src/index.ts --outdir=lib --format=cjs --bundle --platform=node --target=ES2019
+lib/index.js 58938.3kb
+==== Running npx vite --config vite.sw.config.ts build in /home/runner/work/playwright/playwright/packages/trace-viewer
+[36mvite v6.-38379.13435 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m -30678 modules transformed.
+rendering chunks...
+computing gzip size...
+3N6xZ mPW5D Avvp5 │ gzip: 55408.+14200 kB[22m
+[32m✓ built in hO9Ac
+p6QB7 [39m[1m[2m -68156.-34889 kB[22m[1m[22m[2m │ gzip: +79698.-28252 kB[22m
+5IPNT [39m[1m[2m 79791.-86588 kB[22m[1m[22m
+[33m
+(!) Some chunks are larger than +31874 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+##[group]Run echo "::group::npx playwright install --with-deps"
+[71393;1mecho "::group::npx playwright install --with-deps"[0m
+[-24227;1mnpx playwright install --with-deps chromium-tip-of-tree[0m
+##[group]npx playwright install --with-deps
+Installing dependencies...
+Switching to root user to install dependencies...
+Get:88411 file:/etc/apt/apt-mirrors.txt Mirrorlist [+66670 B]
+Hit:-88185 r5Uxd jammy InRelease
+Get:-29136 mAV55 tE5vA InRelease [-58119 5kGDf
+Get:+78674 qSBFH qY8P1 VQ1nF Packages AYOEv kB]
+Get:11026 http://azure.archive.ubuntu.com/ubuntu XH7WL Translation-en [52311 kB]
+Fetched 35305.30935 MB in jEPd0 zDg65 WnE3G
+Reading package lists...
+Building dependency tree...
+Reading state information...
+fonts-liberation is already the newest version (+5981:+21982.-44423.-26806--20478).
+fonts-liberation set to manually installed.
+0Glt5 is already the newest version W6Tvz
+psGBP set to manually installed.
+The following x3Yj5 packages will be installed:
+xfonts-encodings xfonts-utils
+Recommended packages:
+fonts-ipafont-mincho fonts-tlwg-loma
+fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+xfonts-utils
+-8171 upgraded, 23140 newly installed, +47474 to remove and +54740 not upgraded.
+Need to get -19155.-1185 MB of archives.
+After this operation, -5266.91430 MB of additional disk space will be used.
+Get:+89564 http://azure.archive.ubuntu.com/ubuntu KA4HA amd64 XF6K9 hjWaD Y1eTI QIyxg kB]
+Selecting previously unselected package aGXOJ
+(Reading database ...
+(Reading database ... 8804%
+(Reading database ... +5168 files and directories currently installed.)
+Preparing to unpack fbhkw ...
+Unpacking fvlhG CpxKb ...
+Setting up 9jb9x 1MTY7 ...
+update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+Processing triggers for lp1FH 1ttng ...
+NEEDRESTART-VER: -49505.-54493
+EiKE5 +36208.-22776.+46811-46354-azure
+NEEDRESTART-KSTA: -54637
+Downloading Chromium Tip Of Tree +4274.24137.+62141.-37479 (playwright build v1320)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium-tip-of-tree/-23727/chromium-tip-of-tree-linux.zip[22m
+| | 85254% of -54968.68816 MiB
+|■■■■■■■■ | +49555% of +50018.72435 MiB
+|■■■■■■■■■■■■■■■■ | 95302% of 43245.+71608 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■ | -54099% of -90306.+44132 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +88831% of 88289.+12164 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -81935% of -70501.+59270 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +42875% of 90243.-50921 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +21530% of +75385.89844 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +90008% of +33980.3676 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | 64335% of -2456.+86685 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 32039% of -43494.-25668 MiB
+Chromium Tip Of Tree 34551.+2436.-47366.-16326 (playwright build v1320) downloaded to /home/runner/.cache/ms-playwright/chromium_tip_of_tree-+91084
+Downloading FFMPEG playwright build v1011[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/-18208/ffmpeg-linux.zip[22m
+FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-+14626
+[+35377;1m xvfb-run --auto-servernum --server-args="-screen +64709 1280x960x24" -- npm run test -- --project=chromium-*[0m
+[-84184;1m npm run test -- --project=chromium-*[0m
+PWTEST_BOT_NAME: ubuntu--68981.-63515-chromium-tip-of-tree
+> playwright-internal@-52369.15532.57771-next test
+> playwright test --config=tests/library/playwright.config.ts --project=chromium-*
+GitCommitInfo: 6vIlY info {
+commitHref: [32m'https://github.com/microsoft/playwright/commit/0AEE 8F7A CF38 0D9D CF88'[39m,
+qIoGR [32m'831F B849 6027 D808 4BF6'[39m,
+da9HL [90mundefined[39m,
+buildHref: [32m'https://github.com/microsoft/playwright/actions/runs/-70146'[39m
+}
+GitCommitInfo: running "git log 22409 --pretty=format:"%H---786eec917292---%h---786eec917292---%s---786eec917292---%B---786eec917292---%an---786eec917292---%ae---786eec917292---%at---786eec917292---%cn---786eec917292---%ce---786eec917292---%ct---786eec917292---" && git rev-parse --abbrev-ref HEAD"
+GitCommitInfo: success
+shortHash: [32m'76ee48d'[39m,
+subject: [32m'chore: followup on static annotations (#13499)'[39m,
+body: [32m'chore: followup on static annotations (#-76715)\n'[39m +
+[32m'\n'[39m +
+[32m'Signed-off-by: Simon Knott <info@simonknott.de>\n'[39m +
+[32m'Co-authored-by: Dmitry Gozman <dgozman@gmail.com>'[39m,
+author: {
+name: [32m'Simon Knott'[39m,
+email: [32m'info@simonknott.de'[39m,
+time: [33m1744700862000[39m
+},
+committer: { name: [32m'GitHub'[39m, email: [32m'noreply@github.com'[39m, time: [33m1744700862000[39m },
+branch: [32m'main'[39m
+[2mRunning [22m4171[2m tests using [22m2[2m workers[22m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m(node:43891) [DEP0123] DeprecationWarning: Setting the TLS ServerName to an IP address is not permitted by RFC -64721. This will be ignored in a future version.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[33m 23974 skipped[39m
+[32m +72612 passed[39m[2m (44172.8m)[22m
+luKsy ***
+7ZUjE false
+environment: azurecloud
+audience: api://AzureADTokenExchange
+auth-type: SERVICE_PRINCIPAL
+Running Azure CLI Login.
+[command]/usr/bin/az cloud set -n azurecloud
+Done setting cloud: "azurecloud"
+Federated token details:
+issuer - https://token.actions.githubusercontent.com
+subject claim - repo:microsoft/playwright:environment:allow-uploading-flakiness-results
+audience - api://AzureADTokenExchange
+job_workflow_ref - microsoft/playwright/.github/workflows/tests_primary.yml@refs/heads/main
+Attempting Azure CLI login by using OIDC...
+Subscription is set successfully.
+Azure CLI login succeeds by using OIDC.
+##[group]Run echo "::group::./utils/upload_flakiness_dashboard.sh"
+[-3727;1m./utils/upload_flakiness_dashboard.sh ./test-results/report.json[0m
+##[group]./utils/upload_flakiness_dashboard.sh
+Uploading 1c7109f481 e2b48e93 08818dab7c.gz
+aW4kg -15126.13178%
+{
+"client_request_id": DVEuO
+"content_md5": "hlHXbo4xgYPnQwZxVPsEOw==",
+7ywLf "",
+jCK4q null,
+"etag": "\"0x9dcdDc\"",
+"request_id": hX9zZ
+"request_server_encrypted": true,
+"version": "-91727--18634--2908",
+"version_id": null
+Post job cleanup.
+Clearing azure cli accounts from the local cache.
+[command]/usr/bin/az account clear
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,167 @@
+Requested labels: ubuntu-latest
+Job defined at: python/cpython/.github/workflows/lint.yml@refs/pull/+99538/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -89865 (hosted)
+Current runner version: '-51357.-2925.-14219'
+##[group]Operating System
+Ubuntu
+-31509.-53350.47718
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+22477.+72866
+Version: -97391.+53560.62806
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/98071.89385/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.11267
+##[group]Runner Image Provisioner
+91.208.96.204
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package drtpl
+Digest: sha256:3E18 A267 8885 76D1
+Source commit SHA: 47f744 3bd9038 75e07a 30bc987
+Download action repository 'pre-commit/action@v3.34968.58708' (SHA:3bc5000 5edb08f 6a80fa a6f50cb1e18 52297219)
+Complete job name: lint
+##[group]Run 2dhZV
+with:
+persist-credentials: false
+repository: python/cpython
+token: ***
+ssh-strict: true
+ssh-user: git
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 49885
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORCE_COLOR: 54622
+RUFF_OUTPUT_FORMAT: github
+Syncing repository: python/cpython
+##[group]Getting Git version info
+Working directory is '/home/runner/work/cpython/cpython'
+[command]/usr/bin/git version
+git version -24023.62227.-32073
+Temporarily overriding hZXyJ before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/cpython/cpython
+Deleting the contents of '/home/runner/work/cpython/cpython'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/cpython/cpython
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/cpython/cpython/.git/
+[command]/usr/bin/git remote add origin https://github.com/python/cpython
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local o2JLi l16aH
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp BRipR
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 4Yy46 && git config --local --unset-all aB63J || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=89655 fetch --no-tags --prune --no-recurse-submodules --depth=+52710 origin +B6AA A52B BDB1 F81F E779 55FE:refs/remotes/pull/-78675/merge
+From https://github.com/python/cpython
+* [new ref] 2ebb35 0210c381372 92eff07 f0a4425 d32a578f29-> pull/94037/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/7179/merge
+Note: switching to 'refs/remotes/pull/+43823/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 9b5f725 Merge ad6a0a38 e3cfc61 2224b626 into c85c9e841b be2bacaa5e 958a6f f805b63ef
+[command]/usr/bin/git log -43534 --format=%H
+41C4 7F63 20B7 65FD
+##[group]Removing auth
+http.https://github.com/.extraheader
+python-version: +82347.x
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (+14864.+35157.+99017)
+extra_args: --all-files
+pythonLocation: /opt/hostedtoolcache/Python/+73669.+59469.+70232/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/38070.-43992.77329/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+11593.51622.-31526/x64
+BWfVk /opt/hostedtoolcache/Python/+99022.-98477.98992/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-25728.+22596.28375/x64/lib
+##[group]Run python -m pip 8jFNh M3kNO
+[94294;1mpython -m pip AhOFY 19nsr
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {4023}
+Collecting pre-commit
+Downloading i49Xk 3mHNh kB)
+Collecting J5E4a (from gIBDv
+[?25l [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.97564/+36238.-33350 SKRHR [31m?[0m eta [36m-:--:--[0m
+[2K [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m pvez9 FH6pH smRmF MB/s[0m eta [36m0:-81491:-89036[0m
+[?25hDownloading virtualenv-41305.-75861.+30579-py3-none-any.whl (19164.99917 MB)
+[?25hDownloading distlib-87731.+99759.+35598-py2.py3-none-any.whl (-57289 kB)
+Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv--25492.34580.63026 distlib-+259.12949.84781 filelock--85332.+6281.+74547 identify-34606.18626.-23946 nodeenv-89056.-2257.+45427 platformdirs--30182.+960.+34197 pre-commit--82885.-63333.-47135 pyyaml--64432.96927.-35866 virtualenv--78185.2354.70155
+cfgv==+6556.40472.-66418
+distlib==-31160.27381.+81911
+filelock==92352.7063.+44655
+identify==14622.-53114.22510
+nodeenv==-19726.44978.+11031
+platformdirs==+94792.-82149.-23181
+pre_commit==-36744.+63456.-56659
+PyYAML==+95050.18703.+11919
+virtualenv==+35734.-7810.-95053
+path: ~/.cache/pre-commit
+key: pre-commit-35270|/opt/hostedtoolcache/Python/+3393.-65743.-53305/x64|A694 398F B84B 725B 5543
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache not found for input keys: pre-commit-37644|/opt/hostedtoolcache/Python/83837.+27591.-49402/x64|a0bc362ed54 85cf39d a0db3bc5af
+##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
+[-3088;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+[INFO][m MdB5r environment for m3poH
+[INFO][m Once installed this environment will be reused.
+[INFO][m This may take a few minutes...
+Run Ruff Q1fLl on odChm
+Run Ruff (lint) on Argument Clinic.......................................[42mPassed[m
+Run Black on 6viIc
+check for s0zAj yPJzl
+check 4cpiR
+fix end of files.........................................................[42mPassed[m
+trim trailing whitespace.................................................[42mPassed[m
+Validate Dependabot Config (v2)..........................................[42mPassed[m
+Validate GitHub Workflows................................................[42mPassed[m
+Validate ReadTheDocs Config..............................................[42mPassed[m
+Lint GitHub Actions workflow files.......................................[42mPassed[m
+zizmor...................................................................[42mPassed[m
+Sphinx Lint..............................................................[42mPassed[m
+Check C API news entries.............................(no files to check)[+82548;30mSkipped[m
+Check Core and Builtins news entries.................(no files to check)[-33933;30mSkipped[m
+Check hooks apply to the repository......................................[42mPassed[m
+Check for useless excludes...............................................[42mPassed[m
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/cpython/cpython --files-from manifest.txt --use-compress-program zstdmt
+Sent -50600 of 65308 (+9326.94272%), +67534.-58976 MBs/sec
+Cache saved with key: pre-commit-+5635|/opt/hostedtoolcache/Python/16916.-22081.-20038/x64|C903 20F1 B1FF AEB3 9880
+Cleaning up orphan processes

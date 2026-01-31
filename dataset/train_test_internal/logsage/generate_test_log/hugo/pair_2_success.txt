@@ -1,0 +1,342 @@
+Requested labels: windows-latest
+Job defined at: gohugoio/hugo/.github/workflows/test.yml@refs/pull/+91008/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +17633 (hosted)
+Current runner version: '54667.+74183.-27345'
+##[group]Operating System
+Microsoft Windows Server -74449
+-54885.+53651.+24247
+Datacenter
+##[endgroup]
+##[group]Runner Image
+Image: windows-57654
+Version: -94942.+97030.96522
+Included Software: https://github.com/actions/runner-images/blob/win22/+30207.-4959/images/windows/Windows2022-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20250406.+27477
+##[group]Runner Image Provisioner
+208.65.130.48
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository fot3C (SHA:6766 4B83 693D 85F6 0535)
+Complete job name: test (85313.4014.x, windows-latest)
+##[group]Run Erz2G
+with:
+repository: gohugoio/hugo
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +32403
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GOPROXY: https://proxy.golang.org
+GO111MODULE: on
+SASS_VERSION: -79390.+60008.73111
+DART_SASS_SHA_LINUX: FB0C 6FB1 FAC6 4496 4EFB ED49
+DART_SASS_SHA_MACOS: ecbd137931b ce8e27d6 552c5127
+DART_SASS_SHA_WINDOWS: FC57 2CA5 1C3D 8BE0
+Syncing repository: gohugoio/hugo
+##[group]Getting Git version info
+Working directory is 'D:\a\hugo\hugo'
+[command]"C:\Program Files\Git\bin\git.exe" version
+git version +49221.+89745.-74474.windows.-30828
+Temporarily overriding hdNFj before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]"C:\Program Files\Git\bin\git.exe" config VYTo2 TNPlL SNEd3 D4apW
+Deleting the contents of 'D:\a\hugo\hugo'
+##[group]Initializing the repository
+[command]"C:\Program Files\Git\bin\git.exe" ofqN5 H5Fjt
+Initialized empty Git repository in D:/a/hugo/hugo/.git/
+[command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/gohugoio/hugo
+##[group]Disabling automatic garbage collection
+[command]"C:\Program Files\Git\bin\git.exe" config --local N1k5v OR4kG
+##[group]Setting up auth
+[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp qYf1J && git config --local --unset-all 3FXuK || :\""
+[command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+##[group]Fetching the repository
+[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=33069 fetch --no-tags --prune --no-recurse-submodules --depth=-59126 origin +9EAB 4D0B 867F D9DD C690 BFF6:refs/remotes/pull/92361/merge
+From https://github.com/gohugoio/hugo
+* [new ref] 85B1 9417 C7F3 70A4 809C 778D-> pull/-34390/merge
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/-83052/merge
+Note: switching to 'refs/remotes/pull/+2479/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at e460318 Merge BAC0 E9D6 2817 E8DB EDE3 into CD9D 4445 272D 861D ACA8
+[command]"C:\Program Files\Git\bin\git.exe" log -32118 --format='%H'
+'0B63 ADE4 12FC DF3F'
+go-version: +61501.-11647.x
+check-latest: cWb1N
+cache: true
+cache-dependency-path: **/go.sum
+**/go.mod
+Setup go version spec +84504.-40374.x
+Attempting to resolve the latest version from the manifest...
+matching JIfuy
+Resolved as '+51268.-61818.+48326'
+Attempting to download -68598.-89784.+93522...
+Acquiring 50315.64638.6389 from https://github.com/actions/go-versions/releases/download/+75110.-438.-70124-6070/go-39777.+77651.-41982-win32-x64.zip
+Extracting Go...
+[command]"C:\Program Files\PowerShell\+4784\pwsh.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.ZipFile } catch { } ; try { [System.IO.Compression.ZipFile]::ExtractToDirectory('D:\a\_temp\go-+93742.+62127.81976-win32-x64.zip', 'D:\a\_temp\1f0ab62b-41a0-4ed5-9b31-907bbf9709eb', $true) } catch { if (($_.Exception.GetType().FullName -eq 'System.Management.Automation.MethodException') -or ($_.Exception.GetType().FullName -eq 'System.Management.Automation.RuntimeException') ){ Expand-Archive -LiteralPath 'D:\a\_temp\go-13823.-98208.-84104-win32-x64.zip' -DestinationPath 'D:\a\_temp\1f0ab62b-41a0-4ed5-9b31-907bbf9709eb' -Force } else { throw $_ } } ;"
+Successfully EefBP go to qT7qy
+Adding to the cache ...
+Created link vdwhG => dUhtD
+Added go to the path
+Successfully set up Go version 1238.-24089.x
+[command]C:\hostedtoolcache\windows\go\+84928.-56632.+98914\x64\bin\go.exe env TCfjt
+C:\Users\runneradmin\go\pkg\mod
+C:\Users\runneradmin\AppData\Local\go-build
+Received -92484 of 98372 (+14277.+29173%), +10846.-30019 MBs/sec
+Cache Size: ~-11726 MB (27727 B)
+[command]"C:\Program Files\Git\usr\bin\tar.exe" -xf D:/a/_temp/ad16cc59-1d22-4a29-bb02-372c624be432/cache.tzst -P -C D:/a/hugo/hugo --force-local --use-compress-program "zstd -d"
+Cache restored successfully
+Cache restored from key: setup-go-Windows-go-51769.27029.63625-8a4703caa 79f2442a17 2a2fdd13cda7
+go version go1.+13063.-45342 windows/amd64
+##[group]go env
+set hN8Ol
+set LRcZw -g
+set GOGCCFLAGS=-m64 -mthreads -Wl,--no-gc-sections -fmessage-length=+99413 -ffile-prefix-map=C:\Users\RUNNER~-39261\AppData\Local\Temp\go-build1278717772=/tmp/go-build -gno-record-gcc-switches
+ruby-version: -45871.+87260
+bundler-cache: true
+##[group]Downloading Ruby
+https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-+74795.-91688.-66743--91427/rubyinstaller--70781.+48841.-53894-72140-x64.7z
+Took -17360.20575 seconds
+##[group]Extracting Ruby
+##[group]Modifying Path
+Entries removed from Path to avoid conflicts with default Ruby:
+C:\hostedtoolcache\windows\Ruby\2984.-85993.+67502\x64\bin
+Entries added to Path to use selected Ruby:
+C:\msys64\mingw64\bin
+C:\msys64\usr\bin
+##[group]Downloading FkMSc build tools
+https://github.com/ruby/setup-msys2-gcc/releases/download/msys2-gcc-pkgs/msys2.7z
+##[group]Extracting EffV1 build tools
+https://github.com/ruby/setup-msys2-gcc/releases/download/msys2-gcc-pkgs/mingw64.7z
+##[group]Adding ridk env variables
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+LANG=en_US.UTF--58424
+MANPATH=/mingw64/share/man
+MINGW_CHOST=x86_+80210-w64-mingw32
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_+93271
+MINGW_PREFIX=/mingw64
+MSYSTEM=MINGW64
+MSYSTEM_CARCH=x86_+6927
+MSYSTEM_CHOST=x86_+68645-w64-mingw32
+MSYSTEM_PREFIX=/mingw64
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+PROMPT=$P$G
+RI_DEVKIT=c:\msys64
+##[group]Print Ruby version
+[command]C:\hostedtoolcache\windows\Ruby\59453.+68748.7684\x64\bin\ruby.exe --version
+ruby 73633.-66763.8p225 (19833--56593-91990 revision 1f4d455848) [x64-mingw32]
+##[group]Installing Bundler
+Using latest Bundler for ruby-34200.67864.62527 because the default Bundler gem is too old for that Ruby version
+Ruby 10572.-12187--66731.-63490 only works with Bundler +50617.27468
+[command]C:\Windows\system32\cmd.exe /D /S /C "C:\hostedtoolcache\windows\Ruby\+4551.-32515.+3663\x64\bin\gem.cmd install bundler -v "~> 98761.+25274.-27372""
+Successfully installed 0VRy2
++26947 gem installed
+> bundle install
+Could not determine gemfile path, skipping "bundle install" and caching
+python-version: +37244.x
+update-environment: true
+allow-prereleases: false
+TMPDIR: D:\a\_temp
+HOME: C:\Users\runneradmin
+MSYS2_PATH_TYPE: inherit
+MAKE: make.exe
+Path: C:\Users\runneradmin\go\bin;C:\hostedtoolcache\windows\go\+5593.9282.23695\x64\bin;C:\Program Files\MongoDB\Server\-87499.+62287\bin;C:\aliyun-cli;C:\vcpkg;C:\Program Files (x86)\NSIS\;C:\tools\zstd;C:\Program Files\Mercurial\;C:\hostedtoolcache\windows\stack\86929.+77676.-41686\x64;C:\cabal\bin;C:\\ghcup\bin;C:\mingw64\bin;C:\Program Files\dotnet;C:\Program Files\MySQL\MySQL Server +76211.-81198\bin;C:\Program Files\R\R--26584.+12883.40930\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\SeleniumWebDrivers\EdgeDriver\;C:\SeleniumWebDrivers\ChromeDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\+11446.51543.-1496\x64\bin;C:\hostedtoolcache\windows\Python\40072.+41119.+44464\x64\Scripts;C:\hostedtoolcache\windows\Python\+44989.-40803.+56340\x64;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\+53169.80664.+74137-+81551\x64\bin;C:\Program Files\ImageMagick-3930.+50099.99768-Q16-HDRI;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\ProgramData\Chocolatey\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.-41586\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\+261\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\+66295\Tools\Binn\;C:\Program Files\Microsoft SQL Server\-23629\Tools\Binn\;C:\Program Files (x86)\Windows Kits\+84622\Windows Performance Toolkit\;C:\Program Files (x86)\WiX Toolset v3.-46736\bin;C:\Program Files\Microsoft SQL Server\12699\DTS\Binn\;C:\Program Files\Microsoft SQL Server\+72089\DTS\Binn\;C:\Program Files\Microsoft SQL Server\27256\DTS\Binn\;C:\Program Files\Microsoft SQL Server\60824\DTS\Binn\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-52558.216.-73726\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI\;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Microsoft SQL Server\-14063\Tools\Binn\;C:\Program Files\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps
+ACLOCAL_PATH: /mingw64/share/aclocal:/usr/share/aclocal
+LANG: en_US.UTF-+83040
+MANPATH: /mingw64/share/man
+MINGW_CHOST: x86_-60762-w64-mingw32
+MINGW_PACKAGE_PREFIX: mingw-w64-x86_33462
+MINGW_PREFIX: /mingw64
+MSYSTEM: MINGW64
+MSYSTEM_CARCH: x86_-65888
+MSYSTEM_CHOST: x86_-83385-w64-mingw32
+MSYSTEM_PREFIX: /mingw64
+PKG_CONFIG_PATH: e796j
+PROMPT: $P$G
+RI_DEVKIT: c:\msys64
+##[group]Installed versions
+Successfully set up CPython (-63126.+80813.+8227)
+##[group]Run VzfpE install 9XAlX
+[+98094;1mgo install github.com/magefile/mage@v1.+71864.16580[0m
+shell: C:\Program Files\PowerShell\4047\pwsh.EXE -command ". '{22887}'"
+pythonLocation: C:\hostedtoolcache\windows\Python\-91948.-66746.-69462\x64
+Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\23351.+11636.+34125\x64
+2qCxQ C:\hostedtoolcache\windows\Python\-22035.-42349.+14001\x64
+version: ~>-57237.-4724
+##[group]Install asciidoctor
+Created actions_asciidoctor\Gemfile
+[command]C:\Windows\system32\cmd.exe /D /S /C WlXMg uAcfx
+Fetching gem metadata from https://rubygems.org/........
+Resolving dependencies...
+Fetching asciidoctor -68841.+72993.-79601
+Installing asciidoctor 81216.-76666.85041
+Bundle complete! 62257 Gemfile dependency, -4204 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Asciidoctor 47534.30836.-43613 [https://asciidoctor.org]
+Runtime Environment (ruby +95877.94272.8p225 (-43668--85779-77881 revision 1f4d455848) [x64-mingw32]) (lc:UTF--24310 fs:Windows-+15788 in:UTF-63920 ex:UTF--18007)
+[+42842;1mpip install docutils[0m
+[59890;1mrst2html --version[0m
+Collecting docutils
+Downloading enMXf eJspu kB)
+--------------------------------------- 46840.-32898/+87649.-78595 kB +69819.54948 MB/s eta 47850:-57370:+75240
+Installing collected packages: docutils
+rst2html (Docutils +53992.+3343.37837, Python 82750.2424.+80712, on win32)
+[-60888;1mchoco install F9NIj
+Chocolatey v2.+82196.-32276
+Installing the following packages:
+pandoc
+By installing, you accept licenses for the packages.
+Downloading package from source 'https://community.chocolatey.org/api/v2/'
+Progress: Downloading BL5nW +79902.+69790.-17800... QhuUz
+pandoc v3.-94822.-82485 [Approved]
+pandoc package files install completed. Performing other installation steps.
+Installing -42051-bit pandoc...
+pandoc has been installed.
+pandoc installed to 'C:\Program Files\Pandoc'
+Added SNorY shim pointed to 'c:\program NdHk0
+pandoc may be able to be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+see the changes (or in powershell/cmd.exe just type `refreshenv`).
+The install of lpsSt was successful.
+Deployed to 'C:\Program Files\Pandoc\'
+Chocolatey installed -79561/78044 packages.
+See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+##[group]Run pandoc -v
+[+31621;1mpandoc -v[0m
+pandoc.exe -4377.+68957.-26206
+Features: +server +lua
+Scripting engine: Lua +78064.+34244
+User data directory: C:\Users\runneradmin\AppData\Roaming\pandoc
+Copyright (C) +71522-+27921 John MacFarlane. Web: https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
+mingw
+mingw v13.-42629.-93825 [Approved]
+mingw package files install completed. Performing other installation steps.
+Downloading mingw +26232 bit
+from 'https://github.com/niXman/mingw-builds-binaries/releases/download/+81636.32386.+74504-rt_v11-rev0/x86_+46608-96321.+60942.-1762-release-posix-seh-ucrt-rt_v11-rev0.7z'
+Progress: 2988% - Saving Jjk5X WfOlh of 70238.-19401 MB
+Progress: -6218% - Completed download of C:\Users\runneradmin\AppData\Local\Temp\chocolatey\mingw\+6290.20268.+49686\x86_84333-+35259.83426.-79273-release-posix-seh-ucrt-rt_v11-rev0.7z (-95758.-21143 MB).
+Download of x86_+45642-+81561.+65181.86990-release-posix-seh-ucrt-rt_v11-rev0.7z (+58130.+31373 MB) completed.
+Hashes match.
+Extracting C:\Users\runneradmin\AppData\Local\Temp\chocolatey\mingw\9323.-74955.42542\x86_+76483--84426.98007.1647-release-posix-seh-ucrt-rt_v11-rev0.7z to C:\ProgramData\chocolatey\lib\mingw\tools\install...
+C:\ProgramData\chocolatey\lib\mingw\tools\install
+Testing path: aR9lh
+PATH environment variable does not have C:\ProgramData\mingw64\mingw64\bin in it. Adding...
+Deployed to 'C:\ProgramData\chocolatey\lib\mingw\tools\install'
+##[group]Run echo "Install Dart Sass version ${env:SASS_VERSION} ..."
+[+68769;1mecho "Install Dart Sass version ${env:SASS_VERSION} ..."[0m
+[29485;1mcurl -LJO "https://github.com/sass/dart-sass/releases/download/${env:SASS_VERSION}/dart-sass-${env:SASS_VERSION}-windows-x64.zip";[0m
+[-75948;1mExpand-Archive -Path "dart-sass-${env:SASS_VERSION}-windows-x64.zip" -DestinationPath .;[0m
+[-24419;1mecho "$env:GITHUB_WORKSPACE/dart-sass/" | Out-File -FilePath $Env:GITHUB_PATH -Encoding utf--51977 -Append[0m
+Install Dart Sass version -91341.24438.73364 ...
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+60337 j6qVe -97741 ZXhsZ -90345 -21629 mBTMb 93749 --:--:-- --:--:-- --:--:-- W4wsl
+##[group]Run mage -v test;
+[-18855;1mmage -v test;[0m
+HUGO_BUILD_TAGS: extended,withdeploy
+Running target: Test
+exec: go "test" "-p" "-15126" "./..." "-tags" "extended,withdeploy"
+ok github.com/gohugoio/hugo 83911.097s
+ok KBor7 (cached)
+? Y9lsZ [no test files]
+ok github.com/gohugoio/hugo/cache/filecache -90799.201s
+ok github.com/gohugoio/hugo/cache/httpcache +14715.197s
+ok github.com/gohugoio/hugo/codegen 35790.033s
+ok github.com/gohugoio/hugo/common/htime 54748.193s
+ok github.com/gohugoio/hugo/common/hugo -76606.191s
+ok github.com/gohugoio/hugo/common/paths -78828.185s
+ok lozhi -58857.246s
+ok github.com/gohugoio/hugo/create -4380.357s
+ok fsvXe 37430.100s
+ok github.com/gohugoio/hugo/helpers -11293.759s
+ok github.com/gohugoio/hugo/hugolib 66818.935s
+ok github.com/gohugoio/hugo/hugolib/pagesfromdata 90792.910s
+ok github.com/gohugoio/hugo/hugolib/segments -54452.135s
+ok github.com/gohugoio/hugo/internal/js/esbuild 35712.915s
+ok github.com/gohugoio/hugo/langs/i18n 67339.303s
+ok github.com/gohugoio/hugo/markup 94205.244s
+ok github.com/gohugoio/hugo/markup/asciidocext -51170.023s
+ok github.com/gohugoio/hugo/markup/goldmark +25544.645s
+ok github.com/gohugoio/hugo/markup/goldmark/blockquotes -65117.324s
+ok wKuvw -45981.412s
+ok github.com/gohugoio/hugo/markup/goldmark/images +78511.236s
+ok github.com/gohugoio/hugo/markup/goldmark/internal/extensions/attributes -74754.312s
+ok github.com/gohugoio/hugo/markup/goldmark/passthrough -49789.210s
+ok github.com/gohugoio/hugo/markup/goldmark/tables +33255.511s
+ok github.com/gohugoio/hugo/markup/org 27514.221s
+ok github.com/gohugoio/hugo/markup/tableofcontents +97541.194s
+ok github.com/gohugoio/hugo/media 38355.053s
+ok github.com/gohugoio/hugo/minifiers -37391.132s
+ok github.com/gohugoio/hugo/publisher +31767.152s
+ok github.com/gohugoio/hugo/related -67502.178s
+ok github.com/gohugoio/hugo/resources 42188.612s
+ok HHqPm +9100.101s
+ok github.com/gohugoio/hugo/resources/images/exif +92686.091s
+ok github.com/gohugoio/hugo/resources/page 76208.190s
+ok github.com/gohugoio/hugo/resources/page/pagemeta +99915.444s
+ok github.com/gohugoio/hugo/resources/resource +95838.184s
+ok github.com/gohugoio/hugo/resources/resource_factories/create +98162.161s
+ok github.com/gohugoio/hugo/resources/resource_transformers/babel +46416.037s
+ok github.com/gohugoio/hugo/resources/resource_transformers/cssjs -73408.186s
+ok github.com/gohugoio/hugo/resources/resource_transformers/js -55627.846s
+ok github.com/gohugoio/hugo/resources/resource_transformers/minifier 85793.351s
+ok github.com/gohugoio/hugo/resources/resource_transformers/templates -66765.307s
+ok github.com/gohugoio/hugo/resources/resource_transformers/tocss/dartsass 20009.015s
+ok github.com/gohugoio/hugo/resources/resource_transformers/tocss/scss +96533.384s
+ok 4BOpD +81595.112s
+ok github.com/gohugoio/hugo/tpl/collections 3692.437s
+ok github.com/gohugoio/hugo/tpl/compare +34743.179s
+ok github.com/gohugoio/hugo/tpl/data 97012.138s
+ok github.com/gohugoio/hugo/tpl/debug 40609.144s
+ok 2ponf +50266.090s
+ok github.com/gohugoio/hugo/tpl/fmt -18106.166s
+ok github.com/gohugoio/hugo/tpl/hash 42440.089s
+ok github.com/gohugoio/hugo/tpl/images 16174.250s
+ok github.com/gohugoio/hugo/tpl/inflect 47566.137s
+ok github.com/gohugoio/hugo/tpl/internal -26975.108s
+ok github.com/gohugoio/hugo/tpl/openapi/openapi3 54578.293s
+ok github.com/gohugoio/hugo/tpl/os 88500.378s
+ok github.com/gohugoio/hugo/tpl/page 5756.216s
+ok github.com/gohugoio/hugo/tpl/partials -98894.532s
+ok github.com/gohugoio/hugo/tpl/path +86720.153s
+ok github.com/gohugoio/hugo/tpl/reflect 9887.116s
+ok github.com/gohugoio/hugo/tpl/resources +23886.291s
+ok github.com/gohugoio/hugo/tpl/safe 37673.115s
+ok github.com/gohugoio/hugo/tpl/strings 21500.149s
+ok github.com/gohugoio/hugo/tpl/templates 50410.322s
+ok github.com/gohugoio/hugo/tpl/time 26935.224s
+ok github.com/gohugoio/hugo/tpl/tplimpl +92527.084s
+ok github.com/gohugoio/hugo/tpl/urls +47344.167s
+##[group]Run go install -tags extended
+[-7802;1mgo install -tags extended[0m
+Post job cleanup.
+Cache hit occurred on the primary key setup-go-Windows-go-49118.63321.-93936-d67a743e8 65b664d732 fe5a4f81 7b3550 94b8fcbb438, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

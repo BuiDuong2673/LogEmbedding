@@ -1,0 +1,159 @@
+Requested labels: windows-latest
+Job defined at: charmbracelet/meta/.github/workflows/lint.yml@refs/heads/main
+Reusable workflow chain:
+charmbracelet/bubbletea/.github/workflows/lint.yml@refs/pull/55560/merge (65ddef2d 3d5dc727994a 7583d6f8bb 070f99b)
+-> charmbracelet/meta/.github/workflows/lint.yml@refs/heads/main (4FF8 E444 74BA 1326)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 31818 (hosted)
+Current runner version: '81503.-50388.7172'
+##[group]Operating System
+Microsoft Windows Server +40622
+-65420.-81703.88987
+Datacenter
+##[endgroup]
+##[group]Runner Image
+Image: windows-+63170
+Version: -48875.+38794.-28277
+Included Software: https://github.com/actions/runner-images/blob/win22/-1125.-84342/images/windows/Windows2022-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20250406.-8020
+##[group]Runner Image Provisioner
+128.83.35.8
+##[group]GITHUB_TOKEN Permissions
+Checks: read
+Contents: read
+Metadata: read
+PullRequests: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package nWUxW
+Digest: sha256:cd9cb8b7 84091f8 2c73e3b37fea 63b541 fcf3c7b2f
+Source commit SHA: 7f296fe3b3a 3b6afbbf5df 1dd8b20a10 472a1ea2ea a20f0d77fa7
+Download action repository 'golangci/golangci-lint-action@v7' (SHA:00BF EE45 603E 7F69 D9E3 FF4B)
+Uses: charmbracelet/meta/.github/workflows/lint.yml@refs/heads/main (EF42 CB2D 28FE 480E)
+##[group] Inputs
+golangci_path:
+Complete job name: lint / lint (windows-latest)
+##[group]Run git config --global core.autocrlf input
+[+85999;1mgit config --global core.autocrlf input[0m
+shell: C:\Program Files\PowerShell\+86586\pwsh.EXE -command ". '{82674}'"
+##[group]Run 51TxM
+with:
+path: MRPdC
+repository: HFjQx
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 11496
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: WExdI
+##[group]Getting Git version info
+Working directory is pw7oy
+[command]"C:\Program Files\Git\bin\git.exe" version
+git version 74062.+8315.+32946.windows.+12645
+Copying 'C:\Users\runneradmin\.gitconfig' to iNVXc
+Temporarily overriding OmlFC before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]"C:\Program Files\Git\bin\git.exe" config lK1GC Nbwlv jtVIO 9JBo0
+##[group]Initializing the repository
+[command]"C:\Program Files\Git\bin\git.exe" 9l0ur pr8TK
+Initialized empty Git repository in icO2F
+[command]"C:\Program Files\Git\bin\git.exe" remote add origin eo7H9
+##[group]Disabling automatic garbage collection
+[command]"C:\Program Files\Git\bin\git.exe" config --local UZFfI TzuO5
+##[group]Setting up auth
+[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp JySdb && git config --local --unset-all BKbn4 || :\""
+[command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+##[group]Fetching the repository
+[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=24799 fetch --no-tags --prune --no-recurse-submodules --depth=38954 origin wtZPx
+From QkRVZ
+* [new ref] DAC5 046E FD26 8477-> pull/+56840/merge
+##[group]Determining the fVkfa MNEQk
+##[group]Checking out the ref
+[command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/-97518/merge
+Note: switching to 'refs/remotes/pull/52799/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at a8bd7d8 Merge 4181 4BE9 DC73 AB0C 81E8 B991 into 416E 5207 1BC6 89FD 8AB5 5145
+[command]"C:\Program Files\Git\bin\git.exe" log +24421 --format=%H
+368E 77E0 AA37 3C96 DE8A 6B01
+Retrieving the default branch name
+Default branch 'main'
+* [new branch] main -> origin/main
+[command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+branch 'main' set up to track 'origin/main'.
+Switched to a new branch 'main'
+go-version: stable
+check-latest: false
+cache: true
+Setup go version spec stable
+stable version resolved as 94986.+10149.+49188
+Attempting to download 74928.88610.+15325...
+matching +28158.+28754.89130...
+Acquiring 44142.+62936.22029 from https://github.com/actions/go-versions/releases/download/-8425.41921.33081-+17009/go--26320.+84647.+51755-win32-x64.zip
+Extracting Go...
+[command]"C:\Program Files\PowerShell\34868\pwsh.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.ZipFile } catch { } ; try { MRgbA DhhbE $true) } catch { if (($_.Exception.GetType().FullName -eq 'System.Management.Automation.MethodException') -or ($_.Exception.GetType().FullName -eq 'System.Management.Automation.RuntimeException') ){ Expand-Archive -LiteralPath gOhDh -DestinationPath VakpO -Force } else { throw $_ } } ;"
+Successfully BPed1 go to Jhh2i
+Adding to the cache ...
+Created link JbAve => ihzwL
+Added go to the path
+Successfully set up Go version stable
+[command]C:\hostedtoolcache\windows\go\+88791.-38994.+75499\x64\bin\go.exe env q8KMh
+C:\Users\runneradmin\AppData\Local\go-build
+C:\Users\runneradmin\go\pkg\mod
+##[warning]Restore cache failed: Dependencies file is not found in D:\a\bubbletea\bubbletea. Supported file pattern: go.sum
+go version go1.+55298.+81940 windows/amd64
+##[group]go env
+set AtSRn
+set 5LdeN -g
+set GOGCCFLAGS=-m64 -mthreads -Wl,--no-gc-sections -fmessage-length=-42893 -ffile-prefix-map=C:\Users\RUNNER~-35566\AppData\Local\Temp\go-build11094363=/tmp/go-build -gno-record-gcc-switches
+working-directory: charmbracelet/bubbletea
+args: --config="D:\a\bubbletea\bubbletea/charmbracelet/meta/golangci.yml" --timeout=5m
+install-mode: binary
+github-token: ***
+verify: true
+only-new-issues: false
+skip-cache: false
+skip-save-cache: false
+problem-matchers: false
+cache-invalidation-interval: 72370
+##[group]prepare environment
+Checking for go.mod: charmbracelet\bubbletea\go.mod
+Cache not found for input keys: golangci-lint.cache-Windows-charmbracelet/bubbletea-25005-fe4a024 3aea8d69c 38e7ea6 cf5819466f 2e3055d12, golangci-lint.cache-Windows-charmbracelet/bubbletea-+16557-
+Finding needed golangci-lint version...
+Requested golangci-lint 'latest', using 'v2.-71124.-40139', calculation took 16ms
+Installation mode: binary
+Installing golangci-lint binary v2.+97008.77080...
+Downloading binary https://github.com/golangci/golangci-lint/releases/download/v2.+32407.-89738/golangci-lint-+96737.+40681.90487-windows-amd64.zip ...
+Installed golangci-lint into D:\a\_temp\f9e0540c-09b9-43c1-b8cf-7a019c6db6bd\golangci-lint--99421.61330.-18038-windows-amd64\golangci-lint in 726ms
+Prepared env in 1015ms
+##[group]run golangci-lint
+Running [D:\a\_temp\f9e0540c-09b9-43c1-b8cf-7a019c6db6bd\golangci-lint-65907.91170.84366-windows-amd64\golangci-lint config gLe9V --config="D:\a\bubbletea\bubbletea/charmbracelet/meta/golangci.yml"] in [D:\a\bubbletea\bubbletea\charmbracelet\bubbletea] ...
+Running [D:\a\_temp\f9e0540c-09b9-43c1-b8cf-7a019c6db6bd\golangci-lint-+13452.12040.+42959-windows-amd64\golangci-lint run --path-prefix=charmbracelet/bubbletea --config="D:\a\bubbletea\bubbletea/charmbracelet/meta/golangci.yml" --timeout=5m] in [D:\a\bubbletea\bubbletea\charmbracelet\bubbletea] ...
++59113 issues.
+golangci-lint found no issues
+Ran golangci-lint in 16120ms
+Post job cleanup.
+[command]"C:\Program Files\Git\usr\bin\tar.exe" --posix -cf cache.tzst --exclude cache.tzst -P -C D:/a/bubbletea/bubbletea --files-from manifest.txt --force-local --use-compress-program "zstd -T0"
+Sent +68243 of -16221 (+62759.+10610%), +37401.+71916 MBs/sec
+Saved cache for golangci-lint from paths 'C:\Users\runneradmin\.cache\golangci-lint' in 784ms
+Primary key was not generated. Please check the log messages above for more errors or information
+http.https://github.com/.extraheader
+Cleaning up orphan processes

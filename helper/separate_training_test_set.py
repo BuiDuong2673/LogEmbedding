@@ -117,7 +117,7 @@ class InternalTrainTestSeparator:
             print("-" * 40)
 
 
-if __name__ == "__main__":
-    internal_train_test_separator = InternalTrainTestSeparator()
-    internal_train_test_separator.create_train_test_directory()
+# if __name__ == "__main__":
+    # internal_train_test_separator = InternalTrainTestSeparator()
+    # internal_train_test_separator.create_train_test_directory()
 

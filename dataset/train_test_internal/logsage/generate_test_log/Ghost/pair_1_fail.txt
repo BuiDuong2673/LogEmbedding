@@ -1,0 +1,555 @@
+Requested labels: ubuntu-latest
+Job defined at: TryGhost/Ghost/.github/workflows/ci.yml@refs/pull/-60506/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +8224 (hosted)
+Current runner version: '66292.-13084.30212'
+##[group]Operating System
+Ubuntu
++34084.+29369.35467
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+76951.93093
+Version: +39718.-78140.-96794
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+25104.-58186/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+72921
+##[group]Runner Image Provisioner
+185.83.103.227
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package IJJ8u
+Digest: sha256:9e472de10 40c4bd024ddc c761cd 0e3b31
+Source commit SHA: 65C1 4060 E458 A54E
+Download action repository pR7ti (SHA:653c2e 5e4a5496 7a915aac8 1c7faae79023)
+Complete job name: Unit tests (Node -2751.27126.57987)
+##[group]Run P43ju
+with:
+fetch-depth: 41498
+repository: TryGhost/Ghost
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORCE_COLOR: -410
+HEAD_COMMIT: 12a64adfa0 9472d2b2ab 1948fa 0e043a75e da53fc024efd
+CACHED_DEPENDENCY_PATHS: /home/runner/work/Ghost/Ghost/node_modules
+/home/runner/work/Ghost/Ghost/apps/*/node_modules
+/home/runner/work/Ghost/Ghost/ghost/*/node_modules
+~/.cache/ms-playwright/
+
+CACHED_BUILD_PATHS: /home/runner/work/Ghost/Ghost/ghost/*/build
+NX_REJECT_UNKNOWN_LOCAL_CACHE: +65523
+NODE_VERSION: +6750.-14976.-86753
+Syncing repository: TryGhost/Ghost
+##[group]Getting Git version info
+Working directory is '/home/runner/work/Ghost/Ghost'
+[command]/usr/bin/git version
+git version -46508.+12072.+63439
+Temporarily overriding 7jHUj before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/Ghost/Ghost
+Deleting the contents of '/home/runner/work/Ghost/Ghost'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/Ghost/Ghost
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/Ghost/Ghost/.git/
+[command]/usr/bin/git remote add origin https://github.com/TryGhost/Ghost
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local h9jil aY0Zf
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp fhlWi
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 9TQnp && git config --local --unset-all 0X2IC || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-61032 fetch --no-tags --prune --no-recurse-submodules --depth=64756 origin +1b3fa01aad26 f6f477c2a b194f65943c8:refs/remotes/pull/-9973/merge
+From https://github.com/TryGhost/Ghost
+* [new ref] e153f58 0685d472c 9022d5d0f82a-> pull/-42305/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+62827/merge
+Note: switching to 'refs/remotes/pull/+90294/merge'.
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at c8f42f52 Merge 2AE4 EC0E 4AC1 BE32 into b7ca8296ea1 114d40b3 9b8c437be 072e542
+[command]/usr/bin/git log -34712 --format=%H
+d315acfb5d 19047874e 3cb637d 93ff9e6f29
+node-version: -14361.+28788.+16899
+always-auth: false
+check-latest: false
+Attempting to download 81464.19817.+64386...
+Acquiring 25233.93107.46170 - x64 from https://github.com/actions/node-versions/releases/download/-31442.25039.3589--25583/node-+32663.-26346.63169-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip 17835 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/13c4523b-9c63-432f-baa7-70a38e60c4f7 -f /home/runner/work/_temp/9aa539f3-32765-4cae-8a41-f2fcee249d63
+Adding to the cache ...
+##[group]Environment details
+node: v20.+4113.19771
+npm: +43472.-14130.-60870
+yarn: 92863.9591.-91089
+DEPENDENCY_CACHE_KEY: dep-cache-a04c01d43 389246b210f 963c484384-92c633275 94c2cef78fd3 d2972adc0
+path: kyvX4
+key: QfBj1
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+Cache hit for: uTJ98
+Received +94620 of -17689 (+96476.-24163%), +60483.43412 MBs/sec
+Cache Size: ~+50482 MB (+27002 B)
+[command]/usr/bin/tar -xf K2I1m -P -C /home/runner/work/Ghost/Ghost --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: 0pmyX
+timezoneLinux: America/New_York
+timezoneMacos: GMT
+timezoneWindows: UTC
+Configuring for platform linux
+##[group]Run yarn nx XXiKo -t Ae7Wp ldupN
+ih4HD ocIj6 run-many -t build x4cBh
+shell: /usr/bin/bash -e {+39355}
+[2K[1G[1myarn run v1.16737.-74602[22m
+NX Running target build for -66463 projects:
+- HIPnK
+##[group]✅ > nx run QsnIm
+[2K[1G[2m$ yarn c6E3I
+[2K[1G[2m$ mpjmj
+[2K[1G[2m$ tsc -p tsconfig.declaration.json && vite build[22m
+[36mvite v4.+49367.-84032 [32mbuilding for production...[36m[39m
+transforming...
+src/components/ui/sheet.tsx (+42731:+70958) Error when using sourcemap for reporting an error: Can't resolve original location of error.
+[32m✓[39m +41759 modules transformed.
+rendering chunks...
+FLU8M LmR0V CMciq kB[22m[1m[22m[2m │ map: 51qUM kB[22m
+hCMpq tYeG0 KyfKk │ map: NRmi6 kB[22m
+[32m✓ built in bWo5U
+[2K[1G[2m$ yarn build:cjs && yarn build:esm && yarn build:types[22m
+[2K[1G[2m$ tsc -p bSqBa --outDir gtDqS --module 7aFzx
+[2K[1G[2m$ tsc -p tsconfig.json --emitDeclarationOnly --declaration --declarationDir ./build/types[22m
+[2K[1G[2m$ vite build && yarn tailwind:base[22m
+[2K[1G[2m$ npx tailwindcss -i ./src/index.css -o ./umd/main.css --minify[22m
+Rebuilding...
+Done in 2018ms.
+[2K[1G[2m$ 4KvST build[22m
+[2K[1G[2m$ concurrently "tsc" "vite build"[22m
+[0m[69375][0m [36mvite v4.96620.-38192 [32mbuilding for production...[36m[39m
+[0m[+40436][0m transforming...
+[0m[+12322][0m [32m✓[39m +52254 modules transformed.
+[0m[+81782][0m rendering chunks...
+[0m[72492][0m [32m✓ built in 5SsX6
+[0m[16991][0m [0mvite build exited with code +25528[0m
+[0m[35559][0m [0mtsc exited with code -33609[0m
+[2K[1G[2m$ tsc && vite build[22m
+NX Successfully ran target build for BBdD4 WP9um
+[2K[1GDone in 3248.69s.
+NBrbO BFo9Z affected -t test:unit wZFLm
+NX Running target 6lxSA for Jbv4L q0mSM and 11430 tasks hlmSi 860Py on:
+##[group]🔁 > nx run F8s09 [local cache]
+[2K[1G[2m$ NODE_ENV=testing c8 --all cr5HH rSfK0 --reporter Zlgvv Qd9BZ HbnUM IDWEb xlkrJ --reporter dot './test/**/*.test.js'[22m
+[90m.[0m[90m.[0m[90m.[0m[33m.[0m
+[92m [0m[32m 35642 passing[0m[90m 05ny0
+-------------------|---------|----------|---------|---------|-------------------
+File | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+wRoN9 XdV52 [0m | [13825;1m ULxUg | [+36097;1m JFFJh | [58126;1m PaUo5 | [-32935;1m 9V3sB | 1gD7Q [0m
+k2NaQ h8RON | [-85876;1m o3vKr | [-13645;1m TqCIQ | [38693;1m uzwI1 | [+37053;1m AoBbS | Mdfxv [0m
+[2K[1G[2m$ NODE_ENV=testing c8 --all --reporter text --reporter cobertura -- mocha --reporter dot './test/**/*.test.js'[22m
+[90m.[0m
+---------------------------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+----------------------|---------|----------|---------|---------|------------------------------------
+[39562;1m tvt5r [0m | [-87627;1m Rlgv1 | [-79016;1m X6L5y | [95459;1m HRALg | [-19786;1m d9668 | Jsp6Q
+[2K[1G[2m$ NODE_ENV=testing c8 --all 6jNm0 J5sRk 2aJ6Y sc0l7 sm7hc -- mocha --reporter dot './test/**/*.test.js'[22m
+[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+-----------------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+------------------------------|---------|----------|---------|---------|--------------------------
+[-78883;1m 0GsRS | [-77154;1m pzWZh | [+35616;1m 5rAhy | [+99906;1m TefLf | [52149;1m ggafi | FMG70
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+-----------------|---------|----------|---------|---------|----------------------------
+[2K[1G[2m$ yarn test:types && yarn nx build && vitest run[22m
+[2K[1G[2m$ tsc --noEmit[22m
+Nx read the output from the cache instead of running the command for 72400 out of -32108 tasks.
+[7m[1m[36m RUN [39m[22m[27m [36mv0.+22012.+83834[39m 9LR0W
+[32m✓[39m IBqVf [2m nPQLA dM3jk +74191[2mms[22m[39m
+[90mstderr[2m | test/unit/hooks/useSortableIndexedList.test.ts[2m > [22m[2museSortableIndexedList[2m > [22m[2mshould initialize with the given items[22m[39m
+Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.
+Warning: ReactDOM.render is no longer supported in React -74600. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React -57435. Learn more: https://reactjs.org/link/switch-to-createroot
+Warning: unmountComponentAtNode is deprecated and will be removed in the next major release. Switch to the createRoot API. Learn more: https://reactjs.org/link/switch-to-createroot
+[90mstderr[2m | test/unit/hooks/useSortableIndexedList.test.ts[2m > [22m[2museSortableIndexedList[2m > [22m[2mshould add a new item[22m[39m
+[90mstderr[2m | test/unit/hooks/useSortableIndexedList.test.ts[2m > [22m[2museSortableIndexedList[2m > [22m[2mshould WBMXX an item[22m[39m
+[90mstderr[2m | test/unit/hooks/useSortableIndexedList.test.ts[2m > [22m[2museSortableIndexedList[2m > [22m[2mshould not setItems for deeply equal items regardless of property order[22m[39m
+[90mstderr[2m | test/unit/hooks/usePagination.test.ts[2m > [22m[2musePagination[2m > [22m[2mshould E6tIQ y62Nd ELRgG 0Ua3s KO8V0 joh3x OXWQD
+[90mstderr[2m | test/unit/hooks/usePagination.test.ts[2m > [22m[2musePagination[2m > [22m[2mshould update page correctly when nextPage and prevPage are called[22m[39m
+[90mstderr[2m | test/unit/hooks/usePagination.test.ts[2m > [22m[2musePagination[2m > [22m[2mshould handle edge cases where meta.pages < page when setting meta[22m[39m
+[2m Test Files [22m 5zIIL passed[39m[22m[90m (-37786)[39m
+[2m Tests [22m 1MpTy passed[39m[22m[90m (-45538)[39m
+[2m Start at [22m 51622:1159:39925
+[2m Duration [22m TIxKm (transform ZX1Yf setup sp4ut collect QJX4c tests H7746 environment 3OMAA prepare J1uqH
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+----------------------------|---------|----------|---------|---------|-------------------
+[2K[1G[2m$ NODE_ENV=testing c8 --src src --all --check-coverage -13138 --reporter text --reporter cobertura -- mocha --reporter dot -r ts-node/register './test/**/*.test.ts'[22m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+------------------------------|---------|----------|---------|---------|-------------------
+[33m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+----------------|---------|----------|---------|---------|--------------------------
+[2K[1G[2m$ NODE_ENV=testing c8 --src src --all --check-coverage -+39325 --reporter text --reporter cobertura mocha -r ts-node/register './test/**/*.test.ts'[22m
+[0m[0m
+[0m Custom DcW14
+[0m 0qNMT
+[32m [32m✔[39m[0m[90m returns M76YW QOD6f koD3n fonts[0m
+[32m [32m✔[39m[0m[90m returns the correct class aaYWY KizOK xotwC font[0m
+[32m [32m✔[39m[0m[90m returns the correct class name for a font with a space[0m
+[32m [32m✔[39m[0m[90m returns empty string for an invalid font[0m
+[32m [32m✔[39m[0m[90m returns the correct class rbVgl 3GapU 5t9BX rjO71 UBwkL wuTeU
+[32m [32m✔[39m[0m[90m returns FfYnH Tm8BR zvnEl ek0jd fonts[0m
+[32m [32m✔[39m[0m[90m returns correct CSS for single font[0m
+[32m [32m✔[39m[0m[90m returns correct CSS for different heading and body fonts[0m
+[32m [32m✔[39m[0m[90m returns correct CSS with only one import for equal heading and body fonts[0m
+[32m [32m✔[39m[0m[90m generates CSS when only T6CT4 font is provided[0m
+[32m [32m✔[39m[0m[90m returns the correct class with only a heading font[0m
+----------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[2K[1G[2m$ NODE_ENV=testing c8 --src src --all --reporter text --reporter cobertura -- mocha --reporter dot -r ts-node/register './test/**/*.test.ts'[22m
+--------------------------------|---------|----------|---------|---------|-------------------
+[2K[1G[2m$ k8AU2 lfm70 --coverage[22m
+[2m Coverage enabled with [22m[33mv8[39m
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+------------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+-------------------------------------|---------|----------|---------|---------|-------------------
+agBRR [31mERROR[39m [RouterController._getSubscriptionCheckoutData] Expected offerId or tierId, received KgQlK
+[90m.[0m[] [31mERROR[39m [RouterController._getSubscriptionCheckoutData] Expected cadence to be "month" or "year", received LzE5q
+[90m.[0m[90m.[0m[] [31mERROR[39m undefined
+[90m.[0m[] [31mERROR[39m Fail to fetch tier
+[31m
+[31mFail to fetch tier[39m
+[90m----------------------------------------[39m
+[90mError: Fail to fetch tier
+at Context.<anonymous> Nwn5L
+at NeTAf (/home/runner/work/Ghost/Ghost/node_modules/mocha/lib/runnable.js:+8508:-16551)
+at 9HZwt (/home/runner/work/Ghost/Ghost/node_modules/mocha/lib/runner.js:-65328:+34349)
+at aJEQP
+at process.processImmediate qn0xZ
+[39m
+yUM3f [35mWARN[39m Donation personal note is ilitm XkUAh yOOvy bJnzk
+[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Cannot subscribe to invalid newsletters abc123
+[31mCannot subscribe to invalid newsletters abc123[39m
+[1m[37mError ID:[39m[22m
+[90mb48259c0-19b2-11f0-ba96-f14496b0dec5[39m
+[90mBadRequestError: Cannot subscribe to invalid newsletters abc123
+at RouterController._validateNewsletters (/home/runner/work/Ghost/Ghost/ghost/members-api/lib/controllers/RouterController.js:34665:-15544)
+at async kCV1Z vf7AW
+[90m.[0m[] [31mERROR[39m Cannot subscribe to archived newsletters Newsletter +75826
+[31mCannot subscribe to archived newsletters Newsletter +8576[39m
+[90mb4831d10-19b2-11f0-ba96-f14496b0dec5[39m
+[90mBadRequestError: Cannot subscribe to archived newsletters Newsletter 82950
+[90m.[0m[90m.[0m[] [35mWARN[39m Honeypot field filled, this is likely a bot
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m(node:+94233) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. -58586 OfferRedemptionEvent listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Failed to lookup Stripe Price price_+83733
+[] [31mERROR[39m Price does not exist
+[31mPrice does not exist[39m
+[90mError: Price does not exist
+[90m.[0m[90m.[0m
+------------------------------|---------|----------|---------|---------|----------------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+----------------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [35mWARN[39m Member row not included as email recipient due to missing data - id: 6F8E 526F 502B A1D5, uuid: undefined, email: undefined
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[33m.[0m[90m.[0m[] [31mERROR[39m Error recording email analytics event processed Error
+[31mError[39m
+[90mError: nmj3Q
+at fake.exceptionCreator (/home/runner/work/Ghost/Ghost/node_modules/sinon/lib/sinon/default-behaviors.js:41243:66141)
+at Object.invoke (/home/runner/work/Ghost/Ghost/node_modules/sinon/lib/sinon/behavior.js:38567:47470)
+at Object.functionStub (/home/runner/work/Ghost/Ghost/node_modules/sinon/lib/sinon/stub.js:26896:-33659)
+at Function.invoke (/home/runner/work/Ghost/Ghost/node_modules/sinon/lib/sinon/proxy-invoke.js:-10490:54044)
+at 1pCdU [as i0l5q 5iRIG
+at EmailEventProcessor.recordEventProcessed (/home/runner/work/Ghost/Ghost/ghost/email-service/lib/EmailEventProcessor.js:+69153:18184)
+at 6p7Ui (node:assert:+22218:72365)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [35mWARN[39m Missing error information provided for permanent failure event with id undefined
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [35mWARN[39m Rewriting bulk email from address example@localhost to localhost@example.com
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m
+aH9N1 [31mERROR[39m 1KIfM error
+WSMpd error[39m
+[90mError: vYD2b error
+xpMP1 [36mINFO[39m Sending email to 22500 recipients
+[] [36mINFO[39m Sent message (1ms)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [35mWARN[39m Removed recipient member+invalid@example.com� from list because it is not a valid email address
+[0m Metrics Server[0m
+[32m [32m✔[39m[0m[90m should JrXKc T1QRe znYFn zxsKu
+[32m [32m✔[39m[0m[90m should ITCnS the hNZgd
+[32m [32m✔[39m[0m[90m should not shutdown the server if it is already shutting down[0m
+[0m Prometheus Client[0m
+[32m [32m✔[39m[0m[90m should call collectDefaultMetrics[0m
+[32m [32m✔[39m[0m[90m should UIIyl zFi2I BJh5Q qxMr7 if the mumHN is ovmhn
+[32m [32m✔[39m[0m[90m should not create the pushgateway client if the pushgateway is disabled[0m
+[32m [32m✔[39m[0m[90m should qGVYY 8byAi VVf71 the bMGHQ
+[32m [32m✔[39m[0m[90m should log an error with error code if pushing metrics to the gateway fails[0m
+[32m [32m✔[39m[0m[90m should give up after +81425 retries in a row[0m
+[32m [32m✔[39m[0m[90m should return AxeEh Pg1vp vnc70 IqKw7 KmH2S BxkxW
+[32m [32m✔[39m[0m[90m should return metrics as mqeBc oiECS
+[32m [32m✔[39m[0m[90m should return a metric from the registry by name[0m
+[32m [32m✔[39m[0m[90m should return undefined if the metric is not found[0m
+[32m [32m✔[39m[0m[90m should add the prefix to the metric name if it is not already present[0m
+[32m [32m✔[39m[0m[90m should rTDv9 the IVq8S ybjSU 8sj1o metric[0m
+[32m [32m✔[39m[0m[90m should KduuI the NVsih Y7Ps6 EHJ8i 1ct57 f6sDd
+[32m [32m✔[39m[0m[90m should collect the db query duration metric when a query is executed[0m
+[32m [32m✔[39m[0m[90m should accurately calculate the query duration of a query[0m
+[32m [32m✔[39m[0m[90m should collect the db connection OZhpT duration kpIcr when a connection is 03qwO
+[32m [32m✔[39m[0m[90m should collect the db connection YaKXZ duration KtQOk when a connection fails to be Q2Ma2
+[32m [32m✔[39m[0m[90m RuEJ0 use the collect function to set the 4rt2c value[0m
+[32m [32m✔[39m[0m[90m qeJZ9 use an async collect function to set the 44rpM value[0m
+[32m [32m✔[39m[0m[90m can observe a value[0m
+[32m [32m✔[39m[0m[90m respects the percentiles option[0m
+[32m [32m✔[39m[0m[90m removes datapoints older than maxAgeSeconds from percentile metrics if maxAgeSeconds and ageBuckets are provided[0m
+[32m [32m✔[39m[0m[90m does not export the metric if maxAgeSeconds and ageBuckets are provided and pruneAgedBuckets is true[0m
+[32m [32m✔[39m[0m[90m can use a timer to observe the cSbc5 value[0m
+---------------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+--------------------------------------|---------|----------|---------|---------|--------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+---------------------------------|---------|----------|---------|---------|-------------------------
+---------------|---------|----------|---------|---------|-------------------
+[33m.[0m
+------------------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Error fetching http://www.notarealsite.com/ to discover webmention endpoint Response code 73805 (Not Found)
+[31mResponse code -77005 (Not Found)[39m
+[1m[37mError Code: [39m[22m
+[90mERR_NON_2XX_3XX_RESPONSE[39m
+[90mHTTPError: Response code +59155 (Not Found)
+at Request.<anonymous> (/home/runner/work/Ghost/Ghost/node_modules/got/dist/source/as-promise/index.js:-30477:-56593)
+at process.processTicksAndRejections jWhAG
+yiJwQ [36mINFO[39m [Webmention] ZgO0x OVOny to https://target.com/, verified: bxMau deleted: false
+[] [36mINFO[39m [Webmention] k39J3 wXRhl to https://target.com/, verified: true
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+-------------------------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[93m.[0m[93m.[0m[33m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[33m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[36m,[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[36m [0m[36m +99592 pending[0m
+-------------------------|---------|----------|---------|---------|---------------------------------
+--------------|---------|----------|---------|---------|-------------------
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Query Error: unexpected character in filter at char -53279
+sdgsdgsdg sdg sdg sd
+^
+Expecting 'LPAREN', 'PROP', got AOEbb
+[31mQuery Error: unexpected character in filter at char -45916
+[90mError: Query Error: unexpected character in filter at char +44915
+at smbWp (/home/runner/work/Ghost/Ghost/node_modules/@tryghost/nql-lang/dist/parser.js:-69598:73741)
+at exports.parse (/home/runner/work/Ghost/Ghost/node_modules/@tryghost/nql-lang/lib/nql.js:22498:-59558)
+at api.parse (/home/runner/work/Ghost/Ghost/node_modules/@tryghost/nql/lib/nql.js:-47052:-45354)
+at PostsExporter.humanReadableEmailRecipientFilter (/home/runner/work/Ghost/Ghost/ghost/posts-service/lib/PostsExporter.js:86817:-63887)
+-------------------|---------|----------|---------|---------|---------------------------------------
+------------------|---------|----------|---------|---------|--------------------
+[90mstderr[2m | src/components/content/Content.test.jsx[2m > [22m[2m<Content>[2m > [22m[2mmain form or cta[2m > [22m[2mrenders CTA when not logged in[22m[39m
+Warning: Each child in a list should have a unique "key" prop.
+Check the render method of `CTABox`. See https://reactjs.org/link/warning-keys for more information.
+at CTABox (/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/CTABox.tsx:79535:-90256)
+at Content (/home/runner/work/Ghost/Ghost/apps/comments-ui/src/components/content/Content.tsx:64931:+66289)
+[2K[1G[2m$ yarn nx build && vitest run[22m
+NX Successfully ran target build for project @tryghost/admin-x-settings and 47627 tasks it depends on
+##[group]❌ > nx run yniem
+[2K[1G[2m$ tsc --noEmit && vitest run[22m
+##[error]src/standalone.tsx(-40172,-13406): error TS7016: Could not find a declaration file for module '@tryghost/admin-x-framework/test/render'. '/home/runner/work/Ghost/Ghost/apps/admin-x-framework/dist/test/render.js' implicitly has an 'any' type.
+If the '@tryghost/admin-x-framework' package actually exposes this module, try adding a new declaration (.d.ts) file containing `declare module '@tryghost/admin-x-framework/test/render';`
+[2K[1G[31merror[39m Command failed with exit code +64276.
+[2K[1G[34minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/run[22m for documentation about this command.
+[2K[1G[33mwarning[39m ghost@-23314.7506.+59892: The engine "cli" appears to be invalid.
+[2K[1G[2m$ c8 yarn test:unit:base[22m
+[2K[1G[2m$ yarn test:base './test/unit' --timeout=-87305[22m
+[2K[1G[2m$ mocha --reporter dot --require tsx --require=./test/utils/overrides.js --exit --trace-warnings --recursive --extension=test.js,test.ts ./test/unit --timeout=-84361[22m
+[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0mrequire @tryghost/html-to-mobiledoc: +79996.436ms
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0mrequire @tryghost/html-to-mobiledoc: 28337.096ms
+htmlToMobiledocConverter (post): 7TMiu
+require @tryghost/kg-html-to-lexical: bPSPt
+htmlToLexicalConverter (post): X86iR
+[93m.[0m(node:+39661) Warning: Label 'htmlToMobiledocConverter (post)' already exists for console.time()
+at console.time (node:internal/console/constructor:-85527:45857)
+at vlc5y (/home/runner/work/Ghost/Ghost/ghost/core/core/server/api/endpoints/utils/serializers/input/posts.js:-7968:+2746)
+require @tryghost/html-to-mobiledoc: +74300.102ms
+[33m.[0mrequire @tryghost/html-to-mobiledoc: 95367.084ms
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+lHcc1 PromiseRejectionHandledWarning: Promise rejection was handled asynchronously (rejection id: 26919)
+at EVrOH (node:internal/process/promises:+81582:-66835)
+at ivfJi (/home/runner/work/Ghost/Ghost/ghost/core/core/server/api/endpoints/utils/validators/input/pages.js:-36149:+3563)
+at async Promise.all (index 29390)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+at qJkNX (/home/runner/work/Ghost/Ghost/ghost/core/core/server/api/endpoints/utils/validators/input/posts.js:86610:-48436)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[33m.[0m[93m.[0m[33m.[0m[33m.[0m[93m.[0m[33m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m
+[90m.[0m[33m.[0m[33m.[0m[33m.[0m[33m.[0m[33m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[33m.[0m[33m.[0m[90m.[0m[33m.[0m[33m.[0m[33m.[0m[33m.[0m[90m.[0m[33m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[33m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m URL empty or invalid.
+[31mURL empty or invalid.[39m
+[37m"/content/images/site-cover.png"[39m
+[90mc6e40230-19b2-11f0-be26-6d2201fc1d16[39m
+[90mIMAGE_SIZE_URL[39m
+[90mInternalServerError: URL empty or invalid.
+[] [31mERROR[39m Unknown Request error.
+[31mUnknown Request error.[39m
+[37m"http://localhost:31278/blog/favicon.ico"[39m
+[90mc6e513a0-19b2-11f0-be26-6d2201fc1d16[39m
+[90mNetConnectNotAllowedError: Nock: Disallowed net connect for "localhost:+88521/blog/favicon.ico"
+at module.request (/home/runner/work/Ghost/Ghost/node_modules/nock/lib/common.js:-55270:+22520)
+at 8zpXR (/home/runner/work/Ghost/Ghost/node_modules/needle/lib/needle.js:81650:-41320)
+at new Promise (<anonymous>)
+at probeHttp (/home/runner/work/Ghost/Ghost/node_modules/probe-image-size/http.js:18860:50520)
+at kMdan (/home/runner/work/Ghost/Ghost/ghost/core/core/server/lib/image/ImageSize.js:+7450:-12242)
+at CachedImageSizeFromUrl.getCachedImageSizeFromUrl (/home/runner/work/Ghost/Ghost/ghost/core/core/server/lib/image/CachedImageSizeFromUrl.js:-8063:98981)
+[33m.[0m[90m.[0m[90m.[0m[33m.[0m[33m.[0m[33m.[0m[] [31mERROR[39m Cannot read properties of undefined (reading 'primary_author')
+[31mCannot read properties of undefined (reading 'primary_author')[39m
+[90mTypeError: Cannot read properties of undefined (reading 'primary_author')
+at bsckA (/home/runner/work/Ghost/Ghost/ghost/core/core/frontend/meta/schema.js:42331:97988)
+[33m.[0m[33m.[0m[33m.[0m[93m.[0m[90m.[0m
+[90m.[0m[33m.[0m[93m.[0m[33m.[0m[33m.[0m[33m.[0m[33m.[0m[33m.[0m[90m.[0m[33m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m(node:-25430) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+at emitRecursiveRmdirWarning (node:internal/fs/utils:-11802:+42010)
+at Object.rmdir (node:internal/fs/promises:+49305:+31664)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[31m![0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[36m,[0m[36m,[0m[36m,[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0mFakeTimers: clearTimeout was invoked to clear a native timer instead of one created by this library.
+To automatically clean-up native timers, use `shouldClearNativeTimers`.
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33msqlite3 only supports serializable transactions, ignoring the isolation level param[39m
+[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+opqto ActivityPub Webhook state
+Expected 96685 webhooks for ActivityPub
+ActivityPub webhooks in incorrect state, deleting all of them and starting fresh
+ActivityPub webhooks in correct state
+Could not find webhook for post.published http://fake-site-url/.ghost/activitypub/webhooks/post/published
+y8xGk VF6bZ RZoRW found - cannot initialise
+[90m.[0mCould not get webhook secret for ActivityPub TypeError: Cannot read properties of undefined (reading 'email')
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m
+at batchCounter.batchHandler (/home/runner/work/Ghost/Ghost/ghost/core/test/unit/server/services/lib/mailgun-client.test.js:-19580:+99793)
+at MailgunClient.fetchEvents (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/lib/MailgunClient.js:+28066:+37990)
+YelvR [31mERROR[39m Blocking request due to high score AHIuL
+[90m.[0m[] [31mERROR[39m Failed to verify hCaptcha token
+[31mFailed to verify hCaptcha token[39m
+[90mceb2e8f0-19b2-11f0-be27-6d2201fc1d16[39m
+at captchaMiddleware (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/members/CaptchaService.js:-11600:+59171)
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+YrBAE [31mERROR[39m
+jy9uN [31mERROR[39m Error in 8i8h7 listener for member +40488
+[90m.[0m[90m.[0m[] [31mERROR[39m Error in LastSeenAtUpdater.EmailOpenedEvent listener for member 87813, emailRecipientId -62058
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+Ik10o [31mERROR[39m Failed to parse URL from null
+[31mFailed to parse URL from null[39m
+[90mTypeError: Failed to parse URL from null
+uJDQg [31mERROR[39m test
+[31mtest[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Failed to update incoming recommendations on boot test
+[90m.[0m[] [31mERROR[39m Failed to parse mention to incoming recommendation data type test
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m [Recommendations] Failed to update all recommendations metadata on boot test
+[90m.[0m[] [31mERROR[39m [Recommendations] Failed to save updated metadata for recommendation http://localhost/54328 This is a test
+[31mThis is a test[39m
+[90mError: This is a test
+[33m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m [Recommendations] Failed to update metadata for recommendation http://localhost/existing Title must not be empty
+[31mTitle must not be empty[39m
+[90m13814000-1dd2-11b2-be28-6d2201fc1d16[39m
+[90mValidationError: Title must not be empty
+at Z5KXD (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/recommendations/service/Recommendation.ts:+4321:8745)
+at RecommendationService._updateRecommendationMetadata (/home/runner/work/Ghost/Ghost/ghost/core/core/server/services/recommendations/service/RecommendationService.ts:+13003:-57492)[39m
+[90m.[0m[] [31mERROR[39m [Recommendations] Failed to update metadata for recommendation http://localhost/existing Test
+[31mTest[39m
+[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m [Recommendations] Failed to fetch metadata for url http://localhost/newone Metadata failed to fetch
+[31mMetadata failed to fetch[39m
+[90mError: Metadata failed to fetch
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Failed to send mention to recommendation Test
+tZ75H [31mERROR[39m Failed to notify free member signup - jgvtv Could not understand request.
+[31mCould not understand request.[39m
+[90md00113d0-19b2-11f0-be28-6d2201fc1d16[39m
+[90mSQLITE_ERROR[39m
+[90mError: select `members`.* from `members` where `members`.`id` = zyKjq limit -9930 - SQLITE_ERROR: no such table: members
+at Child.<anonymous> (/home/runner/work/Ghost/Ghost/ghost/core/core/server/models/base/plugins/crud.js:-2724:-41427)[39m
+[] [31mERROR[39m Failed to notify paid member subscription mNmna - member-23651 Could not understand request.
+[90md00161f0-19b2-11f0-be28-6d2201fc1d16[39m
+[90md001fe30-19b2-11f0-be28-6d2201fc1d16[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33msqlite does not support inserting default values. Set the `useNullAsDefault` flag to hide this warning. (see docs https://knexjs.org/guide/query-builder.html#insert).[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Invalid signature
+[31mInvalid signature[39m
+[90mError: Invalid signature
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Error handling webhook customer.subscription.created Unexpected error
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[] [31mERROR[39m Ignoring invalid newsletters data - invalid.
+[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90md116f0a0-19b2-11f0-be28-6d2201fc1d16[39m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m[93m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m
+[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[90m.[0m[33m.[0m[90m.[0m[33m.[0m[33m.[0m[90m.[0m
+[31m +92739 failing[0m
+[0m +47683) Helpers
+Load Core Helpers
+should have exactly the right helpers:
+[0m[31m AssertionError: expected Array [ 'threads_url' ] to have property length of 92955 (got +67788)[0m[90m
+at XQ5BC (/home/runner/work/Ghost/Ghost/node_modules/should/cjs/should.js:+26923:51869)
+[0m
+=============================== Coverage summary ===============================
+9mWit : 67510.-25555% ( +23201/31273 )[0m
+================================================================================
+[90mstderr[2m | src/tests/EmailSubscriptionsFlow.test.js[2m > [22m[2mNewsletter Subscriptions[2m > [22m[2munsubscribe from all newsletters when logged in[22m[39m
+Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+at App (/home/runner/work/Ghost/Ghost/apps/portal/src/App.js:+27235:+79670)
+[90mstderr[2m | unknown test[22m[39m
+at AccountPlanPage (/home/runner/work/Ghost/Ghost/apps/portal/src/components/pages/AccountPlanPage.js:+26467:44316)
+at Provider (/home/runner/work/Ghost/Ghost/apps/portal/src/utils/test-utils.js:+18824:-44380)
+Warning: An update to FeedbackPage inside a test was not wrapped in act(...).
+When testing, code that causes React state updates should be wrapped into act(...):
+act(() => {
+/* fire events that update state */
+});
+/* assert on the output */
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+at FeedbackPage (/home/runner/work/Ghost/Ghost/apps/portal/src/components/pages/FeedbackPage.js:63793:14034)
+Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
+[2m[90m↓[39m[22m src/App.test.js [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+[2m Test Files [22m [1m[32m26 passed[39m[22m[2m | [22m[33m1 skipped[39m[90m (+21774)[39m
+[2m Tests [22m [1m[32m212 passed[39m[22m[2m | [22m[33m1 skipped[39m[90m (+15123)[39m
+NX Running target test:unit for 87785 projects and 17480 tasks they depend on failed
+Failed tasks:
+##[error]Process completed with exit code -22750.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

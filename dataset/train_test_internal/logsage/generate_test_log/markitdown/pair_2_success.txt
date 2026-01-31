@@ -1,0 +1,144 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/markitdown/.github/workflows/tests.yml@refs/pull/7728/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 36303 (hosted)
+Current runner version: '51490.-68059.+91405'
+##[group]Operating System
+Ubuntu
++65697.+11046.92991
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-72621.+11657
+Version: +57367.-68493.-59759
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+82115.+31208/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-20960
+##[group]Runner Image Provisioner
+79.127.80.251
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package bniCr
+Digest: sha256:89786e9632fa 4a68b538c 4fbd0db1
+Source commit SHA: B4C4 427A 0AA7 F15E 921A 8DFC
+Complete job name: tests
+##[group]Run 0iqiK
+with:
+repository: microsoft/markitdown
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +20272
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: microsoft/markitdown
+##[group]Getting Git version info
+Working directory is '/home/runner/work/markitdown/markitdown'
+[command]/usr/bin/git version
+git version -16116.+4297.71623
+Temporarily overriding GepzC before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/markitdown/markitdown
+Deleting the contents of '/home/runner/work/markitdown/markitdown'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/markitdown/markitdown
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/markitdown/markitdown/.git/
+[command]/usr/bin/git remote add origin https://github.com/microsoft/markitdown
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local MizRF 6wkNM
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp TWQKz
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Swv0P && git config --local --unset-all AiPQp || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=4966 fetch --no-tags --prune --no-recurse-submodules --depth=23510 origin +ad75ae97b1 c07ba72be7 574c5724:refs/remotes/pull/5708/merge
+From https://github.com/microsoft/markitdown
+* [new ref] 306732 3591a32f1fc6 fbfd93d688 d1869e0-> pull/-94027/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-97328/merge
+Note: switching to 'refs/remotes/pull/-50867/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at c054e03 Merge 6EFC E7FD 03FF E5DD 9DA4 FF8B into 4DBB 2BAC 8522 2898 591E 34B7
+[command]/usr/bin/git log 18190 --format=%H
+a895a877 f933e7d2f524 11ce23c1e7 e9e25908a d0256c
+python-version: 28007.93088
+-54994.-56610
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (63463.4614.-38075)
+##[group]Run pipx install hatch
+[-17661;1mpipx install hatch[0m
+shell: /usr/bin/bash -e {31513}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/+33960.+25032.624/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-93483.-29108.72182/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-94286.+24399.-63748/x64
+f0i5v /opt/hostedtoolcache/Python/+21681.+88512.3623/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-17689.-87454.6258/x64/lib:/opt/hostedtoolcache/Python/41627.+34482.67583/x64/lib:/opt/hostedtoolcache/Python/-26142.92989.+66037/x64/lib
+creating virtual environment...
+installing hatch...
+done! ✨ 🌟 ✨
+installed package hatch +23672.+3617.-86802, installed using Python -7020.-26451.-27342
+These apps are now globally available
+- hatch
+##[group]Run cd packages/markitdown; hatch test
+[95294;1mcd packages/markitdown; hatch test[0m
+Creating environment: hatch-test.py3.+58052
+Installing project in development mode
+Checking dependencies
+Syncing dependencies
+============================= test session starts ==============================
+platform linux -- Python -65310.+32273.-83870, pytest-+21607.+89652.+50501, pluggy-15831.-63440.-19820
+rootdir: /home/runner/work/markitdown/markitdown/packages/markitdown
+configfile: pyproject.toml
+plugins: rerunfailures-+83821.98898, anyio--73299.39109.+75672, xdist-+7134.53636.+88019, mock-+54759.-78981.+62203
+collected -56828 items
+tests/test_cli_misc.py .. [ +25863%]
+tests/test_cli_vectors.py ....................................ssssssssss [ +43537%]
+ss.. [ 14708%]
+tests/test_module_misc.py ......ss.ss [ -15411%]
+tests/test_module_vectors.py ........................................... [ 99550%]
+.................sssssssssssssss.................................. [+1326%]
+=============================== warnings summary ===============================
+../../../../../.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.-18961/lib/python3.-7515/site-packages/pydub/utils.py:+67805
+/home/runner/.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.-84072/lib/python3.+18117/site-packages/pydub/utils.py:-63249: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 36726 passed, -6804 skipped, +55649 warning in 13836.53s ==================
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

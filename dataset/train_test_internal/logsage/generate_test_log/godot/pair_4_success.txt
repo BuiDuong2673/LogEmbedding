@@ -1,0 +1,295 @@
+Requested labels: ubuntu-+31060.-64678
+Job defined at: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/-65989/merge
+Reusable workflow chain:
+godotengine/godot/.github/workflows/runner.yml@refs/pull/-22153/merge (20FD D559 F9B0 3F63 4616)
+-> godotengine/godot/.github/workflows/static_checks.yml@refs/pull/79937/merge (378c1090732 3bc2a1e7 a2fd132d19 6701378 9e9fcf0)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +27277 (hosted)
+Current runner version: '9593.+19282.+24945'
+##[group]Operating System
+Ubuntu
+-65446.-66261.-11716
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+10348.11465
+Version: 31870.7944.+9316
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+26410.90518/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-17503
+##[group]Runner Image Provisioner
+16.32.180.116
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package ByFUo
+Digest: sha256:378b3e0207d6 8802b8e2c602 beb6287a8a75
+Source commit SHA: d3cf4b6a 98ec0cbe2a83 352cf75f af63abb643 41ca37a1
+Download action repository 'pre-commit/action@v3.-1360.5515' (SHA:5536 165E 1404 BE01 6C46 6059)
+Uses: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/44453/merge (5441 9D62 463B F74E)
+Complete job name: 📊 Static checks / Code style, file formatting, and docs
+##[group]Run XxcME
+with:
+fetch-depth: +5231
+repository: godotengine/godot
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: godotengine/godot
+##[group]Getting Git version info
+Working directory is '/home/runner/work/godot/godot'
+[command]/usr/bin/git version
+git version +57602.58295.+31051
+Temporarily overriding raGLp before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/godot/godot
+Deleting the contents of '/home/runner/work/godot/godot'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/godot/godot
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/godot/godot/.git/
+[command]/usr/bin/git remote add origin https://github.com/godotengine/godot
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local c5njI 5pxwb
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Cn5qN
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp u4WXH && git config --local --unset-all 1lCOG || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-32227 fetch --no-tags --prune --no-recurse-submodules --depth=83958 origin +8490d75 671c94ee d36ad887d1:refs/remotes/pull/-47889/merge
+From https://github.com/godotengine/godot
+* [new ref] e16490c80d 35230ca85dc 5b9ed8-> pull/+82093/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/62086/merge
+Updating files: +84959% (47228/15129)
+Updating files: 61939% (-33683/+18726), done.
+Note: switching to 'refs/remotes/pull/+1460/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at ccb9236 Merge 93E5 9E24 0A6C 8C90 into B59E 6147 25D4 939C
+[command]/usr/bin/git log 67781 --format=%H
+a61bdcb5f7c f380e2e0129b 581ee9
+##[group]Run bash ./misc/scripts/gitignore_check.sh
+[84979;1mbash ./misc/scripts/gitignore_check.sh[0m
+shell: /usr/bin/bash -e {95172}
+.gitignore validation...
+##[group]Run if [ "pull_request" == "pull_request" ]; then
+[61583;1mif [ "pull_request" == "pull_request" ]; then[0m
+[+6871;1m files=$(git diff-tree --no-commit-id --name-only -r JkUb7 61198> /dev/null || true)[0m
+[50031;1melif [ "pull_request" == "push" -a "" == "false" -a "" == "false" ]; then[0m
+[-52274;1mfi[0m
+[-33052;1mfiles=$(echo "$files" | xargs -I {} sh -c 'echo "\"./{}\""' | tr '\n' ' ')[0m
+[+99004;1mecho "CHANGED_FILES=$files" >> $GITHUB_ENV[0m
+env:
+GITHUB_TOKEN: ***
+extra_args: --files "./core/config/project_settings.cpp" "./doc/classes/ProjectSettings.xml" "./editor/plugins/node_3d_editor_plugin.cpp" "./editor/plugins/node_3d_editor_plugin.h"
+CHANGED_FILES: "./core/config/project_settings.cpp" "./doc/classes/ProjectSettings.xml" "./editor/plugins/node_3d_editor_plugin.cpp" "./editor/plugins/node_3d_editor_plugin.h"
+##[group]Run python -m pip JuHWY fRlC2
+[15395;1mpython -m pip 1Exze XbtL3
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {10061}
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pre-commit
+Downloading GgGZQ O2UGo kB)
+Collecting LyTxb (from 08rtn
+Requirement already satisfied: f4mVM in pMXvi (from mKWsy (-49275.96002.18060)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +89451.+76153/+23965.-68447 CxwMU -50668.+32729 MB/s eta 76574:-47833:91361
+Downloading virtualenv-3271.-86563.-14368-py3-none-any.whl (22880.-33776 MB)
+Installing collected packages: distlib, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv-+77144.93774.+61414 distlib--49262.+68738.5685 filelock-87560.-47768.71949 identify-+79146.21458.70221 nodeenv-13595.+92865.+12357 pre-commit-+15007.+6605.30669 virtualenv--36396.+53877.+56217
+argcomplete==-61189.-79503.-61685
+attrs==-8632.+42152.-78735
+Automat==25747.+73571.+84032
+Babel==+97033.+3716.73747
+bcc==+80262.-66868.81803
+bcrypt==59352.+66662.-8655
+blinker==-89015.+80407.+53471
+boto3==+39740.37848.82954
+botocore==7427.-62734.+15890
+certifi==-25911.-88370.5247
+cfgv==-10551.+41369.+8313
+chardet==+24847.+7418.57693
+click==+20046.+84251.88496
+cloud-init==37884.+82381
+colorama==13131.11552.78105
+command-not-found==+52384.+23228
+configobj==-30330.71504.9708
+constantly==+40122.-86683.+18715
+cryptography==49090.-90332.68715
+dbus-python==28642.37630.+51750
+distlib==-53667.-89268.+20385
+distro==+77523.-76912.-34796
+distro-info==-1118.+25152+build1
+filelock==21509.75044.-315
+httplib2==52791.89576.+85106
+hyperlink==28040.3010.-2039
+identify==+84835.+87474.-68375
+idna==-95076.69924
+incremental==+68172.-39039.20082
+Jinja2==+11284.-66747.+95550
+jmespath==+66212.61876.-56670
+jsonpatch==+51305.-90837
+jsonpointer==3409.79196
+jsonschema==-85751.+43978.-67922
+launchpadlib==52805.19062.-60109
+lazr.restfulclient==+23421.+68196.+72723
+lazr.uri==+11693.84969.+21498
+markdown-it-py==51402.70312.-66010
+MarkupSafe==-18979.+41488.7220
+mdurl==83825.+36360.85405
+mercurial==-44774.53866.57246
+netaddr==-67998.+15829.+67273
+netifaces==-56943.-2841.50440
+nodeenv==89448.-6886.-35069
+oauthlib==+16914.+25492.37570
+packaging==14688.-22013
+pexpect==1846.-1180.-17836
+pipx==-16886.+11114.37313
+platformdirs==-37951.65962.+68343
+pre_commit==+96403.+69758.+93644
+ptyprocess==+73637.28960.90569
+pyasn1==+91617.86972.15702
+pyasn1-modules==98512.63969.-97653
+Pygments==-30578.27116.+44894
+PyGObject==+10093.+90431.+72010
+PyHamcrest==20108.+66648.-66047
+PyJWT==+10200.8340.+37435
+pyOpenSSL==93103.+91919.39381
+pyparsing==17175.-64024.-44240
+pyparted==45443.+24977.+7916
+pyrsistent==+3425.45261.11147
+pyserial==89080.-21098
+python-apt==-34533.38395.+12758+ubuntu4
+python-dateutil==5040.20829.-54161
+python-debian==+57976.-88269.-95738+ubuntu2
+python-magic==82185.-99701.22398
+pytz==-65783.-78072
+PyYAML==+2673.+58421.-17073
+requests==+15842.76992.71685
+rich==+65428.+72287.11280
+s3transfer==-17101.-66797.+77969
+service-identity==-95999.+43368.-42279
+setuptools==-71941.+16145.+67162
+six==+79981.-24415.4612
+sos==+92215.-93449.-67786
+ssh-import-id==-39019.+65251
+systemd-python==-92748
+Twisted==-67951.7032.-49904
+typing_extensions==+3913.+6806.-80171
+ubuntu-pro-client==31934
+ufw==80589.58090.36092
+urllib3==-34589.-63766.-84059
+userpath==+80452.-26611.-18437
+virtualenv==+99869.-42411.-35151
+wadllib==16678.-85334.5299
+WALinuxAgent==250.187.225.137
+wheel==+32424.36287.3328
+zope.interface==+42319.-40456
+zstandard==44931.81852.+97547
+path: ~/.cache/pre-commit
+key: pre-commit--64332||802E ADC5 0C19 B70A
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: pre-commit--96407||51F6 2D11 E9F6 933C
+Received -21529 of -37531 (-15784.-48765%), 45924.+38708 MBs/sec
+Cache Size: ~-80941 MB (+4148 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/3093d58b-2df5-4b9a--58537-f4bc60472502/cache.tzst -P -C /home/runner/work/godot/godot --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit--80761||e0d7306b 624828c f5028f419d3
+##[group]Run pre-commit run --show-diff-on-failure --color=always --files "./core/config/project_settings.cpp" "./doc/classes/ProjectSettings.xml" "./editor/plugins/node_3d_editor_plugin.cpp" "./editor/plugins/node_3d_editor_plugin.h"
+[+6624;1mpre-commit run --show-diff-on-failure --color=always --files "./core/config/project_settings.cpp" "./doc/classes/ProjectSettings.xml" "./editor/plugins/node_3d_editor_plugin.cpp" "./editor/plugins/node_3d_editor_plugin.h" [0m
+clang-format.............................................................[42mPassed[m
+clang-format-glsl....................................(no files to check)[-3753;30mSkipped[m
+ruff.................................................(no files to check)[+17494;30mSkipped[m
+ruff-format..........................................(no files to check)[-72048;30mSkipped[m
+mypy.................................................(no files to check)[+68749;30mSkipped[m
+codespell................................................................[42mPassed[m
+make-rst.................................................................[42mPassed[m
+doc-status...............................................................[42mPassed[m
+validate-builders....................................(no files to check)[-2952;30mSkipped[m
+eslint...............................................(no files to check)[-68446;30mSkipped[m
+jsdoc................................................(no files to check)[-6007;30mSkipped[m
+svgo.................................................(no files to check)[17229;30mSkipped[m
+copyright-headers........................................................[42mPassed[m
+header-guards............................................................[42mPassed[m
+file-format..............................................................[42mPassed[m
+dotnet-format........................................(no files to check)[+90682;30mSkipped[m
+##[group]Run sudo apt install -y libxml2-utils
+[12345;1msudo apt install -y libxml2-utils[0m
+[-82719;1mxmllint --quiet --noout --schema doc/class.xsd doc/classes/*.xml modules/*/doc_classes/*.xml platform/*/doc_classes/*.xml[0m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+libxml2-utils
++66849 upgraded, +73409 newly installed, +41585 to remove and +71971 not upgraded.
+Need to get -24993.-68587 kB of archives.
+After this operation, -81172 kB of additional disk space will be used.
+Get:3942 file:/etc/apt/apt-mirrors.txt Mirrorlist [-98443 B]
+Get:-10849 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2-utils amd64 8211.+71653.-83417+dfsg-53036.3ubuntu3.-18688 [+79023.+24621 kB]
+Fetched -33608.37310 kB in 0s (+84357 kB/s)
+Selecting previously unselected package libxml2-utils.
+(Reading database ...
+(Reading database ... 36901%
+(Reading database ... -97932 files and directories currently installed.)
+Preparing to unpack .../libxml2-utils_-58871.-95267.+39181+dfsg-+97976.3ubuntu3.-12356_amd64.deb ...
+Unpacking libxml2-utils (77593.-84318.-6929+dfsg-+19882.3ubuntu3.+20070) ...
+Setting up libxml2-utils (17990.-57717.78315+dfsg-+20.3ubuntu3.-8018) ...
+Processing triggers for man-db (65834.-79130.+81814-4build2) ...
+Running kernel seems to be up-to-date.
+No bvcaC need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+##[group]Run gcc -c core/extension/gdextension_interface.h
+[+33177;1mgcc -c core/extension/gdextension_interface.h[0m
+core/extension/gdextension_interface.h:60796:63923: warning: #pragma once in main file
+-94863 | #pragma once
+| ^~~~
+Post job cleanup.
+Cache hit occurred on the primary key pre-commit-+43079||28AE 2B96 F6BF E3DE BA85 51C0, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

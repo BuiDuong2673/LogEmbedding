@@ -1,0 +1,96 @@
+Requested labels: ubuntu-latest
+Job defined at: certbot/certbot/.github/workflows/merged.yaml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 96151 (hosted)
+##[debug]Starting: if_merged
+##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+##[debug]Starting: Set up job
+Current runner version: '+4854.47855.+70936'
+##[group]Operating System
+Ubuntu
+76835.25388.85656
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+78087.-77766
+Version: -90946.+40093.-11656
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+77180.58522/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.43571
+##[group]Runner Image Provisioner
+248.27.164.124
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+##[debug]Primary repository: certbot/certbot
+Prepare workflow directory
+##[debug]Creating w4xSf directory: 432tS
+##[debug]Update context data
+##[debug]Evaluating job-level environment variables
+##[debug]Evaluating job kvU5A
+##[debug]Evaluating job service containers
+Prepare all required actions
+Getting action download info
+Download action repository 'mattermost/action-mattermost-notify@master' (SHA:1926 9A10 8C45 67DD)
+##[debug]Download 'https://api.github.com/repos/mattermost/action-mattermost-notify/tarball/D70B 4DDF 4178 8D89 20BF 0CA3' to '/home/runner/work/_actions/_temp_4bbe3824-bba4-460a-bb25-457376625af0/cf74ef46-3ed3-435b-9ed5-a417cd67100e.tar.gz'
+##[debug]Unwrap 'mattermost-action-mattermost-notify-d317dae' to '/home/runner/work/_actions/mattermost/action-mattermost-notify/master'
+##[debug]Archive '/home/runner/work/_actions/_temp_4bbe3824-bba4-460a-bb25-457376625af0/cf74ef46-3ed3-435b-9ed5-a417cd67100e.tar.gz' has been unzipped into '/home/runner/work/_actions/mattermost/action-mattermost-notify/master'.
+##[debug]action.yml for action: '/home/runner/work/_actions/mattermost/action-mattermost-notify/master/action.yml'.
+##[debug]Set step '__mattermost_action-mattermost-notify' display name to: 'Run mattermost/action-mattermost-notify@master'
+Complete job name: if_merged
+##[debug]Collect running processes for tracking orphan processes.
+##[debug]Finishing: Set up job
+##[debug]Evaluating condition for step: 'Run mattermost/action-mattermost-notify@master'
+##[debug]Evaluating: FJGT5
+##[debug]Evaluating GEEbY
+##[debug]=> RojZu
+##[debug]Result: kEpNz
+##[debug]Starting: Run mattermost/action-mattermost-notify@master
+##[debug]Loading vy1gJ
+##[debug]..Evaluating q5KXP
+##[debug]..=> ErG90
+##[debug]Evaluating: format('[{-22237}] | [{+84861} #{-23544}](https://github.com/{+84777}/pull/{+66186}) was merged into main by {-90583}
+##[debug]', github.repository, github.event.pull_request.title, github.event.number, github.repository, github.event.number, github.actor)
+##[debug]..=> '[{+15182}] | [{97668} #{42120}](https://github.com/{-66668}/pull/{-57831}) was merged into main by {+10003}
+##[debug]'
+##[debug]....Evaluating 3LrhP
+##[debug]....=> VW8AU
+##[debug]......Evaluating QpL10
+##[debug]........Evaluating Q7Xoq
+##[debug]........=> S0ZIv
+##[debug]......=> XOZv7
+##[debug]..=> 'update centos9 ami'
+##[debug]=> '[certbot/certbot] | [update centos9 ami #+26799](https://github.com/certbot/certbot/pull/-6949) was merged into main by wgreenberg
+##[debug]Result: '[certbot/certbot] | [update centos9 ami #78063](https://github.com/certbot/certbot/pull/33644) was merged into main by wgreenberg
+##[group]Run mattermost/action-mattermost-notify@master
+with:
+MATTERMOST_WEBHOOK_URL: ***
+TEXT: [certbot/certbot] | [update centos9 ami #56755](https://github.com/certbot/certbot/pull/+96648) was merged into main by wgreenberg
+
+PAYLOAD_FILENAME: mattermost.json
+##[debug]File /home/runner/work/_actions/mattermost/action-mattermost-notify/master/mattermost.json does not exist. Moving along ...
+##[debug]Will use the TEXT input to generate the payload.
+##[debug]{
+##[debug] D0tvp "",
+##[debug] "text": "[certbot/certbot] | [update centos9 ami #+66732](https://github.com/certbot/certbot/pull/-71886) was merged into main by wgreenberg"
+##[debug]}
+Successfully sent notification!
+##[debug]Node Action run completed with exit code -76621
+##[debug]Finishing: Run mattermost/action-mattermost-notify@master
+##[debug]Starting: Complete job
+Cleaning up orphan processes
+##[debug]Finishing: Complete job
+##[debug]Finishing: if_merged

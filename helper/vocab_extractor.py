@@ -10,19 +10,21 @@ NUM_CONTEXT_WORDS = 2
 
 class VocabExtractor:
     """Extract initial word dictionary for client, with indices as global indices."""
-    def __init__(self, client_name: str) -> None:
+    def __init__(self, client_name: str, which_train_set: str) -> None:
         """Initialize VocabExtractor class.
         
         Args:
             client_name (str): the name of the client.
+            which_train_set (str): the name of the train_test set we want to use.
         """
         self.client_name = client_name
+        self.which_train_set = which_train_set
         # Initialize unknown words variable
         self.unknown_words = []
     
     def get_all_client_files(self) -> dict:
         """Get all log file paths contains inside client dataset."""
-        client_dataset = f"dataset/{self.client_name}"
+        client_dataset = f"dataset/{self.which_train_set}/{self.client_name}/train"
         # Read all log file in the client_dataset folder
         dataset_paths = []  # Collect all folders inside client's overall dataset folder
         for subdir in os.listdir(client_dataset):
@@ -73,14 +75,13 @@ class VocabExtractor:
             # Split on spaces, underscores, hyphens
             parts = re.split(r'[\s_-]+', line)
             # Split camelCase
-            words = set()
+            words = []
             for part in parts:
                 split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
-                words.update(split_camel)
-            # Change the words from set to list
-            words = list(words)
+                words.extend(split_camel)
             # Store the word into the word_dict
             for i, word in enumerate(words):
+                word = word.lower()
                 # Only add unique words
                 if word_dict.get(word):
                     word_dict[word]["freq"] += 1
@@ -93,7 +94,7 @@ class VocabExtractor:
                 for j in range(start_idx, end_idx):
                     if j == i: # Skip adding central word.
                         continue
-                    context_word = words[j]
+                    context_word = words[j].lower()
                     # Skip empty or special tokens
                     if not context_word.strip():
                         continue
@@ -164,12 +165,14 @@ class VocabExtractor:
         word_dict, word_indices = self.add_word_global_index(global_vocab, word_dict)
         # Change context words to indices
         word_dict = self.change_context_words_to_indices(word_dict)
+        print(f"Client {self.client_name}: num unknown words: {len(self.unknown_words)}")
         return word_dict, word_indices
 
 
 if __name__ == "__main__":
-    client_name = "maryangel101"
-    vocab_extractor = VocabExtractor(client_name=client_name)
+    client_name = "d2klab"
+    which_train_set = "train_test_internal"
+    vocab_extractor = VocabExtractor(client_name=client_name, which_train_set=which_train_set)
     word_dict, word_indices = vocab_extractor.get_vocab(num_context_words=NUM_CONTEXT_WORDS)
     # Save word dict to a json file for checking
     with open(f"dataset/{client_name}_word_dict.json", "w", encoding="utf-8") as json_file:

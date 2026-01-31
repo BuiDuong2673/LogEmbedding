@@ -1,0 +1,93 @@
+Requested labels: ubuntu-latest
+Job defined at: charmbracelet/bubbletea/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +21854 (hosted)
+Current runner version: '-38054.65082.+82080'
+##[group]Operating System
+Ubuntu
+62573.+56207.75580
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+84073.+46748
+Version: +5857.59947.-32621
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-87444.68177/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.18247
+##[group]Runner Image Provisioner
+210.85.13.72
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:B1C1 BAF3 6D1E FD13 501F BBDF)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job-45146-+31277
+[-38715;1mmkdir -p ./dependabot-job--4926--33634[0m
+shell: /usr/bin/bash -e {62747}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: +23286
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: +61303
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image NePgU +19752)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image RMb9S
+Starting update process
+Created proxy container: 1A2C 8465 6BFB 70FD 41FB 227D
+Created container: 593f6e03646 2c90b8d 029e34 d23dac88a 1f9297e
+proxy | 51395/-70267/-46627 -36906:-50778:-32921 FXr7O zieFP Ii5Xi DbEYx
+proxy | +10210/+32444/+47125 -86906:+59390:+98305 Listening (:21336)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | 58719 added, -55775 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | +90200/-86104/-55909 +58811:-49928:14692 INFO <job_+70957> yya08 job processing
++19238/-73060/-50111 -39876:34639:95583 INFO <job_86904> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":"feat","prefix-development":null,"include-scope":true},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":null,"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true,"enable-cooldown-for-cargo":true},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":-60340,"package-manager":"docker","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[],"security-updates-only":false,"source":{"provider":"github","repo":"charmbracelet/bubbletea","branch":null,"directory":"/.","api-endpoint":"https://api.github.com/","hostname":"github.com"},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | -35229/5295/+53435 +83091:+99702:77739 INFO <job_-34758> Started process PID: -76835 with command: {} git config --global credential.helper '!/home/dependabot/common/lib/dependabot/../../bin/git-credential-store-immutable --file /home/dependabot/dependabot-updater/git.store' {}
+updater | -19445/+48410/77158 +47039:26824:93312 INFO <job_-4379> Process PID: -55980 completed with status: pid -92624 exit -24124
+updater | 58996/+4874/+22799 -63039:+18768:-69375 INFO <job_-16688> Total execution time: -21897.-83109 seconds
+updater | +44382/14011/20168 55033:82240:38730 INFO <job_46813> Started process PID: -78990 with command: {} git config --global 0fuT1 url.https://github.com/.insteadOf PulI4 {}
++83240/-15720/+20304 52934:+54186:+81159 INFO <job_61610> Total execution time: 43059.-33466 seconds
+updater | -32644/+77689/22804 -32112:+62671:65183 INFO <job_-34236> Started process PID: -55252 with command: {} git clone --no-tags --depth -23972 --recurse-submodules --shallow-submodules https://github.com/charmbracelet/bubbletea /home/dependabot/dependabot-updater/repo {}
+proxy | 61585/+88676/+12051 88418:17892:-85075 [13085] YVW9Q 5v5zN
++44272/62421/-34242 -1288:53468:+43124 [62035] * authenticating git server request (host: github.com)
+updater | -93856/56871/20552 +87608:-28414:-67544 INFO <job_-10408> Started process PID: -11052 with command: {} git -C /home/dependabot/dependabot-updater/repo ls-files --stage {}
+updater | -37140/76990/-26940 +95740:8304:+38341 INFO <job_60725> Started process PID: -38498 with command: {} git rev-parse HEAD {}
+updater | 5317/53479/+77531 30632:+6587:21629 ERROR <job_-52580> Error during file fetching; aborting: No Dockerfiles nor Kubernetes YAML found in /
+updater | +86703/+80542/-70019 64297:-99822:+59489 INFO Results:
+Dependabot encountered '79670' error(s) during execution, please check the logs for more details.
++---------------------------+
+| AtMSC |
+Failure running container 1f6c0b366 3f7680b5c661 eeac2e 557d5327d4
+Cleaned up container c14d7930c c99ea0b5 0b2ed213 b2d541902
+proxy | 93142/-84984/98862 +69135:+22083:+24175 Posting metrics to remote API endpoint
+##[error]Dependabot encountered an error performing the update
+
+Error: The updater encountered one or more errors.
+For more information see: https://github.com/charmbracelet/bubbletea/network/updates/-43734 (write access to the repository is required to view the log)
+🤖 ~ finished: error reported to Dependabot ~
+Post job cleanup.
+Cleaning up orphan processes

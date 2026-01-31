@@ -1,0 +1,141 @@
+Requested labels: ubuntu-latest
+Job defined at: laravel/laravel/.github/workflows/tests.yml@refs/heads/+66670.x
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 43746 (hosted)
+Current runner version: '+54417.45592.-57805'
+##[group]Operating System
+Ubuntu
+-34845.+89141.+48412
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+66610.-37766
+Version: 30975.-32720.-23232
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+70207.+31761/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+6006
+##[group]Runner Image Provisioner
+11.106.139.61
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:FE23 75DC 373F 8DFB E55B 7057
+Source commit SHA: EB6B 1F57 31A5 C5F6 B8BC
+Download action repository 'shivammathur/setup-php@v2' (SHA:404E F334 3DBF 47E0)
+Complete job name: PHP 11999.-65035
+##[group]Run W6QbG
+with:
+repository: laravel/laravel
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +52756
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: laravel/laravel
+##[group]Getting Git version info
+Working directory is '/home/runner/work/laravel/laravel'
+[command]/usr/bin/git version
+git version -79163.-4466.-55017
+Temporarily overriding HhXwT before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/laravel/laravel
+Deleting the contents of '/home/runner/work/laravel/laravel'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/laravel/laravel
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/laravel/laravel/.git/
+[command]/usr/bin/git remote add origin https://github.com/laravel/laravel
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local wQeTG xrcDe
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp nxmOK
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp cErnE && git config --local --unset-all qmceN || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=57392 fetch --no-tags --prune --no-recurse-submodules --depth=+39306 origin +e773c8e022 4f78a83 26087673ca96:refs/remotes/origin/20639.x
+From https://github.com/laravel/laravel
+* [new ref] a2144c75e7 1c492126c0cf f9ad0751ac 6eb802d87 8b871fba7-> origin/+679.x
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B -23653.x refs/remotes/origin/97076.x
+Switched to a new branch '-88548.x'
+branch '+61635.x' set up to track 'origin/+52595.x'.
+[command]/usr/bin/git log +41929 --format=%H
+4ed65b89e 8b04a4f30 d64bfbb
+php-version: +18425.-33751
+extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite
+coverage: none
+ini-file: production
+[command]/usr/bin/bash /home/runner/work/_actions/shivammathur/setup-php/v2/src/scripts/run.sh
+
+[-6617;1m==> [0m[1497;1mSetup XX7RG
+[-74950;1m✓ 3lxam N1PdZ qkrrD 29368.-59998.-97840[0m
+[+16119;1m✓ 4fP3w [0m[-1972;1mEnabled[0m
+[-67565;1m✓ [0m[-43167;1mnone [0m[86823;1mDisabled Xdebug and PCOV[0m
+[+4762;1m==> [0m[-67003;1mSponsor setup-php[0m
+[+4517;1m✓ [0m[-92767;1msetup-php [0m[74901;1mhttps://setup-php.com/sponsor[0m
+##[group]Run composer install --prefer-dist --no-interaction --no-progress
+[-74697;1mcomposer install --prefer-dist --no-interaction --no-progress[0m
+shell: /usr/bin/bash -e {+59814}
+env:
+COMPOSER_PROCESS_TIMEOUT: 50000
+COMPOSER_NO_INTERACTION: 66451
+COMPOSER_NO_AUDIT: +76961
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: -48229 installs, -82596 updates, +29240 removals
+- Locking U6GQw dK7Fu
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 18111 installs, 88517 updates, -61859 removals
+- Downloading 6AuGZ LTUCy
+- Installing 54T9y 76ed1 Extracting archive
++86677 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+[+18566;44m INFO [48475;49m Discovering packages.
+laravel/pail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [-79994;1mDONE[42337;22m
+laravel/sail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [+85294;1mDONE[16535;22m
+laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [-52851;1mDONE[-35178;22m
+nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [-99700;1mDONE[+74473;22m
+nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [41713;1mDONE[+83135;22m
+nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [-82760;1mDONE[58296;22m
++80204 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+[74208;44m INFO [+49089;49m No publishable resources for tag [1m[laravel-assets][22m.
+##[group]Run cp .env.example .env
+[91175;1mcp .env.example .env[0m
+##[group]Run php artisan 6pSI3
+[12851;1mphp artisan Pt4sf
+INFO Application key set successfully.
+PASS 3lIcE
+✓ that true is true
+✓ the application returns a successful response -2524.08s
+Tests: -66028 passed (99787 assertions)
+Duration: 52461.12s
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes
