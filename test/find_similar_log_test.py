@@ -17,7 +17,7 @@ class FindSimilarLogTester:
         """Initialize the FindSimilarLogTester."""
         pass
 
-    def word_embedding_model(self, text: str, client_name: str) -> np.ndarray:
+    def word_embedding_model(self, W1: np.ndarray, W2: np.ndarray, text: str, client_name: str) -> np.ndarray:
         """Embed the text using the word embedding model.
 
         Args:
@@ -28,8 +28,8 @@ class FindSimilarLogTester:
             np.ndarray: The embedded vector of the text.
         """
         # Read the model weights
-        W1 = np.load("models/W1_word2vec.npy")
-        W2 = np.load("models/W2_word2vec.npy")
+        # W1 = np.load("models/W1_word2vec.npy")
+        # W2 = np.load("models/W2_word2vec.npy")
 
         # Split text into words
         # Split on spaces, underscores, hyphens
@@ -70,6 +70,17 @@ class FindSimilarLogTester:
         if word_list:
             text_vector /= len(word_list)
         return text_vector
+    
+    def doc_embedding_model(self, text: str) -> np.ndarray:
+        """Embed the document using the document embedding model.
+
+        Args:
+            text (str): The input text to embed.
+
+        Returns:
+            np.ndarray: The embedded vector of the document.
+        """
+        pass
 
     def cosine_similarity(self, vector1: np.ndarray, vector2: np.ndarray) -> float:
         """Compute the distance between two text embeddings.
@@ -103,36 +114,45 @@ class FindSimilarLogTester:
         similarity_list.sort(key=lambda x: x[1], reverse=True)
         return similarity_list[:k]
     
-    def run_test_for_client(self, client_name: str, model_name: str) -> None:
-        if model_name == "Word2Vec":
-            # Read the list of file path of client training and testing data
-            training_data_paths = TrainingDatasetCreator().get_file_list_from_folder(f"dataset/training/{client_name}")
-            testing_data_paths = TrainingDatasetCreator().get_file_list_from_folder(f"dataset/testing/{client_name}")
+    def run_test_for_client(self, W1, W2, client_name: str, model_name: str) -> float:
+        # Read the list of file path of client training and testing data
+        training_data_paths = TrainingDatasetCreator().get_file_list_from_folder(f"dataset/training/{client_name}")
+        testing_data_paths = TrainingDatasetCreator().get_file_list_from_folder(f"dataset/testing/{client_name}")
+        
+        # Collect all training logs
+        train_logs = []
+        for train_path in training_data_paths:
+            # Read the training log
+            with open(train_path, "r", encoding="utf-8") as file:
+                original_log = file.read()
+            train_logs.append((train_path, original_log))
 
+        # Collect all testing logs
+        test_logs = []
+        for test_path in testing_data_paths:
+            with open(test_path, "r", encoding="utf-8") as file:
+                test_log = file.read()
+            test_logs.append((test_path, test_log))
+
+        if model_name == "Word2Vec":
             # Initialize variables to count the accuracy time
             accuracy_count = 0
-            for train_path in training_data_paths:
-                # Read the training log
-                with open(train_path, "r", encoding="utf-8") as file:
-                    original_log = file.read()
-                
+            for original_path, original_log in train_logs:
                 # Calculate vector representation of original log
-                original_vec = self.word_embedding_model(original_log, client_name)
+                original_vec = self.word_embedding_model(W1, W2, original_log, client_name)
 
                 test_logs_vec = []
-                for test_path in testing_data_paths:
-                    with open(test_path, "r", encoding="utf-8") as file:
-                        test_log = file.read()
+                for test_path, test_log in test_logs:
                     # Calculate vector representation of the logs
-                    test_vec = self.word_embedding_model(test_log, client_name)
+                    test_vec = self.word_embedding_model(W1, W2, test_log, client_name)
                     test_logs_vec.append((test_path, test_vec))
 
                 similar_logs = self.find_k_similar_logs(original_vec, test_logs_vec, k=NUM_LOGS_SELECTED)
 
-                actual_similar_log_path = train_path.replace("training", "testing")
+                actual_similar_log_path = original_path.replace("training", "testing")
 
                 print("--------------------------------------------------")
-                print(f"Finding similar logs for {train_path}:")
+                print(f"Finding similar logs for {original_path}:")
                 for i, (file_path, similarity) in enumerate(similar_logs):
                     if file_path == actual_similar_log_path:
                         accuracy_count += 1
@@ -142,11 +162,13 @@ class FindSimilarLogTester:
                 #     accuracy_count += 1
                 #     print(f"TRUE: with similarity {similar_logs[0][1]:.4f}")
                 print("--------------------------------------------------")
-            print(f"Accuracy rate for client {client_name} using {model_name}:\n{accuracy_count / len(training_data_paths):.4f}")
+            accuracy_rate = accuracy_count / len(training_data_paths)
+            print(f"Accuracy rate for client {client_name} using {model_name}:\n{accuracy_rate:.4f}")
+            return accuracy_rate
         elif model_name == "Sentence2Vec":
-            return
+            return -1.0
         elif model_name == "Doc2Vec":
-            return
+            return -1.0
         else:
             print(f"Model {model_name} not supported.")
 

@@ -18,6 +18,13 @@ Link: https://github.com/D2KLab/gha-dataset/tree/master
 "dataset/d2klab"
 ```
 
+## ByteLuo1029: LogSage
+Link: https://github.com/ByteLuo1029/dataset/tree/main/dataset
+```python
+"dataset/logsage"
+```
+
+
 ### dwyl: english-words
 Link: https://github.com/dwyl/english-words
 
@@ -26,6 +33,22 @@ Link: https://github.com/dwyl/english-words
 ```
 
 ## Execution
-```python
-python central_server_program.py
+To run the training process, we have to run central server program and client programs at the same time. This can be done by:
+1. Create a new terminal for running central server program
+````cmd
+[terminal 1] python central_server_program.py
+```
+
+2. For each client, create a new terminal and run the client program
+
+Client: maryangel101
+
+````cmd
+[terminal 2] python client_program.py maryangel101
+```
+
+Client: d2klab
+
+````cmd
+[terminal 3] python client_program.py d2klab
 ```
