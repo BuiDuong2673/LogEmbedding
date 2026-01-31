@@ -1,61 +1,63 @@
-"""Extract vocabulary from the dataset."""
-import os
+"""Extract the word dictionary for client."""
 import re
+import os
 import json
-
 from helper.global_vocab_processor import GlobalVocabProcessor
-from helper.create_training_dataset import TrainingDatasetCreator
 
 
 NUM_CONTEXT_WORDS = 2
-CLIENT_LIST = ["d2klab", "maryangel101"]
 
 
 class VocabExtractor:
+    """Extract initial word dictionary for client, with indices as global indices."""
     def __init__(self, client_name: str) -> None:
-        """Initialize the VocabExtractor with a client name.
-
+        """Initialize VocabExtractor class.
+        
         Args:
-            client_name (str): The name of the client.
+            client_name (str): the name of the client.
         """
         self.client_name = client_name
-        self.global_vocab_processor = GlobalVocabProcessor()
-        # Extract the vocab indices if not extracted yet
-        self.global_vocab = self.global_vocab_processor.get_global_vocab()
         # Initialize unknown words variable
         self.unknown_words = []
     
-    def read_dataset_file(self, file_path: str) -> list:
-        """Read a dataset file and return its lines.
-        
-        Args:
-            file_path (str): The path to the dataset file. Should be .txt.
-        """
-        # Check if file exists
-        if not os.path.isfile(file_path):
-            print(f"File not found: {file_path}")
-            return []
-        # If exists, read the file
-        try:
-            with open(file_path, "r", encoding="utf-8") as file:
-                lines = file.readlines()
-            return lines
-        except Exception as e:
-            print(f"Error reading {file_path}: {e}")
-            return []
-
-    def load_client_dataset(self) -> None:
-        """Load the dataset for the specified client, maryangel101."""
-        # Collect list of training log files
-        training_paths = TrainingDatasetCreator().get_file_list_from_folder(os.path.join("dataset", "training", self.client_name))
-        # Combine all log lines into a list
-        all_lines = []
-        for file_path in training_paths:
-            lines = self.read_dataset_file(file_path)
-            if lines:  # Only add if lines are not empty
-                all_lines.extend(lines)
-        return all_lines
-
+    def get_all_client_files(self) -> dict:
+        """Get all log file paths contains inside client dataset."""
+        client_dataset = f"dataset/{self.client_name}"
+        # Read all log file in the client_dataset folder
+        dataset_paths = []  # Collect all folders inside client's overall dataset folder
+        for subdir in os.listdir(client_dataset):
+            full_path = os.path.join(client_dataset, subdir)
+            if os.path.isdir(full_path):
+                dataset_paths.append(full_path)
+        file_path_list = []  # Collect all file paths in client_dataset folder
+        for dataset_path in dataset_paths:
+            for filename in os.listdir(dataset_path):
+                file_path = os.path.join(dataset_path, filename)
+                file_path_list.append(file_path)
+        return file_path_list
+    
+    def collect_all_log_lines(self) -> None:
+        """Get all log lines in all log files in client dataset."""
+        all_log_lines = set()
+        # Get all the log file paths in client's dataset.
+        file_paths = self.get_all_client_files()
+        # Read each file to extract the log lines
+        for file_path in file_paths:
+            with open(file_path, "r", encoding="utf-8") as log_file:
+                for line in log_file:
+                    # Delete timestampt
+                    timestamp_pattern = re.compile(
+                        r'\d{4}-\d{2}-\d{2}'                   # YYYY-MM-DD
+                        r'[T\s]'                               # T or space
+                        r'\d{2}:\d{2}:\d{2}'                   # HH:MM:SS
+                        r'(?:\.\d+)?'                          # optional .fractional seconds
+                        r'(?:Z|[+-]\d{2}:\d{2})?'              # optional timezone (Z or +hh:mm)
+                        r'\s*'                                 # trailing spaces
+                    )
+                    line = timestamp_pattern.sub('', line).strip('\n')
+                    all_log_lines.add(line)
+        return list(all_log_lines)
+    
     def create_word_dict(self, log_lines: list, num_context_words: int=NUM_CONTEXT_WORDS) -> dict:
         """Store unique words, their neighbors within num_context_words, and frequency
 
@@ -71,10 +73,12 @@ class VocabExtractor:
             # Split on spaces, underscores, hyphens
             parts = re.split(r'[\s_-]+', line)
             # Split camelCase
-            words = []
+            words = set()
             for part in parts:
                 split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
-                words.extend(split_camel)
+                words.update(split_camel)
+            # Change the words from set to list
+            words = list(words)
             # Store the word into the word_dict
             for i, word in enumerate(words):
                 # Only add unique words
@@ -87,10 +91,10 @@ class VocabExtractor:
                 start_idx = max(0, i - num_context_words)
                 end_idx = min(len(words), i + num_context_words + 1)
                 for j in range(start_idx, end_idx):
-                    if j == i:
+                    if j == i: # Skip adding central word.
                         continue
                     context_word = words[j]
-                    # Optional: skip empty or special tokens
+                    # Skip empty or special tokens
                     if not context_word.strip():
                         continue
                     # Use a set to avoid excessive growth
@@ -99,37 +103,37 @@ class VocabExtractor:
         word_dict = dict(sorted(word_dict.items(), key=lambda item: item[1]["freq"], reverse=True))
         return word_dict
     
-    def add_word_global_index(self, word_dict: dict) -> dict:
-        """Add global word index to each word in the word dictionary
+    def add_word_global_index(self, global_vocab_dict: dict, client_word_dict: dict) -> dict:
+        """Add global index to each word in the word dictionary.
 
         Args:
-            word_dict (dict): The word dictionary
+            global_vocab_dict (dict): the dictionary maping global words to global indices.
+            client_word_dict (dict): The client word dictionary with the word as the key.
         Returns:
-            dict: The word dictionary with global word index
-            list: The list of known words' indices
-            list: The list of unknown words
+            new word_dict (dict): The word dictionary with global word index.
+            word_indices (list): The list of indices of words, only this will be shared with central server.
         """
         unknown_num = 0
         unknown_words = []
         unknown_words_indices = []
         known_words_indices = []
-        for word in word_dict.keys():
-            word_index = self.global_vocab.get(word.lower(), -1)
-            if word_index == -1:  # if word not found
-                word_dict[word]["index"] = f"unk_{unknown_num}"
+        for word in client_word_dict.keys():
+            word_index = global_vocab_dict.get(word.lower(), -1)
+            if word_index == -1:  # if word not found in global dictionaryc
+                client_word_dict[word]["index"] = f"unk_{unknown_num}"
                 # Store unknown words
                 unknown_words.append(word)
                 unknown_words_indices.append(f"unk_{unknown_num}")
                 unknown_num += 1
-            else:
-                word_dict[word]["index"] = f"{word_index}"
+            else:  # if word found in global dictionary
+                client_word_dict[word]["index"] = f"{word_index}"
                 known_words_indices.append(f"{word_index}")
         # Join the known words and unknown words indices lists
         words_indices = known_words_indices + unknown_words_indices
         # Store unknown words (for analysis)
         self.unknown_words = unknown_words
-        return word_dict, words_indices
-
+        return client_word_dict, words_indices
+    
     def change_context_words_to_indices(self, word_dict: dict) -> dict:
         """Change context words to indices in the word dictionary
 
@@ -149,31 +153,26 @@ class VocabExtractor:
     
     def get_vocab(self, num_context_words: int=NUM_CONTEXT_WORDS):
         """Run the Word2Vec embedding process."""
-        data = self.load_client_dataset()
-        # Create word dictionary
-        word_dict = self.create_word_dict(data, num_context_words)
-        # Add index to each word
-        word_dict, words_indices = self.add_word_global_index(word_dict)
+        # Collect all unique log lines in client dataset.
+        log_lines = self.collect_all_log_lines()
+        # Create client word dict
+        word_dict = self.create_word_dict(log_lines=log_lines, num_context_words=num_context_words)
+        # Get global vocab maping global words to global indices
+        global_vocab_processor = GlobalVocabProcessor()
+        global_vocab = global_vocab_processor.get_global_vocab()
+        # Add indice representation of the words
+        word_dict, word_indices = self.add_word_global_index(global_vocab, word_dict)
         # Change context words to indices
         word_dict = self.change_context_words_to_indices(word_dict)
-        return word_dict, words_indices
+        return word_dict, word_indices
 
 
 if __name__ == "__main__":
-    extractor = VocabExtractor(client_name="maryangel101")
-    vocab_dict, words_indices = extractor.get_vocab(NUM_CONTEXT_WORDS)
-    # Temporary store the vocab in a json file
-    with open("vocab.json", "w") as f:
-        json.dump(vocab_dict, f)
-    # Visualize the known, unknown words info
-    known_count = 0
-    unknown_count = 0
-    for index in words_indices:
-        if index.startswith("unk_"):
-            unknown_count += 1
-        else:
-            known_count += 1
-    print(f"Num known words: {known_count}")
-    print(f"Num unknown words: {unknown_count}")
-
-    print(f"First 10 unknown words: {extractor.unknown_words[:10]}")
+    client_name = "maryangel101"
+    vocab_extractor = VocabExtractor(client_name=client_name)
+    word_dict, word_indices = vocab_extractor.get_vocab(num_context_words=NUM_CONTEXT_WORDS)
+    # Save word dict to a json file for checking
+    with open(f"dataset/{client_name}_word_dict.json", "w", encoding="utf-8") as json_file:
+        json.dump(word_dict, json_file, indent=4, ensure_ascii=False)
+    print(f"Saved the word dict into file: dataset/{client_name}_word_dict.json")
+    print(f"Word indices:\n{word_indices}")
