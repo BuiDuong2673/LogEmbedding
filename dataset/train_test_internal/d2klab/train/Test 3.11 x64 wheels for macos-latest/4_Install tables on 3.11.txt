@@ -1,0 +1,30 @@
+2023-09-21T17:21:52.3303000Z ##[group]Run python -m pip install --pre --find-links wheelhouse/artifact/ tables
+2023-09-21T17:21:52.3303640Z [36;1mpython -m pip install --pre --find-links wheelhouse/artifact/ tables[0m
+2023-09-21T17:21:52.3555090Z shell: /bin/bash -e {0}
+2023-09-21T17:21:52.3555400Z env:
+2023-09-21T17:21:52.3555770Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T17:21:52.3556220Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig
+2023-09-21T17:21:52.3556650Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T17:21:52.3557020Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T17:21:52.3557370Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T17:21:52.3558610Z ##[endgroup]
+2023-09-21T17:21:57.7568740Z Looking in links: wheelhouse/artifact/
+2023-09-21T17:21:57.9621240Z Processing ./wheelhouse/artifact/tables-3.8.1.dev0-cp311-cp311-macosx_10_9_x86_64.whl
+2023-09-21T17:21:58.5854250Z Collecting numpy>=1.19.0 (from tables)
+2023-09-21T17:21:58.5857560Z   Obtaining dependency information for numpy>=1.19.0 from https://files.pythonhosted.org/packages/d2/2f/b42860931c1479714201495ffe47d74460a916ae426a21fc9b68c5e329aa/numpy-1.26.0-cp311-cp311-macosx_10_9_x86_64.whl.metadata
+2023-09-21T17:21:58.6409240Z   Downloading numpy-1.26.0-cp311-cp311-macosx_10_9_x86_64.whl.metadata (53 kB)
+2023-09-21T17:21:58.6701630Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.5/53.5 kB 1.7 MB/s eta 0:00:00
+2023-09-21T17:21:58.8419880Z Collecting numexpr>=2.6.2 (from tables)
+2023-09-21T17:21:58.8422340Z   Obtaining dependency information for numexpr>=2.6.2 from https://files.pythonhosted.org/packages/d1/ea/a24da71d91188ac2066aa46e0cde57189da3b1d7417896d1a9b796936fca/numexpr-2.8.6-cp311-cp311-macosx_10_9_x86_64.whl.metadata
+2023-09-21T17:21:58.8486070Z   Downloading numexpr-2.8.6-cp311-cp311-macosx_10_9_x86_64.whl.metadata (8.0 kB)
+2023-09-21T17:21:58.9127930Z Collecting packaging (from tables)
+2023-09-21T17:21:58.9178300Z   Downloading packaging-23.1-py3-none-any.whl (48 kB)
+2023-09-21T17:21:58.9318180Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 3.5 MB/s eta 0:00:00
+2023-09-21T17:21:58.9569880Z Collecting py-cpuinfo (from tables)
+2023-09-21T17:21:58.9621450Z   Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+2023-09-21T17:21:58.9965580Z Downloading numexpr-2.8.6-cp311-cp311-macosx_10_9_x86_64.whl (102 kB)
+2023-09-21T17:21:59.0062560Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 102.4/102.4 kB 13.7 MB/s eta 0:00:00
+2023-09-21T17:21:59.0152770Z Downloading numpy-1.26.0-cp311-cp311-macosx_10_9_x86_64.whl (20.6 MB)
+2023-09-21T17:21:59.3997630Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.6/20.6 MB 39.2 MB/s eta 0:00:00
+2023-09-21T17:21:59.5699290Z Installing collected packages: py-cpuinfo, packaging, numpy, numexpr, tables
+2023-09-21T17:22:03.1990410Z Successfully installed numexpr-2.8.6 numpy-1.26.0 packaging-23.1 py-cpuinfo-9.0.0 tables-3.8.1.dev0

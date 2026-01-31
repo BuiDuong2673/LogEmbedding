@@ -109,7 +109,7 @@ class ClientProgram:
             print(f"Epoch {epoch + 1}/{num_epochs}, Average Loss: {avg_loss:.4f}")
         return avg_loss, W1, W2
     
-    def training(self) -> None:
+    def training(self, num_neg_samples: int=5, num_epochs: int=10, learning_rate: float=0.01) -> None:
         """Run the entire training process from Client side."""
         # Get initial vocab
         initial_word_dict, initial_word_indices = self.get_initial_vocab()
@@ -142,7 +142,10 @@ class ClientProgram:
                 _, W1, W2 = self.train_word2vec(
                     word_dict=word_dict,
                     W1=initial_W1,
-                    W2=initial_W2
+                    W2=initial_W2,
+                    num_neg_samples=num_neg_samples,
+                    num_epochs=num_epochs,
+                    learning_rate=learning_rate
                 )
 
                 # Send weight update to central server

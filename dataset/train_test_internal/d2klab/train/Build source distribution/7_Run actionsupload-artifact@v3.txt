@@ -1,0 +1,28 @@
+2023-09-21T13:03:47.6518835Z ##[group]Run actions/upload-artifact@v3
+2023-09-21T13:03:47.6519173Z with:
+2023-09-21T13:03:47.6519407Z   path: dist/*
+2023-09-21T13:03:47.6519666Z   name: artifact
+2023-09-21T13:03:47.6519945Z   if-no-files-found: warn
+2023-09-21T13:03:47.6520232Z env:
+2023-09-21T13:03:47.6520574Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:03:47.6521035Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig
+2023-09-21T13:03:47.6521465Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:03:47.6521894Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:03:47.6522307Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:03:47.6522712Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.5/x64/lib
+2023-09-21T13:03:47.6523065Z ##[endgroup]
+2023-09-21T13:03:47.7490928Z With the provided path, there will be 5 files uploaded
+2023-09-21T13:03:47.7498578Z Starting artifact upload
+2023-09-21T13:03:47.7500450Z For more detailed logs during the artifact upload process, enable step-debugging: https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging#enabling-step-debug-logging
+2023-09-21T13:03:47.7501498Z Artifact name is valid!
+2023-09-21T13:03:47.9269995Z Container for artifact "artifact" successfully created. Starting upload of file(s)
+2023-09-21T13:03:53.3274743Z Total size of all the files uploaded is 13149242 bytes
+2023-09-21T13:03:53.3281735Z File upload process has finished. Finalizing the artifact upload
+2023-09-21T13:03:53.4629331Z Artifact has been finalized. All files have been successfully uploaded!
+2023-09-21T13:03:53.4629714Z 
+2023-09-21T13:03:53.4629962Z The raw size of all the files that were specified for upload is 13281665 bytes
+2023-09-21T13:03:53.4630662Z The size of all the files that were uploaded is 13149242 bytes. This takes into account any gzip compression used to reduce the upload size, time and storage
+2023-09-21T13:03:53.4631085Z 
+2023-09-21T13:03:53.4631971Z Note: The size of downloaded zips can differ significantly from the reported size. For more information see: https://github.com/actions/upload-artifact#zipped-artifact-downloads 
+2023-09-21T13:03:53.4632499Z 
+2023-09-21T13:03:53.4637839Z Artifact artifact has been successfully uploaded!
