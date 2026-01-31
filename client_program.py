@@ -3,8 +3,8 @@ import sys
 import socket
 import numpy as np
 from helper.vocab_extractor import VocabExtractor
+from helper.network_communication import send_message, receive_message
 from embedding_techniques.word2vec import Word2Vec
-from network_communication import send_message, receive_message
 
 
 HOST = "127.0.0.1"
