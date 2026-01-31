@@ -3,7 +3,7 @@ import json
 import socket
 import os
 import numpy as np
-from network_communication import send_message, receive_message
+from helper.network_communication import send_message, receive_message
 
 
 HOST = "127.0.0.1"

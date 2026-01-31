@@ -29,13 +29,13 @@ Link: https://github.com/ByteLuo1029/dataset/tree/main/dataset
 Link: https://github.com/dwyl/english-words
 
 ```python
-"dataset/words_alpha.txt"
+"dataset/english_word_dictionary.txt"
 ```
 
 ## Execution
 To run the training process, we have to run central server program and client programs at the same time. This can be done by:
 1. Create a new terminal for running central server program
-````cmd
+```cmd
 [terminal 1] python central_server_program.py
 ```
 
@@ -43,12 +43,12 @@ To run the training process, we have to run central server program and client pr
 
 Client: maryangel101
 
-````cmd
+```cmd
 [terminal 2] python client_program.py maryangel101
 ```
 
 Client: d2klab
 
-````cmd
+```cmd
 [terminal 3] python client_program.py d2klab
 ```
