@@ -4,8 +4,6 @@ import re
 import numpy as np
 from pathlib import Path
 
-from helper.create_training_dataset import TrainingDatasetCreator
-
 
 NUM_LOGS_SELECTED = 5
 CLIENT_LIST = ["d2klab", "maryangel101"]
@@ -237,9 +235,9 @@ class FindSimilarLogTester:
 
 
 if __name__ == "__main__":
-    W1 = np.load("models/3_clients_2_context_10_5_epochs/W1_3_clients_10_5_epochs.npy")
-    W2 = np.load("models/3_clients_2_context_10_5_epochs/W2_3_clients_10_5_epochs.npy")
-    word_dict_path = "models/3_clients_2_context_10_5_epochs/"
+    W1 = np.load("models/2_clients_1_context_50_5_epochs/W1_word2vec.npy")
+    W2 = np.load("models/2_clients_1_context_50_5_epochs/W2_word2vec.npy")
+    word_dict_path = "models/2_clients_1_context_50_5_epochs"
 
     tester = FindSimilarLogTester()
     for client in CLIENT_LIST:
