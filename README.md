@@ -1,6 +1,7 @@
 # LogEmbedding
 
 ## Dataset
+
 This file shows the sources of `dataset/` folder.
 
 ### maryangel101: ci-cd-failure-detector
@@ -12,6 +13,7 @@ Link: https://github.com/maryangel101/ci-cd-failure-detector/tree/main
 ```
 
 ### D2KLab: gha-dataset
+
 Link: https://github.com/D2KLab/gha-dataset/tree/master
 
 ```python
@@ -19,13 +21,15 @@ Link: https://github.com/D2KLab/gha-dataset/tree/master
 ```
 
 ## ByteLuo1029: LogSage
+
 Link: https://github.com/ByteLuo1029/dataset/tree/main/dataset
+
 ```python
 "dataset/logsage"
 ```
 
-
 ### dwyl: english-words
+
 Link: https://github.com/dwyl/english-words
 
 ```python
@@ -33,8 +37,11 @@ Link: https://github.com/dwyl/english-words
 ```
 
 ## Execution
+
 To run the training process, we have to run central server program and client programs at the same time. This can be done by:
+
 1. Create a new terminal for running central server program
+
 ```cmd
 [terminal 1] python central_server_program.py
 ```
@@ -54,6 +61,7 @@ Client: d2klab
 ```
 
 ## Testing
+
 We test the model in finding the from a set of generated logs the log that is similar to the original log. We use the following command:
 
 ```cmd
@@ -61,3 +69,5 @@ python -m test.find_similar_log_test > test_result/[name of the model being test
 ```
 
 This command execute the test program and save the output to a file for later analysis.
+
+* You may need `git lfs pull` instead of `git pull` in this situation.
