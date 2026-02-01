@@ -8,7 +8,7 @@ from helper.create_training_dataset import TrainingDatasetCreator
 
 
 NUM_LOGS_SELECTED = 5
-CLIENT_LIST = ["d2klab", "maryangel101", "logsage"]
+CLIENT_LIST = ["d2klab", "maryangel101"]
 
 
 class FindSimilarLogTester:
