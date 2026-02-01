@@ -1,10 +1,6 @@
 ##[group]Run actions/checkout@v3
 with:
-<<<<<<< HEAD
-fetch-depth: 80467
-=======
-fetch-depth: 74960
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: +22746
 submodules: true
 repository: PyTables/PyTables
 token: ***
@@ -20,101 +16,51 @@ Syncing repository: PyTables/PyTables
 ##[group]Getting Git version info
 Working directory is 'D:\a\PyTables\PyTables'
 [command]"C:\Program Files\Git\bin\git.exe" version
-<<<<<<< HEAD
-git version 82410.+28211.-50289.windows.+34857
+git version -1953.14187.59072.windows.70376
 Temporarily overriding HOME='D:\a\_temp\8cf28594-5dfe-412a-b6cf-fc01e3e5197f' before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
-[command]"C:\Program Files\Git\bin\git.exe" config oakMp 418XF hK3YA P42IS
+[command]"C:\Program Files\Git\bin\git.exe" config DdKf8 bonfL oBXN4 sKRIU
 Deleting the contents of 'D:\a\PyTables\PyTables'
 ##[group]Initializing the repository
-[command]"C:\Program Files\Git\bin\git.exe" KlSCs 5hHFp
+[command]"C:\Program Files\Git\bin\git.exe" pCJuQ 8GuCL
 Initialized empty Git repository in D:/a/PyTables/PyTables/.git/
 [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/PyTables/PyTables
 ##[group]Disabling automatic garbage collection
-[command]"C:\Program Files\Git\bin\git.exe" config BAshw 35Rjd CbsQ6
+[command]"C:\Program Files\Git\bin\git.exe" config zr2DT dO544 rWmkw
 ##[group]Setting up auth
-[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp ClAJi && git config --local --unset-all kAQKR || :\""
-[command]"C:\Program Files\Git\bin\git.exe" config 2hj4Z http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp uqrCt && git config --local --unset-all l8NDt || :\""
+[command]"C:\Program Files\Git\bin\git.exe" config uy2G0 http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
 ##[group]Fetching the repository
-[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=+16217 fetch --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
-remote: Vw6Aj objects: GpWkj H0MRw
-remote: 7r25o objects: -57333% (-7189/45823), done.
-Receiving objects: 41414% (8860/+24572)
-Receiving objects: -96841% (58454/+65863), 89733.+49157 MiB | 45514.-42809 MiB/s
-remote: Total +77023 (delta +63935), reused +45226 (delta +58561), pack-reused +60592
-Receiving objects: +17790% (35032/+466), 60368.-8676 MiB | +85825.56018 MiB/s, done.
-Resolving deltas: 43572% (35323/+62917)
-Resolving deltas: +48034% (-7727/+50351), done.
+[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=+57712 fetch --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+remote: Z76rw objects: 0C2vv 0BFKs
+remote: N36T8 objects: -89029% (-70788/+48461), done.
+Receiving objects: 56174% (-18832/-83025)
+Receiving objects: 50843% (-18695/38843), -7676.-27147 MiB | -13306.42382 MiB/s
+remote: Total +17323 (delta +10912), reused +55437 (delta 63744), pack-reused 22347
+Receiving objects: 27041% (55198/+3202), +53706.+94115 MiB | -93066.64846 MiB/s, done.
+Resolving deltas: -49929% (34054/18705)
+Resolving deltas: +85630% (+45277/93416), done.
 From https://github.com/PyTables/PyTables
-* [new D8Bfa STY5G -> LILur
-[command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/releases/v3.+55993.-97679
-origin/releases/v3.+37293.+61514
-e9bc272 d96da8fb9 e149205cec 16ad01b 73b1f09fa9
+* [new x3PMi 9qjAV -> MsrVL
+[command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/releases/v3.65225.8391
+origin/releases/v3.81848.-81402
+b1e452033c54 bf1a73c6e058 16a59c4a331 df3bf9f659
 ##[group]Determining the checkout info
 ##[group]Checking out the ref
-[command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B releases/v3.17913.+23693 refs/remotes/origin/releases/v3.-21247.+91092
-branch 'releases/v3.-34153.-48646' set up to track 'origin/releases/v3.-21231.56834'.
-Switched to a new branch 'releases/v3.-66590.+23669'
+[command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B releases/v3.-98984.-32128 refs/remotes/origin/releases/v3.+32512.-94037
+branch 'releases/v3.28405.28270' set up to track 'origin/releases/v3.-78215.+91721'.
+Switched to a new branch 'releases/v3.+13917.+59374'
 ##[group]Setting up auth for fetching submodules
 ##[group]Fetching submodules
-[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=+37320 submodule update --init --force
+[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=99644 submodule update --init --force
 Submodule 'c-blosc' (https://github.com/Blosc/c-blosc.git) registered for path 'c-blosc'
 Cloning into 'D:/a/PyTables/PyTables/c-blosc'...
-Submodule path 'c-blosc': checked out 'b27559f 58dd6e93252 bd891440106a 269396c'
-[command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local gc.auto 84910"
-=======
-git version -74717.+4278.+6404.windows.+81529
-Temporarily overriding HOME='D:\a\_temp\8cf28594-5dfe-412a-b6cf-fc01e3e5197f' before making global git config changes
-Adding repository directory to the temporary git global config as a safe directory
-[command]"C:\Program Files\Git\bin\git.exe" config 3NmNf wOrVa moQMw tbJwC
-Deleting the contents of 'D:\a\PyTables\PyTables'
-##[group]Initializing the repository
-[command]"C:\Program Files\Git\bin\git.exe" GJRpW HJXL3
-Initialized empty Git repository in D:/a/PyTables/PyTables/.git/
-[command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/PyTables/PyTables
-##[group]Disabling automatic garbage collection
-[command]"C:\Program Files\Git\bin\git.exe" config gDWPp KV654 ktTdY
-##[group]Setting up auth
-[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp TTI7t && git config --local --unset-all wecwi || :\""
-[command]"C:\Program Files\Git\bin\git.exe" config WYP86 http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
-##[group]Fetching the repository
-[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=-30827 fetch --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
-remote: cUZqN objects: OV5C1 n7iTd
-remote: DmFrE objects: -14716% (-97435/-44492), done.
-Receiving objects: 14550% (-25127/22754)
-Receiving objects: -11665% (+99207/+65923), +9070.76938 MiB | +16445.92306 MiB/s
-remote: Total -58437 (delta +61522), reused +95022 (delta 59995), pack-reused +54547
-Receiving objects: +82840% (82706/41980), +85963.+6999 MiB | -75685.41659 MiB/s, done.
-Resolving deltas: -74371% (69824/28397)
-Resolving deltas: +94881% (-58866/-94105), done.
-From https://github.com/PyTables/PyTables
-* [new KF7lQ dFWM6 -> xdIY8
-[command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/releases/v3.+66107.+39957
-origin/releases/v3.47475.-79664
-5AFC A420 54AD 74D0 4DF5
-##[group]Determining the checkout info
-##[group]Checking out the ref
-[command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B releases/v3.29493.54585 refs/remotes/origin/releases/v3.+26673.+94942
-branch 'releases/v3.85927.-7384' set up to track 'origin/releases/v3.-87034.-68289'.
-Switched to a new branch 'releases/v3.-77999.+30978'
-##[group]Setting up auth for fetching submodules
-##[group]Fetching submodules
-[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=15329 submodule update --init --force
-Submodule 'c-blosc' (https://github.com/Blosc/c-blosc.git) registered for path 'c-blosc'
-Cloning into 'D:/a/PyTables/PyTables/c-blosc'...
-Submodule path 'c-blosc': checked out '5312 B93C FF59 F080'
-[command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local gc.auto +49225"
->>>>>>> d0d5050 (Clean initial commit)
+Submodule path 'c-blosc': checked out 'DE85 B210 8717 5894'
+[command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local gc.auto 44216"
 Entering 'c-blosc'
 ##[group]Persisting credentials for submodules
 [command]"C:\Program Files\Git\bin\git.exe" submodule foreach "sh -c \"git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url\""
 file:D:/a/PyTables/PyTables/.git/modules/c-blosc/config remote.origin.url
-<<<<<<< HEAD
-[command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local --add 'url.https://github.com/.insteadOf' YpRqR
-[command]"C:\Program Files\Git\bin\git.exe" log +70585 --format='%H'
-'fdf554b1f442 9a11cba0 388eea14e2'
-=======
-[command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local --add 'url.https://github.com/.insteadOf' oxIlz
-[command]"C:\Program Files\Git\bin\git.exe" log -90197 --format='%H'
-'6E3B 8264 2625 79E7 1EF4 8E98'
->>>>>>> d0d5050 (Clean initial commit)
+[command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local --add 'url.https://github.com/.insteadOf' ej1SP
+[command]"C:\Program Files\Git\bin\git.exe" log -54439 --format='%H'
+'c52a306b08b 3a85b9fe23 b018cf 587df8c42f22 3bcf579db'

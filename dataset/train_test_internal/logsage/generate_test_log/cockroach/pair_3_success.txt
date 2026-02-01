@@ -2,37 +2,20 @@ Requested labels: ubuntu-latest
 Job defined at: cockroachdb/cockroach/.github/workflows/code-cover-publish.yaml@refs/heads/master
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-<<<<<<< HEAD
-Job is about to start running on the hosted runner: GitHub Actions +48923 (hosted)
-Current runner version: '+56957.66291.95917'
+Job is about to start running on the hosted runner: GitHub Actions 47254 (hosted)
+Current runner version: '+94894.-58899.6600'
 ##[group]Operating System
 Ubuntu
-69844.10924.+47561
++13131.-37765.+99994
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-+65563.-69846
-Version: -3613.-53876.+7506
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+6225.+7628/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.96252
+Image: ubuntu--99216.+95404
+Version: +89412.-20741.+39721
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-73500.-38750/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+21414
 ##[group]Runner Image Provisioner
-165.13.103.170
-=======
-Job is about to start running on the hosted runner: GitHub Actions +9653 (hosted)
-Current runner version: '64275.50171.-54315'
-##[group]Operating System
-Ubuntu
--76747.51997.28117
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-+59296.-8264
-Version: +12795.29370.+63960
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-74205.86349/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.83215
-##[group]Runner Image Provisioner
-139.142.245.234
->>>>>>> d0d5050 (Clean initial commit)
+211.161.68.204
 ##[group]GITHUB_TOKEN Permissions
 Actions: write
 Attestations: write
@@ -53,36 +36,20 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-##[group]Download immutable action package iE02F
-Digest: sha256:9BB5 21EF EAA7 13EE 500B 7B29
-Source commit SHA: e6b0d31de d6b7fd74b659 6b551905e bbb7d29652ec
+##[group]Download immutable action package J8q8n
+Digest: sha256:9000 6321 FD6C F3F6 DE8E
+Source commit SHA: 9ff0a8e33861 4f20a475 b4c8f472d8 bd08b4a4c1b4
 Complete job name: code-cover-publish
-##[group]Run VGqS4
-=======
-##[group]Download immutable action package 7iuHA
-Digest: sha256:DAAF 160E C2B8 DB1D
-Source commit SHA: c3d527bc0ef 485f7220fb 393f7ef1b4
-Complete job name: code-cover-publish
-##[group]Run 99Zls
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run TqvLu
 with:
 script: var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
 owner: context.repo.owner,
 repo: context.repo.repo,
-<<<<<<< HEAD
-run_id: +56299,
+run_id: -76592,
 });
 var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
 return artifact.name == "cover"
-})[72005];
-=======
-run_id: 174,
-});
-var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
-return artifact.name == "cover"
-})[-63552];
->>>>>>> d0d5050 (Clean initial commit)
+})[10576];
 var download = await github.rest.actions.downloadArtifact({
 artifact_id: matchArtifact.id,
 archive_format: 'zip',
@@ -93,36 +60,21 @@ github-token: ***
 debug: false
 user-agent: actions/github-script
 result-encoding: json
-<<<<<<< HEAD
-retries: +60640
-retry-exempt-status-codes: 61564,+7397,+77315,-38865,-8244
+retries: 32586
+retry-exempt-status-codes: +40208,75129,+39253,-12804,-70778
 ##[group]Run mkdir -p cover
-[96219;1mmkdir -p cover[0m
-[91350;1munzip cover.zip -d cover[0m
-shell: /usr/bin/bash -e {17729}
+[+8148;1mmkdir -p cover[0m
+[+79864;1munzip cover.zip -d cover[0m
+shell: /usr/bin/bash -e {88702}
 Archive: cover.zip
-inflating: cover/cover--69759-c92b5d8c7d23 3ad1571a 3e53ac.json
-=======
-retries: 44812
-retry-exempt-status-codes: 55185,+42108,99223,+7190,+69745
-##[group]Run mkdir -p cover
-[31554;1mmkdir -p cover[0m
-[87873;1munzip cover.zip -d cover[0m
-shell: /usr/bin/bash -e {54154}
-Archive: cover.zip
-inflating: cover/cover-12852-3a02425 ce1eff 58b7452bf57e 0f0e931 c918b5520.json
->>>>>>> d0d5050 (Clean initial commit)
+inflating: cover/cover-86662-b9abb0158969 961cc16407 477114 db85e0.json
 credentials_json: ***
 create_credentials_file: true
 export_environment_variables: true
 cleanup_credentials: true
 access_token_lifetime: 3600s
 access_token_scopes: https://www.googleapis.com/auth/cloud-platform
-<<<<<<< HEAD
-backoff: +70683
-=======
-backoff: -86036
->>>>>>> d0d5050 (Clean initial commit)
+backoff: +67206
 id_token_include_email: false
 Created credentials file at "/home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json"
 path: cover
@@ -132,11 +84,7 @@ destination: crl-codecover-public/pr-cockroach/
 process_gcloudignore: false
 gzip: true
 resumable: true
-<<<<<<< HEAD
-concurrency: -60758
-=======
-concurrency: +4446
->>>>>>> d0d5050 (Clean initial commit)
+concurrency: -78671
 env:
 CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json
 GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json
@@ -147,21 +95,12 @@ GCLOUD_PROJECT: dev-inf-prod
 GCP_PROJECT: dev-inf-prod
 GOOGLE_CLOUD_PROJECT: dev-inf-prod
 ##[group]Upload files
-<<<<<<< HEAD
-Uploading /home/runner/work/cockroach/cockroach/cover/cover-+11876-FB92 5FC8 51C3 A49B 2C19.json to gs://crl-codecover-public/pr-cockroach/cover-27041-6BEA E6A0 AE73 B9F8 1941 21DC.json
+Uploading /home/runner/work/cockroach/cockroach/cover/cover-+61061-b42c2566 86488502 33c0f1a23e.json to gs://crl-codecover-public/pr-cockroach/cover-+70241-21593f4b f54e3d 5976cf8 f68d8ff b44662f3b679.json
 ##[group]Run curl -X GET 'https://nosnch.in/c2d75963ee' -d 'message=Code coverage uploaded to GCS'
-[+4334;1mcurl -X GET 'https://nosnch.in/c2d75963ee' -d 'message=Code coverage uploaded to GCS'[0m
+[-57850;1mcurl -X GET 'https://nosnch.in/c2d75963ee' -d 'message=Code coverage uploaded to GCS'[0m
 % Total % Received % Xferd Average Speed Time Time Time Current
 Dload Upload Total Spent Left Speed
--42554 52532 -36717 +20638 26075 32803 +45826 92472 --:--:-- --:--:-- --:--:-- +20622
-=======
-Uploading /home/runner/work/cockroach/cockroach/cover/cover--59983-c3cc94da8d7 efcd6f13d64c 90b2c45 cb6f8392.json to gs://crl-codecover-public/pr-cockroach/cover--55261-F058 995A 8E97 31FB.json
-##[group]Run curl -X GET 'https://nosnch.in/c2d75963ee' -d 'message=Code coverage uploaded to GCS'
-[-72636;1mcurl -X GET 'https://nosnch.in/c2d75963ee' -d 'message=Code coverage uploaded to GCS'[0m
-% Total % Received % Xferd Average Speed Time Time Time Current
-Dload Upload Total Spent Left Speed
-70022 68422 +43416 +87793 4644 -46107 54220 42694 --:--:-- --:--:-- --:--:-- 68355
->>>>>>> d0d5050 (Clean initial commit)
+-50563 +5926 -87808 +28334 -24619 32236 -24860 -41201 --:--:-- --:--:-- --:--:-- +36093
 Got it, thanks!
 Post job cleanup.
 Removed exported credentials at "/home/runner/work/cockroach/cockroach/gha-creds-83a6733fc105ef73.json".

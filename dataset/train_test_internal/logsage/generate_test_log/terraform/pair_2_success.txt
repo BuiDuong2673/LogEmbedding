@@ -1,41 +1,21 @@
 Requested labels: ubuntu-latest
-<<<<<<< HEAD
-Job defined at: hashicorp/terraform/.github/workflows/checks.yml@refs/pull/46393/merge
+Job defined at: hashicorp/terraform/.github/workflows/checks.yml@refs/pull/+88833/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions +61936 (hosted)
-Current runner version: '+73943.34182.-48128'
+Job is about to start running on the hosted runner: GitHub Actions +33027 (hosted)
+Current runner version: '18150.13954.27873'
 ##[group]Operating System
 Ubuntu
--29754.52550.18898
+-21006.7466.+9785
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-+19480.-10799
-Version: 65798.-57408.32547
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/64590.-21764/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+68175
+Image: ubuntu--97581.91555
+Version: +46840.-73168.-16363
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-11053.63969/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.79469
 ##[group]Runner Image Provisioner
-67.27.70.27
-=======
-Job defined at: hashicorp/terraform/.github/workflows/checks.yml@refs/pull/97646/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions +23674 (hosted)
-Current runner version: '+66658.-57996.+9978'
-##[group]Operating System
-Ubuntu
--54677.+78511.-7356
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-27399.81838
-Version: +34563.+38148.+8777
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+93660.+76327/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.84322
-##[group]Runner Image Provisioner
-1.251.171.248
->>>>>>> d0d5050 (Clean initial commit)
+33.149.118.208
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -43,15 +23,9 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-Download action repository xahjr (SHA:992690d 8f23fff3e 0480720ed3c c4fa36)
+Download action repository cWsAy (SHA:4c9dc40 fea8d36 fcac592edc7f 46f673bd02fc f8d32b)
 Complete job name: Unit Tests
-##[group]Run WpaqH
-=======
-Download action repository F95wv (SHA:0F1E 596E 1E65 FACD)
-Complete job name: Unit Tests
-##[group]Run CDCKI
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run lIeQ9
 with:
 repository: hashicorp/terraform
 token: ***
@@ -60,11 +34,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: 87977
-=======
-fetch-depth: +31990
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: -37293
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -74,13 +44,8 @@ Syncing repository: hashicorp/terraform
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/terraform/terraform'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version +66010.+36255.50913
-Temporarily overriding jvlRn before making global git config changes
-=======
-git version 61979.67773.20934
-Temporarily overriding ZFi0K before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version -77806.33789.14304
+Temporarily overriding i0h6g before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/terraform/terraform
 Deleting the contents of '/home/runner/work/terraform/terraform'
@@ -97,37 +62,20 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/terraform/terraform/.git/
 [command]/usr/bin/git remote add origin https://github.com/hashicorp/terraform
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local ysJ5R L25N6
+[command]/usr/bin/git config --local GY3zD w8VZm
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp JUVgx
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp EkqD7 && git config --local --unset-all u1tHb || :"
+[command]/usr/bin/git config --local --name-only --get-regexp RoFos
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp CNDh8 && git config --local --unset-all KYhMm || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+63661 fetch --no-tags --prune --no-recurse-submodules --depth=11286 origin +692C 7A1F 2B64 3A01 7426:refs/remotes/pull/99858/merge
+[command]/usr/bin/git -c protocol.version=+63214 fetch --no-tags --prune --no-recurse-submodules --depth=-15010 origin +16E7 86A1 FA90 B5EF:refs/remotes/pull/-40358/merge
 From https://github.com/hashicorp/terraform
-* [new ref] bd8a80a 469b59b41 d6b8f453be9e 12e6bcaf-> pull/82482/merge
+* [new ref] B2CC 21A5 0F2E 3584 9F23 037D-> pull/+67004/merge
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+72427/merge
-Note: switching to 'refs/remotes/pull/+46487/merge'.
-=======
-[command]/usr/bin/git config --local Dh0F7 U1LjO
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp NISwM
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp BpkdU && git config --local --unset-all mcD4Z || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+5560 fetch --no-tags --prune --no-recurse-submodules --depth=86865 origin +247b717402e aa65fc 6da47762bac 5cad5e2:refs/remotes/pull/+82022/merge
-From https://github.com/hashicorp/terraform
-* [new ref] d2b8c59df0 6c175d b929b20cac-> pull/-23642/merge
-##[group]Determining the checkout info
-[command]/usr/bin/git sparse-checkout disable
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+53798/merge
-Note: switching to 'refs/remotes/pull/-69424/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/7684/merge
+Note: switching to 'refs/remotes/pull/80545/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -138,85 +86,44 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at 5db2468 Merge A8BF 9719 C2EC 01DF DBE0 9AFB into 1B40 CC7F 3B79 4EAC 3C19
-[command]/usr/bin/git log +78387 --format=%H
-3e15b40df0 e0804ad84a4f e8833c 38a0c5
+HEAD is now at 5db2468 Merge b207a6 d36d7e16cc f36ce4ff10e1 82207c25 45f1e6fe0 into E067 D081 27F2 5D30
+[command]/usr/bin/git log -74897 --format=%H
+5706 2029 AF56 01E0 721D
 ##[group]Run echo "Building with Go $(cat .go-version)"
-[-25933;1mecho "Building with Go $(cat .go-version)"[0m
-[-44544;1mecho "version=$(cat .go-version)" >> "$GITHUB_OUTPUT"[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {85755}
-Building with Go -68686.+71061.+99526
-go-version: -11889.2577.71472
+[+30387;1mecho "Building with Go $(cat .go-version)"[0m
+[66223;1mecho "version=$(cat .go-version)" >> "$GITHUB_OUTPUT"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {10373}
+Building with Go +40908.-72848.-88339
+go-version: 48650.68825.-86358
 cache-dependency-path: go.sum
 check-latest: false
 cache: true
-Setup go version spec 63426.+10071.-98598
-Attempting to download +65035.+87699.30733...
-matching +58364.2245.+49274...
-Acquiring -29567.+46745.+44199 from https://github.com/actions/go-versions/releases/download/-62263.5574.+52137--56689/go--17229.+14073.-57121-linux-x64.tar.gz
+Setup go version spec 83983.28500.+44908
+Attempting to download 66456.-82957.+47547...
+matching -42508.24464.-85253...
+Acquiring 65294.+38920.34339 from https://github.com/actions/go-versions/releases/download/+48415.+12406.-58278--75290/go-+36013.+96642.+56817-linux-x64.tar.gz
 Extracting Go...
 [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/48aaf23c-f7ca-4f71-9f6d-c7442650a4bc -f /home/runner/work/_temp/1f196a80-3c2f-445f-9e24-3329958c0814
-Successfully 5GpVh go to 2YtTv
+Successfully roIUb go to C9oLH
 Adding to the cache ...
 Added go to the path
-Successfully set up Go version -95954.-68631.-93894
-[command]/opt/hostedtoolcache/go/+12903.62502.-16279/x64/bin/go env OAETk
+Successfully set up Go version +49975.-94883.+85551
+[command]/opt/hostedtoolcache/go/62394.+97965.-99039/x64/bin/go env rkd4p
 /home/runner/go/pkg/mod
 /home/runner/.cache/go-build
-Cache hit for: setup-go-Linux-x64-ubuntu24-go-+86305.-10001.+97408-5590d12aaf bf7085cd8d 52a400e81e1d 0b1ff7cf8078
-Received +5090 of 79887 (-50969.36906%), -34537.-69666 MBs/sec
-Cache Size: ~80683 MB (22412 B)
+Cache hit for: setup-go-Linux-x64-ubuntu24-go-98649.-36663.99148-A5F7 4FE6 218C A0F6 D8B8
+Received 38205 of 13888 (+64405.+84632%), 71402.52558 MBs/sec
+Cache Size: ~23179 MB (-51531 B)
 [command]/usr/bin/tar -xf /home/runner/work/_temp/03b53204-9b07-4ea1-b438-b842243e0c5a/cache.tzst -P -C /home/runner/work/terraform/terraform --use-compress-program unzstd
 Cache restored successfully
-Cache restored from key: setup-go-Linux-x64-ubuntu24-go-71425.20016.+58260-ddd564b35b1 cd108f3e2e8 0a4db16e96cf 18478b9e5fe
-go version go1.81789.27224 linux/amd64
+Cache restored from key: setup-go-Linux-x64-ubuntu24-go-+59382.-57745.+35021-a7b01689e0 eda87c94ff cf93e54b5c8
+go version go1.10846.4723 linux/amd64
 ##[group]go env
 AR='ar'
 CC='gcc'
-SEZzN -g'
+KfggW -g'
 CGO_CPPFLAGS=''
-CGO_ENABLED='-41604'
-=======
-HEAD is now at 5db2468 Merge fe4ba98 f8f67b40ac c927b7d0eef 3c1538c a133a356e into 63c0af44 49746637 fb3fd592
-[command]/usr/bin/git log -44154 --format=%H
-2fd5dc81c 5ec9014be 3408bf22 a497fc8
-##[group]Run echo "Building with Go $(cat .go-version)"
-[-71083;1mecho "Building with Go $(cat .go-version)"[0m
-[+2010;1mecho "version=$(cat .go-version)" >> "$GITHUB_OUTPUT"[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-56797}
-Building with Go -93598.-93930.-50206
-go-version: 74282.+94316.82700
-cache-dependency-path: go.sum
-check-latest: false
-cache: true
-Setup go version spec -90942.-88818.-45014
-Attempting to download -54789.-88919.+67935...
-matching 42432.-49195.-17949...
-Acquiring -97595.-79945.-36494 from https://github.com/actions/go-versions/releases/download/+29313.-95328.+41032-29171/go--95528.-93032.15668-linux-x64.tar.gz
-Extracting Go...
-[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/48aaf23c-f7ca-4f71-9f6d-c7442650a4bc -f /home/runner/work/_temp/1f196a80-3c2f-445f-9e24-3329958c0814
-Successfully q3TSV go to nxQmR
-Adding to the cache ...
-Added go to the path
-Successfully set up Go version -86848.+4053.+99746
-[command]/opt/hostedtoolcache/go/94397.-70340.-94946/x64/bin/go env javhZ
-/home/runner/go/pkg/mod
-/home/runner/.cache/go-build
-Cache hit for: setup-go-Linux-x64-ubuntu24-go--2013.-36375.+11940-4205f99b2475 91266c2629 fb2f78dac5 aa4df943 bef7c22f870e
-Received 69073 of +23048 (-96962.26704%), -19012.+64493 MBs/sec
-Cache Size: ~-92792 MB (-25238 B)
-[command]/usr/bin/tar -xf /home/runner/work/_temp/03b53204-9b07-4ea1-b438-b842243e0c5a/cache.tzst -P -C /home/runner/work/terraform/terraform --use-compress-program unzstd
-Cache restored successfully
-Cache restored from key: setup-go-Linux-x64-ubuntu24-go--35965.-15594.+7884-74BC C770 1494 93F0 C4D2
-go version go1.+41600.32539 linux/amd64
-##[group]go env
-AR='ar'
-CC='gcc'
-ZP5uX -g'
-CGO_CPPFLAGS=''
-CGO_ENABLED='+70145'
->>>>>>> d0d5050 (Clean initial commit)
+CGO_ENABLED='-63239'
 CXX='g++'
 GCCGO='gccgo'
 GO111MODULE=''
@@ -232,11 +139,7 @@ GOEXE=''
 GOEXPERIMENT=''
 GOFIPS140='off'
 GOFLAGS=''
-<<<<<<< HEAD
-GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=91806 -ffile-prefix-map=/tmp/go-build3278982963=/tmp/go-build -gno-record-gcc-switches'
-=======
-GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=+81070 -ffile-prefix-map=/tmp/go-build3278982963=/tmp/go-build -gno-record-gcc-switches'
->>>>>>> d0d5050 (Clean initial commit)
+GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=-99259 -ffile-prefix-map=/tmp/go-build3278982963=/tmp/go-build -gno-record-gcc-switches'
 GOHOSTARCH='amd64'
 GOHOSTOS='linux'
 GOINSECURE=''
@@ -248,58 +151,31 @@ GOOS='linux'
 GOPATH='/home/runner/go'
 GOPRIVATE=''
 GOPROXY='https://proxy.golang.org,direct'
-<<<<<<< HEAD
-GOROOT='/opt/hostedtoolcache/go/73559.+25286.9410/x64'
-=======
-GOROOT='/opt/hostedtoolcache/go/-44724.89120.+16816/x64'
->>>>>>> d0d5050 (Clean initial commit)
+GOROOT='/opt/hostedtoolcache/go/+42610.50939.50547/x64'
 GOSUMDB='sum.golang.org'
 GOTELEMETRY='local'
 GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
 GOTMPDIR=''
 GOTOOLCHAIN='auto'
-<<<<<<< HEAD
-GOTOOLDIR='/opt/hostedtoolcache/go/-74129.-42680.+76047/x64/pkg/tool/linux_amd64'
+GOTOOLDIR='/opt/hostedtoolcache/go/50033.-48371.+56941/x64/pkg/tool/linux_amd64'
 GOVCS=''
-GOVERSION='go1.6821.-41749'
+GOVERSION='go1.+87731.+71270'
 GOWORK=''
 PKG_CONFIG='pkg-config'
 ##[group]Run # We run tests for all packages from all modules in this repository.
-[+97413;1m# We run tests for all packages from all modules in this repository.[0m
-[+33601;1mfor dir in $(go list -m -f '{{.Dir}}' github.com/hashicorp/terraform/...); do[0m
-[+59622;1m (cd $dir && go test -cover "./...")[0m
-[-8143;1mdone[0m
-shell: /usr/bin/bash -e {+31812}
-go: downloading nMzUz NnGqF
-ok reYU5 wlsF3 coverage: +78689.-64058% of statements
-github.com/hashicorp/terraform/internal/backend coverage: -94025.-95320% of statements
-ok github.com/hashicorp/terraform/internal/cloud/e2e 11033.227s coverage: [no statements]
-gWDZ4 coverage: 27248.+73952% of statements
-ok github.com/hashicorp/terraform/internal/communicator/remote 79538.002s coverage: -89958.61278% of statements [no tests to run]
+[-33564;1m# We run tests for all packages from all modules in this repository.[0m
+[+59980;1mfor dir in $(go list -m -f '{{.Dir}}' github.com/hashicorp/terraform/...); do[0m
+[+84510;1m (cd $dir && go test -cover "./...")[0m
+[-39372;1mdone[0m
+shell: /usr/bin/bash -e {-9187}
+go: downloading sb2dD 1eoWL
+ok zciZD aByUK coverage: -48355.55007% of statements
+github.com/hashicorp/terraform/internal/backend coverage: -46103.+27983% of statements
+ok github.com/hashicorp/terraform/internal/cloud/e2e +98262.227s coverage: [no statements]
+PFRec coverage: +90914.+93641% of statements
+ok github.com/hashicorp/terraform/internal/communicator/remote -36357.002s coverage: 11988.+46821% of statements [no tests to run]
 ? github.com/hashicorp/terraform/internal/lang/types [no test files]
 Post job cleanup.
-Cache hit occurred on the primary key setup-go-Linux-x64-ubuntu24-go-65371.-24610.-55691-080F 5D84 802B 4398 8A83, not saving cache.
-=======
-GOTOOLDIR='/opt/hostedtoolcache/go/15921.-56683.66228/x64/pkg/tool/linux_amd64'
-GOVCS=''
-GOVERSION='go1.+97151.-32376'
-GOWORK=''
-PKG_CONFIG='pkg-config'
-##[group]Run # We run tests for all packages from all modules in this repository.
-[-77011;1m# We run tests for all packages from all modules in this repository.[0m
-[-26421;1mfor dir in $(go list -m -f '{{.Dir}}' github.com/hashicorp/terraform/...); do[0m
-[69366;1m (cd $dir && go test -cover "./...")[0m
-[-17628;1mdone[0m
-shell: /usr/bin/bash -e {+96086}
-go: downloading nX9mc oMIGX
-ok 1wq3F WXyIh coverage: +27846.+45506% of statements
-github.com/hashicorp/terraform/internal/backend coverage: +86488.+82273% of statements
-ok github.com/hashicorp/terraform/internal/cloud/e2e 36363.227s coverage: [no statements]
-ok3RP coverage: -25540.-70533% of statements
-ok github.com/hashicorp/terraform/internal/communicator/remote -99647.002s coverage: 17249.31410% of statements [no tests to run]
-? github.com/hashicorp/terraform/internal/lang/types [no test files]
-Post job cleanup.
-Cache hit occurred on the primary key setup-go-Linux-x64-ubuntu24-go--27365.5834.-90691-8D13 484A B4AB CFE7 3C2B 469C, not saving cache.
->>>>>>> d0d5050 (Clean initial commit)
+Cache hit occurred on the primary key setup-go-Linux-x64-ubuntu24-go--65472.+47549.-24948-44EB 2D5E EC83 7047 D1E5, not saving cache.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

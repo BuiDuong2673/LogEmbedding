@@ -2,37 +2,20 @@ Requested labels: ubuntu-latest
 Job defined at: charmbracelet/bubbletea/dynamic/dependabot/dependabot-updates@refs/heads/main
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-<<<<<<< HEAD
-Job is about to start running on the hosted runner: GitHub Actions +16545 (hosted)
-Current runner version: '+38202.-43646.54503'
+Job is about to start running on the hosted runner: GitHub Actions 3165 (hosted)
+Current runner version: '42294.+94649.76758'
 ##[group]Operating System
 Ubuntu
--29614.48594.23315
+80206.+35748.-7988
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-+7121.-32313
-Version: +26341.41826.-60414
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+91349.+62239/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-74472
+Image: ubuntu-+52756.-88870
+Version: -52131.-61853.+42928
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-74357.37275/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+92209
 ##[group]Runner Image Provisioner
-253.63.154.144
-=======
-Job is about to start running on the hosted runner: GitHub Actions -25805 (hosted)
-Current runner version: '45989.+14173.56750'
-##[group]Operating System
-Ubuntu
-8609.-35881.88401
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-+13031.+20122
-Version: -30965.21393.-78710
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/4085.-88864/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+68076
-##[group]Runner Image Provisioner
-106.182.174.134
->>>>>>> d0d5050 (Clean initial commit)
+31.195.86.102
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -53,120 +36,63 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-Download action repository 'github/dependabot-action@main' (SHA:C755 2420 8283 BB1B B33E 2414)
+Download action repository 'github/dependabot-action@main' (SHA:F827 85C2 17D0 D308 9874)
 Complete job name: Dependabot
-##[group]Run mkdir -p ./dependabot-job--37826-+42221
-[35697;1mmkdir -p ./dependabot-job-21995-17441[0m
-shell: /usr/bin/bash -e {-95684}
+##[group]Run mkdir -p ./dependabot-job-+65628-49188
+[+63352;1mmkdir -p ./dependabot-job-+29618-+62195[0m
+shell: /usr/bin/bash -e {80684}
 ##[group]Run github/dependabot-action@main
 env:
-DEPENDABOT_DISABLE_CLEANUP: +40675
-DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: 39406
-=======
-Download action repository 'github/dependabot-action@main' (SHA:10F7 5AF1 48DD 5F04)
-Complete job name: Dependabot
-##[group]Run mkdir -p ./dependabot-job--18411--30398
-[+26673;1mmkdir -p ./dependabot-job--10840-+65860[0m
-shell: /usr/bin/bash -e {72403}
-##[group]Run github/dependabot-action@main
-env:
-DEPENDABOT_DISABLE_CLEANUP: -68409
-DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: -93210
->>>>>>> d0d5050 (Clean initial commit)
+DEPENDABOT_DISABLE_CLEANUP: -24756
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: +67585
 GITHUB_TOKEN: ***
 GITHUB_DEPENDABOT_JOB_TOKEN: ***
 GITHUB_DEPENDABOT_CRED_TOKEN: ***
 🤖 ~ starting update ~
 Fetching job details
 ##[group]Pulling updater images
-<<<<<<< HEAD
-Pulling image ZMfCs +70605)...
+Pulling image dwDKN +10398)...
 Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
-Pulled image 1O6hq
+Pulled image VpYL3
 Starting update process
-Created proxy container: 038835 4d35b0782 fd58dee8 5935dadd3b
-Created container: 99c0626e5 c67d496dd457 0d922557 dc4b9b81ba 598a9ca585e9
-proxy | -45673/82567/60062 +27230:+73732:+58745 4fh0F rYT22 8Ast2 HufyF
-proxy | 34737/-61035/51331 96286:7281:-68955 Listening (:+53584)
+Created proxy container: 141F 6D64 15F1 21A2
+Created container: 040e25a489 f2ae7c 3fe40452 38fb5836 c11c61e6
+proxy | 31583/-28721/+89599 67552:+11159:-10533 xg9iZ MSanw Xwfrz n4S0f
+proxy | -91635/-18417/-75201 69316:-93477:-91652 Listening (:-43423)
 updater | Updating certificates in /etc/ssl/certs...
 updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
-updater | +8334 added, +5781 removed; done.
+updater | +19605 added, -43281 removed; done.
 Running hooks in /etc/ca-certificates/update.d...
 updater | done.
-updater | 51027/-17213/-37829 -72538:74433:-35377 INFO <job_-54743> gUQnL ek3fm mQmzs
--23883/47835/-57098 +99891:30947:-30362 INFO <job_+84125> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":"chore","prefix-development":null,"include-scope":true},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":null,"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"github.com/muesli/termenv","dependency-version":"-82347.+16722.-23868"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"-92101.+85648.77490"}],[{"dependency-name":"github.com/muesli/termenv","dependency-version":"+53397.96668.-19770"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"+93147.-70382.+78790"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-37895.+48595.48825"}],[{"dependency-name":"github.com/muesli/termenv","dependency-version":"99207.+7787.-54704"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"+61671.+72227.+87019"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"+33622.-3010.+53056"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"-99265.33682.+87140"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"59125.12439.+38934"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-39183.-8808.-97229"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"-24284.+91364.+90906"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"71285.71152.34449"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"+76342.-81316.+50721"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"17996.+21737.-56652","directory":"/examples"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-46053.+54996.33453","directory":"/examples"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true,"enable-cooldown-for-cargo":true,"goprivate":""},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":-48237,"package-manager":"go_modules","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[],"security-updates-only":false,"source":{"provider":"github","repo":"charmbracelet/bubbletea","branch":null,"directory":"/examples","api-endpoint":"https://api.github.com/","hostname":"github.com"},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
-updater | 45817/72671/-55114 23657:28471:25932 INFO <job_14808> Started process PID: -4069 with command: {} git gjlBN FbXHk Y1CZN znGtu THJwR f2gmZ {}
-updater | -61362/-29655/-37656 +79770:78476:64859 INFO <job_-61049> frGDn zjrKy uKqRB nzI2o with NP6ZM UYTn3 YW1wN 9Oyky d7DCZ
-updater | +45850/+44069/39496 -30596:3344:55836 INFO <job_16910> pBM2y fDtJ6 PsL1R Xe3eC JnOwB
-updater | +83314/+62292/43624 1653:-25667:51197 INFO <job_-1693> Started process PID: -8763 with command: 7JXYi jaBO7 OBCQB OjTpr kwH1m AtCAS 4xcJs {}
--19381/45237/76630 +89514:-39962:92415 INFO <job_-56077> Total execution time: +78059.61215 seconds
-updater | -19017/+27627/95109 34782:+72256:39366 INFO <job_34628> Started process PID: -98091 with command: {} git clone --no-tags --depth 88742 --recurse-submodules --shallow-submodules https://github.com/charmbracelet/bubbletea /home/dependabot/dependabot-updater/repo {}
-proxy | 43551/87637/+57359 -46704:+3964:+58004 [-97567] 4xBBo SF7oB
--90392/+2588/-74461 -10680:-74354:-12783 [93732] * authenticating git server request (host: github.com)
-updater | +83260/-674/47856 +62331:87207:18614 INFO <job_-73219> Started process PID: -48253 with command: {} git -C /home/dependabot/dependabot-updater/repo ls-files --stage {}
-updater | +48966/12615/7550 -65901:54069:-21456 INFO <job_+8845> Started process PID: 1656 with command: {} git J0NHF rfxZS {}
-updater | -40833/76020/47387 -12299:-52739:+21490 INFO <job_30819> Started process PID: +39862 with command: {} 0MXdp k6yLy 09pjY Fi5Pt {}
-updater | 41753/+36424/3197 -59269:-14765:-3354 INFO <job_+63484> SHHRX neWW1 IVlUp afaEg
--51849/+8361/+28140 -36644:37936:-59210 INFO <job_-77766> Checking all dependencies for version updates...
-updater | 93986/+63301/-48273 -60087:+32957:50364 INFO <job_28966> YhGn0 6pqsf g5VNP lF730 I02F2 8VhFF
-proxy | +39452/+35947/27961 -93406:99679:6214 [18456] WARN: Cannot write TLS response body from mitm'd client: write tcp 62.188.118.199:+37099->108.118.34.246:27953: write: connection reset by peer
--35056/44880/-37187 56541:+92281:+27765 [+20995] rEvXT jgbRR
-proxy | -81197/-9322/+59902 90465:80294:+93554 [99412] WARN: Cannot write TLS response body from mitm'd client: write tcp 83.218.23.115:-46517->170.70.47.160:+95426: write: broken pipe
--78670/+25539/15577 +41275:-13340:+19339 [-52448] * authenticating github api request with token for api.github.com
-updater | 31232/4678/79717 +39768:+80160:95053 INFO <job_-27729> Started process PID: 95576 with command: /opt/go_modules/bin/helper
-proxy | +30509/-93499/+32877 2704:-66515:+61690 [11505] WARN: Cannot write TLS response chunked trailer from mitm'd client: write tcp 4.238.242.155:81844->78.58.192.78:-13995: write: connection reset by peer
-updater | 18086/-33699/95110 +86356:-10370:94531 INFO Results:
+updater | 72439/35934/+89862 +79855:-21449:+98873 INFO <job_+82562> hZBAK uyoLr qvqZx
++54157/-54529/-35232 69398:-22075:58026 INFO <job_-1502> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":"chore","prefix-development":null,"include-scope":true},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":null,"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"github.com/muesli/termenv","dependency-version":"-14461.-3999.-61574"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"-74763.-82625.10798"}],[{"dependency-name":"github.com/muesli/termenv","dependency-version":"-92171.+16340.87445"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"39443.-17183.99617"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"93390.36159.+85945"}],[{"dependency-name":"github.com/muesli/termenv","dependency-version":"-28740.73354.+95681"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"+48466.81766.31356"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"60319.+64581.-51304"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"-29055.36463.+10749"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"55950.24674.+31126"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-796.-24797.39263"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"+3109.-70326.57517"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"-391.-71117.+82109"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"52687.74399.-33563"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"67994.-64990.+93653","directory":"/examples"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-74339.+68828.26550","directory":"/examples"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true,"enable-cooldown-for-cargo":true,"goprivate":""},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":87312,"package-manager":"go_modules","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[],"security-updates-only":false,"source":{"provider":"github","repo":"charmbracelet/bubbletea","branch":null,"directory":"/examples","api-endpoint":"https://api.github.com/","hostname":"github.com"},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | +76995/+99440/+24616 38230:+11630:406 INFO <job_-62621> Started process PID: +65795 with command: {} git HqA2U vRwxk oD48X Rs6FS fKh3w mgNTo {}
+updater | +47848/+19343/+58350 61521:73923:+4381 INFO <job_+18158> FDwI4 KvQdJ qFapu kSjr2 with xC1Uv dNGxd x5DdC o2ZY8 3YKtT
+updater | +35468/+82170/-96888 +46624:+60700:75092 INFO <job_-85271> ByAGe knJ3L RvGOx nbwCJ 1roEr
+updater | -15704/-9698/72484 +80519:+19016:-34345 INFO <job_57191> Started process PID: 35914 with command: OdgPz BTVNi 7oE58 02fYc GUMwh ocojX HZiqB {}
+-63699/85576/76004 15387:99438:+63658 INFO <job_+45927> Total execution time: -38999.-28193 seconds
+updater | -45644/16580/-4463 +93961:79400:21948 INFO <job_99381> Started process PID: +35095 with command: {} git clone --no-tags --depth 66268 --recurse-submodules --shallow-submodules https://github.com/charmbracelet/bubbletea /home/dependabot/dependabot-updater/repo {}
+proxy | +54873/-66970/+82909 77698:94082:-49159 [30775] rXMi8 kZXTT
+55241/92805/-57977 29007:-89661:-11464 [-95187] * authenticating git server request (host: github.com)
+updater | +67136/-83591/+8050 -4569:-3200:+57665 INFO <job_-58343> Started process PID: +59110 with command: {} git -C /home/dependabot/dependabot-updater/repo ls-files --stage {}
+updater | +95168/-96452/-92158 -22729:+51828:-77491 INFO <job_98379> Started process PID: 20503 with command: {} git tz2Ek jgRN9 {}
+updater | +31773/-42037/-60996 +64749:-80796:75837 INFO <job_-90015> Started process PID: 1022 with command: {} wiZrd GJcL2 uqkkC 7DxJX {}
+updater | -13389/+78850/-86139 -54426:+20916:71706 INFO <job_+86917> 28nqg MbDA6 2dAFU cuwws
+-87004/4842/5145 -7814:-46252:-46931 INFO <job_59558> Checking all dependencies for version updates...
+updater | +69342/+85287/-94431 50227:19397:+77319 INFO <job_+48704> qlppY lhVct fSCOc 4I20b t3sST fyCuR
+proxy | -33450/+999/-91106 -21611:-1395:+16755 [70275] WARN: Cannot write TLS response body from mitm'd client: write tcp 184.120.244.32:+77048->156.204.32.233:-7984: write: connection reset by peer
+-83319/82272/-18738 77547:+45752:+76754 [-22889] 57m1t NehMJ
+proxy | -41324/+3406/+24310 +73178:-20320:+59644 [50613] WARN: Cannot write TLS response body from mitm'd client: write tcp 154.2.232.239:+99302->205.197.84.119:-64718: write: broken pipe
++84776/+92776/-10819 26570:87837:-52843 [+49526] * authenticating github api request with token for api.github.com
+updater | -9351/-87742/-67528 +23060:85613:27799 INFO <job_8024> Started process PID: 71386 with command: /opt/go_modules/bin/helper
+proxy | 64461/52048/89728 -68904:37048:-40787 [5196] WARN: Cannot write TLS response chunked trailer from mitm'd client: write tcp 38.246.149.140:-76510->18.163.197.50:+47876: write: connection reset by peer
+updater | 14703/-85172/-97943 -27989:+74666:50755 INFO Results:
 +----------------------------------------------------------------------+
 | Changes to Dependabot Pull Requests |
 +---------+------------------------------------------------------------+
-| created | github.com/charmbracelet/bubbles ( from -30332.+54611.-19011 to 57952.40557.1656 ) |
-Cleaned up container 6D69 A1F9 E466 CA21
-+38630/-31048/-7058 +18468:77502:-9914 Posting metrics to remote API endpoint
-=======
-Pulling image 0VXHa -51770)...
-Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
-Pulled image HsdXT
-Starting update process
-Created proxy container: CA1F B998 0542 F87D 9A25 A548
-Created container: 0f3ec3e1 f3ec2ac 40cc0b1 ff38ce1
-proxy | -39151/62986/+10916 +29307:+79223:-36947 hqeNQ J6w2j 1heGY 17HCe
-proxy | 32227/50771/-92032 +91311:7908:82238 Listening (:+68408)
-updater | Updating certificates in /etc/ssl/certs...
-updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
-updater | +82280 added, 67321 removed; done.
-Running hooks in /etc/ca-certificates/update.d...
-updater | done.
-updater | 42216/2622/85511 +55969:-12002:+70261 INFO <job_+22467> RZTh9 IEsZ8 8Th7D
-40075/-74526/92239 82468:51665:-23100 INFO <job_-5968> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":"chore","prefix-development":null,"include-scope":true},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":null,"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"github.com/muesli/termenv","dependency-version":"1662.61625.+94444"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"28968.-32695.+99690"}],[{"dependency-name":"github.com/muesli/termenv","dependency-version":"30634.+83358.-68572"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-2348.+81840.55470"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-70829.64496.+98954"}],[{"dependency-name":"github.com/muesli/termenv","dependency-version":"+59307.-42665.+88942"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"+10507.77743.+35785"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"+80501.52448.-79588"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"12030.+50154.-33697"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"-31334.-87821.+39491"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"+55060.6224.+2827"}],[{"dependency-name":"github.com/mattn/go-isatty","dependency-version":"-56645.-75282.-12006"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"+90245.+47282.+51618"}],[{"dependency-name":"github.com/charmbracelet/bubbles","dependency-version":"16819.16545.14896"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"97707.+53377.+11573","directory":"/examples"}],[{"dependency-name":"github.com/charmbracelet/lipgloss","dependency-version":"+94633.+66388.+8337","directory":"/examples"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true,"enable-cooldown-for-cargo":true,"goprivate":""},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":27365,"package-manager":"go_modules","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[],"security-updates-only":false,"source":{"provider":"github","repo":"charmbracelet/bubbletea","branch":null,"directory":"/examples","api-endpoint":"https://api.github.com/","hostname":"github.com"},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
-updater | 87134/-54054/39627 -73928:+89350:-8101 INFO <job_-11696> Started process PID: +39401 with command: {} git A0yfj nFAeo 3lDek iahIR cmReu wgK9e {}
-updater | +3405/+40479/+93401 -60961:45752:+90654 INFO <job_+59970> zZiaF WPrxw DI8RX J6Kmm with ZZziC un3ho ErkBZ HsTVI jMzIF
-updater | +50669/+68766/96785 +14552:9700:+87143 INFO <job_74470> h2GMV NjPbN ZZAps kx6go zc7r5
-updater | 78018/+41191/95576 24830:+74655:-26040 INFO <job_+1026> Started process PID: +53456 with command: SpxGD fmToo JRd5Z UWJ5S c7MSQ y34A9 l7wqZ {}
-70691/86909/-17147 +87472:-95943:-82773 INFO <job_95582> Total execution time: 32567.64128 seconds
-updater | +24053/-40505/+49047 +79997:29944:-96005 INFO <job_39068> Started process PID: 16527 with command: {} git clone --no-tags --depth -66624 --recurse-submodules --shallow-submodules https://github.com/charmbracelet/bubbletea /home/dependabot/dependabot-updater/repo {}
-proxy | -21375/+7135/17709 +32943:-91187:+53513 [6574] ZDIEY 6bKjE
-91745/-18667/+15426 71568:26399:66020 [35427] * authenticating git server request (host: github.com)
-updater | +38246/+18065/-28454 +16784:-44274:-38966 INFO <job_59280> Started process PID: +89883 with command: {} git -C /home/dependabot/dependabot-updater/repo ls-files --stage {}
-updater | 14901/5861/-49121 +90737:-18368:-57883 INFO <job_-7898> Started process PID: -72559 with command: {} git K7SiA byUXs {}
-updater | -35592/+65531/-12198 +91022:+80198:99017 INFO <job_-75979> Started process PID: +64537 with command: {} GCav3 jsPhg WQret 4vx1I {}
-updater | +66429/62728/-6433 90707:+63939:+1001 INFO <job_-99864> pgKDh ATyj4 sq3gz MKfe1
-50620/72816/+38896 -24069:-53051:43276 INFO <job_-53786> Checking all dependencies for version updates...
-updater | 62137/78862/-94763 +16352:-23715:+65836 INFO <job_-11101> wcMH2 Vg6s3 gKCFL cdFSw 037L8 PRyLB
-proxy | +42466/+55818/+54709 -61272:59058:+66344 [-48683] WARN: Cannot write TLS response body from mitm'd client: write tcp 90.167.223.125:85368->165.192.178.195:-37222: write: connection reset by peer
--83426/2253/-24760 +69051:+44538:+50901 [+17296] sUXza VnrNA
-proxy | +99472/+17942/+77401 +94397:33703:-94655 [-6365] WARN: Cannot write TLS response body from mitm'd client: write tcp 189.161.192.45:79346->151.38.12.55:4837: write: broken pipe
--24621/-8991/+94254 +40160:-8577:22342 [-58604] * authenticating github api request with token for api.github.com
-updater | +65713/+70040/+66550 94093:12492:-31197 INFO <job_-91472> Started process PID: -54435 with command: /opt/go_modules/bin/helper
-proxy | 34496/-95389/-24891 +57438:+18571:+12544 [+36492] WARN: Cannot write TLS response chunked trailer from mitm'd client: write tcp 203.255.203.189:+68609->199.38.37.223:-1469: write: connection reset by peer
-updater | 72476/+62685/-97269 +97774:+29009:+26714 INFO Results:
-+----------------------------------------------------------------------+
-| Changes to Dependabot Pull Requests |
-+---------+------------------------------------------------------------+
-| created | github.com/charmbracelet/bubbles ( from -15704.20479.89366 to 89491.+13087.24801 ) |
-Cleaned up container caead8e 7e1e578ef6b8 b9980b83
--45022/-4958/-95125 +39811:+83043:87960 Posting metrics to remote API endpoint
->>>>>>> d0d5050 (Clean initial commit)
+| created | github.com/charmbracelet/bubbles ( from -46023.-8377.-92988 to +57834.70797.+65321 ) |
+Cleaned up container 9385e86e2 a90b101e473 8c37606 73336dc1258a 4cb745fa
+-16643/61443/-86567 -71038:13950:-24666 Posting metrics to remote API endpoint
 🤖 ~ finished ~
 Post job cleanup.
 Cleaning up orphan processes

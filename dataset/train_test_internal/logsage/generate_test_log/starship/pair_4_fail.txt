@@ -2,37 +2,20 @@ Requested labels: ubuntu-latest
 Job defined at: starship/starship/.github/workflows/format-workflow.yml@refs/heads/i18n_master
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-<<<<<<< HEAD
-Job is about to start running on the hosted runner: GitHub Actions -9656 (hosted)
-Current runner version: '-93906.-67643.+9839'
+Job is about to start running on the hosted runner: GitHub Actions 9901 (hosted)
+Current runner version: '-11977.+94278.+60704'
 ##[group]Operating System
 Ubuntu
--98769.+51914.40636
+-49336.18625.-46569
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-+53089.99553
-Version: +41872.33595.6518
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/84037.2410/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.41864
+Image: ubuntu-+89506.+33483
+Version: 31980.32643.80844
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-51864.+8612/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.+95015
 ##[group]Runner Image Provisioner
-63.97.109.79
-=======
-Job is about to start running on the hosted runner: GitHub Actions +40626 (hosted)
-Current runner version: '+83674.84883.+12138'
-##[group]Operating System
-Ubuntu
-+86586.+81673.+75001
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-23867.+57445
-Version: -13455.95232.-26987
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+95450.94212/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.-89097
-##[group]Runner Image Provisioner
-127.236.236.63
->>>>>>> d0d5050 (Clean initial commit)
+92.113.175.21
 ##[group]GITHUB_TOKEN Permissions
 Actions: write
 Attestations: write
@@ -53,19 +36,11 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-##[group]Download immutable action package eMz9f
-Digest: sha256:5807dd3b 6d70b8 0bdff8
-Source commit SHA: 5935ac0859b 23a186b5 b9aa43 295abd36a6c
+##[group]Download immutable action package SMaS5
+Digest: sha256:3B4B E4B0 47D9 3F03 5E95
+Source commit SHA: b21b6c1f59 2d9040 4214d6ab6e
 Complete job name: Vitepress [Build]
-##[group]Run Gu2E3
-=======
-##[group]Download immutable action package MXtM6
-Digest: sha256:210b42 f7d63fe54 51c2ffb
-Source commit SHA: 8933 EC93 AAF2 8FDC 19C9 025F
-Complete job name: Vitepress [Build]
-##[group]Run XssTz
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run 4Qt7m
 with:
 repository: starship/starship
 token: ***
@@ -74,11 +49,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: 464
-=======
-fetch-depth: +79980
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: -17976
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -88,13 +59,8 @@ Syncing repository: starship/starship
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/starship/starship'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version 34515.-85729.+30668
-Temporarily overriding cYTdX before making global git config changes
-=======
-git version +34822.80120.65733
-Temporarily overriding FDI1r before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version +35521.-4220.-76986
+Temporarily overriding 6G6fw before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/starship/starship
 Deleting the contents of '/home/runner/work/starship/starship'
@@ -111,113 +77,62 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/starship/starship/.git/
 [command]/usr/bin/git remote add origin https://github.com/starship/starship
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local 7ggYA mGzG4
+[command]/usr/bin/git config --local ZVAdl MSvOv
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp OA5oS
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp VFsO1 && git config --local --unset-all 3fXNq || :"
+[command]/usr/bin/git config --local --name-only --get-regexp zgtaE
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp VYm6P && git config --local --unset-all htzwb || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=81811 fetch --no-tags --prune --no-recurse-submodules --depth=31458 origin +c24fc96cacd 0bd6e7c3b8ba e66a791e917:refs/remotes/origin/i18n_master
+[command]/usr/bin/git -c protocol.version=+38696 fetch --no-tags --prune --no-recurse-submodules --depth=53545 origin +3bd1ac2 a69c7c082603 9d016a2607e:refs/remotes/origin/i18n_master
 From https://github.com/starship/starship
-* [new ref] 666ed6c64d 70ed99d90f 11ecdf 1eda939c95-> origin/i18n_master
-=======
-[command]/usr/bin/git config --local cprVd afx3i
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp vgXkR
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp tvQQm && git config --local --unset-all ePa5G || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=39108 fetch --no-tags --prune --no-recurse-submodules --depth=89535 origin +B727 C36B CF04 8485:refs/remotes/origin/i18n_master
-From https://github.com/starship/starship
-* [new ref] ACFE 8952 65AA 15C1 B8F0-> origin/i18n_master
->>>>>>> d0d5050 (Clean initial commit)
+* [new ref] 6dfba9ca53 ce1b10 52c5be10afb-> origin/i18n_master
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force -B i18n_master refs/remotes/origin/i18n_master
 Switched to a new branch 'i18n_master'
 branch 'i18n_master' set up to track 'origin/i18n_master'.
-<<<<<<< HEAD
-[command]/usr/bin/git log +6430 --format=%H
-E300 D23D F492 E1D3
-node-version: -30081
-=======
-[command]/usr/bin/git log 40076 --format=%H
-ac635314b23 e0d821a94 06eacdfb832
-node-version: -40260
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git log +15849 --format=%H
+512aac4 bbbf7b57ed35 3dae6e9e4 9acf9230
+node-version: 55632
 cache: npm
 cache-dependency-path: docs/package-lock.json
 always-auth: false
 check-latest: false
-<<<<<<< HEAD
-Found in cache @ /opt/hostedtoolcache/node/-78858.59724.-72154/x64
+Found in cache @ /opt/hostedtoolcache/node/+9884.-71242.-2556/x64
 ##[group]Environment details
-node: v20.+55451.63936
-npm: 15511.21521.12612
-yarn: +4208.-55316.+86171
-[command]/opt/hostedtoolcache/node/86356.+14225.28758/x64/bin/npm config get cache
+node: v20.-68560.-22803
+npm: +49751.+63391.-21835
+yarn: 45432.-8532.33694
+[command]/opt/hostedtoolcache/node/+172.+71927.85352/x64/bin/npm config get cache
 /home/runner/.npm
 npm cache is not found
 ##[group]Run npm install
-[+85416;1mnpm install[0m
-shell: /usr/bin/bash -e {47280}
+[+29829;1mnpm install[0m
+shell: /usr/bin/bash -e {64483}
 
-added 50912 packages, and audited 53916 packages in 3s
-+93282 packages are looking for funding
+added -48504 packages, and audited -3194 packages in 3s
+7069 packages are looking for funding
 run `npm fund` for details
-+65400 moderate severity vulnerabilities
-=======
-Found in cache @ /opt/hostedtoolcache/node/32993.+95565.33615/x64
-##[group]Environment details
-node: v20.20255.10424
-npm: -29422.-86704.+65458
-yarn: -51574.11855.+55495
-[command]/opt/hostedtoolcache/node/-26517.-78181.41488/x64/bin/npm config get cache
-/home/runner/.npm
-npm cache is not found
-##[group]Run npm install
-[+41036;1mnpm install[0m
-shell: /usr/bin/bash -e {26964}
-
-added +5725 packages, and audited -74949 packages in 3s
--7091 packages are looking for funding
-run `npm fund` for details
-68897 moderate severity vulnerabilities
->>>>>>> d0d5050 (Clean initial commit)
++89228 moderate severity vulnerabilities
 To address all issues, run:
 npm audit fix
 Run `npm audit` for details.
 ##[group]Run npm run build
-<<<<<<< HEAD
-[-87975;1mnpm run build[0m
+[40426;1mnpm run build[0m
 > build
 > vitepress build
-[32m[1mvitepress[22m v1.1395.-65625[39m
-=======
-[-73766;1mnpm run build[0m
-> build
-> vitepress build
-[32m[1mvitepress[22m v1.-40131.24079[39m
->>>>>>> d0d5050 (Clean initial commit)
+[32m[1mvitepress[22m v1.31711.-77323[39m
 - building client + server bundles...
 [31mx[39m Build failed in 971ms
 [31m✖[0m building client + server bundles...
 [31mbuild error:[39m
 [31m[vitepress] ENOENT: no such file or directory, stat '/home/runner/work/starship/starship/docs/public/presets/toml/catppuccin-powerline.toml'[39m
 file: [36m/home/runner/work/starship/starship/docs/ar-SA/presets/catppuccin-powerline.md[39m
-<<<<<<< HEAD
-at Object.statSync ugioz
-at FvE81 (file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:54404:-33036)
-at file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:-26651:-73854
-##[error]Process completed with exit code +36200.
-=======
-at Object.statSync kdjLt
-at HggrY (file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:52656:-56318)
-at file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:98589:+36512
-##[error]Process completed with exit code +35310.
->>>>>>> d0d5050 (Clean initial commit)
+at Object.statSync uSCC5
+at xBUdZ (file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:73039:4215)
+at file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:-41155:-20940
+##[error]Process completed with exit code -21297.
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

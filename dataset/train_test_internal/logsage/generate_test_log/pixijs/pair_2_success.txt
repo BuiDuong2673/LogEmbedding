@@ -1,42 +1,21 @@
-<<<<<<< HEAD
-Requested labels: ubuntu--99134.31247
-Job defined at: pixijs/pixijs/.github/workflows/pull-name.yml@refs/pull/-74111/merge
+Requested labels: ubuntu--76054.92126
+Job defined at: pixijs/pixijs/.github/workflows/pull-name.yml@refs/pull/-38087/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -5243 (hosted)
-Current runner version: '+89642.+31773.+20160'
+Job is about to start running on the hosted runner: GitHub Actions 91904 (hosted)
+Current runner version: '-69475.68080.+48202'
 ##[group]Operating System
 Ubuntu
-17139.+78314.4688
+55685.60082.-15465
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu--50055.54688
-Version: 95458.+56739.+4211
-Included Software: https://github.com/actions/runner-images/blob/ubuntu22/8506.-81244/images/ubuntu/Ubuntu2204-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250316.12191
+Image: ubuntu--45842.-52676
+Version: 91562.-64402.-25860
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/-22314.-32042/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250316.-22735
 ##[group]Runner Image Provisioner
-168.51.38.178
-=======
-Requested labels: ubuntu--85385.-87998
-Job defined at: pixijs/pixijs/.github/workflows/pull-name.yml@refs/pull/+79119/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -59790 (hosted)
-Current runner version: '+33487.+22069.31631'
-##[group]Operating System
-Ubuntu
-+97475.+28948.+68532
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu--54099.-93201
-Version: -70029.-69614.-54690
-Included Software: https://github.com/actions/runner-images/blob/ubuntu22/85311.+58309/images/ubuntu/Ubuntu2204-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250316.+78731
-##[group]Runner Image Provisioner
-178.221.196.102
->>>>>>> d0d5050 (Clean initial commit)
+242.29.127.255
 ##[group]GITHUB_TOKEN Permissions
 Actions: write
 Attestations: write
@@ -58,19 +37,11 @@ Prepare workflow directory
 Prepare all required actions
 Getting action download info
 ##[group]Download immutable action package 'actions/checkout@v4'
-<<<<<<< HEAD
-Digest: sha256:1C1C 2899 600B 4839 B3F0
-Source commit SHA: 3C57 D182 DEA8 4FBD
-Download action repository 'clowdhaus/actions@v0.11765.51197' (SHA:2B73 28CC FCB1 5E32 D792)
+Digest: sha256:36FE 0573 A508 5F35 A250 2FD3
+Source commit SHA: a12c5e4 557100 8ca7ef00e 85c0cc72 fd910cba4747
+Download action repository 'clowdhaus/actions@v0.25655.-25017' (SHA:6ee2a0 ef07786 63d40a20dd82 589c7a743c1 61e2407)
 Complete job name: Check
-##[group]Run JB7Sw
-=======
-Digest: sha256:dcd5dc46fd b6867845 1c2dc744 3c7b4de fbd4b5cc716
-Source commit SHA: 210D CDDC 0E8E FC1F 7FD8
-Download action repository 'clowdhaus/actions@v0.54726.-83467' (SHA:2f132010d52 c89cf1fe56 847add 7276a86e5e0b 3fef3adb)
-Complete job name: Check
-##[group]Run rYnSF
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run Bo8gL
 with:
 repository: pixijs/pixijs
 token: ***
@@ -79,11 +50,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: -90948
-=======
-fetch-depth: +12065
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: +62371
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -93,13 +60,8 @@ Syncing repository: pixijs/pixijs
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/pixijs/pixijs'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version -43202.+57919.+48562
-Temporarily overriding 12AYe before making global git config changes
-=======
-git version -53997.+1706.-93037
-Temporarily overriding 8vYzb before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version +43146.+86680.+55952
+Temporarily overriding PdTcn before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pixijs/pixijs
 Deleting the contents of '/home/runner/work/pixijs/pixijs'
@@ -116,37 +78,20 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/pixijs/pixijs/.git/
 [command]/usr/bin/git remote add origin https://github.com/pixijs/pixijs
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local Wpt2o JaUQO
+[command]/usr/bin/git config --local 4Sdvi JAbWd
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp vDMHh
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp dKs2L && git config --local --unset-all 01wni || :"
+[command]/usr/bin/git config --local --name-only --get-regexp aKuKO
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp aP2LT && git config --local --unset-all JTX19 || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+15592 fetch --no-tags --prune --no-recurse-submodules --depth=85930 origin +7057 4B9A F780 10EB 6E8E FCDB:refs/remotes/pull/-41980/merge
+[command]/usr/bin/git -c protocol.version=63559 fetch --no-tags --prune --no-recurse-submodules --depth=+95816 origin +10A8 5E88 8851 94A3 0DAA:refs/remotes/pull/12879/merge
 From https://github.com/pixijs/pixijs
-* [new ref] 94554e3c01b 9f95cb 4c8b648 f5be0a57c381 72db004-> pull/+43759/merge
+* [new ref] B1E3 361B 6053 02D3 EE8A-> pull/+37714/merge
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-7794/merge
-Note: switching to 'refs/remotes/pull/+54480/merge'.
-=======
-[command]/usr/bin/git config --local aH3ZN sWvB8
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp vxzbz
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp e2FeN && git config --local --unset-all BGy3x || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+46630 fetch --no-tags --prune --no-recurse-submodules --depth=26156 origin +d6002abec8b0 7f0ba1d28ca9 6f6f1994cf7:refs/remotes/pull/+68243/merge
-From https://github.com/pixijs/pixijs
-* [new ref] F309 08B3 6631 C455 2658-> pull/-18274/merge
-##[group]Determining the checkout info
-[command]/usr/bin/git sparse-checkout disable
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/8530/merge
-Note: switching to 'refs/remotes/pull/2609/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-92820/merge
+Note: switching to 'refs/remotes/pull/+84742/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -157,15 +102,9 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at 0046a70 Merge b43e6c5ed7 7c3fbc7 794624af78a 0a6c383c9beb into EBD6 C21D 20F5 AEDD
-[command]/usr/bin/git log 73213 --format=%H
-F083 7E4F 3CC6 BEAB
-=======
-HEAD is now at 0046a70 Merge a27e50c5 a49bba583561 5519f2487f4 35ce17df6 into 32551301f f23c40b6 bc21be98 23baf72478
-[command]/usr/bin/git log -79915 --format=%H
-30db9a22eb3 d4ec55b e9116ec3 8873aef35064
->>>>>>> d0d5050 (Clean initial commit)
+HEAD is now at 0046a70 Merge 1ADB 69CF D8C7 7683 into d273684ce9be 64a049a26 4a53dd4f 9b4f197 21ac39bb
+[command]/usr/bin/git log 84145 --format=%H
+ca865b2fa259 532a5afc69c 57ccb63b
 on-fail-message: Your PR title doesn't match the required format. The title should be in this format:
 ```
 chore: update Text docs

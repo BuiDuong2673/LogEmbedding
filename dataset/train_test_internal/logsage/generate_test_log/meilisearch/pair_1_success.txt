@@ -1,41 +1,21 @@
 Requested labels: ubuntu-latest
-<<<<<<< HEAD
-Job defined at: meilisearch/meilisearch/.github/workflows/db-change-missing.yml@refs/pull/+48570/merge
+Job defined at: meilisearch/meilisearch/.github/workflows/db-change-missing.yml@refs/pull/99779/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions 37503 (hosted)
-Current runner version: '25191.+85906.+36872'
+Job is about to start running on the hosted runner: GitHub Actions 89694 (hosted)
+Current runner version: '+82121.+92748.-55499'
 ##[group]Operating System
 Ubuntu
--14403.-9374.+14732
+78670.26695.-40403
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-+29174.16780
-Version: -44013.+69729.-35850
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-33301.+50751/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.20755
+Image: ubuntu-84918.95565
+Version: +51826.-8403.+70125
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/22222.-21090/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.96356
 ##[group]Runner Image Provisioner
-161.124.25.128
-=======
-Job defined at: meilisearch/meilisearch/.github/workflows/db-change-missing.yml@refs/pull/35130/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -44905 (hosted)
-Current runner version: '+66213.-97797.-58556'
-##[group]Operating System
-Ubuntu
-+16860.-67364.+87782
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-94223.+77983
-Version: +12731.-40695.46920
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-12969.+91578/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-61233
-##[group]Runner Image Provisioner
-218.81.163.21
->>>>>>> d0d5050 (Clean initial commit)
+143.166.253.230
 ##[group]GITHUB_TOKEN Permissions
 Actions: write
 Attestations: write
@@ -57,17 +37,10 @@ Prepare workflow directory
 Prepare all required actions
 Getting action download info
 ##[group]Download immutable action package 'actions/checkout@v3'
-<<<<<<< HEAD
-Digest: sha256:D872 5A02 6388 831F 0E85
-Source commit SHA: 84178277c dada224f d648f442c67 ca2f1d
+Digest: sha256:013E 4424 4A0D 467B 422F
+Source commit SHA: 2317 733D C704 8768 EAF5
 Complete job name: check-labels
-##[group]Run 2mefJ
-=======
-Digest: sha256:C81F 65AD 9199 D110 687C 8B60
-Source commit SHA: 0758 2123 F67E B538 99B7
-Complete job name: check-labels
-##[group]Run 3XY4a
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run nPAtj
 with:
 repository: meilisearch/meilisearch
 token: ***
@@ -75,11 +48,7 @@ ssh-strict: true
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: -99569
-=======
-fetch-depth: 50180
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: 17776
 fetch-tags: false
 lfs: false
 submodules: false
@@ -90,13 +59,8 @@ Syncing repository: meilisearch/meilisearch
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/meilisearch/meilisearch'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version -32049.+51638.5925
-Temporarily overriding 1iL8Q before making global git config changes
-=======
-git version +19058.-15207.+27383
-Temporarily overriding iOsTg before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version -1055.+10287.+54142
+Temporarily overriding 3up11 before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/meilisearch/meilisearch
 Deleting the contents of '/home/runner/work/meilisearch/meilisearch'
@@ -113,51 +77,27 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/meilisearch/meilisearch/.git/
 [command]/usr/bin/git remote add origin https://github.com/meilisearch/meilisearch
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local rKjhP HsfrA
+[command]/usr/bin/git config --local kz8nS tKDEX
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp MhNmh
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp NQtlM && git config --local --unset-all 4OegH || :"
+[command]/usr/bin/git config --local --name-only --get-regexp 7owjY
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp yieg6 && git config --local --unset-all BihWV || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+24625 fetch --no-tags --prune --progress --no-recurse-submodules --depth=-21897 origin +2aa4da f1a1df 93416a:refs/remotes/pull/61243/merge
-remote: YybJp objects: czA8Z MW95R
-remote: eOGgj objects: -23288% (83867/+6566), done.
-Receiving objects: -1808% (+59608/88486)
-Receiving objects: +74063% (81639/19304), +88745.35840 MiB | +86734.63640 MiB/s
-remote: Total -7155 (delta -71013), reused +5854 (delta -63186), pack-reused +83523 (from 58591)
-Receiving objects: +66767% (68343/-7186), +59584.-80177 MiB | 12200.+69832 MiB/s, done.
-Resolving deltas: +21377% (+84836/-38289)
-Resolving deltas: -52767% (50174/+14898), done.
+[command]/usr/bin/git -c protocol.version=37113 fetch --no-tags --prune --progress --no-recurse-submodules --depth=-90701 origin +AD90 9555 F87F 0EDA B09E:refs/remotes/pull/-49897/merge
+remote: BNzTM objects: 3WcaM 3B1Au
+remote: tAJG5 objects: +33580% (82772/79978), done.
+Receiving objects: -22170% (57573/+80466)
+Receiving objects: 93815% (51955/-71638), +66472.-79140 MiB | 38387.+28800 MiB/s
+remote: Total +35157 (delta -62829), reused +23555 (delta 94480), pack-reused -71018 (from 55658)
+Receiving objects: -69035% (-20931/+56700), 12626.+31699 MiB | +41492.+92996 MiB/s, done.
+Resolving deltas: -80179% (41243/-55199)
+Resolving deltas: +46011% (-27813/+52996), done.
 From https://github.com/meilisearch/meilisearch
-* [new ref] a701b4ac 183286d356 0b3dfa5 da22ed70890-> pull/54211/merge
+* [new ref] C771 29BD 3D15 83B4 3931 294F-> pull/-51286/merge
 ##[group]Determining the checkout info
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-82221/merge
-Note: switching to 'refs/remotes/pull/-1572/merge'.
-=======
-[command]/usr/bin/git config --local rm3pB 6uf10
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp mgoh0
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp t4e59 && git config --local --unset-all TOIBI || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=-85303 fetch --no-tags --prune --progress --no-recurse-submodules --depth=+41390 origin +b62964fc d89cf2fa30a 704b452e9 ecb2d70:refs/remotes/pull/-57649/merge
-remote: F9T7R objects: ubPrh p9X34
-remote: 5t3wG objects: 80064% (98761/+31828), done.
-Receiving objects: +1062% (-64063/-69308)
-Receiving objects: 43429% (+19780/60110), -17518.+85040 MiB | 71463.-14651 MiB/s
-remote: Total +14861 (delta -14560), reused -13860 (delta 66763), pack-reused +73929 (from -68884)
-Receiving objects: -75136% (-61376/+84748), 43079.30697 MiB | -99934.86915 MiB/s, done.
-Resolving deltas: 73828% (+70528/15648)
-Resolving deltas: -62462% (+78084/+39033), done.
-From https://github.com/meilisearch/meilisearch
-* [new ref] D983 59C1 504C F03B 91A3 07D2-> pull/+17826/merge
-##[group]Determining the checkout info
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-94588/merge
-Note: switching to 'refs/remotes/pull/+30240/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+74769/merge
+Note: switching to 'refs/remotes/pull/51523/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -168,39 +108,21 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at ec3e399 Merge 13054f55e abc8329e d85dac137153 293a72 into 597C C8FE C3BF E87E 1C7D 461F
-[command]/usr/bin/git log +91673 --format='%H'
-'ad0b8b 1b4b19c078 2d1b9071e a7ee380d220'
-[47815;1mURL=/repos/meilisearch/meilisearch/pulls/-18071/labels[0m
-[-82454;1mecho 8yuxC
-[12797;1mLABELS=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: -92495-+32341-+45889" /repos/meilisearch/meilisearch/issues/+37772/labels -q .[].name)[0m
-[19687;1mif [[ ! "$LABELS" =~ "db change" && ! "$LABELS" =~ "no db change" ]]; then[0m
-[-27397;1m echo "::error::Pull request must contain either the 'db change' or 'no db change' label."[0m
-[+29891;1m exit -54889[0m
-[+44728;1melse[0m
-[-76849;1m echo "The label is set"[0m
-[+81828;1mfi[0m
-shell: /usr/bin/bash -e {+10543}
-9240
-/repos/meilisearch/meilisearch/pulls/7105/labels
-=======
-HEAD is now at ec3e399 Merge 19291aa8 fa7e0d3f53 9293a712a04 into F1E3 0ACB 5F5B 5FFF
-[command]/usr/bin/git log 59534 --format='%H'
-'8e923b28f bf7f0e00586 d363cbff40d'
-[9280;1mURL=/repos/meilisearch/meilisearch/pulls/-64840/labels[0m
-[-56658;1mecho NmEh2
-[39197;1mLABELS=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: -89801-87344--56887" /repos/meilisearch/meilisearch/issues/27576/labels -q .[].name)[0m
-[+63481;1mif [[ ! "$LABELS" =~ "db change" && ! "$LABELS" =~ "no db change" ]]; then[0m
-[-72873;1m echo "::error::Pull request must contain either the 'db change' or 'no db change' label."[0m
-[+35350;1m exit -57734[0m
-[1222;1melse[0m
-[-23242;1m echo "The label is set"[0m
-[+55149;1mfi[0m
-shell: /usr/bin/bash -e {-96751}
--62296
-/repos/meilisearch/meilisearch/pulls/3341/labels
->>>>>>> d0d5050 (Clean initial commit)
+HEAD is now at ec3e399 Merge 726dbd7eecca 636cd5a2603 327266155 1526b6a e9186b44b1 into 6B2A 3239 0586 B019 1A62 56B6
+[command]/usr/bin/git log -82323 --format='%H'
+'09a5ca6 a7d5176af 3ab08b1fdf 2dde657df'
+[-21437;1mURL=/repos/meilisearch/meilisearch/pulls/-29125/labels[0m
+[+77118;1mecho CJ8Bw
+[7733;1mLABELS=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 72190-+76984-56727" /repos/meilisearch/meilisearch/issues/65805/labels -q .[].name)[0m
+[-57649;1mif [[ ! "$LABELS" =~ "db change" && ! "$LABELS" =~ "no db change" ]]; then[0m
+[-50229;1m echo "::error::Pull request must contain either the 'db change' or 'no db change' label."[0m
+[-52140;1m exit +62688[0m
+[79051;1melse[0m
+[+15597;1m echo "The label is set"[0m
+[65992;1mfi[0m
+shell: /usr/bin/bash -e {12113}
++12188
+/repos/meilisearch/meilisearch/pulls/-52519/labels
 The label is set
 Post job cleanup.
 http.https://github.com/.extraheader

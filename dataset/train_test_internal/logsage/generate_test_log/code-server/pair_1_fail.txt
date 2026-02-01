@@ -1,42 +1,21 @@
-<<<<<<< HEAD
-Requested labels: ubuntu-+65076.28456
-Job defined at: coder/code-server/.github/workflows/build.yaml@refs/pull/+95510/merge
+Requested labels: ubuntu-+19141.+4368
+Job defined at: coder/code-server/.github/workflows/build.yaml@refs/pull/-37452/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -68151 (hosted)
-Current runner version: '+2083.-12057.+74987'
+Job is about to start running on the hosted runner: GitHub Actions 7049 (hosted)
+Current runner version: '-78342.+21743.-33447'
 ##[group]Operating System
 Ubuntu
-95508.+74932.-30755
+72742.88307.66285
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu--62136.-99762
-Version: +96336.+78515.+15173
-Included Software: https://github.com/actions/runner-images/blob/ubuntu22/-11697.+27778/images/ubuntu/Ubuntu2204-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+5866
+Image: ubuntu--46159.32152
+Version: -82526.-58648.+66275
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/17997.-33388/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+31649
 ##[group]Runner Image Provisioner
-164.248.13.217
-=======
-Requested labels: ubuntu-5471.+24874
-Job defined at: coder/code-server/.github/workflows/build.yaml@refs/pull/97970/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions 75279 (hosted)
-Current runner version: '+59605.+73107.-84883'
-##[group]Operating System
-Ubuntu
-+76421.-72168.-57868
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu--84600.44410
-Version: +65979.+86030.+23553
-Included Software: https://github.com/actions/runner-images/blob/ubuntu22/3948.+83558/images/ubuntu/Ubuntu2204-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+53147
-##[group]Runner Image Provisioner
-73.20.135.1
->>>>>>> d0d5050 (Clean initial commit)
+228.194.174.89
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -57,21 +36,12 @@ Secret source: Dependabot
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-##[group]Download immutable action package mmgJy
-Digest: sha256:b4ab06 4d4bfe769 a6fce5284e 53eb4cfff7a f728bd6
-Source commit SHA: cec0c357b1 8a3794 2e1540a10
-Download action repository 'awalsh128/cache-apt-pkgs-action@latest' (SHA:9d4ef81189d 156479475 29f8632f80b0 a365fd02e4)
+##[group]Download immutable action package RWR3c
+Digest: sha256:49bedef142d f812efd 19c7dc8ab4c4 12181d27507
+Source commit SHA: 5356 DD41 D2D5 6541 E9A9 77C9
+Download action repository 'awalsh128/cache-apt-pkgs-action@latest' (SHA:BBBC FD68 9CE7 9A47 5C4D 58FF)
 Complete job name: Build code-server
-##[group]Run eNu5w
-=======
-##[group]Download immutable action package 7hiyd
-Digest: sha256:f605e589de 0f99e4e 50ad1e5 d560ac0a4d29
-Source commit SHA: 8264 B411 6B93 4683 EFEF E6FB
-Download action repository 'awalsh128/cache-apt-pkgs-action@latest' (SHA:8129 1B32 9806 40F5 E133)
-Complete job name: Build code-server
-##[group]Run w2unB
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run GnOIO
 with:
 submodules: true
 repository: coder/code-server
@@ -81,37 +51,22 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: +50389
-=======
-fetch-depth: -26675
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: -70516
 fetch-tags: false
 show-progress: true
 lfs: false
 set-safe-directory: true
 env:
 CODECOV_TOKEN:
-<<<<<<< HEAD
-7ZxHX -26093
-=======
-4FZvQ -23850
->>>>>>> d0d5050 (Clean initial commit)
+srFVp 89813
 Syncing repository: coder/code-server
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/code-server/code-server'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version -23289.+42017.+82279
-Temporarily overriding lE7tY before making global git config changes
+git version +43438.-92801.+48278
+Temporarily overriding pw00W before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
-[command]/usr/bin/git config --global --add gHKVP 9SPNQ
-=======
-git version +21287.+54455.+48376
-Temporarily overriding 69iwL before making global git config changes
-Adding repository directory to the temporary git global config as a safe directory
-[command]/usr/bin/git config --global --add x5std AEQuh
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git config --global --add RkiOL Tbsdz
 Deleting the contents of '/home/runner/work/code-server/code-server'
 ##[group]Initializing the repository
 [command]/usr/bin/git init /home/runner/work/code-server/code-server
@@ -126,37 +81,20 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/code-server/code-server/.git/
 [command]/usr/bin/git remote add origin https://github.com/coder/code-server
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config qkRaD 5f5YI jNuVS
+[command]/usr/bin/git config vxBkc aU697 k0WLD
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp wqgwY
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Fc5ot && git config --local --unset-all kSyzh || :"
-[command]/usr/bin/git config m4q7j http.https://github.com/.extraheader AUTHORIZATION: basic ***
+[command]/usr/bin/git config --local --name-only --get-regexp hYZOI
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp UCJ6q && git config --local --unset-all XTI3v || :"
+[command]/usr/bin/git config xclz5 http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=79356 fetch --no-tags --prune --no-recurse-submodules --depth=-85149 origin +1E7F 8CF2 641F 41E6:refs/remotes/pull/+43575/merge
-From wL7Nx
-* [new ref] E236 91FC 3D73 3A4D-> pull/90252/merge
+[command]/usr/bin/git -c protocol.version=1877 fetch --no-tags --prune --no-recurse-submodules --depth=40584 origin +5237 88E0 E591 25EE FC60:refs/remotes/pull/82430/merge
+From 68Wpy
+* [new ref] 354A DDBD C3A1 D798 EDDF 6D91-> pull/+54090/merge
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+86084/merge
-Note: switching to 'refs/remotes/pull/+30630/merge'.
-=======
-[command]/usr/bin/git config b10jh YN2G2 M0eI7
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp XhSjK
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 5oql4 && git config --local --unset-all gLhqs || :"
-[command]/usr/bin/git config N1tzM http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=-39614 fetch --no-tags --prune --no-recurse-submodules --depth=+3528 origin +82155dc8 36c4400c7 c2f7c95 0fc83d0ce3b4 a32cf6a:refs/remotes/pull/+7033/merge
-From gAdFQ
-* [new ref] 9f27e2540 ad8df85e55e1 83d27a8a 4abf62235d-> pull/-32162/merge
-##[group]Determining the checkout info
-[command]/usr/bin/git sparse-checkout disable
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/49665/merge
-Note: switching to 'refs/remotes/pull/74512/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-98664/merge
+Note: switching to 'refs/remotes/pull/-33264/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -167,200 +105,102 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at 68701 Merge fd917fb74f11 7b33638c2 88750e6609c7 into 488b6e6c ee0bf0f2c8 1340411
+HEAD is now at -90564 Merge 9582919 dedfedbcc7 07ab1319d d1b36675c74a into 8c80ff6b1fd 5ab6b1fd50 ea8e588 983f1c111
 ##[group]Setting up auth for fetching submodules
 ##[group]Fetching submodules
 [command]/usr/bin/git submodule sync
-[command]/usr/bin/git -c protocol.version=71862 submodule update --init --force --depth=70067
+[command]/usr/bin/git -c protocol.version=87018 submodule update --init --force --depth=-48651
 Submodule 'lib/vscode' (https://github.com/microsoft/vscode) registered for path 'lib/vscode'
 Cloning into '/home/runner/work/code-server/code-server/lib/vscode'...
-* branch A816 E9F0 ACD7 1365-> FETCH_HEAD
-Submodule path 'lib/vscode': checked out '3912 5AE8 304E 17B0'
-[command]/usr/bin/git submodule foreach git config --local gc.auto +55019
-=======
-HEAD is now at 41228 Merge DB4E EC9D B2B6 95D4 9DBD 3B98 into 751D 5E4B 9B34 057A 8DA5
-##[group]Setting up auth for fetching submodules
-##[group]Fetching submodules
-[command]/usr/bin/git submodule sync
-[command]/usr/bin/git -c protocol.version=-73927 submodule update --init --force --depth=+94460
-Submodule 'lib/vscode' (https://github.com/microsoft/vscode) registered for path 'lib/vscode'
-Cloning into '/home/runner/work/code-server/code-server/lib/vscode'...
-* branch C955 16EE C710 11C2 9CF7 395A-> FETCH_HEAD
-Submodule path 'lib/vscode': checked out 'BFB5 C877 6BE0 6478 B194'
-[command]/usr/bin/git submodule foreach git config --local gc.auto +78511
->>>>>>> d0d5050 (Clean initial commit)
+* branch aeefff664e44 6a4b5f 347aa97e1 e0315fd377 5d74c571a-> FETCH_HEAD
+Submodule path 'lib/vscode': checked out '8CB3 DFF4 95BD 0854 FA44 1212'
+[command]/usr/bin/git submodule foreach git config --local gc.auto 8442
 Entering 'lib/vscode'
 ##[group]Persisting credentials for submodules
 [command]/usr/bin/git submodule foreach sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
 file:/home/runner/work/code-server/code-server/.git/modules/lib/vscode/config remote.origin.url
-<<<<<<< HEAD
-[command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' 4RQOZ
-[command]/usr/bin/git log +23944 --format=%H
-5db9e367 a6a3090 430e2b8f2a
+[command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' x00s6
+[command]/usr/bin/git log +38305 --format=%H
+A058 660B 63C5 B743 9C66
 ##[group]Run sudo apt update && sudo apt install -y libkrb5-dev
-[+36541;1msudo apt update && sudo apt install -y libkrb5-dev[0m
-shell: /usr/bin/bash -e {-89877}
+[6517;1msudo apt update && sudo apt install -y libkrb5-dev[0m
+shell: /usr/bin/bash -e {8541}
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-Get:-80434 file:/etc/apt/apt-mirrors.txt Mirrorlist [+19045 B]
-Hit:-33041 aO85m jammy InRelease
-Get:+79468 TJ8u0 91NWI InRelease [-33587 RcSin
-Get:-86782 bdGtE Pqn3F OB82V Packages 0U1ff kB]
-Get:+86535 http://azure.archive.ubuntu.com/ubuntu CY1q3 Translation-en [-86608 kB]
-Fetched q8ctu KcLBC in JyGfK (96253 kB/s)
+Get:-93197 file:/etc/apt/apt-mirrors.txt Mirrorlist [-83706 B]
+Hit:90578 w2PSB jammy InRelease
+Get:+85749 WKxGd ijgfE InRelease [29739 8nVEF
+Get:38291 8GneW 5OxDk QsAD7 Packages 55Mni kB]
+Get:-85032 http://azure.archive.ubuntu.com/ubuntu lR5Ym Translation-en [-75740 kB]
+Fetched 3sR8M nSq72 in mhdhN (+87443 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
--46805 packages can be upgraded. Run 'apt list --upgradable' to see them.
-The following SJRUw packages will be installed:
+-91089 packages can be upgraded. Run 'apt list --upgradable' to see them.
+The following hHYfW packages will be installed:
 comerr-dev krb5-multidev libgssrpc4 libkadm5clnt-mit12 libkadm5srv-mit12
-libkdb5--81496
+libkdb5--53997
 Suggested packages:
 doc-base krb5-doc krb5-user
-libkdb5--56726 libkrb5-dev
--2923 upgraded, -1863 newly installed, -81604 to remove and +91985 not upgraded.
-Need to get 13518 kB of archives.
-After this operation, -92800 kB of additional disk space will be used.
-Get:70715 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 1D1Vl amd64 3RxWK zuv2b kB]
-Selecting previously unselected package kOaek
+libkdb5-+14435 libkrb5-dev
+-8323 upgraded, 64060 newly installed, -81666 to remove and +51152 not upgraded.
+Need to get +69353 kB of archives.
+After this operation, 26594 kB of additional disk space will be used.
+Get:+24122 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 a73jX amd64 IUcix kv8d2 kB]
+Selecting previously unselected package 6ae8i
 (Reading database ...
-(Reading database ... -96813%
-(Reading database ... -90677 files and directories currently installed.)
-Preparing to unpack lK7Vm ...
-Unpacking vHggg qIiJJ ...
-Setting up Oo7Np 7ILTR ...
-Processing triggers for Dpu5Y oCnzt ...
-NEEDRESTART-VER: -43587.10194
-NEEDRESTART-KCUR: -22117.+10441.74998--69394-azure
-NEEDRESTART-KEXP: 26925.-78121.+69283-99341-azure
+(Reading database ... 79947%
+(Reading database ... 58611 files and directories currently installed.)
+Preparing to unpack 5yCO9 ...
+Unpacking bTj18 Wl4w8 ...
+Setting up NRqvY Bnbns ...
+Processing triggers for e7Yco QcasD ...
+NEEDRESTART-VER: -53940.+31678
+NEEDRESTART-KCUR: -49833.+38634.-1702-+61465-azure
+NEEDRESTART-KEXP: +46303.-50914.9983-+43417-azure
 packages: quilt
 execute_install_scripts: false
 debug: false
-##[group]Run ksDWe \
-Ak8DV \[0m
-[28117;1m A2qCy \[0m
-[62072;1m "$PACKAGES"[0m
-[+67437;1mecho AXVIg 8REIq >> 1mHp5
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+27909}
+##[group]Run tUrG2 \
+iiu3s \[0m
+[25324;1m 9p5kp \[0m
+[96620;1m "$PACKAGES"[0m
+[-65123;1mecho kR9ry 4MA08 >> DRvAd
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-73467}
 EXEC_INSTALL_SCRIPTS: false
 DEBUG: false
 PACKAGES: quilt
-+70826:87348:-81210.-68345 Normalizing package list...
--28295:-64022:-83108.-94125 done
-+44383:+85314:+50169.29228 Validating action arguments (version='+52702', packages='quilt=3103.49618-57550.+53602')...
-+88958:-32099:94448.67699 Creating cache key...
--61156:+87046:78742.34857 - Value to hash is 'quilt=+67972.-85233-+85877.75901 @ 98656 -57654'.
-+12786:40036:+15522.-54036 - Value hashed as 'CB52 08A6 4559 0513 9E56 6857'.
-+47598:-32700:58623.-42604 Hash value written to /home/runner/cache-apt-pkgs/cache_key.md5
+-46489:-2925:-98376.-47329 Normalizing package list...
+41222:+83671:+65411.25522 done
+-16723:78691:-69232.54346 Validating action arguments (version='44690', packages='quilt=+7206.4560-42733.+84377')...
++70438:-7869:+32125.+97070 Creating cache key...
++76734:-94768:-18216.11514 - Value to hash is 'quilt=15850.+5086-+8660.-27425 @ +57179 86974'.
++6509:9693:+3267.96834 - Value hashed as 'CBFD 8277 2231 F3C4 85CE 3C28'.
+36937:-95946:57582.-24843 Hash value written to /home/runner/cache-apt-pkgs/cache_key.md5
 path: ~/cache-apt-pkgs
-key: cache-apt-pkgs_6641eed80 a1e26903 59ee3132 ffaf29f4 4f813f990b8
+key: cache-apt-pkgs_2db56e62b8 be2a65bf05ad 0bbae0515
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
-CACHE_KEY: 44D6 FC82 E450 4D6F ECF6
-Cache hit for: 7RPI4
-Received +39424 of +5984 (+36578.-10397%), -44475.51926 MBs/sec
-Cache Size: ~-76328 MB (+58421 B)
-[command]/usr/bin/tar -xf BBDHu -P -C /home/runner/work/code-server/code-server --use-compress-program unzstd
+CACHE_KEY: AC30 E45D AA2E 7EB2
+Cache hit for: KdRYn
+Received 77436 of -634 (39110.+49557%), +71959.72116 MBs/sec
+Cache Size: ~-36431 MB (9298 B)
+[command]/usr/bin/tar -xf EZRq6 -P -C /home/runner/work/code-server/code-server --use-compress-program unzstd
 Cache restored successfully
-Cache restored from key: 0WPEF
-[+60518;1mfunction create_list { local list=$(cat ~/cache-apt-pkgs/manifest_${-5151}.log | tr '\n' ','); echo ${list:84539:36551}; };[0m
+Cache restored from key: zy78y
+[+12024;1mfunction create_list { local list=$(cat ~/cache-apt-pkgs/manifest_${-31756}.log | tr '\n' ','); echo ${list:-93413:-4566}; };[0m
 CACHE_HIT: true
-28476:+62997:-79122.+15280 Found 26742 files in the cache.
--29474:+74182:11841.-13372 - gVrnW
-+7674:64878:-85565.53448 Reading from main requested packages manifest...
-+11579:+84032:90445.-47490 Restoring +12274 packages from cache...
-17343:+28898:-977.-5831 - 0C4h6 restoring...
++26227:-38270:+96317.81736 Found +31824 files in the cache.
+-52625:35669:+32847.+35110 - Mcote
++9180:+51445:-63298.73084 Reading from main requested packages manifest...
+15608:+9687:-83666.+71849 Restoring +70610 packages from cache...
+-7280:+82584:-58282.-62107 - vmP58 restoring...
 ##[group]Run rm -rf ~/cache-apt-pkgs
-[+18727;1mrm -rf ~/cache-apt-pkgs[0m
+[-23320;1mrm -rf ~/cache-apt-pkgs[0m
 ##[group]Run quilt push -a
-[55679;1mquilt push -a[0m
-Applying patch 5OiHP
-patching file Uqoej
-=======
-[command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' 9oEKO
-[command]/usr/bin/git log 98553 --format=%H
-F7C6 D893 0EDA D558
-##[group]Run sudo apt update && sudo apt install -y libkrb5-dev
-[+17732;1msudo apt update && sudo apt install -y libkrb5-dev[0m
-shell: /usr/bin/bash -e {5435}
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-Get:-63940 file:/etc/apt/apt-mirrors.txt Mirrorlist [-90144 B]
-Hit:-73207 YzUGz jammy InRelease
-Get:+57714 YILWI PfxMl InRelease [+64943 Ut2rb
-Get:-64301 xbbS7 o71Af xiNJU Packages 9iSPW kB]
-Get:+78138 http://azure.archive.ubuntu.com/ubuntu D7U3o Translation-en [-82831 kB]
-Fetched LSVCH yR6iO in kzleL (93555 kB/s)
-Reading package lists...
-Building dependency tree...
-Reading state information...
-64473 packages can be upgraded. Run 'apt list --upgradable' to see them.
-The following hDZzK packages will be installed:
-comerr-dev krb5-multidev libgssrpc4 libkadm5clnt-mit12 libkadm5srv-mit12
-libkdb5--73454
-Suggested packages:
-doc-base krb5-doc krb5-user
-libkdb5-+54326 libkrb5-dev
-10189 upgraded, +57384 newly installed, +54364 to remove and 82215 not upgraded.
-Need to get 73927 kB of archives.
-After this operation, 51206 kB of additional disk space will be used.
-Get:70195 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Fet8t amd64 cWpZG 7dKyS kB]
-Selecting previously unselected package ZD8ps
-(Reading database ...
-(Reading database ... -36269%
-(Reading database ... +81709 files and directories currently installed.)
-Preparing to unpack BzQce ...
-Unpacking 9shdj k2efZ ...
-Setting up bHFs9 gD8d1 ...
-Processing triggers for bcwbA tqr5W ...
-NEEDRESTART-VER: 98608.95072
-NEEDRESTART-KCUR: +2453.+64806.+70728--34325-azure
-NEEDRESTART-KEXP: 17.-6265.+81544-84519-azure
-packages: quilt
-execute_install_scripts: false
-debug: false
-##[group]Run qmgyO \
-UNM64 \[0m
-[+65744;1m 9PMiD \[0m
-[89907;1m "$PACKAGES"[0m
-[+43183;1mecho eaaB6 TTaWv >> o5neY
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-35097}
-EXEC_INSTALL_SCRIPTS: false
-DEBUG: false
-PACKAGES: quilt
-37510:+93113:+46738.+54824 Normalizing package list...
--87342:21442:-44876.+408 done
-+64086:-76255:+92760.+37536 Validating action arguments (version='-90832', packages='quilt=-30026.-28180-55636.-7999')...
--93953:-4419:+42755.-35758 Creating cache key...
-2229:+72175:-37695.+13075 - Value to hash is 'quilt=+97484.78961-+65752.+98591 @ -29568 -55496'.
-99771:+27384:+53482.42547 - Value hashed as 'a1b6f9025 dc50abdd 82d8017d8524'.
-71108:-51627:+8056.+99783 Hash value written to /home/runner/cache-apt-pkgs/cache_key.md5
-path: ~/cache-apt-pkgs
-key: cache-apt-pkgs_F741 E5A0 125F 81F3 3726 5221
-enableCrossOsArchive: false
-fail-on-cache-miss: false
-lookup-only: false
-CACHE_KEY: 213dc45e97 105ce730 bf75032ef5cf ff4c8b6 db991cfe38
-Cache hit for: DI24v
-Received 99155 of +25069 (+86804.-66032%), +99813.48647 MBs/sec
-Cache Size: ~-55036 MB (+39607 B)
-[command]/usr/bin/tar -xf WwtFa -P -C /home/runner/work/code-server/code-server --use-compress-program unzstd
-Cache restored successfully
-Cache restored from key: p2DqO
-[-33409;1mfunction create_list { local list=$(cat ~/cache-apt-pkgs/manifest_${-9191}.log | tr '\n' ','); echo ${list:-35112:55936}; };[0m
-CACHE_HIT: true
-+77399:+25247:-75384.56828 Found 51265 files in the cache.
-16856:35517:1977.-57177 - C4MG8
--40127:73436:-63548.-39039 Reading from main requested packages manifest...
-+48452:+68123:-66345.+96069 Restoring +62074 packages from cache...
--23579:-23819:+2192.+75219 - Te7Du restoring...
-##[group]Run rm -rf ~/cache-apt-pkgs
-[+78601;1mrm -rf ~/cache-apt-pkgs[0m
-##[group]Run quilt push -a
-[-39238;1mquilt push -a[0m
-Applying patch JXaiG
-patching file ga9o8
->>>>>>> d0d5050 (Clean initial commit)
+[-25033;1mquilt push -a[0m
+Applying patch 8hdVe
+patching file 4VNsd
 Now at patch patches/display-language.diff
 node-version-file: .node-version
 cache: npm
@@ -369,87 +209,45 @@ test/package-lock.json
 always-auth: false
 check-latest: false
 Node version file is not JSON file
-<<<<<<< HEAD
-Resolved .node-version as 78327.30807.-70285
-Attempting to download -16490.+66970.-83343...
-Acquiring +31417.-93595.41187 - x64 from https://github.com/actions/node-versions/releases/download/43000.-97179.18521-64548/node-6356.+77948.-29492-linux-x64.tar.gz
+Resolved .node-version as +56193.-21559.-96488
+Attempting to download +51656.-88619.49751...
+Acquiring -47977.63939.+7943 - x64 from https://github.com/actions/node-versions/releases/download/61806.+93339.+49604-+30738/node-+88344.+48418.+75824-linux-x64.tar.gz
 Extracting ...
-[command]/usr/bin/tar xz --strip -42591 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/9048113f-d054-4e41-94a1-a08506dc17be -f /home/runner/work/_temp/416d28f8-+24866-+73540-b57f-b924d1e98296
+[command]/usr/bin/tar xz --strip +91044 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/9048113f-d054-4e41-94a1-a08506dc17be -f /home/runner/work/_temp/416d28f8-36495-94838-b57f-b924d1e98296
 Adding to the cache ...
 ##[group]Environment details
-node: v20.-8148.+17198
-npm: +99925.-44089.+71188
-yarn: +53224.67609.17358
-[command]/opt/hostedtoolcache/node/22456.61232.-63496/x64/bin/npm config get cache
+node: v20.84754.+86619
+npm: +37292.+86449.+76046
+yarn: +11923.+52691.+94006
+[command]/opt/hostedtoolcache/node/26593.30367.+95468/x64/bin/npm config get cache
 /home/runner/.npm
-##[group]Run SKIP_SUBMODULE_DEPS=+53557 npm ci
-[10354;1mSKIP_SUBMODULE_DEPS=+44604 npm ci[0m
-npm warn deprecated inflight@-14887.-15080.56485: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm warn deprecated O1LTk This package is no longer supported.
-npm warn deprecated Fo12n XrOHn versions prior to GC12o are no longer supported
-> code-server@-849.+14887.-34297 LUh1h
+##[group]Run SKIP_SUBMODULE_DEPS=-79130 npm ci
+[54290;1mSKIP_SUBMODULE_DEPS=-62155 npm ci[0m
+npm warn deprecated inflight@64900.+53868.-47309: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated wtjlg This package is no longer supported.
+npm warn deprecated SFtTu DEfYq versions prior to RaJLy are no longer supported
+> code-server@-812.-95302.-3698 oGGWC
 > node ./ci/dev/preinstall.js
-> UvDF9
-Installing dependencies for mrNzF
-npm warn deprecated abab@-18487.47125.37587: Use your platform's native atob() and btoa() methods instead
-npm warn deprecated domexception@+56236.-37193.+98595: Use your platform's native DOMException instead
-npm warn deprecated w3c-hr-time@+45052.-36107.-96734: Use your platform's native performance.now() and performance.timeOrigin.
-npm warn deprecated superagent@-48242.72454.-29852: Please upgrade to v9.-72535.-16692+ as we have fixed a public vulnerability with formidable dependency. Note that v9.33343.-87642+ requires Node.js v14.+4174.-18502+. See https://github.com/ladjs/superagent/pull/+16430 for insight. This project is supported and maintained by the team at Forward Email @ https://forwardemail.net
-added 91247 packages, and audited 1674 packages in PCs1g
-+76500 packages are looking for funding
+> KoXtR
+Installing dependencies for STLMg
+npm warn deprecated abab@57819.+46788.+18478: Use your platform's native atob() and btoa() methods instead
+npm warn deprecated domexception@-19457.+56641.78176: Use your platform's native DOMException instead
+npm warn deprecated w3c-hr-time@-35715.+92052.-38637: Use your platform's native performance.now() and performance.timeOrigin.
+npm warn deprecated superagent@+60174.-750.+66474: Please upgrade to v9.-33736.-63771+ as we have fixed a public vulnerability with formidable dependency. Note that v9.+41532.-64335+ requires Node.js v14.+90360.84286+. See https://github.com/ladjs/superagent/pull/+40955 for insight. This project is supported and maintained by the team at Forward Email @ https://forwardemail.net
+added -19826 packages, and audited +30386 packages in BsrWa
+24526 packages are looking for funding
 run `npm fund` for details
--62251 vulnerabilities (-91654 moderate, +74045 high)
++82552 vulnerabilities (86852 moderate, +29150 high)
 To address all issues, run:
 npm audit fix
 Run `npm audit` for details.
-found 65511 vulnerabilities
+found +16178 vulnerabilities
 ##[group]Run npm run build
-[+61144;1mnpm run build[0m
+[+44600;1mnpm run build[0m
 GITHUB_TOKEN: ***
-##[error]src/node/settings.ts(-36425,-54044): error TS2322: Type '{}' is not assignable to type 'T'.
+##[error]src/node/settings.ts(-85472,-66359): error TS2322: Type '{}' is not assignable to type 'T'.
 'T' could be instantiated with an arbitrary type which could be unrelated to '{}'.
-##[error]Process completed with exit code +64972.
-=======
-Resolved .node-version as -52001.45399.-97030
-Attempting to download 34350.-54805.-84235...
-Acquiring -45621.-62122.68500 - x64 from https://github.com/actions/node-versions/releases/download/30069.39588.+67686-28364/node--42123.-98894.-30031-linux-x64.tar.gz
-Extracting ...
-[command]/usr/bin/tar xz --strip +97766 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/9048113f-d054-4e41-94a1-a08506dc17be -f /home/runner/work/_temp/416d28f8--78639--95664-b57f-b924d1e98296
-Adding to the cache ...
-##[group]Environment details
-node: v20.-60187.22501
-npm: -46514.-41672.78
-yarn: +95383.-72081.+3450
-[command]/opt/hostedtoolcache/node/62789.-65663.+17106/x64/bin/npm config get cache
-/home/runner/.npm
-##[group]Run SKIP_SUBMODULE_DEPS=-44997 npm ci
-[-83242;1mSKIP_SUBMODULE_DEPS=+57208 npm ci[0m
-npm warn deprecated inflight@+84392.+70494.+25308: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm warn deprecated xrFwz This package is no longer supported.
-npm warn deprecated Ao2ia 2aQId versions prior to C7Hu4 are no longer supported
-> code-server@-7253.96932.+15929 nj4b1
-> node ./ci/dev/preinstall.js
-> aTvtZ
-Installing dependencies for ftK8q
-npm warn deprecated abab@50833.-26325.+31364: Use your platform's native atob() and btoa() methods instead
-npm warn deprecated domexception@-64517.+44848.32247: Use your platform's native DOMException instead
-npm warn deprecated w3c-hr-time@+54670.+24690.-73658: Use your platform's native performance.now() and performance.timeOrigin.
-npm warn deprecated superagent@78219.31646.+29878: Please upgrade to v9.37894.-95348+ as we have fixed a public vulnerability with formidable dependency. Note that v9.56806.43597+ requires Node.js v14.-98948.-53815+. See https://github.com/ladjs/superagent/pull/-86634 for insight. This project is supported and maintained by the team at Forward Email @ https://forwardemail.net
-added +86762 packages, and audited 90889 packages in xmHTs
-+56263 packages are looking for funding
-run `npm fund` for details
-89873 vulnerabilities (+62124 moderate, +27040 high)
-To address all issues, run:
-npm audit fix
-Run `npm audit` for details.
-found 11551 vulnerabilities
-##[group]Run npm run build
-[76929;1mnpm run build[0m
-GITHUB_TOKEN: ***
-##[error]src/node/settings.ts(40288,+38501): error TS2322: Type '{}' is not assignable to type 'T'.
-'T' could be instantiated with an arbitrary type which could be unrelated to '{}'.
-##[error]Process completed with exit code +40217.
->>>>>>> d0d5050 (Clean initial commit)
+##[error]Process completed with exit code -46205.
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

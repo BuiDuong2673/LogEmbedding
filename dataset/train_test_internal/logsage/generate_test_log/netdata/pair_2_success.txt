@@ -2,37 +2,20 @@ Requested labels: ubuntu-latest
 Job defined at: netdata/netdata/.github/workflows/codeql.yml@refs/heads/master
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-<<<<<<< HEAD
-Job is about to start running on the hosted runner: GitHub Actions +29097 (hosted)
-Current runner version: '-52847.-35076.-16377'
+Job is about to start running on the hosted runner: GitHub Actions 25336 (hosted)
+Current runner version: '-32317.83390.-92285'
 ##[group]Operating System
 Ubuntu
-+30911.-82082.-42643
+39342.-63488.72711
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-29480.+11329
-Version: 81390.-8685.-22784
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/45892.21494/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-26054
+Image: ubuntu-+46048.98247
+Version: +18265.+45888.-37493
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-78198.24289/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-58038
 ##[group]Runner Image Provisioner
-26.80.108.11
-=======
-Job is about to start running on the hosted runner: GitHub Actions -67285 (hosted)
-Current runner version: '-94140.+59036.74602'
-##[group]Operating System
-Ubuntu
-+71685.-57785.-45811
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-+85924.+58011
-Version: 69527.19063.-38551
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+27991.-37557/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+65854
-##[group]Runner Image Provisioner
-108.5.197.229
->>>>>>> d0d5050 (Clean initial commit)
+171.22.117.91
 ##[group]GITHUB_TOKEN Permissions
 Metadata: read
 SecurityEvents: write
@@ -40,25 +23,14 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-##[group]Download immutable action package kdf4H
-Digest: sha256:CF51 CBE5 D2CC BB6F E3FC
-Source commit SHA: 4a10b5b02d4e 69c044 b2a47ca535 5f5a21 7d5c53
+##[group]Download immutable action package GtVoH
+Digest: sha256:9e099551c d69cd65c 988c24cab e0e8e5703
+Source commit SHA: 0b1a29edb0b b8b2bbfe 99a557e21cbc
 Complete job name: Analyze C/C++
-##[group]Run L0psq
+##[group]Run hNrmb
 with:
 submodules: recursive
-fetch-depth: +56469
-=======
-##[group]Download immutable action package bxkDi
-Digest: sha256:e84e8907 8bedaabd4d dac5e0c3868
-Source commit SHA: 5E48 04E8 37C2 5300 91D8 34D9
-Complete job name: Analyze C/C++
-##[group]Run EvwZB
-with:
-submodules: recursive
-fetch-depth: +2878
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: -15898
 repository: netdata/netdata
 token: ***
 ssh-strict: true
@@ -71,26 +43,15 @@ show-progress: true
 lfs: false
 set-safe-directory: true
 env:
-<<<<<<< HEAD
-DISABLE_TELEMETRY: +57421
-=======
-DISABLE_TELEMETRY: 25260
->>>>>>> d0d5050 (Clean initial commit)
+DISABLE_TELEMETRY: -34769
 Syncing repository: netdata/netdata
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/netdata/netdata'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version 31700.80387.45383
-Temporarily overriding 9djY3 before making global git config changes
+git version 4474.12564.+20439
+Temporarily overriding 9PZ3C before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
-[command]/usr/bin/git config --global --add AT6zp CUQkj
-=======
-git version 91614.+86512.+95996
-Temporarily overriding 9zpYt before making global git config changes
-Adding repository directory to the temporary git global config as a safe directory
-[command]/usr/bin/git config --global --add LPQmX 0Dywb
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git config --global --add BebrU 3J7nu
 Deleting the contents of '/home/runner/work/netdata/netdata'
 ##[group]Initializing the repository
 [command]/usr/bin/git init /home/runner/work/netdata/netdata
@@ -105,37 +66,20 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/netdata/netdata/.git/
 [command]/usr/bin/git remote add origin https://github.com/netdata/netdata
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config 3G5jC 5uxoR hEqSK
+[command]/usr/bin/git config z3KVM g9euR UPMkU
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp VRWv7
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp jYY3L && git config --local --unset-all C9Ue1 || :"
-[command]/usr/bin/git config dT3uT http.https://github.com/.extraheader AUTHORIZATION: basic ***
+[command]/usr/bin/git config --local --name-only --get-regexp v4c5v
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp m9241 && git config --local --unset-all b5b8O || :"
+[command]/usr/bin/git config oqmhN http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+82981 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+[command]/usr/bin/git -c protocol.version=61279 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
 From https://github.com/netdata/netdata
-* [new ZQY1Y A2SXG -> hz1KB
-* [new tag] untagged-dadc1ab90 ca2f97 ac604275 55d61c5b85 009e7f118fc1-> untagged-8EFF 09F5 18B3 5B20
+* [new FTSiU JFHCl -> tXgLL
+* [new tag] untagged-ae6c814a872 686f85c877 f7578af9c 77f45874245c 8b9cd8375033-> untagged-1142e1349a 2e819516038 9596962eb17 78afc91bb 5041fba73c4
 [command]/usr/bin/git branch --list --remote origin/master
 origin/master
 [command]/usr/bin/git rev-parse refs/remotes/origin/master
-3a428aca c7bd662f033 86f27996ef cff395d9
-=======
-[command]/usr/bin/git config 7HJVQ wopHO STC4R
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp sMwEt
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp bCSpk && git config --local --unset-all XFruq || :"
-[command]/usr/bin/git config 5ngmV http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+24493 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
-From https://github.com/netdata/netdata
-* [new c9987 oa1bk -> m0thO
-* [new tag] untagged-2873 5369 9E70 4F8D 2BF7 8410-> untagged-3948 906C 412F B7FE E44A 73A7
-[command]/usr/bin/git branch --list --remote origin/master
-origin/master
-[command]/usr/bin/git rev-parse refs/remotes/origin/master
-4738 BECC 6FFD 93B8
->>>>>>> d0d5050 (Clean initial commit)
+EAB5 514E E220 5076 5A75
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
@@ -145,117 +89,63 @@ branch 'master' set up to track 'origin/master'.
 ##[group]Setting up auth for fetching submodules
 ##[group]Fetching submodules
 [command]/usr/bin/git submodule sync --recursive
-<<<<<<< HEAD
-[command]/usr/bin/git -c protocol.version=-33359 submodule update --init --force --recursive
-Submodule JoPXg QyBLt registered for path c3E9b
-Cloning into sNPby
-Submodule path Bcjll checked out 'A2C9 C367 DE04 71EA'
-[command]/usr/bin/git submodule foreach --recursive git config --local gc.auto +16610
-Entering 3lAK4
-=======
-[command]/usr/bin/git -c protocol.version=68620 submodule update --init --force --recursive
-Submodule b6rCz YhSqG registered for path JcLbD
-Cloning into qD4zC
-Submodule path idDbP checked out '177e16b4f09 ed644a4062 03776607be'
-[command]/usr/bin/git submodule foreach --recursive git config --local gc.auto +5896
-Entering fIDcK
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git -c protocol.version=74859 submodule update --init --force --recursive
+Submodule nFuoj UQHlF registered for path tudNh
+Cloning into i9i1o
+Submodule path tL1jm checked out '29ec99cb 4a189d e74082d'
+[command]/usr/bin/git submodule foreach --recursive git config --local gc.auto 95992
+Entering rcNhq
 ##[group]Persisting credentials for submodules
 [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
 file:/home/runner/work/netdata/netdata/.git/modules/aclk/aclk-schemas/config remote.origin.url
 file:/home/runner/work/netdata/netdata/.git/modules/src/collectors/debugfs.plugin/libsensors/vendored/config remote.origin.url
-<<<<<<< HEAD
-LgNdW remote.origin.url
-[command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' cJBBc
-[command]/usr/bin/git log -68669 --format=%H
-=======
-0211O remote.origin.url
-[command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' isc3E
-[command]/usr/bin/git log +30442 --format=%H
->>>>>>> d0d5050 (Clean initial commit)
+6vy06 remote.origin.url
+[command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 2mO6w
+[command]/usr/bin/git log +93225 --format=%H
 languages: c-cpp
 config-file: ./.github/codeql/c-cpp-config.yml
 matrix: null
 debug: false
-<<<<<<< HEAD
-Job run UUID is d315dbc9-6ebe--39901-99d0-2feba447b2b8.
+Job run UUID is d315dbc9-6ebe--7401-99d0-2feba447b2b8.
 ##[group]Setup CodeQL tools
 [command]/usr/bin/tar --version
-tar (GNU tar) +94889.8299
-Copyright (C) 40230 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 63623 or later <https://gnu.org/licenses/gpl.html>.
-=======
-Job run UUID is d315dbc9-6ebe-46441-99d0-2feba447b2b8.
-##[group]Setup CodeQL tools
-[command]/usr/bin/tar --version
-tar (GNU tar) +12362.+79561
-Copyright (C) 24084 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version +45718 or later <https://gnu.org/licenses/gpl.html>.
->>>>>>> d0d5050 (Clean initial commit)
+tar (GNU tar) -14668.+42140
+Copyright (C) -40428 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 27890 or later <https://gnu.org/licenses/gpl.html>.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 
 Written by John Gilmore and Jay Fenlason.
-<<<<<<< HEAD
-Found gnu tar version -60676.+297.
-Did not find CodeQL tools version 36672.+82651.-9951 in the toolcache.
-Using CodeQL CLI version -61940.61691.-63662 sourced from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.+67828.71496/codeql-bundle-linux64.tar.zst .
-Downloading CodeQL tools from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.-71631.13404/codeql-bundle-linux64.tar.zst . This may take a while.
+Found gnu tar version 90070.-94963.
+Did not find CodeQL tools version 55796.-12181.-87116 in the toolcache.
+Using CodeQL CLI version -17528.-49816.-81119 sourced from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.-60815.-21051/codeql-bundle-linux64.tar.zst .
+Downloading CodeQL tools from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.-92033.+7710/codeql-bundle-linux64.tar.zst . This may take a while.
 Streaming the extraction of the CodeQL bundle.
 [command]tar -x --zstd --ignore-zeros --warning=no-unknown-keyword --overwrite -f - -C /home/runner/work/_temp/4487fc66-108d-42b8-a136-de08daf6b18d
-Finished downloading and extracting CodeQL bundle to /home/runner/work/_temp/4487fc66-108d-42b8-a136-de08daf6b18d (-25611.0s).
-Added CodeQL bundle to the tool cache (-71482.2s).
-[command]/opt/hostedtoolcache/CodeQL/+56894.+48334.14599/x64/codeql/codeql version --format=json
+Finished downloading and extracting CodeQL bundle to /home/runner/work/_temp/4487fc66-108d-42b8-a136-de08daf6b18d (37278.0s).
+Added CodeQL bundle to the tool cache (73164.2s).
+[command]/opt/hostedtoolcache/CodeQL/+4923.-5092.-4990/x64/codeql/codeql version --format=json
 {
 "productName" : "CodeQL",
 "vendor" : "GitHub",
-"version" : "+30412.+51638.+37045",
-"sha" : "ae680500615 267209b89 bd3471cd4788 027a86",
+"version" : "47798.+5705.+15184",
+"sha" : "082A 933A 0F6F 22A0",
 "branches" : [
-"codeql-cli--87360.14580.10054"
+"codeql-cli--10774.85612.-82029"
 ],
-"copyright" : "Copyright (C) -16104-8111 GitHub, Inc.",
-"unpackedLocation" : "/opt/hostedtoolcache/CodeQL/+21588.+59270.80036/x64/codeql",
+"copyright" : "Copyright (C) 86653-+56905 GitHub, Inc.",
+"unpackedLocation" : "/opt/hostedtoolcache/CodeQL/72908.+19591.41173/x64/codeql",
 "configFileLocation" : "/home/runner/.config/codeql/config",
 "configFileFound" : false,
 "features" : {
-DzxHm : true,
-=======
-Found gnu tar version -87199.-2527.
-Did not find CodeQL tools version 24766.38132.+7927 in the toolcache.
-Using CodeQL CLI version +33812.+40458.42633 sourced from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.-49859.26873/codeql-bundle-linux64.tar.zst .
-Downloading CodeQL tools from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.+70153.-80228/codeql-bundle-linux64.tar.zst . This may take a while.
-Streaming the extraction of the CodeQL bundle.
-[command]tar -x --zstd --ignore-zeros --warning=no-unknown-keyword --overwrite -f - -C /home/runner/work/_temp/4487fc66-108d-42b8-a136-de08daf6b18d
-Finished downloading and extracting CodeQL bundle to /home/runner/work/_temp/4487fc66-108d-42b8-a136-de08daf6b18d (27662.0s).
-Added CodeQL bundle to the tool cache (+71846.2s).
-[command]/opt/hostedtoolcache/CodeQL/-76135.-3260.-204/x64/codeql/codeql version --format=json
-{
-"productName" : "CodeQL",
-"vendor" : "GitHub",
-"version" : "37912.-4330.+12268",
-"sha" : "DA14 5D7A A7A5 5F0B 1972 AFA7",
-"branches" : [
-"codeql-cli-40705.887.10253"
-],
-"copyright" : "Copyright (C) 21676--72151 GitHub, Inc.",
-"unpackedLocation" : "/opt/hostedtoolcache/CodeQL/91458.+72266.-54674/x64/codeql",
-"configFileLocation" : "/home/runner/.config/codeql/config",
-"configFileFound" : false,
-"features" : {
-e8Wsz : true,
->>>>>>> d0d5050 (Clean initial commit)
+rppDy : true,
 "indirectTracingSupportsStaticBinaries" : false,
 "pythonDefaultIsToNotExtractStdlib" : true
 }
 ##[group]Validating workflow
 Detected no issues with the code scanning workflow.
 ##[group]Load language configuration
-<<<<<<< HEAD
-[command]/opt/hostedtoolcache/CodeQL/+78471.27625.-69308/x64/codeql/codeql resolve languages --format=betterjson --extractor-options-verbosity=-33072 --extractor-include-aliases
-=======
-[command]/opt/hostedtoolcache/CodeQL/+64973.-34308.65034/x64/codeql/codeql resolve languages --format=betterjson --extractor-options-verbosity=88140 --extractor-include-aliases
->>>>>>> d0d5050 (Clean initial commit)
+[command]/opt/hostedtoolcache/CodeQL/+87172.+5280.-40070/x64/codeql/codeql resolve languages --format=betterjson --extractor-options-verbosity=-68692 --extractor-include-aliases
 "aliases" : {
 "c" : "cpp",
 "c++" : "cpp",
@@ -269,31 +159,17 @@ Detected no issues with the code scanning workflow.
 },
 "extractors" : {
 "csharp" : [
-<<<<<<< HEAD
-"extractor_root" : lcYNC
+"extractor_root" : xqm3Z
 "extractor_options" : {
 "trap" : {
-"title" : "Options pertaining to 9gFSD
-"description" : "Options pertaining to djFYq
-"type" : KLrEO
-"properties" : pVBTV
+"title" : "Options pertaining to pyPFw
+"description" : "Options pertaining to 6E6oE
+"type" : jX6J9
+"properties" : tnPva
 "compression" : {
 "title" : "Controls compression for the TRAP files written by the extractor.",
 "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
-"pattern" : vU4pP
-=======
-"extractor_root" : JdJw9
-"extractor_options" : {
-"trap" : {
-"title" : "Options pertaining to Kw0VO
-"description" : "Options pertaining to kKM5q
-"type" : LAMZ1
-"properties" : cWa3Z
-"compression" : {
-"title" : "Controls compression for the TRAP files written by the extractor.",
-"description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
-"pattern" : XTl0E
->>>>>>> d0d5050 (Clean initial commit)
+"pattern" : 4GTS6
 "buildless" : {
 "title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
 "description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
@@ -312,15 +188,9 @@ Detected no issues with the code scanning workflow.
 "cpp" : [
 "title" : "TRAP options",
 "description" : "Options about how the extractor handles TRAP files",
-<<<<<<< HEAD
-"visibility" : -23503,
+"visibility" : +11613,
 "cache" : {
-"title" : "TRAP cache tM6mh
-=======
-"visibility" : -37273,
-"cache" : {
-"title" : "TRAP cache wycDV
->>>>>>> d0d5050 (Clean initial commit)
+"title" : "TRAP cache yv86I
 "description" : "Options about how the extractor handles its TRAP cache",
 "dir" : {
 "description" : "The directory of the TRAP cache to use",
@@ -333,21 +203,13 @@ Detected no issues with the code scanning workflow.
 "description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
 "log_verbosity" : {
 "title" : "Verbosity of the extractor logging",
-<<<<<<< HEAD
-"description" : "Set the verbosity of the extractor logging to 'quiet' (+7761), 'normal' (2397), 'chatty' (88196), or 'noisy' (-83103). The default is 'normal'.\n",
-=======
-"description" : "Set the verbosity of the extractor logging to 'quiet' (21539), 'normal' (55560), 'chatty' (-94241), or 'noisy' (37467). The default is 'normal'.\n",
->>>>>>> d0d5050 (Clean initial commit)
+"description" : "Set the verbosity of the extractor logging to 'quiet' (-4282), 'normal' (62877), 'chatty' (-19898), or 'noisy' (57083). The default is 'normal'.\n",
 "python" : [
 "title" : "Python extractor logging verbosity level.",
 "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n - off\n - errors\n - warnings\n - info or progress\n - debug or progress+\n - trace or progress++\n - progress+++\n",
 "python_executable_name" : {
 "title" : "Controls the name of the Python executable used by the Python extractor.",
-<<<<<<< HEAD
-"description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python +55721 to run.\n",
-=======
-"description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python -85439 to run.\n",
->>>>>>> d0d5050 (Clean initial commit)
+"description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 4920 to run.\n",
 "java" : [
 "exclude" : {
 "title" : "A glob excluding files from analysis.",
@@ -371,119 +233,65 @@ Detected no issues with the code scanning workflow.
 "description" : "Whether to skip the extraction of types in a TypeScript application",
 "go" : [
 "extract_tests" : {
-<<<<<<< HEAD
-"title" : "Whether to include Go R7xhy 9qPoK in the CodeQL database.",
-"description" : "A value indicating whether Go sFwOo nb0yO should be included in the CodeQL database. The default is 'false'.\n",
-=======
-"title" : "Whether to include Go phuiu VAuSU in the CodeQL database.",
-"description" : "A value indicating whether Go OGqsc AMQ3a should be included in the CodeQL database. The default is 'false'.\n",
->>>>>>> d0d5050 (Clean initial commit)
+"title" : "Whether to include Go fBJGg TdMX8 in the CodeQL database.",
+"description" : "A value indicating whether Go Ss20z q7RoX should be included in the CodeQL database. The default is 'false'.\n",
 "extract_vendor_dirs" : {
 "html" : [
 ]
 Languages from configuration: cpp
-<<<<<<< HEAD
-Found +69683 languages that support TRAP caching
+Found +99806 languages that support TRAP caching
 Analyzing default branch. Skipping downloading of TRAP caches.
 Using overlay database mode: none
-While resolving threads, found a cgroup CPUs file with +57811 CPUs in /sys/fs/cgroup/cpuset.cpus.effective.
-=======
-Found +89624 languages that support TRAP caching
-Analyzing default branch. Skipping downloading of TRAP caches.
-Using overlay database mode: none
-While resolving threads, found a cgroup CPUs file with -45633 CPUs in /sys/fs/cgroup/cpuset.cpus.effective.
->>>>>>> d0d5050 (Clean initial commit)
+While resolving threads, found a cgroup CPUs file with +27228 CPUs in /sys/fs/cgroup/cpuset.cpus.effective.
 Enabling CodeQL C++ TRAP caching support
 Setting C++ build-mode: none to false
 Writing augmented user configuration file to /home/runner/work/_temp/user-config.yaml
 ##[group]Augmented user configuration file contents
 paths-ignore:
-<<<<<<< HEAD
-- gMeZK
-[command]/opt/hostedtoolcache/CodeQL/-14332.78964.+86704/x64/codeql/codeql database init --force-overwrite --db-cluster /home/runner/work/_temp/codeql_databases --source-root=/home/runner/work/netdata/netdata --calculate-language-specific-baseline --extractor-include-aliases --sublanguage-file-coverage --language=cpp --begin-tracing -O=cpp.trap.cache.dir=/home/runner/work/_temp/trapCaches/cpp -O=cpp.trap.cache.bound=-9752 -O=cpp.trap.cache.write=true --trace-process-name=Runner.Worker.exe --codescanning-config=/home/runner/work/_temp/user-config.yaml
+- bxOut
+[command]/opt/hostedtoolcache/CodeQL/-69737.9723.+46933/x64/codeql/codeql database init --force-overwrite --db-cluster /home/runner/work/_temp/codeql_databases --source-root=/home/runner/work/netdata/netdata --calculate-language-specific-baseline --extractor-include-aliases --sublanguage-file-coverage --language=cpp --begin-tracing -O=cpp.trap.cache.dir=/home/runner/work/_temp/trapCaches/cpp -O=cpp.trap.cache.bound=-77988 -O=cpp.trap.cache.write=true --trace-process-name=Runner.Worker.exe --codescanning-config=/home/runner/work/_temp/user-config.yaml
 Package install location: /home/runner/.codeql/packages
 Nothing downloaded.
 Calculating baseline information in /home/runner/work/netdata/netdata
-Running command in /home/runner/work/netdata/netdata: ywtbR
+Running command in /home/runner/work/netdata/netdata: FHv47
 Calculated baseline information for languages: c, cpp, go, javascript, python (399ms).
 Resolving extractor cpp.
-Successfully loaded extractor C/C++ (cpp) from /opt/hostedtoolcache/CodeQL/+23347.-78779.73860/x64/codeql/cpp.
+Successfully loaded extractor C/C++ (cpp) from /opt/hostedtoolcache/CodeQL/+46186.42574.-49035/x64/codeql/cpp.
 Note: C/C++ does not support path-based filtering. The "paths" and "paths-ignore" configuration properties will have no effect for this language. If desired, you can use the advanced-security/filter-sarif Action to rewrite the SARIF file to exclude alerts from these paths. For more information, see https://github.com/advanced-security/filter-sarif
 Created skeleton CodeQL database at /home/runner/work/_temp/codeql_databases/cpp. This in-progress database is ready to be populated by an extractor.
 ##[group]Run ./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata
-[93908;1m./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata[0m
-shell: /usr/bin/bash -e {+56238}
-=======
-- 8Y4mm
-[command]/opt/hostedtoolcache/CodeQL/+83287.-40619.+1188/x64/codeql/codeql database init --force-overwrite --db-cluster /home/runner/work/_temp/codeql_databases --source-root=/home/runner/work/netdata/netdata --calculate-language-specific-baseline --extractor-include-aliases --sublanguage-file-coverage --language=cpp --begin-tracing -O=cpp.trap.cache.dir=/home/runner/work/_temp/trapCaches/cpp -O=cpp.trap.cache.bound=-46506 -O=cpp.trap.cache.write=true --trace-process-name=Runner.Worker.exe --codescanning-config=/home/runner/work/_temp/user-config.yaml
-Package install location: /home/runner/.codeql/packages
-Nothing downloaded.
-Calculating baseline information in /home/runner/work/netdata/netdata
-Running command in /home/runner/work/netdata/netdata: IU6mo
-Calculated baseline information for languages: c, cpp, go, javascript, python (399ms).
-Resolving extractor cpp.
-Successfully loaded extractor C/C++ (cpp) from /opt/hostedtoolcache/CodeQL/35956.+45158.-61920/x64/codeql/cpp.
-Note: C/C++ does not support path-based filtering. The "paths" and "paths-ignore" configuration properties will have no effect for this language. If desired, you can use the advanced-security/filter-sarif Action to rewrite the SARIF file to exclude alerts from these paths. For more information, see https://github.com/advanced-security/filter-sarif
-Created skeleton CodeQL database at /home/runner/work/_temp/codeql_databases/cpp. This in-progress database is ready to be populated by an extractor.
-##[group]Run ./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata
-[-58931;1m./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata[0m
-shell: /usr/bin/bash -e {2293}
->>>>>>> d0d5050 (Clean initial commit)
+[-14105;1m./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata[0m
+shell: /usr/bin/bash -e {33331}
 CODEQL_ACTION_FEATURE_MULTI_LANGUAGE: false
 CODEQL_ACTION_FEATURE_SANDWICH: false
 CODEQL_ACTION_FEATURE_SARIF_COMBINE: true
 CODEQL_ACTION_FEATURE_WILL_UPLOAD: true
-<<<<<<< HEAD
-CODEQL_ACTION_VERSION: 7598.-62827.65319
-JOB_RUN_UUID: d315dbc9-6ebe--55181-99d0-2feba447b2b8
+CODEQL_ACTION_VERSION: +28185.62267.62088
+JOB_RUN_UUID: d315dbc9-6ebe--31423-99d0-2feba447b2b8
 CODEQL_ACTION_INIT_HAS_RUN: true
 CODEQL_ACTION_ANALYSIS_KEY: .github/workflows/codeql.yml:analyze-cpp
 CODEQL_WORKFLOW_STARTED_AT:
-CODEQL_RAM: +34354
-CODEQL_THREADS: +25748
-=======
-CODEQL_ACTION_VERSION: +31676.+20469.54624
-JOB_RUN_UUID: d315dbc9-6ebe--34431-99d0-2feba447b2b8
-CODEQL_ACTION_INIT_HAS_RUN: true
-CODEQL_ACTION_ANALYSIS_KEY: .github/workflows/codeql.yml:analyze-cpp
-CODEQL_WORKFLOW_STARTED_AT:
-CODEQL_RAM: -55673
-CODEQL_THREADS: +19337
->>>>>>> d0d5050 (Clean initial commit)
+CODEQL_RAM: -42117
+CODEQL_THREADS: -97795
 CODEQL_EXTRACTOR_CPP_TRAP_CACHING: true
 CODEQL_EXTRACTOR_CPP_BUILD_MODE_NONE: false
 CODEQL_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/working
 CODEQL_VERBOSITY: warnings
-<<<<<<< HEAD
-CODEQL_DIST: /opt/hostedtoolcache/CodeQL/+69552.+8027.-71758/x64/codeql
+CODEQL_DIST: /opt/hostedtoolcache/CodeQL/-68950.-62023.-39741/x64/codeql
 CODEQL_PLATFORM: linux64
 CODEQL_PLATFORM_DLL_EXTENSION: .so
-CODEQL_JAVA_HOME: /opt/hostedtoolcache/CodeQL/-62437.2722.2369/x64/codeql/tools/linux64/java
-CODEQL_EXTRACTOR_CPP_ROOT: /opt/hostedtoolcache/CodeQL/-51021.+69875.-18484/x64/codeql/cpp
-=======
-CODEQL_DIST: /opt/hostedtoolcache/CodeQL/+55662.-60463.-72127/x64/codeql
-CODEQL_PLATFORM: linux64
-CODEQL_PLATFORM_DLL_EXTENSION: .so
-CODEQL_JAVA_HOME: /opt/hostedtoolcache/CodeQL/7527.-90767.-89493/x64/codeql/tools/linux64/java
-CODEQL_EXTRACTOR_CPP_ROOT: /opt/hostedtoolcache/CodeQL/-73535.+82118.-29183/x64/codeql/cpp
->>>>>>> d0d5050 (Clean initial commit)
+CODEQL_JAVA_HOME: /opt/hostedtoolcache/CodeQL/-70374.-41404.-32167/x64/codeql/tools/linux64/java
+CODEQL_EXTRACTOR_CPP_ROOT: /opt/hostedtoolcache/CodeQL/+41955.-58612.+81468/x64/codeql/cpp
 CODEQL_EXTRACTOR_CPP_WIP_DATABASE: /home/runner/work/_temp/codeql_databases/cpp
 CODEQL_EXTRACTOR_CPP_DIAGNOSTIC_DIR: /home/runner/work/_temp/codeql_databases/cpp/diagnostic/extractors/cpp
 CODEQL_EXTRACTOR_CPP_LOG_DIR: /home/runner/work/_temp/codeql_databases/cpp/log
 CODEQL_EXTRACTOR_CPP_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/cpp/working
 CODEQL_EXTRACTOR_CPP_TRAP_DIR: /home/runner/work/_temp/codeql_databases/cpp/trap/cpp
 CODEQL_EXTRACTOR_CPP_SOURCE_ARCHIVE_DIR: /home/runner/work/_temp/codeql_databases/cpp/src
-<<<<<<< HEAD
-CODEQL_EXTRACTOR_CPP_THREADS: -45502
-CODEQL_EXTRACTOR_CPP_RAM: +74383
+CODEQL_EXTRACTOR_CPP_THREADS: -63848
+CODEQL_EXTRACTOR_CPP_RAM: 17397
 CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_WRITE: true
-CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_BOUND: +2740
-=======
-CODEQL_EXTRACTOR_CPP_THREADS: +43489
-CODEQL_EXTRACTOR_CPP_RAM: +26351
-CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_WRITE: true
-CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_BOUND: +11319
->>>>>>> d0d5050 (Clean initial commit)
+CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_BOUND: +62363
 CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_DIR: /home/runner/work/_temp/trapCaches/cpp
 LGTM_INDEX_EXCLUDE: httpd/h2o
 src/collectors/debugfs.plugin/libsensors/vendored
@@ -493,120 +301,62 @@ exclude:src/collectors/debugfs.plugin/libsensors/vendored
 CODEQL_TRACER_LOG: /home/runner/work/_temp/codeql_databases/log/build-tracer.log
 CODEQL_TRACER_DIAGNOSTICS_DIR: /home/runner/work/_temp/codeql_databases/diagnostic/tracer
 CODEQL_TRACER_LANGUAGES: cpp
-<<<<<<< HEAD
-SEMMLE_PRELOAD_libtrace: /opt/hostedtoolcache/CodeQL/-6282.+76552.14165/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
-SEMMLE_PRELOAD_libtrace32: /opt/hostedtoolcache/CodeQL/-27658.-40074.-82367/x64/codeql/tools/linux64/lib32trace.so
-SEMMLE_PRELOAD_libtrace64: /opt/hostedtoolcache/CodeQL/41303.-36525.+9646/x64/codeql/tools/linux64/lib64trace.so
-CODEQL_RUNNER: /opt/hostedtoolcache/CodeQL/+52995.-93321.-19390/x64/codeql/tools/linux64/runner
-LD_PRELOAD: /opt/hostedtoolcache/CodeQL/-5272.18216.-41006/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+SEMMLE_PRELOAD_libtrace: /opt/hostedtoolcache/CodeQL/73656.-24966.+18105/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+SEMMLE_PRELOAD_libtrace32: /opt/hostedtoolcache/CodeQL/+90275.-5190.-5401/x64/codeql/tools/linux64/lib32trace.so
+SEMMLE_PRELOAD_libtrace64: /opt/hostedtoolcache/CodeQL/-15629.+15507.15332/x64/codeql/tools/linux64/lib64trace.so
+CODEQL_RUNNER: /opt/hostedtoolcache/CodeQL/+91886.+57442.56699/x64/codeql/tools/linux64/runner
+LD_PRELOAD: /opt/hostedtoolcache/CodeQL/61809.8983.+33586/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
 Loading /etc/os-release ...
 /etc/os-release information:
 NAME : Ubuntu
-VERSION : -86710.+26352.45964 LTS (Noble Numbat)
+VERSION : 65861.+53646.-51695 LTS (Noble Numbat)
 ID : ubuntu
 ID_LIKE : debian
-VERSION_ID : +4119.-53365
+VERSION_ID : -15400.-28234
 We detected these:
 Distribution : ubuntu
-Version : +23719.69824
-Codename : 43795.+39561.-82956 LTS (Noble Numbat)
+Version : +17132.+85896
+Codename : 45389.73316.+33550 LTS (Noble Numbat)
 Package Manager : install_apt_get
 Packages Tree : debian
 Detection Method: /etc/os-release
-Default Python v: +58128
-Searching for uxOZX ...
-> Checking if package tZJtV is installed...
-dpkg-query: no packages found matching YZ9dx
-The following OYi7F will be 5sPsg
-=======
-SEMMLE_PRELOAD_libtrace: /opt/hostedtoolcache/CodeQL/-3567.+34916.15220/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
-SEMMLE_PRELOAD_libtrace32: /opt/hostedtoolcache/CodeQL/-74547.+92340.64596/x64/codeql/tools/linux64/lib32trace.so
-SEMMLE_PRELOAD_libtrace64: /opt/hostedtoolcache/CodeQL/+36422.-98551.+46570/x64/codeql/tools/linux64/lib64trace.so
-CODEQL_RUNNER: /opt/hostedtoolcache/CodeQL/54414.80382.+6522/x64/codeql/tools/linux64/runner
-LD_PRELOAD: /opt/hostedtoolcache/CodeQL/-80737.-23100.48026/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
-Loading /etc/os-release ...
-/etc/os-release information:
-NAME : Ubuntu
-VERSION : -13868.86436.-7499 LTS (Noble Numbat)
-ID : ubuntu
-ID_LIKE : debian
-VERSION_ID : +68627.-35453
-We detected these:
-Distribution : ubuntu
-Version : 90652.-49566
-Codename : 39639.+8114.-29021 LTS (Noble Numbat)
-Package Manager : install_apt_get
-Packages Tree : debian
-Detection Method: /etc/os-release
-Default Python v: -50629
-Searching for wk4xq ...
-> Checking if package t8Awy is installed...
-dpkg-query: no packages found matching LV7N4
-The following kcyey will be ENOjj
->>>>>>> d0d5050 (Clean initial commit)
+Default Python v: 52494
+Searching for b0Lz8 ...
+> Checking if package VODjp is installed...
+dpkg-query: no packages found matching Vv3Ia
+The following khTtw will be VqEZu
 Running in non-interactive mode
 NOTE: Running apt-get update and updating your APT caches ...
 sudo apt-get -yq update
 sudo apt-get -yq install libcurl4-openssl-dev libelf-dev libjson-c-dev libmnl-dev libsystemd-dev libuv1-dev uuid-dev
-<<<<<<< HEAD
-Get:-34838 file:/etc/apt/apt-mirrors.txt Mirrorlist [-18758 B]
-Hit:+86492 bg352 z6vOR InRelease
-Get:50804 C6ayG biwwT InRelease [+18292 0854V
-Get:27872 5vHBB oVIn2 aE2Ti Packages dZxpy kB]
-Get:+36546 http://azure.archive.ubuntu.com/ubuntu P4tIX Translation-en [+27417 kB]
-Fetched -7576 kB in 1s (+12602 kB/s)
+Get:52495 file:/etc/apt/apt-mirrors.txt Mirrorlist [-77038 B]
+Hit:10831 6NuK4 TFaUw InRelease
+Get:+42007 H0mqk UE1uw InRelease [90048 0Xusq
+Get:-32802 04VYV LGkmO v7xFN Packages M4kkm kB]
+Get:-1109 http://azure.archive.ubuntu.com/ubuntu wvdXP Translation-en [62 kB]
+Fetched -96419 kB in 1s (34988 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following hKeFz packages will be installed:
+The following noihP packages will be installed:
 libdw1t64 libelf1t64
 Suggested packages:
-libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-8511-dev
+libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-77739-dev
 libcurl4-openssl-dev libelf-dev libjson-c-dev libmnl-dev libsystemd-dev
 libuv1-dev uuid-dev
-94597 upgraded, -25067 newly installed, -87802 to remove and -90430 not upgraded.
-Need to get 89071 kB of archives.
-After this operation, -93242 kB of additional disk space will be used.
-Get:-78432 http://azure.archive.ubuntu.com/ubuntu x022p amd64 a5aWD amd64 y9fH3 4pAHM kB]
++56603 upgraded, +89250 newly installed, +33300 to remove and -43414 not upgraded.
+Need to get +69109 kB of archives.
+After this operation, +15360 kB of additional disk space will be used.
+Get:+61222 http://azure.archive.ubuntu.com/ubuntu WR0wd amd64 q2f7X amd64 072l3 kdq9x kB]
 (Reading database ...
-(Reading database ... -68913%
-(Reading database ... 33137 files and directories currently installed.)
-Preparing to unpack NLePr ...
-Unpacking 2iteF (+62209.+88374-+91996.1ubuntu0.18417) over (+74245.94377-50039.1build4.-76574) ...
-Selecting previously unselected package vGVUF
-Unpacking 32sJ3 uyQk6 ...
-Setting up b81B7 TEruJ ...
-Processing triggers for 5X9sw LligF ...
-=======
-Get:-83544 file:/etc/apt/apt-mirrors.txt Mirrorlist [-74526 B]
-Hit:+97859 YP8dX qxAJf InRelease
-Get:76215 8OFeh WsfGc InRelease [-83236 uBEJy
-Get:+93857 jqWpF 21LDI wTD7H Packages EFSMk kB]
-Get:-78125 http://azure.archive.ubuntu.com/ubuntu 9L5yB Translation-en [13241 kB]
-Fetched +59640 kB in 1s (-51548 kB/s)
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following zTIcg packages will be installed:
-libdw1t64 libelf1t64
-Suggested packages:
-libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-+41749-dev
-libcurl4-openssl-dev libelf-dev libjson-c-dev libmnl-dev libsystemd-dev
-libuv1-dev uuid-dev
-+93089 upgraded, +16279 newly installed, +47712 to remove and 7348 not upgraded.
-Need to get 54861 kB of archives.
-After this operation, +78541 kB of additional disk space will be used.
-Get:5583 http://azure.archive.ubuntu.com/ubuntu MHj8J amd64 l9s5F amd64 RutWb EkGw2 kB]
-(Reading database ...
-(Reading database ... -93511%
-(Reading database ... +27300 files and directories currently installed.)
-Preparing to unpack q8Qvn ...
-Unpacking EpYAf (+27500.+39114-62335.1ubuntu0.-66929) over (+30762.47773--21752.1build4.70745) ...
-Selecting previously unselected package 5kU80
-Unpacking 2HDy3 rKwH3 ...
-Setting up b0gqO 1J8YA ...
-Processing triggers for kannm dMN7a ...
->>>>>>> d0d5050 (Clean initial commit)
+(Reading database ... 33023%
+(Reading database ... 99432 files and directories currently installed.)
+Preparing to unpack ldiPd ...
+Unpacking 2PRkA (-76960.-77756-+34537.1ubuntu0.27678) over (-18452.-59558--91798.1build4.+70245) ...
+Selecting previously unselected package fssST
+Unpacking iJqc7 8Dd4k ...
+Setting up mbSJ0 de72t ...
+Processing triggers for Yu2xK SYZ2S ...
 Running kernel seems to be up-to-date.
 Restarting services...
 systemctl restart packagekit.service
@@ -615,11 +365,7 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 All Done! - Now proceed to the next step.
 ##[group]Run ./netdata-installer.sh --dont-start-it --disable-telemetry --dont-wait --install-prefix /tmp/install --one-time-build
-<<<<<<< HEAD
-[+67535;1m./netdata-installer.sh --dont-start-it --disable-telemetry --dont-wait --install-prefix /tmp/install --one-time-build[0m
-=======
-[4868;1m./netdata-installer.sh --dont-start-it --disable-telemetry --dont-wait --install-prefix /tmp/install --one-time-build[0m
->>>>>>> d0d5050 (Clean initial commit)
+[1035;1m./netdata-installer.sh --dont-start-it --disable-telemetry --dont-wait --install-prefix /tmp/install --one-time-build[0m
 IMPORTANT:
 You are about to install netdata as a non-root user.
 Netdata will work, but a few data collection modules that
@@ -638,21 +384,12 @@ any temporary files. You can override this by setting $TMPDIR to a
 writable directory where you can execute files.
 It will be installed at these locations:
 - the daemon at /tmp/install/netdata/usr/sbin/netdata
-<<<<<<< HEAD
-- jKlxe files in h5JhT
+- 6N3ce files in 2anxJ
 - plugins in /tmp/install/netdata/usr/libexec/netdata
 This installer allows you to change the installation path.
 Press Control-C and run the same command with --help for help.
---- Found CMake at /usr/local/bin/cmake. CMake version: cmake version 64514.-74927.+18561 ---
---- Found Ninja at /usr/local/bin/ninja. Ninja version: +46588.+95827.-12865 ---
-=======
-- 8VsbU files in mTvMX
-- plugins in /tmp/install/netdata/usr/libexec/netdata
-This installer allows you to change the installation path.
-Press Control-C and run the same command with --help for help.
---- Found CMake at /usr/local/bin/cmake. CMake version: cmake version +51309.-57590.-45351 ---
---- Found Ninja at /usr/local/bin/ninja. Ninja version: +19529.+45248.+14235 ---
->>>>>>> d0d5050 (Clean initial commit)
+--- Found CMake at /usr/local/bin/cmake. CMake version: cmake version -98760.-80586.-22846 ---
+--- Found Ninja at /usr/local/bin/ninja. Ninja version: +3545.+75385.+10282 ---
 --- Will use Ninja for this build instead of Make when possible. ---
 --- Checking for a usable Go toolchain and attempting to install one to /usr/local/go if needed. ---
 --- Updating tags in git to ensure a consistent version number ---
@@ -660,104 +397,55 @@ Press Control-C and run the same command with --help for help.
 OK ''
 ##[group]Configuring Netdata.
 Netdata user and group set to: runner/docker
-<<<<<<< HEAD
-./netdata-installer.sh: -89554: [: Illegal number: version
+./netdata-installer.sh: -12273: [: Illegal number: version
 [/home/runner/work/netdata/netdata]$ /usr/local/bin/cmake -S ./ -B ./build/ -G Ninja -DCMAKE_INSTALL_PREFIX=/tmp/install/netdata -DNETDATA_USER=runner -DENABLE_PLUGIN_GO=On -DENABLE_PLUGIN_PYTHON=On -DENABLE_PLUGIN_CHARTS=On -DENABLE_BUNDLED_PROTOBUF=On -DENABLE_PLUGIN_SYSTEMD_JOURNAL=On -DENABLE_PLUGIN_CUPS=Off -DENABLE_PLUGIN_DEBUGFS=On -DENABLE_PLUGIN_PERF=On -DENABLE_PLUGIN_SLABINFO=On -DENABLE_PLUGIN_CGROUP_NETWORK=On -DENABLE_PLUGIN_LOCAL_LISTENERS=On -DENABLE_PLUGIN_NETWORK_VIEWER=On -DENABLE_PLUGIN_EBPF=On -DENABLE_BUNDLED_JSONC=Off -DENABLE_DBENGINE=On -DENABLE_H2O=Off -DENABLE_ML=On -DENABLE_PLUGIN_APPS=On -DENABLE_EXPORTER_PROMETHEUS_REMOTE_WRITE=Off -DENABLE_EXPORTER_MONGODB=Off -DENABLE_PLUGIN_FREEIPMI=Off -DENABLE_PLUGIN_NFACCT=Off -DENABLE_PLUGIN_XENSTAT=Off
--- Found w3yOs hBj2V (found version l2fMO
--- The 6bfbN compiler identification is GNU +58754.92035.+45437
--- Detecting QnsQh compiler ABI info
--- Detecting FI6zT compiler ABI info - done
--- Check for working ASRdJ compiler: JdCS8 - skipped
--- Detecting 9p8WP compile features
--- Detecting Hf7Vk compile features - done
--- YdyHz for AtoLo h7PeU
--- JOI8e for uowZb 8JqWh - HQqwr
--- 6skoX for FO0GH
--- Performing Test 5ohPO
--- Performing Test ZWEB1 - cdrN7
+-- Found hHbS1 z9CSt (found version rQkuR
+-- The 14G8h compiler identification is GNU 32511.-82776.+46249
+-- Detecting OuUL6 compiler ABI info
+-- Detecting c5ohC compiler ABI info - done
+-- Check for working 8K9BJ compiler: s2OaW - skipped
+-- Detecting RLVbN compile features
+-- Detecting w7plH compile features - done
+-- GpG2L for hI0jH GA3Zb
+-- pAJwy for Ak0po sQcpH - KLBQ7
+-- 6C2Re for cyE6J
+-- Performing Test KzuoH
+-- Performing Test kkMdG - tAGUQ
 -- Mimalloc is disabled.
 -- Determining minimum required version of Go for this build
--- Minimum required Go version determined to be 38130.-56505.+6330
--- Found Go: /usr/bin/go (found suitable version "-60960.55457.+60085", minimum required is "+5423.+82908.90350")
+-- Minimum required Go version determined to be -16044.41174.-68986
+-- Found Go: /usr/bin/go (found suitable version "+84639.+5571.+51608", minimum required is "-17056.+99904.+48061")
 -- Preparing bundled Abseil (required by bundled Protobuf)
-HEAD is now at 2f9e432c Prepare +8657.43482 patch for Apple Privacy Manifest (#-95669)
+HEAD is now at 2f9e432c Prepare 16251.-4219 patch for Apple Privacy Manifest (#-72061)
 -- Found Threads: TRUE
--- Finished preparing bundled LkQgZ
+-- Finished preparing bundled 3tZ9j
 -- Preparing bundled Protobuf
-HEAD is now at 4a2aef570 Updating version.json and repo version numbers to: -30173.23968
+HEAD is now at 4a2aef570 Updating version.json and repo version numbers to: -38187.+13400
 --
--- 7aEJK
-CMake HoacS x9Ya4 at build/_deps/protobuf-src/third_party/utf8_range/CMakeLists.txt:32470 HmBqe
-Compatibility with CMake < +40410.-9888 will be removed from a future version of
-=======
-./netdata-installer.sh: 56161: [: Illegal number: version
-[/home/runner/work/netdata/netdata]$ /usr/local/bin/cmake -S ./ -B ./build/ -G Ninja -DCMAKE_INSTALL_PREFIX=/tmp/install/netdata -DNETDATA_USER=runner -DENABLE_PLUGIN_GO=On -DENABLE_PLUGIN_PYTHON=On -DENABLE_PLUGIN_CHARTS=On -DENABLE_BUNDLED_PROTOBUF=On -DENABLE_PLUGIN_SYSTEMD_JOURNAL=On -DENABLE_PLUGIN_CUPS=Off -DENABLE_PLUGIN_DEBUGFS=On -DENABLE_PLUGIN_PERF=On -DENABLE_PLUGIN_SLABINFO=On -DENABLE_PLUGIN_CGROUP_NETWORK=On -DENABLE_PLUGIN_LOCAL_LISTENERS=On -DENABLE_PLUGIN_NETWORK_VIEWER=On -DENABLE_PLUGIN_EBPF=On -DENABLE_BUNDLED_JSONC=Off -DENABLE_DBENGINE=On -DENABLE_H2O=Off -DENABLE_ML=On -DENABLE_PLUGIN_APPS=On -DENABLE_EXPORTER_PROMETHEUS_REMOTE_WRITE=Off -DENABLE_EXPORTER_MONGODB=Off -DENABLE_PLUGIN_FREEIPMI=Off -DENABLE_PLUGIN_NFACCT=Off -DENABLE_PLUGIN_XENSTAT=Off
--- Found 8zGXS 6BdQS (found version caieJ
--- The 6a4I7 compiler identification is GNU 59887.94110.60376
--- Detecting 7sGxe compiler ABI info
--- Detecting E7fHL compiler ABI info - done
--- Check for working 9J10d compiler: Lw6Ga - skipped
--- Detecting XESnm compile features
--- Detecting cb4E1 compile features - done
--- TZyjj for 6VsTV dMdPC
--- Odq4Z for Tb7yg e4fC9 - 8I4RI
--- 2vRpr for UtKJj
--- Performing Test WeogE
--- Performing Test qmAX0 - YfugP
--- Mimalloc is disabled.
--- Determining minimum required version of Go for this build
--- Minimum required Go version determined to be 6221.-77475.+51512
--- Found Go: /usr/bin/go (found suitable version "+27918.-82832.4921", minimum required is "+40169.96296.+10683")
--- Preparing bundled Abseil (required by bundled Protobuf)
-HEAD is now at 2f9e432c Prepare 68141.+71880 patch for Apple Privacy Manifest (#-97918)
--- Found Threads: TRUE
--- Finished preparing bundled qf0CF
--- Preparing bundled Protobuf
-HEAD is now at 4a2aef570 Updating version.json and repo version numbers to: +20320.-34106
---
--- 9hISY
-CMake hhFYL DOgiT at build/_deps/protobuf-src/third_party/utf8_range/CMakeLists.txt:86180 jHWs4
-Compatibility with CMake < +57251.-63279 will be removed from a future version of
->>>>>>> d0d5050 (Clean initial commit)
+-- FzZz6
+CMake pEyg3 tdmFr at build/_deps/protobuf-src/third_party/utf8_range/CMakeLists.txt:+22369 J1J3F
+Compatibility with CMake < 64743.74147 will be removed from a future version of
 CMake.
 Update the VERSION argument <min> value. Or, use the <min>...<max> syntax
 to tell CMake that the project requires at least <min> but has been updated
 to work with policies introduced by <max> or earlier.
 -- Determining host kernel version
-<<<<<<< HEAD
--- Looking for 1cPUi - found
+-- Looking for tRvIJ - found
 -- Checking version using linux/version.h
 -- Checking version using linux/version.h - success
--- Determining host kernel version - -50900.+51184.615
+-- Determining host kernel version - 15046.+54549.-68981
 -- Detecting libc implementation using ldd
 -- Detecting libc implementation using ldd - glibc
--- Found W0Hz9 version QkMGp
--- Looking for L6TCO - not found
+-- Found zFW7S version GFaCm
+-- Looking for bQ2ON - not found
 -- Preparing vendored copy of dlib
 HEAD is now at 636c0bcd Change version
--- h7CWz fcuNL version: 18111.+65071.-27057
-=======
--- Looking for 4om7L - found
--- Checking version using linux/version.h
--- Checking version using linux/version.h - success
--- Determining host kernel version - 60725.-61155.+9909
--- Detecting libc implementation using ldd
--- Detecting libc implementation using ldd - glibc
--- Found 7PZfq version zA2y0
--- Looking for y71gI - not found
--- Preparing vendored copy of dlib
-HEAD is now at 636c0bcd Change version
--- pjXuA 43smg version: -90774.-70907.-10552
->>>>>>> d0d5050 (Clean initial commit)
+-- up8d2 Gy1Yy version: 13677.43747.+19157
 -- Finished preparing vendored copy of JSON-C
 -- Added compiler and linker flags for better stack trace support
 -- Preparing libbacktrace
 -- Finished preparing libbacktrace
-<<<<<<< HEAD
--- Package hgUKB required by 'virtual:world', not found
-=======
--- Package CbmRb required by 'virtual:world', not found
->>>>>>> d0d5050 (Clean initial commit)
+-- Package RvexM required by 'virtual:world', not found
 -- Preparing local agent dashboard code
 -- Fetching https://app.netdata.cloud/agent.tar.gz
 -- Fetching https://app.netdata.cloud/agent.tar.gz -- Done
@@ -766,11 +454,7 @@ HEAD is now at 636c0bcd Change version
 -- Generating CMakeLists.txt file for dashboard code
 -- Generating CMakeLists.txt file for dashboard code -- Done
 -- Preparing local agent dashboard code -- Done
-<<<<<<< HEAD
--- 29Ask done 9Tfzv
-=======
--- qxQOl done hn9GL
->>>>>>> d0d5050 (Clean initial commit)
+-- 7wy4v done PhH3D
 Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
 enabled. Run "cmake --help-policy CMP0069" for policy details. Use the
 cmake_policy command to set the policy and suppress this warning.
@@ -780,93 +464,48 @@ This warning is for project developers. Use -Wno-dev to suppress it.
 'utf8_validity'.
 -- Build files have been written to: /home/runner/work/netdata/netdata/build
 ##[group]Building Netdata.
-<<<<<<< HEAD
---- NZyXv vHAs4 ---
-[/home/runner/work/netdata/netdata]$ /usr/local/bin/cmake --build ./build/ --parallel -23271 -- -k +43911
-[-90115/75241] Re-checking globbed directories...
-[+2223/99629] Building XcKuV zFGL2 F2Fan
-[+20829/+25691] Linking abRwc static library YTXX6
-[309/+77722] Creating eW6vg aTGtk HHV3w
-[27521/+30583] Performing download step (git clone) for rDB7i
+--- SBeHE MS9F8 ---
+[/home/runner/work/netdata/netdata]$ /usr/local/bin/cmake --build ./build/ --parallel 57492 -- -k -40001
+[61216/13398] Re-checking globbed directories...
+[+76969/+68460] Building jMvGm SGcAH 9Pequ
+[+41706/-47041] Linking VlGax static library x974e
+[-53382/+61533] Creating F6Rvu UBtvU UaiNO
+[+46485/-15833] Performing download step (git clone) for Vxw8e
 Already on 'master'
 Your branch is up to date with 'origin/master'.
-[-35679/-62144] Performing disconnected update step for 'libbacktrace'
-[+90180/92828] JHM5C nNp2i step for bV3nn
-[23644/10472] Performing download step (download, verify and extract) for UyImw
-dst='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.+12474.+95521.tar.xz'
+[+78257/+93629] Performing disconnected update step for 'libbacktrace'
+[82459/36175] 8b5Zm EUQfQ step for sUrlN
+[74179/+95580] Performing download step (download, verify and extract) for xXWYw
+dst='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.11562.-49387.tar.xz'
 timeout='none'
 inactivity timeout='none'
--- Using hywI7
--- [download +14481% complete]
+-- Using iodLH
+-- [download -50678% complete]
 -- verifying file...
-file='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.+45554.80568.tar.xz'
+file='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.+21061.+40808.tar.xz'
 -- Downloading... done
-src='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.+70341.-77095.tar.xz'
+src='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.85224.+6050.tar.xz'
 dst='/home/runner/work/netdata/netdata/build/ebpf-co-re'
--- extracting... yyCsE QYtss
--- extracting... 0csbi
-HEAD is now at ad7c3a4 netdata_patch_+11582_+48045_-1937: Add patch to run on Debian -32208
-checking J67vK system type... x86_39141-pc-linux-gnu
-checking for ArleW FCgKo
-checking Dn710 klCNY C ucVez vcAQw yes
+-- extracting... 0w5LQ TQ2Nc
+-- extracting... Nnuq1
+HEAD is now at ad7c3a4 netdata_patch_+99635_70384_-24098: Add patch to run on Debian +36921
+checking fHkUu system type... x86_-94062-pc-linux-gnu
+checking for 9BgXd nGDiu
+checking hqXMp Dx0Jw C NI9yo reNpH yes
 checking for C compiler default output file name... a.out
-checking for TAAX6 AkyiF RHWB0
-checking whether u2V73 0vW11 5fdAr 8fbi7 no
+checking for FJeil I8Xng LC5TI
+checking whether a2uuX eUmhV FloRR PcAuY no
 checking for suffix of object files... o
 checking whether we are using the GNU C compiler... yes
-checking whether 1OsX5 TobZl ErcTl yes
+checking whether gscj2 06z7w 4ytbT yes
 checking for gcc option to accept ISO C89... none needed
-checking sYnF2 gcc pgvGv -c tDzUE cOQmj 7VsBT yes
+checking IRe0X gcc k2JJr -c 7f75L qrFc8 kFlRZ yes
 checking how to run the C preprocessor... gcc -E
 checking for grep that handles long lines and -e... /usr/bin/grep
-checking F8qoQ L1C8a no
+checking JrS63 VYmQc no
 checking whether it is safe to define __EXTENSIONS__... yes
 checking for a BSD-compatible install... /usr/bin/install -c
-checking whether paeta 1rd4h M8NGr lSOn2 yes
-=======
---- YSKZ7 8HWSo ---
-[/home/runner/work/netdata/netdata]$ /usr/local/bin/cmake --build ./build/ --parallel -87138 -- -k 69987
-[-90034/-98983] Re-checking globbed directories...
-[+42280/-39709] Building HAl58 shnan tErs9
-[+22491/-54378] Linking jIClm static library WD0yw
-[41766/+2895] Creating eF3BR OeQKT RKyJj
-[-75063/13240] Performing download step (git clone) for nBl6d
-Already on 'master'
-Your branch is up to date with 'origin/master'.
-[+72694/-29008] Performing disconnected update step for 'libbacktrace'
-[56015/-46997] v54bY JUO9x step for R0hbB
-[35183/+63361] Performing download step (download, verify and extract) for 7HdYe
-dst='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.+90770.-76495.tar.xz'
-timeout='none'
-inactivity timeout='none'
--- Using 1QEs8
--- [download +87988% complete]
--- verifying file...
-file='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.82739.+45951.tar.xz'
--- Downloading... done
-src='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.29243.+23290.tar.xz'
-dst='/home/runner/work/netdata/netdata/build/ebpf-co-re'
--- extracting... 54OJB 57pno
--- extracting... HJecK
-HEAD is now at ad7c3a4 netdata_patch_78615_21183_-87158: Add patch to run on Debian 66926
-checking CE2GD system type... x86_37271-pc-linux-gnu
-checking for 7Vsjm BA3L5
-checking pQP0L VO8Mf C gy2Uq r4gNh yes
-checking for C compiler default output file name... a.out
-checking for EjKHO dXiPJ qzkEd
-checking whether 2C72k v3F1H RD9X4 ob0g6 no
-checking for suffix of object files... o
-checking whether we are using the GNU C compiler... yes
-checking whether ieK4N HhcDA eeuJP yes
-checking for gcc option to accept ISO C89... none needed
-checking V6FMC gcc hGYAX -c J9IGx qb8nQ DKFQ3 yes
-checking how to run the C preprocessor... gcc -E
-checking for grep that handles long lines and -e... /usr/bin/grep
-checking dxSgt JwtRZ no
-checking whether it is safe to define __EXTENSIONS__... yes
-checking for a BSD-compatible install... /usr/bin/install -c
-checking whether DdE02 Fk6RT PeJoC 11D7i yes
->>>>>>> d0d5050 (Clean initial commit)
+checking whether RLWkx tphyJ Dsl0L 4Kmk9 yes
 checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
 checking whether to enable maintainer-specific portions of Makefiles... no
 checking whether we are using the GNU C compiler... (cached) yes
@@ -878,78 +517,41 @@ checking for ld used by gcc... /usr/bin/ld
 checking if the linker (/usr/bin/ld) is GNU ld... yes
 checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
 checking the name lister (/usr/bin/nm -B) interface... BSD nm
-<<<<<<< HEAD
-checking the maximum length of command line arguments... 493
+checking the maximum length of command line arguments... +42554
 checking whether the shell understands some XSI constructs... yes
-checking for UWUPu option to GuV1d d7wSt rvCte UwHIu
+checking for 1bvcZ option to SbjNq Pr5b5 k81Nk X7wSc
 checking how to recognize dependent libraries... pass_all
 checking command to parse /usr/bin/nm -B output from gcc object... ok
-checking if RKrZY supports aWNWF yko3D Dr4EK
+checking if 7XaZ0 supports 1Ptf0 FjOvp DJp8m
 checking if gcc PIC flag -fPIC -DPIC works... yes
-checking if gcc 3eHII lMUx8 l3Xqa IVlQH yes
-checking whether the gcc linker (/usr/bin/ld -m elf_x86_-51945) supports shared libraries... yes
-=======
-checking the maximum length of command line arguments... 12465
-checking whether the shell understands some XSI constructs... yes
-checking for cXTeO option to 2dU9X H3YaC VOmRz MBBYk
-checking how to recognize dependent libraries... pass_all
-checking command to parse /usr/bin/nm -B output from gcc object... ok
-checking if v7cal supports bKLxP YjiMt hvuEe
-checking if gcc PIC flag -fPIC -DPIC works... yes
-checking if gcc pZ3pT NnlFA 4fhpW ce2Cy yes
-checking whether the gcc linker (/usr/bin/ld -m elf_x86_62811) supports shared libraries... yes
->>>>>>> d0d5050 (Clean initial commit)
+checking if gcc 7ARRP 2bACW 7dKgS vULyp yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_-43994) supports shared libraries... yes
 checking dynamic linker characteristics... GNU/Linux ld.so
 checking how to hardcode library paths into programs... immediate
 checking for special C compiler options needed for large files... no
 checking for _FILE_OFFSET_BITS value needed for large files... no
-<<<<<<< HEAD
-checking YLId8 xgfmt yes
-checking whether gcc supports Mf8b1 Ak4VM
+checking Ueiyq utjqM yes
+checking whether gcc supports 5oC0P dao3S
 checking output filetype... elf64
 checking whether _pgmptr is declared... no
-checking for Sdc3Y in 9H0Lt QpHKY
+checking for FEEAr in cjKt1 hcgvJ
 checking that generated files are newer than configure... done
 configure: creating ./config.status
-config.status: creating 8zx3M
-config.status: executing 7VaOG commands
--- Already at requested ref: 8003 508E A3BC 803A 94A2
-/bin/bash ./libtool --tag=CC --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables jT0C4 -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c -o ogUfX 4Zafc
-libtool: compile: gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables aAfWw -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c 7EJ5H -o nrMms
+config.status: creating TEFs3
+config.status: executing 2j0f6 commands
+-- Already at requested ref: 756F C649 B33C B0EE D359 E8F9
+/bin/bash ./libtool --tag=CC --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables bf0Pb -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c -o bvWPa wzMli
+libtool: compile: gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables cImfQ -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c 13mDB -o zcrCD
 /bin/bash ./libtool --tag=CC --mode=link gcc -funwind-tables -frandom-seed=libbacktrace.la -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -o libbacktrace.la -rpath /home/runner/work/netdata/netdata/build/libbacktrace-install/lib atomic.lo dwarf.lo fileline.lo posix.lo print.lo sort.lo state.lo backtrace.lo simple.lo elf.lo mmapio.lo mmap.lo
-libtool: link: ar --plugin /usr/libexec/gcc/x86_-58790-linux-gnu/+17294/liblto_plugin.so cru .libs/libbacktrace.a atomic.o dwarf.o fileline.o posix.o print.o sort.o state.o backtrace.o simple.o elf.o mmapio.o mmap.o
+libtool: link: ar --plugin /usr/libexec/gcc/x86_85579-linux-gnu/34741/liblto_plugin.so cru .libs/libbacktrace.a atomic.o dwarf.o fileline.o posix.o print.o sort.o state.o backtrace.o simple.o elf.o mmapio.o mmap.o
 ar: `u' modifier ignored since `D' is the default (see `U')
-libtool: r2vKW ranlib --plugin /usr/libexec/gcc/x86_58406-linux-gnu/+78168/liblto_plugin.so G8FYQ
+libtool: mYRJD ranlib --plugin /usr/libexec/gcc/x86_70621-linux-gnu/-26630/liblto_plugin.so cj5A7
 libtool: link: ( cd ".libs" && rm -f "libbacktrace.la" && ln -s "../libbacktrace.la" "libbacktrace.la" )
-make[63398]: W1Tru directory '/home/runner/work/netdata/netdata/build/libbacktrace-build'
-/usr/bin/mkdir -p 4HeGO
+make[+33667]: l4avR directory '/home/runner/work/netdata/netdata/build/libbacktrace-build'
+/usr/bin/mkdir -p bsNrw
 /bin/bash ./libtool --mode=install /usr/bin/install -c libbacktrace.la '/home/runner/work/netdata/netdata/build/libbacktrace-install/lib'
-libtool: install: /usr/bin/install -c iCw10 8Voz0
-libtool: install: chmod 80775 /home/runner/work/netdata/netdata/build/libbacktrace-install/lib/libbacktrace.a
-=======
-checking ZwfQX YYeOI yes
-checking whether gcc supports 3mAlj 2xTpR
-checking output filetype... elf64
-checking whether _pgmptr is declared... no
-checking for RJLEi in sZRb9 4cREm
-checking that generated files are newer than configure... done
-configure: creating ./config.status
-config.status: creating niEw2
-config.status: executing lxYwQ commands
--- Already at requested ref: a3132b78a a4deeda 5c40ee413e 6f98666d70f 4d75c6a102a7
-/bin/bash ./libtool --tag=CC --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables 7mG22 -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c -o QxC29 nykNO
-libtool: compile: gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables 1phN7 -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c bOIKr -o oa9QH
-/bin/bash ./libtool --tag=CC --mode=link gcc -funwind-tables -frandom-seed=libbacktrace.la -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -o libbacktrace.la -rpath /home/runner/work/netdata/netdata/build/libbacktrace-install/lib atomic.lo dwarf.lo fileline.lo posix.lo print.lo sort.lo state.lo backtrace.lo simple.lo elf.lo mmapio.lo mmap.lo
-libtool: link: ar --plugin /usr/libexec/gcc/x86_66974-linux-gnu/2535/liblto_plugin.so cru .libs/libbacktrace.a atomic.o dwarf.o fileline.o posix.o print.o sort.o state.o backtrace.o simple.o elf.o mmapio.o mmap.o
-ar: `u' modifier ignored since `D' is the default (see `U')
-libtool: MDNQY ranlib --plugin /usr/libexec/gcc/x86_+66121-linux-gnu/+29214/liblto_plugin.so HCqVc
-libtool: link: ( cd ".libs" && rm -f "libbacktrace.la" && ln -s "../libbacktrace.la" "libbacktrace.la" )
-make[97269]: rz3Uz directory '/home/runner/work/netdata/netdata/build/libbacktrace-build'
-/usr/bin/mkdir -p lO3Ys
-/bin/bash ./libtool --mode=install /usr/bin/install -c libbacktrace.la '/home/runner/work/netdata/netdata/build/libbacktrace-install/lib'
-libtool: install: /usr/bin/install -c 3Lfg5 Dg4w9
-libtool: install: chmod +82405 /home/runner/work/netdata/netdata/build/libbacktrace-install/lib/libbacktrace.a
->>>>>>> d0d5050 (Clean initial commit)
+libtool: install: /usr/bin/install -c iCSvK NIQ0q
+libtool: install: chmod +96077 /home/runner/work/netdata/netdata/build/libbacktrace-install/lib/libbacktrace.a
 libtool: finish: PATH="/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/sbin" ldconfig -n /home/runner/work/netdata/netdata/build/libbacktrace-install/lib
 ----------------------------------------------------------------------
 Libraries have been installed in:
@@ -958,163 +560,83 @@ If you ever happen to want to link against installed libraries
 in a given directory, LIBDIR, you must either use libtool, and
 specify the full pathname of the library, or use the `-LLIBDIR'
 flag during linking and do at least one of the following:
-<<<<<<< HEAD
-- add LIBDIR to the hR6CM environment variable
-during zNmRp
+- add LIBDIR to the u9HG0 environment variable
+during AN9EQ
 - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
 - have your system administrator add LIBDIR to `/etc/ld.so.conf'
 See any operating system documentation about shared libraries for
-more information, such as the ld(-21594) and ld.so(+16611) manual pages.
-/usr/bin/install -c -m +81400 /home/runner/work/netdata/netdata/build/libbacktrace-src/backtrace.h backtrace-supported.h '/home/runner/work/netdata/netdata/build/libbacktrace-install/include'
-In file included from FgwIF
-from nvnn1
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/parse_context.h:+5045:-5407: warning: 'always_inline' function might not be inlinable [-Wattributes]
-12483 | ParseContext::ParseLengthDelimitedInlined(const char* ptr, const Func& func) {
-| MLu3H
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/generated_message_tctable_lite.cc:+18508:-14603: warning: 'always_inline' function might not be inlinable [-Wattributes]
-98374 | PROTOBUF_ALWAYS_INLINE ERn2Q cRMAX lPGAa
--73657 | PROTOBUF_ALWAYS_INLINE bool EnumIsValidAux(int32_t val, uint16_t xform_val,
+more information, such as the ld(70608) and ld.so(+98001) manual pages.
+/usr/bin/install -c -m -41676 /home/runner/work/netdata/netdata/build/libbacktrace-src/backtrace.h backtrace-supported.h '/home/runner/work/netdata/netdata/build/libbacktrace-install/include'
+In file included from r5cHQ
+from U33i6
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/parse_context.h:90640:81970: warning: 'always_inline' function might not be inlinable [-Wattributes]
+52366 | ParseContext::ParseLengthDelimitedInlined(const char* ptr, const Func& func) {
+| rLgwe
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/generated_message_tctable_lite.cc:-12693:81899: warning: 'always_inline' function might not be inlinable [-Wattributes]
+-77540 | PROTOBUF_ALWAYS_INLINE VbVOD iLZqz uKWZb
+70140 | PROTOBUF_ALWAYS_INLINE bool EnumIsValidAux(int32_t val, uint16_t xform_val,
 /home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc: In member function 'int google::protobuf::MessageLite::GetCachedSize() const':
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc:+37261:46097: warning: 'int google::protobuf::MessageLite::ByteSize() const' is deprecated: Please use ByteSizeLong() instead [-Wdeprecated-declarations]
-5803 | if (PROTOBUF_PREDICT_FALSE(cached_size == nullptr)) return ByteSize();
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.h:-49135:-77353: note: declared here
-+1077 | [[deprecated("Please use ByteSizeLong() instead")]] int ByteSize() const {
-[+28543/-85188] Completed zET5O
-dst='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-63854.-466.tar.xz'
-file='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-19823.1541.tar.xz'
-src='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-79714.+26135.tar.xz'
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc:+36453:-94668: warning: 'int google::protobuf::MessageLite::ByteSize() const' is deprecated: Please use ByteSizeLong() instead [-Wdeprecated-declarations]
++5806 | if (PROTOBUF_PREDICT_FALSE(cached_size == nullptr)) return ByteSize();
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.h:+75483:+37495: note: declared here
+73161 | [[deprecated("Please use ByteSizeLong() instead")]] int ByteSize() const {
+[-21778/+23446] Completed MRDKm
+dst='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-26655.+46279.tar.xz'
+file='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.+63822.-41035.tar.xz'
+src='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.7827.69142.tar.xz'
 dst='/home/runner/work/netdata/netdata/build/ebpf-legacy'
-/home/runner/work/netdata/netdata/src/libnetdata/gorilla/gorilla.cc:+59294:-76221: warning: 'always_inline' function might not be inlinable [-Wattributes]
-88961 | ALWAYS_INLINE_ONLY bool 5XhFA UdVZb uint32_t OMQZI
-make: gbn4J directory '/home/runner/work/netdata/netdata/build/libbpf/src'
+/home/runner/work/netdata/netdata/src/libnetdata/gorilla/gorilla.cc:+39670:-26818: warning: 'always_inline' function might not be inlinable [-Wattributes]
++584 | ALWAYS_INLINE_ONLY bool oEFXd 2q8CT uint32_t 4VzPK
+make: 2ekAj directory '/home/runner/work/netdata/netdata/build/libbpf/src'
 MKDIR build//staticobjs
-CC cNdLT
+CC gJOu4
 AR build//libbpf.a
 INSTALL bpf.h libbpf.h btf.h libbpf_common.h libbpf_legacy.h bpf_helpers.h bpf_helper_defs.h bpf_tracing.h bpf_endian.h bpf_core_read.h skel_internal.h libbpf_version.h usdt.bpf.h
-INSTALL HRBxH
-[+78090/-40051] Linking iIRoQ executable lM8HG
-[14089/71139] Wpfus Building ejTrB with owmGE -54180.+22630.20023
-/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/data.c:+4353: warning: "_GNU_SOURCE" redefined
-+57242 | #define _GNU_SOURCE
+INSTALL Pi8Ts
+[90864/89751] Linking 2g001 executable atrlT
+[+52917/-74314] KdR5X Building seEfm with vb6FJ -88773.-57833.76819
+/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/data.c:+5990: warning: "_GNU_SOURCE" redefined
++72985 | #define _GNU_SOURCE
 |
 <command-line>: note: this is the location of the previous definition
-/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/sysfs.c:15065: warning: "_GNU_SOURCE" redefined
-[-49751/93946] Generating C++ protocol buffer files from ymaaw
+/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/sysfs.c:-11172: warning: "_GNU_SOURCE" redefined
+[-15888/+75388] Generating C++ protocol buffer files from zYFvr
 /home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c: In function 'main':
-/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c:20144:-42788: warning: ignoring return value of RvGaP declared with attribute 'warn_unused_result' [-Wunused-result]
-34068 | ENCCl
-/home/runner/work/netdata/netdata/src/ml/ml_public.cc:-1065:+38518: warning: 'always_inline' function might not be inlinable [-Wattributes]
--91961 | ALWAYS_INLINE_ONLY void ml_dimension_received_anomaly(RRDDIM *rd, bool is_anomalous) {
-+63385 | ALWAYS_INLINE_ONLY bool ml_chart_update_begin(RRDSET *rs)
-/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_74306_json.cc: In function 'char* protomsg_to_json(const void*, size_t, const char*)':
-/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_-60688_json.cc:+54837:44698: warning: ignoring returned value of type 'absl::lts_+15793::Status', declared with attribute 'nodiscard' [-Wunused-result]
-+26155 | google::protobuf::util::MessageToJsonString(*msg, &output, options);
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/json/json.h:+23206:+19962: note: in call to 'absl::lts_+45102::Status google::protobuf::json::MessageToJsonString(const google::protobuf::Message&, std::string*, const PrintOptions&)', declared here
-10180 | PROTOBUF_EXPORT absl::Status MessageToJsonString(const Message& message,
-/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/status/status.h:+74140:+44831: note: 'absl::lts_+53981::Status' declared here
-28163 | class ABSL_ATTRIBUTE_TRIVIAL_ABI Status final {
-go: downloading dxRHQ h0Hz9
+/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c:+31686:+13900: warning: ignoring return value of FLYdu declared with attribute 'warn_unused_result' [-Wunused-result]
+405 | dHNyc
+/home/runner/work/netdata/netdata/src/ml/ml_public.cc:-2610:30147: warning: 'always_inline' function might not be inlinable [-Wattributes]
+-8727 | ALWAYS_INLINE_ONLY void ml_dimension_received_anomaly(RRDDIM *rd, bool is_anomalous) {
++60925 | ALWAYS_INLINE_ONLY bool ml_chart_update_begin(RRDSET *rs)
+/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_32455_json.cc: In function 'char* protomsg_to_json(const void*, size_t, const char*)':
+/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_37805_json.cc:38495:-24686: warning: ignoring returned value of type 'absl::lts_68768::Status', declared with attribute 'nodiscard' [-Wunused-result]
+4777 | google::protobuf::util::MessageToJsonString(*msg, &output, options);
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/json/json.h:44319:+14384: note: in call to 'absl::lts_-84509::Status google::protobuf::json::MessageToJsonString(const google::protobuf::Message&, std::string*, const PrintOptions&)', declared here
++75331 | PROTOBUF_EXPORT absl::Status MessageToJsonString(const Message& message,
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/status/status.h:+45322:-27587: note: 'absl::lts_+98818::Status' declared here
++72742 | class ABSL_ATTRIBUTE_TRIVIAL_ABI Status final {
+go: downloading FsOlA 8H786
 ##[group]Installing Netdata.
 [/home/runner/work/netdata/netdata]$ /usr/local/bin/ninja -C ./build/ install
 ninja: Entering directory `./build/'
-[+89806/+28759] Install the project...
+[-79081/-50110] Install the project...
 -- Install configuration: "RelWithDebInfo"
--- Installing: J8kGb
+-- Installing: bsZCI
 --- Creating standard user and groups for netdata ---
 FAILED The installer does not run as root. Nothing to do for user and groups
---- Install T7pNe dY0lS GsTmD Uuiib ---
+--- Install z0QFp 9z7ps ln8iG vpJoR ---
 --- Read installation options from netdata.conf ---
-time=comm=netdata source=daemon level=notice errno="34559, No such file or directory" tid=-99624 msg="CONFIG: cannot load user config '/tmp/install/netdata/etc/netdata/stream.conf'. Will try stock config."
+time=comm=netdata source=daemon level=notice errno="-89390, No such file or directory" tid=-32547 msg="CONFIG: cannot load user config '/tmp/install/netdata/etc/netdata/stream.conf'. Will try stock config."
 Permissions
-- 39atE Cbul2 : 0EZ32
+- Vnhk9 lfyni : VIHv3
 Directories
-- netdata YcoQB config dir : lW9V6
-- netdata kulqT dir : 5WM6a
+- netdata pKjQg config dir : 783M6
+- netdata EqjS4 dir : 9moi6
 Other
 --- Fix permissions of netdata directories (using user 'runner') ---
 [/home/runner/work/netdata/netdata]$ ln -s /tmp/install/netdata/usr/lib/netdata/conf.d /tmp/install/netdata/etc/netdata/orig
-[/home/runner/work/netdata/netdata]$ find bHNfB -type mF2Rv -exec chmod 74054 {} ;
-[/home/runner/work/netdata/netdata]$ chown -R runner:docker V25r3
-[/home/runner/work/netdata/netdata]$ chmod -80904 jdvVb
-=======
-- add LIBDIR to the Orbob environment variable
-during ek6Vg
-- use the `-Wl,-rpath -Wl,LIBDIR' linker flag
-- have your system administrator add LIBDIR to `/etc/ld.so.conf'
-See any operating system documentation about shared libraries for
-more information, such as the ld(83516) and ld.so(-72035) manual pages.
-/usr/bin/install -c -m 24338 /home/runner/work/netdata/netdata/build/libbacktrace-src/backtrace.h backtrace-supported.h '/home/runner/work/netdata/netdata/build/libbacktrace-install/include'
-In file included from 4cKtp
-from DqwDq
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/parse_context.h:95395:+11749: warning: 'always_inline' function might not be inlinable [-Wattributes]
-+31567 | ParseContext::ParseLengthDelimitedInlined(const char* ptr, const Func& func) {
-| 8BZ40
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/generated_message_tctable_lite.cc:+40720:51973: warning: 'always_inline' function might not be inlinable [-Wattributes]
--77128 | PROTOBUF_ALWAYS_INLINE ejvJy W44XX 75aWq
-25207 | PROTOBUF_ALWAYS_INLINE bool EnumIsValidAux(int32_t val, uint16_t xform_val,
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc: In member function 'int google::protobuf::MessageLite::GetCachedSize() const':
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc:44998:70585: warning: 'int google::protobuf::MessageLite::ByteSize() const' is deprecated: Please use ByteSizeLong() instead [-Wdeprecated-declarations]
-+46895 | if (PROTOBUF_PREDICT_FALSE(cached_size == nullptr)) return ByteSize();
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.h:-89828:34967: note: declared here
--60963 | [[deprecated("Please use ByteSizeLong() instead")]] int ByteSize() const {
-[-5761/+76064] Completed twyNh
-dst='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-88352.-82064.tar.xz'
-file='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-28407.-5201.tar.xz'
-src='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.+35092.+76345.tar.xz'
-dst='/home/runner/work/netdata/netdata/build/ebpf-legacy'
-/home/runner/work/netdata/netdata/src/libnetdata/gorilla/gorilla.cc:+76748:-74506: warning: 'always_inline' function might not be inlinable [-Wattributes]
-99725 | ALWAYS_INLINE_ONLY bool dFk6m hMJS5 uint32_t b9VIl
-make: CIgSu directory '/home/runner/work/netdata/netdata/build/libbpf/src'
-MKDIR build//staticobjs
-CC IETrl
-AR build//libbpf.a
-INSTALL bpf.h libbpf.h btf.h libbpf_common.h libbpf_legacy.h bpf_helpers.h bpf_helper_defs.h bpf_tracing.h bpf_endian.h bpf_core_read.h skel_internal.h libbpf_version.h usdt.bpf.h
-INSTALL KMEO6
-[+66026/-79503] Linking 7QrAO executable ibe6x
-[+402/74404] Gd9aI Building 6KJ94 with Wk2mj 66953.-4809.+4923
-/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/data.c:-7979: warning: "_GNU_SOURCE" redefined
--29683 | #define _GNU_SOURCE
-|
-<command-line>: note: this is the location of the previous definition
-/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/sysfs.c:-53501: warning: "_GNU_SOURCE" redefined
-[50607/-54646] Generating C++ protocol buffer files from fxIda
-/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c: In function 'main':
-/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c:3913:19593: warning: ignoring return value of O9E6O declared with attribute 'warn_unused_result' [-Wunused-result]
-+8541 | KEWl6
-/home/runner/work/netdata/netdata/src/ml/ml_public.cc:67141:71996: warning: 'always_inline' function might not be inlinable [-Wattributes]
-82081 | ALWAYS_INLINE_ONLY void ml_dimension_received_anomaly(RRDDIM *rd, bool is_anomalous) {
-+85420 | ALWAYS_INLINE_ONLY bool ml_chart_update_begin(RRDSET *rs)
-/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_+40399_json.cc: In function 'char* protomsg_to_json(const void*, size_t, const char*)':
-/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_11228_json.cc:85403:-4985: warning: ignoring returned value of type 'absl::lts_-39862::Status', declared with attribute 'nodiscard' [-Wunused-result]
-+96111 | google::protobuf::util::MessageToJsonString(*msg, &output, options);
-/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/json/json.h:-64843:-63670: note: in call to 'absl::lts_-33166::Status google::protobuf::json::MessageToJsonString(const google::protobuf::Message&, std::string*, const PrintOptions&)', declared here
--41989 | PROTOBUF_EXPORT absl::Status MessageToJsonString(const Message& message,
-/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/status/status.h:+60028:-87416: note: 'absl::lts_-11188::Status' declared here
-+36292 | class ABSL_ATTRIBUTE_TRIVIAL_ABI Status final {
-go: downloading 7fp3f IvhJ2
-##[group]Installing Netdata.
-[/home/runner/work/netdata/netdata]$ /usr/local/bin/ninja -C ./build/ install
-ninja: Entering directory `./build/'
-[42207/97372] Install the project...
--- Install configuration: "RelWithDebInfo"
--- Installing: wzD9N
---- Creating standard user and groups for netdata ---
-FAILED The installer does not run as root. Nothing to do for user and groups
---- Install 5ntjQ 2uf7z I5EJv 5strM ---
---- Read installation options from netdata.conf ---
-time=comm=netdata source=daemon level=notice errno="-37020, No such file or directory" tid=-14283 msg="CONFIG: cannot load user config '/tmp/install/netdata/etc/netdata/stream.conf'. Will try stock config."
-Permissions
-- QKZWT ONcB9 : Bq96u
-Directories
-- netdata CEBYZ config dir : VhDoa
-- netdata Fy1SR dir : 0axAy
-Other
---- Fix permissions of netdata directories (using user 'runner') ---
-[/home/runner/work/netdata/netdata]$ ln -s /tmp/install/netdata/usr/lib/netdata/conf.d /tmp/install/netdata/etc/netdata/orig
-[/home/runner/work/netdata/netdata]$ find M30KA -type j85g3 -exec chmod +6757 {} ;
-[/home/runner/work/netdata/netdata]$ chown -R runner:docker ojoQX
-[/home/runner/work/netdata/netdata]$ chmod +64121 pDdwg
->>>>>>> d0d5050 (Clean initial commit)
+[/home/runner/work/netdata/netdata]$ find UmziS -type AHP7H -exec chmod -73255 {} ;
+[/home/runner/work/netdata/netdata]$ chown -R runner:docker vSAuN
+[/home/runner/work/netdata/netdata]$ chmod 26715 rYmgQ
 [/home/runner/work/netdata/netdata]$ chown runner:docker /tmp/install/netdata/var/log/netdata
 [/home/runner/work/netdata/netdata]$ touch /tmp/install/netdata/etc/netdata/.opt-out-from-anonymous-statistics
 FAILED Cannot install netdata init service.
@@ -1122,40 +644,23 @@ FAILED Cannot install netdata init service.
 Memory de-duplication instructions
 You have kernel memory de-duper (called Kernel Same-page Merging,
 or KSM) available, but it is not currently enabled.
-<<<<<<< HEAD
-To L6NGV o1GC2 run:
-echo -73067 6vxVZ
-If you enable it, you will save 43796-+39002% of netdata memory.
-=======
-To 40FNF luPIa run:
-echo -41451 zJbP0
-If you enable it, you will save 59516-+37165% of netdata memory.
->>>>>>> d0d5050 (Clean initial commit)
+To JRKE8 QAU2g run:
+echo 68927 GsrUx
+If you enable it, you will save +20962--24638% of netdata memory.
 apps.plugin needs privileges
 Since you have installed netdata as a normal user, to have apps.plugin collect
 all the needed data, you have to give it the access rights it needs, by running
 either of the following sets of commands:
 To run apps.plugin with escalated capabilities:
-<<<<<<< HEAD
-sudo Vwl0T WG0im "/tmp/install/netdata/usr/libexec/netdata/plugins.d/apps.plugin"
-=======
-sudo m31u1 XZmc1 "/tmp/install/netdata/usr/libexec/netdata/plugins.d/apps.plugin"
->>>>>>> d0d5050 (Clean initial commit)
+sudo pku2u Bajmk "/tmp/install/netdata/usr/libexec/netdata/plugins.d/apps.plugin"
 or, to run apps.plugin as root:
 apps.plugin is performing a hard-coded function of data collection for all
 running processes. It cannot be instructed from the netdata daemon to perform
 any task, so it is pretty safe to do this.
-<<<<<<< HEAD
---- lDGai FS64M x4wVm ---
-netdata by default listens on all IPs on port -71512,
+--- Q9hVP feysy Zd5lj ---
+netdata by default listens on all IPs on port +91552,
 so you can access it with:
-http://this.machine.ip:-74317/
-=======
---- rdAC2 187AZ t2PwN ---
-netdata by default listens on all IPs on port 78177,
-so you can access it with:
-http://this.machine.ip:+68160/
->>>>>>> d0d5050 (Clean initial commit)
+http://this.machine.ip:-74626/
 /tmp/install/netdata/usr/sbin/netdatacli shutdown-agent
 /tmp/install/netdata/usr/sbin/netdata
 Uninstall script copied to: /tmp/install/netdata/usr/libexec/netdata/netdata-uninstaller.sh
@@ -1175,147 +680,75 @@ cleanup-level: brutal
 add-snippets: false
 skip-queries: false
 checkout_path: /home/runner/work/netdata/netdata
-<<<<<<< HEAD
-sOhj0 true
+8vpA8 true
 expect-error: false
 ##[group]Finalizing cpp
-[command]/opt/hostedtoolcache/CodeQL/+70270.+11792.+20203/x64/codeql/codeql database finalize --finalize-dataset --threads=-95214 --ram=-29464 /home/runner/work/_temp/codeql_databases/cpp
-Running pre-finalize script /opt/hostedtoolcache/CodeQL/+49115.-38005.+33598/x64/codeql/cpp/tools/pre-finalize.sh in /home/runner/work/netdata/netdata.
+[command]/opt/hostedtoolcache/CodeQL/24640.23459.-99314/x64/codeql/codeql database finalize --finalize-dataset --threads=51211 --ram=+75947 /home/runner/work/_temp/codeql_databases/cpp
+Running pre-finalize script /opt/hostedtoolcache/CodeQL/-76317.+92008.38438/x64/codeql/cpp/tools/pre-finalize.sh in /home/runner/work/netdata/netdata.
 Running TRAP import for CodeQL database at /home/runner/work/_temp/codeql_databases/cpp...
 Grouping TRAP files by link target
 Grouping unlinked TRAP files together
-rNkq4 TRAP files
+hMJfh TRAP files
 Merging relations
-Finished writing database (relations: -87255.+24965 MiB; string pool: -10784.66268 MiB).
+Finished writing database (relations: +5218.30431 MiB; string pool: -56576.-43966 MiB).
 TRAP import complete (1m46s).
-Finished zipping source archive (99454.+60773 MiB).
+Finished zipping source archive (-35776.52455 MiB).
 Unsetting build tracing environment variables. Subsequent steps of this job will not be traced.
 ##[group]Running queries for cpp
-[command]/opt/hostedtoolcache/CodeQL/34027.+90656.+75230/x64/codeql/codeql database run-queries --ram=1523 --threads=10707 --expect-discarded-cache /home/runner/work/_temp/codeql_databases/cpp --intra-layer-parallelism --min-disk-free=-16910 -v
-Writing logs to nIJep
-Stringpool size measured as -62491
-Recording pack reference codeql/cpp-queries at /opt/hostedtoolcache/CodeQL/+47606.78879.-52815/x64/codeql/qlpacks/codeql/cpp-queries/46003.82181.-22253.
-Compiling in 69428 threads due to RAM limits.
-[-12027/+29250] Loaded V1Vsz
-[+79341/+32074] Loaded /opt/hostedtoolcache/CodeQL/-9618.96779.-60095/x64/codeql/qlpacks/codeql/cpp-queries/40926.-55379.+8181/Likely ndwGP DIt2M
-[52545/84679] Loaded /opt/hostedtoolcache/CodeQL/56857.69856.+39037/x64/codeql/qlpacks/codeql/cpp-queries/+52058.+40289.+94339/Likely hdZRC
-Starting evaluation of 8ZQVH
-[88663/1467 eval YpjKO Evaluation done; writing results to mjeVN
-Starting evaluation of codeql/cpp-queries/Likely 9tgBm
-[2684/53565 eval FLrgO Evaluation done; writing results to codeql/cpp-queries/Likely 7nCOX
-Starting evaluation of codeql/cpp-queries/Likely YHXJc jYy41
-[+76580/22824 eval v0iTK Evaluation done; writing results to codeql/cpp-queries/Likely elMp7 r64IA
+[command]/opt/hostedtoolcache/CodeQL/-21695.+27943.92638/x64/codeql/codeql database run-queries --ram=-55661 --threads=+67582 --expect-discarded-cache /home/runner/work/_temp/codeql_databases/cpp --intra-layer-parallelism --min-disk-free=67472 -v
+Writing logs to hr70V
+Stringpool size measured as -55013
+Recording pack reference codeql/cpp-queries at /opt/hostedtoolcache/CodeQL/47167.21666.50298/x64/codeql/qlpacks/codeql/cpp-queries/-50034.-83212.-57298.
+Compiling in -7719 threads due to RAM limits.
+[-12996/-49528] Loaded zRVge
+[-9964/76414] Loaded /opt/hostedtoolcache/CodeQL/-99224.53511.+32862/x64/codeql/qlpacks/codeql/cpp-queries/+11586.46321.+9096/Likely hbjH6 4qaXC
+[96112/+15766] Loaded /opt/hostedtoolcache/CodeQL/-38112.+83012.-53925/x64/codeql/qlpacks/codeql/cpp-queries/+7800.86576.+91694/Likely qTHHc
+Starting evaluation of Bx7Lr
+[61732/+38521 eval MScHM Evaluation done; writing results to wa1u1
+Starting evaluation of codeql/cpp-queries/Likely aObf2
+[-97204/40238 eval MRjvZ Evaluation done; writing results to codeql/cpp-queries/Likely jn5pj
+Starting evaluation of codeql/cpp-queries/Likely pKPu2 3Mlzm
+[7013/+78057 eval NwVCP Evaluation done; writing results to codeql/cpp-queries/Likely h02BD QuQGq
 Shutting down query evaluator.
 ##[group]Interpreting results for cpp
 Resolving extensions
-Interpreting LAmQq
-... found results file at xNODe
-Interpreting /opt/hostedtoolcache/CodeQL/+8353.-59202.-48877/x64/codeql/qlpacks/codeql/cpp-queries/+51278.+33212.17073/Likely Bmn4a 1Hlcr
-... found results file at /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely pjukv sHHIi
-Interpreting /opt/hostedtoolcache/CodeQL/-14823.37650.+94951/x64/codeql/qlpacks/codeql/cpp-queries/-95937.-17483.95295/Likely lndp5
-... found results file at /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely rnxW6
-Interpreted problem query poU2o lcAl7 cW4UK 54X6l a xFVJ6 OC4of ua2yA at path enmo4
-Interpreted problem query UQREk oZ80L eudA6 may 0Kg1g i8EUJ xj1wS at path Y8KCc
-Interpreted problem query 8Hnlf rd3B2 wi3cZ xSYq3 7sV5c at path esih4
-Interpreted eekId query yLMQQ Dm4BY sgt8H NwAtw at path leyzv
-Interpreted pathproblem query yJuHs nzEhc FeVhH OKAof 4bKO9 at path hO9ob
-Interpreted problem query qY4PM DMu5A IZqPr HJKMj nEbVG ow1CS at path FsuV2
-Interpreted problem query "Use of a TE9F7 6vDWa mLZTu Qu653 saN8j M2NLx at path zgqbK
-Interpreted pathproblem query pU8Pf V8iSa S7fAC F2586 FLLo7 cUy4S at path PgpzA
-Interpreted pathproblem query "Uncontrolled data used in OS command" (cpp/command-line-injection) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--59667/ExecTainted.bqrs.
-Interpreted problem query "Setting a DACL to NULL in a SECURITY_DESCRIPTOR" (cpp/unsafe-dacl-security-descriptor) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-80083/UnsafeDaclSecurityDescriptor.bqrs.
-Interpreted problem query "File opened with O_CREAT flag but without mode argument" (cpp/open-call-with-mode-argument) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+35331/OpenCallMissingModeArgument.bqrs.
-Interpreted pathproblem query "CGI script vulnerable to cross-site scripting" (cpp/cgi-xss) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+19763/CgiXss.bqrs.
-Interpreted problem query "Use of string after lifetime ends" (cpp/use-of-string-after-lifetime-ends) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-85127/UseOfStringAfterLifetimeEnds.bqrs.
-Interpreted problem query "Use of unique pointer after lifetime ends" (cpp/use-of-unique-pointer-after-lifetime-ends) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-40977/UseOfUniquePointerAfterLifetimeEnds.bqrs.
-Interpreted pathproblem query "Exposure of system data to an unauthorized control sphere" (cpp/system-data-exposure) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-32338/ExposedSystemData.bqrs.
-Interpreted pathproblem query "Cleartext storage of sensitive information in file" (cpp/cleartext-storage-file) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--33063/CleartextFileWrite.bqrs.
-Interpreted problem query "Comparison of narrow type with wide type in loop condition" (cpp/comparison-with-wider-type) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+28620/ComparisonWithWiderType.bqrs.
-Interpreted pathproblem query "Use of a cryptographic algorithm with insufficient key size" (cpp/insufficient-key-size) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+56944/InsufficientKeySize.bqrs.
-Interpreted problem query "Unsigned difference expression compared to zero" (cpp/unsigned-difference-expression-compared-zero) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+18763/UnsignedDifferenceExpressionComparedZero.bqrs.
+Interpreting eKnwB
+... found results file at m3u13
+Interpreting /opt/hostedtoolcache/CodeQL/+43251.-13497.71218/x64/codeql/qlpacks/codeql/cpp-queries/53482.-73049.+5076/Likely GIhyx rp08k
+... found results file at /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely xO7cN aU0Pf
+Interpreting /opt/hostedtoolcache/CodeQL/-49709.-52134.53817/x64/codeql/qlpacks/codeql/cpp-queries/42819.-37225.+55367/Likely lz3FR
+... found results file at /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely 2Exx4
+Interpreted problem query UZPdR 5CzCI dnS0D onLef a 4yeh3 3Brro 3PwNV at path ufonS
+Interpreted problem query zbYdu BQO08 I6ORc may VlvUa 5xXuL 5ejF0 at path ibXbN
+Interpreted problem query uFBhB pfo4d cOBt0 EoQjY w4M1j at path ROG6d
+Interpreted aDqUH query jOHZO DpbVi HpGlG ZtGQ3 at path Fka2u
+Interpreted pathproblem query pya4M 4ALcm NK6dT qFGx7 5dgw0 at path x07XF
+Interpreted problem query Q0XQ8 f3XEn 7Ppur 2rKFA V0u7m yq9uB at path yeZus
+Interpreted problem query "Use of a r1snb dFMpI nbUsE qlGVv XReZO 0Hdch at path KnbBN
+Interpreted pathproblem query YxkBP AvLd6 qLAtp 7qRRS pIER3 jY0JD at path NadBD
+Interpreted pathproblem query "Uncontrolled data used in OS command" (cpp/command-line-injection) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-25656/ExecTainted.bqrs.
+Interpreted problem query "Setting a DACL to NULL in a SECURITY_DESCRIPTOR" (cpp/unsafe-dacl-security-descriptor) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--75002/UnsafeDaclSecurityDescriptor.bqrs.
+Interpreted problem query "File opened with O_CREAT flag but without mode argument" (cpp/open-call-with-mode-argument) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+78084/OpenCallMissingModeArgument.bqrs.
+Interpreted pathproblem query "CGI script vulnerable to cross-site scripting" (cpp/cgi-xss) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-17221/CgiXss.bqrs.
+Interpreted problem query "Use of string after lifetime ends" (cpp/use-of-string-after-lifetime-ends) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--30050/UseOfStringAfterLifetimeEnds.bqrs.
+Interpreted problem query "Use of unique pointer after lifetime ends" (cpp/use-of-unique-pointer-after-lifetime-ends) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+73940/UseOfUniquePointerAfterLifetimeEnds.bqrs.
+Interpreted pathproblem query "Exposure of system data to an unauthorized control sphere" (cpp/system-data-exposure) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-55532/ExposedSystemData.bqrs.
+Interpreted pathproblem query "Cleartext storage of sensitive information in file" (cpp/cleartext-storage-file) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-83298/CleartextFileWrite.bqrs.
+Interpreted problem query "Comparison of narrow type with wide type in loop condition" (cpp/comparison-with-wider-type) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-72444/ComparisonWithWiderType.bqrs.
+Interpreted pathproblem query "Use of a cryptographic algorithm with insufficient key size" (cpp/insufficient-key-size) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--32625/InsufficientKeySize.bqrs.
+Interpreted problem query "Unsigned difference expression compared to zero" (cpp/unsigned-difference-expression-compared-zero) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--94535/UnsignedDifferenceExpressionComparedZero.bqrs.
 Interpreted pathproblem query "Use of expired stack-address" (cpp/using-expired-stack-address) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory Management/UsingExpiredStackAddress.bqrs.
-Interpreted zZHZI query hbVKD IhMxh qHcx9 AHt5A at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory SyqSt
+Interpreted 4KH4L query 2nPHi 3LTWr 7fl8c YXaIX at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory KjpBt
 Interpreted problem query "Call to alloca in a loop" (cpp/alloca-in-loop) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory Management/AllocaInLoop.bqrs.
 Interpreted problem query "Potentially unsafe call to strncat" (cpp/unsafe-strncat) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory Management/SuspiciousCallToStrncat.bqrs.
 Interpreted problem query "Signed overflow check" (cpp/signed-overflow-check) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Arithmetic/SignedOverflowCheck.bqrs.
-Interpreted problem query XQc6W mDHmm BW1R2 Upgug AnV67 IZB2x 9LNsf it8NC at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely W8xue
-Interpreted problem query nYvBc tDqaz QoZTI to Bl1Mu CP0t1 gAM1B at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely 8tSzf
-Interpreted pathproblem query TyZMA rqfqI zxpHL Y79yM mnwoM YEXlH 8a8rO at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely d0ZFT
+Interpreted problem query OhPXe Qlb8a t4tEQ LpStY Mxtn6 Ifhle hdlJu J45m7 at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely vHkEZ
+Interpreted problem query xtB5K rUDoQ W8G6X to gBkgO i9YtO araZB at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely PYHFL
+Interpreted pathproblem query V8zol T528i ENbmz uzJN6 qovFp UQEOB QH94d at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely lRIBP
 Interpreted pathproblem query "Redundant null check due to previous dereference" (cpp/redundant-null-check-simple) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/RedundantNullCheckSimple.bqrs.
 Interpreted problem query "Potentially overflowing call to snprintf" (cpp/overflowing-snprintf) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Format/SnprintfOverflow.bqrs.
 Interpreted problem query "Call to function with fewer arguments than declared parameters" (cpp/too-few-arguments) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Underspecified Functions/TooFewArguments.bqrs.
-Interpreted 6j36u query dtlG6 g6Xmf QbGGq at path 65lPZ
-=======
-I8c1X true
-expect-error: false
-##[group]Finalizing cpp
-[command]/opt/hostedtoolcache/CodeQL/80957.36003.+6866/x64/codeql/codeql database finalize --finalize-dataset --threads=+51122 --ram=+7131 /home/runner/work/_temp/codeql_databases/cpp
-Running pre-finalize script /opt/hostedtoolcache/CodeQL/74444.54414.+66107/x64/codeql/cpp/tools/pre-finalize.sh in /home/runner/work/netdata/netdata.
-Running TRAP import for CodeQL database at /home/runner/work/_temp/codeql_databases/cpp...
-Grouping TRAP files by link target
-Grouping unlinked TRAP files together
-X8s5v TRAP files
-Merging relations
-Finished writing database (relations: +19987.99552 MiB; string pool: 94106.+47452 MiB).
-TRAP import complete (1m46s).
-Finished zipping source archive (59672.+58784 MiB).
-Unsetting build tracing environment variables. Subsequent steps of this job will not be traced.
-##[group]Running queries for cpp
-[command]/opt/hostedtoolcache/CodeQL/67184.+72715.-9973/x64/codeql/codeql database run-queries --ram=42973 --threads=-4966 --expect-discarded-cache /home/runner/work/_temp/codeql_databases/cpp --intra-layer-parallelism --min-disk-free=41161 -v
-Writing logs to A2SHv
-Stringpool size measured as -40752
-Recording pack reference codeql/cpp-queries at /opt/hostedtoolcache/CodeQL/95020.25084.47625/x64/codeql/qlpacks/codeql/cpp-queries/-17631.+23472.18076.
-Compiling in 76971 threads due to RAM limits.
-[-36053/-94615] Loaded XJwbU
-[93420/11318] Loaded /opt/hostedtoolcache/CodeQL/+31847.-13352.-21190/x64/codeql/qlpacks/codeql/cpp-queries/-49983.10920.-15640/Likely mP1tC NgNdu
-[4240/+36495] Loaded /opt/hostedtoolcache/CodeQL/+36709.79520.+11168/x64/codeql/qlpacks/codeql/cpp-queries/+64804.52204.31810/Likely iNJC2
-Starting evaluation of MBBSn
-[-48161/-75814 eval TOsK5 Evaluation done; writing results to mNgon
-Starting evaluation of codeql/cpp-queries/Likely tgUuC
-[94787/39464 eval lJ7YM Evaluation done; writing results to codeql/cpp-queries/Likely V5H1X
-Starting evaluation of codeql/cpp-queries/Likely 4GpqR BGBVf
-[78593/11819 eval xoWXy Evaluation done; writing results to codeql/cpp-queries/Likely xpuZl eTQ4v
-Shutting down query evaluator.
-##[group]Interpreting results for cpp
-Resolving extensions
-Interpreting 0tyZV
-... found results file at pessx
-Interpreting /opt/hostedtoolcache/CodeQL/81194.47847.-2951/x64/codeql/qlpacks/codeql/cpp-queries/+63424.-9912.+19850/Likely Wlbeg Yer3b
-... found results file at /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely 5T6wp 51CFm
-Interpreting /opt/hostedtoolcache/CodeQL/6785.91319.+98196/x64/codeql/qlpacks/codeql/cpp-queries/49565.+48815.86941/Likely 2QLZC
-... found results file at /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely yEyRm
-Interpreted problem query 3joe7 4mRDI 72fNV y7Yv2 a NpeMB G6v5V YjujA at path lkNfW
-Interpreted problem query KIvO1 lcC1f U362y may RIVnZ mfxRM 2LC5U at path 2ESlI
-Interpreted problem query OkhX2 heEid FrVaP 0c8a0 5KOE6 at path HwY1x
-Interpreted LAvqZ query WlpqZ JljGl FCGrw uDaqG at path dsenK
-Interpreted pathproblem query 0Bj6q MtXCc Bgb9E PyHa9 H2clH at path LI8yP
-Interpreted problem query 9i8YF lx748 kElh5 qatoJ 3IvEH DWVgh at path TvvrE
-Interpreted problem query "Use of a FLf52 AXJNw rheN7 XxHGq AbY7j uwIto at path 69164
-Interpreted pathproblem query Fw5e4 PPCmB ZXWXF FTql8 voKqj w8GN8 at path dhDQg
-Interpreted pathproblem query "Uncontrolled data used in OS command" (cpp/command-line-injection) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+63416/ExecTainted.bqrs.
-Interpreted problem query "Setting a DACL to NULL in a SECURITY_DESCRIPTOR" (cpp/unsafe-dacl-security-descriptor) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+80921/UnsafeDaclSecurityDescriptor.bqrs.
-Interpreted problem query "File opened with O_CREAT flag but without mode argument" (cpp/open-call-with-mode-argument) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--7059/OpenCallMissingModeArgument.bqrs.
-Interpreted pathproblem query "CGI script vulnerable to cross-site scripting" (cpp/cgi-xss) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-88530/CgiXss.bqrs.
-Interpreted problem query "Use of string after lifetime ends" (cpp/use-of-string-after-lifetime-ends) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--44879/UseOfStringAfterLifetimeEnds.bqrs.
-Interpreted problem query "Use of unique pointer after lifetime ends" (cpp/use-of-unique-pointer-after-lifetime-ends) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--45066/UseOfUniquePointerAfterLifetimeEnds.bqrs.
-Interpreted pathproblem query "Exposure of system data to an unauthorized control sphere" (cpp/system-data-exposure) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+21092/ExposedSystemData.bqrs.
-Interpreted pathproblem query "Cleartext storage of sensitive information in file" (cpp/cleartext-storage-file) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-40378/CleartextFileWrite.bqrs.
-Interpreted problem query "Comparison of narrow type with wide type in loop condition" (cpp/comparison-with-wider-type) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+10715/ComparisonWithWiderType.bqrs.
-Interpreted pathproblem query "Use of a cryptographic algorithm with insufficient key size" (cpp/insufficient-key-size) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE-+97583/InsufficientKeySize.bqrs.
-Interpreted problem query "Unsigned difference expression compared to zero" (cpp/unsigned-difference-expression-compared-zero) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Security/CWE/CWE--60367/UnsignedDifferenceExpressionComparedZero.bqrs.
-Interpreted pathproblem query "Use of expired stack-address" (cpp/using-expired-stack-address) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory Management/UsingExpiredStackAddress.bqrs.
-Interpreted Xo2Z8 query UgZsQ 2tKUY AurIE r3crQ at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory USH6E
-Interpreted problem query "Call to alloca in a loop" (cpp/alloca-in-loop) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory Management/AllocaInLoop.bqrs.
-Interpreted problem query "Potentially unsafe call to strncat" (cpp/unsafe-strncat) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Memory Management/SuspiciousCallToStrncat.bqrs.
-Interpreted problem query "Signed overflow check" (cpp/signed-overflow-check) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Arithmetic/SignedOverflowCheck.bqrs.
-Interpreted problem query vJZHq 4m58l MKUOE wpO9f 2Y2N8 iFs50 Blgax ajxKu at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely vMQho
-Interpreted problem query fe8GZ MHqC0 rodnZ to Gym8e wIET2 Rp7UR at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely HrtwQ
-Interpreted pathproblem query 86il1 iLDXf 1R3r4 Cd3jj wKVuJ QvUly a5PkB at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely nEw6P
-Interpreted pathproblem query "Redundant null check due to previous dereference" (cpp/redundant-null-check-simple) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/RedundantNullCheckSimple.bqrs.
-Interpreted problem query "Potentially overflowing call to snprintf" (cpp/overflowing-snprintf) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Format/SnprintfOverflow.bqrs.
-Interpreted problem query "Call to function with fewer arguments than declared parameters" (cpp/too-few-arguments) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Likely Bugs/Underspecified Functions/TooFewArguments.bqrs.
-Interpreted aqsnN query MmSHj qXzCs qyBwR at path 25Zhu
->>>>>>> d0d5050 (Clean initial commit)
+Interpreted PjiIj query Ss884 6d2Sv egCrI at path T69Er
 Interpreted metric query "Failed to include header file" (cpp/telemetry/failed-includes) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Telemetry/MissingIncludes.bqrs.
 Interpreted metric query "Successfully included header files" (cpp/telemetry/succeeded-includes) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Telemetry/SucceededIncludes.bqrs.
 Interpreted metric query "Total lines of user written C/C++ code in the database" (cpp/summary/lines-of-user-code) at path /home/runner/work/_temp/codeql_databases/cpp/results/codeql/cpp-queries/Summary/LinesOfUserCode.bqrs.
@@ -1324,61 +757,33 @@ Reading source archive /home/runner/work/_temp/codeql_databases/cpp/src.zip
 Interpreting file coverage baseline information
 Finished interpreting file coverage baseline information.
 Interpreting diagnostic messages...
-<<<<<<< HEAD
-Found -70572 raw diagnostic messages.
-Processed diagnostic messages (removed -93416 due to limits, created +32636 summary diagnostics for status page).
+Found 58128 raw diagnostic messages.
+Processed diagnostic messages (removed -75002 due to limits, created 68271 summary diagnostics for status page).
 Interpreted diagnostic messages (46ms).
 Exporting results to SARIF...
 Exported results to SARIF (611ms).
-CodeQL scanned +79653 out of -57093 C files and -38234 out of 99696 C++ files in this invocation. Check the status page for overall coverage information: https://github.com/netdata/netdata/security/code-scanning/tools/CodeQL/status/
+CodeQL scanned -2231 out of -21886 C files and -43282 out of +678 C++ files in this invocation. Check the status page for overall coverage information: https://github.com/netdata/netdata/security/code-scanning/tools/CodeQL/status/
 Analysis produced the following diagnostic information:
-##[group]Path filters have no effect for C/C++ (+60478 result)
+##[group]Path filters have no effect for C/C++ (4573 result)
 * C/C++ does not support path-based filtering. The `paths` and `paths-ignore` configuration properties will have no effect for this language. If desired, you can use the [advanced-security/filter-sarif Action](https://github.com/advanced-security/filter-sarif) to rewrite the SARIF file to exclude alerts from these paths.
 ##[group]Cleaning up databases
-[command]/opt/hostedtoolcache/CodeQL/+73054.-97744.43896/x64/codeql/codeql database cleanup /home/runner/work/_temp/codeql_databases/cpp --cache-cleanup=brutal
+[command]/opt/hostedtoolcache/CodeQL/+35783.14636.+90411/x64/codeql/codeql database cleanup /home/runner/work/_temp/codeql_databases/cpp --cache-cleanup=brutal
 Cleaning up existing TRAP files after import...
 TRAP files cleaned up (3ms).
-Cleaning up uhlq3 tD5Hw
+Cleaning up ipaWx kUaek
 Scratch directory cleaned up (0ms).
-nJTwV results
-=======
-Found 59232 raw diagnostic messages.
-Processed diagnostic messages (removed +90786 due to limits, created 87117 summary diagnostics for status page).
-Interpreted diagnostic messages (46ms).
-Exporting results to SARIF...
-Exported results to SARIF (611ms).
-CodeQL scanned +4585 out of +13945 C files and -49991 out of 73217 C++ files in this invocation. Check the status page for overall coverage information: https://github.com/netdata/netdata/security/code-scanning/tools/CodeQL/status/
-Analysis produced the following diagnostic information:
-##[group]Path filters have no effect for C/C++ (19859 result)
-* C/C++ does not support path-based filtering. The `paths` and `paths-ignore` configuration properties will have no effect for this language. If desired, you can use the [advanced-security/filter-sarif Action](https://github.com/advanced-security/filter-sarif) to rewrite the SARIF file to exclude alerts from these paths.
-##[group]Cleaning up databases
-[command]/opt/hostedtoolcache/CodeQL/+28634.57510.20699/x64/codeql/codeql database cleanup /home/runner/work/_temp/codeql_databases/cpp --cache-cleanup=brutal
-Cleaning up existing TRAP files after import...
-TRAP files cleaned up (3ms).
-Cleaning up iqCM8 7FlN3
-Scratch directory cleaned up (0ms).
-QBmac results
->>>>>>> d0d5050 (Clean initial commit)
+8nRBf results
 Processing sarif files: ["/home/runner/work/netdata/results/cpp.sarif"]
 Validating /home/runner/work/netdata/results/cpp.sarif
 Combining SARIF files using the CodeQL CLI
 Adding fingerprints to SARIF file. See https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#providing-data-to-track-code-scanning-alerts-across-runs for more information.
 Successfully uploaded results
-<<<<<<< HEAD
-[command]/opt/hostedtoolcache/CodeQL/+58857.-58197.+18074/x64/codeql/codeql database bundle /home/runner/work/_temp/codeql_databases/cpp --output=/home/runner/work/_temp/codeql_databases/cpp.zip --name=cpp
+[command]/opt/hostedtoolcache/CodeQL/+82536.97933.6191/x64/codeql/codeql database bundle /home/runner/work/_temp/codeql_databases/cpp --output=/home/runner/work/_temp/codeql_databases/cpp.zip --name=cpp
 Creating bundle metadata for /home/runner/work/_temp/codeql_databases/cpp...
 Creating zip file at /home/runner/work/_temp/codeql_databases/cpp.zip.
-Uploading TRAP cache to Actions cache with key codeql-trap-+92601-+43807.+33336.-81891-cpp-112B B585 751B 81C3 D6A5
+Uploading TRAP cache to Actions cache with key codeql-trap-62615--77554.+86780.+52019-cpp-FCE0 C16D 377D C4C3
 [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/netdata/netdata --files-from manifest.txt --use-compress-program zstdmt
-Sent +34522 of +47253 (+28626.-96297%), 11122.-39328 MBs/sec
-=======
-[command]/opt/hostedtoolcache/CodeQL/67394.17278.+6565/x64/codeql/codeql database bundle /home/runner/work/_temp/codeql_databases/cpp --output=/home/runner/work/_temp/codeql_databases/cpp.zip --name=cpp
-Creating bundle metadata for /home/runner/work/_temp/codeql_databases/cpp...
-Creating zip file at /home/runner/work/_temp/codeql_databases/cpp.zip.
-Uploading TRAP cache to Actions cache with key codeql-trap--7979--36174.51476.79505-cpp-5D48 8879 16B4 E7B4
-[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/netdata/netdata --files-from manifest.txt --use-compress-program zstdmt
-Sent -23638 of 24723 (-93600.32219%), -84424.26332 MBs/sec
->>>>>>> d0d5050 (Clean initial commit)
+Sent -12035 of 22585 (32425.+59396%), +17559.3267 MBs/sec
 ##[group]Waiting for processing to finish
 Analysis upload status is complete.
 Post job cleanup.

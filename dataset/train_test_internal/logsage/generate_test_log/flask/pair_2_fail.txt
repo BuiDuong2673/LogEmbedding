@@ -1,41 +1,21 @@
 Requested labels: ubuntu-latest
-<<<<<<< HEAD
-Job defined at: pallets/flask/.github/workflows/pre-commit.yaml@refs/pull/-32108/merge
+Job defined at: pallets/flask/.github/workflows/pre-commit.yaml@refs/pull/+85487/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions +59472 (hosted)
-Current runner version: '72485.-60461.+9388'
+Job is about to start running on the hosted runner: GitHub Actions 2236 (hosted)
+Current runner version: '-70681.+15124.-3519'
 ##[group]Operating System
 Ubuntu
--56664.62604.-71749
+75519.4603.55309
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu--94675.+90375
-Version: 11683.45484.80073
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-2135.+89930/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+92598
+Image: ubuntu-3166.+67838
+Version: +39152.-4720.-87283
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-74695.24559/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+68054
 ##[group]Runner Image Provisioner
-36.177.62.170
-=======
-Job defined at: pallets/flask/.github/workflows/pre-commit.yaml@refs/pull/36900/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -136 (hosted)
-Current runner version: '-61136.28764.+91148'
-##[group]Operating System
-Ubuntu
-+10740.+47642.-62982
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-29362.+61370
-Version: 20613.11275.-30772
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-13492.+63303/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+40908
-##[group]Runner Image Provisioner
-145.184.232.230
->>>>>>> d0d5050 (Clean initial commit)
+233.8.87.191
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -44,21 +24,12 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-Download action repository PmDu8 (SHA:f613fb 3671919 56b96ccd81 b3e3b6d7d6 bce3cc4)
+Download action repository AVgD0 (SHA:14fff02 c30bb5b8 2130151b)
 ##[group]Download immutable action package 'actions/cache@v4'
-Digest: sha256:B836 ECBD 02AE 9A53 A741
-Source commit SHA: d281d821 038aed4 f4517756153 5f5447ebae7
+Digest: sha256:D02D 4532 48D8 9A39 2A60
+Source commit SHA: dcbb06458617 7c325a073 a89b05340
 Complete job name: main
-##[group]Run Ij0eh
-=======
-Download action repository 6Zlde (SHA:03ac37 f59d1c9c 61b3150609 f16ba8a4227 fa17dd1c34)
-##[group]Download immutable action package 'actions/cache@v4'
-Digest: sha256:9ace98a8dcf7 3a668ba11 4d89107165
-Source commit SHA: e772544f46 ea48af 0aad017026 1d74b82df
-Complete job name: main
-##[group]Run CsCIg
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run 4BHdx
 with:
 repository: pallets/flask
 token: ***
@@ -67,11 +38,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: 47461
-=======
-fetch-depth: -17657
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: 28029
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -81,13 +48,8 @@ Syncing repository: pallets/flask
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/flask/flask'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version 43077.-3866.+82823
-Temporarily overriding DMrhl before making global git config changes
-=======
-git version +27995.-24625.+23731
-Temporarily overriding H62Hb before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version +90718.-85389.-88485
+Temporarily overriding mIH8F before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/flask/flask
 Deleting the contents of '/home/runner/work/flask/flask'
@@ -104,37 +66,20 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/flask/flask/.git/
 [command]/usr/bin/git remote add origin https://github.com/pallets/flask
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local 1CMku wDg95
+[command]/usr/bin/git config --local WQRUJ RnZ7T
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp zQnau
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp jC6Py && git config --local --unset-all nvMui || :"
+[command]/usr/bin/git config --local --name-only --get-regexp uXrrj
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp KvlaT && git config --local --unset-all MoJ0p || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=41136 fetch --no-tags --prune --no-recurse-submodules --depth=90016 origin +E681 4C61 E1A0 AF0C:refs/remotes/pull/+91375/merge
+[command]/usr/bin/git -c protocol.version=+8699 fetch --no-tags --prune --no-recurse-submodules --depth=+42158 origin +b5734e54 e268246d7279 49e0a00 4105baf 18185a3:refs/remotes/pull/23178/merge
 From https://github.com/pallets/flask
-* [new ref] cd7425919e0 f4fa57b4a 309d88b4-> pull/+6495/merge
+* [new ref] f0125fb0824 a6cd0d 0d0da6cd9d87 ac9df8a90-> pull/+62255/merge
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-16668/merge
-Note: switching to 'refs/remotes/pull/+17746/merge'.
-=======
-[command]/usr/bin/git config --local R4Z3v Rpeoe
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp WuTDo
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 5kMeN && git config --local --unset-all dBhoo || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+47346 fetch --no-tags --prune --no-recurse-submodules --depth=-93210 origin +18E1 A239 9DEA 865C:refs/remotes/pull/-18791/merge
-From https://github.com/pallets/flask
-* [new ref] c7814e4 9b34e51f5b22 ef0128 a581b9d5cf15 aa7ca2d1753-> pull/+10026/merge
-##[group]Determining the checkout info
-[command]/usr/bin/git sparse-checkout disable
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+5976/merge
-Note: switching to 'refs/remotes/pull/50981/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/18628/merge
+Note: switching to 'refs/remotes/pull/-20985/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -145,202 +90,106 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at fccddb1 Merge 253C 96E8 D6BB BCD6 CEB8 CDA0 into 4cfd55fc2a06 7e1c95356d18 3f19258dc 6095b3 e44207a3d
-[command]/usr/bin/git log -58164 --format=%H
-B8F9 9683 FAC9 532B
-python-version: +84445.x
-=======
-HEAD is now at fccddb1 Merge 2772 8CAF 3CB3 2B89 into c029079b6fc3 4fedfc45ee ed200bf 8684d5641f
-[command]/usr/bin/git log +53438 --format=%H
-20B1 51F8 4C11 2C3D
-python-version: 78251.x
->>>>>>> d0d5050 (Clean initial commit)
+HEAD is now at fccddb1 Merge A762 2E25 C1E3 2910 54FE 4CD2 into 4F7A 9F2E 8059 D51D
+[command]/usr/bin/git log -15686 --format=%H
+8fc54d184 71bf01 bfa96133
+python-version: +4052.x
 check-latest: false
 update-environment: true
 allow-prereleases: false
 freethreaded: false
 ##[group]Installed versions
-<<<<<<< HEAD
-Successfully set up CPython (-48018.82017.43852)
+Successfully set up CPython (+31121.-63090.+8808)
 extra_args: --all-files
 env:
-pythonLocation: /opt/hostedtoolcache/Python/-61971.65298.+59367/x64
-PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-41255.7862.-43355/x64/lib/pkgconfig
-Python_ROOT_DIR: /opt/hostedtoolcache/Python/46001.24026.+29564/x64
-98GC9 /opt/hostedtoolcache/Python/42114.+40706.+77479/x64
-LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/33937.+4567.96677/x64/lib
-##[group]Run python -m pip 5mZvK jWeVh
-[66002;1mpython -m pip z5jFL 95Ac3
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {91200}
+pythonLocation: /opt/hostedtoolcache/Python/31354.-46798.+22323/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/57491.-2865.+38775/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-9963.55608.35005/x64
+EjJiY /opt/hostedtoolcache/Python/18301.+51706.90453/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/5283.+76764.+1371/x64/lib
+##[group]Run python -m pip joo6I 3axZA
+[-6690;1mpython -m pip GoyMq JBaM1
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+64410}
 Collecting pre-commit
-Downloading 4YY4e 3AzNb kB)
-Collecting 5KzX5 (from Tj3Jv
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -89079.-69181/47070.-78773 5ZIgv 50398.+16632 MB/s eta 1494:-3556:+31416
-Downloading virtualenv-81525.-57404.+22639-py3-none-any.whl (51774.+31107 MB)
+Downloading o0Q0D 9mheA kB)
+Collecting xZDkw (from OwOMb
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29498.53198/89037.-8202 0Ywlv -75559.+24171 MB/s eta -96659:78747:+96429
+Downloading virtualenv--35598.+21548.-28319-py3-none-any.whl (17842.-61147 MB)
 Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
-Successfully installed cfgv-83900.-39939.+49083 distlib--17429.+92115.+95566 filelock--13017.-83297.-40849 identify-+89855.85754.-93238 nodeenv-+45893.+72967.-87789 platformdirs-8138.+60390.-89737 pre-commit-+5384.3382.+99179 pyyaml--72287.-78924.65965 virtualenv--78553.+79287.+89969
-cfgv==48842.+60293.+53963
-distlib==43422.-76482.+29490
-filelock==38867.+6199.+2437
-identify==+16780.-46605.+40015
-nodeenv==+73649.14389.+96476
-platformdirs==+76532.-38515.+63497
-pre_commit==366.+62035.41387
-PyYAML==82489.-2165.-78220
-virtualenv==-17610.-54660.-41008
+Successfully installed cfgv-55248.+39293.63230 distlib-77658.+34665.-24459 filelock-+62394.+88946.-89315 identify-+42281.-29951.93393 nodeenv-+38312.-72051.11667 platformdirs-77230.-32857.89490 pre-commit-56827.53668.+28412 pyyaml--59647.+36447.10106 virtualenv-61991.+85610.+54525
+cfgv==-89976.-47470.21592
+distlib==64290.+91775.78082
+filelock==89691.-55469.+93716
+identify==+21427.+4236.+22326
+nodeenv==97474.+42293.-27777
+platformdirs==+50216.66575.22850
+pre_commit==14657.+80488.+78348
+PyYAML==+44760.-58430.+42951
+virtualenv==16033.70159.-14901
 path: ~/.cache/pre-commit
-key: pre-commit-92370|/opt/hostedtoolcache/Python/-76647.58788.-11524/x64|815fd2ff54f 776d1512de 9466ee4a55ec b914ccf5 e99e987f
-=======
-Successfully set up CPython (99217.+43841.-502)
-extra_args: --all-files
-env:
-pythonLocation: /opt/hostedtoolcache/Python/-92473.-28314.7532/x64
-PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/99638.+45364.-58764/x64/lib/pkgconfig
-Python_ROOT_DIR: /opt/hostedtoolcache/Python/35839.44272.-71469/x64
-NzFDJ /opt/hostedtoolcache/Python/+58032.90491.+88065/x64
-LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/47473.26770.44472/x64/lib
-##[group]Run python -m pip 24I7D 2JNjK
-[+64878;1mpython -m pip kPkKJ 3vTvB
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {48337}
-Collecting pre-commit
-Downloading XdoJc CsD8d kB)
-Collecting 3abUn (from p8yG1
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +70698.13135/-56883.+46418 ZuZ7r +21115.+23762 MB/s eta +48943:71695:-68609
-Downloading virtualenv-+28378.+77224.+81203-py3-none-any.whl (-73430.+82043 MB)
-Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
-Successfully installed cfgv--37931.66219.26079 distlib--47553.77951.-81409 filelock-+3904.+20366.89719 identify--53735.+51239.26644 nodeenv-+17668.+27937.+78823 platformdirs--41875.+28210.53277 pre-commit--41734.+49380.+69047 pyyaml-+29386.3116.+56210 virtualenv-+56663.45188.+12967
-cfgv==45707.-81922.55397
-distlib==-80863.83216.-2277
-filelock==23219.4009.+83137
-identify==14285.+61320.-18890
-nodeenv==+49014.29657.+74494
-platformdirs==-72367.+4685.45712
-pre_commit==89880.-44009.+22640
-PyYAML==-38259.-13391.82337
-virtualenv==-24373.+86303.+10807
-path: ~/.cache/pre-commit
-key: pre-commit-13464|/opt/hostedtoolcache/Python/-14665.-24461.-11937/x64|EDF3 7182 EC68 95E0
->>>>>>> d0d5050 (Clean initial commit)
+key: pre-commit--26314|/opt/hostedtoolcache/Python/+1302.+24964.13231/x64|54E6 FA88 AA5D 969C
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
 save-always: false
-<<<<<<< HEAD
-Cache hit for: pre-commit-7268|/opt/hostedtoolcache/Python/+89927.-88641.-98428/x64|EA82 90C5 60B9 C501 1BBE D096
-Received -20162 of +53523 (+35093.26156%), 23644.81030 MBs/sec
-Cache Size: ~-4479 MB (-67657 B)
-[command]/usr/bin/tar -xf /home/runner/work/_temp/dafeee69-a03b-+1890-9c55-8fde0113731f/cache.tzst -P -C /home/runner/work/flask/flask --use-compress-program unzstd
+Cache hit for: pre-commit--30558|/opt/hostedtoolcache/Python/+84127.+61590.-20091/x64|94cc15 7640cf f1419e2af33 2f0a59
+Received -84217 of 30181 (97420.-64319%), 55847.18620 MBs/sec
+Cache Size: ~-71497 MB (52639 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/dafeee69-a03b-72849-9c55-8fde0113731f/cache.tzst -P -C /home/runner/work/flask/flask --use-compress-program unzstd
 Cache restored successfully
-Cache restored from key: pre-commit--88814|/opt/hostedtoolcache/Python/+97853.87677.-81119/x64|9D69 F33D C9A7 C713
+Cache restored from key: pre-commit-+80553|/opt/hostedtoolcache/Python/+25333.37215.-99030/x64|bdc4ef6dde80 281426de99 e14ad5ab c8e1509f8ecc 0c15a047ab
 ##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
-[+87384;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
-=======
-Cache hit for: pre-commit-+23944|/opt/hostedtoolcache/Python/-6398.+71743.+30244/x64|CB46 D391 33A3 0417 8EB9
-Received -31102 of 97193 (+10481.+18829%), +33687.-28455 MBs/sec
-Cache Size: ~3693 MB (44588 B)
-[command]/usr/bin/tar -xf /home/runner/work/_temp/dafeee69-a03b--56331-9c55-8fde0113731f/cache.tzst -P -C /home/runner/work/flask/flask --use-compress-program unzstd
-Cache restored successfully
-Cache restored from key: pre-commit-+49621|/opt/hostedtoolcache/Python/-35724.-59351.+72993/x64|55FC 4F22 56D2 A68E
-##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
-[-76521;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
->>>>>>> d0d5050 (Clean initial commit)
+[+4779;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
 ruff.....................................................................[42mPassed[m
 ruff-format..............................................................[42mPassed[m
 check for merge conflicts................................................[42mPassed[m
 debug statements (python)................................................[42mPassed[m
-<<<<<<< HEAD
-fix utf-+18398 byte order marker..............................................[42mPassed[m
+fix utf--69797 byte order marker..............................................[42mPassed[m
 trim trailing whitespace.................................................[41mFailed[m
-[2m- hook id: YTB24
-[2m- exit code: +86151[m
+[2m- hook id: E4WeI
+[2m- exit code: -62813[m
 [2m- files were modified by this hook[m
-Fixing YvaF8
-=======
-fix utf--76815 byte order marker..............................................[42mPassed[m
-trim trailing whitespace.................................................[41mFailed[m
-[2m- hook id: W7hdp
-[2m- exit code: 5459[m
-[2m- files were modified by this hook[m
-Fixing LygzG
->>>>>>> d0d5050 (Clean initial commit)
+Fixing 6T2lR
 fix end of files.........................................................[41mFailed[m
 pre-commit hook(s) made changes.
 If you are seeing this message in CI, reproduce locally with: `pre-commit run --all-files`.
 To run `pre-commit` as part of git workflow, use `pre-commit install`.
 All changes made by hooks:
-<<<<<<< HEAD
-[1mdiff --git qATkR MrGeD
-[1mindex j8ph6 -60824[m
-[1m--- 8G57Q
-[1m+++ ofNIi
-[36m@@ 82169,-53003 85761,25741 @@[m
-<link VlbWY ZWcH3 AmlQz />[m
+[1mdiff --git K5VBH no57a
+[1mindex W0PKx 34784[m
+[1m--- PpBsc
+[1m+++ aOMIj
+[36m@@ +45912,-90936 424,-75079 @@[m
+<link DnmbB Xyaw5 nRAw1 />[m
 [31m- <link rel="prev" title="Define and Access the Database" href="database.html" /> [m
 [32m+[m[32m <link rel="prev" title="Define and Access the Database" href="database.html" />[m
 </head><body>[m
-<div 7JUIi role="navigation" G6rJh
+<div Fwzzi role="navigation" dKa4L
 <h3>Navigation</h3>[m
 accesskey="P">previous</a> |</li>[m
-<li class="nav-item nav-item-3443"><a M8WfT Documentation (40519.67619.x)</a> &#-51088;</li>[m
-<li class="nav-item nav-item-3076"><a href="index.html" accesskey="U">Tutorial</a> &#-58131;</li>[m
+<li class="nav-item nav-item-+92929"><a l3D8k Documentation (-10849.-19883.x)</a> &#+51411;</li>[m
+<li class="nav-item nav-item--8280"><a href="index.html" accesskey="U">Tutorial</a> &#79220;</li>[m
 [31m- <li class="nav-item nav-item-this"><a href="">Blueprints and Views</a></li> [m
-foZAa <li class="nav-item nav-item-this"><a 3X0vj 4bAYo j0i5P
-=======
-[1mdiff --git 0HFjO qBudF
-[1mindex oPHjd 9018[m
-[1m--- 57wU2
-[1m+++ NgwOJ
-[36m@@ +89620,-9565 72212,33760 @@[m
-<link K2EUY oOHJN uDAWd />[m
-[31m- <link rel="prev" title="Define and Access the Database" href="database.html" /> [m
-[32m+[m[32m <link rel="prev" title="Define and Access the Database" href="database.html" />[m
-</head><body>[m
-<div YEn2q role="navigation" vP4MX
-<h3>Navigation</h3>[m
-accesskey="P">previous</a> |</li>[m
-<li class="nav-item nav-item--95687"><a 8AyaD Documentation (+40057.+56350.x)</a> &#16268;</li>[m
-<li class="nav-item nav-item-+47745"><a href="index.html" accesskey="U">Tutorial</a> &#+14199;</li>[m
-[31m- <li class="nav-item nav-item-this"><a href="">Blueprints and Views</a></li> [m
-098We <li class="nav-item nav-item-this"><a zdHJk D066I 3pNSl
->>>>>>> d0d5050 (Clean initial commit)
+aUwdN <li class="nav-item nav-item-this"><a PEIzz qZ414 PbHu3
 </ul>[m
 [31m- </div> [m
 [32m+[m[32m </div>[m
 [m
-<<<<<<< HEAD
-<div 1y2qg
+<div Kbh0u
 <div class="body" role="main">[m
 [31m- [m
 [32m+[m
-<section UVSQT
+<section k9IHx
 <h1>Blueprints and Views<a class="headerlink" href="#blueprints-and-views" title="Link to this heading">¶</a></h1>[m
 <p>A view function is the code you write to respond to requests to your[m
-[36m@@ 77089,99405 +50478,5566 @@[m [mblueprint.</p>[m
+[36m@@ -29246,72493 6076,-90795 @@[m [mblueprint.</p>[m
 <span id="sidebar-top"></span>[m
-<p class="logo"><a GrgaN
-<img class="logo" QRfSK alt="Logo of Flask"/>[m
+<p class="logo"><a 3K5FW
+<img class="logo" l2AJR alt="Logo of Flask"/>[m
 </a></p>[m
 <h3>Contents</h3>[m
 <ul>[m
-Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> -36416.86015.-98162.[m
-=======
-<div Es3p2
-<div class="body" role="main">[m
-[31m- [m
-[32m+[m
-<section nZ9MK
-<h1>Blueprints and Views<a class="headerlink" href="#blueprints-and-views" title="Link to this heading">¶</a></h1>[m
-<p>A view function is the code you write to respond to requests to your[m
-[36m@@ -72913,-19529 +7312,-55324 @@[m [mblueprint.</p>[m
-<span id="sidebar-top"></span>[m
-<p class="logo"><a 3pLmp
-<img class="logo" FjJXG alt="Logo of Flask"/>[m
-</a></p>[m
-<h3>Contents</h3>[m
-<ul>[m
-Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 47199.73914.2086.[m
->>>>>>> d0d5050 (Clean initial commit)
+Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> +60727.+64356.91193.[m
 </div>[m
 </body>[m
 [31m-</html>[m
@@ -350,29 +199,17 @@ Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 47199.73914.2086.
 [31m- <link rel="prev" title="Signals" href="signals.html" /> [m
 [32m+[m[32m <link rel="prev" title="Signals" href="signals.html" />[m
 <a href="signals.html" title="Signals"[m
-<<<<<<< HEAD
-[32m+[m[32m <li class="nav-item nav-item-this"><a dPDND d33Lw
-78x5T dPZKR class="headerlink" ls0gZ title="Link to this heading">¶</a></h1>[m
+[32m+[m[32m <li class="nav-item nav-item-this"><a 8xD07 EEmlI
+jnotj Wy9nE class="headerlink" SGmlb title="Link to this heading">¶</a></h1>[m
 <p>This page introduces using the <a class="reference internal" href="api.html#flask.views.View" title="flask.views.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> and <a class="reference internal" href="api.html#flask.views.MethodView" title="flask.views.MethodView"><code class="xref py py-class docutils literal notranslate"><span class="pre">MethodView</span></code></a>[m
-[36m@@ 63960,+76819 81914,+48760 @@[m [mprovide get (list) and post (create) methods.</p>[m
-=======
-[32m+[m[32m <li class="nav-item nav-item-this"><a 2mSov FjJFy
-423UT CarHv class="headerlink" 6Mlpl title="Link to this heading">¶</a></h1>[m
-<p>This page introduces using the <a class="reference internal" href="api.html#flask.views.View" title="flask.views.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> and <a class="reference internal" href="api.html#flask.views.MethodView" title="flask.views.MethodView"><code class="xref py py-class docutils literal notranslate"><span class="pre">MethodView</span></code></a>[m
-[36m@@ 54746,-40787 -42675,+41609 @@[m [mprovide get (list) and post (create) methods.</p>[m
->>>>>>> d0d5050 (Clean initial commit)
+[36m@@ -74873,-23141 +72934,99920 @@[m [mprovide get (list) and post (create) methods.</p>[m
 <link rel="next" title="Deploying to Production" href="deploying/index.html" />[m
 [31m- <link rel="prev" title="Single-Page Applications" href="patterns/singlepageapplications.html" /> [m
 [32m+[m[32m <link rel="prev" title="Single-Page Applications" href="patterns/singlepageapplications.html" />[m
 <a href="patterns/singlepageapplications.html" title="Single-Page Applications"[m
 <p>Web applications face many types of potential security problems, and it can be[m
-<<<<<<< HEAD
-[36m@@ -2341,+73093 65939,+42984 @@[m [mabout copying code in general.</p>[m
-##[error]Process completed with exit code -85111.
-=======
-[36m@@ -62616,+91486 56274,+83980 @@[m [mabout copying code in general.</p>[m
-##[error]Process completed with exit code -99448.
->>>>>>> d0d5050 (Clean initial commit)
+[36m@@ 63086,-79154 -67985,+64715 @@[m [mabout copying code in general.</p>[m
+##[error]Process completed with exit code 21410.
 msg: [pre-commit.ci lite] apply automatic fixes
 skip: triggered by a bot
 Post job cleanup.

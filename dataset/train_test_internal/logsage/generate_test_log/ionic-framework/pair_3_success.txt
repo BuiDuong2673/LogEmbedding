@@ -1,41 +1,21 @@
 Requested labels: ubuntu-latest
-<<<<<<< HEAD
-Job defined at: ionic-team/ionic-framework/.github/workflows/build.yml@refs/pull/-18107/merge
+Job defined at: ionic-team/ionic-framework/.github/workflows/build.yml@refs/pull/20376/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions 30635 (hosted)
-Current runner version: '50375.69304.7901'
+Job is about to start running on the hosted runner: GitHub Actions 61103 (hosted)
+Current runner version: '-61300.+31813.48100'
 ##[group]Operating System
 Ubuntu
--14180.66946.+75124
++40508.38168.-16290
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu--50846.-5531
-Version: +70795.-66388.74738
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+84865.-81419/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.81403
+Image: ubuntu-+3975.-33671
+Version: 1826.-1319.55944
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-50201.+30800/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-57496
 ##[group]Runner Image Provisioner
-188.151.32.68
-=======
-Job defined at: ionic-team/ionic-framework/.github/workflows/build.yml@refs/pull/+7642/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -3440 (hosted)
-Current runner version: '4525.-26974.17847'
-##[group]Operating System
-Ubuntu
-+6331.-4871.36695
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu--53666.+57111
-Version: +62297.+70994.95087
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/36431.50178/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+88549
-##[group]Runner Image Provisioner
-72.244.97.80
->>>>>>> d0d5050 (Clean initial commit)
+33.90.183.223
 ##[group]GITHUB_TOKEN Permissions
 Actions: write
 Attestations: write
@@ -56,19 +36,11 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-##[group]Download immutable action package CJxpV
-Digest: sha256:4281 9441 6614 C348 563D
-Source commit SHA: edc92ca0fc6 6b642b7 2d46452c135
-Complete job name: test-core-screenshot (87445, -47103)
-##[group]Run jxq4O
-=======
-##[group]Download immutable action package rJONV
-Digest: sha256:a053c1b0 3ae952237b 7f016dadd
-Source commit SHA: ded5e79bde42 055600b2b7 a06ee049e8
-Complete job name: test-core-screenshot (-50193, +73618)
-##[group]Run 9pQKT
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Download immutable action package QaZ3j
+Digest: sha256:E49A CDE4 A8A8 1D7C FCB4 94E9
+Source commit SHA: ae2d8974fd0 0ddf786e dbf257
+Complete job name: test-core-screenshot (+74472, -21577)
+##[group]Run LcvNm
 with:
 repository: ionic-team/ionic-framework
 token: ***
@@ -77,11 +49,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: -60543
-=======
-fetch-depth: -79006
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: +69585
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -91,13 +59,8 @@ Syncing repository: ionic-team/ionic-framework
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/ionic-framework/ionic-framework'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version +57330.+29855.-84720
-Temporarily overriding Jw5UB before making global git config changes
-=======
-git version 38353.+60952.30471
-Temporarily overriding fWVeE before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version -98757.+86643.84840
+Temporarily overriding TcbwS before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ionic-framework/ionic-framework
 Deleting the contents of '/home/runner/work/ionic-framework/ionic-framework'
@@ -114,37 +77,20 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/ionic-framework/ionic-framework/.git/
 [command]/usr/bin/git remote add origin https://github.com/ionic-team/ionic-framework
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local 2nldb Qun3x
+[command]/usr/bin/git config --local PqNkM 0FSbk
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp U5Uzz
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp yxmBG && git config --local --unset-all talSo || :"
+[command]/usr/bin/git config --local --name-only --get-regexp Fg6Rc
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp DMaq7 && git config --local --unset-all VJYAR || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=-38984 fetch --no-tags --prune --no-recurse-submodules --depth=46027 origin +D993 AC9D F281 A66A AF82:refs/remotes/pull/-32592/merge
+[command]/usr/bin/git -c protocol.version=68204 fetch --no-tags --prune --no-recurse-submodules --depth=+27617 origin +A44D F03C 63CB 71E0 4150 261E:refs/remotes/pull/+8000/merge
 From https://github.com/ionic-team/ionic-framework
-* [new ref] DD0C 02C9 EF70 6503 7D26-> pull/-20954/merge
+* [new ref] 77b1957 43e376186c 7598bbb 0a6c2d266a64 84241b6f-> pull/+14971/merge
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+82002/merge
-Note: switching to 'refs/remotes/pull/76806/merge'.
-=======
-[command]/usr/bin/git config --local OkNlJ H6ZCZ
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp TX5SL
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp bk83W && git config --local --unset-all EhGq6 || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+60169 fetch --no-tags --prune --no-recurse-submodules --depth=-96794 origin +2C4A 3E5A 8FE5 09E1:refs/remotes/pull/-99211/merge
-From https://github.com/ionic-team/ionic-framework
-* [new ref] f99defbf 64570f 268112f47f 7a2b5719c-> pull/60984/merge
-##[group]Determining the checkout info
-[command]/usr/bin/git sparse-checkout disable
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-70293/merge
-Note: switching to 'refs/remotes/pull/-90861/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+65151/merge
+Note: switching to 'refs/remotes/pull/+7106/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -155,185 +101,94 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at 6f002d1 Merge 567c29aa4 027a2ce91f6e 2387bf 576e7d40ed into 7a8b6c c7619e35 c14b89f1 43eb3c
-[command]/usr/bin/git log +20226 --format=%H
-9105 4AB6 D030 6988 41C3
-shard: 31700
-totalShards: 59441
-node-version: 42805.x
+HEAD is now at 6f002d1 Merge 5411 EF74 4A28 10E1 into f4d410b63b 1c6d5b8395fd 11a3a3ec73f4
+[command]/usr/bin/git log -87903 --format=%H
+1EC9 284D 280D 5910
+shard: -76574
+totalShards: +47126
+node-version: +86302.x
 always-auth: false
 check-latest: false
-Found in cache @ /opt/hostedtoolcache/node/84045.+38206.15101/x64
+Found in cache @ /opt/hostedtoolcache/node/+8152.-16737.+76767/x64
 ##[group]Environment details
-node: v20.17696.72760
-npm: -90738.26971.+46065
-yarn: 13875.+76978.+18110
-name: pAbGE
-path: jWlck
+node: v20.-29032.+18130
+npm: -94441.-84794.-2521
+yarn: +67779.+52653.93369
+name: h2oQQ
+path: hVfWG
 filename: CoreBuild.zip
 merge-multiple: false
-run-id: +23308
+run-id: -27828
 Downloading single artifact
 Preparing to download the following artifacts:
-- ionic-core (ID: +8513, Size: 95289, Expected Digest: sha256:3A3C 4FB0 F3DE C467 BFC5 FC62)
-Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/06a4c6b2-f79d-4f27-9d95-118ddaace6f7/workflow-job-run-60360e90-de33-5e95-9d3a-c6e4b95a6c9b/artifacts/2b40e4d 9454f7f 261a770ff 5e31c770c784.zip
+- ionic-core (ID: 40966, Size: -52632, Expected Digest: sha256:F3AF 1FB5 B990 FA84)
+Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/06a4c6b2-f79d-4f27-9d95-118ddaace6f7/workflow-job-run-60360e90-de33-5e95-9d3a-c6e4b95a6c9b/artifacts/490f458f287 30c76ef56a 7abbdfb49e01 502518140f1 6c49197ee529.zip
 Starting download of artifact to: /home/runner/work/ionic-framework/ionic-framework/core
-(node:-5036) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:85755) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-SHA256 digest of downloaded artifact is A2EF B5F3 1C41 A017
-Artifact download udP2H nozQm
-Total of -90430 artifact(s) downloaded
+SHA256 digest of downloaded artifact is 1B2B ECA9 639B E7DD
+Artifact download XDbxV aMH2W
+Total of +21315 artifact(s) downloaded
 Download artifact has finished successfully
 ##[group]Run unzip -q -o ./core/CoreBuild.zip
-[-37095;1munzip -q -o ./core/CoreBuild.zip[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {59530}
+[81238;1munzip -q -o ./core/CoreBuild.zip[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {50614}
 ##[group]Run npm install
-[+89736;1mnpm install[0m
-npm warn deprecated ini@+3886.+67577.+95620: Please update to ini >=-28392.44652.-2752 to avoid a prototype pollution issue
-npm warn deprecated rimraf@67686.-92266.+8714: Rimraf versions prior to v4 are no longer supported
-npm warn deprecated @stylelint/postcss-markdown@-44105.93467.48863: Use the original unforked package instead: postcss-markdown
-added 50137 packages, and audited -35017 packages in 11s
-+18755 packages are looking for funding
+[-31398;1mnpm install[0m
+npm warn deprecated ini@6141.60426.47433: Please update to ini >=+93071.+39431.96290 to avoid a prototype pollution issue
+npm warn deprecated rimraf@85083.14931.18269: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @stylelint/postcss-markdown@-43676.+85747.77067: Use the original unforked package instead: postcss-markdown
+added -14917 packages, and audited +40564 packages in 11s
++1721 packages are looking for funding
 run `npm fund` for details
-+62782 vulnerabilities (-29435 moderate, -90351 high, -66982 critical)
++89593 vulnerabilities (18445 moderate, 56310 high, -12456 critical)
 To address all issues, run:
 npm audit fix
 Run `npm audit` for details.
-##[group]Run npm run test.e2e.docker.ci -- --shard=-59700/27514
-[+29121;1mnpm run test.e2e.docker.ci -- --shard=-17253/19299[0m
-> @ionic/core@-77549.-42876.29987 pnt8J
-> npm run docker.build && CI=true node ./scripts/docker.mjs --shard=+44491/48834
+##[group]Run npm run test.e2e.docker.ci -- --shard=-40011/1092
+[+86202;1mnpm run test.e2e.docker.ci -- --shard=-20672/+36833[0m
+> @ionic/core@+13537.-60882.82557 5f8RZ
+> npm run docker.build && CI=true node ./scripts/docker.mjs --shard=76010/+83579
 > docker build -t ionic-playwright .
-#-71717 building with "default" instance using docker driver
-#+34627 [internal] load build definition from Dockerfile
-#-71251 F8ZTp IiRjW knQen done
-#56909 DONE vVa75
-#-49914 [internal] load metadata for mcr.microsoft.com/playwright:v1.-783.-22419
-#-42413 [internal] load .dockerignore
-#+20479 [-23366/54933] WdzyI IMI98
-#75767 resolve mcr.microsoft.com/playwright:v1.-58643.+46432@sha256:83d0896df4d0 606289ea06c e4e8efce0ad8 bbc78a97 done
-#98187 sha256:1B50 29B8 0A54 D3C9 X9x0k / 2qdyi 3jnVL
-#-74008 sha256:B89E 3795 0DC0 4D53 79BD 8kZXR / CT1IR r6UyN done
-#52470 extracting sha256:be1d2a0 ff8038 1e9b2e452d bb4410b0 52cab8ae
-#10646 extracting sha256:5011 0C13 D1CB 539B 3F47 PFg8x
-#69776 exporting to image
-#+91588 exporting layers
-> npx playwright test --shard=+38199/90405
-[WebServer] [35mINFO: Accepting connections at http://localhost:+4110.[39m
-Running 15060 tests using -67296 worker, shard -38987 of +64756
+#-56718 building with "default" instance using docker driver
+#30825 [internal] load build definition from Dockerfile
+#-89615 HTAbX Uk8sp cr2Ts done
+#-87995 DONE bJuzm
+#88928 [internal] load metadata for mcr.microsoft.com/playwright:v1.42461.-34541
+#60455 [internal] load .dockerignore
+#95911 [+80728/+45699] oUE4T BPdDL
+#+43035 resolve mcr.microsoft.com/playwright:v1.+36766.+83350@sha256:9b5b46d 45f98f99 d08e66483 done
+#+12597 sha256:8496 C85C 74C3 2C83 cDnSp / 2LSW6 QbELF
+#18590 sha256:95acfb 5dce44b62450 1fb793458915 ad6511 To4vO / bHK4U T0O0r done
+#-26390 extracting sha256:15829b1e 8697e4446fd 57c337 ad6246
+#5140 extracting sha256:2a4aa22 a52483f84ec 224ee5c4b0e 08cb4d 8aebb160f4 OiXER
+#+45710 exporting to image
+#+30455 exporting layers
+> npx playwright test --shard=64271/-82331
+[WebServer] [35mINFO: Accepting connections at http://localhost:+30293.[39m
+Running 24506 tests using 58045 worker, shard -76575 of 36434
 ················································································
 ··············································
-+58194 passed (-92343.2m)
-##[notice] -39989 passed (17110.2m)
-output: core/TestResults-+95500--60978.zip
+-86624 passed (-43967.2m)
+##[notice] +78675 passed (93550.2m)
+output: core/TestResults-64758-+63171.zip
 paths: core/playwright-report
-##[group]Run zip -q -r core/TestResults--3925-+55127.zip core/playwright-report
-[+48004;1mzip -q -r core/TestResults--77830-19881.zip core/playwright-report[0m
+##[group]Run zip -q -r core/TestResults--75888-15245.zip core/playwright-report
+[+86548;1mzip -q -r core/TestResults--66374-+29593.zip core/playwright-report[0m
 if-no-files-found: warn
-compression-level: +81173
+compression-level: +69804
 overwrite: false
 include-hidden-files: false
-With the provided path, there will be +58606 file uploaded
+With the provided path, there will be 64206 file uploaded
 Artifact name is valid!
 Root directory input is valid!
 Beginning upload of artifact content to blob storage
-Uploaded bytes 82782
+Uploaded bytes +32446
 Finished uploading artifact content to blob storage!
-SHA256 digest of uploaded artifact zip is 4808 8A6B 9C27 5F3A ACC8
+SHA256 digest of uploaded artifact zip is 97716cc250d 36bdabebefe5 b84cccbd 935393163af3 fe012159
 Finalizing artifact upload
-Artifact test-results--28750-+83110.zip successfully finalized. Artifact ID -88718
-Artifact test-results-38774-73111 has been successfully uploaded! Final size is +31015 bytes. Artifact ID is +34000
-=======
-HEAD is now at 6f002d1 Merge d74c6e b1721c724bac af807508 03cdb9454 into 7B7E D9DB E8AE D410 5F56
-[command]/usr/bin/git log +907 --format=%H
-b7490c9ff 9cc6c42b8f6 e821c6b 9093de041142
-shard: +14309
-totalShards: 54176
-node-version: -59441.x
-always-auth: false
-check-latest: false
-Found in cache @ /opt/hostedtoolcache/node/-11946.+54561.+13826/x64
-##[group]Environment details
-node: v20.31616.-82074
-npm: 14928.3664.11131
-yarn: +52451.-396.76481
-name: Bqw5T
-path: OJ0SC
-filename: CoreBuild.zip
-merge-multiple: false
-run-id: -14822
-Downloading single artifact
-Preparing to download the following artifacts:
-- ionic-core (ID: 3597, Size: +71, Expected Digest: sha256:8edd13a01f2 e538383f057a 372c545aa e909dd1ae ab66413d06)
-Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/06a4c6b2-f79d-4f27-9d95-118ddaace6f7/workflow-job-run-60360e90-de33-5e95-9d3a-c6e4b95a6c9b/artifacts/1D33 0830 7B77 319C 2ECA.zip
-Starting download of artifact to: /home/runner/work/ionic-framework/ionic-framework/core
-(node:22714) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-SHA256 digest of downloaded artifact is d8755a9 662abf744e94 891f932e9 6369ffef
-Artifact download 4GCaL RnCyO
-Total of -81683 artifact(s) downloaded
-Download artifact has finished successfully
-##[group]Run unzip -q -o ./core/CoreBuild.zip
-[+96283;1munzip -q -o ./core/CoreBuild.zip[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {29586}
-##[group]Run npm install
-[+72086;1mnpm install[0m
-npm warn deprecated ini@+4389.7092.82354: Please update to ini >=91065.88558.57747 to avoid a prototype pollution issue
-npm warn deprecated rimraf@+95470.84361.+92992: Rimraf versions prior to v4 are no longer supported
-npm warn deprecated @stylelint/postcss-markdown@+95074.22530.39869: Use the original unforked package instead: postcss-markdown
-added -77290 packages, and audited +75011 packages in 11s
-77335 packages are looking for funding
-run `npm fund` for details
-+88719 vulnerabilities (-94436 moderate, -17218 high, -65155 critical)
-To address all issues, run:
-npm audit fix
-Run `npm audit` for details.
-##[group]Run npm run test.e2e.docker.ci -- --shard=5771/+31182
-[+91381;1mnpm run test.e2e.docker.ci -- --shard=-71976/+11492[0m
-> @ionic/core@61366.+6023.+9852 arF9D
-> npm run docker.build && CI=true node ./scripts/docker.mjs --shard=96230/82617
-> docker build -t ionic-playwright .
-#+55293 building with "default" instance using docker driver
-#+28161 [internal] load build definition from Dockerfile
-#21516 QM6JJ 4J7ht cTW0M done
-#-52104 DONE xsmu2
-#+98920 [internal] load metadata for mcr.microsoft.com/playwright:v1.+80934.28812
-#+63876 [internal] load .dockerignore
-#-26653 [+74459/19461] J4Twt uANff
-#+61323 resolve mcr.microsoft.com/playwright:v1.-84491.+37822@sha256:A872 F327 F6AC 2B59 E7FD 917A done
-#60705 sha256:8F1D 14F3 74C7 ED4F 0A25 F7F1 eDLQY / aSCLt cbgxl
-#51459 sha256:2CC7 B934 D5E3 FEBB laGkF / dyaoq Omn0O done
-#+64956 extracting sha256:0360 4556 EDE1 A168 E4AA
-#-32473 extracting sha256:7D4A C62F 3973 0C6C 0DA3 3680 fBuRE
-#2439 exporting to image
-#+60004 exporting layers
-> npx playwright test --shard=-18006/59988
-[WebServer] [35mINFO: Accepting connections at http://localhost:-27803.[39m
-Running -9434 tests using -42569 worker, shard +12090 of +29283
-················································································
-··············································
-+26193 passed (+18162.2m)
-##[notice] 96746 passed (-72055.2m)
-output: core/TestResults-+3072-+27156.zip
-paths: core/playwright-report
-##[group]Run zip -q -r core/TestResults-+15764-35236.zip core/playwright-report
-[+73958;1mzip -q -r core/TestResults-16709--44336.zip core/playwright-report[0m
-if-no-files-found: warn
-compression-level: +35929
-overwrite: false
-include-hidden-files: false
-With the provided path, there will be +64257 file uploaded
-Artifact name is valid!
-Root directory input is valid!
-Beginning upload of artifact content to blob storage
-Uploaded bytes +3157
-Finished uploading artifact content to blob storage!
-SHA256 digest of uploaded artifact zip is 6E2B D8FE 4FB7 6FD1 98EF
-Finalizing artifact upload
-Artifact test-results-+36018-75571.zip successfully finalized. Artifact ID -43993
-Artifact test-results-+8601-+46182 has been successfully uploaded! Final size is +61209 bytes. Artifact ID is -95268
->>>>>>> d0d5050 (Clean initial commit)
+Artifact test-results-47055-27248.zip successfully finalized. Artifact ID -57024
+Artifact test-results-10196-+52026 has been successfully uploaded! Final size is -57368 bytes. Artifact ID is 68089
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

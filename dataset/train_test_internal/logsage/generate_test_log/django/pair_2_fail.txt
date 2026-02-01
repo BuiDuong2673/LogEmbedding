@@ -1,41 +1,21 @@
 Requested labels: ubuntu-latest
-<<<<<<< HEAD
-Job defined at: django/django/.github/workflows/linters.yml@refs/pull/65808/merge
+Job defined at: django/django/.github/workflows/linters.yml@refs/pull/92839/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -90675 (hosted)
-Current runner version: '+91251.+9554.-24741'
+Job is about to start running on the hosted runner: GitHub Actions 35118 (hosted)
+Current runner version: '45317.+38141.-14756'
 ##[group]Operating System
 Ubuntu
-+4941.+29429.-36400
++5794.19534.60990
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-31028.+62825
-Version: -58761.-51331.+37376
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20291.+98840/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-97964
+Image: ubuntu-+34942.+785
+Version: -89706.+33033.-63403
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-50770.-98679/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+60728
 ##[group]Runner Image Provisioner
-79.241.143.20
-=======
-Job defined at: django/django/.github/workflows/linters.yml@refs/pull/80803/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions 15890 (hosted)
-Current runner version: '+13403.-55220.-39103'
-##[group]Operating System
-Ubuntu
--68004.-91712.84063
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu-42455.36638
-Version: +75987.+65123.12504
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/29711.-63399/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+51649
-##[group]Runner Image Provisioner
-62.37.13.95
->>>>>>> d0d5050 (Clean initial commit)
+51.95.245.191
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -44,19 +24,11 @@ Prepare workflow directory
 Prepare all required actions
 Getting action download info
 ##[group]Download immutable action package 'actions/checkout@v4'
-<<<<<<< HEAD
-Digest: sha256:80A7 DF8C 84AA 0AD3 B0F6 7808
-Source commit SHA: 2d07eab04a 404cda0543 c4ff64c16 f679e2b348 8d53be7816e
-Download action repository 'psf/black@stable' (SHA:8ca7524 aec3d83321 8e271cd7 4481b02d c9b4d251a4)
+Digest: sha256:74aa5c0b 00b181fdc 8c40d7 fcaf3f42
+Source commit SHA: C452 841C 292A 2218
+Download action repository 'psf/black@stable' (SHA:788a64379a03 ea15d7f 4f9d8a4)
 Complete job name: black
-##[group]Run G3wii
-=======
-Digest: sha256:c13307 531e87c 3e567d1eae 82e19e2d 59d42ad29277
-Source commit SHA: 44D5 45F4 068E 757B DC31
-Download action repository 'psf/black@stable' (SHA:EBC3 5F45 1026 9679)
-Complete job name: black
-##[group]Run LZvWF
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run qICZx
 with:
 repository: django/django
 token: ***
@@ -65,11 +37,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: +6508
-=======
-fetch-depth: 30670
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: +48583
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -79,13 +47,8 @@ Syncing repository: django/django
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/django/django'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version -7389.22220.+87365
-Temporarily overriding wTYJl before making global git config changes
-=======
-git version +47634.7934.+43932
-Temporarily overriding F9baG before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version -75982.-42301.-8572
+Temporarily overriding GS0fA before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
 Deleting the contents of '/home/runner/work/django/django'
@@ -102,37 +65,20 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/django/django/.git/
 [command]/usr/bin/git remote add origin https://github.com/django/django
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local Z3kff M9U9v
+[command]/usr/bin/git config --local WoROJ D7qW5
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp deeum
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp PiTVd && git config --local --unset-all 7p9kv || :"
+[command]/usr/bin/git config --local --name-only --get-regexp w6WoC
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp AMn6k && git config --local --unset-all Tsyg9 || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+3375 fetch --no-tags --prune --no-recurse-submodules --depth=-73542 origin +E429 0E81 AA1D 2845 2E93 B341:refs/remotes/pull/+57705/merge
+[command]/usr/bin/git -c protocol.version=-25024 fetch --no-tags --prune --no-recurse-submodules --depth=80219 origin +9998 8B1A 5116 0113 05F1 470B:refs/remotes/pull/+56800/merge
 From https://github.com/django/django
-* [new ref] 4c16bd2c 8db05920e4 b262af084fd 29c50dd7a 928854a-> pull/89748/merge
+* [new ref] 7660 61A5 AC84 2526 64E4 6E49-> pull/91701/merge
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+4675/merge
-Note: switching to 'refs/remotes/pull/+19850/merge'.
-=======
-[command]/usr/bin/git config --local ca9xa xAMji
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp SVS9Y
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 9fT4m && git config --local --unset-all POxDV || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=-231 fetch --no-tags --prune --no-recurse-submodules --depth=+3703 origin +da57f12705 e102da 7dd98e2bf207 e1b1c857:refs/remotes/pull/-66874/merge
-From https://github.com/django/django
-* [new ref] bfe25ce 463fbe044 ff786273ad 9c5970e1b6-> pull/+98863/merge
-##[group]Determining the checkout info
-[command]/usr/bin/git sparse-checkout disable
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-17578/merge
-Note: switching to 'refs/remotes/pull/-29298/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/75982/merge
+Note: switching to 'refs/remotes/pull/64628/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -143,56 +89,31 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at bbf3da1 Merge 161b2d 28fd222b6 e7de50647 3d95fe3 into 75B5 49AF 58C7 ADFC BD92
-[command]/usr/bin/git log +71652 --format=%H
-47a4199b21 0f9076ebd3 d95ca8cd0a6
-=======
-HEAD is now at bbf3da1 Merge d6217ea 2435e9 7bdee5bd 029e8a22eac into 33BE 59D7 923E 9033
-[command]/usr/bin/git log 60002 --format=%H
-CA5C B31F E4EE 8BF1 8E4A 58A2
->>>>>>> d0d5050 (Clean initial commit)
+HEAD is now at bbf3da1 Merge 5966 20BF 3C94 589C B5D2 39F0 into 1e13b8a27 dd7a70049dfd a9e3207 01c0e983fe7
+[command]/usr/bin/git log 85686 --format=%H
+9a88318460f c4666d05921 801eba7b
 options: --check --diff
 src: .
 jupyter: false
 use_pyproject: false
 summary: true
 ##[group]Run # Even when black fails, do not close the shell
-<<<<<<< HEAD
-[+16536;1m# Even when black fails, do not close the shell[0m
-[-6545;1mset +e[0m
-[62119;1m[0m
-[-63504;1mif [ tA3cw == ZF4PJ ]; then[0m
-[+95138;1m rXpp2
-[17021;1melse[0m
-[41776;1mfi[0m
-[+33167;1mout=$(${runner} $GITHUB_ACTION_PATH/action/main.py)[0m
-[+27835;1mexit_code=$?[0m
-[-54341;1m# Display the raw output in the step[0m
-[+2829;1mecho "${out}"[0m
-[99687;1m # Display the Markdown output in the job summary[0m
-[-78037;1m echo s7IEU >> $GITHUB_STEP_SUMMARY[0m
-[-30593;1m# Exit with the exit-code returned by Black[0m
-[+74609;1mexit ${exit_code}[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {15899}
-=======
-[+53443;1m# Even when black fails, do not close the shell[0m
-[+45061;1mset +e[0m
-[+33978;1m[0m
-[-22848;1mif [ ifvLQ == YFndK ]; then[0m
-[10169;1m JbW1J
-[75108;1melse[0m
-[+12128;1mfi[0m
-[+4469;1mout=$(${runner} $GITHUB_ACTION_PATH/action/main.py)[0m
-[66752;1mexit_code=$?[0m
-[+95017;1m# Display the raw output in the step[0m
-[+32011;1mecho "${out}"[0m
-[-80501;1m # Display the Markdown output in the job summary[0m
-[58493;1m echo 3vr3s >> $GITHUB_STEP_SUMMARY[0m
-[87350;1m# Exit with the exit-code returned by Black[0m
-[+75233;1mexit ${exit_code}[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+71908}
->>>>>>> d0d5050 (Clean initial commit)
+[+26547;1m# Even when black fails, do not close the shell[0m
+[+86906;1mset +e[0m
+[+37028;1m[0m
+[83706;1mif [ jotQH == nSF4m ]; then[0m
+[-59109;1m KUjIh
+[+93157;1melse[0m
+[46289;1mfi[0m
+[11598;1mout=$(${runner} $GITHUB_ACTION_PATH/action/main.py)[0m
+[-6110;1mexit_code=$?[0m
+[-39710;1m# Display the raw output in the step[0m
+[+39797;1mecho "${out}"[0m
+[+64332;1m # Display the Markdown output in the job summary[0m
+[3081;1m echo 9yFxs >> $GITHUB_STEP_SUMMARY[0m
+[3515;1m# Exit with the exit-code returned by Black[0m
+[32075;1mexit ${exit_code}[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+86963}
 env:
 INPUT_OPTIONS: --check --diff
 INPUT_SRC: .
@@ -200,33 +121,18 @@ INPUT_JUPYTER: false
 INPUT_BLACK_ARGS:
 INPUT_VERSION:
 INPUT_USE_PYPROJECT: false
-<<<<<<< HEAD
-pythonioencoding: utf-51041
-Installing black[colorama]==+7270.+99240.24508...
---- x55hp
-+++ bG4F9
-@@ -69831,4136 -4515,8573 @@
+pythonioencoding: utf-+90438
+Installing black[colorama]==+17015.-37342.+76567...
+--- Z6Nu0
++++ WWwSp
+@@ 9172,-98334 +67026,+9327 @@
 hashed_html = "<p><strong>No password set.</p>"
 self.assertHTMLEqual(render_password_as_hash(None), hashed_html)
 self.assertHTMLEqual(
-widget.render("name", 6MYJv {}),
+widget.render("name", gNmQg {}),
 f'<div>{hashed_html}<p><a role="button" class="button" href="../password/">'
-- WzYTr password</a></p></div>',
-+ WzaN6 password</a></p></div>",
-=======
-pythonioencoding: utf-+18108
-Installing black[colorama]==+30206.-63329.-54554...
---- D3dIY
-+++ uooKf
-@@ +35,+89392 +27634,71859 @@
-hashed_html = "<p><strong>No password set.</p>"
-self.assertHTMLEqual(render_password_as_hash(None), hashed_html)
-self.assertHTMLEqual(
-widget.render("name", adgVl {}),
-f'<div>{hashed_html}<p><a role="button" class="button" href="../password/">'
-- MlLnl password</a></p></div>',
-+ vcDev password</a></p></div>",
->>>>>>> d0d5050 (Clean initial commit)
+- Iqvn5 password</a></p></div>',
++ Lt4r6 password</a></p></div>",
 )
 @override_settings(
 PASSWORD_HASHERS=["django.contrib.auth.hashers.PBKDF2PasswordHasher"]
@@ -234,13 +140,8 @@ self.assertHTMLEqual(render_password_as_hash(value), hashed_html)
 def test_readonly_field_has_changed(self):
 field = ReadOnlyPasswordHashField()
 self.assertIs(field.disabled, True)
-<<<<<<< HEAD
-would reformat QxUnw
-hash_string[:6908],
-=======
-would reformat xJywF
-hash_string[:31695],
->>>>>>> d0d5050 (Clean initial commit)
+would reformat Nz9Gr
+hash_string[:-32910],
 ),
 html=True,
 self.assertNotContains(
@@ -252,13 +153,8 @@ data = self.get_user_data(u)
 data["password"] = "shouldnotchange"
 change_url = reverse("auth_test_admin:auth_user_change", args=(u.pk,))
 Oh no! 💥 💔 💥
-<<<<<<< HEAD
-+13245 files would be reformatted, -25884 files would be left unchanged.
-##[error]Process completed with exit code -40617.
-=======
-70013 files would be reformatted, 71131 files would be left unchanged.
-##[error]Process completed with exit code -34365.
->>>>>>> d0d5050 (Clean initial commit)
+-23232 files would be reformatted, +63736 files would be left unchanged.
+##[error]Process completed with exit code 49208.
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

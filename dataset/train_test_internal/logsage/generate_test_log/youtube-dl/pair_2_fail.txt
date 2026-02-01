@@ -1,42 +1,21 @@
-<<<<<<< HEAD
-Requested labels: ubuntu--34591.+18300
-Job defined at: ytdl-org/youtube-dl/.github/workflows/ci.yml@refs/pull/68709/merge
+Requested labels: ubuntu-68388.+99081
+Job defined at: ytdl-org/youtube-dl/.github/workflows/ci.yml@refs/pull/80527/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions +18375 (hosted)
-Current runner version: '28551.43993.+690'
+Job is about to start running on the hosted runner: GitHub Actions +10106 (hosted)
+Current runner version: '+15382.96050.+9458'
 ##[group]Operating System
 Ubuntu
-+46808.35864.26731
+51042.-55164.93167
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu--41455.-30337
-Version: -88614.+80455.-92736
-Included Software: https://github.com/actions/runner-images/blob/ubuntu20/-15803.63795/images/ubuntu/Ubuntu2004-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20250202.15964
+Image: ubuntu-15770.+75064
+Version: -30233.-96486.-96171
+Included Software: https://github.com/actions/runner-images/blob/ubuntu20/+26331.+47967/images/ubuntu/Ubuntu2004-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20250202.+40253
 ##[group]Runner Image Provisioner
-44.41.63.85
-=======
-Requested labels: ubuntu--43848.+33708
-Job defined at: ytdl-org/youtube-dl/.github/workflows/ci.yml@refs/pull/+88111/merge
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions +15670 (hosted)
-Current runner version: '-80644.44087.+42616'
-##[group]Operating System
-Ubuntu
-+92440.21073.49825
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu--17604.72106
-Version: 7007.-28439.23551
-Included Software: https://github.com/actions/runner-images/blob/ubuntu20/67165.64318/images/ubuntu/Ubuntu2004-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20250202.-89893
-##[group]Runner Image Provisioner
-48.78.216.66
->>>>>>> d0d5050 (Clean initial commit)
+79.28.167.8
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -45,57 +24,30 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-Download action repository xVBMM (SHA:8b5fd04 b8584ff 3c565804f0 5512a88 14f713b06)
-Complete job name: Run tests (ubuntu-+58055.-66694, -6975.-15276, cpython, core, sh)
+Download action repository UzwLh (SHA:4982 9992 7074 440F DC28 ABC9)
+Complete job name: Run tests (ubuntu--32896.-42473, 40575.+15871, cpython, core, sh)
 ##[group]Run # apt in runner, if needed, may not be up-to-date
-[-92454;1m# apt in runner, if needed, may not be up-to-date[0m
-[+21967;1msudo apt-get update[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-57184}
+[42258;1m# apt in runner, if needed, may not be up-to-date[0m
+[64476;1msudo apt-get update[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-91196}
 env:
-all-cpython-versions: +96811.+13801, 34638.+15297, +67255.30883, +38618.+74229, -55973.7194, 58401.3347, -43985.+51676, 62820.93942, 77548.54260, 33057.-46271, +6420.+75974, 32372.-12989, +88029.81965
-main-cpython-versions: 57770.63984, +83115.5874, +46514.-91076, -68238.39549, -33631.+65291
-pypy-versions: pypy--80650.24560, pypy-23447.-77543, pypy-+25030.-31789
+all-cpython-versions: 62666.-20018, +17222.25163, -19192.+3031, 68637.45637, -9842.73622, -30135.559, -13284.88931, +42817.+20273, +66203.-38593, 98149.-46757, 35434.80661, 1466.-26256, +941.+67234
+main-cpython-versions: 62322.-41346, 67791.-59525, +89756.+64313, +32803.+42204, 85848.39469
+pypy-versions: pypy-88623.-62249, pypy-92419.-44858, pypy-+63494.68305
 cpython-versions: main
 test-set: core
-next: -17815.+37543
+next: -33526.-76060
 PIP: python -m pip
 PIP_DISABLE_PIP_VERSION_CHECK: true
 PIP_NO_PYTHON_VERSION_WARNING: true
-Get:-98093 file:/etc/apt/apt-mirrors.txt Mirrorlist [-70125 B]
-Hit:+48064 QYG5M focal InRelease
-Get:+33969 FyYiI 4KOgL InRelease [-20212 peShP
-Get:+66324 TsKhn oYbDX DGeZs Packages T4Z54 kB]
-Get:-90398 http://azure.archive.ubuntu.com/ubuntu Cq9lE Translation-en [55011 kB]
-Fetched -25199.54261 MB in 3s (+94900 kB/s)
+Get:+27899 file:/etc/apt/apt-mirrors.txt Mirrorlist [65630 B]
+Hit:71198 17xWO focal InRelease
+Get:+6769 TGrHo kAeWT InRelease [-30211 y6vYY
+Get:+73320 BsWFi CXy36 wkpRs Packages Aqox9 kB]
+Get:+62839 http://azure.archive.ubuntu.com/ubuntu m3Eno Translation-en [12828 kB]
+Fetched 7526.+42575 MB in 3s (+62498 kB/s)
 Reading package lists...
-##[group]Run BOseP
-=======
-Download action repository wson1 (SHA:62d545b 543fe55 ed973b940b 6afc3c)
-Complete job name: Run tests (ubuntu-79369.-79286, -41972.11822, cpython, core, sh)
-##[group]Run # apt in runner, if needed, may not be up-to-date
-[+99813;1m# apt in runner, if needed, may not be up-to-date[0m
-[20406;1msudo apt-get update[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-7657}
-env:
-all-cpython-versions: +13182.-52897, +74118.+23456, +6420.+55401, 61823.85579, -97931.-41832, 48355.98514, -90534.20424, 64328.37990, 51672.+98658, 4555.+15861, +86573.+33525, -61188.6933, -50544.+55430
-main-cpython-versions: +54950.-97833, -24606.+51593, 46127.+96879, +57556.+25177, +4181.-76514
-pypy-versions: pypy--47986.-2036, pypy-+98259.+60665, pypy--55271.-91132
-cpython-versions: main
-test-set: core
-next: +72311.-77389
-PIP: python -m pip
-PIP_DISABLE_PIP_VERSION_CHECK: true
-PIP_NO_PYTHON_VERSION_WARNING: true
-Get:+33159 file:/etc/apt/apt-mirrors.txt Mirrorlist [+50962 B]
-Hit:+39749 UyCQY focal InRelease
-Get:+4831 1AaDp Dtlcr InRelease [-43694 uQcUv
-Get:+28001 50Ffj 04lYx bX56s Packages iUjhd kB]
-Get:-79814 http://azure.archive.ubuntu.com/ubuntu 71d3l Translation-en [+54165 kB]
-Fetched 36995.-83854 MB in 3s (-49594 kB/s)
-Reading package lists...
-##[group]Run agT08
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run XGrRM
 with:
 repository: ytdl-org/youtube-dl
 token: ***
@@ -103,11 +55,7 @@ ssh-strict: true
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: -3020
-=======
-fetch-depth: +8711
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: +43245
 fetch-tags: false
 lfs: false
 submodules: false
@@ -116,13 +64,8 @@ Syncing repository: ytdl-org/youtube-dl
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/youtube-dl/youtube-dl'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version -10368.+8814.+88328
-Temporarily overriding R3Kkd before making global git config changes
-=======
-git version +29018.-6194.+42699
-Temporarily overriding DomLR before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version -9188.+29353.+42406
+Temporarily overriding QNM1A before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/youtube-dl/youtube-dl
 Deleting the contents of '/home/runner/work/youtube-dl/youtube-dl'
@@ -139,49 +82,26 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/youtube-dl/youtube-dl/.git/
 [command]/usr/bin/git remote add origin https://github.com/ytdl-org/youtube-dl
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local NQyoB F4RQh
+[command]/usr/bin/git config --local 2hq5l Zc9d5
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp 0D1m5
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp sN2Yf && git config --local --unset-all HFbtj || :"
+[command]/usr/bin/git config --local --name-only --get-regexp L5ye1
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 1cYQ2 && git config --local --unset-all 5rRoa || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=58942 fetch --no-tags --prune --progress --no-recurse-submodules --depth=86917 origin +6cf3b8 188c67 decc0682a9b cc1a9010f84:refs/remotes/pull/29926/merge
-remote: BbiBq objects: u5LVT BcuLX
-remote: WruEJ objects: -2630% (-51309/+43993), done.
-Receiving objects: 36281% (2413/-61689)
-remote: Total 3071 (delta +5382), reused -50305 (delta 67866), pack-reused 209 (from -68641)
-Receiving objects: 84971% (57669/+44641), +66134.23530 MiB | -65315.-30265 MiB/s, done.
-Resolving deltas: -84890% (82947/84801)
-Resolving deltas: +17082% (+24192/52509), done.
+[command]/usr/bin/git -c protocol.version=-18955 fetch --no-tags --prune --progress --no-recurse-submodules --depth=-57010 origin +7ac34c7d61a b36516cf d29524:refs/remotes/pull/+25632/merge
+remote: 9Sevm objects: w2SMc Iizue
+remote: kEnWt objects: -70143% (+59260/15935), done.
+Receiving objects: +16170% (-69390/10777)
+remote: Total +11606 (delta 2441), reused +34369 (delta -32683), pack-reused 39612 (from -62511)
+Receiving objects: +44616% (-79212/40835), 73065.+63036 MiB | 68218.-57579 MiB/s, done.
+Resolving deltas: 34395% (+18889/35)
+Resolving deltas: 24036% (+37522/46097), done.
 From https://github.com/ytdl-org/youtube-dl
-* [new ref] 2FDC 804B 873F 4C53 453D-> pull/+57385/merge
+* [new ref] 18e6eb c84fa1af40aa cee94a67 a42bcf84f4-> pull/-87635/merge
 ##[group]Determining the checkout info
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-16199/merge
-Note: switching to 'refs/remotes/pull/-74036/merge'.
-=======
-[command]/usr/bin/git config --local Zubwk GRD13
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp krHE0
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp ljKRb && git config --local --unset-all k3zW1 || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=-84995 fetch --no-tags --prune --progress --no-recurse-submodules --depth=-80404 origin +1a4d7999cc 1868ba924 a3aee4b34a9 f6c3e80d 8bf807a0:refs/remotes/pull/82443/merge
-remote: 8zRYk objects: rOw4i EnPM9
-remote: 7wS1K objects: +83769% (+90754/-91503), done.
-Receiving objects: -93588% (+50/6806)
-remote: Total 16965 (delta +8228), reused 72006 (delta -15698), pack-reused -28317 (from 8070)
-Receiving objects: +42781% (+15702/-38993), 2156.+28562 MiB | 24499.+96915 MiB/s, done.
-Resolving deltas: +13470% (+947/+93515)
-Resolving deltas: -77698% (+13906/-9665), done.
-From https://github.com/ytdl-org/youtube-dl
-* [new ref] e9ab91a 45bf17 f047eb7ff 82f00b 95bce9-> pull/+75158/merge
-##[group]Determining the checkout info
-##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-15627/merge
-Note: switching to 'refs/remotes/pull/+57733/merge'.
->>>>>>> d0d5050 (Clean initial commit)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/41306/merge
+Note: switching to 'refs/remotes/pull/-59495/merge'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -192,201 +112,104 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
-<<<<<<< HEAD
-HEAD is now at 5bfc995 Merge F520 B40D 1C53 E394 8F63 8C7E into 29987351 78d883ec283b 9e350c 80e3e172d4bd
-[command]/usr/bin/git log 32139 --format='%H'
-'caf3655ceb3 ec86fe897 69e09347 7faeab5 288a7d1'
-python-version: 4Zvuy
-=======
-HEAD is now at 5bfc995 Merge b6900060fd1 7c43739ff 9cc26bef0 8b6de6 7e68d0c21 into 0059 F0B5 E1AC 7550
-[command]/usr/bin/git log +98709 --format='%H'
-'db271f01d2 0a5fc76797 785aac21'
-python-version: m0vw7
->>>>>>> d0d5050 (Clean initial commit)
+HEAD is now at 5bfc995 Merge E86E 06BD 94F7 F67F CF56 into E6BB A90A 74F4 2C45 9863
+[command]/usr/bin/git log +24676 --format='%H'
+'5340 991F 0F31 CE90'
+python-version: kBtpV
 cache-build: true
 allow-build: info
 check-latest: false
 update-environment: true
 allow-prereleases: false
 PIP_TRUSTED_HOST: pypi.python.org pypi.org files.pythonhosted.org
-<<<<<<< HEAD
-CPython version -11408.+61843.x is not supported by actions/setup-python.
-CPython version +53135.+41055.x will be built from source.
-Version range -50888.2579.x resolved to -92123.52839.+51899. Source code uri: https://api.github.com/repos/python/cpython/zipball/refs/tags/v3.+37740.-54867
+CPython version -54285.-34007.x is not supported by actions/setup-python.
+CPython version 41208.+73945.x will be built from source.
+Version range +92739.-891.x resolved to 40560.-96169.-61765. Source code uri: https://api.github.com/repos/python/cpython/zipball/refs/tags/v3.-38397.74327
 ##[group]Trying to use cached built version
-Restoring cached version with key CPython3.+81776.6x64nix...
-Received +25591 of -63832 (86201.18215%), -88328.-5807 MBs/sec
-Cache Size: ~-13311 MB (+52361 B)
+Restoring cached version with key CPython3.10249.6x64nix...
+Received -80857 of +48317 (+32041.+88179%), -45329.-82889 MBs/sec
+Cache Size: ~22157 MB (+6343 B)
 [command]/usr/bin/tar -xf /home/runner/work/_temp/cb0a6109-f6eb-415b-85f0-d85163a9db99/cache.tzst -P -C /home/runner/work/youtube-dl/youtube-dl --use-compress-program unzstd
 Cache restored successfully
-CPython -92846.+12356.89397 restored from cache.
+CPython 94467.+1879.-61468 restored from cache.
 Copying built folder into tool cache.
-CPython -73279.17878.81183 for arch x64 successfully installed.
+CPython -44251.-12994.+22920 for arch x64 successfully installed.
 ##[group]Performing post-install operations
-Installing libssl and libssl-dev version +73245.+32383.32219...
-[command]/usr/bin/sudo dpkg -i --force-confold Ccir6
-Selecting previously unselected package libssl1.+36523.+79994:amd64.
-(Reading database ... +50635 files and directories currently installed.)
-Preparing to unpack mLB2C ...
-Unpacking libssl1.66820.35366:amd64 (22763.+79864.2g-1ubuntu4.+65770) ...
-Setting up o7Gzl (-99366.+70294.2g-1ubuntu4.+7500) ...
-Processing triggers for libc-bin (-70347.-54252-0ubuntu9.59673) ...
-dpkg: warning: downgrading libssl-dev:amd64 from 82801.-42695.1f-1ubuntu2.+44693 to 17296.-64417.2g-1ubuntu4.+13704
-Unpacking libssl-dev:amd64 (-9722.-8653.2g-1ubuntu4.-32542) over (-61548.+30715.1f-1ubuntu2.-65006) ...
+Installing libssl and libssl-dev version -43463.-28854.+56894...
+[command]/usr/bin/sudo dpkg -i --force-confold G41Jc
+Selecting previously unselected package libssl1.97550.+78089:amd64.
+(Reading database ... 58018 files and directories currently installed.)
+Preparing to unpack wIVOx ...
+Unpacking libssl1.+23059.54568:amd64 (+31031.35487.2g-1ubuntu4.92406) ...
+Setting up NtPPL (+542.87106.2g-1ubuntu4.-59887) ...
+Processing triggers for libc-bin (+35543.-21556-0ubuntu9.+82964) ...
+dpkg: warning: downgrading libssl-dev:amd64 from -48975.42367.1f-1ubuntu2.-42942 to -17724.+14384.2g-1ubuntu4.-81941
+Unpacking libssl-dev:amd64 (-60757.+28860.2g-1ubuntu4.-41325) over (+30077.5247.1f-1ubuntu2.+86759) ...
 Cleanup .deb installers...
 Creating python symlinks...
-Creating symlink from /opt/hostedtoolcache/Python/63950.17778.+98138/x64/bin/python3.75796 to 00rY6
-Adding executable bit to zbFbO
-[command]/usr/bin/chmod +x ebDcJ
-=======
-CPython version +97319.-616.x is not supported by actions/setup-python.
-CPython version 38400.92246.x will be built from source.
-Version range 9553.+91601.x resolved to -55471.81339.2097. Source code uri: https://api.github.com/repos/python/cpython/zipball/refs/tags/v3.88302.-92509
-##[group]Trying to use cached built version
-Restoring cached version with key CPython3.-92586.6x64nix...
-Received -63176 of 71314 (+64628.95067%), +70056.-52240 MBs/sec
-Cache Size: ~35770 MB (16918 B)
-[command]/usr/bin/tar -xf /home/runner/work/_temp/cb0a6109-f6eb-415b-85f0-d85163a9db99/cache.tzst -P -C /home/runner/work/youtube-dl/youtube-dl --use-compress-program unzstd
-Cache restored successfully
-CPython +66564.18450.-34416 restored from cache.
-Copying built folder into tool cache.
-CPython +52994.+96974.24279 for arch x64 successfully installed.
-##[group]Performing post-install operations
-Installing libssl and libssl-dev version +36192.55328.-97967...
-[command]/usr/bin/sudo dpkg -i --force-confold uYP5C
-Selecting previously unselected package libssl1.+86435.-65480:amd64.
-(Reading database ... +50437 files and directories currently installed.)
-Preparing to unpack 944im ...
-Unpacking libssl1.-83101.+25852:amd64 (+9313.6381.2g-1ubuntu4.39203) ...
-Setting up kTGIR (+31727.+27376.2g-1ubuntu4.2302) ...
-Processing triggers for libc-bin (-36978.88136-0ubuntu9.99828) ...
-dpkg: warning: downgrading libssl-dev:amd64 from 36742.-64803.1f-1ubuntu2.+36568 to +79569.93541.2g-1ubuntu4.-64477
-Unpacking libssl-dev:amd64 (-80627.+18765.2g-1ubuntu4.-44423) over (33980.32231.1f-1ubuntu2.+37642) ...
-Cleanup .deb installers...
-Creating python symlinks...
-Creating symlink from /opt/hostedtoolcache/Python/49358.-67073.+11839/x64/bin/python3.-91850 to LTkcC
-Adding executable bit to cQbfB
-[command]/usr/bin/chmod +x oN6Yl
->>>>>>> d0d5050 (Clean initial commit)
+Creating symlink from /opt/hostedtoolcache/Python/-24983.+60670.28760/x64/bin/python3.+9245 to yuQzK
+Adding executable bit to l80jD
+[command]/usr/bin/chmod +x VPjgd
 Removing temporary build directories...
 Build directories successfully removed.
 architecture: x64
 ##[group]Installed versions
-<<<<<<< HEAD
-Successfully set up CPython (+21766.29347.-68391)
-[+11140;1m/home/runner/work/_actions/ytdl-org/setup-python/v1/setup_pip.ps1[0m
-shell: /usr/bin/pwsh -command ". '{-84982}'"
-pythonLocation: /opt/hostedtoolcache/Python/87088.-81080.+27220/x64
-PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+20438.-81578.-17323/x64/lib/pkgconfig
-Python_ROOT_DIR: /opt/hostedtoolcache/Python/-89237.-43486.+33141/x64
-S2G73 /opt/hostedtoolcache/Python/+17973.-2138.+49129/x64
-LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/97981.92741.-972/x64/lib
-PYTHON_VERSION: +43504.73750.-62513
-SETUP_PYTHON_PATH: /opt/hostedtoolcache/Python/-14415.-45722.+80553/x64/bin/python
-Setting up pip for python 42046.+20481.-42728 in path /opt/hostedtoolcache/Python/52898.26297.+57501/x64/bin/python
-Pip is not available for version +31942.+83473.-25971
+Successfully set up CPython (58294.-95714.+62491)
+[67181;1m/home/runner/work/_actions/ytdl-org/setup-python/v1/setup_pip.ps1[0m
+shell: /usr/bin/pwsh -command ". '{97914}'"
+pythonLocation: /opt/hostedtoolcache/Python/45021.-85361.3955/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/33109.82783.-29410/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-32478.+85934.+46092/x64
+QT7hJ /opt/hostedtoolcache/Python/+20266.+17938.81667/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-32025.-10433.-72504/x64/lib
+PYTHON_VERSION: +5406.88479.5888
+SETUP_PYTHON_PATH: /opt/hostedtoolcache/Python/-92939.-57594.-70985/x64/bin/python
+Setting up pip for python 49592.-920.-51203 in path /opt/hostedtoolcache/Python/-48833.-82718.-82715/x64/bin/python
+Pip is not available for version 35811.+41836.44844
 Proceed with manual installation at own risk
 ##[group]Run echo "PYTHONHOME=${pythonLocation}" >> "$GITHUB_ENV"
-[73678;1mecho NqlJz >> "$GITHUB_ENV"[0m
-[+1594;1mexport expected="/opt/hostedtoolcache/Python/34386.-79529.+84689/x64/bin/python"[0m
-[+50641;1mdirname() { printf '%s\n' \[0m
-[87237;1m T486u hQfo7 d8xxA \[0m
-[+51640;1m tMvuR \[0m
-[+89343;1m | ${expected} - "$96287"; }[0m
-[56889;1mexpd="$(dirname "$expected")"[0m
-[-44557;1mexport python="$(command -v python)"[0m
-[+68026;1m[ "$expd" = "$(dirname "$python")" ] || echo "PATH=$expd:${PATH}" >> "$GITHUB_ENV"[0m
-[33447;1m[ -x "$python" ] || printf '%s\n' \[0m
-[-60598;1m yMx0t SLvDJ \[0m
-[65701;1m 'if python and (os.path.dirname(python) == exp[61987]):' \[0m
-[+72293;1m 'exps[-32165] = "python" + os.path.splitext(exps[54954])[-88001]' \[0m
-[65120;1m | ${expected} -[0m
-[89960;1mprintf '%s\n' \[0m
-['', '/opt/hostedtoolcache/Python/+42891.-79831.+8037/x64/lib/python32.zip', '/opt/hostedtoolcache/Python/+17380.+29464.+36350/x64/lib/python3.-85922', '/opt/hostedtoolcache/Python/46353.+43576.39010/x64/lib/python3.-56896/plat-linux2', '/opt/hostedtoolcache/Python/+15939.34081.-73172/x64/lib/python3.13525/lib-dynload', '/opt/hostedtoolcache/Python/-23007.-36612.-21339/x64/lib/python3.+8801/site-packages']
-##[group]Run 8Wj6m 0615P iGcjt tsCFv || { \
-MOqEb EJFqG qtGOo 1Q0tR || { \[0m
-[-44852;1m curl -L -O YAw4t \[0m
-[+86998;1m python get-pip.py --no-setuptools --no-wheel pip-+46020.+17994.-95783-py2.py3-none-any.whl; }[0m
-/opt/hostedtoolcache/Python/-26739.-6817.-9297/x64/bin/python: No module named pip
+[-77024;1mecho 72oHu >> "$GITHUB_ENV"[0m
+[89370;1mexport expected="/opt/hostedtoolcache/Python/-43630.98752.+55400/x64/bin/python"[0m
+[2923;1mdirname() { printf '%s\n' \[0m
+[+39406;1m lbFQ3 uAtKp 529Sj \[0m
+[-40789;1m NXsuG \[0m
+[+66237;1m | ${expected} - "$-54927"; }[0m
+[-32499;1mexpd="$(dirname "$expected")"[0m
+[28585;1mexport python="$(command -v python)"[0m
+[-57000;1m[ "$expd" = "$(dirname "$python")" ] || echo "PATH=$expd:${PATH}" >> "$GITHUB_ENV"[0m
+[87554;1m[ -x "$python" ] || printf '%s\n' \[0m
+[84924;1m ncYD3 9PrHa \[0m
+[63016;1m 'if python and (os.path.dirname(python) == exp[29647]):' \[0m
+[-58887;1m 'exps[33316] = "python" + os.path.splitext(exps[-45025])[-1482]' \[0m
+[-51050;1m | ${expected} -[0m
+[+78439;1mprintf '%s\n' \[0m
+['', '/opt/hostedtoolcache/Python/38263.98468.95007/x64/lib/python32.zip', '/opt/hostedtoolcache/Python/-91689.10534.-88251/x64/lib/python3.91682', '/opt/hostedtoolcache/Python/-28654.-44794.87423/x64/lib/python3.+417/plat-linux2', '/opt/hostedtoolcache/Python/+73116.+49733.4334/x64/lib/python3.-52461/lib-dynload', '/opt/hostedtoolcache/Python/-71470.77615.8664/x64/lib/python3.91904/site-packages']
+##[group]Run bIxGY 4yNze ROSpd PsSaf || { \
+7urL3 eL7YU j1RA3 yChB3 || { \[0m
+[85092;1m curl -L -O Bwbl3 \[0m
+[-13974;1m python get-pip.py --no-setuptools --no-wheel pip-58907.-13235.-72869-py2.py3-none-any.whl; }[0m
+/opt/hostedtoolcache/Python/-73211.10095.-18537/x64/bin/python: No module named pip
 % Total % Received % Xferd Average Speed Time Time Time Current
 Dload Upload Total Spent Left Speed
-+36375 7mVLq 23340 kS0gu +62664 32102 zirwW 85780 --:--:-- --:--:-- --:--:-- 1HOkg
-Processing spgWk
-Installing collected packages: c5Poy
-Successfully installed HYh5I
-[-57253;1m $PIP install nose-22776.-2609.-88847-py3-none-any.whl; }[0m
+92730 1yxr5 31436 J6W5l -34840 -86124 yfnZz -76848 --:--:-- --:--:-- --:--:-- jwvx1
+Processing 5DDCe
+Installing collected packages: vdHuN
+Successfully installed vzjBu
+[+29021;1m $PIP install nose-47026.+95697.+37701-py3-none-any.whl; }[0m
 ##[group]Run # set PYTHON_VER
-[-29015;1m# set PYTHON_VER[0m
-[-52092;1mPYTHON_VER=59382.+95846[0m
-[+85968;1m[ "${PYTHON_VER#*-}" != "$PYTHON_VER" ] || PYTHON_VER="cpython-${PYTHON_VER}"[0m
-[-28916;1m# define a test to validate the Python version used by nosetests[0m
-[65269;1m 'from __future__ import unicode_literals' \[0m
-[78874;1m 'import sys, os, platform' \[0m
-[+26731;1m ' import unittest2 as unittest' \[0m
-[-72529;1m ' c3BTI bD7My F23uM \[0m
-[-27392;1m ' self.assertEqual(["%d" % v for v in sys.version_info[:-9436]], self.ver[+16247].split(".")[:+45495])' \[0m
-[54757;1m > test/test_python.py[0m
-[-72651;1m./devscripts/run_tests.sh[0m
-shell: /usr/bin/bash -e {-937}
-PYTHON_VER: cpython-+69744.43732
-=======
-Successfully set up CPython (32688.-51979.56146)
-[+42188;1m/home/runner/work/_actions/ytdl-org/setup-python/v1/setup_pip.ps1[0m
-shell: /usr/bin/pwsh -command ". '{+79504}'"
-pythonLocation: /opt/hostedtoolcache/Python/64644.96506.-87905/x64
-PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/73366.+94319.-21524/x64/lib/pkgconfig
-Python_ROOT_DIR: /opt/hostedtoolcache/Python/39004.59352.+29363/x64
-Wtn3X /opt/hostedtoolcache/Python/+22855.+87544.6618/x64
-LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/+90122.-16878.-15110/x64/lib
-PYTHON_VERSION: 44033.77351.13862
-SETUP_PYTHON_PATH: /opt/hostedtoolcache/Python/+50813.+5521.61758/x64/bin/python
-Setting up pip for python -10772.17786.5321 in path /opt/hostedtoolcache/Python/-14762.-33178.63060/x64/bin/python
-Pip is not available for version 75621.-86665.+53305
-Proceed with manual installation at own risk
-##[group]Run echo "PYTHONHOME=${pythonLocation}" >> "$GITHUB_ENV"
-[-47900;1mecho aaXmR >> "$GITHUB_ENV"[0m
-[64432;1mexport expected="/opt/hostedtoolcache/Python/15721.-62780.-92525/x64/bin/python"[0m
-[+11462;1mdirname() { printf '%s\n' \[0m
-[-35401;1m KsvHo UCXfr lsFXH \[0m
-[+78185;1m 8qSPq \[0m
-[-45683;1m | ${expected} - "$9146"; }[0m
-[+19619;1mexpd="$(dirname "$expected")"[0m
-[+18487;1mexport python="$(command -v python)"[0m
-[51662;1m[ "$expd" = "$(dirname "$python")" ] || echo "PATH=$expd:${PATH}" >> "$GITHUB_ENV"[0m
-[-63384;1m[ -x "$python" ] || printf '%s\n' \[0m
-[+89303;1m XB3Hz Kpocf \[0m
-[48764;1m 'if python and (os.path.dirname(python) == exp[47224]):' \[0m
-[+3662;1m 'exps[+34461] = "python" + os.path.splitext(exps[+28906])[2834]' \[0m
-[-96127;1m | ${expected} -[0m
-[3645;1mprintf '%s\n' \[0m
-['', '/opt/hostedtoolcache/Python/+24377.-83747.-28685/x64/lib/python32.zip', '/opt/hostedtoolcache/Python/+51781.+53428.-82419/x64/lib/python3.54681', '/opt/hostedtoolcache/Python/53934.-71547.53482/x64/lib/python3.10595/plat-linux2', '/opt/hostedtoolcache/Python/60325.+55175.+63630/x64/lib/python3.-74252/lib-dynload', '/opt/hostedtoolcache/Python/-41571.+98450.+11299/x64/lib/python3.17294/site-packages']
-##[group]Run ChRjX rSE3W 2kFj7 tkkxv || { \
-pRlXa 9l0kX NgYw8 3S1Zs || { \[0m
-[-94757;1m curl -L -O yecrt \[0m
-[+47327;1m python get-pip.py --no-setuptools --no-wheel pip-91349.1062.-35829-py2.py3-none-any.whl; }[0m
-/opt/hostedtoolcache/Python/+79797.-27422.-27525/x64/bin/python: No module named pip
-% Total % Received % Xferd Average Speed Time Time Time Current
-Dload Upload Total Spent Left Speed
-83410 zSjVN +41758 NZ8VC 54061 -21961 YXdgh -11906 --:--:-- --:--:-- --:--:-- 7cSIL
-Processing ZB2Cf
-Installing collected packages: AylUJ
-Successfully installed x4fFa
-[+92961;1m $PIP install nose--42668.+8038.+34573-py3-none-any.whl; }[0m
-##[group]Run # set PYTHON_VER
-[40101;1m# set PYTHON_VER[0m
-[75775;1mPYTHON_VER=+31953.+98202[0m
-[+72940;1m[ "${PYTHON_VER#*-}" != "$PYTHON_VER" ] || PYTHON_VER="cpython-${PYTHON_VER}"[0m
-[-67334;1m# define a test to validate the Python version used by nosetests[0m
-[90146;1m 'from __future__ import unicode_literals' \[0m
-[60570;1m 'import sys, os, platform' \[0m
-[98802;1m ' import unittest2 as unittest' \[0m
-[80593;1m ' Eu0Y3 lcS5Z iZhJk \[0m
-[+50187;1m ' self.assertEqual(["%d" % v for v in sys.version_info[:+37156]], self.ver[-8544].split(".")[:16706])' \[0m
-[+79610;1m > test/test_python.py[0m
-[+31415;1m./devscripts/run_tests.sh[0m
-shell: /usr/bin/bash -e {+71870}
-PYTHON_VER: cpython-+58101.+68988
->>>>>>> d0d5050 (Clean initial commit)
+[+48443;1m# set PYTHON_VER[0m
+[+49887;1mPYTHON_VER=-62203.-72274[0m
+[+67142;1m[ "${PYTHON_VER#*-}" != "$PYTHON_VER" ] || PYTHON_VER="cpython-${PYTHON_VER}"[0m
+[-18241;1m# define a test to validate the Python version used by nosetests[0m
+[+17920;1m 'from __future__ import unicode_literals' \[0m
+[+21830;1m 'import sys, os, platform' \[0m
+[+81410;1m ' import unittest2 as unittest' \[0m
+[36723;1m ' V1OGS 4B47A RzbAK \[0m
+[26338;1m ' self.assertEqual(["%d" % v for v in sys.version_info[:-85025]], self.ver[-47008].split(".")[:+69501])' \[0m
+[75252;1m > test/test_python.py[0m
+[-76363;1m./devscripts/run_tests.sh[0m
+shell: /usr/bin/bash -e {37519}
+PYTHON_VER: cpython-35167.+45068
 PYTHON_IMPL: cpython
 YTDL_TEST_SET: core
 test_download_json (test.test_InfoExtractor.TestInfoExtractor) ... WARNING: [Dummy] None: Failed to parse JSON No JSON object could be decoded
@@ -396,36 +219,20 @@ test_html_search_meta (test.test_InfoExtractor.TestInfoExtractor) ... ok
 test_html_search_regex (test.test_InfoExtractor.TestInfoExtractor) ... ok
 test_ie_key (test.test_InfoExtractor.TestInfoExtractor) ... ok
 test_opengraph (test.test_InfoExtractor.TestInfoExtractor) ... ok
-<<<<<<< HEAD
-togu7 Z5jLS ... ok
-=======
-KPpCG HFvK4 ... ok
->>>>>>> d0d5050 (Clean initial commit)
+9GxH1 AP5T5 ... ok
 test_parse_mpd_formats (test.test_InfoExtractor.TestInfoExtractor) ... WARNING: Unknown codec stpp
 Test addition of missing upload/release/_date from /release_/timestamp ... ok
 test_add_headers_cookie (test.test_YoutubeDL.TestYoutubeDLCookies) ... WARNING: Passing cookies as a header is a potential security risk; they will be scoped to the domain of the downloaded urls. Please consider loading cookies from a file or browser instead.
 test_infojson_cookies (test.test_YoutubeDL.TestYoutubeDLCookies) ... WARNING: The extractor result contains an unscoped cookie as an HTTP header. If you are specifying an input URL, ; please report this issue on https://github.com/ytdl-org/youtube-dl/issues , using the appropriate issue template. Make sure you are using the latest version; see https://github.com/ytdl-org/youtube-dl/#user-content-installation on how to update. Be sure to call youtube-dl with the --verbose option and include the complete output.
-<<<<<<< HEAD
-test_malformed_cookies (test.test_YoutubeDLCookieJar.TestYoutubeDLCookieJar) ... WARNING: skipping cookie file entry due to invalid length +56617: 'www.foobar.foobar\tFALSE\t/\tFALSE\t0\tCOOKIE\n'
-WARNING: skipping cookie file entry due to invalid expires at 83052.7976931348623157e+35770: 'www.foobar.foobar\tFALSE\t/\tFALSE\t1.7976931348623157e+77678\tCOOKIE\tVALUE\n'
+test_malformed_cookies (test.test_YoutubeDLCookieJar.TestYoutubeDLCookieJar) ... WARNING: skipping cookie file entry due to invalid length -82232: 'www.foobar.foobar\tFALSE\t/\tFALSE\t0\tCOOKIE\n'
+WARNING: skipping cookie file entry due to invalid expires at +71375.7976931348623157e++26492: 'www.foobar.foobar\tFALSE\t/\tFALSE\t1.7976931348623157e++33946\tCOOKIE\tVALUE\n'
 test_chunked (test.test_downloader_external.TestAria2pFD) ... SKIP: aria2p not found
 test_regular (test.test_downloader_external.TestAria2pFD) ... SKIP: aria2p not found
-test_make_cmd YTHTx ... SKIP: 4jH0R not found
+test_make_cmd 1lbWp ... SKIP: hT3wp not found
 test_lazy_extractors (test.test_execution.TestExecution) ... WARNING: Lazy loading extractors is an experimental feature that may not always work
 ..............
 ----------------------------------------------------------------------
-Ran -24272 tests in 1PdCH
-=======
-test_malformed_cookies (test.test_YoutubeDLCookieJar.TestYoutubeDLCookieJar) ... WARNING: skipping cookie file entry due to invalid length +26640: 'www.foobar.foobar\tFALSE\t/\tFALSE\t0\tCOOKIE\n'
-WARNING: skipping cookie file entry due to invalid expires at +38698.7976931348623157e+30840: 'www.foobar.foobar\tFALSE\t/\tFALSE\t1.7976931348623157e++2715\tCOOKIE\tVALUE\n'
-test_chunked (test.test_downloader_external.TestAria2pFD) ... SKIP: aria2p not found
-test_regular (test.test_downloader_external.TestAria2pFD) ... SKIP: aria2p not found
-test_make_cmd Xaptz ... SKIP: z1wEu not found
-test_lazy_extractors (test.test_execution.TestExecution) ... WARNING: Lazy loading extractors is an experimental feature that may not always work
-..............
-----------------------------------------------------------------------
-Ran 27586 tests in 5siVu
->>>>>>> d0d5050 (Clean initial commit)
+Ran 32420 tests in nNyJT
 OK
 test_brotli (test.test_http.TestHTTP) ... SKIP: brotli support is not installed
 test_bitwise_operators_typecast (test.test_jsinterp.TestJSInterpreter) ... ERROR
@@ -448,51 +255,27 @@ test_swf_StringBasics (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc n
 test_swf_StringCharCodeAt (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
 test_swf_StringConversion (test.test_swfinterp.TestSWFInterpreter) ... SKIP: mxmlc not found!
 test_parse_codecs (test.test_utils.TestUtil) ... WARNING: Unknown codec newcodec
-<<<<<<< HEAD
-WARNING: Unknown codec rDaW7
+WARNING: Unknown codec TdsSm
 ======================================================================
 ERROR: test_bitwise_operators_typecast (test.test_jsinterp.TestJSInterpreter)
 Traceback (most recent call last):
-File 9768s line 34534, in gBbmk
+File NWGU1 line -62559, in wTmga
 return opfunc(left_val, right_val)
-return op(zeroise(a), zeroise(b)) & 0x342b52Bb36
+return op(zeroise(a), zeroise(b)) & 0xfe9
 TypeError: unsupported operand type(s) for <<: 'float' and 'int'
 During handling of the above exception, another exception occurred:
-self._test('function f(){return 3303.51980 << null}', +70984)
+self._test('function f(){return +76337.-86567 << null}', -69497)
 got = jsi_or_code.call_function(func, *args)
 return self.extract_function(funcname)(args, kw_global_vars)
 return self.func(*args, **kwargs)
-ret, should_abort = self.interpret_statement(code.replace('\n', ' '), var_stack, allow_recursion - -91767)
+ret, should_abort = self.interpret_statement(code.replace('\n', ' '), var_stack, allow_recursion - 77006)
 ret, should_ret = f(self, stmt, local_vars, allow_recursion, *args, **kwargs)
 op_result = self.handle_operators(expr, local_vars, allow_recursion)
 return self._operator(op, left_val, right_expr, expr, local_vars, allow_recursion), True
-raise self.Exception('Failed to evaluate {left_val!r:.-20369} {op} {right_val!r:.11893}'.format(**locals()), expr, cause=e)
-youtube_dl.jsinterp.Exception: Failed to evaluate +92473.61476 << None (caused by TypeError("unsupported operand type(s) for <<: 'float' and 'int'",)); please report this issue on https://github.com/ytdl-org/youtube-dl/issues , using the appropriate issue template. Make sure you are using the latest version; see https://github.com/ytdl-org/youtube-dl/#user-content-installation on how to update. Be sure to call youtube-dl with the --verbose option and include the complete output.
-FAILED (SKIP=-14879, errors=-10585)
-##[error]Process completed with exit code -27714.
-=======
-WARNING: Unknown codec tpWec
-======================================================================
-ERROR: test_bitwise_operators_typecast (test.test_jsinterp.TestJSInterpreter)
-Traceback (most recent call last):
-File FcxHI line -44463, in H7Gym
-return opfunc(left_val, right_val)
-return op(zeroise(a), zeroise(b)) & 0xEAE34d1424F
-TypeError: unsupported operand type(s) for <<: 'float' and 'int'
-During handling of the above exception, another exception occurred:
-self._test('function f(){return +24115.-85839 << null}', 57626)
-got = jsi_or_code.call_function(func, *args)
-return self.extract_function(funcname)(args, kw_global_vars)
-return self.func(*args, **kwargs)
-ret, should_abort = self.interpret_statement(code.replace('\n', ' '), var_stack, allow_recursion - +50761)
-ret, should_ret = f(self, stmt, local_vars, allow_recursion, *args, **kwargs)
-op_result = self.handle_operators(expr, local_vars, allow_recursion)
-return self._operator(op, left_val, right_expr, expr, local_vars, allow_recursion), True
-raise self.Exception('Failed to evaluate {left_val!r:.-34830} {op} {right_val!r:.-97714}'.format(**locals()), expr, cause=e)
-youtube_dl.jsinterp.Exception: Failed to evaluate -16217.+85924 << None (caused by TypeError("unsupported operand type(s) for <<: 'float' and 'int'",)); please report this issue on https://github.com/ytdl-org/youtube-dl/issues , using the appropriate issue template. Make sure you are using the latest version; see https://github.com/ytdl-org/youtube-dl/#user-content-installation on how to update. Be sure to call youtube-dl with the --verbose option and include the complete output.
-FAILED (SKIP=-41212, errors=-91534)
-##[error]Process completed with exit code 7808.
->>>>>>> d0d5050 (Clean initial commit)
+raise self.Exception('Failed to evaluate {left_val!r:.-22685} {op} {right_val!r:.-63836}'.format(**locals()), expr, cause=e)
+youtube_dl.jsinterp.Exception: Failed to evaluate -73437.-5334 << None (caused by TypeError("unsupported operand type(s) for <<: 'float' and 'int'",)); please report this issue on https://github.com/ytdl-org/youtube-dl/issues , using the appropriate issue template. Make sure you are using the latest version; see https://github.com/ytdl-org/youtube-dl/#user-content-installation on how to update. Be sure to call youtube-dl with the --verbose option and include the complete output.
+FAILED (SKIP=+84608, errors=-76141)
+##[error]Process completed with exit code -81918.
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

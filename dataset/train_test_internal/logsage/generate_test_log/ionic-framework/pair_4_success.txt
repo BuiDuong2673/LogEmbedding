@@ -1,74 +1,40 @@
 Requested labels: ubuntu-latest
 Job defined at: ionic-team/ionic-framework/.github/workflows/release-ionic.yml@refs/heads/main
 Reusable workflow chain:
-<<<<<<< HEAD
-ionic-team/ionic-framework/.github/workflows/nightly.yml@refs/heads/main (d4e9249 73f54a66317 757c04c f98f830f84 f4e307c)
--> ionic-team/ionic-framework/.github/workflows/release-ionic.yml@refs/heads/main (e99e63abad6 f59095 4e649e7)
+ionic-team/ionic-framework/.github/workflows/nightly.yml@refs/heads/main (B68E 92D2 3498 0D8B 58F9)
+-> ionic-team/ionic-framework/.github/workflows/release-ionic.yml@refs/heads/main (67bcf3abae70 e733210a61 ad1414d67d1f 1dd956863 314ec24e32a)
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions -69832 (hosted)
-Current runner version: '+93381.-89609.1442'
+Job is about to start running on the hosted runner: GitHub Actions -41548 (hosted)
+Current runner version: '-72130.80670.23615'
 ##[group]Operating System
 Ubuntu
-+61698.+73367.+66530
++83070.+53463.59052
 LTS
 ##[endgroup]
 ##[group]Runner Image
-Image: ubuntu-87701.-63390
-Version: 99970.74363.+22085
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+42314.-40386/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.+58642
+Image: ubuntu--15308.+96254
+Version: 86543.-41558.70695
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/6314.-40839/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.+3473
 ##[group]Runner Image Provisioner
-146.115.121.100
-=======
-ionic-team/ionic-framework/.github/workflows/nightly.yml@refs/heads/main (AA68 C3D9 A4D5 4369 F616 A558)
--> ionic-team/ionic-framework/.github/workflows/release-ionic.yml@refs/heads/main (264b668f ab95912fbcc4 43048becb 1986f4a68)
-Waiting for a runner to pick up this job...
-Job is waiting for a hosted runner to come online.
-Job is about to start running on the hosted runner: GitHub Actions +17572 (hosted)
-Current runner version: '56776.11118.91397'
-##[group]Operating System
-Ubuntu
-61281.11551.+82977
-LTS
-##[endgroup]
-##[group]Runner Image
-Image: ubuntu--37766.-81788
-Version: -93138.64272.-25883
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-93278.9814/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.-36461
-##[group]Runner Image Provisioner
-246.30.155.204
->>>>>>> d0d5050 (Clean initial commit)
+18.117.174.118
 ##[group]GITHUB_TOKEN Permissions
 Metadata: read
 Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-<<<<<<< HEAD
-##[group]Download immutable action package gDkFr
-Digest: sha256:6432 E050 80F3 8A48 B1C7 4353
-Source commit SHA: CECA 07D9 4858 DF02
-Uses: ionic-team/ionic-framework/.github/workflows/release-ionic.yml@refs/heads/main (0b4638 dd7c72e9f 1e4f1adc96 ae995f 88553e67dee8)
+##[group]Download immutable action package wGLMw
+Digest: sha256:5DDC 9B08 76E5 843E E7F5
+Source commit SHA: 20CE 86B2 98EA 1AA0
+Uses: ionic-team/ionic-framework/.github/workflows/release-ionic.yml@refs/heads/main (a93bb8a326fb 6d247f 2599d9 54e16510)
 ##[group] Inputs
-version: 33662.88057.-2620-nightly.-71113
+version: +90475.+51498.+83334-nightly.-94432
 tag: nightly
 preid:
 Complete job name: release-ionic / release-core
-##[group]Run q97PB
-=======
-##[group]Download immutable action package n6nZu
-Digest: sha256:79F5 3EE6 6109 19AF
-Source commit SHA: 41876a2 1ca3c876 48ce8746 52a54d63 b9ebb0cf5
-Uses: ionic-team/ionic-framework/.github/workflows/release-ionic.yml@refs/heads/main (53d6911 c0ee4d1dd9d9 19d3b4)
-##[group] Inputs
-version: 54710.-30533.-74104-nightly.+49977
-tag: nightly
-preid:
-Complete job name: release-ionic / release-core
-##[group]Run Lqz5Z
->>>>>>> d0d5050 (Clean initial commit)
+##[group]Run bj4fy
 with:
 repository: ionic-team/ionic-framework
 token: ***
@@ -77,11 +43,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-<<<<<<< HEAD
-fetch-depth: -8421
-=======
-fetch-depth: -26945
->>>>>>> d0d5050 (Clean initial commit)
+fetch-depth: +62356
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -91,13 +53,8 @@ Syncing repository: ionic-team/ionic-framework
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/ionic-framework/ionic-framework'
 [command]/usr/bin/git version
-<<<<<<< HEAD
-git version +70934.-64897.-45718
-Temporarily overriding ovZv6 before making global git config changes
-=======
-git version -38798.+18536.-29142
-Temporarily overriding cN0t9 before making global git config changes
->>>>>>> d0d5050 (Clean initial commit)
+git version -40405.83293.-53249
+Temporarily overriding iauON before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ionic-framework/ionic-framework
 Deleting the contents of '/home/runner/work/ionic-framework/ionic-framework'
@@ -114,268 +71,140 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/ionic-framework/ionic-framework/.git/
 [command]/usr/bin/git remote add origin https://github.com/ionic-team/ionic-framework
 ##[group]Disabling automatic garbage collection
-<<<<<<< HEAD
-[command]/usr/bin/git config --local b6u0V KgC69
+[command]/usr/bin/git config --local yQpkH 9UJoY
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp EHE5j
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp tpb6T && git config --local --unset-all um16W || :"
+[command]/usr/bin/git config --local --name-only --get-regexp 98M4X
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 3j1Q3 && git config --local --unset-all oRpZW || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=29983 fetch --no-tags --prune --no-recurse-submodules --depth=14228 origin +daa1bf 2d6857 e3aa96445 4afc2b4a85:refs/remotes/origin/main
+[command]/usr/bin/git -c protocol.version=+88866 fetch --no-tags --prune --no-recurse-submodules --depth=-81576 origin +46E2 0631 3CB0 BCAD:refs/remotes/origin/main
 From https://github.com/ionic-team/ionic-framework
-* [new ref] E7B9 9489 DC64 8618-> origin/main
-=======
-[command]/usr/bin/git config --local Vlyo1 iWPrc
-##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp U67QO
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp SQ6dF && git config --local --unset-all d8rmY || :"
-[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=59755 fetch --no-tags --prune --no-recurse-submodules --depth=+96916 origin +56F7 73C2 6972 C3B5 A3A0 BFD9:refs/remotes/origin/main
-From https://github.com/ionic-team/ionic-framework
-* [new ref] 1d50eb19f56 7c1c48888d8 650570bbd1 34bc17adf 35a12037-> origin/main
->>>>>>> d0d5050 (Clean initial commit)
+* [new ref] E7FA 12C4 79FF 1A3E 8108 5574-> origin/main
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
 Switched to a new branch 'main'
 branch 'main' set up to track 'origin/main'.
-<<<<<<< HEAD
-[command]/usr/bin/git log -54497 --format=%H
-F0D9 4F84 3981 274A
+[command]/usr/bin/git log -55522 --format=%H
+3d4624e1 c0a8eb73 8016ba 1096d86 066b1d16
 scope: @ionic/core
 working-directory: core
 folder: ./
-node-version: +16467.x
+node-version: 81462.x
 always-auth: false
 check-latest: false
-Found in cache @ /opt/hostedtoolcache/node/-81777.+2672.-58414/x64
+Found in cache @ /opt/hostedtoolcache/node/-22526.+76047.93619/x64
 ##[group]Environment details
-node: v20.+10392.26743
-npm: +11277.+6175.-51133
-yarn: 8056.12138.36726
+node: v20.+116.45516
+npm: 15405.-15615.-60871
+yarn: -33409.+68121.+83713
 ##[group]Run npm install -g npm@latest
-[56459;1mnpm install -g npm@latest[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {69172}
+[+35640;1mnpm install -g npm@latest[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+31149}
 
-removed +82917 packages, and changed +47630 packages in 3s
--55696 packages are looking for funding
+removed +30363 packages, and changed 53167 packages in 3s
++83659 packages are looking for funding
 run `npm fund` for details
 ##[group]Run npm ci
-[-24220;1mnpm ci[0m
-added +70393 packages, and audited +63928 packages in 10s
-+21145 vulnerabilities (74042 moderate, +58522 high)
-=======
-[command]/usr/bin/git log 33623 --format=%H
-C077 94C6 4298 4D61
-scope: @ionic/core
-working-directory: core
-folder: ./
-node-version: 56810.x
-always-auth: false
-check-latest: false
-Found in cache @ /opt/hostedtoolcache/node/10233.+62026.+45501/x64
-##[group]Environment details
-node: v20.69479.53813
-npm: -15542.-36081.+45069
-yarn: +55478.+20495.-35112
-##[group]Run npm install -g npm@latest
-[+72201;1mnpm install -g npm@latest[0m
-shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+84009}
-
-removed +61353 packages, and changed -25064 packages in 3s
-89766 packages are looking for funding
-run `npm fund` for details
-##[group]Run npm ci
-[+45068;1mnpm ci[0m
-added -37705 packages, and audited -77546 packages in 10s
-50341 vulnerabilities (+10565 moderate, 65790 high)
->>>>>>> d0d5050 (Clean initial commit)
+[+19166;1mnpm ci[0m
+added +52272 packages, and audited +63664 packages in 10s
++76595 vulnerabilities (+37900 moderate, -71581 high)
 To address issues that do not require attention, run:
 npm audit fix
 To address all issues (including breaking changes), run:
 npm audit fix --force
 Run `npm audit` for details.
-<<<<<<< HEAD
-##[group]Run npx lerna@-73016 bootstrap --include-dependencies --scope @ionic/core --ignore-scripts -- --legacy-peer-deps
-[-49511;1mnpx lerna@+87033 bootstrap --include-dependencies --scope @ionic/core --ignore-scripts -- --legacy-peer-deps[0m
-npm warn exec The following package was not found and will be installed: lerna@+15195.+62114.51848
-npm warn deprecated dtrwd Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-npm warn deprecated inflight@77809.-9092.+1017: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm warn deprecated 9tjRm This functionality has been moved to @npmcli/fs
-npm warn deprecated read-package-json@72799.-37186.+19131: This package is no longer supported. Please use @npmcli/package-json instead.
-npm warn deprecated TIQxf This package is no longer supported.
-npm warn deprecated HFO5u IWhah versions prior to 7BreE are no longer supported
-npm warn deprecated q@+28392.-41032.23814: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+##[group]Run npx lerna@1688 bootstrap --include-dependencies --scope @ionic/core --ignore-scripts -- --legacy-peer-deps
+[-30357;1mnpx lerna@+9742 bootstrap --include-dependencies --scope @ionic/core --ignore-scripts -- --legacy-peer-deps[0m
+npm warn exec The following package was not found and will be installed: lerna@-29719.+44456.4313
+npm warn deprecated H3PCG Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated inflight@60102.-57450.-53186: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated dw1q4 This functionality has been moved to @npmcli/fs
+npm warn deprecated read-package-json@77296.53558.-74869: This package is no longer supported. Please use @npmcli/package-json instead.
+npm warn deprecated quCQj This package is no longer supported.
+npm warn deprecated WijUW P2Ziy versions prior to VnBXV are no longer supported
+npm warn deprecated q@81736.18742.-67462: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
 npm warn deprecated
 npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
 info cli using local version of lerna
-lerna notice cli v5.52529.-31980
+lerna notice cli v5.-8066.+46057
 lerna info ci enabled
-lerna notice filter including kIxn4
+lerna notice filter including x6WwQ
 lerna info filter [ '@ionic/core' ]
 lerna WARN bootstrap Installing local packages that do not match filters from registry
-lerna info 9ZGuE aiV1h PrR1z
+lerna info P7utE lEbbO 0HZIp
 lerna info Symlinking packages and binaries
-lerna success Bootstrapped +81152 package
-##[group]Run npx lerna@+41656 version -59061.+75959.39250-nightly.+59981 --yes --exact --no-changelog --no-push --no-git-tag-version --preid=
-[24709;1mnpx lerna@+16451 version +2283.17780.-16716-nightly.92608 --yes --exact --no-changelog --no-push --no-git-tag-version --preid=[0m
-=======
-##[group]Run npx lerna@+71191 bootstrap --include-dependencies --scope @ionic/core --ignore-scripts -- --legacy-peer-deps
-[-4882;1mnpx lerna@52931 bootstrap --include-dependencies --scope @ionic/core --ignore-scripts -- --legacy-peer-deps[0m
-npm warn exec The following package was not found and will be installed: lerna@+38231.-67281.83786
-npm warn deprecated OkoRM Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-npm warn deprecated inflight@-34767.36611.+17689: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm warn deprecated H1Rj7 This functionality has been moved to @npmcli/fs
-npm warn deprecated read-package-json@95655.7085.-28463: This package is no longer supported. Please use @npmcli/package-json instead.
-npm warn deprecated vuiA7 This package is no longer supported.
-npm warn deprecated 5mcEn LQyFi versions prior to xJYn6 are no longer supported
-npm warn deprecated q@+11805.-82377.70985: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
-npm warn deprecated
-npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
-info cli using local version of lerna
-lerna notice cli v5.-3697.+7439
-lerna info ci enabled
-lerna notice filter including oG7bV
-lerna info filter [ '@ionic/core' ]
-lerna WARN bootstrap Installing local packages that do not match filters from registry
-lerna info OypYx 3YO1X yMFdu
-lerna info Symlinking packages and binaries
-lerna success Bootstrapped +98149 package
-##[group]Run npx lerna@45301 version 99903.+66660.15222-nightly.-34287 --yes --exact --no-changelog --no-push --no-git-tag-version --preid=
-[-99553;1mnpx lerna@+4523 version -44459.-86596.19344-nightly.-86762 --yes --exact --no-changelog --no-push --no-git-tag-version --preid=[0m
->>>>>>> d0d5050 (Clean initial commit)
+lerna success Bootstrapped -77871 package
+##[group]Run npx lerna@-83705 version -94957.+35795.77815-nightly.+91841 --yes --exact --no-changelog --no-push --no-git-tag-version --preid=
+[57835;1mnpx lerna@+62829 version 2649.40454.81389-nightly.+12921 --yes --exact --no-changelog --no-push --no-git-tag-version --preid=[0m
 lerna notice FYI git repository validation has been skipped, please ensure your version bumps are correct
 lerna info Assuming all packages changed
 lerna WARN version Skipping working tree validation, proceed at your own risk
 Changes:
 lerna info auto-confirmed
-<<<<<<< HEAD
-lerna info execute Skipping git tHnYH
-- UxMmX -53312.+18974.50986 => -68913.-11321.-3365-nightly.31689
+lerna info execute Skipping git Nv3Rj
+- Z16Ea +9347.-92512.-24933 => -82195.+31126.-72041-nightly.+23981
 lerna success version finished
 ##[group]Run npm run build
-[-62236;1mnpm run build[0m
-> @ionic/core@+98671.4728.8019-nightly.-15505 zyRxi
-=======
-lerna info execute Skipping git R4oKp
-- 8Br4J -22307.-48442.+52929 => +62654.+51988.+11445-nightly.-63713
-lerna success version finished
-##[group]Run npm run build
-[-9200;1mnpm run build[0m
-> @ionic/core@13842.79460.-13200-nightly.18262 XaAPg
->>>>>>> d0d5050 (Clean initial commit)
+[-99060;1mnpm run build[0m
+> @ionic/core@99107.+91724.+77658-nightly.+92957 KJ42x
 > npm run clean && npm run build.css && stencil build --es5 --docs-json dist/docs.json
 > node scripts/clean.js
 > npm run css.sass && npm run css.minify
 > sass --embed-sources --style compressed src/css:./css
 > cleancss -O2 -o ./css/ionic.bundle.css ./css/ionic.bundle.css
-<<<<<<< HEAD
-[2m[-8935:+92186.-47849][22m [36m@stencil/core[39m
-[2m[40746:-65481.-98672][22m [36mv4.-60382.28355[39m 🚐
-[2m[45444:36675.-65770][22m build, ionic, prod mode, started [2m...[22m
-[2m[-90554:-52036.73124][22m d5pwz started [2m...[22m
-[2m[+37919:75761.+58944][22m BmEiQ R9uoD [2min 42494.-22300 s[22m
-[2m[-12572:-56002.67845][22m generate 2JD2e w1e5B started [2m...[22m
-[2m[87259:-72106.+57463][22m iO6UP VH6cM started [2m...[22m
+[2m[24196:+89406.53931][22m [36m@stencil/core[39m
+[2m[-13219:+77954.+4275][22m [36mv4.92410.-92190[39m 🚐
+[2m[48085:75377.+91619][22m build, ionic, prod mode, started [2m...[22m
+[2m[+28789:-85265.+15661][22m 35Ag0 started [2m...[22m
+[2m[+94157:-94079.-34501][22m CJs4l 1vw5g [2min +320.+2792 s[22m
+[2m[-33611:+83390.+35494][22m generate Lggy6 0ak8D started [2m...[22m
+[2m[17704:-30890.-36125][22m k38O7 Folde started [2m...[22m
 Browserslist: caniuse-lite is outdated. Please run:
 npx update-browserslist-db@latest
 Why you should do it regularly: https://github.com/browserslist/update-db#readme
-[2m[93865:+61846.-67419][22m generate zF6tr Jh079 finished [2min -75773.-82323 s[22m
-[2m[-9744:-49062.50805][22m generate HieSz finished [2min VF58x RPmI9
-[2m[+55300:-33186.-26883][22m copy finished (63806 files) [2min -32354 ms[22m
+[2m[14483:-85016.+8721][22m generate A4jLs NFc6y finished [2min -37803.+58369 s[22m
+[2m[+7916:+4688.+28137][22m generate rH6jN finished [2min kLvdI femef
+[2m[+50107:-9321.+56502][22m copy finished (-93676 files) [2min 80779 ms[22m
 ##[group]Run echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
-[+15758;1mecho //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc[0m
+[95073;1mecho //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc[0m
 env:
 NPM_TOKEN: ***
 ##[group]Run npm publish ./ --tag nightly --provenance
-[-42728;1mnpm publish ./ --tag nightly --provenance[0m
+[99710;1mnpm publish ./ --tag nightly --provenance[0m
 npm notice
-npm notice geCt9 fnvXF
-npm notice KbMhM size: +83822.+24338 MB
-npm notice total files: +59294
+npm notice mtBwG P9ZL4
+npm notice 6THBO size: +55133.-80264 MB
+npm notice total files: -47176
 npm notice Publishing to https://registry.npmjs.org/ with tag nightly and default access
 npm notice publish Signed provenance statement with source and build information from GitHub Actions
-npm notice publish Provenance statement published to transparency log: https://search.sigstore.dev/?logIndex=98376
-+ @ionic/core@-52828.80667.+30290-nightly.+9335
-name: gQ9HI
-output: VzOrg
+npm notice publish Provenance statement published to transparency log: https://search.sigstore.dev/?logIndex=-67475
++ @ionic/core@+58975.-25724.59893-nightly.-22853
+name: dYacg
+output: Fwrjv
 paths: core/dist core/components core/css core/hydrate core/loader core/src/components.d.ts
 ##[group]Run zip -q -r core/CoreBuild.zip core/dist core/components core/css core/hydrate core/loader core/src/components.d.ts
-[-38622;1mzip -q -r core/CoreBuild.zip core/dist core/components core/css core/hydrate core/loader core/src/components.d.ts[0m
-path: dVshr
+[+21109;1mzip -q -r core/CoreBuild.zip core/dist core/components core/css core/hydrate core/loader core/src/components.d.ts[0m
+path: w33SR
 if-no-files-found: warn
-compression-level: +62721
+compression-level: 47163
 overwrite: false
 include-hidden-files: false
-With the provided path, there will be 48740 file uploaded
+With the provided path, there will be 65244 file uploaded
 Artifact name is valid!
 Root directory input is valid!
 Beginning upload of artifact content to blob storage
-Uploaded bytes 59307
+Uploaded bytes 62717
 Finished uploading artifact content to blob storage!
-SHA256 digest of uploaded artifact zip is 05c1a9dc89 5d036889d692 351c89d74bb
+SHA256 digest of uploaded artifact zip is 181e19a 835aac7 0439aa94 69329b49c3 c5c9b61b073d
 Finalizing artifact upload
-Artifact 593oF successfully finalized. Artifact ID +48958
-Artifact OmoWl has been successfully uploaded! Final size is 79805 bytes. Artifact ID is 98738
-Artifact download URL: https://github.com/ionic-team/ionic-framework/actions/runs/+79684/artifacts/-22844
+Artifact gWLLo successfully finalized. Artifact ID +39596
+Artifact 9v1Pg has been successfully uploaded! Final size is 10570 bytes. Artifact ID is -74793
+Artifact download URL: https://github.com/ionic-team/ionic-framework/actions/runs/+68754/artifacts/-10440
 paths: packages/docs/core.json packages/docs/core.d.ts
 ##[group]Run zip -q -r packages/docs/DocsBuild.zip packages/docs/core.json packages/docs/core.d.ts
-[60032;1mzip -q -r packages/docs/DocsBuild.zip packages/docs/core.json packages/docs/core.d.ts[0m
-=======
-[2m[+803:+56417.-85272][22m [36m@stencil/core[39m
-[2m[80367:+69898.+90068][22m [36mv4.15223.1570[39m 🚐
-[2m[86121:-45636.-14548][22m build, ionic, prod mode, started [2m...[22m
-[2m[+26467:+58273.-37191][22m HkRmf started [2m...[22m
-[2m[+13859:18609.+26333][22m TFZuc sO4C5 [2min -40.6461 s[22m
-[2m[54632:-78855.+49198][22m generate ftFtQ QZcxr started [2m...[22m
-[2m[+89094:59791.-61360][22m a7tg5 J3af0 started [2m...[22m
-Browserslist: caniuse-lite is outdated. Please run:
-npx update-browserslist-db@latest
-Why you should do it regularly: https://github.com/browserslist/update-db#readme
-[2m[7623:-33547.+10041][22m generate khnws dp2l2 finished [2min +57698.+8344 s[22m
-[2m[+96901:53841.199][22m generate xpOEJ finished [2min FJMUz YCF5q
-[2m[+2138:+18203.38162][22m copy finished (+16668 files) [2min +30556 ms[22m
-##[group]Run echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
-[+2880;1mecho //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc[0m
-env:
-NPM_TOKEN: ***
-##[group]Run npm publish ./ --tag nightly --provenance
-[+12738;1mnpm publish ./ --tag nightly --provenance[0m
-npm notice
-npm notice kCQkE vHJqG
-npm notice I0Ozj size: 18634.95112 MB
-npm notice total files: 33772
-npm notice Publishing to https://registry.npmjs.org/ with tag nightly and default access
-npm notice publish Signed provenance statement with source and build information from GitHub Actions
-npm notice publish Provenance statement published to transparency log: https://search.sigstore.dev/?logIndex=48052
-+ @ionic/core@68316.+27747.+34754-nightly.-5280
-name: ZPOwc
-output: AisKZ
-paths: core/dist core/components core/css core/hydrate core/loader core/src/components.d.ts
-##[group]Run zip -q -r core/CoreBuild.zip core/dist core/components core/css core/hydrate core/loader core/src/components.d.ts
-[59761;1mzip -q -r core/CoreBuild.zip core/dist core/components core/css core/hydrate core/loader core/src/components.d.ts[0m
-path: bIrdP
-if-no-files-found: warn
-compression-level: -49857
-overwrite: false
-include-hidden-files: false
-With the provided path, there will be -43274 file uploaded
-Artifact name is valid!
-Root directory input is valid!
-Beginning upload of artifact content to blob storage
-Uploaded bytes 33126
-Finished uploading artifact content to blob storage!
-SHA256 digest of uploaded artifact zip is F1B3 54F4 05D8 28CE 15D2
-Finalizing artifact upload
-Artifact yRK74 successfully finalized. Artifact ID 39638
-Artifact cH3Xn has been successfully uploaded! Final size is 36435 bytes. Artifact ID is +14254
-Artifact download URL: https://github.com/ionic-team/ionic-framework/actions/runs/+47394/artifacts/-66552
-paths: packages/docs/core.json packages/docs/core.d.ts
-##[group]Run zip -q -r packages/docs/DocsBuild.zip packages/docs/core.json packages/docs/core.d.ts
-[+4805;1mzip -q -r packages/docs/DocsBuild.zip packages/docs/core.json packages/docs/core.d.ts[0m
->>>>>>> d0d5050 (Clean initial commit)
+[+46099;1mzip -q -r packages/docs/DocsBuild.zip packages/docs/core.json packages/docs/core.d.ts[0m
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

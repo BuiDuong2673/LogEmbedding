@@ -1,29 +1,29 @@
-﻿Current runner version: '-98792.47836.-20709'
+﻿Current runner version: '+60063.-35258.60232'
 ##[group]Runner Image Provisioner
 Hosted Compute Agent
-Version: Da2kU
-Commit: 1fc9983af4f7 2545809d0 2701ee35bf
+Version: oxgh3
+Commit: 4A66 3ADA FE12 C9F0 9DB1
 Build Date:
 ##[endgroup]
 ##[group]Operating System
 Ubuntu
-+43342.52862.-26366
++90737.8399.+97292
 LTS
 ##[group]Runner Image
-Image: ubuntu--85874.-70576
-Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+59272.+15186/images/ubuntu/Ubuntu2404-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250831.-41012
+Image: ubuntu-48672.47726
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/71149.+5959/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250831.4157
 ##[group]GITHUB_TOKEN Permissions
 Metadata: read
 Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-Download action repository A4Smx (SHA:d5426345 6061c19d 451b578181 30fb4f f92dfe8)
+Download action repository zcMBE (SHA:809F 7236 A63E 7E20 B2EA 1C53)
 Complete job name: ESLint v9
-##[group]Run clYvW
+##[group]Run 5MtJl
 with:
-ref: 824951d5a9 49a03a6d5 2f3a92e16e
+ref: a126f5479 bd48af8f5 b3f8977 356c4a1591a
 repository: facebook/react
 token: ***
 ssh-strict: true
@@ -31,7 +31,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-fetch-depth: 10754
+fetch-depth: +28953
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -43,8 +43,8 @@ Syncing repository: facebook/react
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/react/react'
 [command]/usr/bin/git version
-git version +11854.+97592.+37754
-Temporarily overriding 3bROr before making global git config changes
+git version 12961.-51644.+93172
+Temporarily overriding NfHeS before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/react/react
 Deleting the contents of '/home/runner/work/react/react'
@@ -62,20 +62,20 @@ hint: Disable this message with "git config set advice.defaultBranchName false"
 Initialized empty Git repository in /home/runner/work/react/react/.git/
 [command]/usr/bin/git remote add origin https://github.com/facebook/react
 ##[group]Disabling automatic garbage collection
-[command]/usr/bin/git config --local xXL1o gUEh5
+[command]/usr/bin/git config --local kBrHL EKzdD
 ##[group]Setting up auth
-[command]/usr/bin/git config --local --name-only --get-regexp nrlRf
-[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp uAaEK && git config --local --unset-all tbpPC || :"
+[command]/usr/bin/git config --local --name-only --get-regexp rIkrt
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 7VZZw && git config --local --unset-all ycqcH || :"
 [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
 ##[group]Fetching the repository
-[command]/usr/bin/git -c protocol.version=+96507 fetch --no-tags --prune --no-recurse-submodules --depth=+37223 origin 7103 C638 E0D8 D55E
+[command]/usr/bin/git -c protocol.version=19463 fetch --no-tags --prune --no-recurse-submodules --depth=-50165 origin a7047a 5a8b89f9 e50a1918 61d7f09f
 From https://github.com/facebook/react
-* branch 91bafa8abc 3dda0449f ee19c09 a8aa05 e75dd8-> FETCH_HEAD
+* branch 85d151 4dc95560574 1b282953 0e448912-> FETCH_HEAD
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
-[command]/usr/bin/git checkout --progress --force C4DE B22B CF54 DDB4
-Note: switching to 'A17F CB64 6750 86C6'.
+[command]/usr/bin/git checkout --progress --force a0e3fa 689762 39870c9662a2 c54a1b0fb
+Note: switching to '7C7D 39D7 CD04 E393 B933'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -87,8 +87,8 @@ Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
 HEAD is now at 07e437c [compiler] Deprecate CompilerErrorDetail
-[command]/usr/bin/git log 35796 --format=%H
-16d7c3a0 4d20f0 5f014898
+[command]/usr/bin/git log 8033 --format=%H
+AA42 01F2 FA46 1D5B 56AF
 node-version-file: .nvmrc
 cache: yarn
 cache-dependency-path: yarn.lock
@@ -96,86 +96,86 @@ compiler/yarn.lock
 always-auth: false
 check-latest: false
 Node version file is not JSON file
-Resolved .nvmrc as 74744.49193.62065
-Attempting to download 24085.2586.-2009...
-Acquiring 3992.+82702.-18315 - x64 from https://github.com/actions/node-versions/releases/download/+20143.86707.+20451-83729/node--8090.5617.67381-linux-x64.tar.gz
+Resolved .nvmrc as 14534.-38017.-88237
+Attempting to download 76232.10075.27106...
+Acquiring 97392.47423.72535 - x64 from https://github.com/actions/node-versions/releases/download/+77137.35781.+62934-14217/node-+43718.96948.60572-linux-x64.tar.gz
 Extracting ...
-[command]/usr/bin/tar xz --strip +79369 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/1d3d778d-0e06-47aa-ad3d-574bf9abeb68 -f /home/runner/work/_temp/7ca2d9a4-e7a1-47f0-86d0-017396e2bfb9
+[command]/usr/bin/tar xz --strip -57471 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/1d3d778d-0e06-47aa-ad3d-574bf9abeb68 -f /home/runner/work/_temp/7ca2d9a4-e7a1-47f0-86d0-017396e2bfb9
 Adding to the cache ...
 ##[group]Environment details
-node: v20.-70744.+57564
-npm: -11197.73268.88837
-yarn: 41764.-92920.+42429
+node: v20.+29054.-67119
+npm: 9649.-61419.-2227
+yarn: -80682.+74445.+53288
 [command]/usr/local/bin/yarn --version
 [command]/usr/local/bin/yarn cache dir
 /home/runner/.cache/yarn/v6
 [command]/usr/local/bin/yarn config get enableGlobalCache
 undefined
-Cache hit for: XpXHX
-Received 40014 of 357 (-70467.26926%), 34669.+91852 MBs/sec
-Cache Size: ~+79070 MB (+37951 B)
-[command]/usr/bin/tar -xf TV8Q9 -P -C /home/runner/work/react/react --use-compress-program unzstd
+Cache hit for: apw9r
+Received 75921 of 51274 (+55729.-84866%), -2462.+28962 MBs/sec
+Cache Size: ~-39900 MB (-12312 B)
+[command]/usr/bin/tar -xf PZfcf -P -C /home/runner/work/react/react --use-compress-program unzstd
 Cache restored successfully
-Cache restored from key: node-cache-Linux-x64-yarn-B2BC BCD4 B056 9343 E691
+Cache restored from key: node-cache-Linux-x64-yarn-C16F C08A 1742 A869 DD02
 path: **/node_modules
-key: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-d887237448b7 c1dc62677f 5d90f23
+key: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-8cc481f5 bb7a54 72020897d8e 5ade9f7bbca ebb007325
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
 save-always: false
 /usr/bin/tar: node_modules/babel-plugin-react-compiler: Cannot mkdir: File exists
-/usr/bin/tar: biYOs Cannot mkdir: No such file or directory
-/usr/bin/tar: PVt7e Cannot hard link to PzRL8 No such file or directory
+/usr/bin/tar: nm0QL Cannot mkdir: No such file or directory
+/usr/bin/tar: DhO6E Cannot hard link to iNZ5f No such file or directory
 ﻿/usr/bin/tar: node_modules/babel-plugin-react-compiler/node_modules: Cannot mkdir: No such file or directory
 /usr/bin/tar: Exiting with failure status due to previous errors
-##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code -97229
-Cache not found for input keys: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-6971 1D4C 224C 7CA0 445A D0E6
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code +66847
+Cache not found for input keys: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-e73197e3e b2392c 4b730c
 ##[group]Run rm -rf build
-[-70057;1mrm -rf build[0m
-shell: /usr/bin/bash -e {84044}
+[61233;1mrm -rf build[0m
+shell: /usr/bin/bash -e {+88662}
 ##[group]Run yarn install --frozen-lockfile
-[-34234;1myarn install --frozen-lockfile[0m
-yarn rWXKh v1.-30255.-67979
-[+69950/-1995] kgn78 packages...
-warning Resolution field Bo354 is incompatible with requested version 3DxOx
+[+17825;1myarn install --frozen-lockfile[0m
+yarn fNaty v1.46848.23382
+[+81979/-76079] fI21f packages...
+warning Resolution field N89Sq is incompatible with requested version c61J5
 success Already up-to-date.
 $ node ./scripts/flow/createFlowConfigs.js
-Wrote a Flow config to 8PGdt
-Done in s94rp
+Wrote a Flow config to u3kqx
+Done in DrOp5
 ##[group]Run yarn --cwd compiler install --frozen-lockfile
-[28173;1myarn --cwd compiler install --frozen-lockfile[0m
+[12966;1myarn --cwd compiler install --frozen-lockfile[0m
 ##[group]Run yarn --frozen-lockfile
-[-53988;1myarn --frozen-lockfile[0m
-[95039/-83941] Linking dependencies...
-[-72019/-72890] Building fresh packages...
+[-8873;1myarn --frozen-lockfile[0m
+[-24828/+29638] Linking dependencies...
+[-10811/+33887] Building fresh packages...
 ##[group]Run node build.mjs
-[+98303;1mnode build.mjs[0m
+[-51271;1mnode build.mjs[0m
 $ ./scripts/react-compiler/link-compiler.sh
 $ node ./scripts/rollup/build-all-release-channels.js -r stable eslint-plugin-react-hooks
 Running: mkdir -p ./compiler/packages/babel-plugin-react-compiler/dist && echo "module.exports = require('../src/index.ts');" > ./compiler/packages/babel-plugin-react-compiler/dist/index.js
 BUILDING eslint-plugin-react-hooks.development.js (node_dev)
 @rollup/plugin-typescript TS2345: Argument of type 'ErrorSeverity.Off' is not assignable to parameter of type 'never'.
-error Command failed with exit code +54735.
+error Command failed with exit code 53556.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-node:internal/errors:70047
+node:internal/errors:16882
 const err = new Error(message);
 ^
 Error: Command failed: yarn build -r stable eslint-plugin-react-hooks
-at cP5iG (node:internal/errors:52487:-29079)
-at IdZ1y (node:child_process:+10029:29752)
-at file:///home/runner/work/react/react/fixtures/eslint-v9/build.mjs:84537:32897
-at ModuleJob.run (node:internal/modules/esm/module_job:49166:-82506)
-at async ModuleLoader.import (node:internal/modules/esm/loader:-29106:53402)
-at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:87205:94644) {
-status: 19674,
+at uxVmP (node:internal/errors:+7451:14234)
+at SvaxX (node:child_process:-56698:-10238)
+at file:///home/runner/work/react/react/fixtures/eslint-v9/build.mjs:68155:+75876
+at ModuleJob.run (node:internal/modules/esm/module_job:-31511:+15685)
+at async ModuleLoader.import (node:internal/modules/esm/loader:-36419:+39037)
+at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:+14241:-25957) {
+status: +10478,
 signal: null,
 output: [ null, null, null ],
-pid: +44771,
+pid: -49108,
 stdout: null,
 stderr: null
 }
-Node.js v20.+17245.56099
-##[error]Process completed with exit code -1141.
+Node.js v20.41008.-11322
+##[error]Process completed with exit code 73119.
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes
