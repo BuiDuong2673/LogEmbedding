@@ -3,6 +3,7 @@ import json
 import re
 import numpy as np
 from pathlib import Path
+import gensim.downloader as api
 
 
 NUM_LOGS_SELECTED = 5
@@ -103,6 +104,26 @@ class FindSimilarLogTester:
         if word_list:
             text_vector /= len(word_list)
         return text_vector
+    
+    def pretrained_embedding_model(self, text: str, which_model: str) -> np.ndarray:
+        if not hasattr(self, "_pretrained_models"):
+            self._pretrained_models = {}
+
+        if which_model not in self._pretrained_models:
+            if which_model == "glove":
+                self._pretrained_models[which_model] = api.load(
+                    "glove-wiki-gigaword-100"
+                )
+
+        model = self._pretrained_models[which_model]
+
+        word_list = self.split_text_to_word(text=text)
+        vectors = [model[w] for w in word_list if w in model]
+
+        if not vectors:
+            return np.zeros(model.vector_size)
+
+        return np.mean(vectors, axis=0)    
 
     def cosine_similarity(self, vector1: np.ndarray, vector2: np.ndarray) -> float:
         """Compute the distance between two text embeddings.
@@ -232,15 +253,78 @@ class FindSimilarLogTester:
         accuracy_rate = accuracy_count / len(test_paths)
         print(f"Accuracy rate for client {client_name}:\n{accuracy_rate:.4f}")
         return accuracy_rate
+    
+    def test_with_pretrained_model(self, client_name: str, which_model: str) -> float:
+        """Run the finding similar log test for a client test data.
+        
+        Args:
+            client_name (str): the name of the client which test data is being used.
+            which_model (str): the name of the pretrained model being tested.
+        """
+        # Read the list of all test log files and generated test log files
+        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_internal/{client_name}/test")
+        generated_log_paths = self.collect_all_files_from_folder(
+            f"dataset/train_test_internal/{client_name}/generate_test_log")
+        
+        # Collect all original logs
+        original_logs = []
+        for test_path in test_paths:
+            # Read the training log
+            with open(test_path, "r", encoding="utf-8") as file:
+                original_log = file.read()
+            original_logs.append((test_path, original_log))
+
+        # Collect all testing logs
+        generated_logs = []
+        for generated_path in generated_log_paths:
+            with open(generated_path, "r", encoding="utf-8") as file:
+                generated_log = file.read()
+            generated_logs.append((generated_path, generated_log))
+
+        # Initialize variables to count the accuracy time
+        accuracy_count = 0
+        for original_path, original_log in original_logs:
+            # Calculate vector representation of original log
+            original_vec = self.pretrained_embedding_model(text=original_log, which_model=which_model)
+
+            generated_logs_vec = []
+            for generated_path, generated_log in generated_logs:
+                # Calculate vector representation of the logs
+                generated_vec = self.pretrained_embedding_model(text=generated_log, which_model=which_model)
+                generated_logs_vec.append((generated_path, generated_vec))
+
+            similar_logs = self.find_k_similar_logs(original_vec, generated_logs_vec, k=NUM_LOGS_SELECTED)
+
+            actual_similar_log_path = self.find_actual_similar_log_path(original_log_path=original_path)
+
+            print("--------------------------------------------------")
+            print(f"Finding similar logs for {original_path}:")
+            for i, (file_path, similarity) in enumerate(similar_logs):
+                if Path(file_path).resolve() == actual_similar_log_path:
+                    accuracy_count += 1
+                    print(f"TRUE: included at rank {i + 1} with similarity {similarity:.4f}")
+                print(f"Rank {i + 1}: {Path(file_path).name} with similarity {similarity:.4f}")
+            # if similar_logs[0][0] == actual_similar_log_path:
+            #     accuracy_count += 1
+            #     print(f"TRUE: with similarity {similar_logs[0][1]:.4f}")
+            print("--------------------------------------------------")
+        accuracy_rate = accuracy_count / len(test_paths)
+        print(f"Accuracy rate for client {client_name}:\n{accuracy_rate:.4f}")
+        return accuracy_rate
 
 
 if __name__ == "__main__":
-    W1 = np.load("models/2_clients_1_context_50_5_epochs/W1_word2vec.npy")
-    W2 = np.load("models/2_clients_1_context_50_5_epochs/W2_word2vec.npy")
-    word_dict_path = "models/2_clients_1_context_50_5_epochs"
+    # W1 = np.load("models/2_clients_2_context_100_5_epochs/W1_word2vec.npy")
+    # W2 = np.load("models/2_clients_2_context_100_5_epochs/W2_word2vec.npy")
+    # word_dict_path = "models/2_clients_2_context_100_5_epochs"
 
+    # tester = FindSimilarLogTester()
+    # for client in CLIENT_LIST:
+    #     tester.run_test_for_client(
+    #         word_dict_path=word_dict_path, W1=W1, client_name=client
+    #     )
+
+    # Test pretrained model
     tester = FindSimilarLogTester()
     for client in CLIENT_LIST:
-        tester.run_test_for_client(
-            word_dict_path=word_dict_path, W1=W1, client_name=client
-        )
+        tester.test_with_pretrained_model(client_name=client, which_model="glove")
