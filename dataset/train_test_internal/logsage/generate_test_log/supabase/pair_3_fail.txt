@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: supabase/supabase/.github/workflows/prettier.yml@refs/pull/+61791/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/41202.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-2851
 ##[group]Runner Image Provisioner
 37.143.76.30
+=======
+Job defined at: supabase/supabase/.github/workflows/prettier.yml@refs/pull/-87103/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 96189 (hosted)
+Current runner version: '-60642.-99894.-60943'
+##[group]Operating System
+Ubuntu
+80680.-23085.-19513
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--36567.+81515
+Version: 24419.71751.86136
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-75794.+48731/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-34520
+##[group]Runner Image Provisioner
+145.51.21.52
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -23,12 +43,21 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package o27Xz
 Digest: sha256:9ceea4bf64a a48c8419d7 831206f2c 1831fd094328 81bcbb9
 Source commit SHA: 29BD 53AD 428C BB4B
 Download action repository 'pnpm/action-setup@v4' (SHA:2a5d1746435 2cc98db702 3ade66e009 04a1b2446c)
 Complete job name: format
 ##[group]Run 70Vnq
+=======
+##[group]Download immutable action package jD5SK
+Digest: sha256:603F B084 9B18 BCD1 1D7B 4A59
+Source commit SHA: bfe5b234e25 54daf4d 4556cee3d6 ff835b3389
+Download action repository 'pnpm/action-setup@v4' (SHA:9351 1941 C6F1 E5DE)
+Complete job name: format
+##[group]Run XsBvM
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 sparse-checkout: apps
 repository: supabase/supabase
@@ -38,7 +67,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: -79526
+=======
+fetch-depth: -68803
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -48,8 +81,13 @@ Syncing repository: supabase/supabase
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/supabase/supabase'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +50030.+39859.7775
 Temporarily overriding lCpiJ before making global git config changes
+=======
+git version +19235.20374.+73475
+Temporarily overriding mIyTS before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/supabase/supabase
 Deleting the contents of '/home/runner/work/supabase/supabase'
@@ -66,6 +104,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/supabase/supabase/.git/
 [command]/usr/bin/git remote add origin https://github.com/supabase/supabase
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local JCwRg wssbH
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp bXM1M
@@ -75,14 +114,32 @@ Initialized empty Git repository in /home/runner/work/supabase/supabase/.git/
 [command]/usr/bin/git -c protocol.version=+98841 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=+56003 origin +FF64 AE72 5166 567B 93F6:refs/remotes/pull/+3487/merge
 From https://github.com/supabase/supabase
 * [new ref] 8079d2d 463b53d54a75 c10d30b-> pull/+36657/merge
+=======
+[command]/usr/bin/git config --local GX7Xs iortv
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp hY1fe
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp OCZzv && git config --local --unset-all zYmbZ || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=63630 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=-30475 origin +a55535f 6331f5ec62d7 4065916a63 6e7eb0704dd:refs/remotes/pull/-67748/merge
+From https://github.com/supabase/supabase
+* [new ref] d5505c 34155706b 2f377e9-> pull/+91031/merge
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Determining the checkout info
 ##[group]Setting up sparse checkout
 [command]/usr/bin/git sparse-checkout set apps
 ##[group]Checking out the ref
+<<<<<<< HEAD
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/39706/merge
 Updating files: +79351% (81703/-53199)
 Updating files: +58973% (-40564/+88470), done.
 Note: switching to 'refs/remotes/pull/-1643/merge'.
+=======
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+1181/merge
+Updating files: 88887% (+5349/87216)
+Updating files: +72614% (+15877/18542), done.
+Note: switching to 'refs/remotes/pull/10446/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -93,14 +150,21 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at ed95dd6 Merge 1ab329a76e18 b372f6f 8951e2 into d4af62 d7c7848a6ae0 9c5ae1 8eae0d02e
 [command]/usr/bin/git log 81143 --format=%H
 e2c47d613d 84bdb5b3cd2 d1ccb6444c4
+=======
+HEAD is now at ed95dd6 Merge ec0e22 b760f9db2c 19901045 e4e4a127d67 into bf097cbf5 f3225b157b09 8c6c4e3802da 22a20ec093 30ede253eef
+[command]/usr/bin/git log -55598 --format=%H
+1d91a632d57e a7172c6d0163 ba7d12
+>>>>>>> d0d5050 (Clean initial commit)
 run_install: false
 dest: ~/setup-pnpm
 package_json_file: package.json
 standalone: false
 ##[group]Running self-installer...
+<<<<<<< HEAD
 Progress: resolved 66712, reused 46105, downloaded 88874, added 95600
 Packages: -8277
 +
@@ -108,6 +172,15 @@ Progress: resolved -21358, reused +82367, downloaded +6400, added 84406, done
 dependencies:
 + pnpm +64821.-22480.15833 (27156.22242.+7384 is available)
 Done in XooMa
+=======
+Progress: resolved -67259, reused 5489, downloaded +29555, added -45505
+Packages: 16663
++
+Progress: resolved +72378, reused -96805, downloaded +41126, added +90288, done
+dependencies:
++ pnpm -96669.10801.-47760 (67349.96822.+82907 is available)
+Done in tuExT
+>>>>>>> d0d5050 (Clean initial commit)
 Installation Completed!
 node-version-file: .nvmrc
 cache: pnpm
@@ -115,6 +188,7 @@ always-auth: false
 check-latest: false
 env:
 PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+<<<<<<< HEAD
 Resolved .nvmrc as -13344
 Found in cache @ /opt/hostedtoolcache/node/+98124.5754.-44986/x64
 ##[group]Environment details
@@ -174,6 +248,67 @@ Checking formatting...
 [warn] Code style issues found in +92314 files. Run Prettier to fix.
 ELIFECYCLE Command failed with exit code +55004.
 ##[error]Process completed with exit code 37703.
+=======
+Resolved .nvmrc as 7100
+Found in cache @ /opt/hostedtoolcache/node/+44751.+6426.26792/x64
+##[group]Environment details
+node: v20.+92849.+16471
+npm: 2555.58581.55851
+yarn: 97038.+14175.+66234
+[command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+/home/runner/setup-pnpm/node_modules/.bin/store/v3
+Cache hit for: node-cache-Linux-x64-pnpm-C879 D20B 931B 03A4 6F7E
+Received 69420 of +55211 (+64051.-65718%), +91232.38065 MBs/sec
+Cache Size: ~+95354 MB (+80018 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/63abb108-7aa6-40bd-8e62-77dbd7f73985/cache.tzst -P -C /home/runner/work/supabase/supabase --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-pnpm-1dd7642f 00945a883 62dc07 2246ab663 1d7faa3f8000
+##[group]Run pnpm i
+[-72783;1mpnpm i[0m
+shell: /usr/bin/bash -e {46119}
+Scope: all -62258 workspace projects
+Lockfile is up to date, resolution step is skipped
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.../node-pty@+29512.-40057.-24731/node_modules/node-pty install$ node-gyp rebuild
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/contentlayer2 postinstall$ node ./bin/cli.cjs postinstall || echo 'No Contentlayer build found.'
+.../node-pty@97148.+55224.+21275/node_modules/node-pty install: gyp info it worked if it ends with ok
+.../node-pty@+59679.92791.+73788/node_modules/node-pty install: gyp LisR0 G5w6W cGONs
+.../node-pty@90100.-13695.88279/node_modules/node-pty install: gyp info using node@64421.84560.53098 | linux | x64
+.../node_modules/@parcel/watcher install: Done
+.../node-pty@62263.58895.-62778/node_modules/node-pty install: gyp info find Python using Python version -49148.-6054.+33815 found at "/usr/bin/python3"
+tvvPm postinstall: Done
+.../node-pty@-71354.+50884.-47388/node_modules/node-pty install: gyp info spawn args 1YC90
+.../node-pty@82074.-73319.61111/node_modules/node-pty install: gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+.../node-pty@-71834.49507.22482/node_modules/node-pty install: make: KWo70 directory '/home/runner/work/supabase/supabase/node_modules/.pnpm/node-pty@-74614.-25056.91047/node_modules/node-pty/build'
+.../node-pty@69468.94226.39551/node_modules/node-pty install: 7Vhd7 wnW4N
+.../node-pty@42459.-6261.-14256/node_modules/node-pty install: ../src/unix/pty.cc: In function ‘void pty_after_waitpid(uv_async_t*)’:
+.../node-pty@85918.-31678.-91578/node_modules/node-pty install: ../src/unix/pty.cc:-420:+17547: warning: ‘void* memset(void*, int, size_t)’ writing to an object of type ‘class Nan::Persistent<v8::Function>’ with no trivial copy-assignment [-Wclass-memaccess]
+.../node-pty@11587.40844.53568/node_modules/node-pty install: +65499 | muItv 086qb tCZy0
+.../node-pty@-86300.+44706.+16932/node_modules/node-pty install: In file included from g9wIo
+.../node-pty@-27595.-13321.+30549/node_modules/node-pty install: ../../../../nan@79043.42309.+12433/node_modules/nan/nan_persistent_37092_inl.h:+5083:+84506: note: ‘class Nan::Persistent<v8::Function>’ declared here
+.../node-pty@95315.+31070.+63174/node_modules/node-pty install: 76463 | template<typename T, typename M> class Persistent :
+.../node-pty@+18394.-11510.58609/node_modules/node-pty install: ../src/unix/pty.cc: At global scope:
+.../node-pty@51486.+80570.38727/node_modules/node-pty install: /home/runner/.cache/node-gyp/-56627.+59247.13054/include/node/node.h:19689:-63434: warning: cast between incompatible function types from ‘void (*)(Nan::ADDON_REGISTER_FUNCTION_ARGS_TYPE)’ {aka ‘void (*)(v8::Local<v8::Object>)’} to ‘node::addon_register_func’ {aka ‘void (*)(v8::Local<v8::Object>, v8::Local<v8::Value>, void*)’} [-Wcast-function-type]
+.../node-pty@-57172.-75074.77551/node_modules/node-pty install: UCZnq note: in expansion of macro 5CgBb
+.../node-pty@+17359.+60453.+39216/node_modules/node-pty install: 17706 | NODE_MODULE_X(modname, regfunc, NULL, -10677) // NOLINT (readability/null_usage)
+.../node-pty@98299.+59523.29765/node_modules/node-pty install: +90396 | NODE_MODULE(pty, init)
+.../node-pty@28418.+11117.+87505/node_modules/node-pty install: gyp info ok
+.../node-pty@-29397.15634.5340/node_modules/node-pty 3ZGxn Done
+.../node-pty@55542.-12662.86220/node_modules/node-pty postinstall$ node scripts/post-install.js
+.../es5-ext@+18811.+79507.+93666/node_modules/es5-ext postinstall$ node -e "try{require('./_postinstall')}catch(e){}" || exit +38919
+devDependencies:
++ uOtsi 12726.+75096.-6860
+##[group]Run pnpm run test:prettier
+[+49626;1mpnpm run test:prettier[0m
+> supabase@+1306.+57501.5070 test:prettier /home/runner/work/supabase/supabase
+> prettier -c '{apps,packages}/**/*.{js,jsx,ts,tsx,css,md,mdx,json}'
+Checking formatting...
+[warn] azPfY
+[warn] Code style issues found in 92261 files. Run Prettier to fix.
+ELIFECYCLE Command failed with exit code +67511.
+##[error]Process completed with exit code -30562.
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 Pruning is unnecessary.
 http.https://github.com/.extraheader

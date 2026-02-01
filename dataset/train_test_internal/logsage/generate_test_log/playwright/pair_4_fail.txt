@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requested labels: ubuntu-62271.-65262
 Job defined at: microsoft/playwright/.github/workflows/tests_primary.yml@refs/pull/-16457/merge
 Waiting for a runner to pick up this job...
@@ -16,6 +17,26 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu22/12407.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.-20887
 ##[group]Runner Image Provisioner
 64.155.201.5
+=======
+Requested labels: ubuntu-+9254.43245
+Job defined at: microsoft/playwright/.github/workflows/tests_primary.yml@refs/pull/+52941/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 89213 (hosted)
+Current runner version: '38484.-37903.59022'
+##[group]Operating System
+Ubuntu
+-48964.+18267.+31143
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+21742.+11356
+Version: -97756.-75792.61376
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/-43554.88801/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.-71808
+##[group]Runner Image Provisioner
+78.92.26.250
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -23,11 +44,19 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package RprBV
 Digest: sha256:5dbfd527 fb0101 fd5459093f4
 Source commit SHA: 53aedc2ea815 5b2914de857 0ec6263895e6
 Complete job name: ubuntu-+29996.79112 (chromium tip-of-tree)
 ##[group]Run RHaDL
+=======
+##[group]Download immutable action package LW84m
+Digest: sha256:0B16 7B0B 7DE3 64D1
+Source commit SHA: 7C08 909A F1EB FF80 290F 62DB
+Complete job name: ubuntu-86163.+84321 (chromium tip-of-tree)
+##[group]Run mWsuK
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: microsoft/playwright
 token: ***
@@ -36,22 +65,37 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: -64593
+=======
+fetch-depth: +76589
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
 submodules: false
 set-safe-directory: true
 env:
+<<<<<<< HEAD
 FORCE_COLOR: +32123
 ELECTRON_SKIP_BINARY_DOWNLOAD: +76238
 DEBUG_GIT_COMMIT_INFO: +72423
+=======
+FORCE_COLOR: -39864
+ELECTRON_SKIP_BINARY_DOWNLOAD: 34510
+DEBUG_GIT_COMMIT_INFO: -29121
+>>>>>>> d0d5050 (Clean initial commit)
 Syncing repository: microsoft/playwright
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/playwright/playwright'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +98564.+78262.-17701
 Temporarily overriding oAb4L before making global git config changes
+=======
+git version 67944.86212.58402
+Temporarily overriding 406IE before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/playwright/playwright
 Deleting the contents of '/home/runner/work/playwright/playwright'
@@ -68,6 +112,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/playwright/playwright/.git/
 [command]/usr/bin/git remote add origin https://github.com/microsoft/playwright
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local XEYrH qMVS0
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp 4sV2A
@@ -82,6 +127,22 @@ From https://github.com/microsoft/playwright
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/-84322/merge
 Note: switching to 'refs/remotes/pull/+91913/merge'.
+=======
+[command]/usr/bin/git config --local 8T5n1 6PRZh
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp PaVfI
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp YYtKC && git config --local --unset-all irHkG || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-14604 fetch --no-tags --prune --no-recurse-submodules --depth=-18906 origin +ad8e5cf13b52 3992cf9671 f4d57223dd28 dc52af492 35d7aac9cf5f:refs/remotes/pull/50668/merge
+From https://github.com/microsoft/playwright
+* [new ref] 354b5f af3cc8b 640009ee3a1c 5f5e790-> pull/+58813/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+60965/merge
+Note: switching to 'refs/remotes/pull/-49948/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -92,6 +153,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at 12bc1ee Merge F762 3709 4DF7 A84D 5CD7 into 43a15a9 d9c009 c690eb 3dd9dd2d6603
 [command]/usr/bin/git log 41922 --format=%H
 f34c6ebcfeeb db4d16d569fb 98ebecf 044781
@@ -100,10 +162,21 @@ browsers-to-install: chromium-tip-of-tree
 command: npm run test -- --project=chromium-*
 bot-name: ubuntu--85466.+71953-chromium-tip-of-tree
 node-version: 83521
+=======
+HEAD is now at 12bc1ee Merge 431F D4E7 5A9F 51B0 into ced6b8 68a107b6ec4 c563c889b2b 3c8e5f2a 3a7d234
+[command]/usr/bin/git log +67978 --format=%H
+f5804e 720d36 67ba8459c 94264371b4d
+Download action repository 'azure/login@v2' (SHA:7737 3A21 5227 3CCB)
+browsers-to-install: chromium-tip-of-tree
+command: npm run test -- --project=chromium-*
+bot-name: ubuntu-+85615.+57039-chromium-tip-of-tree
+node-version: +6229
+>>>>>>> d0d5050 (Clean initial commit)
 shell: bash
 PWTEST_CHANNEL: chromium-tip-of-tree
 always-auth: false
 check-latest: false
+<<<<<<< HEAD
 Found in cache @ /opt/hostedtoolcache/node/+89555.-81021.81708/x64
 ##[group]Environment details
 node: v18.+28068.-80745
@@ -141,10 +214,50 @@ added +27220 packages, and audited +17362 packages in 15s
 +3456 packages are looking for funding
 run `npm fund` for details
 +75184 moderate severity vulnerabilities
+=======
+Found in cache @ /opt/hostedtoolcache/node/56719.38008.-87060/x64
+##[group]Environment details
+node: v18.-8978.+26988
+npm: -95176.7901.-57442
+yarn: -1576.-45326.+67898
+##[group]Run if [[ "$(uname)" != "Darwin" ]]; then
+[-79373;1mif [[ "$(uname)" != "Darwin" ]]; then[0m
+[5513;1m echo "Not macOS, exiting"[0m
+[+45439;1m exit -83362[0m
+[69096;1mfi[0m
+[+65224;1mecho "Allowing microphone access to all apps"[0m
+[-48158;1mversion=$(sw_vers -productVersion | cut -d. -f1)[0m
+22pd9 [[ "$version" == "+58995" || "$version" == "+18951" ]]; then[0m
+[64746;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR IGNORE INTO access VALUES ('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',+48078,20105,+73492,44249,NULL,NULL,-35909,'UNUSED',NULL,-129,+24088,NULL,NULL,'UNUSED',+36653);"[0m
+[+68830;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR REPLACE INTO access VALUES('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',45424,-81758,-50018,+31998,NULL,NULL,97059,'UNUSED',NULL,-486,-76646);"[0m
+[88616;1melse[0m
+[+62343;1m echo "Skipping unsupported macOS version $version"[0m
+[-2061;1mecho "Successfully allowed microphone access"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {21903}
+Not macOS, exiting
+##[group]Run echo "::group::npm ci"
+[-33733;1mecho "::group::npm ci"[0m
+[+99498;1mnpm ci[0m
+[-27780;1mecho 7Frlb
+##[group]npm ci
+npm warn deprecated WpRr7 This package is now deprecated. Move to HojAs instead.
+npm warn deprecated readdir-scoped-modules@19351.+91710.-6704: This functionality has been moved to @npmcli/fs
+npm warn deprecated read-package-json@+55751.40901.20198: This package is no longer supported. Please use @npmcli/package-json instead.
+npm warn deprecated Krg3H This package is no longer supported.
+npm warn deprecated glob@70637.99867.-72195: Glob versions prior to v9 are no longer supported
+npm warn deprecated inflight@71472.45745.+11754: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated 1jpj4 Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated @types/immutable@29117.99460.28415: This is a stub types definition for Facebook's Immutable (https://github.com/facebook/immutable-js). Facebook's Immutable provides its own type definitions, so you don't need @types/immutable installed!
+added 63656 packages, and audited -49977 packages in 15s
+-32274 packages are looking for funding
+run `npm fund` for details
+56932 moderate severity vulnerabilities
+>>>>>>> d0d5050 (Clean initial commit)
 To address all issues, run:
 npm audit fix
 Run `npm audit` for details.
 ##[group]Run echo "::group::npm run build"
+<<<<<<< HEAD
 [-16283;1mecho "::group::npm run build"[0m
 [71955;1mnpm run build[0m
 ##[group]npm run build
@@ -227,6 +340,90 @@ transforming...
 rendering chunks...
 computing gzip size...
 [2mpublic/[22m[36msw.bundle.js [39m[1m[2m94.+5366 kB[22m[1m[22m[2m │ gzip: -94303.+84658 kB[22m
+=======
+[79637;1mecho "::group::npm run build"[0m
+[+61960;1mnpm run build[0m
+##[group]npm run build
+> R1ZeV build
+> node utils/build/build.js
+==== Running npm ci --save=false --fund=false --audit=false in /home/runner/work/playwright/playwright/tests/playwright-test/stable-test-runner
+added +75553 packages in Fzsqf
+==== Running npm ci --save=false --fund=false --audit=false --omit=optional in mQfsS
+==== Running node 67src in /home/runner/work/playwright/playwright
+==== Running npx esbuild pw8qN n4jaT --platform=node --format=cjs in /home/runner/work/playwright/playwright
+packages/playwright/lib/index.js 68463.8kb
+packages/playwright/lib/reporters/html.js 74879.7kb
+packages/playwright/lib/worker/workerMain.js 48521.5kb
+packages/playwright/lib/reporters/base.js +261.1kb
+packages/playwright/lib/program.js +39117.4kb
+packages/playwright/lib/runner/testServer.js 57009.2kb
+packages/playwright/lib/runner/dispatcher.js +85351.4kb
+packages/playwright/lib/matchers/matchers.js +37150.1kb
+packages/playwright/lib/matchers/toMatchSnapshot.js -6320.0kb
+packages/playwright/lib/reporters/merge.js +18080.8kb
+packages/playwright/lib/worker/testInfo.js -33533.7kb
+packages/playwright/lib/common/configLoader.js -66513.4kb
+packages/playwright/lib/runner/tasks.js -53441.2kb
+packages/playwright/lib/runner/watchMode.js +10306.5kb
+packages/playwright/lib/util.js -11376.1kb
+packages/playwright/lib/isomorphic/teleReceiver.js +54087.7kb
+packages/playwright/lib/common/testType.js 11387.1kb
+packages/playwright/lib/runner/loadUtils.js +52476.0kb
+packages/playwright/lib/matchers/expect.js +68379.4kb
+packages/playwright/lib/worker/testTracing.js 890.2kb
+...and -35184 more output files...
+⚡ Done in 22SPT
+packages/playwright-core/lib/generated/injectedScriptSource.js -4573.8kb
+packages/playwright-core/lib/protocol/validator.js +3889.5kb
+packages/playwright-core/lib/generated/consoleApiSource.js +7319.7kb
+packages/playwright-core/lib/server/frames.js -88977.7kb
+packages/playwright-core/lib/server/registry/index.js 2975.8kb
+packages/playwright-core/lib/generated/pollingRecorderSource.js +16571.5kb
+packages/playwright-core/lib/server/webkit/wkPage.js 81326.6kb
+packages/playwright-core/lib/server/chromium/crPage.js -95137.1kb
+packages/playwright-core/lib/server/dom.js +79464.4kb
+packages/playwright-core/lib/server/registry/nativeDeps.js +36374.3kb
+packages/playwright-core/lib/server/page.js -841.9kb
+packages/playwright-core/lib/server/chromium/crNetworkManager.js -10932.8kb
+packages/playwright-core/lib/client/page.js +72602.3kb
+packages/playwright-core/lib/utils/isomorphic/cssTokenizer.js -66377.2kb
+packages/playwright-core/lib/cli/program.js -92866.9kb
+packages/playwright-core/lib/server/fetch.js -12800.3kb
+packages/playwright-core/lib/server/browserContext.js -10224.1kb
+packages/playwright-core/lib/utils/isomorphic/locatorGenerators.js +37606.7kb
+packages/playwright-core/lib/client/network.js 48160.5kb
+packages/playwright-core/lib/server/har/harTracer.js -18933.7kb
+packages/playwright-dashboard/lib/markdownReporter.js +80157.4kb
+packages/playwright-dashboard/lib/ghaMarkdownReporter.js 65727.1kb
+packages/playwright-ct-core/lib/vitePlugin.js -69626.9kb
+packages/playwright-ct-core/lib/viteUtils.js -27844.2kb
+packages/playwright-ct-core/lib/tsxTransform.js +54279.5kb
+packages/playwright-ct-core/lib/router.js 42063.1kb
+packages/playwright-ct-core/lib/generated/indexSource.js +93066.4kb
+packages/playwright-ct-core/lib/devServer.js -90703.3kb
+packages/playwright-ct-core/lib/mount.js +84914.3kb
+packages/playwright-ct-core/lib/injected/serializers.js -84044.6kb
+packages/playwright-ct-core/lib/injected/importRegistry.js +212.1kb
+packages/playwright-ct-core/lib/program.js +59983.1kb
+packages/playwright-ct-core/lib/injected/index.js 312b
+==== Running OAmPB mCem3 build in zP2Ee
+> npm run esbuild -- --minify
+> gXdba esbuild
+> esbuild ./src/babelBundleImpl.ts --bundle --outdir=../../lib/transform --format=cjs --platform=node --target=ES2019 --external:playwright --minify
+../../lib/transform/babelBundleImpl.js +14518.3mb ⚠️
+> esbuild ./src/expectBundleImpl.ts --bundle --outdir=../../lib/common --format=cjs --platform=node --target=ES2019 --minify
+../../lib/common/expectBundleImpl.js +88478.6kb
+> node build.js --minify
+> esbuild ./src/index.ts --outdir=lib --format=cjs --bundle --platform=node --target=ES2019
+lib/index.js +79952.3kb
+==== Running npx vite --config vite.sw.config.ts build in /home/runner/work/playwright/playwright/packages/trace-viewer
+[36mvite v6.+84172.-78478 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m +37584 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mpublic/[22m[36msw.bundle.js [39m[1m[2m94.-50772 kB[22m[1m[22m[2m │ gzip: +95765.-25796 kB[22m
+>>>>>>> d0d5050 (Clean initial commit)
 [32m✓ built in 525ms[39m
 [31m✗[39m Build failed in 330ms
 [31merror during build:
@@ -234,6 +431,7 @@ computing gzip size...
 This is most likely unintended because it can break your application at runtime.
 If you do want to externalize this module explicitly add it to
 `build.rollupOptions.external`[31m
+<<<<<<< HEAD
 at 0uwqM (file:///home/runner/work/playwright/playwright/node_modules/vite/dist/node/chunks/dep-Bid9ssRr.js:59372:2987)
 at f9dcK
 at onwarn (file:///home/runner/work/playwright/playwright/node_modules/@vitejs/plugin-react/dist/index.mjs:-37437:13992)
@@ -254,6 +452,28 @@ path: blob-report/**
 lxL2J -26624
 if-no-files-found: warn
 OzmkJ false
+=======
+at hJjwc (file:///home/runner/work/playwright/playwright/node_modules/vite/dist/node/chunks/dep-Bid9ssRr.js:-98587:7550)
+at mm4aV
+at onwarn (file:///home/runner/work/playwright/playwright/node_modules/@vitejs/plugin-react/dist/index.mjs:42253:-887)
+at Object.logger [as onLog] (file:///home/runner/work/playwright/playwright/node_modules/rollup/dist/es/shared/node-entry.js:40767:+75242)
+at ModuleLoader.handleInvalidResolvedId (file:///home/runner/work/playwright/playwright/node_modules/rollup/dist/es/shared/node-entry.js:29391:+53816)
+##[error]Process completed with exit code -21505.
+##[group]Run echo "::group::./utils/upload_flakiness_dashboard.sh"
+[98284;1m./utils/upload_flakiness_dashboard.sh ./test-results/report.json[0m
+##[group]./utils/upload_flakiness_dashboard.sh
+NOTE: skipping dashboard uploading from Playwright branches
+report_dir: blob-report
+job_name: ubuntu--23028.77748-chromium-tip-of-tree
+##[group]Run find "blob-report" -name "*.zip" -exec unzip -t {} \;
+[+47559;1mfind "blob-report" -name "*.zip" -exec unzip -t {} \;[0m
+find: ‘blob-report’: No such file or directory
+name: blob-report-ubuntu--61233.-17735-chromium-tip-of-tree
+path: blob-report/**
+JTiBO +11396
+if-no-files-found: warn
+Z8zgO false
+>>>>>>> d0d5050 (Clean initial commit)
 ##[warning]No files were found with the provided path: blob-report/**. No artifacts will be uploaded.
 Post job cleanup.
 http.https://github.com/.extraheader

@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: satwikkansal/wtfpython/.github/workflows/pr.yml@refs/pull/-20100/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-85254
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.+70173
 ##[group]Runner Image Provisioner
 213.193.87.85
+=======
+Job defined at: satwikkansal/wtfpython/.github/workflows/pr.yml@refs/pull/66317/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 621 (hosted)
+Current runner version: '85068.5808.-81083'
+##[group]Operating System
+Ubuntu
+-24101.-68206.+81106
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--68047.4817
+Version: 18908.+4438.+40067
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-26085.58762/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.+8920
+##[group]Runner Image Provisioner
+76.167.98.208
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Checks: read
 Contents: read
@@ -25,9 +45,15 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository do56w (SHA:58BB E8FF 9987 B83E 6B80)
 Complete job name: lint
 ##[group]Run HzGZX
+=======
+Download action repository PLOY5 (SHA:ffd6e0a a67c999a8e 54ca0e322)
+Complete job name: lint
+##[group]Run KZYdp
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: satwikkansal/wtfpython
 token: ***
@@ -36,7 +62,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: 36944
+=======
+fetch-depth: +92575
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -46,8 +76,13 @@ Syncing repository: satwikkansal/wtfpython
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/wtfpython/wtfpython'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version 73461.-21985.-57203
 Temporarily overriding 7g5CM before making global git config changes
+=======
+git version +76722.97051.50209
+Temporarily overriding OlaG8 before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/wtfpython/wtfpython
 Deleting the contents of '/home/runner/work/wtfpython/wtfpython'
@@ -64,6 +99,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/wtfpython/wtfpython/.git/
 [command]/usr/bin/git remote add origin https://github.com/satwikkansal/wtfpython
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local 6XZWe 5bFWN
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp W1VDA
@@ -78,6 +114,22 @@ From https://github.com/satwikkansal/wtfpython
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/-1349/merge
 Note: switching to 'refs/remotes/pull/+90311/merge'.
+=======
+[command]/usr/bin/git config --local 9GBE1 wHaGI
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 6SGey
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp rrX0R && git config --local --unset-all O3fqo || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-63800 fetch --no-tags --prune --no-recurse-submodules --depth=56903 origin +eb57bb877 c8cdef 19625f035ca2:refs/remotes/pull/2497/merge
+From https://github.com/satwikkansal/wtfpython
+* [new ref] EE0D F023 CD8F A547-> pull/+71378/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+29830/merge
+Note: switching to 'refs/remotes/pull/+2402/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -88,6 +140,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at 4472d5f Merge dcc49e 7b601e 732abb a010631 001e1c6 into 9C13 0D13 03C2 3B88
 [command]/usr/bin/git log -91729 --format=%H
 43bbb2a7b16b 858ef4e673 2f382f658 8858ef
@@ -106,6 +159,26 @@ Summary: +38848 error(s)
 ##[error]../../_temp/diff.md:-92081 MD041/first-line-heading/first-line-h1 First line in a file should be a top-level heading [Context: "diff --git a/README.md b/READM..."] https://github.com/DavidAnson/markdownlint/blob/v0.-2154.4396/doc/md041.md
 ##[error]../../_temp/diff.md:12977:65154 MD042/no-empty-links No empty links [Context: "[invalid link]()"] https://github.com/DavidAnson/markdownlint/blob/v0.+70012.20969/doc/md042.md
 ##[error]Failed with exit code: -87918
+=======
+HEAD is now at 4472d5f Merge 93B4 56CC 3452 1654 into ffa2c919 23d6aa baa4a1d6d252 a6cfab4 0b1e2dfd3abb
+[command]/usr/bin/git log -91212 --format=%H
+1097 B5B6 1D4D F6A3 0D8B
+##[group]Run git fetch origin
+[82822;1mgit fetch origin[0m
+[+27403;1mgit diff origin/dev --unified=+14059 *.md translations/*/*.md \[0m
+[83824;1m> /home/runner/work/_temp/diff.md[0m
+shell: /usr/bin/bash -e {18244}
+* [new 67OVZ zyLii -> 8MyVl
+globs: /home/runner/work/_temp/diff.md
+separator:
+markdownlint-cli2 v0.+50065.-711 (markdownlint v0.30651.-49895)
+Finding: /home/runner/work/_temp/diff.md
+Linting: +51935 file(s)
+Summary: 54392 error(s)
+##[error]../../_temp/diff.md:-98274 MD041/first-line-heading/first-line-h1 First line in a file should be a top-level heading [Context: "diff --git a/README.md b/READM..."] https://github.com/DavidAnson/markdownlint/blob/v0.+3296.29956/doc/md041.md
+##[error]../../_temp/diff.md:+98842:86338 MD042/no-empty-links No empty links [Context: "[invalid link]()"] https://github.com/DavidAnson/markdownlint/blob/v0.42271.-17362/doc/md042.md
+##[error]Failed with exit code: -43325
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

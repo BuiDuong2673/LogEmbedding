@@ -2,6 +2,7 @@ Requested labels: ubuntu-latest
 Job defined at: bigskysoftware/htmx/dynamic/dependabot/dependabot-updates@refs/heads/master
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
+<<<<<<< HEAD
 Job is about to start running on the hosted runner: GitHub Actions 1185 (hosted)
 Current runner version: '58173.10331.-42918'
 ##[group]Operating System
@@ -16,6 +17,22 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-79416
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.+16744
 ##[group]Runner Image Provisioner
 85.51.154.247
+=======
+Job is about to start running on the hosted runner: GitHub Actions +6900 (hosted)
+Current runner version: '-97414.+41635.67583'
+##[group]Operating System
+Ubuntu
++54406.-72669.+35386
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+18349.34699
+Version: -15349.85890.+45431
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/87473.-19212/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.+267
+##[group]Runner Image Provisioner
+20.18.43.250
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -35,6 +52,7 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository 'github/dependabot-action@main' (SHA:C5D0 1479 A320 B807 63C6 3FDB)
 Complete job name: Dependabot
 ##[group]Run mkdir -p ./dependabot-job--47054-59776
@@ -44,12 +62,24 @@ shell: /usr/bin/bash -e {5488}
 env:
 DEPENDABOT_DISABLE_CLEANUP: 83510
 DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: +80744
+=======
+Download action repository 'github/dependabot-action@main' (SHA:2712f0af9 7fb974d20 f5b438bece5a)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job-+417--1194
+[+1725;1mmkdir -p ./dependabot-job-+57138-59484[0m
+shell: /usr/bin/bash -e {+52055}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: +37958
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: 56687
+>>>>>>> d0d5050 (Clean initial commit)
 GITHUB_TOKEN: ***
 GITHUB_DEPENDABOT_JOB_TOKEN: ***
 GITHUB_DEPENDABOT_CRED_TOKEN: ***
 🤖 ~ starting update ~
 Fetching job details
 ##[group]Pulling updater images
+<<<<<<< HEAD
 Pulling image QVdtd +97450)...
 Pulled image fAW7q
 Starting update process
@@ -86,6 +116,44 @@ updater | -55566/-85083/57647 64603:-75815:+28356 INFO Results:
 | created | serialize-javascript ( from -41042.18686.-35403 to +63079.39202.+66981 ), mocha ( from 44519.-85576.-63451 to 80850.53151.-5165 ), mocha ( from -21910.70557.67872 to 94032.-41836.93072 ) |
 Cleaned up container 4cd928d6 6209c38595 3323036ea72e 86d918d5051 8f6144faa516
 +37933/49550/+25414 +462:-88596:67204 Posting metrics to remote API endpoint
+=======
+Pulling image OExrR -28303)...
+Pulled image w3S94
+Starting update process
+Created proxy container: 56bf53a 111b7ea 09dc474 3cd2f788
+Created container: 2614872f4 1e92f0fd79 46639ae 19eb83eac87 a62b13a5112d
+proxy | +31487/88021/87629 +97530:+71801:-24683 Tuh6e Zq07Q Vgn64 wbcTb
+proxy | +21954/-65018/34746 +98909:66528:-48950 Listening (:-849)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | 21993 added, -63456 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | -83242/-1253/+53313 39656:62330:53481 INFO <job_+25450> UpwVz RcVlD eNHT6
+3539/+99545/-17214 45038:39323:16616 INFO <job_-83319> Xwj93 6JtNC 3RcyU Jt2HB 30Msf GIlP2
+updater | 5630/+89872/+58931 45738:+6544:-54771 INFO <job_80990> Started process PID: 1623 with command: {} git 5OLvY ami39 J4rfC 89JaY dgjsc N7p9b {}
+updater | 88025/-53908/55596 -32944:-51086:15858 INFO <job_+75166> Kw4wH nyT5K zHhng P0ioJ with rnpJV 8yhle tn6Ma C6ba8 HZxSM
+updater | 32102/-72602/1187 73385:-50508:-52263 INFO <job_+58361> rBlkZ RsmZv O5vBz U1dFp 0xVQD
+updater | 18899/-69426/+67740 63369:-47984:-21159 INFO <job_+67208> Started process PID: -48659 with command: {} git config --global 2qLph url.https://github.com/.insteadOf h4hFk {}
+-56940/33638/-8248 +19923:-70604:-32758 INFO <job_87113> SnuPi WbYVw ptijz rNYcN Pnhk7
+updater | +98843/+43256/+98886 -44833:+56238:11808 INFO <job_-68493> Started process PID: 24192 with command: {} jVcXr 9CYvo PQoq1 Y2NPF 0LFLi jITpr 1yJon QPvfs D6V2D {}
+proxy | -11335/+68051/+39429 46753:59414:-82359 [33531] 8qHCT Ih77X
++21475/+70870/-14668 -12701:52741:+95549 [67629] * authenticating git server request (host: github.com)
+updater | +18089/59420/14203 +15996:+80123:11973 INFO <job_-53578> Started process PID: -21142 with command: {} git MtavI f2NKO i1JH6 cUxOd {}
+updater | 57634/-3006/9975 48293:65928:17764 INFO <job_+81149> Started process PID: -30717 with command: {} Vwame 62ZLa cT1HQ {}
+updater | 39331/-55904/25986 -27821:95335:+22390 INFO <job_+99294> JOnts ScbC7 YIfhz gYIOS
+updater | -62144/54949/-49241 +13938:-72063:+52464 INFO <job_-15384> kTe8R amr5B FqdNB HsETP MlW5H MSYLQ
+updater | 46992/-73172/-83504 +3894:13804:+83575 INFO <job_10316> f6TKv GIdoS OWtzT Bb3DI mYYaZ FTtmT TiPqM 4y79p
++31191/-20463/+40154 +9004:+51001:65979 [72375] -38733 aRUcs
+30578/-76851/72811 -704:28748:-88544 [31695] * authenticating github api request with token for api.github.com
+updater | +50993/-6470/-86431 +39913:-6670:+62948 INFO Results:
++--------------------------------------------------------------------------------------------------------------------------+
+| Changes to Dependabot Pull Requests |
++---------+----------------------------------------------------------------------------------------------------------------+
+| created | serialize-javascript ( from +548.3228.+32610 to +92023.-27201.34355 ), mocha ( from 8206.-96206.+87534 to 54333.-18256.47290 ), mocha ( from +692.1815.+6361 to 46836.+57005.21795 ) |
+Cleaned up container 4fffd82 6d028a644 88bccae0f0
++16264/+83823/85311 +79079:+94091:-29299 Posting metrics to remote API endpoint
+>>>>>>> d0d5050 (Clean initial commit)
 🤖 ~ finished ~
 Post job cleanup.
 Cleaning up orphan processes

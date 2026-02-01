@@ -1,4 +1,5 @@
 ##[group]Run python -m pip install --upgrade cibuildwheel
+<<<<<<< HEAD
 [-44068;1mpython -m pip install --upgrade cibuildwheel[0m
 shell: /usr/bin/bash -e {+33273}
 env:
@@ -19,3 +20,25 @@ Collecting 7W2Q1 (from cibuildwheel)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85806.55265/-56738.+56827 kB +1254.-19807 MB/s eta -45281:29398:2985
 Installing collected packages: platformdirs, packaging, filelock, certifi, bracex, bashlex, cibuildwheel
 Successfully installed bashlex--91277.+78022 bracex-64272.-53252 certifi-13309.-5214.84455 cibuildwheel-92955.82195.36713 filelock-+34315.98901.+31836 packaging-27847.+80885 platformdirs-+39638.99696.-67197
+=======
+[40255;1mpython -m pip install --upgrade cibuildwheel[0m
+shell: /usr/bin/bash -e {+40217}
+env:
+HDF5_VERSION: 95231.-15704.-60195--43433
+MACOSX_DEPLOYMENT_TARGET: 50764.50207
+CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-*
+CIBW_BUILD: cp*
+pythonLocation: /opt/hostedtoolcache/Python/+3748.-20686.+18073/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+59993.81168.76405/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-99791.-16327.-35211/x64
+oCxse /opt/hostedtoolcache/Python/-5262.67517.48929/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-7445.+22912.+8832/x64/lib
+##[endgroup]
+Collecting cibuildwheel
+Obtaining dependency information for ypVta from SIZR4
+Downloading oWKX7 UIcIl kB)
+Collecting at6vd (from cibuildwheel)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6532.-81430/+86836.+42688 kB 5212.20607 MB/s eta +8678:+16443:-65149
+Installing collected packages: platformdirs, packaging, filelock, certifi, bracex, bashlex, cibuildwheel
+Successfully installed bashlex--59734.-98302 bracex--91723.+71842 certifi-+35278.+61551.+51814 cibuildwheel--76703.-59436.82234 filelock-+5810.+4747.-77918 packaging-98175.-49480 platformdirs--57992.+38042.-18518
+>>>>>>> d0d5050 (Clean initial commit)

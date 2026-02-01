@@ -2,6 +2,7 @@ Requested labels: ubuntu-latest
 Job defined at: cypress-io/cypress/.github/workflows/semantic-pull-request.yml@refs/heads/develop
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
+<<<<<<< HEAD
 Job is about to start running on the hosted runner: GitHub Actions +67733 (hosted)
 Current runner version: '56019.+28672.63883'
 ##[group]Operating System
@@ -16,6 +17,22 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/68640.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+11930
 ##[group]Runner Image Provisioner
 92.3.1.155
+=======
+Job is about to start running on the hosted runner: GitHub Actions +47808 (hosted)
+Current runner version: '-52585.+75979.-28522'
+##[group]Operating System
+Ubuntu
++60251.87498.-75373
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+21674.-54053
+Version: -85344.77863.+12982
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+67076.-39878/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.56831
+##[group]Runner Image Provisioner
+27.68.47.250
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -24,6 +41,7 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package z0srS
 Digest: sha256:3973 DDFB 0813 9262 4D81 6634
 Source commit SHA: f4b169 f33dfc95f085 9ca3179118dc 5c7bb3
@@ -31,6 +49,15 @@ Complete job name: Semantic Pull Request
 ##[group]Run o2Z6v
 with:
 ref: renovate/npm-webpack-22107-vulnerability
+=======
+##[group]Download immutable action package R0jtv
+Digest: sha256:9EF1 3C15 A1FA 336D C5A4
+Source commit SHA: b679b0924b 6126a4b8cd9 9b194a0a2e 725eb307 a5d26109
+Complete job name: Semantic Pull Request
+##[group]Run ZO9vn
+with:
+ref: renovate/npm-webpack-56878-vulnerability
+>>>>>>> d0d5050 (Clean initial commit)
 repository: cypress-io/cypress
 token: ***
 ssh-strict: true
@@ -38,7 +65,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: 33686
+=======
+fetch-depth: 96601
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -48,8 +79,13 @@ Syncing repository: cypress-io/cypress
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/cypress/cypress'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +23324.+55638.80836
 Temporarily overriding 7nv45 before making global git config changes
+=======
+git version +70500.81456.27477
+Temporarily overriding 5FW6V before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cypress/cypress
 Deleting the contents of '/home/runner/work/cypress/cypress'
@@ -66,6 +102,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/cypress/cypress/.git/
 [command]/usr/bin/git remote add origin https://github.com/cypress-io/cypress
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local wqgSH ra7OK
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp tF6ph
@@ -93,14 +130,48 @@ added 60980 packages, and audited +24734 packages in 3s
 30947 packages are looking for funding
 run `npm fund` for details
 found +92853 vulnerabilities
+=======
+[command]/usr/bin/git config --local 9JXNE fMTwA
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp kamvy
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 8GplS && git config --local --unset-all zc8H4 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=71285 fetch --no-tags --prune --no-recurse-submodules --depth=82473 origin +refs/heads/renovate/npm-webpack-+47289-vulnerability*:refs/remotes/origin/renovate/npm-webpack-58309-vulnerability* +refs/tags/renovate/npm-webpack-+73674-vulnerability*:refs/tags/renovate/npm-webpack-+81726-vulnerability*
+From https://github.com/cypress-io/cypress
+* [new branch] renovate/npm-webpack-+55098-vulnerability -> origin/renovate/npm-webpack-+64651-vulnerability
+##[group]Determining the checkout info
+[command]/usr/bin/git branch --list --remote origin/renovate/npm-webpack-46209-vulnerability
+origin/renovate/npm-webpack-57915-vulnerability
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B renovate/npm-webpack-85559-vulnerability refs/remotes/origin/renovate/npm-webpack--84718-vulnerability
+Switched to a new branch 'renovate/npm-webpack-+35829-vulnerability'
+branch 'renovate/npm-webpack--31942-vulnerability' set up to track 'origin/renovate/npm-webpack-+24955-vulnerability'.
+[command]/usr/bin/git log -55872 --format=%H
+116b535 fc995ba7 a22c746680d5
+##[group]Run npm install
+[+63696;1mnpm install[0m
+shell: /usr/bin/bash -e {+3182}
+
+added +59940 packages, and audited +49960 packages in 3s
+-24442 packages are looking for funding
+run `npm fund` for details
+found +79600 vulnerabilities
+>>>>>>> d0d5050 (Clean initial commit)
 script: const verifyPullRequest = require('./scripts/github-actions/semantic-pull-request')
 await verifyPullRequest({ context, core, github })
 github-token: ***
 debug: false
 user-agent: actions/github-script
 result-encoding: json
+<<<<<<< HEAD
 retries: -35988
 retry-exempt-status-codes: +64704,95108,97616,+23131,55790
+=======
+retries: -3158
+retry-exempt-status-codes: +84141,+6724,26457,+79914,54807
+>>>>>>> d0d5050 (Clean initial commit)
 Does not contain any user-facing changes that impacts the next Cypress release.
 Post job cleanup.
 http.https://github.com/.extraheader

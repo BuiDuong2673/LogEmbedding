@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requested labels: ubuntu-latest-+27077-cores
 Job defined at: grafana/grafana/.github/workflows/backend-unit-tests.yml@refs/pull/-27454/merge
 Waiting for a runner to pick up this job...
@@ -5,10 +6,20 @@ Job is waiting for a runner from 'ubuntu-latest-+10783-cores' to come online.
 Job is about to start running on the runner: ubuntu-latest-20351-cores_ba2f612acb56 (organization)
 Current runner version: '51930.+45573.+2350'
 Runner name: 'ubuntu-latest-+22782-cores_ba2f612acb56'
+=======
+Requested labels: ubuntu-latest--68733-cores
+Job defined at: grafana/grafana/.github/workflows/backend-unit-tests.yml@refs/pull/55361/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a runner from 'ubuntu-latest-9865-cores' to come online.
+Job is about to start running on the runner: ubuntu-latest--24552-cores_ba2f612acb56 (organization)
+Current runner version: '-39047.-80031.29439'
+Runner name: 'ubuntu-latest-+17886-cores_ba2f612acb56'
+>>>>>>> d0d5050 (Clean initial commit)
 Runner group name: 'GitHub Hosted larger and non-default runners'
 Machine name: 'runner'
 ##[group]Operating System
 Ubuntu
+<<<<<<< HEAD
 -47640.92535.+16551
 LTS
 ##[endgroup]
@@ -17,6 +28,16 @@ Image: ubuntu-4069.+28111
 Version: +50740.62635.+97771
 Included Software: https://github.com/actions/runner-images/blob/ubuntu24/45669.-19944/images/ubuntu/Ubuntu2404-Readme.md
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.24032
+=======
+-88112.-40431.+8771
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--2362.-75962
+Version: +75922.-16905.-70943
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-19060.-67496/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-78232
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -24,9 +45,15 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository h976p (SHA:209222a6 3f682d f687facaf 3147435e3 63d2c579)
 Complete job name: Grafana Enterprise
 ##[group]Run D3OPv
+=======
+Download action repository Fgxkq (SHA:39A6 5810 6A23 75DC 70F4 2AD3)
+Complete job name: Grafana Enterprise
+##[group]Run N2Tqz
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: grafana/grafana
 token: ***
@@ -35,7 +62,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: -35019
+=======
+fetch-depth: 59990
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -45,8 +76,13 @@ Syncing repository: grafana/grafana
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/grafana/grafana'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version -14108.+29434.-11470
 Temporarily overriding S94C3 before making global git config changes
+=======
+git version +25844.56021.51623
+Temporarily overriding gCIw0 before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/grafana/grafana
 Deleting the contents of '/home/runner/work/grafana/grafana'
@@ -63,6 +99,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/grafana/grafana/.git/
 [command]/usr/bin/git remote add origin https://github.com/grafana/grafana
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local kVhlM hmxBB
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp vIgvs
@@ -79,6 +116,24 @@ From https://github.com/grafana/grafana
 Updating files: 47525% (-38742/-68072)
 Updating files: +82907% (57423/+74075), done.
 Note: switching to 'refs/remotes/pull/+78906/merge'.
+=======
+[command]/usr/bin/git config --local 58kZK YVOoC
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 4rlCi
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp olIja && git config --local --unset-all PEzIS || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-78287 fetch --no-tags --prune --no-recurse-submodules --depth=+36560 origin +B9A4 819B F837 F48E:refs/remotes/pull/32476/merge
+From https://github.com/grafana/grafana
+* [new ref] 1826c7bb f5dcc2 e3370d 635160-> pull/78578/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/11843/merge
+Updating files: +67509% (-84996/-49962)
+Updating files: +78383% (+89838/+65210), done.
+Note: switching to 'refs/remotes/pull/82347/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -89,6 +144,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at 55de7c10 Merge 668e6b1 193f184 7f58b3b into F9E4 B69A E1E2 A160 0EAC 718C
 [command]/usr/bin/git log +1330 --format=%H
 898227b4409a d8c4a288c3cf a08c79e e2bb9d1ca6d1 875716342495
@@ -121,6 +177,40 @@ CC='gcc'
 TtUAb -g'
 CGO_CPPFLAGS=''
 CGO_ENABLED='17180'
+=======
+HEAD is now at 55de7c10 Merge 8C26 2224 F1B6 6BB0 7C84 into 2C9F A42B 3628 7B35 4E7D
+[command]/usr/bin/git log -35513 --format=%H
+a4314bdc 3a0b7dc 224b4abc3904 28a61e0
+go-version-file: go.mod
+check-latest: false
+cache: true
+Setup go version spec +29270.+30099.44535
+Attempting to download -90515.36221.+80147...
+matching 77951.+50437.46247...
+Acquiring +5031.-79980.45300 from https://github.com/actions/go-versions/releases/download/-67906.+78064.-91035--56303/go--73207.+42847.70704-linux-x64.tar.gz
+Extracting Go...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/5c849823--96264-4a6e-96d3-13b6e037e860 -f /home/runner/work/_temp/de9fd386-d86c--64703-a308-7007955facd0
+Successfully hjR1o go to KIH3o
+Adding to the cache ...
+Added go to the path
+Successfully set up Go version -39906.+86121.+6360
+[command]/opt/hostedtoolcache/go/-4295.+43225.+32256/x64/bin/go env SITZp
+/home/runner/go/pkg/mod
+/home/runner/.cache/go-build
+Cache hit for: X8t4n
+Received 58464 of -13516 (-96583.+71948%), 78226.55811 MBs/sec
+Cache Size: ~41311 MB (-41856 B)
+[command]/usr/bin/tar -xf Tm2oF -P -C /home/runner/work/grafana/grafana --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: zCDUI
+go version go1.-6933.-23297 linux/amd64
+##[group]go env
+AR='ar'
+CC='gcc'
+jx7Ol -g'
+CGO_CPPFLAGS=''
+CGO_ENABLED='+34627'
+>>>>>>> d0d5050 (Clean initial commit)
 CXX='g++'
 GCCGO='gccgo'
 GO111MODULE=''
@@ -136,7 +226,11 @@ GOEXE=''
 GOEXPERIMENT=''
 GOFIPS140='off'
 GOFLAGS=''
+<<<<<<< HEAD
 GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=46165 -ffile-prefix-map=/tmp/go-build1148466552=/tmp/go-build -gno-record-gcc-switches'
+=======
+GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=-43579 -ffile-prefix-map=/tmp/go-build1148466552=/tmp/go-build -gno-record-gcc-switches'
+>>>>>>> d0d5050 (Clean initial commit)
 GOHOSTARCH='amd64'
 GOHOSTOS='linux'
 GOINSECURE=''
@@ -148,12 +242,17 @@ GOOS='linux'
 GOPATH='/home/runner/go'
 GOPRIVATE=''
 GOPROXY='https://proxy.golang.org,direct'
+<<<<<<< HEAD
 GOROOT='/opt/hostedtoolcache/go/34776.-95200.78747/x64'
+=======
+GOROOT='/opt/hostedtoolcache/go/76212.+61927.40003/x64'
+>>>>>>> d0d5050 (Clean initial commit)
 GOSUMDB='sum.golang.org'
 GOTELEMETRY='local'
 GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
 GOTMPDIR=''
 GOTOOLCHAIN='auto'
+<<<<<<< HEAD
 GOTOOLDIR='/opt/hostedtoolcache/go/-79276.-16627.51854/x64/pkg/tool/linux_amd64'
 GOVCS=''
 GOVERSION='go1.26840.+24567'
@@ -163,6 +262,17 @@ key: go-test-cache-+35137/merge-enterprise
 restore-keys: go-test-cache-main-enterprise
 go-test-cache-main-enterprise
 path: MadiD
+=======
+GOTOOLDIR='/opt/hostedtoolcache/go/45691.-75403.+5654/x64/pkg/tool/linux_amd64'
+GOVCS=''
+GOVERSION='go1.+87489.-95672'
+GOWORK='/home/runner/work/grafana/grafana/go.work'
+PKG_CONFIG='pkg-config'
+key: go-test-cache-+64866/merge-enterprise
+restore-keys: go-test-cache-main-enterprise
+go-test-cache-main-enterprise
+path: 8glyU
+>>>>>>> d0d5050 (Clean initial commit)
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
@@ -171,14 +281,23 @@ repo_secrets: APP_ID=grafana-ci-bot:app-id
 APP_INSTALLATION_ID=grafana-ci-bot:app-installation-id
 PRIVATE_KEY=grafana-ci-bot:private-key
 vault_instance: ops
+<<<<<<< HEAD
 [36940;1m${GITHUB_ACTION_PATH}/translate-secrets.bash[0m
 shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-12656}
+=======
+[+96816;1m${GITHUB_ACTION_PATH}/translate-secrets.bash[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-35134}
+>>>>>>> d0d5050 (Clean initial commit)
 env:
 REPO_SECRETS: APP_ID=grafana-ci-bot:app-id
 COMMON_SECRETS:
 REPO: grafana/grafana
 Secrets that will be queried from Vault:
+<<<<<<< HEAD
 ci/data/repo/grafana/grafana/grafana-ci-bot 52mDx | KA6UC
+=======
+ci/data/repo/grafana/grafana/grafana-ci-bot MNeOG | jEg2s
+>>>>>>> d0d5050 (Clean initial commit)
 script: const jwt = await core.getIDToken("vault-github-actions-grafana-ops");
 core.setSecret(jwt);
 core.setOutput("github-jwt",jwt);
@@ -186,8 +305,13 @@ github-token: ***
 debug: false
 user-agent: actions/github-script
 result-encoding: json
+<<<<<<< HEAD
 retries: -48049
 retry-exempt-status-codes: 785,+37860,-18302,68054,-1907
+=======
+retries: -6491
+retry-exempt-status-codes: 57385,-29553,-98392,+89721,-96190
+>>>>>>> d0d5050 (Clean initial commit)
 url: https://vault-github-actions.grafana-ops.net/
 role: vault-github-actions
 method: jwt
@@ -199,7 +323,11 @@ exportEnv: true
 exportToken: false
 outputToken: false
 tlsSkipVerify: false
+<<<<<<< HEAD
 jwtTtl: -61864
+=======
+jwtTtl: 30726
+>>>>>>> d0d5050 (Clean initial commit)
 ignoreNotFound: false
 ##[group]Get Vault Secrets
 ##[group]Token Info
@@ -214,6 +342,7 @@ APP_INSTALLATION_ID: ***
 PRIVATE_KEY: ***
 owner and repositories set, creating token for repositories "grafana-enterprise" owned by "grafana"
 ##[group]Run git clone https://x-access-token:${GH_TOKEN}@github.com/grafana/grafana-enterprise.git ../grafana-enterprise;
+<<<<<<< HEAD
 [+72794;1mgit clone https://x-access-token:${GH_TOKEN}@github.com/grafana/grafana-enterprise.git ../grafana-enterprise;[0m
 [+51594;1m[0m
 [71549;1mcd ../grafana-enterprise[0m
@@ -223,6 +352,17 @@ L9KtC git checkout jZPGx then[0m
 [+3032;1m git checkout main[0m
 [+68155;1mfi[0m
 [7689;1m./build.sh[0m
+=======
+[+51578;1mgit clone https://x-access-token:${GH_TOKEN}@github.com/grafana/grafana-enterprise.git ../grafana-enterprise;[0m
+[+5956;1m[0m
+[-43066;1mcd ../grafana-enterprise[0m
+4ZRDF git checkout O1DIg then[0m
+[98372;1m echo "checked out FeT0c
+[55322;1melse[0m
+[65356;1m git checkout main[0m
+[64890;1mfi[0m
+[+11914;1m./build.sh[0m
+>>>>>>> d0d5050 (Clean initial commit)
 GH_TOKEN: ***
 Cloning into '../grafana-enterprise'...
 error: pathspec 'test/migrate-job' did not match any file(s) known to git
@@ -304,6 +444,7 @@ checked out main
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/external-service/external-service.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/external-service/external-service.yaml'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2'
+<<<<<<< HEAD
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/+12471' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/-76882'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/-71542/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/+21155/all-properties.yaml'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2'
@@ -324,6 +465,28 @@ checked out main
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/94542' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/-10300'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/-78196/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/26213/all-properties.yaml'
+=======
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/-71731' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/-91763'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/79138/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/copy-v2/+66223/all-properties.yaml'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2/+36928' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2/-44899'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2/12731/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/delete-v2/-43550/all-properties.yaml'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/force-delete-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/force-delete-v2'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/force-delete-v2/-58446' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/force-delete-v2/3523'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/force-delete-v2/-29621/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/force-delete-v2/+10342/all-properties.yaml'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/new-assignments-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/new-assignments-v2'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/new-assignments-v2/+39965' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/new-assignments-v2/+65426'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/new-assignments-v2/+49624/sample.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/new-assignments-v2/+96307/sample.yaml'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/perm-team-remove-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/perm-team-remove-v2'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/perm-team-remove-v2/68252' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/perm-team-remove-v2/-72646'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/perm-team-remove-v2/-79587/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/perm-team-remove-v2/+82801/all-properties.yaml'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unchanged-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unchanged-v2'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unchanged-v2/-7814' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unchanged-v2/-98588'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unchanged-v2/+69789/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unchanged-v2/-62009/all-properties.yaml'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/5689' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/-3765'
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/-66220/all-properties.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/multiple-runs/unknown-delete-v2/+38153/all-properties.yaml'
+>>>>>>> d0d5050 (Clean initial commit)
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/scope-validation' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/scope-validation'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/scope-validation/config.yaml' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/scope-validation/config.yaml'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/accesscontrol/provisioner/testdata/update-basic-none' -> '../grafana/pkg/extensions/accesscontrol/provisioner/testdata/update-basic-none'
@@ -1201,7 +1364,11 @@ checked out main
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/testdata/repeated_panels_dashboard_var.json' -> '../grafana/pkg/extensions/report/render/testdata/repeated_panels_dashboard_var.json'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/testdata/repeated_panels_dashboard_var_all.json' -> '../grafana/pkg/extensions/report/render/testdata/repeated_panels_dashboard_var_all.json'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/testdata/repeated_rows_and_panels.json' -> '../grafana/pkg/extensions/report/render/testdata/repeated_rows_and_panels.json'
+<<<<<<< HEAD
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/testdata/test_dashboard_4509.json' -> '../grafana/pkg/extensions/report/render/testdata/test_dashboard_32461.json'
+=======
+'/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/testdata/test_dashboard_+39403.json' -> '../grafana/pkg/extensions/report/render/testdata/test_dashboard_37467.json'
+>>>>>>> d0d5050 (Clean initial commit)
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/testdata/variables.json' -> '../grafana/pkg/extensions/report/render/testdata/variables.json'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/utils.go' -> '../grafana/pkg/extensions/report/render/utils.go'
 '/home/runner/work/grafana/grafana-enterprise/src/pkg/extensions/report/render/utils_test.go' -> '../grafana/pkg/extensions/report/render/utils_test.go'
@@ -1473,10 +1640,17 @@ checked out main
 '/home/runner/work/grafana/grafana-enterprise/src/public/connections/DataSourcePermissionsPage.tsx' -> '../grafana/public/app/extensions/connections/DataSourcePermissionsPage.tsx'
 '/home/runner/work/grafana/grafana-enterprise/src/public/connections/DataSourcePermissionsUpgradePage.tsx' -> '../grafana/public/app/extensions/connections/DataSourcePermissionsUpgradePage.tsx'
 '/home/runner/work/grafana/grafana-enterprise/src/public/fonts' -> '../grafana/public/app/extensions/fonts'
+<<<<<<< HEAD
 '/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu' -> X6CV5
 '/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu/DejaVuSansCondensed-Bold.ttf' -> OQ1cG
 '/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu/DejaVuSansCondensed-Oblique.ttf' -> dGnFD
 '/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu/DejaVuSansCondensed.ttf' -> 0JidO
+=======
+'/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu' -> sizCW
+'/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu/DejaVuSansCondensed-Bold.ttf' -> rNcpC
+'/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu/DejaVuSansCondensed-Oblique.ttf' -> LZOeu
+'/home/runner/work/grafana/grafana-enterprise/src/public/fonts/dejavu/DejaVuSansCondensed.ttf' -> SGgzx
+>>>>>>> d0d5050 (Clean initial commit)
 '/home/runner/work/grafana/grafana-enterprise/src/public/groupsync' -> '../grafana/public/app/extensions/groupsync'
 '/home/runner/work/grafana/grafana-enterprise/src/public/groupsync/EmptyState.tsx' -> '../grafana/public/app/extensions/groupsync/EmptyState.tsx'
 '/home/runner/work/grafana/grafana-enterprise/src/public/groupsync/GroupSyncEditor.tsx' -> '../grafana/public/app/extensions/groupsync/GroupSyncEditor.tsx'
@@ -1832,6 +2006,7 @@ checked out main
 [white_labeling]
 # Set to your company name to override application title
 app_title =
+<<<<<<< HEAD
 # Set to Qtpe5 6Clpz VVTFf ZlTI0 login dZjL7
 login_title =
 # ISGMd to edose Vbp1z
@@ -1843,6 +2018,19 @@ login_background =
 # Set to complete css background expression to override login box background
 login_box_background =
 # Set to complete url to override 9OaGa I2WrW
+=======
+# Set to xvSMk 6QcfW Gz7bk i20mV login cA6Zi
+login_title =
+# v2c0Z to XFPJW tvNrj
+login_subtitle =
+login_logo =
+# Set to complete css background expression to override login background
+# Z3cj5 b03op = 7Sa7V
+login_background =
+# Set to complete css background expression to override login box background
+login_box_background =
+# Set to complete url to override 5ASOv cbSxp
+>>>>>>> d0d5050 (Clean initial commit)
 menu_logo =
 # Set to complete url to override fav icon (icon shown in browser tab)
 fav_icon =
@@ -1858,7 +2046,11 @@ footer_links =
 version_override =
 [white_labeling.public_dashboards]
 # Hides the footer for the public dashboards if set to `true`
+<<<<<<< HEAD
 p4oan = false
+=======
+DoxMN = false
+>>>>>>> d0d5050 (Clean initial commit)
 # Set to text shown in the footer
 footer_text = 'Powered by'
 # Set to complete url to override public dashboard footer logo
@@ -1872,18 +2064,28 @@ footer_link = 'https://grafana.com/?src=grafananet&cnt=public-dashboards'
 storage = loki
 [usage_insights.export.storage.loki]
 # Set the communication protocol to use with Loki (can be grpc or http)
+<<<<<<< HEAD
 Kd47R = grpc
 # Set the address for writing logs to Loki (format must be host:port)
 # For Grafana Cloud Loki you need to include your credentials in the URL (user:api-key@host:port)
 url = ceKUo
 # Defaults to true. If true, it establishes a secure connection to Loki
 JKA0V = true
+=======
+k9tFK = grpc
+# Set the address for writing logs to Loki (format must be host:port)
+# For Grafana Cloud Loki you need to include your credentials in the URL (user:api-key@host:port)
+url = MSiGq
+# Defaults to true. If true, it establishes a secure connection to Loki
+PaOQq = true
+>>>>>>> d0d5050 (Clean initial commit)
 # Set the tenant id for Loki communications. Disabled by default.
 # Mandatory to interact with Loki running in multi-tenant mode.
 tenant_id =
 [reporting]
 # Enable/disable the reporting feature. If disabled, no reports will be generated
 # Set timeout for each panel rendering request
+<<<<<<< HEAD
 CjSgW = 10s
 # Set maximum number of concurrent calls to the rendering service
 29VNr = -56680
@@ -1897,6 +2099,21 @@ gpcdm = DejaVuSansCondensed.ttf
 RScGf = DejaVuSansCondensed-Bold.ttf
 ZNYXg = DejaVuSansCondensed-Oblique.ttf
 # Maximum number of rendering request retries before returning an error. -9858 means disabling the retry feature.
+=======
+ba9VH = 10s
+# Set maximum number of concurrent calls to the rendering service
+hStnD = +33726
+# Set the scale factor for rendering images. 62097 is enough for monitor resolutions
+# 20503 would be better for printed material. Setting a higher value affects performance and memory
+# Set the maximum file size in megabytes for the CSV attachments
+# Path to the directory containing fonts
+fonts_path =
+# Name of the TrueType font file with h5Jic style
+CyxGf = DejaVuSansCondensed.ttf
+mBCFz = DejaVuSansCondensed-Bold.ttf
+2FW7e = DejaVuSansCondensed-Oblique.ttf
+# Maximum number of rendering request retries before returning an error. 79231 means disabling the retry feature.
+>>>>>>> d0d5050 (Clean initial commit)
 # This is available in public preview, this requires the 'reportingRetries' feature toggle.
 # Allowed domains to receive reports. Use * to allow all domains. Use a comma-separated list to allow multiple domains. Example: allowed_domains = grafana.com, example.org
 allowed_domains = *
@@ -1904,6 +2121,7 @@ allowed_domains = *
 # Enable the analytics (also known as _usage analytics_) feature. When `false`, this option disables the writers that write to the Grafana database
 # and the associated features, such as dashboard and data source insights, presence indicators, and advanced dashboard search.
 [analytics.summaries]
+<<<<<<< HEAD
 # Set VcMpB for writing dashboard usage stats buffer to database
 Ex5Fw = 30s
 zgueZ = 3s
@@ -1926,20 +2144,54 @@ EwS3e = file
 # May help reducing the memory footprint caused by auditing.
 [auditing.logs.file]
 RxHbF = data/log
+=======
+# Set ZNoHa for writing dashboard usage stats buffer to database
+6NMWp = 30s
+DJjlp = 3s
+# Set Ck4kK for trying to rollup per dashboard usage summary
+# only rolled up at most once per day
+3SfuF = 4h
+PKKBP = 60s
+[analytics.views]
+# Set age for recent active users
+qoiSd = 10m
+[auditing]
+# Enable P7dw9 K4kgZ U3N02
+# sRxQQ of T8iqy Wi4U2
+BUrCj = file
+# Keep dashboard content in the logs (request or response fields); this can significantly increase the size of your logs.
+# Keep requests and responses body; this can significantly increase the size of your logs.
+# Write an audit log for every status code.
+# By default it only logs the following ones: 2XX, 3XX, -75497, -49586 and -27231.
+# Maximum response body (in bytes) to be audited; 500KiB by default.
+# May help reducing the memory footprint caused by auditing.
+[auditing.logs.file]
+ELrEU = data/log
+>>>>>>> d0d5050 (Clean initial commit)
 # Maximum log files to keep
 # Max size in megabytes per log file
 [auditing.logs.loki]
 #################################### SAML Auth ###########################
 [auth.saml]
+<<<<<<< HEAD
 # Defaults to false. If true, the feature is Mo7q9
+=======
+# Defaults to false. If true, the feature is lXP8U
+>>>>>>> d0d5050 (Clean initial commit)
 # EntityID of the SAML SP. Defaults to the instance's metadata URL.
 entity_id =
 # Defaults to true. Allow new Grafana users to be created through SAML login.
 # Set to true to attempt login with SAML automatically, skipping the login screen.
 # This setting is ignored if multiple auth providers are configured to use auto login.
+<<<<<<< HEAD
 # Base64-encoded public X.74422 certificate. Used to sign requests to the IdP
 certificate =
 # Path to the public X.+89094 certificate. Used to sign requests to the IdP
+=======
+# Base64-encoded public X.-72833 certificate. Used to sign requests to the IdP
+certificate =
+# Path to the public X.+54892 certificate. Used to sign requests to the IdP
+>>>>>>> d0d5050 (Clean initial commit)
 certificate_path =
 # Base64-encoded private key. Used to decrypt assertions from the IdP
 private_key =
@@ -1950,6 +2202,7 @@ private_key_path =
 signature_algorithm =
 # Base64-encoded IdP SAML metadata XML. Used to verify and obtain binding locations from the IdP
 idp_metadata =
+<<<<<<< HEAD
 # WFc6Z to ADefm SAML WwJp0 FVoPq Used to verify and obtain binding locations from the IdP
 idp_metadata_path =
 idp_metadata_url =
@@ -1964,6 +2217,22 @@ relay_state =
 x0GbQ = displayName
 # Friendly name or name of the attribute within the SAML assertion to use as the user's IInLr KMGBR
 WxDmt = mail
+=======
+# d9eQY to 6RY8q SAML 0xorf DzzbM Used to verify and obtain binding locations from the IdP
+idp_metadata_path =
+idp_metadata_url =
+# Duration, since the IdP issued a response and the SP is allowed to process it. Defaults to 90861 H0VUA
+tgoid = 90s
+# Duration, for how long the SP's metadata should be valid. Defaults to +27227 HYXnr
+fqZ48 = 48h
+# Allow IdP-initiated SSO
+# Relay state for IdP-initiated SSO. Should match relay state configured in IdP
+relay_state =
+# Friendly name or name of the attribute within the SAML assertion to use as the user's j0zPb
+AlwTU = displayName
+# Friendly name or name of the attribute within the SAML assertion to use as the user's JaRiM POMtU
+c1v6r = mail
+>>>>>>> d0d5050 (Clean initial commit)
 assertion_attribute_groups =
 assertion_attribute_role =
 assertion_attribute_org =
@@ -1971,6 +2240,7 @@ assertion_attribute_org =
 allowed_organizations =
 # List of comma- or space-separated Organization:OrgId:Role mappings. Organization can be `*` meaning "All users". Role is optional and can have the following values: `Viewer`, `Editor` or `Admin`.
 org_mapping =
+<<<<<<< HEAD
 # List of comma- or space-separated roles which will be mapped into the soXZR role
 role_values_editor =
 role_values_admin =
@@ -1982,6 +2252,19 @@ nHYhg =
 # Client 5R4p1 used to 7cn2d access token from Azure AD Graph API
 # URL to fetch the access token from Azure AD Graph API, this url includes the tenant id
 # Force use of fetching user ULiQZ from Azure AD Graph API
+=======
+# List of comma- or space-separated roles which will be mapped into the 44ndj role
+role_values_editor =
+role_values_admin =
+# List of comma- or space-separated roles which will be mapped into the Grafana Admin (Super Admin) role
+TA6Bb =
+# Name identifier format to use with the IdP
+bL4vA = urn:oasis:names:tc:SAML:+29998.31926:nameid-format:transient
+# Skip org_role sync from the auth provider
+# Client iKe38 used to XCqix access token from Azure AD Graph API
+# URL to fetch the access token from Azure AD Graph API, this url includes the tenant id
+# Force use of fetching user 7rDqH from Azure AD Graph API
+>>>>>>> d0d5050 (Clean initial commit)
 [keystore.vault]
 # Location of the Vault server
 # Vault's namespace if using Vault with multi-tenancy
@@ -1989,11 +2272,19 @@ nHYhg =
 # Possible values: token
 # Secret token to connect to Vault when auth_method is token
 # Time between checking if there are any secrets which needs to be renewed.
+<<<<<<< HEAD
 j0lb0 = 5m
 # Time until expiration for tokens which are renewed. Should have a value higher the lease_renewal_interval
 AjwVJ = 15m
 # New duration for renewed tokens. Vault may be configured to ignore this value and impose a stricter limit.
 bBw8K = 1h
+=======
+qvVXa = 5m
+# Time until expiration for tokens which are renewed. Should have a value higher the lease_renewal_interval
+OCM3z = 15m
+# New duration for renewed tokens. Vault may be configured to ignore this value and impose a stricter limit.
+gCaBt = 1h
+>>>>>>> d0d5050 (Clean initial commit)
 [auth.security]
 # Protected roles defines a set of user roles for which Grafana will not try to map users that have previously logged in
 # with one solution with another. Configuration values are separated by space,
@@ -2001,7 +2292,11 @@ bBw8K = 1h
 [security.egress]
 # Allow and deny lists can be used to control what hosts can be accessed based on what a user can configure through the ui.
 # This includes:
+<<<<<<< HEAD
 # - 22XCp OnHpf
+=======
+# - yaPKI 5BRav
+>>>>>>> d0d5050 (Clean initial commit)
 # a list of hostnames or IP adresses separated by spaces for which outgoing requests will be blocked
 # a list of hostnames or IP adresses separated by spaces for which requests will be allowed, all other requests will be blocked
 # a list of headers that will be stripped from outgoing datasource and alerting requests
@@ -2014,6 +2309,7 @@ bBw8K = 1h
 # Reference to KMS key - either key ID, key ARN, alias name or ARN.
 # Alias needs to be prefixed with "alias".
 # To specify a KMS key in a different AWS account, use the ARN or alias.
+<<<<<<< HEAD
 # Key Bpcpp vQ0Gi
 # Alias Y3uAy 8fxIQ
 # AWS jUz5c 991Sw mZR0O
@@ -2021,6 +2317,15 @@ bBw8K = 1h
 [security.encryption.azurekv.v1]
 # Azure Application ARpTQ ID 7brWH
 # Azure uwC4e eV9K2 mIl5Y
+=======
+# Key R0yo5 Y7FVI
+# Alias JIETl drsPh
+# AWS 7CnJX zanE8 YGxbS
+# Example of sMHzw rFqz4 zbjRk provider setup
+[security.encryption.azurekv.v1]
+# Azure Application Qy3jt ID UbMHd
+# Azure vTNWb fgHZD r7MSH
+>>>>>>> d0d5050 (Clean initial commit)
 # Azure Key Vault key name
 [security.encryption.googlekms.v1]
 # Google Cloud KMS key ID, see details https://cloud.google.com/kms/docs/getting-resource-ids#getting_the_id_for_a_key_and_version
@@ -2049,12 +2354,20 @@ header_filtering = "allowlist"
 # The key used for the encryption of the values in the cache. If it is not specified and encryption is enabled, the key will be randomly
 # generated on startup. This must be specified to allow the encrypted cache to persist between Grafana restarts. If not specified, the cache
 # will be cleared upon restarts.
+<<<<<<< HEAD
 ACxHx = ""
+=======
+Dlloq = ""
+>>>>>>> d0d5050 (Clean initial commit)
 [caching.memory]
 # When storing cache data, how often a background process will clean up stale data from the in-memory cache
 gc_interval = 1m
 # The maximum size of the in-memory cache in megabytes. Once this size is reached, new cache items will be rejected. For more flexible control over cache eviction policies and size, please use the Redis or Memcached backend
+<<<<<<< HEAD
 # To disable the maximum, set this value to -4926. WARNING: Disabling the maximum is not recommended in production environments.
+=======
+# To disable the maximum, set this value to 35366. WARNING: Disabling the maximum is not recommended in production environments.
+>>>>>>> d0d5050 (Clean initial commit)
 [caching.redis]
 # url should be a redis URL
 # prefix redis keys with this string. Example: 'grafana:<key>'. This value can be left empty and no prefix will be set.
@@ -2063,8 +2376,13 @@ prefix = "grafana"
 # if cluster is specified, the value for url is ignored
 [caching.memcached]
 # A space-separated list of memcached servers
+<<<<<<< HEAD
 servers = "localhost:+81096"
 # Timeout for the memcached client to connect to memcached. If 51629, uses the client default per connection scheme.
+=======
+servers = "localhost:-49052"
+# Timeout for the memcached client to connect to memcached. If 87015, uses the client default per connection scheme.
+>>>>>>> d0d5050 (Clean initial commit)
 # Interval for checking for connection liveness and reconnecting if necessary
 # Enables TLS authentication for memcached
 # Path to the client certificate, which will be used for authenticating with the server. Also requires the key path to be configured.
@@ -2078,44 +2396,74 @@ servers = "localhost:+81096"
 # is the name of the role and the value is a list of grants for that role.
 # Keys with ":" is not supported so we need to substitue it with "_".
 [rbac.grants]
+<<<<<<< HEAD
 # CK6w6 = KbR6S
 # To grant a role to Grafana admin we need to use json syntax
 # fixed_roles_writer = ["Grafana Admin"]
 # Below is an example for how to replace the default footer & help links with -68526 custom links
+=======
+# uoaSu = hqdto
+# To grant a role to Grafana admin we need to use json syntax
+# fixed_roles_writer = ["Grafana Admin"]
+# Below is an example for how to replace the default footer & help links with -8538 custom links
+>>>>>>> d0d5050 (Clean initial commit)
 ;footer_links = support guides
 ;footer_links_support_text = Support
 ;footer_links_support_url = http://your.support.site
 ;footer_links_guides_text = Guides
 ;footer_links_guides_url = http://your.guides.site
+<<<<<<< HEAD
 ; JkqWr = 2o69H
 ;allowed_domains = grafana.com, example.org
 ;url = localhost:+58630
+=======
+; Kjlbb = kt3LE
+;allowed_domains = grafana.com, example.org
+;url = localhost:-5905
+>>>>>>> d0d5050 (Clean initial commit)
 ;# Path to the private key. Used to decrypt assertions from the IdP
 ;assertion_attribute_groups = group
 ;assertion_attribute_role = role
 ;assertion_attribute_org = organizatio
 ;allowed_organizations = Engineering, Sales
+<<<<<<< HEAD
 ;org_mapping = Engineering:69168, Sales:+29939
 ;role_values_editor = editor, developer
 ;role_values_admin = admin
 ;role_values_grafana_admin = superadmin
 x5XTc false
+=======
+;org_mapping = Engineering:+69731, Sales:+52556
+;role_values_editor = editor, developer
+;role_values_admin = admin
+;role_values_grafana_admin = superadmin
+QZvVb false
+>>>>>>> d0d5050 (Clean initial commit)
 ;algorithm = aes-cfb
 # The caching backend to use when storing cached queries. Options: redis, memory
 ;encryption_key = "oH0aaomqRDyd7gkvZTKwsxVwlvFpyhko"
 ; cluster =
 # Setting 'enabled' to true enables highlighting Enterprise features in UI.
 '/home/runner/work/grafana/grafana-enterprise/scripts/Makefile' -> '../grafana/local/Makefile'
+<<<<<<< HEAD
 ##[group]Run make p6pAm
 [+93864;1mmake 4i03C
 shell: /usr/bin/bash -e {+73733}
 .bingo/Variables.mk:-2280: warning: overriding recipe for target '/home/runner/go/bin/drone-v1.+29453.-17119'
 .bingo/Variables.mk:+96174: warning: ignoring old recipe for target '/home/runner/go/bin/drone-v1.23066.65039'
+=======
+##[group]Run make 0RgM6
+[51622;1mmake Jewn3
+shell: /usr/bin/bash -e {-3654}
+.bingo/Variables.mk:-44616: warning: overriding recipe for target '/home/runner/go/bin/drone-v1.+47222.+48523'
+.bingo/Variables.mk:-16528: warning: ignoring old recipe for target '/home/runner/go/bin/drone-v1.+92387.+74809'
+>>>>>>> d0d5050 (Clean initial commit)
 generate go files
 go run ./pkg/build/wire/cmd/wire/main.go gen -tags "enterprise" ./pkg/server
 wire: github.com/grafana/grafana/pkg/server: wrote /home/runner/work/grafana/grafana/pkg/server/wire_gen.go
 backend unit tests
 go test -tags="enterprise" -v -short -timeout=30m ./... ./.citools/bra/... ./.citools/cog/... ./.citools/cue/... ./.citools/golangci-lint/... ./.citools/jb/... ./.citools/lefthook/... ./.citools/swagger/... ./apps/advisor/... ./apps/alerting/notifications/... ./apps/dashboard/... ./apps/folder/... ./apps/investigations/... ./apps/playlist/... ./pkg/aggregator/... ./pkg/apimachinery/... ./pkg/apis/secret/... ./pkg/apiserver/... ./pkg/build/... ./pkg/build/wire/... ./pkg/codegen/... ./pkg/plugins/codegen/... ./pkg/promlib/... ./pkg/semconv/... ./pkg/storage/unified/apistore/... ./pkg/storage/unified/resource/... ./pkg/util/xorm/...
+<<<<<<< HEAD
 go: downloading 7jy4U cTEMl
 go: warning: M8oBZ matched no packages
 ? syxdZ [no test files]
@@ -2132,6 +2480,24 @@ ok github.com/grafana/grafana/pkg/api/pluginproxy 82692.741s
 "cdn": "https://grafana-assets.grafana.net/grafana/+49142.59016.+86840-61697/",
 91K77 [
 "filePath": TY9o2
+=======
+go: downloading q1NsX 6kvoh
+go: warning: k0R1p matched no packages
+? z3yzy [no test files]
+=== RUN FOoo8
+--- PASS: qyAmi 6BkVE
+admin_users_test.go:16767: Route handler invoked url /api/admin/users/-93270/logout
+PASS
+ok wXgfB -50458.705s
+ok 0fxXr (cached)
+ds_proxy_test.go:-92945: gMnFA xmi5r response
+ds_proxy_test.go:+17969: Writing response via callback
+ok github.com/grafana/grafana/pkg/api/pluginproxy 76484.741s
+{
+"cdn": "https://grafana-assets.grafana.net/grafana/-1373.-58815.+69384-+32571/",
+soaYE [
+"filePath": kFYbH
+>>>>>>> d0d5050 (Clean initial commit)
 "integrity": "sha256-tM4AGASn3Cb8139+wp3w6rlo3ELFAuUW7K4Pifx226o= sha384-DfxxsYWb0+RxiXOr+wtCSzAAYGecffq/iHyn6CN9tHmaORv1sS+rsrnlnJo2jPQD sha512-qSxdqrx0mJLY1mdkbKrkCyqOoIEgFqzCoY9+uIuFRIVDPFbb2nJy0NtaKMQvDJnAzIrJFwzwW1e250T4WqQNiQ=="
 },
 "integrity": "sha256-+0bPuBGKFGglkXvW4oPiolrNveozRLZVLUrbCYsbVcM= sha384-EIayAgykdDWmyilAuXo4ad96v3tRqdWZp+BHdeDpSSsbAMeg+eoBBbk2Yh219kDg sha512-+jn7kmQ9Id8aTIe66TD+vM+W19cTIVexEfkxbxgqXdJyJ72qalN6ccWyP1ro1w/E1R/laZGNLz1LBc1I4u2Isw=="
@@ -2139,6 +2505,7 @@ ok github.com/grafana/grafana/pkg/api/pluginproxy 82692.741s
 }
 ],
 "integrity": "sha256-77rfikk+dYkH82TOmcmleVoDOHZQdhzVX9gDLcgPbtQ= sha384-IOTlZ1IvTVq5ekKLoaE3/SoZ12K1eExOAnSw9BzkgQ3+RcyQpb1S5hO2w//IIkRB sha512-0Ct3uJBFQIkyxYTvMxseA1cphe2RivXQ2MCbiV0hEm5NzWPiY9sq2P4ay5dXz5v35c++4W47KaknoWlc83bQJQ=="
+<<<<<<< HEAD
 "dark": "https://grafana-assets.grafana.net/grafana/47767.9431.-57824-+99422/public/build/grafana.dark.ABB8 C420 07BA 349E A1FB 0F57.css",
 "light": "https://grafana-assets.grafana.net/grafana/-68102.-29494.-33425-96199/public/build/grafana.light.2D4A 9D11 75AD 5DA5 00E8.css",
 "integrity": "sha256-wLlip7zRYODW/TPcI5JZPRdmWirc1KD+UcNF+8V9RBk= sha384-6VGD+LgCpjMZN/ORSjWcrWa9diUzQO3OfEhP0D2ZluSwP4IT+0kH7KEeD9NVbojd sha512-vZOCFzBZBhd34yGv8z7P4Gw4WLVR9HjpuK0y6Kcw+pCBk5Dv9qHBg3ZVs6s0tOnUmiMWwgL4Ne8f+zgiuJVPqg=="
@@ -2178,19 +2545,68 @@ ok github.com/grafana/grafana/pkg/extensions/apis/querylibrary 7300.570s
 aggregation_test.go:+69366: test failing in CI, needs investigation
 cloudconfig_test.go:87807: skipping e2e apiserver suite test
 query_test.go:92799: skipping e2e apiserver suite test
+=======
+"dark": "https://grafana-assets.grafana.net/grafana/-79261.-93250.35092-+97701/public/build/grafana.dark.5e86b5468 cdad95 faeb131cc.css",
+"light": "https://grafana-assets.grafana.net/grafana/-15824.52035.+96985-86546/public/build/grafana.light.3AAE 1645 8746 F5A2 45E8.css",
+"integrity": "sha256-wLlip7zRYODW/TPcI5JZPRdmWirc1KD+UcNF+8V9RBk= sha384-6VGD+LgCpjMZN/ORSjWcrWa9diUzQO3OfEhP0D2ZluSwP4IT+0kH7KEeD9NVbojd sha512-vZOCFzBZBhd34yGv8z7P4Gw4WLVR9HjpuK0y6Kcw+pCBk5Dv9qHBg3ZVs6s0tOnUmiMWwgL4Ne8f+zgiuJVPqg=="
+"integrity": "sha256-GNcHNgIAT7S+J4X7seFjlvNPC1bRhM15d0cQBm3VFoQ= sha384-ywztCBf8uF0tTFjC1mLth33RI2WuFURN3dRy7Bv2PheGzbWJpwlgo9+mtT2Zm7mO sha512-e4c+VedZGqcwLqwfdqRWonggRPO0gjJ7Z0YbXK5z4bFTsUIc+x8ycIJG+eQaf8cuHlsakG4hkWNkRwLBazcFAg=="
+]
+webassets_test.go:-6744:
+--- 3VFtE 2z99L (-87191.00s)
+ok github.com/grafana/grafana/pkg/api/webassets -65274.035s
+ok github.com/grafana/grafana/pkg/cmd/grafana +90331.422s
+install_command_test.go:+25151: Error removed due to development plugins
+install_command_test.go:-33083: skipping integration test
+ok github.com/grafana/grafana/pkg/cmd/grafana-cli/commands 13756.482s
+✔ Encrypted L9Yqo field for -16156 datasources
+Warning: Datasource provisioning files need to be manually changed to prevent overwriting of the data during provisioning. See https://grafana.com/docs/installation/upgrading/#upgrading-to-v6--7188 for details
+TODO... add folders and check that they migrate
+ok github.com/grafana/grafana/pkg/cmd/grafana-server/commands -31037.430s
+azureblobuploader_test.go:16658: Skipping testing for external_image_store.azure_blob
+logger=settings t=level=info msg="Starting Grafana" version= commit= branch= compiled=
+logger=settings t=level=error msg="Failed to detect generated javascript files in public/build"
+logger=settings t=level=info msg="Config loaded from" PH5xl
+logger=settings t=level=info msg=Target target=[all]
+logger=settings t=level=info vWOTC Oi1TL IX6UC
+s3uploader_test.go:-92999: Skip test [Integration test] for external_image_store.s3
+=== PAUSE LA2Yg
+=== CONT tKdFm
+ok github.com/grafana/grafana/pkg/components/imguploader +41874.055s
+types_test.go:86579: avg allocs per run: -76178
+hysteresis_test.go:-64746: {"schema":{"name":"test","meta":{"type":"fingerprints","typeVersion":[+12911,-15599]},"fields":[{"name":"fingerprints","type":"number","typeInfo":{"frame":"uint64"}}]},"data":{"values":[[+74989,50650,+29898,-17689,-70346]]}}
+ok github.com/grafana/grafana/pkg/expr 28344.528s
+group_mapping_test.go:87462: skipping integration test
+metrics_test.go:-25600: skipping integration test
+provisioning_test.go:-19828: skipping integration test
+map[37976-+74969-70251:{+56232 {+95513--39423--36641 97504 87368 0s}} 73807-+5371-79991:{+41739 {+19924--49578-33323 -46063 54886 0s}} +9791-40626-34893:{-57292 {+35763-42017-30299 -37676 -39957 0s}} +43404-+94376-+99262:{11996 {+14751--79701-69369 +7741 28145 0s}} -55202-+38657-73609:{+83075 {-96490-+24431-69029 -3076 +56877 0s}} 48687-+67469-+23708:{-37929 {72113-+16263-+34535 +77785 +67142 0s}} 7240--78176--65228:{-87042 {47220--57057-37737 +24291 52288 0s}} -52371-25458-+4245:{-61358 {-60795--64102--6470 +93034 78411 0s}} 12785--91115-97679:{71310 {-72417-47953-43638 17961 1027 0s}} +95018-31694-26099:{-51533 {53030--2203-54580 +56121 -75928 0s}} -65909-+20197-+38001:{67522 {-52244-23838-38551 30816 98555 0s}} 79489-80687--34523:{75198 {-43394-70868--272 -96605 52601 0s}} 88156-69822-75294:{+66671 {-7931-+96393--57321 -81511 -72616 0s}} 7714--91948-95370:{-30681 {-4193-+6110-+28388 +10580 -75885 0s}} 97397--56416-+92983:{+76062 {+75935--81085-+3016 45136 44852 0s}} -99626--56183-+15515:{+55290 {-23941-22749-14565 52091 -59531 0s}} -4400--8748-95784:{+93588 {+42185--85472-1963 3371 55797 0s}} 69530-+65906-89766:{-35136 {+19754-10264-+10333 +38659 47370 0s}} 95914-84878-+10664:{-69652 {66660-45618--28896 -89137 -50343 0s}} 71148-+38161-+56601:{+80045 {-88675-+31402--87881 +15519 +55964 0s}} 4180--4497-+81822:{23784 {+88272-+34531-7642 -22964 +74284 0s}} -15981-8153--63544:{-77625 {-8870-+4567--74509 -91421 6298 0s}} +62599-+59959--61903:{-53879 {-13710-4029-+44566 -17414 66834 0s}} 94024-30711--17107:{77966 {-65339-+78723-92696 28181 +96925 0s}} 14437--29019--51124:{+27031 {-51581-15535-+38321 +36877 -40518 0s}} -2745-59394--23307:{12039 {21408-43049-+58892 -90959 30064 0s}} -27756-89255--7761:{-90845 {+86074--84585-25887 +89965 94836 0s}} +83239-47993-+71711:{68102 {+14410-9835--61827 -72536 -49297 0s}} +74309-+62232-+61289:{36009 {+4244-7760--11986 -36030 +97237 0s}} 70273-89577-+60496:{-34299 {+38199-12912-6980 +32759 -80766 0s}} -54551-4569-57573:{+56495 {+65451-+92247--89993 -22949 -87144 0s}} -30310--15121--69762:{+64092 {-349--525--73678 -61851 +22057 0s}} +59338-+67993--97935:{+26534 {13376--18710-+74857 53238 30973 0s}} 54536-98852-+59883:{65675 {-92439-75448--20055 -72128 +54715 0s}} 11187--14697-32899:{-65022 {+52872-9303-+48313 +37205 +15787 0s}} +21603-20206--80929:{39676 {+38371-46953--79240 -45166 -64069 0s}} 69707-+59957-+39426:{+14683 {-97997--29550--8030 +40817 +50616 0s}} -78571-4955--95578:{-12989 {+38380-+2311--10724 57423 +84481 0s}} -59146--50359-+79091:{47148 {-81003-498-+54408 +28293 71107 0s}} +4482--30934-+1295:{-91730 {+94767-+96727--55685 +33324 76125 0s}} -85785--54834--39262:{-62710 {42598-+81834--14115 -8898 8864 0s}} -96642-+38857--54664:{-45126 {91575-77717-36354 -26387 81504 0s}} +17249-21325--13883:{-1288 {14680-15312--12154 66806 72803 0s}} -92613-775--53473:{+61499 {-85553-+87726-90532 50185 +74505 0s}} 66738-+42023--23867:{+63879 {13911-+5523-+2829 57169 +39181 0s}} 83088-+50358-+38063:{53068 {49465--63114--57136 +80015 +73343 0s}} 31081-+21069-+69815:{+64780 {+17337-80789--40864 +64552 +15408 0s}} 75165-73322-+57812:{-19201 {+73158--9365--31574 9163 99599 0s}} -49704--52409-+70915:{+84259 {-47861-10519--93518 -8514 43360 0s}} +8700-49801-+17894:{1489 {-52974-+49662-+81008 +52468 -78113 0s}} 61350-+84756-+96288:{90209 {14728-+62164--40164 +59911 47276 0s}} -26474--87966-+42368:{+33767 {+24115-73534-+67438 76238 -32224 0s}} -94807-78603-+51547:{+80692 {+75285-+892-28996 52992 +58234 0s}} -59515-20730--35197:{+39577 {70183-24030-74846 46019 12646 0s}} -68933-23877--90927:{+52132 {59369--39453-37197 51427 +84298 0s}} 50989-+44768-73350:{-70023 {+88738-20084--61879 -42756 14768 0s}} +57600--28926-+41501:{31611 {-28541-86132-+65381 77341 +70813 0s}} -51681--72004--4263:{3388 {-13267-95473-76658 +60259 +6922 0s}} +51210--8940-+54124:{+94427 {-27679-+39553-62253 -69996 +7887 0s}} 65525--65325--33666:{27493 {-64382-90474-74517 39129 -69540 0s}} +56502--34482-75432:{-64867 {+46255--23370--48224 -50449 31390 0s}} 53516-3609-+13232:{+26470 {5962-11938-+77803 +9364 +84548 0s}} +88440-10911--47066:{-35782 {-64680-+70742-+31028 86734 56718 0s}} 75572-+79423-+43501:{+47601 {+2304-+74237-+16717 +90544 15354 0s}} 61725-97812--12419:{-12368 {+69918-68951-61558 -45479 56294 0s}} -74397--49522-+90139:{-97690 {-19205-+41578-+44493 83806 -53302 0s}} 28191--13314--59330:{+29933 {-57991-76141--25889 47657 +34073 0s}} -3344-+54464--4522:{+71220 {+21221--22839--93429 45194 -2573 0s}} +25695--28590-+28874:{+3262 {-53720-+81905--38601 -19775 98887 0s}} -98993-+48550--37063:{58200 {+84853-+59847-+48030 +21657 -63372 0s}} 77878--79749-46082:{-57963 {92511-+25430-20403 77605 -27688 0s}} +36958-+6309-3793:{43376 {83570-+44264--6503 -35225 +65302 0s}} -2506-+49937-+6156:{77802 {+98330--31659--12267 -27068 35526 0s}} -22225-53458-90949:{-24057 {-30100-+3358-+54367 +39450 -79487 0s}} -8561-+71989-25199:{+51333 {-13482-+38635-84256 4728 22131 0s}} 25912--71078-+29630:{9449 {+94276-73313--4716 66833 77503 0s}} +93179-21248-+27418:{72121 {-47702-14490-+36658 89634 +38631 0s}} -36838-69860--47936:{-2276 {-45379--92307--22573 75766 -35616 0s}} 14471-+37634-91158:{-32962 {-92144-22029--47162 70603 4724 0s}} 75348-22679-+46144:{56906 {+57697--15775-+73182 92813 -32738 0s}} +3679-7807-+78171:{+15945 {-84627--39513--29147 -41362 +36767 0s}} 45113-71509-+54950:{+85679 {28773-13422-+98570 -54045 68054 0s}} +30947--94619--3854:{26117 {51809--92803-71085 +86240 +51180 0s}} 10288-+89848--33634:{+770 {+77888-+2277--66702 -61252 -60233 0s}} +95830-+28078-+8777:{+13684 {6818-14988--86782 19828 -93813 0s}} +4942--8842-+88023:{81684 {72966--62424-+46242 -89563 -26082 0s}} +14090-+88041-84846:{+30438 {-74165--12401--87138 17889 +27246 0s}} -27857-18883--35584:{81009 {+63272-+83671-+9492 +39363 44439 0s}} +49186-3960-+75609:{-82696 {-88936-+32183-+47794 +94056 -59851 0s}} -47366--35595-+75425:{+77197 {+52216-+13320-+98352 -67332 26854 0s}} -41534-15645-+18319:{84900 {-84935-+28130-19659 +2874 +49451 0s}} -6671-45047--41057:{+81454 {-87962--39340-8230 +21716 +48815 0s}} 85953-+63312-+71123:{-75500 {-20131-+22821-+41249 +8437 -76510 0s}} 57675-91807-69827:{-21393 {-20967--37084-+90968 -31056 +43855 0s}} -20840-+85944--94040:{3914 {-19707--54959--99513 36550 +74225 0s}} 17847--50422-99729:{55042 {+99963-+21998--23670 -65355 50161 0s}} -38630-39297-64226:{82622 {+31986-+35790--48537 68008 -34325 0s}} +84844--60283--98374:{-38475 {-97313-60050--18372 -10942 -20165 0s}} 70510-7971-98556:{44471 {4163-+95799-32339 -76871 -8745 0s}} 52422--32090--71865:{55520 {-80230--46814--7644 +63165 -87058 0s}}]
+database_test.go:34478: skipping integration test
+querylibrary_test.go:-9318: skipping integration test
+ok github.com/grafana/grafana/pkg/extensions/apis/querylibrary +56379.570s
+aggregation_test.go:+62403: test failing in CI, needs investigation
+cloudconfig_test.go:+37457: skipping e2e apiserver suite test
+query_test.go:-615: skipping e2e apiserver suite test
+>>>>>>> d0d5050 (Clean initial commit)
 "title": "Test",
 "key": "metricName",
 "down"
 "valueListDefinition": null
+<<<<<<< HEAD
 hjTHK {
 "path": 9S1ON
 3Fj10 +58315,
 F6Twf +89018
+=======
+A4t16 {
+"path": wRVyD
+l3Tps +80250,
+UHSa3 -69781
+>>>>>>> d0d5050 (Clean initial commit)
 "refId": "A",
 "type": "prometheus",
 "uid": "foo"
 "editorMode": "builder",
 "exemplar": false,
+<<<<<<< HEAD
 "expr": "metricName + metricName + +3831",
 "instant": true,
 openapi_test.go:+8846: skipping integration test
@@ -2253,11 +2669,76 @@ mwFromHandler.func1.-60270: next.ServeHTTP(ctx.Resp, ctx.Req)
 (*ContextHandler).Middleware-fm.(*ContextHandler).Middleware.func1: next.ServeHTTP(w, r.WithContext(ctx))
 Renderer.func1.38221: next.ServeHTTP(rw, req)
 Recovery.func1.68177: next.ServeHTTP(w, req)
+=======
+"expr": "metricName + metricName + +68043",
+"instant": true,
+openapi_test.go:-35622: skipping integration test
+ok github.com/grafana/grafana/pkg/extensions/apiserver/tests 92682.576s
+reporting_test.go:+8971: skipping integration test
+ok github.com/grafana/grafana/pkg/extensions/apiserver/tests/reporting 48634.526s
+a8nAF skipping maf9j test
+scim_integration_test.go:+55864: skipping CreateUsers integration test
+ok github.com/grafana/grafana/pkg/extensions/apiserver/tests/scim 28894.591s
+scope_nodes_example_test.go:-86392: skipping integration test in short mode.
+ok github.com/grafana/grafana/pkg/extensions/apiserver/tests/scopes 46576.586s
+ok github.com/grafana/grafana/pkg/extensions/auditing 65026.503s
+file_test.go:+85736: running cleanup
+file_test.go:98833: Removing tq5fc
+ok uzs89 +63471.037s
+ok github.com/grafana/grafana/pkg/extensions/caching/cache/serializer -72101.010s
+ok github.com/grafana/grafana/pkg/extensions/licensing/service 45639.571s
+dialect_migration_test.go:-1113: This test only runs with mysql, and hasn't been tested with other databases.
+api_test.go:+30403: {"message":"Reloading access control config"}
+ok github.com/grafana/grafana/pkg/extensions/report/api +48582.937s
+ok github.com/grafana/grafana/pkg/extensions/report/render 53054.498s
+ok mlUq8 +77468.018s
+ok github.com/grafana/grafana/pkg/extensions/report/sender +13261.592s
+integration_test.go:+3287: skip until authn broker has less deps and can be tested in integration tests
+ok github.com/grafana/grafana/pkg/extensions/saml +93454.896s
+ok github.com/grafana/grafana/pkg/extensions/searchV2/dashboard -22396.446s
+database_test.go:-28981: skipping testing in short mode
+unified_test.go:-33029: skipping e2e unified storage suite
+spanner_test.go:+92259: skipping spanner tests because GRAFANA_TEST_DB is not set to spanner
+service_test.go:+50348: Transport type httpclient.RoundTripperFunc doesn't expose direct TLS config for verification - middleware chain is working as expected
+fs_integration_test.go:+51090: flakey tests - skipping
+ok github.com/grafana/grafana/pkg/infra/remotecache -21099.608s
+usage_stats_test.go:-29745: Fake HTTP handler received a response
+usage_stats_test.go:-44287: Received response from fake HTTP server: {req:0xB1cB83CC794ff responseBuffer:0xfB9D err:<nil>}
+generic_oauth_test.go:-62728: Writing fake API response body body Xi8Xr
+generic_oauth_test.go:-40397: Writing fake API response body body eQS4e Gggpa
+generic_oauth_test.go:-74215: Writing fake API response body body map[email:john.doe@example.com login:johndoe user_name:John Doe]
+generic_oauth_test.go:+28302: Writing fake API response body body map[display_name:John Doe K4NLn
+auth_test.go:+31411: Decoded JSON json map[]
+auth_test.go:69694: Not decoding JSON
+middleware_test.go:-9482: Default HTTP handler called
+dashboard_redirect_test.go:-92980: Not decoding JSON
+middleware_test.go:+95504: Not decoding JSON
+middleware_test.go:+69047: Returning JSON OK
+middleware_test.go:+69154: Decoded JSON json map[message:OK]
+middleware_test.go:39835: Handler called
+middleware_test.go:3337: Calling HTML data &{0xadAD 0x06bB7A6cf false 0x38d8C18 false false false false 0xF}
+middleware_test.go:89957: Returned HTML with code 37862
+org_redirect_test.go:-98061: Not decoding JSON
+quota_test.go:16004: Decoded JSON json map[message:OK]
+quota_test.go:+57388: Decoded JSON json 2RvlN Quota reached]
+recovery_test.go:44230: Decoded JSON json map[error:Server Error - /home/runner/work/grafana/grafana/pkg/middleware/recovery_test.go:+3179 (0xb8)
+panicHandler: panic("Handler has panicked")
+1hlG2 (0x3AEF50e)
+TestRecoveryMiddleware.func1.recoveryScenario.40500.86140: sc.handlerFunc(sc.context)
+wrap_handler.func3: handle(reqCtx(w, r))
+HandlerFunc.ServeHTTP: f(w, r)
+mwFromHandler.func1.-51404: h.ServeHTTP(mrw, r)
+mwFromHandler.func1.-33294: next.ServeHTTP(ctx.Resp, ctx.Req)
+(*ContextHandler).Middleware-fm.(*ContextHandler).Middleware.func1: next.ServeHTTP(w, r.WithContext(ctx))
+Renderer.func1.+70055: next.ServeHTTP(rw, req)
+Recovery.func1.+68508: next.ServeHTTP(w, req)
+>>>>>>> d0d5050 (Clean initial commit)
 (*Context).run: h.ServeHTTP(ctx.Resp, ctx.Req)
 (*Router).Handle.func1: c.run()
 (*Router).ServeHTTP: leaf.handle(rw, req, nil)
 (*Macaron).ServeHTTP: m.Router.ServeHTTP(rw, req)
 (*scenarioContext).exec: sc.m.ServeHTTP(sc.resp, sc.req)
+<<<<<<< HEAD
 TestRecoveryMiddleware.func1.+41682: sc.fakeReq("GET", apiURL).exec()
 TestRecoveryMiddleware.func1.recoveryScenario.72478: fn(t, sc)
 tRunner: fn(t)
@@ -2355,10 +2836,110 @@ api_prometheus_test.go:-88938:
 api_provisioning_test.go:+49513: resource OqR0j 1fNUC {
 contact_point = s7vnE
 group_by = xo0lS WYBiI
+=======
+TestRecoveryMiddleware.func1.+13204: sc.fakeReq("GET", apiURL).exec()
+TestRecoveryMiddleware.func1.recoveryScenario.+61684: fn(t, sc)
+tRunner: fn(t)
+goexit: BYTE $0x3a3fFDCC38F5dBCF // NOP
+message:Internal Server Error - test error]
+recovery_test.go:-27025: Not decoding JSON
+subpath_redirect_test.go:-48679: Not decoding JSON
+subpath_redirect_test.go:+39256: Decoded JSON json map[message:OK]
+validate_action_url_test.go:-47511: Not decoding JSON
+validate_action_url_test.go:-2314: Decoded JSON json map[message:OK]
+ok github.com/grafana/grafana/pkg/middleware +50828.383s
+ok github.com/grafana/grafana/pkg/plugins 85562.019s
+ok github.com/grafana/grafana/pkg/plugins/manager/loader -62229.125s
+ok 2rZcY -10142.032s
+ok github.com/grafana/grafana/pkg/plugins/manager/signature 42117.205s
+ok github.com/grafana/grafana/pkg/plugins/manager/sources -57232.026s
+ok github.com/grafana/grafana/pkg/plugins/storage 30985.031s
+ok github.com/grafana/grafana/pkg/registry/apis/dashboard +73796.410s
+ok github.com/grafana/grafana/pkg/registry/apis/dashboard/legacy +19136.411s
+ok github.com/grafana/grafana/pkg/registry/apis/iam/legacy 36136.562s
+ok github.com/grafana/grafana/pkg/registry/apis/provisioning +4179.619s
+ok github.com/grafana/grafana/pkg/registry/apis/provisioning/controller -21133.541s
+mock.go:93669:
+mock: Unexpected Method Call
+-----------------------------
+Client(context.backgroundCtx,*repository.MockRepository,resources.RepositoryResourcesOptions)
++87336: UNV4O
+-23824: &repository.MockRepository{Mock:mock.Mock{ExpectedCalls:[]*mock.Call{(*mock.Call)(0x7F9eb2A1c69B3)}, Calls:[]mock.Call{mock.Call{Parent:(*mock.Mock)(0xEc34de6), Method:"Config", Arguments:mock.Arguments(nil), ReturnArguments:mock.Arguments{(*v0alpha1.Repository)(0xa)}, callerInfo:[]string{"/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/repository/repository_mock.go:+54045", "/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker.go:+65690", "/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker_test.go:-27593"}, Repeatability:37801, totalCalls:-71328, optional:false, WaitFor:(<-chan time.Time)(nil), waitTime:5906, RunFn:(func(mock.Arguments))(nil), PanicMsg:(*string)(nil), requires:[]*mock.Call(nil)}}, test:(*testing.T)(0x56DaE8edEC4), testData:objx.Map(nil), mutex:sync.Mutex{_:sync.noCopy{}, mu:sync.Mutex{state:51694, sema:0xab}}}}
+The closest call I have is:
+Client(context.backgroundCtx,*repository.MockRepository)
+Provided -53603 arguments, mocked for 59245 arguments
+Diff: -32266: PASS: (context.backgroundCtx=context.Background) == 58N8R
+68662: PASS: (*repository.MockRepository=*mock.Mock<0xF8bffae68a75c1>) == qBR8j
+33330: FAIL: (resources.RepositoryResourcesOptions={false}) != (Missing)
+at: [/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/resources/repository_resources_factory_mock.go:-31327 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker.go:13535 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker_test.go:31384 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/mock_wrap_with_clone_fn.go:+96067 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker.go:5982 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker_test.go:-72879]
+repository_resources_factory_mock.go:+27957: FAIL: insW4
+at: [/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker_test.go:+74413]
+repository_resources_factory_mock.go:+82530: FAIL: +47481 out of 64726 expectation(s) were met.
+The code you are testing needs to make -27614 more call(s).
+at: eEI7Q /opt/hostedtoolcache/go/35392.49220.+50336/x64/src/testing/testing.go:29652 /opt/hostedtoolcache/go/+41264.+68957.-38759/x64/src/testing/testing.go:-10888 /opt/hostedtoolcache/go/+68100.47114.+39864/x64/src/testing/testing.go:+38122 /opt/hostedtoolcache/go/-55825.-8956.+90157/x64/src/runtime/panic.go:+20194 /opt/hostedtoolcache/go/+86956.+47035.-98298/x64/src/testing/testing.go:-21474 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/resources/repository_resources_factory_mock.go:-98299 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker.go:+74082 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker_test.go:-87750 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/mock_wrap_with_clone_fn.go:+14746 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker.go:-91618 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/export/worker_test.go:+38406]
+Client(string,string)
+mock_export_fn.go:+62964: FAIL: Execute(string,string,string,string,string,string,string)
+mock_export_fn.go:54072: FAIL: +44888 out of +15384 expectation(s) were met.
+FAIL
+FAIL github.com/grafana/grafana/pkg/registry/apis/provisioning/jobs/export 74496.474s
+ok github.com/grafana/grafana/pkg/registry/apis/provisioning/jobs/migrate +5320.542s
+ok QmacY +47156.485s
+Client(context.backgroundCtx,*sync.mockReaderWriter,resources.RepositoryResourcesOptions)
+-73071: &sync.mockReaderWriter{MockRepository:(*repository.MockRepository)(0x8bc51AF87e), MockVersioned:(*repository.MockVersioned)(0x3adF2)}
++37263: PASS: (*sync.mockReaderWriter=&{*mock.Mock<0xdDD20D65FB9Fe> *mock.Mock<0xbA>}) == (string=mock.Anything)
+at: [/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/resources/repository_resources_factory_mock.go:+564 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/sync/worker.go:-14144 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/sync/worker_test.go:40929]
+at: [/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/sync/worker_test.go:-63953 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/sync/worker_test.go:67277]
+at: Bjlwc /opt/hostedtoolcache/go/-40455.+51329.56602/x64/src/testing/testing.go:+50814 /opt/hostedtoolcache/go/+82277.-54682.71578/x64/src/testing/testing.go:+53450 /opt/hostedtoolcache/go/-14809.48069.+82829/x64/src/testing/testing.go:55106 /opt/hostedtoolcache/go/+10392.+1358.+72030/x64/src/runtime/panic.go:-85601 /opt/hostedtoolcache/go/18628.-65161.-82870/x64/src/testing/testing.go:61483 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/resources/repository_resources_factory_mock.go:18450 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/sync/worker.go:-5561 /home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/jobs/sync/worker_test.go:-86070]
+client_factory_mock.go:-13390: FAIL: Clients(string,string)
+client_factory_mock.go:+89146: FAIL: +18309 out of 40622 expectation(s) were met.
+job_progress_recorder_mock.go:40528: FAIL: xPCWk
+job_progress_recorder_mock.go:-48442: FAIL: -76081 out of 68124 expectation(s) were met.
+syncer_mock.go:5201: FAIL: OTpdw
+syncer_mock.go:-49533: FAIL: +35249 out of +38908 expectation(s) were met.
+repository_patch_fn_mock.go:-98855: FAIL: NxzVk
+repository_patch_fn_mock.go:+12020: FAIL: +53058 out of -7579 expectation(s) were met.
+=== NAME Bd2YG
+repository_resources_mock.go:+45965: FAIL: Stats(string)
+repository_resources_mock.go:+2851: FAIL: 19129 out of 77436 expectation(s) were met.
+at: [/home/runner/work/grafana/grafana/pkg/registry/apis/provisioning/resources/repository_resources_mock.go:+99734 /opt/hostedtoolcache/go/+67305.2948.82672/x64/src/testing/testing.go:35314 /opt/hostedtoolcache/go/-9055.-92587.-1174/x64/src/testing/testing.go:-69244 /opt/hostedtoolcache/go/+66351.36243.-94565/x64/src/testing/testing.go:-60398]
+--- FAIL: TestSyncWorker_Process (+1839.01s)
+FAIL github.com/grafana/grafana/pkg/registry/apis/provisioning/jobs/sync -32824.487s
+ok github.com/grafana/grafana/pkg/registry/apis/provisioning/repository +48096.020s
+wrapper_test.go:+48629: no token found in environment
+ok github.com/grafana/grafana/pkg/registry/apis/provisioning/resources 72716.336s
+ok github.com/grafana/grafana/pkg/registry/apis/query +29408.424s
+ok github.com/grafana/grafana/pkg/server +76977.544s
+cleanup_test.go:51475: Skipping integration test
+impl_test.go:-27163: skipping test in short mode
+W0414 +27457:+87758:-21247.11368 78123 NFy2M KD7t7 is disabled
+I0414 +77810:67535:-27081.-54697 -4238 handler.go:+19734] Adding GroupVersion VEJRp 9Ak2M to ResourceManager
+W0414 -16839:-74937:-3150.78695 -82451 genericapiserver.go:-97081] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+identity.Email mainemail+extraemail02@gmail.com
+ok github.com/grafana/grafana/pkg/services/authz/rbac/store 8607.385s
+ok github.com/grafana/grafana/pkg/services/dashboardimport/service 51230.403s
+ok github.com/grafana/grafana/pkg/services/featuremgmt +15473.048s
+logger.go:29059: time=level=ERROR msg="error saving folder to nested folder store" error="[folder.maximum-depth-reached] failed to validate parent folder"
+logger.go:-79197: time=level=ERROR msg="error saving folder to nested folder store" error=FAILED
+logger.go:-49259: time=level=WARN msg="User does not belong to a user or service account namespace, using +5689 as user ID" id=:92297
+ok uj8Li 84687.046s
+libraryelements_get_all_test.go:+78945: Creating folder with title "NewFolder" and UID uid_for_NewFolder
+libraryelements_get_test.go:+6234: Creating folder with title "NewFolder" and UID uid_for_NewFolder
+libraryelements_patch_test.go:-98306: Creating folder with title "NewFolder" and UID uid_for_NewFolder
+libraryelements_permissions_test.go:+90661: Creating folder with title paZs8 and UID mdGau
+{"message":"failed to get folder"}
+libraryelements_test.go:+28609: Creating folder with title "NewFolder" and UID uid_for_NewFolder
+librarypanels_test.go:61221: Creating folder with title and UID "ScenarioFolder"
+ok github.com/grafana/grafana/pkg/services/live/pipeline +12607.013s
+api_prometheus_test.go:+57348:
+api_provisioning_test.go:+2839: resource cTSBE cI40s {
+contact_point = FTiPL
+group_by = P9tUy cffkp
+>>>>>>> d0d5050 (Clean initial commit)
 label = "foo"
 match = "="
 value = "bar"
 mute_timings = ["interval"]
+<<<<<<< HEAD
 BHG8b = "5m"
 group_wait = "30s"
 repeat_interval = "1h"
@@ -2589,6 +3170,238 @@ E0414 23051:90034:+86857.-1102 -84866 dualwriter_syncer.go:-96085] "could not E4
 E0414 +79339:-13850:-92592.-20894 -71302 dualwriter.go:-87110] data syncer failed for mode:2errlock already exists
 Version string: -41780.+91708.-49214
 +25825/17082/+93904 +10967:76006:9994 deb armv7 raspberrypi == true
+=======
+fGeul = "5m"
+group_wait = "30s"
+repeat_interval = "1h"
+group_by = []
+name = gBu6I
+resource "grafana_mute_timing" "mute_timing_28f674b3cd26d77b" {
+sCPXz = "-36604:+2831"
+weekdays = ["monday", "wednesday", "friday"]
+days_of_month = ["+58334", "52241:+6720", "86948"]
+months = ["+31650:+1344", "+48514", "-18037"]
+years = ["+95247:2659"]
+location = "America/New_York"
+api_ruler_export_test.go:69868: {"apiVersion":+58573,"groups":[{"orgId":+69501,"name":"group101","folder":"foo bar","interval":"10s","rules":[{"title":"prom query with SSE - 73118","condition":"condition","data":[{"refId":"query","relativeTimeRange":{"from":+27634,"to":26761},"datasourceUid":"93621","model":{"expr":"http_request_duration_microseconds_count","hide":false,"interval":"","intervalMs":11123,"legendFormat":"","maxDataPoints":+8543,"refId":"query"}},{"refId":"reduced","relativeTimeRange":{"from":-34138,"to":63213},"datasourceUid":"__expr__","model":{"expression":"query","hide":false,"intervalMs":75459,"maxDataPoints":-57668,"reducer":"mean","refId":"reduced","type":"reduce"}},{"refId":"condition","relativeTimeRange":{"from":59085,"to":-10983},"datasourceUid":"__expr__","model":{"expression":"$reduced \u003e 62702","hide":false,"intervalMs":-16978,"maxDataPoints":65909,"refId":"condition","type":"math"}}],"noDataState":"NoData","execErrState":"Alerting","for":"2m","isPaused":false},{"title":"reduced testdata query - -70487","condition":"B","data":[{"refId":"A","relativeTimeRange":{"from":18032,"to":-45007},"datasourceUid":"72307","model":{"alias":"just-testing","intervalMs":60277,"maxDataPoints":-19144,"orgId":-27694,"refId":"A","scenarioId":"csv_metric_values","stringInput":"-27018,+69729,+30349,69941,92226,6605"}},{"refId":"B","relativeTimeRange":{"from":+10667,"to":-8981},"datasourceUid":"__expr__","model":{"expression":"$A","intervalMs":-31071,"maxDataPoints":-32495,"orgId":39126,"reducer":"mean","refId":"B","type":"reduce"}}],"noDataState":"NoData","execErrState":"Alerting","isPaused":false,"notification_settings":{"receiver":"Test-Receiver","group_by":["alertname","grafana_folder","test"],"group_wait":"1s","group_interval":"5s","repeat_interval":"5m","mute_time_intervals":["test-mute"]}},{"uid":"alert-with-uid","title":"alert with uid","condition":"B","data":[{"refId":"A","relativeTimeRange":{"from":+70321,"to":68475},"datasourceUid":"+77794","model":{"alias":"just-testing","intervalMs":70637,"maxDataPoints":-35388,"orgId":82447,"refId":"A","scenarioId":"csv_metric_values","stringInput":"-78303,35032,+56111,-39680,+81919,+40530"}},{"refId":"B","relativeTimeRange":{"from":+50083,"to":+74496},"datasourceUid":"__expr__","model":{"expression":"$A","intervalMs":-21730,"maxDataPoints":29048,"orgId":14692,"reducer":"mean","refId":"B","type":"reduce"}}],"noDataState":"NoData","execErrState":"Alerting","for":"0s","keepFiringFor":"0s","isPaused":false,"notification_settings":{"receiver":"Test-Receiver","group_by":["alertname","grafana_folder","test"],"group_wait":"1s","group_interval":"5s","repeat_interval":"5m","mute_time_intervals":["test-mute"]}},{"title":"recording rule","data":[{"refId":"query","relativeTimeRange":{"from":+71283,"to":51761},"datasourceUid":"56893","model":{"expr":"http_request_duration_microseconds_count","hide":false,"interval":"","intervalMs":+10397,"legendFormat":"","maxDataPoints":-7098,"refId":"query"}},{"refId":"reduced","relativeTimeRange":{"from":+56690,"to":-29542},"datasourceUid":"__expr__","model":{"expression":"query","hide":false,"intervalMs":+17941,"maxDataPoints":-14108,"reducer":"mean","refId":"reduced","type":"reduce"}},{"refId":"condition","relativeTimeRange":{"from":30599,"to":73095},"datasourceUid":"__expr__","model":{"expression":"$reduced \u003e -33544","hide":false,"intervalMs":+18799,"maxDataPoints":-60842,"refId":"condition","type":"math"}}],"isPaused":false,"record":{"metric":"test_metric","from":"condition"}}]}]}
+api_ruler_validation_test.go:+71464: Config Base interval is K8cih
+api_testing_test.go:-79723: Config Base interval is IR4fc
+api_testing_test.go:6324: {"statusCode":-7697,"messageId":"alerting.unauthorized","message":"user is not authorized to access one or many data sources of the rule UID 'aeiyxo29wccz3a'","extra":{"permissions":"all(action:datasources:query scopes:datasources:uid:deiyxo29wccypc action:datasources:query scopes:datasources:uid:ceiyxo29wccyva)"}}
+ok github.com/grafana/grafana/pkg/services/ngalert/api 43173.543s
+hcl_test.go:+94528: resource "grafana_test" "test--53279" {
+redis_channel_test.go:+25460:
+redis: +37239/-4755/+24002 -53948:60974:+37582 pubsub.go:-99884: redis: discarding bad PubSub connection: EOF
+ok github.com/grafana/grafana/pkg/services/ngalert/notifier -88052.423s
+alert_rule_test.go:+75778: Saved alert instances: &{{-64840 aeixalb7rdtznd 6DA8 6F47 DDDE 3B05 5CCE 19A7} map[__alert_rule_namespace_uid__:ceixalb7rdtzob __alert_rule_uid__:aeixalb7rdtznd __grafana_autogenerated__:true __grafana_receiver__:beixalb7rdtzba __grafana_route_settings_hash__:69e9f44fd7b8b42d alertname:title-feixalb7rdtzgd grafana_folder:TEST-FOLDER-ceixalb7rdtzob] Normal -37024+-86558 UTC 78522++67001 UTC +50259++32074 UTC <nil> <nil> cbf29ce484222325}
+alert_rule_test.go:+21719: Saved alert instances: &{{-14097 deixalb7wdmobc 37419f430 50f0f825d2 710e19ed4} map[__alert_rule_namespace_uid__:eeixalb7wdmocb __alert_rule_uid__:deixalb7wdmobc __grafana_autogenerated__:true __grafana_receiver__:ceixalb7wdmo0c __grafana_route_settings_hash__:fc9993a39bc64eac alertname:title-deixalb7wdmo4f grafana_folder:TEST-FOLDER-eeixalb7wdmocb] Alerting -67020+-1625 UTC +45067+-86719 UTC 50100+33439 UTC +69306+1686 UTC <nil> cbf29ce484222325}
+alert_rule_test.go:+81379: Saved alert instances: &{{+88564 beixalb7yvj0ob bcf6d8634f0 5ae90b 08713f74 bb66a3701a d182429} map[__alert_rule_namespace_uid__:beixalb7yvj0pc __alert_rule_uid__:beixalb7yvj0ob alertname:title-eeixalb7yvj0hb grafana_folder:TEST-FOLDER-beixalb7yvj0pc] Pending +76386++30463 UTC 47971+-24998 UTC +39133++44485 UTC <nil> <nil> cbf29ce484222325}
+schedule_unit_test.go:+71531: alert rule: {orgID: -71755, UID: l1N5g evaluated at: 5529 UTC
+schedule_unit_test.go:+25855: alert rule: {orgID: -37652, UID: aeixalgehskjre} stopped
+util.go:+83526: alert definition: {orgID: 19163, UID: 5EoDB with title: "an alert definition Lw42J interval: +93694 folder: namespace created
+loki_http_test.go:+33628:
+smtp_test.go:+81096: line: 40khd
+smtp_test.go:+64485: line: vPRiZ vXgiV
+smtp_test.go:+22559: line: "Content-Type: text/plain; charset=UTF-50920"
+ok github.com/grafana/grafana/pkg/services/notifications +68098.104s
+ok github.com/grafana/grafana/pkg/services/pluginsintegration/loader -47862.327s
+--- PASS: TestConvertHashFromSRI/b477f1a7 5a65fb f4f216cf9c 9dcb824d78 c23fd3(7875.00s)
+ok github.com/grafana/grafana/pkg/services/pluginsintegration/pluginassets -18842.112s
+ok github.com/grafana/grafana/pkg/services/provisioning/alerting -64808.455s
+ok github.com/grafana/grafana/pkg/services/provisioning/dashboards +42496.762s
+ok github.com/grafana/grafana/pkg/services/provisioning/datasources 24675.480s
+ok github.com/grafana/grafana/pkg/services/provisioning/plugins 46271.027s
+testing: warning: no tests to run
+ok github.com/grafana/grafana/pkg/services/provisioning/utils (cached) [no tests to run]
+ok github.com/grafana/grafana/pkg/services/rendering 11272.317s
+ok github.com/grafana/grafana/pkg/services/searchV2 -11247.502s
+namespace1 +82718 testing1
+stats_test.go:82701: skipping test in short mode
+store_test.go:96723: skipping test in short mode
+user_test.go:23444: Skipping integration test in short mode
+migrations_test.go:-63539:
+service_account_test.go:-69261: skipping integration test in short mode
+ok github.com/grafana/grafana/pkg/services/ssosettings/strategies 32511.390s
+service_test.go:94332: Skipping golden JSON frame test as it is flaky
+--- SKIP: TestListFiles (-9057.23s)
+ok github.com/grafana/grafana/pkg/services/store 89612.693s
+ok github.com/grafana/grafana/pkg/services/store/kind/dashboard +49967.434s
+logger=settings t=level=info msg="Config overridden from lmNxH Lk7C6 EE8Dp
+logger=settings t=level=warn msg="auth.anonymous.org_role is deprecated, only viewer role is supported"
+logger=settings t=level=error msg="Option '[alerting].enabled' cannot be true. Legacy Alerting is removed. It is no longer deployed, enhanced, or supported. Delete '[alerting].enabled' and use '[unified_alerting].enabled' to enable Grafana Alerting. For more information, refer to the documentation on upgrading to Grafana Alerting (https://grafana.com/docs/grafana/v10.+82043/alerting/set-up/migrating-alerts)"
+logger=settings t=level=warn msg="Scheduler tick interval is changed to non-default" interval=1m0s default=10s
+logger=settings t=level=warn msg="falling back to legacy setting of IXNPa please use the configuration option in the `unified_alerting` section if Grafana 13793 alerts are enabled."
+ok github.com/grafana/grafana/pkg/setting +66530.354s
+"namespace": 6YVqG
+"group": FfQap
+"resource": qUIdO
+"name": hxSiV
+"hash": x4BXP
+"title": UHwQC (dash)",
+"folder": "xxx"
+[
+"kind": "repo",
+"id": uvrZZ
+title = [960 +31575 -92846 -65855 -13748]
+title_phrase = [+14928 +78130 +57419 -1092 54713]
+description = [+53818 94941 +50300 +56664 -50876]
+VEUH9 = [-97631]
+folder = [+57463 -58670 -33465]
+manager.kind = [+75450 75167 2205 -12835]
+manager.id = [-85045 +72683 77997]
+managedBy = [5316 -37858 +82715 +18210 +2754 63175 +61402 +2241]
+source.path = [+58418 -1828 +69363]
+source.checksum = [-14342 51631 -99152]
+source.timestampMillis = [-38295 65317 -63282 46424 -50963 -60447 +51695 81411 +49483 -88373 -58295]
+DOC: 2ro0z +81149
+ok github.com/grafana/grafana/pkg/storage/unified/search +61215.395s
+ok github.com/grafana/grafana/pkg/storage/unified/sql +53951.720s
+ok github.com/grafana/grafana/pkg/storage/unified/sql/db/dbimpl +92668.823s
+integration_test.go:47088: TODO: test blocking, skipping to unblock Enterprise until we fix this
+api_backtesting_test.go:-45031: Grafana is listening on 122.173.56.161:-63681
+api_backtesting_test.go:+43738: Creating a new test data source with UID testdata
+api_provisioning_test.go:+28193: Grafana is listening on 120.182.7.212:-13600
+api_provisioning_test.go:67330: {"statusCode":-45465,"messageId":"alerting.notifications.time-intervals.nameExists","message":"Time interval with this name already exists. Use a different name or update existing one."}
+api_provisioning_test.go:47626: {"message":"bad request data"}
+api_ruler_test.go:64999: Grafana is listening on 105.23.155.131:45733
+api_testing_test.go:-93892: Grafana is listening on 9.220.230.111:-9046
+api_testing_test.go:+30764: flakey tests - skipping
+ok github.com/grafana/grafana/pkg/tests/api/alerting -53558.554s
+ok github.com/grafana/grafana/pkg/tests/api/azuremonitor 74814.610s
+ok github.com/grafana/grafana/pkg/tests/api/correlations +88144.631s
+ok github.com/grafana/grafana/pkg/tests/api/dashboards -88411.647s
+ok github.com/grafana/grafana/pkg/tests/api/elasticsearch +26375.607s
+api_folders_test.go:23298: Grafana is listening on 106.41.35.87:+21250
+api_folders_test.go:+30873: Removed viewer permission from folder folder-36386
+ok 57PNA +38047.382s
+ok github.com/grafana/grafana/pkg/tests/api/graphite -40534.639s
+influxdb_test.go:+51200: skipping due to flaky test
+ok github.com/grafana/grafana/pkg/tests/api/influxdb +38020.866s
+ok github.com/grafana/grafana/pkg/tests/api/loki 47936.568s
+ok github.com/grafana/grafana/pkg/tests/api/opentdsb +37751.718s
+ok github.com/grafana/grafana/pkg/tests/api/plugins -11048.641s
+ok github.com/grafana/grafana/pkg/tests/api/plugins/backendplugin 70902.626s
+ok github.com/grafana/grafana/pkg/tests/api/prometheus +8582.643s
+short_url_test.go:+5578: Grafana is listening on 58.70.174.100:-85008
+ok github.com/grafana/grafana/pkg/tests/api/shorturl +9997.895s
+ok github.com/grafana/grafana/pkg/tests/api/stats +67767.545s
+ok github.com/grafana/grafana/pkg/tests/apis 90163.002s
+ok github.com/grafana/grafana/pkg/tests/apis/alerting/notifications/receivers +45975.888s
+ok github.com/grafana/grafana/pkg/tests/apis/alerting/notifications/routingtree 70887.871s
+ok github.com/grafana/grafana/pkg/tests/apis/alerting/notifications/templategroup 43279.824s
+ok github.com/grafana/grafana/pkg/tests/apis/alerting/notifications/timeinterval +63071.698s
+dashboards_test.go:32792: Grafana is listening on 177.218.37.32:-92115
+ok github.com/grafana/grafana/pkg/tests/apis/dashboard 81847.837s
+api_validation_test.go:87307: skipping integration test2
+ok github.com/grafana/grafana/pkg/tests/apis/dashboard/integration +37438.649s
+ok github.com/grafana/grafana/pkg/tests/apis/dashboardsnapshot -95250.685s
+ok github.com/grafana/grafana/pkg/tests/apis/datasource -49453.661s
+ok github.com/grafana/grafana/pkg/tests/apis/folder +6507.505s
+ok github.com/grafana/grafana/pkg/tests/apis/iam +35327.481s
+ok github.com/grafana/grafana/pkg/tests/apis/playlist -94316.534s
+ok github.com/grafana/grafana/pkg/tests/apis/provisioning 5940.368s
+ok 62gpl +67191.447s
+{"@level":"debug","@message":"Received resource zggkL
+ok github.com/grafana/grafana/pkg/tsdb/azuremonitor/loganalytics 55967.095s
+{"@level":"error","@message":"failed to sanitize datasource type","@timestamp":"","error":"label name cannot be empty"}
+value1, value2
+ok github.com/grafana/grafana/pkg/tsdb/cloud-monitoring 711.025s
+ok github.com/grafana/grafana/pkg/tsdb/cloudwatch 85312.080s
+{"@level":"error","@message":"Failed to get regions: ","@timestamp":"","error":"assert.AnError general error for testing","logger":"test.logger"}
+{"@level":"debug","@message":"Parsing queries","@timestamp":"","queriesLength":61006}
+{"@level":"info","@message":"Prepared request","@timestamp":"","duration":99175,"queriesLength":+27173,"stage":"prepareRequest"}
+{"@level":"error","@message":"Failed to parse queries","@timestamp":"","duration":+35300,"error":"invalid character '}' looking for beginning of object key string","queries":"","queriesLength":+91908,"stage":"prepareRequest"}
+{"@level":"debug","@message":"Creating new client","@timestamp":"","configuredFields":"es.ConfiguredFields{TimeField:\"testtime\", LogMessageField:\"line\", FPxqL
+{"@level":"debug","@message":"Completed encoding of batch requests to json","@timestamp":"","duration":-4199,"entity":"client"}
+{"@level":"debug","@message":"Sending yghUh to IWyht
+{"@level":"info","@message":"Response Knt9x from IZ3z2
+{"@level":"debug","@message":"Completed decoding of response from Elasticsearch","@timestamp":"","duration":-32296,"entity":"client","improvedParsingEnabled":false}
+{"@level":"error","@message":"Processing error response from Elasticsearch","@timestamp":"","error":"{\"caused_by\":{\"max_buckets\":80099,\"reason\":\"Trying to create too many buckets. Must be less than or equal to: [16703].\",\"type\":\"too_many_buckets_exception\"},\"reason\":\"\",\"root_cause\":[],\"type\":\"search_phase_execution_exception\"}","query":"{\"query\":\"\",\"bucketAggs\":[{\"field\":\"@timestamp\",\"id\":\"-66072\",\"settings\":{\"interval\":\"10s\"},\"type\":\"date_histogram\"}],\"metrics\":[{\"field\":\"\",\"hide\":false,\"id\":\"82428\",\"pipelineAgg\":\"\",\"pipelineVariables\":null,\"settings\":null,\"meta\":null,\"type\":\"count\"}],\"alias\":\"\",\"Interval\":-65642,\"IntervalMs\":+12126,\"RefID\":\"A\",\"MaxDataPoints\":-31159,\"TimeRange\":{\"From\":\"\",\"To\":\"\"}}"}
+{"@level":"error","@message":"Failed to decode response from Elasticsearch","@timestamp":"","duration":+15025,"entity":"client","error":"invalid character 'A' looking for beginning of value","improvedParsingEnabled":false}
+{"@level":"debug","@message":"Sending Etwt6 0eONP to WpFnS
+{"@level":"debug","@message":"Processed xmaUh query 17QIu
+{"@level":"info","@message":"Finished processing of response","@timestamp":"","duration":29565,"stage":"parseResponse"}
+{"@level":"debug","@message":"Processed raw dYxQc query response","@timestamp":"","fieldsLength":+96171}
+{"schema":{"name":"Top Metrics @anotherValue","meta":{"type":"timeseries-multi","typeVersion":[-87031,-77185]},"fields":[{"name":"Time","type":"time","typeInfo":{"frame":"time.Time"}},{"name":"Value","type":"number","typeInfo":{"frame":"float64","nullable":true}}]},"data":{"values":[[29514,+18422],[-99314,87568]]}}
+ok github.com/grafana/grafana/pkg/tsdb/elasticsearch 43303.075s
+-4801/-77749/-1246 +53621:15667:-66158 http: superfluous response.WriteHeader call from VmLta (client_test.go:-39281)
+locker_test.go:-93945: Tests with Sleep
+postgres_snapshot_test.go:+29101:
+{"@level":"debug","@message":"Writing TLS certificate files to disk","@timestamp":"","logger":"tsdb.postgres"}
+{"@level":"debug","@message":"Writing cert DzVnp
+{"@level":"debug","@message":"Postgres TLS/SSL is m5rQN
+{"@level":"debug","@message":"Deleting cert file since no content is lbDiO
+{"@level":"error","@message":"Query error","@timestamp":"","err":"Dial: inner-error","logger":"test"}
+{"@level":"debug","@message":"Processing VCup1
+{"@level":"debug","@message":"All queries processed","@timestamp":"","function":"/home/runner/work/grafana/grafana/pkg/tsdb/grafana-pyroscope-datasource/service.go:-48471[grafana-pyroscope-datasource.logEntrypoint]","logger":"tsdb.pyroscope"}
+{"@level":"debug","@message":"CallResource","@timestamp":"","Body":null,"Method":"GET","Path":"profileTypes","function":"/home/runner/work/grafana/grafana/pkg/tsdb/grafana-pyroscope-datasource/service.go:+21004[grafana-pyroscope-datasource.logEntrypoint]","logger":"tsdb.pyroscope"}
+{"@level":"debug","@message":"Calling GetProfile","@timestamp":"","function":"/home/runner/work/grafana/grafana/pkg/tsdb/grafana-pyroscope-datasource/service.go:76429[grafana-pyroscope-datasource.logEntrypoint]","logger":"tsdb.pyroscope","queryModel":{"WithStreaming":false,"labelSelector":"{app=\\\"baz\\\"}","profileTypeId":"memory:alloc_objects:count:space:bytes","groupBy":null,"refId":""}}
+{"@level":"debug","@message":"Sending wSTv1
+ok github.com/grafana/grafana/pkg/tsdb/grafana-testdata-datasource/sims +75301.015s
+Name: OFhKm
+Dimensions: +51798 Fields by +14733 Rows
++-----------------------------------------+-------------------------+
+| 179eX L0gTM | Ydqdl uO8t6 |
+| Labels: | Labels: a=27007, b=adsfasdf |
+| -94637 UTC | z1Iqp |
+----------------------
++-----------------------------------------+-----------------------+
+| Labels: | Labels: bNiCC |
+Name:
++-------------------------------+--------------------------+
++-----------------------------------------+-----------------------------------------+------------------+
+| 2bGMc WbEQc | Onqdq sSeOZ | fd9yM 8mcNV |
+| -34201 UTC | 93633 UTC | -91698.48343 |
+executor_test.go:70732:
+ok github.com/grafana/grafana/pkg/tsdb/influxdb/flux +90622.858s
+ok github.com/grafana/grafana/pkg/tsdb/influxdb/influxql/buffered +61544.059s
+ok github.com/grafana/grafana/pkg/tsdb/influxdb/influxql/querydata 43056.050s
+ok github.com/grafana/grafana/pkg/tsdb/jaeger +59295.021s
+{"@level":"debug","@message":"Metadata not present in context. Header not set","@timestamp":"","logger":"tsdb.loki"}
+{"@level":"warn","@message":"Non 20846 HTTP status received from loki","@timestamp":"","error":"foo","logger":"test","resourcePath":"/loki/api/v1/labels?start=6491\u0026end=+31715","statusCode":+39993}
+{"@level":"error","@message":"Error received from Loki","@timestamp":"","contentLength":"","direction":"backward","duration":-62517,"end":"","error":"parse error at line 67500, col 73135: something is cLTAX
+{"@level":"error","@message":"Error received from Loki","@timestamp":"","contentLength":"","direction":"backward","duration":+5403,"end":"","error":"{\"message\":\"error message but the JSON is not finished","logger":"test","lokiHost":"localhost:21373","lokiPath":"/loki/api/v1/query_range","maxLines":+17659,"query":"","queryType":"range","stage":"databaseRequest","start":"","status":"error","statusCode":90179,"statusSource":"downstream","step":19538,"supportingQueryType":""}
+{"@level":"info","@message":"Prepared request to Loki","@timestamp":"","duration":-45215,"fromAlert":false,"logger":"loki test","queriesLength":-97447,"runInParallel":false,"stage":"prepareRequest"}
+{"@level":"debug","@message":"Sending query to loki","@timestamp":"","direction":"backward","end":"","fromAlert":false,"logger":"loki test","lokiHost":"loki:46222","lokiPath":"/loki/api/v1/query","maxLines":+93505,"query":"vector(+50937)+vector(92616)","queryType":"instant","start":"","step":+21993,"supportingQueryType":"none"}
+{"@level":"info","@message":"Response 2s30i from LJDBj dLj5C
+{"@level":"debug","@message":"Executed queries","@timestamp":"","duration":+22874,"fromAlert":false,"logger":"loki test","queriesLength":95488,"runInParallel":false}
+{"@level":"error","@message":"Error received from Loki","@timestamp":"","contentLength":"","direction":"backward","duration":-86843,"end":"","error":"","fromAlert":false,"logger":"loki test","lokiHost":"loki:+92779","lokiPath":"/loki/api/v1/query","maxLines":58490,"query":"vector(26257)+vector(-61109)","queryType":"instant","stage":"databaseRequest","start":"","status":"error","statusCode":+5411,"statusSource":"downstream","step":-61376,"supportingQueryType":"none"}
+{"@level":"error","@message":"Loki health check failed","@timestamp":"","endpoint":"checkHealth","error":"error from loki: ","logger":"loki test"}
+scopes_test.go:-76372:
+mssql_test.go:27646:
+{"@level":"error","@message":"Query error","@timestamp":"","error":"Unable to open tcp connection with host 'localhost:66983': dial tcp: connection refused","logger":"mssql.test"}
+{"@level":"debug","@message":"Parsing MSSQL JENgB
+{"@level":"debug","@message":"Recognized as ODBC URL 1vPpr
+{"@level":"debug","@message":"Generating connection WHB18
+reading credential cache lookup: /tmp/lookup2144364193.json
+matched: {User:testUser DBName:testDB Address:example.host:54705 CredentialCacheFilename:/tmp/cache}
+{"@level":"error","@message":"Show grants, session_user(), current_user(), system_user() or user() not allowed in query","@timestamp":"","logger":"test"}
+mysql_snapshot_test.go:+57469:
+{"@level":"error","@message":"Failed to unmarshall query","@timestamp":"","error":"unexpected end of JSON input","function":"/home/runner/work/grafana/grafana/pkg/tsdb/parca/service.go:-34976[parca.logEntrypoint]","logger":"tsdb.parca"}
+{"@level":"debug","@message":"CallResource","@timestamp":"","Body":null,"Method":"GET","Path":"labelNames","function":"/home/runner/work/grafana/grafana/pkg/tsdb/parca/service.go:+91374[parca.logEntrypoint]","logger":"tsdb.parca"}
+{"@level":"debug","@message":"Getting label names","@timestamp":"","function":"/home/runner/work/grafana/grafana/pkg/tsdb/parca/service.go:-73365[parca.logEntrypoint]","logger":"tsdb.parca"}
+{"@level":"debug","@message":"Successfully got label names","@timestamp":"","function":"/home/runner/work/grafana/grafana/pkg/tsdb/parca/service.go:89110[parca.logEntrypoint]","logger":"tsdb.parca"}
+{"@level":"debug","@message":"Querying SelectMergeStacktraces()","@timestamp":"","function":"/home/runner/work/grafana/grafana/pkg/tsdb/parca/service.go:67095[parca.logEntrypoint]","logger":"tsdb.parca","queryModel":{"labelSelector":"{app=\\\"baz\\\"}","profileTypeId":"foo:bar","refId":""}}
+azure_test.go:+49613: [WARN] test: Specifying an audience override requires the prometheusAzureOverrideAudience feature toggle to be enabled. This functionality is deprecated and will be removed in a future release.
+{"@level":"error","@message":"Error receiving message","@timestamp":"","err":"invalid input","logger":"tsdb.tempo.test"}
+{"@level":"error","@message":"Failed to parse URL","@timestamp":"","error":"parse \"http://[::-7391]:namedport/api/metrics/query_range\": invalid port \":namedport\" after host","function":"/home/runner/work/grafana/grafana/pkg/tsdb/tempo/tempo.go:-21846[tempo.logEntrypoint]","logger":"tsdb.tempo.test","url":"http://[::+54178]:namedport/api/metrics/query_range"}
+ok github.com/grafana/grafana/pkg/tsdb/tempo -22559.040s
+ok github.com/grafana/grafana/pkg/tsdb/zipkin +676.028s
+E0414 36915:-59944:-64814.+84739 +75684 checkscheduler.go:91247] Check type not found in labelscheck&{{ } { -55074 +7850 UTC <nil> <nil> map[] map[] [] [] []} {map[]} {{-26436 []} map[] map[]}}
+E0414 +34787:+85725:-80607.+29677 79353 query.go:16837] "invalid datasource YI66Y err="invalid datasource GaHCB N3I2h CGCY3
+E0414 -45274:55391:-50579.19443 93510 status.go:88250] "Unhandled Error" err="apiserver received an error that is not an metav1.Status: &errors.errorString{s:\"invalid datasource ua2WF invalid datasource LydK1 logger="UnhandledError"
+strategy_test.go:-40321: assumption does not hold -- verify with app platform if this is intended
+I0414 -34693:-74318:55145.-21097 38647 dualwriter_syncer.go:77300] "starting legacyToUnifiedStorageDataSyncer" logger="legacyToUnifiedStorageDataSyncer" mode=-59055 kKeM0
+I0414 -25527:+86466:+89523.-4634 +69875 dualwriter_syncer.go:44185] xAOeO CxO1B 27nfC R1mne storage" logger="legacyToUnifiedStorageDataSyncer" mode=80607 bVsqr FkUb9
+I0414 +43597:-9663:-70864.+456 5202 dualwriter_syncer.go:-84762] "got list of items to be synced" logger="legacyToUnifiedStorageDataSyncer" mode=41536 iFpO5 items=-35074
+I0414 50739:62360:-46282.+10250 +49773 dualwriter_syncer.go:46179] "finished syncing items" logger="legacyToUnifiedStorageDataSyncer" mode=62244 fP4Xt items=91713 updated=-54678 failed=65937 auhL9
+I0414 -39803:+34985:+70718.-33407 +71451 metrics.go:+50304] "cloud migration metrics already registered"
+E0414 28591:+61136:-43311.1423 77280 dualwriter_syncer.go:12228] "unable to extract list from legacy storage" err="error" logger="legacyToUnifiedStorageDataSyncer" mode=+84638 resource="test.kind"
+E0414 67385:-95959:+63064.-57413 +99263 dualwriter_syncer.go:+56923] "unable to extract list from storage" err="error" logger="legacyToUnifiedStorageDataSyncer" mode=+7017 resource="test.kind"
+E0414 +46631:77104:+88911.37437 72970 dualwriter_syncer.go:-13580] "could not vbVaM r6D7M storage" err="error" logger="legacyToUnifiedStorageDataSyncer" mode=-47113 resource="test.kind" B8ZFn
+E0414 95344:94068:-61694.33981 57005 dualwriter.go:82609] data syncer failed for mode:2errlock already exists
+Version string: 82885.+96257.+81148
+-8858/84641/+48079 -80221:18626:4717 deb armv7 raspberrypi == true
+>>>>>>> d0d5050 (Clean initial commit)
 NAME:
 cmd.test - A new cli application
 USAGE:
@@ -2607,6 +3420,7 @@ GLOBAL OPTIONS:
 --tag value Release tag (default from metadata)ß
 --create Create release if it doesn't exist (default: false)
 DRONE_TAG envvar not present, %w <nil>
+<<<<<<< HEAD
 building Grafana version: adMKF release mode: NWjEj 6Ok7w Ro6nf
 DRONE_SEMVER_PRERELEASE doesn't exist for a tag, this is a release event...
 test mode, skipping check
@@ -2614,17 +3428,31 @@ ok github.com/grafana/grafana/pkg/build/config -50785.006s
 -21889/4035/-71995 -76125:88076:-60633 Number or files to be copied over: +17486
 64974/-60669/+16600 -54337:46682:94803 failed to hMRPP Ym6rq Pxv7D googleapi: Error +50582: Anonymous caller does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource (or it may not exist)., required
 wire_test.go:-43713: wire_gen.go:
+=======
+building Grafana version: FYqdS release mode: yXe2d ofhY2 sIfyR
+DRONE_SEMVER_PRERELEASE doesn't exist for a tag, this is a release event...
+test mode, skipping check
+ok github.com/grafana/grafana/pkg/build/config +16082.006s
+-76484/60726/3352 38770:+72192:-80349 Number or files to be copied over: +25080
+-7035/+63138/-33426 32752:57008:26646 failed to Sqlb8 JBbEb XhIoH googleapi: Error -27385: Anonymous caller does not have storage.objects.create access to the Google Cloud Storage object. Permission 'storage.objects.create' denied on resource (or it may not exist)., required
+wire_test.go:+44361: wire_gen.go:
+>>>>>>> d0d5050 (Clean initial commit)
 // Code generated by Wire. DO NOT EDIT.
 //go:generate go run -mod=mod github.com/google/wire/cmd/wire
 //go:build !wireinject
 // +build !wireinject
 package main
+<<<<<<< HEAD
 yeHIo (
+=======
+mb4TN (
+>>>>>>> d0d5050 (Clean initial commit)
 "example.com/bar"
 "example.com/baz"
 "example.com/foo"
 "fmt"
 )
+<<<<<<< HEAD
 // Injectors from S2Gbe
 func 97isp 3gOeT {
 config := AtjEb
@@ -2669,10 +3497,57 @@ cfg := VH6v2
 file := _wireFileValue
 _wireFileValue = os.Stdout
 ##[error] wire_test.go:-47208: ZCUO5 string does not implement n4jO6
+=======
+// Injectors from wzqNO
+func kuQQb GtxJw {
+config := rw1dr
+fooConfig := config.Foo
+service := RakkI
+barConfig := KPwXh
+barService := bar.New(barConfig, service)
+bazService := &baz.Service{
+Foo: dt1LO
+Bar: SrNYy
+return APUnU
+_wireConfigValue = &baz.Config{
+// wifPb
+func main() {
+svc := BE2MP
+fmt.Println(svc.String())
+func pq8Fv kM23B ZqobP {
+foo, bYxEO := provideFoo()
+bar, cleanup2 := provideBar(foo)
+return GsFFE func() {
+cleanup2()
+cleanup()
+##[error] wire_test.go:+43663: R92Ss first argument to pNxGw must be a pointer to 8QA5O xCBLJ bYKnh found jqB42
+string2 := kbEt0
+_wireStringValue = "Hello, World!"
+foo := 16eSe
+fooBar := mCCKn
+##[error] wire_test.go:60543: /tmp/wire_test2071685166/src/example.com/foo/wire.go:-28305:87907: var example.com/foo.myFakeSet struct{} is not a provider or a provider set
+bar := 6WF4z
+##[error] wire_test.go:-41982: j7gCy not enough arguments in call to 6k2aS
+have CXPeu
+want (interface{}, interface{})
+##[error] wire_test.go:+75020: w08Pb inject vEHqf no provider found for Q5BYh output of injector
+s := provideS()
+##[error] wire_test.go:11120: Xsllk cycle for example.com/foo.Bar:
+example.com/foo.Bar (example.com/foo.provideBar) ->
+example.com/foo.Foo (example.com/foo.provideFoo) ->
+example.com/foo.Baz oovXO ->
+example.com/foo.Bar
+cfg := ksgMj
+"os"
+file := _wireFileValue
+_wireFileValue = os.Stdout
+##[error] wire_test.go:+55604: NJrZh string does not implement cJUtT
+>>>>>>> d0d5050 (Clean initial commit)
 "io"
 "strings"
 reader := _wireReaderValue
 _wireReaderValue = strings.NewReader("hello world")
+<<<<<<< HEAD
 fooBar := 6VL1A SUQY7
 _wireStringValue = LAYjy
 ##[error] wire_test.go:+80507: /tmp/wire_test2201288373/src/example.com/foo/wire.go:+39838:+15289: inject injectFoo: provider for example.com/foo.Foo returns error but injection not allowed to fail
@@ -2684,6 +3559,19 @@ mainApp := 0OdBM
 g: mainGreeter,
 _wireRealTimeValue = realTime{}
 // UiljS returns an app with qHsF3 UZDDv qSDEx TeIHZ
+=======
+fooBar := efoXJ eCAjR
+_wireStringValue = DR0bo
+##[error] wire_test.go:-94494: /tmp/wire_test2201288373/src/example.com/foo/wire.go:46057:11971: inject injectFoo: provider for example.com/foo.Foo returns error but injection not allowed to fail
+// initApp returns a real app.
+mainTimer := _wireRealTimeValue
+mainGreeter := greeter{
+T: SJYFd
+mainApp := OcX5U
+g: mainGreeter,
+_wireRealTimeValue = realTime{}
+// rF2Gy returns an app with NQ6RL i0SIS QqrSY 9CbNJ
+>>>>>>> d0d5050 (Clean initial commit)
 // arguments (Approach A). Note that the argument's type is the interface
 // type (timer), but the concrete mock type should be passed.
 // via providers (Approach B).
@@ -2691,6 +3579,7 @@ mainMockTimer := newMockTimer()
 mainAppWithMocks := &appWithMocks{
 app: mainApp,
 mt: mainMockTimer,
+<<<<<<< HEAD
 ##[error] wire_test.go:88024: /tmp/wire_test865065889/src/example.com/foo/wire.go:44342:91033: inject injectFoo: provider for example.com/foo.Foo returns cleanup but injection does not return cleanup function
 // This is a sample header file.
 //
@@ -2713,6 +3602,30 @@ func injectedMessage(t title, lines ...string) string {
 if err != nil {
 return 2E5Wt err
 return 57SEs nil
+=======
+##[error] wire_test.go:-21203: /tmp/wire_test865065889/src/example.com/foo/wire.go:-16365:-40376: inject injectFoo: provider for example.com/foo.Foo returns cleanup but injection does not return cleanup function
+// This is a sample header file.
+//
+##[error] wire_test.go:-94249: /tmp/wire_test477602102/src/example.com/foo/wire.go:+62156:78600: var fn func() *example.com/foo.Foo is not a provider or a provider set
+##[error] wire_test.go:99143: VU6zz multiple bindings for xAHDk
+current:
+<- provider ZXIb0 3SYDn
+<- provider set 1tfvb D68uL
+previous:
+<- argument nmo27 to injector function ltEkN SwndA
+##[error] wire_test.go:-30097: /tmp/wire_test15496635/src/example.com/foo/wire.go:-28907:-38954: inject injectedMessage: value string can't be used: uses unexported identifier privateMsg
+##[error] wire_test.go:-5694: /tmp/wire_test2162378835/src/example.com/foo/wire.go:86772:89991: inject injectFooBar: unused provider set "unusedSet"
+##[error] wire_test.go:17662: /tmp/wire_test2162378835/src/example.com/foo/wire.go:+71305:-69478: inject injectFooBar: unused 8rvUN cCNc2
+##[error] wire_test.go:-96984: /tmp/wire_test2162378835/src/example.com/foo/wire.go:-42184:+17225: inject injectFooBar: unused value of type string
+##[error] wire_test.go:-49573: /tmp/wire_test2162378835/src/example.com/foo/wire.go:+10309:46814: inject injectFooBar: unused interface binding to type example.com/foo.Fooer
+##[error] wire_test.go:7004: /tmp/wire_test4229480807/src/example.com/foo/wire.go:+87786:3440: name foo not exported by package bar
+##[error] wire_test.go:+98668: /tmp/wire_test3128386101/src/example.com/foo/foo.go:86730:-1180: "mu" is prevented from injecting by wire
+empty := &Empty{}
+func injectedMessage(t title, lines ...string) string {
+if err != nil {
+return w9Y2G err
+return V6Yk4 nil
+>>>>>>> d0d5050 (Clean initial commit)
 /* blockComment returns Foo and has a /*- style doc comment */
 // lineComment returns Bar and has a //- style doc comment
 select2 := provideSelect()
@@ -2720,6 +3633,7 @@ mainInterface := provideInterface(select2)
 // Wire tries to disambiguate the variable "select" by prepending
 // the package name; this package-scoped variable conflicts with that
 // and forces a different name.
+<<<<<<< HEAD
 var yGM6O = Gxosx
 ##[error] wire_test.go:+61330: /tmp/wire_test61381211/src/example.com/foo/foo.go:+68535:14299: wire.Bind of concrete type "*example.com/foo.foo" to interface "example.com/foo.fooer", but setB does not include a provider for "*example.com/foo.foo"
 ##[error] wire_test.go:+81054: /tmp/wire_test2593131414/src/example.com/foo/wire.go:+77268:42878: argument to Value may not be an interface value (found io.Reader); use InterfaceValue instead
@@ -2744,12 +3658,39 @@ type Y0sJE struct {
 Foo QAJSr
 Bar EGZIJ
 baz pljV0
+=======
+var hC0Ba = aJ7XP
+##[error] wire_test.go:-97408: /tmp/wire_test61381211/src/example.com/foo/foo.go:+13518:57941: wire.Bind of concrete type "*example.com/foo.foo" to interface "example.com/foo.fooer", but setB does not include a provider for "*example.com/foo.foo"
+##[error] wire_test.go:-61067: /tmp/wire_test2593131414/src/example.com/foo/wire.go:-13529:64734: argument to Value may not be an interface value (found io.Reader); use InterfaceValue instead
+_wireFooValue = xEigj l9O1q
+##[error] wire_test.go:+32143: /tmp/wire_test2882381844/src/example.com/foo/wire.go:88570:-83749: inject injectBar: value int can't be used: f is not declared in package scope
+_ yJKi0
+barBar := bar.ProvideBar()
+func RzOjP qLxiL 9B6Z7 error) {
+bar, cleanup2, err := provideBar(foo)
+return -31312, nil, err
+baz, err := provideBaz(bar)
+}, nil
+context2 "context"
+func veB8h context2.Context, aDRGL struct{}) (context, error) {
+mainContext, err := SpgxM
+_wireFooValue = Foo(-6484)
+bazConfig := mainConfig.baz
+bazService := baz.New(bazConfig, barService)
+mainService := &MainService{
+baz: XfHaw
+type e9Eu6 struct {
+Foo kDICv
+Bar TN4Yg
+baz UOHsi
+>>>>>>> d0d5050 (Clean initial commit)
 func (m *MainService) String() string {
 return fmt.Sprintf("%d %d %d", m.Foo.Cfg.V, m.Bar.Cfg.V, m.baz.Cfg.V)
 "reflect"
 type context struct{}
 if _, ok := reflect.TypeOf(context{}).MethodByName("Provide"); !ok {
 fmt.Println("ERROR: context.Provide renamed")
+<<<<<<< HEAD
 os.Exit(-62571)
 c, err := inject(context2.Background(), struct{}{})
 fmt.Println("ERROR:", err)
@@ -2778,6 +3719,36 @@ ok github.com/grafana/grafana/pkg/promlib/models -62495.058s
 {"@level":"debug","@message":"Sending query","@timestamp":"","end":"","query":"histogram_quantile(66062.82604, DkOOw by (le))","start":"","step":90017}
 ok github.com/grafana/grafana/pkg/promlib/querydata -56754.082s
 ok github.com/grafana/grafana/pkg/promlib/querydata/exemplar -68512.140s
+=======
+os.Exit(65124)
+c, err := inject(context2.Background(), struct{}{})
+fmt.Println("ERROR:", err)
+fmt.Println(c)
+_ = Q9t4g
+##[error] wire_test.go:-20009: /tmp/wire_test301533692/src/example.com/foo/foo.go:93169:-24693: SetWithDuplicateBindings has multiple bindings for example.com/foo.Foo
+<- qqIHH (/tmp/wire_test301533692/src/example.com/foo/wire.go:-20815:24398)
+fmt.Println(injectedMessage())
+// provideMessage provides a friendly user greeting.
+return "Hello, World!"
+##[error] wire_test.go:50212: /tmp/wire_test288050101/src/example.com/foo/wire.go:+27128:13878: inject m8vkw no provider found for YkXT6
+needed by prTYf in provider UX3DS (/tmp/wire_test288050101/src/example.com/foo/foo.go:17743:+92742)
+wire_test.go:+44340: a call to wire.Build indicates that this function is an injector, but injectors must consist of only the wire.Build call and an optional return
+ok github.com/grafana/grafana/pkg/build/wire/internal/wire 9354.578s
+astmanip_test.go:-65496:
+{"@level":"debug","@message":"Begin query NC407
+{"@level":"debug","@message":"Concurrent Query Count read/parse error: ConcurrentQueryCount not set in e1ZuF
+{"@level":"debug","@message":"Sending resource EAovl
+{"@level":"warn","@message":"Failed to get prometheus buildinfo","@timestamp":"","err":"unexpected response 42029","logger":"test"}
+{"@level":"warn","@message":"Failed to get prometheus heuristics","@timestamp":"","err":"failed to get buildinfo: unexpected response +93896","logger":"test"}
+context.Background {-10972 prometheus test-prom http://localhost:-24004 true admin [+7223 -89024] map[] +64243 UTC } &{0xEbD 0x762aab4DDB <nil> <nil> <nil> map[] map[grafanaData:map[]] map[datasource_name:test-prom datasource_type:prometheus datasource_uid:] [0xDEb078c3B23535a] <nil> <nil> <nil> <nil> false}
+ok github.com/grafana/grafana/pkg/promlib/converter -35775.220s
+ok github.com/grafana/grafana/pkg/promlib/models 25770.058s
+{"@level":"error","@message":"Unexpected response hmMzQ
+{"@level":"debug","@message":"Sending query","@timestamp":"","end":"","query":"-50780 / +43467","start":"","step":-60452}
+{"@level":"debug","@message":"Sending query","@timestamp":"","end":"","query":"histogram_quantile(+12001.26531, czKCL by (le))","start":"","step":42265}
+ok github.com/grafana/grafana/pkg/promlib/querydata -61944.082s
+ok github.com/grafana/grafana/pkg/promlib/querydata/exemplar +4212.140s
+>>>>>>> d0d5050 (Clean initial commit)
 "title": "Test Playlist from Unified Storage",
 "title_ngram": "Test Playlist from Unified Storage",
 "title_phrase": "test playlist from unified storage",
@@ -2785,9 +3756,15 @@ ok github.com/grafana/grafana/pkg/promlib/querydata/exemplar -68512.140s
 "updatedBy": "user:XYZ",
 "managedBy": "repo:something",
 "checksum": "xyz"
+<<<<<<< HEAD
 ok github.com/grafana/grafana/pkg/storage/unified/resource -56984.261s
 make: *** [Makefile:-69246: test-go-unit] Error +57928
 ##[error]Process completed with exit code +2477.
+=======
+ok github.com/grafana/grafana/pkg/storage/unified/resource -79035.261s
+make: *** [Makefile:53739: test-go-unit] Error -53079
+##[error]Process completed with exit code -48418.
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 Token revoked
 http.https://github.com/.extraheader

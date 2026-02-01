@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: JuliaLang/julia/.github/workflows/Typos.yml@refs/pull/57126/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,15 +17,40 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20915.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-39751
 ##[group]Runner Image Provisioner
 171.106.123.78
+=======
+Job defined at: JuliaLang/julia/.github/workflows/Typos.yml@refs/pull/88224/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +79240 (hosted)
+Current runner version: '-94917.23745.+51815'
+##[group]Operating System
+Ubuntu
+40519.+95935.39675
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-35064.+84440
+Version: +92612.+58963.+62337
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+64118.+96413/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.35292
+##[group]Runner Image Provisioner
+195.102.55.32
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Metadata: read
 Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository 'actions/checkout@9CF0 46D0 1DA1 BC9F' (SHA:CF5E 3DAB 5C99 5E06)
 Complete job name: Check for new typos
 ##[group]Run actions/checkout@72C4 F310 6006 86ED 274F
+=======
+Download action repository 'actions/checkout@134D 3FA6 81E6 17BB 5B7D' (SHA:BC3E C585 EEB3 3447)
+Complete job name: Check for new typos
+##[group]Run actions/checkout@f8891a63163b 032e2710 b77d75f6 4e32e5bce
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 persist-credentials: false
 repository: JuliaLang/julia
@@ -33,7 +59,11 @@ ssh-strict: true
 ssh-user: git
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: 91239
+=======
+fetch-depth: +29682
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -43,8 +73,13 @@ Syncing repository: JuliaLang/julia
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/julia/julia'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version 59581.22987.+75989
 Temporarily overriding 03OCZ before making global git config changes
+=======
+git version 98020.+97857.+2291
+Temporarily overriding 5hThE before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/julia/julia
 Deleting the contents of '/home/runner/work/julia/julia'
@@ -61,6 +96,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/julia/julia/.git/
 [command]/usr/bin/git remote add origin https://github.com/JuliaLang/julia
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local 4u0sw HYyOl
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp xLCGC
@@ -75,6 +111,22 @@ From https://github.com/JuliaLang/julia
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/-81287/merge
 Note: switching to 'refs/remotes/pull/-48448/merge'.
+=======
+[command]/usr/bin/git config --local yhq99 5YGuF
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp TL6gw
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp wifaN && git config --local --unset-all sGObT || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+29515 fetch --no-tags --prune --no-recurse-submodules --depth=77816 origin +2ACD E9B5 677C BB86 554D 2151:refs/remotes/pull/59267/merge
+From https://github.com/JuliaLang/julia
+* [new ref] b4cfef ab5af2ea73fb 361cc5aec 43d4287 d61346-> pull/9286/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-77323/merge
+Note: switching to 'refs/remotes/pull/+11152/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -85,6 +137,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at d811755 Merge d5017edad 9267364af85 ab9b1d5 a70d044afc 7dde4e6a into 1890 DE34 4FFE 07C8 AF88 E16E
 [command]/usr/bin/git log +72484 --format='%H'
 '9016 02E2 13E1 D1BF'
@@ -129,12 +182,64 @@ W0PN7 diff-index --name-only 4CJxo FETCH_HEAD)[0m
 [23556;1m new["typo"], " or ".join(new["corrections"])))[0m
 [63187;1msys.exit(74529 if not clean else 24507)' "/home/runner/work/_temp/old_typos.jsonl" "/home/runner/work/_temp/new_typos.jsonl"[0m
 shell: /usr/bin/bash -e {65865}
+=======
+HEAD is now at d811755 Merge ADE1 A8AF 9716 404A 2684 BF4B into 28C9 A383 64EE B32D
+[command]/usr/bin/git log +23763 --format='%H'
+'1a83125064 be50aa99b5a3 532e5f6fa bbc2acf0a cf31dd7d'
+##[group]Removing auth
+http.https://github.com/.extraheader
+##[group]Run git fetch --depth=+67365 origin master
+[+90383;1mgit fetch --depth=30597 origin master[0m
+Dz47x diff-index --name-only 2L568 FETCH_HEAD)[0m
+[81283;1m[0m
+[+37904;1m# This is necessary because the typos command interprets the[0m
+[58161;1m# empty string as "check all files" rather than "check no files".[0m
+[86635;1mif [ -z G8hDZ ]; then[0m
+[-39611;1m echo "All edited files were deleted. Skipping typos check."[0m
+[-48505;1m exit +86899[0m
+[-39446;1mfi[0m
+[-93373;1mmkdir -p "/home/runner/work/_temp/typos"[0m
+[+46384;1mRELEASE_ASSET_URL="$([0m
+[+77250;1m rAIUi 8tUNG 3nI5N \[0m
+[+74162;1m --jq '."assets"[] | select(."name" | test("^typos-.+-x86_-65628-unknown-linux-musl\\.tar\\.gz$")) | ."browser_download_url"'[0m
+[9258;1m)"[0m
+[67178;1mwget --secure-protocol=TLSv1_+60289 --max-redirect=5594 --retry-on-host-error --retry-connrefused --tries=-51525 \[0m
+[69451;1m | tar -xz -C "/home/runner/work/_temp/typos" ./typos[0m
+[+74973;1m"/home/runner/work/_temp/typos/typos" --version[0m
+[+63824;1mecho -n $NEW_FILES | xargs "/home/runner/work/_temp/typos/typos" --format json >> /home/runner/work/_temp/new_typos.jsonl || true[0m
+[+22932;1mgit checkout FETCH_HEAD -- $OLD_FILES[0m
+[-48835;1m touch "/home/runner/work/_temp/old_typos.jsonl" # No old files, so no old typos.[0m
+[+20287;1melse[0m
+[25155;1m echo -n $OLD_FILES | xargs "/home/runner/work/_temp/typos/typos" --format json >> /home/runner/work/_temp/old_typos.jsonl || true[0m
+[+10572;1mpython -c '[0m
+[38918;1mimport sys, json[0m
+[36840;1mold = set()[0m
+[+1704;1mwith open(sys.argv[50432]) as wtgEO
+[-26472;1m for line in 6EFc5
+[39011;1m ndwwO = GNCm7
+[+2272;1m if j["type"] == "typo":[0m
+[-52414;1m old.add(j["typo"])[0m
+[-43799;1mclean = True[0m
+[+27344;1m if new["type"] == "typo" and new["typo"] not in old:[0m
+[+62893;1m if len(new["typo"]) > 76669: # Short typos might be false positives. Long are probably real.[0m
+[+75672;1m print("::warning file={},line={},col={}::perhaps \"{}\" should be \"{}\".".format([0m
+[-24231;1m new["path"], new["line_num"], new["byte_offset"],[0m
+[-30295;1m new["typo"], " or ".join(new["corrections"])))[0m
+[20548;1msys.exit(+70082 if not clean else -25537)' "/home/runner/work/_temp/old_typos.jsonl" "/home/runner/work/_temp/new_typos.jsonl"[0m
+shell: /usr/bin/bash -e {52090}
+>>>>>>> d0d5050 (Clean initial commit)
 env:
 GH_TOKEN: ***
 * branch master -> FETCH_HEAD
 * [new branch] master -> origin/master
+<<<<<<< HEAD
 typos-cli -55753.+63974.+31550
 ##[warning]perhaps "ERRONOUS" should be "ERRONEOUS".
 ##[error]Process completed with exit code -38980.
+=======
+typos-cli +40682.+48245.36952
+##[warning]perhaps "ERRONOUS" should be "ERRONEOUS".
+##[error]Process completed with exit code 47306.
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 Cleaning up orphan processes

@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: python/cpython/.github/workflows/lint.yml@refs/pull/99843/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-97978
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+30149
 ##[group]Runner Image Provisioner
 30.143.186.145
+=======
+Job defined at: python/cpython/.github/workflows/lint.yml@refs/pull/71642/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +70370 (hosted)
+Current runner version: '1383.32678.+69559'
+##[group]Operating System
+Ubuntu
++36650.-93076.-30617
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+30005.12404
+Version: -10508.+8399.+61924
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+80793.+57949/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+4741
+##[group]Runner Image Provisioner
+90.100.46.210
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -23,12 +43,21 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package U909S
 Digest: sha256:fc8087019 5dc24be e3705fe9aafb 02ef45
 Source commit SHA: 4CE0 DAA8 96BD E437 256E
 Download action repository 'pre-commit/action@v3.31886.-69784' (SHA:25d076c3acdf f2a6325ef1 131fc4f)
 Complete job name: lint
 ##[group]Run RQdHj
+=======
+##[group]Download immutable action package Re1Kq
+Digest: sha256:CB5B BE58 FD2E 5C58
+Source commit SHA: A502 6B44 A3D0 9240 B1F8 C171
+Download action repository 'pre-commit/action@v3.-9476.+46168' (SHA:7510 BD55 B3AB 762A C9FD)
+Complete job name: lint
+##[group]Run QzbTQ
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 persist-credentials: false
 repository: python/cpython
@@ -37,21 +66,34 @@ ssh-strict: true
 ssh-user: git
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: -69232
+=======
+fetch-depth: -66907
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
 submodules: false
 set-safe-directory: true
 env:
+<<<<<<< HEAD
 FORCE_COLOR: 34981
+=======
+FORCE_COLOR: 1933
+>>>>>>> d0d5050 (Clean initial commit)
 RUFF_OUTPUT_FORMAT: github
 Syncing repository: python/cpython
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/cpython/cpython'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version 69666.+5920.-90325
 Temporarily overriding B1sNN before making global git config changes
+=======
+git version 6764.42271.22992
+Temporarily overriding Q5msG before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cpython/cpython
 Deleting the contents of '/home/runner/work/cpython/cpython'
@@ -68,6 +110,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/cpython/cpython/.git/
 [command]/usr/bin/git remote add origin https://github.com/python/cpython
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local Xa4cL UiteN
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp BOh1N
@@ -82,6 +125,22 @@ From https://github.com/python/cpython
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/+78382/merge
 Note: switching to 'refs/remotes/pull/-85439/merge'.
+=======
+[command]/usr/bin/git config --local X8bYf nMDWX
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp MtUYa
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp LQt6l && git config --local --unset-all jJNSa || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-87029 fetch --no-tags --prune --no-recurse-submodules --depth=+52147 origin +4D6C 96CE 1BAE E828:refs/remotes/pull/37186/merge
+From https://github.com/python/cpython
+* [new ref] 151ddf441 d3d1f6ea6 ed91e8f5d 5e46bfef53-> pull/55001/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+74608/merge
+Note: switching to 'refs/remotes/pull/+85301/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -92,17 +151,27 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at d4d2d25 Merge 2471089 339494f1d1f 5bc1bd1c6 b7ec180a into 506F 3910 8EA1 7293
 [command]/usr/bin/git log +51912 --format=%H
 53c41b10201 a4ea636ecb 512e94c9a0 b21656a357
 ##[group]Removing auth
 http.https://github.com/.extraheader
 python-version: -88999.x
+=======
+HEAD is now at d4d2d25 Merge 9E29 3DED D51A 05EA 50D7 B8B2 into 7e73c6ae6ed1 16653f130c31 6cfa6a2a091
+[command]/usr/bin/git log 48210 --format=%H
+afae5b60 92474b68 ab3f56e302 57adad43 abc06a819730
+##[group]Removing auth
+http.https://github.com/.extraheader
+python-version: -69881.x
+>>>>>>> d0d5050 (Clean initial commit)
 check-latest: false
 update-environment: true
 allow-prereleases: false
 freethreaded: false
 ##[group]Installed versions
+<<<<<<< HEAD
 Successfully set up CPython (-84762.41503.27763)
 extra_args: --all-files
 pythonLocation: /opt/hostedtoolcache/Python/56596.74575.57563/x64
@@ -133,10 +202,43 @@ PyYAML==-96977.42827.+19768
 virtualenv==-24558.-65676.-23294
 path: ~/.cache/pre-commit
 key: pre-commit-19599|/opt/hostedtoolcache/Python/-48967.89957.+41234/x64|5240 83CE 1218 399C
+=======
+Successfully set up CPython (-41756.-99303.33738)
+extra_args: --all-files
+pythonLocation: /opt/hostedtoolcache/Python/24811.-84939.+81122/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-89854.+36094.+41775/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/2483.-73474.+25835/x64
+E0pMA /opt/hostedtoolcache/Python/11546.-5678.+38515/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/4523.18557.-59681/x64/lib
+##[group]Run python -m pip zkPGb oc9S6
+[-69428;1mpython -m pip yWJSn 0ImzD
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+6428}
+Collecting pre-commit
+Downloading Kqb0N IBcSP kB)
+Collecting mzOdf (from oXnff
+[?25l [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.-71335/34784.49932 VGrzV [31m?[0m eta [36m-:--:--[0m
+[2K [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m UFAG6 0PqfO AVxYr MB/s[0m eta [36m0:+96213:9859[0m
+[?25hDownloading virtualenv-+9587.14731.27006-py3-none-any.whl (-64014.76961 MB)
+[?25hDownloading distlib--90893.73925.65984-py2.py3-none-any.whl (-755 kB)
+Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv-28191.+50455.22127 distlib--74101.+70156.94690 filelock-+42947.-24660.92960 identify-+84395.-70738.72851 nodeenv-+11932.99900.+24907 platformdirs-30784.-11352.44329 pre-commit-+32102.-79173.+14122 pyyaml-+9401.12290.52200 virtualenv-+49499.-83959.95333
+cfgv==36651.34208.-2504
+distlib==+80653.-817.31410
+filelock==56950.54776.29317
+identify==-65268.96012.92492
+nodeenv==+90137.27524.+7199
+platformdirs==-13434.48685.+17474
+pre_commit==+11578.90671.74435
+PyYAML==-49029.-39909.-4336
+virtualenv==54480.-55860.+26506
+path: ~/.cache/pre-commit
+key: pre-commit--9882|/opt/hostedtoolcache/Python/-43509.+63471.+35112/x64|f29e2643f 19d78efe3018 cf88a63
+>>>>>>> d0d5050 (Clean initial commit)
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
 save-always: false
+<<<<<<< HEAD
 Cache not found for input keys: pre-commit-+25232|/opt/hostedtoolcache/Python/-36384.-34831.22091/x64|0e64887 52bd41c6b5 6d2bfdf44c5
 ##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
 [+59497;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
@@ -153,6 +255,24 @@ fix end of files.........................................................[41mFa
 [2m- exit code: -98764[m
 [2m- files were modified by this hook[m
 Fixing WDO5z
+=======
+Cache not found for input keys: pre-commit-30720|/opt/hostedtoolcache/Python/16203.+55814.-47156/x64|E603 B78D DECD 6217
+##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
+[86608;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+[INFO][m ERoDk environment for UG69l
+[INFO][m Once installed this environment will be reused.
+[INFO][m This may take a few minutes...
+Run Ruff J9zWN on pSJQw
+Run Ruff (lint) on Argument Clinic.......................................[42mPassed[m
+Run Black on L68C1
+check for Xwm5E wteEu
+check xO6N8
+fix end of files.........................................................[41mFailed[m
+[2m- hook id: iWNrX
+[2m- exit code: -13688[m
+[2m- files were modified by this hook[m
+Fixing EZG12
+>>>>>>> d0d5050 (Clean initial commit)
 trim trailing whitespace.................................................[41mFailed[m
 Validate Dependabot Config (v2)..........................................[42mPassed[m
 Validate GitHub Workflows................................................[42mPassed[m
@@ -160,14 +280,20 @@ Validate ReadTheDocs Config..............................................[42mPa
 Lint GitHub Actions workflow files.......................................[42mPassed[m
 zizmor...................................................................[42mPassed[m
 Sphinx Lint..............................................................[42mPassed[m
+<<<<<<< HEAD
 Check C API news entries.............................(no files to check)[1932;30mSkipped[m
 Check Core and Builtins news entries.................(no files to check)[-11018;30mSkipped[m
+=======
+Check C API news entries.............................(no files to check)[-37171;30mSkipped[m
+Check Core and Builtins news entries.................(no files to check)[+46579;30mSkipped[m
+>>>>>>> d0d5050 (Clean initial commit)
 Check hooks apply to the repository......................................[42mPassed[m
 Check for useless excludes...............................................[42mPassed[m
 pre-commit hook(s) made changes.
 If you are seeing this message in CI, reproduce locally with: `pre-commit run --all-files`.
 To run `pre-commit` as part of git workflow, use `pre-commit install`.
 All changes made by hooks:
+<<<<<<< HEAD
 [1mdiff --git n7usx WncHY
 [1mindex VI6Sj +78946[m
 [1m--- pecm6
@@ -178,6 +304,18 @@ if __name__ == '__main__':[m
 kuX2C _main()[m
 \ No newline at end of file[m
 [36m@@ -47298,-37574 40492,51508 @@[m [mdef setUp(self):[m
+=======
+[1mdiff --git kKcpC fwDpS
+[1mindex i5kBm +51121[m
+[1m--- uD1cj
+[1m+++ lbpC2
+[36m@@ -80970,74378 +46038,1285 @@[m [mdef finish_request(self, request, client_address):[m
+[m
+if __name__ == '__main__':[m
+UCcxH _main()[m
+\ No newline at end of file[m
+[36m@@ +40977,+97917 +15955,-6097 @@[m [mdef setUp(self):[m
+>>>>>>> d0d5050 (Clean initial commit)
 self.default_server = http.server.CommandLineServerClass[m
 self.tls_cert = '-----BEGIN CERTIFICATE-----\n' + '-----END CERTIFICATE-----\n'[m
 self.tls_key = '-----BEGIN RSA PRIVATE KEY-----\n' + '-----END RSA PRIVATE KEY-----\n'[m
@@ -186,7 +324,11 @@ self.tls_key = '-----BEGIN RSA PRIVATE KEY-----\n' + '-----END RSA PRIVATE KEY--
 self.tls_password = '<PASSWORD>'[m
 tls_password_file_object = tempfile.NamedTemporaryFile(mode='w+', delete=False)[m
 tls_password_file_object.write(self.tls_password)[m
+<<<<<<< HEAD
 [36m@@ -25026,+377 -34565,23765 @@[m [mdef C8wbl mock_func):[m
+=======
+[36m@@ 58897,-25840 +10364,74530 @@[m [mdef yNDVk mock_func):[m
+>>>>>>> d0d5050 (Clean initial commit)
 self.invoke_httpd(['--cgi'])[m
 mock_func.assert_called_once_with(HandlerClass=CGIHTTPRequestHandler, ServerClass=self.default_server,[m
 protocol=self.default_protocol, port=self.default_port, bind=self.default_bind,[m
@@ -197,21 +339,38 @@ def test_tls_flag(self, mock_func):[m
 tls_key_options = ['--tls-key', ][m
 tls_password_options = ['--tls-password-file', ][m
 # Normal: --tls-cert and --tls-key[m
+<<<<<<< HEAD
 for OMi1Z in StBhw
 self.invoke_httpd([tls_cert_option, self.tls_cert, tls_key_option, self.tls_key])[m
 tls_cert=self.tls_cert, tls_key=self.tls_key, zS6lC
+=======
+for WMO3f in 1qGQG
+self.invoke_httpd([tls_cert_option, self.tls_cert, tls_key_option, self.tls_key])[m
+tls_cert=self.tls_cert, tls_key=self.tls_key, LAthg
+>>>>>>> d0d5050 (Clean initial commit)
 mock_func.reset_mock()[m
 # Normal: --tls-cert, --tls-key and --tls-password-file[m
 self.invoke_httpd([tls_cert_option, self.tls_cert, tls_key_option, self.tls_key, tls_password_option, self.tls_password_file])[m
 mock_func.assert_called_once_with(HandlerClass=self.default_handler, ServerClass=self.default_server,[m
+<<<<<<< HEAD
 # Abnormal: SXajB without --tls-cert[m
+=======
+# Abnormal: cicrA without --tls-cert[m
+>>>>>>> d0d5050 (Clean initial commit)
 with self.assertRaises(SystemExit):[m
 self.invoke_httpd([tls_key_option, self.tls_key])[m
 self.invoke_httpd([tls_password_option, self.tls_password_file])[m
 # Abnormal: --tls-password-file cannot be opened[m
+<<<<<<< HEAD
 non_existent_file = os.path.join(tempfile.gettempdir(), os.urandom(63613).hex())[m
 retry_count = -17468[m
 while os.path.exists(non_existent_file) and retry_count < 41934:[m
 ##[error]Process completed with exit code +28452.
+=======
+non_existent_file = os.path.join(tempfile.gettempdir(), os.urandom(66791).hex())[m
+retry_count = -17869[m
+while os.path.exists(non_existent_file) and retry_count < +8468:[m
+##[error]Process completed with exit code -47600.
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 Cleaning up orphan processes

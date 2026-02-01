@@ -8,7 +8,11 @@ from helper.create_training_dataset import TrainingDatasetCreator
 
 
 NUM_LOGS_SELECTED = 5
+<<<<<<< HEAD
 CLIENT_LIST = ["d2klab", "maryangel101"]
+=======
+CLIENT_LIST = ["d2klab", "maryangel101", "logsage"]
+>>>>>>> d0d5050 (Clean initial commit)
 
 
 class FindSimilarLogTester:
@@ -49,15 +53,28 @@ class FindSimilarLogTester:
         words = [word.lower() for word in words if word]
         return words
     
+<<<<<<< HEAD
     def find_internal_index_of_word(self, word: str, client_name: str) -> int:
         """Find the internal index representation of a word.
         
         Args:
+=======
+    def find_internal_index_of_word(self, word_dict_path: str, word: str, client_name: str) -> int:
+        """Find the internal index representation of a word.
+        
+        Args:
+            word_dict_path (str): the path where the data about that execution can be found.
+>>>>>>> d0d5050 (Clean initial commit)
             word (str): the word which we want to find its internal index.
             client_name (str): the name of client whose dataset the word is taken.
         """
         # Get the client word dict
+<<<<<<< HEAD
         word_dict_path = Path("dataset") / Path(f"{client_name}")
+=======
+        base_path = Path(word_dict_path)
+        word_dict_path = base_path / Path(f"{client_name}_word_dict.json")
+>>>>>>> d0d5050 (Clean initial commit)
         with open(word_dict_path, "r", encoding="utf-8") as json_file:
             word_dict = json.load(json_file)
         # Get the word index
@@ -68,10 +85,19 @@ class FindSimilarLogTester:
         word_index = word_info.get("index", -1)
         return word_index
 
+<<<<<<< HEAD
     def word_embedding_model(self, W1: np.ndarray, text: str, client_name: str) -> np.ndarray:
         """Embed the text using the word embedding model.
 
         Args:
+=======
+    def word_embedding_model(self, word_dict_path: str, W1: np.ndarray, text: str, client_name: str) -> np.ndarray:
+        """Embed the text using the word embedding model.
+
+        Args:
+            word_dict_path (str): the path to the folder where we can find the clients dictionaries.
+            W1 (np.array): embedding matrix to embed words into vectors.
+>>>>>>> d0d5050 (Clean initial commit)
             text (str): The input text to embed.
             client_name (str): which client whose test set is running.
 
@@ -89,7 +115,12 @@ class FindSimilarLogTester:
         # Find the embedding of each word
         for word in word_list:
             # Get the internal index representing the word
+<<<<<<< HEAD
             word_index = self.find_internal_index_of_word(word=word, client_name=client_name)
+=======
+            word_index = self.find_internal_index_of_word(
+                word_dict_path=word_dict_path, word=word, client_name=client_name)
+>>>>>>> d0d5050 (Clean initial commit)
             if word_index == -1:
                 print(f"WARNING: word: {word} is not found.")
             # Get the embedding vector of the word
@@ -133,6 +164,7 @@ class FindSimilarLogTester:
         similarity_list.sort(key=lambda x: x[1], reverse=True)
         return similarity_list[:k]
     
+<<<<<<< HEAD
     def run_test_for_client(self, W1, W2, client_name: str, model_name: str) -> float:
         # Read the list of file path of client training and testing data
         training_data_paths = TrainingDatasetCreator().get_file_list_from_folder(f"dataset/training/{client_name}")
@@ -196,3 +228,113 @@ if __name__ == "__main__":
     tester = FindSimilarLogTester()
     for client in CLIENT_LIST:
         tester.run_test_for_client(client, model_name="Word2Vec")
+=======
+    def collect_all_files_from_folder(self, folder_path: str) -> list[str]:
+        """Get paths to all files in a folder.
+        
+        Args:
+            folder_path (str): the path to the folder which we want to get all of its file paths.
+        """
+        folder_path = Path(folder_path)
+        if not folder_path.exists():
+            return []
+
+        # Recursively collect all files
+        file_paths = [
+            str(path)
+            for path in folder_path.rglob("*")
+            if path.is_file()
+        ]
+
+        return file_paths
+    
+    def find_actual_similar_log_path(self, original_log_path: str) -> Path:
+        """From the original log path, find the path to the generated log file which is actual similar.
+        
+        Args:
+            original_log_path (str): the path to the original log file.
+        """
+        original_path = Path(original_log_path)
+
+        parts = original_path.parts
+        test_idx = parts.index("test")
+
+        actual_similar_log_path = Path(
+            *parts[:test_idx],
+            "generate_test_log",
+            *parts[test_idx + 1:]
+        ).resolve()
+        return actual_similar_log_path
+
+    
+    def run_test_for_client(self, word_dict_path: str, W1, client_name: str) -> float:
+        """Run the finding similar log test for a client test data.
+        
+        Args:
+            word_dict_path (str): the path to the folder storing the clients word dictionaries.
+            W1 (np.array): embedding matrix to embed words into vectors.
+            client_name (str): the name of the client which test data is being used.
+        """
+        # Read the list of all test log files and generated test log files
+        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_internal/{client_name}/test")
+        generated_log_paths = self.collect_all_files_from_folder(
+            f"dataset/train_test_internal/{client_name}/generate_test_log")
+        
+        # Collect all original logs
+        original_logs = []
+        for test_path in test_paths:
+            # Read the training log
+            with open(test_path, "r", encoding="utf-8") as file:
+                original_log = file.read()
+            original_logs.append((test_path, original_log))
+
+        # Collect all testing logs
+        generated_logs = []
+        for generated_path in generated_log_paths:
+            with open(generated_path, "r", encoding="utf-8") as file:
+                generated_log = file.read()
+            generated_logs.append((generated_path, generated_log))
+
+        # Initialize variables to count the accuracy time
+        accuracy_count = 0
+        for original_path, original_log in original_logs:
+            # Calculate vector representation of original log
+            original_vec = self.word_embedding_model(word_dict_path, W1, original_log, client_name)
+
+            generated_logs_vec = []
+            for generated_path, generated_log in generated_logs:
+                # Calculate vector representation of the logs
+                generated_vec = self.word_embedding_model(word_dict_path, W1, generated_log, client_name)
+                generated_logs_vec.append((generated_path, generated_vec))
+
+            similar_logs = self.find_k_similar_logs(original_vec, generated_logs_vec, k=NUM_LOGS_SELECTED)
+
+            actual_similar_log_path = self.find_actual_similar_log_path(original_log_path=original_path)
+
+            print("--------------------------------------------------")
+            print(f"Finding similar logs for {original_path}:")
+            for i, (file_path, similarity) in enumerate(similar_logs):
+                if Path(file_path).resolve() == actual_similar_log_path:
+                    accuracy_count += 1
+                    print(f"TRUE: included at rank {i + 1} with similarity {similarity:.4f}")
+                print(f"Rank {i + 1}: {Path(file_path).name} with similarity {similarity:.4f}")
+            # if similar_logs[0][0] == actual_similar_log_path:
+            #     accuracy_count += 1
+            #     print(f"TRUE: with similarity {similar_logs[0][1]:.4f}")
+            print("--------------------------------------------------")
+        accuracy_rate = accuracy_count / len(test_paths)
+        print(f"Accuracy rate for client {client_name}:\n{accuracy_rate:.4f}")
+        return accuracy_rate
+
+
+if __name__ == "__main__":
+    W1 = np.load("models/3_clients_2_context_10_5_epochs/W1_3_clients_10_5_epochs.npy")
+    W2 = np.load("models/3_clients_2_context_10_5_epochs/W2_3_clients_10_5_epochs.npy")
+    word_dict_path = "models/3_clients_2_context_10_5_epochs/"
+
+    tester = FindSimilarLogTester()
+    for client in CLIENT_LIST:
+        tester.run_test_for_client(
+            word_dict_path=word_dict_path, W1=W1, client_name=client
+        )
+>>>>>>> d0d5050 (Clean initial commit)

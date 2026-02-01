@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: microsoft/markitdown/.github/workflows/tests.yml@refs/pull/+88493/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/2914.1
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.-40228
 ##[group]Runner Image Provisioner
 49.157.3.226
+=======
+Job defined at: microsoft/markitdown/.github/workflows/tests.yml@refs/pull/-948/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +5311 (hosted)
+Current runner version: '-87163.-88007.73408'
+##[group]Operating System
+Ubuntu
++67561.73684.+6143
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-15626.97757
+Version: +46052.-13756.+66652
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-53935.22697/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.-19512
+##[group]Runner Image Provisioner
+118.28.23.253
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -24,11 +44,19 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package gypkB
 Digest: sha256:6e12ff8d 8669b1d5fd2 f0b0fa c22bcd243 082bcb1d06d
 Source commit SHA: 1D11 1BC7 62D3 9895 EBED
 Complete job name: tests
 ##[group]Run HFy1k
+=======
+##[group]Download immutable action package swJHE
+Digest: sha256:571a8293 4be1a4aa99a5 d65bac54
+Source commit SHA: 6c4b963d066 f448334b1 603a0aa8 78864e0e69
+Complete job name: tests
+##[group]Run yf8UF
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: microsoft/markitdown
 token: ***
@@ -37,7 +65,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: 84675
+=======
+fetch-depth: 20551
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -47,8 +79,13 @@ Syncing repository: microsoft/markitdown
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/markitdown/markitdown'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version -39602.+33332.19440
 Temporarily overriding wANlU before making global git config changes
+=======
+git version +72504.93626.66200
+Temporarily overriding tJVOS before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/markitdown/markitdown
 Deleting the contents of '/home/runner/work/markitdown/markitdown'
@@ -65,6 +102,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/markitdown/markitdown/.git/
 [command]/usr/bin/git remote add origin https://github.com/microsoft/markitdown
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local rzTXf PlSIm
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp Bp9Vo
@@ -79,6 +117,22 @@ From https://github.com/microsoft/markitdown
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/18419/merge
 Note: switching to 'refs/remotes/pull/-23128/merge'.
+=======
+[command]/usr/bin/git config --local tx249 PhsZV
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp AZdFy
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp z2eUA && git config --local --unset-all WRVJj || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=1656 fetch --no-tags --prune --no-recurse-submodules --depth=+84284 origin +2BD1 AC1B BFB0 CC5A 3104 B62E:refs/remotes/pull/-95014/merge
+From https://github.com/microsoft/markitdown
+* [new ref] D432 CE37 C3F5 D705 CAD5 A0A9-> pull/+63173/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/36127/merge
+Note: switching to 'refs/remotes/pull/-77891/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -89,16 +143,25 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at 8506bb9 Merge 8128 0C57 D016 2981 68C3 0423 into 0202 4230 6F45 90F4 B6C6
 [command]/usr/bin/git log 38313 --format=%H
 21B2 E22C 60D7 F7A1 DC3E 6B5F
 python-version: +24727.-99453
 +42387.93435
+=======
+HEAD is now at 8506bb9 Merge B5E9 0D46 6EAF B17E 3B9B 6050 into 17A8 10EE 590E 5684
+[command]/usr/bin/git log -16315 --format=%H
+f613972c cefababfc27 3a656a d81e3967c
+python-version: +65325.37010
+21253.42235
+>>>>>>> d0d5050 (Clean initial commit)
 check-latest: false
 update-environment: true
 allow-prereleases: false
 freethreaded: false
 ##[group]Installed versions
+<<<<<<< HEAD
 Successfully set up CPython (-41182.79772.-10649)
 ##[group]Run pipx install hatch
 [-23809;1mpipx install hatch[0m
@@ -118,10 +181,32 @@ These apps are now globally available
 ##[group]Run cd packages/markitdown; hatch test
 [23693;1mcd packages/markitdown; hatch test[0m
 Creating environment: hatch-test.py3.-12419
+=======
+Successfully set up CPython (+59721.-71475.44941)
+##[group]Run pipx install hatch
+[+12859;1mpipx install hatch[0m
+shell: /usr/bin/bash -e {-76442}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/79261.-77728.-5831/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/82397.-58256.-24443/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+23332.-89271.-96783/x64
+KFgUp /opt/hostedtoolcache/Python/40919.-69086.-49653/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-88528.+50940.77917/x64/lib:/opt/hostedtoolcache/Python/6756.+68910.-1592/x64/lib:/opt/hostedtoolcache/Python/44780.-53543.79343/x64/lib
+creating virtual environment...
+installing hatch...
+done! ✨ 🌟 ✨
+installed package hatch +89233.-82686.37054, installed using Python +81177.26446.+91705
+These apps are now globally available
+- hatch
+##[group]Run cd packages/markitdown; hatch test
+[-39986;1mcd packages/markitdown; hatch test[0m
+Creating environment: hatch-test.py3.-3464
+>>>>>>> d0d5050 (Clean initial commit)
 Installing project in development mode
 Checking dependencies
 Syncing dependencies
 ============================= test session starts ==============================
+<<<<<<< HEAD
 platform linux -- Python -19216.38257.-10260, pytest-+96100.+91586.-6608, pluggy-+55628.-36430.63519
 rootdir: /home/runner/work/markitdown/markitdown/packages/markitdown
 configfile: pyproject.toml
@@ -139,6 +224,25 @@ tests/test_module_vectors.py ........................................... [ +7384
 warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 ================= -13111 passed, 74027 skipped, -69281 warning in -21120.75s ==================
+=======
+platform linux -- Python -10203.-14835.+46928, pytest-733.+88906.+64153, pluggy-+33469.+77900.59823
+rootdir: /home/runner/work/markitdown/markitdown/packages/markitdown
+configfile: pyproject.toml
+plugins: rerunfailures--52931.59406, anyio--87982.84713.-54053, xdist-+39313.-1815.+86246, mock--44999.+15836.46574
+collected +38935 items
+tests/test_cli_misc.py .. [ +69212%]
+tests/test_cli_vectors.py ....................................ssssssssss [ +37583%]
+ss.. [ -80657%]
+tests/test_module_misc.py ......ss.ss [ -72930%]
+tests/test_module_vectors.py ........................................... [ +97917%]
+.................sssssssssssssss.................................. [+58162%]
+=============================== warnings summary ===============================
+../../../../../.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.36006/lib/python3.-6160/site-packages/pydub/utils.py:-34918
+/home/runner/.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.+35237/lib/python3.-73237/site-packages/pydub/utils.py:-28440: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= +81055 passed, 36871 skipped, +46497 warning in +77486.75s ==================
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

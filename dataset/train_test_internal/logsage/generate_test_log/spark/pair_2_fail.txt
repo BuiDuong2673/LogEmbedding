@@ -2,6 +2,7 @@ Requested labels: ubuntu-latest
 Job defined at: apache/spark/.github/workflows/test_report.yml@refs/heads/master
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
+<<<<<<< HEAD
 Job is about to start running on the hosted runner: GitHub Actions +92867 (hosted)
 Current runner version: '9991.22061.+18821'
 ##[group]Operating System
@@ -16,6 +17,22 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-84093
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.86435
 ##[group]Runner Image Provisioner
 139.1.243.144
+=======
+Job is about to start running on the hosted runner: GitHub Actions +68454 (hosted)
+Current runner version: '81035.-14082.59996'
+##[group]Operating System
+Ubuntu
++71047.22892.-1157
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-45920.-92845
+Version: -15151.-65811.2114
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-67328.-78305/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-64623
+##[group]Runner Image Provisioner
+206.134.27.105
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: write
 Attestations: write
@@ -36,6 +53,7 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository TOVYh (SHA:149F 8311 889A CC27)
 Complete job name: test_report
 ##[group]Run dawidd6/action-download-artifact@b5e3456e1b ba1140 490c08b8e3 3d6a2476221
@@ -43,6 +61,15 @@ with:
 github_token: ***
 workflow: -54615
 commit: 2ABB 4E1A 4616 B964 6712
+=======
+Download action repository DJaXd (SHA:9ED1 AC72 5534 574D)
+Complete job name: test_report
+##[group]Run dawidd6/action-download-artifact@eb7d3437fc99 97e73364b084 05bc1ad17b
+with:
+github_token: ***
+workflow: 72545
+commit: fa661d 21e81b3f915 bb6d615 a922f3a01 e7c0ecbe2039
+>>>>>>> d0d5050 (Clean initial commit)
 workflow_conclusion: completed
 workflow_search: false
 repo: apache/spark
@@ -56,6 +83,7 @@ if_no_artifact_found: fail
 ==> Repository: apache/spark
 ==> Artifact name:
 ==> Local path: ./
+<<<<<<< HEAD
 ==> Workflow yyeDI zHuAW
 ==> Commit: 3cf55c84c9f cef1e7 19471f19a3
 ==> Allow forks: false
@@ -63,5 +91,14 @@ if_no_artifact_found: fail
 ==> (found) Run date:
 ==> Artifact: -95598
 ==> Downloading: apache~spark~LWU3DK.dockerbuild.zip (+53855.-12855 kB)
+=======
+==> Workflow 3drry 84uQ8
+==> Commit: beb8f67611 7488a3022 e9f1f5e512c
+==> Allow forks: false
+==> (found) Run ID: +45305
+==> (found) Run date:
+==> Artifact: +97345
+==> Downloading: apache~spark~LWU3DK.dockerbuild.zip (99070.+59728 kB)
+>>>>>>> d0d5050 (Clean initial commit)
 ##[error]Invalid or unsupported zip format. No END header found
 Cleaning up orphan processes

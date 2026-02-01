@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: supabase/supabase/.github/workflows/prettier.yml@refs/pull/68079/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+98175
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-57868
 ##[group]Runner Image Provisioner
 241.93.97.67
+=======
+Job defined at: supabase/supabase/.github/workflows/prettier.yml@refs/pull/45714/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +93119 (hosted)
+Current runner version: '-35024.-27996.64390'
+##[group]Operating System
+Ubuntu
+-8559.-49836.+57912
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-50753.+72954
+Version: -83139.67689.7105
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20573.-75144/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-86430
+##[group]Runner Image Provisioner
+232.99.206.115
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -23,12 +43,21 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package 9BvxU
 Digest: sha256:10D2 3146 2F6B 65D7 D4CD
 Source commit SHA: 0633 C82A D21D 4311 2496 0527
 Download action repository 'pnpm/action-setup@v4' (SHA:DBD7 CDED 23AF 9609 1643)
 Complete job name: format
 ##[group]Run uLR93
+=======
+##[group]Download immutable action package RORUQ
+Digest: sha256:4251 DF0E 144B 760B 8C0E
+Source commit SHA: 8aeeef4a 812f52e2f1e2 a12c2e0 25d16aa69
+Download action repository 'pnpm/action-setup@v4' (SHA:1392 F5AC B92B 1C23)
+Complete job name: format
+##[group]Run 9lB0U
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 sparse-checkout: apps
 repository: supabase/supabase
@@ -38,7 +67,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: +47595
+=======
+fetch-depth: -34858
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -48,8 +81,13 @@ Syncing repository: supabase/supabase
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/supabase/supabase'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +70926.-44862.-40074
 Temporarily overriding BcShn before making global git config changes
+=======
+git version 10911.-53576.-41365
+Temporarily overriding G8hA1 before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/supabase/supabase
 Deleting the contents of '/home/runner/work/supabase/supabase'
@@ -66,6 +104,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/supabase/supabase/.git/
 [command]/usr/bin/git remote add origin https://github.com/supabase/supabase
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local 5Iwb7 bOfVu
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp SXDSO
@@ -75,14 +114,32 @@ Initialized empty Git repository in /home/runner/work/supabase/supabase/.git/
 [command]/usr/bin/git -c protocol.version=6280 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=+45121 origin +588A A9DA 7781 5D52:refs/remotes/pull/49073/merge
 From https://github.com/supabase/supabase
 * [new ref] 6B77 DC75 7760 5B46 ED4F-> pull/29120/merge
+=======
+[command]/usr/bin/git config --local juso8 9O7Im
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp LWBCC
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 2tivy && git config --local --unset-all UrZFp || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+29836 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=+10969 origin +11e3f87ffe 52032751f7 3db3a97497c1 49105526:refs/remotes/pull/40854/merge
+From https://github.com/supabase/supabase
+* [new ref] 989ac1a6 ed3f85cf 28cfc76 c8125914d3-> pull/58987/merge
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Determining the checkout info
 ##[group]Setting up sparse checkout
 [command]/usr/bin/git sparse-checkout set apps
 ##[group]Checking out the ref
+<<<<<<< HEAD
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/20773/merge
 Updating files: -43615% (+16869/+7143)
 Updating files: -96601% (71243/84948), done.
 Note: switching to 'refs/remotes/pull/94875/merge'.
+=======
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-79243/merge
+Updating files: -90489% (-56978/+69765)
+Updating files: +64720% (+84840/-53588), done.
+Note: switching to 'refs/remotes/pull/+42348/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -93,14 +150,21 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at d5966d2 Merge 8da23725 e12948 ee758d8978fa 00e5b6d8 e3140a into 2f00ecee73 78647ad60 34c060f dd98b47bd05f
 [command]/usr/bin/git log -69608 --format=%H
 00E7 3A83 E21F 49CD
+=======
+HEAD is now at d5966d2 Merge AFA3 C8AB 0EE3 726D 472F into 9535a2b9a8 f7a731530969 7087bec8 12e6bf7d
+[command]/usr/bin/git log -56045 --format=%H
+e12c0faa67f4 8c90d905 befb558 d8d7252d6b cbed1d9e2
+>>>>>>> d0d5050 (Clean initial commit)
 run_install: false
 dest: ~/setup-pnpm
 package_json_file: package.json
 standalone: false
 ##[group]Running self-installer...
+<<<<<<< HEAD
 Progress: resolved -55252, reused -39212, downloaded +34681, added +26677
 Packages: +47584
 +
@@ -108,6 +172,15 @@ Progress: resolved -43539, reused +80131, downloaded 72677, added 56429, done
 dependencies:
 + pnpm -63172.70970.+83244 (+31235.+63558.+86385 is available)
 Done in NDgdq
+=======
+Progress: resolved 62084, reused -95785, downloaded -78324, added +39442
+Packages: -16181
++
+Progress: resolved 39127, reused +87614, downloaded 87588, added 40944, done
+dependencies:
++ pnpm +72601.76796.52130 (-33127.-10617.+85849 is available)
+Done in a2ScI
+>>>>>>> d0d5050 (Clean initial commit)
 Installation Completed!
 node-version-file: .nvmrc
 cache: pnpm
@@ -115,6 +188,7 @@ always-auth: false
 check-latest: false
 env:
 PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+<<<<<<< HEAD
 Resolved .nvmrc as 21555
 Found in cache @ /opt/hostedtoolcache/node/-85022.+84574.84668/x64
 ##[group]Environment details
@@ -168,11 +242,70 @@ devDependencies:
 ##[group]Run pnpm run test:prettier
 [+91147;1mpnpm run test:prettier[0m
 > supabase@8138.+6490.+40025 test:prettier /home/runner/work/supabase/supabase
+=======
+Resolved .nvmrc as +1550
+Found in cache @ /opt/hostedtoolcache/node/25653.63891.22878/x64
+##[group]Environment details
+node: v20.91183.1619
+npm: 16625.75551.6815
+yarn: 14299.90333.-71374
+[command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+/home/runner/setup-pnpm/node_modules/.bin/store/v3
+Cache hit for: node-cache-Linux-x64-pnpm-888C 2933 95E8 AB70 85AE FE5C
+Received +76008 of +57502 (-65361.+15661%), +32052.60960 MBs/sec
+Cache Size: ~72180 MB (-55239 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/ae569b03-fbbd-4be9-9bb5-f530237e42f0/cache.tzst -P -C /home/runner/work/supabase/supabase --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-pnpm-dd03680ce0 5e69261 63e552 04b1ae 30e8b4
+##[group]Run pnpm i
+[-31129;1mpnpm i[0m
+shell: /usr/bin/bash -e {+62569}
+Scope: all 54188 workspace projects
+Lockfile is up to date, resolution step is skipped
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.../node-pty@+49518.35441.-41531/node_modules/node-pty install$ node-gyp rebuild
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/contentlayer2 postinstall$ node ./bin/cli.cjs postinstall || echo 'No Contentlayer build found.'
+.../node-pty@-24055.56754.-82589/node_modules/node-pty install: gyp info it worked if it ends with ok
+.../node-pty@-17185.-63802.52353/node_modules/node-pty install: gyp 6TBem iQ7jy C1VZJ
+.../node-pty@56910.87017.-94642/node_modules/node-pty install: gyp info using node@-76448.+49596.-85303 | linux | x64
+.../node_modules/@parcel/watcher install: Done
+.../node-pty@-16788.+87229.-20877/node_modules/node-pty install: gyp info find Python using Python version -89674.+35355.-13152 found at "/usr/bin/python3"
+QFjgy postinstall: Done
+.../node-pty@+4669.88593.+31636/node_modules/node-pty install: gyp info spawn args 0UrNr
+.../node-pty@96306.62528.-76282/node_modules/node-pty install: gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+.../node-pty@+3826.-26483.-95192/node_modules/node-pty install: make: QsYL6 directory '/home/runner/work/supabase/supabase/node_modules/.pnpm/node-pty@10445.+83257.+94652/node_modules/node-pty/build'
+.../node-pty@97804.-90751.-73680/node_modules/node-pty install: wjImI awdI9
+.../node-pty@26170.-97602.+92653/node_modules/node-pty install: ../src/unix/pty.cc: In function ‘void pty_after_waitpid(uv_async_t*)’:
+.../node-pty@-43148.50985.-15900/node_modules/node-pty install: ../src/unix/pty.cc:+36550:+72128: warning: ‘void* memset(void*, int, size_t)’ writing to an object of type ‘class Nan::Persistent<v8::Function>’ with no trivial copy-assignment [-Wclass-memaccess]
+.../node-pty@63056.+35205.76227/node_modules/node-pty install: 87628 | 9HYGq QeIeQ LjgfW
+.../node-pty@-94566.-943.-48524/node_modules/node-pty install: In file included from 4VVGg
+.../node-pty@-46980.90404.+18146/node_modules/node-pty install: ../../../../nan@93365.-93727.-66136/node_modules/nan/nan_persistent_-708_inl.h:+73413:-94260: note: ‘class Nan::Persistent<v8::Function>’ declared here
+.../node-pty@-72919.+75979.+82984/node_modules/node-pty install: 94225 | template<typename T, typename M> class Persistent :
+.../node-pty@+81672.+89650.+26716/node_modules/node-pty install: ../src/unix/pty.cc: At global scope:
+.../node-pty@-69113.98843.97547/node_modules/node-pty install: /home/runner/.cache/node-gyp/-4731.+92870.+60053/include/node/node.h:+86144:-35159: warning: cast between incompatible function types from ‘void (*)(Nan::ADDON_REGISTER_FUNCTION_ARGS_TYPE)’ {aka ‘void (*)(v8::Local<v8::Object>)’} to ‘node::addon_register_func’ {aka ‘void (*)(v8::Local<v8::Object>, v8::Local<v8::Value>, void*)’} [-Wcast-function-type]
+.../node-pty@+57045.+86903.86639/node_modules/node-pty install: tviI1 note: in expansion of macro fTuEa
+.../node-pty@48030.+9316.24131/node_modules/node-pty install: -31886 | NODE_MODULE_X(modname, regfunc, NULL, +22952) // NOLINT (readability/null_usage)
+.../node-pty@+14940.52159.-28783/node_modules/node-pty install: 18275 | NODE_MODULE(pty, init)
+.../node-pty@+28383.-67025.+3261/node_modules/node-pty install: gyp info ok
+.../node-pty@+50618.91417.-64150/node_modules/node-pty IGZYu Done
+.../node-pty@-91697.88346.+33106/node_modules/node-pty postinstall$ node scripts/post-install.js
+.../es5-ext@66684.+54405.78034/node_modules/es5-ext postinstall$ node -e "try{require('./_postinstall')}catch(e){}" || exit +467
+devDependencies:
++ jinFZ +2475.-75720.-22715
+##[group]Run pnpm run test:prettier
+[+68717;1mpnpm run test:prettier[0m
+> supabase@+46147.-70168.32610 test:prettier /home/runner/work/supabase/supabase
+>>>>>>> d0d5050 (Clean initial commit)
 > prettier -c '{apps,packages}/**/*.{js,jsx,ts,tsx,css,md,mdx,json}'
 Checking formatting...
 All matched files use Prettier code style!
 Post job cleanup.
+<<<<<<< HEAD
 Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-83c86c 67a8494b9105 8eb42e 15d7cb, not saving cache.
+=======
+Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-d0863f761 efb203 1634d9, not saving cache.
+>>>>>>> d0d5050 (Clean initial commit)
 Pruning is unnecessary.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

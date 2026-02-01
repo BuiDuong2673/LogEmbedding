@@ -1,0 +1,102 @@
+(.venv) buithibachduong@MacBook-Pro-cua-Bui LogEmbedding % python central_server_program.py
+Central server listening...
+Client maryangel101 connected from ('127.0.0.1', 60845)
+Client d2klab connected from ('127.0.0.1', 60846)
+Client logsage connected from ('127.0.0.1', 60847)
+Client maryangel101, number of words: 1362
+Client d2klab, number of words: 4494
+Client logsage, number of words: 42355
+Aggregated vocab: number of words: 44076
+
+Epoch 1
+
+Epoch 2
+
+Epoch 3
+
+Epoch 4
+
+Epoch 5
+
+Epoch 6
+
+Epoch 7
+
+Epoch 8
+
+Epoch 9
+
+Epoch 10
+
+Epoch 11
+
+Epoch 12
+
+Epoch 13
+
+Epoch 14
+
+Epoch 15
+
+Epoch 16
+
+Epoch 17
+
+Epoch 18
+
+Epoch 19
+
+Epoch 20
+
+Epoch 21
+
+Epoch 22
+
+Epoch 23
+
+Epoch 24
+
+Epoch 25
+
+Epoch 26
+
+Epoch 27
+
+Epoch 28
+
+Epoch 29
+
+Epoch 30
+
+Epoch 31
+
+Epoch 32
+
+Epoch 33
+
+Epoch 34
+
+Epoch 35
+
+Epoch 36
+
+Epoch 37
+Traceback (most recent call last):
+  File "/Users/buithibachduong/Downloads/MasterProgram/DecentralizedInformationSystems/Project/LogEmbedding/central_server_program.py", line 161, in <module>
+    CentralServerProgram().run()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/buithibachduong/Downloads/MasterProgram/DecentralizedInformationSystems/Project/LogEmbedding/central_server_program.py", line 121, in run
+    msg = receive_message(sock)
+  File "/Users/buithibachduong/Downloads/MasterProgram/DecentralizedInformationSystems/Project/LogEmbedding/helper/network_communication.py", line 27, in receive_message
+    return json.loads(payload.decode("utf-8"))
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 8317661 (char 8317660)

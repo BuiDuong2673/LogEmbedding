@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: satwikkansal/wtfpython/.github/workflows/pr.yml@refs/pull/-21711/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/95594.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.89934
 ##[group]Runner Image Provisioner
 93.35.208.105
+=======
+Job defined at: satwikkansal/wtfpython/.github/workflows/pr.yml@refs/pull/+75133/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -24983 (hosted)
+Current runner version: '-93277.+41156.+33086'
+##[group]Operating System
+Ubuntu
++71137.16365.+10539
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-45785.18156
+Version: +95807.27512.+90463
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/53351.+87289/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.-40881
+##[group]Runner Image Provisioner
+25.156.138.22
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Checks: read
 Contents: read
@@ -25,9 +45,15 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository Xcx7a (SHA:6fa83922 3c8b38b5f1 7eec60 70b27dc4a4)
 Complete job name: lint
 ##[group]Run EQo4K
+=======
+Download action repository n109s (SHA:bcdf89f a6bd20 bc1936347dde)
+Complete job name: lint
+##[group]Run PkIje
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: satwikkansal/wtfpython
 token: ***
@@ -36,7 +62,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: 98181
+=======
+fetch-depth: +37639
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -46,8 +76,13 @@ Syncing repository: satwikkansal/wtfpython
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/wtfpython/wtfpython'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +82139.+47958.57732
 Temporarily overriding wRxsV before making global git config changes
+=======
+git version +54907.-32057.+17734
+Temporarily overriding ELugF before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/wtfpython/wtfpython
 Deleting the contents of '/home/runner/work/wtfpython/wtfpython'
@@ -64,6 +99,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/wtfpython/wtfpython/.git/
 [command]/usr/bin/git remote add origin https://github.com/satwikkansal/wtfpython
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local nVvm5 53Nsj
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp FEofY
@@ -78,6 +114,22 @@ From https://github.com/satwikkansal/wtfpython
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/-49775/merge
 Note: switching to 'refs/remotes/pull/53001/merge'.
+=======
+[command]/usr/bin/git config --local 5ylf6 rElIf
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp cgy5S
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp yD6X3 && git config --local --unset-all lxuwJ || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+71127 fetch --no-tags --prune --no-recurse-submodules --depth=+93952 origin +C45A FC18 601C DEF8 8826:refs/remotes/pull/+74502/merge
+From https://github.com/satwikkansal/wtfpython
+* [new ref] d560d32e 38bd955e0e6 e1c444634 70a3dc598 0d482c4fbcb4-> pull/71779/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+97263/merge
+Note: switching to 'refs/remotes/pull/46773/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -88,6 +140,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at d031eaf Merge 790C 93C2 0F4B E3A4 into 847119d5d9 edc711cb8e 35b0e5f339 6cbc546ea70
 [command]/usr/bin/git log -16770 --format=%H
 4f78315222b4 fdce50 bfd3c0a
@@ -100,6 +153,20 @@ markdownlint-cli2 v0.-15820.24142 (markdownlint v0.-91937.+92042)
 Finding: /home/runner/work/_temp/diff.md
 Linting: -64783 file(s)
 Summary: 52047 error(s)
+=======
+HEAD is now at d031eaf Merge 88ef74cc139e 7ab9560b98 efaaae 915ca287 into 6C9E 8836 0083 9A72
+[command]/usr/bin/git log -23610 --format=%H
+3B10 316B 4625 D51B
+##[group]Run git diff --unified=-26778 *.md translations/*/*.md > /home/runner/work/_temp/diff.md
+[+23165;1mgit diff --unified=91095 *.md translations/*/*.md > /home/runner/work/_temp/diff.md[0m
+shell: /usr/bin/bash -e {+75936}
+globs: /home/runner/work/_temp/diff.md
+separator:
+markdownlint-cli2 v0.-62448.+82546 (markdownlint v0.+1249.+96003)
+Finding: /home/runner/work/_temp/diff.md
+Linting: +97108 file(s)
+Summary: -28057 error(s)
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

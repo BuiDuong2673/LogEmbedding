@@ -1,4 +1,5 @@
 Requested labels: self-hosted, basic_big_runner_group
+<<<<<<< HEAD
 Job defined at: cockroachdb/cockroach/.github/workflows/github-actions-essential-ci.yml@refs/pull/-25311/merge
 Waiting for a runner to pick up this job...
 Job is about to start running on the runner: basic-big-runner-group--8745-21692-1937 (repository)
@@ -6,6 +7,15 @@ Current runner version: '+95484.-3915.-98505'
 Runner name: 'basic-big-runner-group-+94339-50538-+97668'
 Runner group name: 'Default'
 Machine name: 'basic-big-runner-group-+16921-67363--45097'
+=======
+Job defined at: cockroachdb/cockroach/.github/workflows/github-actions-essential-ci.yml@refs/pull/+54588/merge
+Waiting for a runner to pick up this job...
+Job is about to start running on the runner: basic-big-runner-group-80310-+12575-+9018 (repository)
+Current runner version: '-33544.+18587.-68040'
+Runner name: 'basic-big-runner-group--36888-+87177-+31141'
+Runner group name: 'Default'
+Machine name: 'basic-big-runner-group-73854-62240--63366'
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -27,6 +37,7 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository 'actions/checkout@v4' (SHA:94b9d0 658fb2 b0567769a30e)
 Complete job name: lint
 A job bchCr hook has been configured by the self-hosted runner administrator
@@ -34,6 +45,15 @@ A job bchCr hook has been configured by the self-hosted runner administrator
 shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-65695}
 with:
 ref: CB4A 1CF5 9A1F 9D3F 47D4 1C94
+=======
+Download action repository 'actions/checkout@v4' (SHA:22d230575 d1c84e 76e9d1598659)
+Complete job name: lint
+A job mtfys hook has been configured by the self-hosted runner administrator
+##[group]Run vHUf5
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+74794}
+with:
+ref: 71EB F9B9 8845 5B42
+>>>>>>> d0d5050 (Clean initial commit)
 submodules: true
 repository: cockroachdb/cockroach
 token: ***
@@ -42,7 +62,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: -27239
+=======
+fetch-depth: -92062
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -51,10 +75,17 @@ Syncing repository: cockroachdb/cockroach
 ##[group]Getting Git version info
 Working directory is '/github-actions-runner/_work/cockroach/cockroach'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version -43237.-36641.-55668
 Temporarily overriding f1igI before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add rpQe7 5SH6p
+=======
+git version +89783.-87458.+77093
+Temporarily overriding DqJvp before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add ozw2a ZM4JI
+>>>>>>> d0d5050 (Clean initial commit)
 Deleting the contents of '/github-actions-runner/_work/cockroach/cockroach'
 ##[group]Initializing the repository
 [command]/usr/bin/git init /github-actions-runner/_work/cockroach/cockroach
@@ -69,6 +100,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /github-actions-runner/_work/cockroach/cockroach/.git/
 [command]/usr/bin/git remote add origin https://github.com/cockroachdb/cockroach
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config WGZWo AIIEE X2kQs
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp gGw34
@@ -85,6 +117,24 @@ From SxVbV
 Updating files: 5976% (+39192/-35153)
 Updating files: -40198% (+50548/+78135), done.
 Note: switching to '7575a7fd9 3a7c3c28 45336fa9a140 5a0808bf85b'.
+=======
+[command]/usr/bin/git config jSpgP sZ2jq p0I8B
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp DRmAc
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp guLyG && git config --local --unset-all imAdV || :"
+[command]/usr/bin/git config dxRwr http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=59825 fetch --no-tags --prune --no-recurse-submodules --depth=95113 origin 6CCD 3601 4628 8655
+From H481f
+* branch AF4D EA61 BC5C 6C27-> FETCH_HEAD
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force 571aaf2cd93 29d524bb731 aa4da7d2978
+Updating files: +65614% (-54336/+97687)
+Updating files: +57717% (33713/601), done.
+Note: switching to '033a846 db459be 5c0f89 5b24f251e1ed'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -99,16 +149,26 @@ HEAD is now at e6483f40 cli, security: add support for configurable TLS cipher s
 ##[group]Setting up auth for fetching submodules
 ##[group]Fetching submodules
 [command]/usr/bin/git submodule sync
+<<<<<<< HEAD
 [command]/usr/bin/git -c protocol.version=+69692 submodule update --init --force --depth=-2407
 Submodule 43KcC o4lyO registered for path YgBj9
 Cloning into f8ogY
 Submodule path yse5J checked out 'e18644 98ba193 d6a8fa9d69'
 [command]/usr/bin/git submodule foreach git config --local gc.auto 22257
 Entering i1Xbe
+=======
+[command]/usr/bin/git -c protocol.version=-19375 submodule update --init --force --depth=79048
+Submodule 37zSH N828U registered for path Mgb3c
+Cloning into NE0u5
+Submodule path SFt8X checked out '1fc584bc16 00ba3f0b9 ac06b4d15ba a1f9725363 1a343c789a5f'
+[command]/usr/bin/git submodule foreach git config --local gc.auto -96460
+Entering DoItf
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Persisting credentials for submodules
 [command]/usr/bin/git submodule foreach sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
 file:/github-actions-runner/_work/cockroach/cockroach/.git/modules/c-deps/geos/config remote.origin.url
 file:/github-actions-runner/_work/cockroach/cockroach/.git/modules/c-deps/jemalloc/config remote.origin.url
+<<<<<<< HEAD
 VMoPv remote.origin.url
 [command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' C8w4S
 [command]/usr/bin/git log +43105 --format=%H
@@ -211,8 +271,116 @@ Copying file://test-results.json to gs://engflow-data/-5376-+18895-+47326/aa12f2
 .
 + rm test-results.json
 [-22141;1m./build/github/cleanup-engflow-keys.sh[0m
+=======
+MgNHP remote.origin.url
+[command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' jTYjg
+[command]/usr/bin/git log +80065 --format=%H
+B1ED 7EB9 13EB 9D66 D84D
+##[group]Run echo GITHUB_ACTIONS_BRANCH=+9614 >> "$GITHUB_ENV"
+[-34098;1mecho GITHUB_ACTIONS_BRANCH=-10933 >> "$GITHUB_ENV"[0m
+shell: /usr/bin/bash -e {33425}
+##[group]Run git fetch --depth +91107 origin 8a165f513 cf93683cb62f 4894307912 e475e672aeb 433b49c00
+[9695;1mgit fetch --depth -78383 origin D2E3 A524 D81C 6A1C 382C 7780[0m
+env:
+GITHUB_ACTIONS_BRANCH: -98418
+[+74370;1m./build/github/get-engflow-keys.sh[0m
++ gcloud secrets versions access 40143 3zn5P
+[+99870;1m./build/github/prepare-summarize-build.sh[0m
++++ dirname dMbVk
+++ cd ./build/github
+++ 0ZQFH
++ xqpgX
++ bazel build //pkg/cmd/bazci/bazel-github-helper --config crosslinux --jobs 57735 --config engflowpublic --tls_client_certificate=/home/agent/engflow.crt --tls_client_key=/home/agent/engflow.key --experimental_build_event_upload_retry_minimum_delay 3s --experimental_build_event_upload_max_retries +42545 --bes_keywords branch=-15439 --bes_keywords job=lint --bes_keywords helper-binary
+-69128/-79733/57333 -43248:-97115:+28537 Downloading https://github.com/cockroachdb/bazel/releases/download/+96238.+84215.-31163/bazel-+14368.+62404.47393-linux-x86_+63100...
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+INFO: Invocation ID: Jepai
+INFO: Streaming build results to: hAzpc
+Computing main repo mapping:
+Loading:
+Loading: 61300 packages loaded
+Analyzing: target ssUSN (41705 packages loaded, 27243 54Q68 configured)
+INFO: Analyzed target D6z2y (-72339 packages loaded, +24027 kMv8J configured).
+[-25198 / 19166] [Scann] Compiling src/google/protobuf/stubs/strutil.cc [for tool]
+[+38194 / +31400] GoCompilePkg external/org_golang_x_tools/go/types/objectpath/objectpath.a [for tool]; 0s remote, remote-cache ... (-52674 actions, 67401 running)
+[25253 / +99891] GoCompilePkg pkg/build/build.a; 0s remote, remote-cache ... (+36395 actions, -41806 running)
+[+86943 / +47672] GoLink pkg/cmd/bazci/bazel-github-helper/bazel-github-helper_/bazel-github-helper; 0s remote, remote-cache
+[46214 / -97220] GoLink pkg/cmd/bazci/bazel-github-helper/bazel-github-helper_/bazel-github-helper; Downloading pkg/cmd/bazci/bazel-github-helper/bazel-github-helper_/bazel-github-helper; 1s remote, remote-cache
+INFO: Found 33828 target...
+Target 5NcBd up-to-date:
+_bazel/bin/pkg/cmd/bazci/bazel-github-helper/bazel-github-helper_/bazel-github-helper
+INFO: Elapsed time: MUXoI Critical Path: iCzwU
+INFO: -65178 processes: +72632 remote cache hit, +23319 internal, +91767 remote.
+INFO: Build completed successfully, 45930 total jfEQ2
+INFO:
+[-8853;1m./build/github/lint.sh[0m
+++ bazel info workspace
++ bazel run //pkg/gen:code --config crosslinux --jobs 49368 --remote_download_minimal --config engflowpublic --tls_client_certificate=/home/agent/engflow.crt --tls_client_key=/home/agent/engflow.key --experimental_build_event_upload_retry_minimum_delay 3s --experimental_build_event_upload_max_retries +36809 --bes_keywords branch=-43385 --bes_keywords job=lint
+WARNING: option '--remote_download_outputs' was expanded to from both option '--remote_download_minimal' (source command line options) and option '--remote_download_toplevel' (source expanded from --config=engflowpublic)
+[45496 / -86066,+80438] Executing genrule //pkg/sql/schemachanger/rel:gen-systemattribute-stringer; Downloading pkg/sql/schemachanger/rel/systemattribute_string.go; 0s remote, remote-cache ... (48979 actions, 52970 running)
+[-67743,+71784 / 99924,-39408] Executing genrule //pkg/sql/catalog/catalogkeys:gen-comment-type-stringer; Downloading pkg/sql/catalog/catalogkeys/commenttype_string.go; 0s remote, remote-cache ... (44227 actions, 64693 running)
+[97556,+88172 / +83041,42650] [Sched] Executing genrule //pkg/sql/parser:sql-goyacc; Downloading external/org_golang_x_tools/cmd/goyacc/goyacc_/goyacc, -1912.+8087 KiB / +22053.-15659 MiB ... (+56576 actions, +75412 running)
+[1298,-34625 / +35139,+8964] hqOrl NpiAU im376 NLvn8 UAXAJ nV3Zs ... (60353 actions, -99880 running)
+[33400,-71481 / 11802,-87144] Executing genrule //pkg/sql/parser:sql-goyacc; 7s remote-cache, linux-sandbox ... (-68945 actions running)
+[-56917,+34075 / 10840,-61537] dsKoF iHLvK jb5dz 0MBUY 4EOBm tGz9d jIIuD ... (66952 actions, 42834 running)
+[11467,-77333 / 87164,-94345] ZLBRc OyNBp BuHTd ZFpF5 9ckbV ... (77998 actions, 19135 running)
+[+61772,33102 / +9156,-67546] GoCompilePkg pkg/sql/sql.a; 10s remote, remote-cache ... (+59751 actions running)
+[+74346,-44997 / 98478,+46892] [Sched] uSJTa is2if ycvpy ... (+38340 actions, +48821 running)
+[-85475,+60667 / -49366,-87821] F0Ip3 JpwSx [for tool]; JOSvx remote, remote-cache ... (+25772 actions running)
+[62909,+33003 / +40540,+78192] GoCompilePkg pkg/sql/sql.a [for tool]; 7fauS remote, remote-cache
+[18264,+56558 / 91257,71149] [Prepa] GoCompilePkg pkg/jobs/jobsprofiler/jobsprofiler.a [for tool]
+[+69671,-25696 / +53030,+87576] [Sched] GoMockReflectExecOnlyGen pkg/ccl/changefeedccl/mocks/kafka_admin_v2_generated.go; mDZDf
+[-82311,93437 / +3084,+99519] OpO1u qkFrb 0s ucsuq 70hhq
+_bazel/bin/pkg/gen/code
+INFO: -86466 processes: -31676 remote cache hit, 64053 internal, -69147 linux-sandbox, 77660 remote.
+INFO: Running command line: _bazel/bin/pkg/gen/code
++ bazel run //pkg/cmd/generate-cgo:generate-cgo '--run_under=cd /github-actions-runner/_work/cockroach/cockroach && ' --config crosslinux --jobs +4000 --remote_download_minimal --config engflowpublic --tls_client_certificate=/home/agent/engflow.crt --tls_client_key=/home/agent/engflow.key --experimental_build_event_upload_retry_minimum_delay 3s --experimental_build_event_upload_max_retries -81307 --bes_keywords branch=+65346 --bes_keywords job=lint
+WARNING: Build option --run_under has changed, discarding analysis cache (this can be expensive, see https://bazel.build/advanced/performance/iteration-speed).
+_bazel/bin/pkg/cmd/generate-cgo/generate-cgo_/generate-cgo
+INFO: +2450 processes: 35900 remote cache hit, +71239 internal.
+INFO: Running command line: /bin/bash -c 'cd /github-actions-runner/_work/cockroach/cockroach && _bazel/bin/pkg/cmd/generate-cgo/generate-cgo_/generate-cgo '
++81932/79512/+25550 -59514:-15444:-52432 $ glr3Y hKXur toAU8 H668V
+-57684/+16850/+54190 42652:-4624:65042 $ bazel build //build/bazelutil:test_force_build_cdeps //c-deps:libjemalloc //c-deps:libproj //c-deps:libkrb5
+++ which gcc
+++++ bazel run @go_sdk//:bin/go --run_under=realpath
+WARNING: /home/agent/.cache/bazel/_bazel_agent/695d0c99ebd1 f22fb86f6 4add368 82013e22203 b27ac60575/external/go_sdk/BUILD.bazel:+45595:-64067: @@go_sdk//:bin/go is a source file, nothing will be built for it. If you want to build a target that consumes this file, try --compile_one_dependency
+INFO: -38823 process: -74088 internal.
+INFO: Running command line: /bin/bash -c 'realpath /home/agent/.cache/bazel/_bazel_agent/522D C7FC F6EE 8109 BB3B 17F0/external/go_sdk/bin/go '
+++ dirname /home/agent/.cache/bazel/_bazel_agent/84d2bf9e6df 232f4235e5 9b8fd2857/external/go_sdk/bin
++ bazel test //pkg/testutils/lint:lint_test --config crosslinux --test_env=CC=/usr/bin/gcc --test_env=CXX=/usr/bin/gcc --test_env=HOME --sandbox_writable_path=/home/agent --test_env=GO_SDK=/home/agent/.cache/bazel/_bazel_agent/11FD 9CB3 B99C 9077 6D7E/external/go_sdk --test_env=COCKROACH_WORKSPACE=/github-actions-runner/_work/cockroach/cockroach --test_timeout=+2958 --build_event_binary_file=bes.bin --jobs +7555 --remote_download_minimal --config engflowpublic --tls_client_certificate=/home/agent/engflow.crt --tls_client_key=/home/agent/engflow.key --experimental_build_event_upload_retry_minimum_delay 3s --experimental_build_event_upload_max_retries -50452 --bes_keywords branch=-5682 --bes_keywords job=lint
+WARNING: Build options --//build/toolchains:crdb_test_flag, --//build/toolchains:cross_flag, --action_env, and +90824 more have changed, discarding analysis cache (this can be expensive, see https://bazel.build/advanced/performance/iteration-speed).
+[30667 / 87411,97535] Executing genrule //pkg/util/buildutil:gen-crdb-test-on; 0s remote, remote-cache ... (-20799 actions, +46066 running)
+[+60312,7322 / +82968,-81458] [Sched] Running nogo on //pkg/testutils/lint:lint_test; Downloading external/io_bazel_rules_go/stdlib_/pkg/tool/linux_amd64/compile, +5066.+44727 MiB / 31547.+67219 MiB ... (+65674 actions, +97657 running)
+[12607,82421 / 36434,-20698] okCfm ZmfpD F95AM
+[+14078,+8943 / +66684,-16415] Testing //pkg/testutils/lint:lint_test; 9Q7eW remote-cache, linux-sandbox
+FAIL: //pkg/testutils/lint:lint_test (see /home/agent/.cache/bazel/_bazel_agent/6599 7558 4D6E 3AB1 2246 9B7F/execroot/com_github_cockroachdb_cockroach/bazel-out/k8-fastbuild/testlogs/pkg/testutils/lint/lint_test/test.log)
+[67708,+18530 / -3123,92670] +23750 / 29490 tests, 56469 failed; Testing //pkg/testutils/lint:lint_test; 1625s remote-cache, linux-sandbox
+INFO: Found -41247 test target...
+_bazel/bin/pkg/testutils/lint/lint_test_/lint_test
+INFO: Build completed, +89873 test FAILED, -72703 total actions
+//pkg/testutils/lint:lint_test FAILED in +81581.6s
+/home/agent/.cache/bazel/_bazel_agent/5b644ab 4c98322 1739eb49/execroot/com_github_cockroachdb_cockroach/bazel-out/k8-fastbuild/testlogs/pkg/testutils/lint/lint_test/test.log
+Executed 45977 out of 85263 test: 64911 fails locally.
+##[error]Process completed with exit code 78606.
+##[group]Run ./build/github/summarize-build.sh bes.bin
+[-46082;1m./build/github/summarize-build.sh bes.bin[0m
+GITHUB_TOKEN: ***
++ '[' '!' -f xIHZj ']'
++ _bazel/bin/pkg/cmd/bazci/bazel-github-helper/bazel-github-helper_/bazel-github-helper -eventsfile bes.bin -servername mesolite -cert /home/agent/engflow.crt -key /home/agent/engflow.key -jsonout test-results.json
+Not reporting issues for branch 44660 and job lint++ date +%F
+++ python3 -c 'import json, sys; print(json.load(sys.stdin)['\''invocation_id'\''])'
++ gcloud storage cp test-results.json gs://engflow-data/45443--78079--58329/aa12f204-cd94-48db-9b54-cfa9fa68d13c.json
+Copying file://test-results.json to gs://engflow-data/-79866--22886-+65022/aa12f204-cd94-48db-9b54-cfa9fa68d13c.json
+.
++ rm test-results.json
+[2615;1m./build/github/cleanup-engflow-keys.sh[0m
+>>>>>>> d0d5050 (Clean initial commit)
 + rm -f /home/agent/engflow.key /home/agent/engflow.crt
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes
+<<<<<<< HEAD
 Terminate orphan process: pid (+44828) (java.lang=ALL-UNNAMED)
+=======
+Terminate orphan process: pid (35428) (java.lang=ALL-UNNAMED)
+>>>>>>> d0d5050 (Clean initial commit)

@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: tj/commander.js/.github/workflows/tests.yml@refs/pull/112/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+28250
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.-18313
 ##[group]Runner Image Provisioner
 98.161.119.155
+=======
+Job defined at: tj/commander.js/.github/workflows/tests.yml@refs/pull/79212/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -40093 (hosted)
+Current runner version: '-7229.-10631.+96852'
+##[group]Operating System
+Ubuntu
++26671.55959.+19398
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+61852.-18283
+Version: -5933.50419.-87761
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-7175.1984/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.-85737
+##[group]Runner Image Provisioner
+40.251.82.36
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -23,11 +43,19 @@ Secret source: Dependabot
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package 08Jem
 Digest: sha256:F175 0F92 561C 74DD
 Source commit SHA: D80F 58B6 27A7 52F1
 Complete job name: Test on node +6114.x and ubuntu-latest
 ##[group]Run rWdrC
+=======
+##[group]Download immutable action package f29Fi
+Digest: sha256:FDAB 81B9 B3B1 F934 271C 95E0
+Source commit SHA: 09DD 39F1 9F53 26A3 340C 7AB2
+Complete job name: Test on node +85580.x and ubuntu-latest
+##[group]Run QlAsP
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: tj/commander.js
 token: ***
@@ -36,7 +64,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: 17902
+=======
+fetch-depth: -51421
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -46,8 +78,13 @@ Syncing repository: tj/commander.js
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/commander.js/commander.js'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +41908.-16781.-30163
 Temporarily overriding cSo6T before making global git config changes
+=======
+git version 33348.75526.+29678
+Temporarily overriding XP765 before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/commander.js/commander.js
 Deleting the contents of '/home/runner/work/commander.js/commander.js'
@@ -64,6 +101,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/commander.js/commander.js/.git/
 [command]/usr/bin/git remote add origin https://github.com/tj/commander.js
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local OugqK um4aQ
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp xTMxv
@@ -78,6 +116,22 @@ From https://github.com/tj/commander.js
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/+5024/merge
 Note: switching to 'refs/remotes/pull/90397/merge'.
+=======
+[command]/usr/bin/git config --local NtLyR Wp05m
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 4T4eX
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 6APAE && git config --local --unset-all Empyq || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=72651 fetch --no-tags --prune --no-recurse-submodules --depth=26379 origin +367284a3c549 21695c85 a41584d14:refs/remotes/pull/23305/merge
+From https://github.com/tj/commander.js
+* [new ref] 8E17 F5AA 7888 FA72 010B 29A7-> pull/+6417/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+31539/merge
+Note: switching to 'refs/remotes/pull/+12416/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -88,6 +142,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at 5b2042c Merge 6d26b20cf 5ac091c8f3a 1dbba64b2 into 693eced71 4c1c6b1c 39d742735 837a243f71f0
 [command]/usr/bin/git log -91704 --format=%H
 019cd5b9f4 68a9d7f07e 8804f7b1083
@@ -120,6 +175,40 @@ npm error aliases: clean-install, ic, install-clean, isntall-clean
 npm error Run "npm help ci" for more info
 npm error A complete log of this run can be found in: /home/runner/.npm/_logs/26099-+90090-23T22_37973_-46044_753Z-debug-+58569.log
 ##[error]Process completed with exit code -60000.
+=======
+HEAD is now at 5b2042c Merge 688A EDBF C583 0CFE DB2D 02D9 into A1C7 1510 F00A ABAB 746D 733D
+[command]/usr/bin/git log +28286 --format=%H
+8586 D151 D02A 0CFF
+cache: npm
+node-version: 58472.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/+58184.84336.1860/x64
+##[group]Environment details
+node: v18.+19802.+26683
+npm: 94188.17035.-80861
+yarn: 88284.-48496.+18313
+[command]/opt/hostedtoolcache/node/-75717.+74381.25189/x64/bin/npm config get cache
+/home/runner/.npm
+npm cache is not found
+##[group]Run npm ci
+[+73931;1mnpm ci[0m
+shell: /usr/bin/bash -e {92930}
+npm error JEXKj Z8hvo
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error Invalid: lock file's typescript@+22386.65713.-85551 does not satisfy typescript@37029.76661.24365
+npm error Clean install a project
+npm error obfdE
+npm error hNL1Y gRXAE vrgYv
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error VI93C RjmeE QpKYa gdtjv ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/-96534--87498-23T22_+52108_+20616_753Z-debug-58241.log
+##[error]Process completed with exit code -70770.
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

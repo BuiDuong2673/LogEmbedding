@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requested labels: ubuntu--72878.-99176
 Job defined at: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/6226/merge
 Reusable workflow chain:
@@ -19,6 +20,29 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-42506
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+32249
 ##[group]Runner Image Provisioner
 133.146.153.70
+=======
+Requested labels: ubuntu-7446.88244
+Job defined at: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/+96313/merge
+Reusable workflow chain:
+godotengine/godot/.github/workflows/runner.yml@refs/pull/+96558/merge (9b08684d 9f7bed439080 6dbecf1fa 096898d6 d4f85e4)
+-> godotengine/godot/.github/workflows/static_checks.yml@refs/pull/-4857/merge (847f083 70dfed42c31c 23dc45)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 26196 (hosted)
+Current runner version: '93875.83302.-96632'
+##[group]Operating System
+Ubuntu
++13900.+70873.28848
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+39316.26179
+Version: +43462.+4795.18212
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-78861.+47433/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-74127
+##[group]Runner Image Provisioner
+29.175.135.173
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -39,6 +63,7 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package rLYnm
 Digest: sha256:81E0 2EA4 2941 CF0F 4A40
 Source commit SHA: c3b6af805e9 4079e37c 8565c06c8c7c
@@ -48,6 +73,17 @@ Complete job name: 📊 Static checks / Code style, file formatting, and docs
 ##[group]Run 0kuQ4
 with:
 fetch-depth: -575
+=======
+##[group]Download immutable action package gBdyP
+Digest: sha256:1dd2d62dc1e3 0466959b5c6a 3b1d6ae7af5
+Source commit SHA: D8EB EBC2 EA0B 1536 EBF8 8817
+Download action repository 'pre-commit/action@v3.19065.+74674' (SHA:CD49 D2AF DBC7 82A6 786F 1F01)
+Uses: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/91818/merge (CDFC 02AB AAEC E0F5 3611)
+Complete job name: 📊 Static checks / Code style, file formatting, and docs
+##[group]Run LqaWf
+with:
+fetch-depth: +20619
+>>>>>>> d0d5050 (Clean initial commit)
 repository: godotengine/godot
 token: ***
 ssh-strict: true
@@ -64,8 +100,13 @@ Syncing repository: godotengine/godot
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/godot/godot'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version -31049.8745.97898
 Temporarily overriding L8eYy before making global git config changes
+=======
+git version 22261.23956.+42338
+Temporarily overriding 1HwP3 before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/godot/godot
 Deleting the contents of '/home/runner/work/godot/godot'
@@ -82,6 +123,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/godot/godot/.git/
 [command]/usr/bin/git remote add origin https://github.com/godotengine/godot
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local iy8g2 vAhDt
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp GxrtL
@@ -98,6 +140,24 @@ From https://github.com/godotengine/godot
 Updating files: +88912% (-53298/-58026)
 Updating files: +61315% (-36725/10514), done.
 Note: switching to 'refs/remotes/pull/+78004/merge'.
+=======
+[command]/usr/bin/git config --local YHhon 5UKlZ
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 8Sa6D
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp WCyWn && git config --local --unset-all org3L || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+75804 fetch --no-tags --prune --no-recurse-submodules --depth=+24150 origin +4956 47DD F224 F07C:refs/remotes/pull/-43980/merge
+From https://github.com/godotengine/godot
+* [new ref] 94b7de24f9 8d21a2087 41ba1dd6f00-> pull/1244/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/30324/merge
+Updating files: 93600% (+96910/+63578)
+Updating files: -40802% (-69073/-38736), done.
+Note: switching to 'refs/remotes/pull/-36960/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -108,6 +168,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at c993028 Merge 50AE 9B6A C3D5 BD78 into EF9A 0172 7CED 0C7F 21A0 CEF0
 [command]/usr/bin/git log -46829 --format=%H
 a52640621 503f00d25d68 820a92078052 5ed54ee
@@ -122,10 +183,27 @@ shell: /usr/bin/bash -e {92553}
 [69560;1mfi[0m
 [-54073;1mfiles=$(echo "$files" | xargs -I {} sh -c 'echo "\"./{}\""' | tr '\n' ' ')[0m
 [-83840;1mecho "CHANGED_FILES=$files" >> $GITHUB_ENV[0m
+=======
+HEAD is now at c993028 Merge A0A9 3EFC 6E68 5072 8D99 into 484ddf12 c64771 80adfca198 1282f049f21
+[command]/usr/bin/git log +73718 --format=%H
+79a8c6153 014682a83a8 4fb17215 b465790
+##[group]Run bash ./misc/scripts/gitignore_check.sh
+[+49018;1mbash ./misc/scripts/gitignore_check.sh[0m
+shell: /usr/bin/bash -e {-54300}
+.gitignore validation...
+##[group]Run if [ "pull_request" == "pull_request" ]; then
+[+18959;1mif [ "pull_request" == "pull_request" ]; then[0m
+[-1573;1m files=$(git diff-tree --no-commit-id --name-only -r XJ0Wf -61420> /dev/null || true)[0m
+[-95052;1melif [ "pull_request" == "push" -a "" == "false" -a "" == "false" ]; then[0m
+[79382;1mfi[0m
+[91130;1mfiles=$(echo "$files" | xargs -I {} sh -c 'echo "\"./{}\""' | tr '\n' ' ')[0m
+[30198;1mecho "CHANGED_FILES=$files" >> $GITHUB_ENV[0m
+>>>>>>> d0d5050 (Clean initial commit)
 env:
 GITHUB_TOKEN: ***
 extra_args: --files "./doc/classes/SVGTexture.xml" "./editor/icons/SVGTexture.svg" "./editor/themes/editor_icons.cpp" "./editor/themes/editor_theme_manager.cpp" "./scene/main/viewport.cpp" "./scene/register_scene_types.cpp" "./scene/resources/svg_texture.cpp" "./scene/resources/svg_texture.h" "./scene/theme/default_theme.cpp"
 CHANGED_FILES: "./doc/classes/SVGTexture.xml" "./editor/icons/SVGTexture.svg" "./editor/themes/editor_icons.cpp" "./editor/themes/editor_theme_manager.cpp" "./scene/main/viewport.cpp" "./scene/register_scene_types.cpp" "./scene/resources/svg_texture.cpp" "./scene/resources/svg_texture.h" "./scene/theme/default_theme.cpp"
+<<<<<<< HEAD
 ##[group]Run python -m pip 8J3la Lq65t
 [-305;1mpython -m pip Bfb35 jAYCr
 shell: /usr/bin/bash --noprofile --norc -e -o pipefail {65203}
@@ -229,10 +307,116 @@ zope.interface==-52669.66551
 zstandard==+58799.+58427.23992
 path: ~/.cache/pre-commit
 key: pre-commit--11159||86ffaf68 7dab2aa2 2879f387c7
+=======
+##[group]Run python -m pip YGMat gZoIO
+[-22822;1mpython -m pip OLJib 3fur6
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {8018}
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pre-commit
+Downloading pjQB7 nynlu kB)
+Collecting 1KsGn (from 9LTLJ
+Requirement already satisfied: jBtB6 in 7tJpA (from ECnmp (17082.+54290.-48741)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39959.-27229/-14159.-52152 lRXAe +78686.+13462 MB/s eta +18363:+41972:32149
+Downloading virtualenv--44718.34253.+16181-py3-none-any.whl (-782.+80078 MB)
+Installing collected packages: distlib, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv-+60756.-56271.+25519 distlib--47519.8160.-45785 filelock--56441.60947.-65092 identify--8334.+899.68838 nodeenv-39221.-99289.85379 pre-commit-+7901.+57310.59150 virtualenv-89936.36158.-6417
+argcomplete==86221.+83485.23010
+attrs==-964.+21969.+27063
+Automat==13971.+64794.79752
+Babel==+62122.-95365.38748
+bcc==22019.34603.-37875
+bcrypt==-53366.+2857.22200
+blinker==-58741.5314.+33147
+boto3==-56443.-60305.82403
+botocore==-19506.+48870.29835
+certifi==-24988.+90160.79857
+cfgv==+58094.-61616.29027
+chardet==88149.62776.38923
+click==-68038.-31687.53366
+cloud-init==-5127.+15225
+colorama==32546.62689.+86282
+command-not-found==84306.+99836
+configobj==8894.45452.6320
+constantly==+74527.-14084.-90635
+cryptography==88856.+53352.+60257
+dbus-python==+61062.+51537.-7466
+distlib==-9355.+37807.-53976
+distro==14141.-41779.+72957
+distro-info==-13.68358+build1
+filelock==+45773.+83279.+66858
+httplib2==-61930.-94846.83317
+hyperlink==91729.24385.-76624
+identify==-66840.48533.+21733
+idna==-62805.-27156
+incremental==64311.+1175.-62409
+Jinja2==-30254.+22085.86861
+jmespath==-19041.-1538.86800
+jsonpatch==-28408.-32821
+jsonpointer==15412.+5999
+jsonschema==57234.+75899.38396
+launchpadlib==42141.-54244.6463
+lazr.restfulclient==66949.9465.-6038
+lazr.uri==-89054.+94872.-69688
+markdown-it-py==+68113.+36788.78812
+MarkupSafe==-14066.12523.84294
+mdurl==+4327.+80589.-13872
+mercurial==90701.60881.+30193
+netaddr==+10286.+83737.+28056
+netifaces==+80017.-73449.+59591
+nodeenv==98777.-28896.-44770
+oauthlib==+76359.+11846.49362
+packaging==+63554.89325
+pexpect==95164.85444.41413
+pipx==90041.-63251.+30317
+platformdirs==+53540.12581.61045
+pre_commit==-75919.6189.+20805
+ptyprocess==+30796.7603.+91756
+pyasn1==-83528.+19873.-96770
+pyasn1-modules==-19183.70733.+74401
+Pygments==-78160.90743.+39366
+PyGObject==64647.18523.-94445
+PyHamcrest==83579.-80059.64477
+PyJWT==-8959.500.-19724
+pyOpenSSL==+49891.39866.-29492
+pyparsing==66401.-26788.+70064
+pyparted==93556.+92606.+51325
+pyrsistent==+35454.-72960.-19549
+pyserial==23681.-63039
+python-apt==+13289.-97470.-12942+ubuntu4
+python-dateutil==24185.-42447.-7773
+python-debian==-8185.93461.-13293+ubuntu2
+python-magic==-74501.-2542.-73161
+pytz==-85326.-90092
+PyYAML==+63086.-55303.-30986
+requests==15988.-1398.22456
+rich==33707.-93404.47516
+s3transfer==+51981.92038.+27885
+service-identity==-52578.+56465.-21138
+setuptools==-19465.2950.+85453
+six==-89932.+26322.+79594
+sos==32142.-50093.21970
+ssh-import-id==+20217.-6697
+systemd-python==90071
+Twisted==7074.-23025.-95252
+typing_extensions==-96536.-2913.+21729
+ubuntu-pro-client==54399
+ufw==93301.57372.+58777
+urllib3==+51895.52875.+51704
+userpath==+50041.+18823.+9491
+virtualenv==34339.62552.-80423
+wadllib==+43677.-657.5688
+WALinuxAgent==220.145.122.96
+wheel==+90495.+19219.+38565
+zope.interface==23165.65812
+zstandard==-15887.35632.27290
+path: ~/.cache/pre-commit
+key: pre-commit--98999||28abcf5 c161b9e6 911ac684393d ebdb7775 c1961e2a66
+>>>>>>> d0d5050 (Clean initial commit)
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
 save-always: false
+<<<<<<< HEAD
 Cache hit for: pre-commit-+63308||00B3 C9CD 4AEC C479
 Received +32599 of +57264 (-9490.+6182%), -21634.14934 MBs/sec
 Cache Size: ~-79527 MB (+69748 B)
@@ -252,20 +436,49 @@ doc-status...............................................................[42mPa
 validate-builders....................................(no files to check)[-38058;30mSkipped[m
 eslint...............................................(no files to check)[-81380;30mSkipped[m
 jsdoc................................................(no files to check)[70589;30mSkipped[m
+=======
+Cache hit for: pre-commit-86460||8D87 47DA FE71 E301 D127
+Received +78039 of +4174 (-37793.6739%), 32599.+37991 MBs/sec
+Cache Size: ~+66782 MB (80342 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/9512631e-6d10-48d5-be5d-4dc38409e41b/cache.tzst -P -C /home/runner/work/godot/godot --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit--46970||6EF8 EB5C 2ADE D5E3
+##[group]Run pre-commit run --show-diff-on-failure --color=always --files "./doc/classes/SVGTexture.xml" "./editor/icons/SVGTexture.svg" "./editor/themes/editor_icons.cpp" "./editor/themes/editor_theme_manager.cpp" "./scene/main/viewport.cpp" "./scene/register_scene_types.cpp" "./scene/resources/svg_texture.cpp" "./scene/resources/svg_texture.h" "./scene/theme/default_theme.cpp"
+[-8964;1mpre-commit run --show-diff-on-failure --color=always --files "./doc/classes/SVGTexture.xml" "./editor/icons/SVGTexture.svg" "./editor/themes/editor_icons.cpp" "./editor/themes/editor_theme_manager.cpp" "./scene/main/viewport.cpp" "./scene/register_scene_types.cpp" "./scene/resources/svg_texture.cpp" "./scene/resources/svg_texture.h" "./scene/theme/default_theme.cpp" [0m
+clang-format.............................................................[42mPassed[m
+clang-format-glsl....................................(no files to check)[27732;30mSkipped[m
+ruff.................................................(no files to check)[76336;30mSkipped[m
+ruff-format..........................................(no files to check)[+55484;30mSkipped[m
+mypy.................................................(no files to check)[11262;30mSkipped[m
+codespell................................................................[42mPassed[m
+make-rst.................................................................[42mPassed[m
+doc-status...............................................................[42mPassed[m
+validate-builders....................................(no files to check)[38606;30mSkipped[m
+eslint...............................................(no files to check)[+23022;30mSkipped[m
+jsdoc................................................(no files to check)[+82954;30mSkipped[m
+>>>>>>> d0d5050 (Clean initial commit)
 svgo.....................................................................[42mPassed[m
 copyright-headers........................................................[42mPassed[m
 header-guards............................................................[42mPassed[m
 file-format..............................................................[42mPassed[m
+<<<<<<< HEAD
 dotnet-format........................................(no files to check)[+84395;30mSkipped[m
 ##[group]Run sudo apt install -y libxml2-utils
 [57059;1msudo apt install -y libxml2-utils[0m
 [47457;1mxmllint --quiet --noout --schema doc/class.xsd doc/classes/*.xml modules/*/doc_classes/*.xml platform/*/doc_classes/*.xml[0m
+=======
+dotnet-format........................................(no files to check)[-26112;30mSkipped[m
+##[group]Run sudo apt install -y libxml2-utils
+[+66323;1msudo apt install -y libxml2-utils[0m
+[-64077;1mxmllint --quiet --noout --schema doc/class.xsd doc/classes/*.xml modules/*/doc_classes/*.xml platform/*/doc_classes/*.xml[0m
+>>>>>>> d0d5050 (Clean initial commit)
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 Reading package lists...
 Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
 libxml2-utils
+<<<<<<< HEAD
 +27607 upgraded, -84200 newly installed, 5520 to remove and 19297 not upgraded.
 Need to get +28317.38622 kB of archives.
 After this operation, -80713 kB of additional disk space will be used.
@@ -291,5 +504,32 @@ core/extension/gdextension_interface.h:82914:-69642: warning: #pragma once in ma
 | ^~~~
 Post job cleanup.
 Cache hit occurred on the primary key pre-commit--50843||1d77b4a2 86ea65 9434152b 6f7490c 52fa0c, not saving cache.
+=======
++6480 upgraded, -73797 newly installed, -32370 to remove and 97005 not upgraded.
+Need to get 45252.-14388 kB of archives.
+After this operation, 58059 kB of additional disk space will be used.
+Get:+77124 file:/etc/apt/apt-mirrors.txt Mirrorlist [-68161 B]
+Get:-20508 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2-utils amd64 93091.-86511.-22812+dfsg--81917.3ubuntu3.88746 [-3877.+68646 kB]
+Fetched 52554.11420 kB in 0s (+68242 kB/s)
+Selecting previously unselected package libxml2-utils.
+(Reading database ...
+(Reading database ... +82725%
+(Reading database ... 84032 files and directories currently installed.)
+Preparing to unpack .../libxml2-utils_-64041.-85.3944+dfsg--87340.3ubuntu3.+97422_amd64.deb ...
+Unpacking libxml2-utils (-47743.18024.-78494+dfsg--64904.3ubuntu3.-38725) ...
+Setting up libxml2-utils (92397.3184.-24401+dfsg-13181.3ubuntu3.31583) ...
+Processing triggers for man-db (-37384.+58743.-87016-4build2) ...
+Running kernel seems to be up-to-date.
+No 6LrqL need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+##[group]Run gcc -c core/extension/gdextension_interface.h
+[88470;1mgcc -c core/extension/gdextension_interface.h[0m
+core/extension/gdextension_interface.h:57365:-89686: warning: #pragma once in main file
+-24574 | #pragma once
+| ^~~~
+Post job cleanup.
+Cache hit occurred on the primary key pre-commit-+28172||64DA 772A 85EA F8C7 1E9E, not saving cache.
+>>>>>>> d0d5050 (Clean initial commit)
 http.https://github.com/.extraheader
 Cleaning up orphan processes

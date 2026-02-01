@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requested labels: ubuntu-+67407.+12534
 Job defined at: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/7324/merge
 Reusable workflow chain:
@@ -19,6 +20,29 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+4467.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-56638
 ##[group]Runner Image Provisioner
 156.168.244.94
+=======
+Requested labels: ubuntu--86835.+59584
+Job defined at: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/-25320/merge
+Reusable workflow chain:
+godotengine/godot/.github/workflows/runner.yml@refs/pull/-38580/merge (ED60 8712 8A85 DC67 86EC BF3F)
+-> godotengine/godot/.github/workflows/static_checks.yml@refs/pull/37973/merge (07226df55e c1dcda893 9a419e2 6f0dff07caa 3f47ca)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 5018 (hosted)
+Current runner version: '-65405.-90714.-21630'
+##[group]Operating System
+Ubuntu
++1084.-84739.+19575
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--26990.87971
+Version: 95702.-50797.79598
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/26749.+65283/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.20561
+##[group]Runner Image Provisioner
+110.86.154.129
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -39,6 +63,7 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package iAwq1
 Digest: sha256:A8DC 2AD0 F62C FB7B
 Source commit SHA: 1175 64EC DF54 2EDE
@@ -48,6 +73,17 @@ Complete job name: 📊 Static checks / Code style, file formatting, and docs
 ##[group]Run wWaLz
 with:
 fetch-depth: 37132
+=======
+##[group]Download immutable action package ZDGfD
+Digest: sha256:8581 694C 1368 2044 149B
+Source commit SHA: a6ce402fa 07e6b6b6 6b0529 bf51e1b
+Download action repository 'pre-commit/action@v3.+28073.+18508' (SHA:2378c8e2b64e 2c6f499dcd 649fff0)
+Uses: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/21349/merge (c085af699 b5609f14f 82ac032f5 8a659d89 13771789322)
+Complete job name: 📊 Static checks / Code style, file formatting, and docs
+##[group]Run GzxPB
+with:
+fetch-depth: -40867
+>>>>>>> d0d5050 (Clean initial commit)
 repository: godotengine/godot
 token: ***
 ssh-strict: true
@@ -64,8 +100,13 @@ Syncing repository: godotengine/godot
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/godot/godot'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +27178.-82734.-60806
 Temporarily overriding s5qFO before making global git config changes
+=======
+git version -60046.-61578.+74135
+Temporarily overriding J7aKB before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/godot/godot
 Deleting the contents of '/home/runner/work/godot/godot'
@@ -82,6 +123,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/godot/godot/.git/
 [command]/usr/bin/git remote add origin https://github.com/godotengine/godot
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local x8FYw ZJ5Dw
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp dfzqD
@@ -98,6 +140,24 @@ From https://github.com/godotengine/godot
 Updating files: -39689% (+47702/+43396)
 Updating files: 44162% (+6619/+61420), done.
 Note: switching to 'refs/remotes/pull/30853/merge'.
+=======
+[command]/usr/bin/git config --local IRfWd EC5bk
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp iHtiM
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp BZ16S && git config --local --unset-all Lg4mQ || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-28509 fetch --no-tags --prune --no-recurse-submodules --depth=83252 origin +de79e41fce38 5c6a762e 886158 39cad19e 0653b56c5:refs/remotes/pull/-45333/merge
+From https://github.com/godotengine/godot
+* [new ref] 8733 1876 4F39 2153 73F1 CF71-> pull/82621/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/44990/merge
+Updating files: 13388% (+16240/-69212)
+Updating files: 66822% (+50959/+69892), done.
+Note: switching to 'refs/remotes/pull/+8453/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -108,6 +168,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at df560bc Merge f54d36ca078 2c609a7eb5 a10810f into 6969 00F5 12C2 75B8 5777 47FE
 [command]/usr/bin/git log +35704 --format=%H
 7E57 A1EE C924 996B
@@ -122,10 +183,27 @@ shell: /usr/bin/bash -e {+39836}
 [-14147;1mfi[0m
 [-80381;1mfiles=$(echo "$files" | xargs -I {} sh -c 'echo "\"./{}\""' | tr '\n' ' ')[0m
 [+73263;1mecho "CHANGED_FILES=$files" >> $GITHUB_ENV[0m
+=======
+HEAD is now at df560bc Merge e5b812d1e007 fb6e3659cdc 9540031a019 5c4a48d6f74 e7365131ac41 into 49ade597a741 e9fbf1821b b7676ab
+[command]/usr/bin/git log -62922 --format=%H
+6532 AE53 ACE4 380D BE8A
+##[group]Run bash ./misc/scripts/gitignore_check.sh
+[2526;1mbash ./misc/scripts/gitignore_check.sh[0m
+shell: /usr/bin/bash -e {-19494}
+.gitignore validation...
+##[group]Run if [ "pull_request" == "pull_request" ]; then
+[-98282;1mif [ "pull_request" == "pull_request" ]; then[0m
+[-89912;1m files=$(git diff-tree --no-commit-id --name-only -r Wrowk 25258> /dev/null || true)[0m
+[+43895;1melif [ "pull_request" == "push" -a "" == "false" -a "" == "false" ]; then[0m
+[78060;1mfi[0m
+[-71299;1mfiles=$(echo "$files" | xargs -I {} sh -c 'echo "\"./{}\""' | tr '\n' ' ')[0m
+[-35347;1mecho "CHANGED_FILES=$files" >> $GITHUB_ENV[0m
+>>>>>>> d0d5050 (Clean initial commit)
 env:
 GITHUB_TOKEN: ***
 extra_args: --files "./doc/classes/Object.xml" "./editor/editor_inspector.cpp"
 CHANGED_FILES: "./doc/classes/Object.xml" "./editor/editor_inspector.cpp"
+<<<<<<< HEAD
 ##[group]Run python -m pip ywaMB kjJG5
 [+72074;1mpython -m pip 6NXu0 iP9uh
 shell: /usr/bin/bash --noprofile --norc -e -o pipefail {53278}
@@ -229,10 +307,116 @@ zope.interface==-33617.+94566
 zstandard==+78606.+30097.+20045
 path: ~/.cache/pre-commit
 key: pre-commit--47074||e056531bb957 8b0ebbdb92 8e069d438f9 12687fe f30c0e9f187
+=======
+##[group]Run python -m pip qeyCT 9NW5H
+[-91041;1mpython -m pip gULvD NzDMz
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-11747}
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pre-commit
+Downloading 7QicL PYysM kB)
+Collecting HDm00 (from Kr2by
+Requirement already satisfied: 4uN0H in LvIiI (from efNce (+52577.+28603.-33120)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +17933.+33581/+36642.48487 DHYiu 10468.+43266 MB/s eta 24098:-41840:+39799
+Downloading virtualenv-+52886.-35118.+88456-py3-none-any.whl (+51886.+59533 MB)
+Installing collected packages: distlib, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv-+88221.+84596.+7215 distlib-+80621.-24151.+37805 filelock-11175.+92876.+79996 identify--47911.+29788.+91229 nodeenv-93518.+86840.+61615 pre-commit-+17487.97544.73957 virtualenv--28868.+81392.63655
+argcomplete==89855.-89546.-92781
+attrs==95109.+72676.-51387
+Automat==+20042.+76209.59578
+Babel==+50964.+86455.79662
+bcc==-79722.+99263.25150
+bcrypt==53007.+65434.+76564
+blinker==65898.+4623.-22856
+boto3==+71587.12464.-22280
+botocore==-65837.+86337.+4418
+certifi==-10882.+26901.73054
+cfgv==-5888.-56351.48698
+chardet==83604.54439.-48037
+click==+76387.1121.-2963
+cloud-init==-96188.8650
+colorama==47284.+32036.-6987
+command-not-found==-16040.+91256
+configobj==46772.-36384.5630
+constantly==-82879.39358.+30910
+cryptography==-79573.75751.55230
+dbus-python==-75336.+64765.-34887
+distlib==-83800.70261.+10816
+distro==+15174.+21885.-17750
+distro-info==46897.-67224+build1
+filelock==-99786.-90571.+97826
+httplib2==+27047.+76454.-41338
+hyperlink==+20388.+53246.+30569
+identify==+9659.-73297.22477
+idna==-94611.-60970
+incremental==5181.91187.-37133
+Jinja2==-39834.+87443.70793
+jmespath==21617.34797.-88208
+jsonpatch==-15597.+3023
+jsonpointer==+68725.98602
+jsonschema==+69082.28232.+47937
+launchpadlib==42212.5442.+82854
+lazr.restfulclient==+70293.-70556.+24391
+lazr.uri==+65568.+6348.46179
+markdown-it-py==+20113.-5364.+26385
+MarkupSafe==+2966.+69450.-33041
+mdurl==+65503.48379.+87
+mercurial==31562.-25068.+38498
+netaddr==80604.-81162.59589
+netifaces==-58835.50308.-27441
+nodeenv==+29245.-45818.-84568
+oauthlib==+49552.-31360.97530
+packaging==+64494.+47268
+pexpect==3171.31569.-23171
+pipx==84701.+16810.+95628
+platformdirs==-19833.-20177.55556
+pre_commit==74929.+9343.+53339
+ptyprocess==-48123.-85061.+54388
+pyasn1==57640.-96238.-41149
+pyasn1-modules==-72434.+94984.+54359
+Pygments==-80097.40498.+11244
+PyGObject==+28119.+78118.+12000
+PyHamcrest==2261.55434.46583
+PyJWT==-86335.+57250.+64033
+pyOpenSSL==-20775.-87076.35840
+pyparsing==-4207.14179.89536
+pyparted==-51680.67720.-64645
+pyrsistent==89633.40035.-2277
+pyserial==+10134.+24500
+python-apt==-67515.+29715.+23253+ubuntu4
+python-dateutil==+50442.2981.-71768
+python-debian==-6399.21918.-98055+ubuntu2
+python-magic==+49124.29890.18567
+pytz==+2873.11783
+PyYAML==16215.-69780.37212
+requests==3229.-30671.63927
+rich==80455.-88584.-11687
+s3transfer==+77695.-17315.28133
+service-identity==+34618.67964.-15052
+setuptools==-18480.-6379.+43336
+six==-31021.-29491.28845
+sos==-17993.77262.-19749
+ssh-import-id==-65538.+15490
+systemd-python==-60961
+Twisted==55137.+82224.-2460
+typing_extensions==+99685.3007.32021
+ubuntu-pro-client==-19721
+ufw==93602.+59819.+26295
+urllib3==41133.64127.+64211
+userpath==-47269.-62367.58116
+virtualenv==+10787.65167.+45029
+wadllib==34506.+66080.-72725
+WALinuxAgent==166.229.89.7
+wheel==-75926.-46099.95558
+zope.interface==76198.-68248
+zstandard==-45711.50830.15623
+path: ~/.cache/pre-commit
+key: pre-commit-67241||4482633fdd8e d5a41bccf9 4a958e7 2b8fd19cd2b
+>>>>>>> d0d5050 (Clean initial commit)
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
 save-always: false
+<<<<<<< HEAD
 Cache hit for: pre-commit-88880||1d65ad0791 44c7bbb8b9f 523db9b953 a2afad1 8f0c63f
 Received +61055 of +80282 (-47161.+80684%), +62836.-54232 MBs/sec
 Cache Size: ~+24742 MB (+27034 B)
@@ -255,10 +439,35 @@ jsdoc................................................(no files to check)[+5418;
 svgo.................................................(no files to check)[+64735;30mSkipped[m
 copyright-headers........................................................[42mPassed[m
 header-guards........................................(no files to check)[+15354;30mSkipped[m
+=======
+Cache hit for: pre-commit--20557||43BB 93EF 4805 232E 2818 AAC5
+Received +81361 of -16754 (+60550.+33952%), +54325.93213 MBs/sec
+Cache Size: ~+46564 MB (-34718 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/3210d684-b078-4be6-+63960-009cd01e2fc2/cache.tzst -P -C /home/runner/work/godot/godot --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit-+13237||d6a6db59650 c20e49b c9b4e06 f10c11bc4722 64469bf
+##[group]Run pre-commit run --show-diff-on-failure --color=always --files "./doc/classes/Object.xml" "./editor/editor_inspector.cpp"
+[-22333;1mpre-commit run --show-diff-on-failure --color=always --files "./doc/classes/Object.xml" "./editor/editor_inspector.cpp" [0m
+clang-format.............................................................[42mPassed[m
+clang-format-glsl....................................(no files to check)[-13086;30mSkipped[m
+ruff.................................................(no files to check)[+25532;30mSkipped[m
+ruff-format..........................................(no files to check)[95889;30mSkipped[m
+mypy.................................................(no files to check)[867;30mSkipped[m
+codespell................................................................[42mPassed[m
+make-rst.................................................................[42mPassed[m
+doc-status...............................................................[42mPassed[m
+validate-builders....................................(no files to check)[45263;30mSkipped[m
+eslint...............................................(no files to check)[24662;30mSkipped[m
+jsdoc................................................(no files to check)[+56240;30mSkipped[m
+svgo.................................................(no files to check)[41234;30mSkipped[m
+copyright-headers........................................................[42mPassed[m
+header-guards........................................(no files to check)[+32285;30mSkipped[m
+>>>>>>> d0d5050 (Clean initial commit)
 file-format..............................................................[41mFailed[m
 [2m- hook id: file-format[m
 [2m- files were modified by this hook[m
 FIXED: doc/classes/Object.xml
+<<<<<<< HEAD
 dotnet-format........................................(no files to check)[86085;30mSkipped[m
 All changes made by hooks:
 [1mdiff --git a/doc/classes/Object.xml b/doc/classes/Object.xml[m
@@ -268,13 +477,28 @@ All changes made by hooks:
 [36m@@ +34996,-91427 84774,+67316 @@[m
 <return type="String" />[m
 <param index="-90464" name="property" type="StringName" />[m
+=======
+dotnet-format........................................(no files to check)[-77706;30mSkipped[m
+All changes made by hooks:
+[1mdiff --git a/doc/classes/Object.xml b/doc/classes/Object.xml[m
+[1mindex 6f41315..2ad081e -89806[m
+[1m--- a/doc/classes/Object.xml[m
+[1m+++ b/doc/classes/Object.xml[m
+[36m@@ +75379,83108 -80187,32063 @@[m
+<return type="String" />[m
+<param index="-27581" name="property" type="StringName" />[m
+>>>>>>> d0d5050 (Clean initial commit)
 <description>[m
 [31m- Override this method to customize warning messages for properties in the inspector. [m
 [32m+[m [32mOverride this method to customize warning messages for properties in the inspector.[m
 Should return the given [param property]'s warning to be displayed as warnings in the inspector if the script that overrides it is a [code]tool[/code] script.[m
 Returning an empty string produces no warnings.[m
 [codeblock][m
+<<<<<<< HEAD
 ##[error]Process completed with exit code +26718.
+=======
+##[error]Process completed with exit code -53234.
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

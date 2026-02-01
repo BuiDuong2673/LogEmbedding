@@ -15,13 +15,21 @@ class CentralServerProgram:
 
     def __init__(self):
         """Initialize CentralServerProgram class."""
+<<<<<<< HEAD
         self.client_list = ["maryangel101", "d2klab", "logsage"]  # ["maryangel101", "d2klab", "logsage"]
+=======
+        self.client_list = ["maryangel101", "d2klab"]  # ["maryangel101", "d2klab", "logsage"]
+>>>>>>> d0d5050 (Clean initial commit)
         self.client_sockets = {}
         self.client_vocabs = {}
         self.indice_map = {}
         # Training coefficients
         self.embed_dimension = 500
+<<<<<<< HEAD
         self.num_epochs = 50
+=======
+        self.num_epochs = 100
+>>>>>>> d0d5050 (Clean initial commit)
 
     def aggregate_vocab(self) -> dict:
         """Aggregate all clients vocabs and form a new set of internal indices."""
@@ -130,7 +138,11 @@ class CentralServerProgram:
                 W1 = np.mean([w1 for w1, _ in client_updates], axis=0)
                 W2 = np.mean([w2 for _, w2 in client_updates], axis=0)
 
+<<<<<<< HEAD
                 if epoch < 49:
+=======
+                if epoch < (self.num_epochs - 1):  # before the last epoch
+>>>>>>> d0d5050 (Clean initial commit)
                     for sock in self.client_sockets.values():
                         send_message(sock, {
                             "type": "AGGREGATED_WEIGHTS",

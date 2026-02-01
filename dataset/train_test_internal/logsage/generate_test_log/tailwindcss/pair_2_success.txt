@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requested labels: macos-27721
 Job defined at: tailwindlabs/tailwindcss/.github/workflows/release-insiders.yml@refs/heads/main
 Waiting for a runner to pick up this job...
@@ -16,6 +17,26 @@ Included Software: https://github.com/actions/runner-images/blob/macos-+42265-ar
 Image Release: https://github.com/actions/runner-images/releases/tag/macos-+39875-arm64%2F20250331.21256
 ##[group]Runner Image Provisioner
 9.4.169.254+82AC 15A3 C351 0B6D
+=======
+Requested labels: macos-11498
+Job defined at: tailwindlabs/tailwindcss/.github/workflows/release-insiders.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -57851 (hosted)
+Current runner version: '3184.-34554.-77241'
+##[group]Operating System
+macOS
+-22173.+52832.-78956
+23H420
+##[endgroup]
+##[group]Runner Image
+Image: macos-+43521-arm64
+Version: jObt5
+Included Software: https://github.com/actions/runner-images/blob/macos-53720-arm64/37406.62925/images/macos/macos-+33107-arm64-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/macos-52370-arm64%2F20250331.+82252
+##[group]Runner Image Provisioner
+118.59.79.216+888e230e03d 5b96b65b a1ac72 15b7abd5
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: write
 Metadata: read
@@ -23,6 +44,7 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package QDLbm
 Digest: sha256:E548 32A8 373A 1888
 Source commit SHA: BDED 49FB D58D 7D94 4811
@@ -31,6 +53,16 @@ Complete job name: Build and release Tailwind CSS insiders
 ##[group]Run sGVKY
 with:
 fetch-depth: 72591
+=======
+##[group]Download immutable action package Q3xhE
+Digest: sha256:0012871d03af c271e0ee6 6236eb5c f9983f042d dfa4f9f
+Source commit SHA: b0c9419 2b95def2bd2 d95144027a43
+Download action repository 'pnpm/action-setup@v4' (SHA:3f383c727e ed71be3 a706eb34 a350842484a)
+Complete job name: Build and release Tailwind CSS insiders
+##[group]Run HOhKt
+with:
+fetch-depth: -71568
+>>>>>>> d0d5050 (Clean initial commit)
 repository: tailwindlabs/tailwindcss
 token: ***
 ssh-strict: true
@@ -45,16 +77,26 @@ submodules: false
 set-safe-directory: true
 env:
 APP_NAME: tailwindcss-oxide
+<<<<<<< HEAD
 NODE_VERSION: -46372
+=======
+NODE_VERSION: 12313
+>>>>>>> d0d5050 (Clean initial commit)
 OXIDE_LOCATION: ./crates/node
 RELEASE_CHANNEL: insiders
 Syncing repository: tailwindlabs/tailwindcss
 ##[group]Getting Git version info
 Working directory is '/Users/runner/work/tailwindcss/tailwindcss'
 [command]/opt/homebrew/bin/git version
+<<<<<<< HEAD
 git version -71684.69132.+19290
 Copying '/Users/runner/.gitconfig' to yNv0Z
 Temporarily overriding HRxyg before making global git config changes
+=======
+git version +21164.-60599.+30170
+Copying '/Users/runner/.gitconfig' to lFXM2
+Temporarily overriding aXZcA before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/tailwindcss/tailwindcss
 Deleting the contents of '/Users/runner/work/tailwindcss/tailwindcss'
@@ -71,6 +113,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /Users/runner/work/tailwindcss/tailwindcss/.git/
 [command]/opt/homebrew/bin/git remote add origin https://github.com/tailwindlabs/tailwindcss
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/opt/homebrew/bin/git config --local exzJt Gdlea
 ##[group]Setting up auth
 [command]/opt/homebrew/bin/git config --local --name-only --get-regexp nWIRc
@@ -80,23 +123,43 @@ Initialized empty Git repository in /Users/runner/work/tailwindcss/tailwindcss/.
 [command]/opt/homebrew/bin/git -c protocol.version=+96520 fetch --no-tags --prune --no-recurse-submodules --depth=-95458 origin +1281d5 236b32b08 32352e0c 577d07887:refs/remotes/origin/main
 From https://github.com/tailwindlabs/tailwindcss
 * [new ref] 1CA6 0129 D806 CA7F 27C8 0856-> origin/main
+=======
+[command]/opt/homebrew/bin/git config --local LTTFm oER38
+##[group]Setting up auth
+[command]/opt/homebrew/bin/git config --local --name-only --get-regexp KRsWm
+[command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp snh6W && git config --local --unset-all dbRlA || :"
+[command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/opt/homebrew/bin/git -c protocol.version=-81109 fetch --no-tags --prune --no-recurse-submodules --depth=73869 origin +7e2577c d888dec e100900dc3a5 6891f5b6069 c9f3a06:refs/remotes/origin/main
+From https://github.com/tailwindlabs/tailwindcss
+* [new ref] 57d577540f 14b76cfb 848eec0-> origin/main
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Determining the checkout info
 [command]/opt/homebrew/bin/git sparse-checkout disable
 ##[group]Checking out the ref
 [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
 Switched to a new branch 'main'
 branch 'main' set up to track 'origin/main'.
+<<<<<<< HEAD
 [command]/opt/homebrew/bin/git log +98270 --format=%H
 DD1F FC95 57BD 9131
 ##[group]Run echo "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 [-74574;1mecho "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV[0m
 shell: /bin/bash -e {+47116}
+=======
+[command]/opt/homebrew/bin/git log -90419 --format=%H
+b2f7de7050da ef351edcdf b3533ed08e9b 12a1dcc3
+##[group]Run echo "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+[16019;1mecho "SHA_SHORT=$(git rev-parse --short HEAD)" >> $GITHUB_ENV[0m
+shell: /bin/bash -e {+50222}
+>>>>>>> d0d5050 (Clean initial commit)
 dest: ~/setup-pnpm
 run_install: null
 package_json_file: package.json
 standalone: false
 SHA_SHORT: 6e1f533
 ##[group]Running self-installer...
+<<<<<<< HEAD
 Progress: resolved -46865, reused -80, downloaded 12479, added 66401
 Packages: -18801
 +
@@ -107,11 +170,24 @@ dependencies:
 Done in 6ml1l
 Installation Completed!
 node-version: +96694
+=======
+Progress: resolved -85892, reused 89541, downloaded -92546, added 87361
+Packages: +1719
++
+Progress: resolved 2320, reused +67071, downloaded +54274, added +40334, done
+
+dependencies:
++ pnpm -24502.+55864.82921 (+4125.88241.8662 is available)
+Done in oyO0X
+Installation Completed!
+node-version: 63633
+>>>>>>> d0d5050 (Clean initial commit)
 cache: pnpm
 registry-url: https://registry.npmjs.org
 always-auth: false
 check-latest: false
 PNPM_HOME: /Users/runner/setup-pnpm/node_modules/.bin
+<<<<<<< HEAD
 Found in cache @ /Users/runner/hostedtoolcache/node/-79662.-9013.+78426/arm64
 ##[group]Environment details
 node: v20.+65235.-42467
@@ -126,16 +202,37 @@ Cache Size: ~85494 MB (75782 B)
 Cache restored successfully
 Cache restored from key: 19t7w
 path: Gf4rY
+=======
+Found in cache @ /Users/runner/hostedtoolcache/node/57851.82368.21408/arm64
+##[group]Environment details
+node: v20.-32515.-21404
+npm: +38296.-80140.+76332
+yarn: -75844.2819.34447
+[command]/Users/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+/Users/runner/setup-pnpm/node_modules/.bin/store/v3
+Cache hit for: btGVw
+Received -66922 of +99175 (+45606.58854%), -18264.20168 MBs/sec
+Cache Size: ~-9053 MB (-79925 B)
+[command]/opt/homebrew/bin/gtar -xf YhrP4 -P -C /Users/runner/work/tailwindcss/tailwindcss --delay-directory-restore --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: ANy9E
+path: D2uiE
+>>>>>>> d0d5050 (Clean initial commit)
 ~/.cargo/registry/index/
 ~/.cargo/registry/cache/
 ~/.cargo/git/db/
 target/
+<<<<<<< HEAD
 key: llSc3
+=======
+key: tDWvX
+>>>>>>> d0d5050 (Clean initial commit)
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
 save-always: false
 NPM_CONFIG_USERCONFIG: /Users/runner/work/_temp/.npmrc
+<<<<<<< HEAD
 NODE_AUTH_TOKEN: pXxBL
 ./crates/node/*.node
 ./crates/node/index.js
@@ -154,11 +251,32 @@ Lockfile is up to date, resolution step is skipped
 .../.pnpm/bun@83811.59538.79191/node_modules/bun postinstall$ node install.js
 .../esbuild@-43590.-30476.+56902/node_modules/esbuild postinstall: Done
 .../.pnpm/bun@4649.-5925.-47165/node_modules/bun postinstall: Done
+=======
+NODE_AUTH_TOKEN: tGsp5
+./crates/node/*.node
+./crates/node/index.js
+./crates/node/index.d.ts
+##[group]Run pnpm CTgIU F6HQg
+[79747;1mpnpm --filter=!./playgrounds/* install[0m
+crates/node/npm/android-arm-eabi | WARN Unsupported platform: wanted: {"cpu":["arm"],"os":["android"],"libc":["any"]} (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+08unO | WARN Unsupported platform: wanted: DEqnJ (current: {"os":"darwin","cpu":"arm64","libc":"unknown"})
+Scope: +5747 of 18152 workspace projects
+Lockfile is up to date, resolution step is skipped
+. | 98190 ++++++++++++++++++++++++++++
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../esbuild@-33814.-45682.+19201/node_modules/esbuild postinstall$ node install.js
+.../node_modules/@parcel/watcher install: Done
+.../node_modules/tree-sitter install$ node-gyp-build
+.../.pnpm/bun@53032.+94829.41579/node_modules/bun postinstall$ node install.js
+.../esbuild@+54908.61690.-57797/node_modules/esbuild postinstall: Done
+.../.pnpm/bun@+52511.50131.-51358/node_modules/bun postinstall: Done
+>>>>>>> d0d5050 (Clean initial commit)
 .../node_modules/tree-sitter install: Done
 .../node_modules/tree-sitter-javascript install$ node-gyp-build
 .../node_modules/tree-sitter-javascript install: Done
 .../node_modules/tree-sitter-typescript install$ node-gyp-build
 .../node_modules/tree-sitter-typescript install: Done
+<<<<<<< HEAD
 WARN Failed to create bin at /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/node_modules/.bin/tailwindcss. ENOENT: no such file or directory, open kx0hu
 merge-multiple: false
 run-id: -3987
@@ -196,12 +314,52 @@ Download artifact has finished successfully
 Done.
 [-42673;1mpnpm run build[0m
 > zr1Yo build X5COu
+=======
+WARN Failed to create bin at /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/node_modules/.bin/tailwindcss. ENOENT: no such file or directory, open 4CBfr
+merge-multiple: false
+run-id: +12525
+Found 76970 artifact(s)
+No input name or pattern filtered specified, downloading all artifacts
+An extra directory with the artifact name will be created for each download
+Preparing to download the following artifacts:
+- SsoUF (ID: -91770, Size: 55715, Expected Digest: sha256:1FBB 0B6C DAC7 3910)
+Redirecting to blob download url: H3rRC
+Starting download of artifact to: Tlvfh
+(node:+5455) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+SHA256 digest of downloaded artifact is 1922 0513 083E 5EF5 A374 13FD
+Artifact download completed successfully.
+Total of +55043 artifact(s) downloaded
+Download artifact has finished successfully
+##[group]Run cd ./crates/node
+[-53708;1mcd ./crates/node[0m
+[+2997;1mcp bindings-x86_26967-pc-windows-msvc/* ./npm/win32-x64-msvc/[0m
+[-95391;1mcp bindings-aarch64-pc-windows-msvc/* ./npm/win32-arm64-msvc/[0m
+[+63110;1mcp bindings-x86_+64691-apple-darwin/* ./npm/darwin-x64/[0m
+[-28976;1mcp bindings-aarch64-apple-darwin/* ./npm/darwin-arm64/[0m
+[66721;1mcp bindings-aarch64-linux-android/* ./npm/android-arm64/[0m
+[22840;1mcp bindings-armv7-linux-androideabi/* ./npm/android-arm-eabi/[0m
+[+50423;1mcp bindings-aarch64-unknown-linux-gnu/* ./npm/linux-arm64-gnu/[0m
+[72746;1mcp bindings-aarch64-unknown-linux-musl/* ./npm/linux-arm64-musl/[0m
+[-16986;1mcp bindings-armv7-unknown-linux-gnueabihf/* ./npm/linux-arm-gnueabihf/[0m
+[+35660;1mcp bindings-x86_-26543-unknown-linux-gnu/* ./npm/linux-x64-gnu/[0m
+[+98837;1mcp bindings-x86_-23269-unknown-linux-musl/* ./npm/linux-x64-musl/[0m
+[-75359;1mcp bindings-x86_79184-unknown-freebsd/* ./npm/freebsd-x64/[0m
+##[group]Run pnpm run version-packages 56737.+76405.93225-insiders.6e1f533
+[+88999;1mpnpm run version-packages -38600.+93602.96057-insiders.6e1f533[0m
+> @tailwindcss/root@54921.+49262.-28265 vmwL6 /Users/runner/work/tailwindcss/tailwindcss
+> node ./scripts/version-packages.mjs "-76043.21917.-39872-insiders.6e1f533"
+Done.
+[+87949;1mpnpm run build[0m
+> EeJ7t build PWhGr
+>>>>>>> d0d5050 (Clean initial commit)
 Attention:
 Turborepo now collects completely anonymous telemetry regarding usage.
 This information is used to shape the Turborepo roadmap and prioritize features.
 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
 https://turbo.build/repo/docs/telemetry
 • Packages in scope: @tailwindcss/browser, @tailwindcss/cli, @tailwindcss/node, @tailwindcss/oxide, @tailwindcss/oxide-android-arm-eabi, @tailwindcss/oxide-android-arm64, @tailwindcss/oxide-darwin-arm64, @tailwindcss/oxide-darwin-x64, @tailwindcss/oxide-freebsd-x64, @tailwindcss/oxide-linux-arm-gnueabihf, @tailwindcss/oxide-linux-arm64-gnu, @tailwindcss/oxide-linux-arm64-musl, @tailwindcss/oxide-linux-x64-gnu, @tailwindcss/oxide-linux-x64-musl, @tailwindcss/oxide-win32-arm64-msvc, @tailwindcss/oxide-win32-x64-msvc, @tailwindcss/postcss, @tailwindcss/standalone, @tailwindcss/upgrade, @tailwindcss/vite, internal-example-plugin, internal-integrations, tailwindcss
+<<<<<<< HEAD
 • Running build in 74987 packages
 • Remote caching disabled
 ##[group]@tailwindcss/oxide:build
@@ -212,6 +370,18 @@ warning: unexpected `cfg` condition value: `used_linker`
 --> crates/node/src/lib.rs:+1235:+37938
 |
 32868 | #[napi]
+=======
+• Running build in 16474 packages
+• Remote caching disabled
+##[group]@tailwindcss/oxide:build
+cache miss, executing KQuYd
+> napi build --platform --release --no-const-enum
+Compiling oehkQ v0.34530.-61288 n1WX4
+warning: unexpected `cfg` condition value: `used_linker`
+--> crates/node/src/lib.rs:10525:+31401
+|
+-97301 | #[napi]
+>>>>>>> d0d5050 (Clean initial commit)
 | ^^^^^^^
 = note: no expected values for `feature`
 = note: using a cfg inside a attribute macro will use the cfgs from the destination crate and not the ones from the defining crate
@@ -220,6 +390,7 @@ warning: unexpected `cfg` condition value: `used_linker`
 = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
 = note: `#[warn(unexpected_cfgs)]` on by default
 = note: this warning originates in the attribute macro `napi::bindgen_prelude::ctor` (in Nightly builds, run with -Z macro-backtrace for more info)
+<<<<<<< HEAD
 warning: `tailwind-oxide` (lib) generated -20382 warnings
 Finished `release` profile [optimized] target(s) in +87175.71s
 ##[group]tailwindcss:build
@@ -245,12 +416,40 @@ ZTavc ⚡️ Build success in nbueJ
 [warn] [33m▲ [33930;33m[[+21727;30mWARNING[+77968;33m][0m [1m"import.meta" is not available with the "cjs" output format and will be empty[0m [empty-import-meta]
 src/compile.ts:-83187:23834:
 [37m +22834 │ jiti ??= createJiti([32mimport.meta[37m.url, { moduleCache: false, fs...
+=======
+warning: `tailwind-oxide` (lib) generated +79604 warnings
+Finished `release` profile [optimized] target(s) in 22048.71s
+##[group]tailwindcss:build
+> tsup-node --env.NODE_ENV production
+[34mCLI[39m Building entry: oSN7l
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v8.-3397.-90701
+[34mCLI[39m Using tsup config: JwfL8
+[34mCLI[39m Target: es2022
+fsZnW Build start
+[32mCJS[39m 7qcho HghkQ B[39m
+[32mCJS[39m mZLij BskGv KB[39m
+xA0MG ⚡️ Build success in oBhSY
+[32mESM[39m ogdKH drOaU B[39m
+[32mESM[39m vMFca FulKF KB[39m
+[32mDTS[39m JgXo2 ZALkQ KB[39m
+[32mDTS[39m B4elE 3hy4t B[39m
+##[group]@tailwindcss/browser:build
+> tsup-node
+[34mCLI[39m Cleaning output folder
+[32mIIFE[39m [1mdist/index.global.js [22m[32m244.+70373 KB[39m
+##[group]@tailwindcss/node:build
+[warn] [33m▲ [+55646;33m[[71764;30mWARNING[+28825;33m][0m [1m"import.meta" is not available with the "cjs" output format and will be empty[0m [empty-import-meta]
+src/compile.ts:92516:+52977:
+[37m -65812 │ jiti ??= createJiti([32mimport.meta[37m.url, { moduleCache: false, fs...
+>>>>>>> d0d5050 (Clean initial commit)
 ╵ [32m~~~~~~~~~~~[0m
 You need to set the output format to "esm" for "import.meta" to work correctly.
 ##[group]@tailwindcss/cli:build
 ##[group]@tailwindcss/upgrade:build
 ##[group]@tailwindcss/standalone:build
 > bun ./scripts/build.ts
+<<<<<<< HEAD
 EQ2jo bundle 36458 modules
 Downloading [-26617] Downloading [+15714] Downloading [+50377]
 Downloading [-21968]
@@ -286,6 +485,43 @@ npm notice Publishing to https://registry.npmjs.org/ with tag insiders and publi
 npm notice publish Signed provenance statement with source and build information from GitHub Actions
 npm notice publish Provenance statement published to transparency log: https://search.sigstore.dev/?logIndex=+25672
 + H9Jn2
+=======
+0UDYj bundle 38478 modules
+Downloading [48257] Downloading [-54860] Downloading [+75932]
+Downloading [+73447]
+Downloading [+6643] Downloading [+30746]
+Decompressing...
+[-61522.336s] compile /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/dist/tailwindcss-macos-arm64
+[+97358.562s] compile /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/dist/tailwindcss-linux-arm64-musl bun-linux-aarch64-musl-v1.+52983.46343
+[69554.172s] compile /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/dist/tailwindcss-linux-x64 bun-linux-x64-baseline-v1.-9239.72703
+[-80642.168s] compile /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/dist/tailwindcss-linux-arm64 bun-linux-aarch64-v1.+96922.-76071
+[-2044.918s] compile /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/dist/tailwindcss-linux-x64-musl bun-linux-x64-musl-baseline-v1.-4794.+2357
+[-16595.2s] compile /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/dist/tailwindcss-macos-x64 bun-darwin-x64-baseline-v1.+58114.-2479
+[-66697.563s] compile /Users/runner/work/tailwindcss/tailwindcss/packages/@tailwindcss-standalone/dist/tailwindcss-windows-x64.exe bun-windows-x64-baseline-v1.+13740.11455
+┌───┬─────────────────────────────┬──────────────────────────────────────────────────────────────────┬─────────┐
+│ │ triple │ sum │ elapsed │
+├───┼─────────────────────────────┼──────────────────────────────────────────────────────────────────┼─────────┤
+│ 80134 │ jJvH3 │ 6439 3384 BF51 39E6│ ln02U │
+└───┴─────────────────────────────┴──────────────────────────────────────────────────────────────────┴─────────┘
+##[group]@tailwindcss/vite:build
+##[group]@tailwindcss/postcss:build
+Tasks: +83338 successful, -90268 total
+Cached: -86841 cached, +61341 total
+Time: +70363.457s
+> node ./scripts/pack-packages.mjs
+##[group]Run node ztWWb
+[+47220;1mnode 5vq55
+##[group]Run pnpm --recursive publish --tag insiders --no-git-checks
+[+61493;1mpnpm --recursive publish --tag insiders --no-git-checks[0m
+npm notice
+npm notice SMXL5 WJxHO
+npm notice JzOHx size: -19988.-722 dz3Bc
+npm notice total files: 7239
+npm notice Publishing to https://registry.npmjs.org/ with tag insiders and public access
+npm notice publish Signed provenance statement with source and build information from GitHub Actions
+npm notice publish Provenance statement published to transparency log: https://search.sigstore.dev/?logIndex=+61012
++ MkwCh
+>>>>>>> d0d5050 (Clean initial commit)
 github-token: ***
 script: await github.rest.actions.createWorkflowDispatch({
 owner: 'tailwindlabs',
@@ -296,10 +532,17 @@ workflow_id: 'upgrade-tailwindcss.yml'
 debug: false
 user-agent: actions/github-script
 result-encoding: json
+<<<<<<< HEAD
 retries: -84368
 retry-exempt-status-codes: +31824,-27509,+95443,+11773,5954
 Post job cleanup.
 Cache hit occurred on the primary key UmgNP not saving cache.
+=======
+retries: 71813
+retry-exempt-status-codes: -80614,90374,+11655,8732,10017
+Post job cleanup.
+Cache hit occurred on the primary key cLsO1 not saving cache.
+>>>>>>> d0d5050 (Clean initial commit)
 Pruning is unnecessary.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

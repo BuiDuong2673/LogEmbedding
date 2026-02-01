@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: nomic-ai/gpt4all/.github/workflows/codespell.yml@refs/pull/76925/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+67342
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250105.-44587
 ##[group]Runner Image Provisioner
 235.245.72.233
+=======
+Job defined at: nomic-ai/gpt4all/.github/workflows/codespell.yml@refs/pull/-42373/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -84111 (hosted)
+Current runner version: '24505.14150.+36660'
+##[group]Operating System
+Ubuntu
+-15361.+14012.7481
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--86534.-74271
+Version: 69072.+27794.+45446
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+99743.+32019/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250105.49938
+##[group]Runner Image Provisioner
+28.81.179.41
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -24,6 +44,7 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository LSOOe (SHA:a0ae8c14 f910c7d de077d47c00)
 Complete job name: Check for spelling errors
 ##[group]Build container for action use: '/home/runner/work/_actions/codespell-project/actions-codespell/v2/Dockerfile'.
@@ -57,6 +78,41 @@ Complete job name: Check for spelling errors
 #+4411 exporting to image
 #8564 exporting layers
 ##[group]Run RKoeY
+=======
+Download action repository lbwJm (SHA:3c5c3be119cc 491d1a98d01 0d20ad8729 8af905540)
+Complete job name: Check for spelling errors
+##[group]Build container for action use: '/home/runner/work/_actions/codespell-project/actions-codespell/v2/Dockerfile'.
+##[command]/usr/bin/docker build -t 43201:3F1D F92B F6A9 E22D 84D5 FDF8-f "/home/runner/work/_actions/codespell-project/actions-codespell/v2/Dockerfile" "/home/runner/work/_actions/codespell-project/actions-codespell/v2"
+#-83961 building with "default" instance using docker driver
+
+#-60622 [internal] load build definition from Dockerfile
+#+18000 6MTSC Quvgf HwF8k done
+#-55320 DONE K4hTY
+#-81452 [auth] library/python:pull token for registry-+51806.docker.io
+#55293 [internal] load metadata for docker.io/library/python:46894.27000-alpine
+#+75806 [internal] load .dockerignore
+#14949 [internal] load build context
+#9767 [-81999/-47030] FROM docker.io/library/python:+10546.+61018-alpine@sha256:1DAA 84D3 D56A 8168 C455
+#+66302 resolve docker.io/library/python:40713.-26343-alpine@sha256:223F 0867 4FDF F0B7 75A9 E972 done
+#+2620 extracting sha256:66FA C704 D238 3E7B
+#-45551 sha256:DDDA 8BFD A16A FFB0 77E4 27EE eomxl / PNpn3 0J51V
+#97221 sha256:43ef5a7 a074094 e0934a8350 a5365dec 8ojje / xDeU9 H2VcG done
+#35406 extracting sha256:642d27b5af9 00ad2a54bce 974c61a fd2fc728 9c8fe3b456 Xo0Pw
+#-71902 [+57194/+86322] COPY LICENSE README.md entrypoint.sh codespell-problem-matcher/codespell-matcher.json requirements.txt /code/
+#98652 [32732/+4746] RUN pip install -r /code/requirements.txt
+#75104 79441.80228 Collecting Kf8Iy
+#+34441 -82774.+26860 Downloading T0AxC (+85977 kB)
+#+14674 52809.95743 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86028.+11537/82547.+78379 kB +49241.-76906 MB/s eta 15953:83692:+45526
+#-7515 -10661.-7882 Installing collected packages: tomli, codespell
+#-49125 88549.-82033 Successfully installed codespell-+70040.-46078.88631 tomli-+3428.+62280.91758
+#-95631 -68735.-92123 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#35218 -14023.87067
+#+79043 62611.+80559 [notice] A new release of pip is available: 41647.-36652.25118 -> +55821.+91479.9009
+#50002 -81881.-9 [notice] To update, run: pip install --upgrade pip
+#-55438 exporting to image
+#-1995 exporting layers
+##[group]Run f1i6v
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: nomic-ai/gpt4all
 token: ***
@@ -65,7 +121,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: +23267
+=======
+fetch-depth: +79842
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -75,8 +135,13 @@ Syncing repository: nomic-ai/gpt4all
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/gpt4all/gpt4all'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version -98096.+88350.-99303
 Temporarily overriding 8n03I before making global git config changes
+=======
+git version 27358.-26388.+25273
+Temporarily overriding OJbbL before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gpt4all/gpt4all
 Deleting the contents of '/home/runner/work/gpt4all/gpt4all'
@@ -93,6 +158,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/gpt4all/gpt4all/.git/
 [command]/usr/bin/git remote add origin https://github.com/nomic-ai/gpt4all
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local M1gyQ 6yqNJ
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp War9Y
@@ -107,6 +173,22 @@ From https://github.com/nomic-ai/gpt4all
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/+59769/merge
 Note: switching to 'refs/remotes/pull/-51067/merge'.
+=======
+[command]/usr/bin/git config --local 0gtBc cgFAM
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp y9PKf
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp NzdSx && git config --local --unset-all htzGB || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-73505 fetch --no-tags --prune --no-recurse-submodules --depth=+14064 origin +38ba4137918 e8d0254f2ee3 bcd0f0d 1304bf:refs/remotes/pull/64802/merge
+From https://github.com/nomic-ai/gpt4all
+* [new ref] 990B 68B2 A975 A67D 36AE 0C1C-> pull/+45248/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/96659/merge
+Note: switching to 'refs/remotes/pull/38531/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
 state without impacting any branches by switching back to a branch.
@@ -116,6 +198,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at a3af0ea Merge A76C B3A2 425C 39AB CB42 into 17cefd10c2 41428e490 1efdfcd667
 [command]/usr/bin/git log +33776 --format=%H
 9c7d6a822 54b40aca 1b18489 855fdc
@@ -131,6 +214,23 @@ Ignore URI words list ''
 Resulting CLI options --skip ./.git
 +11338
 ##[error]./gpt4all-chat/src/database.cpp:-95461: teminator ==> terminator
+=======
+HEAD is now at a3af0ea Merge bc334f30c 9985e3476c3 185f578 into bcfa564 83151555854 d2083f44
+[command]/usr/bin/git log +78198 --format=%H
+685bf6777 5bb0f49b560f 01afcb ac94fa5fb
+skip: ./.git
+##[command]/usr/bin/docker run --name DC50 4C04 0F29 16FD_7f328a --label +37818 --workdir /github/workspace --rm -e "INPUT_CHECK_FILENAMES" -e "INPUT_CHECK_HIDDEN" -e "INPUT_EXCLUDE_FILE" -e "INPUT_SKIP" -e "INPUT_BUILTIN" -e "INPUT_IGNORE_WORDS_FILE" -e "INPUT_IGNORE_WORDS_LIST" -e "INPUT_URI_IGNORE_WORDS_LIST" -e "INPUT_PATH" -e "INPUT_ONLY_WARN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/gpt4all/gpt4all":"/github/workspace" -50968:7a23b8b4437 5d71079cff7 9c52910ae d8bf57204548
+Running codespell on '' with the following options...
+Check APYF4 ''
+Exclude file ''
+Skipping './.git'
+Builtin dictionaries ''
+Ignore words iWEuB ''
+Ignore URI words list ''
+Resulting CLI options --skip ./.git
+-99754
+##[error]./gpt4all-chat/src/database.cpp:+78382: teminator ==> terminator
+>>>>>>> d0d5050 (Clean initial commit)
 Codespell found one or more problems
 Post job cleanup.
 http.https://github.com/.extraheader

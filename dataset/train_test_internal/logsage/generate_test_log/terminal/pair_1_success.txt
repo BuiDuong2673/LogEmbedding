@@ -2,6 +2,7 @@ Requested labels: ubuntu-latest
 Job defined at: microsoft/terminal/.github/workflows/addToProject.yml@refs/heads/main
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
+<<<<<<< HEAD
 Job is about to start running on the hosted runner: GitHub Actions +39807 (hosted)
 Current runner version: '13107.-86152.+58033'
 ##[group]Operating System
@@ -16,12 +17,29 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-14253
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+68954
 ##[group]Runner Image Provisioner
 29.124.218.61
+=======
+Job is about to start running on the hosted runner: GitHub Actions 52005 (hosted)
+Current runner version: '-82241.+28487.-83062'
+##[group]Operating System
+Ubuntu
+-96063.17307.-39452
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-47846.-34490
+Version: +5101.39930.5616
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/55476.57238/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+24816
+##[group]Runner Image Provisioner
+37.0.58.4
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Metadata: read
 Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository 'actions/add-to-project@v1.+22024.35937' (SHA:92a8a9c6d296 dfb20e7 b0fd11bc36bc)
 Complete job name: Add issue to project
 ##[group]Run actions/add-to-project@v1.-71141.-2017
@@ -31,4 +49,15 @@ github-token: ***
 labeled: Issue-Feature, Needs-Triage, Needs-Author-Feedback, Issue-Scenario
 label-operator: NOT
 Skipping issue 29254 because it contains one of the labels: issue-feature, needs-triage, needs-author-feedback, issue-scenario
+=======
+Download action repository 'actions/add-to-project@v1.-87081.-70710' (SHA:b03ac5c 5f26e99e44c7 24b9c3b2a9)
+Complete job name: Add issue to project
+##[group]Run actions/add-to-project@v1.-44851.92305
+with:
+project-url: https://github.com/orgs/microsoft/projects/-19147
+github-token: ***
+labeled: Issue-Feature, Needs-Triage, Needs-Author-Feedback, Issue-Scenario
+label-operator: NOT
+Skipping issue +92291 because it contains one of the labels: issue-feature, needs-triage, needs-author-feedback, issue-scenario
+>>>>>>> d0d5050 (Clean initial commit)
 Cleaning up orphan processes

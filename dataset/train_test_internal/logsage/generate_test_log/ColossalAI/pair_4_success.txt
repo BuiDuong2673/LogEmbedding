@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requested labels: gpu-h20--61917
 Job defined at: hpcaitech/ColossalAI/.github/workflows/build_on_pr.yml@refs/pull/67658/merge
 Waiting for a runner to pick up this job...
@@ -6,6 +7,16 @@ Current runner version: '99359.-96344.-20931'
 Runner name: 'gpu-h20-+96466'
 Runner group name: 'Default'
 Machine name: 'gpu-h20-63607'
+=======
+Requested labels: gpu-h20-+50695
+Job defined at: hpcaitech/ColossalAI/.github/workflows/build_on_pr.yml@refs/pull/+62323/merge
+Waiting for a runner to pick up this job...
+Job is about to start running on the runner: gpu-h20--66279 (repository)
+Current runner version: '+2883.-19179.-52792'
+Runner name: 'gpu-h20-20258'
+Runner group name: 'Default'
+Machine name: 'gpu-h20-34219'
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -24,6 +35,7 @@ SecurityEvents: read
 Statuses: read
 ##[endgroup]
 Secret source: None
+<<<<<<< HEAD
 Runner is running behind proxy server 'http://vpn.luchentech.com:+2336' for all QtE8r requests.
 Prepare workflow directory
 Prepare all required actions
@@ -34,10 +46,23 @@ Complete job name: Build and Test Colossal-AI
 ##[command]/usr/bin/docker version --format RL7Y2
 '-25526.-66194'
 Docker GbSsI API version: '+59468.+3613'
+=======
+Runner is running behind proxy server 'http://vpn.luchentech.com:18069' for all S95x8 requests.
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository SwGEX (SHA:02BE 2A16 3146 DE41 FBFE)
+Complete job name: Build and Test Colossal-AI
+##[group]Checking docker version
+##[command]/usr/bin/docker version --format ErVeg
+'+29704.+15197'
+Docker ycZtP API version: '-36587.91349'
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Clean up resources from previous jobs
 ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=81704a"
 ##[command]/usr/bin/docker network prune --force --filter "label=81704a"
 ##[group]Create local container network
+<<<<<<< HEAD
 ##[command]/usr/bin/docker network create --label 81704a github_network_C427 CAF0 7DD1 C482 A85B
 E2BA 808E 2247 3EBF
 ##[group]Starting job container
@@ -55,10 +80,30 @@ HTTP_PROXY=http://vpn.luchentech.com:-18836
 http_proxy=http://vpn.luchentech.com:-30842
 HTTPS_PROXY=http://vpn.luchentech.com:-84424
 https_proxy=http://vpn.luchentech.com:-99377
+=======
+##[command]/usr/bin/docker network create --label 81704a github_network_783149d590f 92bcb06f4 cab32e07
+5428 1A81 C4B9 FEEC
+##[group]Starting job container
+##[command]/usr/bin/docker pull image-cloud.luchentech.com/hpcaitech/pytorch-cuda:83863.808.-91949-91519.45978.+96583
+97874.9544.78995-86619.35073.+82474: Pulling from hpcaitech/pytorch-cuda
+Digest: sha256:980E A187 5BE8 D194 E9E5
+Status: Image is up to date for image-cloud.luchentech.com/hpcaitech/pytorch-cuda:+97625.+99259.+44789-36473.98007.-34672
+image-cloud.luchentech.com/hpcaitech/pytorch-cuda:-96880.39922.-22014-+82893.-75131.-77371
+##[command]/usr/bin/docker create --name BC6E 3653 2769 BDA1 1FE3_imagecloudluchentechcomhpcaitechpytorchcuda2221210_13ad91 --label 81704a --workdir /__w/ColossalAI/ColossalAI --network github_network_1B48 91E2 941D F5D8--gpus all --rm -v /dev/shm -v /data/scratch:/data/scratch -e "HTTP_PROXY=http://vpn.luchentech.com:44439" -e "http_proxy=http://vpn.luchentech.com:+44147" -e "HTTPS_PROXY=http://vpn.luchentech.com:+93134" -e "https_proxy=http://vpn.luchentech.com:69564" -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/root/actions-runner/github-gpu":"/__w" -v "/root/actions-runner/externals":"/__e":ro -v "/root/actions-runner/github-gpu/_temp":"/__w/_temp" -v "/root/actions-runner/github-gpu/_actions":"/__w/_actions" -v "/root/actions-runner/github-gpu/_tool":"/__w/_tool" -v "/root/actions-runner/github-gpu/_temp/_github_home":"/github/home" -v "/root/actions-runner/github-gpu/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" image-cloud.luchentech.com/hpcaitech/pytorch-cuda:-18306.+97792.79844-21527.+92904.-16959 "-f" "/dev/null"
+##[command]/usr/bin/docker start 7D4E EF0D 01E1 A331 A60F 6F71
+##[command]/usr/bin/docker ps --all --filter id=398b5810358e 4d74a673c 336a9fe79c3a 7873ea6 003800971a--filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+5876499 272bf51c ec6ee8 Up Less than a second
+##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 63C5 6E85 6B27 E5E3
+HTTP_PROXY=http://vpn.luchentech.com:78728
+http_proxy=http://vpn.luchentech.com:+87110
+HTTPS_PROXY=http://vpn.luchentech.com:2434
+https_proxy=http://vpn.luchentech.com:32512
+>>>>>>> d0d5050 (Clean initial commit)
 HOME=/github/home
 GITHUB_ACTIONS=true
 CI=true
 PATH=/opt/conda/envs/pytorch/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+<<<<<<< HEAD
 NVARCH=x86_+25326
 NVIDIA_REQUIRE_CUDA=cuda>=+22489.+67383 brand=tesla,driver>=+65167,driver<+29073 brand=unknown,driver>=77777,driver<81833 brand=nvidia,driver>=-56756,driver<10016 brand=nvidiartx,driver>=4789,driver<69749 brand=geforce,driver>=+43501,driver<+99712 brand=geforcertx,driver>=-99415,driver<9590 brand=quadro,driver>=+89820,driver<+56285 brand=quadrortx,driver>=90259,driver<+61481 brand=titan,driver>=+79810,driver<39101 brand=titanrtx,driver>=-7055,driver<+80516 brand=tesla,driver>=-16801,driver<63488 brand=unknown,driver>=+93829,driver<-25959 brand=nvidia,driver>=95747,driver<+55592 brand=nvidiartx,driver>=-44372,driver<-48710 brand=geforce,driver>=+27350,driver<8172 brand=geforcertx,driver>=+81550,driver<-83774 brand=quadro,driver>=-57541,driver<54599 brand=quadrortx,driver>=-88150,driver<17236 brand=titan,driver>=-81600,driver<+27307 brand=titanrtx,driver>=-38751,driver<+13270
 NV_CUDA_CUDART_VERSION=+38322.63955.+76806-+65781
@@ -107,10 +152,61 @@ CUDA_HOME=/usr/local/cuda
 with:
 repository: kfAny
 path: kRdXd
+=======
+NVARCH=x86_49730
+NVIDIA_REQUIRE_CUDA=cuda>=42330.-5614 brand=tesla,driver>=47788,driver<-66949 brand=unknown,driver>=20580,driver<+38678 brand=nvidia,driver>=23172,driver<-62942 brand=nvidiartx,driver>=77537,driver<60010 brand=geforce,driver>=72187,driver<+74029 brand=geforcertx,driver>=45329,driver<+9383 brand=quadro,driver>=+25328,driver<28282 brand=quadrortx,driver>=+76066,driver<37013 brand=titan,driver>=-10653,driver<-86676 brand=titanrtx,driver>=-52868,driver<+35563 brand=tesla,driver>=15947,driver<-6505 brand=unknown,driver>=+61230,driver<26647 brand=nvidia,driver>=42104,driver<80413 brand=nvidiartx,driver>=+2419,driver<-10796 brand=geforce,driver>=+68562,driver<72150 brand=geforcertx,driver>=+67067,driver<-74653 brand=quadro,driver>=+1890,driver<+71675 brand=quadrortx,driver>=+3477,driver<31482 brand=titan,driver>=+56161,driver<+51496 brand=titanrtx,driver>=+40951,driver<3673
+NV_CUDA_CUDART_VERSION=5017.57556.-63256-88810
+NV_CUDA_COMPAT_PACKAGE=cuda-compat-+621-20431
+CUDA_VERSION=+62202.88740.99752
+LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+NVIDIA_VISIBLE_DEVICES=all
+NVIDIA_DRIVER_CAPABILITIES=compute,utility
+NV_CUDA_LIB_VERSION=-22790.5936.-35495-10978
+NV_NVTX_VERSION=63287.+61300.-30655-89303
+NV_LIBNPP_VERSION=71.93.124.80+23860
+NV_LIBNPP_PACKAGE=libnpp-+36927-67245=113.31.211.17-85146
+NV_LIBCUSPARSE_VERSION=73.118.72.2095337
+NV_LIBCUBLAS_PACKAGE_NAME=libcublas-81330-61057
+NV_LIBCUBLAS_VERSION=113.244.247.10556183
+NV_LIBCUBLAS_PACKAGE=libcublas--74482-58506=251.152.40.11719421
+NV_LIBNCCL_PACKAGE_NAME=libnccl2
+NV_LIBNCCL_PACKAGE_VERSION=27290.+67923.6634-+10208
+NCCL_VERSION=+31358.4947.42900-35674
+NV_LIBNCCL_PACKAGE=libnccl2=70040.-69134.14698--66546+cuda12.55895
+NVIDIA_PRODUCT_NAME=CUDA
+NVIDIA_CUDA_END_OF_LIFE=95447
+NV_CUDA_CUDART_DEV_VERSION=56860.44619.+88632--16270
+NV_NVML_DEV_VERSION=31467.98408.+9545--61525
+NV_LIBCUSPARSE_DEV_VERSION=79.77.167.7340373
+NV_LIBNPP_DEV_VERSION=35.6.181.11949165
+NV_LIBNPP_DEV_PACKAGE=libnpp-dev--48548-+21653=156.171.55.6312714
+NV_LIBCUBLAS_DEV_VERSION=127.169.143.869436
+NV_LIBCUBLAS_DEV_PACKAGE_NAME=libcublas-dev--28071-+23976
+NV_LIBCUBLAS_DEV_PACKAGE=libcublas-dev--95507-+30515=245.236.120.251-3142
+NV_CUDA_NSIGHT_COMPUTE_VERSION=+27278.-73664.+37509--37635
+NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE=cuda-nsight-compute-24893-9445=+23311.-74003.+69863-24327
+NV_NVPROF_VERSION=-79073.-33459.-72455--70231
+NV_NVPROF_DEV_PACKAGE=cuda-nvprof-+50615-15267=86962.-17485.90978-83513
+NV_LIBNCCL_DEV_PACKAGE_NAME=libnccl-dev
+NV_LIBNCCL_DEV_PACKAGE_VERSION=-64207.+91719.-51368-+29727
+NV_LIBNCCL_DEV_PACKAGE=libnccl-dev=-92382.+3514.31413-72429+cuda12.+12203
+LIBRARY_PATH=/usr/local/cuda/lib64/stubs
+NV_CUDNN_VERSION=239.53.248.12
+NV_CUDNN_PACKAGE_NAME=libcudnn8
+NV_CUDNN_PACKAGE=libcudnn8=247.23.8.238+44712+cuda12.+21646
+NV_CUDNN_PACKAGE_DEV=libcudnn8-dev=250.187.33.19095999+cuda12.-73752
+CUDA_HOME=/usr/local/cuda
+##[group]Waiting for all services to be ready
+##[group]Run uFzMf
+with:
+repository: XmRcl
+path: ckUIN
+>>>>>>> d0d5050 (Clean initial commit)
 token: ***
 ssh-strict: true
 persist-credentials: true
 clean: true
+<<<<<<< HEAD
 fetch-depth: +52213
 lfs: false
 submodules: false
@@ -124,11 +220,27 @@ git version +41230.30731.-17146
 Temporarily overriding CGN6H before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory dceSj
+=======
+fetch-depth: +98364
+lfs: false
+submodules: false
+set-safe-directory: true
+##[command]/usr/bin/docker exec 69cd5192b f01fe7adc8df 2d2ff1 sh -c "cat /etc/*release | grep ^ID"
+Syncing repository: q0mgO
+##[group]Getting Git version info
+Working directory is qODEv
+[command]/usr/bin/git version
+git version 27135.-45350.-21988
+Temporarily overriding 5Edmr before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory F7LNa
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Initializing the repository
 [command]/usr/bin/git init /__w/ColossalAI/ColossalAI/TensorNVMe
 Initialized empty Git repository in /__w/ColossalAI/ColossalAI/TensorNVMe/.git/
 [command]/usr/bin/git remote add origin https://github.com/hpcaitech/TensorNVMe
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local oDCV7 3jOI9
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp AQEED
@@ -143,11 +255,28 @@ remote: aOEBv objects: 6miJE vCO6V
 remote: cZgrX objects: +35391% (+60281/-43883), done.
 remote: Total +96216 (delta -13429), reused 39470 (delta +84189), pack-reused 3597 (from +29161)
 From Mt1aC
+=======
+[command]/usr/bin/git config --local tIEk7 0HHSS
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp ohv61
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp y895D && git config --local --unset-all HPkw7 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Determining the vLlZC tWxJz
+Retrieving the default branch name
+Default branch 'main'
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=15843 fetch --no-tags --prune --progress --no-recurse-submodules --depth=+78845 origin RuesB
+remote: l9TZk objects: Yb74m Wzs6n
+remote: dlPUD objects: +60975% (-27470/-74049), done.
+remote: Total -35838 (delta 91925), reused 73992 (delta 55130), pack-reused +57395 (from 84989)
+From TF3re
+>>>>>>> d0d5050 (Clean initial commit)
 * [new branch] main -> origin/main
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
 Switched to a new branch 'main'
 Branch 'main' set up to track remote branch 'main' from 'origin'.
+<<<<<<< HEAD
 [command]/usr/bin/git log -75481 --format='%H'
 '8B53 603B D843 82CA A772'
 ##[group]Run if [ -d /github/home/tensornvme_cache ] && [ ! -z "$(ls -A /github/home/tensornvme_cache/)" ]; then
@@ -163,12 +292,30 @@ YPYrF pip install -v EmLAm .[0m
 Channels:
 - H8WGT
 Platform: linux-+43635
+=======
+[command]/usr/bin/git log 94292 --format='%H'
+'df38860 719f510d7 db9784553 3ae864'
+##[group]Run if [ -d /github/home/tensornvme_cache ] && [ ! -z "$(ls -A /github/home/tensornvme_cache/)" ]; then
+[+57978;1mif [ -d h74qC ] && [ ! -z "$(ls -A PRuwk ]; then[0m
+[-43975;1m cp -p -r IQDJT 4xGwq
+[76007;1mfi[0m
+shell: bash --noprofile --norc -e -o pipefail {-12867}
+##[group]Run cd TensorNVMe
+[+83672;1mcd TensorNVMe[0m
+[-80674;1mconda install cmake[0m
+[55191;1mpip install -r requirements.txt[0m
+2g27d pip install -v 81ppj .[0m
+Channels:
+- LMcBh
+Platform: linux-+19790
+>>>>>>> d0d5050 (Clean initial commit)
 Collecting package metadata (repodata.json): ...working... done
 Solving environment: ...working... done
 
 ## Package Plan ##
 environment location: /opt/conda
 added / updated specs:
+<<<<<<< HEAD
 The following packages will be uxeFy
 package | build
 ---------------------------|-----------------
@@ -197,11 +344,42 @@ certifi -72788.+25989.-60272-py311h06a4308_+29452 --> 47992.+364.-29301-py311h06
 conda -13647.-45836.-5778-py311h06a4308_+37225 --> -30609.35229.-67632-py311h06a4308_+19935
 openssl 91223.-7431.+91654-h7f8727e_+8351 --> 76674.23623.-78687-h5eee18b_-4459
 xz -61639.+71383.27457-h5eee18b_-9713 --> -65069.+42281.-18873-h5eee18b_+56893
+=======
+The following packages will be kvOI4
+package | build
+---------------------------|-----------------
+archspec-+57189.18389.24881 | pyhd3eb1b0_+45100 -65790 KB
+ca-certificates-+5269.+64003.-3602 | h06a4308_-94515 +57635 KB
+certifi-40323.78171.+64617 | py311h06a4308_5305 99793 KB
+cmake-+20157.-29918.+68629 | h27e300b_74571 53606.+86394 MB
+conda-+45457.+68856.69629 | py311h06a4308_61309 -47074.-58810 MB
+expat--34558.-30955.+34842 | h6a678d5_+68417 807 KB
+frozendict--60446.86219.50111 | py311h06a4308_-54516 -21897 KB
+libuv-+67935.78294.-29716 | h5eee18b_+16288 +94469 KB
+openssl--29235.31077.-79406 | h5eee18b_+4010 -83799.22018 MB
+rhash--52619.+87728.-9619 | hdbd6064_84841 -41681 KB
+xz-+23595.89048.-22248 | h5eee18b_17758 +33801 KB
+------------------------------------------------------------
+Total: -26379.-5927 MB
+The following NEW packages will be INSTALLED:
+cmake pkgs/main/linux--25867::cmake-10044.74739.+63978-h27e300b_9162
+expat pkgs/main/linux-37831::expat-85192.91673.88146-h6a678d5_91177
+frozendict pkgs/main/linux-+47725::frozendict-+94267.37158.46549-py311h06a4308_+62089
+libuv pkgs/main/linux-+25090::libuv-77452.450.5612-h5eee18b_89322
+rhash pkgs/main/linux--11569::rhash--77721.+21127.+47738-hdbd6064_-6837
+archspec +1411.34400.759-pyhd3eb1b0_+65819 --> +44468.-21364.+23958-pyhd3eb1b0_-19961
+ca-certificates -42686.49036.-47589-h06a4308_-49992 --> +40855.+73053.89507-h06a4308_72094
+certifi +81867.-63650.+45401-py311h06a4308_26254 --> +58692.+30080.-16016-py311h06a4308_+22832
+conda +86350.+46917.69881-py311h06a4308_-9401 --> +60810.72580.+84558-py311h06a4308_88472
+openssl 83070.20198.91797-h7f8727e_-99336 --> 86887.-36548.+56411-h5eee18b_+44550
+xz +82966.+7728.-85775-h5eee18b_+24692 --> -63950.+50122.-73765-h5eee18b_-32712
+>>>>>>> d0d5050 (Clean initial commit)
 Proceed ([y]/n)?
 Downloading and Extracting Packages: ...working... done
 Preparing transaction: ...working... done
 Verifying transaction: ...working... done
 Executing transaction: ...working... done
+<<<<<<< HEAD
 Requirement already satisfied: kCruA in nJkmC (from 0g0cq zouJ0 (line 87721)) hqaQN
 Collecting q3y00 (from 8qqNq b559v (line -10189))
 Downloading UT2Ds 8vq4Q kB)
@@ -225,6 +403,31 @@ Requirement already satisfied: 1N9XT in /opt/conda/envs/pytorch/lib/python3.2253
 Building wheels for collected packages: oNohF
 Building wheel for kzH9t 7bkWc started
 -- The CXX compiler identification is GNU -25680.+12426.-66056
+=======
+Requirement already satisfied: JyVSl in T4KSZ (from skmXT VILeT (line -52631)) nF8Sk
+Collecting MLRSw (from Bk7Aj wHfqr (line -27746))
+Downloading wmbB7 8DiwM kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +61857.-27779/-78169.69429 DQZRV -9657.51185 wHZcZ eta 22567:-84725:-81916
+Installing collected packages: nfGnf
+Successfully installed JQUey
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Using pip -4348.8321 from /opt/conda/envs/pytorch/lib/python3.+46813/site-packages/pip (python 33664.+4045)
+Processing /__w/ColossalAI/ColossalAI/TensorNVMe
+Preparing metadata bffoW started
+Running command python setup.py RSGJq
+running 4m78O
+creating cd9gL
+writing aeKGU
+writing 8e1bl to eHX9H
+writing FoQRx WeS2f to BCk40
+writing manifest file h6zWK
+reading manifest yjHuh 0f9xC
+Preparing metadata 1p9PO finished with status 'done'
+Requirement already satisfied: xkkRZ in /opt/conda/envs/pytorch/lib/python3.5032/site-packages (from BaCBF mklt2
+Building wheels for collected packages: 4vwYr
+Building wheel for WMMts yHnDq started
+-- The CXX compiler identification is GNU -78585.35082.-46358
+>>>>>>> d0d5050 (Clean initial commit)
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
 -- Check for working CXX compiler: /usr/bin/c++ - skipped
@@ -232,6 +435,7 @@ Building wheel for kzH9t 7bkWc started
 -- Detecting CXX compile features - done
 liburing is not found, install in /github/home/.tensornvme
 libaio is not found, install in /github/home/.tensornvme
+<<<<<<< HEAD
 -- E72bz done yCfv4
 -- Build files have been written to: /__w/ColossalAI/ColossalAI/TensorNVMe/cmake-build
 [ 46405%] Creating directories for 'extern_aio'
@@ -258,11 +462,40 @@ In file included from cECtJ
 -3699 | PthreadAsyncIO(unsigned int n_entries, unsigned int n_tasks)
 g++ -pthread -B /opt/conda/envs/pytorch/compiler_compat -shared -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_92688-cpython-+77555/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/aio.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_-46671-cpython-+58093/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/async_file_io.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_-71767-cpython-84680/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/backend.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_+12335-cpython--47776/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/offload.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_92610-cpython--56219/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/pthread_backend.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_-74619-cpython-22166/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/py_api.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_-8640-cpython-+28705/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/space_mgr.o -L/github/home/.tensornvme/lib -L/opt/conda/envs/pytorch/lib/python3.-19787/site-packages/torch/lib -laio -lc10 -ltorch -ltorch_cpu -ltorch_python -o build/lib.linux-x86_12147-cpython-12403/tensornvme/_C.cpython-79727-x86_17607-linux-gnu.so
 /opt/conda/envs/pytorch/lib/python3.-99221/site-packages/setuptools/_distutils/cmd.py:+43036: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+=======
+-- wCluO done ZHSmZ
+-- Build files have been written to: /__w/ColossalAI/ColossalAI/TensorNVMe/cmake-build
+[ 36879%] Creating directories for 'extern_aio'
+[ 83959%] Performing download step (git clone) for 'extern_aio'
+Cloning into 'libaio'...
+HEAD is now at 1b18bfa bump libaio version
+[ +41763%] SegVx Dy3Hi step for 'extern_aio'
+ar: creating libaio.a
+[-66628%] Completed 'extern_aio'
+[85967%] Built target extern_aio
+/github/home/.bashrc is changed, please source it.
+copying bqlJg -> lmJey
+building vAc28 extension
+Emitting ninja build file lYMst
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[61134/-27263] c++ -MMD -MF ovEva -pthread -B /opt/conda/envs/pytorch/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /opt/conda/envs/pytorch/include -fPIC -O2 -isystem /opt/conda/envs/pytorch/include -fPIC -DDISABLE_URING -I/__w/ColossalAI/ColossalAI/TensorNVMe/csrc -I/__w/ColossalAI/ColossalAI/TensorNVMe/include -I/github/home/.tensornvme/include -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/lib/python3.+57313/site-packages/torch/include -I/opt/conda/envs/pytorch/lib/python3.+88194/site-packages/torch/include/torch/csrc/api/include -I/opt/conda/envs/pytorch/lib/python3.21212/site-packages/torch/include/TH -I/opt/conda/envs/pytorch/lib/python3.+2075/site-packages/torch/include/THC -I/opt/conda/envs/pytorch/include/python3.+14084 -c -c PlscW -o 2JSj5 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=-10531 -std=c+-12820
+In file included from gIYaj
+/__w/ColossalAI/ColossalAI/TensorNVMe/include/pthread_backend.h: In constructor ‘PthreadAsyncIO::PthreadAsyncIO(unsigned int, unsigned int)’:
+/__w/ColossalAI/ColossalAI/TensorNVMe/include/pthread_backend.h:19278:21993: warning: ‘PthreadAsyncIO::total_tasks’ will be initialized after [-Wreorder]
+-12820 | DYjnD XfVCn jTlAb
+| Cat7Q
+/__w/ColossalAI/ColossalAI/TensorNVMe/include/pthread_backend.h:2196:+4089: warning: wPOfr OlSCA c3rxf [-Wreorder]
+26864 | PthreadAsyncIO(unsigned int n_entries, unsigned int n_tasks)
+g++ -pthread -B /opt/conda/envs/pytorch/compiler_compat -shared -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_+96-cpython-58399/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/aio.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_-71673-cpython-58220/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/async_file_io.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_16016-cpython--10727/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/backend.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_+21256-cpython-617/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/offload.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_4779-cpython-+96840/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/pthread_backend.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_+24763-cpython--15789/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/py_api.o /__w/ColossalAI/ColossalAI/TensorNVMe/build/temp.linux-x86_+41850-cpython-57268/__w/ColossalAI/ColossalAI/TensorNVMe/csrc/space_mgr.o -L/github/home/.tensornvme/lib -L/opt/conda/envs/pytorch/lib/python3.+85725/site-packages/torch/lib -laio -lc10 -ltorch -ltorch_cpu -ltorch_python -o build/lib.linux-x86_+17684-cpython--87015/tensornvme/_C.cpython-+36883-x86_+68118-linux-gnu.so
+/opt/conda/envs/pytorch/lib/python3.-11980/site-packages/setuptools/_distutils/cmd.py:69198: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+>>>>>>> d0d5050 (Clean initial commit)
 !!
 ********************************************************************************
 Please avoid running ``setup.py`` directly.
 Instead, use pypa/build, pypa/installer or other
 standards-based tools.
+<<<<<<< HEAD
 See kdiUf for details.
 self.initialize_options()
 installing to build/bdist.linux-x86_-2869/wheel
@@ -276,6 +509,21 @@ Stored in directory: Rckxt
 Successfully built 2T461
 changing mode of eQRxQ to 57754
 [1636;1mcp -p -r rjswh kZTav
+=======
+See g51KD for details.
+self.initialize_options()
+installing to build/bdist.linux-x86_50469/wheel
+Copying YyXbp to qvkQ4
+creating EYgAe and adding 'build/bdist.linux-x86_74264/wheel' to it
+adding gg6Pm
+removing build/bdist.linux-x86_31971/wheel
+Building wheel for ovL96 167XX finished with status 'done'
+Created wheel for 3YvR2 23Tda size=-85972 sha256=376F 40DA C083 F54A 9568 ED04
+Stored in directory: OE8g2
+Successfully built TSGdv
+changing mode of MwZwl to 68211
+[-68460;1mcp -p -r UnjH1 YXDOG
+>>>>>>> d0d5050 (Clean initial commit)
 https://github.com/hpcaitech/ColossalAI
 ##[group]Removing previously created refs, to avoid conflicts
 [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
@@ -286,6 +534,7 @@ HEAD
 Removing TensorNVMe/
 [command]/usr/bin/git reset --hard HEAD
 HEAD is now at 57d7b16a [pre-commit.ci] auto fixes from pre-commit.com hooks
+<<<<<<< HEAD
 + 97e73c5b...1b05602 1ad940b3f cfeb0bf269a-> pull/+11318/merge (forced update)
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/8396/merge
 Warning: you are leaving 55038 commits behind, not connected to
@@ -348,16 +597,85 @@ Successfully installed accelerate-57487.74649.-17170 aiosignal-2465.84916.+58731
 Cloning https://github.com/hpcaitech/pytest-testmon to /tmp/pip-req-build-4yym2l5w
 Running command git clone --filter=blob:none --quiet https://github.com/hpcaitech/pytest-testmon /tmp/pip-req-build-4yym2l5w
 Resolved https://github.com/hpcaitech/pytest-testmon to commit 8C98 BDAD F3E7 A512
+=======
++ 97e73c5b...C65B EBAD 5209 D2C9-> pull/18162/merge (forced update)
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/87429/merge
+Warning: you are leaving +77718 commits behind, not connected to
+any of your branches:
+fWli1 [pre-commit.ci] auto fixes from pre-commit.com hooks
+e92a692c Merge branch 'upgrade-transformers' of github.com:flybird11111/ColossalAI into upgrade-transformers
+a4e5ed99 fix
+... and +20085 more.
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+git branch <new-branch-name> 57d7b16a
+HEAD is now at 15852abe Merge f5f74639f7 3f5b56cac 050ae8befc fada256331e 5af807d08 into 19a7c4 bfe1e2b9ed29 a21d7c759f58 af10d441343 a29177ff
+##[group]Run # -p flag is required to preserve the file timestamp to avoid ninja rebuild
+[+47410;1m# -p flag is required to preserve the file timestamp to avoid ninja rebuild[0m
+##[group]Run BUILD_EXT=-13103 pip install -v -e .
+[-27366;1mpip install --no-cache-dir -r requirements/requirements-test.txt[0m
+Obtaining file:///__w/ColossalAI/ColossalAI
+[extension] Building extensionscpu_adam_x86, layernorm_cuda, moe_cuda, fused_optim_cuda, inference_ops_cuda, scaled_masked_softmax_cuda, scaled_upper_triangle_masked_softmax_cuda
+warning: no files found matching 5s3h2 under directory iMOwD
+adding license file 'LICENSE'
+Collecting Fn1gb (from I8kzn
+Obtaining dependency information for 5kF8p from xeKj0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29394.+28969/-95296.+27784 kB -51829.54637 leeVn eta -79666:82351:+32984
+Downloading jw9Iy (-88411 bytes)
+Downloading nX5Se (+28459.38044 MB)
+Installing collected packages: sentencepiece, distlib, contexttimer, zipp, wrapt, typing-extensions, tqdm, soupsieve, sniffio, safetensors, rpds-py, regex, pygments, pycparser, psutil, protobuf, plumbum, platformdirs, nodeenv, msgpack, mdurl, invoke, identify, h11, frozenlist, exceptiongroup, einops, decorator, cfgv, bcrypt, attrs, annotated-types, virtualenv, uvicorn, typing-inspection, rpyc, referencing, pydantic-core, markdown-it-py, importlib-metadata, huggingface-hub, deprecated, cffi, beautifulsoup4, anyio, aiosignal, tokenizers, starlette, rich, pynacl, pydantic, pre-commit, jsonschema-specifications, google, diffusers, cryptography, bitsandbytes, accelerate, transformers, paramiko, jsonschema, fastapi, ray, peft, galore_torch, fabric, colossalai
+Attempting uninstall: Bvs54
+Found existing installation: mu2bW 41555.-94760.73553
+Uninstalling UEMJH
+Removing file or directory Lnyx3
+Successfully uninstalled kz1Wb
+Running setup.py develop for colossalai
+/opt/conda/envs/pytorch/lib/python3.-88145/site-packages/setuptools/command/develop.py:+96932: EasyInstallDeprecationWarning: easy_install command is deprecated.
+Please avoid running ``setup.py`` and ``easy_install``.
+easy_install.initialize_options(self)
+/opt/conda/envs/pytorch/lib/python3.+97174/site-packages/torch/utils/cpp_extension.py:+58287: UserWarning: There are no g++ version bounds defined for CUDA version +84023.61864
+warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+[-53465/+90283] c++ -MMD -MF /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-75876-cpython--52711/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/x86/cpu_adam.o.d -pthread -B /opt/conda/envs/pytorch/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /opt/conda/envs/pytorch/include -fPIC -O2 -isystem /opt/conda/envs/pytorch/include -fPIC -I/__w/ColossalAI/ColossalAI/extensions/csrc/ -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/lib/python3.+19483/site-packages/torch/include -I/opt/conda/envs/pytorch/lib/python3.57409/site-packages/torch/include/torch/csrc/api/include -I/opt/conda/envs/pytorch/lib/python3.-12274/site-packages/torch/include/TH -I/opt/conda/envs/pytorch/lib/python3.47692/site-packages/torch/include/THC -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/include/python3.67311 -c -c /__w/ColossalAI/ColossalAI/extensions/csrc/kernel/x86/cpu_adam.cpp -o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_27322-cpython-+39129/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/x86/cpu_adam.o -O3 -DVERSION_GE_+99344_64508 -DVERSION_GE_-43887_46847 -DVERSION_GE_-43983_+84006 -std=c+39241 -std=c+-10188 -lcudart -lcublas -g -Wno-reorder -fopenmp -march=native -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=cpu_adam_x86 -D_GLIBCXX_USE_CXX11_ABI=-38190
+/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/x86/cpu_adam.cpp:+89736: warning: ignoring #pragma unroll [-Wunknown-pragmas]
+|
+from vwuPm
+/opt/conda/envs/pytorch/lib/python3.-40995/site-packages/torch/include/pybind11/pybind11.h: In instantiation of ‘class pybind11::class_<Adam_Optimizer>’:
+/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/x86/cpu_adam.cpp:-75732:+37298: required from here
+/opt/conda/envs/pytorch/lib/python3.21117/site-packages/torch/include/pybind11/pybind11.h:+95392:89122: warning: ‘pybind11::class_<Adam_Optimizer>’ declared with greater visibility than its base ‘pybind11::detail::generic_type’ [-Wattributes]
+-14979 | class class_ : public detail::generic_type {
+g++ -pthread -B /opt/conda/envs/pytorch/compiler_compat -shared -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-54558-cpython-+77007/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/x86/cpu_adam.o -L/opt/conda/envs/pytorch/lib/python3.-50100/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_+41551-cpython-5800/colossalai/_C/cpu_adam_x86.cpython-+41082-x86_-48350-linux-gnu.so
+[-65253/85111] c++ -MMD -MF ZPgEK -pthread -B /opt/conda/envs/pytorch/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /opt/conda/envs/pytorch/include -fPIC -O2 -isystem /opt/conda/envs/pytorch/include -fPIC b0bdK vT0wO -I/opt/conda/envs/pytorch/lib/python3.27736/site-packages/torch/include -I/opt/conda/envs/pytorch/lib/python3.-62586/site-packages/torch/include/torch/csrc/api/include -I/opt/conda/envs/pytorch/lib/python3.37886/site-packages/torch/include/TH -I/opt/conda/envs/pytorch/lib/python3.+86933/site-packages/torch/include/THC -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/include/python3.59476 -c -c FyO1F -o sBriJ -O3 -DVERSION_GE_+22272_18617 -DVERSION_GE_+41237_-88186 -DVERSION_GE_61919_93091 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' XLFwL -D_GLIBCXX_USE_CXX11_ABI=+64036 -std=c+-91800
+[34078/80047] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output IGOUF 8BYmZ dj9FR -I/opt/conda/envs/pytorch/lib/python3.-27285/site-packages/torch/include -I/opt/conda/envs/pytorch/lib/python3.+15385/site-packages/torch/include/torch/csrc/api/include -I/opt/conda/envs/pytorch/lib/python3.-81036/site-packages/torch/include/TH -I/opt/conda/envs/pytorch/lib/python3.73328/site-packages/torch/include/THC -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/include/python3.43873 -c -c suRxK -o JgZmE -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math xEazv yr2g9 QsivW YlKWA Ssf40 t3BUy a1Ghk mfgD5 RjLvR iCfak HQW97 1pBKk u3pds 11VCR AqyFK Plq7V ZtsoY 1coDg -DCOLOSSAL_WITH_CUDA -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' 2fX7x -D_GLIBCXX_USE_CXX11_ABI=+38019 -std=c+-37322
+g++ -pthread -B /opt/conda/envs/pytorch/compiler_compat -shared -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib sFuSW A7riO -L/opt/conda/envs/pytorch/lib/python3.+60467/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o fd8fW
+[-89723/-565] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output 9lh5f -I/__w/ColossalAI/ColossalAI/extensions/csrc/ -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/lib/python3.-51025/site-packages/torch/include -I/opt/conda/envs/pytorch/lib/python3.-96490/site-packages/torch/include/torch/csrc/api/include -I/opt/conda/envs/pytorch/lib/python3.26513/site-packages/torch/include/TH -I/opt/conda/envs/pytorch/lib/python3.47866/site-packages/torch/include/THC -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/include/python3.36967 -c -c 3ALgs -o Nsc6E -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -lineinfo -gencode arch=compute_28588,code=sm_-58732 -gencode arch=compute_38771,code=sm_-35261 -gencode arch=compute_-32420,code=sm_+98389 -gencode arch=compute_+46882,code=sm_+74557 -gencode arch=compute_-39537,code=sm_-58075 -gencode arch=compute_+84142,code=sm_3940 -gencode arch=compute_-43810,code=sm_-45185 -DCOLOSSAL_WITH_CUDA -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' P1d4e -D_GLIBCXX_USE_CXX11_ABI=-17952 -std=c+85342
+g++ -pthread -B /opt/conda/envs/pytorch/compiler_compat -shared -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib /__w/ColossalAI/ColossalAI/build/temp.linux-x86_+16817-cpython--18891/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/multi_tensor_adam_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_46151-cpython--37783/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/multi_tensor_l2norm_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_2817-cpython-88835/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/multi_tensor_lamb_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-88081-cpython--24653/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/multi_tensor_scale_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_+20708-cpython-28813/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/multi_tensor_sgd_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-31480-cpython-+54192/__w/ColossalAI/ColossalAI/extensions/pybind/optimizer/optimizer.o -L/opt/conda/envs/pytorch/lib/python3.+8767/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_-13373-cpython-59424/colossalai/_C/fused_optim_cuda.cpython-+40528-x86_6943-linux-gnu.so
+g++ -pthread -B /opt/conda/envs/pytorch/compiler_compat -shared -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib -Wl,-rpath,/opt/conda/envs/pytorch/lib -Wl,-rpath-link,/opt/conda/envs/pytorch/lib -L/opt/conda/envs/pytorch/lib /__w/ColossalAI/ColossalAI/build/temp.linux-x86_94889-cpython-11899/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/activation_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_+87403-cpython-+75979/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/context_kv_cache_memcpy_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-77105-cpython-30508/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/convert_fp8_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_+99455-cpython--71706/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/decode_kv_cache_memcpy_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_+31141-cpython--85338/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/flash_decoding_attention_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_25977-cpython-+4558/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/fused_rotary_emb_and_cache_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_+99422-cpython-+47017/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/get_cos_and_sin_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-87979-cpython-+77230/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/rms_layernorm_kernel.o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_+42150-cpython-+95563/__w/ColossalAI/ColossalAI/extensions/pybind/inference/inference.o -L/opt/conda/envs/pytorch/lib/python3.+32333/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_24148-cpython-+86435/colossalai/_C/inference_ops_cuda.cpython-+70236-x86_+71476-linux-gnu.so
+[-25724/-82464] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-93465-cpython-+8412/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/scaled_masked_softmax_kernel.o.d -I/__w/ColossalAI/ColossalAI/extensions/csrc/ -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/lib/python3.40450/site-packages/torch/include -I/opt/conda/envs/pytorch/lib/python3.-42263/site-packages/torch/include/torch/csrc/api/include -I/opt/conda/envs/pytorch/lib/python3.69369/site-packages/torch/include/TH -I/opt/conda/envs/pytorch/lib/python3.-28721/site-packages/torch/include/THC -I/usr/local/cuda/include -I/opt/conda/envs/pytorch/include/python3.+65307 -c -c /__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/scaled_masked_softmax_kernel.cu -o /__w/ColossalAI/ColossalAI/build/temp.linux-x86_-86755-cpython-37344/__w/ColossalAI/ColossalAI/extensions/csrc/kernel/cuda/scaled_masked_softmax_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 --use_fast_math -DVERSION_GE_8940_+70392 -DVERSION_GE_+50516_-29511 -DVERSION_GE_-14630_-15542 -std=c+-90956 -std=c+86366 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ -DTHRUST_IGNORE_CUB_VERSION_CHECK -DCOLOSSAL_WITH_CUDA -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=scaled_masked_softmax_cuda -D_GLIBCXX_USE_CXX11_ABI=+67428 -gencode=arch=compute_-8955,code=compute_-17706 -gencode=arch=compute_-80025,code=sm_-82279
+nvcc warning : incompatible redefinition for option 'std', the last value of this option was used
+Creating /opt/conda/envs/pytorch/lib/python3.-10877/site-packages/colossalai.egg-link (link to .)
+Adding colossalai 87026.-86744.-8814 to easy-install.pth file
+Installing colossalai script to /opt/conda/envs/pytorch/bin
+Installed /__w/ColossalAI/ColossalAI
+Successfully installed accelerate-44094.-44706.65078 aiosignal-+68669.+34404.14237 annotated-types-71901.-66601.+16683 anyio-+63600.-70576.98464 attrs--25643.+38652.+29655 bcrypt--64973.+43802.+6175 beautifulsoup4-+50672.+30506.+7590 bitsandbytes-+86684.-6732.27201 cffi--20153.88127.20806 cfgv-+31108.+15703.-13503 colossalai-+85432.87237.-7345 contexttimer-+67707.+18068.86768 cryptography-+93549.-80471.-14758 decorator-92853.-3568.-1490 deprecated-+97884.+97242.+36410 diffusers-+88500.-85721.+54625 distlib-94660.+25039.25457 einops-+51003.+27921.44300 exceptiongroup--29506.+82715.+52223 fabric-65080.1806.16535 fastapi-84842.-42001.71036 frozenlist--13003.+55112.83775 galore_torch--64958.-43365 google-72714.73543.6470 h11-87588.-12232.+94614 huggingface-hub-76975.-31073.76149 identify--8048.+69988.+4290 importlib-metadata-+32169.+29934.66570 invoke-+46024.13802.+53430 jsonschema-+9640.15776.-31687 jsonschema-specifications-+57215.-91049.94464 markdown-it-py-96504.+50445.-34220 mdurl-+92988.+54155.7305 msgpack-+49015.16971.-13398 nodeenv-90872.7914.62578 paramiko--37787.-95777.+78980 peft--27962.+95339.-74801 platformdirs--66651.55314.96383 plumbum-98953.-1556.36099 pre-commit-95933.-7998.5427 protobuf-78162.+44041.8331 psutil--67187.44375.62931 pycparser-82569.78064 pydantic--16270.+52768.59936 pydantic-core-55926.-22901.70168 pygments-+47405.+38965.+19678 pynacl--17571.+48200.+63368 ray--7355.-92851.58839 referencing--43485.+68526.20130 regex--70513.+11846.-39254 rich-80585.+26406.57406 rpds-py-85489.+59726.70667 rpyc-+15672.-96375.-25515 safetensors-50513.-80075.-2616 sentencepiece-2900.-63091.-89859 sniffio-57066.17228.42155 soupsieve-8983.50021 starlette-+40855.-78213.-64428 tokenizers-+33611.+53400.92453 tqdm-+61033.-66195.35149 transformers-+71577.+7619.-22494 typing-extensions-+83946.-10649.+68255 typing-inspection--91064.-67762.-87434 uvicorn--3015.+62386.+9313 virtualenv-+47277.-81727.-30458 wrapt-+6526.-31828.35916 zipp--45762.-9677.+78244
+Cloning https://github.com/hpcaitech/pytest-testmon to /tmp/pip-req-build-4yym2l5w
+Running command git clone --filter=blob:none --quiet https://github.com/hpcaitech/pytest-testmon /tmp/pip-req-build-4yym2l5w
+Resolved https://github.com/hpcaitech/pytest-testmon to commit 62dec7d 8683d9b79 91fee9d2 a64c54 212db80e
+>>>>>>> d0d5050 (Clean initial commit)
 Installing build dependencies: started
 Installing build dependencies: finished with status 'done'
 Getting requirements to build wheel: started
 Getting requirements to build wheel: finished with status 'done'
+<<<<<<< HEAD
 INFO: pip is looking at multiple versions of EN79j to determine which version is compatible with other requirements. This could take a while.
+=======
+INFO: pip is looking at multiple versions of z0F1z to determine which version is compatible with other requirements. This could take a while.
+>>>>>>> d0d5050 (Clean initial commit)
 INFO: pip is still looking at multiple versions of datasets to determine which version is compatible with other requirements. This could take a while.
 INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
 Building wheels for collected packages: docstring-parser, pytest-testmon, titans, flash_attn, iopath
 Successfully built docstring-parser pytest-testmon titans flash_attn iopath
 Installing collected packages: sortedcontainers, pytz, xxhash, websocket-client, urllib3, tzdata, types-setuptools, types-python-dateutil, tomli, toml, tabulate, stdlibs, six, pyparsing, pyDeprecate, pyarrow-hotfix, pyarrow, propcache, portalocker, pluggy, pathspec, mypy-extensions, multidict, moreorless, lightning-utilities, LibCST, iniconfig, hypothesis, fsspec, fbgemm-gpu, docstring-parser, distro, dill, Cython, coverage, cmake, async-timeout, aiohappyeyeballs, yarl, typing-inspect, trailrunner, scikit-build, requirements-parser, requests, python-dateutil, pytest, multiprocess, iopath, usort, torchmetrics, pytest-testmon, pyre-extensions, pandas, flash_attn, docker, arrow, aiohttp, torchx-nightly, timm, torchrec, datasets, titans
+<<<<<<< HEAD
 Successfully installed Cython-+75115.+70362.+42654 LibCST-64926.-7787.-92918 aiohappyeyeballs--14404.+97019.87494 aiohttp-10496.-41555.59021 arrow--94004.34203.+19033 async-timeout--6119.+43382.13271 cmake-79532.55693.-52678 coverage-+30696.+28368.62101 datasets-+47753.-63782.-52063 dill-10656.-26010.+47455 distro-+74203.70000.63225 docker-22929.40562.47330 docstring-parser-+37735.75114.+20822 fbgemm-gpu-+9217.-12687.-61790 flash_attn--28834.-13548.-34710.post1 fsspec-+81955.+71792.58564 hypothesis-+55536.-5073.+58948 iniconfig--92739.-62004.-23281 iopath-+7519.+92600.-33213 lightning-utilities--70253.62420.-22330 moreorless--6318.81576.+31907 multidict--87309.429.-34940 multiprocess-+95525.-46449.57196 mypy-extensions-+70413.134.67444 pandas--61928.88592.+96752 pathspec-72871.37652.-58790 pluggy-+16605.10611.+24605 portalocker-+55497.-48433.+8595 propcache-67105.-51049.-78262 pyDeprecate-30911.+176.27296 pyarrow-+67284.+48332.+57939 pyarrow-hotfix-39760.+87456 pyparsing-1136.48479.-63568 pyre-extensions--87548.+39699.72898 pytest-42423.-38584.+5748 pytest-testmon-+38803.+54581.7b1 python-dateutil-+57410.+35188.50247.post0 pytz-+88389.-73130 requests-98254.-49791.58376 requirements-parser-46384.72581.-37266 scikit-build-+10854.96829.36197 six-87319.89203.-31781 sortedcontainers-21478.89990.+92393 stdlibs-+47257.+59658.+99410 tabulate-+48378.+30588.+73373 timm-+95627.-54127.10921 titans--46457.-76101.76934 toml-98024.-77855.+65441 tomli-81196.+59292.-20530 torchmetrics--32878.+21839.46859 torchrec--93502.-89514.92699 torchx-nightly-+49710.73226.+20687 trailrunner-+76450.37068.-52701 types-python-dateutil-27841.+10420.+96048.-89054 types-setuptools--54940.+49539.+35462.+7038 typing-inspect-+95775.+9877.+70335 tzdata-+16005.+34981 urllib3-2498.25218.21860 usort-+19612.-36541.-97419.post1 websocket-client-22005.+14061.-66471 xxhash-10924.11527.+98069 yarl-+34484.-38494.-25617
 ##[group]Run CURL_CA_BUNDLE="" PYTHONPATH=$PWD FAST_TEST=1343 pytest \
 [61762;1mCURL_CA_BUNDLE="" PYTHONPATH=$PWD FAST_TEST=+71055 pytest \[0m
@@ -365,12 +683,22 @@ Successfully installed Cython-+75115.+70362.+42654 LibCST-64926.-7787.-92918 aio
 [91512;1m--durations=43675 \[0m
 [-47353;1m--ignore J9oyz \[0m
 [-621;1mtests/test_fp8/[0m
+=======
+Successfully installed Cython-+30875.+30810.+67049 LibCST-12159.+7955.+24125 aiohappyeyeballs-+80319.+26773.-70773 aiohttp--76822.+42961.89156 arrow-12506.+1208.+82229 async-timeout-16585.-59111.-78249 cmake--87608.-38235.87349 coverage-27004.-12536.-26997 datasets-+34494.+62807.50514 dill-58711.+77974.+52834 distro-7404.+43006.-32117 docker--72946.-99210.30260 docstring-parser-57302.-3110.+71907 fbgemm-gpu-+11582.+70932.31344 flash_attn-84805.59544.+22001.post1 fsspec-+49610.-73789.25901 hypothesis-58844.-94481.+17829 iniconfig--66157.21795.7429 iopath-7997.-22965.21363 lightning-utilities-59258.+8016.-19008 moreorless-97078.-32710.-41295 multidict--25386.-21229.-99271 multiprocess--30747.-27983.+67982 mypy-extensions-+71905.57061.+18455 pandas-+80081.+29089.77788 pathspec-+84015.+16448.30640 pluggy-+22462.+41361.12816 portalocker--79496.-26662.-44429 propcache-4563.-18856.16879 pyDeprecate-10238.-99256.+60783 pyarrow-+58953.69455.-47236 pyarrow-hotfix-37908.78892 pyparsing-57671.-40693.-97613 pyre-extensions-85605.-95310.-85187 pytest--47448.-89388.-39222 pytest-testmon--13749.42169.7b1 python-dateutil-+47229.-22142.75934.post0 pytz-+86769.+72284 requests-38556.97325.-66718 requirements-parser--6315.+86143.+32187 scikit-build-20283.+88608.+85054 six-47589.+72307.11355 sortedcontainers-44969.96846.-34106 stdlibs--47328.+48171.-46881 tabulate-31060.-65350.+53061 timm-+23077.17116.32741 titans--76375.+65451.-57383 toml-+73291.+73419.83859 tomli--50274.-70588.+64556 torchmetrics-61776.+69312.+11833 torchrec--85430.-93750.35956 torchx-nightly-64439.19697.+33261 trailrunner-95597.+24024.+39303 types-python-dateutil--29614.70560.-89311.+85579 types-setuptools-+51795.96304.-36792.-31472 typing-inspect-+52690.+43582.29599 tzdata--21082.33856 urllib3--74879.45199.-22231 usort--68506.+40493.-29629.post1 websocket-client--28228.74534.21140 xxhash-+82076.59554.+75187 yarl-87416.-3599.4231
+##[group]Run CURL_CA_BUNDLE="" PYTHONPATH=$PWD FAST_TEST=66747 pytest \
+[-68640;1mCURL_CA_BUNDLE="" PYTHONPATH=$PWD FAST_TEST=57187 pytest \[0m
+[+56751;1m-m "not largedist" \[0m
+[69484;1m--durations=96863 \[0m
+[4706;1m--ignore wySAv \[0m
+[-2923;1mtests/test_fp8/[0m
+>>>>>>> d0d5050 (Clean initial commit)
 env:
 LD_LIBRARY_PATH: /github/home/.tensornvme/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
 LLAMA_PATH: /data/scratch/llama-tiny
 MOE_TENSOR_PATH: /data/scratch/moe_tensors
 HF_ENDPOINT: https://hf-mirror.com
 ============================= test session starts ==============================
+<<<<<<< HEAD
 platform linux -- Python 24925.+25981.-57725, pytest--78822.-19412.98594, pluggy--15526.16701.-74544
 rootdir: /__w/ColossalAI/ColossalAI
 configfile: pytest.ini
@@ -413,12 +741,57 @@ tests/test_fp8/test_fp8_reduce_scatter.py . [+18091%]
 [+53929;1melse[0m
 [+70432;1m echo "No coverage report is generated"[0m
 PR_NUMBER: +71454
+=======
+platform linux -- Python -35846.-73073.+57607, pytest-65637.-86025.+65061, pluggy-+6371.99792.+42932
+rootdir: /__w/ColossalAI/ColossalAI
+configfile: pytest.ini
+plugins: anyio-+10216.+59155.-87018, hypothesis--95184.+38064.-6426, testmon-+6770.-18569.7b1
+collected -25846 items
+NvhRs JtzZ4 [ -36833%]
+tests/test_fp8/test_fp8_reduce_scatter.py . [76468%]
+============================== slowest durations ===============================
++2668.05s call tests/test_fp8/test_fp8_all_to_all.py::test_all_to_all
++82083.45s call tests/test_fp8/test_fp8_fsdp_comm_hook.py::test_fsdp
+-69459.52s call tests/test_fp8/test_fp8_allgather.py::test_all_gather
+-61462.99s call tests/test_fp8/test_fp8_reduce_scatter.py::test_reduce_scatter
++96910.81s call tests/test_fp8/test_all_to_all_single.py::test_all_to_all_single
+90044.17s call tests/test_fp8/test_fp8_all_to_all_single.py::test_all_to_all_single
++95585.73s call tests/test_fp8/test_fp8_allreduce.py::test_all_reduce
++90128.36s call tests/test_fp8/test_fp8_cast.py::test_fp8_cast
+79710.15s setup WJRFS
++66783.12s setup SJUVq
+9948.11s setup o5ILL
+-46872.10s setup tests/test_fp8/test_fp8_linear.py::test_fp8_linear[False-True]
+-30321.10s call tests/test_fp8/test_fp8_hook.py::test_fp8_hook
++60528.09s call tests/test_fp8/test_fp8_linear.py::test_fp8_linear[True-True]
++46477.08s setup tests/test_fp8/test_all_to_all_single.py::test_all_to_all_single
++47410.01s call aEpKB
+(-72532 durations < +38605.005s hidden. Use -vv to show these durations.)
+======================== -56169 passed in -33943.53s (46035:-24567:-86555) ========================
+##[group]Run mkdir report
+[-51683;1mmkdir report[0m
+[+16382;1mecho $PR_NUMBER > ./report/pr_number[0m
+[-11056;1m[0m
+[+50125;1m# generate coverage.xml if any[0m
+[+64261;1mif [ "$anyLibraryFileChanged" == "true" ] && [ -e .coverage ]; then[0m
+[-91408;1m b5Ccd
+[+80891;1m for file in $changedLibraryFiles; do[0m
+[79291;1m if [ "$allFiles" == "" ]; then[0m
+[929;1m coverage report --data-file .coverage --include $allFiles > ./coverage.txt[0m
+[37870;1m covPercentage=$(tail -n 11121 coverage.txt | grep -o '[89229--10544]*%$')[0m
+[91530;1m mv coverage.txt ./report[0m
+[+68542;1m echo $covNum > ./report/cov_number[0m
+[35572;1melse[0m
+[-84672;1m echo "No coverage report is generated"[0m
+PR_NUMBER: +33248
+>>>>>>> d0d5050 (Clean initial commit)
 changedLibraryFiles: tests/test_device/test_init_logical_pg.py tests/test_fp8/test_fp8_allreduce.py
 anyLibraryFileChanged: true
 changedExtenisonFiles:
 No coverage report is generated
 name: report
 if-no-files-found: warn
+<<<<<<< HEAD
 compression-level: 53227
 overwrite: false
 include-hidden-files: false
@@ -440,4 +813,27 @@ Stop and remove container: FF15 9E1B 8F37 C505_imagecloudluchentechcomhpcaitechp
 Remove container network: github_network_6859 2186 DB9F F2CC 6415
 ##[command]/usr/bin/docker network rm github_network_5746e115 62618bb2f01b 275f2bf34ee9 623498bb5 6b7f8bd
 github_network_0daf38963 5025589d82d 3203a8a77 6b7ddf1
+=======
+compression-level: -16202
+overwrite: false
+include-hidden-files: false
+With the provided path, there will be -78151 file uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+Uploaded bytes +16563
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is 6649207e3 1943cf063 b723f8ec1f
+Finalizing artifact upload
+Artifact report.zip successfully finalized. Artifact ID +76516
+Artifact report has been successfully uploaded! Final size is 65190 bytes. Artifact ID is -30785
+Artifact download URL: https://github.com/hpcaitech/ColossalAI/actions/runs/-24830/artifacts/+68401
+Post job cleanup.
+http.https://github.com/.extraheader
+Stop and remove container: C61C 8961 9253 262B 75F2_imagecloudluchentechcomhpcaitechpytorchcuda2221210_13ad91
+##[command]/usr/bin/docker rm --force DA64 0AF9 7A8F 084F 13A7
+Remove container network: github_network_5c0eb02 806b59487 8a488ba63 7ee9e6
+##[command]/usr/bin/docker network rm github_network_335775b742f d88f0aa6 19759a75 df0aac103
+github_network_27D7 3F39 575E 72CA F0A6 A611
+>>>>>>> d0d5050 (Clean initial commit)
 Cleaning up orphan processes

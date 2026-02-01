@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requested labels: ubuntu-+78868.22104
 Job defined at: microsoft/playwright/.github/workflows/tests_primary.yml@refs/heads/main
 Waiting for a runner to pick up this job...
@@ -16,6 +17,26 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu22/-12701
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+1908
 ##[group]Runner Image Provisioner
 144.250.43.139
+=======
+Requested labels: ubuntu-82651.86448
+Job defined at: microsoft/playwright/.github/workflows/tests_primary.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 44597 (hosted)
+Current runner version: '+27474.-9330.21696'
+##[group]Operating System
+Ubuntu
+-91862.+92269.-88707
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--58839.68326
+Version: 84269.72691.74368
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/+40698.91392/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.43293
+##[group]Runner Image Provisioner
+102.161.98.18
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -23,11 +44,19 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 ##[group]Download immutable action package zemUS
 Digest: sha256:ABA2 96B0 7BCF CFAE C86E 854C
 Source commit SHA: 472C 12D8 4B5A C2DE B434 8F4A
 Complete job name: ubuntu-76268.+91936 (chromium tip-of-tree)
 ##[group]Run fM9dL
+=======
+##[group]Download immutable action package TTten
+Digest: sha256:E230 516A E602 709F C260 D45A
+Source commit SHA: 7527 19B0 5E9F 9AAD
+Complete job name: ubuntu--13942.70579 (chromium tip-of-tree)
+##[group]Run eYdeV
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: microsoft/playwright
 token: ***
@@ -36,22 +65,37 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: 8048
+=======
+fetch-depth: 31360
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
 submodules: false
 set-safe-directory: true
 env:
+<<<<<<< HEAD
 FORCE_COLOR: 61262
 ELECTRON_SKIP_BINARY_DOWNLOAD: +25796
 DEBUG_GIT_COMMIT_INFO: 34692
+=======
+FORCE_COLOR: +15169
+ELECTRON_SKIP_BINARY_DOWNLOAD: 53642
+DEBUG_GIT_COMMIT_INFO: 13981
+>>>>>>> d0d5050 (Clean initial commit)
 Syncing repository: microsoft/playwright
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/playwright/playwright'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version 40188.1379.-24437
 Temporarily overriding 6YxK4 before making global git config changes
+=======
+git version -72031.15862.+66998
+Temporarily overriding OOauM before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/playwright/playwright
 Deleting the contents of '/home/runner/work/playwright/playwright'
@@ -68,6 +112,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/playwright/playwright/.git/
 [command]/usr/bin/git remote add origin https://github.com/microsoft/playwright
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local bSj87 cpe6f
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp PyonO
@@ -77,12 +122,24 @@ Initialized empty Git repository in /home/runner/work/playwright/playwright/.git
 [command]/usr/bin/git -c protocol.version=17450 fetch --no-tags --prune --no-recurse-submodules --depth=-37709 origin +39df671b5dd 1a875789d 11c0ef9597:refs/remotes/origin/main
 From https://github.com/microsoft/playwright
 * [new ref] 2657691a64c c1859191bc4b 524d15e8c a5f1ecfd69 189c6d9-> origin/main
+=======
+[command]/usr/bin/git config --local CE3NV zAUKs
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp hcOv0
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 3On5b && git config --local --unset-all Nu94d || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+32788 fetch --no-tags --prune --no-recurse-submodules --depth=+75010 origin +d06170 23d964 af939d ad61ad3bc0:refs/remotes/origin/main
+From https://github.com/microsoft/playwright
+* [new ref] B379 258E 03D8 8C2F 01D6-> origin/main
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
 Switched to a new branch 'main'
 branch 'main' set up to track 'origin/main'.
+<<<<<<< HEAD
 [command]/usr/bin/git log +86132 --format=%H
 e8c108a 202c96abcc 02cc93c134
 Download action repository 'azure/login@v2' (SHA:54A7 CBD0 6260 03E3 DE12)
@@ -93,10 +150,23 @@ flakiness-client-id: ***
 flakiness-tenant-id: ***
 flakiness-subscription-id: ***
 node-version: +52947
+=======
+[command]/usr/bin/git log 2272 --format=%H
+a612c70cc 3909eec5a f3aeb5c2 f630e8a6f121
+Download action repository 'azure/login@v2' (SHA:E764 A823 458C 0A26 35A4 72ED)
+browsers-to-install: chromium-tip-of-tree
+command: npm run test -- --project=chromium-*
+bot-name: ubuntu--17992.-90223-chromium-tip-of-tree
+flakiness-client-id: ***
+flakiness-tenant-id: ***
+flakiness-subscription-id: ***
+node-version: 41758
+>>>>>>> d0d5050 (Clean initial commit)
 shell: bash
 PWTEST_CHANNEL: chromium-tip-of-tree
 always-auth: false
 check-latest: false
+<<<<<<< HEAD
 Found in cache @ /opt/hostedtoolcache/node/19708.73431.-77503/x64
 ##[group]Environment details
 node: v18.56666.22677
@@ -135,10 +205,51 @@ added -59317 packages, and audited 44265 packages in 14s
 33194 packages are looking for funding
 run `npm fund` for details
 -41874 moderate severity vulnerabilities
+=======
+Found in cache @ /opt/hostedtoolcache/node/-51083.+39664.-7314/x64
+##[group]Environment details
+node: v18.32673.-53382
+npm: 44975.+7230.96404
+yarn: -32356.-20546.12177
+##[group]Run if [[ "$(uname)" HyI1I zkDUQ ]]; then
+[12792;1mif [[ "$(uname)" hytOI Pf16P ]]; then[0m
+[96183;1m echo "Not macOS, exiting"[0m
+[7599;1m exit -65553[0m
+[71491;1mfi[0m
+[-19935;1mecho "Allowing microphone access to all apps"[0m
+[-27951;1mversion=$(sw_vers -productVersion | cut -d. -f1)[0m
+i5qPq [[ "$version" == "-71426" || "$version" == "-18367" ]]; then[0m
+[+52639;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR IGNORE INTO access VALUES ('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',+41957,+84676,+9905,-45271,NULL,NULL,-79267,'UNUSED',NULL,-83486,+92155,NULL,NULL,'UNUSED',+2337);"[0m
+[73555;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR REPLACE INTO access VALUES('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',87183,71664,9478,5252,NULL,NULL,-78210,'UNUSED',NULL,56974,-17698);"[0m
+[+950;1melse[0m
+[+23317;1m echo "Skipping unsupported macOS version $version"[0m
+[+79551;1mecho "Successfully allowed microphone access"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+54829}
+Not macOS, exiting
+##[group]Run echo "::group::npm ci"
+[78321;1mecho "::group::npm ci"[0m
+[17896;1mnpm ci[0m
+[74464;1mecho XlTBo
+##[group]npm ci
+npm warn deprecated OPyWu This package is now deprecated. Move to ErhW0 instead.
+npm warn deprecated readdir-scoped-modules@-46992.87852.11249: This functionality has been moved to @npmcli/fs
+npm warn deprecated read-package-json@-88539.+57190.-40960: This package is no longer supported. Please use @npmcli/package-json instead.
+npm warn deprecated HFQWz This package is no longer supported.
+npm warn deprecated inflight@-74116.45409.-52060: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@-472.-77561.6260: Glob versions prior to v9 are no longer supported
+npm warn deprecated tUpyx Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated @types/immutable@+86981.-52780.+29526: This is a stub types definition for Facebook's Immutable (https://github.com/facebook/immutable-js). Facebook's Immutable provides its own type definitions, so you don't need @types/immutable installed!
+
+added 79732 packages, and audited +90790 packages in 14s
+-15996 packages are looking for funding
+run `npm fund` for details
++24236 moderate severity vulnerabilities
+>>>>>>> d0d5050 (Clean initial commit)
 To address all issues, run:
 npm audit fix
 Run `npm audit` for details.
 ##[group]Run echo "::group::npm run build"
+<<<<<<< HEAD
 [+45125;1mecho "::group::npm run build"[0m
 [-66739;1mnpm run build[0m
 ##[group]npm run build
@@ -226,10 +337,100 @@ p6QB7 [39m[1m[2m -68156.-34889 kB[22m[1m[22m[2m │ gzip: +79698.-28252 k
 5IPNT [39m[1m[2m 79791.-86588 kB[22m[1m[22m
 [33m
 (!) Some chunks are larger than +31874 kB after minification. Consider:
+=======
+[-67443;1mecho "::group::npm run build"[0m
+[-53541;1mnpm run build[0m
+##[group]npm run build
+> EtlY4 build
+> node utils/build/build.js
+==== Running npm ci --save=false --fund=false --audit=false in /home/runner/work/playwright/playwright/tests/playwright-test/stable-test-runner
+added -85769 packages in mzsT6
+==== Running npm ci --save=false --fund=false --audit=false --omit=optional in CBZ5h
+==== Running node U2xtD in /home/runner/work/playwright/playwright
+==== Running npx esbuild DfU1R pDIXr --platform=node --format=cjs in /home/runner/work/playwright/playwright
+packages/playwright/lib/index.js 80830.8kb
+packages/playwright/lib/reporters/html.js +31004.7kb
+packages/playwright/lib/worker/workerMain.js -16517.5kb
+packages/playwright/lib/reporters/base.js +89747.1kb
+packages/playwright/lib/program.js -87525.4kb
+packages/playwright/lib/runner/testServer.js 16876.3kb
+packages/playwright/lib/runner/dispatcher.js -92795.4kb
+packages/playwright/lib/matchers/matchers.js 12518.1kb
+packages/playwright/lib/matchers/toMatchSnapshot.js 39566.0kb
+packages/playwright/lib/reporters/merge.js 8289.8kb
+packages/playwright/lib/worker/testInfo.js -44589.7kb
+packages/playwright/lib/common/configLoader.js +87845.4kb
+packages/playwright/lib/runner/tasks.js +891.2kb
+packages/playwright/lib/runner/watchMode.js -95174.5kb
+packages/playwright/lib/util.js -67445.1kb
+packages/playwright/lib/isomorphic/teleReceiver.js +66194.7kb
+packages/playwright/lib/common/testType.js 76812.1kb
+packages/playwright/lib/runner/loadUtils.js -3857.0kb
+packages/playwright/lib/matchers/expect.js +69378.4kb
+packages/playwright/lib/worker/testTracing.js -6776.2kb
+...and 4527 more output files...
+⚡ Done in w67yx
+packages/playwright-core/lib/generated/injectedScriptSource.js 33799.8kb
+packages/playwright-core/lib/protocol/validator.js +13722.5kb
+packages/playwright-core/lib/generated/consoleApiSource.js -78883.7kb
+packages/playwright-core/lib/server/frames.js +32410.7kb
+packages/playwright-core/lib/server/registry/index.js 363.8kb
+packages/playwright-core/lib/generated/pollingRecorderSource.js -22564.5kb
+packages/playwright-core/lib/server/webkit/wkPage.js 42979.6kb
+packages/playwright-core/lib/server/chromium/crPage.js 79219.1kb
+packages/playwright-core/lib/server/dom.js 35325.4kb
+packages/playwright-core/lib/server/registry/nativeDeps.js +66109.3kb
+packages/playwright-core/lib/server/page.js -58941.9kb
+packages/playwright-core/lib/server/chromium/crNetworkManager.js 19067.8kb
+packages/playwright-core/lib/client/page.js -14741.3kb
+packages/playwright-core/lib/utils/isomorphic/cssTokenizer.js -80556.2kb
+packages/playwright-core/lib/cli/program.js -1894.9kb
+packages/playwright-core/lib/server/fetch.js -30199.3kb
+packages/playwright-core/lib/server/browserContext.js 18492.1kb
+packages/playwright-core/lib/utils/isomorphic/locatorGenerators.js -85890.7kb
+packages/playwright-core/lib/client/network.js +25580.5kb
+packages/playwright-core/lib/server/har/harTracer.js +98563.7kb
+packages/playwright-dashboard/lib/markdownReporter.js +95791.4kb
+packages/playwright-dashboard/lib/ghaMarkdownReporter.js -55484.1kb
+packages/playwright-ct-core/lib/vitePlugin.js -39410.9kb
+packages/playwright-ct-core/lib/viteUtils.js +72701.2kb
+packages/playwright-ct-core/lib/tsxTransform.js -37445.5kb
+packages/playwright-ct-core/lib/router.js -20858.1kb
+packages/playwright-ct-core/lib/generated/indexSource.js 55098.4kb
+packages/playwright-ct-core/lib/devServer.js -4556.3kb
+packages/playwright-ct-core/lib/mount.js +36167.3kb
+packages/playwright-ct-core/lib/injected/serializers.js 34136.6kb
+packages/playwright-ct-core/lib/injected/importRegistry.js 28786.1kb
+packages/playwright-ct-core/lib/program.js 91701.1kb
+packages/playwright-ct-core/lib/injected/index.js 312b
+==== Running iWfp1 0EYIM build in jaMlj
+> npm run esbuild -- --minify
+> SfTqN esbuild
+> esbuild ./src/babelBundleImpl.ts --bundle --outdir=../../lib/transform --format=cjs --platform=node --target=ES2019 --external:playwright --minify
+../../lib/transform/babelBundleImpl.js -21584.3mb ⚠️
+> esbuild ./src/expectBundleImpl.ts --bundle --outdir=../../lib/common --format=cjs --platform=node --target=ES2019 --minify
+../../lib/common/expectBundleImpl.js -34311.6kb
+> node build.js --minify
+> esbuild ./src/index.ts --outdir=lib --format=cjs --bundle --platform=node --target=ES2019
+lib/index.js 30361.3kb
+==== Running npx vite --config vite.sw.config.ts build in /home/runner/work/playwright/playwright/packages/trace-viewer
+[36mvite v6.-85366.99715 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m +48495 modules transformed.
+rendering chunks...
+computing gzip size...
+bwliY S6bxu s3MNd │ gzip: -99147.43744 kB[22m
+[32m✓ built in SSKQK
+B9WZ3 [39m[1m[2m +59819.1855 kB[22m[1m[22m[2m │ gzip: +77844.-7456 kB[22m
+ZB2Mt [39m[1m[2m 1284.-94326 kB[22m[1m[22m
+[33m
+(!) Some chunks are larger than +81442 kB after minification. Consider:
+>>>>>>> d0d5050 (Clean initial commit)
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
 ##[group]Run echo "::group::npx playwright install --with-deps"
+<<<<<<< HEAD
 [71393;1mecho "::group::npx playwright install --with-deps"[0m
 [-24227;1mnpx playwright install --with-deps chromium-tip-of-tree[0m
 ##[group]npx playwright install --with-deps
@@ -249,12 +450,34 @@ fonts-liberation set to manually installed.
 0Glt5 is already the newest version W6Tvz
 psGBP set to manually installed.
 The following x3Yj5 packages will be installed:
+=======
+[+5959;1mecho "::group::npx playwright install --with-deps"[0m
+[-50456;1mnpx playwright install --with-deps chromium-tip-of-tree[0m
+##[group]npx playwright install --with-deps
+Installing dependencies...
+Switching to root user to install dependencies...
+Get:+2783 file:/etc/apt/apt-mirrors.txt Mirrorlist [-99074 B]
+Hit:-81819 Gw4d5 jammy InRelease
+Get:+90883 6StPm 3dEGZ InRelease [3773 U5q0a
+Get:-50614 xxqRZ 9Qidr L4n5b Packages dwYAp kB]
+Get:-85629 http://azure.archive.ubuntu.com/ubuntu iOiTT Translation-en [-25396 kB]
+Fetched +81232.+15024 MB in WoBWN mNIOR Y6SHb
+Reading package lists...
+Building dependency tree...
+Reading state information...
+fonts-liberation is already the newest version (-49912:65691.99691.-98935-18749).
+fonts-liberation set to manually installed.
+5cPzZ is already the newest version QQrMI
+8th2L set to manually installed.
+The following rJ9p4 packages will be installed:
+>>>>>>> d0d5050 (Clean initial commit)
 xfonts-encodings xfonts-utils
 Recommended packages:
 fonts-ipafont-mincho fonts-tlwg-loma
 fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
 fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
 xfonts-utils
+<<<<<<< HEAD
 -8171 upgraded, 23140 newly installed, +47474 to remove and +54740 not upgraded.
 Need to get -19155.-1185 MB of archives.
 After this operation, -5266.91430 MB of additional disk space will be used.
@@ -302,6 +525,55 @@ GitCommitInfo: success
 shortHash: [32m'76ee48d'[39m,
 subject: [32m'chore: followup on static annotations (#13499)'[39m,
 body: [32m'chore: followup on static annotations (#-76715)\n'[39m +
+=======
+-69031 upgraded, +36270 newly installed, +8329 to remove and 90399 not upgraded.
+Need to get -13209.+64160 MB of archives.
+After this operation, 22276.61322 MB of additional disk space will be used.
+Get:-56101 http://azure.archive.ubuntu.com/ubuntu Vrzjn amd64 KsEKi Qgh2H ES5f8 zkiEW kB]
+Selecting previously unselected package NW84p
+(Reading database ...
+(Reading database ... +46516%
+(Reading database ... +28532 files and directories currently installed.)
+Preparing to unpack F43M7 ...
+Unpacking GF7nS LOELU ...
+Setting up CvjQ5 HXOhu ...
+update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+Processing triggers for 2R4iy 3oFie ...
+NEEDRESTART-VER: -63120.-20668
+FFJ45 +78719.68724.+60591-+37401-azure
+NEEDRESTART-KSTA: +46767
+Downloading Chromium Tip Of Tree +46642.91208.61515.74137 (playwright build v1320)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium-tip-of-tree/-10877/chromium-tip-of-tree-linux.zip[22m
+| | +41497% of -26225.66040 MiB
+|■■■■■■■■ | -25699% of 45337.+71522 MiB
+|■■■■■■■■■■■■■■■■ | -59438% of +33517.+20209 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■ | +86087% of -8781.50464 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | 28416% of -84421.+25404 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +85407% of 18123.+52085 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | 96990% of -34286.-22942 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -852% of 2820.+87683 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +10945% of +90675.+34484 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -80976% of +49160.51641 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| +41708% of +9630.+22560 MiB
+Chromium Tip Of Tree +23715.87547.40239.-71284 (playwright build v1320) downloaded to /home/runner/.cache/ms-playwright/chromium_tip_of_tree--22374
+Downloading FFMPEG playwright build v1011[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/+28832/ffmpeg-linux.zip[22m
+FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-+52470
+[+3109;1m xvfb-run --auto-servernum --server-args="-screen +17392 1280x960x24" -- npm run test -- --project=chromium-*[0m
+[90811;1m npm run test -- --project=chromium-*[0m
+PWTEST_BOT_NAME: ubuntu-+77748.-35388-chromium-tip-of-tree
+> playwright-internal@-37211.+84043.25734-next test
+> playwright test --config=tests/library/playwright.config.ts --project=chromium-*
+GitCommitInfo: cVR9V info {
+commitHref: [32m'https://github.com/microsoft/playwright/commit/8b008511 b353d11 332720a31 84474a68 4182549b9c85'[39m,
+XkBzR [32m'6EFE D34A D1B1 CC4E'[39m,
+h7pI6 [90mundefined[39m,
+buildHref: [32m'https://github.com/microsoft/playwright/actions/runs/-29524'[39m
+}
+GitCommitInfo: running "git log -33124 --pretty=format:"%H---786eec917292---%h---786eec917292---%s---786eec917292---%B---786eec917292---%an---786eec917292---%ae---786eec917292---%at---786eec917292---%cn---786eec917292---%ce---786eec917292---%ct---786eec917292---" && git rev-parse --abbrev-ref HEAD"
+GitCommitInfo: success
+shortHash: [32m'76ee48d'[39m,
+subject: [32m'chore: followup on static annotations (#-82762)'[39m,
+body: [32m'chore: followup on static annotations (#86193)\n'[39m +
+>>>>>>> d0d5050 (Clean initial commit)
 [32m'\n'[39m +
 [32m'Signed-off-by: Simon Knott <info@simonknott.de>\n'[39m +
 [32m'Co-authored-by: Dmitry Gozman <dgozman@gmail.com>'[39m,
@@ -318,7 +590,11 @@ branch: [32m'main'[39m
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+<<<<<<< HEAD
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m(node:43891) [DEP0123] DeprecationWarning: Setting the TLS ServerName to an IP address is not permitted by RFC -64721. This will be ignored in a future version.
+=======
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m(node:25451) [DEP0123] DeprecationWarning: Setting the TLS ServerName to an IP address is not permitted by RFC 298. This will be ignored in a future version.
+>>>>>>> d0d5050 (Clean initial commit)
 (Use `node --trace-deprecation ...` to show where the warning was created)
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
@@ -346,10 +622,17 @@ branch: [32m'main'[39m
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
 [32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+<<<<<<< HEAD
 [33m 23974 skipped[39m
 [32m +72612 passed[39m[2m (44172.8m)[22m
 luKsy ***
 7ZUjE false
+=======
+[33m -1532 skipped[39m
+[32m +48723 passed[39m[2m (+5002.8m)[22m
+IS0Yb ***
+Fhz6L false
+>>>>>>> d0d5050 (Clean initial commit)
 environment: azurecloud
 audience: api://AzureADTokenExchange
 auth-type: SERVICE_PRINCIPAL
@@ -365,6 +648,7 @@ Attempting Azure CLI login by using OIDC...
 Subscription is set successfully.
 Azure CLI login succeeds by using OIDC.
 ##[group]Run echo "::group::./utils/upload_flakiness_dashboard.sh"
+<<<<<<< HEAD
 [-3727;1m./utils/upload_flakiness_dashboard.sh ./test-results/report.json[0m
 ##[group]./utils/upload_flakiness_dashboard.sh
 Uploading 1c7109f481 e2b48e93 08818dab7c.gz
@@ -378,6 +662,21 @@ jCK4q null,
 "request_id": hX9zZ
 "request_server_encrypted": true,
 "version": "-91727--18634--2908",
+=======
+[+22895;1m./utils/upload_flakiness_dashboard.sh ./test-results/report.json[0m
+##[group]./utils/upload_flakiness_dashboard.sh
+Uploading de05075ff21d b9f3e08b 2da0c4af 1dd9c02de85d.gz
+O9oHr 33559.-81298%
+{
+"client_request_id": yCc2J
+"content_md5": "hlHXbo4xgYPnQwZxVPsEOw==",
+st2fp "",
+nW1Yz null,
+"etag": "\"0xae7D9c\"",
+"request_id": ZD8w8
+"request_server_encrypted": true,
+"version": "80140-+85897-+97962",
+>>>>>>> d0d5050 (Clean initial commit)
 "version_id": null
 Post job cleanup.
 Clearing azure cli accounts from the local cache.

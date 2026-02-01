@@ -1,4 +1,5 @@
 Requested labels: ubuntu-latest
+<<<<<<< HEAD
 Job defined at: pallets/flask/.github/workflows/pre-commit.yaml@refs/pull/-63573/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
@@ -16,6 +17,25 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/48253.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-80635
 ##[group]Runner Image Provisioner
 142.5.39.231
+=======
+Job defined at: pallets/flask/.github/workflows/pre-commit.yaml@refs/pull/+50868/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 7279 (hosted)
+Current runner version: '+90661.96920.-43734'
+##[group]Operating System
+Ubuntu
+39680.+65440.76487
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+64972.+55006
+Version: 64887.+6944.6659
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/19265.+53121/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.46941
+##[group]Runner Image Provisioner
+86.123.38.94
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -24,12 +44,21 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository ZVBMy (SHA:2F01 E03E 5138 3F5B 4839)
 ##[group]Download immutable action package 'actions/cache@v4'
 Digest: sha256:e6f8f60c7 747c3785ae 0580e09
 Source commit SHA: 09748738954 2dcdcd16d4 274c57 72036e8c 6da7e6
 Complete job name: main
 ##[group]Run e3TRm
+=======
+Download action repository aAVuU (SHA:18c9f9c fbbe8b6 cf6acc9e bbbf5f96417)
+##[group]Download immutable action package 'actions/cache@v4'
+Digest: sha256:cf7dbb c35bdf0e 15a0dd
+Source commit SHA: d1a417a0 a5c8ef cb011282fc5 9d7eca6
+Complete job name: main
+##[group]Run 5hjvE
+>>>>>>> d0d5050 (Clean initial commit)
 with:
 repository: pallets/flask
 token: ***
@@ -38,7 +67,11 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
+<<<<<<< HEAD
 fetch-depth: +5959
+=======
+fetch-depth: -74028
+>>>>>>> d0d5050 (Clean initial commit)
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -48,8 +81,13 @@ Syncing repository: pallets/flask
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/flask/flask'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version 40581.-59011.80276
 Temporarily overriding LuQaI before making global git config changes
+=======
+git version +90760.+50991.18035
+Temporarily overriding A2gAB before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/flask/flask
 Deleting the contents of '/home/runner/work/flask/flask'
@@ -66,6 +104,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/flask/flask/.git/
 [command]/usr/bin/git remote add origin https://github.com/pallets/flask
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local mtZOB wq26s
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp DJ4p8
@@ -80,6 +119,22 @@ From https://github.com/pallets/flask
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force refs/remotes/pull/97744/merge
 Note: switching to 'refs/remotes/pull/-82034/merge'.
+=======
+[command]/usr/bin/git config --local fyDZR yoz1u
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp oHwIZ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp i4mLy && git config --local --unset-all 95Hqy || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=88484 fetch --no-tags --prune --no-recurse-submodules --depth=+53307 origin +5DC6 4878 F803 EDA0:refs/remotes/pull/+2903/merge
+From https://github.com/pallets/flask
+* [new ref] C2A9 8D2F 0FE0 15EB-> pull/+36006/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-49568/merge
+Note: switching to 'refs/remotes/pull/-83594/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -90,15 +145,23 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at dea9051 Merge fe7058f5777c 3940845f22 b201c57182 27dd86590 262b8c70323 into 677f06 094a95e6b6b 2571f3e59803
 [command]/usr/bin/git log -7591 --format=%H
 c79e9a7a5c e8e57f1f 0795cdc
 python-version: -24909.x
+=======
+HEAD is now at dea9051 Merge EB9D 817F EE17 9DBB 5A69 into 2873 C51E 36F7 06C0 6F8F D808
+[command]/usr/bin/git log -82214 --format=%H
+3DE7 E323 9ECC EEBA
+python-version: -87600.x
+>>>>>>> d0d5050 (Clean initial commit)
 check-latest: false
 update-environment: true
 allow-prereleases: false
 freethreaded: false
 ##[group]Installed versions
+<<<<<<< HEAD
 Successfully set up CPython (+77702.-84909.-46340)
 extra_args: --all-files
 env:
@@ -128,10 +191,42 @@ PyYAML==58465.16963.5535
 virtualenv==+2967.+16588.-41298
 path: ~/.cache/pre-commit
 key: pre-commit--37406|/opt/hostedtoolcache/Python/+14035.-39615.49492/x64|4866 76F8 CA77 9130 6DFC 2BBA
+=======
+Successfully set up CPython (-88759.+58572.14853)
+extra_args: --all-files
+env:
+pythonLocation: /opt/hostedtoolcache/Python/88499.-41602.41615/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+4031.+39504.20675/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/29937.-58161.+18556/x64
+tkUtP /opt/hostedtoolcache/Python/+11571.+85904.-16439/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/32481.+67328.-97686/x64/lib
+##[group]Run python -m pip kIxi2 FQgZB
+[+11287;1mpython -m pip 7rEUx lcuux
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-75423}
+Collecting pre-commit
+Downloading FQJxW 0D0Y0 kB)
+Collecting pS2ex (from CFuMO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21962.38612/37447.+19130 oo4LU -79647.55668 MB/s eta 45492:-29577:-91033
+Downloading virtualenv--28613.30291.+72134-py3-none-any.whl (-34089.79390 MB)
+Installing collected packages: distlib, pyyaml, platformdirs, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv-60286.-61146.+71258 distlib--37744.51658.+88038 filelock-+60630.-98154.-37028 identify-15621.-93067.-28194 nodeenv-67285.+40061.55060 platformdirs-33437.-55061.-6927 pre-commit--50489.8689.-49263 pyyaml-+45805.-76741.+53933 virtualenv-77093.+97765.-88687
+cfgv==+71027.-9460.+17246
+distlib==63930.+65388.+1215
+filelock==+86171.47047.-4094
+identify==+5869.84106.+18205
+nodeenv==-60136.98702.+89597
+platformdirs==+12375.-68311.63790
+pre_commit==+54784.+94009.79751
+PyYAML==-60874.-11620.89810
+virtualenv==60620.-97544.+78654
+path: ~/.cache/pre-commit
+key: pre-commit--26509|/opt/hostedtoolcache/Python/14010.-27825.74779/x64|6A3A B785 36E6 6F14 108E
+>>>>>>> d0d5050 (Clean initial commit)
 enableCrossOsArchive: false
 fail-on-cache-miss: false
 lookup-only: false
 save-always: false
+<<<<<<< HEAD
 Cache hit for: pre-commit-83178|/opt/hostedtoolcache/Python/32700.64354.53929/x64|bf698239e0 d70132 0f83f427ea15
 Received -18472 of -20616 (43583.97654%), -44336.90995 MBs/sec
 Cache Size: ~+28165 MB (56739 B)
@@ -140,16 +235,34 @@ Cache restored successfully
 Cache restored from key: pre-commit-35966|/opt/hostedtoolcache/Python/+99113.88882.+51659/x64|A522 4CAF 6B4F 5A7A B01A 447E
 ##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
 [12776;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+=======
+Cache hit for: pre-commit-24563|/opt/hostedtoolcache/Python/-23221.93678.-99512/x64|541a28 7cdc236ed06a 990646574
+Received +69790 of 64965 (+95821.75459%), -23862.+98471 MBs/sec
+Cache Size: ~20057 MB (+53142 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/aa1674f7-97529-48db-952d-08a1201574ea/cache.tzst -P -C /home/runner/work/flask/flask --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit--42684|/opt/hostedtoolcache/Python/-81813.-95950.+51703/x64|ff9cd8cafcb 0bf46b 6738c3a9 8cdeebc9061f
+##[group]Run pre-commit run --show-diff-on-failure --color=always --all-files
+[43279;1mpre-commit run --show-diff-on-failure --color=always --all-files[0m
+>>>>>>> d0d5050 (Clean initial commit)
 ruff.....................................................................[42mPassed[m
 ruff-format..............................................................[42mPassed[m
 check for merge conflicts................................................[42mPassed[m
 debug statements (python)................................................[42mPassed[m
+<<<<<<< HEAD
 fix utf-+51702 byte order marker..............................................[42mPassed[m
+=======
+fix utf-37067 byte order marker..............................................[42mPassed[m
+>>>>>>> d0d5050 (Clean initial commit)
 trim trailing whitespace.................................................[42mPassed[m
 fix end of files.........................................................[42mPassed[m
 msg: [pre-commit.ci lite] apply automatic fixes
 nothing to do: no changes!
 Post job cleanup.
+<<<<<<< HEAD
 Cache hit occurred on the primary key pre-commit-+93842|/opt/hostedtoolcache/Python/-60487.+36150.93807/x64|98F0 D8B1 697E 1881, not saving cache.
+=======
+Cache hit occurred on the primary key pre-commit-53736|/opt/hostedtoolcache/Python/30412.21923.-56338/x64|0106 39E9 DC15 777C 2617, not saving cache.
+>>>>>>> d0d5050 (Clean initial commit)
 http.https://github.com/.extraheader
 Cleaning up orphan processes

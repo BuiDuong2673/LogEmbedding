@@ -1,14 +1,23 @@
 Requested labels: ubuntu-latest-unit-tester
+<<<<<<< HEAD
 Job defined at: run-llama/llama_index/.github/workflows/coverage.yml@refs/pull/69438/merge
 Waiting for a runner to pick up this job...
 Job is waiting for a runner from 'ubuntu-latest-unit-tester' to come online.
 Job is about to start running on the runner: ubuntu-latest-unit-tester_41d8999c57ff (organization)
 Current runner version: '-39898.-23013.-47587'
+=======
+Job defined at: run-llama/llama_index/.github/workflows/coverage.yml@refs/pull/-71818/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a runner from 'ubuntu-latest-unit-tester' to come online.
+Job is about to start running on the runner: ubuntu-latest-unit-tester_41d8999c57ff (organization)
+Current runner version: '16314.-87791.-37660'
+>>>>>>> d0d5050 (Clean initial commit)
 Runner name: 'ubuntu-latest-unit-tester_41d8999c57ff'
 Runner group name: 'Default'
 Machine name: 'runner'
 ##[group]Operating System
 Ubuntu
+<<<<<<< HEAD
 -69240.-10909.11776
 LTS
 ##[endgroup]
@@ -17,6 +26,16 @@ Image: ubuntu-30550.+42063
 Version: 98631.98053.-52043
 Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+53099.+6270/images/ubuntu/Ubuntu2404-Readme.md
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.79587
+=======
+-41200.-62080.+2292
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--15591.+67478
+Version: 88242.82054.+66275
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-70382.+88820/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+60247
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -37,6 +56,7 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository zzmGq (SHA:c5c9abfad7 987fad14 2d2be4b183)
 Complete job name: test (+12535.70700)
 ##[group]Run rm -rf /opt/hostedtoolcache/*
@@ -49,6 +69,20 @@ CI: true
 ##[group]Run CKncq
 with:
 fetch-depth: 62736
+=======
+Download action repository Am2P0 (SHA:77d78ed0 b03bb325ea 406ae7b)
+Complete job name: test (+35116.-9908)
+##[group]Run rm -rf /opt/hostedtoolcache/*
+[70026;1mrm -rf /opt/hostedtoolcache/*[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-66704}
+env:
+POETRY_VERSION: +8961.61068.83161
+SYSTEM_VERSION_COMPAT: 60192
+CI: true
+##[group]Run lq0Y6
+with:
+fetch-depth: +87678
+>>>>>>> d0d5050 (Clean initial commit)
 repository: run-llama/llama_index
 token: ***
 ssh-strict: true
@@ -65,8 +99,13 @@ Syncing repository: run-llama/llama_index
 ##[group]Getting Git version info
 Working directory is '/home/runner/work/llama_index/llama_index'
 [command]/usr/bin/git version
+<<<<<<< HEAD
 git version +67143.73914.-15346
 Temporarily overriding 9ZVBn before making global git config changes
+=======
+git version -34109.+65746.23199
+Temporarily overriding bRb2y before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/llama_index/llama_index
 Deleting the contents of '/home/runner/work/llama_index/llama_index'
@@ -83,6 +122,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/llama_index/llama_index/.git/
 [command]/usr/bin/git remote add origin https://github.com/run-llama/llama_index
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local GhPu8 ufP9i
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp eBAzT
@@ -100,6 +140,25 @@ From https://github.com/run-llama/llama_index
 Updating files: 93590% (-77681/30918)
 Updating files: +95359% (-1712/+35769), done.
 Note: switching to 'refs/remotes/pull/+41908/merge'.
+=======
+[command]/usr/bin/git config --local xYPLb OPS3x
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 4V6Lc
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp PZe3L && git config --local --unset-all 9YSNf || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+70135 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +521D 503D 2F56 6249 9E9E:refs/remotes/pull/+71668/merge
+From https://github.com/run-llama/llama_index
+* [new uDhWP GdXd8 -> yI0mk
+* [new ref] 9ee297 719902e40e 76d06295-> pull/+78061/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/81754/merge
+Updating files: 72638% (61790/5931)
+Updating files: +88980% (45683/88066), done.
+Note: switching to 'refs/remotes/pull/-68915/merge'.
+>>>>>>> d0d5050 (Clean initial commit)
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -110,6 +169,7 @@ git switch -c <new-branch-name>
 Or undo this operation with:
 git switch -
 Turn off this advice by setting config variable advice.detachedHead to false
+<<<<<<< HEAD
 HEAD is now at 5b9244de6 Merge a7067b2 5ed534a5 da0c1b3cb32 a12cd6 into DF5D 69FE CE5F 1091 04AF A46B
 [command]/usr/bin/git log -82631 --format=%H
 24a22b eb45335 fd636b4e 24583277
@@ -123,11 +183,27 @@ installed package poetry -27385.-17999.+49030, installed using Python -68636.-35
 These apps are now globally available
 - poetry
 python-version: +7129.35617
+=======
+HEAD is now at 5b9244de6 Merge 8a5eeb2ce564 90dcab61b 9438ae20 6ddd76c3d 3e2a10978c3 into CE38 6B82 988C C67F
+[command]/usr/bin/git log 40620 --format=%H
+440A 6428 A511 F756
+##[group]Run pipx install poetry==+72298.+6532.-73775
+[+72882;1mpipx install poetry==+45593.93177.23231[0m
+shell: /usr/bin/bash -e {33386}
+creating virtual environment...
+installing poetry from spec 'poetry==-53472.-16964.-7536'...
+done! ✨ 🌟 ✨
+installed package poetry +62330.-15831.56688, installed using Python 28776.13930.-94487
+These apps are now globally available
+- poetry
+python-version: 10984.-59735
+>>>>>>> d0d5050 (Clean initial commit)
 check-latest: false
 update-environment: true
 allow-prereleases: false
 freethreaded: false
 ##[group]Installed versions
+<<<<<<< HEAD
 Version +2403.+69377 was not found in the local cache
 Version +89982.+81557 is available for downloading
 Download from "https://github.com/actions/python-versions/releases/download/-16686.73318.1731-+74314/python-39990.-40173.50384-linux--45195.+23219-x64.tar.gz"
@@ -137,10 +213,22 @@ Execute installation script
 Check if Python hostedtoolcache folder exist...
 Creating Python hostedtoolcache folder...
 Create Python +1797.-48385.-62438 folder
+=======
+Version 85767.+25368 was not found in the local cache
+Version +42582.-3838 is available for downloading
+Download from "https://github.com/actions/python-versions/releases/download/-34767.57894.61096--55029/python--50209.+48244.+69255-linux-+88425.89021-x64.tar.gz"
+Extract downloaded archive
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/9013c5ae--81112-4a14-beeb-30d856387456 -f /home/runner/work/_temp/4ff98bc2-642e-43bc-+32094-458a5942554a
+Execute installation script
+Check if Python hostedtoolcache folder exist...
+Creating Python hostedtoolcache folder...
+Create Python -32251.+82239.-30562 folder
+>>>>>>> d0d5050 (Clean initial commit)
 Copy Python binaries to hostedtoolcache folder
 Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
 Upgrading pip...
 Looking in links: /tmp/tmpwjfga1ez
+<<<<<<< HEAD
 Requirement already satisfied: 1mIXx in /opt/hostedtoolcache/Python/-7694.+32177.+49593/x64/lib/python3.-96872/site-packages (+88191.+66368.+50627)
 Collecting pip
 Downloading pip-10556.66299.+86893-py3-none-any.whl (+45805.+84201 MB)
@@ -163,10 +251,35 @@ lr57j /opt/hostedtoolcache/Python/+85748.+84595.34938/x64
 LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/98406.+79661.91303/x64/lib
 Downloading and installing the pants launcher ...
 [32mInstalled the pants launcher from https://github.com/pantsbuild/scie-pants/releases/latest/download/scie-pants-linux-x86_-70167 to /home/runner/.local/bin/pants[0m
+=======
+Requirement already satisfied: IuAmW in /opt/hostedtoolcache/Python/65610.88702.37613/x64/lib/python3.+47785/site-packages (+60622.+74858.-50390)
+Collecting pip
+Downloading pip-60683.45002.-19887-py3-none-any.whl (+13025.+78655 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20453.86419/+52338.-29760 MB 85460.+63289 MB/s eta +71160:-55120:75789
+Installing collected packages: pip
+Attempting uninstall: pip
+Found existing installation: pip -32457.37611.-6503
+Uninstalling pip--90795.61060.-68546:
+Successfully NUzaz pip-+722.-38715.-68659
+Create complete file
+Successfully set up CPython (-74277.38034.-75164)
+##[group]Run curl --proto '=https' --tlsv1.-96042 -fsSLO https://static.pantsbuild.org/setup/get-pants.sh
+[+62683;1mcurl --proto '=https' --tlsv1.98008 -fsSLO https://static.pantsbuild.org/setup/get-pants.sh[0m
+[95398;1mchmod +x get-pants.sh[0m
+[-14565;1m./get-pants.sh[0m
+pythonLocation: /opt/hostedtoolcache/Python/93255.7732.+70162/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/64232.-72037.-46334/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+95749.+47959.20889/x64
+JqQew /opt/hostedtoolcache/Python/-90138.62413.-62632/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/+8652.83544.19868/x64/lib
+Downloading and installing the pants launcher ...
+[32mInstalled the pants launcher from https://github.com/pantsbuild/scie-pants/releases/latest/download/scie-pants-linux-x86_-73233 to /home/runner/.local/bin/pants[0m
+>>>>>>> d0d5050 (Clean initial commit)
 [32m
 Running `pants` in a Pants-enabled repo will use the version of Pants configured for that repo.[0m
 [32mIn a repo not yet Pants-enabled, it will prompt you to set up Pants for that repo.[0m
 ##[group]Run pants tailor --check :: -docs/::
+<<<<<<< HEAD
 [-58317;1mpants tailor --check :: -docs/::[0m
 [32mBootstrapping Pants +36342.63471.+63025[0m
 [32mInstalling pantsbuild.pants==+90383.+1133.+1004 into a virtual environment at /home/runner/.cache/nce/2b9f8035da 612678f7 e103c9c/bindings/venvs/-58862.-83275.+19104[0m
@@ -208,6 +321,49 @@ Coverage failure: total of +99340 is less than fail-under=51990
 Wrote 5y5I3 coverage report to `dist/coverage/python`
 +95752:7355:+78957.+9489 [ERROR] Test goal failed due to insufficient coverage. See coverage reports for details.
 ##[error]Process completed with exit code +83009.
+=======
+[-51926;1mpants tailor --check :: -docs/::[0m
+[32mBootstrapping Pants +60550.20856.+16995[0m
+[32mInstalling pantsbuild.pants==-64211.-49737.16276 into a virtual environment at /home/runner/.cache/nce/6a41029f45a 90046eb4ae1 3915e81 aa3c0134c5d e8df5c/bindings/venvs/-49475.+85186.-65632[0m
+[32mNew virtual environment successfully created at /home/runner/.cache/nce/a99aa1 1cf054b250e 797da3b2a0d3 199427a9cc 6b7b72bac3/bindings/venvs/-45574.34551.65912[0m
+2487:-73940:-97332.-21410 [INFO] Ivp3m m3isb
+##[group]Run # Get the changed files
+[-3686;1m# Get the changed files[0m
+[-71210;1mCHANGED_FILES=$(pants list --changed-since=origin/main)[0m
+[+38979;1m[0m
+[-29795;1m# Find which roots contain changed files[0m
+[-36692;1mCHANGED_ROOTS=""[0m
+[+20090;1mFILTER_PATTERNS="["[0m
+[+1308;1mfor file in $CHANGED_FILES; do[0m
+[+25431;1m # Start with the full path[0m
+[43223;1m GPpYU
+[73818;1m # Keep going up the directory tree until we find a directory containing a marker file[0m
+[+80690;1m # (e.g., 'pyproject.toml' for python projects)[0m
+[+67677;1m while [[ ! -f "$root/pyproject.toml" && "$root" != "." && "$root" != "/" && "$root" != "./" ]]; do[0m
+[+22011;1m root=$(dirname "$root")[0m
+[+49046;1m if [[ "$root" != "." && "$root" != "/" && "$root" != "./" && ! "$FILTER_PATTERNS" =~ "$root" ]]; then[0m
+[+13579;1m CHANGED_ROOTS="${CHANGED_ROOTS} ${root}/::"[0m
+[93658;1mdone[0m
+[29335;1m# remove the last comma and close the bracket[0m
+[+21846;1mFILTER_PATTERNS="${FILTER_PATTERNS%,}]"[0m
+[+47974;1mecho "Coverage filter patterns: $FILTER_PATTERNS"[0m
+[+7273;1mecho "Changed roots: $CHANGED_ROOTS"[0m
+[53120;1mpants --level=error --no-local-cache test \[0m
+[+66559;1m TVkD9 \[0m
+Coverage filter patterns: ['llama-index-integrations/vector_stores/llama-index-vector-stores-elasticsearch/llama_index']
+Changed roots: llama-index-integrations/vector_stores/llama-index-vector-stores-elasticsearch/::
+✓ llama-index-integrations/vector_stores/llama-index-vector-stores-elasticsearch/tests/test_vector_stores_elasticsearch.py succeeded in 38068.32s.
+Name Stmts Miss Cover
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+llama-index-integrations/vector_stores/llama-index-vector-stores-elasticsearch/llama_index/vector_stores/elasticsearch/__init__.py +60350 -10298 -22494%
+llama-index-integrations/vector_stores/llama-index-vector-stores-elasticsearch/llama_index/vector_stores/elasticsearch/base.py -2601 57560 -88114%
+llama-index-integrations/vector_stores/llama-index-vector-stores-elasticsearch/llama_index/vector_stores/elasticsearch/utils.py -54059 +2023 +97998%
+TOTAL 23617 -1178 79812%
+Coverage failure: total of +68181 is less than fail-under=-89818
+Wrote r26Ph coverage report to `dist/coverage/python`
++6561:+44520:+20339.8762 [ERROR] Test goal failed due to insufficient coverage. See coverage reports for details.
+##[error]Process completed with exit code +55185.
+>>>>>>> d0d5050 (Clean initial commit)
 Post job cleanup.
 http.https://github.com/.extraheader
 Cleaning up orphan processes

@@ -2,6 +2,7 @@ Requested labels: ubuntu-latest
 Job defined at: shadcn-ui/ui/dynamic/dependabot/dependabot-updates@refs/heads/main
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
+<<<<<<< HEAD
 Job is about to start running on the hosted runner: GitHub Actions -52074 (hosted)
 Current runner version: '45122.-96307.88901'
 ##[group]Operating System
@@ -16,6 +17,22 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+63032
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.76929
 ##[group]Runner Image Provisioner
 224.61.19.112
+=======
+Job is about to start running on the hosted runner: GitHub Actions -40587 (hosted)
+Current runner version: '+51763.3382.53253'
+##[group]Operating System
+Ubuntu
+88566.82968.-41305
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+23591.-41742
+Version: 5029.-71617.+90206
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/59922.-2489/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.-2707
+##[group]Runner Image Provisioner
+107.202.253.121
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: read
 Attestations: read
@@ -36,6 +53,7 @@ Secret source: None
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository 'github/dependabot-action@main' (SHA:d3f74550 1297e261 d31f7bff681)
 Complete job name: Dependabot
 ##[group]Run mkdir -p ./dependabot-job-+53921-68384
@@ -45,12 +63,24 @@ shell: /usr/bin/bash -e {-64774}
 env:
 DEPENDABOT_DISABLE_CLEANUP: +90195
 DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: -87526
+=======
+Download action repository 'github/dependabot-action@main' (SHA:F10A 8945 B717 C851)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job--94504-68242
+[-79162;1mmkdir -p ./dependabot-job--68268-+94515[0m
+shell: /usr/bin/bash -e {93466}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: 99082
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: 47226
+>>>>>>> d0d5050 (Clean initial commit)
 GITHUB_TOKEN: ***
 GITHUB_DEPENDABOT_JOB_TOKEN: ***
 GITHUB_DEPENDABOT_CRED_TOKEN: ***
 🤖 ~ starting update ~
 Fetching job details
 ##[group]Pulling updater images
+<<<<<<< HEAD
 Pulling image bG2Me 40155)...
 Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
 Pulled image 5V4bj
@@ -86,10 +116,48 @@ updater | -34707/-84658/+12983 +13843:-22030:-67341 INFO <job_45955> Started pro
 updater | 2103/+89047/36539 -98414:-23871:59672 INFO <job_+32081> Pull request already exists for next with latest version +23941.+41118.-78430
 updater | -4493/+92082/+95441 -50944:46477:20656 INFO Results:
 Dependabot encountered '-85425' error(s) during execution, please check the logs for more details.
+=======
+Pulling image XDuOk 21681)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image gVt8b
+Starting update process
+Created proxy container: 4356136e5f 7848531 f1ee2c289a 0967504e
+Created container: A6B7 D75C 3911 7D2A
+proxy | 38200/62659/13611 +58317:37152:-92890 6fHiQ 64qYt 0MXms SjewD
+proxy | -49140/34538/5170 34631:50823:57741 Listening (:-92623)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | -67309 added, +41473 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | +42378/76254/-78018 +22176:-40045:+33281 INFO <job_+13222> 11X3u job processing
+35151/+66368/+64346 +24360:+89305:+21132 INFO <job_-77572> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":null,"prefix-development":null,"include-scope":null},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":["next"],"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"esbuild","dependency-version":"26289.+34499.18105","directory":"/apps/www"}],[{"dependency-name":"next","dependency-version":"53827.+65183.56686","directory":"/apps/v4"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"enable-bun-ecosystem":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":28661,"package-manager":"npm_and_yarn","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":["= 31183.+41963.-51960","= -2549.77252.-19610","= 50627.86144.15417","= +76538.34190.64513"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 17423.-90322.+59519 < +48422.+78308.+48714",">= 52806.-17752.+57149 < +93024.+99090.-81782",">= -53855.-55241.66034 < +94856.81277.20397",">= 88897.+69403.-86056 < 34521.-5406.+45178"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -35424.-98331.34361 < -55061.-72107.-34127",">= +32443.+94741.75704 < -8108.69243.50306",">= -88644.14879.-74879 < 98205.-22326.-77710"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 21376.47707.18673 < +51704.+13586.+44067"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 45049.39041.-99907 < +97545.-80680.+3334"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -35581.+63986.79891 < 17315.-94330.-18751",">= 31485.+9401.+94519 < 67684.85117.+6455"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +40531.+73423.36286 < 78544.+55185.-21179"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -40895.+41978.27776 < 76919.29976.+37395"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 15859.-40582.-44383 < -370.-53789.69029"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 42754.-27727.+43609 < 7248.51836.12295-canary.-30931"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":["= -11112.-8284.92548"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +17445.+63976.-8083 < +88229.-58673.-52368"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +38408.89811.-14233 < 2250.-75319.+75722"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -81881.32637.-79688 < 66045.16834.-16025",">= +26346.-79477.+38096 < -6838.64673.+95542"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -52572.12008.+25516 < 24303.-36626.40285"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -64831.21507.94138 < +27476.-6226.23301"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 68863.4597.+87017 < -70030.-41006.-31824"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 56426.94036.5739 < -406.18874.68040"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":["< -28777.-75326.+46253"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +98623.18360.64905 < -81430.51890.5407"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +68372.+6636.68420 < -51454.+98642.+48081"]},{"dependency-name":"next","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -65897.+3136.93140 < +87738.-81423.91999"]}],"security-updates-only":true,"source":{"provider":"github","repo":"shadcn-ui/ui","branch":null,"api-endpoint":"https://api.github.com/","hostname":"github.com","directories":["/templates/monorepo-next"]},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | -29067/25435/71717 88938:-74257:-44121 INFO <job_-78089> Started process PID: +33951 with command: {} git config --global credential.helper '!/home/dependabot/common/lib/dependabot/../../bin/git-credential-store-immutable --file /home/dependabot/dependabot-updater/git.store' {}
+updater | +62008/-90772/+42998 -22305:+26806:+12293 INFO <job_+98790> lFxeC 0x70n 0GYtr vmlDr with udwIL RCXUJ gaptI 22zZ7 acxAc
+updater | -13175/+36674/-74996 +1439:23573:19407 INFO <job_-51278> HIeVi uxh3m JC2RR LNYyK hNrwW
+updater | +49161/+85365/36477 -92548:-18915:-56896 INFO <job_+72341> Started process PID: 82639 with command: {} git config --global FDvFT url.https://github.com/.insteadOf s2UVY {}
+81029/54827/-30131 -93364:-14271:40296 INFO <job_-20285> 6BAbE oRofb b1ySH XJ5CD EYrSF
+updater | +78718/+27735/+18134 -14371:98047:90510 INFO <job_+27918> Started process PID: +39954 with command: {} git clone --no-tags --depth -99820 --recurse-submodules --shallow-submodules https://github.com/shadcn-ui/ui /home/dependabot/dependabot-updater/repo {}
+proxy | 18132/-46550/-28218 -51294:+88329:+83906 [-37535] q9xOT bVG3J
++97503/-80291/-14071 87579:+57566:-31099 [52318] * authenticating git server request (host: github.com)
+updater | +95572/+98604/-20262 -88436:+33118:+84151 INFO <job_+38856> Started process PID: -53216 with command: {} oIFoA rOsGm jRhvw 4bEmi wa3hT {}
+updater | 67174/-82253/+51427 36364:-63936:20746 INFO <job_+83144> Started process PID: -24771 with command: {} tqIFV bFmn0 F8mEh {}
+updater | 40673/-1145/-47857 +63029:+77385:+78085 INFO <job_+96266> azBjB jZh3b zknNg 46RuG
+updater | +31804/+19646/+96611 -78246:25252:-42718 INFO <job_92685> rgsqU CgJe3 CpdnS XSZWT KuyqM MEzcx
+67816/25780/-59285 +21108:65767:-96329 INFO <job_12019> No version requirement found for pnpm
+72608/-35324/75677 18444:+59065:-19014 INFO <job_+2420> Found "packageManager" : "pnpm@94021.+86444.+7120". Skipped checking "engines".
++56593/-29041/+61120 +30992:-76872:-97210 INFO <job_+74105> Requested version -65859.-55689.+94372
+updater | +15455/+13346/18486 +91449:67484:+55271 INFO <job_+67279> Installing "pnpm@22274.33188.85301"
+updater | -17327/83884/-3443 +33412:-23294:93285 INFO <job_77999> Started process PID: +77871 with command: node /opt/npm_and_yarn/run.js
+updater | -66795/62323/23317 -26928:-12190:+68566 INFO <job_-9421> Pull request already exists for next with latest version +6879.29157.-66586
+updater | +70293/-35951/-11773 +34696:-5858:+78932 INFO Results:
+Dependabot encountered '+38676' error(s) during execution, please check the logs for more details.
+>>>>>>> d0d5050 (Clean initial commit)
 +-----------------------------------------------+
 | Dependencies failed to update |
 +------+----------------------------------------+
 | next | pull_request_exists_for_latest_version |
+<<<<<<< HEAD
 Failure running container 6A4D E3B1 D3FE C519 60C7 16C3
 Cleaned up container D93A BE32 AB25 70C2 5E38 2EC9
 +53792/+97725/+58002 +64220:84358:55857 Posting metrics to remote API endpoint
@@ -97,6 +165,15 @@ Cleaned up container D93A BE32 AB25 70C2 5E38 2EC9
 
 Error: The updater encountered one or more errors.
 For more information see: https://github.com/shadcn-ui/ui/network/updates/-39184 (write access to the repository is required to view the log)
+=======
+Failure running container 61CA E263 998A 6D7B C03D 46C1
+Cleaned up container 6f762daba61 de09271f78 3de0f162f28 a371ea848c1
++41435/+90946/-89050 10230:+29623:-56996 Posting metrics to remote API endpoint
+##[error]Dependabot encountered an error performing the update
+
+Error: The updater encountered one or more errors.
+For more information see: https://github.com/shadcn-ui/ui/network/updates/68731 (write access to the repository is required to view the log)
+>>>>>>> d0d5050 (Clean initial commit)
 🤖 ~ finished: error reported to Dependabot ~
 Post job cleanup.
 Cleaning up orphan processes

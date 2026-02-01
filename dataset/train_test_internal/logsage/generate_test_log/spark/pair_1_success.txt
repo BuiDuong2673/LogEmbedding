@@ -2,6 +2,7 @@ Requested labels: ubuntu-latest
 Job defined at: apache/spark/.github/workflows/test_report.yml@refs/heads/master
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
+<<<<<<< HEAD
 Job is about to start running on the hosted runner: GitHub Actions -9738 (hosted)
 Current runner version: '46869.+8859.+44972'
 ##[group]Operating System
@@ -16,6 +17,22 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-75337
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-45927
 ##[group]Runner Image Provisioner
 169.207.14.119
+=======
+Job is about to start running on the hosted runner: GitHub Actions -48917 (hosted)
+Current runner version: '+36677.-70755.-71075'
+##[group]Operating System
+Ubuntu
+-69637.-68093.+50915
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+59528.3672
+Version: +49384.+49962.+34226
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-35907.-86257/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.4363
+##[group]Runner Image Provisioner
+12.221.222.237
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Actions: write
 Attestations: write
@@ -36,6 +53,7 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository Ons1t (SHA:A9FD CA76 820F A1F9 BD52 8A82)
 Complete job name: test_report
 ##[group]Run szwWr
@@ -43,6 +61,15 @@ with:
 github_token: ***
 workflow: -92085
 commit: e80992e96 ca2b51d5823 bb582b
+=======
+Download action repository jaixK (SHA:362eb4d4 7ae8d31470 69626861908 d406e659650b)
+Complete job name: test_report
+##[group]Run eoLJK
+with:
+github_token: ***
+workflow: -10125
+commit: F575 26A8 C885 59EB 930A
+>>>>>>> d0d5050 (Clean initial commit)
 workflow_conclusion: completed
 workflow_search: false
 repo: apache/spark
@@ -56,6 +83,7 @@ if_no_artifact_found: fail
 ==> Repository: apache/spark
 ==> Artifact name:
 ==> Local path: ./
+<<<<<<< HEAD
 ==> Workflow b16Gw TAYDg
 ==> Commit: 8F69 D902 0B66 B466 C93F DF22
 ==> Allow forks: false
@@ -71,6 +99,23 @@ inflating: test-results-pyspark-sql, pyspark-mllib, pyspark-resource, 6Aier
 ==> Downloading: test-results-pyspark-connect-18371-hadoop3-hive2.99047.zip (-14505.+6991 kB)
 ##[group]==> Extracting: test-results-pyspark-connect--5874-hadoop3-hive2.-45999.zip
 inflating: ZJtur
+=======
+==> Workflow 5f1Yb XcCns
+==> Commit: f6603b90a 76248d8e0 2f1114ed 47822afe
+==> Allow forks: false
+==> (found) Run ID: -18354
+==> (found) Run date:
+==> Artifact: -41549
+==> Downloading: test-results-pyspark-core, pyspark-streaming, pyspark-ml--78861-hadoop3-hive2.-17012.zip (-22052.46840 kB)
+##[group]==> Extracting: test-results-pyspark-core, pyspark-streaming, pyspark-ml--79727-hadoop3-hive2.-41812.zip
+inflating: test-results-pyspark-core, pyspark-streaming, 2dYl9
+==> Downloading: test-results-pyspark-sql, pyspark-mllib, pyspark-resource, pyspark-testing-+61822-hadoop3-hive2.-46233.zip (90014.-17333 kB)
+##[group]==> Extracting: test-results-pyspark-sql, pyspark-mllib, pyspark-resource, pyspark-testing-+39503-hadoop3-hive2.94556.zip
+inflating: test-results-pyspark-sql, pyspark-mllib, pyspark-resource, tPG4N
+==> Downloading: test-results-pyspark-connect--78466-hadoop3-hive2.25219.zip (+35629.-49631 kB)
+##[group]==> Extracting: test-results-pyspark-connect-8612-hadoop3-hive2.+99496.zip
+inflating: Szb9j
+>>>>>>> d0d5050 (Clean initial commit)
 check_name: Report test results
 report_paths: **/target/test-reports/*.xml
 create_check: true
@@ -79,6 +124,11 @@ fail_if_no_tests: true
 skip_publishing: false
 file_name_in_stack_trace: false
 Going to parse results form **/target/test-reports/*.xml
+<<<<<<< HEAD
 Result: -73331 tests run, -50618 skipped, -87035 failed.
 Posting status 'completed' with conclusion 'success' to refs/heads/master (sha: C7FA 1960 81A3 B3C4 9229 C6F7)
+=======
+Result: +204 tests run, +34337 skipped, -19881 failed.
+Posting status 'completed' with conclusion 'success' to refs/heads/master (sha: 4329 17DE FDD5 6E7D CE32)
+>>>>>>> d0d5050 (Clean initial commit)
 Cleaning up orphan processes

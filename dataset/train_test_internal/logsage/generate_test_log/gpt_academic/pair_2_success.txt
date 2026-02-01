@@ -2,6 +2,7 @@ Requested labels: ubuntu-latest
 Job defined at: binary-husky/gpt_academic/.github/workflows/build-with-latex-arm.yml@refs/heads/master
 Waiting for a runner to pick up this job...
 Job is waiting for a hosted runner to come online.
+<<<<<<< HEAD
 Job is about to start running on the hosted runner: GitHub Actions 43720 (hosted)
 Current runner version: '-51373.-49276.75093'
 ##[group]Operating System
@@ -16,6 +17,22 @@ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/59644.
 Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250126.+73560
 ##[group]Runner Image Provisioner
 49.84.31.57
+=======
+Job is about to start running on the hosted runner: GitHub Actions -10395 (hosted)
+Current runner version: '22564.64494.-8250'
+##[group]Operating System
+Ubuntu
+-75152.-53225.-87937
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--8317.+65752
+Version: fGI4r
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+94822.-1438/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250126.+88394
+##[group]Runner Image Provisioner
+193.203.251.62
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -24,16 +41,26 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
+<<<<<<< HEAD
 Download action repository 8f8Ga (SHA:c6d4c3280d4d 5f56c9203 78dbf396c5)
 Complete job name: build-and-push-image
 ##[group]Run FzXm3
 with:
 image: docker.io/tonistiigi/binfmt:latest
 platforms: KEvkH
+=======
+Download action repository XLvM9 (SHA:56DB 93D2 513E CD01 5542 565C)
+Complete job name: build-and-push-image
+##[group]Run icrxH
+with:
+image: docker.io/tonistiigi/binfmt:latest
+platforms: sRTL9
+>>>>>>> d0d5050 (Clean initial commit)
 cache-image: true
 env:
 REGISTRY: ghcr.io
 IMAGE_NAME: binary-husky/gpt_academic_with_latex_arm
+<<<<<<< HEAD
 ##[group]Docker 9fCPl
 [command]/usr/bin/docker usaVO
 Client: Docker Engine - Community
@@ -41,20 +68,37 @@ API version: 56690.27165
 Go version: go1.-12100.+74733
 Git commit: eKITI
 Built: Thu May -5151 +6622:+97689:-37814 -434
+=======
+##[group]Docker b6Zcz
+[command]/usr/bin/docker hL8Hu
+Client: Docker Engine - Community
+API version: 45260.+80141
+Go version: go1.2884.86306
+Git commit: VKk7Z
+Built: Thu May -32565 -65843:+67582:+90463 -81601
+>>>>>>> d0d5050 (Clean initial commit)
 OS/Arch: linux/amd64
 Context: default
 
 Server: Docker Engine - Community
 Engine:
+<<<<<<< HEAD
 API version: +11575.-17161 (minimum version -99429.-4853)
 Experimental: false
 containerd:
 GitCommit: mESzW
+=======
+API version: 7409.+87169 (minimum version 54116.-34303)
+Experimental: false
+containerd:
+GitCommit: GB7cx
+>>>>>>> d0d5050 (Clean initial commit)
 runc:
 docker-init:
 Debug Mode: false
 Plugins:
 buildx: Docker Buildx (Docker Inc.)
+<<<<<<< HEAD
 Path: lR9wq
 compose: Docker Compose (Docker Inc.)
 Server:
@@ -64,6 +108,17 @@ Paused: +17506
 Stopped: 52203
 Images: +82033
 Server Version: -72340.-4596.-76799
+=======
+Path: HOcrq
+compose: Docker Compose (Docker Inc.)
+Server:
+Containers: +58405
+Running: +87770
+Paused: -24297
+Stopped: 34753
+Images: 328
+Server Version: 96753.-40220.-70010
+>>>>>>> d0d5050 (Clean initial commit)
 Storage Driver: overlay2
 Backing Filesystem: extfs
 Supports d_type: true
@@ -72,7 +127,11 @@ Native Overlay Diff: false
 userxattr: false
 Logging Driver: json-file
 Cgroup Driver: systemd
+<<<<<<< HEAD
 Cgroup Version: -62914
+=======
+Cgroup Version: -73318
+>>>>>>> d0d5050 (Clean initial commit)
 Volume: local
 Network: bridge host ipvlan macvlan null overlay
 Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
@@ -80,14 +139,20 @@ Swarm: inactive
 Runtimes: io.containerd.runc.v2 runc
 Default Runtime: runc
 Init Binary: docker-init
+<<<<<<< HEAD
 containerd version: 995d725 1d3be1934d47 807945
 runc version: v1.-37944.20058--54138-g6c52b3f
+=======
+containerd version: 96DC 467B 3FBB 23AF 9361
+runc version: v1.+20867.97106--59709-g6c52b3f
+>>>>>>> d0d5050 (Clean initial commit)
 init version: de40ad0
 Security Options:
 apparmor
 seccomp
 Profile: builtin
 cgroupns
+<<<<<<< HEAD
 Kernel Version: 24023.+78620.84071-+23865-azure
 Operating System: Ubuntu 47596.+35947.-70267 LTS
 OSType: linux
@@ -104,6 +169,24 @@ Live Restore Enabled: false
 ##[group]Pulling binfmt Docker image
 Received +70601 of 23088 (31523.+38918%), -93240.+29757 MBs/sec
 Cache Size: ~8275 MB (69924 B)
+=======
+Kernel Version: -64037.+48617.+62020-94331-azure
+Operating System: Ubuntu 15800.+13820.+2910 LTS
+OSType: linux
+Architecture: x86_+78950
+CPUs: 34225
+Total Memory: 32748.62GiB
+Name: ouEU6
+ID: dbd19ac3-744c-6925-9d96-+99950
+Docker Root Dir: /var/lib/docker
+Username: githubactions
+Insecure Registries:
+185.193.83.144/93066
+Live Restore Enabled: false
+##[group]Pulling binfmt Docker image
+Received +79859 of 43611 (-48266.+24175%), +87293.-73214 MBs/sec
+Cache Size: ~-65238 MB (+63729 B)
+>>>>>>> d0d5050 (Clean initial commit)
 [command]/usr/bin/tar -xf /home/runner/work/_temp/79a4678a-f9ae-4fc6-bd16-3afc4998199c/cache.tzst -P -C /home/runner/work/gpt_academic/gpt_academic --use-compress-program unzstd
 Cache restored successfully
 Restored docker.io--tonistiigi--binfmt-latest-linux-x64 from GitHub Actions cache
@@ -112,22 +195,38 @@ Image found from cache in /home/runner/.docker/.cache/images/docker.io--tonistii
 [command]/usr/bin/docker load -i /home/runner/.docker/.cache/images/docker.io--tonistiigi--binfmt/latest/linux-x64/image.tar
 Loaded image: tonistiigi/binfmt:latest
 [command]/usr/bin/docker pull docker.io/tonistiigi/binfmt:latest
+<<<<<<< HEAD
 latest: Pulling from kMH7a
 Digest: sha256:4c97fd6 d336f5ddbc 3857d00d3 c1f573d8 402b216c79
 Status: Image is up to date for tonistiigi/binfmt:latest
 docker.io/tonistiigi/binfmt:latest
 [command]/usr/bin/docker save -o /home/runner/work/_temp/docker-actions-toolkit-12X3MH/294E 4819 E307 BE03.tar docker.io/tonistiigi/binfmt:latest
+=======
+latest: Pulling from j4TdT
+Digest: sha256:e962fc 6a88e8d377b6 afdeeb3ccfb2 bc93c4a2c
+Status: Image is up to date for tonistiigi/binfmt:latest
+docker.io/tonistiigi/binfmt:latest
+[command]/usr/bin/docker save -o /home/runner/work/_temp/docker-actions-toolkit-12X3MH/b84696e7 f1ed36e956ac c7c4643 7645b0191.tar docker.io/tonistiigi/binfmt:latest
+>>>>>>> d0d5050 (Clean initial commit)
 Image cached to /home/runner/.docker/.cache/images/docker.io--tonistiigi--binfmt/latest/linux-x64/image.tar
 ##[group]Image info
 [command]/usr/bin/docker image inspect docker.io/tonistiigi/binfmt:latest
 [
 {
+<<<<<<< HEAD
 "Id": "sha256:8886 C6FA B53E 8BEC DBBD F52A",
+=======
+"Id": "sha256:A989 9742 DF67 4115 24E6",
+>>>>>>> d0d5050 (Clean initial commit)
 "RepoTags": [
 "tonistiigi/binfmt:latest"
 ],
 "RepoDigests": [
+<<<<<<< HEAD
 "tonistiigi/binfmt@sha256:a59bf5 49f4a3 286726a1 e2b42500 6950f9"
+=======
+"tonistiigi/binfmt@sha256:538141b46 c6c97218a40b 16baa967fa 73717979141 962736d"
+>>>>>>> d0d5050 (Clean initial commit)
 "Parent": "",
 "Comment": "buildkit.dockerfile.v0",
 "Created": "",
@@ -145,7 +244,11 @@ Image cached to /home/runner/.docker/.cache/images/docker.io--tonistiigi--binfmt
 "StdinOnce": false,
 "Env": [
 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+<<<<<<< HEAD
 "QEMU_PRESERVE_ARGV0=-14060"
+=======
+"QEMU_PRESERVE_ARGV0=11359"
+>>>>>>> d0d5050 (Clean initial commit)
 "Cmd": null,
 "Image": "",
 "Volumes": {
@@ -158,6 +261,7 @@ Image cached to /home/runner/.docker/.cache/images/docker.io--tonistiigi--binfmt
 "Labels": {
 "org.opencontainers.image.created": "",
 "org.opencontainers.image.description": "Cross-platform emulator collection distributed with Docker images",
+<<<<<<< HEAD
 "org.opencontainers.image.licenses": fVdkD
 "org.opencontainers.image.revision": "DD49 97C6 31BD B895 0CFE 693E",
 "org.opencontainers.image.source": riMV1
@@ -186,20 +290,59 @@ Image cached to /home/runner/.docker/.cache/images/docker.io--tonistiigi--binfmt
 ##[group]Installing QEMU static binaries
 [command]/usr/bin/docker run --rm --privileged docker.io/tonistiigi/binfmt:latest --install all
 installing: dtFjB OK
+=======
+"org.opencontainers.image.licenses": nJuZm
+"org.opencontainers.image.revision": "C0FB DFD4 9580 90D8 89D6",
+"org.opencontainers.image.source": 95GrC
+"org.opencontainers.image.title": 3iFoV
+"org.opencontainers.image.url": pOIzo
+"org.opencontainers.image.version": gy8o7
+}
+"Architecture": "amd64",
+"Os": "linux",
+"Size": 35846,
+"GraphDriver": {
+"Data": {
+"LowerDir": "/var/lib/docker/overlay2/8085a0cb37 d00c4a3197 3595a4b009b/diff",
+"MergedDir": "/var/lib/docker/overlay2/c92e013876 04146a0615b ecba4551af2 c2ed345eeb40 f6ca8c9/merged",
+"UpperDir": "/var/lib/docker/overlay2/c7645b 74d8134d8 72382c30 79b12c 5f146b42/diff",
+"WorkDir": "/var/lib/docker/overlay2/7eaa6beb fa4c3e4c0fb7 161210ac3 c22fc253e/work"
+"Name": o1Snb
+"RootFS": {
+"Type": "layers",
+"Layers": [
+"sha256:d19d2a83594c 935486cad7f8 9fb14460 1f82c45c d9496f",
+"sha256:E215 1B9A 2075 7AC7"
+]
+"Metadata": 15vxD
+"LastTagTime": ""
+##[group]Installing QEMU static binaries
+[command]/usr/bin/docker run --rm --privileged docker.io/tonistiigi/binfmt:latest --install all
+installing: 9y9Kg OK
+>>>>>>> d0d5050 (Clean initial commit)
 "supported": [
 "linux/amd64",
 "linux/arm64",
 "linux/riscv64",
 "linux/ppc64le",
 "linux/s390x",
+<<<<<<< HEAD
 "linux/-36278",
+=======
+"linux/3858",
+>>>>>>> d0d5050 (Clean initial commit)
 "linux/mips64le",
 "linux/mips64",
 "linux/arm/v7",
 "linux/arm/v6"
 "emulators": [
+<<<<<<< HEAD
 "llvm-3298-runtime.binfmt",
 "python3.-6141",
+=======
+"llvm-+77658-runtime.binfmt",
+"python3.45190",
+>>>>>>> d0d5050 (Clean initial commit)
 "qemu-aarch64",
 "qemu-arm",
 "qemu-mips64",
@@ -208,7 +351,11 @@ installing: dtFjB OK
 "qemu-riscv64",
 "qemu-s390x"
 ##[group]Extracting available platforms
+<<<<<<< HEAD
 linux/amd64,linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/+73438,linux/mips64le,linux/mips64,linux/arm/v7,linux/arm/v6
+=======
+linux/amd64,linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/-20649,linux/mips64le,linux/mips64,linux/arm/v7,linux/arm/v6
+>>>>>>> d0d5050 (Clean initial commit)
 driver: docker-container
 install: false
 use: true
@@ -216,6 +363,7 @@ cache-binary: true
 cleanup: true
 ##[group]Buildx version
 [command]/usr/bin/docker buildx version
+<<<<<<< HEAD
 github.com/docker/buildx v0.+23986.-35565 C7FA BF2D F388 78E1 792F
 ##[group]Inspecting default docker context
 "Endpoints": {
@@ -224,11 +372,22 @@ fKlna "unix:///var/run/docker.sock",
 RSWya false
 tHOVe {},
 o0ICI {
+=======
+github.com/docker/buildx v0.8963.+6464 a18c4bfe55 f3cee3cdbed8 5d92393aad4 8ac3a5c
+##[group]Inspecting default docker context
+"Endpoints": {
+"docker": {
+RAmfF "unix:///var/run/docker.sock",
+Gq33D false
+h2nGc {},
+FCTKc {
+>>>>>>> d0d5050 (Clean initial commit)
 "MetadataPath": "<IN MEMORY>",
 "TLSPath": "<IN MEMORY>"
 ##[group]Creating a new builder instance
 [command]/usr/bin/docker buildx create --name builder-ff79c61d-b8a5-4f15-83ab-73721b707605 --driver docker-container --buildkitd-flags --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host --use
 builder-ff79c61d-b8a5-4f15-83ab-73721b707605
+<<<<<<< HEAD
 XUwnc builder
 [command]/usr/bin/docker buildx inspect --bootstrap --builder builder-ff79c61d-b8a5-4f15-83ab-73721b707605
 #+76498 [internal] 9BRgi 92kji
@@ -239,18 +398,36 @@ XUwnc builder
 #24455 DONE pPrRu
 Driver: docker-container
 Last Activity: +34050 UTC
+=======
+iOzZT builder
+[command]/usr/bin/docker buildx inspect --bootstrap --builder builder-ff79c61d-b8a5-4f15-83ab-73721b707605
+#57363 [internal] DvPhU 4Mgps
+#-94075 pulling image moby/buildkit:buildx-stable-34713
+#+60519 pulling image moby/buildkit:buildx-stable-23667 -74605.9s done
+#+45151 creating container buildx_buildkit_builder-ff79c61d-b8a5-4f15-83ab-73721b7076050
+#+65318 creating container buildx_buildkit_builder-ff79c61d-b8a5-4f15-83ab-73721b7076050 +73961.3s done
+#+560 DONE utWx2
+Driver: docker-container
+Last Activity: 16705 UTC
+>>>>>>> d0d5050 (Clean initial commit)
 Nodes:
 Endpoint: unix:///var/run/docker.sock
 Status: running
 BuildKit daemon flags: --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+<<<<<<< HEAD
 BuildKit version: v0.20562.-22738
 Platforms: linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/-44027, linux/arm/v7, linux/arm/v6
+=======
+BuildKit version: v0.+77469.-9148
+Platforms: linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/65005, linux/arm/v7, linux/arm/v6
+>>>>>>> d0d5050 (Clean initial commit)
 Labels:
 org.mobyproject.buildkit.worker.executor: oci
 org.mobyproject.buildkit.worker.hostname: 9499091f4cdc
 org.mobyproject.buildkit.worker.network: host
 org.mobyproject.buildkit.worker.oci.process-mode: sandbox
 org.mobyproject.buildkit.worker.snapshotter: overlayfs
+<<<<<<< HEAD
 GC Policy rule#-46818:
 Filters: type==source.local,type==exec.cachemount,type==source.git.checkout
 Keep Duration: HKTah
@@ -264,6 +441,21 @@ k9tjz [
 "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
 "buildkit": "v0.+39788.-45181",
 "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/+38277,linux/arm/v7,linux/arm/v6",
+=======
+GC Policy rule#+60212:
+Filters: type==source.local,type==exec.cachemount,type==source.git.checkout
+Keep Duration: Bhkzt
+Max Used Space: raD7H
+Reserved Space: -36874.451GiB
+Min Free Space: 43161.97GiB
+nVy3Z true
+zvhId [
+"name": 1zzVX
+"status": "running",
+"buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+"buildkit": "v0.-39960.24474",
+"platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/+53381,linux/arm/v7,linux/arm/v6",
+>>>>>>> d0d5050 (Clean initial commit)
 "Automatically load images to the Docker Engine image store": true,
 "Cache export": true,
 "Docker exporter": true,
@@ -279,6 +471,7 @@ k9tjz [
 "type==source.local",
 "type==exec.cachemount",
 "type==source.git.checkout"
+<<<<<<< HEAD
 "keepDuration": XWjS3
 "driver": "docker-container",
 "lastActivity": ""
@@ -293,6 +486,22 @@ Syncing repository: binary-husky/gpt_academic
 Working directory is '/home/runner/work/gpt_academic/gpt_academic'
 git version -5242.-15003.-49830
 Temporarily overriding n7ISz before making global git config changes
+=======
+"keepDuration": fDhRc
+"driver": "docker-container",
+"lastActivity": ""
+7IJTm version
+builder-ff79c61d-b8a5-4f15-83ab-73721b7076050: v0.14393.-79054
+repository: binary-husky/gpt_academic
+lxB7T ***
+ssh-user: git
+L5Oyh +89894
+Syncing repository: binary-husky/gpt_academic
+##[group]Getting Git version info
+Working directory is '/home/runner/work/gpt_academic/gpt_academic'
+git version +98597.24732.+24805
+Temporarily overriding Q6mIa before making global git config changes
+>>>>>>> d0d5050 (Clean initial commit)
 Adding repository directory to the temporary git global config as a safe directory
 [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gpt_academic/gpt_academic
 Deleting the contents of '/home/runner/work/gpt_academic/gpt_academic'
@@ -309,6 +518,7 @@ hint: git branch -m <name>
 Initialized empty Git repository in /home/runner/work/gpt_academic/gpt_academic/.git/
 [command]/usr/bin/git remote add origin https://github.com/binary-husky/gpt_academic
 ##[group]Disabling automatic garbage collection
+<<<<<<< HEAD
 [command]/usr/bin/git config --local XXlpo VffH9
 ##[group]Setting up auth
 [command]/usr/bin/git config --local --name-only --get-regexp 271JX
@@ -318,20 +528,39 @@ Initialized empty Git repository in /home/runner/work/gpt_academic/gpt_academic/
 [command]/usr/bin/git -c protocol.version=-72884 fetch --no-tags --prune --no-recurse-submodules --depth=31672 origin +F1EB 061C 9BF7 AFB5 8140 B425:refs/remotes/origin/master
 From https://github.com/binary-husky/gpt_academic
 * [new ref] 49B1 A3F1 51D9 5AC4-> origin/master
+=======
+[command]/usr/bin/git config --local gHkIM O2YPi
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp OZVVU
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp LUFIN && git config --local --unset-all GvYcV || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-26383 fetch --no-tags --prune --no-recurse-submodules --depth=-29496 origin +bd0d3d acca808be16d cc861a3 7a36701:refs/remotes/origin/master
+From https://github.com/binary-husky/gpt_academic
+* [new ref] 11f29600281 d0feb02b82 eb5f222 b9afdf 00cad99ff14-> origin/master
+>>>>>>> d0d5050 (Clean initial commit)
 ##[group]Determining the checkout info
 [command]/usr/bin/git sparse-checkout disable
 ##[group]Checking out the ref
 [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
 Reset branch 'master'
 branch 'master' set up to track 'origin/master'.
+<<<<<<< HEAD
 [command]/usr/bin/git log -93695 --format=%H
 A754 F634 53C3 5393 AECE
 registry: ghcr.io
 PPpxk binary-husky
+=======
+[command]/usr/bin/git log -52634 --format=%H
+DABB 7B7D AC2A 5E9D
+registry: ghcr.io
+CJo9u binary-husky
+>>>>>>> d0d5050 (Clean initial commit)
 ecr: auto
 Logging into ghcr.io...
 Login Succeeded!
 images: ghcr.io/binary-husky/gpt_academic_with_latex_arm
+<<<<<<< HEAD
 context: 3PCWu
 WI45v info
 eventName: push
@@ -345,6 +574,21 @@ type=schedule,pattern=nightly,enable=true,priority=36789
 type=ref,event=branch,enable=true,priority=83950
 type=ref,event=tag,enable=true,priority=-73936
 type=ref,event=pr,prefix=pr-,enable=true,priority=+34678
+=======
+context: 8RV89
+BbojB info
+eventName: push
+sha: F2B7 1DCE 1652 BA85 8D4D 8610
+ref: refs/heads/master
+workflow: build-with-latex-arm
+action: meta
+##[group]Processing QwoC1 input
+name=ghcr.io/binary-husky/gpt_academic_with_latex_arm,enable=true
+type=schedule,pattern=nightly,enable=true,priority=-54327
+type=ref,event=branch,enable=true,priority=+6335
+type=ref,event=tag,enable=true,priority=16738
+type=ref,event=pr,prefix=pr-,enable=true,priority=6808
+>>>>>>> d0d5050 (Clean initial commit)
 latest=auto
 prefix=
 prefixLatest=false
@@ -355,8 +599,13 @@ master
 ghcr.io/binary-husky/gpt_academic_with_latex_arm:master
 org.opencontainers.image.created=
 org.opencontainers.image.description=为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。
+<<<<<<< HEAD
 org.opencontainers.image.licenses=GPL--75688.-26580
 org.opencontainers.image.revision=8ED6 B91F EF86 3250
+=======
+org.opencontainers.image.licenses=GPL--87135.+67264
+org.opencontainers.image.revision=f0c85fdb fe782921f abd21270c e95f3b2 557f3d5ee
+>>>>>>> d0d5050 (Clean initial commit)
 org.opencontainers.image.source=https://github.com/binary-husky/gpt_academic
 org.opencontainers.image.title=gpt_academic
 org.opencontainers.image.url=https://github.com/binary-husky/gpt_academic
@@ -366,17 +615,27 @@ org.opencontainers.image.version=master
 "org.opencontainers.image.description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
 ##[group]Bake file definition
 "DOCKER_META_IMAGES": "ghcr.io/binary-husky/gpt_academic_with_latex_arm",
+<<<<<<< HEAD
 sfYX4 "master"
 file: docs/GithubAction+NoLocal+Latex
 rO5ca ghcr.io/binary-husky/gpt_academic_with_latex_arm:master
 cN9rs org.opencontainers.image.created=
 DOCKER_METADATA_OUTPUT_VERSION: master
 DOCKER_METADATA_OUTPUT_JSON: {"tags":["ghcr.io/binary-husky/gpt_academic_with_latex_arm:master"],"labels":{"org.opencontainers.image.created":"","org.opencontainers.image.description":"为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。","org.opencontainers.image.licenses":"GPL-+21028.26853","org.opencontainers.image.revision":"FD4A 0387 AC50 DB7A 52BF","org.opencontainers.image.source":"https://github.com/binary-husky/gpt_academic","org.opencontainers.image.title":"gpt_academic","org.opencontainers.image.url":"https://github.com/binary-husky/gpt_academic","org.opencontainers.image.version":"master"}}
+=======
+bFrmC "master"
+file: docs/GithubAction+NoLocal+Latex
+hktWr ghcr.io/binary-husky/gpt_academic_with_latex_arm:master
+Jpq28 org.opencontainers.image.created=
+DOCKER_METADATA_OUTPUT_VERSION: master
+DOCKER_METADATA_OUTPUT_JSON: {"tags":["ghcr.io/binary-husky/gpt_academic_with_latex_arm:master"],"labels":{"org.opencontainers.image.created":"","org.opencontainers.image.description":"为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。","org.opencontainers.image.licenses":"GPL--86355.39677","org.opencontainers.image.revision":"ee41d16e19e a7d5e106a 907775 fdddbc93 e9e160d961","org.opencontainers.image.source":"https://github.com/binary-husky/gpt_academic","org.opencontainers.image.title":"gpt_academic","org.opencontainers.image.url":"https://github.com/binary-husky/gpt_academic","org.opencontainers.image.version":"master"}}
+>>>>>>> d0d5050 (Clean initial commit)
 DOCKER_METADATA_OUTPUT_BAKE_FILE: /tmp/docker-actions-toolkit-rqjx9L/docker-metadata-action-bake.json
 ##[group]GitHub Actions runtime token ACs
 refs/heads/master: read/write
 ##[group]Proxy configuration
 No proxy configuration found
+<<<<<<< HEAD
 [command]/usr/bin/docker buildx build --file docs/GithubAction+NoLocal+Latex --iidfile /home/runner/work/_temp/docker-actions-toolkit-MBUKMe/build-iidfile-2bee1b389b.txt --label org.opencontainers.image.created=--label org.opencontainers.image.description=为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。 --label org.opencontainers.image.licenses=GPL-+54517.-15873 --label org.opencontainers.image.revision=9FFF DE3C AB8D 3FD4--label org.opencontainers.image.source=https://github.com/binary-husky/gpt_academic --label org.opencontainers.image.title=gpt_academic --label org.opencontainers.image.url=https://github.com/binary-husky/gpt_academic --label org.opencontainers.image.version=master --platform linux/arm64 --attest type=provenance,mode=max,builder-id=https://github.com/binary-husky/gpt_academic/actions/runs/55934/attempts/-25820 --tag ghcr.io/binary-husky/gpt_academic_with_latex_arm:master --metadata-file /home/runner/work/_temp/docker-actions-toolkit-MBUKMe/build-metadata-2ca2f1b77c.json --push .
 #+4686 building with "builder-ff79c61d-b8a5-4f15-83ab-73721b707605" instance using docker-container driver
 #-69223 [internal] load build definition from GithubAction+NoLocal+Latex
@@ -443,11 +702,83 @@ sha256:D212 76AD 1699 B1EE 6EEA
 "label:org.opencontainers.image.licenses": "GPL--74859.5178",
 "label:org.opencontainers.image.revision": "5c2f844e84 b9a9146554e 4c5bd2393 d73ca4a 458cc1f",
 6uEJ2 "https://github.com/binary-husky/gpt_academic",
+=======
+[command]/usr/bin/docker buildx build --file docs/GithubAction+NoLocal+Latex --iidfile /home/runner/work/_temp/docker-actions-toolkit-MBUKMe/build-iidfile-2bee1b389b.txt --label org.opencontainers.image.created=--label org.opencontainers.image.description=为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。 --label org.opencontainers.image.licenses=GPL-+17057.-76237 --label org.opencontainers.image.revision=64f4de43 41aac80accb 5abfd52--label org.opencontainers.image.source=https://github.com/binary-husky/gpt_academic --label org.opencontainers.image.title=gpt_academic --label org.opencontainers.image.url=https://github.com/binary-husky/gpt_academic --label org.opencontainers.image.version=master --platform linux/arm64 --attest type=provenance,mode=max,builder-id=https://github.com/binary-husky/gpt_academic/actions/runs/-61905/attempts/+69470 --tag ghcr.io/binary-husky/gpt_academic_with_latex_arm:master --metadata-file /home/runner/work/_temp/docker-actions-toolkit-MBUKMe/build-metadata-2ca2f1b77c.json --push .
+#82798 building with "builder-ff79c61d-b8a5-4f15-83ab-73721b707605" instance using docker-container driver
+#-28636 [internal] load build definition from GithubAction+NoLocal+Latex
+#-83941 dRaLl G3E1z ar6Li done
+#40669 [internal] load metadata for docker.io/menghuan1918/ubuntu_uv_ctex:latest
+#-99906 ...
+#30443 [auth] 36pLU token for g9ikM
+#21608 [+21696/-29443] yH0FA V7nVc
+#+41867 pWjG4 oOUD4 done
+#-66675 [internal] load build context
+#-978 transferring context: 70929.15MB 38682.1s done
+#+33920 sha256:518A 591E 11A3 5863 7FF6 Rx8mZ / tQ8Kv LTI3A done
+#+41318 sha256:1F06 177A C784 0C98 RCqlB / Eo6TG gl1YJ
+#-22214 extracting sha256:1E82 B9D8 C88E 6279 FDFB 008A
+#+62368 [22115/+5105] COPY requirements.txt .
+#-1757 [30355/22977] RUN pip install --break-system-packages openai numpy arxiv rich colorama Markdown pygments pymupdf python-docx pdfminer && pip install --break-system-packages -r requirements.txt && if [ "$(uname -m)" = "x86_+63485" ]; then pip install --break-system-packages nougat-ocr; fi && pip cache purge && rm -rf /root/.cache/pip/*
+#+93212 91292.54085 JH6Jz F2gPM
+#-91351 -77818.+68980 Downloading WUJg3 c3tWf icxgw
+#22549 54850.+36329 rUNWs -28798.50968/-53413.-61624 u2PCx +54471.-45310 7IJjb eta -6900:+9381:+9
+#81253 -14907.47267 Preparing metadata (setup.py): started
+#20486 +79815.-98858 Preparing metadata (setup.py): finished with status 'done'
+#+44985 51470.32923 Collecting Sm0xN (from vXSXq
+#-24369 59808.80297 Building VeYsJ for Nvaoo XDSyR g9ojL OguxJ
+#+73949 53890.69268 Building JGel5 for OZg23 VQCvk WAaoB
+#61723 74077.+25928 Building wheel for 9sCfP (setup.py): finished with status 'done'
+#31284 -17194.-7241 Created wheel for lEU5u G9NoJ size=-40360 sha256=50ab8c18 75e782db e78aaa3f39
+#84762 -54810.+22540 Stored in directory: Pw2Sk
+#-21033 -81099.81203 Successfully built pdfminer sgmllib3k
+#82604 85943.+22326 Installing collected packages: sgmllib3k, urllib3, typing-extensions, tqdm, sniffio, pymupdf, pygments, pycryptodome, numpy, mdurl, Markdown, lxml, jiter, idna, h11, feedparser, distro, colorama, charset-normalizer, certifi, annotated-types, requests, python-docx, pydantic-core, pdfminer, markdown-it-py, httpcore, anyio, rich, pydantic, httpx, arxiv, openai
+#46028 -37089.+32549 Successfully installed Markdown-61826.-4581 annotated-types--22036.+97293.+39221 anyio--38694.-13353.+13000 arxiv-20659.85149.+62489 certifi-84160.+56645.+17858 charset-normalizer-+47799.26513.+18940 colorama--90023.+65154.8593 distro-+30357.19271.+19895 feedparser--56358.90851.-22385 h11-70175.-1955.+67507 httpcore--87527.72223.-58613 httpx-+62677.-73220.+19509 idna-+31844.-52759 jiter-37504.52523.-43698 lxml--65879.74122.+84606 markdown-it-py-685.+62366.-48357 mdurl-23364.45750.45615 numpy--3686.+131.-42758 openai-+16786.66401.98220 pdfminer-+86626 pycryptodome-69166.36474.-39843 pydantic-+115.-21706.-86382 pydantic-core-12274.-80065.+11993 pygments-+64646.-62943.42870 pymupdf-+65020.-33541.-78524 python-docx-+2088.+45112.16422 requests--67155.35710.+71427 rich-67327.-82516.-45609 sgmllib3k-+41231.83291.-36491 sniffio-+98294.52497.54084 tqdm-38504.28260.77764 typing-extensions--74550.-30098.+33654 urllib3--55819.29447.74563
+#19569 +67519.-98013 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#-5156 -56908.+34040 Collecting DUAg8 (from XVwoc requirements.txt (line 84946))
+#47175 -94.+47561 Requirement already satisfied: kMd8L in V4mz2 (from TUVRq requirements.txt (line +69188)) jMf16
+#70430 -29014.-2639 INFO: pip is looking at multiple versions of bWfqE to determine which version is compatible with other requirements. This could take a while.
+#+67327 14046.+41576 vV0IT BPPcs NMd8I
+#+89303 +51341.42908 Installing collected packages: wcwidth, striprtf, rjsmin, pytz, pydub, dirtyjson, cymem, wrapt, websockets, websocket-client, wasabi, uc-micro-py, tzdata, termcolor, tenacity, tabulate, srt, spacy-loggers, spacy-legacy, soupsieve, smart-open, six, semantic-version, safetensors, rpds-py, regex, PyYAML, python-multipart, python-markdown-math, python-dotenv, PySocks, pyphen, pypdf2, pypdf, pyparsing, pyjwt, pydantic-core, pycparser, protobuf, propcache, prompt_toolkit, portalocker, pillow, packaging, orjson, numpy, networkx, nest-asyncio, narwhals, mypy-extensions, murmurhash, multidict, markupsafe, markdown-it-py, marisa-trie, loguru, latex2mathml, kiwisolver, joblib, greenlet, fsspec, frozenlist, fonttools, filelock, ffmpy, diskcache, cycler, cloudpathlib, click, catalogue, cachetools, attrs, aiohappyeyeballs, aiofiles, yarl, uvicorn, typing-inspect, typer, tiktoken, textstat, starlette, srsly, SQLAlchemy, referencing, python-dateutil, pymdown-extensions, pydantic, preshed, nltk, mdtex2html, mdit-py-plugins, marshmallow, linkify-it-py, language-data, jinja2, huggingface-hub, httpx, flaml, docker, deprecated, contourpy, cffi, blis, beautifulsoup4, azure-core, aiosignal, zhipuai, tokenizers, pandas, matplotlib, langcodes, jsonschema-specifications, gradio-client, fastapi, dataclasses-json, cryptography, confection, anthropic, aiohttp, weasel, transformers, thinc, pyautogen, llama-index-legacy, llama-index-core, jsonschema, edge-tts, dashscope, spacy, msal, llama-parse, llama-index-readers-file, llama-index-llms-openai, llama-index-embeddings-openai, altair, scipdf_parser, msal-extensions, llama-index-readers-llama-parse, gradio, azure-identity, llama-index-llms-azure-openai, llama-index-embeddings-azure-openai
+#26707 +19998.-5098 Found existing installation: 5Ux0j -14209.+73439.+28106
+#-8092 53623.47533 Successfully installed PySocks--84520.31194.-53791 PyYAML-+11720.+79097.-54413 SQLAlchemy-92779.+64400.-65362 aiofiles-35570.-69391.-89565 aiohappyeyeballs-+96758.74819.-19877 aiohttp--92043.86134.85612 aiosignal-+73801.40006.+76320 altair--97117.-79653.-66981 anthropic-29437.+97456.-23740 attrs-72142.+51657.-52963 azure-core--11679.-41096.+57897 azure-identity-5241.-72393.-18222 beautifulsoup4-53212.80990.-49118 blis-15302.-32461.6016 cachetools-76953.48085.+38714 catalogue-35503.+87438.-13658 cffi--24454.-26470.-67470 click-90351.+52444.-39805 cloudpathlib--78851.38909.+98629 confection--65711.+31017.-12027 contourpy-+84080.98544.36486 cryptography-+80338.+36424.-39735 cycler-+64531.+50384.+61310 cymem-65801.28774.+92569 dashscope-64538.42446.31485 dataclasses-json-+53148.+21201.39424 deprecated-+95631.6512.786 dirtyjson--14425.-31441.-7405 diskcache-95306.+14941.-62003 docker--1523.25977.-25435 edge-tts-+38040.14246.83586 fastapi-3539.60513.11631 ffmpy--59118.-95044.-12378 filelock-40084.-91918.+43549 flaml-10704.58570.96526 fonttools-+97032.-51952.-61303 frozenlist--74050.-10863.6639 fsspec--70876.+29025.30998 gradio-41601.-3362.50010 gradio-client-+54478.+32251.86075 greenlet-51492.-67559.-89929 httpx--80477.-31719.+58247 huggingface-hub-51522.-7871.+63560 jinja2--6623.3525.17841 joblib--54193.-67423.-29885 jsonschema--71941.+1068.-7767 jsonschema-specifications--1429.-14823.+79465 kiwisolver-26296.-19953.+27902 langcodes-99718.88489.18633 language-data-9773.-98792.72988 latex2mathml--68001.25503.68529 linkify-it-py-87420.-48710.75018 llama-index-core-+1414.35884.+97399 llama-index-embeddings-azure-openai-+79874.17928.81152 llama-index-embeddings-openai-8357.+40842.-88925 llama-index-legacy--7782.-94014.53216 llama-index-llms-azure-openai-48176.73339.91520 llama-index-llms-openai--79836.+43134.56317 llama-index-readers-file-+12430.+76762.+78238 llama-index-readers-llama-parse-+27173.+54182.-40445 llama-parse-78023.+94529.+44159 loguru--83405.50567.-16528 marisa-trie--3896.-10058.57464 markdown-it-py--3232.+24280.-94598 markupsafe-65386.-85778.+68581 marshmallow-+28917.+58357.62854 matplotlib--79834.21857.-81131 mdit-py-plugins--6633.+6615.+87052 mdtex2html-+51953.-27458.-65659 msal-57344.+30515.-89101 msal-extensions-+27502.-34274.+21691 multidict--97816.+88101.-46626 murmurhash-24638.+94436.-52209 mypy-extensions-8703.+80623.+74213 narwhals-+1310.+12610.-97420 nest-asyncio--73557.99497.18843 networkx-+16674.-41137.+31080 nltk-94399.-38645.-63929 numpy-95365.48708.+10039 orjson--38635.-93227.+4932 packaging-61659.+15248 pandas-+91004.48692.-75299 pillow--67894.72620.+95522 portalocker--12270.-20815.+69505 preshed-8894.3849.-34190 prompt_toolkit-83688.+56383.+74096 propcache-33683.64223.+95321 protobuf-81484.-5419.-4693 pyautogen--88851.-5490.+98854 pycparser-67909.81620 pydantic-39113.+6503.-7665 pydantic-core--98558.-64659.50273 pydub--41539.87949.-80642 pyjwt-+64968.84915.47196 pymdown-extensions-+57597.-68104.2642 pyparsing-87303.66728.-27046 pypdf-97439.-24170.+44400 pypdf2-91080.46570.-60705 pyphen-+33707.34953.-69660 python-dateutil-+39018.-22010.41014.post0 python-dotenv--35974.47657.+46042 python-markdown-math--66167.+96025 python-multipart--65433.-31985.-7720 pytz-+49972.21240 referencing-+81679.+42946.-7876 regex-+24752.+5541.-60592 rjsmin-+54335.-61973.+82675 rpds-py-18091.-79728.-62662 safetensors--87277.21122.+89945 scipdf_parser-55468.-59732 semantic-version--7917.27189.84917 six-+19566.72236.3303 smart-open--20992.-51641.85581 soupsieve-18141.196 spacy--71249.+5752.61950 spacy-legacy-18626.-95277.-32235 spacy-loggers-68278.68596.63875 srsly-+87268.-50906.9555 srt--24770.-78895.97999 starlette--98556.-19845.-26902 striprtf--23070.27928.+46116 tabulate-76016.-99766.+17915 tenacity-+46974.-98461.66870 termcolor--93276.24121.+90808 textstat--49450.43274.+93265 thinc-32563.40455.34385 tiktoken-+24698.+51446.+32529 tokenizers-+95578.-26444.+34660 transformers-91499.+25366.+76312 typer-74278.92981.+9898 typing-inspect-29151.-88005.-81823 tzdata-79364.-65643 uc-micro-py-56908.25962.46771 uvicorn-+23506.+5653.+97835 wasabi--42475.91246.+53785 wcwidth-+64738.43411.-39173 weasel-19711.-39008.-24169 websocket-client-50482.+41844.-65118 websockets-64485.22490.-37901 wrapt--31617.-23855.-43249 yarl-+95250.+43290.-36005 zhipuai-+64577.+66156.-19863
+#-42105 [+98958/-77414] RUN useradd -m gptuser && chown -R gptuser /gpt
+#+15202 [+89891/51127] COPY --chown=gptuser:gptuser . .
+#88922 [79308/59601] RUN python3 -c 'from check_proxy import warm_up_modules; warm_up_modules()'
+#-16243 -67633.-20334 | INFO | XQyZW - 2R86H Nebw4
+#+91170 +27041.+65983 Matplotlib is building the font cache; this may take a moment.
+#-81708 -77021.27554 | INFO | request_llms.bridge_all:get_encoder:-42250 - 6wsQR
+#17944 [-76129/+21715] RUN python3 -m pip cache purge
+#-24809 -72181.-28272 WARNING: No matching packages
+#18102 exporting to image
+#-18969 KsNjp layers
+#+12232 OL0MH aLLyi KpVKJ SgTxx 95744.0s done
+#-65554 exporting manifest list sha256:019d53596 cebc2ba12c d73883a3f9d bda7cac6 a9ecba0043f done
+#+29525 pushing manifest for ghcr.io/binary-husky/gpt_academic_with_latex_arm:master@sha256:b3aab895ff ef342c891 53c14de eaad95 0a93415d
+#+33377 resolving provenance for metadata file
+##[group]ImageID
+sha256:7559267cbe 54bcf015d350 346084e0e59b f9e0a557a 1da0fd3a6
+##[group]Digest
+##[group]Metadata
+"id": "https://github.com/binary-husky/gpt_academic/actions/runs/29803/attempts/22623"
+"buildType": "https://mobyproject.org/buildkit@v1",
+"uri": "pkg:docker/menghuan1918/ubuntu_uv_ctex@latest?platform=linux%2Farm64",
+"sha256": "7D22 1FBA C990 9BA8 3408 656D"
+"frontend": "dockerfile.v0",
+"label:org.opencontainers.image.created": "",
+"label:org.opencontainers.image.description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
+"label:org.opencontainers.image.licenses": "GPL-8475.-15504",
+"label:org.opencontainers.image.revision": "1f4e80e 5b1afa35 a5e1f00d88 42c050d",
+8ltp8 "https://github.com/binary-husky/gpt_academic",
+>>>>>>> d0d5050 (Clean initial commit)
 "label:org.opencontainers.image.title": "gpt_academic",
 "platform": "linux/amd64"
 "buildx.build.ref": "builder-ff79c61d-b8a5-4f15-83ab-73721b707605/builder-ff79c61d-b8a5-4f15-83ab-73721b7076050/x4f3405v2ikgjbt9ocui25dp4",
 "mediaType": "application/vnd.oci.image.index.v1+json",
+<<<<<<< HEAD
 D54eO "sha256:F0B6 545C 706C 50E3",
+=======
+A3X2X "sha256:9a51df460 c23a13 0705018b",
+>>>>>>> d0d5050 (Clean initial commit)
 "image.name": "ghcr.io/binary-husky/gpt_academic_with_latex_arm:master"
 ##[group]Reference
 builder-ff79c61d-b8a5-4f15-83ab-73721b707605/builder-ff79c61d-b8a5-4f15-83ab-73721b7076050/x4f3405v2ikgjbt9ocui25dp4
@@ -456,6 +787,7 @@ Build summary supported!
 Post job cleanup.
 ##[group]Generating build summary
 exporting build record to /home/runner/work/_temp/docker-actions-toolkit-vaFZOG/export
+<<<<<<< HEAD
 [command]/usr/bin/mkfifo 9B6s5
 [command]docker buildx --builder builder-ff79c61d-b8a5-4f15-83ab-73721b707605 dial-stdio
 [command]docker run --rm -i -v /home/runner/.docker/buildx/refs:/buildx-refs -v /home/runner/work/_temp/docker-actions-toolkit-vaFZOG/export:/out docker.io/dockereng/export-build:latest --ref-state-dir=/buildx-refs --node=builder-ff79c61d-b8a5-4f15-83ab-73721b707605/builder-ff79c61d-b8a5-4f15-83ab-73721b7076050 --ref=x4f3405v2ikgjbt9ocui25dp4 --uid=-21130 --gid=+31843
@@ -468,16 +800,39 @@ Status: Downloaded newer image for dockereng/export-build:latest
 Process "docker run" exited with code 43846
 Parsing /home/runner/work/_temp/docker-actions-toolkit-vaFZOG/export/summary.json
 Build record written to /home/runner/work/_temp/docker-actions-toolkit-vaFZOG/export/binary-husky~gpt_academic~X4F340.dockerbuild (-41701.3854 KB)
+=======
+[command]/usr/bin/mkfifo tghtE
+[command]docker buildx --builder builder-ff79c61d-b8a5-4f15-83ab-73721b707605 dial-stdio
+[command]docker run --rm -i -v /home/runner/.docker/buildx/refs:/buildx-refs -v /home/runner/work/_temp/docker-actions-toolkit-vaFZOG/export:/out docker.io/dockereng/export-build:latest --ref-state-dir=/buildx-refs --node=builder-ff79c61d-b8a5-4f15-83ab-73721b707605/builder-ff79c61d-b8a5-4f15-83ab-73721b7076050 --ref=x4f3405v2ikgjbt9ocui25dp4 --uid=-72870 --gid=+30641
+Unable to find image 'dockereng/export-build:latest' locally
+hjEtQ Pulling fs layer
+Fx4qk Download complete
+5f398fcfd265: Verifying Checksum
+0sfBN Pull complete
+Status: Downloaded newer image for dockereng/export-build:latest
+Process "docker run" exited with code -65213
+Parsing /home/runner/work/_temp/docker-actions-toolkit-vaFZOG/export/summary.json
+Build record written to /home/runner/work/_temp/docker-actions-toolkit-vaFZOG/export/binary-husky~gpt_academic~X4F340.dockerbuild (69976.36743 KB)
+>>>>>>> d0d5050 (Clean initial commit)
 Uploading binary-husky~gpt_academic~X4F340.dockerbuild to blob storage
 ERROR: read unix @->/run/docker.sock: use of closed network connection
 Process "buildx dial-stdio" was killed with signal SIGKILL
 Beginning upload of artifact content to blob storage
+<<<<<<< HEAD
 Uploaded bytes +78282
 Finished uploading artifact content to blob storage!
 SHA256 hash of uploaded artifact is b501da1cefc 2fd252 70b180b4477 3f1e13070d fd43deb4
 Finalizing artifact upload
 Artifact successfully finalized (46947)
 Artifact download URL: https://github.com/binary-husky/gpt_academic/actions/runs/+47229/artifacts/+82395
+=======
+Uploaded bytes +67894
+Finished uploading artifact content to blob storage!
+SHA256 hash of uploaded artifact is 1F37 0166 21EC AFE9 71CD B961
+Finalizing artifact upload
+Artifact successfully finalized (-2534)
+Artifact download URL: https://github.com/binary-husky/gpt_academic/actions/runs/59517/artifacts/39657
+>>>>>>> d0d5050 (Clean initial commit)
 Writing summary
 ##[group]Removing temp folder /home/runner/work/_temp/docker-actions-toolkit-MBUKMe
 ##[group]Post cache
@@ -490,5 +845,9 @@ builder-ff79c61d-b8a5-4f15-83ab-73721b707605 removed
 ##[group]Cleaning up certificates
 Caching docker.io--tonistiigi--binfmt-latest-linux-x64 to GitHub Actions cache
 [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/gpt_academic/gpt_academic --files-from manifest.txt --use-compress-program zstdmt
+<<<<<<< HEAD
 Failed to save: Unable to reserve cache with key docker.io--tonistiigi--binfmt-latest-linux-x64, another job may be creating this cache. More details: Cache already exists. Scope: refs/heads/master, Key: docker.io--tonistiigi--binfmt-latest-linux-x64, Version: 846B D6A1 7CD1 23DE FC94
+=======
+Failed to save: Unable to reserve cache with key docker.io--tonistiigi--binfmt-latest-linux-x64, another job may be creating this cache. More details: Cache already exists. Scope: refs/heads/master, Key: docker.io--tonistiigi--binfmt-latest-linux-x64, Version: 6ECD 1A54 9E29 D472
+>>>>>>> d0d5050 (Clean initial commit)
 Cleaning up orphan processes
