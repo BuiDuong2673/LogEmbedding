@@ -181,7 +181,7 @@ if __name__ == "__main__":
         raise ValueError("Missing client name. Usage: python client_program.py <client_name>")
     client_name = sys.argv[1]
     # Call ClientProgram class to handle the traning process
-    client_program = ClientProgram(client_name=client_name, num_context_words=NUM_CONTEXT_WORDS)
+    client_program = ClientProgram(client_name=client_name, num_context_words=2)
     client_program.training(
-        num_neg_samples=5, num_epochs=5, learning_rate=0.01
+        num_neg_samples=5, num_epochs=5, learning_rate=0.1
     )

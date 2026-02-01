@@ -15,7 +15,7 @@ class CentralServerProgram:
 
     def __init__(self):
         """Initialize CentralServerProgram class."""
-        self.client_list = ["maryangel101", "d2klab", "logsage"]  # ["maryangel101", "d2klab", "logsage"]
+        self.client_list = ["maryangel101", "d2klab"]  # ["maryangel101", "d2klab", "logsage"]
         self.client_sockets = {}
         self.client_vocabs = {}
         self.indice_map = {}
@@ -130,7 +130,7 @@ class CentralServerProgram:
                 W1 = np.mean([w1 for w1, _ in client_updates], axis=0)
                 W2 = np.mean([w2 for _, w2 in client_updates], axis=0)
 
-                if epoch < 49:
+                if epoch < (self.num_epochs - 1):  # before the last epoch
                     for sock in self.client_sockets.values():
                         send_message(sock, {
                             "type": "AGGREGATED_WEIGHTS",

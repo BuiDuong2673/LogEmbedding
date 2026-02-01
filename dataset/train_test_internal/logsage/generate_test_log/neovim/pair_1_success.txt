@@ -1,16 +1,16 @@
-﻿Current runner version: '+51002.-38416.-46235'
+﻿Current runner version: '+6525.+22481.-65980'
 ##[group]Operating System
-Microsoft Windows Server 65425
-+45040.-3789.39031
+Microsoft Windows Server 16511
+31388.95731.23157
 Datacenter
 ##[endgroup]
 ##[group]Runner Image
-Image: windows-84502
-Version: +50934.+8160.+28033
-Included Software: https://github.com/actions/runner-images/blob/win22/53835.+27359/images/windows/Windows2022-Readme.md
-Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20250406.67418
+Image: windows--97711
+Version: +94983.+70556.+99912
+Included Software: https://github.com/actions/runner-images/blob/win22/+97864.63744/images/windows/Windows2022-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20250406.97015
 ##[group]Runner Image Provisioner
-223.136.91.85
+58.13.22.100
 ##[group]GITHUB_TOKEN Permissions
 Contents: read
 Metadata: read
@@ -19,12 +19,12 @@ Secret source: Actions
 Prepare workflow directory
 Prepare all required actions
 Getting action download info
-##[group]Download immutable action package nBA77
-Digest: sha256:48B6 1A4A 838C C2BE 05B5
-Source commit SHA: DB74 CC5B FA38 63C8 75FC E939
-Download action repository 'msys2/setup-msys2@v2' (SHA:1d9c6c48cf d811280ef1 3d8e211 0f1ba78b0d)
+##[group]Download immutable action package nBbwy
+Digest: sha256:3FED ECD4 F8BB EDDF 402A 2109
+Source commit SHA: DC43 4388 91DE A4C0
+Download action repository 'msys2/setup-msys2@v2' (SHA:DC4B A7C7 9B1F D1D7)
 Complete job name: windows / windows (old)
-##[group]Run 0uh0V
+##[group]Run W7woH
 with:
 repository: neovim/neovim
 token: ***
@@ -33,7 +33,7 @@ ssh-user: git
 persist-credentials: true
 clean: true
 sparse-checkout-cone-mode: true
-fetch-depth: -70730
+fetch-depth: -46158
 fetch-tags: false
 show-progress: true
 lfs: false
@@ -43,48 +43,48 @@ Syncing repository: neovim/neovim
 ##[group]Getting Git version info
 Working directory is 'D:\a\neovim\neovim'
 [command]"C:\Program Files\Git\bin\git.exe" version
-git version -83186.+98646.-54510.windows.19993
-Temporarily overriding bbIDa before making global git config changes
+git version 30458.-76387.83440.windows.71325
+Temporarily overriding pGYh8 before making global git config changes
 Adding repository directory to the temporary git global config as a safe directory
-[command]"C:\Program Files\Git\bin\git.exe" config skNrp cg6kE yki9q 5J9q2
+[command]"C:\Program Files\Git\bin\git.exe" config 47KnK jF7cY AQnzy 6SozO
 Deleting the contents of 'D:\a\neovim\neovim'
 ##[group]Initializing the repository
-[command]"C:\Program Files\Git\bin\git.exe" hHHe9 F4y5U
+[command]"C:\Program Files\Git\bin\git.exe" kk0uh tDn8i
 Initialized empty Git repository in D:/a/neovim/neovim/.git/
 [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/neovim/neovim
 ##[group]Disabling automatic garbage collection
-[command]"C:\Program Files\Git\bin\git.exe" config --local a7aN9 Ofwb4
+[command]"C:\Program Files\Git\bin\git.exe" config --local FMjJh QAHXY
 ##[group]Setting up auth
-[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp LZjic && git config --local --unset-all Zt6tx || :\""
+[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp Jzq41 && git config --local --unset-all YP8TT || :\""
 [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
 ##[group]Fetching the repository
-[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=+49145 fetch --no-tags --prune --no-recurse-submodules --depth=+97109 origin +f49e9d 3567647661b c5db4b:refs/remotes/origin/master
+[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=+77085 fetch --no-tags --prune --no-recurse-submodules --depth=21921 origin +7978 4EBE BD82 B618:refs/remotes/origin/master
 From https://github.com/neovim/neovim
-* [new ref] 18DB 5B66 B42F 7442 9D8E 4FC3-> origin/master
+* [new ref] 5569 82FF 06F1 ACBE-> origin/master
 ##[group]Determining the checkout info
 ##[group]Checking out the ref
 [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B master refs/remotes/origin/master
 branch 'master' set up to track 'origin/master'.
 Reset branch 'master'
-[command]"C:\Program Files\Git\bin\git.exe" log 39696 --format=%H
-f58acba030 570610ce1c 32b8f0f0 f3399828cf7c
-##[group]Run echo TWmST >> lQwS7
-[-21009;1mecho aHEX5 >> Dd7FH
-shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {4100}
-[61189;1m.github/scripts/env.ps1[0m
-shell: C:\Program Files\PowerShell\+62719\pwsh.EXE -command ". '{81331}'"
-[+73478;1m./.github/scripts/install_deps.sh [0m
+[command]"C:\Program Files\Git\bin\git.exe" log 88218 --format=%H
+31A8 A86F D6A2 7DF8 C3BA 3A93
+##[group]Run echo rtkmk >> A9QSX
+[+98302;1mecho e9DX6 >> 0N4Qu
+shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {46144}
+[-76039;1m.github/scripts/env.ps1[0m
+shell: C:\Program Files\PowerShell\35365\pwsh.EXE -command ". '{85308}'"
+[92405;1m./.github/scripts/install_deps.sh [0m
 env:
 ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE: C:\actionarchivecache\
 AGENT_TOOLSDIRECTORY: C:\hostedtoolcache\windows
 ALLUSERSPROFILE: C:\ProgramData
 ANDROID_HOME: C:\Android\android-sdk
-ANDROID_NDK: C:\Android\android-sdk\ndk\+35028.-49485.-47154
-ANDROID_NDK_HOME: C:\Android\android-sdk\ndk\20868.41410.-51240
-ANDROID_NDK_LATEST_HOME: C:\Android\android-sdk\ndk\87569.24451.-90017
-ANDROID_NDK_ROOT: C:\Android\android-sdk\ndk\-8965.95157.-71722
+ANDROID_NDK: C:\Android\android-sdk\ndk\-90484.69492.-37857
+ANDROID_NDK_HOME: C:\Android\android-sdk\ndk\-88206.98088.47749
+ANDROID_NDK_LATEST_HOME: C:\Android\android-sdk\ndk\+28652.-1632.9607
+ANDROID_NDK_ROOT: C:\Android\android-sdk\ndk\+49914.+35803.+59930
 ANDROID_SDK_ROOT: C:\Android\android-sdk
-ANT_HOME: C:\ProgramData\chocolatey\lib\ant\tools\apache-ant-+93359.+54681.+44537
+ANT_HOME: C:\ProgramData\chocolatey\lib\ant\tools\apache-ant-42079.36836.92164
 APPDATA: C:\Users\runneradmin\AppData\Roaming
 AZURE_CONFIG_DIR: C:\azureCli
 AZURE_DEVOPS_CACHE_DIR: C:\azureDevOpsCli\cache
@@ -94,29 +94,29 @@ CABAL_DIR: C:\cabal
 ChocolateyInstall: C:\ProgramData\chocolatey
 ChromeWebDriver: C:\SeleniumWebDrivers\ChromeDriver
 CI: true
-COBERTURA_HOME: C:\cobertura--96805.81684.-95004
+COBERTURA_HOME: C:\cobertura--7572.+47704.+40881
 CommandPromptType: Native
 CommonProgramFiles: C:\Program Files\Common Files
-PD1Np C:\Program Files Zz6pO 7Mh4x
+y8J0Y C:\Program Files DlmDs 6sUSV
 CommonProgramW6432: C:\Program Files\Common Files
-COMPUTERNAME: fv-az1992-+89304
+COMPUTERNAME: fv-az1992--67194
 ComSpec: C:\Windows\system32\cmd.exe
 CONDA: C:\Miniconda
 DEPLOYMENT_BASEPATH: C:\actions
-DevEnvDir: C:\Program Files\Microsoft Visual Studio\-61633\Enterprise\Common7\IDE\
-DOTNET_MULTILEVEL_LOOKUP: 24594
-DOTNET_NOLOGO: 52997
-DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 55460
+DevEnvDir: C:\Program Files\Microsoft Visual Studio\+80710\Enterprise\Common7\IDE\
+DOTNET_MULTILEVEL_LOOKUP: -96060
+DOTNET_NOLOGO: +95894
+DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 38154
 DriverData: C:\Windows\System32\Drivers\DriverData
 EdgeWebDriver: C:\SeleniumWebDrivers\EdgeDriver
-ExtensionSdkDir: C:\Program Files (x86)\Microsoft SDKs\Windows Kits\+32663\ExtensionSDKs
-EXTERNAL_INCLUDE: C:\Program Files\Microsoft Visual Studio\-36203\Enterprise\VC\Tools\MSVC\+83076.-63786.-56632\include;C:\Program Files\Microsoft Visual Studio\-40716\Enterprise\VC\Tools\MSVC\+42297.-37606.-38954\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\+10088\Enterprise\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\-46271\include\-10673.-5764.+45203.+63166\ucrt;C:\Program Files (x86)\Windows Kits\+63008\\include\-79103.+47768.+84677.94551\\um;C:\Program Files (x86)\Windows Kits\7969\\include\-23266.+35208.+39895.21537\\shared;C:\Program Files (x86)\Windows Kits\-60521\\include\-83033.+18441.31845.-71797\\winrt;C:\Program Files (x86)\Windows Kits\+57577\\include\+22852.56860.28694.-90735\\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\10520.84915\include\um
-Framework40Version: v4.85290
+ExtensionSdkDir: C:\Program Files (x86)\Microsoft SDKs\Windows Kits\-1708\ExtensionSDKs
+EXTERNAL_INCLUDE: C:\Program Files\Microsoft Visual Studio\+47844\Enterprise\VC\Tools\MSVC\-95938.-48986.-31957\include;C:\Program Files\Microsoft Visual Studio\14350\Enterprise\VC\Tools\MSVC\81707.+84013.34557\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\-25635\Enterprise\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\-60122\include\+50567.89919.66605.86625\ucrt;C:\Program Files (x86)\Windows Kits\-78456\\include\-29689.+70386.+16510.-68567\\um;C:\Program Files (x86)\Windows Kits\+64872\\include\+43374.-7251.+18337.38802\\shared;C:\Program Files (x86)\Windows Kits\+37775\\include\-37730.89607.87424.+6960\\winrt;C:\Program Files (x86)\Windows Kits\72146\\include\25331.+35842.25574.-42518\\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\+59648.51026\include\um
+Framework40Version: v4.+51895
 FrameworkDir: C:\Windows\Microsoft.NET\Framework64\
 FrameworkDir64: C:\Windows\Microsoft.NET\Framework64\
-FrameworkVersion: v4.-56342.68093
-FrameworkVersion64: v4.+3662.-38560
-FSHARPINSTALLDIR: C:\Program Files\Microsoft Visual Studio\9339\Enterprise\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools
+FrameworkVersion: v4.+32498.+40739
+FrameworkVersion64: v4.+67807.74820
+FSHARPINSTALLDIR: C:\Program Files\Microsoft Visual Studio\+80507\Enterprise\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools
 GCM_INTERACTIVE: Never
 GeckoWebDriver: C:\SeleniumWebDrivers\GeckoDriver
 GHCUP_INSTALL_BASE_PREFIX: C:\
@@ -127,68 +127,68 @@ GITHUB_ACTION_PATH: D:\a\neovim\neovim\./.github/actions/setup
 GITHUB_ACTION_REF:
 GITHUB_ACTION_REPOSITORY:
 GITHUB_ACTOR: zeertzjq
-GITHUB_ACTOR_ID: -16549
+GITHUB_ACTOR_ID: -29492
 GITHUB_API_URL: https://api.github.com
 GITHUB_BASE_REF:
-GITHUB_ENV: D:\a\_temp\_runner_file_commands\set_env_0dd46a58-7df9-495f-50723-ec02bb4f934d
+GITHUB_ENV: D:\a\_temp\_runner_file_commands\set_env_0dd46a58-7df9-495f-+3077-ec02bb4f934d
 GITHUB_EVENT_NAME: push
 GITHUB_EVENT_PATH: D:\a\_temp\_github_workflow\event.json
 GITHUB_GRAPHQL_URL: https://api.github.com/graphql
 GITHUB_HEAD_REF:
 GITHUB_JOB: windows
-GITHUB_OUTPUT: D:\a\_temp\_runner_file_commands\set_output_0dd46a58-7df9-495f-+52640-ec02bb4f934d
-GITHUB_PATH: D:\a\_temp\_runner_file_commands\add_path_0dd46a58-7df9-495f-+68157-ec02bb4f934d
+GITHUB_OUTPUT: D:\a\_temp\_runner_file_commands\set_output_0dd46a58-7df9-495f-10920-ec02bb4f934d
+GITHUB_PATH: D:\a\_temp\_runner_file_commands\add_path_0dd46a58-7df9-495f--94608-ec02bb4f934d
 GITHUB_REF: refs/heads/master
 GITHUB_REF_NAME: master
 GITHUB_REF_PROTECTED: true
 GITHUB_REF_TYPE: branch
 GITHUB_REPOSITORY: neovim/neovim
-GITHUB_REPOSITORY_ID: -10595
+GITHUB_REPOSITORY_ID: -79273
 GITHUB_REPOSITORY_OWNER: neovim
-GITHUB_REPOSITORY_OWNER_ID: 73651
-GITHUB_RETENTION_DAYS: 43854
-GITHUB_RUN_ATTEMPT: -5361
-GITHUB_RUN_ID: +29470
-GITHUB_RUN_NUMBER: 51786
+GITHUB_REPOSITORY_OWNER_ID: +11738
+GITHUB_RETENTION_DAYS: 21253
+GITHUB_RUN_ATTEMPT: +19388
+GITHUB_RUN_ID: +26920
+GITHUB_RUN_NUMBER: 42139
 GITHUB_SERVER_URL: https://github.com
-GITHUB_SHA: af1bf6762 864a76c bc794676 2579fb0fab4c
-GITHUB_STATE: D:\a\_temp\_runner_file_commands\save_state_0dd46a58-7df9-495f--16034-ec02bb4f934d
-GITHUB_STEP_SUMMARY: D:\a\_temp\_runner_file_commands\step_summary_0dd46a58-7df9-495f-+22741-ec02bb4f934d
+GITHUB_SHA: 146b3b 5b5a801a 5ab935267d74 e0a6a16c4818
+GITHUB_STATE: D:\a\_temp\_runner_file_commands\save_state_0dd46a58-7df9-495f-+99117-ec02bb4f934d
+GITHUB_STEP_SUMMARY: D:\a\_temp\_runner_file_commands\step_summary_0dd46a58-7df9-495f--38794-ec02bb4f934d
 GITHUB_TRIGGERING_ACTOR: zeertzjq
 GITHUB_WORKFLOW: test
 GITHUB_WORKFLOW_REF: neovim/neovim/.github/workflows/test.yml@refs/heads/master
-GITHUB_WORKFLOW_SHA: f01b23 8c6e5f2 b797a96fb
+GITHUB_WORKFLOW_SHA: 19775a8f 248c603a2 1b1d055d776 8ee48ed24
 GITHUB_WORKSPACE: D:\a\neovim\neovim
-GOROOT_87260_+93107_X64: C:\hostedtoolcache\windows\go\92555.+28731.13815\x64
-GRADLE_HOME: C:\ProgramData\chocolatey\lib\gradle\tools\gradle--58415.+61081
+GOROOT_-54961_+62471_X64: C:\hostedtoolcache\windows\go\-2280.-43254.89305\x64
+GRADLE_HOME: C:\ProgramData\chocolatey\lib\gradle\tools\gradle--83435.41328
 HOMEDRIVE: C:
 HOMEPATH: \Users\runneradmin
 HTMLHelpDir: C:\Program Files (x86)\HTML Help Workshop
 IEWebDriver: C:\SeleniumWebDrivers\IEDriver
-IFCPATH: C:\Program Files\Microsoft Visual Studio\-84720\Enterprise\VC\Tools\MSVC\89184.+97123.+20131\ifc\x64
+IFCPATH: C:\Program Files\Microsoft Visual Studio\+54536\Enterprise\VC\Tools\MSVC\+44627.-67399.28482\ifc\x64
 ImageOS: win22
-ImageVersion: -18269.-75785.-98188
-INCLUDE: C:\Program Files\Microsoft Visual Studio\53536\Enterprise\VC\Tools\MSVC\+33210.84832.-87696\include;C:\Program Files\Microsoft Visual Studio\+86868\Enterprise\VC\Tools\MSVC\+85793.10568.27269\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\-83490\Enterprise\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\-90006\include\26372.67513.19646.+82975\ucrt;C:\Program Files (x86)\Windows Kits\+20991\\include\91684.-169.-90326.61011\\um;C:\Program Files (x86)\Windows Kits\+56927\\include\85639.2164.9448.9411\\shared;C:\Program Files (x86)\Windows Kits\-20940\\include\-44680.-90570.+60728.99881\\winrt;C:\Program Files (x86)\Windows Kits\+99134\\include\-8198.+75862.-32288.79752\\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\+62324.-13035\include\um
-kbfH2 true
-JAVA_HOME: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\75944.+18137.3741--33289\x64
-JAVA_HOME_-47740_X64: ebBl5
-LIB: C:\Program Files\Microsoft Visual Studio\-59394\Enterprise\VC\Tools\MSVC\-63988.87066.+9534\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\+34819\Enterprise\VC\Tools\MSVC\-29655.-39503.+73024\lib\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\+51074.+69140\lib\um\x64;C:\Program Files (x86)\Windows Kits\23259\lib\34083.-15390.-96969.91792\ucrt\x64;C:\Program Files (x86)\Windows Kits\12469\\lib\11704.-90343.-51987.-44924\\um\x64
-LIBPATH: C:\Program Files\Microsoft Visual Studio\81267\Enterprise\VC\Tools\MSVC\77272.15379.+61151\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\+55044\Enterprise\VC\Tools\MSVC\-59551.+72211.35052\lib\x64;C:\Program Files\Microsoft Visual Studio\71871\Enterprise\VC\Tools\MSVC\+57594.+83679.6251\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\-30328\UnionMetadata\-43867.+62673.-47998.73792;C:\Program Files (x86)\Windows Kits\+36716\References\-30736.97612.+4318.-66431;C:\Windows\Microsoft.NET\Framework64\v4.84597.+86275
+ImageVersion: -9258.-79676.-9174
+INCLUDE: C:\Program Files\Microsoft Visual Studio\34612\Enterprise\VC\Tools\MSVC\-21895.+2494.+42948\include;C:\Program Files\Microsoft Visual Studio\69062\Enterprise\VC\Tools\MSVC\+3894.-30168.-51619\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\48013\Enterprise\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\+91630\include\-88657.+59692.-64527.-79822\ucrt;C:\Program Files (x86)\Windows Kits\-81418\\include\94250.-53719.17400.+11265\\um;C:\Program Files (x86)\Windows Kits\+50176\\include\-91917.-68195.+68808.-68232\\shared;C:\Program Files (x86)\Windows Kits\+82013\\include\-16863.+86569.-56651.+22175\\winrt;C:\Program Files (x86)\Windows Kits\-53837\\include\-7558.-28629.+49623.45975\\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\+47927.-98509\include\um
+P9V0K true
+JAVA_HOME: C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\-37907.6593.27545-10201\x64
+JAVA_HOME_-76687_X64: ysZk5
+LIB: C:\Program Files\Microsoft Visual Studio\-43240\Enterprise\VC\Tools\MSVC\24851.5089.75086\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\+16732\Enterprise\VC\Tools\MSVC\+88178.+30855.87731\lib\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\+92634.+3699\lib\um\x64;C:\Program Files (x86)\Windows Kits\34960\lib\+77188.17272.84110.88941\ucrt\x64;C:\Program Files (x86)\Windows Kits\-11361\\lib\45481.+81923.-35678.+24727\\um\x64
+LIBPATH: C:\Program Files\Microsoft Visual Studio\74049\Enterprise\VC\Tools\MSVC\-53381.92689.75747\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\93883\Enterprise\VC\Tools\MSVC\98318.59036.-24304\lib\x64;C:\Program Files\Microsoft Visual Studio\32421\Enterprise\VC\Tools\MSVC\+85618.+51513.-63117\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\+16046\UnionMetadata\99655.+17998.-11843.-87258;C:\Program Files (x86)\Windows Kits\-91956\References\20508.-33941.-71674.80293;C:\Windows\Microsoft.NET\Framework64\v4.34076.+76731
 LOCALAPPDATA: C:\Users\runneradmin\AppData\Local
-LOGONSERVER: \\fv-az1992--48286
-M2: C:\ProgramData\chocolatey\lib\maven\apache-maven-85360.-99946.+79197\bin
+LOGONSERVER: \\fv-az1992-+80607
+M2: C:\ProgramData\chocolatey\lib\maven\apache-maven-+29044.50002.+16198\bin
 M2_REPO: C:\ProgramData\m2
 MAVEN_OPTS: -Xms256m
 npm_config_prefix: C:\npm\prefix
-5wd2i 53072
+k5uLh 83514
 OS: Windows_NT
-Path: C:\Program Files\Microsoft Visual Studio\-46666\Enterprise\VC\Tools\MSVC\-8738.-67297.-56433\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\-814\Enterprise\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\+49015\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\76852\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\27782\Enterprise\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 98159.73234 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\+97381\Enterprise\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\27927\Enterprise\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\-23728\Enterprise\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\-16214\bin\-64440.23018.+56152.-52927\\x64;C:\Program Files (x86)\Windows Kits\-22772\bin\\x64;C:\Program Files\Microsoft Visual Studio\+36901\Enterprise\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.32740.+6857;C:\Program Files\Microsoft Visual Studio\+29412\Enterprise\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\59583\Enterprise\Common7\Tools\;C:\Program Files\PowerShell\-35840;C:\Program Files\MongoDB\Server\94264.-23185\bin;C:\aliyun-cli;C:\vcpkg;C:\Program Files (x86)\NSIS\;C:\tools\zstd;C:\Program Files\Mercurial\;C:\hostedtoolcache\windows\stack\-36312.-16415.-23034\x64;C:\cabal\bin;C:\\ghcup\bin;C:\mingw64\bin;C:\Program Files\dotnet;C:\Program Files\MySQL\MySQL Server +54635.34052\bin;C:\Program Files\R\R-+73311.+91501.79758\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\SeleniumWebDrivers\EdgeDriver\;C:\SeleniumWebDrivers\ChromeDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\+81592.-40753.+31747\x64\bin;C:\hostedtoolcache\windows\Python\3486.+53718.69104\x64\Scripts;C:\hostedtoolcache\windows\Python\89108.-4888.-17147\x64;C:\hostedtoolcache\windows\Ruby\-33161.1181.-22000\x64\bin;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\+86748.+60465.+78149-24296\x64\bin;C:\Program Files\ImageMagick-48414.+61417.-35559-Q16-HDRI;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\ProgramData\Chocolatey\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.-42668\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\11727\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\-79388\Tools\Binn\;C:\Program Files\Microsoft SQL Server\66342\Tools\Binn\;C:\Program Files (x86)\Windows Kits\-66688\Windows Performance Toolkit\;C:\Program Files (x86)\WiX Toolset v3.+11856\bin;C:\Program Files\Microsoft SQL Server\-84308\DTS\Binn\;C:\Program Files\Microsoft SQL Server\254\DTS\Binn\;C:\Program Files\Microsoft SQL Server\61865\DTS\Binn\;C:\Program Files\Microsoft SQL Server\+86959\DTS\Binn\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-+32624.-71961.-60985\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI\;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Microsoft SQL Server\+26529\Tools\Binn\;C:\Program Files\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft Visual Studio\50195\Enterprise\VC\Tools\Llvm\x64\bin;C:\Program Files\Microsoft Visual Studio\+43569\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\30202\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\+27597\Enterprise\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\-6384\Enterprise\VC\vcpkg
+Path: C:\Program Files\Microsoft Visual Studio\-41552\Enterprise\VC\Tools\MSVC\+56722.58336.-37822\bin\HostX64\x64;C:\Program Files\Microsoft Visual Studio\-85614\Enterprise\Common7\IDE\VC\VCPackages;C:\Program Files\Microsoft Visual Studio\29532\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files\Microsoft Visual Studio\52694\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files\Microsoft Visual Studio\-32052\Enterprise\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX -70161.+52785 Tools\x64\;C:\Program Files (x86)\HTML Help Workshop;C:\Program Files\Microsoft Visual Studio\-81834\Enterprise\Common7\IDE\CommonExtensions\Microsoft\FSharp\Tools;C:\Program Files\Microsoft Visual Studio\-75154\Enterprise\Team Tools\DiagnosticsHub\Collector;C:\Program Files\Microsoft Visual Studio\50717\Enterprise\Common7\IDE\Extensions\Microsoft\CodeCoverage.Console;C:\Program Files (x86)\Windows Kits\51162\bin\45956.-93446.+62078.-12567\\x64;C:\Program Files (x86)\Windows Kits\31745\bin\\x64;C:\Program Files\Microsoft Visual Studio\+44272\Enterprise\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.-10139.2922;C:\Program Files\Microsoft Visual Studio\-95525\Enterprise\Common7\IDE\;C:\Program Files\Microsoft Visual Studio\-72380\Enterprise\Common7\Tools\;C:\Program Files\PowerShell\+50980;C:\Program Files\MongoDB\Server\+83278.-56180\bin;C:\aliyun-cli;C:\vcpkg;C:\Program Files (x86)\NSIS\;C:\tools\zstd;C:\Program Files\Mercurial\;C:\hostedtoolcache\windows\stack\-38533.+73207.-19002\x64;C:\cabal\bin;C:\\ghcup\bin;C:\mingw64\bin;C:\Program Files\dotnet;C:\Program Files\MySQL\MySQL Server -74609.+48032\bin;C:\Program Files\R\R-41184.-30278.62641\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\SeleniumWebDrivers\EdgeDriver\;C:\SeleniumWebDrivers\ChromeDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\68326.52724.+93678\x64\bin;C:\hostedtoolcache\windows\Python\59518.+36294.5890\x64\Scripts;C:\hostedtoolcache\windows\Python\23920.-75037.+78751\x64;C:\hostedtoolcache\windows\Ruby\+60711.-13556.-49785\x64\bin;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\+53806.-72375.+59731-+13966\x64\bin;C:\Program Files\ImageMagick-+51727.+2759.94618-Q16-HDRI;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\ProgramData\Chocolatey\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.-59711\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\-15065\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\-12907\Tools\Binn\;C:\Program Files\Microsoft SQL Server\+48872\Tools\Binn\;C:\Program Files (x86)\Windows Kits\-99537\Windows Performance Toolkit\;C:\Program Files (x86)\WiX Toolset v3.-75635\bin;C:\Program Files\Microsoft SQL Server\+13178\DTS\Binn\;C:\Program Files\Microsoft SQL Server\+63667\DTS\Binn\;C:\Program Files\Microsoft SQL Server\-90499\DTS\Binn\;C:\Program Files\Microsoft SQL Server\-70125\DTS\Binn\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven--27285.+31788.+15949\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI\;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Microsoft SQL Server\+98283\Tools\Binn\;C:\Program Files\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft Visual Studio\-75278\Enterprise\VC\Tools\Llvm\x64\bin;C:\Program Files\Microsoft Visual Studio\-43121\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\-7765\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;C:\Program Files\Microsoft Visual Studio\65033\Enterprise\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;C:\Program Files\Microsoft Visual Studio\81974\Enterprise\VC\vcpkg
 PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
 PERFLOG_LOCATION_SETTING: RUNNER_PERFLOG
-PGBIN: C:\Program Files\PostgreSQL\-57544\bin
-PGDATA: C:\Program Files\PostgreSQL\+69326\data
+PGBIN: C:\Program Files\PostgreSQL\-1843\bin
+PGDATA: C:\Program Files\PostgreSQL\+52371\data
 PGPASSWORD: root
-PGROOT: C:\Program Files\PostgreSQL\+83556
+PGROOT: C:\Program Files\PostgreSQL\37152
 PGUSER: postgres
 PHPROOT: c:\tools\php
 PIPX_BIN_DIR: C:\Program Files (x86)\pipx_bin
@@ -196,105 +196,105 @@ PIPX_HOME: C:\Program Files (x86)\pipx
 POWERSHELL_DISTRIBUTION_CHANNEL: GitHub-Actions-win22
 POWERSHELL_UPDATECHECK: Off
 PROCESSOR_ARCHITECTURE: AMD64
-PROCESSOR_IDENTIFIER: AMD64 Family 84626 Model -29991 Stepping +843, AuthenticAMD
+PROCESSOR_IDENTIFIER: AMD64 Family 56082 Model +29797 Stepping +3480, AuthenticAMD
 ProgramData: C:\ProgramData
 ProgramFiles: C:\Program Files
-UNoeS C:\Program Files 3z7w9
+1uodD C:\Program Files rEgL2
 ProgramW6432: C:\Program Files
 PROMPT: $P$G
 PSModuleAnalysisCachePath: C:\PSModuleAnalysisCachePath\ModuleAnalysisCache
-PSModulePath: C:\Users\runneradmin\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\99973\Modules;C:\Users\packer\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.50839\Modules;C:\Program Files\Microsoft SQL Server\+5175\Tools\PowerShell\Modules\
+PSModulePath: C:\Users\runneradmin\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\-82554\Modules;C:\Users\packer\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.+23143\Modules;C:\Program Files\Microsoft SQL Server\21657\Tools\PowerShell\Modules\
 PUBLIC: C:\Users\Public
 RTOOLS44_HOME: C:\rtools44
 RUNNER_ARCH: X64
 RUNNER_ENVIRONMENT: github-hosted
-RUNNER_NAME: GitHub-Actions-+23818
+RUNNER_NAME: GitHub-Actions-11376
 RUNNER_OS: Windows
 RUNNER_PERFLOG: C:\actions\perflog
 RUNNER_TEMP: D:\a\_temp
 RUNNER_TOOL_CACHE: C:\hostedtoolcache\windows
-RUNNER_TRACKING_ID: github_36f2c96f-a4e7-63555-a6b9-79cbb1a62fbe
+RUNNER_TRACKING_ID: github_36f2c96f-a4e7-+44465-a6b9-79cbb1a62fbe
 RUNNER_WORKSPACE: D:\a\neovim
 SELENIUM_JAR_PATH: C:\selenium\selenium-server.jar
-JGxlo false
+RwfuN false
 STATS_EXTP: https://provjobdprod.z13.web.core.windows.net/settings/provjobdsettings-latest/provjobd.data
 STATS_TIS: mining
 SystemDrive: C:
-YA8cW C:\Windows
-tuWii C:\Users\RUNNER~+18856\AppData\Local\Temp
-UCRTVersion: -55918.+48364.+65538.34641
-CueqZ fv-az1992-+94315
+Q8mC1 C:\Windows
+6WCwq C:\Users\RUNNER~-34729\AppData\Local\Temp
+UCRTVersion: -30638.+33187.-88581.+50821
+WsoBd fv-az1992-+67649
 USERNAME: runneradmin
 USERPROFILE: C:\Users\runneradmin
-VCIDEInstallDir: C:\Program Files\Microsoft Visual Studio\98276\Enterprise\Common7\IDE\VC\
-VCINSTALLDIR: C:\Program Files\Microsoft Visual Studio\99464\Enterprise\VC\
+VCIDEInstallDir: C:\Program Files\Microsoft Visual Studio\63843\Enterprise\Common7\IDE\VC\
+VCINSTALLDIR: C:\Program Files\Microsoft Visual Studio\+22375\Enterprise\VC\
 VCPKG_INSTALLATION_ROOT: C:\vcpkg
-VCPKG_ROOT: C:\Program Files\Microsoft Visual Studio\+30038\Enterprise\VC\vcpkg
-VCToolsInstallDir: C:\Program Files\Microsoft Visual Studio\49702\Enterprise\VC\Tools\MSVC\+24705.-61135.53721\
-VCToolsRedistDir: C:\Program Files\Microsoft Visual Studio\93357\Enterprise\VC\Redist\MSVC\82982.15488.-44591\
-S6ftQ 14679.-26321.60338
-VisualStudioVersion: +17440.39756
-QidUI C:\Program Files\Microsoft Visual AXIgG
+VCPKG_ROOT: C:\Program Files\Microsoft Visual Studio\14955\Enterprise\VC\vcpkg
+VCToolsInstallDir: C:\Program Files\Microsoft Visual Studio\+30623\Enterprise\VC\Tools\MSVC\33466.81059.-56135\
+VCToolsRedistDir: C:\Program Files\Microsoft Visual Studio\42154\Enterprise\VC\Redist\MSVC\+68896.19794.25315\
+l39Fx -10600.25632.34696
+VisualStudioVersion: 69062.-55764
+bg0yh C:\Program Files\Microsoft Visual oNBet
 VSCMD_ARG_app_plat: Desktop
-SuabX x64
-WindowsLibPath: C:\Program Files (x86)\Windows Kits\+39960\UnionMetadata\42036.-75210.-40495.34496;C:\Program Files (x86)\Windows Kits\52997\References\+72415.+52746.-13821.88112
-hhebp -61147.-9114.79585.-93730\
-UQKXj C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX +49968.+64510 Lx8is
-WIX: C:\Program Files (x86)\WiX Toolset v3.+45663\
-__VSCMD_PREINIT_PATH: C:\Program Files\PowerShell\29237;C:\Program Files\MongoDB\Server\41235.+60119\bin;C:\aliyun-cli;C:\vcpkg;C:\Program Files (x86)\NSIS\;C:\tools\zstd;C:\Program Files\Mercurial\;C:\hostedtoolcache\windows\stack\-77612.-1436.-78572\x64;C:\cabal\bin;C:\\ghcup\bin;C:\mingw64\bin;C:\Program Files\dotnet;C:\Program Files\MySQL\MySQL Server 639.-39662\bin;C:\Program Files\R\R-24784.30670.-25220\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\SeleniumWebDrivers\EdgeDriver\;C:\SeleniumWebDrivers\ChromeDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\31611.+89399.78761\x64\bin;C:\hostedtoolcache\windows\Python\62734.+15792.97302\x64\Scripts;C:\hostedtoolcache\windows\Python\99555.+63858.-89566\x64;C:\hostedtoolcache\windows\Ruby\+75926.76314.+28699\x64\bin;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\-11029.17986.-29397--22648\x64\bin;C:\Program Files\ImageMagick-+57864.-3086.+56272-Q16-HDRI;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\ProgramData\Chocolatey\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.46636\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\81108\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\-70874\Tools\Binn\;C:\Program Files\Microsoft SQL Server\+75593\Tools\Binn\;C:\Program Files (x86)\Windows Kits\+97991\Windows Performance Toolkit\;C:\Program Files (x86)\WiX Toolset v3.+17633\bin;C:\Program Files\Microsoft SQL Server\+69415\DTS\Binn\;C:\Program Files\Microsoft SQL Server\26432\DTS\Binn\;C:\Program Files\Microsoft SQL Server\-73848\DTS\Binn\;C:\Program Files\Microsoft SQL Server\-21219\DTS\Binn\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven--59333.136.+23943\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI\;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Microsoft SQL Server\+13379\Tools\Binn\;C:\Program Files\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps
-CACHE_KEY: yOhLN
+P29MS x64
+WindowsLibPath: C:\Program Files (x86)\Windows Kits\-50523\UnionMetadata\+43483.15185.6004.-34540;C:\Program Files (x86)\Windows Kits\-93321\References\-94651.+23797.-65633.22337
+6U1O4 81053.91961.+88545.-58102\
+X0bw9 C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX +3717.-18867 CJTo9
+WIX: C:\Program Files (x86)\WiX Toolset v3.-58279\
+__VSCMD_PREINIT_PATH: C:\Program Files\PowerShell\70728;C:\Program Files\MongoDB\Server\98090.87680\bin;C:\aliyun-cli;C:\vcpkg;C:\Program Files (x86)\NSIS\;C:\tools\zstd;C:\Program Files\Mercurial\;C:\hostedtoolcache\windows\stack\-26393.-16583.-17230\x64;C:\cabal\bin;C:\\ghcup\bin;C:\mingw64\bin;C:\Program Files\dotnet;C:\Program Files\MySQL\MySQL Server +74314.20279\bin;C:\Program Files\R\R-+66756.-15329.40532\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\SeleniumWebDrivers\EdgeDriver\;C:\SeleniumWebDrivers\ChromeDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\65111.+8968.40973\x64\bin;C:\hostedtoolcache\windows\Python\-19596.+97857.-79747\x64\Scripts;C:\hostedtoolcache\windows\Python\+25059.-28411.-81022\x64;C:\hostedtoolcache\windows\Ruby\60756.+9647.40783\x64\bin;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\-72018.-92426.69136--97582\x64\bin;C:\Program Files\ImageMagick-42804.+69268.-32435-Q16-HDRI;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\ProgramData\Chocolatey\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.28139\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\-71966\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\-99127\Tools\Binn\;C:\Program Files\Microsoft SQL Server\-81025\Tools\Binn\;C:\Program Files (x86)\Windows Kits\-19069\Windows Performance Toolkit\;C:\Program Files (x86)\WiX Toolset v3.-78856\bin;C:\Program Files\Microsoft SQL Server\+69872\DTS\Binn\;C:\Program Files\Microsoft SQL Server\-29512\DTS\Binn\;C:\Program Files\Microsoft SQL Server\-7073\DTS\Binn\;C:\Program Files\Microsoft SQL Server\+9202\DTS\Binn\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\CMake\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-+15629.-14593.94136\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI\;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Microsoft SQL Server\43008\Tools\Binn\;C:\Program Files\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps
+CACHE_KEY: ihjRV
 path: .deps
-key: windows-old-+60177.-28712.31537-EC31 BC37 4AD8 E227
-Cache hit for: QBpiy
-Received 22621 of -69783 (+62730.2990%), -67979.-51010 MBs/sec
-Cache Size: ~+46232 MB (+52218 B)
-[command]"C:\Program Files\Git\usr\bin\tar.exe" -xf 2Qvye -P -C D:/a/neovim/neovim --force-local --use-compress-program "zstd -d"
+key: windows-old--31096.+95552.-30523-97BC 694B F355 9C29
+Cache hit for: kmERq
+Received +27494 of 6944 (+23573.+88992%), +90069.18725 MBs/sec
+Cache Size: ~+15662 MB (98272 B)
+[command]"C:\Program Files\Git\usr\bin\tar.exe" -xf z7yxr -P -C D:/a/neovim/neovim --force-local --use-compress-program "zstd -d"
 Cache restored successfully
-Cache restored from key: windows-old-+80499.28527.-18688-E72F 89AF 9B1F 3458
+Cache restored from key: windows-old--48424.+62350.52157-b3826c4b059e c40626a f7d90306 a0cf434271f f76316e9ed
 ##[group]Run cmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE='RelWithDebInfo'
-[-75667;1mcmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE='RelWithDebInfo'[0m
-[-35318;1mcmake --build TKOUs
+[-38071;1mcmake -S cmake.deps -B .deps -G Ninja -D CMAKE_BUILD_TYPE='RelWithDebInfo'[0m
+[-99668;1mcmake --build 9dQJr
 -- CMAKE_BUILD_TYPE=RelWithDebInfo
--- u255g done dLgTJ
--- Build files have been written to: CTZYt
+-- QGQr6 done mYDGW
+-- Build files have been written to: 8AjXE
 ninja: no work to do.
 ##[group]Run cmake --preset ci -D CMAKE_BUILD_TYPE='RelWithDebInfo'
-[26545;1mcmake --preset ci -D CMAKE_BUILD_TYPE='RelWithDebInfo' [0m
+[23602;1mcmake --preset ci -D CMAKE_BUILD_TYPE='RelWithDebInfo' [0m
 Preset CMake variables:
 
 CI_BUILD="ON"
--- The C compiler identification is MSVC -18882.89599.-2672.+12311
+-- The C compiler identification is MSVC -20370.+71500.-25813.+7690
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/+60977/Enterprise/VC/Tools/MSVC/-69691.+24925.82812/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/+78171/Enterprise/VC/Tools/MSVC/-87574.+33031.62844/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting C compile features
--- Ep5GC NDUcr JNMal 1Qd6c - done
+-- KFAYd HBuao ukBms OzqC1 - done
 -- CMAKE_INSTALL_PREFIX=C:/Program Files (x86)/nvim
 -- Using Lua interpreter: D:/a/neovim/neovim/.deps/usr/bin/luajit.exe
 -- Using Lua interpreter for code generation: D:/a/neovim/neovim/.deps/usr/bin/luajit.exe
--- Found 5E5X1 1m92n (Required is at least version mbnbV
--- Found 48Ynb AJfle
--- Looking for biCzk 4srRy C2c8z
--- Looking for TOCPC g9G1J 0tI1Z - not found
--- Performing Test C8Hj0
--- Performing Test 9lgAK - 9STBg
--- Looking for A8btJ
--- Looking for rncct - not found
+-- Found ZfDCK Aborl (Required is at least version EOLYX
+-- Found rVAA7 6q4qw
+-- Looking for ZGr8j 8WVIG ZUE9m
+-- Looking for KYd7a 8FBUX QTR9f - not found
+-- Performing Test lRMQd
+-- Performing Test 8soXB - AvupS
+-- Looking for OILlZ
+-- Looking for osU1s - not found
 -- Found Libintl:
 -- CI build enabled
--- oW8Wk props 8GDHN
--- Check size of nqEEC
+-- Hkw6A props ywkA0
+-- Check size of j9qUd
 -- Check size of void *
 -- Check size of void * - done
-[-46073/45977] Re-checking globbed directories...
-[81352/+27492] Building WYSID object MAjZF
-[-71891/-8259] C:\Windows\system32\cmd.exe /C "cd /D D:\a\neovim\neovim\build\src\nvim && "C:\Program Files\CMake\bin\cmake.exe" -P D:/a/neovim/neovim/build/external_blobs.cmake"
-D:\a\neovim\neovim\src\mpack\lmpack.c(42821): warning C4005: 'LUA_LIB': macro redefinition
-D:\a\neovim\neovim\src\mpack\lmpack.c(74589): note: 'LUA_LIB' previously declared on the command line
-[+72030/+7456] C:\Windows\system32\cmd.exe /C "cd /D D:\a\neovim\neovim\build\src\nvim && "C:\Program Files\CMake\bin\cmake.exe" -D NVIM_VERSION_MAJOR=-75352 -D NVIM_VERSION_MINOR=-40205 -D NVIM_VERSION_PATCH=98578 -D NVIM_VERSION_PRERELEASE=-dev -D OUTPUT=D:/a/neovim/neovim/build/cmake.config/auto/versiondef_git.h -D NVIM_SOURCE_DIR=D:/a/neovim/neovim -P D:/a/neovim/neovim/cmake/GenerateVersion.cmake"
--- Using NVIM_VERSION: v0.+51208.-19065-dev-c58c650
-[96026/13315] Linking C shared module lib\nlua0.dll
-[+20692/36534] Generating iNsmr PeOXu
+[25591/-55157] Re-checking globbed directories...
+[-20172/-64949] Building uWTLb object pjm2D
+[+31130/22386] C:\Windows\system32\cmd.exe /C "cd /D D:\a\neovim\neovim\build\src\nvim && "C:\Program Files\CMake\bin\cmake.exe" -P D:/a/neovim/neovim/build/external_blobs.cmake"
+D:\a\neovim\neovim\src\mpack\lmpack.c(55505): warning C4005: 'LUA_LIB': macro redefinition
+D:\a\neovim\neovim\src\mpack\lmpack.c(-59019): note: 'LUA_LIB' previously declared on the command line
+[37784/-70825] C:\Windows\system32\cmd.exe /C "cd /D D:\a\neovim\neovim\build\src\nvim && "C:\Program Files\CMake\bin\cmake.exe" -D NVIM_VERSION_MAJOR=37254 -D NVIM_VERSION_MINOR=-20254 -D NVIM_VERSION_PATCH=+10184 -D NVIM_VERSION_PRERELEASE=-dev -D OUTPUT=D:/a/neovim/neovim/build/cmake.config/auto/versiondef_git.h -D NVIM_SOURCE_DIR=D:/a/neovim/neovim -P D:/a/neovim/neovim/cmake/GenerateVersion.cmake"
+-- Using NVIM_VERSION: v0.-86892.-29391-dev-c58c650
+[-38799/-1311] Linking C shared module lib\nlua0.dll
+[-35381/+22737] Generating xZjRJ Yaki5
 command.c
 deprecated.c
 extmark.c
@@ -302,14 +302,14 @@ autocmd.c
 buffer.c
 options.c
 ui.c
-[-6117/-85231] Generating auto/ui_events_call.generated.h, auto/ui_events_remote.generated.h, ../../ui_metadata.mpack, auto/ui_events_client.generated.h
+[-15679/+89855] Generating auto/ui_events_call.generated.h, auto/ui_events_remote.generated.h, ../../ui_metadata.mpack, auto/ui_events_client.generated.h
 tabpage.c
 vimscript.c
 vim.c
-[87115/+76752] Generating 3WQm1
+[81110/41790] Generating r2RVz
 window.c
 win_config.c
-[-26357/+14944] Generating auto/api/private/dispatch_wrappers.generated.h, auto/api/private/api_metadata.generated.h, ../../funcs_metadata.mpack, auto/lua_api_c_bindings.generated.h, auto/keysets_defs.generated.h
+[-7542/-47305] Generating auto/api/private/dispatch_wrappers.generated.h, auto/api/private/api_metadata.generated.h, ../../funcs_metadata.mpack, auto/lua_api_c_bindings.generated.h, auto/keysets_defs.generated.h
 converter.c
 dispatch.c
 helpers.c
@@ -687,99 +687,99 @@ parser_defs.h
 ui_events_call.generated.h
 ui_events_remote.generated.h
 ui_events_client.generated.h
-[+7565/72524] Generating auto/options.generated.h, auto/options_enum.generated.h, auto/options_map.generated.h, auto/option_vars.generated.h
+[53500/-12355] Generating auto/options.generated.h, auto/options_enum.generated.h, auto/options_map.generated.h, auto/option_vars.generated.h
 winfloat.h
 LUAC_PRG is missing, embedding raw source
 dispatch_wrappers.generated.h
-[-46290/48951] Linking C executable bin\nvim.exe
-[88329/-28305] C:\Windows\system32\cmd.exe /C "cd /D D:\a\neovim\neovim\build\src\nvim && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/a/neovim/neovim/build/windows_runtime_deps && "C:\Program Files\CMake\bin\cmake.exe" -D CMAKE_PREFIX_PATH=D:/a/neovim/neovim/.deps/usr -D BINARY="D:/a/neovim/neovim/build/bin/nvim.exe" -D DST=D:/a/neovim/neovim/build/windows_runtime_deps -D CI_BUILD=ON -P D:/a/neovim/neovim/cmake/WindowsDllCopy.cmake"
+[+88834/65540] Linking C executable bin\nvim.exe
+[-32037/+31267] C:\Windows\system32\cmd.exe /C "cd /D D:\a\neovim\neovim\build\src\nvim && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/a/neovim/neovim/build/windows_runtime_deps && "C:\Program Files\CMake\bin\cmake.exe" -D CMAKE_PREFIX_PATH=D:/a/neovim/neovim/.deps/usr -D BINARY="D:/a/neovim/neovim/build/bin/nvim.exe" -D DST=D:/a/neovim/neovim/build/windows_runtime_deps -D CI_BUILD=ON -P D:/a/neovim/neovim/cmake/WindowsDllCopy.cmake"
 --
-warning: cannot resolve item uKvd1
+warning: cannot resolve item Sfqqs
 possible problems:
 need more directories?
 need to use InstallRequiredSystemLibraries?
 run in install tree instead of build tree?
--- info: non-absolute msvc file rRcIH returning type 'system'
-Copying 19XUP to D:/a/neovim/neovim/build/windows_runtime_deps
-[+66800/+60838] Running utility command for nvim_runtime_deps
+-- info: non-absolute msvc file lY5qg returning type 'system'
+Copying 98vGE to D:/a/neovim/neovim/build/windows_runtime_deps
+[-81762/+88689] Running utility command for nvim_runtime_deps
 ##[group]Run $PSNativeCommandArgumentPassing = 'Legacy'
-[43541;1m$PSNativeCommandArgumentPassing = 'Legacy'[0m
-[+58175;1m[0m
-[-53378;1m& build\bin\nvim.exe "--version"[0m
-[-98186;1m# Ensure that the "win32" feature is set.[0m
-[80644;1m& build\bin\nvim -u NONE --headless -c 'exe !has(\"win32\").\"cq\"'[0m
-[+23247;1mpython -m pip install pynvim[0m
-[+9840;1m# Sanity check[0m
-[-514;1mpython -c "import pynvim; print(str(pynvim))"[0m
-nBJ07 --version[0m
-[-1255;1mnpm.cmd install -g neovim[0m
-[51102;1mGet-Command -CommandType Application neovim-node-host.cmd[0m
-[+13045;1mnpm.cmd link neovim[0m
-NVIM v0.+84770.21939-dev-c58c650
+[4039;1m$PSNativeCommandArgumentPassing = 'Legacy'[0m
+[47111;1m[0m
+[-65267;1m& build\bin\nvim.exe "--version"[0m
+[-22194;1m# Ensure that the "win32" feature is set.[0m
+[+54723;1m& build\bin\nvim -u NONE --headless -c 'exe !has(\"win32\").\"cq\"'[0m
+[+73390;1mpython -m pip install pynvim[0m
+[37999;1m# Sanity check[0m
+[-38691;1mpython -c "import pynvim; print(str(pynvim))"[0m
+uFRJ4 --version[0m
+[-82191;1mnpm.cmd install -g neovim[0m
+[36863;1mGet-Command -CommandType Application neovim-node-host.cmd[0m
+[-24655;1mnpm.cmd link neovim[0m
+NVIM v0.-25350.49771-dev-c58c650
 Build type: RelWithDebInfo
 Run "nvim -V1 -v" for more info
 Collecting pynvim
-Downloading pynvim-+6476.43049.-71774-py3-none-any.whl.metadata (+42453 bytes)
-Collecting CGvEY (from pynvim)
-Downloading 2lFwV h9MA9 kB)
+Downloading pynvim-13343.64446.+83509-py3-none-any.whl.metadata (+75526 bytes)
+Collecting ZhafM (from pynvim)
+Downloading jrIPr UHK3K kB)
 Installing collected packages: typing-extensions, msgpack, greenlet, pynvim
-Successfully installed greenlet-+11614.59842.-92497 msgpack-+9397.-27887.+18456 pynvim-+49123.+24332.-30467 typing-extensions--56731.74917.80021
-<module 'pynvim' from 'C:\\hostedtoolcache\\windows\\Python\\52925.-69646.60945\\x64\\lib\\site-packages\\pynvim\\__init__.py'>
-v18.42230.+44593
-added +81470 YEsNm in yFrTu
-1596 packages are looking for funding
+Successfully installed greenlet-+23513.43075.+17303 msgpack--30008.19937.31478 pynvim-22802.+39499.43921 typing-extensions-+37368.-98976.69442
+<module 'pynvim' from 'C:\\hostedtoolcache\\windows\\Python\\1022.39345.+54933\\x64\\lib\\site-packages\\pynvim\\__init__.py'>
+v18.17441.+45903
+added +84514 Arhps in rPMu1
++21077 packages are looking for funding
 run `npm fund` for details
-[-52504;1mCommandType [0m[68888;1m Name [0m[48797;1m Version [0m[19046;1m Source[0m
-[+89083;1m----------- [0m [-21527;1m---- [0m [+11712;1m------- [0m [-89526;1m------[0m
-Application neovim-node-host.cmd 221.54.219.42 C:\npm\prefix\neovim-node-host.cmd
+[6773;1mCommandType [0m[-21854;1m Name [0m[-36677;1m Version [0m[+61051;1m Source[0m
+[+4391;1m----------- [0m [94745;1m---- [0m [-31016;1m------- [0m [-2575;1m------[0m
+Application neovim-node-host.cmd 207.112.76.240 C:\npm\prefix\neovim-node-host.cmd
 install: unzip
 pacboy: make:p gcc:p diffutils:p
-2P9qX MINGW64
+hwYrO MINGW64
 path-type: minimal
 location: RUNNER_TEMP
 platform-check-severity: fatal
 ##[group]Restoring package cache...
-Cache restore for msys2-pkgs-upd:true-conf:c068a784, got msys2-pkgs-upd:true-conf:c068a784-files:1ADC BFC9 9D40 9222 3A63 D59B
+Cache restore for msys2-pkgs-upd:true-conf:c068a784, got msys2-pkgs-upd:true-conf:c068a784-files:0ae5a96 1f74f6088 4923144
 ##[group]Starting MSYS2 for the first time...
 [command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c "'uname' '-a'"
-MINGW64_NT-65695.47426-59533 fv-az1992--2406 -1827.27332.+34778-2644508f.x86_+66091 -45744--49437-44855 +43378:+67954 UTC x86_-52145 Msys
+MINGW64_NT-83858.-72088-+20593 fv-az1992-+70922 +39436.-55578.-20657-2644508f.x86_+52536 +87101--92274-+89541 59853:11136 UTC x86_-3552 Msys
 ##[group]Disable CheckSpace...
-[command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c jERi2 MgrEe WSWOb N5dMT
+[command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c YAsms yhYIM OJf19 uMdWO
 ##[group]Updating packages...
-[command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c 1ExxJ jFkvF jTM7G ndqxX lzCdo
-:: sluWP package CzRbQ
-9SF03 downloading...
-:: Starting CiVtx system upgrade...
+[command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c Nipxx eeyAK 6b6a9 bZl9C XepLe
+:: MWqz5 package pOyUt
+WzfXJ downloading...
+:: Starting cXMfM system upgrade...
 warning: terminate other MSYS2 programs before proceeding
 resolving dependencies...
 looking for conflicting packages...
-Packages (+97430) msys2-runtime-6940.15625.99077-+45104
-Total Installed Size: -5449.76214 MiB
-Net Upgrade Size: 70382.-26861 MiB
+Packages (+3528) msys2-runtime-+99662.+65018.-14874-1190
+Total Installed Size: -9886.-75355 MiB
+Net Upgrade Size: 84110.+77269 MiB
 :: Proceed with installation? [Y/n]
 checking keyring...
 checking package integrity...
 loading package files...
 checking for file conflicts...
-upgrading L9ud9
+upgrading Y2tBX
 :: To complete this update all MSYS2 processes including this terminal will be closed. Confirm to proceed [Y/n]
 ##[group]Killing remaining tasks...
-[command]C:\Windows\system32\taskkill.exe /F /FI "MODULES eq msys-25954.-87267.dll"
+[command]C:\Windows\system32\taskkill.exe /F /FI "MODULES eq msys--92219.+13004.dll"
 INFO: No tasks running with the specified criteria.
 ##[group]Final system upgrade...
 there is nothing to do
-Packages (-63609) gawk-36039.42702.-50949-47465 gzip-45190.+67174-+82192 libffi--31868.-52669.86636-+82002 libgpg-error-24954.14502-68472 libopenssl--80712.+64108.-73673--32044 nano-+71699.+50550--36528 openssl-+5190.93719.-88796--32157
+Packages (35827) gawk--24181.-35607.96131-1917 gzip--735.+88093-23876 libffi-49910.-62687.-56232-97407 libgpg-error--71846.-40977-64894 libopenssl-82670.+21952.70996-98041 nano--88457.-38411-40383 openssl-+99315.-55119.5868--89200
 :: Running post-transaction hooks...
-(51549/+5253) Updating the info directory file...
-##[group]Installing additional packages through ty1Hz
+(63678/30423) Updating the info directory file...
+##[group]Installing additional packages through BjM87
 [command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c "'pacman' '--noconfirm' '-S' '--needed' '--overwrite' '*' 'unzip' 'pactoys'"
-Packages (21626) pactoys-r65.b5fcc0f-16981 unzip-80427.88503--97485
-installing 5rL9P
+Packages (2626) pactoys-r65.b5fcc0f-+18095 unzip--19374.+2983-+8467
+installing WJvVX
 [command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c "'pacboy' '--noconfirm' '-S' '--needed' 'make:p' 'gcc:p' 'diffutils:p'"
-Packages (+18775) mingw-w64-x86_+28604-binutils--44646.38604--38016 mingw-w64-x86_41146-crt-git-+18059.-13425.59472.r657.g1e8b1ccdd--57734 mingw-w64-x86_79255-gcc-libs--6416.+63614.+78744--4293 mingw-w64-x86_-92377-gettext-libtextstyle-39102.-58655--80672 mingw-w64-x86_63270-gettext-runtime--42208.+32201--67402 mingw-w64-x86_-55178-gettext-tools-+72114.78101--66738 mingw-w64-x86_-45734-gmp-79141.80779.-13392--88433 mingw-w64-x86_+66123-headers-git--4230.+82705.-5091.r657.g1e8b1ccdd-+91561 mingw-w64-x86_+86007-isl-+38017.+67766-92045 mingw-w64-x86_+61658-libiconv--32493.26806-+44978 mingw-w64-x86_33714-libsigsegv-94649.+48325-+96988 mingw-w64-x86_-16621-libwinpthread-git-54881.89041.+43769.r657.g1e8b1ccdd-+58215 mingw-w64-x86_89791-mpc--52543.+94491.+80796-47149 mingw-w64-x86_31211-mpfr-5628.6246.+87434-+11262 mingw-w64-x86_+90547-windows-default-manifest-+7972.-65151-+54620 mingw-w64-x86_93456-winpthreads-git--3898.19002.71847.r657.g1e8b1ccdd--11487 mingw-w64-x86_8579-zlib-+5636.75992.+72023-47909 mingw-w64-x86_80476-zstd--97830.-28029.80103-+21946 mingw-w64-x86_+4960-diffutils--37855.67174-68906 mingw-w64-x86_-28476-gcc-20156.-3407.-57373--3674 mingw-w64-x86_47276-make-+78652.+74754.-20108-+70553
+Packages (-58490) mingw-w64-x86_+36197-binutils--63209.96848-+12913 mingw-w64-x86_-56222-crt-git--103.-97449.56441.r657.g1e8b1ccdd-3490 mingw-w64-x86_17578-gcc-libs-18081.+40617.3876-24136 mingw-w64-x86_18672-gettext-libtextstyle-+20083.-30844--41836 mingw-w64-x86_+50098-gettext-runtime-+49053.+75638--75764 mingw-w64-x86_92088-gettext-tools-+38966.55023-+48464 mingw-w64-x86_+45539-gmp--88214.-40313.-58055-+88227 mingw-w64-x86_42304-headers-git-+99848.+72706.-11407.r657.g1e8b1ccdd-+72393 mingw-w64-x86_+22483-isl-31733.+58489--80015 mingw-w64-x86_1368-libiconv--90012.-87362-+11519 mingw-w64-x86_-38685-libsigsegv-+1807.35842--46607 mingw-w64-x86_-15469-libwinpthread-git-52657.-2724.+18592.r657.g1e8b1ccdd-+43069 mingw-w64-x86_45443-mpc-+25612.94983.-91108-+57734 mingw-w64-x86_-95734-mpfr-49964.-82381.+32132-32987 mingw-w64-x86_+52238-windows-default-manifest-+96665.-65909-86909 mingw-w64-x86_+14861-winpthreads-git-+88986.-21815.+21306.r657.g1e8b1ccdd--63992 mingw-w64-x86_64942-zlib-15404.+83366.+36200-18559 mingw-w64-x86_+43358-zstd--54300.+97633.35774--29451 mingw-w64-x86_75585-diffutils-+30871.50270--54454 mingw-w64-x86_50695-gcc--40239.-44857.16380-30877 mingw-w64-x86_+82075-make-+91202.+48971.13427-50039
 ##[group]Saving package cache...
 ==> no candidate packages found for pruning
-Cache unchanged, skipping save for msys2-pkgs-upd:true-conf:c068a784-files:53904b 5606c603 e8fcd0
+Cache unchanged, skipping save for msys2-pkgs-upd:true-conf:c068a784-files:866B 5652 DD63 775C 0B84 96C0
 [command]C:\Windows\system32\cmd.exe /D /S /C D:\a\_temp\setup-msys2\msys2.cmd -c "'pacman' '--noconfirm' '-Scc'"
 Cache directory: /var/cache/pacman/pkg/
 :: Do you want to remove ALL files from cache? [Y/n]
@@ -788,16 +788,16 @@ Database directory: /var/lib/pacman/
 :: Do you want to remove unused repositories? [Y/n]
 removing unused sync repositories...
 ##[group]Run cd test/old/testdir
-[+54352;1mcd test/old/testdir[0m
-[+48013;1mmingw32-make VERBOSE=68150[0m
-shell: D:\a\_temp\setup-msys2\msys2.CMD {+17012}
+[-16376;1mcd test/old/testdir[0m
+[+90702;1mmingw32-make VERBOSE=7982[0m
+shell: D:\a\_temp\setup-msys2\msys2.CMD {25449}
 [OLDTEST-PREP] Removing test.log and messages
 ../../../build/bin/nvim.exe -U NONE -i NONE --noplugin --headless -u unix.vim "+argdo set ff=dos|upd" +q \
 *.in *.ok
 E484: Can't open file C:/Program Files (x86)/nvim/share/nvim/syntax/syntax.vim
 dotest.in
 [OLDTEST-PREP] Setting up .gdbinit
-[OLDTEST] Running f37uB
+[OLDTEST] Running bn1jc
 ../../../build/bin/nvim.exe -e -s -u NONE -U NONE -i NONE --noplugin --headless -S gen_opt_test.vim ../../../src/nvim/options.lua ../../../runtime/doc/options.txt
 ../../../build/bin/nvim.exe -u NONE -U NONE -i NONE --noplugin --headless -S summarize.vim messages
 Test results:
@@ -840,7 +840,7 @@ Test_autocmd_nested_setbufvar(): python3 feature missing
 Test_autocmd_nested_switch_window(): cannot run Vim in a terminal window
 Test_autocmd_normal_mess(): does not work on MS-Windows
 Test_autocmd_shortmess(): does not work on MS-Windows
-0HAs9 only works on EV13k
+iEFMq only works on cBAEC
 Test_cursorhold_insert_with_timer_interrupt(): job feature missing
 Test_dirchanged_auto(): test_autochdir function missing
 Test_blob_alloc_failure(): test_alloc_fail function missing
@@ -926,15 +926,15 @@ Test_diff_overlapped_diff_blocks_will_be_merged(): cannot make screendumps
 Test_diff_rnu(): cannot make screendumps
 Test_diff_screen(): cannot make screendumps
 Test_diff_scroll(): cannot make screendumps
-WxRqg cannot make screendumps
+R9VgE cannot make screendumps
 Test_diffpatch(): patch program not executable
 Test_digraph_get_function_encode(): Nvim does not support setting encoding=japan
 Test_entering_digraph(): cannot run Vim in a terminal window
 Test_show_digraph_cp1251(): Nvim supports 'utf8' encoding only
 Test_autoindent_remove_indent(): cannot run Vim in a terminal window
-Test_edit_+90329(): moved to test/functional/legacy/edit_spec.lua
+Test_edit_30998(): moved to test/functional/legacy/edit_spec.lua
 Test_edit_CTRL_(): does not work on MS-Windows
-68stR FiFh1 feature missing
+bZVCJ i1xJl feature missing
 Test_edit_ctrl_r_failed(): cannot run Vim in a terminal window
 Test_edit_hkmap(): Nvim does not support 'hkmap'
 Test_edit_insert_reg(): use test/functional/legacy/edit_spec.lua
@@ -961,8 +961,8 @@ Test_strptime(): does not work on MS-Windows
 Test_xxlast_highlight_RGB_color(): cannot start the GUI
 Test_hlsearch_Ctrl_R(): cannot run Vim in a terminal window
 Test_hlsearch_clipboard(): cannot run Vim in a terminal window
-N1JRm TODO:
-699Ke Nvim does not support I8hWq K0puR 7rGVf
+aIwC7 TODO:
+MyFfl Nvim does not support sQeUP ZcOaj 7AdbX
 Test_CompleteDoneNone(): Nvim does not support v:none
 Test_complete_changed_complete_info(): cannot run Vim in a terminal window
 Test_join_spaces_marks(): Nvim does not support "set compatible" or "set cpoptions+=j"
@@ -983,7 +983,7 @@ Test_matchfuzzy_initialized(): cannot run Vim in a terminal window
 Test_translate_menu(): translated menu not found
 Test_ask_yesno(): cannot run Vim in a terminal window
 Test_echo_verbose_system(): cannot run Vim in a terminal window
-GWNWM NgrJP function missing
+V0Ng7 TD6Ut function missing
 Test_fileinfo_tabpage_cmdheight(): cannot run Vim in a terminal window
 Test_message_more(): cannot run Vim in a terminal window
 Test_message_more_scrollback(): cannot run Vim in a terminal window
@@ -994,11 +994,11 @@ Test_warning_scroll(): cannot run Vim in a terminal window
 Test_mksession_compatible(): Nvim does not support "compatible" option
 Test_mksession_slash(): cannot use backslash in file name
 Test_max_nesting(): does not work on MS-Windows
-WSX4R does not work on MS-Windows
+bAUJV does not work on MS-Windows
 Test_normal35_g_cmd4(): output of g< can't be tested currently
 Test_normal_cursorhold_with_count(): Nvim removed <CursorHold> key
 Test_scroll_and_paste_in_ex_mode(): does not work when Nvim is run from :!
-Test_22068_term_option_verbose(): Nvim does not support setting 'term'
+Test_-74600_term_option_verbose(): Nvim does not support setting 'term'
 Test_VIM_POSIX(): Nvim does not support $VIM_POSIX
 Test_opt_default(): Nvim has different defaults
 Test_opt_reset_scroll(): cannot run Vim in a terminal window
@@ -1006,20 +1006,20 @@ Test_opt_winminheight_term(): cannot run Vim in a terminal window
 Test_opt_winminheight_term_tabs(): cannot run Vim in a terminal window
 Test_pastetoggle(): 'pastetoggle' is removed from Nvim
 Test_renderoptions(): Nvim does not support renderoptions
-r1XT3 N/A
+iN0nn N/A
 Test_set_ttytype(): Nvim does not support 'ttytype'
 Test_profile_typed_func(): cannot run Vim in a terminal window
 Test_quotestar(): Test is not implemented yet for this platform.
 Test_nocatch_process_still_running(): test_override() is N/A
 Test_clipboard_regs(): needs clipboard=autoselect,autoselectplus
 Test_register_cursor_column_negative(): cannot run Vim in a terminal window
-T5YBT cannot start the GUI
+EbekD cannot start the GUI
 Test_incsearch_highlighting_newline(): cannot run Vim in a terminal window
 Test_incsearch_scrolling(): cannot run Vim in a terminal window
 Test_shell(): Nvim missing :shell currently
 Test_sign_cursor_position(): cannot run Vim in a terminal window
 Test_nested_script(): cannot run Vim in a terminal window
-7OqqX Vim9 script is N/A
+PlxpD Vim9 script is N/A
 Test_spellinfo(): Nvim does not support enc=latin1
 Test_zz_NOSLITSUGS(): Nvim does not support enc=latin1
 Test_zz_Numbers(): Nvim does not support enc=latin1
@@ -1051,26 +1051,26 @@ Test_syntax_c(): cannot run Vim in a terminal window
 Test_tabline_tabmenu(): only works in the GUI
 Test_tabpage_cmdheight(): cannot run Vim in a terminal window
 Test_nocatch_timer_garbage_collect(): Skipped: Nvim does not support test_garbagecollect_soon(), test_override()
-ZpLYV cannot run Vim in a terminal window
+PihZl cannot run Vim in a terminal window
 Test_timer_getchar_zero(): cannot feed low-level input
 Test_timer_peek_and_get_char(): cannot feed low-level input
 Test_undo_del_chars(): Nvim does not support test_settime()
 Test_undofile_cryptmethod_blowfish(): Nvim does not support cryptmethod
-fgN0M Nvim does not 2DMdh SCy0H
-Test_shiftwidth_vartabstop(): Nvim removed this behavior in #+83646
+SOPD2 Nvim does not Ii1Lf bn0p4
+Test_shiftwidth_vartabstop(): Nvim removed this behavior in #58846
 Test_Ex_append(): Nvim only supports Vim Ex mode
 Test_Ex_echo_backslash(): Nvim only supports Vim Ex mode
 Test_ex_equal_arg(): Nvim evaluates lua with := [arg]
 Test_ex_mode(): Nvim only supports Vim Ex mode
 Test_non_existing_backupdir(): Nvim auto-creates backup directory
 -------------------------------
-Executed: +95061 Tests
-Skipped: -22350 Tests
-Failed: 34453 Tests
+Executed: 53640 Tests
+Skipped: +64831 Tests
+Failed: -93168 Tests
 ALL DONE
 "dotest.in" "dotest.in" 3L, 136B writtenE484: Can't open file C:/Program Files (x86)/nvim/share/nvim/syntax/syntax.vim
 Post job cleanup.
-Cache hit occurred on the primary key windows-old--9306.+88296.44401-8923a6e83 c0289c30 b1e9e4530aaf 0a79b7, not saving cache.
+Cache hit occurred on the primary key windows-old-+60105.+56572.-72519-c415720 aa31dbb 43c4d0d2a6 57124cd4, not saving cache.
 http.https://github.com/.extraheader
 Cleaning up orphan processes
-Terminate orphan process: pid (3452) CJlvx
+Terminate orphan process: pid (+97886) jOcEo

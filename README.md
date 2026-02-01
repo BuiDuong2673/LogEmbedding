@@ -52,3 +52,12 @@ Client: d2klab
 ```cmd
 [terminal 3] python client_program.py d2klab
 ```
+
+## Testing
+We test the model in finding the from a set of generated logs the log that is similar to the original log. We use the following command:
+
+```cmd
+python -m test.find_similar_log_test > test_result/[name of the model being tested].txt
+```
+
+This command execute the test program and save the output to a file for later analysis.
