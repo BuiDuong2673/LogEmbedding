@@ -314,17 +314,17 @@ class FindSimilarLogTester:
 
 
 if __name__ == "__main__":
-    W1 = np.load("models/2_clients_5_context_50_5_epochs/W1_word2vec.npy")
-    W2 = np.load("models/2_clients_5_context_50_5_epochs/W2_word2vec.npy")
-    word_dict_path = "models/2_clients_5_context_50_5_epochs/"
+    W1 = np.load("models/2_clients_2_context_50_5_epochs/W1_word2vec.npy")
+    W2 = np.load("models/2_clients_2_context_50_5_epochs/W2_word2vec.npy")
+    word_dict_path = "models/2_clients_2_context_50_5_epochs"
 
-    # tester = FindSimilarLogTester()
-    # for client in CLIENT_LIST:
-    #     tester.run_test_for_client(
-    #         word_dict_path=word_dict_path, W1=W1, client_name=client
-    #     )
-
-    # Test pretrained model
     tester = FindSimilarLogTester()
     for client in CLIENT_LIST:
-        tester.test_with_pretrained_model(client_name=client, which_model="glove")
+        tester.run_test_for_client(
+            word_dict_path=word_dict_path, W1=W1, client_name=client
+        )
+
+    # Test pretrained model
+    # tester = FindSimilarLogTester()
+    # for client in CLIENT_LIST:
+    #     tester.test_with_pretrained_model(client_name=client, which_model="glove")
