@@ -21,7 +21,7 @@ class CentralServerProgram:
         self.indice_map = {}
         # Training coefficients
         self.embed_dimension = 500
-        self.num_epochs = 100
+        self.num_epochs = 10
 
     def aggregate_vocab(self) -> dict:
         """Aggregate all clients vocabs and form a new set of internal indices."""
