@@ -42,7 +42,8 @@ if __name__ == "__main__":
         "test_result/2_clients_2_context_100_5_epochs.txt",
         "test_result/2_clients_3_context_50_5_epochs.txt",
         "test_result/2_clients_4_context_50_5_epochs.txt",
-        "test_result/2_clients_5_context_50_5_epochs.txt"
+        "test_result/2_clients_5_context_50_5_epochs.txt",
+        "test_result/sentence_transformer.txt"
     ]
 
     analysis = TestResultAnalysis()
