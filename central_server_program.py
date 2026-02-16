@@ -15,13 +15,13 @@ class CentralServerProgram:
 
     def __init__(self):
         """Initialize CentralServerProgram class."""
-        self.client_list = ["maryangel101", "d2klab"]  # ["maryangel101", "d2klab", "logsage"]
+        self.client_list = ["client_1", "client_2", "client_3"]  # ["maryangel101", "d2klab", "logsage"]
         self.client_sockets = {}
         self.client_vocabs = {}
         self.indice_map = {}
         # Training coefficients
         self.embed_dimension = 500
-        self.num_epochs = 30
+        self.num_epochs = 10
 
     def aggregate_vocab(self) -> dict:
         """Aggregate all clients vocabs and form a new set of internal indices."""

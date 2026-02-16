@@ -11,7 +11,7 @@ from embedding_techniques.word2vec import Word2Vec
 HOST = "127.0.0.1"
 PORT = 5000
 NUM_CONTEXT_WORDS = 2
-WHICH_TRAIN_SET = "train_test_internal"
+WHICH_TRAIN_SET = "train_test_new"
 
 
 class ClientProgram:
