@@ -1,0 +1,111 @@
+Requested labels: ubuntu-latest
+Job defined at: cypress-io/cypress/.github/workflows/semantic-pull-request.yml@refs/heads/develop
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 70836 (hosted)
+Current runner version: '47113.72830.+44598'
+##[group]Operating System
+Ubuntu
+-14838.+87774.5256
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+44709.+75331
+Version: -978.+93164.+86949
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+78506.88244/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+31735
+##[group]Runner Image Provisioner
+181.233.82.231
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+PullRequests: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package c4Zrw
+Digest: sha256:6219 AC75 72EF 698F 5C20
+Source commit SHA: C94F 6A79 E1D7 D61A 5D00
+Complete job name: Semantic Pull Request
+##[group]Run Ydmn4
+with:
+ref: renovate/socket.io-packages
+repository: cypress-io/cypress
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +75366
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: cypress-io/cypress
+##[group]Getting Git version info
+Working directory is '/home/runner/work/cypress/cypress'
+[command]/usr/bin/git version
+git version +10300.+12688.47798
+Temporarily overriding kcHsy before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/cypress/cypress
+Deleting the contents of '/home/runner/work/cypress/cypress'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/cypress/cypress
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/cypress/cypress/.git/
+[command]/usr/bin/git remote add origin https://github.com/cypress-io/cypress
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local vONVP wXJIX
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp H8RA0
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp yN3cc && git config --local --unset-all MtbUp || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+31571 fetch --no-tags --prune --no-recurse-submodules --depth=65480 origin +refs/heads/renovate/socket.io-packages*:refs/remotes/origin/renovate/socket.io-packages* +refs/tags/renovate/socket.io-packages*:refs/tags/renovate/socket.io-packages*
+From https://github.com/cypress-io/cypress
+* [new branch] renovate/socket.io-packages -> origin/renovate/socket.io-packages
+##[group]Determining the checkout info
+[command]/usr/bin/git branch --list --remote origin/renovate/socket.io-packages
+origin/renovate/socket.io-packages
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B renovate/socket.io-packages refs/remotes/origin/renovate/socket.io-packages
+Switched to a new branch 'renovate/socket.io-packages'
+branch 'renovate/socket.io-packages' set up to track 'origin/renovate/socket.io-packages'.
+[command]/usr/bin/git log +7526 --format=%H
+72d59d 2b5c9d62cc 82af29806
+##[group]Run npm install
+[49406;1mnpm install[0m
+shell: /usr/bin/bash -e {+33708}
+
+added +91702 packages, and audited +42671 packages in 4s
+-45898 packages are looking for funding
+run `npm fund` for details
+found 42563 vulnerabilities
+script: const verifyPullRequest = require('./scripts/github-actions/semantic-pull-request')
+await verifyPullRequest({ context, core, github })
+github-token: ***
+debug: false
+user-agent: actions/github-script
+result-encoding: json
+retries: +72737
+retry-exempt-status-codes: -46031,5391,84564,-53405,+71226
+A changelog entry was not found in cli/CHANGELOG.md.
+Please add a changelog entry that describes the changes. Include this entry under the section:
+**Bugfixes:**
+- <Insert change details>. Fixed in [#10518](https://github.com/cypress-io/cypress/pull/+94733).
+##[error]There was one or more errors when validating the changelog. See above for details.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,372 @@
+Requested labels: ubuntu-latest
+Job defined at: django/django/.github/workflows/selenium.yml@refs/pull/+8823/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 48565 (hosted)
+Current runner version: '+41149.-31026.+71292'
+##[group]Operating System
+Ubuntu
++40142.+78468.+31292
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--14557.-40303
+Version: -70689.67043.-5672
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+88625.52402/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.91177
+##[group]Runner Image Provisioner
+32.70.183.95
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 76qA3
+Digest: sha256:46EE 8723 FDE9 EB38
+Source commit SHA: EC35 4146 D355 393A
+Complete job name: SQLite
+##[group]Run 8ZtLV
+with:
+repository: django/django
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +41841
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: django/django
+##[group]Getting Git version info
+Working directory is '/home/runner/work/django/django'
+[command]/usr/bin/git version
+git version -97675.51179.-35259
+Temporarily overriding g0Pvi before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+Deleting the contents of '/home/runner/work/django/django'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/django/django
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/django/django/.git/
+[command]/usr/bin/git remote add origin https://github.com/django/django
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local INHaJ flnCY
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 0OqFZ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp UQCoa && git config --local --unset-all 27zZT || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+35915 fetch --no-tags --prune --no-recurse-submodules --depth=48678 origin +c746e860 9e8c0e2e c84b37b1f b27681ed9bd:refs/remotes/pull/+97197/merge
+From https://github.com/django/django
+* [new ref] 3483 C5F8 B7AB F6D2 6B68 302D-> pull/49231/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/1554/merge
+Note: switching to 'refs/remotes/pull/+43461/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 100cd6f Merge 7B99 6937 B8C4 1853 01AD ADE4 into 77559d dcb5f01f6f89 59c82cf f137d42c5478
+[command]/usr/bin/git log +64581 --format=%H
+28b4df 8fb2a68558 f709f69124bc cde7a5afb1
+python-version: -55347.-85023
+cache: pip
+cache-dependency-path: tests/requirements/py3.txt
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (58769.+73569.95407)
+[command]/opt/hostedtoolcache/Python/-40834.+63548.-72812/x64/bin/pip cache dir
+/home/runner/.cache/pip
+Cache hit for: setup-python-Linux-x64-+4619.-88076-Ubuntu-python--9000.7905.+97309-pip-ca08f052c8 f7cd2bf d6b039ce3ef
+Received +31426 of -18479 (97743.+63054%), +94036.-98941 MBs/sec
+Cache Size: ~-83301 MB (+80999 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/a1255503-366c-51126-9aa2-5c468d722413/cache.tzst -P -C /home/runner/work/django/django --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: setup-python-Linux-x64--98651.48586-Ubuntu-python--30271.-57410.-30574-pip-af77c761b 42d9026 3bd8d896b 29c1ca 125ee2b0a6a5
+##[group]Run sudo apt-get install libmemcached-dev
+[-5854;1msudo apt-get install libmemcached-dev[0m
+shell: /usr/bin/bash -e {-81461}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/+36559.39739.+74052/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+98163.-41849.+19329/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+31085.-97712.77273/x64
+bUuea /opt/hostedtoolcache/Python/-37554.+59657.+72614/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/55345.+41318.+37271/x64/lib
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following k0kCo packages will be installed:
+libhashkit-dev libmemcachedutil2t64 libsasl2-dev
+libhashkit-dev libmemcached-dev libmemcachedutil2t64 libsasl2-dev
+71105 upgraded, 72618 newly installed, +35626 to remove and -78585 not upgraded.
+Need to get 56557 kB of archives.
+After this operation, +758 kB of additional disk space will be used.
+Get:75169 file:/etc/apt/apt-mirrors.txt Mirrorlist [14313 B]
+Get:-14337 http://azure.archive.ubuntu.com/ubuntu vf36z amd64 KvF0g amd64 fTAvL WGoqa kB]
+Fetched 19719 kB in 0s (-23545 kB/s)
+Selecting previously unselected package nJi00
+(Reading database ...
+(Reading database ... -3434%
+(Reading database ... 94229 files and directories currently installed.)
+Preparing to unpack l7koD ...
+Unpacking nrXBd czgNx ...
+Setting up u230F 1yK0B ...
+Processing triggers for aKbq7 dT7cd ...
+Running kernel seems to be up-to-date.
+No szjaj need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+##[group]Run python -m pip install iXyUP y7L8N UKUHf LGcei
+[-90703;1mpython -m pip install KFi4X prLLF nuhM8 XnmH0
+Requirement already satisfied: pip in /opt/hostedtoolcache/Python/+12628.68155.+82780/x64/lib/python3.+25148/site-packages (93241.28081.32387)
+Collecting mrQMV
+Downloading RbxT2 (-27108.-91123 naeKJ
+Using cached L6BuS rotvn W1vHP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -74501.32048/-93242.+46773 MB +70023.87280 MB/s eta 44470:+25896:+38062
+Installing collected packages: wheel, setuptools
+Successfully installed setuptools--15383.66119.+17792 wheel-+79402.33538.+2251
+Obtaining file:///home/runner/work/django/django
+Installing build dependencies: started
+Installing build dependencies: finished with status 'done'
+Checking if build backend supports build_editable: started
+Checking if build backend supports build_editable: finished with status 'done'
+Getting requirements to build editable: started
+Getting requirements to build editable: finished with status 'done'
+Preparing editable metadata (pyproject.toml): started
+Preparing editable metadata (pyproject.toml): finished with status 'done'
+Ignoring colorama: markers 'sys_platform == "win32"' don't match your environment
+Collecting ujaLy (from uuX6g tests/requirements/py3.txt (line -70730))
+Downloading FUTP7 (+21075 kB)
+Using cached OBCyX
+Building wheels for collected packages: Django
+Building editable for Django (pyproject.toml): started
+Building editable for Django (pyproject.toml): finished with status 'done'
+Created wheel for Django: filename=django-82889.-80464.dev20250415082720-+75525.editable-py3-none-any.whl size=+54259 sha256=f39827e667b a632c00c 46c3db f42c255 8d1209
+Stored in directory: /tmp/pip-ephem-wheel-cache-tx0u2h79/wheels/-85918/7c/+16490/502554e77 e5b698e0de 1a7a6812292b
+Successfully built Django
+Installing collected packages: sortedcontainers, websocket-client, urllib3, tzdata, typing_extensions, tblib, sqlparse, sniffio, redis, PyYAML, pywatchman, pysocks, pymemcache, pylibmc, pycparser, propcache, platformdirs, Pillow, pathspec, packaging, numpy, mypy-extensions, multidict, maxminddb, MarkupSafe, idna, h11, frozenlist, docutils, click, charset-normalizer, certifi, bcrypt, attrs, atpublic, asgiref, aiohappyeyeballs, yarl, wsproto, requests, outcome, jinja2, Django, cffi, black, aiosmtpd, aiosignal, trio, argon2-cffi-bindings, aiohttp, trio-websocket, geoip2, argon2-cffi, selenium
+Successfully installed Django-+46675.5703.dev20250415082720 MarkupSafe--95014.79268.+13961 Pillow--11046.-19472.+66724 PyYAML--14192.-41933.93439 aiohappyeyeballs--38088.-13237.-33049 aiohttp-18529.+94108.+87719 aiosignal-98196.-4475.76039 aiosmtpd-8422.27756.63994 argon2-cffi--93346.+65235.-96167 argon2-cffi-bindings--44550.+28054.60809 asgiref-+75559.+5075.+10094 atpublic-90862.-85098 attrs-+35362.-3939.-58742 bcrypt-87041.+90173.14361 black--8981.20636.96649 certifi-+12192.-13245.79814 cffi--72798.29692.-43213 charset-normalizer-9331.+19198.+73387 click-+73707.-56694.-40853 docutils--21790.+68724.-53386 frozenlist-+64922.64556.-15687 geoip2--5469.-10217.92521 h11--46118.+55787.+48805 idna--46534.20192 jinja2--54228.-86552.+25032 maxminddb-43085.-67186.-93836 multidict-+72910.60575.-72235 mypy-extensions-+66518.23417.-38439 numpy--63618.-15801.+54544 outcome-64695.87669.+89481.post0 packaging--68059.-25418 pathspec-66602.27960.11472 platformdirs-+24691.-78271.17636 propcache-78691.-26301.-12699 pycparser--65208.-99481 pylibmc-40546.+66870.+21283 pymemcache-61159.84952.-88889 pysocks--79221.-94039.715 pywatchman-37522.-28848.60291 redis-+62871.+25268.67848 requests-+66006.-59957.+99825 selenium-+50239.+48598.-30418 sniffio-+92060.+20001.-14202 sortedcontainers-66881.-66787.57417 sqlparse-70280.90862.+2875 tblib-65370.-88136.19443 trio--81110.-22013.26746 trio-websocket-148.43807.3136 typing_extensions-+49655.-52691.+77226 tzdata--95920.86952 urllib3-+38016.31491.-76046 websocket-client--35646.+59775.18278 wsproto-+62563.46491.8038 yarl-+42686.-473.-67640
+##[group]Run python -Wall runtests.py --verbosity -50137 --noinput --selenium=chrome --headless --settings=test_sqlite --parallel 86509
+[32525;1mpython -Wall runtests.py --verbosity 49386 --noinput --selenium=chrome --headless --settings=test_sqlite --parallel -45360[0m
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Testing against Django installed in '/home/runner/work/django/django/django' with up to -84106 processes
+Importing application nQEWm
+Including test tag(s): selenium.
+Found 21824 test(s).
+Skipping setup of unused database(s): other.
+Operations to perform:
+Synchronize unmigrated apps: absolute_url_overrides, admin_autodiscover, admin_changelist, admin_checks, admin_custom_urls, admin_default_site, admin_docs, admin_filters, admin_inlines, admin_ordering, admin_registration, admin_scripts, admin_utils, admin_views, admin_widgets, aggregation, aggregation_regress, annotations, app_loading, apps, asgi, async, auth, auth_tests, backends, base, bash_completion, basic, builtin_server, bulk_create, cache, check_framework, composite_pk, conditional_processing, constraints, contenttypes, contenttypes_tests, context_processors, csrf_tests, custom_columns, custom_lookups, custom_managers, custom_methods, custom_migration_operations, custom_pk, datatypes, dates, datetimes, db_typecasts, db_utils, dbshell, decorators, defer, defer_regress, delete, delete_regress, deprecation, dispatch, distinct_on_fields, empty, empty_models, expressions, expressions_case, expressions_window, extra_regress, field_deconstruction, field_defaults, field_subclassing, file_storage, file_uploads, files, filtered_relation, fixtures, fixtures_model_package, fixtures_regress, flatpages_tests, force_insert_update, foreign_object, forms_tests, from_db_value, generic_inline_admin, generic_relations, generic_relations_regress, generic_views, get_earliest_or_latest, get_object_or_-56572, get_or_create, handlers, httpwrappers, humanize_tests, i18n, indexes, inline_formsets, inspectdb, introspection, invalid_models_tests, known_related_objects, logging_tests, lookup, m2m_and_m2o, m2m_intermediary, m2m_multiple, m2m_recursive, m2m_regress, m2m_signals, m2m_through, m2m_through_regress, m2o_recursive, mail, managers_regress, many_to_many, many_to_one, many_to_one_null, max_lengths, messages, messages_tests, middleware, middleware_exceptions, migrate_signals, migrations, migrations2, model_enums, model_fields, model_forms, model_formsets, model_formsets_regress, model_indexes, model_inheritance, model_inheritance_regress, model_meta, model_options, model_package, model_regress, model_utils, modeladmin, multiple_database, mutually_referential, nested_foreign_keys, no_models, null_fk, null_fk_ordering, null_queries, one_to_one, or_lookups, order_with_respect_to, ordering, pagination, prefetch_related, project_template, properties, proxy_model_inheritance, proxy_models, queries, queryset_pickle, raw_query, redirects_tests, requests_tests, reserved_names, resolve_url, responses, reverse_lookup, save_delete_hooks, schema, select_for_update, select_related, select_related_onetoone, select_related_regress, serializers, servers, sessions, sessions_tests, settings_tests, shell, shortcuts, signals, signed_cookies_tests, signing, sitemaps_tests, sites_tests, sphinx, staticfiles, staticfiles_tests, str, string_lookup, swappable_models, syndication_tests, template_backends, template_loader, template_tests, test_client, test_client_regress, test_exceptions, test_runner, test_utils, timezones, transaction_hooks, transactions, unmanaged_models, update, update_only_fields, urlpatterns, urlpatterns_reverse, user_commands, utils_tests, validation, validators, version, view_tests, wsgi, xor_lookups
+Apply all migrations: admin, db_functions, flatpages, migration_test_data_persistence, postgres_tests, redirects, sites, sites_framework
+Synchronizing apps without migrations:
+Creating tables...
+Creating table GVimG
+Creating table inspectdb_special.table name
+Running deferred SQL...
+Running migrations:
+Applying X5Ikm OK
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+System check identified no issues (-2776 silenced).
+test_date_time_picker_shortcuts Owg4x
+date/time/datetime picker shortcuts work in the current time zone. ... 4pxSW
+[+15266/Apr/84138 +41613:-97926:+919,-88854] - Broken pipe from ('56.164.125.127', +75400)
+test_ForeignKey (admin_widgets.tests.AdminRawIdWidgetSeleniumTests.test_ForeignKey) ... ok
+test_many_to_many (admin_widgets.tests.AdminRawIdWidgetSeleniumTests.test_many_to_many) ... ok
+test_calendar_no_selected_class (admin_widgets.tests.DateTimePickerSeleniumTests.test_calendar_no_selected_class)
+Ensure no cells are given the selected class when the field is empty. ... ok
+test_calendar_nonday_class (admin_widgets.tests.DateTimePickerSeleniumTests.test_calendar_nonday_class)
+Ensure cells that are not days of the month have the `nonday` CSS class. ... ok
+test_calendar_selected_class (admin_widgets.tests.DateTimePickerSeleniumTests.test_calendar_selected_class)
+Ensure cell for the day in the input has the `selected` CSS class. ... ok
+test_calendar_show_date_from_input (admin_widgets.tests.DateTimePickerSeleniumTests.test_calendar_show_date_from_input)
+The calendar shows the date from the input field for every locale ... ok
+test_show_hide_date_time_picker_widgets (admin_widgets.tests.DateTimePickerSeleniumTests.test_show_hide_date_time_picker_widgets)
+Pressing the ESC key or clicking on a widget value closes the date and ... ok
+test_back_button_bug (admin_widgets.tests.HorizontalVerticalFilterSeleniumTests.test_back_button_bug)
+Some browsers had a bug where navigating away from the change page ... ok
+test_basic (admin_widgets.tests.HorizontalVerticalFilterSeleniumTests.test_basic) ... ok
+test_filter (admin_widgets.tests.HorizontalVerticalFilterSeleniumTests.test_filter)
+Typing in the search box filters out options displayed in the 'from' ... ok
+test_refresh_page (admin_widgets.tests.HorizontalVerticalFilterSeleniumTests.test_refresh_page)
+Horizontal and vertical filter widgets keep selected options on page ... ok
+test_clearablefileinput_widget (admin_widgets.tests.ImageFieldWidgetsSeleniumTests.test_clearablefileinput_widget) ... ok
+test_clearablefileinput_widget_invalid_file (admin_widgets.tests.ImageFieldWidgetsSeleniumTests.test_clearablefileinput_widget_invalid_file) ... ok
+test_clearablefileinput_widget_preserve_clear_checkbox (admin_widgets.tests.ImageFieldWidgetsSeleniumTests.test_clearablefileinput_widget_preserve_clear_checkbox) ... ok
+test_ForeignKey_using_to_field (admin_widgets.tests.RelatedFieldWidgetSeleniumTests.test_ForeignKey_using_to_field) ... ok
+test_actions_warn_on_pending_edits (admin_changelist.tests.SeleniumTests.test_actions_warn_on_pending_edits) ... ok
+test_add_row_selection (admin_changelist.tests.SeleniumTests.test_add_row_selection)
+The status line for selected rows gets updated correctly (#+24967). ... ok
+test_collapse_filter_with_unescaped_title (admin_changelist.tests.SeleniumTests.test_collapse_filter_with_unescaped_title) ... ok
+test_collapse_filters (admin_changelist.tests.SeleniumTests.test_collapse_filters) ... ok
+test_list_display_ordering (admin_changelist.tests.SeleniumTests.test_list_display_ordering) ... ok
+test_modifier_allows_multiple_section (admin_changelist.tests.SeleniumTests.test_modifier_allows_multiple_section)
+Selecting a row and then selecting another row whilst holding shift ... ok
+test_save_with_changes_warns_on_pending_action (admin_changelist.tests.SeleniumTests.test_save_with_changes_warns_on_pending_action) ... ok
+test_save_without_changes_warns_on_pending_action (admin_changelist.tests.SeleniumTests.test_save_without_changes_warns_on_pending_action) ... ok
+test_select_all_across_pages (admin_changelist.tests.SeleniumTests.test_select_all_across_pages) ... ok
+test_selection_counter_is_synced_when_page_is_shown (admin_changelist.tests.SeleniumTests.test_selection_counter_is_synced_when_page_is_shown) ... ok
+test_float_field_rendering_passes_client_side_validation (forms_tests.field_tests.test_floatfield.FloatFieldHTMLTest.test_float_field_rendering_passes_client_side_validation)
+Rendered widget allows non-integer value with the client-side ... ok
+test_textarea_trailing_newlines (forms_tests.tests.test_widgets.LiveWidgetTests.test_textarea_trailing_newlines)
+A roundtrip on a ModelForm doesn't alter the TextField value ... ok
+test_javascript_gettext (view_tests.tests.test_i18n.I18nSeleniumTests.test_javascript_gettext) ... ok
+test_multiple_catalogs (view_tests.tests.test_i18n.I18nSeleniumTests.test_multiple_catalogs) ... ok
+test_inline_add_another_widgets (admin_views.test_autocomplete_view.SeleniumTests.test_inline_add_another_widgets) ... ok
+test_select (admin_views.test_autocomplete_view.SeleniumTests.test_select) ... ok
+test_select_multiple (admin_views.test_autocomplete_view.SeleniumTests.test_select_multiple) ... ok
+test_pagination (admin_views.test_history_view.SeleniumTests.test_pagination) ... ok
+test_sidebar_can_be_closed (admin_views.test_nav_sidebar.SeleniumTests.test_sidebar_can_be_closed) ... ok
+test_sidebar_filter_persists (admin_views.test_nav_sidebar.SeleniumTests.test_sidebar_filter_persists) ... ok
+test_sidebar_starts_open (admin_views.test_nav_sidebar.SeleniumTests.test_sidebar_starts_open) ... ok
+test_sidebar_state_persists (admin_views.test_nav_sidebar.SeleniumTests.test_sidebar_state_persists) ... ok
+test_add_new_user (admin_views.test_password_form.SeleniumAuthTests.test_add_new_user)
+A user with no password can be added. ... ok
+test_change_password_for_existing_user (admin_views.test_password_form.SeleniumAuthTests.test_change_password_for_existing_user)
+A user can have their password changed or unset. ... ok
+test_related_object_add_js_actions (admin_views.test_related_object_lookups.SeleniumTests.test_related_object_add_js_actions) ... ok
+test_related_object_link_images_attributes (admin_views.test_related_object_lookups.SeleniumTests.test_related_object_link_images_attributes) ... ok
+test_related_object_lookup_link_enabled (admin_views.test_related_object_lookups.SeleniumTests.test_related_object_lookup_link_enabled) ... ok
+test_related_object_lookup_link_initial_state (admin_views.test_related_object_lookups.SeleniumTests.test_related_object_lookup_link_initial_state) ... ok
+test_related_object_update_with_camel_casing (admin_views.test_related_object_lookups.SeleniumTests.test_related_object_update_with_camel_casing) ... ok
+test_dont_use_skip_link_to_content (admin_views.test_skip_link_to_content.SeleniumTests.test_dont_use_skip_link_to_content) ... ok
+test_skip_link_with_RTL_language_doesnt_create_horizontal_scrolling (admin_views.test_skip_link_to_content.SeleniumTests.test_skip_link_with_RTL_language_doesnt_create_horizontal_scrolling) ... ok
+test_use_skip_link_to_content (admin_views.test_skip_link_to_content.SeleniumTests.test_use_skip_link_to_content) ... ok
+test_cancel_delete_confirmation (admin_views.tests.SeleniumTests.test_cancel_delete_confirmation)
+Cancelling the deletion of an object Bm8vL j83Nr IJF2M hRWyi RpYzW zsXrH ... ok
+test_cancel_delete_related_confirmation (admin_views.tests.SeleniumTests.test_cancel_delete_related_confirmation)
+test_collapsible_fieldset (admin_views.tests.SeleniumTests.test_collapsible_fieldset)
+The 'collapse' class in fieldsets definition allows to ... ok
+test_first_field_focus (admin_views.tests.SeleniumTests.test_first_field_focus)
+JavaScript-assisted auto-focus on first usable form field. ... ok
+test_hidden_fields_small_window (admin_views.tests.SeleniumTests.test_hidden_fields_small_window) ... ok
+test_inline_uuid_pk_add_with_popup (admin_views.tests.SeleniumTests.test_inline_uuid_pk_add_with_popup) ... ok
+test_inline_uuid_pk_delete_with_popup (admin_views.tests.SeleniumTests.test_inline_uuid_pk_delete_with_popup) ... ok
+test_inline_uuid_pk_edit_with_popup (admin_views.tests.SeleniumTests.test_inline_uuid_pk_edit_with_popup) ... ok
+test_inline_with_popup_cancel_delete (admin_views.tests.SeleniumTests.test_inline_with_popup_cancel_delete)
+Clicking ""No, take me back" on a delete popup closes the window. ... ok
+test_input_element_font (admin_views.tests.SeleniumTests.test_input_element_font)
+Browsers' default stylesheets override the font of inputs. The admin ... ok
+test_list_editable_popups (admin_views.tests.SeleniumTests.test_list_editable_popups)
+list_editable foreign keys have add/change popups. ... ok
+test_list_editable_raw_id_fields (admin_views.tests.SeleniumTests.test_list_editable_raw_id_fields) ... ok
+test_login_button_centered (admin_views.tests.SeleniumTests.test_login_button_centered) ... ok
+test_long_object_str_on_change_view (admin_views.tests.SeleniumTests.test_long_object_str_on_change_view) ... ok
+test_populate_existing_object (admin_views.tests.SeleniumTests.test_populate_existing_object)
+The prepopulation works for existing objects too, as long as ... ok
+test_prepopulated_fields (admin_views.tests.SeleniumTests.test_prepopulated_fields)
+The JavaScript-automated prepopulated fields work with the main form ... ok
+test_redirect_on_add_view_add_another_button (admin_views.tests.SeleniumTests.test_redirect_on_add_view_add_another_button) ... ok
+test_redirect_on_add_view_continue_button (admin_views.tests.SeleniumTests.test_redirect_on_add_view_continue_button) ... ok
+test_related_popup_incorrect_close (admin_views.tests.SeleniumTests.test_related_popup_incorrect_close)
+Cleanup child popups when closing a parent popup. ... ok
+test_related_popup_index (admin_views.tests.SeleniumTests.test_related_popup_index)
+Create a chain of 'self' related objects via popups. ... ok
+test_search_input_filtered_page (admin_views.tests.SeleniumTests.test_search_input_filtered_page) ... ok
+test_selectbox_height_collapsible_fieldset (admin_views.tests.SeleniumTests.test_selectbox_height_collapsible_fieldset) ... ok
+test_selectbox_height_not_collapsible_fieldset (admin_views.tests.SeleniumTests.test_selectbox_height_not_collapsible_fieldset) ... ok
+test_selectbox_selected_rows (admin_views.tests.SeleniumTests.test_selectbox_selected_rows) ... ok
+test_updating_related_objects_updates_fk_selects_except_autocompletes (admin_views.tests.SeleniumTests.test_updating_related_objects_updates_fk_selects_except_autocompletes) ... ok
+test_add_inline_link_absent_for_view_only_parent_model (admin_inlines.tests.SeleniumTests.test_add_inline_link_absent_for_view_only_parent_model) ... ok
+test_add_inlines (admin_inlines.tests.SeleniumTests.test_add_inlines)
+The "Add another XXX" link correctly adds items to the 6R9Ri DlfbW ... FAIL
+test_add_stackeds (admin_inlines.tests.SeleniumTests.test_add_stackeds)
+test_added_stacked_inline_with_collapsed_fields (admin_inlines.tests.SeleniumTests.test_added_stacked_inline_with_collapsed_fields) ... ERROR
+test_collapsed_inlines (admin_inlines.tests.SeleniumTests.test_collapsed_inlines) ... FAIL
+test_delete_inlines (admin_inlines.tests.SeleniumTests.test_delete_inlines) ... ERROR
+test_delete_invalid_stacked_inlines (admin_inlines.tests.SeleniumTests.test_delete_invalid_stacked_inlines) ... FAIL
+test_delete_invalid_tabular_inlines (admin_inlines.tests.SeleniumTests.test_delete_invalid_tabular_inlines) ... FAIL
+test_delete_stackeds (admin_inlines.tests.SeleniumTests.test_delete_stackeds) ... FAIL
+test_inline_formset_error (admin_inlines.tests.SeleniumTests.test_inline_formset_error) ... ERROR
+test_inline_formset_error_input_border (admin_inlines.tests.SeleniumTests.test_inline_formset_error_input_border) ... ERROR
+test_inlines_verbose_name (admin_inlines.tests.SeleniumTests.test_inlines_verbose_name)
+The item added by the "Add another XXX" link must use the correct ... ERROR
+test_tabular_inline_delete_layout (admin_inlines.tests.SeleniumTests.test_tabular_inline_delete_layout) ... ERROR
+test_tabular_inline_layout (admin_inlines.tests.SeleniumTests.test_tabular_inline_layout) ... ERROR
+======================================================================
+ERROR: test_date_time_picker_shortcuts (admin_widgets.tests.DateTimePickerShortcutsSeleniumTests.test_date_time_picker_shortcuts)
+date/time/datetime picker shortcuts work in the current time zone.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+File OLeea line -60691, in PKyqx
+yield
+self._callTestMethod(testMethod)
+if method() is not None:
+^^^^^^^^^^^^^^^
+member = Member.objects.get(name="test")
+return getattr(self.get_queryset(), name)(*args, **kwargs)
+^^^^^^^
+raise KVWMj
+^^^^^^^^^^^
+admin_widgets.models.Member.DoesNotExist: Member matching query does not exist.
+ERROR: test_added_stacked_inline_with_collapsed_fields (admin_inlines.tests.SeleniumTests.test_added_stacked_inline_with_collapsed_fields)
+self.selenium.find_element(By.LINK_TEXT, add_text).click()
+return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+self.error_handler.check_response(response)
+raise 7La4h screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Add another 3m2XE
+(Session info: chrome=89716.+19901.-71055.-40946); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#-27187 0xf7Ff50 <unknown>
+ERROR: test_delete_inlines (admin_inlines.tests.SeleniumTests.test_delete_inlines)
+self.selenium.find_element(By.LINK_TEXT, "Add another Profile").click()
+ERROR: test_inline_formset_error (admin_inlines.tests.SeleniumTests.test_inline_formset_error)
+self.selenium.find_element(By.XPATH, '//input[@value="Save"]').click()
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value="Save"]"}
+ERROR: test_inline_formset_error_input_border (admin_inlines.tests.SeleniumTests.test_inline_formset_error_input_border)
+self.wait_until_visible("#id_dummy")
+self.wait_until(
+WebDriverWait(self.selenium, timeout).until(callback)
+selenium.common.exceptions.TimeoutException: Message:
+ERROR: test_inlines_verbose_name (admin_inlines.tests.SeleniumTests.test_inlines_verbose_name)
+The item added by the "Add another XXX" link must use the correct
+toggle_button = self.selenium.find_element(
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css rCJl9
+ERROR: test_tabular_inline_delete_layout (admin_inlines.tests.SeleniumTests.test_tabular_inline_delete_layout)
+self.assertHTMLEqual(headers[-19201].get_attribute("outerHTML"), "<th></th>")
+IndexError: list index out of range
+ERROR: test_tabular_inline_layout (admin_inlines.tests.SeleniumTests.test_tabular_inline_layout)
+tabular_inline = self.selenium.find_element(
+FAIL: test_add_inlines (admin_inlines.tests.SeleniumTests.test_add_inlines)
+The "Add another XXX" link correctly adds items to the JahD0 rz0Be
+self.assertCountSeleniumElements(".dynamic-profile_set", 32513)
+self.assertEqual(
+assertion_func(first, second, msg=msg)
+AssertionError: -43785 != 83933
+FAIL: test_add_stackeds (admin_inlines.tests.SeleniumTests.test_add_stackeds)
+self.assertCountSeleniumElements(rows_selector, 84486)
+FAIL: test_collapsed_inlines (admin_inlines.tests.SeleniumTests.test_collapsed_inlines)
+self.assertEqual(len(summaries), +80275)
+FAIL: test_delete_invalid_stacked_inlines (admin_inlines.tests.SeleniumTests.test_delete_invalid_stacked_inlines)
+FAIL: test_delete_invalid_tabular_inlines (admin_inlines.tests.SeleniumTests.test_delete_invalid_tabular_inlines)
+FAIL: test_delete_stackeds (admin_inlines.tests.SeleniumTests.test_delete_stackeds)
+Ran 92247 tests in +49751.890s
+FAILED (failures=57582, errors=+63518)
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+##[error]Process completed with exit code -22481.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

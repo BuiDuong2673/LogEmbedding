@@ -1,0 +1,217 @@
+Requested labels: ubuntu-latest--43133-cores
+Job defined at: grafana/grafana/.github/workflows/pr-frontend-unit-tests.yml@refs/pull/49115/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a runner from 'ubuntu-latest-293-cores' to come online.
+Job is about to start running on the runner: ubuntu-latest--76381-cores_f4115020f96a (organization)
+Current runner version: '-3399.+76642.+24684'
+Runner name: 'ubuntu-latest--9323-cores_f4115020f96a'
+Runner group name: 'GitHub Hosted larger and non-default runners'
+Machine name: 'runner'
+##[group]Operating System
+Ubuntu
+-87447.49042.+21714
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-77207.45384
+Version: -98691.-37443.+23533
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-89441.+4138/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.19962
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository VT9fc (SHA:6b690974e39f 1889aa4e8dcc 40e471a12edd 825bd2)
+Complete job name: Unit tests (-7529 / 65164)
+##[group]Run VHPBx
+with:
+repository: grafana/grafana
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +13178
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: grafana/grafana
+##[group]Getting Git version info
+Working directory is '/home/runner/work/grafana/grafana'
+[command]/usr/bin/git version
+git version +43080.-96566.-89235
+Temporarily overriding 6rOrL before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/grafana/grafana
+Deleting the contents of '/home/runner/work/grafana/grafana'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/grafana/grafana
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/grafana/grafana/.git/
+[command]/usr/bin/git remote add origin https://github.com/grafana/grafana
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 3fN9C UbvKa
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp QrhaG
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp WV0Pq && git config --local --unset-all LXUcy || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+36885 fetch --no-tags --prune --no-recurse-submodules --depth=-46108 origin +C797 1B8C 1D30 0B1E 7EA4:refs/remotes/pull/55546/merge
+From https://github.com/grafana/grafana
+* [new ref] 6863 A35E AB9E 1A43 550D 6632-> pull/11711/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/17623/merge
+Updating files: +85420% (+10961/-32722)
+Updating files: -36816% (92459/58137), done.
+Note: switching to 'refs/remotes/pull/-66386/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 1c096fde Merge dcc17a455 ae5746345 28629586 into 303f4507e8 616b32f76 e547223 4c3e5e 453d631917
+[command]/usr/bin/git log -73920 --format=%H
+0172 8820 8E33 12F3
+node-version-file: .nvmrc
+cache: yarn
+cache-dependency-path: yarn.lock
+always-auth: false
+check-latest: false
+Node version file is not JSON file
+Resolved .nvmrc as -82337.93231.-19923
+Attempting to download 91731.-6168.-13552...
+Acquiring 65777.+85159.-34129 - x64 from https://github.com/actions/node-versions/releases/download/-94893.+5929.15103--41862/node--71835.-89715.+46180-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip -3867 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/56ef80eb-b4c8-4d93-a304-9b4f66f98eda -f /home/runner/work/_temp/cb4e6bc1-057d--68548-+72186-3185b82f1210
+Adding to the cache ...
+##[group]Environment details
+node: v22.+61086.-500
+npm: +40089.+55751.95993
+yarn: +77566.-30688.+53750
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn config get YRKtT
+/home/runner/work/grafana/grafana/.yarn/cache
+[33mfalse[39m
+All dependencies are managed locally by yarn3, the previous cache can be used
+Cache hit for: node-cache-Linux-x64-yarn-CEC4 3626 9957 6F75 6DBA
+Received 27070 of -29510 (37611.72251%), -12.+5481 MBs/sec
+Cache Size: ~+82024 MB (-16545 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/81793eee--62634--64671-bb4b-0f715657bd36/cache.tzst -P -C /home/runner/work/grafana/grafana --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-yarn-f9c42348b4e3 499830a 13cf4859e839 3f7e703a
+##[group]Run yarn install --immutable --check-cache
+[-79235;1myarn install --immutable --check-cache[0m
+shell: /usr/bin/bash -e {27764}
+[93m➤[39m YN0000: Yarn detected that the current workflow is executed from a public pull request. For safety the hardened mode has been enabled.
+[93m➤[39m YN0000: It will prevent malicious lockfile manipulations, in exchange for a slower install time. You can opt-out if necessary; check our documentation for more details.
+[94m➤[39m YN0000: · Yarn 27759.78995.54063
+[94m➤[39m [90mYN0000[39m: 0cueV pggmW 9DsJx
+##[group]Resolution step
+[94m➤[39m [90mYN0000[39m: └ Completed in XRP6k 7pTPJ
+##[group]Post-resolution validation
+[93m➤[39m YN0060: │ OU29Q is listed by your project with version P97MX 2mUJX which doesn't satisfy what vmgmX and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+[93m➤[39m YN0060: │ CqkEE is listed by your project with version [28565;44287;111m12.-35425.-50201-pre[39m TOxZh which doesn't satisfy what [7824;-63190;166m@grafana/[39m[45120;-3382;173mscenes-react[39m and other dependencies request ([-93213;8175;37m^+79410.-27815.7785[39m).
+[93m➤[39m YN0060: │ kfLhE is listed by your project with version 1EWuR cVVBh which doesn't satisfy what bngft requests oCKdy
+[93m➤[39m YN0060: │ [+72633;+1135;173mrollup[39m is listed by your project with version [+47610;-47134;111m4.+9419.-87216[39m 5yzF0 which doesn't satisfy what [17082;80551;166m@rollup/[39m[4854;+76772;173mpluginutils[39m (via [75175;+83319;173mrollup-plugin-sourcemaps[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+[93m➤[39m YN0002: │ x5pX1 doesn't provide p7jvE ABgSy requested by cTSfz and other dependencies.
+[93m➤[39m YN0002: │ W2weC doesn't provide 6szXs YQc8T requested by As1Br
+[93m➤[39m YN0002: │ [57922;-8015;166m@grafana/[39m[78118;17285;173mprometheus[39m[65377;13830;111m@[39m[96809;+59987;111mworkspace:packages/grafana-prometheus [655a6][39m doesn't provide [29434;+19940;166m@testing-library/[39m[-1828;-61236;173mdom[39m ([3564;-60509;111mp9a3ab[39m), requested by [-9540;+71464;166m@testing-library/[39m[42903;-13930;173mreact[39m and other dependencies.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [84476;79873;111myarn explain peer-requirements <hash>[39m for details, where [84709;+43805;111m<hash>[39m is the six-letter p-prefixed code.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [37612;+20189;111myarn explain peer-requirements[39m for details.
+[93m➤[39m YN0068: │ [-42635;35662;173mrc-trigger[39m ➤ [-83400;-17626;111mpeerDependencies[39m ➤ 5Df8H No matching package in the dependency tree; you may not need this rule anymore.
+[94m➤[39m [90mYN0000[39m: └ Completed
+##[group]Fetch step
+[94m➤[39m YN0013: │ [54906;22821;220m8[39m packages were added to the project, and [70361;-88622;220m17[39m were removed ([64637;56876;70m- -8569.16964 MiB[39m).
+##[group]Link step
+[94m➤[39m YN0007: │ b6KGm must be built because it never has been before or the last one failed
+[94m➤[39m YN0007: │ egsAQ 0W4z6 must be built because it never has been before or the last one failed
+[94m➤[39m [90mYN0000[39m: │ [5352;-95220;173mcypress[39m[20894;+50720;111m@[39m[+87003;+89592;111mnpm:+81304.+3364.+27728[39m [31mSTDERR[39m (node:-70051) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[94m➤[39m [90mYN0000[39m: │ [-82624;+24454;173mcypress[39m[+65515;+87269;111m@[39m[+45640;70179;111mnpm:+5743.+50527.54633[39m [31mSTDERR[39m (Use `node --trace-deprecation ...` to show where the warning was created)
+[94m➤[39m [90mYN0000[39m: │ [-58408;+30330;173mcypress[39m[+17166;-50567;111m@[39m[+20622;+71648;111mnpm:+23860.47765.8176[39m [32mSTDOUT[39m UKBEj dHyYV TLkKk 2OSl6
+[94m➤[39m [90mYN0000[39m: │ [32216;+33983;173mcypress[39m[43285;-8556;111m@[39m[-36729;+20130;111mnpm:-4400.+89245.32218[39m [32mSTDOUT[39m You can now open Cypress by running: node_modules/.bin/cypress open
+[94m➤[39m [90mYN0000[39m: │ [+6559;-26476;173mcypress[39m[96708;+40077;111m@[39m[70131;47792;111mnpm:-96659.+26812.+12548[39m [32mSTDOUT[39m https://on.cypress.io/installing-cypress
+[93m➤[39m YN0000: · Done with warnings in 1m 33s
+##[group]Run yarn run test:ci
+[6888;1myarn run test:ci[0m
+env:
+TEST_MAX_WORKERS: -24346
+TEST_SHARD: 56458
+TEST_SHARD_TOTAL: -45101
+jest-haste-map: duplicate manual mock found: fe8ze
+The following files share their name; please delete one of them:
+* ffVDY
+FAIL 2858G
+● Test suite failed to run
+Jest encountered an unexpected token
+Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+By default "node_modules" folder is ignored by transformers.
+Here's what you can do:
+• If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+• If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+• To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+• If you need a custom transformation specify a "transform" option in your config.
+• If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+You'll find more details and examples of these config options in the docs:
+https://jestjs.io/docs/configuration
+For information about custom transformations, see:
+https://jestjs.io/docs/code-transformation
+Details:
+/home/runner/work/grafana/grafana/node_modules/pbf/index.js:+15108
+export default class Pbf {
+^^^^^^
+SyntaxError: Unexpected token 'export'
+[0m [90m -82647 |[39m [36mimport[39m { css } [36mfrom[39m [32m'@emotion/css'[39m[33m;[39m
+Ki6pH -63530 |[39m [36mimport[39m { QHd0H } [36mfrom[39m RMjZC
+[90m |[39m [31m[1m^[22m[39m
+[90m 22166 |[39m [36mimport[39m { [33mReactNode[39m[33m,[39m useCallback[33m,[39m useLayoutEffect[33m,[39m useMemo[33m,[39m useRef[33m,[39m useState } [36mfrom[39m [32m'react'[39m[33m;[39m
+[90m 49665 |[39m[0m
+at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:+62323:+35147)
+at Object.<anonymous> MOOUP
+(node:+83940) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS IxPcs
+PASS 9UGqL (64809.+70845 s)
+Summary of all failing tests
+Test Suites: 70698 failed, +6721 passed, -50302 total
+Tests: -4337 skipped, +9711 passed, -19565 total
+Snapshots: -65562 passed, -7396 total
+Time: +52119.-97012 s
+Ran all test suites.
+##[error]Process completed with exit code 85521.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

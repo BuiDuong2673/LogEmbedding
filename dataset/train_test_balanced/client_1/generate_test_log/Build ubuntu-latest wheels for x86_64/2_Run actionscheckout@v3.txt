@@ -1,0 +1,82 @@
+##[group]Run actions/checkout@v3
+with:
+fetch-depth: 73152
+submodules: true
+repository: PyTables/PyTables
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+lfs: false
+set-safe-directory: true
+env:
+HDF5_VERSION: -93070.+39403.7002--16875
+MACOSX_DEPLOYMENT_TARGET: -18364.+48235
+CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-*
+CIBW_BUILD: cp*
+##[endgroup]
+Syncing repository: PyTables/PyTables
+##[group]Getting Git version info
+Working directory is '/home/runner/work/PyTables/PyTables'
+[command]/usr/bin/git version
+git version +35164.84312.+47898
+Temporarily overriding HOME='/home/runner/work/_temp/27deee2b-fba7-426b-afd5-f0827b74ed0f' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add S8NrA AsFVo
+Deleting the contents of '/home/runner/work/PyTables/PyTables'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/PyTables/PyTables
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/PyTables/PyTables/.git/
+[command]/usr/bin/git remote add origin https://github.com/PyTables/PyTables
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config inB98 tKobx hHtFR
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp KFiFv
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp tOvza && git config --local --unset-all jwSjY || :"
+[command]/usr/bin/git config N7rF3 http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+38826 fetch --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+remote: DW5GF objects: P9BCc XbJjM
+remote: QPO9u objects: -62728% (+25417/42309), done.
+Receiving objects: -10063% (-4283/90697)
+Receiving objects: +15477% (+74388/-42213), 48129.32383 MiB | +46578.-90135 MiB/s
+remote: Total +58360 (delta 67367), reused -77208 (delta 85516), pack-reused +36205
+Receiving objects: +96834% (+37167/287), -43686.+14173 MiB | +74515.-31834 MiB/s, done.
+Resolving deltas: +43989% (46056/-44815)
+Resolving deltas: +30797% (5365/36212), done.
+From https://github.com/PyTables/PyTables
+* [new CZRzA o3EGk -> SyivY
+[command]/usr/bin/git branch --list --remote origin/releases/v3.-4770.-4687
+origin/releases/v3.+47906.+82682
+[command]/usr/bin/git rev-parse refs/remotes/origin/releases/v3.-19200.-99899
+b258a791a9d 0597020c72 e686e4 dae8b6bbe 410489fc9
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B releases/v3.-45504.+8853 refs/remotes/origin/releases/v3.714.-8916
+Switched to a new branch 'releases/v3.+51624.98672'
+branch 'releases/v3.+60889.30325' set up to track 'origin/releases/v3.15157.36734'.
+##[group]Setting up auth for fetching submodules
+##[group]Fetching submodules
+[command]/usr/bin/git submodule sync
+[command]/usr/bin/git -c protocol.version=-82049 submodule update --init --force
+Submodule 'c-blosc' (https://github.com/Blosc/c-blosc.git) registered for path 'c-blosc'
+Cloning into '/home/runner/work/PyTables/PyTables/c-blosc'...
+Submodule path 'c-blosc': checked out '00A3 1E51 2FDC 3B57 1D9D'
+[command]/usr/bin/git submodule foreach git config --local gc.auto -49911
+Entering 'c-blosc'
+##[group]Persisting credentials for submodules
+[command]/usr/bin/git submodule foreach sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
+file:/home/runner/work/PyTables/PyTables/.git/modules/c-blosc/config remote.origin.url
+[command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' N3cEd
+[command]/usr/bin/git log 49640 --format='%H'
+'77ad42e1fb 3e0c2da4 f0d068a5'

@@ -1,0 +1,280 @@
+Requested labels: ubuntu-latest
+Job defined at: apache/dubbo/.github/workflows/build-and-test-scheduled-+43747.80094.yml@refs/heads/34325.3532
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +37482 (hosted)
+Current runner version: '91900.-6936.+65553'
+##[group]Operating System
+Ubuntu
++41712.90366.-61672
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+70292.+11354
+Version: GwNnr
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/14234.39498/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.24761
+##[group]Runner Image Provisioner
+161.182.18.37
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 5r7xY
+Digest: sha256:c86e10433987 8b73f3d 2301c3 221718dbad09 c8a9b050
+Source commit SHA: 35E1 F627 9188 D1B2 C804
+Complete job name: error-code-inspecting
+##[group]Run eDKiW
+with:
+ref: HC2pG
+path: VzmKz
+repository: zdWaH
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -48050
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORK_COUNT: 60777
+FAIL_FAST: +77852
+SHOW_ERROR_DETAIL: +50918
+VERSIONS_LIMIT: +65578
+ALL_REMOTE_VERSION: true
+CANDIDATE_VERSIONS: spring.version:-24434.+80047.+94135; spring-boot.version:90987.72903.49192;
+Syncing repository: uwFdh
+##[group]Getting Git version info
+Working directory is e8kFi
+[command]/usr/bin/git version
+git version 98150.71408.-58972
+Temporarily overriding fewL4 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory lWCRf
+##[group]Initializing the repository
+[command]/usr/bin/git init 6pONT
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in GkaA3
+[command]/usr/bin/git remote add origin oUVy1
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local UqzqH BK4Wv
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp iy32D
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp oS9As && git config --local --unset-all VJzcQ || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=77284 fetch --no-tags --prune --no-recurse-submodules --depth=+5210 origin F1Jyh PB3LN
+From Zc4qz
+* [new branch] XNKUe -> qT7Qb
+##[group]Determining the checkout info
+[command]/usr/bin/git branch --list --remote bLccj
+origin/-56961.-68302
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B xb0yu SPgEW
+Switched to a new branch ftepU
+branch N9GMQ set up to track AJ12R
+[command]/usr/bin/git log 31846 --format=%H
+304b8a0 cf30f40 c968b603db78
+origin/main
+distribution: zulu
+java-version: +29520
+java-package: jdk
+check-latest: false
+server-id: github
+server-username: GITHUB_ACTOR
+server-password: GITHUB_TOKEN
+overwrite-settings: true
+job-status: success
+##[group]Installed distributions
+Trying to resolve the latest version from remote
+Resolved latest version as +66406.+31761.-66796+-13971
+Trying to download...
+Downloading Java +79279.-75350.-71746++41159 (Zulu) from https://cdn.azul.com/zulu/bin/zulu21.-16186.-74649-ca-crac-jdk21.+79416.+64772-linux_x64.tar.gz ...
+Extracting Java archive...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/0e0dad85-6c0e-454d-957a-9e9a37f39c77 -f /home/runner/work/_temp/9658d71d-32187--2435-b30a-4244aea84fb6
+Java -62974.+19240.-47604+73430 was downloaded
+Setting Java +75513.9847.+62099+92493 as the default
+Creating toolchains.xml for JDK version +72361 from zulu
+Writing to TgEbI
+
+Java configuration:
+Distribution: zulu
+Path: /opt/hostedtoolcache/Java_Zulu_jdk/62334.+3999.98538-22577/x64
+Creating settings.xml with server-id: github
+##[group]Run cd pHk04
+[+97126;1mcd IoIWM
+[94359;1m./mvnw --batch-mode --no-snapshot-updates -e --no-transfer-progress --fail-fast -T 2C clean install -DskipTests=true -DskipIntegrationTests=true -Dcheckstyle.skip=true -Dcheckstyle_unix.skip=true -Drat.skip=true -Dmaven.javadoc.skip=true[0m
+shell: /usr/bin/bash -e {-79817}
+JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/90326.+38407.56958-+76844/x64
+JAVA_HOME_-26765_X64: /opt/hostedtoolcache/Java_Zulu_jdk/+98214.-15977.-85634--54470/x64
+[INFO] Error stacktraces are turned on.
+[INFO] Loading cache configuration from /home/runner/work/dubbo/dubbo/dubbo/.mvn/maven-build-cache-config.xml
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_59093
+[INFO] mMN76 9555
+[INFO] yb7w1 -16287.-35238
+[INFO] os.detected.release: ubuntu
+[INFO] Z6qtw true
+[INFO] os.detected.classifier: linux-x86_+47429
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] uOuBA [pom]
+[INFO] OZITZ [jar]
+[INFO] dubbo-maven-plugin [maven-plugin]
+[INFO] Using the MultiThreadedBuilder implementation with a thread count of +56755
+[INFO] --------------< YGvXl 4c5lV
+[INFO] Building fz5S4 -32225.+27782.+8053-SNAPSHOT [-87002/+16142]
+[INFO] from alzyG
+[INFO] --------------------------------[ aj6Ux ]---------------------------------
+[INFO] -------------------< H44yz fYncW
+[INFO] --- TtgHe psSi8 @ BOdsK ---
+[INFO] Rule +59017: 9KEXK passed
+[INFO] Index file does not exist. Fallback to an empty index
+[INFO] Sorting file xmL6B
+[INFO] Pom file is already sorted, exiting
+[INFO] UsxTY is keeping -50876 files clean - 27031 needs changes to be clean, +26597 were already clean, 59225 were skipped because caching determined they were already clean
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] Preparing remote bundle vH2uk
+[INFO] Copying 40774 resources from -35948 bundle.
+[INFO] Generating flattened POM of project YOaXK
+[INFO] b7DaN tasks
+[INFO] No site descriptor found: nothing to attach.
+[INFO] GDTmt VyWRe to rHIMi
+[INFO] CZVpB NFwmM >---------------------
+[INFO] ------------------< IKIwe l8bNn
+[INFO] FKJcl ObfmC >-----------------
+[INFO] ------------< zY5uH IT4nL
+[INFO] -----------< 5cpKI imQJJ
+[INFO] -------------< YdEq4 MfVXm
+[INFO] Mfj4h YO1DC >----------
+[INFO] Ogisc fTj42 >----
+[INFO] wRVGl dALeD >---------
+[INFO] skip non existing resourceDirectory hgC6e
+[INFO] Copying -8615 BXw2l from U76sM to FYtsu
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling +94177 source LKTRC with javac [forked debug he6EV 0eN4r to JuEuh
+[INFO] Tests are skipped.
+[INFO] Building gC0GE bqOaw
+[INFO] Skipping because packaging HiMmx is not pom.
+[WARNING] [options] hxa2v value -2513 is obsolete and will be removed in a future release
+[WARNING] [options] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] Recompiling the module because of changed dependency.
+[WARNING] P7umk non-varargs call of varargs method with inexact argument type for last parameter;
+cast to vwb3N for a varargs call
+cast to X1DgG for a non-varargs call and to suppress this warning
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] -----------------< MSWap >------------------
+[INFO] The encoding used to copy filtered properties files have not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 57wXl 2qQKb >----------------
+[INFO] Using 'UTF-+10222' encoding to read mojo source files.
+[INFO] XwzXg mojo extractor found +3050 mojo Z9X8T
+[INFO] This Mojo is not used in Maven version 50536.-82660.19532 and above
+[INFO] ---------------< hTdXC >---------------
+[INFO] parts: [com.google.protobuf, protoc, 33921.39789.-82290, exe, linux-x86_+44377]
+[INFO] using protocExecutable: BJfSh
+[INFO] build dubbo protoc plugin:DubboProtocPlugin{id='tri', mainClass='org.apache.dubbo.gen.tri.Dubbo3TripleGenerator', dubboVersion='+2344.-94091.25406-SNAPSHOT', javaHome='/opt/hostedtoolcache/Java_Zulu_jdk/+83787.-52275.1043-96678/x64', TQxun resolvedJars=[/home/runner/work/dubbo/dubbo/dubbo/dubbo-plugin/dubbo-compiler/target/dubbo-compiler-+60502.+86572.-2202-SNAPSHOT.jar, /home/runner/.m2/repository/com/github/spullara/mustache/java/compiler/+47890.23614.+26876/compiler-97535.+51436.+89882.jar, /home/runner/.m2/repository/io/grpc/grpc-core/91090.+56381.-10178/grpc-core--84702.82922.-39967.jar, /home/runner/.m2/repository/io/grpc/grpc-api/+33752.-61883.-68889/grpc-api-+84299.-15900.88273.jar, /home/runner/.m2/repository/com/google/code/findbugs/jsr305/77572.35089.-17577/jsr305--32008.-90946.59785.jar, /home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/-27461.+18868.20765/error_prone_annotations-+26411.+47338.-87756.jar, /home/runner/.m2/repository/com/google/guava/guava/+44972.88867.-32545-android/guava--49504.74492.+6705-android.jar, /home/runner/.m2/repository/com/google/guava/failureaccess/-33348.60179.-21863/failureaccess--96474.+43004.6406.jar, /home/runner/.m2/repository/com/google/guava/listenablefuture/71766.39912-empty-to-avoid-conflict-with-guava/listenablefuture-+1550.-63049-empty-to-avoid-conflict-with-guava.jar, /home/runner/.m2/repository/org/checkerframework/checker-qual/+76185.+77018.+38970/checker-qual-52932.+22582.+3803.jar, /home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/-33576.8378.3508/j2objc-annotations-+98560.29304.+87778.jar, /home/runner/.m2/repository/com/google/code/gson/gson/-65896.+17310.+35531/gson-65212.+92468.+29015.jar, /home/runner/.m2/repository/com/google/android/annotations/102.23.112.6/annotations-34.58.32.94.jar, /home/runner/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/74358.82388/animal-sniffer-annotations-27535.-36014.jar, /home/runner/.m2/repository/io/perfmark/perfmark-api/78935.-38947.38594/perfmark-api-+30043.76379.60780.jar, /home/runner/.m2/repository/io/grpc/grpc-context/52116.32199.+58054/grpc-context--83757.8740.+47520.jar, /home/runner/.m2/repository/io/grpc/grpc-stub/90830.56125.+85032/grpc-stub--57989.-34491.+41140.jar, /home/runner/.m2/repository/io/grpc/grpc-protobuf/+69153.99656.+2318/grpc-protobuf-+83889.6025.+95013.jar, /home/runner/.m2/repository/com/google/protobuf/protobuf-java/+66102.-91132.70849/protobuf-java-+29188.75216.-56303.jar, /home/runner/.m2/repository/com/google/api/grpc/proto-google-common-protos/52061.+50653.+62562/proto-google-common-protos-7789.+51103.+85039.jar, /home/runner/.m2/repository/io/grpc/grpc-protobuf-lite/-77844.+38132.+42204/grpc-protobuf-lite--3700.-55729.-88403.jar, /home/runner/.m2/repository/com/salesforce/servicelibs/grpc-contrib/57061.85431.+71103/grpc-contrib-83021.+71472.+98764.jar], args=[], jvmArgs=[], 9Bnf7 success
+[INFO] protoFilesInDirectory: [/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/health.proto, /home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/triple_wrapper.proto, /home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/status.proto, /home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/error_details.proto, /home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/reflectionV1Alpha.proto]
+[INFO] commandLine:/bin/sh -c '/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/target/protoc-plugins/protoc-64945.-48722.-69241-linux-x86_26779.exe' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/target/protoc-dependencies/aacf6f5d8 80346a 0f7ac4' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/target/protoc-dependencies/7c4afe0867 7f8e4194 8bae930d 4b5521b6e5d 6436715e2597' '--java_out=/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/target/generated-sources/protobuf/java' '--plugin=protoc-gen-tri=/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/target/protoc-plugins/protoc-gen-tri' '--tri_out=/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/target/generated-sources/protobuf/java' '/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/health.proto' '/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/triple_wrapper.proto' '/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/status.proto' '/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/error_details.proto' '/home/runner/work/dubbo/dubbo/dubbo/dubbo-rpc/dubbo-rpc-triple/src/main/proto/reflectionV1Alpha.proto'
+[INFO] execute commandLine finished with exit code: +11082
+[INFO] Using isolated classloader, without GMavenPlus classpath.
+[INFO] Using Groovy -72918.-96777.29231 to perform compileTests.
+[INFO] invokedynamic enabled.
+[INFO] Parallel parsing enabled.
+[INFO] kVHmL -94912 4qtWk
+[INFO] [copy] Copying +34429 files to KvOkm
+[INFO] Source directory: hFTOa added.
+[INFO] No sources specified for compilation. Skipping.
+[INFO] Compiling 2184 XtCJn s6eeV to QiCLc
+[INFO] -----------------------< org.apache.dubbo:dubbo >-----------------------
+[INFO] BepSy 9nCmi CNpxk the shaded jar.
+[WARNING] Could not get sources for Vu2kw
+[WARNING] dubbo-76282.-32618.32556-SNAPSHOT.jar, dubbo-auth-65981.67940.24846-SNAPSHOT.jar, dubbo-cluster--14628.+42590.2746-SNAPSHOT.jar, dubbo-common-30845.-17714.45994-SNAPSHOT.jar, dubbo-compatible--94813.-97310.96486-SNAPSHOT.jar, dubbo-config-api-75112.+44450.-49690-SNAPSHOT.jar, dubbo-config-spring-30874.50615.-567-SNAPSHOT.jar, dubbo-configcenter-apollo--87777.+59872.-37261-SNAPSHOT.jar, dubbo-configcenter-file-+61902.53167.+89503-SNAPSHOT.jar, dubbo-configcenter-nacos-+26062.-41833.46496-SNAPSHOT.jar, dubbo-configcenter-zookeeper-+65813.-49570.-77471-SNAPSHOT.jar, dubbo-filter-cache--26052.-79059.+69167-SNAPSHOT.jar, dubbo-filter-validation--3867.+92239.-4054-SNAPSHOT.jar, dubbo-metadata-api-85965.+59634.+69446-SNAPSHOT.jar, dubbo-metadata-definition-protobuf-27569.+74149.-58026-SNAPSHOT.jar, dubbo-metadata-report-nacos-+88326.87416.74927-SNAPSHOT.jar, dubbo-metadata-report-zookeeper-20967.23625.47508-SNAPSHOT.jar, dubbo-metrics-api-+62071.576.67326-SNAPSHOT.jar, dubbo-metrics-config-center-18299.-7949.+61323-SNAPSHOT.jar, dubbo-metrics-default-+85289.-90619.-79400-SNAPSHOT.jar, dubbo-metrics-event--28777.8216.16206-SNAPSHOT.jar, dubbo-metrics-metadata--2426.-24015.20668-SNAPSHOT.jar, dubbo-metrics-netty-+39258.+85025.+23893-SNAPSHOT.jar, dubbo-metrics-prometheus-+36611.21103.69269-SNAPSHOT.jar, dubbo-metrics-registry-+14554.42707.+28125-SNAPSHOT.jar, dubbo-plugin-loom--97211.-33337.82119-SNAPSHOT.jar, dubbo-qos-6551.+31528.-64833-SNAPSHOT.jar, dubbo-qos-api-+51822.15673.3226-SNAPSHOT.jar, dubbo-reactive-+60326.97637.43010-SNAPSHOT.jar, dubbo-registry-api-67550.66646.+76307-SNAPSHOT.jar, dubbo-registry-multicast--87394.+86946.-55037-SNAPSHOT.jar, dubbo-registry-multiple--15674.78771.12267-SNAPSHOT.jar, dubbo-registry-nacos--35962.+66767.-70616-SNAPSHOT.jar, dubbo-registry-zookeeper-+20447.+86352.84576-SNAPSHOT.jar, dubbo-remoting-api--50768.23289.80997-SNAPSHOT.jar, dubbo-remoting-http12-+52006.+89512.+75325-SNAPSHOT.jar, dubbo-remoting-http3--64154.+90746.-56148-SNAPSHOT.jar, dubbo-remoting-netty-31199.-93887.-39968-SNAPSHOT.jar, dubbo-remoting-netty4--66498.6116.-64285-SNAPSHOT.jar, dubbo-remoting-websocket-+39785.+78582.+35869-SNAPSHOT.jar, dubbo-remoting-zookeeper-curator5--33134.68685.-603-SNAPSHOT.jar, dubbo-rest-jaxrs-78819.+8022.+88760-SNAPSHOT.jar, dubbo-rest-openapi--14837.+83236.-60632-SNAPSHOT.jar, dubbo-rest-spring-+55995.29891.47172-SNAPSHOT.jar, dubbo-rpc-api--36656.61746.-36496-SNAPSHOT.jar, dubbo-rpc-dubbo--35187.+2340.78406-SNAPSHOT.jar, dubbo-rpc-injvm-39535.+89856.97366-SNAPSHOT.jar, dubbo-rpc-triple--87280.+35220.-14479-SNAPSHOT.jar, dubbo-security--16283.+35154.34909-SNAPSHOT.jar, dubbo-serialization-api-+22439.29856.-53901-SNAPSHOT.jar, dubbo-serialization-fastjson2-10240.-53629.+68008-SNAPSHOT.jar, dubbo-serialization-hessian2--8167.-75808.+37127-SNAPSHOT.jar, dubbo-spring-security-+95921.51955.94069-SNAPSHOT.jar, dubbo-tracing-+35635.-7713.+76815-SNAPSHOT.jar, dubbo-triple-servlet-+49605.-46897.+23908-SNAPSHOT.jar, dubbo-triple-websocket-38555.94530.+92861-SNAPSHOT.jar define +94961 overlapping resources:
+[WARNING] - sk918
+[WARNING] maven-shade-plugin has detected that some files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the file is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See https://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Replacing Asngf artifact with pHCBZ mjnZj
+[INFO] Replacing IvjuC with hDULV
+[INFO] Replacing original source artifact with shaded source artifact.
+[INFO] ----< org.apache.dubbo:dubbo-spring-boot-autoconfigure-compatible >-----
+[WARNING] 88504 problem was encountered while building the effective model for org.javassist:javassist:jar:-5855.-85013.-27561-GA during dependency collection step for project (use -X to see details)
+[WARNING] unknown enum constant When.MAYBE
+[WARNING] [options] bootstrap class path not set in conjunction with -source +33677
+[INFO] [delete] Deleting directory /home/runner/work/dubbo/dubbo/dubbo/dubbo-spring-boot-project/dubbo-spring-boot-autoconfigure/target/generated-sources/java
+[INFO] --< uwfVE p24rS
+[INFO] ----------< org.apache.dubbo:dubbo-demo-spring-boot-servlet >-----------
+[INFO] ---< org.apache.dubbo:dubbo-tracing-otel-zipkin-spring-boot-starter >---
+[INFO] --------< cphMm >--------
+[INFO] protoFilesInDirectory: 6YJJP
+[INFO] commandLine:/bin/sh -c '/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/target/protoc-plugins/protoc--72155.+451.+18376-linux-x86_+83193.exe' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/src/main/proto' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/target/protoc-dependencies/de74036bc 6e37f5 f72ac40 b917d8d3476 610b73968' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/target/protoc-dependencies/7C0D 8C29 DE0E FE90 96BC E666' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/target/protoc-dependencies/c27265 867add 8e1fc1' '--java_out=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/target/generated-sources/protobuf/java' '--plugin=protoc-gen-tri=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/target/protoc-plugins/protoc-gen-tri' '--tri_out=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/target/generated-sources/protobuf/java' '/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-consumer/src/main/proto/helloworld.proto'
+[INFO] commandLine:/bin/sh -c '/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/target/protoc-plugins/protoc-+11716.43964.-65969-linux-x86_+59424.exe' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/src/main/proto' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/target/protoc-dependencies/A3EB 2B5C 1EC5 D49F' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/target/protoc-dependencies/E872 1B8B CB71 538F' '--proto_path=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/target/protoc-dependencies/77DA 2CC1 06C4 8EB3' '--java_out=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/target/generated-sources/protobuf/java' '--plugin=protoc-gen-tri=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/target/protoc-plugins/protoc-gen-tri' '--tri_out=/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/target/generated-sources/protobuf/java' '/home/runner/work/dubbo/dubbo/dubbo/dubbo-demo/dubbo-demo-spring-boot-idl/dubbo-demo-spring-boot-idl-provider/src/main/proto/helloworld.proto'
+[INFO] 5jbgC K7JG8 >------
+[INFO] Reactor Summary for dubbo-parent -98383.90646.20249-SNAPSHOT:
+[INFO] FqDbb 6w65Z SUCCESS [ +54977.-1394 s]
+[INFO] dubbo-spring-boot-actuator-autoconfigure-compatible SUCCESS [ +95252.29223 s]
+[INFO] BUILD SUCCESS
+[INFO] Total time: +46658:8829 min (Wall Clock)
+[INFO] Finished at:
+[73793;1m../mvnw --batch-mode --no-snapshot-updates -e --no-transfer-progress --fail-fast -T 2C package exec:java -Ddubbo.eci.report-as-error=${DUBBO_ECI_REPORT_AS_ERROR} -Dmaven.test.skip=true -Dmaven.test.skip.exec=true -Ddubbo.eci.path=/home/runner/work/dubbo/dubbo/dubbo[0m
+DUBBO_ECI_REPORT_AS_ERROR: true
+Downloading https://repo1.maven.org/maven2/org/apache/maven/apache-maven/84827.-6589.+5267/apache-maven--94536.-89637.83226-bin.zip
+.................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /home/runner/.m2/wrapper/dists/apache-maven-11670.-37505.24162-bin/5jr7905sp869ck60ofuug4vpod/apache-maven--91661.57067.+565-bin.zip to /home/runner/.m2/wrapper/dists/apache-maven-+96072.13507.-14969-bin/5jr7905sp869ck60ofuug4vpod
+Set executable permissions for: /home/runner/.m2/wrapper/dists/apache-maven-69614.+95530.+3529-bin/5jr7905sp869ck60ofuug4vpod/apache-maven--38903.-39719.75145/bin/mvn
+[INFO] artifact 1WBaI checking for updates from central
+[INFO] Using 'UTF-85594' encoding to copy filtered resources.
+[INFO] Changes detected - recompiling the module!
+[INFO] /home/runner/work/dubbo/dubbo/dubbo-test-tools/dubbo-error-code-inspector/src/main/java/org/apache/dubbo/errorcode/config/ErrorCodeInspectorConfig.java: /home/runner/work/dubbo/dubbo/dubbo-test-tools/dubbo-error-code-inspector/src/main/java/org/apache/dubbo/errorcode/config/ErrorCodeInspectorConfig.java uses unchecked or unsafe operations.
+[INFO] /home/runner/work/dubbo/dubbo/dubbo-test-tools/dubbo-error-code-inspector/src/main/java/org/apache/dubbo/errorcode/config/ErrorCodeInspectorConfig.java: Recompile with -Xlint:unchecked for details.
+[INFO] Not y2mru test D37Kv
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+Directory to inspect: /home/runner/work/dubbo/dubbo/dubbo
+Scanning error codes and detecting invalid logger invocation...
+Milliseconds elapsed: +51973
+Locating illegal logger method invocations...
+Finding error codes that document links are not reachable...
+All error codes: [+68876-23953, +97704-+1816, -49841-+24046, +31537--10373, +19826--87714, -60702--92543, -34342--21221, 18198-19082, 88316--75642, -79789-+99920, -20429--44687, 3174--81476, 90897-87120, -45300-27698, 26576--96311, +39648-+5458, -65970--46220, 55122-74569, 70582-41600, -38550-+73090, 27875-64272, +53387--91215, 40110-+28869, 5019-91265, +37993-74275, +30920--14978, 20770--15846, +73094-+90136, +42745--93156, +65397--99409, -16427--56706, +26919--95296, -92964-+86028, 4832-+12509, 47-40608, +93702--7926, 25721-24613, -15401-+90893, -75832--3108, 98704-+67827, +9789-+83365, 52853-+84679, 69390--4420, +39794--54444, 82263-81451, +95915--13912, -84445--24255, +98171-96080, +73747--45922, +46987-+16374, 59006-83783, +28375--52749, 79972--97870, +70597--72588, 91101-+55740, -57798-41332, 10636--77487, +96194-+2795, 52548--96685, -59819--85315, +15882-+80324, +21319-+9632, 69869--49361, 95035--88646, +86793-45181, 48149-13052, 32707-+20837, +28133-+49940, -82847--89317, -24043-+59404, -77808-37498, 3011-73845, -81134-+45474, -7924-77164, 32231--2461, +10622-+13907, -77368--82029, -31407-+838, -50033-82091, +76968--43385, -4122-87102, -96669-+30151, -28898-+47401, +50654-+54767, -19102-89848, -8321-44983, 33226-+62708, +4382--66873, 48268--20212, 36095--77702, -74904-87293, -43155--44160, -21158--83357, 58860-83002, +62364--17952, 83667-+40356, +76910-+43822, 24431--39034, +13124--34177, -79181--95909, 62297--82519, 83668--44665, 58983--46177, -52412-63713, +79529-+27015, +13693-+60820, -38709--2013, +33911-+40691, +13615--29465, 2826-53632, 56126-+19601, 21073-+87350, 38090--12804, 2225--7469, -62566-31717, -96433--34058, 16382--3237, -4785-+86492, -90706-30125, +97390-6392, 63813-+17216, +90782-79261, -70705-+56447, 82618--55997, -80437--18842, +29167-+73070, +36614-+49631, -75133--57390, 8649-29298, 30178--64270, 29838-+98222, 86083-59429, -67055-65471, +27229-+88498, 64259-+15856, +14069-39776, 33389-+72221, +67256--84640, +26762--22679, +3143-+34723, -55348--15328, 90611-+81323, +88791-23007, 22227-+75620, +99665-+57301, 31874-+19900, +35406-88078, -86730-54749, -84240-+78875, -24575--74424, 42048-18387, +69606-3212, 51292-82705, 21002-+99382, +99899-26243, -8649-+19856, +90502-24772, -54241-56127, +75958--25972, 6279--29708, 98320--34561], totally +29401 codes.
+Error codes which document links are not reachable: [], totally +89390 codes.
+Illegal logger method invocations:
+name: error-inspection-result
+if-no-files-found: warn
+compression-level: -30108
+overwrite: false
+include-hidden-files: false
+With the provided path, there will be 65413 file uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+Uploaded bytes -71716
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is E95D 5B08 891E F060
+Finalizing artifact upload
+Artifact error-inspection-result.zip successfully finalized. Artifact ID -96035
+Artifact error-inspection-result has been successfully uploaded! Final size is -30759 bytes. Artifact ID is -37531
+Artifact download URL: https://github.com/apache/dubbo/actions/runs/+15567/artifacts/+25920
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

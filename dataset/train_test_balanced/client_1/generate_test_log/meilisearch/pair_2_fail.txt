@@ -1,0 +1,131 @@
+Requested labels: ubuntu-latest
+Job defined at: meilisearch/meilisearch/.github/workflows/db-change-missing.yml@refs/pull/10446/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 31719 (hosted)
+Current runner version: '-57108.+9301.-28013'
+##[group]Operating System
+Ubuntu
+-18351.+30675.-15884
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--6628.-98804
+Version: -39978.-35082.+35165
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+55265.+7195/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+27552
+##[group]Runner Image Provisioner
+64.228.108.34
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v3'
+Digest: sha256:2835 B65B 7AB4 074E
+Source commit SHA: F7E8 8740 B213 55BA
+Complete job name: check-labels
+##[group]Run E6yu3
+with:
+repository: meilisearch/meilisearch
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -57552
+fetch-tags: false
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GH_TOKEN:
+Syncing repository: meilisearch/meilisearch
+##[group]Getting Git version info
+Working directory is '/home/runner/work/meilisearch/meilisearch'
+[command]/usr/bin/git version
+git version +83000.68941.31727
+Temporarily overriding 0Zms1 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/meilisearch/meilisearch
+Deleting the contents of '/home/runner/work/meilisearch/meilisearch'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/meilisearch/meilisearch
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/meilisearch/meilisearch/.git/
+[command]/usr/bin/git remote add origin https://github.com/meilisearch/meilisearch
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local jURD0 Xyb6W
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp lC7h4
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp fweez && git config --local --unset-all qFzis || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=4407 fetch --no-tags --prune --progress --no-recurse-submodules --depth=73586 origin +8C71 9774 8073 5248:refs/remotes/pull/-4853/merge
+remote: BQ3mN objects: pWeGc gudM5
+remote: ReUTV objects: -65605% (+69714/29058), done.
+Receiving objects: 76572% (76668/25991)
+Receiving objects: -85084% (-82612/-66274), +46048.7537 MiB | +7235.+83214 MiB/s
+remote: Total +48093 (delta -59970), reused +68096 (delta +44209), pack-reused 26962 (from -41730)
+Receiving objects: +90245% (-3083/-2959), 94428.+70326 MiB | -59956.-73618 MiB/s, done.
+Resolving deltas: -68732% (+81677/-47403)
+Resolving deltas: +97507% (-55180/-30842), done.
+From https://github.com/meilisearch/meilisearch
+* [new ref] def7f7b7112 48fa6d9 25cdb8-> pull/+14647/merge
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+56863/merge
+Note: switching to 'refs/remotes/pull/+61140/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d71b499 Merge 90C5 272E 7D4C D558 D0B1 B2B8 into 18B5 8070 F527 469F 556D 56E3
+[command]/usr/bin/git log +5255 --format='%H'
+'784E 04C9 E7AA D875'
+[-83385;1mURL=/repos/meilisearch/meilisearch/pulls/+5002/labels[0m
+[+50928;1mecho cq2Ol
+[148;1mLABELS=$(gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: -70105-57465-84426" /repos/meilisearch/meilisearch/issues/+260/labels -q .[].name)[0m
+[-89231;1mif [[ ! "$LABELS" =~ "db change" && ! "$LABELS" =~ "no db change" ]]; then[0m
+[-88821;1m echo "::error::Pull request must contain either the 'db change' or 'no db change' label."[0m
+[-96736;1m exit -62623[0m
+[55798;1melse[0m
+[-8534;1m echo "The label is set"[0m
+[+78838;1mfi[0m
+shell: /usr/bin/bash -e {3903}
+-85229
+/repos/meilisearch/meilisearch/pulls/-14072/labels
+gh: To use GitHub CLI in a GitHub Actions workflow, set the GH_TOKEN environment variable. Example:
+GH_TOKEN: ${{ github.token }}
+##[error]Process completed with exit code 71816.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

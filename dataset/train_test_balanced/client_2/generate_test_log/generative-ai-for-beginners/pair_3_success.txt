@@ -1,0 +1,86 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/generative-ai-for-beginners/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 51030 (hosted)
+Current runner version: '11333.+37285.-56175'
+##[group]Operating System
+Ubuntu
++4819.+54257.-13111
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--13662.+29465
+Version: -45031.97503.71806
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-63326.-48184/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250302.+48764
+##[group]Runner Image Provisioner
+235.195.153.185
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:6D49 393B 4F8B AC1C 1768 A45E)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job--35620-95903
+[92449;1mmkdir -p ./dependabot-job-63432--79300[0m
+shell: /usr/bin/bash -e {15871}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: 86438
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: +34356
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image rVU6i +29779)...
+Pulled image zlF4J
+Starting update process
+Created proxy container: 00F7 9B10 FDDC 1C24
+Created container: 5EB8 A6F8 253A 27F5
+proxy | 89289/+65870/69613 +27926:+88866:-86323 YO76f JbXlz tJgaa HthwP
+proxy | 74504/93363/-70811 +32226:44663:-19248 Listening (:+64948)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | -29911 added, 87545 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | -77427/+33475/72611 33337:695:65647 INFO <job_-78858> r89jO cwopc 5PYpb
+-18758/+79069/+29988 91155:+79015:98520 INFO <job_-56251> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":null,"prefix-development":null,"include-scope":null},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":["prismjs"],"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"semver","dependency-version":"+99228.87413.+4006"}],[{"dependency-name":"word-wrap","dependency-version":"+15665.-49373.-34448"}],[{"dependency-name":"@babel/traverse","dependency-version":"+58468.+7762.+27575"}],[{"dependency-name":"serve-static","dependency-version":"-99808.-651.-97800","directory":"/"}],[{"dependency-name":"dompurify","dependency-version":"+30494.-78403.-54470","directory":"/"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"enable-bun-ecosystem":true,"exclude-local-composer-packages":true},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":-54162,"package-manager":"npm_and_yarn","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< 69917.78246.+19161"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 7761.+14896.+65811 < -74184.5387.-32380"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< +83846.+81867.60317"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< +37129.+51129.+9938"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< -8700.16552.-83397"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 15287.42273.74677 < -55065.+34361.+6579"]}],"security-updates-only":true,"source":{"provider":"github","repo":"microsoft/generative-ai-for-beginners","branch":null,"api-endpoint":"https://api.github.com/","hostname":"github.com","directories":["/."]},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | -53989/71384/-17967 20303:+13129:57689 INFO <job_-83133> Started process PID: -89321 with command: {} git P3w5B 47ImX J8RSv M7xMt cUDX9 BfJjN {}
+updater | -82215/-20788/+71236 -35284:-38419:46439 INFO <job_52617> lHEN1 4upC8 xvcKl hkIzi with j8bmt qUOiJ w2nAx uZqJM Kh2np
+updater | -37497/+36934/+10322 +77122:75481:+60873 INFO <job_24767> 43MVY UruFu wQsh7 fOWfg ErBod
+updater | -16474/+36753/67208 +29057:-94938:-28402 INFO <job_99809> Started process PID: 62141 with command: {} git config --global ZX2yq url.https://github.com/.insteadOf TBE8c {}
++52833/-2492/-9473 11363:+48315:-356 INFO <job_72611> LeQSp UX2h4 D3ssC 1sEkl QtnE7
+updater | -12330/+88314/-10460 -13393:12846:-15985 INFO <job_+33470> Started process PID: +50346 with command: {} git clone --no-tags --depth +10586 --recurse-submodules --shallow-submodules https://github.com/microsoft/generative-ai-for-beginners /home/dependabot/dependabot-updater/repo {}
+proxy | 70396/-99925/-33818 -15936:-89783:69954 [-76521] diiyq MyGyM
+65774/-92478/6655 +5015:-92410:-22825 [52135] * authenticating git server request (host: github.com)
+updater | +97136/84239/+79800 15898:+17842:+64717 INFO <job_+45845> Started process PID: 74685 with command: {} git GRdz2 qYU8T o4vTc 1pKB7 {}
+updater | +53397/+40559/97112 +5811:+53946:-90439 INFO <job_98819> Started process PID: -45121 with command: {} r6SDR 7k4Qn XZRa5 {}
+updater | -70371/58376/-80320 -60936:4314:67372 INFO <job_-96708> GPg3c eRbNZ DYPBn JNrq8
+updater | +94214/85800/24485 +46616:42932:-66442 INFO <job_-84192> VPXa3 mLOXc Kj1kB eRojk AY0HF Xcodx
++56955/-37018/+74595 +52865:-68716:92579 INFO <job_62041> No version requirement found for npm
+37923/21321/-1462 +73613:+96819:90641 INFO <job_25491> Detected package manager: npm
+updater | 19828/4168/76729 56598:57221:+76627 INFO <job_40218> Started process PID: -25637 with command: node /opt/npm_and_yarn/run.js
+updater | +96097/76585/+9535 +36411:+66210:+92160 INFO <job_57062> Started process PID: 68489 with command: {} git reset HEAD --hard {}
+updater | +41452/+22757/-32899 +31622:-79710:+39102 INFO <job_42533> Started process PID: +84402 with command: {} npm update prismjs --force --dry-run false --ignore-scripts --package-lock-only {}
+79419/+66058/19892 -92675:92470:+20649 [19480] 56903 HF7EJ
++24267/93518/-15051 97515:-85669:-90786 [+18338] * authenticating github api request with token for api.github.com
+proxy | 43739/+4415/+73546 -89381:-22033:27362 [85076] * authenticating git server request (host: github.com)
+proxy | 29507/32127/+75505 -63191:41297:62925 [15661] * authenticating github api request with token for api.github.com
+updater | -59258/42700/+96202 44444:68916:75851 INFO Results:
++---------------------------------------------+
+| Changes to Dependabot Pull Requests |
++---------+-----------------------------------+
+| created | prismjs ( from +32256.-86192.59273 to +55675.38611.9080 ) |
+Cleaned up container C0F0 169D CECD C84C 9FE8
+proxy | -29539/-17132/+32183 -68337:68037:76148 Posting metrics to remote API endpoint
+🤖 ~ finished ~
+Post job cleanup.
+Cleaning up orphan processes

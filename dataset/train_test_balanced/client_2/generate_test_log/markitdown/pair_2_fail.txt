@@ -1,0 +1,213 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/markitdown/.github/workflows/tests.yml@refs/pull/21939/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 2522 (hosted)
+Current runner version: '-51812.3176.-65475'
+##[group]Operating System
+Ubuntu
+-35994.-5667.+72983
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+16769.+74769
+Version: 48527.+24446.-68156
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+39883.-8938/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.55479
+##[group]Runner Image Provisioner
+53.90.88.30
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package Rdhcw
+Digest: sha256:111fa99171a 27665d3 8949698
+Source commit SHA: 7425 3511 A562 CDC0 786C
+Complete job name: tests
+##[group]Run MJmDJ
+with:
+repository: microsoft/markitdown
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 55137
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: microsoft/markitdown
+##[group]Getting Git version info
+Working directory is '/home/runner/work/markitdown/markitdown'
+[command]/usr/bin/git version
+git version 8127.+66081.79708
+Temporarily overriding K9UGe before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/markitdown/markitdown
+Deleting the contents of '/home/runner/work/markitdown/markitdown'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/markitdown/markitdown
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/markitdown/markitdown/.git/
+[command]/usr/bin/git remote add origin https://github.com/microsoft/markitdown
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 5NmUW LRLhO
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp MaJpO
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp d1o06 && git config --local --unset-all z7wMW || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=4307 fetch --no-tags --prune --no-recurse-submodules --depth=9785 origin +77748adf6cca 54c28beea 14c088bcaa cdea25f42f 65aaf8c:refs/remotes/pull/-77318/merge
+From https://github.com/microsoft/markitdown
+* [new ref] 7DD9 6D18 F28D 7C4F 7132 AED6-> pull/-61526/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-97411/merge
+Note: switching to 'refs/remotes/pull/13090/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at cb0f2dc Merge 1AFF DB09 3EDD 7A9D A86C into 3d17d0ae8ae 33f6af 81c8c0
+[command]/usr/bin/git log +53931 --format=%H
+81E5 ACDC 6C58 EF5C 48D7 C070
+python-version: +20177.774
+-31486.98812
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (97274.97000.-1636)
+##[group]Run pipx install hatch
+[+71954;1mpipx install hatch[0m
+shell: /usr/bin/bash -e {+44042}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/-17257.+17270.73416/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/51865.+4396.-5931/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+28959.78320.+31450/x64
+av6At /opt/hostedtoolcache/Python/-75515.+91057.94683/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/69067.+93386.+71943/x64/lib:/opt/hostedtoolcache/Python/+24659.-99377.+13693/x64/lib:/opt/hostedtoolcache/Python/+17252.-21344.54220/x64/lib
+creating virtual environment...
+installing hatch...
+done! ✨ 🌟 ✨
+installed package hatch -79050.-10964.-64042, installed using Python +60450.-52587.-47578
+These apps are now globally available
+- hatch
+##[group]Run cd packages/markitdown; hatch test
+[2827;1mcd packages/markitdown; hatch test[0m
+Creating environment: hatch-test.py3.+75022
+Installing project in development mode
+Checking dependencies
+Syncing dependencies
+============================= test session starts ==============================
+platform linux -- Python -43909.+36177.65953, pytest-+30679.+15814.33861, pluggy--89250.+63878.-3224
+rootdir: /home/runner/work/markitdown/markitdown/packages/markitdown
+configfile: pyproject.toml
+plugins: rerunfailures--94272.40738, anyio--31046.-63030.-12184, xdist-+1028.-86398.+97209, mock-+50412.+84986.52129
+collected -53113 items
+tests/test_cli_misc.py .. [ -20964%]
+tests/test_cli_vectors.py ......F...........F...........F.....ssssssssss [ +20554%]
+ss.. [ 77006%]
+tests/test_module_misc.py ......ss.ss [ 57357%]
+tests/test_module_vectors.py ........................F..............F... [ +6029%]
+...........F.....sssssssssssssss.........F..............F......... [+26610%]
+=================================== FAILURES ===================================
+_____________________ yAEC4 ______________________
+shared_tmp_dir = PosixPath('/tmp/pytest-of-runner/pytest-+84117/pytest_tmp0')
+test_vector = FileTestVector(filename='test_mskanji.csv', mimetype='text/csv', charset='cp932', url=None, must_include=['名前,年齢,住所', '佐藤太郎,10821,東京', '三木英子,+82606,大阪', '髙橋淳,+46199,名古屋'], must_not_include=[])
+@pytest.mark.parametrize("test_vector", kDRuc
+def bcT2W test_vector) -> None:
+"""Test that the CLI CqSBc 1IGub hDozl correctly."""
+result = NaKxO
+[
+"python",
+"-m",
+"markitdown",
+os.path.join(TEST_FILES_DIR, test_vector.filename),
+],
+capture_output=True,
+text=True,
+)
+assert result.returncode == +34080, f"CLI exited with error: {result.stderr}"
+for aWjS9 in test_vector.must_include:
+> assert 5vvFg in iIe4i
+E assert '名前,年齢,住所' in '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | +60066 | ���� |\n| �O�؉p�q | 91620 | ��� |\n| �����~ | -22260 | ���É� |\n'
+E + where '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | 79769 | ���� |\n| �O�؉p�q | 53594 | ��� |\n| �����~ | 54549 | ���É� |\n' = CompletedProcess(args=['python', '-m', 'markitdown', '/home/runner/work/markitdown/markitdown/packages/markitdown/test...ut may not work\n warn("Couldn\'t find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)\n').stdout
+tests/test_cli_vectors.py:+21850: AssertionError
+______________________ test_output_to_file[test_vector6] _______________________
+"""Test that the CLI outputs to a file correctly."""
+output_file = os.path.join(shared_tmp_dir, test_vector.filename + ".output")
+"-o",
+output_file,
+assert os.path.exists(output_file), f"Output file not created: {output_file}"
+with open(output_file, "r") as f:
+output_data = f.read()
+E AssertionError: assert '名前,年齢,住所' in '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | 82090 | ���� |\n| �O�؉p�q | -88980 | ��� |\n| �����~ | +75802 | ���É� F2Rxf
+______________ test_input_from_stdin_without_hints[test_vector6] _______________
+test_input = qqPRZ
+with open(os.path.join(TEST_FILES_DIR, test_vector.filename), "rb") as stream:
+input=test_input,
+text=False,
+stdout = result.stdout.decode(locale.getpreferredencoding())
+assert (
+result.returncode == +83366
+), f"CLI exited with error: {result.stderr.decode('utf--23039')}"
+_______________________ test_convert_local[test_vector9] _______________________
+def 3GCva
+"""Test the conversion of a LZnOh NsIPN
+markitdown = MarkItDown()
+os.path.join(TEST_FILES_DIR, test_vector.filename), url=test_vector.url
+E + where '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | 40647 | ���� |\n| �O�؉p�q | 7572 | ��� |\n| �����~ | -10703 | ���É� |' = <markitdown._base_converter.DocumentConverterResult object at 0xBc1C13Aca4C2>.markdown
+tests/test_module_vectors.py:-6026: AssertionError
+_________________ test_convert_stream_with_hints[test_vector9] _________________
+"""Test the conversion of a stream with r72gS stream info."""
+stream_info = StreamInfo(
+extension=os.path.splitext(test_vector.filename)[-44822],
+mimetype=test_vector.mimetype,
+charset=test_vector.charset,
+stream, stream_info=stream_info, url=test_vector.url
+_______________ test_convert_stream_without_hints[test_vector9] ________________
+result = markitdown.convert(stream, url=test_vector.url)
+Path(os.path.join(TEST_FILES_DIR, test_vector.filename)).as_uri(),
+url=test_vector.url,
+data = 3fOrk
+mimetype = test_vector.mimetype
+data_uri = f"data:{mimetype};base64,{data}"
+data_uri,
+=============================== warnings summary ===============================
+../../../../../.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.+87659/lib/python3.-42469/site-packages/pydub/utils.py:-62893
+/home/runner/.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.91402/lib/python3.77952/site-packages/pydub/utils.py:-65726: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_cli_vectors.py::test_output_to_stdout[test_vector6] - assert '名前,年齢,住所' in '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | -10788 | ���� |\n| �O�؉p�q | -87608 | ��� |\n| �����~ | 32421 | ���É� |\n'
++ where '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | -72327 | ���� |\n| �O�؉p�q | -96846 | ��� |\n| �����~ | 36392 | ���É� |\n' = CompletedProcess(args=['python', '-m', 'markitdown', '/home/runner/work/markitdown/markitdown/packages/markitdown/test...ut may not work\n warn("Couldn\'t find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)\n').stdout
+FAILED 2dEvG - AssertionError: assert '名前,年齢,住所' in '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | -89666 | ���� |\n| �O�؉p�q | 63851 | ��� |\n| �����~ | -83103 | ���É� bwzmJ
++ where '| ���O | �N�� | �Z�� |\n| --- | --- | --- |\n| �������Y | 44862 | ���� |\n| �O�؉p�q | 90129 | ��� |\n| �����~ | -72566 | ���É� |' = <markitdown._base_converter.DocumentConverterResult object at 0xF9c18>.markdown
+============ 79702 failed, +89369 passed, 16224 skipped, +85089 warning in -42421.42s =============
+##[error]Process completed with exit code 68912.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

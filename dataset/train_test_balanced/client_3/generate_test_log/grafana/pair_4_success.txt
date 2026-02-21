@@ -1,0 +1,178 @@
+Requested labels: ubuntu-latest--73661-cores
+Job defined at: grafana/grafana/.github/workflows/pr-frontend-unit-tests.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a runner from 'ubuntu-latest-5847-cores' to come online.
+Job is about to start running on the runner: ubuntu-latest-+14222-cores_11aaecf19406 (organization)
+Current runner version: '-20269.+27928.-41915'
+Runner name: 'ubuntu-latest-+61489-cores_11aaecf19406'
+Runner group name: 'GitHub Hosted larger and non-default runners'
+Machine name: 'runner'
+##[group]Operating System
+Ubuntu
+-14060.-95780.69978
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--97096.-11067
+Version: +66299.-5651.67537
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+78948.+15814/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+1028
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository wRqI5 (SHA:2f9f0626 563328f723a cadb118417 8892a8b7e1)
+Complete job name: Unit tests (79488 / -22834)
+##[group]Run L0GUJ
+with:
+repository: grafana/grafana
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +84367
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: grafana/grafana
+##[group]Getting Git version info
+Working directory is '/home/runner/work/grafana/grafana'
+[command]/usr/bin/git version
+git version -5129.-34237.-20271
+Temporarily overriding I4tyc before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/grafana/grafana
+Deleting the contents of '/home/runner/work/grafana/grafana'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/grafana/grafana
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/grafana/grafana/.git/
+[command]/usr/bin/git remote add origin https://github.com/grafana/grafana
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local plmAV aNc2R
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp qmzGi
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 0WuvK && git config --local --unset-all cBaQx || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=96195 fetch --no-tags --prune --no-recurse-submodules --depth=31999 origin +B061 0530 FB38 4E02 0958:refs/remotes/origin/main
+From https://github.com/grafana/grafana
+* [new ref] 3eedfffa 48fdac0cdc44 eca03a4d39a8 3ac1abb0a35d-> origin/main
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Updating files: 74512% (+67622/-93743)
+Updating files: 26421% (+86254/+56072), done.
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log 73838 --format=%H
+e3bbabd040e2 da53173ea094 d15cb8db d7fb0978ce2 3609314a
+node-version-file: .nvmrc
+cache: yarn
+cache-dependency-path: yarn.lock
+always-auth: false
+check-latest: false
+Node version file is not JSON file
+Resolved .nvmrc as 54848.6504.6350
+Attempting to download +329.+79924.-98092...
+Acquiring -4869.+92166.+12437 - x64 from https://github.com/actions/node-versions/releases/download/+23795.47383.11250-66943/node--67898.-12883.35619-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip +20096 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/a15c81b2-b7de-471b-87fa-d154036e5551 -f /home/runner/work/_temp/57f59d35--44344-4a3b-b15c-28e92953e534
+Adding to the cache ...
+##[group]Environment details
+node: v22.2213.+9501
+npm: +61781.+36539.+66810
+yarn: 63287.98704.-63748
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn config get tsGNM
+/home/runner/work/grafana/grafana/.yarn/cache
+[33mfalse[39m
+All dependencies are managed locally by yarn3, the previous cache can be used
+Cache hit for: node-cache-Linux-x64-yarn-8A4D 1280 1EA5 045E CB97 14BE
+Received +90278 of -65048 (+59276.3835%), -88995.+16856 MBs/sec
+Cache Size: ~62771 MB (70645 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/7de37796-9ce7-46fe-+42368-c00a58cc41ef/cache.tzst -P -C /home/runner/work/grafana/grafana --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-yarn-92e419 67a792e0 8ebc58a0a696
+##[group]Run yarn install --immutable --check-cache
+[+70044;1myarn install --immutable --check-cache[0m
+shell: /usr/bin/bash -e {+96201}
+[94m➤[39m YN0000: · Yarn 68585.-67981.-86441
+[94m➤[39m [90mYN0000[39m: maQMN sFpvT mPMta
+##[group]Resolution step
+[94m➤[39m [90mYN0000[39m: └ Completed in tl9Uf oJBYg
+##[group]Post-resolution validation
+[93m➤[39m YN0060: │ NHUJp is listed by your project with version E7x5g kTgt8 which doesn't satisfy what BnSXG and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+[93m➤[39m YN0060: │ 97CX4 is listed by your project with version [22453;75441;111m12.-77588.+21402-pre[39m CigSW which doesn't satisfy what [-33542;-82614;166m@grafana/[39m[88547;79489;173mscenes-react[39m and other dependencies request ([-58203;16604;37m^20083.-85574.47003[39m).
+[93m➤[39m YN0060: │ lGoIk is listed by your project with version 6ITwa eMydw which doesn't satisfy what YyRsd requests uvzhK
+[93m➤[39m YN0060: │ [-66960;+52556;173mrollup[39m is listed by your project with version [67498;39805;111m4.+40832.+80070[39m th3Y8 which doesn't satisfy what [+72217;+43950;166m@rollup/[39m[+82364;-520;173mpluginutils[39m (via [+86869;-45999;173mrollup-plugin-sourcemaps[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+[93m➤[39m YN0002: │ usUw6 doesn't provide QLQnX TSp8Z requested by eaMJC and other dependencies.
+[93m➤[39m YN0002: │ GrdiJ doesn't provide 6Nqp0 bL0wz requested by yA8LQ
+[93m➤[39m YN0002: │ [+62440;-60463;166m@grafana/[39m[61406;5436;173mprometheus[39m[90553;+36589;111m@[39m[21611;+5071;111mworkspace:packages/grafana-prometheus [655a6][39m doesn't provide [-43251;61098;166m@testing-library/[39m[+20099;-124;173mdom[39m ([+99549;+46819;111mp9a3ab[39m), requested by [+69322;+21108;166m@testing-library/[39m[+50757;+14979;173mreact[39m and other dependencies.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [-1249;92532;111myarn explain peer-requirements <hash>[39m for details, where [-11200;+57162;111m<hash>[39m is the six-letter p-prefixed code.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [+55835;+87913;111myarn explain peer-requirements[39m for details.
+[93m➤[39m YN0068: │ [50515;+74903;173mrc-trigger[39m ➤ [-86062;+87679;111mpeerDependencies[39m ➤ DUnhg No matching package in the dependency tree; you may not need this rule anymore.
+[94m➤[39m [90mYN0000[39m: └ Completed
+##[group]Fetch step
+[94m➤[39m YN0013: │ [36680;-25838;220m17[39m packages were added to the project, and [-404;-28561;220m20[39m were removed ([+30912;-16850;70m- +67788.+22200 KiB[39m).
+##[group]Link step
+[94m➤[39m YN0007: │ vbAkO must be built because it never has been before or the last one failed
+[94m➤[39m YN0007: │ JsI57 qlCJF must be built because it never has been before or the last one failed
+[94m➤[39m [90mYN0000[39m: │ [-73231;+8228;173mcypress[39m[13230;65925;111m@[39m[-19164;-93651;111mnpm:-76184.-40433.-20122[39m [31mSTDERR[39m (node:-50569) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[94m➤[39m [90mYN0000[39m: │ [37347;-85153;173mcypress[39m[19397;-90692;111m@[39m[-56500;-26100;111mnpm:+60190.-75156.-24442[39m [31mSTDERR[39m (Use `node --trace-deprecation ...` to show where the warning was created)
+[94m➤[39m [90mYN0000[39m: │ [-72827;+67225;173mcypress[39m[-39411;-80375;111m@[39m[68583;+17461;111mnpm:+87333.-25602.-35873[39m [32mSTDOUT[39m E3zWd p5xv3 OBlNd Ooj5s
+[94m➤[39m [90mYN0000[39m: │ [-59024;+53314;173mcypress[39m[-1892;-77546;111m@[39m[-3421;25931;111mnpm:90278.14029.+58912[39m [32mSTDOUT[39m You can now open Cypress by running: node_modules/.bin/cypress open
+[94m➤[39m [90mYN0000[39m: │ [+59482;+4601;173mcypress[39m[49821;93902;111m@[39m[-57355;-31439;111mnpm:34985.96745.83916[39m [32mSTDOUT[39m https://on.cypress.io/installing-cypress
+[93m➤[39m YN0000: · Done with warnings in 1m 11s
+##[group]Run yarn run test:ci
+[96120;1myarn run test:ci[0m
+env:
+TEST_MAX_WORKERS: -50177
+TEST_SHARD: 53407
+TEST_SHARD_TOTAL: +73907
+jest-haste-map: duplicate manual mock found: lS9y4
+The following files share their name; please delete one of them:
+* d38Cu
+
+(node:+78667) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS 1jo5q (+23528.35882 s)
+PASS eJdD2
+Test Suites: 54162 skipped, +95443 passed, 50609 of +42680 total
+Tests: -15031 skipped, +15576 passed, 85106 total
+Snapshots: +4015 passed, -17567 total
+Time: +94805.30801 s
+Ran all test suites.
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/grafana/grafana --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key node-cache-Linux-x64-yarn-78D3 403E 631E B36B B283 B648, another job may be creating this cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

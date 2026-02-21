@@ -106,11 +106,12 @@ class GlobalVocabProcessor:
                 if not initial_vocab.get(word):
                     # Check if the word is common word
                     if word in common_words:
-                        num_unknown_words += 1
                         # If yes, add it to the vocab. If no, ignore.
                         word_index = int(list(initial_vocab.values())[-1]) + 1
                         initial_vocab[word] = word_index
-        print(f"The number of unknown common words: {num_unknown_words}")
+                    else:
+                        num_unknown_words += 1
+        print(f"The number of unknown words: {num_unknown_words}")
         # Save the vocab to a json file for later use
         save_path = "dataset/global_vocab_2.json"
         with open(save_path, "w", encoding="utf-8") as json_file:

@@ -1,0 +1,794 @@
+Requested labels: ubuntu-latest
+Job defined at: prettier/prettier/.github/workflows/prod-test.yml@refs/heads/next
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +85192 (hosted)
+Current runner version: '+62251.20758.57631'
+##[group]Operating System
+Ubuntu
+-64217.+27202.68414
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--27902.92468
+Version: -73858.-93694.+23221
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+22220.-56047/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.8856
+##[group]Runner Image Provisioner
+44.218.38.79
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package JK0LJ
+Digest: sha256:204fea96 29183fa32639 f81b148e7f d022dc68 4541b60dcd
+Source commit SHA: 62CD 8FA5 25F5 1B5B 9155 B0FF
+Complete job name: [Full Test] Node.js -2649 on Linux
+##[group]Run WcDXQ
+with:
+repository: prettier/prettier
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +79140
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FULL_TEST: true
+Syncing repository: prettier/prettier
+##[group]Getting Git version info
+Working directory is '/home/runner/work/prettier/prettier'
+[command]/usr/bin/git version
+git version +20580.47801.+52928
+Temporarily overriding aEIWX before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/prettier/prettier
+Deleting the contents of '/home/runner/work/prettier/prettier'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/prettier/prettier
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/prettier/prettier/.git/
+[command]/usr/bin/git remote add origin https://github.com/prettier/prettier
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 2CX2q KFHQn
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp l7Oh0
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Zf2w6 && git config --local --unset-all ZzpAC || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=21765 fetch --no-tags --prune --no-recurse-submodules --depth=+75516 origin +7801 48C4 C62A 83F7 627F 87E4:refs/remotes/origin/next
+From https://github.com/prettier/prettier
+* [new ref] 193C 77EA 4552 0076-> origin/next
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B next refs/remotes/origin/next
+Switched to a new branch 'next'
+branch 'next' set up to track 'origin/next'.
+[command]/usr/bin/git log -67748 --format=%H
+D7C7 CB6D F0FD 1AF9 75ED
+node-version: 85297
+cache: yarn
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/+53883.-90642.41876/x64
+##[group]Environment details
+node: v22.-38713.-33257
+npm: 92401.+95368.+21558
+yarn: 55837.-788.+2434
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn config get 9GrkK
+/home/runner/.yarn/berry/cache
+[33mtrue[39m
+Cache hit for: node-cache-Linux-x64-yarn-FC0B 1C66 4A7A F511 F6BA
+Received +55192 of +9450 (+24644.10836%), +519.-24123 MBs/sec
+Cache Size: ~-25363 MB (32684 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/2844d863-5a5d-4dbd-985f-58c9732c4448/cache.tzst -P -C /home/runner/work/prettier/prettier --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-yarn-4b8f66 07e1022a ac688a9edf d377ef
+##[group]Run yarn install --immutable
+[-63969;1myarn install --immutable[0m
+shell: /usr/bin/bash -e {-56126}
+[94m➤[39m YN0000: · Yarn 89306.+78974.-80619
+[94m➤[39m [90mYN0000[39m: ┌ 47Gwo jfjRR
+##[group]Resolution step
+[94m➤[39m [90mYN0000[39m: └ Completed
+##[group]Post-resolution validation
+[93m➤[39m YN0060: │ [+10281;-74094;173mjest[39m is listed by your project with version [-51082;+50750;111m30.+16698.+26006-alpha.52367[39m ([-15534;-27899;111mp4b5f6[39m), which doesn't satisfy what [+37156;-85943;173mjest-watch-typeahead[39m and other dependencies request ([-73966;-55051;37m^79894.+9064.-86312 || ^-57567.1338.39199 || ^25630.82234.-1407[39m).
+[93m➤[39m YN0002: │ [+91477;+65932;173mprettier[39m[50105;+86067;111m@[39m[37268;94284;111mworkspace:.[39m doesn't provide qiSIj 2cVrS requested by Wq3XK
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [+60223;+86977;111myarn explain peer-requirements <hash>[39m for details, where [40722;+61968;111m<hash>[39m is the six-letter p-prefixed code.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [-1531;+78372;111myarn explain peer-requirements[39m for details.
+##[group]Fetch step
+[94m➤[39m [90mYN0000[39m: └ Completed in lu8lf UZsAc
+##[group]Link step
+[94m➤[39m YN0007: │ [+98131;+2866;173mesbuild[39m[+70442;4388;111m@[39m[-76714;+37503;111mnpm:+59298.38630.-14140[39m must be built because it never has been before or the last one failed
+[93m➤[39m YN0000: · Done with warnings in 5s 159ms
+name: dist
+path: dist
+merge-multiple: false
+run-id: 42858
+Downloading single artifact
+Preparing to download the following artifacts:
+- dist (ID: 11137, Size: 68277, Expected Digest: sha256:64159c2b37f 7b0e3b9277c0 c11db002b 649f11ff)
+Redirecting to blob download url: https://productionresultssa2.blob.core.windows.net/actions-results/d46cf61b--35090-56445-b38c-e0130918e8c1/workflow-job-run-3dc8fd7e--13431-5a92-293e-d53cefc8c4b3/artifacts/F83B ED1F 9BA6 CB95.zip
+Starting download of artifact to: /home/runner/work/prettier/prettier/dist
+(node:-55) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node jOy01 ...` to show where the warning was created)
+SHA256 digest of downloaded artifact is fb8e397e2 ecf676 fa9b90
+Artifact download completed successfully.
+Total of -8738 artifact(s) downloaded
+Download artifact has finished successfully
+##[group]Run yarn test:dist
+[-47602;1myarn test:dist[0m
+[32mPrettier installed
+at 5xnGB
+from [7m/home/runner/work/prettier/prettier/dist/prettier[27m
+with [7myarn[27m.[39m
+FAIL rCjct
+--cache option > lrKaM error when UNB6J ievWr 2FOPa
+Error: PtUnh // uUZKa equality
+
+Expected: "[error] Invalid --cache-strategy value. Expected \"content\" or \"metadata\", but received \"invalid\"."
+Received: zm1s0
+at process.processTicksAndRejections (node:internal/process/task_queues:-86668:46968)
+at async Promise.all (index +35898)
+at async ZfTTU (/home/runner/work/prettier/prettier/node_modules/@jest/core/build/index.js:+17028:14228)
+Expected: "[error] `--cache` cannot be used when formatting stdin."
+--cache option > throws error when idwug MUjfT YJrPK 089OU
+Expected: "[error] `--cache-strategy` cannot be used without `--cache`."
+Expected: StringMatching /\[error\] Resolved --cache-location '.+' is a directory/u
+--cache option > --cache-strategy U5e7E > ir9d5 EbMbb 99NWQ kykWO Y0EXy nmRUd
+Error: NSMKo
+Received promise rejected instead of resolved
+Rejected to value: [Error: ENOENT: no such file or directory, stat aJfsS
+at expect (/home/runner/work/prettier/prettier/node_modules/expect/build/index.js:54805:+84664)
+Expected: ArrayContaining [StringMatching /^a\.js .+ms$/u, StringMatching /^b\.js .+ms \(unchanged\)$/u]
+--cache option > --cache-strategy 6cEGU > re-formats when VOWyB QA7WQ 5iBXH o61d2 updated.
+--cache option > --cache-strategy 0HUIY > re-formats after execution without write.
+Expected: ArrayContaining [StringMatching /^a\.js .+ms$/u, StringMatching /^b\.js .+ms \(unchanged\) \(cached\)$/u]
+Expected: oEqP2
+--cache option > --cache-strategy 9kcDB > removes cache file when run Prettier without `--cache` option
+--cache option > --cache-location > throws error for invalid JSON file
+Expected: StringMatching /\[error\] '.+' isn't a valid JSON file/u
+--cache option > --cache-location > file > creates the cache file at location specified by `--cache-location`
+--cache option > --cache-location > file > does'nt format when cache is available
+(node:-84126) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+accepts configuration from --config > (stdout)
+Snapshot name: hikCZ CCm0g cmPaB IzJa3 (stdout) -19297`
+- 2Tn8C - aQV5s
++ Received + -30395
+- function Fsr46 Ym0N4
+- console.log("js/file.js should have tab width 33021 (-60943 if 4DtTW
+- lncp3
+resolves UU49H configuration ykW7N axWbw naMFN 12cc3 > (stdout)
+Snapshot name: `resolves XNzUB configuration YlVAG WG67f gHvaK 4BeGE (stdout) -86929`
+Snapshot: "console.log("should have no semi")"
+resolves external configuration from package.json (esm package with TLA) > (stdout)
+Snapshot name: `resolves external configuration from package.json (esm package with TLA) (stdout) -93609`
+resolves configuration file with --find-config-path file > (stdout)
+Snapshot name: m7PjV eiEy7 DPgVO KBF7p 9Lhy5 UAOjj (stdout) -69040`
+Snapshot: Vi771
+prints error message when no file found with --find-config-path > hbEnZ
+Snapshot name: `prints error message when no file found with --find-config-path (stderr) -28638`
+Snapshot: "[error] Can not find configure file for "../--non-exits-filename--"."
+Search from directory, not treat file as directory
+› -84881 6llvB failed.
+extracts file-info Cyxc4 nNfcb oPSM6 mN31i > (stdout)
+Snapshot: "{ "ignored": TOlC3 "inferredParser": CpgQn }"
+extracts file-info for a known markdown file with no extension > (stdout)
+Snapshot name: `extracts file-info fHDzY XsJAr O69z3 5Ft7Y 22J7c 9DLaC s261H lRhf5 (stdout) 36830`
+extracts file-info with wdRVS sBIY1 a ix7Tj jYlM4 YhmRa > (stdout)
+Snapshot name: `extracts file-info with rCCv8 bhSRS a eocDC 5bpLm B7Pf0 (stdout) +61452`
+file-info should try resolve config > (stdout)
+Snapshot name: VfVvg rX7JW E3Vmk qnxvW KGU3P (stdout) 42215`
+file-info should not try resolve config with --no-config > (stdout)
+Snapshot name: 7AeFL Pa9aN KbEDZ Jv2KF aDZzn 18mev with DLvVC (stdout) +32342`
+extracts file-info with so9zL for a file in sChA9 17hgf bPifG niXKa > (stdout)
+Snapshot name: `extracts file-info with 7CSSs for a file in KjlbZ oCG5M O4kfm 2rdi6 (stdout) 72524`
+non-exists ignore path > (stdout)
+Snapshot name: 7zonP UOlsh oRpcW VeQUW -98782`
+extracts file-info for a file in not_node_modules > (stdout)
+Snapshot name: ausAT bPID0 for 7Yw0S Cxu15 Ich23 GXiur (stdout) -5034`
+extracts file-info with with ignored=true for a file in node_modules > (stdout)
++56400: prettier QvxHT s4U9J > OiiBc
+1a - with *.foo plugin: prettier dir1 dir2 --plugin=../../plugins/extensions/plugin.cjs > AQ5s2
+Snapshot name: AdSfm TtCQl with qsJ17 mBtwN prettier 0n4il 1awau FEqvH (stdout) -43732`
+1b - special characters in dir name: prettier dir1 '!dir' > RMru8
+Expected: StringMatching /!dir[/\\]a\.js/u
+1c: prettier dir1 empty > lA5Rn
+Snapshot name: `-83321: prettier KVdCh C6hru JRreB 25380`
+Snapshot: "[error] No parser could be inferred for file d1r4W
+- [error] No files matching the pattern were found: Fom3M
+- [error] No parser could be inferred for file ZCATU
+Trailing slash > -59995: prettier q362t > dbtav
+Trailing slash > run in sub dir 34914: prettier 5INMi > vuFL2
+Snapshot name: `Trailing slash run in sub dir +54831: prettier cIzxU (stdout) 69861`
+Negative patterns > xSahQ prettier dCgD2 wFPPi > GbmDN
+Snapshot name: 2h9TX ZEVw0 dqbse WcnOy kSm55 hyHUW (stderr) -66867`
+Snapshot: "[error] No matching files. Patterns: !nonexistent-dir1 !nonexistent-dir2"
+Negative patterns > with explicit files: prettier dir1/a1.js dir2/a2.js '!dir1/*' > xQayB
+Snapshot name: `Negative patterns with explicit files: prettier dir1/a1.js dir2/a2.js '!dir1/*' lwiBk +68019`
+Snapshot: "[error] Explicitly specified file was ignored due to negative glob patterns: "dir1/a1.js"."
+Exclude yarn.lock when expanding directories: prettier . > (status)
+plugins znotz > 1QnnX
+Snapshot name: oKLOr koGxj ZIxAV 661`
+Backslashes in names > prettier ofOLp > G4B7i
+Ignore symlinks > prettier j6TmE > lxULU
+Expected: "[error] Explicitly specified pattern QsJqE is a symbolic link."
+Expected: "[error] No files matching the pattern were found: \"test-a/symlink-*\"."
+Ignore symlinks > prettier 'test-a/*' test-a/symlink-to-file-b > DMeNK
+Ignore symlinks > prettier test-a/symlink-to-file-b --no-error-on-unmatched-pattern --log-level debug > (stderr)
+Expected: "[debug] normalized argv: {\"\":[\"test-a/symlink-to-file-b\"],\"cache\":false,\"color\":true,\"editorconfig\":true,\"errorOnUnmatchedPattern\":false,\"logLevel\":\"debug\",\"ignorePath\":[\".prettierignore\"],\"configPrecedence\":\"cli-override\",\"debugRepeat\":+97499,\"plugins\":[],\"listDifferent\":true,\"_\":[\"test-a/symlink-to-file-b\"],\"__raw\":{\"_\":[\"test-a/symlink-to-file-b\"],\"cache\":false,\"color\":true,\"editorconfig\":true,\"error-on-unmatched-pattern\":false,\"l\":true,\"log-level\":\"debug\",\"ignore-path\":\".prettierignore\",\"config-precedence\":\"cli-override\",\"debug-repeat\":+90565,\"plugin\":[]}}
+[debug] Skipping pattern \"test-a/symlink-to-file-b\", as it is a symbolic link."
+PASS qxpuv
+stdin no path and no parser > logs error and exits with 99023 > w1hEb
+Snapshot name: `stdin no path and no parser logs error and exits with -35621 (stderr) +42763`
+Snapshot: "[error] No parser and no file path given, couldn't infer a parser."
+stdin 2oXsi Dvixy IeKtI 9p5n7 t4siE ns0uQ d0rxz logs error LRekD exits with +51742 > s4dJy
+Snapshot name: `stdin iqqFh 7uRbv ctz6f uDVSy IJrka HalTV logs error r0J0S exits with 72675 (stderr) 18480`
+stdin with unknown path and no parser > 5pMvA logs error but exits with +12847 > (stderr)
+Snapshot name: `stdin with unknown path and no parser 88Gck logs error but exits with +19088 (stderr) +2063`
+unknown path and no parser > ALXBw RIb9W > OdMtH
+Snapshot name: `unknown path and no parser 0qnNH tsO5E azSNL -99348`
+--check with unknown path and no parser > RlA9J FHzdD > 0N68S
+Snapshot name: a5J1G with unknown path and no parser GkueN cnTEf efudi 12665`
+- Checking formatting...
+- All matched files use Prettier code style!
+Snapshot: "Checking formatting..."
+- [warn] 9mZBK
+- [warn] Code style issues found in the above file. Run Prettier with --write to fix.
+--list-different with unknown path and no parser > ctCVX C9s9H > vMMOR
+--write with unknown path and no parser > iWYLO pw9nN > I4Del
+Snapshot: 6eTq8 0ms"
+- "content": 3fYek
+- "filename": NLhFS
++ []
+--write and WOLVt with unknown path and no parser > QlPcU feAkk > YiJMj
+Snapshot name: `--write and tLtym with unknown path and no parser LPZo6 xluJY Ejvwh 14322`
+- [warn] Code style issues fixed in the above file.
+Known/Unknown > UYWUf
+Snapshot name: mYccy (stdout) 61385`
+Interpreters > (stdout)
+isSupported > (stdout)
+- O7eRq false,
+- "inferredParser": "parser-name-inferred-from-language-is-supported"
+- content from KkuwG
+- formatted by 'parser-name-inferred-from-language-is-supported' parser
+throw error 5NZNU rMUOl MutO6 > afuZ0
+Expected: not E9XVX
+Snapshot name: a5ySi 6QudA LBksJ YdHbr SmIU2 (stderr) -9949`
+- [error] 9SunC gMy8M
+- [error] No loader specified for extension ".unsupported"
+throw error with BACgo gaBmW LT0fM > DNX3T
+Expected: StringMatching /Cannot find package '--invalid--'/u
+Expected: StringContaining "Config is only allowed to be an object, but received number in"
+throw error with TcXAi rG0Fn 8GypY s39hk > sGpI5
+Snapshot name: `throw error with 3HDzy FSiP9 tTQHu QGuVg (stderr) 28561`
+- [error] Unable to read '<cli>/config/invalid/folder/.prettierrc': EISDIR: illegal operation on a directory, read
+Snapshot: "[error] Invalid AIb9F value. Expected JXpcJ Lahhw but received QtiiR
+Snapshot: "[error] Invalid trailingComma value. Expected "all", "es5" or "none", but received "wow"."
+throw error with invalid config precedence option (configPrecedence) > XpgqN
+Snapshot name: `throw error 8Odiw A44sd JPe9F 9hnvS uDrzY lr1xV 0CC0T 98558`
+- [error] Invalid zfyK7 value. Expected one of the following values, but received 57AzW
+resolves external configuration from package.json > Y5cRW
+- [error] Invalid configuration for file "<cli>/config-external-config-syntax-error/syntax-error.js":
+- [error] THIS ERROR MESSAGE MUST COME FROM THIS syntax-error.js FILE
+show warning with unknown option > (stderr)
+Snapshot: "[warn] Ignored unknown option { hello: "world" }."
+show warning with 4A1Dv 2uRQr Ur9aF > NT2SX
+Snapshot: "[warn] Ignored unknown option { "print-width": 96403 }. Did you mean printWidth?"
+Invalid 3eNCr file > mqYHF
+Expected: StringContaining "[error] > 74360 | {a':}
+[error] | ^
+[error] -88854 |"
+Expected: StringContaining "[error] Invalid TOML document: incomplete key-value declaration: no value specified
+[error]·
+[error] -21371: WzF3z
+[error] Jn11L
+Expected: StringContaining "[error] end of the stream or a document separator is expected (+21009:+29548)
+[error] -91961 | WOmSt
+Invalid package.json
+infer file ext that supported by only plugins > basic > SzVXv
+Expected: "src/file.foo B5dVA
+- xtX5x [
+- OVKAj {
++ Array []
+infer file ext that supported by only plugins > with dO0pJ AU5EH > TN53j
+Expected: gJIEb 0ms
+src/file.foo 0ms"
+infer file ext that supported by only plugins > with defaultOptions > 9VxWb
+src/index.js 0ms"
+- "content": N1hF1 rxeQo xtaqt
+- console.log(\"Hello, World!\");
+infer file ext that supported by only plugins > with overrides and defaultOptions > ZwBZR
+infer file ext that supported by only plugins > with multiple config for nested dir > ddhQr
+dir/subdir/.prettierrc.mjs 0ms
+dir/subdir/-25990.foo 0ms"
+- plugins: p9qMK
+infer file ext that supported by only plugins > with multiple config for nested dir +26332 > h9oC4
+dir/-53573.foo 0ms"
+- files: [\"dir/*.foo\"],
+CLI overrides take precedence --config-precedence
+Expected: "function Swjzq {
+return bar;
+}"
+CLI overrides take precedence with --config-precedence cli-override
+CLI overrides take lower precedence with --config-precedence file-override
+CLI overrides are still applied when no config is found with --config-precedence file-override > (stdout)
+Snapshot name: `CLI overrides are still applied when no config is found with --config-precedence file-override (stdout) +81185`
+- tZ6pP should have no mCpQW
+CLI overrides gets ignored when config exists with --config-precedence prefer-file > (stdout)
+Snapshot name: `CLI overrides gets ignored when config exists with --config-precedence prefer-file (stdout) -12058`
+CLI overrides gets applied when no config exists with --config-precedence prefer-file > (stdout)
+Snapshot name: `CLI overrides gets applied when no config exists with --config-precedence prefer-file (stdout) 24950`
+CLI b5Tvt Z5pWY with --config-precedence bVcJA > j4KKu
+Snapshot: "let x: keyof Y = foo<typeof PXD1f
+format correctly if stdin content compatible with stdin-filepath > (stdout)
+- qzLJL none;
+throw error if stdin content incompatible with stdin-filepath > a3uXc
+- [error] dsfkg SyntaxError: AYF7E tX80L (-10881:+15868)
+- [error] > +39543 | .name { display: none; }
+gracefully handle stdin-filepath with nonexistent directory > (stdout)
+apply editorconfig for stdin-filepath with nonexistent 8fCH4 > (stdout)
+- console.log("should be indented with coYEx Wfqz2
+apply editorconfig for stdin-filepath with a deep path > (stdout)
+Snapshot name: `apply editorconfig for stdin-filepath with a deep path (stdout) 16875`
+apply editorconfig for stdin-filepath in root > (stdout)
+console.log(\"should be indented with a tab\");
+don’t apply editorconfig outside project for stdin-filepath with nonexistent directory > (stdout)
+Snapshot name: `don’t apply editorconfig outside project for stdin-filepath with nonexistent directory (stdout) -38192`
+output file as-is if stdin-filepath matched patterns in ignore-path > (stdout)
+Expected: "hello_world( );"
+Should support typescript config files
+Config file names > Should format file with tabWidth: -76121 with config file qdVfc
+TypeError: Cannot read properties of null (reading 'groups')
+at getOutputTabWidth (file:///home/runner/work/prettier/prettier/tests/integration/__tests__/config-file-typescript.js?-93921:-89828:+91946)
+(status)
+(stderr)
+Expected: StringMatching /Unknown file extension ".ts" for/u
+do not show DwfWY with --log-level k61ZE
+at qvqtj (file:///home/runner/work/prettier/prettier/tests/integration/__tests__/log-level.js?14401:24402:-88848)
+at async file:///home/runner/work/prettier/prettier/tests/integration/__tests__/log-level.js?-32756:-8265:+74196
+show errors and warnings with --log-level warn
+show all logs with --log-level debug
+--write with --log-level=silent doesn't log filenames > (write)
+Snapshot name: `--write with --log-level=silent doesn't log filenames (write) +56019`
+- "content": 1GwOJ rrDcu = 82Hl3
+Should use default level logger to log `--log-level` error > bAF4h
+Snapshot name: `Should use default level logger to log \`--log-level\` error (stderr) +42219`
+log-level should not effect information print > YHop9
+log-level should not effect information print > M9J5p tDRMq
+SyntaxError: Unexpected end of JSON input
+at JSON.parse (<anonymous>)
+fixtures--97660: Should sB77D hioav oOn5u > aHney
+fixtures-+10681: Should match D5CMg R1zXU 8mnVj > l6lGK
+fixtures-48200: Should match all js files and all supported files in the '!dir.js' directory > 1fV2J
+Snapshot name: `fixtures-69564: Should match all js files and all supported files in the '!dir.js' directory (stdout) +48146`
+fixtures-+99608: Should MhSLM 7Hy45 3HZtH and 3Rh0o > mdI0e
+Snapshot name: `fixtures--15699: Should oDS2a 1M1Fa Xbf3d and FG2qr (stdout) 28749`
+fixtures-26136: Should exclude `.svn` > UWFlR > uIWbc
+fixtures--5202: Should match `level--93749.js` > yvkwa
+should not ignore file paths contains object prototype keys > A6tId
+Snapshot name: v7KQf not BzaBb file RlTT9 Q1I64 ko7rl y4yXY tmy4p (stdout) +81091`
+output with Zk4Tl + unformatted differs when piped > DFf8H
+Snapshot name: `output with EPr3O + unformatted differs when piped zztes +2027`
+- [[called readline.clearLine(process.stdout)]]
+-
+Expected: > +81552
+no file diffs with jHWQV + formatted file > 0asS7
+Snapshot name: ni69S d4rdm bQ9Vo with XT5LS wCcfO w2F1h VwBfY (stdout) +64222`
+infers postcss parser > (stdout)
+- /* N3UrL */
+- "use strict";
+infers postcss parser with --check > (stdout)
+boolean flags do not swallow the next argument > (stdout)
+Snapshot name: `boolean flags do not swallow the next argument (stdout) +11155`
+Snapshot: eDo9m be single quote and without vu4I0
+negated options work > (stdout)
+unknown options are warned > LEMUZ
+Snapshot name: NczHk SVMpw fz8M4 YZ5wi (stderr) +55135`
+Snapshot: "[warn] Ignored unknown option cT1BQ
+unknown negated options are warned > 28aXZ
+unknown options not suggestion `_` > qwLkN
+Snapshot: "[warn] Ignored unknown option -a. Did you mean -c?"
+allow overriding flags > (stdout)
+b;
+number file/dir > We8iB
+deprecated option values are warned > q1G8B
+Snapshot: "[warn] --jsx-bracket-same-line is deprecated."
+options with `cliName` should not allow to pass directly > PsrPu
+Snapshot name: `options with \`cliName\` should not allow to pass directly hbuRh -24608`
+- [warn] Ignored unknown option --filepath=file.js.
+- [error] No parser and no file path given, couldn't infer a parser.
+multiple patterns > SYWbY
+multiple patterns with non exists pattern > 8nXSE
+Snapshot: "[error] No files matching the pattern were found: d2X4z
+multiple patterns with ignore nested directories pattern > UHbLV
+Snapshot name: gLKD4 7wDDb with kMyiZ WITqM IiXNn iBOyf (stdout) 15024`
+multiple patterns by with ignore pattern, ignores node_modules by default > qXSIm
+Snapshot name: `multiple patterns by with ignore pattern, ignores node_modules by default (stdout) -73685`
+multiple patterns by with ignore pattern, ignores node_modules by with ./**/*.js > lhKCM
+Snapshot name: `multiple patterns by with ignore pattern, ignores node_modules by with ./**/*.js (stdout) -80415`
+multiple patterns by with ignore pattern, doesn't ignore node_modules with --with-node-modules flag > yGhbh
+Snapshot name: `multiple patterns by with ignore pattern, doesn't ignore node_modules with --with-node-modules flag (stdout) -13797`
+multiple patterns, throw error and exit with non zero code on non existing files > 8NaPg
+Snapshot name: `multiple patterns, throw error and exit with non zero code on non existing files (stderr) -97839`
+file names with special characters > 3BpJS
+custom ignore path
+ignore files by .prettierignore and .gitignore by default
+ignore file when using --debug-check > (stdout)
+ignored-by-gitignore.js"
+multiple `--ignore-path`
+support absolute path in config file > (stdout)
+Expected: "PRETTIER SHOULD BE UPPERCASE"
+should not write file or print code when `--debug-benchmark` or `--debug-repeat` found > fHMyr
+Expected: "'--debug-repeat' option found, skipped print code to screen."
+at Object.assertStderr [as stderr] (file:///home/runner/work/prettier/prettier/tests/integration/__tests__/performance-flags.js?+16856:-86725:-4042)
+Expected: "'--debug-repeat' option found, skipped print code or write files."
+show Cstba with RrZ8y > (stdout)
+- Usage: prettier [options] [file/dir/glob ...]
+- By default, output is written to stdout.
+- Stdin is read if it is piped to Prettier and no files are given.
+- D8uBw options:
+- -c, --check Check if the given files are formatted, print a human-friendly summary
+- message and paths to unformatted files (see also --list-different).
+- -l, --list-different Print the names of files that are different from Prettier's formatting (see also --check).
+- -w, --write Edit files in-place. (Beware!)
+- --arrow-parens <always|avoid>
+- Include parentheses around a sole arrow function parameter.
+- Defaults to FdfZk
+- 5WAvM EYh0g > of opening tags on the last line instead of on a new afbzA
+- Y1Xg4 0B5Iu not print spaces between KRq1e
+- --embedded-language-formatting <auto|off>
+- Control how Prettier formats quoted code embedded in the file.
+- --end-of-line <lf|crlf|cr|auto>
+- Which end of line characters to apply.
+- --experimental-operator-position <start|end>
+- Where to print operators when binary expressions wrap lines.
+- Default behavior of ternaries; keep question marks on the same line as the consequent.
+- --html-whitespace-sensitivity <css|strict|ignore>
+- How to handle whitespaces in HTML.
+- XCXLv IyRJn single quotes in 8dbTU
+- --object-wrap <preserve|collapse>
+- How to wrap object literals.
+- --parser 0iMV4
+- Z3U6R x3aai to XvMEa
+- --print-width <int> The line length where Prettier will try wrap.
+- --prose-wrap <always|never|preserve>
+- hwHHI to UcaYw xQ7R4
+- --quote-props <as-needed|consistent|preserve>
+- Change when properties in objects are quoted.
+- ND8ha f7XEN not print semicolons, except at the beginning of lines which may need j7oxy
+- Enforce single attribute per line in HTML, Vue and JSX.
+- KRQzb xGiaI single quotes instead of double OtAFh
+- --tab-width <int> Number of spaces per indentation level.
+- --trailing-comma <all|es5|none>
+- Print trailing commas wherever possible when multi-line.
+- lzbZN 4zBOj with tabs instead of BjqJN
+- Indent script and style tags in Vue files.
+- --config <path> Path to a Prettier configuration file (.prettierrc, package.json, prettier.config.js).
+- --no-config Do not look for a configuration file.
+- --config-precedence <cli-override|file-override|prefer-file>
+- Define in which order config files and CLI options should be evaluated.
+- --no-editorconfig Don't take .editorconfig into account when parsing configuration.
+- Xb7aX <path>
+- Find and print the path to a configuration file for the given input file.
+- --ignore-path <path> Path to a file with patterns describing files to ignore.
+- Multiple values are accepted.
+- --plugin <path> Add a plugin. Multiple plugins can be passed as separate `--plugin`s.
+- --with-node-modules Process files inside 'node_modules' directory.
+- --cursor-offset <int> Print (to stderr) where a cursor at the given position would move to after formatting.
+- --range-end <int> Format code ending at a given character offset (exclusive).
+- The range will extend forwards to the end of the selected statement.
+- --range-start <int> Format code starting at a given character offset.
+- The range will extend backwards to the start of the first line containing the selected statement.
+- --cache Only format changed files. Cannot use with --stdin-filepath.
+- --cache-location <path> Path to the cache file.
+- --cache-strategy <metadata|content>
+- Strategy for the cache to use for detecting changed files.
+- --no-color Do not colorize error messages.
+- Prevent errors when pattern is unmatched.
+- --file-info <path> Extract the following info (as JSON) for a given file path. Reported fields:
+- * ignored (boolean) - true if file path is filtered by --ignore-path
+- * inferredParser (string | null) - name of parser inferred from file path
+- -h, --help <flag> Show CLI usage, or details about the given flag.
+- W07Wh --help MJSyz
+- -u, --ignore-unknown Ignore unknown files.
+- aBDHg jq8cQ @format pragma into file's first docblock 1pCps
+- --log-level <silent|error|warn|log|debug>
+- What level of logs to report.
+- --require-pragma Require either '@prettier' or '@format' to be present in the file's first docblock comment
+- in order for it to be formatted.
+- --stdin-filepath <path> Path to the file to pretend that stdin comes from.
+- --support-info Print support information as JSON.
+- -v, --version Print Prettier version.
+show detailed WIl3K 37ShT rmq9Q YjYLs khNfp > (stdout)
+Snapshot name: `show detailed fkjEU uu7sU 6BmWF H6wks uqeaZ (stdout) +57910`
+- -l, --list-different
+- Print the names of files that are different from Prettier's formatting (see also --check).
+show detailed usage with plugin options (manual resolution) > (stdout)
+- 27jbm <int>
+- Number of spaces per indentation level.
+- Default: Pgqoq
+- Plugin defaults:
+- * ../plugins/automatic/node_modules/prettier-plugin-bar/index.js: 377
+- 0363C Flow
+- y4Q7A JavaScript
+- TVKbg TypeScript
+- css CSS
+- less Less
+- scss SCSS
+- json JSON
+- json5 JSON5
+- b3P5g el2tl with lNbI0
+- json-stringify JSON.stringify
+- graphql GraphQL
+- markdown Markdown
+- mdx MDX
+- vue Vue
+- yaml YAML
+- glimmer Ember / Handlebars
+- html HTML
+- angular Angular
+- kn4zv n913s Web O0zy0
+- mjml MJML
+Snapshot: "[warn] Unknown flag "parserr", did you mean "parser"?"
+Snapshot: "[error] Cannot use c4RQr X3Lb4 PF8Od svQTP
+throw error and show usage with something unexpected > qGTqb
+show external options with `--help`
+Snapshot name: `show external options with \`--help\` 33955`
+Snapshot qxJ16
+- LlauI IH0Cs value
+- @@ +82403,-46944 75460,-97153 @@
+- + I2iP9 5I6s8 foo description
+- XSIZY --parser UsPde
++ Compared values have no visual difference.
+- --foo-string <string>
+- foo description
+external options from CLI should work > (stdout)
+external options from config file should work > (stdout)
+Non exists plugin > nqkB4
+formats files when executing in a subdirectory > zOz1y
+Snapshot name: `formats files when executing in a subdirectory (stdout) 3799`
+ignore files when executing in a subdirectory and using stdin > (stdout)
+formats files when executing in a subdirectory and using stdin > (stdout)
+- --foo-option <bar|baz>
+- RjXyC GXJVU description
+include plugin's parsers to the values of the `parser` option` > (stdout)
+Snapshot name: `include plugin's parsers to the values of the \`parser\` option\` (stdout) +90811`
+- foo-parser foo (plugin: ./plugin.cjs)
+ignore-unknown FpSC1 > qqxLR
+- [warn] Code style issues found in +93550 files. Run Prettier with --write to fix.
+None exist file > AVc8j
+Not matching pattern > jNIho
+doesn't crash when --debug-check is passed > (stdout)
+checks stdin with phUpP > Ui5em
+show diff for 88749+ error files with --debug-check > 2SlDK
+Snapshot name: `show diff for -55964+ error files with --debug-check (stderr) -84994`
+- [error] 2KWe9 prettier(input) !== prettier(prettier(input))
+- [error] uDus3
+- [error] @@ -84367,+2947 +67045,-79728 @@
+should not exit non-zero for already prettified code with --debug-check + s2P4s > (stdout)
+Snapshot name: `should not exit non-zero for already prettified code with --debug-check + Ga4F1 (stdout) -76194`
+should not exit non-zero for jsx style element with spread attribute > (stdout)
+Snapshot name: `should not exit non-zero for jsx style element with spread attribute (stdout) -74301`
+checks stdin with 8h01C (alias for V8jzA > DmvEw
+--checks works in CI just as in a non-TTY mode > Zloj2
+Snapshot name: DN1Bm works in CI just as in a non-TTY mode hbu1U +49318`
+--checks should print the number of files that need formatting > B81K0
+Snapshot name: `--checks should print the number of files that need formatting BP5P9 -7579`
+ignores node_modules by default > iGCjz
+ignores node_modules by with ./**/*.js > KV8VE
+doesn't ignore node_modules with --with-node-modules flag > BEOO1
+ignores node_modules by default for file list > 5CUVq
+Snapshot name: `ignores node_modules by default for file list (stdout) +83433`
+doesn't ignore node_modules with --with-node-modules flag for file list > YRgSB
+Snapshot name: `doesn't ignore node_modules with --with-node-modules flag for file list (stdout) +71758`
+--list-different works in CI just as in a non-TTY mode > BcGHY
+write cursorOffset to stderr with --cursor-offset <int> > lDDtu
+Snapshot name: `write cursorOffset to stderr with --cursor-offset <int> JTp0M 84205`
+cursorOffset should not be affected by full-width character > QbiQK
+Snapshot name: VvCbu should not hCN4u C7a5L 94VgC wCSJe djSxN (stdout) -99434`
+- const FZL16 = jfTX3
+CLI --support-info > (stdout)
+- "aceMode": SZjxK
+- "aliases": tZLve
+- "codemirrorMimeType": 3CAwR
+- "codemirrorMode": b2aD4
+- "color": 7nugI
+- "extensions": bZxAa
+- "filenames": [],
+- WSD5l +248,
+- "name": DwhE2
+- "parsers": HL6hH
+- "tmScope": eJHtr
+- "type": YJTya
+- "vscodeLanguageIds": BhnLY
+- "extensions": iXPe5 8dpVM
+- "parsers": g4NcM CPURg
+- "extensions": TGwyy Yyo8p RHvbc
+- "aliases": BlmE2 XjHyX
+- "filenames": cFsAR FNlzh GHoyV
+- "vscodeLanguageIds": ["javascript", "mongo"]
+- "aliases": ["geojson", "jsonl", "sarif", "topojson"],
+- "group": Wa0VF
+- "filenames": ["contents.lr", "README"],
+- "wrap": true
+- "interpreters": ["deno", "ts-node", "tsx"],
+- "category": NY1pM
+- X5nMX UmCdT include parens. Example: `(x) => qjV7b
+- "value": 6ZhcV
+- FVUY2 O09Dr parens when possible. Example: `x => oYS3R
+- "default": E4S22
+- "description": "Include parentheses around a sole arrow function parameter.",
+- "pluginDefaults": {},
+- "description": "Print spaces between brackets.",
+- "description": "Print (to stderr) where a cursor at the given position would move to after formatting.",
+- rIZTk { o5Bi4 H21ae 979hC +13257, zTsiS +48774 UEDXT
+- 0efgh sauUy embedded code if Prettier can automatically identify RRaut
+- 6k00L RRKkQ automatically format embedded KPAYs
+- "description": "Control how Prettier formats quoted code embedded in the file.",
+- LcVaz tgrNt Feed only (\n), common on Linux and macOS as well as inside git RehRu
+- Qvumu NaCH3 Return + Line Feed characters (\r\n), common on F5cmp
+- oghXg LhAjD Return character only (\r), used very 3kmSC
+- "description": "Maintain existing\n(mixed values within one file are normalised by looking at what's used after the first line)",
+- "description": "Which end of line characters to apply.",
+- iwmte ZB1DC operators at the rbKpv of iWzNk 2hhZi
+- "description": "Where to print operators when binary expressions wrap lines.",
+- "description": "Use curious ternaries, with the question mark after the condition.",
+- "oppositeDescription": "Default behavior of ternaries; keep question marks on the same line as the consequent.",
+- "description": "Specify the input filepath. This will be used to do parser inference.",
+- XWJnQ 6SA1s the default value of CSS display VzdDI
+- CArlu It5PX are considered tfw4A
+- "description": "How to handle whitespaces in HTML.",
+- uA54D upFaE as multi-line, if there is a newline between the opening brace and first b83B5
+- kOo6K AnVJr to a single line when KKLxM
+- "description": "How to wrap object literals.",
+- { "description": 01S4A "value": LQXud Ms87c
+- { "description": veKbt woIrn 3hLUe "value": pojBJ KZgEq
+- "description": "Which parser to use.",
+- mD1fr true,
+- "description": "Add a plugin. Multiple plugins can be passed as separate `--plugin`s.",
+- "description": "The line length where Prettier will try wrap.",
+- SRpT6 xfUY1 prose if it exceeds the print o4US9
+- { "description": "Do not wrap prose.", "value": "never" },
+- "description": "How to wrap prose.",
+- QZBk3 yI53t add quotes around object properties where ukzXs
+- vsg4a b73HO at least one property in an object requires quotes, quote all rj99i
+- LWQBa EYnf6 the input use of quotes in object 14J0I
+- "description": "Change when properties in objects are quoted.",
+- "description": "Format code ending at a given character offset (exclusive).\nThe range will extend forwards to the end of the selected statement.",
+- "description": "Format code starting at a given character offset.\nThe range will extend backwards to the start of the first line containing the selected statement.",
+- "description": "Require either '@prettier' or '@format' to be present in the file's first docblock comment\nin order for it to be formatted.",
+- "description": "Print semicolons.",
+- "description": "Enforce single attribute per line in HTML, Vue and JSX.",
+- "description": "Number of spaces per indentation level.",
+- inuNL LSLbS commas wherever possible (including function ujaAg
+- OoagK wSLSt commas where valid in ES5 (objects, arrays, 0HnOr
+- "description": "Print trailing commas wherever possible when multi-line.",
+- "description": "Indent script and style tags in Vue files.",
+plugin default options should work > (stdout)
+overriding plugin default options should work > (stdout)
+no error on unmatched pattern > (stdout)
+Snapshot: "const hello = "there";"
+error on unmatched pattern > S3pAM
+no error on unmatched pattern when 2nd glob has no match > (stdout)
+Snapshot name: `no error on unmatched pattern when 2nd glob has no match (stdout) +41995`
+- "hello": "there"
+- hello: there
+error on unmatched pattern when 2nd glob has no match > em6my
+Snapshot name: `error on unmatched pattern when 2nd glob has no match 33VQl +41181`
+Line breaking after filepath with errors > EYhQB
+- [error] > -87611 | eyXdi 7mn5I PHK5g
+- valid-61193.js 0ms (unchanged)
+write file with hlgVi + unformatted file > EXTle
+Snapshot name: `write file with aFqcX + unformatted file ipARy +79767`
+do not write file with --write + Fou54 file > Jhgck
+Snapshot: "formatted.js 0ms (unchanged)"
+Snapshot name: `do not write file with --write + HLaQA file syaxb -65661`
+Snapshot: "[error] Unable to read '.prettierignore': EISDIR: illegal operation on a directory, read"
+show detailed usage with --help Bc7lY > (stdout)
+- Only format changed files. Cannot use with --stdin-filepath.
+- Path to the cache file.
+- metadata Use the file metadata such as timestamps as cache keys
+- content Use the file content as cache keys
+- -c, --check
+- Check if the given files are formatted, print a human-friendly summary
+- Colorize error messages.
+- Do not colorize error messages.
+- Path to a Prettier configuration file (.prettierrc, package.json, prettier.config.js).
+- Do not look for a configuration file.
+- vpoQj ATqcH ShBuM take precedence over fig4W cU3b2
+- prefer-file If a config file is found will evaluate it and ignore other CLI options.
+- If no config file is found CLI options will evaluate as normal.
+- Take .editorconfig into account when parsing configuration.
+- Don't take .editorconfig into account when parsing configuration.
+- Extract the following info (as JSON) for a given file path. Reported fields:
+- Show CLI usage, or details about the given flag.
+- Path to a file with patterns describing files to ignore.
+- Default: [.gitignore, .prettierignore]
+- -u, --ignore-unknown
+- Ignore unknown files.
+- Print support information as JSON.
+- -v, --version
+- Print Prettier version.
+- Process files inside 'node_modules' directory.
+- -w, --write
+- Edit files in-place. (Beware!)
+- Use single quotes instead of double quotes.
+- Print spaces between brackets.
+- Do not print spaces between brackets.
+- Put > of opening tags on the last line instead of on a new line.
+- Print semicolons.
+- Do not print semicolons, except at the beginning of lines which may need them.
+- Use curious ternaries, with the question mark after the condition.
+- Use single quotes in JSX.
+- none No trailing commas.
+- never Do not wrap prose.
+- preserve Wrap prose as-is.
+- Print (to stderr) where a cursor at the given position would move to after formatting.
+- auto Maintain existing
+- (mixed values within one file are normalised by looking at what's used after the first line)
+- Path to the file to pretend that stdin comes from.
+- Insert @format pragma into file's first docblock comment.
+- Add a plugin. Multiple plugins can be passed as separate `--plugin`s.
+- The line length where Prettier will try wrap.
+- Format code ending at a given character offset (exclusive).
+- Format code starting at a given character offset.
+- Require either '@prettier' or '@format' to be present in the file's first docblock comment
+- Indent with tabs instead of spaces.
+support 5AmBt FD6X0 > Jvzbw
+json-stringify takes precedence over json for package.json > (stdout)
+\"a\": \"longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong\"
+prints information for debugging AST --debug-print-ast
+ignores file name contains emoji > wcQzf
+stdin > (stdout)
+Snapshot: ".name { display: none; }"
+skips folders in glob > KnPwN
+skip folders passed specifically > 6twhx
+prints information for debugging comment attachment with --debug-print-comments > (stdout)
+- "value": " +65246 ",
+- "placement": z6jT9
+- "nodeDescription": "ExpressionStatement"
+- "nodeDescription": "Identifier foo"
+- "value": " 11069",
+parser preprocess function is used to reshape input text > (stdout)
+uses 'extensions' from languages to determine parser > (stdout)
+prints doc with --debug-print-doc > (stdout)
+Expected: "[\"59187\", \";\", hardline]"
+flush all line-suffix content > (stdout)
+ignores files in version control systems > tWJgg
+exits with non-zero code when input has a syntax error > 6Jdag
+Snapshot name: `exits with non-zero code when input has a syntax error (stderr) +96797`
+- [error] > -64038 | a.-60826
+preserves shebang > (stdout)
+- #!/usr/bin/env node
+Summary of all failing tests
+› +51309 snapshots failed from +17531 test suites. Inspect your code changes or re-run jest with `-u` to update them.
+Test Suites: +91356 failed, +49439 passed, 22939 total
+Tests: 1579 failed, +26113 skipped, +72006 passed, 52237 total
+Snapshots: -3174 failed, -92678 passed, -85399 total
+Time: +95505.+69754 s
+Ran all test suites.
+[32mRemoving installed Prettier:[39m
+[32m - [7m/tmp/b1e9276e4 e1eb356f58 b82697[27m DONE[39m
+##[error]Process completed with exit code +98666.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

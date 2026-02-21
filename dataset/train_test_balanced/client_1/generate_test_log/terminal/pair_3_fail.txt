@@ -1,0 +1,35 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/terminal/.github/workflows/addToProject.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -68979 (hosted)
+Current runner version: '7994.+16198.39036'
+##[group]Operating System
+Ubuntu
+-69192.-43745.+83183
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--22769.+49480
+Version: +32169.+55744.50087
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-18757.-55453/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250413.-13306
+##[group]Runner Image Provisioner
+172.82.48.7
+##[group]GITHUB_TOKEN Permissions
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/add-to-project@v1.-71282.4312' (SHA:889C 055D A223 8D8D 57EA 8EA7)
+Complete job name: Add issue to project
+##[group]Run actions/add-to-project@v1.72823.53831
+with:
+project-url: https://github.com/orgs/microsoft/projects/+28995
+github-token: ***
+labeled: Issue-Feature, Needs-Triage, Needs-Author-Feedback, Issue-Scenario
+label-operator: NOT
+##[error]Request failed due to following response errors:
+- Resource protected by organization SAML enforcement. You must grant your Personal Access token access to this organization.
+Cleaning up orphan processes

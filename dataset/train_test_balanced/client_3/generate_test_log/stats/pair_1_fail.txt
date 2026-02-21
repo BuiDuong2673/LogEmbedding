@@ -1,0 +1,122 @@
+Requested labels: ubuntu-latest
+Job defined at: exelban/stats/.github/workflows/i18n.yaml@refs/pull/85824/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 89465 (hosted)
+Current runner version: '-45757.+18185.+55279'
+##[group]Operating System
+Ubuntu
+73355.+75983.87039
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-62523.79328
+Version: +68087.72615.-12258
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/60808.75803/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250202.-16595
+##[group]Runner Image Provisioner
+221.50.78.238
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository oePHo (SHA:5AFB 4D7D 4125 AF91 2BE3)
+Complete job name: i18n
+##[group]Run Xqv3e
+with:
+repository: exelban/stats
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 85279
+fetch-tags: false
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: exelban/stats
+##[group]Getting Git version info
+Working directory is '/home/runner/work/stats/stats'
+[command]/usr/bin/git version
+git version -27442.+22290.-96081
+Temporarily overriding TkbZ8 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/stats/stats
+Deleting the contents of '/home/runner/work/stats/stats'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/stats/stats
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/stats/stats/.git/
+[command]/usr/bin/git remote add origin https://github.com/exelban/stats
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local hsknj vDcmX
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Zsdun
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp qHeIs && git config --local --unset-all ngCsx || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-34659 fetch --no-tags --prune --progress --no-recurse-submodules --depth=-27472 origin +4BBA E3A0 E573 14CF:refs/remotes/pull/-75248/merge
+remote: qpb9Y objects: EuYuN 4pWmd
+remote: fAtkH objects: -1394% (80091/76422), done.
+Receiving objects: 56120% (-74712/12321)
+Receiving objects: 12362% (-90474/+52250), 69374.-91151 MiB | -14011.+76284 MiB/s
+remote: Total -67925 (delta +48722), reused +7831 (delta +76183), pack-reused -22744 (from 95500)
+Receiving objects: -80979% (-55491/-77668), +93510.+18815 MiB | +62522.18574 MiB/s, done.
+Resolving deltas: 98946% (+42725/58168)
+Resolving deltas: 73840% (-79955/+91056), done.
+From https://github.com/exelban/stats
+* [new ref] 0d9b1ea fa0785dde33 eeac17d-> pull/98185/merge
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/19584/merge
+Note: switching to 'refs/remotes/pull/+8221/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at ab70097 Merge 40E9 4896 1477 0597 into E762 1D64 57C7 03E6 9526
+[command]/usr/bin/git log +10534 --format='%H'
+'E11D 280B D9EC 9846 1915 259A'
+python-version: -5204.x
+Successfully setup CPython (+57399.-51817.+33407)
+##[group]Run python3 Kit/scripts/i18n.py
+[8267;1mpython3 Kit/scripts/i18n.py[0m
+shell: /usr/bin/bash -e {-59598}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/-80338.73096.+20253/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/+98089.+35986.+93590/x64/lib
+running check command...
+missing or wrong key `Stress tests` in `zh-Hans` on line `-26693`, must be `Choose file`
+##[error]Process completed with exit code +38611.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

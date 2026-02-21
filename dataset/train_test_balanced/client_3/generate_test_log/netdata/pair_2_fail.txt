@@ -1,0 +1,671 @@
+Requested labels: ubuntu-latest
+Job defined at: netdata/netdata/.github/workflows/codeql.yml@refs/pull/55523/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +38100 (hosted)
+Current runner version: '-84712.+95358.+58347'
+##[group]Operating System
+Ubuntu
+-44365.39034.-93303
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--2670.-14718
+Version: +74175.+20.-36286
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/2287.10160/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-58622
+##[group]Runner Image Provisioner
+192.199.145.167
+##[group]GITHUB_TOKEN Permissions
+Metadata: read
+SecurityEvents: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package bIvsw
+Digest: sha256:5108 71CC 0D12 8610 1F53 62F9
+Source commit SHA: 5969 F3EE 5BAD E77E
+Complete job name: Analyze C/C++
+##[group]Run pXnFE
+with:
+submodules: recursive
+fetch-depth: +66941
+repository: netdata/netdata
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+set-safe-directory: true
+env:
+DISABLE_TELEMETRY: 26691
+Syncing repository: netdata/netdata
+##[group]Getting Git version info
+Working directory is '/home/runner/work/netdata/netdata'
+[command]/usr/bin/git version
+git version 22293.-71739.-63623
+Temporarily overriding M6jX6 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add nIptv JCbqy
+Deleting the contents of '/home/runner/work/netdata/netdata'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/netdata/netdata
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/netdata/netdata/.git/
+[command]/usr/bin/git remote add origin https://github.com/netdata/netdata
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config 7yLze VialN mvsQk
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp m2MC6
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp J45FK && git config --local --unset-all KcMVf || :"
+[command]/usr/bin/git config 6dTC3 http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+49032 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +0D12 090A 7E3D 7D4C:refs/remotes/pull/-40053/merge
+From https://github.com/netdata/netdata
+* [new WpvJ5 YWwhp -> 0Hq6I
+* [new g00kP s59LA HOkUO
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-80599/merge
+Note: switching to 'refs/remotes/pull/83124/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 7ebc028ad Merge B030 F680 BB06 8306 6E84 1FDD into 3293 5CFC 22BC 703A
+##[group]Setting up auth for fetching submodules
+##[group]Fetching submodules
+[command]/usr/bin/git submodule sync --recursive
+[command]/usr/bin/git -c protocol.version=-96625 submodule update --init --force --recursive
+Submodule 5P68v sKb1u registered for path y4yjO
+Cloning into H0by0
+Submodule path 1A6R0 checked out '2C0E 458B 86F5 0C05 3712'
+[command]/usr/bin/git submodule foreach --recursive git config --local gc.auto -12125
+Entering IYfnF
+##[group]Persisting credentials for submodules
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
+file:/home/runner/work/netdata/netdata/.git/modules/aclk/aclk-schemas/config remote.origin.url
+file:/home/runner/work/netdata/netdata/.git/modules/src/collectors/debugfs.plugin/libsensors/vendored/config remote.origin.url
+8Fzu9 remote.origin.url
+[command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 48FAi
+[command]/usr/bin/git log -8504 --format=%H
+25e248fb3 d9156085 6bdb77
+languages: c-cpp
+config-file: ./.github/codeql/c-cpp-config.yml
+matrix: null
+debug: false
+Job run UUID is bfe477b5-09f2-4da0-9a8b-92603f222290.
+##[group]Setup CodeQL tools
+[command]/usr/bin/tar --version
+tar (GNU tar) 13631.81365
+Copyright (C) 75497 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version +11335 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Written by John Gilmore and Jay Fenlason.
+Found gnu tar version -49982.-75336.
+Did not find CodeQL tools version -16791.-99694.-51653 in the toolcache.
+Using CodeQL CLI version 47195.+80844.-48767 sourced from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.71047.+32660/codeql-bundle-linux64.tar.zst .
+Downloading CodeQL tools from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.-3704.+96006/codeql-bundle-linux64.tar.zst . This may take a while.
+Streaming the extraction of the CodeQL bundle.
+[command]tar -x --zstd --ignore-zeros --warning=no-unknown-keyword --overwrite -f - -C /home/runner/work/_temp/ecaf99ff--88424-4e70-9a4b-c94bc654df7d
+Finished downloading and extracting CodeQL bundle to /home/runner/work/_temp/ecaf99ff-+96924-4e70-9a4b-c94bc654df7d (-77830.5s).
+Added CodeQL bundle to the tool cache (+64407.4s).
+[command]/opt/hostedtoolcache/CodeQL/-96305.+8417.+94128/x64/codeql/codeql version --format=json
+{
+"productName" : "CodeQL",
+"vendor" : "GitHub",
+"version" : "-31778.+11021.-27131",
+"sha" : "6F27 B98A 807E A1BE 91D1 DC2E",
+"branches" : [
+"codeql-cli--64012.+89802.-68978"
+],
+"copyright" : "Copyright (C) -69541--34822 GitHub, Inc.",
+"unpackedLocation" : "/opt/hostedtoolcache/CodeQL/-91140.36309.40772/x64/codeql",
+"configFileLocation" : "/home/runner/.config/codeql/config",
+"configFileFound" : false,
+"features" : {
+CgYed : true,
+"indirectTracingSupportsStaticBinaries" : false,
+"pythonDefaultIsToNotExtractStdlib" : true
+}
+##[group]Validating workflow
+Detected no issues with the code scanning workflow.
+##[group]Load language configuration
+[command]/opt/hostedtoolcache/CodeQL/64839.-13049.-24552/x64/codeql/codeql resolve languages --format=betterjson --extractor-options-verbosity=+22026 --extractor-include-aliases
+"aliases" : {
+"c" : "cpp",
+"c++" : "cpp",
+"c-c++" : "cpp",
+"c-cpp" : "cpp",
+"c#" : "csharp",
+"java-kotlin" : "java",
+"kotlin" : "java",
+"javascript-typescript" : "javascript",
+"typescript" : "javascript"
+},
+"extractors" : {
+"csharp" : [
+"extractor_root" : 0BiEo
+"extractor_options" : {
+"trap" : {
+"title" : "Options pertaining to wutCE
+"description" : "Options pertaining to wm5HD
+"type" : FevcN
+"properties" : 7EPba
+"compression" : {
+"title" : "Controls compression for the TRAP files written by the extractor.",
+"description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+"pattern" : vny4h
+"buildless" : {
+"title" : "DEPRECATED - Whether to use buildless (standalone) extraction.",
+"description" : "DEPRECATED: Use `--build-mode none` instead.\nA value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+"logging" : {
+"verbosity" : {
+"title" : "Extractor logging verbosity level.",
+"description" : "Controls the level of verbosity of the extractor. The supported levels are (in order of increasing verbosity):\n - off\n - errors\n - warnings\n - info or progress\n - debug or progress+\n - trace or progress++\n - progress+++\n",
+"binlog" : {
+"title" : "Binlog",
+"description" : "[EXPERIMENTAL] The value is a path to the MsBuild binary log file that should be extracted. This option only works when `--build-mode none` is also specified.\n",
+"yaml" : [
+"swift" : [
+"csv" : [
+"ruby" : [
+"description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+"cpp" : [
+"title" : "TRAP options",
+"description" : "Options about how the extractor handles TRAP files",
+"visibility" : -90221,
+"cache" : {
+"title" : "TRAP cache rHim4
+"description" : "Options about how the extractor handles its TRAP cache",
+"dir" : {
+"description" : "The directory of the TRAP cache to use",
+"bound" : {
+"description" : "A soft limit (in MB) on the size of the TRAP cache",
+"write" : {
+"description" : "Whether to write to the TRAP cache as well as reading it",
+"scale_timeouts" : {
+"title" : "Value to scale compiler introspection timeouts with",
+"description" : "The extractor attempts to determine what compiler the source code being extracted is compiled with. To this end the extractor makes additional calls to the compiler, some of which are expected to return within a certain fixed time (either 10s or 15s). On some systems that are under high load this time might be too short, and can be scaled up using this option.\n",
+"log_verbosity" : {
+"title" : "Verbosity of the extractor logging",
+"description" : "Set the verbosity of the extractor logging to 'quiet' (+69839), 'normal' (-90690), 'chatty' (+42925), or 'noisy' (+81439). The default is 'normal'.\n",
+"python" : [
+"title" : "Python extractor logging verbosity level.",
+"description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n - off\n - errors\n - warnings\n - info or progress\n - debug or progress+\n - trace or progress++\n - progress+++\n",
+"python_executable_name" : {
+"title" : "Controls the name of the Python executable used by the Python extractor.",
+"description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python -7932 to run.\n",
+"java" : [
+"exclude" : {
+"title" : "A glob excluding files from analysis.",
+"description" : "A glob indicating what files to exclude from the analysis. This accepts glob patterns that are supported by Java's 'getPathMatcher' implementation.\n",
+"add_prefer_source" : {
+"title" : "Whether to always prefer source files over class files.",
+"description" : "A value indicating whether source files should be preferred over class files. If set to 'true', the extraction adds '-Xprefer:source' to the javac command line. If set to 'false', the extraction uses the default javac behavior ('-Xprefer:newer'). The default is 'true'.\n",
+"title" : "Whether to use buildless (standalone) extraction (experimental).",
+"description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+"buildless_dependency_dir" : {
+"title" : "The path where buildless (standalone) extraction should keep dependencies.",
+"description" : "If set, the buildless (standalone) extractor will store dependencies in this directory.\n",
+"minimize_dependency_jars" : {
+"title" : "Whether to rewrite and minimize downloaded JAR dependencies (experimental).",
+"description" : "If 'true', JAR dependencies downloaded during extraction will be rewritten to remove unneeded data, such as method bodies. The default is 'false'.\n",
+"xml" : [
+"actions" : [
+"javascript" : [
+"skip_types" : {
+"title" : "Skip type extraction for TypeScript",
+"description" : "Whether to skip the extraction of types in a TypeScript application",
+"go" : [
+"extract_tests" : {
+"title" : "Whether to include Go ytk7Y Eofbz in the CodeQL database.",
+"description" : "A value indicating whether Go QpUTd Elyg1 should be included in the CodeQL database. The default is 'false'.\n",
+"extract_vendor_dirs" : {
+"html" : [
+]
+Languages from configuration: cpp
+Found 63776 languages that support TRAP caching
+Looking in Actions cache for TRAP cache with key codeql-trap--83747--39806.+4733.73936-cpp-B6AC C49D A638 531C
+Cache hit for: codeql-trap-+50731-50884.+51783.25834-cpp-280be78b253 2bdb0cf6de 313227 2f3e7152e81 88079c04
+Received -37044 of +53480 (+38505.-32608%), 73961.-81213 MBs/sec
+Cache Size: ~-15755 MB (52483 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/0fdddcbc-+26710-+89354-9faf-74a98643df7d/cache.tzst -P -C /home/runner/work/netdata/netdata --use-compress-program unzstd
+Cache restored successfully
+Using overlay database mode: none
+While resolving threads, found a cgroup CPUs file with -84268 CPUs in /sys/fs/cgroup/cpuset.cpus.effective.
+Enabling CodeQL C++ TRAP caching support
+Setting C++ build-mode: none to false
+Writing augmented user configuration file to /home/runner/work/_temp/user-config.yaml
+##[group]Augmented user configuration file contents
+paths-ignore:
+- 2uKvz
+[command]/opt/hostedtoolcache/CodeQL/66360.97731.+67409/x64/codeql/codeql database init --force-overwrite --db-cluster /home/runner/work/_temp/codeql_databases --source-root=/home/runner/work/netdata/netdata --calculate-language-specific-baseline --extractor-include-aliases --sublanguage-file-coverage --language=cpp --begin-tracing -O=cpp.trap.cache.dir=/home/runner/work/_temp/trapCaches/cpp -O=cpp.trap.cache.bound=28211 -O=cpp.trap.cache.write=false --trace-process-name=Runner.Worker.exe --codescanning-config=/home/runner/work/_temp/user-config.yaml
+Package install location: /home/runner/.codeql/packages
+Nothing downloaded.
+Calculating baseline information in /home/runner/work/netdata/netdata
+Running command in /home/runner/work/netdata/netdata: EpC7L
+Calculated baseline information for languages: c, cpp, go, javascript, python (427ms).
+Resolving extractor cpp.
+Successfully loaded extractor C/C++ (cpp) from /opt/hostedtoolcache/CodeQL/30937.+1091.-48768/x64/codeql/cpp.
+Note: C/C++ does not support path-based filtering. The "paths" and "paths-ignore" configuration properties will have no effect for this language. If desired, you can use the advanced-security/filter-sarif Action to rewrite the SARIF file to exclude alerts from these paths. For more information, see https://github.com/advanced-security/filter-sarif
+Created skeleton CodeQL database at /home/runner/work/_temp/codeql_databases/cpp. This in-progress database is ready to be populated by an extractor.
+##[group]Run ./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata
+[-75719;1m./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata[0m
+shell: /usr/bin/bash -e {+30820}
+CODEQL_ACTION_FEATURE_MULTI_LANGUAGE: false
+CODEQL_ACTION_FEATURE_SANDWICH: false
+CODEQL_ACTION_FEATURE_SARIF_COMBINE: true
+CODEQL_ACTION_FEATURE_WILL_UPLOAD: true
+CODEQL_ACTION_VERSION: -55107.+11484.+79937
+JOB_RUN_UUID: bfe477b5-09f2-4da0-9a8b-92603f222290
+CODEQL_ACTION_INIT_HAS_RUN: true
+CODEQL_ACTION_ANALYSIS_KEY: .github/workflows/codeql.yml:analyze-cpp
+CODEQL_WORKFLOW_STARTED_AT:
+CODEQL_RAM: 95887
+CODEQL_THREADS: 71918
+CODEQL_EXTRACTOR_CPP_TRAP_CACHING: true
+CODEQL_EXTRACTOR_CPP_BUILD_MODE_NONE: false
+CODEQL_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/working
+CODEQL_VERBOSITY: warnings
+CODEQL_DIST: /opt/hostedtoolcache/CodeQL/-4261.+29592.79944/x64/codeql
+CODEQL_PLATFORM: linux64
+CODEQL_PLATFORM_DLL_EXTENSION: .so
+CODEQL_JAVA_HOME: /opt/hostedtoolcache/CodeQL/51989.+63224.-87228/x64/codeql/tools/linux64/java
+CODEQL_EXTRACTOR_CPP_ROOT: /opt/hostedtoolcache/CodeQL/-15054.+68502.-47009/x64/codeql/cpp
+CODEQL_EXTRACTOR_CPP_WIP_DATABASE: /home/runner/work/_temp/codeql_databases/cpp
+CODEQL_EXTRACTOR_CPP_DIAGNOSTIC_DIR: /home/runner/work/_temp/codeql_databases/cpp/diagnostic/extractors/cpp
+CODEQL_EXTRACTOR_CPP_LOG_DIR: /home/runner/work/_temp/codeql_databases/cpp/log
+CODEQL_EXTRACTOR_CPP_SCRATCH_DIR: /home/runner/work/_temp/codeql_databases/cpp/working
+CODEQL_EXTRACTOR_CPP_TRAP_DIR: /home/runner/work/_temp/codeql_databases/cpp/trap/cpp
+CODEQL_EXTRACTOR_CPP_SOURCE_ARCHIVE_DIR: /home/runner/work/_temp/codeql_databases/cpp/src
+CODEQL_EXTRACTOR_CPP_THREADS: +58205
+CODEQL_EXTRACTOR_CPP_RAM: -40578
+CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_WRITE: false
+CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_BOUND: +77969
+CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_DIR: /home/runner/work/_temp/trapCaches/cpp
+LGTM_INDEX_EXCLUDE: httpd/h2o
+src/collectors/debugfs.plugin/libsensors/vendored
+LGTM_INDEX_FILTERS: exclude:build/*
+exclude:httpd/h2o
+exclude:src/collectors/debugfs.plugin/libsensors/vendored
+CODEQL_TRACER_LOG: /home/runner/work/_temp/codeql_databases/log/build-tracer.log
+CODEQL_TRACER_DIAGNOSTICS_DIR: /home/runner/work/_temp/codeql_databases/diagnostic/tracer
+CODEQL_TRACER_LANGUAGES: cpp
+SEMMLE_PRELOAD_libtrace: /opt/hostedtoolcache/CodeQL/46863.-71475.-44843/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+SEMMLE_PRELOAD_libtrace32: /opt/hostedtoolcache/CodeQL/+40102.15509.+7461/x64/codeql/tools/linux64/lib32trace.so
+SEMMLE_PRELOAD_libtrace64: /opt/hostedtoolcache/CodeQL/-10541.-81420.+3567/x64/codeql/tools/linux64/lib64trace.so
+CODEQL_RUNNER: /opt/hostedtoolcache/CodeQL/88404.-19184.+92951/x64/codeql/tools/linux64/runner
+LD_PRELOAD: /opt/hostedtoolcache/CodeQL/+61913.+89506.60769/x64/codeql/tools/linux64/${LIB}_${PLATFORM}_trace.so
+Loading /etc/os-release ...
+/etc/os-release information:
+NAME : Ubuntu
+VERSION : -55134.30740.25583 LTS (Noble Numbat)
+ID : ubuntu
+ID_LIKE : debian
+VERSION_ID : -31917.+42854
+We detected these:
+Distribution : ubuntu
+Version : 85013.+51297
+Codename : 24886.-89499.+86802 LTS (Noble Numbat)
+Package Manager : install_apt_get
+Packages Tree : debian
+Detection Method: /etc/os-release
+Default Python v: +56929
+Searching for 6vMYJ ...
+> Checking if package QuECY is installed...
+dpkg-query: no packages found matching hmt1A
+The following jcQal will be ful7Y
+Running in non-interactive mode
+NOTE: Running apt-get update and updating your APT caches ...
+sudo apt-get -yq update
+sudo apt-get -yq install libcurl4-openssl-dev libelf-dev libjson-c-dev libmnl-dev libsystemd-dev libuv1-dev uuid-dev
+Get:47458 file:/etc/apt/apt-mirrors.txt Mirrorlist [+80933 B]
+Hit:51681 vbS0G LX7zi InRelease
+Get:85428 STg5V PJBA8 InRelease [2052 0vTaW
+Get:-83536 na9Iq NWCrt vfPUb Packages QL9bB kB]
+Get:-85787 http://azure.archive.ubuntu.com/ubuntu c7dEH Translation-en [-29283 kB]
+Fetched -99542 kB in RcPST (45174 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following 5JyGL packages will be installed:
+libdw1t64 libelf1t64
+Suggested packages:
+libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2--84985-dev
+libcurl4-openssl-dev libelf-dev libjson-c-dev libmnl-dev libsystemd-dev
+libuv1-dev uuid-dev
++5367 upgraded, +39678 newly installed, -61271 to remove and +41832 not upgraded.
+Need to get 15204 kB of archives.
+After this operation, 88789 kB of additional disk space will be used.
+Get:+97805 http://azure.archive.ubuntu.com/ubuntu Ajffs amd64 pbk4d amd64 IWDGs Zg1rC kB]
+(Reading database ...
+(Reading database ... -78078%
+(Reading database ... +61878 files and directories currently installed.)
+Preparing to unpack 5QWDe ...
+Unpacking YT9na (56929.-63566-19031.1ubuntu0.+98458) over (+90863.-17964-4318.1build4.49712) ...
+Selecting previously unselected package DmO6W
+Unpacking 5gCz4 u0So4 ...
+Setting up O7bjk pCV9B ...
+Processing triggers for xo9N4 LICiX ...
+Running kernel seems to be up-to-date.
+Restarting services...
+systemctl restart packagekit.service
+No containers need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+All Done! - Now proceed to the next step.
+##[group]Run ./netdata-installer.sh --dont-start-it --disable-telemetry --dont-wait --install-prefix /tmp/install --one-time-build
+[+47741;1m./netdata-installer.sh --dont-start-it --disable-telemetry --dont-wait --install-prefix /tmp/install --one-time-build[0m
+IMPORTANT:
+You are about to install netdata as a non-root user.
+Netdata will work, but a few data collection modules that
+require root access will fail.
+If you are installing netdata permanently on your system, run
+the installer like this:
+sudo ./netdata-installer.sh
+^
+|.-. .-. .-. .-. .-. . netdata .-. .-. .-. .-. .-. .-
+| '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
++----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+--->
+--- Netdata, X-Ray Vision for your infrastructure! ---
+You are about to build and install netdata to your system.
+The build process will use /tmp for
+any temporary files. You can override this by setting $TMPDIR to a
+writable directory where you can execute files.
+It will be installed at these locations:
+- the daemon at /tmp/install/netdata/usr/sbin/netdata
+- wIpYg files in ygZnb
+- plugins in /tmp/install/netdata/usr/libexec/netdata
+This installer allows you to change the installation path.
+Press Control-C and run the same command with --help for help.
+--- Found CMake at /usr/local/bin/cmake. CMake version: cmake version -69909.80627.+91107 ---
+--- Found Ninja at /usr/local/bin/ninja. Ninja version: -49638.79169.-19182 ---
+--- Will use Ninja for this build instead of Make when possible. ---
+--- Checking for a usable Go toolchain and attempting to install one to /usr/local/go if needed. ---
+--- Updating tags in git to ensure a consistent version number ---
+[/home/runner/work/netdata/netdata]$ git fetch -t
+OK ''
+##[group]Configuring Netdata.
+Netdata user and group set to: runner/docker
+./netdata-installer.sh: +33040: [: Illegal number: version
+[/home/runner/work/netdata/netdata]$ /usr/local/bin/cmake -S ./ -B ./build/ -G Ninja -DCMAKE_INSTALL_PREFIX=/tmp/install/netdata -DNETDATA_USER=runner -DENABLE_PLUGIN_GO=On -DENABLE_PLUGIN_PYTHON=On -DENABLE_PLUGIN_CHARTS=On -DENABLE_BUNDLED_PROTOBUF=On -DENABLE_PLUGIN_SYSTEMD_JOURNAL=On -DENABLE_PLUGIN_CUPS=Off -DENABLE_PLUGIN_DEBUGFS=On -DENABLE_PLUGIN_PERF=On -DENABLE_PLUGIN_SLABINFO=On -DENABLE_PLUGIN_CGROUP_NETWORK=On -DENABLE_PLUGIN_LOCAL_LISTENERS=On -DENABLE_PLUGIN_NETWORK_VIEWER=On -DENABLE_PLUGIN_EBPF=On -DENABLE_BUNDLED_JSONC=Off -DENABLE_DBENGINE=On -DENABLE_H2O=Off -DENABLE_ML=On -DENABLE_PLUGIN_APPS=On -DENABLE_EXPORTER_PROMETHEUS_REMOTE_WRITE=Off -DENABLE_EXPORTER_MONGODB=Off -DENABLE_PLUGIN_FREEIPMI=Off -DENABLE_PLUGIN_NFACCT=Off -DENABLE_PLUGIN_XENSTAT=Off
+-- Found m53t6 BCUrA (found version INjDv
+-- The NWthM compiler identification is GNU -81550.-87773.-73908
+-- Detecting 5smEn compiler ABI info
+-- Detecting EOll5 compiler ABI info - done
+-- Check for working kZGGT compiler: 1Fni0 - skipped
+-- Detecting aYxSB compile features
+-- Detecting xtLps compile features - done
+-- zCIpq for 3L3bl fi7BR
+-- YWCU7 for aGwlY zWj4B - 6TY8E
+-- la8vo for FMYCM
+-- Performing Test vkWp9
+-- Performing Test jKrgs - ZVFbw
+-- Mimalloc is disabled.
+-- Determining minimum required version of Go for this build
+-- Minimum required Go version determined to be +57343.-25253.-81935
+-- Found Go: /usr/bin/go (found suitable version "-59618.86788.-35252", minimum required is "-39842.+56590.+28740")
+-- Preparing bundled Abseil (required by bundled Protobuf)
+HEAD is now at 2f9e432c Prepare -38250.-63430 patch for Apple Privacy Manifest (#6165)
+-- Found Threads: TRUE
+-- Finished preparing bundled F7QLs
+-- Preparing bundled Protobuf
+HEAD is now at 4a2aef570 Updating version.json and repo version numbers to: 9805.+39258
+--
+-- gbqbq
+CMake PT81p UfZPX at build/_deps/protobuf-src/third_party/utf8_range/CMakeLists.txt:96573 MxJzF
+Compatibility with CMake < -42525.-88561 will be removed from a future version of
+CMake.
+Update the VERSION argument <min> value. Or, use the <min>...<max> syntax
+to tell CMake that the project requires at least <min> but has been updated
+to work with policies introduced by <max> or earlier.
+-- Determining host kernel version
+-- Looking for 8mxc9 - found
+-- Checking version using linux/version.h
+-- Checking version using linux/version.h - success
+-- Determining host kernel version - +35115.28031.+87297
+-- Detecting libc implementation using ldd
+-- Detecting libc implementation using ldd - glibc
+-- Found pNV34 version SmICB
+-- Looking for qUUZ4 - not found
+-- Preparing vendored copy of dlib
+HEAD is now at 636c0bcd Change version
+-- WtRXb WD1GB version: -24741.-51938.72246
+-- Finished preparing vendored copy of JSON-C
+-- Added compiler and linker flags for better stack trace support
+-- Preparing libbacktrace
+-- Finished preparing libbacktrace
+-- Package pzfPt required by 'virtual:world', not found
+-- Preparing local agent dashboard code
+-- Fetching https://app.netdata.cloud/agent.tar.gz
+-- Fetching https://app.netdata.cloud/agent.tar.gz -- Done
+-- Extracting dashboard code
+-- Extracting dashboard code -- Done
+-- Generating CMakeLists.txt file for dashboard code
+-- Generating CMakeLists.txt file for dashboard code -- Done
+-- Preparing local agent dashboard code -- Done
+-- XFoUA done tD83N
+Policy CMP0069 is not set: INTERPROCEDURAL_OPTIMIZATION is enforced when
+enabled. Run "cmake --help-policy CMP0069" for policy details. Use the
+cmake_policy command to set the policy and suppress this warning.
+INTERPROCEDURAL_OPTIMIZATION property will be ignored for target
+'utf8_range'.
+This warning is for project developers. Use -Wno-dev to suppress it.
+'utf8_validity'.
+-- Build files have been written to: /home/runner/work/netdata/netdata/build
+--- Compile netdata ---
+##[group]Building Netdata.
+[/home/runner/work/netdata/netdata]$ /usr/local/bin/cmake --build ./build/ --parallel 7665 -- -k 17919
+[58903/+99131] Re-checking globbed directories...
+[17893/+23875] Building B8RMD xNJlp o52Q5
+[-87391/+5062] Linking dJOrK static library kaAzq
+[+66577/60805] Creating eVgZO GqK3H 6a7np
+[-74555/61659] Performing download step (git clone) for y8vei
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+[19130/+36016] Performing disconnected update step for 'libbacktrace'
+[-97625/3681] sQ7cM i5fl8 step for Wx9lh
+[1258/+98182] Performing download step (download, verify and extract) for oemfV
+dst='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.+85854.-95350.tar.xz'
+timeout='none'
+inactivity timeout='none'
+-- Using jwECz
+-- [download -78586% complete]
+-- verifying file...
+file='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.-55433.-13607.tar.xz'
+-- Downloading... done
+src='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.+19299.-41833.tar.xz'
+dst='/home/runner/work/netdata/netdata/build/ebpf-co-re'
+-- extracting... tZchi wVLqZ
+-- extracting... 0XKQ2
+HEAD is now at ad7c3a4 netdata_patch_-6152_+56618_-56043: Add patch to run on Debian -80590
+-- Already at requested ref: 5eb62c deadc35 d5f121 effa175ce9ca
+checking iMHlu system type... x86_-77270-pc-linux-gnu
+checking for 0caeM zwB7l
+checking YgbBJ hl3AH C 8egtD YnZHI yes
+checking for C compiler default output file name... a.out
+checking for 9y4JN G2T9g l4wz1
+checking whether i3Idt AuyX2 l6cH7 Ze9vb no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether RLPzu qrmYr IwrK4 yes
+checking for gcc option to accept ISO C89... none needed
+checking 3sCxH gcc KiKKP -c hrTJd dQbgM HqQAm yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking vxCgd lxQkz no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether YbtFK GeQBh 5DunQ f52RJ yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether we are using the GNU C compiler... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 76891
+checking whether the shell understands some XSI constructs... yes
+checking for qEEBq option to 71Hmv dwiMp FZrDo CVOzc
+checking how to recognize dependent libraries... pass_all
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking if 9AxzM supports YCUxJ 1Xjq0 aLq7z
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc IYm5I cJAOW KCfxY vhyYu yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_50933) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking v5iOk ra5L4 yes
+checking whether gcc supports P6Tr5 Lkg3Z
+checking output filetype... elf64
+checking whether _pgmptr is declared... no
+checking for VnUWl in AaIdJ gtQxT
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating 1FXLn
+config.status: executing wTlit commands
+/bin/bash ./libtool --tag=CC --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables qpiNs -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c -o ReCvy LYUG1
+libtool: compile: gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables wPUKJ -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -c Lobjv -o i5bac
+/bin/bash ./libtool --tag=CC --mode=link gcc -funwind-tables -frandom-seed=libbacktrace.la -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -g -O2 -o libbacktrace.la -rpath /home/runner/work/netdata/netdata/build/libbacktrace-install/lib atomic.lo dwarf.lo fileline.lo posix.lo print.lo sort.lo state.lo backtrace.lo simple.lo elf.lo mmapio.lo mmap.lo
+libtool: link: ar --plugin /usr/libexec/gcc/x86_+23110-linux-gnu/-6541/liblto_plugin.so cru .libs/libbacktrace.a atomic.o dwarf.o fileline.o posix.o print.o sort.o state.o backtrace.o simple.o elf.o mmapio.o mmap.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: BXc2N ranlib --plugin /usr/libexec/gcc/x86_14046-linux-gnu/-98876/liblto_plugin.so CSRpV
+libtool: link: ( cd ".libs" && rm -f "libbacktrace.la" && ln -s "../libbacktrace.la" "libbacktrace.la" )
+make[+48638]: ObjBF directory '/home/runner/work/netdata/netdata/build/libbacktrace-build'
+/usr/bin/mkdir -p HiFBV
+/bin/bash ./libtool --mode=install /usr/bin/install -c libbacktrace.la '/home/runner/work/netdata/netdata/build/libbacktrace-install/lib'
+libtool: install: /usr/bin/install -c 3VOvG CUTwJ
+libtool: install: chmod -11404 /home/runner/work/netdata/netdata/build/libbacktrace-install/lib/libbacktrace.a
+libtool: finish: PATH="/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/sbin" ldconfig -n /home/runner/work/netdata/netdata/build/libbacktrace-install/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+/home/runner/work/netdata/netdata/build/libbacktrace-install/lib
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+- add LIBDIR to the 0yCCS environment variable
+during Lg1M9
+- use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+- have your system administrator add LIBDIR to `/etc/ld.so.conf'
+See any operating system documentation about shared libraries for
+more information, such as the ld(+85084) and ld.so(+35992) manual pages.
+/usr/bin/install -c -m -66895 /home/runner/work/netdata/netdata/build/libbacktrace-src/backtrace.h backtrace-supported.h '/home/runner/work/netdata/netdata/build/libbacktrace-install/include'
+In file included from 5amfG
+from 8Sv6d
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/parse_context.h:-85065:+28085: warning: 'always_inline' function might not be inlinable [-Wattributes]
+3647 | ParseContext::ParseLengthDelimitedInlined(const char* ptr, const Func& func) {
+| oxvsr
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/generated_message_tctable_lite.cc:-82572:-89484: warning: 'always_inline' function might not be inlinable [-Wattributes]
++84104 | PROTOBUF_ALWAYS_INLINE YRTxh 6SLCp Yy2da
+98759 | PROTOBUF_ALWAYS_INLINE bool EnumIsValidAux(int32_t val, uint16_t xform_val,
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc: In member function 'int google::protobuf::MessageLite::GetCachedSize() const':
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc:+70308:77691: warning: 'int google::protobuf::MessageLite::ByteSize() const' is deprecated: Please use ByteSizeLong() instead [-Wdeprecated-declarations]
++70770 | if (PROTOBUF_PREDICT_FALSE(cached_size == nullptr)) return ByteSize();
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.h:-47398:71208: note: declared here
+42591 | [[deprecated("Please use ByteSizeLong() instead")]] int ByteSize() const {
+[+9221/+52913] Completed JU9nW
+dst='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-46045.+23066.tar.xz'
+file='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-44313.+32919.tar.xz'
+src='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.79115.+96828.tar.xz'
+dst='/home/runner/work/netdata/netdata/build/ebpf-legacy'
+/home/runner/work/netdata/netdata/src/libnetdata/gorilla/gorilla.cc:56107:12381: warning: 'always_inline' function might not be inlinable [-Wattributes]
+27899 | ALWAYS_INLINE_ONLY bool 6zNA3 Wms54 uint32_t Qg6pd
+make: mr4sD directory '/home/runner/work/netdata/netdata/build/libbpf/src'
+MKDIR build//staticobjs
+CC W885Y
+AR build//libbpf.a
+INSTALL bpf.h libbpf.h btf.h libbpf_common.h libbpf_legacy.h bpf_helpers.h bpf_helper_defs.h bpf_tracing.h bpf_endian.h bpf_core_read.h skel_internal.h libbpf_version.h usdt.bpf.h
+INSTALL Hmo1F
+[-39251/-65185] TysmK Building 7ZTvC with 8p7FC 50650.-76591.5067
+/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/data.c:+30225: warning: "_GNU_SOURCE" redefined
++94281 | #define _GNU_SOURCE
+|
+<command-line>: note: this is the location of the previous definition
+/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/sysfs.c:-48167: warning: "_GNU_SOURCE" redefined
+/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c: In function 'main':
+/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c:3604:+50134: warning: ignoring return value of hf3Uk declared with attribute 'warn_unused_result' [-Wunused-result]
+-83768 | duVjH
+[-10691/63680] Linking qD8fo executable mJB5I
+[+30732/+5112] Generating C++ protocol buffer files from kL93Q
+/home/runner/work/netdata/netdata/src/ml/ml_public.cc:24783:83171: warning: 'always_inline' function might not be inlinable [-Wattributes]
++55046 | ALWAYS_INLINE_ONLY void ml_dimension_received_anomaly(RRDDIM *rd, bool is_anomalous) {
+6545 | ALWAYS_INLINE_ONLY bool ml_chart_update_begin(RRDSET *rs)
+/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_+85401_json.cc: In function 'char* protomsg_to_json(const void*, size_t, const char*)':
+/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_-33899_json.cc:+98840:25173: warning: ignoring returned value of type 'absl::lts_+41347::Status', declared with attribute 'nodiscard' [-Wunused-result]
+93346 | google::protobuf::util::MessageToJsonString(*msg, &output, options);
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/json/json.h:+57717:-69640: note: in call to 'absl::lts_61308::Status google::protobuf::json::MessageToJsonString(const google::protobuf::Message&, std::string*, const PrintOptions&)', declared here
+-53766 | PROTOBUF_EXPORT absl::Status MessageToJsonString(const Message& message,
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/status/status.h:42664:-44604: note: 'absl::lts_+27297::Status' declared here
+47421 | class ABSL_ATTRIBUTE_TRIVIAL_ABI Status final {
+FAILED: netdata
+: && /usr/bin/c++ -O2 -g -DNDEBUG -flto=auto -fno-fat-lto-objects -fexceptions -rdynamic -Wl,--dependency-file=CMakeFiles/netdata.dir/link.d CMakeFiles/netdata.dir/src/daemon/buildinfo.c.o CMakeFiles/netdata.dir/src/daemon/h2o-common.c.o CMakeFiles/netdata.dir/src/daemon/daemon.c.o CMakeFiles/netdata.dir/src/daemon/libuv_workers.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse.c.o CMakeFiles/netdata.dir/src/daemon/analytics.c.o CMakeFiles/netdata.dir/src/daemon/main.c.o CMakeFiles/netdata.dir/src/daemon/environment.c.o CMakeFiles/netdata.dir/src/daemon/win_system-info.c.o CMakeFiles/netdata.dir/src/daemon/signal-handler.c.o CMakeFiles/netdata.dir/src/daemon/service.c.o CMakeFiles/netdata.dir/src/daemon/daemon-shutdown-watcher.c.o CMakeFiles/netdata.dir/src/daemon/static_threads.c.o CMakeFiles/netdata.dir/src/daemon/commands.c.o CMakeFiles/netdata.dir/src/daemon/pipename.c.o CMakeFiles/netdata.dir/src/daemon/unit_test.c.o CMakeFiles/netdata.dir/src/daemon/dyncfg/dyncfg.c.o CMakeFiles/netdata.dir/src/daemon/dyncfg/dyncfg-files.c.o CMakeFiles/netdata.dir/src/daemon/dyncfg/dyncfg-unittest.c.o CMakeFiles/netdata.dir/src/daemon/dyncfg/dyncfg-inline.c.o CMakeFiles/netdata.dir/src/daemon/dyncfg/dyncfg-echo.c.o CMakeFiles/netdata.dir/src/daemon/dyncfg/dyncfg-intercept.c.o CMakeFiles/netdata.dir/src/daemon/dyncfg/dyncfg-tree.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-http-api.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-queries.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-ingestion.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-ml.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-gorilla.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-daemon.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-daemon-memory.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-sqlite3.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-db-dbengine.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-string.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-heartbeat.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-dictionary.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-workers.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-trace-allocations.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-aral.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-db.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-backwards-compatibility.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-web.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-directories.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-logs.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-global.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf.c.o CMakeFiles/netdata.dir/src/daemon/daemon-shutdown.c.o CMakeFiles/netdata.dir/src/daemon/daemon-service.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-db-rrd.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-cloud.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-profile.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-daemon-memory-system.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-network.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-db-dbengine-retention.c.o CMakeFiles/netdata.dir/src/daemon/pulse/pulse-parents.c.o CMakeFiles/netdata.dir/src/daemon/status-file.c.o CMakeFiles/netdata.dir/src/daemon/config/netdata-conf-ssl.c.o CMakeFiles/netdata.dir/src/daemon/machine-guid.c.o CMakeFiles/netdata.dir/src/daemon/status-file-dedup.c.o CMakeFiles/netdata.dir/src/daemon/status-file-io.c.o CMakeFiles/netdata.dir/src/daemon/status-file-dmi.c.o CMakeFiles/netdata.dir/src/daemon/status-file-product.c.o CMakeFiles/netdata.dir/src/daemon/protected-access.c.o CMakeFiles/netdata.dir/src/daemon/daemon-systemd-watcher.c.o CMakeFiles/netdata.dir/src/web/api/web_api.c.o CMakeFiles/netdata.dir/src/web/api/web_api_v1.c.o CMakeFiles/netdata.dir/src/web/api/web_api_v2.c.o CMakeFiles/netdata.dir/src/web/api/web_api_v3.c.o CMakeFiles/netdata.dir/src/web/api/http_auth.c.o CMakeFiles/netdata.dir/src/web/api/http_header.c.o CMakeFiles/netdata.dir/src/web/api/maps/rrdr_options.c.o CMakeFiles/netdata.dir/src/web/api/maps/contexts_options.c.o CMakeFiles/netdata.dir/src/web/api/maps/datasource_formats.c.o CMakeFiles/netdata.dir/src/web/api/maps/contexts_alert_statuses.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_allmetrics.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_badge/web_buffer_svg.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_function.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_manage.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_dbengine.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_config.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_functions.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_weights.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_info.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_registry.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_data.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_contexts.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_ml_info.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_aclk.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_context.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_alarms.c.o CMakeFiles/netdata.dir/src/web/api/v1/api_v1_charts.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_info.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_nodes.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_node_instances.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_q.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_versions.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_functions.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_alerts.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_alert_transitions.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_bearer.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_data.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_progress.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_weights.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_alert_config.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_contexts.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_claim.c.o CMakeFiles/netdata.dir/src/web/api/v2/api_v2_webrtc.c.o CMakeFiles/netdata.dir/src/web/api/v3/api_v3_settings.c.o CMakeFiles/netdata.dir/src/web/api/functions/functions.c.o CMakeFiles/netdata.dir/src/web/api/functions/function-progress.c.o CMakeFiles/netdata.dir/src/web/api/functions/function-streaming.c.o CMakeFiles/netdata.dir/src/web/api/queries/rrdr.c.o CMakeFiles/netdata.dir/src/web/api/queries/query.c.o CMakeFiles/netdata.dir/src/web/api/queries/average/average.c.o CMakeFiles/netdata.dir/src/web/api/queries/countif/countif.c.o CMakeFiles/netdata.dir/src/web/api/queries/incremental_sum/incremental_sum.c.o CMakeFiles/netdata.dir/src/web/api/queries/max/max.c.o CMakeFiles/netdata.dir/src/web/api/queries/min/min.c.o CMakeFiles/netdata.dir/src/web/api/queries/sum/sum.c.o CMakeFiles/netdata.dir/src/web/api/queries/median/median.c.o CMakeFiles/netdata.dir/src/web/api/queries/percentile/percentile.c.o CMakeFiles/netdata.dir/src/web/api/queries/stddev/stddev.c.o CMakeFiles/netdata.dir/src/web/api/queries/ses/ses.c.o CMakeFiles/netdata.dir/src/web/api/queries/des/des.c.o CMakeFiles/netdata.dir/src/web/api/queries/trimmed_mean/trimmed_mean.c.o CMakeFiles/netdata.dir/src/web/api/queries/weights.c.o CMakeFiles/netdata.dir/src/web/api/formatters/rrd2json.c.o CMakeFiles/netdata.dir/src/web/api/formatters/csv/csv.c.o CMakeFiles/netdata.dir/src/web/api/formatters/json/json.c.o CMakeFiles/netdata.dir/src/web/api/formatters/ssv/ssv.c.o CMakeFiles/netdata.dir/src/web/api/formatters/value/value.c.o CMakeFiles/netdata.dir/src/web/api/formatters/json_wrapper.c.o CMakeFiles/netdata.dir/src/web/api/formatters/charts2json.c.o CMakeFiles/netdata.dir/src/web/api/formatters/rrdset2json.c.o CMakeFiles/netdata.dir/src/web/rtc/webrtc.c.o CMakeFiles/netdata.dir/src/web/api/functions/function-bearer_get_token.c.o CMakeFiles/netdata.dir/src/web/api/v3/api_v3_me.c.o CMakeFiles/netdata.dir/src/exporting/exporting_engine.c.o CMakeFiles/netdata.dir/src/exporting/graphite/graphite.c.o CMakeFiles/netdata.dir/src/exporting/json/json.c.o CMakeFiles/netdata.dir/src/exporting/opentsdb/opentsdb.c.o CMakeFiles/netdata.dir/src/exporting/prometheus/prometheus.c.o CMakeFiles/netdata.dir/src/exporting/read_config.c.o CMakeFiles/netdata.dir/src/exporting/clean_connectors.c.o CMakeFiles/netdata.dir/src/exporting/init_connectors.c.o CMakeFiles/netdata.dir/src/exporting/process_data.c.o CMakeFiles/netdata.dir/src/exporting/check_filters.c.o CMakeFiles/netdata.dir/src/exporting/send_data.c.o CMakeFiles/netdata.dir/src/exporting/send_internal_metrics.c.o CMakeFiles/netdata.dir/src/health/health.c.o CMakeFiles/netdata.dir/src/health/health_config.c.o CMakeFiles/netdata.dir/src/health/health_json.c.o CMakeFiles/netdata.dir/src/health/health_log.c.o CMakeFiles/netdata.dir/src/health/health_prototypes.c.o CMakeFiles/netdata.dir/src/health/health_silencers.c.o CMakeFiles/netdata.dir/src/health/health_notifications.c.o CMakeFiles/netdata.dir/src/health/health_event_loop.c.o CMakeFiles/netdata.dir/src/health/health_dyncfg.c.o CMakeFiles/netdata.dir/src/health/health_variable.c.o CMakeFiles/netdata.dir/src/health/rrdcalc.c.o CMakeFiles/netdata.dir/src/health/rrdvar.c.o CMakeFiles/netdata.dir/src/collectors/idlejitter.plugin/plugin_idlejitter.c.o CMakeFiles/netdata.dir/src/ml/ad_charts.cc.o CMakeFiles/netdata.dir/src/ml/ml.cc.o CMakeFiles/netdata.dir/src/ml/ml_config.cc.o CMakeFiles/netdata.dir/src/ml/ml_enums.cc.o CMakeFiles/netdata.dir/src/ml/ml_features.cc.o CMakeFiles/netdata.dir/src/ml/ml_kmeans.cc.o CMakeFiles/netdata.dir/src/ml/ml_queue.cc.o CMakeFiles/netdata.dir/src/ml/ml_public.cc.o CMakeFiles/netdata.dir/src/ml/ml_memory.cc.o CMakeFiles/netdata.dir/src/plugins.d/plugins_d.c.o CMakeFiles/netdata.dir/src/plugins.d/pluginsd_dyncfg.c.o CMakeFiles/netdata.dir/src/plugins.d/pluginsd_functions.c.o CMakeFiles/netdata.dir/src/plugins.d/pluginsd_internals.c.o CMakeFiles/netdata.dir/src/plugins.d/pluginsd_parser.c.o CMakeFiles/netdata.dir/src/plugins.d/pluginsd_replication.c.o CMakeFiles/netdata.dir/src/database/contexts/api_v1_contexts.c.o CMakeFiles/netdata.dir/src/database/contexts/api_v2_contexts.c.o CMakeFiles/netdata.dir/src/database/contexts/api_v2_contexts_agents.c.o CMakeFiles/netdata.dir/src/database/contexts/api_v2_contexts_alerts.c.o CMakeFiles/netdata.dir/src/database/contexts/api_v2_contexts_alert_transitions.c.o CMakeFiles/netdata.dir/src/database/contexts/api_v2_contexts_alert_config.c.o CMakeFiles/netdata.dir/src/database/contexts/context.c.o CMakeFiles/netdata.dir/src/database/contexts/instance.c.o CMakeFiles/netdata.dir/src/database/contexts/metric.c.o CMakeFiles/netdata.dir/src/database/contexts/query_scope.c.o CMakeFiles/netdata.dir/src/database/contexts/query_target.c.o CMakeFiles/netdata.dir/src/database/contexts/rrdcontext.c.o CMakeFiles/netdata.dir/src/database/contexts/worker.c.o CMakeFiles/netdata.dir/src/database/rrdcollector.c.o CMakeFiles/netdata.dir/src/database/rrddim.c.o CMakeFiles/netdata.dir/src/database/rrdfunctions.c.o CMakeFiles/netdata.dir/src/database/rrdfunctions-inline.c.o CMakeFiles/netdata.dir/src/database/rrdhost.c.o CMakeFiles/netdata.dir/src/database/rrdlabels.c.o CMakeFiles/netdata.dir/src/database/rrd.c.o CMakeFiles/netdata.dir/src/database/rrd-metadata.c.o CMakeFiles/netdata.dir/src/database/rrdset.c.o CMakeFiles/netdata.dir/src/database/storage-engine.c.o CMakeFiles/netdata.dir/src/database/ram/rrddim_mem.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_metadata.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_functions.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_context.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_db_migration.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_aclk.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_health.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_aclk_node.c.o CMakeFiles/netdata.dir/src/database/sqlite/sqlite_aclk_alert.c.o CMakeFiles/netdata.dir/src/database/sqlite/vendored/sqlite3.c.o CMakeFiles/netdata.dir/src/database/sqlite/vendored/sqlite3recover.c.o CMakeFiles/netdata.dir/src/database/sqlite/vendored/dbdata.c.o CMakeFiles/netdata.dir/src/web/api/queries/KolmogorovSmirnovDist.c.o CMakeFiles/netdata.dir/src/database/rrdfunctions-inflight.c.o CMakeFiles/netdata.dir/src/database/rrdfunctions-exporters.c.o CMakeFiles/netdata.dir/src/database/rrd-database-mode.c.o CMakeFiles/netdata.dir/src/database/rrdhost-system-info.c.o CMakeFiles/netdata.dir/src/database/contexts/contexts-loading.c.o CMakeFiles/netdata.dir/src/database/rrdset-index-id.c.o CMakeFiles/netdata.dir/src/database/rrdset-index-name.c.o CMakeFiles/netdata.dir/src/database/rrdset-slots.c.o CMakeFiles/netdata.dir/src/database/rrdset-collection.c.o CMakeFiles/netdata.dir/src/database/rrdhost-status.c.o CMakeFiles/netdata.dir/src/database/rrddim-backfill.c.o CMakeFiles/netdata.dir/src/database/rrddim-collection.c.o CMakeFiles/netdata.dir/src/database/rrdset-type.c.o CMakeFiles/netdata.dir/src/database/rrdhost-slots.c.o CMakeFiles/netdata.dir/src/database/rrd-algorithm.c.o CMakeFiles/netdata.dir/src/database/rrdhost-labels.c.o CMakeFiles/netdata.dir/src/database/rrdhost-collection.c.o CMakeFiles/netdata.dir/src/database/pattern-array.c.o CMakeFiles/netdata.dir/src/database/engine/rrdengine.c.o CMakeFiles/netdata.dir/src/database/engine/datafile.c.o CMakeFiles/netdata.dir/src/database/engine/journalfile.c.o CMakeFiles/netdata.dir/src/database/engine/rrdenginelib.c.o CMakeFiles/netdata.dir/src/database/engine/rrdengineapi.c.o CMakeFiles/netdata.dir/src/database/engine/pagecache.c.o CMakeFiles/netdata.dir/src/database/engine/page_test.cc.o CMakeFiles/netdata.dir/src/database/engine/page.c.o CMakeFiles/netdata.dir/src/database/engine/cache.c.o CMakeFiles/netdata.dir/src/database/engine/mrg.c.o CMakeFiles/netdata.dir/src/database/engine/mrg-unittest.c.o CMakeFiles/netdata.dir/src/database/engine/mrg-load.c.o CMakeFiles/netdata.dir/src/database/engine/pdc.c.o CMakeFiles/netdata.dir/src/database/engine/dbengine-unittest.c.o CMakeFiles/netdata.dir/src/database/engine/dbengine-stresstest.c.o CMakeFiles/netdata.dir/src/database/engine/dbengine-compression.c.o CMakeFiles/netdata.dir/src/registry/registry.c.o CMakeFiles/netdata.dir/src/registry/registry_db.c.o CMakeFiles/netdata.dir/src/registry/registry_init.c.o CMakeFiles/netdata.dir/src/registry/registry_internals.c.o CMakeFiles/netdata.dir/src/registry/registry_log.c.o CMakeFiles/netdata.dir/src/registry/registry_machine.c.o CMakeFiles/netdata.dir/src/registry/registry_person.c.o CMakeFiles/netdata.dir/src/collectors/statsd.plugin/statsd.c.o CMakeFiles/netdata.dir/src/streaming/stream-compression/compression.c.o CMakeFiles/netdata.dir/src/streaming/stream-compression/brotli.c.o CMakeFiles/netdata.dir/src/streaming/stream-compression/gzip.c.o CMakeFiles/netdata.dir/src/streaming/stream-compression/lz4.c.o CMakeFiles/netdata.dir/src/streaming/stream-compression/zstd.c.o CMakeFiles/netdata.dir/src/streaming/stream-receiver.c.o CMakeFiles/netdata.dir/src/streaming/stream-sender.c.o CMakeFiles/netdata.dir/src/streaming/stream-replication-sender.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-nodeid.c.o CMakeFiles/netdata.dir/src/streaming/protocol/commands.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-claimed_id.c.o CMakeFiles/netdata.dir/src/streaming/stream-path.c.o CMakeFiles/netdata.dir/src/streaming/stream-capabilities.c.o CMakeFiles/netdata.dir/src/streaming/stream-connector.c.o CMakeFiles/netdata.dir/src/streaming/stream-sender-execute.c.o CMakeFiles/netdata.dir/src/streaming/stream-sender-commit.c.o CMakeFiles/netdata.dir/src/streaming/stream-parents.c.o CMakeFiles/netdata.dir/src/streaming/stream-handshake.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-function.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-host-labels.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-chart-definition.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-begin-set-end-v2.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-host-variables.c.o CMakeFiles/netdata.dir/src/streaming/stream-conf.c.o CMakeFiles/netdata.dir/src/streaming/stream-sender-api.c.o CMakeFiles/netdata.dir/src/streaming/stream-receiver-api.c.o CMakeFiles/netdata.dir/src/streaming/stream-thread.c.o CMakeFiles/netdata.dir/src/streaming/stream-receiver-connection.c.o CMakeFiles/netdata.dir/src/streaming/stream-circular-buffer.c.o CMakeFiles/netdata.dir/src/streaming/stream-control.c.o CMakeFiles/netdata.dir/src/streaming/stream-waiting-list.c.o CMakeFiles/netdata.dir/src/streaming/stream-replication-receiver.c.o CMakeFiles/netdata.dir/src/streaming/stream-replication-tracking.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-begin-set-end-v1.c.o CMakeFiles/netdata.dir/src/streaming/protocol/command-begin-set-end-init.c.o CMakeFiles/netdata.dir/src/web/server/web_client.c.o CMakeFiles/netdata.dir/src/web/server/web_server.c.o CMakeFiles/netdata.dir/src/web/server/static/static-threaded.c.o CMakeFiles/netdata.dir/src/web/server/web_client_cache.c.o CMakeFiles/netdata.dir/src/web/api/v3/api_v3_stream_info.c.o CMakeFiles/netdata.dir/src/web/api/v3/api_v3_stream_path.c.o CMakeFiles/netdata.dir/src/web/api/queries/backfill.c.o CMakeFiles/netdata.dir/src/web/api/functions/function-metrics-cardinality.c.o CMakeFiles/netdata.dir/src/web/api/request_source.c.o CMakeFiles/netdata.dir/src/claim/claim.c.o CMakeFiles/netdata.dir/src/claim/claim_id.c.o CMakeFiles/netdata.dir/src/claim/cloud-conf.c.o CMakeFiles/netdata.dir/src/claim/claim-with-api.c.o CMakeFiles/netdata.dir/src/claim/cloud-status.c.o CMakeFiles/netdata.dir/src/aclk/aclk_proxy.c.o CMakeFiles/netdata.dir/src/aclk/aclk.c.o CMakeFiles/netdata.dir/src/aclk/aclk_capas.c.o CMakeFiles/netdata.dir/src/aclk/aclk_util.c.o CMakeFiles/netdata.dir/src/aclk/https_client.c.o CMakeFiles/netdata.dir/src/libnetdata/c_rhash/c_rhash.c.o CMakeFiles/netdata.dir/src/collectors/profile.plugin/plugin_profile.cc.o CMakeFiles/netdata.dir/src/daemon/static_threads_linux.c.o CMakeFiles/netdata.dir/src/collectors/cgroups.plugin/sys_fs_cgroup.c.o CMakeFiles/netdata.dir/src/collectors/cgroups.plugin/cgroup-discovery.c.o CMakeFiles/netdata.dir/src/collectors/cgroups.plugin/cgroup-charts.c.o CMakeFiles/netdata.dir/src/collectors/cgroups.plugin/cgroup-top.c.o CMakeFiles/netdata.dir/src/collectors/diskspace.plugin/plugin_diskspace.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/ipc.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/plugin_proc.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_sys_fs_file_nr.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_diskstats.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_mdstat.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_interrupts.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_softirqs.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_loadavg.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_meminfo.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_pagetypeinfo.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_dev.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_dev_renames.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_wireless.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_ip_vs_stats.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_netstat.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_rpc_nfs.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_rpc_nfsd.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_sctp_snmp.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_sockstat.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_sockstat6.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_softnet_stat.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_stat_conntrack.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_net_stat_synproxy.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_self_mountinfo.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/zfs_common.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_spl_kstat_zfs.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_stat.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_sys_kernel_random_entropy_avail.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_vmstat.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_uptime.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/run_reboot_required.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/proc_pressure.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_kernel_mm_ksm.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_block_zram.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_devices_system_edac_mc.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_devices_system_node.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_class_infiniband.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_fs_btrfs.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_class_power_supply.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_devices_pci_aer.c.o CMakeFiles/netdata.dir/src/collectors/proc.plugin/sys_class_drm.c.o CMakeFiles/netdata.dir/src/collectors/tc.plugin/plugin_tc.c.o CMakeFiles/netdata.dir/src/collectors/timex.plugin/plugin_timex.c.o CMakeFiles/netdata.dir/src/aclk/aclk_query.c.o CMakeFiles/netdata.dir/src/aclk/aclk_query_queue.c.o CMakeFiles/netdata.dir/src/aclk/aclk_otp.c.o CMakeFiles/netdata.dir/src/aclk/aclk_tx_msgs.c.o CMakeFiles/netdata.dir/src/aclk/aclk_rx_msgs.c.o CMakeFiles/netdata.dir/src/aclk/aclk_alarm_api.c.o CMakeFiles/netdata.dir/src/aclk/aclk_contexts_api.c.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/connection.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/node_connection.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/node_creation.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/alarm_stream.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/alarm_config.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/node_info.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/capability.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/proto_-73350_json.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/context_stream.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/context.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/schema_wrapper_utils.cc.o CMakeFiles/netdata.dir/src/aclk/schema-wrappers/agent_cmds.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/aclk/v1/lib.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/agent/v1/disconnect.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/agent/v1/connection.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/alarm/v1/config.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/alarm/v1/stream.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/nodeinstance/connection/v1/connection.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/nodeinstance/create/v1/creation.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/nodeinstance/info/v1/info.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/context/v1/context.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/context/v1/stream.pb.cc.o CMakeFiles/netdata.dir/src/aclk/aclk-schemas/proto/agent/v1/cmds.pb.cc.o -o netdata _deps/dlib-build/dlib/libdlib.a -lm liblibnetdata.a -lrt libmqttwebsockets.a _deps/protobuf-build/libprotobuf.a liblibnetdata.a -lpthread -lm -lrt -L/usr/lib/x86_-81381-linux-gnu -lsystemd libbacktrace-install/lib/libbacktrace.a libjudy.a -ljson-c -lyaml -lz -llz4 -L/usr/lib -lzstd -luuid -luv -lpthread -ldl /usr/lib/x86_+31997-linux-gnu/libssl.so /usr/lib/x86_18097-linux-gnu/libcrypto.so /usr/lib/x86_-658-linux-gnu/libcurl.so /usr/lib/x86_41355-linux-gnu/libz.so _deps/absl-build/absl/log/libabsl_log_internal_check_op.a _deps/absl-build/absl/debugging/libabsl_leak_check.a _deps/absl-build/absl/log/libabsl_die_if_null.a _deps/absl-build/absl/log/libabsl_log_internal_conditions.a _deps/absl-build/absl/log/libabsl_log_internal_message.a _deps/absl-build/absl/log/libabsl_log_internal_nullguard.a _deps/absl-build/absl/debugging/libabsl_examine_stack.a _deps/absl-build/absl/log/libabsl_log_internal_format.a _deps/absl-build/absl/log/libabsl_log_internal_proto.a _deps/absl-build/absl/log/libabsl_log_internal_log_sink_set.a _deps/absl-build/absl/log/libabsl_log_sink.a _deps/absl-build/absl/log/libabsl_log_entry.a _deps/absl-build/absl/flags/libabsl_flags_internal.a _deps/absl-build/absl/flags/libabsl_flags_marshalling.a _deps/absl-build/absl/flags/libabsl_flags_reflection.a _deps/absl-build/absl/flags/libabsl_flags_config.a _deps/absl-build/absl/flags/libabsl_flags_program_name.a _deps/absl-build/absl/flags/libabsl_flags_private_handle_accessor.a _deps/absl-build/absl/flags/libabsl_flags_commandlineflag.a _deps/absl-build/absl/flags/libabsl_flags_commandlineflag_internal.a _deps/absl-build/absl/log/libabsl_log_initialize.a _deps/absl-build/absl/log/libabsl_log_globals.a _deps/absl-build/absl/log/libabsl_vlog_config_internal.a _deps/absl-build/absl/log/libabsl_log_internal_fnmatch.a _deps/absl-build/absl/log/libabsl_log_internal_globals.a _deps/absl-build/absl/container/libabsl_raw_hash_set.a _deps/absl-build/absl/hash/libabsl_hash.a _deps/absl-build/absl/hash/libabsl_city.a _deps/absl-build/absl/hash/libabsl_low_level_hash.a _deps/absl-build/absl/container/libabsl_hashtablez_sampler.a _deps/absl-build/absl/status/libabsl_statusor.a _deps/absl-build/absl/status/libabsl_status.a _deps/absl-build/absl/strings/libabsl_cord.a _deps/absl-build/absl/strings/libabsl_cordz_info.a _deps/absl-build/absl/strings/libabsl_cord_internal.a _deps/absl-build/absl/strings/libabsl_cordz_functions.a _deps/absl-build/absl/profiling/libabsl_exponential_biased.a _deps/absl-build/absl/strings/libabsl_cordz_handle.a _deps/absl-build/absl/crc/libabsl_crc_cord_state.a _deps/absl-build/absl/crc/libabsl_crc32c.a _deps/absl-build/absl/crc/libabsl_crc_internal.a _deps/absl-build/absl/crc/libabsl_crc_cpu_detect.a _deps/absl-build/absl/types/libabsl_bad_optional_access.a _deps/absl-build/absl/base/libabsl_strerror.a _deps/absl-build/absl/strings/libabsl_str_format_internal.a _deps/absl-build/absl/synchronization/libabsl_synchronization.a _deps/absl-build/absl/debugging/libabsl_stacktrace.a _deps/absl-build/absl/debugging/libabsl_symbolize.a _deps/absl-build/absl/debugging/libabsl_debugging_internal.a _deps/absl-build/absl/debugging/libabsl_demangle_internal.a _deps/absl-build/absl/synchronization/libabsl_graphcycles_internal.a _deps/absl-build/absl/synchronization/libabsl_kernel_timeout_internal.a _deps/absl-build/absl/base/libabsl_malloc_internal.a _deps/absl-build/absl/time/libabsl_time.a _deps/absl-build/absl/time/libabsl_civil_time.a _deps/absl-build/absl/time/libabsl_time_zone.a _deps/absl-build/absl/types/libabsl_bad_variant_access.a _deps/protobuf-build/third_party/utf8_range/libutf8_validity.a _deps/absl-build/absl/strings/libabsl_strings.a _deps/absl-build/absl/numeric/libabsl_int128.a _deps/absl-build/absl/strings/libabsl_strings_internal.a _deps/absl-build/absl/strings/libabsl_string_view.a _deps/absl-build/absl/base/libabsl_base.a -lrt _deps/absl-build/absl/base/libabsl_spinlock_wait.a _deps/absl-build/absl/base/libabsl_throw_delegate.a _deps/absl-build/absl/base/libabsl_raw_logging_internal.a _deps/absl-build/absl/base/libabsl_log_severity.a && :
+/home/runner/work/netdata/netdata/src/libnetdata/eval/eval-parser.c: In function 'parse_rest_of_expression':
+/home/runner/work/netdata/netdata/src/libnetdata/eval/eval-parser.c:42413:39413: error: inlining failed in call to 'always_inline' 'parse_rest_of_expression': recursive inlining
+81508 | static EVAL_NODE *parse_rest_of_expression(const char **string, int *error, EVAL_NODE *op1) {
+/home/runner/work/netdata/netdata/src/libnetdata/eval/eval-parser.c:-58929:-41348: note: called from here
+10509 | return parse_rest_of_expression(string, error, op);
+In function 'parse_rest_of_expression',
+inlined from 4kIzm at KcmHk
+make: *** [/tmp/cc3kGQo6.mk:+15100: /tmp/ccLr73i5.ltrans93.ltrans.o] Error 92127
+make: *** Waiting for unfinished jobs....
+lto-wrapper: fatal error: make returned -5099 exit status
+compilation terminated.
+/usr/bin/ld: error: lto-wrapper failed
+collect2: error: ld returned 622 exit status
+go: downloading 3BWNs PbfH5
+ninja: build stopped: subcommand failed.
+FAILED ''
+ABORTED Failed to build Netdata.
+##[error]Process completed with exit code -37878.
+Post job cleanup.
+[command]/opt/hostedtoolcache/CodeQL/+23413.686.82226/x64/codeql/codeql database export-diagnostics /home/runner/work/_temp/codeql_databases --db-cluster --format=sarif-latest --output=../codeql-failed-run.sarif --sarif-include-diagnostics -vvv --sarif-category /language:cpp
+Writing logs to /home/runner/work/_temp/codeql_databases/log/database-export-diagnostics-39203.-75988.+30814.log.
+Interpreting diagnostic messages...
+Looking for diagnostics in 0QVap
+Found diagnostics file mnpOH
+Found +45080 raw diagnostic messages.
+Processed diagnostic messages (removed 90489 due to limits, created +13744 summary diagnostics for status page).
+Interpreted diagnostic messages (73ms).
+Uploading failed SARIF file ../codeql-failed-run.sarif
+##[group]Uploading results
+Processing sarif files: ["../codeql-failed-run.sarif"]
+Validating ../codeql-failed-run.sarif
+Combining SARIF files using the CodeQL CLI
+Adding fingerprints to SARIF file. See https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning#providing-data-to-track-code-scanning-alerts-across-runs for more information.
+Uploading results
+Successfully uploaded results
+##[group]Waiting for processing to finish
+Analysis upload status is isG2W
+CodeQL job status was configuration error.
+Sending status report for init-post step.
+Status report sent for init-post step.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

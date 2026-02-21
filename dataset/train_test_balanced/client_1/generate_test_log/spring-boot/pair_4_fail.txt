@@ -1,0 +1,181 @@
+Self-hosted runners in the repository are disabled by your administrator
+Requested labels: ubuntu-latest
+Job defined at: spring-projects/spring-boot/.github/workflows/deploy-docs.yml@refs/heads/docs-build
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +24820 (hosted)
+Current runner version: '58377.45296.-1110'
+##[group]Operating System
+Ubuntu
+-79677.1848.163
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--57178.+6495
+Version: -50762.-57557.94181
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/48395.-56223/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.7551
+##[group]Runner Image Provisioner
+125.77.163.44
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package aMVIk
+Digest: sha256:32CB 45DC 0EB1 7501 1013 E4AC
+Source commit SHA: 70b7409 eb7e2f25322 9618447 8e4fff4c36
+Download action repository 'spring-io/spring-doc-actions@v0.+56186.30250' (SHA:47C4 C493 4F55 F825 C0B4 B108)
+Complete job name: Build and Deploy Documentation
+##[group]Run Xx5w6
+with:
+fetch-depth: -5571
+repository: spring-projects/spring-boot
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: spring-projects/spring-boot
+##[group]Getting Git version info
+Working directory is '/home/runner/work/spring-boot/spring-boot'
+[command]/usr/bin/git version
+git version -88659.-56281.13433
+Temporarily overriding 1spQE before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/spring-boot/spring-boot
+Deleting the contents of '/home/runner/work/spring-boot/spring-boot'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/spring-boot/spring-boot
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/spring-boot/spring-boot/.git/
+[command]/usr/bin/git remote add origin https://github.com/spring-projects/spring-boot
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 5IhkU nWZav
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 4BrGX
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp aEkyy && git config --local --unset-all q0tdM || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-8085 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+From https://github.com/spring-projects/spring-boot
+* [new VGBuQ fbTgx -> QEzOH
+[command]/usr/bin/git branch --list --remote origin/docs-build
+origin/docs-build
+[command]/usr/bin/git rev-parse refs/remotes/origin/docs-build
+a8cbc7 9608c654 e61d11 e95e94 e603e35cc
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B docs-build refs/remotes/origin/docs-build
+Switched to a new branch 'docs-build'
+branch 'docs-build' set up to track 'origin/docs-build'.
+[command]/usr/bin/git log 47735 --format=%H
+##[group]Run git fetch origin main:main
+[-54488;1mgit fetch origin main:main[0m
+shell: /usr/bin/bash -e {-6494}
+node-version: +16077
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/17826.+66974.-18656/x64
+##[group]Environment details
+node: v20.6191.86000
+npm: 22885.95584.-36851
+yarn: 93617.+24674.-29431
+##[group]Run node run.js 8E9cd
+[+20052;1mnode run.js lw6kD
+Checking out Antora package.json files from `main`
+key: antora-26a2387b2 e1b433da1e1e d81ef84a
+path: ~/.npm
+~/.cache/antora
+
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: antora-92AE 25AF A949 077A 0413
+Received +36577 of -37596 (2115.13585%), -18158.44686 MBs/sec
+Cache Size: ~4183 MB (+42372 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/4fbd02fc-292f-4ce3-bc98-dc93d0d4adb3/cache.tzst -P -C /home/runner/work/spring-boot/spring-boot --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: antora-7ccb2820 12cf67c 86962c20
+env:
+ARTIFACTORY_USERNAME: ***
+ARTIFACTORY_PASSWORD: ***
+BUILD_REFNAME: 6364.+25110.x
+BUILD_VERSION: -29846.59648.-38591-SNAPSHOT
+Installing modules
+patch-package -51695.+97251.+5000
+Applying patches...
+No patch files found
+Running Antora
+$ npx antora antora-playbook.yml --stacktrace --ui-bundle-url https://github.com/spring-io/antora-ui-spring/releases/download/v0.+9502.9691/ui-bundle.zip
+docs-username: ***
+docs-host: ***
+docs-ssh-key: ***
+docs-ssh-host-key: ***
+httpdocs-path: /spring-boot/antora/reference
+dry-run: false
+site-path: build/site
+[95608;1mPATH=$PATH:/home/runner/work/_actions/spring-io/spring-doc-actions/v0.+76863.+70751/rsync-antora-reference/src[0m
+[71738;1mflag_options=''[0m
+[-84452;1mif [ -z "false" ]; then[0m
+[-90947;1m flag_options="${flag_options} --dry-run"[0m
+[-59027;1mfi[0m
+[+29083;1m/home/runner/work/_actions/spring-io/spring-doc-actions/v0.+31837.+4883/rsync-antora-reference/src/action.sh --docs-username "***" --docs-host "***" --docs-ssh-key "***[0m
+[+81456;1m***[0m
+[2581;1m***" --docs-ssh-host-key "***" --site-path "build/site" --github-repository "spring-projects/spring-boot" --httpdocs-path "/spring-boot/antora/reference" $flag_options[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+26014}
+ssh: connect to host *** port +85978: Connection timed out
+##[error]Process completed with exit code 48750.
+run-name: docs-build | Build and Deploy Docs
+status: failure
+webhook-url: ***
+##[group]Run echo "BUILD_SCAN= [build scan unavailable]" >> "$GITHUB_ENV"
+[+63621;1mecho "BUILD_SCAN= [build scan unavailable]" >> "$GITHUB_ENV"[0m
+[+93778;1mecho "RUN_URL=https://github.com/spring-projects/spring-boot/actions/runs/66139" >> "$GITHUB_ENV"[0m
+##[group]Run curl -X POST '***' -H 'Content-Type: application/json' -d '{ text: "<users/all> *<https://github.com/spring-projects/spring-boot/actions/runs/-71491|docs-build | Build and Deploy Docs> failed* [build scan unavailable]"}' || true
+[+11341;1mcurl -X POST '***' -H 'Content-Type: application/json' -d '{ text: "<users/all> *<https://github.com/spring-projects/spring-boot/actions/runs/64657|docs-build | Build and Deploy Docs> failed* [build scan unavailable]"}' || true[0m
+BUILD_SCAN: [build scan unavailable]
+RUN_URL: https://github.com/spring-projects/spring-boot/actions/runs/7162
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+27118 -7763 -3345 -28401 -72991 +15410 60693 -74333 --:--:-- --:--:-- --:--:-- 47197
+{
+"name": eZuXb
+"text": "\u003cusers/all\u003e *\u003chttps://github.com/spring-projects/spring-boot/actions/runs/51913|docs-build | Build and Deploy Docs\u003e failed* [build scan unavailable]",
+"thread": {
+},
+"space": {
+}
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

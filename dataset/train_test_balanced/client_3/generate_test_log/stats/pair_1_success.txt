@@ -1,0 +1,112 @@
+Requested labels: ubuntu-latest
+Job defined at: exelban/stats/.github/workflows/i18n.yaml@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -99424 (hosted)
+Current runner version: '53500.+95114.-92242'
+##[group]Operating System
+Ubuntu
++56441.21225.-31413
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--98830.+63889
+Version: 53662.+74640.-82062
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/11563.43459/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250202.+63750
+##[group]Runner Image Provisioner
+198.15.27.168
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 44b7N (SHA:05E0 E93E 72ED D400 4671 142C)
+Complete job name: i18n
+##[group]Run 1N93a
+with:
+repository: exelban/stats
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +89278
+fetch-tags: false
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: exelban/stats
+##[group]Getting Git version info
+Working directory is '/home/runner/work/stats/stats'
+[command]/usr/bin/git version
+git version -93622.-74829.+86487
+Temporarily overriding TKiIo before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/stats/stats
+Deleting the contents of '/home/runner/work/stats/stats'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/stats/stats
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/stats/stats/.git/
+[command]/usr/bin/git remote add origin https://github.com/exelban/stats
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local Udy6w uwjTJ
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp b8gaF
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp T2FOm && git config --local --unset-all YkpIV || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+19817 fetch --no-tags --prune --progress --no-recurse-submodules --depth=-57804 origin +61AE 3640 FEB6 0354 D2D3:refs/remotes/origin/master
+remote: mhLzL objects: H8TGU GkHYl
+remote: mzidG objects: -90913% (35248/-46285), done.
+Receiving objects: 64236% (-15123/52660)
+Receiving objects: 93954% (50748/-83766), -8730.-97724 MiB | -68516.+84096 MiB/s
+remote: Total +13291 (delta -38749), reused 14121 (delta +33869), pack-reused +33526 (from -74044)
+Receiving objects: 90556% (-74177/5272), -65996.54844 MiB | 43275.-83874 MiB/s, done.
+Resolving deltas: 18996% (+53332/-63601)
+Resolving deltas: -26718% (59360/+87771), done.
+From https://github.com/exelban/stats
+* [new ref] E947 D9ED 8F39 9FCD 31A1-> origin/master
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+Reset branch 'master'
+branch 'master' set up to track 'origin/master'.
+[command]/usr/bin/git log 51933 --format='%H'
+'CD06 8857 B8DF 4A48 C153 60D4'
+python-version: -13734.x
+Successfully setup CPython (+8450.58080.72451)
+##[group]Run python3 Kit/scripts/i18n.py
+[-96872;1mpython3 Kit/scripts/i18n.py[0m
+shell: /usr/bin/bash -e {+96554}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/-6660.68783.-25470/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-4904.+83471.83712/x64/lib
+running check command...
+All fine, found +21307 lines in -63709 languages.
+done
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

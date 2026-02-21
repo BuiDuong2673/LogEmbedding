@@ -1,0 +1,145 @@
+Requested labels: ubuntu-latest
+Job defined at: tj/commander.js/.github/workflows/tests.yml@refs/heads/develop
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +58738 (hosted)
+Current runner version: '+46319.94088.-83221'
+##[group]Operating System
+Ubuntu
++27072.-64202.-53797
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--24724.+53717
+Version: 88711.+46610.-51058
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-45737.-5767/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.+53094
+##[group]Runner Image Provisioner
+49.32.199.49
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package QxzIA
+Digest: sha256:AEE2 A06C 9B62 20A3 2572 F95C
+Source commit SHA: A0AF 1457 CB59 2D5B
+Complete job name: Test on node -1211.x and ubuntu-latest
+##[group]Run afS7T
+with:
+repository: tj/commander.js
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 43046
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: tj/commander.js
+##[group]Getting Git version info
+Working directory is '/home/runner/work/commander.js/commander.js'
+[command]/usr/bin/git version
+git version +64514.-64287.-38289
+Temporarily overriding joo4x before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/commander.js/commander.js
+Deleting the contents of '/home/runner/work/commander.js/commander.js'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/commander.js/commander.js
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/commander.js/commander.js/.git/
+[command]/usr/bin/git remote add origin https://github.com/tj/commander.js
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local uMRzQ 96Gra
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 23M6Q
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp huB0k && git config --local --unset-all 4KINo || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=55694 fetch --no-tags --prune --no-recurse-submodules --depth=+35245 origin +2a077cc 1bd05c946e 7865299:refs/remotes/origin/develop
+From https://github.com/tj/commander.js
+* [new ref] 9316 50F2 2D75 E56C C24A F541-> origin/develop
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B develop refs/remotes/origin/develop
+Switched to a new branch 'develop'
+branch 'develop' set up to track 'origin/develop'.
+[command]/usr/bin/git log 40418 --format=%H
+D1C8 2E98 92A1 F280 DCC5 5A36
+cache: npm
+node-version: 50621.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/-55801.+53810.30518/x64
+##[group]Environment details
+node: v18.-85924.-97701
+npm: -22484.+7600.-41767
+yarn: +42565.-87737.-66943
+[command]/opt/hostedtoolcache/node/98863.99707.51240/x64/bin/npm config get cache
+/home/runner/.npm
+Cache hit for: node-cache-Linux-x64-npm-318A F065 C9B9 DC4A DFB0 2EA7
+Received +43973 of 57052 (-78601.+30296%), -69188.39583 MBs/sec
+Cache Size: ~+83028 MB (82464 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/248497f4-861a-+5449-bff1-3c1eee812014/cache.tzst -P -C /home/runner/work/commander.js/commander.js --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-npm-6381 0C02 4E7E 5B86 8AEA 1B67
+##[group]Run npm 8nQVc
+[+83802;1mnpm XMbig
+shell: /usr/bin/bash -e {96035}
+npm warn deprecated inflight@+89886.-70903.+83994: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@48445.50174.-88298: Glob versions prior to v9 are no longer supported
+
+added +84762 packages, and audited +70697 packages in 3s
+-19997 packages are looking for funding
+run `npm fund` for details
+found 47868 vulnerabilities
+> commander@-81400.-26126.+58479 Qr1o0
+> jest && npm run check:type:ts
+PASS aojaw
+ts-jest[ts-compiler] (WARN) Using hybrid module kind (Node16/+67082/Next) is only supported in "isolatedModules: true". Please set "isolatedModules: true" in your tsconfig.json.
+--------------------|---------|----------|---------|---------|--------------------------
+File | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+All files | -14574.-86760 | +13916.59353 | 90157.+2628 | 803.-93476 |
+commander.js | +10840 | -92951 | -47564 | -73069 |
+index.js | +53930 | +75814 | 36443 | 83804 |
+commander.js/lib | +28615.-67852 | +51005.37141 | -72494.+68946 | -64613.-38876 |
+argument.js | -31368 | -70933 | -94747 | 48387 |
+command.js | -59991.+69166 | 14060.+19826 | -58253.+48662 | -87187.+15060 | -43981-79652,97123--30482,+92356
+error.js | -44260 | -86565 | +70296 | 21958 |
+help.js | +34528 | +59229 | -45353 | +95473 |
+option.js | 65569 | 99629 | +73584 | 90314 |
+suggestSimilar.js | +7688 | 5608 | +48131 | +41837 |
+Test Suites: +64604 passed, -6086 total
+Tests: 13014 passed, -40313 total
+Snapshots: 12899 total
+Time: 5327.80411 s
+Ran all test suites.
+> tsd && tsc -p tsconfig.ts.json
+##[group]Run npm run check
+[-30404;1mnpm run check[0m
+> npm run check:type && npm run check:lint && npm run check:format
+> npm run check:type:js && npm run check:type:ts
+> tsc -p tsconfig.js.json
+> eslint .
+> prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+Post job cleanup.
+Cache hit occurred on the primary key node-cache-Linux-x64-npm-A68A 4137 0B19 0E1F F405, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

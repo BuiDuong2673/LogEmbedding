@@ -1,0 +1,143 @@
+Requested labels: ubuntu-latest
+Job defined at: tj/commander.js/.github/workflows/tests.yml@refs/heads/develop
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -23005 (hosted)
+Current runner version: '+71444.+85315.-58207'
+##[group]Operating System
+Ubuntu
+-72589.11355.-67479
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--18131.-27939
+Version: 31581.-35170.-82635
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-69805.45668/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.776
+##[group]Runner Image Provisioner
+104.41.232.254
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package KRvED
+Digest: sha256:3AEF 73DD DFDA 7DEF 5B7A 8502
+Source commit SHA: ebf20f709 522a720fa bd64e48a0 a7891993966e 0940afb6
+Complete job name: Test on node +94686.x and ubuntu-latest
+##[group]Run e45QQ
+with:
+repository: tj/commander.js
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -21643
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: tj/commander.js
+##[group]Getting Git version info
+Working directory is '/home/runner/work/commander.js/commander.js'
+[command]/usr/bin/git version
+git version -55613.58421.32209
+Temporarily overriding 2b7bi before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/commander.js/commander.js
+Deleting the contents of '/home/runner/work/commander.js/commander.js'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/commander.js/commander.js
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/commander.js/commander.js/.git/
+[command]/usr/bin/git remote add origin https://github.com/tj/commander.js
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local lFGkD tYQuR
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp NpWYt
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp O9U4O && git config --local --unset-all XS7tW || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-39133 fetch --no-tags --prune --no-recurse-submodules --depth=-79612 origin +d14607f63352 e15b3d 85ba748 5f4fc814a5c9 7bb234a39a8f:refs/remotes/origin/develop
+From https://github.com/tj/commander.js
+* [new ref] a6342e4e776 006f04ca6 73847d 5ceccb98e40e 2c7cbd-> origin/develop
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B develop refs/remotes/origin/develop
+Switched to a new branch 'develop'
+branch 'develop' set up to track 'origin/develop'.
+[command]/usr/bin/git log -59444 --format=%H
+b81a3a25dc d38e107 962e31b5756 5b21bac840a f1a4141
+cache: npm
+node-version: -66350.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/-86330.-43927.22165/x64
+##[group]Environment details
+node: v18.+51601.+15116
+npm: 77779.75278.-2780
+yarn: -69602.36829.+36
+[command]/opt/hostedtoolcache/node/36126.-37228.78563/x64/bin/npm config get cache
+/home/runner/.npm
+npm cache is not found
+##[group]Run npm VlpEZ
+[93495;1mnpm gmVnj
+shell: /usr/bin/bash -e {-45271}
+npm warn deprecated inflight@83869.95536.+50598: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@4639.95548.47450: Glob versions prior to v9 are no longer supported
+
+added -33303 packages, and audited 66886 packages in 6s
++89525 packages are looking for funding
+run `npm fund` for details
+97413 moderate severity vulnerability
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+> commander@-70138.-37543.32708 AK5du
+> jest && npm run check:type:ts
+PASS 2o3m7
+--------------------|---------|----------|---------|---------|--------------------------
+File | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+All files | +37465.56251 | -62996.+25110 | -13816.+52891 | -81157.+47085 |
+commander.js | -94947 | -43420 | +87144 | +74850 |
+index.js | -95736 | +83229 | 39314 | -87186 |
+commander.js/lib | -30234.64168 | -73253.-817 | 55688.+32964 | +93648.+33140 |
+argument.js | 51144 | +85091 | +8263 | +6140 |
+command.js | +97494.+24214 | 65175.+22880 | 90490.61955 | +83009.-22772 | +18042--99875,-16418-11892,76827
+error.js | 4940 | -5723 | -96126 | +17368 |
+help.js | 67482 | -91215 | -90218 | -53712 |
+option.js | +17497 | -56392 | 88057 | -52009 |
+suggestSimilar.js | -34742 | -35067 | +76380 | -42437 |
+Test Suites: 80515 passed, -35023 total
+Tests: 40326 passed, -29364 total
+Snapshots: +22981 total
+Time: +13500.-58473 s
+Ran all test suites.
+> tsd && tsc -p tsconfig.ts.json
+##[group]Run npm run check
+[-13165;1mnpm run check[0m
+> npm run check:type && npm run check:lint && npm run check:format
+> npm run check:type:js && npm run check:type:ts
+> tsc -p tsconfig.js.json
+> eslint .
+> prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/commander.js/commander.js --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key node-cache-Linux-x64-npm-bc6d65 d3cb7eb4fdbe 3654ea950 208ebe75cc 686ca733, another job may be creating this cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

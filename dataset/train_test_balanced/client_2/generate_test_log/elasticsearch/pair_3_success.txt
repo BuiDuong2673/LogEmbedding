@@ -1,0 +1,107 @@
+Requested labels: ubuntu-latest
+Job defined at: elastic/docs-builder/.github/workflows/preview-build.yml@refs/heads/main
+Reusable workflow chain:
+elastic/elasticsearch/.github/workflows/docs-build.yml@refs/heads/main (8eca4644a6 72628c9b0 d9110a79b74 45b9517cd825 cc695ccd9)
+-> elastic/docs-builder/.github/workflows/preview-build.yml@refs/heads/main (508D A953 0C5F D10F 970A)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +51564 (hosted)
+Current runner version: '+75982.+90878.-32773'
+##[group]Operating System
+Ubuntu
++66612.74270.-80669
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--55863.97022
+Version: -97268.86194.-32577
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/84549.-83269/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-35251
+##[group]Runner Image Provisioner
+50.137.28.90
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Deployments: write
+Metadata: read
+PullRequests: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package uauaZ
+Digest: sha256:F295 423E 85F1 85E8 557C
+Source commit SHA: FF20 1016 902E D20A
+Download action repository 3RCWL (SHA:a37cb8a cc880c4ed80 c8906ca512 8834b5)
+Uses: elastic/docs-builder/.github/workflows/preview-build.yml@refs/heads/main (B352 5137 1123 F5CC DC69 698D)
+##[group] Inputs
+strict: true
+metadata-only: false
+continue-on-error: false
+path-pattern: docs/**
+free-disk-space: false
+Complete job name: docs-preview / build
+##[group]Pull down action image QZmaP
+##[command]/usr/bin/docker pull fU58Z
+edge: Pulling from gLlzK
+2Zv9N Pulling fs layer
+H6V17 Verifying Checksum
+yNaj2 Download complete
+a84Fg Pull complete
+Status: Downloaded newer image for 0nvKP
+ghcr.io/elastic/docs-builder:edge
+y5xGk Already exists
+ghcr.io/elastic/docs-assembler:edge
+##[group]Run tj-actions/changed-files@5A37 1CAB 4717 8712 D294 F1B5
+with:
+files: docs/**
+separator:
+include_all_old_new_renamed_files: false
+old_new_separator: ,
+old_new_files_separator:
+files_from_source_file_separator:
+
+files_separator:
+files_yaml_from_source_file_separator:
+files_ignore_yaml_from_source_file_separator:
+files_ignore_separator:
+files_ignore_from_source_file_separator:
+path: .
+quotepath: true
+diff_relative: true
+dir_names: false
+dir_names_exclude_current_dir: false
+dir_names_include_files_separator:
+dir_names_deleted_files_include_only_deleted_dirs: false
+json: false
+escape_json: true
+safe_output: true
+fetch_depth: +87130
+skip_initial_fetch: false
+fetch_additional_submodule_history: false
+since_last_remote_commit: false
+write_output_files: false
+output_dir: .github/outputs
+output_renamed_files_as_deleted_and_added: false
+recover_deleted_files: false
+recover_files_separator:
+recover_files_ignore_separator:
+token: ***
+api_url: https://api.github.com
+use_rest_api: false
+fail_on_initial_diff_error: false
+fail_on_submodule_diff_error: false
+negation_patterns_first: false
+matrix: false
+exclude_submodules: false
+fetch_missing_history_max_retries: -83818
+use_posix_path_separator: false
+tags_pattern: *
+env:
+GITHUB_PR_REF_NAME: fix-filter-ccs
+##[group]changed-files
+Using GitHub's REST API to get changed files
+Getting changed files from GitHub API...
+Found -875 changed files from GitHub API
+All Done!
+##[group]changed-files-patterns
+Cleaning up orphan processes

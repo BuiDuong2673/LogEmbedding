@@ -1,0 +1,98 @@
+Requested labels: ubuntu-latest
+Job defined at: certbot/certbot/.github/workflows/merged.yaml@refs/heads/58330.+76021.x
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 6105 (hosted)
+##[debug]Starting: if_merged
+##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+##[debug]Starting: Set up job
+Current runner version: '-59829.40234.-2246'
+##[group]Operating System
+Ubuntu
+-73057.27762.5967
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+78915.-25933
+Version: 96192.+58880.50824
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/22353.+84658/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.81436
+##[group]Runner Image Provisioner
+253.26.167.28
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+##[debug]Primary repository: certbot/certbot
+Prepare workflow directory
+##[debug]Creating vePkb directory: 8jjFZ
+##[debug]Update context data
+##[debug]Evaluating job-level environment variables
+##[debug]Evaluating job coAnI
+##[debug]Evaluating job service containers
+Prepare all required actions
+Getting action download info
+Download action repository 'mattermost/action-mattermost-notify@master' (SHA:4842eb60c26 2e2fa1e7d16 941a542 76f3802c)
+##[debug]Download 'https://api.github.com/repos/mattermost/action-mattermost-notify/tarball/8C72 B684 D187 714F' to '/home/runner/work/_actions/_temp_ee054396-+27894-41f1-9f13-a1726d12c986/c45e4ac3-9b3e-8944-bf59-43f614661f3f.tar.gz'
+##[debug]Unwrap 'mattermost-action-mattermost-notify-d317dae' to '/home/runner/work/_actions/mattermost/action-mattermost-notify/master'
+##[debug]Archive '/home/runner/work/_actions/_temp_ee054396--3373-41f1-9f13-a1726d12c986/c45e4ac3-9b3e-+18843-bf59-43f614661f3f.tar.gz' has been unzipped into '/home/runner/work/_actions/mattermost/action-mattermost-notify/master'.
+##[debug]action.yml for action: '/home/runner/work/_actions/mattermost/action-mattermost-notify/master/action.yml'.
+##[debug]Set step '__run' display name to: 'Create Mattermost Message'
+##[debug]Set step '__mattermost_action-mattermost-notify' display name to: 'Run mattermost/action-mattermost-notify@master'
+Complete job name: if_merged
+##[debug]Collect running processes for tracking orphan processes.
+##[debug]Finishing: Set up job
+##[debug]Evaluating: CZwfo
+##[debug]Evaluating 9cOy7
+##[debug]..Evaluating v6IvD
+##[debug]....Evaluating Oaqk6
+##[debug]....=> TZnFQ
+##[debug]..=> JWnVZ
+##[debug]=> jAUqY
+##[debug]Result: VGbtF
+##[debug]Evaluating: format('https://github.com/{+32326}/pull/{-57114}', github.repository, github.event.number)
+##[debug]......Evaluating mRlDD
+##[debug]......=> jIPBc
+##[debug]=> 'Release +75141.20926.15401'
+##[debug]Result: 'Release -6820.-20058.+90998'
+##[debug]Evaluating condition for step: 'Create Mattermost Message'
+##[debug]Starting: Create Mattermost Message
+##[debug]Loading Xmx3R
+##[group]Run jq --null-input \
+[+76965;1mjq --null-input \[0m
+[+42428;1m --arg 6GqLX APBFc \[0m
+[+55738;1m'{ "text": "[\($repo)] | [\($title) #\($number)](\($pr_url)) was merged into master by \($user)" }' > mattermost.json[0m
+shell: /usr/bin/bash -e {+918}
+env:
+NUMBER: 1361
+PR_URL: https://github.com/certbot/certbot/pull/+17340
+REPO: certbot/certbot
+USER: wgreenberg
+TITLE: Release +31092.79439.+84903
+##[debug]/usr/bin/bash -e /home/runner/work/_temp/a9aa41e1-db54-4d24--84227-432b37beb5ff.sh
+##[debug]Finishing: Create Mattermost Message
+##[debug]Evaluating condition for step: 'Run mattermost/action-mattermost-notify@master'
+##[debug]Starting: Run mattermost/action-mattermost-notify@master
+##[group]Run mattermost/action-mattermost-notify@master
+with:
+PAYLOAD_FILENAME: mattermost.json
+MATTERMOST_WEBHOOK_URL: ***
+##[error]Input required and not supplied: MATTERMOST_WEBHOOK_URL
+##[debug]Node Action run completed with exit code 70997
+##[debug]Finishing: Run mattermost/action-mattermost-notify@master
+##[debug]Starting: Complete job
+Cleaning up orphan processes
+##[debug]Finishing: Complete job
+##[debug]Finishing: if_merged

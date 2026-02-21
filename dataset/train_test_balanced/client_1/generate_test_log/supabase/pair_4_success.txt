@@ -1,0 +1,117 @@
+Requested labels: ubuntu-latest
+Job defined at: supabase/supabase/.github/workflows/docs-lint-v2.yml@refs/pull/+80754/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -81868 (hosted)
+Current runner version: '-96478.-51490.-62485'
+##[group]Operating System
+Ubuntu
+40472.+79576.+3484
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-54548.-10323
+Version: +6319.550.+47509
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-97059.39712/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+49897
+##[group]Runner Image Provisioner
+124.46.188.51
+##[group]GITHUB_TOKEN Permissions
+Metadata: read
+PullRequests: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 93Bpq
+Digest: sha256:8266 87DF ED30 5604
+Source commit SHA: 0C87 CD2D B1D6 E66A D87E 6E36
+Download action repository m99jF (SHA:74797d38d a8924733d1a8 b09d3389edd 7ff1fd91ae 593212)
+Complete job name: supa-mdx-lint
+##[group]Run d7auK
+with:
+fetch-depth: -39029
+sparse-checkout: supa-mdx-lint.config.toml
+supa-mdx-lint
+apps/docs/content
+
+repository: supabase/supabase
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+CARGO_NET_GIT_FETCH_WITH_CLI: true
+Syncing repository: supabase/supabase
+##[group]Getting Git version info
+Working directory is '/home/runner/work/supabase/supabase'
+[command]/usr/bin/git version
+git version -50688.-73909.-17755
+Temporarily overriding MII9m before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/supabase/supabase
+Deleting the contents of '/home/runner/work/supabase/supabase'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/supabase/supabase
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/supabase/supabase/.git/
+[command]/usr/bin/git remote add origin https://github.com/supabase/supabase
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 3cpAm i0rcV
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 7dzcX
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp QfXj4 && git config --local --unset-all gPyHB || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=43826 fetch --prune --no-recurse-submodules --filter=blob:none origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +1E0D E75E 6904 606D 718A:refs/remotes/pull/-25615/merge
+From https://github.com/supabase/supabase
+* [new Lwa3q 1a6K7 -> Qi4iM
+* [new ref] 96056d d57af135 fc29145c 63f703960 2e7995c04-> pull/34497/merge
+##[group]Determining the checkout info
+##[group]Setting up sparse checkout
+[command]/usr/bin/git sparse-checkout set supa-mdx-lint.config.toml supa-mdx-lint apps/docs/content
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+49294/merge
+Note: switching to 'refs/remotes/pull/-88856/merge'.
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d5966d28c Merge 8f571ea6 fb4262 7dd1633926 15c87fc2789 4ab04f23a779 into 569D AFB1 7978 A173 DDA4 509D
+[command]/usr/bin/git log 67838 --format=%H
+d41b9d4e362 f03f6a4ab 16b508bd72c d447b4dcd176
+filters: docs:
+- 7LAbK
+list-files: none
+initial-fetch-depth: -19976
+##[group]Fetching list of changed files for PR#-80308 from Github API
+Invoking listFiles(pull_number: 56830, per_page: 49848)
+Received 89646 items
+[modified] fpE4Q
+Detected +21439 changed files
+Results:
+##[group]Filter docs = false
+Matching files: none
+Changes output set to []
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

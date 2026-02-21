@@ -1,0 +1,104 @@
+Requested labels: ubuntu-latest
+Job defined at: JuliaLang/julia/.github/workflows/Whitespace.yml@refs/pull/-19028/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -69349 (hosted)
+Current runner version: '-8778.10830.-88217'
+##[group]Operating System
+Ubuntu
++73692.-71668.-50485
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-56258.81284
+Version: -65411.+76555.+74237
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/6041.+79718/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+50077
+##[group]Runner Image Provisioner
+132.12.241.245
+##[group]GITHUB_TOKEN Permissions
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 4hAxa (SHA:6D83 C7AC 7047 1CAF FCF6 D4C4)
+Complete job name: Check whitespace
+##[group]Run DbSwI
+with:
+persist-credentials: false
+repository: JuliaLang/julia
+token: ***
+ssh-strict: true
+ssh-user: git
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -84507
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: JuliaLang/julia
+##[group]Getting Git version info
+Working directory is '/home/runner/work/julia/julia'
+[command]/usr/bin/git version
+git version 4297.-36687.-69922
+Temporarily overriding xpdxd before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/julia/julia
+Deleting the contents of '/home/runner/work/julia/julia'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/julia/julia
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/julia/julia/.git/
+[command]/usr/bin/git remote add origin https://github.com/JuliaLang/julia
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 1d65a Jp4Ud
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 2K8m2
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp zFgwX && git config --local --unset-all 8NdVz || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+21484 fetch --no-tags --prune --no-recurse-submodules --depth=11013 origin +80eef98d574 d7e89fc33dca 7843d421e5d:refs/remotes/pull/14705/merge
+From https://github.com/JuliaLang/julia
+* [new ref] 7BA9 7832 FFE6 A5C0 F626 74A3-> pull/+29983/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-2694/merge
+Note: switching to 'refs/remotes/pull/-52763/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 5e406c0 Merge 714f182afb2 3779f98 0ba001fb80a into 424221b 4821b2 edcd15 eb4144
+[command]/usr/bin/git log -90717 --format='%H'
+'5B75 3120 6136 D3C6 C939 12C3'
+##[group]Removing auth
+http.https://github.com/.extraheader
+version: 16302
+include-all-prereleases: false
+arch: default
+show-versioninfo: false
+[command]/usr/bin/tar xf /home/runner/work/_temp/5c0e1f42-55a6-4c90-869c-dd8e15bd6a8d --strip-components=2568 -C /opt/hostedtoolcache/julia/+77834.-5261.-11797/x64
+[command]/opt/hostedtoolcache/julia/+19915.22049.66208/x64/bin/julia --version
+julia version 93628.+54005.83984
+[+44361;1mcontrib/check-whitespace.jl[0m
+shell: /usr/bin/bash -e {-51884}
+Whitespace check found no issues.
+Post job cleanup.
+Cleaning up orphan processes

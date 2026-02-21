@@ -19,10 +19,12 @@ class Word2Vec:
         self.W1 = W1
         # W₂: Output embeddings (N × V) - Xavier initialization  
         self.W2 = W2
-    
+        # Get the embedding dimension from W1
+        self.embedding_dim = self.W1.shape[1]
+
     def sigmoid(self, x):
         """Numerically stable sigmoid function"""
-        x = np.clip(x, -500, 500)  # Prevent overflow
+        x = np.clip(x, -self.embedding_dim, self.embedding_dim)  # Prevent overflow
         return 1 / (1 + np.exp(-x))
     
     def train_with_negative_sampling(self, center_idx, context_idx,

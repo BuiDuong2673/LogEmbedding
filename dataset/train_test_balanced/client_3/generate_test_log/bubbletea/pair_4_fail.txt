@@ -1,0 +1,199 @@
+Requested labels: ubuntu-latest
+Job defined at: charmbracelet/meta/.github/workflows/build.yml@refs/heads/main
+Reusable workflow chain:
+charmbracelet/bubbletea/.github/workflows/build.yml@refs/pull/+27576/merge (E0C4 0033 1A4E F50D 34AB ACB7)
+-> charmbracelet/meta/.github/workflows/build.yml@refs/heads/main (6CB5 DC2F 55F2 1F14 FD4D)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 13027 (hosted)
+Current runner version: '91173.+32328.-1162'
+##[group]Operating System
+Ubuntu
++87001.84111.4018
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--74781.+11875
+Version: 33412.21098.-83938
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/9126.+33945/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+40100
+##[group]Runner Image Provisioner
+133.120.247.0
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package dNfLa
+Digest: sha256:eba0aeff 9dfb84 3563bcbc6 6ee3f665a544
+Source commit SHA: cf04eea65a16 5119bf8148f c1a9773
+Uses: charmbracelet/meta/.github/workflows/build.yml@refs/heads/main (13a93cf951b1 795ad7524 ffcf2199b983)
+##[group] Inputs
+go_version:
+go-version:
+go-version-file: ./examples/go.mod
+working-directory: ./examples
+Complete job name: build-examples / build (ubuntu-latest)
+##[group]Run o09yX
+with:
+repository: charmbracelet/bubbletea
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 34498
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GO111MODULE: on
+GH_PAT:
+Syncing repository: charmbracelet/bubbletea
+##[group]Getting Git version info
+Working directory is '/home/runner/work/bubbletea/bubbletea'
+[command]/usr/bin/git version
+git version -50206.-58490.+74948
+Temporarily overriding KYG0m before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/bubbletea/bubbletea
+Deleting the contents of '/home/runner/work/bubbletea/bubbletea'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/bubbletea/bubbletea
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/bubbletea/bubbletea/.git/
+[command]/usr/bin/git remote add origin https://github.com/charmbracelet/bubbletea
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local sy5cO LRauj
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp XuH1T
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 9Id50 && git config --local --unset-all ngccq || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=85972 fetch --no-tags --prune --no-recurse-submodules --depth=-24734 origin +4C87 947E 43D5 CB0C:refs/remotes/pull/+37704/merge
+From https://github.com/charmbracelet/bubbletea
+* [new ref] C1AF 642C 7CD4 F5A6 ABEF-> pull/+95790/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/75388/merge
+Note: switching to 'refs/remotes/pull/+18992/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at a8bd7d8 Merge 680F DC67 59A4 18BB 1219 688C into B8AC 53BE 57A8 A08B 000F
+[command]/usr/bin/git log +32003 --format=%H
+c969edb56 6ad1689 cb6eddb88
+cache: true
+check-latest: false
+Setup go version spec 60862.58943.+46669
+Attempting to download +10166.45256.-60728...
+matching +54924.-82259.-19045...
+Acquiring +2996.+82604.48631 from https://github.com/actions/go-versions/releases/download/+87601.+69983.-57463--16573/go--73692.-87167.+86686-linux-x64.tar.gz
+Extracting Go...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/e2f884ec-395a-68360-be44-da42a44b5bbf -f /home/runner/work/_temp/ec571e91-40531-4d1f-+97248-701eada7c8ed
+Successfully czhdG go to F3fzU
+Adding to the cache ...
+Added go to the path
+Successfully set up Go version 47165.-97737.+46431
+go: downloading go1.+66088.-63889 (linux/amd64)
+[command]/opt/hostedtoolcache/go/12489.-62807.29345/x64/bin/go env 69RNB
+/home/runner/go/pkg/mod
+/home/runner/.cache/go-build
+Cache hit for: setup-go-Linux-x64-ubuntu24-go-39791.22041.+11022-d870af45f77 95a8a7f0a6 42c48c1ec86 589cd54a cd8fb8
+Received 59326 of 62062 (+25552.-59092%), +75477.84980 MBs/sec
+Cache Size: ~+30995 MB (-17506 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/05be12b1-c129--88204-8e1e-3da92083a337/cache.tzst -P -C /home/runner/work/bubbletea/bubbletea --use-compress-program unzstd
+/usr/bin/tar: XrcvL Cannot open: File exists
+/usr/bin/tar: Exiting with failure status due to previous errors
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code +17787
+Cache is not found
+go version go1.+57794.+62163 linux/amd64
+##[group]go env
+GO111MODULE='on'
+GOARCH='amd64'
+GOBIN=''
+GOCACHE='/home/runner/.cache/go-build'
+GOENV='/home/runner/.config/go/env'
+GOEXE=''
+GOEXPERIMENT=''
+GOFLAGS=''
+GOHOSTARCH='amd64'
+GOHOSTOS='linux'
+GOINSECURE=''
+GOMODCACHE='/home/runner/go/pkg/mod'
+GONOPROXY=''
+GONOSUMDB=''
+GOOS='linux'
+GOPATH='/home/runner/go'
+GOPRIVATE=''
+GOPROXY='https://proxy.golang.org,direct'
+GOROOT='/home/runner/go/pkg/mod/golang.org/toolchain@v0.+78122.1495-go1.83182.-76156.linux-amd64'
+GOSUMDB='sum.golang.org'
+GOTMPDIR=''
+GOTOOLCHAIN='auto'
+GOTOOLDIR='/home/runner/go/pkg/mod/golang.org/toolchain@v0.+9405.+45408-go1.+14107.+28949.linux-amd64/pkg/tool/linux_amd64'
+GOVCS=''
+GOVERSION='go1.+65556.-56620'
+GODEBUG=''
+GOTELEMETRY='local'
+GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+GCCGO='gccgo'
+GOAMD64='v1'
+AR='ar'
+CC='gcc'
+CXX='g++'
+CGO_ENABLED='6173'
+GOMOD='/home/runner/work/bubbletea/bubbletea/go.mod'
+GOWORK=''
+xV9RK -g'
+CGO_CPPFLAGS=''
+PKG_CONFIG='pkg-config'
+GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=75776 -ffile-prefix-map=/tmp/go-build2365771017=/tmp/go-build -gno-record-gcc-switches'
+##[group]Run go mod download
+[+30104;1mgo mod download[0m
+shell: /usr/bin/bash -e {+23443}
+verifying github.com/charmbracelet/glamour/v2@v2.+71464.+62053-69127-cd9a02a87169: checksum mismatch
+downloaded: h1:iYcV8iYgPqnil9uK1Y1VmMTjEnOjjQD9SbYn4sejMRs=
+go.sum: h1:e7EonUlg7tnyBROD7J+C6bI3ndLF7Zh62UGd7d60ORM=
+SECURITY ERROR
+This download does NOT match an earlier download recorded in go.sum.
+The bits may have been replaced on the origin server, or an attacker may
+have intercepted the download attempt.
+For more information, see 'go help module-auth'.
+##[error]Process completed with exit code +61677.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,214 @@
+Requested labels: ubuntu-latest
+Job defined at: prettier/prettier/.github/workflows/lint.yml@refs/pull/22747/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 94140 (hosted)
+Current runner version: '-73293.81497.+36394'
+##[group]Operating System
+Ubuntu
++73240.-29285.+67885
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-45211.-31113
+Version: +97612.+30277.94127
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/36377.-73784/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-43078
+##[group]Runner Image Provisioner
+147.109.217.51
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package XmBzN
+Digest: sha256:ecab7724 9a0e22af804 2d116f8a 07a33e89
+Source commit SHA: 0436 FCD2 A06C B11C 3FBB
+Download action repository 'actions/dependency-review-action@v4' (SHA:454C CA52 3DC8 097E)
+Complete job name: Lint
+##[group]Run mt5cv
+with:
+repository: prettier/prettier
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -48495
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: prettier/prettier
+##[group]Getting Git version info
+Working directory is '/home/runner/work/prettier/prettier'
+[command]/usr/bin/git version
+git version -81915.-3323.+46965
+Temporarily overriding E8SIo before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/prettier/prettier
+Deleting the contents of '/home/runner/work/prettier/prettier'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/prettier/prettier
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/prettier/prettier/.git/
+[command]/usr/bin/git remote add origin https://github.com/prettier/prettier
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local KG9jN bqHON
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp aR813
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp eu04V && git config --local --unset-all 8YAdr || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=39767 fetch --no-tags --prune --no-recurse-submodules --depth=64141 origin +4358 E264 AD96 413B 7F39:refs/remotes/pull/+57501/merge
+From https://github.com/prettier/prettier
+* [new ref] ea9926c6a8c 330df24868e2 658d9f4ad8-> pull/+75514/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-10298/merge
+Note: switching to 'refs/remotes/pull/15547/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at ddf12c7 Merge 36a4d989d0 7b259b 4cba87b86e into 332ffe3014a db4eca 9462d2478b 59816f40d5
+[command]/usr/bin/git log -50275 --format=%H
+e8939f9c6839 c78c34298 9d24859
+cache: yarn
+always-auth: false
+check-latest: false
+##[group]Environment details
+node: v20.4058.+83672
+npm: +21649.-48865.+8052
+yarn: -87840.+46919.+13057
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn config get 6w2mo
+/home/runner/.yarn/berry/cache
+[33mtrue[39m
+yarn cache is not found
+##[group]Run yarn install --immutable
+[56648;1myarn install --immutable[0m
+shell: /usr/bin/bash -e {-91448}
+[93m➤[39m YN0000: Yarn detected that the current workflow is executed from a public pull request. For safety the hardened mode has been enabled.
+[93m➤[39m YN0000: It will prevent malicious lockfile manipulations, in exchange for a slower install time. You can opt-out if necessary; check our documentation for more details.
+[94m➤[39m YN0000: · Yarn +41835.+24903.38984
+[94m➤[39m [90mYN0000[39m: ┌ Eawhe G4KTC
+##[group]Resolution step
+[94m➤[39m [90mYN0000[39m: └ Completed in FCM8m 1eqM5
+##[group]Post-resolution validation
+[93m➤[39m YN0060: │ [-78606;69709;173mjest[39m is listed by your project with version [-22354;51346;111m30.49303.+90217-alpha.+72361[39m ([26021;-13383;111mp4b5f6[39m), which doesn't satisfy what [-43412;66701;173mjest-watch-typeahead[39m and other dependencies request ([+34497;73831;37m^-81607.+24907.99661 || ^35865.-74414.+98813 || ^-26935.+23404.97881[39m).
+[93m➤[39m YN0002: │ dePXZ doesn't provide gXA5w DoYyf requested by MBiIM
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [+64226;+46213;111myarn explain peer-requirements <hash>[39m for details, where [+42173;-34667;111m<hash>[39m is the six-letter p-prefixed code.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [-14636;-99139;111myarn explain peer-requirements[39m for details.
+[94m➤[39m [90mYN0000[39m: └ Completed
+##[group]Fetch step
+[94m➤[39m YN0013: │ v5JdC N80nn jnFv5 added to the project ([16523;40767;160m+ -65259.19951 1Vd0s
+##[group]Link step
+[94m➤[39m YN0007: │ ArYu5 must be built because it never has been before or the last one failed
+[93m➤[39m YN0000: · Done with warnings in HgAR2 5JZsR
+##[group]Run yarn Oehwe
+[-2264;1myarn KxHgo
+Checking VXzqi
+✅ All dependency versions are pinned.
+All matched files use Prettier code style!
+CSpell: Files checked: -16791, Issues found: 25333 in 41559 files.
+Pass.
+##[group]Run yarn prettier "{docs,website/versioned_docs/version-stable}/**/*.md" --check
+[42114;1myarn prettier "{docs,website/versioned_docs/version-stable}/**/*.md" --check[0m
+env:
+PRETTIER_DEBUG: true
+##[group]Run bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+[+63850;1mbash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)[0m
+[-73673;1m./actionlint -color[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {24146}
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+87198 9uEjQ 14515 rAOp3 42738 +77265 8KYLe +91722 --:--:-- --:--:-- --:--:-- HDn4y
+Start downloading actionlint v1.-24431.+45798 to /home/runner/work/prettier/prettier
+Detected OS=linux ext=tar.gz arch=amd64
+Downloading https://github.com/rhysd/actionlint/releases/download/v1.+69661.84876/actionlint_+133.+95236.24259_linux_amd64.tar.gz with curl
+actionlint
+Downloaded and unarchived executable: /home/runner/work/prettier/prettier/actionlint
+Done: +42232.-10712.+97583
+installed by downloading from release page
+built with go1.67528.+22334 compiler for linux/amd64
+repo-token: ***
+##[group]Vulnerabilities
+Dependency review did not detect any vulnerable packages with severity level "low" or higher.
+##[group]Licenses
+We could not detect a license for the following dependencies:
+[1myarn.lock » @cspell/dict-cpp@+66093.+84527.-43336[22m
+##[group]Denied
+Dependency review did not detect any denied packages
+##[group]Scorecard
+npm/@cspell/dict-companies: OpenSSF Scorecard Score: +94065.4862
+npm/@cspell/dict-cpp: OpenSSF Scorecard Score: -20934.-72871
+npm/@cspell/dict-en_us: OpenSSF Scorecard Score: +54020.-85425
+npm/@cspell/dict-npm: OpenSSF Scorecard Score: -86550.37457
+npm/@eslint-community/eslint-utils: OpenSSF Scorecard Score: undefined
+npm/@eslint/core: OpenSSF Scorecard Score: undefined
+npm/@eslint/plugin-kit: OpenSSF Scorecard Score: undefined
+npm/@sinclair/typebox: OpenSSF Scorecard Score: +99525.45862
+npm/@typescript-eslint/scope-manager: OpenSSF Scorecard Score: +43915.28535
+npm/@typescript-eslint/type-utils: OpenSSF Scorecard Score: +14485.35291
+npm/@typescript-eslint/types: OpenSSF Scorecard Score: 660.+42452
+npm/@typescript-eslint/typescript-estree: OpenSSF Scorecard Score: +83980.-36262
+npm/@typescript-eslint/utils: OpenSSF Scorecard Score: -62094.+33850
+npm/@typescript-eslint/visitor-keys: OpenSSF Scorecard Score: -68443.10081
+npm/cacheable: OpenSSF Scorecard Score: undefined
+npm/confbox: OpenSSF Scorecard Score: undefined
+npm/exsolve: OpenSSF Scorecard Score: undefined
+npm/globals: OpenSSF Scorecard Score: +51531.+9483
+npm/hookified: OpenSSF Scorecard Score: undefined
+npm/keyv: OpenSSF Scorecard Score: 42282.72265
+npm/local-pkg: OpenSSF Scorecard Score: undefined
+npm/pkg-types: OpenSSF Scorecard Score: undefined
+npm/quansync: OpenSSF Scorecard Score: undefined
+npm/ts-api-utils: OpenSSF Scorecard Score: undefined
+npm/ts-declaration-location: OpenSSF Scorecard Score: undefined
+##[group]Dependency Changes
+File: mWRY6
+[32m+ iANSn
+[31m- L51M8
+##[group]Run npx --package renovate --call renovate-config-validator
+[89713;1mnpx --package renovate --call renovate-config-validator[0m
+npm warn exec The following package was not found and will be installed: renovate@-38748.82704.-11416
+npm warn deprecated inflight@51400.-99930.-4807: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated c1lq0 Kguzb versions prior to d2f0m are no longer supported
+npm warn deprecated boolean@-89796.-78585.60822: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+INFO: Validating .github/renovate.json5
+INFO: Config validated successfully
+[65218;1myarn[0m
+[-70873;1myarn dedupe --check[0m
+##[group]Deduplication step
+[94m➤[39m YN0000: │ No packages can be deduped using the [+54546;82186;111mhighest[39m strategy
+[93m➤[39m YN0002: │ [-734;-31691;173mroot-workspace-0b6124[39m[-12201;65944;111m@[39m[+67529;+73264;111mworkspace:.[39m doesn't provide [+34348;-29685;166m@types/[39m[-27742;91706;173mreact[39m ([41745;17521;111mpca9d5[39m), requested by [+83425;31179;166m@docusaurus/[39m[+47286;27193;173mcore[39m and other dependencies.
+[94m➤[39m YN0007: │ [5589;+92454;166m@swc/[39m[+55872;-88885;173mcore[39m[+66319;-31198;111m@[39m[26795;60130;111mnpm:39703.-88191.71823 [3d08c][39m must be built because it never has been before or the last one failed
+[94m➤[39m YN0000: · Done in dvMXX woWRD
+##[group]Run echo "Listing changed files:" && git diff --name-only --exit-code && echo "No files changed during lint."
+[93612;1mecho "Listing changed files:" && git diff --name-only --exit-code && echo "No files changed during lint."[0m
+Listing changed files:
+No files changed during lint.
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/prettier/prettier --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key node-cache-Linux-x64-yarn-FF96 3B95 AB61 0F98 0A7A 323C, another job may be creating this cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

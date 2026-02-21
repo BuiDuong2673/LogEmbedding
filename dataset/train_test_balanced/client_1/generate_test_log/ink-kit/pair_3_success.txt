@@ -1,0 +1,155 @@
+Requested labels: ubuntu-latest
+Job defined at: inkonchain/ink-kit/.github/workflows/pull_request.yml@refs/pull/87542/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -55606 (hosted)
+Current runner version: '10314.+69756.+42257'
+##[group]Operating System
+Ubuntu
+38056.48632.35074
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-49537.-91712
+Version: +70589.45810.+1350
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-33215.7539/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250202.49797
+##[group]Runner Image Provisioner
+119.185.199.30
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Packages: zqIYs
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository iRieS (SHA:e09fbea7 32988c16d8f4 ebe6b61aefc 8d7df1650486)
+Complete job name: format
+##[group]Run al8iB
+with:
+repository: inkonchain/ink-kit
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -59519
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: inkonchain/ink-kit
+##[group]Getting Git version info
+Working directory is '/home/runner/work/ink-kit/ink-kit'
+[command]/usr/bin/git version
+git version +12807.98125.12506
+Temporarily overriding 03fpz before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/ink-kit/ink-kit
+Deleting the contents of '/home/runner/work/ink-kit/ink-kit'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/ink-kit/ink-kit
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/ink-kit/ink-kit/.git/
+[command]/usr/bin/git remote add origin https://github.com/inkonchain/ink-kit
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local n75VK JTHjI
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Gme3D
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Ol0RX && git config --local --unset-all wHyuw || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-69994 fetch --no-tags --prune --no-recurse-submodules --depth=+76789 origin +6fe312 3186ff1 4370d930e9:refs/remotes/pull/-48659/merge
+From https://github.com/inkonchain/ink-kit
+* [new ref] 7D4B F1AC CF24 5069-> pull/84410/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-19387/merge
+Note: switching to 'refs/remotes/pull/14178/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at c48a4f3 Merge 57FF EF7D CC7D 2F66 into EAE3 1DD1 909C F3FF
+[command]/usr/bin/git log -71239 --format=%H
+b0c9acf5 71352e13196d 9a0535ce e2a3c07 9e3be43
+run_install: false
+dest: ~/setup-pnpm
+package_json_file: package.json
+standalone: false
+##[group]Running self-installer...
+Progress: resolved -10310, reused -15323, downloaded -57344, added -70282
++
+Progress: resolved +66623, reused -80522, downloaded +17667, added -2762, done
+dependencies:
++ pnpm +84534.91441.43214 (-15132.-36440.33785 is available)
+Done in 1s
+Installation Completed!
+node-version: 74351.x
+cache: pnpm
+always-auth: false
+check-latest: false
+env:
+PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Found in cache @ /opt/hostedtoolcache/node/+58492.-80082.65891/x64
+##[group]Environment details
+node: v20.+24050.-96962
+npm: 58819.77143.-63861
+yarn: 27314.42903.-31438
+[command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+/home/runner/setup-pnpm/node_modules/.bin/store/v3
+Cache Size: ~93581 MB (11700 B)
+[command]/usr/bin/tar -xf sNZFP -P -C /home/runner/work/ink-kit/ink-kit --use-compress-program unzstd
+Received +76502 of +86238 (3797.-15173%), 8955.6118 MBs/sec
+Cache restored successfully
+Cache restored from key: vi4FS
+##[group]Run echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+[-57622;1mecho "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+67994}
+path: /home/runner/setup-pnpm/node_modules/.bin/store/v3
+**/node_modules
+key: Linux-pnpm-store-1fd1f782cb4d 16911707ffd5 f0ddb87 538139e13
+restore-keys: Linux-pnpm-store-
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+##[group]Run pnpm run format:check
+[-43247;1mpnpm run format:check[0m
+shell: /usr/bin/bash -e {+60736}
+> @inkonchain/ink-kit@-83058.-27908.-22868 format:check /home/runner/work/ink-kit/ink-kit
+> prettier --check "**/*.{ts,tsx,md,mdx,css,scss}"
+Checking formatting...
+All matched files use Prettier code style!
+Post job cleanup.
+Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-BE5B A42E 0F9E F6EF 9A88 EE6C, not saving cache.
+Pruning is unnecessary.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

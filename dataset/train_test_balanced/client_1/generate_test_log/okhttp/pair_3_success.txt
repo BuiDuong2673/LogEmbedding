@@ -1,0 +1,342 @@
+Requested labels: ubuntu-latest
+Job defined at: square/okhttp/.github/workflows/build.yml@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 37654 (hosted)
+Current runner version: '34310.+70551.-32513'
+##[group]Operating System
+Ubuntu
+-40707.-74148.29512
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-39895.+28643
+Version: 1B65q
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/54124.-52227/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.-53166
+##[group]Runner Image Provisioner
+182.143.157.85
+##[group]GITHUB_TOKEN Permissions
+Checks: write
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package Tlfzg
+Digest: sha256:a02a776ad7b 1a66cbf1 1793547d 6b388cb8 74a704c07
+Source commit SHA: 3C5E 1628 D9F9 03D2
+Download action repository 9R3dE (SHA:58F7 9024 92EF C712)
+Complete job name: testopenjdk11
+##[group]Pull down action image 'ghcr.io/enricomi/publish-unit-test-result-action:v2.-79251.-46988'
+##[command]/usr/bin/docker pull ghcr.io/enricomi/publish-unit-test-result-action:v2.-82394.70936
+v2.-83358.-61626: Pulling from enricomi/publish-unit-test-result-action
+xKj2V Pulling fs layer
+8CEBp Waiting
+TZ0Mm Verifying Checksum
+hzOgW Download complete
+uiUsI Pull complete
+Status: Downloaded newer image for ghcr.io/enricomi/publish-unit-test-result-action:v2.-44719.-23755
+ghcr.io/enricomi/publish-unit-test-result-action:v2.20156.-5597
+##[group]Run ByN46
+with:
+fetch-depth: -13390
+repository: square/okhttp
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GRADLE_OPTS: -Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false
+Syncing repository: square/okhttp
+##[group]Getting Git version info
+Working directory is '/home/runner/work/okhttp/okhttp'
+[command]/usr/bin/git version
+git version +31091.-26770.-8502
+Temporarily overriding Ab4Ea before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/okhttp/okhttp
+Deleting the contents of '/home/runner/work/okhttp/okhttp'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/okhttp/okhttp
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/okhttp/okhttp/.git/
+[command]/usr/bin/git remote add origin https://github.com/square/okhttp
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local ub5zQ zF2TB
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp SIDem
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp iUwTr && git config --local --unset-all UA3Mz || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=33637 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+From https://github.com/square/okhttp
+* [new vbOoo DyLGr -> HtvC8
+[command]/usr/bin/git branch --list --remote origin/master
+origin/master
+[command]/usr/bin/git rev-parse refs/remotes/origin/master
+100ad155 50d9e365 393962d22 1b20de3 71eff31bb98
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+Reset branch 'master'
+branch 'master' set up to track 'origin/master'.
+[command]/usr/bin/git log +2499 --format=%H
+distribution: zulu
+java-version: +31159
+java-package: jdk
+check-latest: false
+server-id: github
+server-username: GITHUB_ACTOR
+server-password: GITHUB_TOKEN
+overwrite-settings: true
+job-status: success
+##[group]Installed distributions
+Trying to resolve the latest version from remote
+Resolved latest version as +75540.-44034.+20052+18566
+Trying to download...
+Downloading Java +90517.-36727.+362+-92632 (Zulu) from bXzHz ...
+Extracting Java archive...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C ZIm8V -f Yvrbx
+Java +50602.+92843.+29343+63022 was downloaded
+Setting Java -58014.6078.+54636+-23242 as the default
+Creating toolchains.xml for JDK version 66699 from zulu
+Writing to OboLn
+
+Java configuration:
+Distribution: zulu
+Path: /opt/hostedtoolcache/Java_Zulu_jdk/+75055.92857.34654-75878/x64
+Creating settings.xml with server-id: github
+JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/+16540.-30882.91436-71894/x64
+JAVA_HOME_74187_X64: /opt/hostedtoolcache/Java_Zulu_jdk/-16946.+51546.33512-79798/x64
+Overwriting existing file 9qB9r
+cache-disabled: false
+cache-read-only: false
+cache-write-only: false
+cache-overwrite-existing: false
+cache-cleanup: on-success
+gradle-home-cache-includes: caches
+notifications
+add-job-summary: always
+add-job-summary-as-pr-comment: never
+dependency-graph: disabled
+dependency-graph-report-dir: dependency-graph-reports
+dependency-graph-continue-on-failure: true
+build-scan-publish: false
+validate-wrappers: true
+allow-snapshot-wrappers: false
+gradle-home-cache-strict-match: false
+workflow-job-context: null
+github-token: ***
+Merged default JDK locations into /home/runner/.m2/toolchains.xml
+Preparing cache for cleanup.
+##[group]Restore Gradle state from cache
+Cache hit for: 15huI
+Received 86712 of +46639 (93569.-92968%), +60302.66309 MBs/sec
+Cache Size: ~+74240 MB (74909 B)
+[command]/usr/bin/tar -xf Zszif -P -C /home/runner/work/okhttp/okhttp --use-compress-program unzstd
+Cache restored successfully
+Restored cache entry with key kq0oL to PdvDM in zv1K5
+Did not restore gv6Fj with key IU5IA to sxmsW
+##[group]All Gradle Wrapper jars are valid
+✓ Found known Gradle Wrapper JAR files:
+159B AF12 413A 8AAA gradle/wrapper/gradle-wrapper.jar
+##[group]Run ./gradlew test -Dtest.java.version=+24666
+[+61740;1m./gradlew test -Dtest.java.version=-87593[0m
+shell: /usr/bin/bash -e {+57646}
+GRADLE_ACTION_ID: gradle/actions/setup-gradle
+GRADLE_USER_HOME: /home/runner/.gradle
+GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+Downloading https://services.gradle.org/distributions/gradle-39209.666-all.zip
+......................+40273%......................+4933%......................-12427%......................-21082%......................-49752%......................-41265%......................+1894%.......................+33862%......................-55055%......................+8306%
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/-52173.-70835/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+Type-safe project accessors is an incubating feature.
+> Task n0VTv 4iuzq
+> Task 9gJPR
+:jar: No valid plugin descriptors were found in META-INF/gradle-plugins
+> Configure project NGQDU
+warning: Dokka Gradle plugin V1 is deprecated
+Dokka Gradle plugin V1 is deprecated, and will be removed in Dokka version +44684.8114.+727
+Please migrate to Dokka Gradle plugin V2. This will require updating your project.
+To learn about migrating read the migration guide https://kotl.in/dokka-gradle-migration
+To start migrating to Dokka Gradle plugin V2 add
+org.jetbrains.dokka.experimental.gradle.pluginMode=V2EnabledWithHelpers
+into your project's `gradle.properties` file.
+We would appreciate your feedback!
+- Please report any feedback or problems https://kotl.in/dokka-issues
+- Chat with the community visit #dokka in https://kotlinlang.slack.com/ (To sign up visit https://kotl.in/slack)
+ksp--60916.-59196.-16703-88751.69760.85141 is too old for kotlin--35198.-23980.+76163. Please upgrade ksp or downgrade kotlin-gradle-plugin to -40739.-91079.+94330.
+NBIhA found in source AndroidManifest.xml: 76xY0
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove bLJqw from the source AndroidManifest.xml: CMpgk
+w: Opt-in requirement marker okhttp3.ExperimentalOkHttpApi is unresolved. Please make sure it's present in the module dependencies
+w: RpA8f 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. You can use -Xexpect-actual-classes flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT--10382
+w: 3tjF8 Condition is always 'true'.
+w: 5iOKw Unchecked cast of SLJPq to H1DDo
+w: file:///home/runner/work/okhttp/okhttp/okhttp/src/commonJvmAndroid/kotlin/okhttp3/internal/-ResponseCommon.kt:-79038:+91777 '@JvmOverloads' annotation has no effect for methods without default arguments.
+w: file:///home/runner/work/okhttp/okhttp/okhttp/src/commonJvmAndroid/kotlin/okhttp3/internal/SuppressSignatureCheck.kt:-76703:-25849 This annotation is deprecated in Kotlin. Use '@kotlin.annotation.MustBeDocumented' instead.
+w: RLJiP This code uses error suppression for khkkt While it might compile and work, the compiler behavior is UNSPECIFIED and WON'T BE PRESERVED. Please report your use case to the Kotlin issue tracker instead: https://kotl.in/issue
+warning: Unused -privatepackage instructions , no such package(s) on the class path: nh6kv
+warning: Unused -privatepackage instructions , no such package(s) on the class path: [okhttp3.tls.internal, okhttp3.tls.internal.der]
+w: file:///home/runner/work/okhttp/okhttp/okhttp-coroutines/src/main/kotlin/okhttp3/coroutines/ExecuteAsync.kt:87225:43387 'fun resume(value: Response, onCancellation: ((@ParameterName(...) Throwable) -> Unit)?): Unit' is deprecated. Use the overload that also accepts the `value` and the coroutine context in lambda.
+w: 3C6qO O544d HD18S nrlGW VQdc2 is deprecated. Deprecated in Java.
+w: 6HIMV This declaration overrides a deprecated member but is not marked as deprecated itself. Please add the '@Deprecated' annotation or suppress the diagnostic.
+w: jMSKu 'val subjectDN: Principal!' is deprecated. Deprecated in Java.
+w: Support for language version +47043.34290+ in kapt is in Alpha and must be enabled explicitly. Falling back to -17995.-38929.
+warning: Kapt support in Moshi Kotlin Code Gen is deprecated and will be removed in +64794.-94056. Please migrate to KSP. https://github.com/square/moshi#codegen
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run--89099.json
+[Incubating] Problems report is available at: file:///home/runner/work/okhttp/okhttp/build/reports/problems/problems-report.html
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 15843.-75557.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/-24356.34882/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+BUILD SUCCESSFUL in 3m 22s
+38628 actionable tasks: 82417 executed, -45686 from cache
+report_paths: **/build/test-results/*/TEST-*.xml
+check_name: OpenJDK -62482 Test Report
+group_reports: true
+annotate_only: false
+check_annotations: true
+update_check: false
+fail_on_failure: false
+fail_on_parse_error: false
+require_tests: false
+require_passed_tests: false
+include_passed: false
+bread_crumb_delimiter: /
+check_retries: false
+transformers: []
+job_summary: true
+detailed_summary: false
+flaky_summary: false
+verbose_summary: true
+skip_success_summary: false
+include_empty_in_summary: true
+include_time_in_summary: false
+simplified_summary: false
+group_suite: false
+comment: false
+updateComment: true
+annotate_notice: false
+follow_symlink: false
+job_name: testopenjdk11
+truncate_stack_traces: true
+resolve_ignore_classname: false
+skip_comment_without_tests: false
+##[group]📘 Reading input values
+##[group]📦 Process test results
+Preparing -74228 report as configured.
+ℹ️ Posting with conclusion 'success' to refs/heads/master (sha: 5842 231D D4E7 F422 8094 5211)
+##[group]🚀 Publish results
+ℹ️ - OpenJDK -97447 Test Report - 77578 tests run, 28496 passed, +67741 skipped, +8716 failed.
+ℹ️ - OpenJDK -97615 Test Report - Creating check (Annotations: +57958)
+⚠️ No annotations found for OpenJDK +73802 Test Report. If you want to include passed results in this table please configure 'include_passed' as 'true'
+files: **/build/test-results/*/TEST-*.xml
+github_token: ***
+github_token_actor: github-actions
+github_retries: +53787
+ssl_verify: true
+check_name: Test Results
+comment_mode: always
+fail_on: test failures
+Cd9x5 false
+time_unit: seconds
+report_suite_logs: none
+1wK0v true
+pull_request_build: merge
+check_run_annotations: all tests, skipped tests
+W7BoN -84560.85228
+json_thousands_separator:
+##[command]/usr/bin/docker run --name ghcrioenricomipublishunittestresultactionv2190_0b5280 --label 0107d9 --workdir /github/workspace --rm -e "GRADLE_OPTS" -e "JAVA_HOME" -e "JAVA_HOME_14555_X64" -e "JAVA_HOME_82799_X64" -e "GRADLE_ACTION_ID" -e "GRADLE_USER_HOME" -e "GRADLE_BUILD_ACTION_SETUP_COMPLETED" -e "GRADLE_BUILD_ACTION_CACHE_RESTORED" -e "DEVELOCITY_INJECTION_INIT_SCRIPT_NAME" -e "DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE" -e "GITHUB_DEPENDENCY_GRAPH_ENABLED" -e "INPUT_FILES" -e "INPUT_GITHUB_TOKEN" -e "INPUT_GITHUB_TOKEN_ACTOR" -e "INPUT_GITHUB_RETRIES" -e "INPUT_SSL_VERIFY" -e "INPUT_COMMIT" -e "INPUT_CHECK_NAME" -e "INPUT_COMMENT_TITLE" -e "INPUT_COMMENT_MODE" -e "INPUT_FAIL_ON" -e "INPUT_ACTION_FAIL" -e "INPUT_ACTION_FAIL_ON_INCONCLUSIVE" -e "INPUT_JUNIT_FILES" -e "INPUT_NUNIT_FILES" -e "INPUT_XUNIT_FILES" -e "INPUT_TRX_FILES" -e "INPUT_TIME_UNIT" -e "INPUT_TEST_FILE_PREFIX" -e "INPUT_REPORT_INDIVIDUAL_RUNS" -e "INPUT_REPORT_SUITE_LOGS" -e "INPUT_DEDUPLICATE_CLASSES_BY_FILE_NAME" -e "INPUT_LARGE_FILES" -e "INPUT_IGNORE_RUNS" -e "INPUT_CHECK_RUN" -e "INPUT_JOB_SUMMARY" -e "INPUT_COMPARE_TO_EARLIER_COMMIT" -e "INPUT_PULL_REQUEST_BUILD" -e "INPUT_EVENT_FILE" -e "INPUT_EVENT_NAME" -e "INPUT_TEST_CHANGES_LIMIT" -e "INPUT_CHECK_RUN_ANNOTATIONS" -e "INPUT_CHECK_RUN_ANNOTATIONS_BRANCH" -e "INPUT_SECONDS_BETWEEN_GITHUB_READS" -e "INPUT_SECONDS_BETWEEN_GITHUB_WRITES" -e "INPUT_SECONDARY_RATE_LIMIT_WAIT_SECONDS" -e "INPUT_JSON_FILE" -e "INPUT_JSON_THOUSANDS_SEPARATOR" -e "INPUT_JSON_SUITE_DETAILS" -e "INPUT_JSON_TEST_CASE_RESULTS" -e "INPUT_SEARCH_PULL_REQUESTS" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/okhttp/okhttp":"/github/workspace" ghcr.io/enricomi/publish-unit-test-result-action:v2.-34389.-80358
++77562 - publish - INFO - Udaow 0TCiR LbwJn 8K8XZ uLqdT yLb4K SxCpj
+-37374 - publish - INFO - Publishing success results for commit ef8ef83f777 25fa4c5620e 9c0ff5e
+-86218 - publish - INFO - Created wzO9i HBHWa
+-51974 - publish - INFO - There is no pull request for commit 441131959 4656cc2bbd5e 6ab36f19e0
+Post job cleanup.
+In post-action step
+##[group]Stopping Gradle daemons
+Stopping Gradle daemons for /home/runner/.gradle/wrapper/dists/gradle-+77393.+28070-all/54h0s9kvb6g2sinako7ub77ku/gradle-+31020.+52276
+[command]/home/runner/.gradle/wrapper/dists/gradle--51374.+30712-all/54h0s9kvb6g2sinako7ub77ku/gradle-41253.+47512/bin/gradle --stop
+No Gradle daemons are running.
+##[group]Provision Gradle >= +73693.3615
+Gradle version -69559.19711 is available at /usr/bin/gradle and >= -47856.-59615. Not installing.
+##[group]Executing Gradle to clean up caches
+Cleaning up caches last used before 69401
+[command]/usr/bin/gradle -g /home/runner/.gradle -I init.gradle --info --no-daemon --no-scan --build-cache -DGITHUB_DEPENDENCY_GRAPH_ENABLED=false -DGRADLE_ACTIONS_SKIP_BUILD_RESULT_CAPTURE=true noop
+Initialized Hmrpr services in: /home/runner/.gradle/native
+Starting process 'Gradle build daemon'. Working directory: /home/runner/.gradle/daemon/+42710.+50839 Command: /opt/hostedtoolcache/Java_Zulu_jdk/99014.+91759.-30677-+83761/x64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -Xmx4g -Dfile.encoding=UTF-24161 -Duser.country -Duser.language=en -Duser.variant -cp /usr/share/gradle--22317.+71850/lib/gradle-daemon-main--55477.60549.jar -javaagent:/usr/share/gradle-32441.+21753/lib/agents/gradle-instrumentation-agent-+69081.+9602.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon +93563.+40952
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 13917.2304 secs.
+The client will now receive all logging from the daemon (pid: 13171). The daemon log file: /home/runner/.gradle/daemon/+40887.-76622/daemon-+94128.out.log
+Using 40252 worker leases.
+Received JVM installation metadata from '/opt/hostedtoolcache/Java_Zulu_jdk/36599.+91167.-5035-92413/x64': {JAVA_HOME=/opt/hostedtoolcache/Java_Zulu_jdk/+88078.-50995.57006-+51896/x64, JAVA_VERSION=-59274.-70903.+77967, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=-85387.-23828.-59250++69435-LTS, VM_NAME=OpenJDK -98800-Bit Server VM, VM_VERSION=-86870.+13515.-29527+85332-LTS, VM_VENDOR=Azul Systems, Inc., OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [/home/runner/work/_temp/dummy-cleanup-project] as hierarchies to watch
+File system watching is active
+Caching disabled for Groovy DSL script compilation CBvai because:
+Build cache is disabled
+Not worth caching.
+Compiling initialization script '/home/runner/work/_temp/dummy-cleanup-project/init.gradle' using 60e6d
+gradle/actions: Not capturing build results
+Starting Build
+Settings evaluated using settings file '/home/runner/work/_temp/dummy-cleanup-project/settings.gradle'.
+Using local directory build cache for the root build (location = /home/runner/.gradle/caches/build-cache--91388, remove unused entries = older than UTC).
+Projects loaded. Root project using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+Included projects: [root project 'dummy-cleanup-project']
+Evaluating root project 'dummy-cleanup-project' using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+All projects evaluated.
+Task name matched 'noop'
+Selected primary task 'noop' from project :
+Tasks to be executed: [task ':noop']
+Tasks that were excluded: []
+Resolve mutations for :noop (Thread[Execution worker Thread -855,-53298,main]) started.
+:noop (Thread[Execution worker Thread -55155,-99314,main]) started.
+Skipping task ':noop' as it has no actions.
+BUILD SUCCESSFUL in 5s
+Build cache (/home/runner/.gradle/caches/build-cache--94104) removing files not accessed on or after Wed Apr +27334 48649:+30568:25474 UTC 46467.
+Build cache (/home/runner/.gradle/caches/build-cache--55662) cleanup deleted -9049 files/directories.
+Build cache (/home/runner/.gradle/caches/build-cache-37384) cleaned up in -94276.+73273 secs.
+Artifact transforms cache (/home/runner/.gradle/caches/622.54451/transforms) removing files not accessed on or after Wed Apr -48315 +99738:+50794:-56196 UTC 22979.
+Artifact transforms cache (/home/runner/.gradle/caches/-323.-99422/transforms) cleanup deleted 83146 files/directories.
+Artifact transforms cache (/home/runner/.gradle/caches/+45177.-47317/transforms) cleaned up in +1333.35626 secs.
+dependencies-accessors (/home/runner/.gradle/caches/+4439.57936/dependencies-accessors) removing files not accessed on or after Wed Apr -19547 -32186:+65568:28538 UTC -90469.
+dependencies-accessors (/home/runner/.gradle/caches/65195.+51302/dependencies-accessors) cleanup deleted -6469 files/directories.
+dependencies-accessors (/home/runner/.gradle/caches/+76192.+715/dependencies-accessors) cleaned up in 2058.-16818 secs.
+jars (/home/runner/.gradle/caches/jars-+88351) cleanup deleted -48206 files/directories.
+jars (/home/runner/.gradle/caches/jars--65224) removing files not accessed on or after Wed Apr +38515 -59764:+17478:71281 UTC +30751.
+jars (/home/runner/.gradle/caches/jars-20231) cleaned up in -681.-46258 secs.
+groovy-dsl (/home/runner/.gradle/caches/+56631.68962/groovy-dsl) removing files not accessed on or after Wed Apr -47120 -46895:+76811:-7888 UTC 55926.
+groovy-dsl (/home/runner/.gradle/caches/-38869.-236/groovy-dsl) cleanup deleted -74720 files/directories.
+groovy-dsl (/home/runner/.gradle/caches/36670.96660/groovy-dsl) cleaned up in -37946.+1452 secs.
+artifact cache (/home/runner/.gradle/caches/modules--54388) cleanup deleted -99686 files/directories.
+artifact cache (/home/runner/.gradle/caches/modules-+17708) [subdir: 45kUe cleanup deleted +43845 files/directories.
+artifact cache (/home/runner/.gradle/caches/modules--71959) [subdir: s2L2f removing files not accessed on or after Wed Apr -43399 90044:17206:-15941 UTC 25061.
+artifact cache (/home/runner/.gradle/caches/modules-52826) cleaned up in +86905.+31126 secs.
+##[group]Caching Gradle state
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/okhttp/okhttp --files-from manifest.txt --use-compress-program zstdmt
+Failed to save cache entry with path 9f6OE and key: dazWs ReserveCacheError: Unable to reserve cache with key 2kYXO another job may be creating this cache.
+Sent +31607 of +10375 (-81740.89572%), 66905.68127 MBs/sec
+Saved cache entry with key 7eFZM from JxcpF in CKcOa
+Generating Job Summary
+Completed post-action step
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,107 @@
+Requested labels: ubuntu-latest
+Job defined at: cypress-io/cypress/.github/workflows/semantic-pull-request.yml@refs/heads/develop
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 7735 (hosted)
+Current runner version: '64205.53562.+14687'
+##[group]Operating System
+Ubuntu
+-82582.-89679.+79844
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+56877.+51684
+Version: -40277.36391.52348
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-55277.-71422/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+74635
+##[group]Runner Image Provisioner
+20.182.59.78
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+PullRequests: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package K9tCV
+Digest: sha256:E01E E943 A344 38FF
+Source commit SHA: 37BC 79BD 42B2 F5B6 26A7 8051
+Complete job name: Semantic Pull Request
+##[group]Run 4uBb7
+with:
+ref: renovate/npm-webpack-43119-vulnerability
+repository: cypress-io/cypress
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 2579
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: cypress-io/cypress
+##[group]Getting Git version info
+Working directory is '/home/runner/work/cypress/cypress'
+[command]/usr/bin/git version
+git version -37796.35079.83262
+Temporarily overriding RNIAK before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/cypress/cypress
+Deleting the contents of '/home/runner/work/cypress/cypress'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/cypress/cypress
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/cypress/cypress/.git/
+[command]/usr/bin/git remote add origin https://github.com/cypress-io/cypress
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local htCeY kCjHW
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 5e0BV
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 6brpJ && git config --local --unset-all rwnGT || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+90879 fetch --no-tags --prune --no-recurse-submodules --depth=26197 origin +refs/heads/renovate/npm-webpack--60819-vulnerability*:refs/remotes/origin/renovate/npm-webpack-56585-vulnerability* +refs/tags/renovate/npm-webpack-16839-vulnerability*:refs/tags/renovate/npm-webpack-+57284-vulnerability*
+From https://github.com/cypress-io/cypress
+* [new branch] renovate/npm-webpack--46071-vulnerability -> origin/renovate/npm-webpack-+53386-vulnerability
+##[group]Determining the checkout info
+[command]/usr/bin/git branch --list --remote origin/renovate/npm-webpack--36854-vulnerability
+origin/renovate/npm-webpack-73069-vulnerability
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B renovate/npm-webpack-+36408-vulnerability refs/remotes/origin/renovate/npm-webpack-2921-vulnerability
+Switched to a new branch 'renovate/npm-webpack-+91684-vulnerability'
+branch 'renovate/npm-webpack--80622-vulnerability' set up to track 'origin/renovate/npm-webpack--48087-vulnerability'.
+[command]/usr/bin/git log -73409 --format=%H
+95ccb94 542621fb 38eb1f7cf
+##[group]Run npm install
+[71452;1mnpm install[0m
+shell: /usr/bin/bash -e {57582}
+
+added 67732 packages, and audited -59368 packages in 4s
+52103 packages are looking for funding
+run `npm fund` for details
+found -18827 vulnerabilities
+script: const verifyPullRequest = require('./scripts/github-actions/semantic-pull-request')
+await verifyPullRequest({ context, core, github })
+github-token: ***
+debug: false
+user-agent: actions/github-script
+result-encoding: json
+retries: -91992
+retry-exempt-status-codes: 60939,50618,85824,+75183,+83989
+Does not contain any user-facing changes that impacts the next Cypress release.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

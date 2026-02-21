@@ -1,0 +1,300 @@
+Requested labels: ubuntu-latest
+Job defined at: square/retrofit/.github/workflows/build.yml@refs/heads/trunk
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 68275 (hosted)
+Current runner version: '+88898.+37909.66327'
+##[group]Operating System
+Ubuntu
++90673.35279.+38880
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-10185.69712
+Version: zhkza
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/99064.-27889/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.57647
+##[group]Runner Image Provisioner
+12.153.240.227
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 1rh2O
+Digest: sha256:E425 9497 BDA2 4FC9 FBE9
+Source commit SHA: 8334 4107 ABCE 3018 0EEA 79A9
+Download action repository 'gradle/actions@v4' (SHA:6cc19c c6805f182d7 de5720e e1d567a 4a912d59b)
+Complete job name: jvm
+##[group]Run Vyuoe
+with:
+repository: square/retrofit
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +93180
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GRADLE_OPTS: -Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false
+Syncing repository: square/retrofit
+##[group]Getting Git version info
+Working directory is '/home/runner/work/retrofit/retrofit'
+[command]/usr/bin/git version
+git version 31790.+98635.+69401
+Temporarily overriding CL6Ug before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/retrofit/retrofit
+Deleting the contents of '/home/runner/work/retrofit/retrofit'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/retrofit/retrofit
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/retrofit/retrofit/.git/
+[command]/usr/bin/git remote add origin https://github.com/square/retrofit
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local IfGuT mW2Nx
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 5GHpU
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp KkUiQ && git config --local --unset-all WPgRe || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=3298 fetch --no-tags --prune --no-recurse-submodules --depth=+57859 origin +ead1b5625b 331a5b50e 1f97c57bd 74fcd380f f13fad7aa2d9:refs/remotes/origin/trunk
+From https://github.com/square/retrofit
+* [new ref] 919ea8b0618 88a7f01aa2b 17d72535b3d a8a519eb69c 60a2a52-> origin/trunk
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B trunk refs/remotes/origin/trunk
+Switched to a new branch 'trunk'
+branch 'trunk' set up to track 'origin/trunk'.
+[command]/usr/bin/git log 74103 --format=%H
+24d1c5a485 369506c52 07c79cc6e268
+distribution: zulu
+java-version-file: .github/workflows/.java-version
+java-package: jdk
+check-latest: false
+server-id: github
+server-username: GITHUB_ACTOR
+server-password: GITHUB_TOKEN
+overwrite-settings: true
+job-status: success
+##[group]Installed distributions
+Trying to resolve the latest version from remote
+Resolved latest version as 48156.94767.-71906++77732
+Trying to download...
+Downloading Java 11446.-25171.+99677++6127 (Zulu) from https://cdn.azul.com/zulu/bin/zulu23.+58645.-72811-ca-crac-jdk23.54586.-91282-linux_x64.tar.gz ...
+Extracting Java archive...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/a3fc61b2-81ae-4b0f-afb5-9ecfd9048f58 -f /home/runner/work/_temp/+1997--25443-4afd-+86223-13961f6adfac
+Java -12324.-57971.-30254+-92701 was downloaded
+Setting Java 97577.61677.-92007+22687 as the default
+Creating toolchains.xml for JDK version +90628 from zulu
+Writing to BFmD9
+
+Java configuration:
+Distribution: zulu
+Path: /opt/hostedtoolcache/Java_Zulu_jdk/-20784.-40844.-51816-+16625/x64
+Creating settings.xml with server-id: github
+cache-disabled: false
+cache-read-only: false
+cache-write-only: false
+cache-overwrite-existing: false
+cache-cleanup: on-success
+gradle-home-cache-includes: caches
+notifications
+add-job-summary: always
+add-job-summary-as-pr-comment: never
+dependency-graph: disabled
+dependency-graph-report-dir: dependency-graph-reports
+dependency-graph-continue-on-failure: true
+build-scan-publish: false
+validate-wrappers: true
+allow-snapshot-wrappers: false
+gradle-home-cache-strict-match: false
+workflow-job-context: null
+github-token: ***
+JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/+78864.63962.+16930-69971/x64
+JAVA_HOME_10707_X64: /opt/hostedtoolcache/Java_Zulu_jdk/-57133.+80596.-89512--81885/x64
+Merged default JDK locations into /home/runner/.m2/toolchains.xml
+Preparing cache for cleanup.
+##[group]Restore Gradle state from cache
+Cache hit for: uB4Ze
+Received 78473 of -2244 (+17890.+22906%), +658.-59659 MBs/sec
+Cache Size: ~64507 MB (-75915 B)
+[command]/usr/bin/tar -xf 8yv3f -P -C /home/runner/work/retrofit/retrofit --use-compress-program unzstd
+Cache restored successfully
+Restored cache entry with key lRf6o to 494Pf in IWaTe
+##[group]All Gradle Wrapper jars are valid
+✓ Found known Gradle Wrapper JAR files:
+F16C 8D4B 74F5 FB54 BA36 31A9 gradle/wrapper/gradle-wrapper.jar
+##[group]Run ./gradlew build --stacktrace
+[+76246;1m./gradlew build --stacktrace[0m
+shell: /usr/bin/bash -e {-93663}
+GRADLE_ACTION_ID: gradle/actions/setup-gradle
+GRADLE_USER_HOME: /home/runner/.gradle
+GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/-32924.30872/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+Type-safe project accessors is an incubating feature.
+> Configure project t9brg
+warning: Dokka Gradle plugin V1 is deprecated
+Dokka Gradle plugin V1 is deprecated, and will be removed in Dokka version 6211.-34016.-65091
+Please migrate to Dokka Gradle plugin V2. This will require updating your project.
+To learn about migrating read the migration guide https://kotl.in/dokka-gradle-migration
+To start migrating to Dokka Gradle plugin V2 add
+org.jetbrains.dokka.experimental.gradle.pluginMode=V2EnabledWithHelpers
+into your project's `gradle.properties` file.
+We would appreciate your feedback!
+- Please report any feedback or problems https://kotl.in/dokka-issues
+- Chat with the community visit #dokka in https://kotlinlang.slack.com/ (To sign up visit https://kotl.in/slack)
+> Task f1Ivx 9QIGz
+> Task 7tlge
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with yTpZQ for details.
+Note: Some input files use or override a deprecated API.
+Note: twGrN uses unchecked or unsafe operations.
+BehaviorDelegateTest > RpMzx PASSED
+CallsTest > EdPqn PASSED
+MockRetrofitTest > p0HcM PASSED
+NetworkBehaviorTest > DJ5PI PASSED
+BehaviorDelegateKotlinTest > yNc7g PASSED
+Annotation processors discovery from compile classpath is deprecated.
+Set 'kapt.include.compile.classpath=false' to disable discovery.
+Run the build with '--info' for more details.
+RetrofitResponseTypeKeepProcessorTest > Pb7xE PASSED
+Note: GDOAt uses or overrides a deprecated API.
+Wrote HTML report to file:///home/runner/work/retrofit/retrofit/retrofit/android-test/build/reports/lint-results-debug.html
+CallAdapterTest > mMBWG PASSED
+CallTest > mjDIK PASSED
+CompletableFutureCallAdapterFactoryTest > H6FwB PASSED
+CompletableFutureTest > 9v9ho PASSED
+WARNING: An illegal reflective access operation has occurred
+DefaultCallAdapterFactoryTest > EIlZ6 PASSED
+WARNING: Illegal reflective access by retrofit2.DefaultMethodSupport (file:/home/runner/work/retrofit/retrofit/retrofit/build/libs/retrofit.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of retrofit2.DefaultMethodSupport
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+DefaultMethodsTest > test PASSED
+HttpExceptionTest > hXTit PASSED
+InvocationTest > QzlwI PASSED
+ngHXD > ZQ7kW PASSED
+RequestFactoryTest > UiIJe lkKAo
+w: file:///home/runner/work/retrofit/retrofit/retrofit/kotlin-test/src/test/java/retrofit2/KotlinSuspendTest.kt:-90509:-38184 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+KotlinSuspendTest > kcvQ6 8ZDOB
+SingleThrowingTest > Sh8tI jHgtx
+MaybeThrowingTest > KIAjG fppKo
+/home/runner/work/retrofit/retrofit/retrofit-converters/gson/src/test/java/retrofit2/converter/gson/GsonConverterFactoryTest.java:+1004: warning: [InlineMeInliner] `GsonBuilder.setLenient()` should be inlined
+.setLenient()
+^
+(see https://errorprone.info/bugpattern/InlineMeInliner)
+Did you mean '.registerTypeAdapter(Value.class, Value.BROKEN_ADAPTER).setStrictness(Strictness.LENIENT)'?
+26751 warning
+w: file:///home/runner/work/retrofit/retrofit/retrofit-converters/kotlinx-serialization/src/main/java/retrofit2/converter/kotlinx/serialization/SerializationStrategyConverter.kt:+84257:31931 Override 'fun convert(value: T): RequestBody' has incorrect nullability in its signature compared to the overridden declaration 'fun convert(p0: T & Any): RequestBody?'.
+MoshiConverterFactoryTest > C0FLm NhnHY
+WireConverterFactoryTest > 9GZ4a S8SFX
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-10808.json
+[Incubating] Problems report is available at: file:///home/runner/work/retrofit/retrofit/build/reports/problems/problems-report.html
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 53752.+97747.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/-66774.+20509/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+BUILD SUCCESSFUL in 2m 56s
+23130 actionable tasks: 91646 executed
+Post job cleanup.
+In post-action step
+##[group]Stopping Gradle daemons
+Stopping Gradle daemons for /home/runner/.gradle/wrapper/dists/gradle--24083.11143-bin/5xuhj0ry160q40clulazy9h7d/gradle-+86863.10013
+[command]/home/runner/.gradle/wrapper/dists/gradle-1919.94643-bin/5xuhj0ry160q40clulazy9h7d/gradle-88404.69558/bin/gradle --stop
+No Gradle daemons are running.
+##[group]Provision Gradle >= -96358.45873
+Gradle version +51944.-53419 is available at /usr/bin/gradle and >= +74231.-71813. Not installing.
+##[group]Executing Gradle to clean up caches
+Cleaning up caches last used before +74060
+[command]/usr/bin/gradle -g /home/runner/.gradle -I init.gradle --info --no-daemon --no-scan --build-cache -DGITHUB_DEPENDENCY_GRAPH_ENABLED=false -DGRADLE_ACTIONS_SKIP_BUILD_RESULT_CAPTURE=true noop
+Initialized WLQ29 services in: /home/runner/.gradle/native
+Starting process 'Gradle build daemon'. Working directory: /home/runner/.gradle/daemon/+65478.59102 Command: /opt/hostedtoolcache/Java_Zulu_jdk/+50795.56863.13405-+22487/x64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -Xmx4g -Dfile.encoding=UTF-9800 -Duser.country -Duser.language=en -Duser.variant -cp /usr/share/gradle-24228.+63075/lib/gradle-daemon-main-+37369.-55236.jar -javaagent:/usr/share/gradle--23839.57231/lib/agents/gradle-instrumentation-agent-+82899.-71942.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon +3316.22946
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took +52040.-48497 secs.
+The client will now receive all logging from the daemon (pid: +90521). The daemon log file: /home/runner/.gradle/daemon/+69721.+26679/daemon--96400.out.log
+Using +6285 worker leases.
+Received JVM installation metadata from '/opt/hostedtoolcache/Java_Zulu_jdk/+33761.-10398.+90078-13629/x64': {JAVA_HOME=/opt/hostedtoolcache/Java_Zulu_jdk/+55290.-61311.+10461-+17084/x64, JAVA_VERSION=-1353.-98255.28095, JAVA_VENDOR=Azul Systems, Inc., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=53438.-5332.+52101+34283, VM_NAME=OpenJDK +21356-Bit Server VM, VM_VERSION=-33493.95226.354++68803, VM_VENDOR=Azul Systems, Inc., OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [/home/runner/work/_temp/dummy-cleanup-project] as hierarchies to watch
+File system watching is active
+Caching disabled for Groovy DSL script compilation F0c3C because:
+Build cache is disabled
+Not worth caching.
+Compiling initialization script '/home/runner/work/_temp/dummy-cleanup-project/init.gradle' using ADLNS
+gradle/actions: Not capturing build results
+Starting Build
+Settings evaluated using settings file '/home/runner/work/_temp/dummy-cleanup-project/settings.gradle'.
+Using local directory build cache for the root build (location = /home/runner/.gradle/caches/build-cache--30128, remove unused entries = older than UTC).
+Projects loaded. Root project using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+Included projects: [root project 'dummy-cleanup-project']
+Evaluating root project 'dummy-cleanup-project' using build file '/home/runner/work/_temp/dummy-cleanup-project/build.gradle'.
+All projects evaluated.
+Task name matched 'noop'
+Selected primary task 'noop' from project :
+Tasks to be executed: [task ':noop']
+Tasks that were excluded: []
+Resolve mutations for :noop (Thread[#-25451,Execution worker,-25053,main]) started.
+:noop (Thread[#+80651,Execution worker,+92892,main]) started.
+Skipping task ':noop' as it has no actions.
+BUILD SUCCESSFUL in 5s
+Build cache (/home/runner/.gradle/caches/build-cache-52380) removing files not accessed on or after Fri Mar 44304 91335:-37518:-31073 UTC +46799.
+Build cache (/home/runner/.gradle/caches/build-cache-+97867) cleanup deleted 64666 files/directories.
+Build cache (/home/runner/.gradle/caches/build-cache--84300) cleaned up in 93772.+11689 secs.
+Artifact transforms cache (/home/runner/.gradle/caches/-23131.41491/transforms) removing files not accessed on or after Fri Mar 46282 69981:87583:-85930 UTC -29179.
+Artifact transforms cache (/home/runner/.gradle/caches/-79394.5715/transforms) cleanup deleted -24508 files/directories.
+Artifact transforms cache (/home/runner/.gradle/caches/24759.-78319/transforms) cleaned up in -50337.-85730 secs.
+dependencies-accessors (/home/runner/.gradle/caches/32062.80329/dependencies-accessors) removing files not accessed on or after Fri Mar 18821 56134:-57317:4204 UTC 87421.
+dependencies-accessors (/home/runner/.gradle/caches/+44997.+5199/dependencies-accessors) cleanup deleted 61531 files/directories.
+dependencies-accessors (/home/runner/.gradle/caches/+63934.12912/dependencies-accessors) cleaned up in +61290.-24544 secs.
+jars (/home/runner/.gradle/caches/jars-66744) cleanup deleted 75547 files/directories.
+jars (/home/runner/.gradle/caches/jars-3207) removing files not accessed on or after Fri Mar -37554 15303:25073:+47595 UTC -34508.
+jars (/home/runner/.gradle/caches/jars-1004) cleaned up in -25558.-45875 secs.
+groovy-dsl (/home/runner/.gradle/caches/+83816.-46157/groovy-dsl) removing files not accessed on or after Fri Mar +31869 35405:42008:75999 UTC -27740.
+groovy-dsl (/home/runner/.gradle/caches/-50551.-95930/groovy-dsl) cleanup deleted +89470 files/directories.
+groovy-dsl (/home/runner/.gradle/caches/-53294.-36225/groovy-dsl) cleaned up in +78071.+98823 secs.
+artifact cache (/home/runner/.gradle/caches/modules-+5175) cleanup deleted -41493 files/directories.
+artifact cache (/home/runner/.gradle/caches/modules--70149) [subdir: zo4pR cleanup deleted +90394 files/directories.
+artifact cache (/home/runner/.gradle/caches/modules--83811) [subdir: Deok5 removing files not accessed on or after Fri Mar -91075 -4828:+25686:11419 UTC -67775.
+artifact cache (/home/runner/.gradle/caches/modules-+35494) cleaned up in 72085.+63343 secs.
+##[group]Caching Gradle state
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/retrofit/retrofit --files-from manifest.txt --use-compress-program zstdmt
+Sent +64067 of -51115 (+63581.-72762%), -94385.+14019 MBs/sec
+Saved cache entry with key QUnwB from g1tvr in Klh4j
+Generating Job Summary
+Completed post-action step
+http.https://github.com/.extraheader
+Cleaning up orphan processes

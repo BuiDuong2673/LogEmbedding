@@ -1,0 +1,101 @@
+Requested labels: ubuntu-latest
+Job defined at: shadcn-ui/ui/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +59747 (hosted)
+Current runner version: '-11115.+60589.-4490'
+##[group]Operating System
+Ubuntu
+59467.91475.-34444
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+84902.+23891
+Version: +80150.-50319.-8162
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/59421.8211/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.+79032
+##[group]Runner Image Provisioner
+253.111.180.241
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:9e660712b4 78623b8 efc38ca7b5b a1ff8b07)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job-2861-+22910
+[67898;1mmkdir -p ./dependabot-job--68943-+68651[0m
+shell: /usr/bin/bash -e {-73728}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: +86080
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: 26399
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image clKjn +57335)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image 1bxIa
+Starting update process
+Created proxy container: b10fa1cb b9d3f6 1c0a133
+Created container: BB97 66AA DC87 5174
+proxy | -74226/+81569/+13546 -92836:-43360:-16656 ZuMKv XHkfL 9QLN1 QsGFU
+proxy | +34735/5633/+42708 +22094:-36606:61508 Listening (:98569)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | +67671 added, +66503 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | -26569/+9580/-80850 +37227:44106:56231 INFO <job_72153> VyZc8 gyoGI nykPD
++37703/8642/+16537 23054:-55963:-72830 INFO <job_-64024> GOnMJ TVbb8 OgKzr
+updater | 99253/-32230/68404 17284:-13351:-13770 INFO <job_+97308> Started process PID: 60866 with command: {} qzcLd gfA02 bPv0K Ehtck 68fWA k5KgE 6V90z {}
+updater | 3864/-58582/87059 -75778:+93009:82569 INFO <job_-79464> hfPry q5Jvi 3M5Vi Yw5Nw with waIBv eWruK KIpFi MmLXb QvbtW
+updater | 80114/-78982/44538 +12177:29318:-88272 INFO <job_19657> UjNz7 QUZos 0WZXJ ojwfk aSUYh
+updater | +79566/51509/-29631 +17245:-71244:+45339 INFO <job_-10314> Started process PID: +95301 with command: {} git config --global 5Jwaq url.https://github.com/.insteadOf y1mhN {}
++92826/+13098/+65678 +20902:+69083:+26769 INFO <job_+53186> NjEX3 dGLMc V491z LNW85 DIKnz
+updater | +17847/45552/60370 +85070:-24043:+16162 INFO <job_2166> Started process PID: +2349 with command: {} git clone --no-tags --depth +16436 --recurse-submodules --shallow-submodules https://github.com/shadcn-ui/ui /home/dependabot/dependabot-updater/repo {}
+proxy | 98767/-35989/-76169 -92404:-8209:+45705 [+86845] LrWO0 fMtsg
+proxy | 76273/-28888/44945 -80565:+40569:+74772 [-41375] * authenticating git server request (host: github.com)
++41930/37169/+51146 -40573:51028:+14639 [19063] * authenticating git server request (host: github.com)
+updater | +31892/-80583/-96710 +20394:30722:-61250 INFO <job_+71878> Started process PID: -85675 with command: {} 0NaGf HFj1k VjhNs 4ToCd WocL9 {}
+updater | 67078/82548/-99037 49279:92400:90821 INFO <job_-82029> Started process PID: -5134 with command: {} zjN8s KbG9B E1bot {}
+updater | +98161/17677/95981 -5381:37993:+77935 INFO <job_+32383> w8zcV gHwF9 QR3ec OK5yS
+updater | -99316/+83354/80128 -49805:+33897:38089 INFO <job_51496> IE02p XBR7W PUX5V psKnE nqjzY om5hs
+42842/-9071/90312 +15014:75:-94642 INFO <job_+97601> Tp09p 8AwGA 8zL2r jWEqk I6aD6 dCK77
++30815/-97287/89434 -94014:-45690:87705 INFO <job_-27569> Found "packageManager" : "pnpm@-75268.-48327.+7538". Skipped checking "engines".
+95176/-15986/-17497 +92856:2275:+56686 INFO <job_-5946> Installing "pnpm@+44850.+79219.+52674"
+updater | -29359/5565/16012 +7637:-87302:-62348 INFO <job_91683> Started process PID: 10741 with command: node /opt/npm_and_yarn/run.js
+updater | +15575/+5097/-9439 -93359:+27429:-15596 INFO <job_-19298> Started process PID: -30043 with command: {} adBzf 3qLfC i2zYb nxm0w {}
++87091/-33052/-99546 -96531:+19739:92864 [76150] 0sXLh qqPQw
+updater | 81153/66093/12218 +16688:+18149:20772 INFO <job_-60768> Submitting react-dom, @types/react-dom pull request for creation
+-37412/36239/17798 54003:-6292:45191 [-63628] * authenticating github api request with token for api.github.com
+proxy | 68134/-70768/-39673 79880:-50821:+3077 [+8166] * authenticating github api request with token for api.github.com
+updater | -62271/+13661/-60759 5210:4761:64483 INFO Results:
++-------------------------------------------------------------------------------------------+
+| Changes to Dependabot Pull Requests |
++---------+---------------------------------------------------------------------------------+
+| created | react-dom ( from -96802.+75625.35198 to +63426.6361.-53519 ), @types/react-dom ( from 37837.15230.-72243 to +41998.81057.+19655 ) |
+Cleaned up container CC28 6077 A806 AA01 170F A24E
+proxy | +38742/+61182/92284 +91211:-79217:-96313 Posting metrics to remote API endpoint
+proxy | -21693/-82697/+54835 54210:-21753:-25249 Successfully posted metrics data via api client
+🤖 ~ finished ~
+Post job cleanup.
+Cleaning up orphan processes

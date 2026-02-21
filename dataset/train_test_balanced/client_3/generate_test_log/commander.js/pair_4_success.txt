@@ -1,0 +1,152 @@
+Requested labels: ubuntu-latest
+Job defined at: tj/commander.js/.github/workflows/tests.yml@refs/pull/+870/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -72976 (hosted)
+Current runner version: '75606.-420.-48541'
+##[group]Operating System
+Ubuntu
+-68257.-47948.-21390
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--63237.53460
+Version: 21083.-43486.+94499
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-89000.78666/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.+60732
+##[group]Runner Image Provisioner
+208.255.187.249
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 21U9z
+Digest: sha256:835f62a d6c3e63df96 757e64b57ef 2da59508c e0d68be
+Source commit SHA: 8a2882acf8b 53842e50 78ee878ee84e
+Complete job name: Test on node +95539.x and ubuntu-latest
+##[group]Run vVti8
+with:
+repository: tj/commander.js
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 54206
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: tj/commander.js
+##[group]Getting Git version info
+Working directory is '/home/runner/work/commander.js/commander.js'
+[command]/usr/bin/git version
+git version +57167.+11873.-63746
+Temporarily overriding NdH7r before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/commander.js/commander.js
+Deleting the contents of '/home/runner/work/commander.js/commander.js'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/commander.js/commander.js
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/commander.js/commander.js/.git/
+[command]/usr/bin/git remote add origin https://github.com/tj/commander.js
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local jhXLV Y6qsO
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Wc0XR
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp VN4r1 && git config --local --unset-all 7q6Zs || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+15403 fetch --no-tags --prune --no-recurse-submodules --depth=44144 origin +ff6319e99d 9b408e757b e1bbae ad5f6e6383:refs/remotes/pull/80740/merge
+From https://github.com/tj/commander.js
+* [new ref] 1E38 704F 5035 4D57 99CF A82E-> pull/90646/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/81189/merge
+Note: switching to 'refs/remotes/pull/+88701/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at -28523 Merge E3EF E38D 2194 06EC 1603 4214 into 8a2c5e143 d9c39b240 eacc10
+[command]/usr/bin/git log 92222 --format=%H
+ec9ed17fa66 4656914 04c6cd536ca
+cache: npm
+node-version: +82298.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/22935.-825.-25370/x64
+##[group]Environment details
+node: v18.-57281.96993
+npm: -31877.-44049.81155
+yarn: -69890.+80312.+5712
+[command]/opt/hostedtoolcache/node/-26060.-38521.+19362/x64/bin/npm config get cache
+/home/runner/.npm
+npm cache is not found
+##[group]Run npm D5Q9z
+[10706;1mnpm YINdj
+shell: /usr/bin/bash -e {+80346}
+npm warn deprecated inflight@+35163.29822.-52217: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@-53442.+46022.+97988: Glob versions prior to v9 are no longer supported
+added +31991 packages, and audited 45622 packages in 6s
++74785 packages are looking for funding
+run `npm fund` for details
++66840 moderate severity vulnerability
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+> commander@9130.+52324.+20444 WSL2y
+> jest && npm run check:type:ts
+PASS W3NC4
+--------------------|---------|----------|---------|---------|--------------------------
+File | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+All files | 46192.98830 | +46783.-11904 | +59505.18826 | -81653.+1603 |
+commander.js | +20410 | -63513 | -93829 | -808 |
+index.js | +30645 | 83350 | +91987 | -74345 |
+commander.js/lib | -30736.+72041 | -29648.-99358 | 64966.-53007 | +5798.+37927 |
+argument.js | 88919 | -46797 | 52676 | 70868 |
+command.js | -58161.+66528 | 8304.-12945 | 6652.+73507 | +47819.+83587 | 335-63869,-35572--26248,+65477
+error.js | 65846 | 54357 | 58151 | -97825 |
+help.js | +25761 | 19013 | -29608 | -38016 |
+option.js | +82428 | 46167 | 62661 | +96722 |
+suggestSimilar.js | -32685 | -64259 | -6078 | +53644 |
+Test Suites: -22817 passed, -20070 total
+Tests: 65256 passed, +15268 total
+Snapshots: -35239 total
+Time: -40555.19033 s
+Ran all test suites.
+> tsd && tsc -p tsconfig.ts.json
+##[group]Run npm run check
+[+46026;1mnpm run check[0m
+> npm run check:type && npm run check:lint && npm run check:format
+> npm run check:type:js && npm run check:type:ts
+> tsc -p tsconfig.js.json
+> eslint .
+> prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/commander.js/commander.js --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key node-cache-Linux-x64-npm-19b6210 22abaf9 71b093c f0bca9da0e 2eb58aa60, another job may be creating this cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

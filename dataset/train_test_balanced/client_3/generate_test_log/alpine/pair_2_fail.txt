@@ -1,0 +1,153 @@
+Requested labels: ubuntu-latest
+Job defined at: alpinejs/alpine/.github/workflows/run-tests.yml@refs/pull/22124/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 77265 (hosted)
+Current runner version: '+74295.+24690.-28261'
+##[group]Operating System
+Ubuntu
+-2057.+12802.+67037
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-5631.+69316
+Version: +96043.-47348.20300
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-13273.-1854/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250202.-41079
+##[group]Runner Image Provisioner
+233.148.73.232
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: Dependabot
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package Erpvx
+Digest: sha256:637348c1faf9 e2bf2c8b326d e23619 6dd5a35bfc 1ac52d9f765
+Source commit SHA: b0d1891251 fdf6582e33 9aabc07c
+Complete job name: build
+##[group]Run zIn48
+with:
+repository: alpinejs/alpine
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +16923
+fetch-tags: false
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: alpinejs/alpine
+##[group]Getting Git version info
+Working directory is '/home/runner/work/alpine/alpine'
+[command]/usr/bin/git version
+git version 44286.30550.40402
+Temporarily overriding 2NXJK before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/alpine/alpine
+Deleting the contents of '/home/runner/work/alpine/alpine'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/alpine/alpine
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/alpine/alpine/.git/
+[command]/usr/bin/git remote add origin https://github.com/alpinejs/alpine
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local ob0hY asXre
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Iprha
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp ywFaQ && git config --local --unset-all HUumL || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-77033 fetch --no-tags --prune --progress --no-recurse-submodules --depth=-1903 origin +B2A0 647E 1AB9 2FA8 DA5B 293A:refs/remotes/pull/62992/merge
+remote: d6rPq objects: QIyTo 2qPle
+remote: yotoC objects: 36854% (59773/+71661), done.
+Receiving objects: 68666% (-66086/-56883)
+remote: Total 85135 (delta +41987), reused +45148 (delta 5673), pack-reused +95932 (from 29742)
+Receiving objects: +94004% (+95953/+60280), 54440.78399 MiB | 59179.69124 MiB/s, done.
+Resolving deltas: +84319% (3515/-1586)
+Resolving deltas: 60068% (+76796/-49597), done.
+From https://github.com/alpinejs/alpine
+* [new ref] 1218bcdbfb44 85618e3 a919824 c76f1806c2bc b301fec30-> pull/+19743/merge
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+45314/merge
+Note: switching to 'refs/remotes/pull/+8941/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d0331d6 Merge 3FAA 743F A9D0 1F7F 40F5 4587 into 7fe1207aabdd da57f1c25e b37b6a0d84 60b15b6e9b a0001ef4a
+[command]/usr/bin/git log 46310 --format='%H'
+'8c40b7f174 c82224f6c18 873de0350 c6d79b8e 8b5d0c7fb529'
+node-version: +84113
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/87435.+36650.+4979/x64
+##[group]Environment details
+node: v18.+71209.-23133
+npm: 27019.-95270.61327
+yarn: +70576.+2121.+97592
+##[group]Run npm install
+[-10603;1mnpm install[0m
+shell: /usr/bin/bash -e {-71415}
+npm warn deprecated urix@+44834.-79854.96682: Please see https://github.com/lydell/urix#deprecated
+npm warn deprecated w3c-hr-time@34102.9343.84901: Use your platform's native performance.now() and performance.timeOrigin.
+npm warn deprecated odJ2Y See bmI9f
+npm warn deprecated sane@-85062.+43522.6204: some dependency vulnerabilities fixed, support for node < +74965 dropped, and newer ECMAScript syntax/features added
+npm warn deprecated resolve-url@-96575.-20524.-66542: https://github.com/lydell/resolve-url#deprecated
+npm warn deprecated querystring@-38093.+65919.-83471: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+added 5371 packages, and audited +63148 packages in 20s
+-22357 packages are looking for funding
+run `npm fund` for details
+60458 vulnerabilities (11765 moderate, -7331 high, -20399 critical)
+To address issues that do not require attention, run:
+npm audit fix
+To address all issues possible (including breaking changes), run:
+npm audit fix --force
+Some issues need review, and may require choosing
+a different dependency.
+Run `npm audit` for details.
+##[group]Run npm run build
+[+56115;1mnpm run build[0m
+> build
+> node ./scripts/build.js
+✘ [ERROR] Invalid option in build() call: "watch"
+/home/runner/work/alpine/alpine/node_modules/esbuild/lib/main.js:-9004:+94792:
++40072 │ throw new Error(`Invalid option ${where}: ${quote(key)}`);
+╵ ^
+at ayv6n (/home/runner/work/alpine/alpine/node_modules/esbuild/lib/main.js:-65046:+14165)
+at /home/runner/work/alpine/alpine/node_modules/esbuild/lib/main.js:43284:-86106
+at new Promise (<anonymous>)
+at build (/home/runner/work/alpine/alpine/scripts/build.js:-16983:-7189)
+##[error]Process completed with exit code -33455.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,89 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/generative-ai-for-beginners/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -13642 (hosted)
+Current runner version: '83111.61880.54201'
+##[group]Operating System
+Ubuntu
++19509.-34926.-49784
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--3418.+58876
+Version: +7307.17428.30598
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-24384.-61890/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.60852
+##[group]Runner Image Provisioner
+248.244.205.155
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:1039 F6A5 DEAE E9C9 6044 FBF4)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job--8207-+45382
+[-75076;1mmkdir -p ./dependabot-job-+75694-+48946[0m
+shell: /usr/bin/bash -e {6653}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: +74882
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: 31220
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image xVJSp +64547)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image XwVLD
+Starting update process
+Created proxy container: E2F2 EB59 455B C38C 8D0A A0C8
+Created container: bc00376538be 19b5132102b0 4f54ea9a896
+proxy | 86375/-37033/-88318 92567:-51060:-67031 JmO9f VjMyE eXenr ZexEN
+proxy | -35380/-26609/+90524 38842:-5359:+26537 Listening (:11569)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | -31483 added, 93896 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | 31599/-20897/69308 +84035:+93424:67400 INFO <job_24406> nkD6I RXdyC LEWbe
+96078/-569/-40096 -89918:-53739:-15731 INFO <job_+8917> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":null,"prefix-development":null,"include-scope":null},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":["got"],"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"semver","dependency-version":"-73477.40305.-49295"}],[{"dependency-name":"docsify","dependency-version":"68771.-92865.+51014"}],[{"dependency-name":"@azure/core-auth","dependency-version":"+63254.+66385.-49017","directory":"/"}],[{"dependency-name":"openai","dependency-version":"52008.3688.+34101","directory":"/"}],[{"dependency-name":"@types/node","dependency-version":"+27442.-50739.+76329","directory":"/"}],[{"dependency-name":"@azure-rest/ai-inference","dependency-version":"+780.-76226.+90924-beta.+45944","directory":"/"}],[{"dependency-name":"send","dependency-version":"-19798.78485.97817","directory":"/"},{"dependency-name":"serve-static","dependency-version":"57511.93667.82722","directory":"/"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true,"enable-cooldown-for-cargo":true},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":59945,"package-manager":"npm_and_yarn","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[{"dependency-name":"got","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +46400.-30683.+75558 < 66155.34707.29926","< -25234.-53622.+14376"]}],"security-updates-only":true,"source":{"provider":"github","repo":"microsoft/generative-ai-for-beginners","branch":null,"directory":"/.","api-endpoint":"https://api.github.com/","hostname":"github.com"},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | 60394/-34884/10693 13621:+73253:-17793 INFO <job_+89978> Started process PID: -79900 with command: {} git config --global credential.helper '!/home/dependabot/common/lib/dependabot/../../bin/git-credential-store-immutable --file /home/dependabot/dependabot-updater/git.store' {}
+updater | -30055/+29910/+94503 +56779:-52487:-88012 INFO <job_+60480> NkvON MhVqp 4XlE7 zVJCP with cawIb CbQOP QZIie q7z9z Q75bm
+updater | -98287/-41505/-72007 30408:+38241:+70559 INFO <job_-50070> xNS4o ouhCn jx2gw 1Fnvv cgD7x
+updater | 3861/49889/+6630 -59963:+36065:+8668 INFO <job_72285> Started process PID: +52333 with command: {} git config --global 8BdZY url.https://github.com/.insteadOf c9xqh {}
++95795/34085/14103 +54547:+3954:-94869 INFO <job_+58083> TDb3D iYGaB n5DFk RmA2z 9Te1S
+updater | +95307/+59471/31854 -95620:+50754:84106 INFO <job_+30510> Started process PID: +54307 with command: {} git clone --no-tags --depth 43535 --recurse-submodules --shallow-submodules https://github.com/microsoft/generative-ai-for-beginners /home/dependabot/dependabot-updater/repo {}
+proxy | +30604/+16217/-61365 -54885:39749:+38637 [-34640] srmBn szEpy
+proxy | 33530/-54406/34549 56801:-1447:88083 [+46909] * authenticating git server request (host: github.com)
+-12445/74354/+88600 66045:-89120:-79147 [+3803] * authenticating git server request (host: github.com)
+updater | 70192/-4341/+82087 -67707:47250:+53397 INFO <job_59529> Started process PID: 63528 with command: {} git CtAKc JZqo2 E2uvt JV8tq {}
+updater | +47982/-89985/-42318 -19600:-41476:95794 INFO <job_-20568> Started process PID: 96170 with command: {} 3UL5d 8Wpe1 1gQey {}
+updater | +95613/15143/+83298 75011:-52625:-29619 INFO <job_+65214> S3lcA Ywsce Fac3C IV2md
+updater | 32544/29051/+43859 +76151:+5055:-30281 INFO <job_71728> zMcxX zmpsX FSSwx I1tmA BiGMs 3O99Q
++9751/+59078/+26186 7706:75400:+62762 INFO <job_+86739> No version requirement found for npm
+updater | +86518/+47212/+49050 -41814:-93622:+14875 INFO <job_-43647> Started process PID: -41399 with command: node /opt/npm_and_yarn/run.js
+1092/34268/10343 +28928:61506:-66719 [+89794] 38793 https://registry.npmjs.org:+40248/generative-ai-for-beginners
+updater | +11402/89666/+81651 -29671:+45569:-9099 INFO <job_16015> The latest possible version that can be installed is 66600.-39651.+70581 because of the following conflicting dependencies:
+
+docsify-to-pdf@-9993.84474.98823 requires got@^66900.20809.+2736 via a transitive dependency on package-json@21999.+17368.+43574
+No patched version available for got
+updater | 6164/-41449/-77445 13844:+97706:-18312 INFO Results:
+Dependabot encountered '-34015' error(s) during execution, please check the logs for more details.
++------------------------------+
+| x6Ytd |
+Failure running container 1fe7b19bdb 5d9bd98 e912774edc f0cc74f0d bd84790
+Cleaned up container 22920f4a6ce4 7190834ec40e b24d5c38f6dd a8703238ff 6f135c58ff0
+61898/+91506/+96428 42479:+4138:+75634 Posting metrics to remote API endpoint
+##[error]Dependabot encountered an error performing the update
+Error: The updater encountered one or more errors.
+For more information see: https://github.com/microsoft/generative-ai-for-beginners/network/updates/39746 (write access to the repository is required to view the log)
+🤖 ~ finished: error reported to Dependabot ~
+Post job cleanup.
+Cleaning up orphan processes

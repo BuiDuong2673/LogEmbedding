@@ -1,0 +1,163 @@
+Requested labels: ubuntu-latest
+Job defined at: langgenius/dify/.github/workflows/style.yml@refs/pull/42453/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +63797 (hosted)
+Current runner version: '85953.+65109.+94110'
+##[group]Operating System
+Ubuntu
++63468.+72438.-40989
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+33403.50650
+Version: +4792.-56458.-48241
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+30287.2293/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.16498
+##[group]Runner Image Provisioner
+179.134.60.236
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:871afe5067e 6a86f4 cf973297
+Source commit SHA: 40D2 E83C 6464 1888
+Download action repository 'tj-actions/changed-files@v45' (SHA:0d9e4a6a744e e93536c65 e20c1210d)
+Complete job name: Python Style
+##[group]Run sRI8z
+with:
+fetch-depth: +46605
+persist-credentials: false
+repository: langgenius/dify
+token: ***
+ssh-strict: true
+ssh-user: git
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: langgenius/dify
+##[group]Getting Git version info
+Working directory is '/home/runner/work/dify/dify'
+[command]/usr/bin/git version
+git version -26742.+88444.-52481
+Temporarily overriding FB3fO before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/dify/dify
+Deleting the contents of '/home/runner/work/dify/dify'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/dify/dify
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/dify/dify/.git/
+[command]/usr/bin/git remote add origin https://github.com/langgenius/dify
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local JnBik PZfTL
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp s5MOV
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Q42bC && git config --local --unset-all 8L8nY || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+23519 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +4ea31078698 08bd6c400f3f 88ba6d48:refs/remotes/pull/+67898/merge
+From https://github.com/langgenius/dify
+* [new 8bwLU JOmIn -> 8ebWU
+* [new ref] 8669e1 4a1d92a 8f70f663e8 a10dec7f07f4 14e3e3e6bd4-> pull/+1470/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+53586/merge
+Note: switching to 'refs/remotes/pull/+51453/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at aaf19fba3 Merge 6282 7351 2BBE 9CF1 20C5 into 7ef24d152f 62388b28c04 4f3db6
+[command]/usr/bin/git log 78825 --format=%H
+d6624f71e1b 4ecf21ac a49b119 2e6f6a3
+##[group]Removing auth
+http.https://github.com/.extraheader
+files: api/**
+.github/workflows/style.yml
+separator:
+include_all_old_new_renamed_files: false
+old_new_separator: ,
+old_new_files_separator:
+files_from_source_file_separator:
+files_separator:
+files_yaml_from_source_file_separator:
+files_ignore_yaml_from_source_file_separator:
+files_ignore_separator:
+files_ignore_from_source_file_separator:
+path: .
+quotepath: true
+diff_relative: true
+dir_names: false
+dir_names_exclude_current_dir: false
+dir_names_include_files_separator:
+dir_names_deleted_files_include_only_deleted_dirs: false
+json: false
+escape_json: true
+safe_output: true
+fetch_depth: +33192
+skip_initial_fetch: false
+fetch_additional_submodule_history: false
+since_last_remote_commit: false
+write_output_files: false
+output_dir: .github/outputs
+output_renamed_files_as_deleted_and_added: false
+recover_deleted_files: false
+recover_files_separator:
+recover_files_ignore_separator:
+api_url: https://api.github.com
+use_rest_api: false
+fail_on_initial_diff_error: false
+fail_on_submodule_diff_error: false
+negation_patterns_first: false
+matrix: false
+exclude_submodules: false
+fetch_missing_history_max_retries: -74211
+use_posix_path_separator: false
+tags_pattern: *
+##[group]changed-files
+Using local .git directory
+Running on a pull_request (opened) event...
+Repository is shallow, fetching more history...
+Completed fetching more history.
+Retrieving changes between 7a972d9b 1f410f43b2 efe47cd27e8 64e1c9a326 0238535a0e(main) → 7295 3483 9C41 26AE(Ray/feat/improve-embedding-user-id-usage)
+All Done!
+##[group]changed-files-patterns
+Post job cleanup.
+Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/94cfcd1c-a998-4f75-8efa-142b013a949c/.gitconfig'
+Cleaning up orphan processes

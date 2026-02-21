@@ -1,0 +1,94 @@
+Requested labels: ubuntu-latest
+Job defined at: danielmiessler/fabric/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -80124 (hosted)
+Current runner version: '89638.42015.38343'
+##[group]Operating System
+Ubuntu
++55264.85885.99637
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+57861.-94513
+Version: +46767.+5429.+65852
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/51065.74662/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+57339
+##[group]Runner Image Provisioner
+35.234.128.9
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:9975 D97E 89DA 5B81 5B24)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job--65802-37808
+[43020;1mmkdir -p ./dependabot-job--40111--81479[0m
+shell: /usr/bin/bash -e {-29362}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: +24549
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: 82073
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image ukJ4D -55975)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image 1p2d9
+Starting update process
+Created proxy container: 0ea2f6 0b95dd5d 130a8a4a779 36b41b0a1
+Created container: bbc873 1ee498197e 962bc75f3617 cb0d040d
+proxy | -76581/-65326/29206 -29334:+62198:+70627 O0xyK GpsHl 1mrJl Q2BvD
+proxy | +50802/-96215/95448 45052:-80921:33843 Listening (:-65820)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | 21349 added, -27966 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | +95873/95721/+57967 +83436:-49971:-33641 INFO <job_79060> yvfvP vBd08 GINl8
++10181/+81550/+42637 +28712:+65779:+69648 INFO <job_+83312> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":null,"prefix-development":null,"include-scope":null},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":["@sveltejs/kit","esbuild","nanoid","nanoid","pdfjs-dist","prismjs","request","string","vite"],"dependency-groups":[{"name":"npm_and_yarn","rules":{"patterns":["*"]},"applies-to":"security-updates"}],"dependency-group-to-refresh":null,"existing-pull-requests":[],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true,"enable-cooldown-for-cargo":true},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":14168,"package-manager":"npm_and_yarn","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[{"dependency-name":"@sveltejs/kit","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 64509.-70793.34150 < +33578.+28998.-65031"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 9023.-60544.94384 < 51678.+94052.+69414",">= -86100.+30306.-93063 < 161.+69954.+84901",">= -56637.-26846.-47707 < 49133.90183.+75474",">= +70772.-71840.+24699 < 4033.+65185.-67855","< 30199.-74956.-55186"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 19893.+66829.59975 < 57905.27690.-72408",">= +32534.+23968.-47563 < -8368.+85331.-57141",">= 45042.+34242.64448 < +12389.15003.-54819",">= 42805.-56461.+642 < +20716.90767.-22930","< +79031.-45236.-90955"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -43572.+44683.+38071 < -94826.+82515.+49786",">= 1546.+50324.-7393 < -90149.+20803.-41324",">= -52326.+37151.-28122 < +55793.23306.+8720",">= -20194.-13048.+69312 < 9203.-72294.-36491","< +10704.+83185.-76470"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 75252.51036.-18956 < 50174.+56422.+10187",">= -87096.+44684.40293 < -96152.-85300.-34072",">= 19011.-90380.-6411 < -14268.+96124.-36193",">= -77154.-41939.+64242 < 2679.+22955.+1352","< +81876.-56975.+28828"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< 9241.+93616.65450"]},{"dependency-name":"esbuild","patched-versions":[],"unaffected-versions":[],"affected-versions":["<= +15269.-1604.+64913"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -71473.69357.+77262 <= 62507.-31034.-91011",">= -41484.50240.+53034 <= 89979.84729.+35194","<= 10510.-71109.+19388"]},{"dependency-name":"nanoid","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 59843.+71271.-4402 < +67350.21987.79678","< 10110.64143.+74161"]},{"dependency-name":"@sveltejs/kit","patched-versions":[],"unaffected-versions":[],"affected-versions":["< +52476.+7505.+56150"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -38916.-96870.37956 < 35716.-96110.+84298",">= 93406.+41087.-3614 < 32800.44449.63056",">= -20578.+54257.-25519 < +59688.-18515.25857",">= -84398.+37492.+72124 < -33119.78272.89173","< 62913.-48123.-94434",">= +30148.41453.41480 < 7839.87622.+20446"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +40348.+86492.+59076 <= 90532.-36876.+64802",">= +30834.-5195.27331 <= -21695.86294.-58164",">= 68941.-82395.51376 <= +91619.61627.42297","<= -4688.-44747.+51312",">= +27396.+37021.-90872 < -47413.-33242.76704",">= +68372.8604.-52878 <= 17473.5528.+70641"]},{"dependency-name":"pdfjs-dist","patched-versions":[],"unaffected-versions":[],"affected-versions":["<= -66151.+36688.-35117"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 47816.20495.-56764 <= 32538.98256.59209",">= +99119.10699.67237 <= 76817.-8786.+30581",">= -94276.79244.57075 <= +66415.76027.-48200",">= +95816.-69960.+44585 <= -1517.63932.11080",">= 80568.+46988.+11985 <= +51958.+19959.90832",">= 97082.76756.+59331 <= +53684.+60025.+85275"]},{"dependency-name":"@sveltejs/kit","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -88097.82199.+96063 < -74192.+57501.74995"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 18130.81312.40749 <= +64398.58636.+65929",">= +14833.+83329.63023 <= -35381.+74310.+77188",">= +43108.43032.+73982 <= 68374.-62148.9359",">= 44573.-65736.+24364 <= +79116.-20231.53673"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -75422.44809.-13459 < -10913.22530.19145","= +48078.26591.+85374",">= -46752.-35077.+74397 < 63410.+60739.22362"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":["< -18859.+69108.+12808",">= +91675.49076.19210 < -555.33149.77103",">= 10348.+55566.54093 < +56499.20234.-69210",">= +4389.-88486.+37106 < 72242.+49783.-80685",">= -41328.-83474.53841 < +79781.+95054.-62929",">= 52449.-79523.+87290 < 32487.15728.-21011"]},{"dependency-name":"@sveltejs/kit","patched-versions":[],"unaffected-versions":[],"affected-versions":["< +96674.+72611.-62990"]},{"dependency-name":"@sveltejs/kit","patched-versions":[],"unaffected-versions":[],"affected-versions":["< -67120.-15223.41404"]},{"dependency-name":"request","patched-versions":[],"unaffected-versions":[],"affected-versions":["<= -76699.+23691.26271"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":["< 8735.56115.-19940",">= +36197.+33668.52519-alpha.+20949 < +639.+43456.+41142-beta.+48512"]},{"dependency-name":"pdfjs-dist","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 10673.+63651.-32872 < -46929.-92106.45701","< +57897.+78950.46898"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -91409.+37977.+62378 < -44297.+31308.93303"]},{"dependency-name":"nanoid","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -40814.-62898.+12026 < 23080.-59061.-38577"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< +72746.-92231.-8958"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< 33366.-49223.-33483"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":["< 75166.-93399.53868"]},{"dependency-name":"prismjs","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 1987.+16531.-88467 < +48788.-98725.+45453"]},{"dependency-name":"request","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -24648.-92798.-44459 < -62021.-7214.-34916",">= 28459.-63610.-53450 < 1302.-85847.92254"]},{"dependency-name":"string","patched-versions":[],"unaffected-versions":[],"affected-versions":["<= -93640.+15301.+73536"]}],"security-updates-only":true,"source":{"provider":"github","repo":"danielmiessler/fabric","branch":null,"api-endpoint":"https://api.github.com/","hostname":"github.com","directories":["/web"]},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | +85147/-82957/-28443 +52795:+93684:+726 INFO <job_-81531> Started process PID: +85499 with command: {} git XJKxk Vy25c DTo5h mpGJJ nnFvr E4sFg {}
+updater | +9823/+95762/-21216 -65101:+69491:+30404 INFO <job_-9271> T3twQ yhyij zYWa3 8nDos with yzMmx iGed0 CmovX swnBY aopq0
+updater | +2592/+87808/+9661 -80656:61166:+95680 INFO <job_-50945> jW6vb 5ffeX AdiA4 SeDni 5Eaw7
+updater | 73168/+9847/+66490 -2161:29773:+61509 INFO <job_-52242> Started process PID: -57702 with command: {} ycG30 lMbxm 9fT9N JI36t nknxn 9lVDy {}
+-99074/-41698/60788 47397:68432:+63179 INFO <job_72973> dehXl PEm04 7rm2f 3sMCd uhVV4
+updater | 26546/+26516/-91240 -69559:+50996:22098 INFO <job_85408> Started process PID: 11992 with command: {} git clone --no-tags --depth +77604 --recurse-submodules --shallow-submodules https://github.com/danielmiessler/fabric /home/dependabot/dependabot-updater/repo {}
+proxy | -55740/+77725/+68918 +97313:+44432:-74217 [-40326] DcLOp PdX7g
+proxy | +2354/+25959/+45508 66405:-87675:24500 [+52840] * authenticating git server request (host: github.com)
+-99937/54095/-93155 +63803:+91904:-43069 [78481] * authenticating git server request (host: github.com)
+updater | +39791/+97799/+99329 -34239:+90954:-44717 INFO <job_10743> Started process PID: -95177 with command: {} ct9ku pEopV HPzL9 OFPhd uG6oR {}
+updater | +60858/47882/45733 74959:-45286:+93893 INFO <job_+45866> Started process PID: +84181 with command: {} Nwgq8 4vxgc dgWgy Tab59
+updater | 63634/81900/36999 +77058:-27488:55419 eigV8 <job_+49287> TWk3H EUOAY 7K6td EfkWj
+updater | -40946/-75553/7614 +5457:33414:-68522 INFO <job_-29328> ZEWhc bdO6P Di9Pt gRPJ9 c93HS SIjqv
+-97448/-72679/+60554 +69204:-29234:+81091 INFO <job_+2814> VrTJR 4b0AY cPIcg 0lCQ3 3Oasx gqQyH
+-98600/66822/-77618 -9423:53866:-72249 INFO <job_+57562> Detected package manager: pnpm
+-15038/-32344/34740 9364:64169:+39711 jWq7F <job_87723> wAhFx l5OSh
+updater | 72050/-21848/13050 -66257:+67940:-64983 INFO <job_-87701> Started process PID: -73252 with command: node /opt/npm_and_yarn/run.js
+updater | +29894/+87020/+31608 38971:+2160:34480 INFO <job_19516> Started process PID: +67562 with command: {} pWOvq 9uAoo fhlv0 cb3OH {}
+-18594/-24449/-85641 5645:-63539:-15956 [7160] jCfwy ItgZ5
++52672/+73723/+607 +66457:-53470:-2092 INFO <job_+52657> VulnerabilityAuditor: starting audit
+updater | +57580/+60048/-34051 69070:-6884:-59189 INFO <job_41095> Skipping pdfjs-dist as it has already been updated to -33234.+56553.+4503
+updater | -70455/-64220/+46296 -15764:13020:-94897 INFO <job_-81191> Skipping change to group npm_and_yarn in directory /web: Previous version was not provided for: 'pdfjs-dist' No requirements change for: 'pdfjs-dist, prismjs'
+-57557/-30140/+24398 +38628:+19348:-52027 ERROR <job_+44454> fzcUX `block in KfDYx
+updater | 84670/+51428/-84121 +48177:+8907:55641 ERROR <job_+47217> CmMp0 IDqZB
+updater | -62433/15138/+52395 60280:-25047:+78128 INFO Results:
+Dependabot encountered '+4921' error(s) during execution, please check the logs for more details.
++---------------+
+| pN30Y |
+Failure running container 00aa98 99c2c0023a2 e4e8b70d961 e79e536 547116d
+Cleaned up container 6CD0 2B7E 9BB8 A878 256D D109
+proxy | 89930/22265/44431 -14496:79335:77387 Posting metrics to remote API endpoint
+##[error]Dependabot encountered an error performing the update
+
+Error: The updater encountered one or more errors.
+For more information see: https://github.com/danielmiessler/fabric/network/updates/+48505 (write access to the repository is required to view the log)
+🤖 ~ finished: error reported to Dependabot ~
+Post job cleanup.
+Cleaning up orphan processes

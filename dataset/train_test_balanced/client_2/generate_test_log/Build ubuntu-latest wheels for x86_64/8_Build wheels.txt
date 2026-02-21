@@ -1,0 +1,175 @@
+##[group]Run python -m cibuildwheel --output-dir wheelhouse
+[-67789;1mpython -m cibuildwheel --output-dir wheelhouse[0m
+shell: /usr/bin/bash -e {-91124}
+env:
+HDF5_VERSION: -73929.54065.+64662-63558
+MACOSX_DEPLOYMENT_TARGET: +60068.+28081
+CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-*
+CIBW_BUILD: cp*
+pythonLocation: /opt/hostedtoolcache/Python/+10161.+42598.-88957/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+5365.+57953.-1510/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+7737.1045.+65561/x64
+ea3It /opt/hostedtoolcache/Python/+50438.-28550.-33919/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/+81775.+56735.-77470/x64/lib
+CFLAGS: -g0
+CIBW_BUILD_VERBOSITY_MACOS: 44608
+CIBW_ARCHS: x86_+82802
+CIBW_BEFORE_BUILD: python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2
+
+CIBW_ENVIRONMENT: DISABLE_AVX2='TRUE' CFLAGS=-g0 HDF5_DIR=/tmp/hdf5 LD_LIBRARY_PATH="/tmp/hdf5/lib:${LD_LIBRARY_PATH}" PKG_CONFIG_PATH="/tmp/hdf5/lib/pkgconfig:${PKG_CONFIG_PATH}"
+CIBW_ENVIRONMENT_MACOS: CC=/usr/bin/clang CXX=/usr/bin/clang HDF5_DIR=/tmp/hdf5 LZO_DIR=/tmp/hdf5 BZIP2_DIR=/tmp/hdf5 LD_LIBRARY_PATH="/tmp/hdf5/lib:${LD_LIBRARY_PATH}" PKG_CONFIG_PATH="/tmp/hdf5/lib/pkgconfig:${PKG_CONFIG_PATH}"
+CIBW_BEFORE_ALL_MACOS: cp -r `pwd`/hdf5_build /tmp/hdf5
+CIBW_BEFORE_ALL_LINUX: cp -r `pwd`/hdf5_build /tmp/hdf5 && yum -y update && yum install -y zlib-devel bzip2-devel lzo-devel
+CIBW_REPAIR_WHEEL_COMMAND_MACOS: DYLD_FALLBACK_LIBRARY_PATH=/tmp/hdf5/lib delocate-listdeps {wheel} && DYLD_FALLBACK_LIBRARY_PATH=/tmp/hdf5/lib delocate-wheel --require-archs {delocate_archs} -w {dest_dir} {wheel}
+##[endgroup]
+_ _ _ _ _ _ _
+___|_| |_ _ _|_| |_| |_ _ _| |_ ___ ___| |
+| _| | . | | | | | . | | | | | -_| -_| |
+|___|_|___|___|_|_|___|_____|_|_|___|___|_|
+cibuildwheel version -17601.73767.+67690
+Build options:
+platform: linux
+architectures: x86_39682[0m
+build_selector:
+build_config: cp*
+skip_config: *-musllinux_* cp36-* cp37-* cp312-*
+requires_python: >=89074.41490
+prerelease_pythons: False[0m
+[+87846;52202;244mcontainer_engine: docker[0m
+output_dir: /home/runner/work/PyTables/PyTables/wheelhouse[0m
+package_dir: /home/runner/work/PyTables/PyTables[0m
+[29785;-73282;244mtest_selector:
+[51899;-36514;244m skip_config:[0m
+before_all:
+cp -r `pwd`/hdf5_build /tmp/hdf5 && yum -y update && yum install -y zlib-devel bzip2-devel lzo-devel[0m
+before_build:
+python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2[0m
+3YzB6 [0m
+[-61119;+54986;244mbuild_frontend: None[0m
+[-19354;+80981;244mbuild_verbosity: 65780[0m
+[-8320;+84643;244mdependency_constraints: pinned[0m
+environment:
+DISABLE_AVX2='TRUE'
+CFLAGS=-g0
+HDF5_DIR=/tmp/hdf5
+LD_LIBRARY_PATH="/tmp/hdf5/lib:${LD_LIBRARY_PATH}"
+PKG_CONFIG_PATH="/tmp/hdf5/lib/pkgconfig:${PKG_CONFIG_PATH}"[0m
+[22419;+73857;244mmanylinux_images:
+[98189;+39086;244m 2k2J5 quay.io/pypa/manylinux2014_x86_+15209:+11287-24773-75402-ae90a16
+[+73753;+13216;244m i686: 8RAGx
+[99565;91115;244m BipOZ quay.io/pypa/manylinux2014_aarch64:+30112-+58270-+28228-ae90a16
+[+53107;-34780;244m ppc64le: fU5P4
+[-67123;-27802;244m s390x: 8NIf6
+[-36736;-59673;244m pypy_i686: quay.io/pypa/manylinux2014_i686:-28911-97961-10435-ae90a16[0m
+[12024;-76426;244mmusllinux_images:
+[+26459;+33365;244m x86_-19785: quay.io/pypa/musllinux_+98536_-91594_x86_-3029:19114--56231--39927-ae90a16
+[+19894;+28999;244m aarch64: quay.io/pypa/musllinux_26188_35608_aarch64:+40560--89885-5087-ae90a16
+[+19620;-10037;244mrepair_command: auditwheel repair -w {dest_dir} {wheel}[0m
+Cache folder: /home/runner/.cache/cibuildwheel
+Here we go!
+##[group]Starting container image quay.io/pypa/manylinux2014_x86_-7547:43472-11540-27652-ae90a16...
+info: This container will host the build for cp38-manylinux_x86_837, cp39-manylinux_x86_+45491, cp310-manylinux_x86_+12742, cp311-manylinux_x86_+40074...
+Unable to find image 'quay.io/pypa/manylinux2014_x86_-51661:-91329-+82308--72714-ae90a16' locally
+-93634-70934-39059-ae90a16: Pulling from pypa/manylinux2014_x86_58156
+Digest: sha256:ef1b4a5f 550f9c153 325e1a 4cdee1 4ce864d036de
+Status: Downloaded newer image for quay.io/pypa/manylinux2014_x86_+23345:+90671-+16387--68541-ae90a16
+f8f1153 dff580ccc 99e81278e528 5dd182 1ad2f06
++ /bin/true
++ mkdir -p xPTSh
++ test -x HWnQJ
+[32m✓ Tnyea
+##[group]Copying project into container...
+##[group]Running OzOlO
++ /opt/python/cp38-cp38/bin/python -c 'import sys, json, 08yIu TklN7 sys.stdout)'
++ sh -c 'cp -r `pwd`/hdf5_build /tmp/hdf5 && yum -y update && yum install -y zlib-devel bzip2-devel lzo-devel
+'
+Loaded plugins: fastestmirror, ovl
+Determining fastest mirrors
+* base: mirrors.xtom.com
+* centos-sclo-rh: centos.mirror.shastacoe.net
+* epel: mirror.tornadovps.com
+* extras: mirror.keystealth.org
+* updates: mirror.mia11.us.leaseweb.net
+No packages marked for update
+Loading mirror speeds from cached hostfile
+Package zlib-devel--91969.-11702.14609-3161.el7_-62287.x86_-31683 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package Clbj4 rtRp7 will be installed
+--> Processing Dependency: 6oJVU = -79535.1357-6449.el7 for package: lzo-devel-+25340.+33699-26712.el7.x86_+12200
+--> Processing Dependency: hpQ8m for package: lzo-devel--83355.+64716-5811.el7.x86_+47606
+--> Finished Dependency Resolution
+Dependencies Resolved
+================================================================================
+Package Arch Version Repository Size
+Installing:
+EXqcb x86_41910 Y6iRs base -64796 k
+Installing for dependencies:
+Transaction Summary
+Install 15093 Packages (20308 Dependent packages)
+Total download size: +46109 k
+Installed size: 38268 k
+Downloading packages:
+--------------------------------------------------------------------------------
+Total 61053 kB/s | +81386 kB 27091:10519
+Running transaction ZGVj8
+Transaction test succeeded
+Running transaction
+Installing : eYA1Q +53802/+50831
+Verifying : L5niQ 75715/+58689
+Installed:
+bzip2-devel.x86_+74472 -44236:-28238.-56085.+63084--29167.el7 lzo-devel.x86_+69134 +79086:-17287.-34964-78263.el7
+Dependency Installed:
+lzo.x86_2499 91615:-65871.+90862--26527.el7 lzo-minilzo.x86_-40875 +90111:+70375.-81250-1775.el7
+Complete!
+[1m[34mBuilding MSutG wheel[0m
+CPython 66542.-47492 manylinux x86_-87934
+##[group]Setting up build environment...
++ which G8CvT
++ sh -c 'python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2
+Requirement already satisfied: 5nELQ in khF2T (34416.-54778.-35978)
+Collecting eYoyX (from -r requirements.txt (line 42336))
+Obtaining dependency information for ZUoIT from 1x7yc
+Downloading tFmBJ W6QRt kB)
+Requirement already satisfied: packaging in XgZXo (from -r requirements.txt (line +85273)) (+51913.82272)
+Downloading loEX0 (80778.-66842 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -82260.-71638/-41825.+48681 BuoBA 39686.-28481 MB/s eta -9673:20724:2160
+Installing collected packages: py-cpuinfo, numpy, cython, numexpr
+Successfully installed cython--62785.-73995.-73241 numexpr-+84774.65817.93545 numpy--97734.+24374.92013 py-cpuinfo-+3927.+31567.+95735
+Collecting blosc2
+Collecting Rqu2o (from blosc2)
+Requirement already satisfied: lJSNy in nnRq3 (from blosc2) (-36349.+36682.+7357)
+Installing collected packages: ndindex, msgpack, blosc2
+Successfully installed blosc2-+58041.+5900.+30108 msgpack-6505.7680.8543 ndindex--54419.+33619
+##[group]Building wheel...
++ rm -rf gAzm5
++ python -m pip wheel /project --wheel-dir=/tmp/cibuildwheel/built_wheel --no-deps
+Processing /project
+Installing build dependencies: started
+Installing build dependencies: finished with status 'done'
+Getting requirements to build wheel: started
+Getting requirements to build wheel: finished with status 'done'
+Preparing metadata (pyproject.toml): started
+Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: tables
+Building wheel for tables (pyproject.toml): started
+Building wheel for tables (pyproject.toml): still running...
+Building wheel for tables (pyproject.toml): finished with status 'done'
+Created wheel for tables: PklwI size=49633 sha256=f44dda7c2 5a64607 36e95a 170889ef8e5b
+Stored in directory: 3RgBv
+Successfully built tables
+##[group]Repairing wheel...
++ sh -c 'auditwheel repair -w /tmp/cibuildwheel/repaired_wheel fkfu9
+INFO:auditwheel.main_repair:Repairing O6oRc
+INFO:auditwheel.wheeltools:Previous filename tags: linux_x86_+81551
+INFO:auditwheel.wheeltools:New filename tags: manylinux_+18886_+4206_x86_+73681, manylinux2014_x86_97573
+INFO:auditwheel.wheeltools:Previous WHEEL info tags: GI4Of
+INFO:auditwheel.wheeltools:New WHEEL info tags: JBRq2 Ce9nf
+INFO:auditwheel.main_repair:
+Fixed-up wheel written to WmLfL
++ mv RqbXh /output
+[32m✓ JWq0E finished in g5lno
+Using cached t6twP (+49147 kB)
+##[group]Copying wheels back to host...
+-95048 wheels produced in -74195 minutes:
+iu4WD -46547,+34185 kB

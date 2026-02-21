@@ -14,7 +14,7 @@ class SimilarLogGenerator:
     
     def __init__(self):
         """Initialize SimilarLogGenerator."""
-        self.client_list = ["maryangel101", "d2klab", "logsage"]
+        self.client_list = ["client_1", "client_2", "client_3"]
     
     def collect_all_client_test_files(self, client_name: str) -> list[str]:
         """Collect all file paths in client test folder.
@@ -23,7 +23,7 @@ class SimilarLogGenerator:
             client_name (str): the name of the client whose we want to extract the file path.
         """
         # The path to client's test folder
-        test_path = Path("dataset/train_test_internal") / client_name / "test"
+        test_path = Path("dataset/train_test_balanced") / client_name / "test"
         if not test_path.exists():
             print(f"WARNING: client test folder path: {test_path} does not exist.")
             return []
