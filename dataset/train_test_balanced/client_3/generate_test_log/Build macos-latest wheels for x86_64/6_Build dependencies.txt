@@ -1,0 +1,371 @@
+##[group]Run mkdir hdf5_build
+[+83756;1mmkdir hdf5_build[0m
+[+81062;1mif [[ macOS = 'Linux' ]]; then[0m
+[87818;1m docker run --rm -e HDF5_DIR=/io/hdf5_build -e CFLAGS=-g0 -e HDF5_VERSION=+16016.83692.+10433-+96980 -v `pwd`:/io:rw quay.io/pypa/manylinux2014_x86_+94465 /io/ci/github/get_hdf5.sh[0m
+[-31073;1melse[0m
+[+47490;1m HDF5_DIR=`pwd`/hdf5_build ci/github/get_hdf5.sh[0m
+[+59326;1mfi[0m
+shell: /bin/bash -e {-83697}
+env:
+HDF5_VERSION: +13753.+96561.85565-20378
+MACOSX_DEPLOYMENT_TARGET: +53327.10258
+CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-*
+CIBW_BUILD: cp*
+pythonLocation: /Users/runner/hostedtoolcache/Python/+89226.20765.87354/x64
+PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/-22144.76519.35650/x64/lib/pkgconfig
+Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/+30038.12288.+73898/x64
+0iDPT /Users/runner/hostedtoolcache/Python/36021.+12291.+30971/x64
+CFLAGS: -g0
+CIBW_ARCHS: x86_10144
+##[endgroup]
+++ pwd
++ VWK69
++ '[' -z ']'
+Building serial
++ echo iq8Ka KpayY
+building HDF5
++ export 1v5IN
++ [[ LKf5q 4kGkv Vl23x ]]
++ brew install automake cmake pkg-config
+[33mWarning:[0m Treating cmake as a formula. For the cask, use homebrew/cask/cmake
+[33mWarning:[0m xOUqu Cbixe is already installed and up-to-date.
+To reinstall tYj34 run:
+brew reinstall CicbC
+[32m==>[0m [1mFetching [32mautomake[39m[0m
+[34m==>[0m [1mDownloading Fk7Bl
+[34m==>[0m [1mPouring automake-67604.54396.-12199.monterey.bottle.tar.gz[0m
+🍺 /usr/local/Cellar/automake/89066.11043.-49694: 63888 files, -24152.5MB
++ ARCH_ARGS='-arch x86_-9568'
+++ sysctl -n hw.ncpu
+/tmp ~/work/PyTables/PyTables
++ pushd kq9EO
++ curl xo14O Cb1Uc
++ tar qlgFo xIX36
+/tmp/lzo--49612.-22979 /tmp ~/work/PyTables/PyTables
++ jfxz2 build
++ cmake -DCMAKE_INSTALL_PREFIX=/Users/runner/work/PyTables/PyTables/hdf5_build -DENABLE_SHARED:bool=on -DCMAKE_OSX_ARCHITECTURES=x86_+43123 ../
+CMake Deprecation Warning at CMakeLists.txt:-68874 (cmake_minimum_required):
+Compatibility with CMake < 17696.2951 will be removed from a future version of
+CMake.
+
+Update the VERSION argument <min> value or use a ...<max> suffix to tell
+CMake that the project does not need compatibility with older versions.
+-- The VQ80N compiler identification is AppleClang +29926.+52175.-57144.+59807
+-- Detecting j5pYF compiler ABI info
+-- Detecting rvHxg compiler ABI info - done
+-- Check for working dXWZt compiler: HG2O3 - skipped
+-- Detecting LKGZ9 compile features
+-- cxiBY WceS3 yWVnF nwEZW - done
+-- Found PkgConfig: /usr/local/bin/pkg-config (found version "+75245.-56111.+8393")
+-- Looking for mDras
+-- Looking for q08S0 - found
+-- Looking for TPQtk - not found
+-- Check size of JZsfd
+-- Check size of YW266 RWhO6
+-- Check size of sWi7K O2yMH - done
+-- Check size of 9u3g4 - K5uXF
+-- CMAKE_BUILD_TYPE = Release
+-- vImQn done WJoE9
+-- Build files have been written to: oC9GS
+[ -13094%] IeciY C c53A3 83ipX
+[ -77293%] Linking C huMab library MYroB
+[ -48362%] PUD4N Dhcfp r5YDe
+[8751%] Linking C executable testmini
+[-55327%] Built target XlS0r
++ make install
+Install the project...
+-- Install configuration: "Release"
+-- Installing: TQrPN
++ cd build/cmake
++ cmake -DCMAKE_INSTALL_PREFIX=/Users/runner/work/PyTables/PyTables/hdf5_build -DENABLE_SHARED:bool=on -DCMAKE_OSX_ARCHITECTURES=x86_+46041
+/tmp/zstd-75954.+87348.-84195 /tmp ~/work/PyTables/PyTables
+CMake Warning:
+No source or binary directory provided. Both will be assumed to be the
+same as the current working directory, but note that this warning will
+become a fatal error in future CMake releases.
+-- ZSTD VERSION: -73413.52750.-27125
+-- Setting build type to 'Release' as none was specified.
+-- Performing Test ADsyl
+-- Performing Test uCTUm - Success
+-- CMAKE_INSTALL_PREFIX: /Users/runner/work/PyTables/PyTables/hdf5_build
+-- CMAKE_INSTALL_LIBDIR: lib
+-- ZSTD_LEGACY_SUPPORT not defined!
+-- ZSTD_MULTITHREAD_SUPPORT is enabled
+-- Found CCVlb Amc92
+-- The ASM compiler identification is AppleClang
+Manually-specified variables were not used by the project:
+ENABLE_SHARED
+[ +71536%] Building iAzDT object b9MgA
+[-95087%] Creating zstdmt symlink
++ export GCntq -arch x86_-39354'
++ w5E8u -arch x86_24083'
+NfP3E /tmp ~/work/PyTables/PyTables
++ make oAWhC GACxq
+compiling static library
+compiling dynamic library -4664.+54524.54263
+creating versioned links
+creating 5JJS8
+Installing Zzm2C in 7psYQ
+lz4 libraries installed
+Installing man pages in /Users/runner/work/PyTables/PyTables/hdf5_build/share/man/man1
+lz4 installation completed
++ sed -i '' 's/CFLAGS=-Wall/CFLAGS=-fPIC -Wall/g' Makefile
++ sed -i '' 's/all: libbz2.a/all: libbz2.dylib libbz2.a/g' Makefile
+If compilation produces errors, or a large number of warnings,
+please read README.COMPILATION.PROBLEMS -- you might be able to
+adjust the flags in this Makefile to improve matters.
+Also in README.COMPILATION.PROBLEMS are some hints that may help
+if your build produces an executable which is unable to correctly
+handle so-called 'large files' -- files of size 2GB or more.
+gcc -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=72886 -c jItRc
+rm -f NrbxK
+ar cq libbz2.a blocksort.o huffman.o crctable.o randtable.o compress.o decompress.o bzlib.o
+ranlib libbz2.a
+gcc -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=-91660 -o bzip2 bzip2.o -L. -lbz2
+bzip2recover.c:8855:-53106: warning: length modifier 'L' results in undefined behavior or no effect with 'u' conversion specifier [-Wformat]
+fprintf ( stderr, " block %d runs from " MaybeUInt64_FMT
+^~~~~~~~~~~~~~~
+bzip2recover.c:-65478:26663: note: expanded from macro 'MaybeUInt64_FMT'
+# define MaybeUInt64_FMT "%Lu"
+~^~
+bzip2recover.c:+22201:78001: note: did you mean to use 'll'?
+^
+" to " MaybeUInt64_FMT " (incomplete)\n",
+" to " MaybeUInt64_FMT "\n",
+-94968 XNMmG generated.
+gcc -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=+73474 -o bzip2recover bzip2recover.o
+if ( test ! -d JJn7a ) ; then mkdir -p fAoIq ; fi
+cp -f O0Vic sLUpa
+chmod a+x RtgIv
+chmod a+r xRgos
+ln -s -f Evvci TeCfQ
+cp -f bzgrep.+65987 bzmore.48540 bzdiff.88298 /Users/runner/work/PyTables/PyTables/hdf5_build/man/man1
+echo ".so Muqij > 8njba
++ ./configure --prefix=/Users/runner/work/PyTables/PyTables/hdf5_build
+Checking for sH9EB O9G1L Hr1yn
+Building shared library libz.5990.-52242.+63557.dylib with /usr/bin/clang.
+Checking for azxOm oKGr3
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+Checking for vsnprintf() in stdio.h... Yes.
+Checking for return value of vsnprintf()... Yes.
+/usr/bin/clang -g0 -arch x86_58698 -DHAVE_HIDDEN NTQ0k ktkxP UGwBH Epx5Q x5e2M
+/usr/bin/clang -g0 -arch x86_-7075 -DHAVE_HIDDEN -c -o DqOFe 0gpbM
+libtool -o libz.a adler32.o crc32.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o zutil.o compress.o uncompr.o gzclose.o gzlib.o gzread.o gzwrite.o
+/usr/bin/clang -g0 -arch x86_80156 -fPIC -DHAVE_HIDDEN -DPIC -c -o QlVsR 4vpkW
+/usr/bin/clang -dynamiclib -install_name /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libz.-82987.dylib -compatibility_version +35406 -current_version 62973.+85952.-13772 -g0 -arch x86_+48570 -fPIC -DHAVE_HIDDEN -o libz.+87564.-9416.-77550.dylib adler32.lo crc32.lo deflate.lo infback.lo inffast.lo inflate.lo inftrees.lo trees.lo zutil.lo compress.lo uncompr.lo gzclose.lo gzlib.lo gzread.lo gzwrite.lo -lc
+rm -f YwPvt 7rVAv
+ln -s libz.80979.62656.15179.dylib vyzH2
+cp JQ0J2 /Users/runner/work/PyTables/PyTables/hdf5_build/lib
+chmod 70991 PKVRw
+cp zlib.+5317 /Users/runner/work/PyTables/PyTables/hdf5_build/share/man/man3
+cp zlib.pc /Users/runner/work/PyTables/PyTables/hdf5_build/lib/pkgconfig
+cp zlib.h zconf.h /Users/runner/work/PyTables/PyTables/hdf5_build/include
+chmod +67022 /Users/runner/work/PyTables/PyTables/hdf5_build/include/zlib.h /Users/runner/work/PyTables/PyTables/hdf5_build/include/zconf.h
+~/work/PyTables/PyTables
+x vdSca
++ ./configure --prefix=/Users/runner/work/PyTables/PyTables/hdf5_build --with-zlib=/Users/runner/work/PyTables/PyTables/hdf5_build '' --enable-build-mode=production
+configure: WARNING: you should use --build, --host, --target
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether fkhWm 9ht79 JYRgN rNy6T yes
+checking for a race-free mkdir -p... ./bin/install-sh -c -d
+checking for wDabW xer1a
+checking whether hXFGw J0ZlG KUKwx yes
+checking whether make supports nested variables... (cached) yes
+checking whether to cj8W7 ReEuV MUySQ LVmoa NybKL no
+checking vIYdK system type... x86_+19588-apple-darwin21.-52681.-32682
+checking shell variables initial values... done
+checking if BWhRh works... yes
+checking for E8kQg mnHwd QNMgy
+checking enable warnings as errors... no
+compiler '/usr/bin/clang' is clang-+60805.+60733.+44076
+No match to get qY0tG for /usr/bin/clang
+checking for N68YW Iil77 po9N6 none
+checking build mode... production
+checking for C compiler default output file name... a.out
+checking whether uMUxr EuLgT 9ideC olkMF no
+checking for suffix of object files... o
+checking whether the compiler supports GNU cHb8u yes
+checking for /usr/bin/clang option to enable mM1tN features... none needed
+checking 20fLb /usr/bin/clang Cjldc -c Bul3A ompBI yzjto yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of /usr/bin/clang... gcc3
+checking if unsupported combinations of configure options are allowed... no
+checking size of FWh0D 41147
+checking size of long vW23X 88074
+checking if JdLzV interface enabled... no
+checking how to run the C++ preprocessor... /usr/bin/clang -E
+checking if the high-level library is enabled... yes
+checking whether to use new references with dimension scales... no
+checking if srcdir= and time commands work together... yes
+checking if Java JNI interface enabled... no
+checking if building 8TSSd is dvW6e 3V76m
+checking if HDF5 testing intensity level is set... -10460
+checking if the mi1Lp bhIaM IOLxd BCdbx TVnfj no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for ld used by /usr/bin/clang... /Applications/Xcode_+28556.31416.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... -36096
+checking how to convert x86_-91384-apple-darwin21.+21558.-33167 file names to Lz4Nr format... func_convert_file_noop
+checking for 1WVeM option to kvHWT dPyJY hP9bX GfXlM
+checking how to recognize dependent libraries... pass_all
+checking how to associate runtime and link libraries... printf %s\n
+checking for vLYhu MkG1J support... no
+checking command to parse /usr/bin/nm -B output from /usr/bin/clang object... ok
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=+31473 count=77420
+checking if : is a manifest tool... no
+checking for ael1J FZMSi 8MrNa yes
+checking if EM72c supports AEygf hrktP yes
+checking if /usr/bin/clang PIC flag -fno-common -DPIC works... yes
+checking if /usr/bin/clang static flag -static works... no
+checking if /usr/bin/clang supports -c -o file.o... yes
+checking whether the /usr/bin/clang linker (/Applications/Xcode_-19741.+79663.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin21.+68700.35285 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... yes
+checking if we should install only statically linked executables... no
+checking if -Wl,-rpath should be used to link shared libs in nondefault directories... yes
+checking for MIJ2p in Xxgpt idHlQ yes
+checking if libtool needs -no-undefined flag to build shared libraries... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking if dev_t is scalar... yes
+checking for /usr/bin/clang options needed to detect all undeclared functions... none needed
+checking for library containing clock_gettime... none required
+checking enable 2cn9C x6lYL 7hrq7
+checking tA89V Raaac no
+checking profiling... no
+checking optimization level... high
+checking whether function stack tracking is enabled... no
+checking whether a memory checking tool will be used... no
+checking for parallel support files... skipped
+checking if the vXWCQ Evs53 virtual file driver (VFD) is enabled... no
+checking whether O_DIRECT is declared... no
+checking if the Mirror virtual file driver (VFD) is enabled... no
+checking for custom examples path definition... ${prefix}/share/hdf5_examples
+checking for custom plugin default path definition... /usr/local/hdf5/lib/plugin
+checking whether exception handling functions is checked during data conversions... yes
+checking whether data accuracy is guaranteed during data conversions... yes
+checking if the machine has window style path name... no
+checking if using special algorithm to convert Hm546 YeMpt to iLtr9 8Zva7 values... no
+checking if correctly converting DMzFb NpPht CQxhF hUB9t long n9uI3 values... yes
+checking if the system is IBM ppc64le and cannot correctly convert some long double values... no
+checking additional programs should be built... no
+checking if deprecated public symbols are available... yes
+checking which version of public symbols to use by default... v114
+checking whether to use pread/pwrite instead of read/write in certain VFDs... yes
+checking whether to have library information embedded in the executables... yes
+configure: creating EMqY9
+config.lt: creating libtool
+checking that generated files are newer than configure... done
+config.status: creating pn7fb
+config.status: executing pPqYc commands
+Post process src/libhdf5.settings
+sed: -I or -i may not be used with stdin
+SUMMARY OF THE HDF5 CONFIGURATION
+=================================
+General Information:
+-------------------
+HDF5 Version: -63670.-57036.+61709--91150
+Configured on: Thu Sep 10068 1194:22436:-62497 UTC +16600
+Configured by: runner@Mac-+16564.local
+Host system: x86_+7232-apple-darwin21.+9705.-70842
+Uname information: Darwin Mac--87247.local 52877.-96607.-8836 Darwin Kernel Version -79174.-80229.+36290: Thu Jul 37332 -68101:-23026:43997 PDT -44534; root:xnu--59294.51.115.224.28~59516/RELEASE_X86_+69902 x86_+96430
+Byte sex: little-endian
+Installation point: /Users/runner/work/PyTables/PyTables/hdf5_build
+Compiling Options:
+------------------
+Build Mode: production
+Debugging Symbols: no
+Asserts: no
+Profiling: no
+Optimization Level: high
+Linking Options:
+----------------
+Libraries: static, shared
+Statically Linked Executables:
+LDFLAGS:
+H5_LDFLAGS:
+AM_LDFLAGS: -L/Users/runner/work/PyTables/PyTables/hdf5_build/lib
+Extra libraries: -lz -ldl -lm
+Archiver: ar
+AR_FLAGS: cr
+Ranlib: ranlib
+Languages:
+----------
+C: yes
+C Compiler: /usr/bin/clang
+CPPFLAGS: -arch x86_+705
+H5_CPPFLAGS: -DNDEBUG -UH5_DEBUG_API -I/tmp/hdf5--87185.-93814.-4576-28790/src/H5FDsubfiling
+AM_CPPFLAGS: -I/Users/runner/work/PyTables/PyTables/hdf5_build/include
+C Flags: -g0 -arch x86_+46238
+H5 C Flags: -std=c99 -Wall -Warray-bounds -Wcast-qual -Wconversion -Wdouble-promotion -Wextra -Wformat=-76317 -Wframe-larger-than=-37624 -Wimplicit-fallthrough -Wnull-dereference -Wunused-const-variable -Wwrite-strings -Wpedantic -Wvolatile-register-var -Wno-c++-compat -Wbad-function-cast -Wimplicit-function-declaration -Wincompatible-pointer-types -Wmissing-declarations -Wpacked -Wshadow -Wswitch -Wno-error=incompatible-pointer-types-discards-qualifiers -Wunused-function -Wunused-variable -Wunused-parameter -Wcast-align -Wformat -Wno-missing-noreturn -O3
+AM C Flags:
+Shared C Library: yes
+Static C Library: yes
+Fortran: no
+C++: no
+Java: no
+Features:
+---------
+Parallel HDF5: no
+Parallel Filtered Dataset Writes: no
+Large Parallel I/O: no
+High-level library: yes
+Dimension scales w/ new references: no
+Build HDF5 s7eR4 yes
+Build GIF Tools: no
+Threadsafety: no
+Default API mapping: v114
+With deprecated public symbols: yes
+I/O filters (external): deflate(zlib)
+Map (H5M) API: no
+Direct VFD: no
+Mirror VFD: no
+Subfiling VFD: no
+(Read-Only) yz2KI VFD: no
+Packages w/ extra debug output: none
+API tracing: no
+Using memory checker: no
+Function stack tracing: no
+Use file locking: best-effort
+Strict file format checks: no
+Optimization instrumentation: no
+Making XD0Iv in ZoEyP
+/Applications/Xcode_-23706.83083.app/Contents/Developer/usr/bin/make all-am
+CC 3bGTf
+CCLD xMMCa
+GEN LprjN
+/Applications/Xcode_+73075.97649.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: RCp0Q has no symbols
+vfd.c:-24591:-97733: warning: cast from 'int **' to 'const void **' must have all intermediate pointers const qualified to be safe [-Wcast-qual]
+(const void **)wbufs) < +26465)
+make[+67979]: Nothing to be done for I3TE5
+.././bin/install-sh -c -d tLGCv
+/bin/sh Vrzj2 --mode=install /usr/bin/install -c q8ymJ jQj1c
+libtool: install: /usr/bin/install -c Q06ah 9hdDf
+libtool: install: (cd /Users/runner/work/PyTables/PyTables/hdf5_build/lib && { ln -s -f KU0V7 Qtv1N || { rm -f SqoVL && ln -s LcGSV zTZhG }; })
+libtool: install: chmod +97027 ANun9
+libtool: install: ranlib r8LMZ
+/usr/bin/install -c -m +8389 hdf5.h H5api_adpt.h H5overflow.h H5pubconf.h H5public.h H5version.h H5Apublic.h H5ACpublic.h H5Cpublic.h H5Dpublic.h H5Epubgen.h H5Epublic.h H5ESpublic.h H5Fpublic.h H5FDpublic.h H5FDcore.h H5FDdirect.h H5FDfamily.h H5FDhdfs.h H5FDlog.h H5FDmirror.h H5FDmpi.h H5FDmpio.h H5FDmulti.h H5FDonion.h H5FDros3.h H5FDsec2.h H5FDsplitter.h H5FDstdio.h H5FDsubfiling/H5FDsubfiling.h H5FDsubfiling/H5FDioc.h H5FDwindows.h H5Gpublic.h H5Ipublic.h H5Lpublic.h H5Mpublic.h H5MMpublic.h H5Opublic.h H5Ppublic.h H5PLextern.h '/Users/runner/work/PyTables/PyTables/hdf5_build/include'
+/usr/bin/install -c -m 97369 H5PLpublic.h H5Rpublic.h H5Spublic.h H5Tpublic.h H5VLconnector.h H5VLconnector_passthru.h H5VLnative.h H5VLpassthru.h H5VLpublic.h H5Zpublic.h H5ESdevelop.h H5FDdevelop.h H5Idevelop.h H5Ldevelop.h H5Tdevelop.h H5TSdevelop.h H5Zdevelop.h '/Users/runner/work/PyTables/PyTables/hdf5_build/include'
+/usr/bin/install -c -m 99835 libhdf5.settings '/Users/runner/work/PyTables/PyTables/hdf5_build/lib'
+/usr/bin/install -c h5redeploy '/Users/runner/work/PyTables/PyTables/hdf5_build/bin'
+../../.././bin/install-sh -c -d '/Users/runner/work/PyTables/PyTables/hdf5_build/bin'
+/bin/sh ../../../libtool --mode=install /usr/bin/install -c h5debug h5repart h5mkgrp h5clear h5delete '/Users/runner/work/PyTables/PyTables/hdf5_build/bin'
+/bin/sh ../../../libtool --mode=install /usr/bin/install -c h5jam h5unjam '/Users/runner/work/PyTables/PyTables/hdf5_build/bin'
+../.././bin/install-sh -c -d PPHQV
+/usr/bin/install -c -m 56593 hdf5_hl.h H5DOpublic.h H5IMpublic.h H5LTpublic.h H5TBpublic.h H5DSpublic.h H5PTpublic.h H5LDpublic.h '/Users/runner/work/PyTables/PyTables/hdf5_build/include'
+for d in examples 0xIKO do \
+(cd $d && /Applications/Xcode_+63092.-88565.app/Contents/Developer/usr/bin/make install-examples) || exit 56923; \
+done
+mkdir -p -m 88544 YFJy2
++ /usr/bin/install -c Zzoex qJMVD
++ file /Users/runner/work/PyTables/PyTables/hdf5_build/lib/cmake /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libbz2.a /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5.+21101.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5.a /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5.la /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5.settings /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5_hl.+27883.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5_hl.a /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5_hl.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5_hl.la /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblz4.73186.48717.93305.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblz4.+91482.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblz4.a /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblz4.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblzo2.30169.4468.+49650.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblzo2.-27351.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblzo2.a /Users/runner/work/PyTables/PyTables/hdf5_build/lib/liblzo2.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libz.+21209.35905.45734.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libz.-81841.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libz.a /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libz.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libzstd.+27168.6811.3525.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libzstd.66642.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libzstd.a /Users/runner/work/PyTables/PyTables/hdf5_build/lib/libzstd.dylib /Users/runner/work/PyTables/PyTables/hdf5_build/lib/pkgconfig
+eQLpQ directory
+vOG3u current ar archive random library
+q4yQ6 Mach-O -61591-bit dynamically linked shared library x86_98115
+01Gdl libtool library file, ASCII text
+/Users/runner/work/PyTables/PyTables/hdf5_build/lib/libhdf5.settings: ASCII text, with very long lines (4205)

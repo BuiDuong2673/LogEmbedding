@@ -1,0 +1,70 @@
+Requested labels: ubuntu-latest
+Job defined at: cockroachdb/cockroach/.github/workflows/code-cover-publish.yaml@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 54843 (hosted)
+Current runner version: '+8275.+52634.+73645'
+##[group]Operating System
+Ubuntu
+37175.-98673.+81535
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--60638.+85205
+Version: 90112.71658.19559
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-11343.-52609/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.75747
+##[group]Runner Image Provisioner
+216.17.202.92
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 6IQPB
+Digest: sha256:208aad8 05485a34 ddc66ff724 50ce88 950ce19
+Source commit SHA: 3e57ce0a cbabd751eff4 5e2ecb0 5147002ffc1
+Complete job name: code-cover-publish
+##[group]Run actions/github-script@v7.+27096.66468
+with:
+script: var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+owner: context.repo.owner,
+repo: context.repo.repo,
+run_id: -71058,
+});
+var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+return artifact.name == "cover"
+})[+24078];
+var download = await github.rest.actions.downloadArtifact({
+artifact_id: matchArtifact.id,
+archive_format: 'zip',
+var fs = require('fs');
+fs.writeFileSync('/home/runner/work/cockroach/cockroach/cover.zip', Buffer.from(download.data));
+
+github-token: ***
+debug: false
+user-agent: actions/github-script
+result-encoding: json
+retries: +21176
+retry-exempt-status-codes: 83423,+19689,74405,20381,+33886
+TypeError: Cannot read properties of undefined (reading 'id')
+at eval (eval at callAsyncFunction (/home/runner/work/_actions/actions/github-script/v7.12892.62628/dist/index.js:72017:95290), <anonymous>:-61240:20218)
+at process.processTicksAndRejections (node:internal/process/task_queues:-15967:-56376)
+at async main (/home/runner/work/_actions/actions/github-script/v7.+62353.-52365/dist/index.js:95603:22853)
+##[error]Unhandled error: TypeError: Cannot read properties of undefined (reading 'id')
+Cleaning up orphan processes

@@ -9,7 +9,7 @@ class GlobalVocabProcessor:
     """Establish global vocab for first word transfering before aggregation."""
     def __init__(self):
         """Initalize GlobalVocabProcess class."""
-        self.client_list = ["d2klab", "logsage", "maryangel101"]
+        self.client_list = ["client_1", "client_2", "client_3"]
 
     def get_english_word_dict(self) -> dict:
         """Change the public english word dictionary dataset to dict."""
@@ -28,7 +28,7 @@ class GlobalVocabProcessor:
         Args:
             client_name (str): the name of the client who we want to get their words.
         """
-        client_dataset = f"dataset/{client_name}"
+        client_dataset = f"dataset/balanced_data/{client_name}"
         # Read all log file in the client_dataset folder
         dataset_paths = []  # Collect all folders inside client's overall dataset folder
         for subdir in os.listdir(client_dataset):
@@ -106,13 +106,14 @@ class GlobalVocabProcessor:
                 if not initial_vocab.get(word):
                     # Check if the word is common word
                     if word in common_words:
-                        num_unknown_words += 1
                         # If yes, add it to the vocab. If no, ignore.
                         word_index = int(list(initial_vocab.values())[-1]) + 1
                         initial_vocab[word] = word_index
-        print(f"The number of unknown common words: {num_unknown_words}")
+                    else:
+                        num_unknown_words += 1
+        print(f"The number of unknown words: {num_unknown_words}")
         # Save the vocab to a json file for later use
-        save_path = "dataset/global_vocab.json"
+        save_path = "dataset/global_vocab_2.json"
         with open(save_path, "w", encoding="utf-8") as json_file:
             json.dump(initial_vocab, json_file, indent=4, ensure_ascii=False)
         print(f"Saved the global vocab to {save_path}")
@@ -120,7 +121,7 @@ class GlobalVocabProcessor:
     
     def get_global_vocab(self) -> dict:
         """For other class to call to get global vocab."""
-        global_vocab_path = "dataset/global_vocab.json"
+        global_vocab_path = "dataset/global_vocab_2.json"
         # If the global vocab has not been created, create it
         if not os.path.exists(global_vocab_path):
             global_vocab = self.create_global_vocab()

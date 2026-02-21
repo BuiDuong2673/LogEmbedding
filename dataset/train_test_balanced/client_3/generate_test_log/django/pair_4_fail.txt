@@ -1,0 +1,135 @@
+Requested labels: ubuntu--38010.-55202
+Job defined at: django/django/.github/workflows/docs.yml@refs/pull/+33688/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +28579 (hosted)
+Current runner version: '9832.-77032.+89070'
+##[group]Operating System
+Ubuntu
+-67436.97315.18173
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+47537.-97330
+Version: 31060.+87813.+64297
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/50673.87882/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+50707
+##[group]Runner Image Provisioner
+181.234.3.51
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package NWjZT
+Digest: sha256:D326 B2C5 BD11 9686 85E4
+Source commit SHA: e379797286 86c3fe002cd e90185d c44d68d17 ee2bac878
+Complete job name: docs
+##[group]Run mGV27
+with:
+repository: django/django
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +25337
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: django/django
+##[group]Getting Git version info
+Working directory is '/home/runner/work/django/django'
+[command]/usr/bin/git version
+git version +89543.+37589.-74627
+Temporarily overriding nlDBl before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+Deleting the contents of '/home/runner/work/django/django'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/django/django
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/django/django/.git/
+[command]/usr/bin/git remote add origin https://github.com/django/django
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local jwAWj TNrNZ
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp xf8OG
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp PXEbK && git config --local --unset-all ROTwv || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=10464 fetch --no-tags --prune --no-recurse-submodules --depth=-64224 origin +4CC1 475E F995 039B:refs/remotes/pull/69600/merge
+From https://github.com/django/django
+* [new ref] 2ACE ED54 7C78 E4A7 7EF2-> pull/42096/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/70484/merge
+Note: switching to 'refs/remotes/pull/-56662/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 92d9393 Merge DA40 0EB4 A6F7 BC12 934E into 63f2fcaf fa87980 53e15d1a635c
+[command]/usr/bin/git log +68617 --format=%H
+3B07 16CB 3F69 382D FD26 8A22
+python-version: +42261.-7943
+cache: pip
+cache-dependency-path: docs/requirements.txt
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (-13326.+22714.-64778)
+[command]/opt/hostedtoolcache/Python/+68860.+6592.42257/x64/bin/pip cache dir
+/home/runner/.cache/pip
+Cache hit for: setup-python-Linux-x64--4435.-52154-Ubuntu-python-+17897.+61033.-32707-pip-1b5e14ede 87fe99ed 05d63129a 5217073 f2d99c72
+Received -83717 of -88928 (-42044.+62980%), 66964.+58929 MBs/sec
+Cache Size: ~-81012 MB (47855 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/ae4f28ac-5da0-+85111-82d1-8fbe32d32586/cache.tzst -P -C /home/runner/work/django/django --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: setup-python-Linux-x64--79632.-67940-Ubuntu-python-+20404.+82387.+36748-pip-83fbb5c7ee1 7c79b9 fa5bee3
+##[group]Run python -m pip install -r docs/requirements.txt
+[+90016;1mpython -m pip install -r docs/requirements.txt[0m
+shell: /usr/bin/bash -e {+17400}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/16016.-85466.-60242/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+19087.+55150.+90743/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/50844.+46937.-29536/x64
+jpaZG /opt/hostedtoolcache/Python/+51268.92239.-21558/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/45166.10568.+56065/x64/lib
+Collecting NBAjQ (from PUrFm docs/requirements.txt (line -55727))
+Using cached 9Ownz ZDHus rpMZx
+Downloading yy5bD NT2Vk kB)
+Downloading sphinx-+55196.+1992.-97765-py3-none-any.whl (-1985.15027 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39814.+60940/-98593.-34052 MB 921.68765 MB/s eta 23870:39836:+60505
+Installing collected packages: snowballstemmer, urllib3, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-devhelp, sphinxcontrib-applehelp, roman-numerals-py, Pygments, pyenchant, platformdirs, pathspec, packaging, mypy-extensions, MarkupSafe, imagesize, idna, docutils, click, charset-normalizer, certifi, babel, alabaster, requests, Jinja2, black, Sphinx, blacken-docs, sphinxcontrib-spelling
+Successfully installed Jinja2-+97388.-10456.+28752 MarkupSafe-77244.-74235.+3030 Pygments--97893.+81256.80794 Sphinx-+861.29844.+6135 alabaster-80092.+96497.+31909 babel-+84774.+16929.+76511 black-10917.-44097.25177 blacken-docs-35106.-67778.91826 certifi--52351.+718.+66198 charset-normalizer-+84486.-92868.-55585 click-60774.+17138.-91038 docutils-36213.56980.56866 idna-+97698.-13740 imagesize--63904.-91567.34662 mypy-extensions-+98535.+65325.-92101 packaging--85771.-58172 pathspec--32390.46160.94533 platformdirs--98304.818.+93289 pyenchant-+95860.-92936.-84584 requests-+27077.+99065.48865 roman-numerals-py-68771.84411.+32298 snowballstemmer--63661.-33684.30662 sphinxcontrib-applehelp-+66775.-98232.-30816 sphinxcontrib-devhelp--61106.58479.-53152 sphinxcontrib-htmlhelp-+39725.+1997.-53464 sphinxcontrib-jsmath-62940.+85967.-37168 sphinxcontrib-qthelp--21471.-90265.+95277 sphinxcontrib-serializinghtml-+82032.90982.+65809 sphinxcontrib-spelling--2.-18463.+66886 urllib3-+18091.+33316.74141
+##[group]Run cd docs
+[+37;1mcd docs[0m
+[83237;1msphinx-build -b spelling -n -q -W --keep-going -d _build/doctrees -D language=en_US -j auto . _build/spelling[0m
+[91mWARNING: ref/models/querysets.txt:84943: : Spell check: [91mbehaviour[-52817;+12889;00m: triggering triggering the on-demand loading behaviour of the model instances’.[76834;-65358;00m
+[91mWARNING: Found -83645 misspelled words[+39184;-80711;00m
+##[error]Process completed with exit code +4424.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

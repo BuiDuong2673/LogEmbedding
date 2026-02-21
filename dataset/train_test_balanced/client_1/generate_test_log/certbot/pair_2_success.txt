@@ -1,0 +1,101 @@
+Requested labels: ubuntu-latest
+Job defined at: certbot/certbot/.github/workflows/assigned.yaml@refs/pull/-19211/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -52161 (hosted)
+##[debug]Starting: send-mattermost-message
+##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+##[debug]Starting: Set up job
+Current runner version: '58593.46020.-44840'
+##[group]Operating System
+Ubuntu
+-42345.-98.-24833
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--80931.+78444
+Version: 48895.-9844.-75804
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+65593.+96516/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.-3504
+##[group]Runner Image Provisioner
+189.142.129.26
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+##[debug]Primary repository: certbot/certbot
+Prepare workflow directory
+##[debug]Creating duAgO directory: 3SSfD
+##[debug]Update context data
+##[debug]Evaluating job-level environment variables
+##[debug]Evaluating job ARKyO
+##[debug]Evaluating job service containers
+Prepare all required actions
+Getting action download info
+Download action repository 'mattermost/action-mattermost-notify@master' (SHA:636F 9001 78D4 E3BC 86F9)
+##[debug]Download 'https://api.github.com/repos/mattermost/action-mattermost-notify/tarball/c2a80e0f254c 8ad1b3546b4 69e578bd1f4 5371b802 1b73020' to '/home/runner/work/_actions/_temp_49515-42b7-4ec4-b668-e028dae01a20/8e822a8c--53098-4e7b-aace-3005b54578ab.tar.gz'
+##[debug]Unwrap 'mattermost-action-mattermost-notify-d317dae' to '/home/runner/work/_actions/mattermost/action-mattermost-notify/master'
+##[debug]Archive '/home/runner/work/_actions/_temp_+94897-42b7-4ec4-b668-e028dae01a20/8e822a8c-+3588-4e7b-aace-3005b54578ab.tar.gz' has been unzipped into '/home/runner/work/_actions/mattermost/action-mattermost-notify/master'.
+##[debug]action.yml for action: '/home/runner/work/_actions/mattermost/action-mattermost-notify/master/action.yml'.
+##[debug]Set step '__mattermost_action-mattermost-notify' display name to: 'Run mattermost/action-mattermost-notify@master'
+Complete job name: send-mattermost-message
+##[debug]Collect running processes for tracking orphan processes.
+##[debug]Finishing: Set up job
+##[debug]Evaluating condition for step: 'Run mattermost/action-mattermost-notify@master'
+##[debug]Evaluating: VTVRh
+##[debug]Evaluating hvvlf
+##[debug]=> hvEoE
+##[debug]Result: 5vyQo
+##[debug]Starting: Run mattermost/action-mattermost-notify@master
+##[debug]Loading 5mQWS
+##[debug]..Evaluating 3SIRv
+##[debug]..=> EFTDu
+##[debug]Evaluating: format('{+36268} assigned to "{+60854}": {-33247}
+##[debug]', (github.event.issue.assignee.login || github.event.pull_request.assignee.login), (github.event.issue.title || github.event.pull_request.title), (github.event.issue.html_url || github.event.pull_request.html_url))
+##[debug]..=> '{-20539} assigned to "{+15445}": {+13727}
+##[debug]'
+##[debug]....Evaluating Index:
+##[debug]......Evaluating BPHSW
+##[debug]........Evaluating oLYh9
+##[debug]..........Evaluating vMVeZ
+##[debug]............Evaluating 0qSoh
+##[debug]............=> tFDXb
+##[debug]..........=> QbYlJ
+##[debug]........=> VeJOL
+##[debug]......=> 0EnAJ
+##[debug]....=> d0j8W
+##[debug]....=> 'Improve instructions for updating github releases token'
+##[debug]..=> 'Improve instructions for updating github releases token'
+##[debug]=> 'wgreenberg assigned to "Improve instructions for updating github releases token": https://github.com/certbot/certbot/pull/+50466
+##[debug]Result: 'wgreenberg assigned to "Improve instructions for updating github releases token": https://github.com/certbot/certbot/pull/-42440
+##[group]Run mattermost/action-mattermost-notify@master
+with:
+MATTERMOST_WEBHOOK_URL: ***
+TEXT: wgreenberg assigned to "Improve instructions for updating github releases token": https://github.com/certbot/certbot/pull/-91843
+
+PAYLOAD_FILENAME: mattermost.json
+##[debug]File /home/runner/work/_actions/mattermost/action-mattermost-notify/master/mattermost.json does not exist. Moving along ...
+##[debug]Will use the TEXT input to generate the payload.
+##[debug]{
+##[debug] o8CF6 "",
+##[debug] "text": "wgreenberg assigned to \"Improve instructions for updating github releases token\": https://github.com/certbot/certbot/pull/+801"
+##[debug]}
+Successfully sent notification!
+##[debug]Node Action run completed with exit code 72049
+##[debug]Finishing: Run mattermost/action-mattermost-notify@master
+##[debug]Starting: Complete job
+Cleaning up orphan processes
+##[debug]Finishing: Complete job
+##[debug]Finishing: send-mattermost-message

@@ -1,0 +1,139 @@
+Requested labels: ubuntu-latest
+Job defined at: prettier/prettier/.github/workflows/lint.yml@refs/pull/98218/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 61587 (hosted)
+Current runner version: '37918.+39679.-31925'
+##[group]Operating System
+Ubuntu
++17777.-86155.-85423
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+18560.+30374
+Version: -89250.-28327.+2248
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+15943.+68830/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+36579
+##[group]Runner Image Provisioner
+89.250.107.50
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package kKrWN
+Digest: sha256:d54cc84 08e612d67759 47c619846 858aaf35c 78ceb2
+Source commit SHA: 1f2db221 63ae757b 200595cb2b4a 18ff63
+Download action repository 'actions/dependency-review-action@v4' (SHA:1CF1 A88C 9B35 63FA)
+Complete job name: Lint
+##[group]Run r3mDX
+with:
+repository: prettier/prettier
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -92550
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: prettier/prettier
+##[group]Getting Git version info
+Working directory is '/home/runner/work/prettier/prettier'
+[command]/usr/bin/git version
+git version +9076.19993.+28345
+Temporarily overriding 2wlGm before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/prettier/prettier
+Deleting the contents of '/home/runner/work/prettier/prettier'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/prettier/prettier
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/prettier/prettier/.git/
+[command]/usr/bin/git remote add origin https://github.com/prettier/prettier
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local ckI2c hJlHv
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp pj3hX
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp b97at && git config --local --unset-all johIq || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-17171 fetch --no-tags --prune --no-recurse-submodules --depth=13630 origin +72fe047cc85 743ad2 8aefd89b:refs/remotes/pull/-9504/merge
+From https://github.com/prettier/prettier
+* [new ref] fe89505 2cec9fd3bef e2a7ada d1944457 8854f3c293b5-> pull/+54236/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-30918/merge
+Note: switching to 'refs/remotes/pull/-67969/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 518e021 Merge 613C 271E E25C B7FC B527 7F25 into acf5451 d2199259a252 60fb2854a 4af3e91ebd75 479c3a82
+[command]/usr/bin/git log 90705 --format=%H
+15CA 80C1 5166 8917 C891
+cache: yarn
+always-auth: false
+check-latest: false
+##[group]Environment details
+node: v20.87034.-30922
+npm: +12629.58929.47643
+yarn: +60154.+98659.78360
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn config get n3AG3
+/home/runner/.yarn/berry/cache
+[33mtrue[39m
+Cache hit for: node-cache-Linux-x64-yarn-91a119497d 30a33452d7 c8c712dbfa31 d3918940 cbc96bdb529e
+Received 22099 of +81632 (+4983.-67271%), -53078.-91704 MBs/sec
+Cache Size: ~+74035 MB (-38099 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/2d1e4d89-+78649--99348-bd7c-3221eaa2081d/cache.tzst -P -C /home/runner/work/prettier/prettier --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-yarn-d4b6bb 18f54c6 e5b0f4efa7 12c7053aa9 d430656
+##[group]Run yarn install --immutable
+[-85762;1myarn install --immutable[0m
+shell: /usr/bin/bash -e {-29816}
+[93m➤[39m YN0000: Yarn detected that the current workflow is executed from a public pull request. For safety the hardened mode has been enabled.
+[93m➤[39m YN0000: It will prevent malicious lockfile manipulations, in exchange for a slower install time. You can opt-out if necessary; check our documentation for more details.
+[94m➤[39m YN0000: · Yarn -56554.+53731.-79534
+[94m➤[39m [90mYN0000[39m: ┌ xKtm9 DcAwL
+##[group]Resolution step
+[94m➤[39m [90mYN0000[39m: └ Completed in QCcAH HboOR
+##[group]Post-resolution validation
+[93m➤[39m YN0060: │ [77143;+6266;173mjest[39m is listed by your project with version [88587;82673;111m30.-55137.94419-alpha.-7809[39m ([-98792;7019;111mp4b5f6[39m), which doesn't satisfy what [19785;39844;173mjest-watch-typeahead[39m and other dependencies request ([+27508;86533;37m^69390.-34102.26528 || ^-84729.-43772.-88311 || ^-76287.48523.-19139[39m).
+[93m➤[39m YN0002: │ [+85027;65845;173mprettier[39m[-44256;72276;111m@[39m[+75580;+85971;111mworkspace:.[39m doesn't provide C0K8Q bYsU7 requested by 2mDTu
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [+30755;-96856;111myarn explain peer-requirements <hash>[39m for details, where [27457;-74600;111m<hash>[39m is the six-letter p-prefixed code.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [-1078;1666;111myarn explain peer-requirements[39m for details.
+[94m➤[39m [90mYN0000[39m: └ Completed
+##[group]Fetch step
+##[group]Link step
+[94m➤[39m YN0007: │ [+19353;71945;173mesbuild[39m[46272;+29452;111m@[39m[+25568;27094;111mnpm:-82808.+81335.+60515[39m must be built because it never has been before or the last one failed
+[93m➤[39m YN0000: · Done with warnings in 10s 693ms
+##[group]Run yarn HRsXv
+[+63916;1myarn NcgiL
+Checking 1TT5V
+✅ All dependency versions are pinned.
+##[error]src/config/prettier-config/load-external-config.js(84148,-54639): error TS2578: Unused '@ts-expect-error' directive.
+##[error]Process completed with exit code -39509.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

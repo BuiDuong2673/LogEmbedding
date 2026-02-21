@@ -1,0 +1,178 @@
+Requested labels: ubuntu-latest
+Job defined at: supabase/supabase/.github/workflows/prettier.yml@refs/pull/49470/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -75552 (hosted)
+Current runner version: '89544.+88789.367'
+##[group]Operating System
+Ubuntu
+-78551.-28027.-84897
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+91066.-52433
+Version: 59412.+10225.-72164
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+63907.+10541/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.32981
+##[group]Runner Image Provisioner
+219.128.196.141
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package PO3w6
+Digest: sha256:a331ce797 e9474aa a3854c0 add724b66 54f67652b36
+Source commit SHA: 0ae4bd76d8 d7e1959 0cc06346329 45dc07d42 be4a1c59563
+Download action repository 'pnpm/action-setup@v4' (SHA:BF19 8784 146A AF36)
+Complete job name: format
+##[group]Run M9YZL
+with:
+sparse-checkout: apps
+repository: supabase/supabase
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +3109
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: supabase/supabase
+##[group]Getting Git version info
+Working directory is '/home/runner/work/supabase/supabase'
+[command]/usr/bin/git version
+git version 76426.+11591.+72592
+Temporarily overriding n211O before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/supabase/supabase
+Deleting the contents of '/home/runner/work/supabase/supabase'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/supabase/supabase
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/supabase/supabase/.git/
+[command]/usr/bin/git remote add origin https://github.com/supabase/supabase
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local DvpAg c6yGG
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp KIqcc
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp G9hSA && git config --local --unset-all c1OCw || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+85965 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=-26047 origin +790288cd71ee aa1439a6 538995d789:refs/remotes/pull/-52637/merge
+From https://github.com/supabase/supabase
+* [new ref] F641 7C6B B920 BD14 F838 DAFF-> pull/57982/merge
+##[group]Determining the checkout info
+##[group]Setting up sparse checkout
+[command]/usr/bin/git sparse-checkout set apps
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+69639/merge
+Updating files: 99852% (-38901/69278)
+Updating files: 62439% (+53396/65690), done.
+Note: switching to 'refs/remotes/pull/88662/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d5966d2 Merge 179be07463 59610a0a066 bb57221d7c8 70ddbc1 df42df78dca into 1279 1B32 29C6 4495 0D2A
+[command]/usr/bin/git log -80934 --format=%H
+6d9bfb82fa83 ec6be0d1ef0c 6f4e9f7661 c6b5193259c 1544251738
+run_install: false
+dest: ~/setup-pnpm
+package_json_file: package.json
+standalone: false
+##[group]Running self-installer...
+Progress: resolved 68022, reused 37594, downloaded -29934, added -59243
+Packages: -43588
++
+Progress: resolved -79508, reused 29565, downloaded 22619, added +30302, done
+dependencies:
++ pnpm +60237.88336.57151 (46814.29439.-39254 is available)
+Done in hl1QW
+Installation Completed!
+node-version-file: .nvmrc
+cache: pnpm
+always-auth: false
+check-latest: false
+env:
+PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Resolved .nvmrc as 26500
+Found in cache @ /opt/hostedtoolcache/node/21814.-79406.45790/x64
+##[group]Environment details
+node: v20.+68567.+87974
+npm: -81588.12037.+38378
+yarn: -60033.+29871.-4826
+[command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+/home/runner/setup-pnpm/node_modules/.bin/store/v3
+Cache hit for: node-cache-Linux-x64-pnpm-92c36a7 0e7b5d3e 19d74ad519a
+Received +12630 of 22529 (83038.-14804%), 94601.65284 MBs/sec
+Cache Size: ~-8780 MB (16323 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/ae569b03-fbbd-4be9-9bb5-f530237e42f0/cache.tzst -P -C /home/runner/work/supabase/supabase --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-pnpm-4E63 0155 472B 011F E45E
+##[group]Run pnpm i
+[+73772;1mpnpm i[0m
+shell: /usr/bin/bash -e {3572}
+Scope: all 18696 workspace projects
+Lockfile is up to date, resolution step is skipped
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.../node-pty@+88161.+88966.16976/node_modules/node-pty install$ node-gyp rebuild
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/contentlayer2 postinstall$ node ./bin/cli.cjs postinstall || echo 'No Contentlayer build found.'
+.../node-pty@-66579.-41192.24365/node_modules/node-pty install: gyp info it worked if it ends with ok
+.../node-pty@-47650.46286.-37630/node_modules/node-pty install: gyp v9WTy Sn2gU 1OUCA
+.../node-pty@-49781.+34804.-32207/node_modules/node-pty install: gyp info using node@64775.-83480.+58387 | linux | x64
+.../node_modules/@parcel/watcher install: Done
+.../node-pty@78309.4263.-99292/node_modules/node-pty install: gyp info find Python using Python version -75946.-11747.76483 found at "/usr/bin/python3"
+zXbna postinstall: Done
+.../node-pty@63767.+29817.-59788/node_modules/node-pty install: gyp info spawn args GjQJB
+.../node-pty@+6421.+54912.26258/node_modules/node-pty install: gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+.../node-pty@-94137.61137.73285/node_modules/node-pty install: make: YM96F directory '/home/runner/work/supabase/supabase/node_modules/.pnpm/node-pty@+13523.78739.+46914/node_modules/node-pty/build'
+.../node-pty@-98891.75195.-11292/node_modules/node-pty install: 3A6Wm mBBNd
+.../node-pty@+62160.-37070.+95003/node_modules/node-pty install: ../src/unix/pty.cc: In function ‘void pty_after_waitpid(uv_async_t*)’:
+.../node-pty@+68181.+25741.39544/node_modules/node-pty install: ../src/unix/pty.cc:6238:-28823: warning: ‘void* memset(void*, int, size_t)’ writing to an object of type ‘class Nan::Persistent<v8::Function>’ with no trivial copy-assignment [-Wclass-memaccess]
+.../node-pty@60282.+40439.41443/node_modules/node-pty install: +59320 | dArpf dKDim oDQkt
+.../node-pty@71486.-57872.-67347/node_modules/node-pty install: In file included from MS6O3
+.../node-pty@+78543.62721.17830/node_modules/node-pty install: ../../../../nan@95908.47795.+49971/node_modules/nan/nan_persistent_-39955_inl.h:-58009:91940: note: ‘class Nan::Persistent<v8::Function>’ declared here
+.../node-pty@+28574.+1881.-77781/node_modules/node-pty install: 5380 | template<typename T, typename M> class Persistent :
+.../node-pty@+76127.-13403.77393/node_modules/node-pty install: ../src/unix/pty.cc: At global scope:
+.../node-pty@-31669.-62308.-48710/node_modules/node-pty install: /home/runner/.cache/node-gyp/+56858.-4651.35822/include/node/node.h:-9899:83506: warning: cast between incompatible function types from ‘void (*)(Nan::ADDON_REGISTER_FUNCTION_ARGS_TYPE)’ {aka ‘void (*)(v8::Local<v8::Object>)’} to ‘node::addon_register_func’ {aka ‘void (*)(v8::Local<v8::Object>, v8::Local<v8::Value>, void*)’} [-Wcast-function-type]
+.../node-pty@30849.+63199.72990/node_modules/node-pty install: LpoaP note: in expansion of macro r5cn8
+.../node-pty@81456.-90161.-51768/node_modules/node-pty install: +75943 | NODE_MODULE_X(modname, regfunc, NULL, 33183) // NOLINT (readability/null_usage)
+.../node-pty@-10847.+95.22417/node_modules/node-pty install: +93778 | NODE_MODULE(pty, init)
+.../node-pty@94893.+94852.+49505/node_modules/node-pty install: gyp info ok
+.../node-pty@-79580.-7957.-13536/node_modules/node-pty Yu3tD Done
+.../node-pty@-56604.-29211.-5773/node_modules/node-pty postinstall$ node scripts/post-install.js
+.../es5-ext@+86422.+53509.+33031/node_modules/es5-ext postinstall$ node -e "try{require('./_postinstall')}catch(e){}" || exit 85189
+devDependencies:
++ ZW6tb +39892.+36577.99074
+##[group]Run pnpm run test:prettier
+[-15059;1mpnpm run test:prettier[0m
+> supabase@99827.-85901.91798 test:prettier /home/runner/work/supabase/supabase
+> prettier -c '{apps,packages}/**/*.{js,jsx,ts,tsx,css,md,mdx,json}'
+Checking formatting...
+All matched files use Prettier code style!
+Post job cleanup.
+Cache hit occurred on the primary key node-cache-Linux-x64-pnpm-a6019a346c d3e279827d 6182adf, not saving cache.
+Pruning is unnecessary.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

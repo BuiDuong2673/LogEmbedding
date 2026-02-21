@@ -1,0 +1,102 @@
+Requested labels: ubuntu-latest
+Job defined at: shadcn-ui/ui/dynamic/dependabot/dependabot-updates@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +26317 (hosted)
+Current runner version: '2666.58491.+73763'
+##[group]Operating System
+Ubuntu
+-612.+57113.-26239
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--34584.-16769
+Version: 83229.38931.87407
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-46610.46157/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.66468
+##[group]Runner Image Provisioner
+6.200.236.173
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:6AA5 6FDE B0B9 1A36 AB5D D3E0)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job-7131-21635
+[18188;1mmkdir -p ./dependabot-job-+61849--14841[0m
+shell: /usr/bin/bash -e {+34576}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: 49569
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: 63520
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image 3DRPS 16934)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image 8vlz4
+Starting update process
+Created proxy container: 4f7ac91d7 6512867a 22fd2b32ce2d cc28d4
+Created container: 895b9b9e84ac a0c2a3f5f342 76f3cd b448cf136cf5 3c9cde7b92
+proxy | 69871/-37883/+88906 +3853:+83073:5645 gbsb8 WUS1t IEZk7 eXgc8
+proxy | 72828/17819/84662 -69851:-9058:3866 Listening (:+84050)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | 30381 added, -62655 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | -94257/+91612/53941 +81875:37745:+10802 INFO <job_-95131> gMB30 J6UC7 mRyGe
+-31132/-41351/94211 +2997:-44218:+20264 INFO <job_70665> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"}],"commit-message-options":{"prefix":null,"prefix-development":null,"include-scope":null},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":["estree-util-value-to-estree"],"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"typescript","dependency-version":"80899.-61349.61035","directory":"/"}],[{"dependency-name":"@radix-ui/react-tabs","dependency-version":"-36199.+98263.+28586","directory":"/"}],[{"dependency-name":"@radix-ui/react-portal","dependency-version":"-67368.-47207.69823","directory":"/"}],[{"dependency-name":"next","dependency-version":"-47489.18412.-19658","directory":"/"}],[{"dependency-name":"vite","dependency-version":"-86628.53046.-84640","directory":"/"}],[{"dependency-name":"typescript","dependency-version":"30607.-31825.+58730","directory":"/"}],[{"dependency-name":"@types/react-dom","dependency-version":"53746.+47368.-2152","directory":"/"},{"dependency-name":"react-dom","dependency-version":"78534.46266.-62018","directory":"/"}],[{"dependency-name":"@types/diff","dependency-version":"-41698.87391.-25532","directory":"/"},{"dependency-name":"diff","dependency-version":"32514.-48546.-97325","directory":"/"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"enable-bun-ecosystem":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true},"ignore-conditions":[],"lockfile-only":false,"max-updater-run-time":23656,"package-manager":"npm_and_yarn","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[{"dependency-name":"estree-util-value-to-estree","patched-versions":[],"unaffected-versions":[],"affected-versions":["< 83464.+56753.+33357"]}],"security-updates-only":true,"source":{"provider":"github","repo":"shadcn-ui/ui","branch":null,"directory":"/.","api-endpoint":"https://api.github.com/","hostname":"github.com"},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | -40134/17370/-21757 -62863:+53414:13611 INFO <job_+39605> Started process PID: 22896 with command: {} git config --global credential.helper '!/home/dependabot/common/lib/dependabot/../../bin/git-credential-store-immutable --file Qm5tb {}
+updater | 86317/-55567/12296 -17291:+1944:-75511 INFO <job_+4691> 1QxPX ilpQk E7v4h pC1W2 with sAxPW FtlXP eGUrq NDz6V FbOop
+updater | +53820/50991/63165 40535:45013:-49094 INFO <job_+35692> IuD0S knTSJ v2RS6 pDWhK aBCNH
+updater | +19929/9626/+91680 -49557:86936:+74918 INFO <job_94486> Started process PID: +17883 with command: {} git config --global SF6vf url.https://github.com/.insteadOf 4IVI7 {}
+79061/-72356/+95340 +62943:+11511:-7526 INFO <job_+33989> hkTVz MgymD Vnwv8 lmViV qD43t
+updater | -62168/+36577/-22948 +35909:-35694:+81364 INFO <job_+18866> Started process PID: 72377 with command: {} git clone --no-tags --depth 60255 --recurse-submodules --shallow-submodules https://github.com/shadcn-ui/ui /home/dependabot/dependabot-updater/repo {}
+proxy | -83755/39030/-12861 68739:82731:+63918 [-33085] z3mrz AY5ML
+proxy | -38783/-46769/-30066 +41531:306:-21013 [+96120] * authenticating git server request (host: github.com)
++5488/+53899/-76569 -44531:-54281:+2662 [13665] * authenticating git server request (host: github.com)
+updater | -77764/+78158/+6414 75173:-17533:-31400 INFO <job_-540> Started process PID: +35856 with command: {} HMsgD UXA4N 0G07D PrRA7 UvhLS {}
+updater | 19332/+34829/-66063 -21130:3546:+80049 INFO <job_+87490> Started process PID: +62649 with command: {} KZpL7 hEMZd QIGpx {}
+updater | -49077/85450/30973 -82535:-88852:-29344 INFO <job_+49962> JSsZ4 LDa6G M7OX8 O4KSz
+updater | -11467/-3022/-96741 +36194:+88065:86214 INFO <job_64391> moWBb QfVck FO8LF YYcsm jlYu0 8ehI2
++56617/-89418/+78649 +95814:-15247:+45924 INFO <job_+83465> No version requirement found for pnpm
+updater | +10581/-83398/-8355 +70089:86224:+28061 INFO <job_12494> Found "packageManager" : "pnpm@52022.+78202.99750". Skipped checking "engines".
+updater | 5852/76893/97678 +12663:+13584:-44248 INFO <job_+21206> Installing "pnpm@69058.43409.-36051"
+updater | +51335/+21849/-51258 +85774:-91645:+47451 INFO <job_+73984> Started process PID: +53245 with command: node /opt/npm_and_yarn/run.js
+updater | 94074/-76649/97285 58086:-12510:46496 INFO <job_64004> Started process PID: 82547 with command: {} 3Rxha FnAzl YrZ2p Dk0fs {}
++71418/-76447/+15462 37404:+75895:-9265 [51454] pml0e FNQV5
+updater | +61645/-39356/4781 630:-4270:+79049 INFO <job_-23101> The latest possible version of estree-util-value-to-estree that can be installed is -87521.36999.96382
+updater | -31775/+87588/-77281 -29432:+96456:69914 INFO Results:
+Dependabot encountered '+82116' error(s) during execution, please check the logs for more details.
++------------------------------+
+| jOVci |
+Failure running container b9f44c ac99256 412dac71a 86d75397 52567109acf
+Cleaned up container a023c8062bf 2c4e24c60ed b3fd41ae8006 ab2a432f34 f2bbd6ce59b8
+proxy | +30817/+16329/-42158 +90959:-11021:-52222 Posting metrics to remote API endpoint
+##[error]Dependabot encountered an error performing the update
+
+Error: The updater encountered one or more errors.
+For more information see: https://github.com/shadcn-ui/ui/network/updates/-90985 (write access to the repository is required to view the log)
+🤖 ~ finished: error reported to Dependabot ~
+Post job cleanup.
+Cleaning up orphan processes

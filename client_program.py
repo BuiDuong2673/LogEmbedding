@@ -11,8 +11,7 @@ from embedding_techniques.word2vec import Word2Vec
 HOST = "127.0.0.1"
 PORT = 5000
 NUM_CONTEXT_WORDS = 2
-WHICH_TRAIN_SET = "train_test_internal"
-
+WHICH_TRAIN_SET = "train_test_balanced"
 
 class ClientProgram:
     """Handle client tasks."""
@@ -34,7 +33,7 @@ class ClientProgram:
         vocab_extractor = VocabExtractor(client_name=self.client_name, which_train_set=WHICH_TRAIN_SET)
         word_dict, word_indices = vocab_extractor.get_vocab(num_context_words=self.num_context_words)
         return word_dict, word_indices
-
+    
     def change_global_indices_to_internal(self, old_word_dict: dict, indice_map: dict) -> dict:
         """Change indices in word_dict to internal common indices.
         
@@ -125,13 +124,12 @@ class ClientProgram:
                 "word indices": initial_word_indices
             })
             # Receive message from central server with map between global indices and internal indices
-            msg = receive_message(sock)
+            msg, binaries = receive_message(sock)
             if msg.get("type") != "INITIAL":
                 raise ValueError(f"Unexpected message type: {msg.get('type')}, expected INITIAL")
-            # Read the initial pretrained variables
+
+            # Read the dictionary mapping global indices to internal indices
             indice_map = msg.get("indice map")
-            initial_W1 = np.array(msg.get("W1"))
-            initial_W2 = np.array(msg.get("W2"))
             # Update local word dict from using global indices to internal indices
             word_dict, word_indices = self.change_global_indices_to_internal(
                 old_word_dict=initial_word_dict, indice_map=indice_map
@@ -143,34 +141,54 @@ class ClientProgram:
             with open(save_path, "w", encoding="utf-8") as json_file:
                 json.dump(word_dict, json_file, indent=4, ensure_ascii=False)
             print(f"Saved final client word dict to: {save_path}.")
+
+            # Read the initial weights
+            W1_shape = msg.get("W1_shape")
+            W2_shape = msg.get("W2_shape")
+            initial_W1 = np.frombuffer(binaries["W1"], dtype=np.float64).reshape(W1_shape).copy()
+            initial_W2 = np.frombuffer(binaries["W2"], dtype=np.float64).reshape(W2_shape).copy()
+
             # Train word2vec model
             while True:
-                _, W1, W2 = self.train_word2vec(
-                    word_dict=word_dict,
-                    W1=initial_W1,
-                    W2=initial_W2,
-                    num_neg_samples=num_neg_samples,
-                    num_epochs=num_epochs,
-                    learning_rate=learning_rate
-                )
+                try:
+                    _, W1, W2 = self.train_word2vec(
+                        word_dict=word_dict,
+                        W1=initial_W1,
+                        W2=initial_W2,
+                        num_neg_samples=num_neg_samples,
+                        num_epochs=num_epochs,
+                        learning_rate=learning_rate
+                    )
+                except Exception as e:
+                    print(f"[CLIENT {self.client_name}] TRAIN CRASH:", e)
+                    raise
 
                 # Send weight update to central server
-                send_message(sock, {
-                    "type": "WEIGHTS",
-                    "client": self.client_name,
-                    "W1": W1.tolist(),
-                    "W2": W2.tolist()
-                })
-
+                send_message(
+                    sock,
+                    {
+                        "type": "WEIGHTS",
+                        "client": self.client_name,
+                        "W1_shape": W1.shape,
+                        "W2_shape": W2.shape,
+                    },
+                    binary_data={
+                        "W1": W1,
+                        "W2": W2,
+                    }
+                )
                 # Receive aggregated updates from central server
-                msg = receive_message(sock)
-                if msg["type"] == "FINISH":  # Check if the central server training finish or not
+                msg, binaries = receive_message(sock)
+
+                # Check if the central server training finish or not
+                if msg["type"] == "FINISH":
                     print("Training finished.")
                     break
-                # Training hasn't finished, update weights with aggregated weights from central server and train again.
+
+                # Training hasn't finished, update weights with aggregated weights from central server and train again
                 if msg.get("type") == "AGGREGATED_WEIGHTS":
-                    W1 = np.array(msg["W1"])
-                    W2 = np.array(msg["W2"])
+                    W1 = np.frombuffer(binaries["W1"], dtype=np.float64).reshape(msg["W1_shape"]).copy()
+                    W2 = np.frombuffer(binaries["W2"], dtype=np.float64).reshape(msg["W2_shape"]).copy()
                 else:
                     raise ValueError(f"Unexpected message type: {msg.get('type')}, expected AGGREGATED_WEIGHTS")
 
@@ -183,5 +201,5 @@ if __name__ == "__main__":
     # Call ClientProgram class to handle the traning process
     client_program = ClientProgram(client_name=client_name, num_context_words=2)
     client_program.training(
-        num_neg_samples=5, num_epochs=5, learning_rate=0.01
+        num_neg_samples=5, num_epochs=3, learning_rate=0.01
     )

@@ -15,13 +15,13 @@ class CentralServerProgram:
 
     def __init__(self):
         """Initialize CentralServerProgram class."""
-        self.client_list = ["maryangel101", "d2klab"]  # ["maryangel101", "d2klab", "logsage"]
+        self.client_list = ["client_1", "client_2", "client_3"]  # ["maryangel101", "d2klab", "logsage"]
         self.client_sockets = {}
         self.client_vocabs = {}
         self.indice_map = {}
         # Training coefficients
-        self.embed_dimension = 500
-        self.num_epochs = 30
+        self.embed_dimension = 300
+        self.num_epochs = 10
 
     def aggregate_vocab(self) -> dict:
         """Aggregate all clients vocabs and form a new set of internal indices."""
@@ -75,7 +75,7 @@ class CentralServerProgram:
 
             while len(self.client_sockets) < len(self.client_list):
                 conn, addr = server.accept()
-                msg = receive_message(conn)
+                msg, _ = receive_message(conn)
 
                 if msg.get("type") != "VOCAB":
                     # conn.close()
@@ -104,13 +104,19 @@ class CentralServerProgram:
             for client, sock in self.client_sockets.items():
                 # Get client indice map
                 client_indice_map = self.get_client_new_vocab(client)
-                send_message(sock, {
-                    "type": "INITIAL",
-                    "indice map": client_indice_map,
-                    "W1": W1.tolist(),
-                    "W2": W2.tolist()
-                })
-            
+                send_message(
+                    sock,
+                    {
+                        "type": "INITIAL",
+                        "indice map": client_indice_map,
+                        "W1_shape": W1.shape,
+                        "W2_shape": W2.shape,
+                    },
+                    binary_data={
+                        "W1": W1,
+                        "W2": W2,
+                    }
+                )
             # Training loop
             for epoch in range(self.num_epochs):
                 print(f"\nEpoch {epoch + 1}")
@@ -118,36 +124,57 @@ class CentralServerProgram:
 
                 for client, sock in self.client_sockets.items():
                     try:
-                        msg = receive_message(sock)
+                        msg, binaries = receive_message(sock)
                     except socket.timeout:
                         raise RuntimeError(f"Client {client} did not respond")
+                    
+                    # if msg.get("type") != "WEIGHTS":
+                    #     raise ValueError(f"Unexpected message type: {msg.get('type')}, expected WEIGHTS")
 
-                    client_updates.append(
-                        (np.array(msg["W1"]), np.array(msg["W2"]))
-                    )
+                    # Transform client weights
+                    W1 = np.frombuffer(binaries["W1"], dtype=np.float64).reshape(msg["W1_shape"]).copy()
+                    W2 = np.frombuffer(binaries["W2"], dtype=np.float64).reshape(msg["W2_shape"]).copy()
 
+                    # Collect client updates
+                    client_updates.append((W1, W2))
+                
                 # Aggregate weights
                 W1 = np.mean([w1 for w1, _ in client_updates], axis=0)
                 W2 = np.mean([w2 for _, w2 in client_updates], axis=0)
 
-                if epoch < (self.num_epochs - 1):  # before the last epoch
+                if epoch < (self.num_epochs - 1):
                     for sock in self.client_sockets.values():
-                        send_message(sock, {
-                            "type": "AGGREGATED_WEIGHTS",
-                            "W1": W1.tolist(),
-                            "W2": W2.tolist()
-                        })
+                        send_message(
+                            sock,
+                            {
+                                "type": "AGGREGATED_WEIGHTS",
+                                "W1_shape": W1.shape,
+                                "W2_shape": W2.shape,
+                            },
+                            binary_data={
+                                "W1": W1,
+                                "W2": W2,
+                            }
+                        )
+
                 else:
                     # Notify all clients training is finished
                     for sock in self.client_sockets.values():
-                        send_message(sock, {
-                            "type": "FINISH",
-                            "W1": W1.tolist(),
-                            "W2": W2.tolist()
-                        })
+                        send_message(
+                            sock,
+                            {
+                                "type": "FINISH",
+                                "W1_shape": W1.shape,
+                                "W2_shape": W2.shape,
+                            },
+                            binary_data={
+                                "W1": W1,
+                                "W2": W2,
+                            }
+                        )
                         sock.close()
                     print("Training completed. Sent final weights to clients.")
-
+            
             # Save final weights
             os.makedirs("models", exist_ok=True)
             np.save("models/W1_word2vec.npy", W1)
@@ -155,7 +182,6 @@ class CentralServerProgram:
 
             print("Weights saved in models folder.")
 
-                
 
 if __name__ == "__main__":
     CentralServerProgram().run()

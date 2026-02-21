@@ -1,0 +1,153 @@
+Requested labels: ubuntu-42362.98182
+Job defined at: pixijs/pixijs/.github/workflows/pull-unit.yml@refs/pull/+29234/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -17974 (hosted)
+Current runner version: '+21885.-60393.68364'
+##[group]Operating System
+Ubuntu
+-42417.-78422.-30681
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+17879.19655
+Version: +81297.-23542.+26560
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/-21912.-80883/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250323.-27282
+##[group]Runner Image Provisioner
+32.13.48.212
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository vsJaL (SHA:7a708b ba74cdd5 683fb4 69fc9d4bd9 f7e105f26)
+Complete job name: build
+##[group]Run TIRXQ
+with:
+repository: pixijs/pixijs
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 86267
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: pixijs/pixijs
+##[group]Getting Git version info
+Working directory is '/home/runner/work/pixijs/pixijs'
+[command]/usr/bin/git version
+git version -56051.-76454.12904
+Temporarily overriding fOdOk before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/pixijs/pixijs
+Deleting the contents of '/home/runner/work/pixijs/pixijs'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/pixijs/pixijs
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/pixijs/pixijs/.git/
+[command]/usr/bin/git remote add origin https://github.com/pixijs/pixijs
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local G59jM Nvdx5
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp PVcUz
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp PvOiQ && git config --local --unset-all KfD4z || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-32799 fetch --no-tags --prune --no-recurse-submodules --depth=+32955 origin +6cadb5 c93b7973 63419ba8f28b d646fbf2901 c94581e80:refs/remotes/pull/52801/merge
+From https://github.com/pixijs/pixijs
+* [new ref] 85F9 19F1 0EDF 7B2F B381-> pull/-8837/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+99776/merge
+Note: switching to 'refs/remotes/pull/+98510/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at dbc48b6 Merge e3534e61 09a331b63215 856a05a into FA45 577F 7A21 6043 537F E58F
+[command]/usr/bin/git log 26030 --format=%H
+2aa5d40aed8 5128543961c ce45c4 5cdc52cc aac954
+node-version: 88601
+npm-version: +5281
+registry-url: https://registry.npmjs.org
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/66615.72869.403/x64
+##[group]Environment details
+node: v20.+16176.+48559
+npm: +47298.73534.+76496
+yarn: -13718.-26539.-25364
+##[group]Run npm install -g npm@+80834
+[+76188;1mnpm install -g npm@-54890[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {5346}
+env:
+NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+NODE_AUTH_TOKEN: XXXXX-XXXXX-XXXXX-XXXXX
+removed 9021 packages, and changed +92735 packages in 7s
+25308 packages are looking for funding
+run `npm fund` for details
+path: node_modules
+key: Linux-node-modules-D2F3 22E5 D352 3742 3299 D77F
+restore-keys: Linux-node-modules-
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: Linux-node-modules-31e2c87 9bce8111b4b a9aa02b42 ef09c9 a39ab41a4
+Received 68522 of 77741 (-33468.+98404%), +12091.21741 MBs/sec
+Cache Size: ~-54445 MB (-60092 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/8f549122-7e5d--92667-96c8-cf7602f53624/cache.tzst -P -C /home/runner/work/pixijs/pixijs --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: Linux-node-modules-BDCB 5D86 4CDF B3DD 0B51 ABB8
+##[group]Run npm run ci:lint
+[-82222;1mnpm run ci:lint[0m
+> pixi.js@28536.+88319.-61382 GCzVd
+> run-s lint test:types test:index prune
+> eslint ./ --cache --max-warnings -27031
+> tsc --noEmit
+##[error]tests/visual/scenes/mesh/culling-texture.scene.ts(-7748,+22509): error TS2322: Type 'Uint16Array' is not assignable to type 'Uint32Array'.
+Types of property 'findLast' are incompatible.
+Type '{ <S extends number>(predicate: (value: number, index: number, array: Uint16Array) => value is S, thisArg?: any): S; (predicate: (value: number, index: number, array: Uint16Array) => unknown, thisArg?: any): number; }' is not assignable to type '{ <S extends number>(predicate: (value: number, index: number, array: Uint32Array) => value is S, thisArg?: any): S; (predicate: (value: number, index: number, array: Uint32Array) => unknown, thisArg?: any): number; }'.
+Types of parameters 'predicate' and 'predicate' are incompatible.
+Type '(value: number, index: number, array: Uint32Array) => unknown' is not assignable to type '(value: number, index: number, array: Uint16Array) => value is any'.
+Signature '(value: number, index: number, array: Uint32Array): unknown' must be a type predicate.
+ERROR: "test:types" exited with -24269.
+##[error]Process completed with exit code -36156.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

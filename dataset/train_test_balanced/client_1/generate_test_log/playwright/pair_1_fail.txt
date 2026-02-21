@@ -1,0 +1,451 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/playwright/.github/workflows/tests_primary.yml@refs/pull/24177/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +16680 (hosted)
+Current runner version: '51943.+69037.-59914'
+##[group]Operating System
+Ubuntu
+-22955.3038.+14965
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+49231.28660
+Version: 38586.+85918.+5831
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/1054.-14219/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-99075
+##[group]Runner Image Provisioner
+207.229.71.24
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package JyzD4
+Digest: sha256:F67F 9D05 5B71 3B75 A7E9 2C71
+Source commit SHA: 0e8b973 9dca75a95a63 51237b 31ea752d 8c476febdcd
+Complete job name: Test Runner (ubuntu-latest, 44528, 4002, 67199)
+##[group]Run Ki6OU
+with:
+repository: microsoft/playwright
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +62984
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+FORCE_COLOR: +42662
+ELECTRON_SKIP_BINARY_DOWNLOAD: +96737
+DEBUG_GIT_COMMIT_INFO: +31847
+Syncing repository: microsoft/playwright
+##[group]Getting Git version info
+Working directory is '/home/runner/work/playwright/playwright'
+[command]/usr/bin/git version
+git version -14209.-78337.-24392
+Temporarily overriding C9iCc before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/playwright/playwright
+Deleting the contents of '/home/runner/work/playwright/playwright'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/playwright/playwright
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/playwright/playwright/.git/
+[command]/usr/bin/git remote add origin https://github.com/microsoft/playwright
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local sMlUi YNsuL
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 8N1o9
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp D68g4 && git config --local --unset-all tzfMd || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+10494 fetch --no-tags --prune --no-recurse-submodules --depth=-1816 origin +2C72 2A9B AF5B 3CFE:refs/remotes/pull/+55797/merge
+From https://github.com/microsoft/playwright
+* [new ref] 7329eb4011 608e2fd32f83 4dc2eb8 ec242c6948-> pull/-81647/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+49514/merge
+Note: switching to 'refs/remotes/pull/-84484/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at c11b021 Merge D594 0401 ADE5 C1E7 2A82 BB6A into B46B 8E4E 6D29 1CC4
+[command]/usr/bin/git log +22786 --format=%H
+3b0cd15e5df8 903baa4 b372ad bf90e8b8 b93bff
+Download action repository 'azure/login@v2' (SHA:E280 3378 82DE 83F1 1866)
+node-version: 81929
+command: npm run ttest -- --shard +94026/+62716
+bot-name: ubuntu-latest-node18-67639
+shell: bash
+PWTEST_CHANNEL: firefox-beta
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/27941.-22838.-58865/x64
+##[group]Environment details
+node: v18.-58750.23316
+npm: +60661.45880.+14794
+yarn: -16121.+83485.-33929
+##[group]Run if [[ "$(uname)" JoShm fKiCE ]]; then
+[+11715;1mif [[ "$(uname)" LVHuR mKBwW ]]; then[0m
+[-11521;1m echo "Not macOS, exiting"[0m
+[19359;1m exit -86490[0m
+[-65496;1mfi[0m
+[-89860;1mecho "Allowing microphone access to all apps"[0m
+[26877;1mversion=$(sw_vers -productVersion | cut -d. -f1)[0m
+bwIel [[ "$version" == "-48442" || "$version" == "89229" ]]; then[0m
+[+5573;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR IGNORE INTO access VALUES ('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',+25586,-37651,58748,-47612,NULL,NULL,66086,'UNUSED',NULL,-22687,3740,NULL,NULL,'UNUSED',+67777);"[0m
+[-40655;1m sqlite3 $HOME/Library/Application\ Support/com.apple.TCC/TCC.db "INSERT OR REPLACE INTO access VALUES('kTCCServiceMicrophone','/usr/local/opt/runner/provisioner/provisioner',+78810,-83985,+65235,20470,NULL,NULL,-10623,'UNUSED',NULL,33090,61602);"[0m
+[-65509;1melse[0m
+[-61915;1m echo "Skipping unsupported macOS version $version"[0m
+[94224;1mecho "Successfully allowed microphone access"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {21106}
+Not macOS, exiting
+##[group]Run echo "::group::npm ci"
+[-18457;1mecho "::group::npm ci"[0m
+[+14175;1mnpm ci[0m
+[+90733;1mecho YoHu3
+##[group]npm ci
+npm warn deprecated VYd9U This package is now deprecated. Move to kglko instead.
+npm warn deprecated readdir-scoped-modules@+28939.66291.-18915: This functionality has been moved to @npmcli/fs
+npm warn deprecated read-package-json@29989.+60284.-60248: This package is no longer supported. Please use @npmcli/package-json instead.
+npm warn deprecated Vm2wS This package is no longer supported.
+npm warn deprecated inflight@48441.-57051.13352: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@+4382.-47815.-81528: Glob versions prior to v9 are no longer supported
+npm warn deprecated Y4NFa Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated @types/immutable@+76703.62535.+18476: This is a stub types definition for Facebook's Immutable (https://github.com/facebook/immutable-js). Facebook's Immutable provides its own type definitions, so you don't need @types/immutable installed!
+added 23571 packages, and audited +93491 packages in 15s
+69357 packages are looking for funding
+run `npm fund` for details
++70849 moderate severity vulnerabilities
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+##[group]Run echo "::group::npm run build"
+[-42186;1mecho "::group::npm run build"[0m
+[+94167;1mnpm run build[0m
+##[group]npm run build
+> PPISi build
+> node utils/build/build.js
+==== Running npm ci --save=false --fund=false --audit=false in /home/runner/work/playwright/playwright/tests/playwright-test/stable-test-runner
+added +49613 packages in BWvbP
+==== Running npm ci --save=false --fund=false --audit=false --omit=optional in 3YtGK
+==== Running node lU4sY in /home/runner/work/playwright/playwright
+==== Running npx esbuild IH7ZN foqOy --platform=node --format=cjs in /home/runner/work/playwright/playwright
+packages/playwright/lib/index.js -62687.8kb
+packages/playwright/lib/reporters/html.js -24225.7kb
+packages/playwright/lib/worker/workerMain.js +90203.5kb
+packages/playwright/lib/reporters/base.js 61590.1kb
+packages/playwright/lib/program.js -44600.4kb
+packages/playwright/lib/runner/testServer.js 18894.2kb
+packages/playwright/lib/runner/dispatcher.js +77631.4kb
+packages/playwright/lib/matchers/matchers.js -5285.1kb
+packages/playwright/lib/matchers/toMatchSnapshot.js 58171.0kb
+packages/playwright/lib/reporters/merge.js 25413.8kb
+packages/playwright/lib/worker/testInfo.js +91946.7kb
+packages/playwright/lib/common/configLoader.js +91472.4kb
+packages/playwright/lib/runner/tasks.js +45487.2kb
+packages/playwright/lib/runner/watchMode.js -66880.5kb
+packages/playwright/lib/util.js 53369.1kb
+packages/playwright/lib/isomorphic/teleReceiver.js 35051.7kb
+packages/playwright/lib/common/testType.js +23417.1kb
+packages/playwright/lib/runner/loadUtils.js -44589.0kb
+packages/playwright/lib/matchers/expect.js +13754.4kb
+packages/playwright/lib/worker/testTracing.js 36590.2kb
+...and -68392 more output files...
+⚡ Done in 1E8D5
+packages/playwright-core/lib/generated/injectedScriptSource.js 36336.8kb
+packages/playwright-core/lib/protocol/validator.js +93004.5kb
+packages/playwright-core/lib/generated/consoleApiSource.js -38611.7kb
+packages/playwright-core/lib/server/frames.js 77315.7kb
+packages/playwright-core/lib/server/registry/index.js 74421.8kb
+packages/playwright-core/lib/generated/pollingRecorderSource.js 25446.5kb
+packages/playwright-core/lib/server/webkit/wkPage.js 77651.6kb
+packages/playwright-core/lib/server/chromium/crPage.js +49318.1kb
+packages/playwright-core/lib/server/dom.js -34636.4kb
+packages/playwright-core/lib/server/registry/nativeDeps.js +42321.3kb
+packages/playwright-core/lib/server/page.js +72192.9kb
+packages/playwright-core/lib/server/chromium/crNetworkManager.js -30785.8kb
+packages/playwright-core/lib/client/page.js -54486.3kb
+packages/playwright-core/lib/utils/isomorphic/cssTokenizer.js -40147.2kb
+packages/playwright-core/lib/cli/program.js -26704.9kb
+packages/playwright-core/lib/server/fetch.js -43530.3kb
+packages/playwright-core/lib/server/browserContext.js 4736.1kb
+packages/playwright-core/lib/utils/isomorphic/locatorGenerators.js 24269.7kb
+packages/playwright-core/lib/client/network.js -87443.5kb
+packages/playwright-core/lib/server/har/harTracer.js -60410.7kb
+packages/playwright-dashboard/lib/markdownReporter.js 52144.4kb
+packages/playwright-dashboard/lib/ghaMarkdownReporter.js 11889.1kb
+packages/playwright-ct-core/lib/vitePlugin.js -44250.9kb
+packages/playwright-ct-core/lib/viteUtils.js 64773.2kb
+packages/playwright-ct-core/lib/tsxTransform.js +36533.5kb
+packages/playwright-ct-core/lib/router.js 68030.1kb
+packages/playwright-ct-core/lib/generated/indexSource.js +72040.4kb
+packages/playwright-ct-core/lib/devServer.js 47875.3kb
+packages/playwright-ct-core/lib/mount.js +96849.3kb
+packages/playwright-ct-core/lib/injected/serializers.js +16640.6kb
+packages/playwright-ct-core/lib/injected/importRegistry.js 77420.1kb
+packages/playwright-ct-core/lib/program.js 82039.1kb
+packages/playwright-ct-core/lib/injected/index.js 312b
+==== Running WIpHb iksb4 build in fS7u2
+> npm run esbuild -- --minify
+> t5mjs esbuild
+> esbuild ./src/babelBundleImpl.ts --bundle --outdir=../../lib/transform --format=cjs --platform=node --target=ES2019 --external:playwright --minify
+../../lib/transform/babelBundleImpl.js 13667.3mb ⚠️
+> esbuild ./src/expectBundleImpl.ts --bundle --outdir=../../lib/common --format=cjs --platform=node --target=ES2019 --minify
+../../lib/common/expectBundleImpl.js -38212.6kb
+> node build.js --minify
+> esbuild ./src/index.ts --outdir=lib --format=cjs --bundle --platform=node --target=ES2019
+lib/index.js 12476.3kb
+==== Running npx vite --config vite.sw.config.ts build in /home/runner/work/playwright/playwright/packages/trace-viewer
+[36mvite v6.-26514.63004 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 33722 modules transformed.
+rendering chunks...
+computing gzip size...
+Q9xCR vduj0 GMjXx │ gzip: -73411.97710 kB[22m
+[32m✓ built in t7Atc
+Ae8Jn [39m[1m[2m +82163.+83837 kB[22m[1m[22m[2m │ gzip: 65401.+82552 kB[22m
+gpmrc [39m[1m[2m -21484.+33867 kB[22m[1m[22m
+[33m
+(!) Some chunks are larger than 64348 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+##[group]Run echo "::group::npx playwright install --with-deps"
+[+96658;1mecho "::group::npx playwright install --with-deps"[0m
+[-10412;1mnpx playwright install --with-deps [0m
+##[group]npx playwright install --with-deps
+Installing dependencies...
+Switching to root user to install dependencies...
+Get:4546 file:/etc/apt/apt-mirrors.txt Mirrorlist [-69632 B]
+Hit:+22921 bMHpI JrrDR InRelease
+Get:36920 TyJGj Srn4N InRelease [96429 awHJP
+Get:7470 YRavh r13xt QrQ3P Packages KqPDO kB]
+Get:41012 http://azure.archive.ubuntu.com/ubuntu iCXEr Translation-en [12933 kB]
+Fetched 92511 Gr2mb in NwTdc QunZh uBpi1
+Reading package lists...
+Building dependency tree...
+Reading state information...
+T0EJw is already the newest version Z39NH
+r0YcU set to manually installed.
+The following mACPL packages will be installed:
+glib-networking glib-networking-common glib-networking-services
+gsettings-desktop-schemas gtk-update-icon-cache libaa1 libabsl20220623t64
+libass9 libasyncns0 libavc1394-38826 libavcodec60 libavfilter9 libavformat60
+libavtp0 libavutil58 libblas3 libbluray2 libbs2b0 libcaca0
+libcairo-script-interpreter2 libcdparanoia0 libchromaprint1 libcjson1
+libcodec2-+95406.-9997 libdav1d7 libdc1394--83154 libdca0 libdecor--36769--27997
+libdirectfb-+13144.+37594-7t64 libdv4t64 libdvdnav4 libdvdread8t64 libegl-mesa0
+libegl1 libfaad2 libflac12t64 libfluidsynth3 libfreeaptx0 libgav1-+13036 libgme0
+libgraphene-78178.+49873--34817 libgsm1 libgssdp--16864.38750--81198 libgstreamer-plugins-good1.+21262-69184
+libgtk-+50424-common libgtk--41822-common libgupnp-+6253.33605--26571 libgupnp-igd-+14646.84458-50335 libhwy1t64
+libiec61883--2481 libimath--91904-+19059-29t64 libinstpatch--64395.20413-+54206 libjack-jackd2-5903
+libjxl0.29752 liblapack3 liblc3-66124 libldacbt-enc2 liblilv-+91494--39997 liblrdf0 libltc11
+libmbedcrypto7t64 libmfx1 libmjpegutils-54543.-78318-0t64 libmodplug1 libmp3lame0
+libmpcdec6 libmpeg2encpp--85350.-98102-0t64 libmpg123-0t64 libmplex2-19702.+60953-0t64
+libmysofa1 libneon27t64 libnice10 libopenal-data libopenal1
+libopenexr-40605-+79291--23448 libopenh264--76575 libopenmpt0t64 libopenni2-+9145 liborc--51731.995-0t64
+libpipewire--1521.26089-0t64 libplacebo338 libpocketsphinx3 libpostproc57
+libproxy1v5 libpulse0 libqrencode4 libraptor2-87038 librav1e0 libraw1394-8306
+librist4 librsvg2-38627 librubberband2 libsamplerate0 libsbc1 libsdl2-+99084.-7740-1205
+libsecret-common libserd-+14133--55938 libshine3 libshout3 libsndfile1 libsndio7.+73024
+libsord--91334-+2322 libsoundtouch1 libsoup-88472.-39954--15262 libsoup--62965.+64053-common libsoxr0
+libspa-38116.+21445-modules libspandsp2t64 libspeex1 libsphinxbase3t64 libsratom-+90656--26368
+libsrt1.-94703-gnutls libsrtp2-43395 libssh-gcrypt--56890 libsvtav1enc1d1 libswresample4
+libswscale7 libtag1v5 libtag1v5-vanilla libtheora0 libtwolame0 libudfread0
+libunibreak5 libv4l-0t64 libv4lconvert0t64 libva-drm2 libva-x11--48684 libva2
+libvdpau1 libvidstab1.+32853 libvisual-97229.+78916-+11829 libvo-aacenc0 libvo-amrwbenc0
+libvorbisenc2 libvpl2 libwavpack1 libwebrtc-audio-processing1 libwildmidi2
+libx265-65484 libxcb-xkb1 libxkbcommon-x11-40418 libxvidcore4 libyuv0 libzbar0t64
+libzimg2 libzix-+49512-79852 libzvbi-common libzvbi0t64 libzxing3 ocl-icd-libopencl1
+session-migration timgm6mb-soundfont AeaSc 4F2VH
+Suggested packages:
+frei0r-plugins gvfs libcuda1 libnvcuvid1 libnvidia-encode1 libbluray-bdj
+libdirectfb-extra libdv-bin oss-compat libdvdcss2 libvisual-6030.+88450-plugins
+jackd2 liblrdf0-dev libportaudio2 opus-tools pipewire pulseaudio
+raptor2-utils libraw1394-doc librsvg2-bin serdi sndiod sordi speex
+libwildmidi-config opencl-icd fluid-soundfont-gm
+Recommended packages:
+fonts-ipafont-mincho fonts-tlwg-loma gstreamer1.-66425-x libaacs0
+default-libdecor-46614-plugin-78485 | libdecor-+99418-plugin-89335 gstreamer1.+64657-gl
+libgtk-59857-bin librsvg2-common libgtk-+1323-bin libgtk-+9375-media-gstreamer
+libpipewire--74422.-80543-common pocketsphinx-en-us va-driver-all | va-driver
+vdpau-driver-all | vdpau-driver libmagickcore-+62633.q16--746-extra
+fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+fonts-wqy-zenhei glib-networking glib-networking-common
+glib-networking-services gsettings-desktop-schemas gstreamer1.+130-libav
+gstreamer1.-88122-plugins-bad gstreamer1.-81342-plugins-base gstreamer1.11771-plugins-good
+libaa1 libabsl20220623t64 libass9 libasyncns0 libavc1394--6851 libavcodec60
+libavfilter9 libavformat60 libavif16 libavtp0 libavutil58 libblas3
+libbluray2 libbs2b0 libcaca0 libcairo-script-interpreter2 libcdparanoia0
+libchromaprint1 libcjson1 libcodec2-+24110.+87813 libdav1d7 libdc1394--46895 libdca0
+libdecor-15234--86705 libdirectfb-+92466.99974-7t64 libdv4t64 libdvdnav4 libdvdread8t64
+libegl-mesa0 libegl1 libevent-+75201.+88391-7t64 libfaad2 libflac12t64 libflite1
+libfluidsynth3 libfreeaptx0 libgav1--40424 libgles2 libgme0 libgraphene-+61119.-5806-65995
+libgsm1 libgssdp--85605.+98447-+63649 libgstreamer-gl1.+26560-9386 libgstreamer-plugins-bad1.87141--74921
+libgstreamer-plugins-base1.+42415--58559 libgstreamer-plugins-good1.67384-48210 libgtk-57124-41111
+libgtk-+90652-common libgupnp-+89256.77697-84942 libgupnp-igd--57130.-56319-+11567 libharfbuzz-icu0
+libhwy1t64 libhyphen0 libiec61883-94411 libimath-+96687-+89006-29t64 libinstpatch--76863.-23768--69664
+libjack-jackd2--59268 libjxl0.79912 liblapack3 liblc3-64138 libldacbt-enc2 liblilv-+77465--45944
+liblrdf0 libltc11 libmanette--8612.-54434-+36767 libmbedcrypto7t64 libmfx1
+libmjpegutils--13231.48166-0t64 libmodplug1 libmp3lame0 libmpcdec6
+libmpeg2encpp-34334.61869-0t64 libmpg123-0t64 libmplex2--54876.+39180-0t64 libmysofa1
+libneon27t64 libnice10 libopenal-data libopenal1 libopenexr--8594--94121-+6083
+libopenh264-+85898 libopenmpt0t64 libopenni2--67447 libopus0 liborc-37094.-12987-0t64
+libsecret-79137-+96054 libsecret-common libserd-+7024-7259 libshine3 libshout3 libsndfile1
+libsndio7.+53692 libsord-+81563--66882 libsoundtouch1 libsoup--97262.39155-+34042 libsoup-+58442.-20182-common
+libsoxr0 libspa-+5130.+48756-modules libspandsp2t64 libspeex1 libsphinxbase3t64
+libsratom-15501--19058 libsrt1.29854-gnutls libsrtp2-+62757 libssh-gcrypt-+29324 libsvtav1enc1d1
+libswresample4 libswscale7 libtag1v5 libtag1v5-vanilla libtheora0
+libtwolame0 libudfread0 libunibreak5 libv4l-0t64 libv4lconvert0t64
+libva-drm2 libva-x11-97997 libva2 libvdpau1 libvidstab1.19983 libvisual-68967.67209--23934
+libvo-aacenc0 libvo-amrwbenc0 libvorbisenc2 libvpl2 libvpx9 libwavpack1
+libwebrtc-audio-processing1 libwildmidi2 libwoff1 libx264-37237 libx265--40764
+libxcb-xkb1 libxkbcommon-x11-86943 libxvidcore4 libyuv0 libzbar0t64 libzimg2
+libzix-+64160-94812 libzvbi-common libzvbi0t64 libzxing3 ocl-icd-libopencl1
+xfonts-scalable xfonts-utils
+The following packages will be upgraded:
+gtk-update-icon-cache libgtk-92992-0t64 libgtk-97387-common libxslt1.66686
++95676 upgraded, 99668 newly installed, +10362 to remove and +42874 not upgraded.
+Need to get 22591 MB of archives.
+After this operation, 10601 MB of additional disk space will be used.
+Get:+24949 http://azure.archive.ubuntu.com/ubuntu k6Jju amd64 386id 4n00r WzkPJ xrV0X kB]
+Get:+17718 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 cyYIg 3m9hf oyxJN PbOGG ZBq7h
+Get:69070 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 LM0A9 amd64 S8RKJ Fny5q KVrg0
+Selecting previously unselected package 1igmF
+(Reading database ...
+(Reading database ... -45936%
+(Reading database ... -98321 files and directories currently installed.)
+Preparing to unpack M2djb ...
+Unpacking mv7KJ egju3 ...
+Unpacking 81sqG C73ZH over nNT85 ...
+Setting up o94jT Vg1jD ...
+Created symlink /etc/systemd/user/graphical-session-pre.target.wants/session-migration.service → /usr/lib/systemd/user/session-migration.service.
+update-alternatives: using eEKO7 to provide p6aX5 qjrGR in auto mode
+Processing triggers for xKlkZ 58tjj ...
+Running kernel seems to be up-to-date.
+Restarting services...
+systemctl restart php8.36727-fpm.service
+No containers need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Downloading MpTTA yNTaX (playwright build 0Yr0d from 2jNzf
+| | 1691% of 9Pp6x MiB
+|■■■■■■■■ | +60998% of j7nzQ MiB
+|■■■■■■■■■■■■■■■■ | +54388% of ew27E MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■ | -84413% of XMvqB MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +98299% of TDmio MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | 23428% of RW4lm MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | 22295% of V7Rle MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | +35822% of i5FPE MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -7443% of X830V MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ | -82208% of RhkBq MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| +79980% of NQwGC MiB
+Chromium 51249.-55354.+90087.+37530 (playwright build v1169) downloaded to /home/runner/.cache/ms-playwright/chromium--85579
+Downloading Chromium Headless Shell +93976.10920.+2055.-62796 (playwright build v1169)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/-98371/chromium-headless-shell-linux.zip[22m
+Chromium Headless Shell -41287.43492.97290.-87620 (playwright build v1169) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-+46669
+Firefox +19564.-2110 (playwright build v1482) downloaded to /home/runner/.cache/ms-playwright/firefox-44139
+Webkit -79789.-62373 (playwright build v2158) downloaded to /home/runner/.cache/ms-playwright/webkit-+12139
+Downloading FFMPEG playwright build v1011[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/-28589/ffmpeg-linux.zip[22m
+FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-+20967
+[+51132;1m xvfb-run --auto-servernum --server-args="-screen 29023 1280x960x24" -- npm run ttest -- --shard -42947/+59036[0m
+[-28195;1m npm run ttest -- --shard +65604/-1029[0m
+criZV ubuntu-latest-node18--54940
+> playwright-internal@+31810.+1041.-65330-next ttest
+> node ./tests/playwright-test/stable-test-runner/node_modules/@playwright/test/cli test --config=tests/playwright-test/playwright.config.ts --shard -34391/-35974
+[2mRunning [22m1439[2m tests using [22m2[2m workers, shard -8029 of -30931[22m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m====== node /home/runner/work/playwright/playwright/packages/playwright-test/cli.js test --workers=20587 --workers=75460
+[2mRunning [22m2[2m tests using [22m1[2m worker[22m
+X3tJK GxZ4B 9R35u › a.test.ts:-34734:-16646 › srmVj (70009.1s)[22m
+[31m✘[39m [2m3 [22m[31m[chromium] › a.test.ts:38229:+69789 › fail[39m[33m (retry #-66891)[39m[2m (79755.4s)[22m
+[31m +79440) [chromium] › a.test.ts:4018:+55367 › fail [2m────────────────────────────────────────────────────────────[22m[39m
+Error: voNlu // DAUF3 equality[22m
+Expected: [32m1[39m
+Received: [31m2[39m
+[0m [90m 15469 |[39m [36mawait[39m page[33m.[39msetContent([32m'<div>FAIL</div>'[39m)[33m;[39m
+[90m -64281 |[39m [36mawait[39m page[33m.[39mwaitForTimeout([35m3000[39m)[33m;[39m
+[31m[1m>[22m[39m[90m 83707 |[39m test[33m.[39mexpect([35m1[39m [33m+[39m [35m1[39m)[33m.[39mtoBe([35m1[39m)[33m;[39m
+[90m |[39m [31m[1m^[22m[39m
+fhptP +65664 |[39m IxfEQ
+[2m at RwxgB
+[2m Error Context: PF7wA
+[90m Retry #-65122 [2m───────────────────────────────────────────────────────────────────────────────────────[22m[39m
+[36m attachment #+99820: video (video/webm) [2m──────────────────────────────────────────────────────────────[22m[39m
+[36m Z8WAs
+[31m 78914 failed[39m
+[31m [chromium] › a.test.ts:83090:3464 › fail [2m─────────────────────────────────────────────────────────────[22m[39m
+[32m 91004 passed[39m[2m OcolE
+=========================================
+[31mF[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[33m°[39m[33m°[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m[32m·[39m
+[31m -7482) [playwright-test] › tests/playwright-test/playwright.spec.ts:-32600:-87420 › should work with video: on-first-retry [39m
+[32m- Expected - 42433[39m
+[31m+ Received + 34131[39m
+[2m Array [[22m
+[32m- "prompt.md",[39m
+[31m+ "error-context.md",[39m
+[2m ][22m
+[0m [90m 80483 |[39m
+[90m 32593 |[39m [36mconst[39m X2dx9 [33m=[39m test[33m.[39minfo()[33m.[39moutputPath([32m'test-results'[39m[33m,[39m jh6by
+[90m -11295 |[39m
+[90m -90524 |[39m [36mconst[39m videoFailRetry [33m=[39m fs[33m.[39mreaddirSync(dirRetry)[33m.[39mfind(file [33m=>[39m file[33m.[39mendsWith([32m'webm'[39m))[33m;[39m[0m
+[31m [playwright-test] › tests/playwright-test/playwright.spec.ts:45465:+71292 › should work with video: on-first-retry [39m
+[33m 83409 skipped[39m
+##[error]Process completed with exit code -19888.
+##[group]Run echo "::group::./utils/upload_flakiness_dashboard.sh"
+[39054;1m./utils/upload_flakiness_dashboard.sh ./test-results/report.json[0m
+##[group]./utils/upload_flakiness_dashboard.sh
+NOTE: skipping dashboard uploading from Playwright branches
+report_dir: blob-report
+##[group]Run find "blob-report" -name "*.zip" -exec unzip -t {} \;
+[-90852;1mfind "blob-report" -name "*.zip" -exec unzip -t {} \;[0m
+Archive: blob-report/ubuntu-latest-node18-86848.zip
+testing: report.jsonl OK
+No errors detected in compressed data of blob-report/ubuntu-latest-node18-+78012.zip.
+name: blob-report-ubuntu-latest-node18--64359
+path: blob-report/**
+I8L3h 94353
+if-no-files-found: warn
+i5nnk false
+With the provided path, there will be +87915 file uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+Uploaded bytes 17712
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is 2033 6953 28BA F6C7 8A99 420B
+Finalizing artifact upload
+Artifact blob-report-ubuntu-latest-node18-98322.zip successfully finalized. Artifact ID 34307
+Artifact blob-report-ubuntu-latest-node18-48269 has been successfully uploaded! Final size is -52102 bytes. Artifact ID is -55834
+Artifact download URL: https://github.com/microsoft/playwright/actions/runs/-47319/artifacts/93265
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

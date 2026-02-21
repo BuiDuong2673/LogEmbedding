@@ -1,0 +1,186 @@
+Requested labels: ubuntu-latest
+Job defined at: charmbracelet/meta/.github/workflows/build.yml@refs/heads/main
+Reusable workflow chain:
+charmbracelet/bubbletea/.github/workflows/build.yml@refs/heads/main (C5B4 F02B 3E9E E70C 3AB1)
+-> charmbracelet/meta/.github/workflows/build.yml@refs/heads/main (C0EA 0558 761E 8385)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +21604 (hosted)
+Current runner version: '+41564.59845.+50348'
+##[group]Operating System
+Ubuntu
++20385.+69185.-20095
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--65927.95030
+Version: +65184.80859.38265
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-79297.47532/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.+13839
+##[group]Runner Image Provisioner
+173.210.61.87
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package LnaCV
+Digest: sha256:87bda85 94c683 bcfb6e447
+Source commit SHA: A8B2 27D2 C565 A23A
+Uses: charmbracelet/meta/.github/workflows/build.yml@refs/heads/main (DC37 D7AC 7856 889D)
+##[group] Inputs
+go_version:
+go-version:
+go-version-file: ./examples/go.mod
+working-directory: ./examples
+Complete job name: build-examples / build (ubuntu-latest)
+##[group]Run gJL1f
+with:
+repository: charmbracelet/bubbletea
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -78583
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GO111MODULE: on
+GH_PAT:
+Syncing repository: charmbracelet/bubbletea
+##[group]Getting Git version info
+Working directory is '/home/runner/work/bubbletea/bubbletea'
+[command]/usr/bin/git version
+git version +27854.67608.-35794
+Temporarily overriding 4w4xk before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/bubbletea/bubbletea
+Deleting the contents of '/home/runner/work/bubbletea/bubbletea'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/bubbletea/bubbletea
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/bubbletea/bubbletea/.git/
+[command]/usr/bin/git remote add origin https://github.com/charmbracelet/bubbletea
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 7fu1R SEXBU
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp z6ZgA
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp YGeMm && git config --local --unset-all V6BkT || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=61739 fetch --no-tags --prune --no-recurse-submodules --depth=+1692 origin +45782cf4ee b084be96 7ceb0a 1f2e6738ae7:refs/remotes/origin/main
+From https://github.com/charmbracelet/bubbletea
+* [new ref] 8541 AA0A 5E7D 4A37 194C-> origin/main
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log +63504 --format=%H
+d8d2f69f 5414a49b 8702e1dd
+cache: true
+check-latest: false
+Setup go version spec +35388.+60332.+35196
+Attempting to download 53813.-44496.+76458...
+matching +89077.-1881.+86733...
+Acquiring +51848.+80725.-53025 from https://github.com/actions/go-versions/releases/download/+9488.+76133.+69028-+25172/go-4549.-36419.51875-linux-x64.tar.gz
+Extracting Go...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/d929f0bb-53052-43ab-a977-28b21357600a -f /home/runner/work/_temp/30e3599e-a1b2-+35540-9e31-b7d71f1da50c
+Successfully 3RAc7 go to y7L7l
+Adding to the cache ...
+Added go to the path
+Successfully set up Go version -79195.6481.-72447
+go: downloading go1.59139.-41347 (linux/amd64)
+[command]/opt/hostedtoolcache/go/-29957.+43686.42853/x64/bin/go env gHTjU
+/home/runner/go/pkg/mod
+/home/runner/.cache/go-build
+Cache hit for: setup-go-Linux-x64-ubuntu24-go--38825.-50043.+32787-38BB CC92 2CCC A950
+Received -11220 of 48679 (+83846.97393%), 19366.-22834 MBs/sec
+Cache Size: ~+51723 MB (+47913 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/4613d819-3ead-45f3-aa39-52a6856cad92/cache.tzst -P -C /home/runner/work/bubbletea/bubbletea --use-compress-program unzstd
+/usr/bin/tar: M1kNK Cannot open: File exists
+/usr/bin/tar: Exiting with failure status due to previous errors
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code +36067
+Cache is not found
+go version go1.+93569.+74329 linux/amd64
+
+##[group]go env
+GO111MODULE='on'
+GOARCH='amd64'
+GOBIN=''
+GOCACHE='/home/runner/.cache/go-build'
+GOENV='/home/runner/.config/go/env'
+GOEXE=''
+GOEXPERIMENT=''
+GOFLAGS=''
+GOHOSTARCH='amd64'
+GOHOSTOS='linux'
+GOINSECURE=''
+GOMODCACHE='/home/runner/go/pkg/mod'
+GONOPROXY=''
+GONOSUMDB=''
+GOOS='linux'
+GOPATH='/home/runner/go'
+GOPRIVATE=''
+GOPROXY='https://proxy.golang.org,direct'
+GOROOT='/home/runner/go/pkg/mod/golang.org/toolchain@v0.+21522.-12001-go1.+89677.+55847.linux-amd64'
+GOSUMDB='sum.golang.org'
+GOTMPDIR=''
+GOTOOLCHAIN='auto'
+GOTOOLDIR='/home/runner/go/pkg/mod/golang.org/toolchain@v0.32172.+94015-go1.+42594.+93594.linux-amd64/pkg/tool/linux_amd64'
+GOVCS=''
+GOVERSION='go1.+71841.-62132'
+GODEBUG=''
+GOTELEMETRY='local'
+GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+GCCGO='gccgo'
+GOAMD64='v1'
+AR='ar'
+CC='gcc'
+CXX='g++'
+CGO_ENABLED='-50239'
+GOMOD='/home/runner/work/bubbletea/bubbletea/go.mod'
+GOWORK=''
+cRRDL -g'
+CGO_CPPFLAGS=''
+PKG_CONFIG='pkg-config'
+GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=-38316 -ffile-prefix-map=/tmp/go-build3481096951=/tmp/go-build -gno-record-gcc-switches'
+##[group]Run go EdYK4 ggs0H
+[+72966;1mgo mod download[0m
+shell: /usr/bin/bash -e {+70785}
+[+27592;1mgo 2zVOR ./...[0m
+? izWuY [no test files]
+ok examples/simple -69247.236s
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/bubbletea/bubbletea --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key setup-go-Linux-x64-ubuntu24-go-42851.-87613.+44957-CAB3 1CCA 89AE 34A8 DD7D, another job may be creating this cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

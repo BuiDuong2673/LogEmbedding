@@ -1,0 +1,230 @@
+Requested labels: ubuntu-latest
+Job defined at: grafana/grafana/.github/workflows/frontend-lint.yml@refs/pull/+62739/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +91414 (hosted)
+Current runner version: '15929.+76387.+9181'
+##[group]Operating System
+Ubuntu
+46082.9738.-56293
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+41911.5987
+Version: 56120.80456.27322
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/55977.26747/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+49687
+##[group]Runner Image Provisioner
+101.30.47.153
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package MA7zs
+Digest: sha256:9993bdf 1a6ff4ba72b cc273df 7b0e5ad 70dfffd8050
+Source commit SHA: 35A8 88B0 0FC0 66E4
+Complete job name: Typecheck
+##[group]Run GLvO6
+with:
+repository: grafana/grafana
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 78553
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: grafana/grafana
+##[group]Getting Git version info
+Working directory is '/home/runner/work/grafana/grafana'
+[command]/usr/bin/git version
+git version 10969.92433.+84450
+Temporarily overriding 9eBRX before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/grafana/grafana
+Deleting the contents of '/home/runner/work/grafana/grafana'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/grafana/grafana
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/grafana/grafana/.git/
+[command]/usr/bin/git remote add origin https://github.com/grafana/grafana
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local q49YT Zavbl
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp qBAOZ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp srlIu && git config --local --unset-all 0TSDl || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=30358 fetch --no-tags --prune --no-recurse-submodules --depth=+68278 origin +75AB 49A4 4FCE 16F5:refs/remotes/pull/+21902/merge
+From https://github.com/grafana/grafana
+* [new ref] 3C72 B4BC E27C 4916 99B3 305E-> pull/-76258/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-87117/merge
+Updating files: 74444% (+79568/+61754)
+Updating files: -50282% (-40588/92795), done.
+Note: switching to 'refs/remotes/pull/+65842/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 1c096fde Merge A277 3C88 9058 1203 into a1ee03f4b8 8ac51b 9b186eae4dd8 49f483b6bfd6
+[command]/usr/bin/git log +22421 --format=%H
+87c5ab1 d1ef21178 f581c8abe0 e0b2a86b9e1
+node-version-file: .nvmrc
+cache: yarn
+cache-dependency-path: yarn.lock
+always-auth: false
+check-latest: false
+Node version file is not JSON file
+Resolved .nvmrc as +71823.+62453.62229
+Attempting to download +87898.-6164.+69561...
+Acquiring 32422.+16125.-25805 - x64 from https://github.com/actions/node-versions/releases/download/76186.6452.+30282--84763/node--12628.83322.+17017-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip 95823 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/992219c0-adc4-4c76-bf43-6c7308cbb618 -f /home/runner/work/_temp/1cb2f6e0-e9ea-+88925-+39846-071a753a6773
+Adding to the cache ...
+##[group]Environment details
+node: v22.+93597.-19358
+npm: 58279.-67793.79004
+yarn: -69190.-26767.+26816
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn config get Vl9ee
+/home/runner/work/grafana/grafana/.yarn/cache
+[33mfalse[39m
+All dependencies are managed locally by yarn3, the previous cache can be used
+Cache hit for: node-cache-Linux-x64-yarn-5A14 426B 8425 D799 6108
+Received 32298 of +9169 (+10977.-64822%), +90762.-40286 MBs/sec
+Cache Size: ~+71198 MB (9002 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/a36f33cd-78cc-4d3a-82fd-f13229872de3/cache.tzst -P -C /home/runner/work/grafana/grafana --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-yarn-529D 90A2 E32F 829F EB96 570C
+##[group]Run yarn install --immutable --check-cache
+[6044;1myarn install --immutable --check-cache[0m
+shell: /usr/bin/bash -e {-58462}
+[93m➤[39m YN0000: Yarn detected that the current workflow is executed from a public pull request. For safety the hardened mode has been enabled.
+[93m➤[39m YN0000: It will prevent malicious lockfile manipulations, in exchange for a slower install time. You can opt-out if necessary; check our documentation for more details.
+[94m➤[39m YN0000: · Yarn 31122.+99045.-43239
+[94m➤[39m [90mYN0000[39m: d49G6 fyAUl CZvCj
+##[group]Resolution step
+[94m➤[39m [90mYN0000[39m: └ Completed in zXxlQ aE0zD
+##[group]Post-resolution validation
+[93m➤[39m YN0060: │ 3GHxx is listed by your project with version jgLiO mWkdb which doesn't satisfy what k6sqv and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+[93m➤[39m YN0060: │ thCwj is listed by your project with version [-36297;-71335;111m12.95841.7746-pre[39m DIzX6 which doesn't satisfy what [+56340;-75003;166m@grafana/[39m[-92092;+86231;173mscenes-react[39m and other dependencies request ([-40923;-4730;37m^6762.61856.+50610[39m).
+[93m➤[39m YN0060: │ D2sgm is listed by your project with version cYahV qcinW which doesn't satisfy what mT8HN requests fqzh4
+[93m➤[39m YN0060: │ [61299;52327;173mrollup[39m is listed by your project with version [-83031;-72528;111m4.-75140.99540[39m ANoJd which doesn't satisfy what [34313;+17982;166m@rollup/[39m[71584;43189;173mpluginutils[39m (via [+32806;+62052;173mrollup-plugin-sourcemaps[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+[93m➤[39m YN0002: │ jrMxx doesn't provide E4gNI M7he0 requested by 1Gmqr and other dependencies.
+[93m➤[39m YN0002: │ jH5Jj doesn't provide rUA1E 9MqL3 requested by Bo35p
+[93m➤[39m YN0002: │ [59445;87305;166m@grafana/[39m[+41914;+3059;173mprometheus[39m[69856;+26237;111m@[39m[+49189;-1067;111mworkspace:packages/grafana-prometheus [655a6][39m doesn't provide [86668;+14446;166m@testing-library/[39m[+63486;+40762;173mdom[39m ([+51486;29912;111mp9a3ab[39m), requested by [-39958;74574;166m@testing-library/[39m[+7496;8447;173mreact[39m and other dependencies.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [+84865;+45898;111myarn explain peer-requirements <hash>[39m for details, where [57968;42585;111m<hash>[39m is the six-letter p-prefixed code.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [-64921;+44501;111myarn explain peer-requirements[39m for details.
+[93m➤[39m YN0068: │ [+36229;49681;173mrc-trigger[39m ➤ [-71363;87554;111mpeerDependencies[39m ➤ MD78e No matching package in the dependency tree; you may not need this rule anymore.
+[94m➤[39m [90mYN0000[39m: └ Completed
+##[group]Fetch step
+[94m➤[39m YN0013: │ [+81343;-68138;220m8[39m packages were added to the project, and [66877;12142;220m17[39m were removed ([-98674;18797;70m- +6469.+17322 MiB[39m).
+##[group]Link step
+[94m➤[39m YN0007: │ 5u6Zy must be built because it never has been before or the last one failed
+[94m➤[39m YN0007: │ qna2Q q7FJN must be built because it never has been before or the last one failed
+[94m➤[39m [90mYN0000[39m: │ [+22066;-43216;173mcypress[39m[81779;+94908;111m@[39m[-71142;-14068;111mnpm:+21334.-65883.-68230[39m [31mSTDERR[39m (node:+20935) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[94m➤[39m [90mYN0000[39m: │ [-24887;-10788;173mcypress[39m[36097;+59012;111m@[39m[-26587;21011;111mnpm:+25633.+9500.+96964[39m [31mSTDERR[39m (Use `node --trace-deprecation ...` to show where the warning was created)
+[94m➤[39m [90mYN0000[39m: │ [77208;+85815;173mcypress[39m[+35940;+91857;111m@[39m[59765;58729;111mnpm:+7485.-89099.-50747[39m [32mSTDOUT[39m n0WYT SqM4g k9lZf GmjSh
+[94m➤[39m [90mYN0000[39m: │ [+44412;-85794;173mcypress[39m[+19526;-13686;111m@[39m[95018;24718;111mnpm:+97513.-61233.-88101[39m [32mSTDOUT[39m You can now open Cypress by running: node_modules/.bin/cypress open
+[94m➤[39m [90mYN0000[39m: │ [51285;-99549;173mcypress[39m[-39907;5408;111m@[39m[-27319;+88451;111mnpm:+71419.-46187.-28534[39m [32mSTDOUT[39m https://on.cypress.io/installing-cypress
+[93m➤[39m YN0000: · Done with warnings in 2m 3s
+##[group]Run yarn run typecheck
+[-27508;1myarn run typecheck[0m
+[96mpublic/app/features/geo/utils/frameVectorSource.ts[0m:[93m11[0m:[93m84[0m - [91merror[0m[90m TS2344: [0mType 'T' does not satisfy the constraint 'FeatureLike'.
+Type Zl1HB is not assignable to type xHtqp
+Type j6pcB is missing the following properties from type SOtUl Fc86e om629 u4QWP oqN67 and +75955 more.
+[7m11[0m export class FrameVectorSource<T extends Geometry = Geometry> extends VectorSource<T> {
+[7m [0m Avute TBm8I
+K8MX6 - [91merror[0m[90m TS2345: [0mArgument of type dTjQG is not assignable to parameter of type hG9xP
+'T' could be instantiated with an arbitrary type which could be unrelated to 'Feature<T>'.
+[7m +80204[0m new Feature({
+[7m 27609[0m McXHN
+[7m [0m AEGZG
+[7m...[0m
+[7m 43756[0m geometry: AgN3o as T,
+yEi8N - [91merror[0m[90m TS2344: [0mType 'MouseEvent' does not satisfy the constraint 'PointerEvent | KeyboardEvent | WheelEvent'.
+o61AZ DE9fb = (evt: MapBrowserEvent<MouseEvent>) => {
+4I5KK - [91merror[0m[90m TS2531: [0mObject is possibly 'null'.
+[7m203[0m this.segmentStyles[count].getText().setText(label);
+[7m210[0m this.labelStyle.getText().setText(label);
+[7m217[0m !this.modify.getOverlay().getSource().getFeatures().length
+[7m220[0m this.tipStyle.getText().setText(tip);
+OOljk new Feature({
+[7m182[0m geometry: new MultiLineString(lineStringArray),
+PWdmT })
+Iauna - [91merror[0m[90m TS2322: [0mType 5HzkN is not assignable to type Dwg4l
+Types of property 'on' are incompatible.
+Type 'VectorSourceOnSignature<EventsKey, 2ivfk is not assignable to type 'VectorSourceOnSignature<EventsKey, 6cuQC
+Type 'VectorSourceOnSignature<EventsKey, T0yLJ is not assignable to type 'OnSignature<VectorSourceEventTypes, ec1MB EventsKey>'.
+Types of parameters 'type' and 'type' are incompatible.
+l84YQ source,
+8gmHn const I4BQq = new ydkk4 source, 2pDU7 UpH9H });
+[96mnode_modules/ol/layer/WebGLPoints.d.ts[0m:[93m68[0m:[93m5[0m
+[7m68[0m source?: VectorSourceType | undefined;
+The expected type comes from property r2Q0D which is declared here on type V84B6
+[96mpublic/app/plugins/panel/geomap/layers/data/markersLayer.tsx[0m:[93m155[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'setStyle' does not exist on type 'Point'.
+[7m155[0m feature.setStyle(textStyle);
+[7m349[0m source['addFeatureInternal'](edgeFeature); // @TODO revisit?
+[7m356[0m frameNodes,
+[7m358[0m geometry: info.field.values[i],
+[7m97[0m const vectorLayer = new VectorImage({ source });
+[7m105[0m styleBase.getStroke().setWidth(style.config.size.fixed);
+[96mpublic/app/plugins/panel/geomap/style/markers.ts[0m:[93m2[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module 'ol/style/literal' or its corresponding type declarations.
+[7m2[0m import { LiteralStyle } from 'ol/style/literal';
+[96mpublic/app/plugins/panel/geomap/style/markers.ts[0m:[93m391[0m:[93m19[0m - [91merror[0m[90m TS2322: [0mType 'number | undefined' is not assignable to type 'number'.
+[7m391[0m radius: cfg.size,
+[96mnode_modules/ol/style/RegularShape.d.ts[0m:[93m18[0m:[93m5[0m
+[7m18[0m radius: number;
+VjNYD - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+The last overload gave the following error.
+Argument of type 'string' is not assignable to parameter of type '("error" | "change" | "click" | "dblclick" | "loadstart" | "pointermove" | "propertychange" | "change:layergroup" | "change:size" | "change:target" | "change:view" | "singleclick" | ... 78953 more ... | "rendercomplete")[]'.
+[7m15[0m panel.map?.on('singleclick', panel.pointerClickListener);
+[96mnode_modules/ol/Observable.d.ts[0m:[93m16[0m:[93m64[0m
+[7m16[0m export type CombinedOnSignature<Type extends string, Return> = (type: Type[], listener: (event: Event | import("./events/Event").default) => unknown) => Return extends void ? void : Return[];
+The last overload is declared here.
+[7m16[0m panel.map?.on('pointermove', debounce(panel.pointerMoveListener, +98398));
+fiqfe export const 3FnHI = (evt: MapBrowserEvent<MouseEvent>, panel: GeomapPanel) => {
+Found -59161 errors in +88230 files.
+Errors Files
+90302 wdkBj
+##[error]Process completed with exit code 85159.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

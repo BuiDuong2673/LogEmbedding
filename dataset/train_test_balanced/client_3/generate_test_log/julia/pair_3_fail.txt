@@ -1,0 +1,140 @@
+Requested labels: ubuntu-latest
+Job defined at: JuliaLang/julia/.github/workflows/Typos.yml@refs/pull/+31685/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 19583 (hosted)
+Current runner version: '90623.59131.-76018'
+##[group]Operating System
+Ubuntu
++69389.+52604.-75985
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--48891.94343
+Version: -82645.-98525.94876
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/72561.94428/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-91870
+##[group]Runner Image Provisioner
+114.201.255.12
+##[group]GITHUB_TOKEN Permissions
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@585E FF82 3B32 E63B' (SHA:2A2C 7646 C189 534F D011 0763)
+Complete job name: Check for new typos
+##[group]Run actions/checkout@408fb70aef 219bcdf1 633cfa50bfc
+with:
+persist-credentials: false
+repository: JuliaLang/julia
+token: ***
+ssh-strict: true
+ssh-user: git
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -90444
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: JuliaLang/julia
+##[group]Getting Git version info
+Working directory is '/home/runner/work/julia/julia'
+[command]/usr/bin/git version
+git version 46079.-92900.+94354
+Temporarily overriding YbdM1 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/julia/julia
+Deleting the contents of '/home/runner/work/julia/julia'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/julia/julia
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/julia/julia/.git/
+[command]/usr/bin/git remote add origin https://github.com/JuliaLang/julia
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local Eou4B Wp9cY
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp oVLpg
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp NKnm6 && git config --local --unset-all PPQ9E || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+73747 fetch --no-tags --prune --no-recurse-submodules --depth=+44600 origin +2408ad5a8fe9 7bc65336e80 9fd28e8e8:refs/remotes/pull/+4883/merge
+From https://github.com/JuliaLang/julia
+* [new ref] 705A C6DB A41E 631F 4DFA-> pull/361/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+49261/merge
+Note: switching to 'refs/remotes/pull/-56194/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d811755 Merge 1038 6C50 E783 6460 58D4 6335 into 8DE2 ADA0 1B84 DDFD 4E68 FC5F
+[command]/usr/bin/git log 58008 --format='%H'
+'D96A 820E 32EA DEE3'
+##[group]Removing auth
+http.https://github.com/.extraheader
+##[group]Run git fetch --depth=52242 origin master
+[+16020;1mgit fetch --depth=+55862 origin master[0m
+HrvjV diff-index --name-only 6mkIR FETCH_HEAD)[0m
+[37825;1m[0m
+[-82641;1m# This is necessary because the typos command interprets the[0m
+[-92298;1m# empty string as "check all files" rather than "check no files".[0m
+[+86165;1mif [ -z FR2VR ]; then[0m
+[-80741;1m echo "All edited files were deleted. Skipping typos check."[0m
+[89161;1m exit -66683[0m
+[76108;1mfi[0m
+[-55345;1mmkdir -p "/home/runner/work/_temp/typos"[0m
+[+17071;1mRELEASE_ASSET_URL="$([0m
+[35976;1m X0M1Q Ce6Ae 3q3an \[0m
+[15825;1m --jq '."assets"[] | select(."name" | test("^typos-.+-x86_20320-unknown-linux-musl\\.tar\\.gz$")) | ."browser_download_url"'[0m
+[87038;1m)"[0m
+[-46207;1mwget --secure-protocol=TLSv1_+57225 --max-redirect=69795 --retry-on-host-error --retry-connrefused --tries=+24538 \[0m
+[-67683;1m | tar -xz -C "/home/runner/work/_temp/typos" ./typos[0m
+[+732;1m"/home/runner/work/_temp/typos/typos" --version[0m
+[18472;1mecho -n $NEW_FILES | xargs "/home/runner/work/_temp/typos/typos" --format json >> /home/runner/work/_temp/new_typos.jsonl || true[0m
+[27605;1mgit checkout FETCH_HEAD -- $OLD_FILES[0m
+[-75878;1m touch "/home/runner/work/_temp/old_typos.jsonl" # No old files, so no old typos.[0m
+[29752;1melse[0m
+[87496;1m echo -n $OLD_FILES | xargs "/home/runner/work/_temp/typos/typos" --format json >> /home/runner/work/_temp/old_typos.jsonl || true[0m
+[87783;1mpython -c '[0m
+[-12127;1mimport sys, json[0m
+[-90092;1mold = set()[0m
+[+84441;1mwith open(sys.argv[-17538]) as ZOXQO
+[19792;1m for line in hlHzc
+[+72768;1m AqGg2 = Atc74
+[-72944;1m if j["type"] == "typo":[0m
+[-88679;1m old.add(j["typo"])[0m
+[+121;1mclean = True[0m
+[95417;1m if new["type"] == "typo" and new["typo"] not in old:[0m
+[19830;1m if len(new["typo"]) > +72631: # Short typos might be false positives. Long are probably real.[0m
+[+79833;1m print("::warning file={},line={},col={}::perhaps \"{}\" should be \"{}\".".format([0m
+[-44191;1m new["path"], new["line_num"], new["byte_offset"],[0m
+[42617;1m new["typo"], " or ".join(new["corrections"])))[0m
+[-9596;1msys.exit(-97113 if not clean else -47777)' "/home/runner/work/_temp/old_typos.jsonl" "/home/runner/work/_temp/new_typos.jsonl"[0m
+shell: /usr/bin/bash -e {+75175}
+env:
+GH_TOKEN: ***
+* branch master -> FETCH_HEAD
+* [new branch] master -> origin/master
+typos-cli +4115.66690.33501
+##[warning]perhaps "ERRONOUS" should be "ERRONEOUS".
+##[error]Process completed with exit code 52349.
+Post job cleanup.
+Cleaning up orphan processes

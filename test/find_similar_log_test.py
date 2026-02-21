@@ -266,10 +266,10 @@ class SelfTrainTester:
             client_name (str): the name of the client which test data is being used.
         """
         # Read the list of all test log files and generated test log files
-        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_internal/{client_name}/test")
+        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_balanced/{client_name}/test")
         generated_log_paths = self.collect_all_files_from_folder(
-            f"dataset/train_test_internal/{client_name}/generate_test_log")
-        
+            f"dataset/train_test_balanced/{client_name}/generate_test_log")
+
         # Check if client involve in training
         if client_name in self.train_clients:
             is_train_client = True
@@ -561,9 +561,9 @@ class PreTrainTester:
             client_name (str): the name of the client which test data is being used.
         """
         # Read the list of all test log files and generated test log files
-        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_internal/{client_name}/test")
+        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_balanced/{client_name}/test")
         generated_log_paths = self.collect_all_files_from_folder(
-            f"dataset/train_test_internal/{client_name}/generate_test_log")
+            f"dataset/train_test_balanced/{client_name}/generate_test_log")
 
         # Collect all original logs and get their embedding.
         original_logs = []
@@ -638,9 +638,9 @@ class PreTrainTester:
             client_name (str): the name of the client whose dataset being tested.
         """
         # Read the list of all test log files and generated test log files
-        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_internal/{client_name}/test")
+        test_paths = self.collect_all_files_from_folder(f"dataset/train_test_balanced/{client_name}/test")
         generated_log_paths = self.collect_all_files_from_folder(
-            f"dataset/train_test_internal/{client_name}/generate_test_log")
+            f"dataset/train_test_balanced/{client_name}/generate_test_log")
         # Collect all original logs and get their embedding.
         original_logs = []
         for test_path in test_paths:
@@ -694,11 +694,11 @@ class PreTrainTester:
 
 
 if __name__ == "__main__":
-    test_clients = ["maryangel101", "d2klab", "logsage"]
+    test_clients = ["client_1", "client_2", "client_3"]
 
     # Test self-trained model
-    model_path = "models/2_clients_2_context_50_5_epochs_4_neg"
-    train_clients = ["maryangel101", "d2klab"]
+    model_path = "models_balanced/20_3_epochs_300_dimensions_2_context_5_negative"
+    train_clients = ["client_1", "client_2", "client_3"]
     self_train_tester = SelfTrainTester(train_clients=train_clients, test_clients=test_clients, model_path=model_path)
     self_train_tester.run()
 

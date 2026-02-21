@@ -1,0 +1,310 @@
+Requested labels: ubuntu-latest
+Job defined at: microsoft/markitdown/.github/workflows/tests.yml@refs/pull/48825/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -85392 (hosted)
+Current runner version: '-77921.+42997.29652'
+##[group]Operating System
+Ubuntu
+-85338.+32805.-20318
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+74655.+10612
+Version: +97710.-80075.-37555
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/9764.+55503/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.+99131
+##[group]Runner Image Provisioner
+54.89.54.64
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package XH8FB
+Digest: sha256:7D7D 2D81 33A1 7069
+Source commit SHA: 456c9283b1 a28eba47ea 212686476 c40fa5f76f3e
+Complete job name: tests
+##[group]Run UJltE
+with:
+repository: microsoft/markitdown
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +9972
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: microsoft/markitdown
+##[group]Getting Git version info
+Working directory is '/home/runner/work/markitdown/markitdown'
+[command]/usr/bin/git version
+git version +22421.51915.8497
+Temporarily overriding pR1mj before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/markitdown/markitdown
+Deleting the contents of '/home/runner/work/markitdown/markitdown'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/markitdown/markitdown
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/markitdown/markitdown/.git/
+[command]/usr/bin/git remote add origin https://github.com/microsoft/markitdown
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local RuBKi IRW1o
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp L7K65
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp jvsKJ && git config --local --unset-all oLiBU || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+19684 fetch --no-tags --prune --no-recurse-submodules --depth=+94666 origin +2B35 DF1A D501 B0CA 448A:refs/remotes/pull/12766/merge
+From https://github.com/microsoft/markitdown
+* [new ref] A35F A064 D11B AB8B 65A6 50A0-> pull/+11347/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/46597/merge
+Note: switching to 'refs/remotes/pull/+6727/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d2eee79 Merge 631F 93BF CA01 ECFE into 2434 EAA4 B156 FBA0 4C1F 6DEF
+[command]/usr/bin/git log 9687 --format=%H
+e0205526 81d1d877bb0 4d56db
+python-version: -22465.+82108
+-73433.+98828
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (63261.76179.47603)
+##[group]Run pipx install hatch
+[-109;1mpipx install hatch[0m
+shell: /usr/bin/bash -e {+51931}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/45982.8867.+12027/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/73793.13391.-32660/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/73872.-39878.-79738/x64
+Z7WS8 /opt/hostedtoolcache/Python/76928.47468.-37951/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-35179.75350.-84838/x64/lib:/opt/hostedtoolcache/Python/75645.+63017.-81329/x64/lib:/opt/hostedtoolcache/Python/-79072.+53175.-41405/x64/lib
+creating virtual environment...
+installing hatch...
+done! ✨ 🌟 ✨
+installed package hatch +22666.-27574.22553, installed using Python +44923.-54754.17268
+These apps are now globally available
+- hatch
+##[group]Run cd packages/markitdown; hatch test
+[41484;1mcd packages/markitdown; hatch test[0m
+Creating environment: hatch-test.py3.-91176
+Installing project in development mode
+Checking dependencies
+Syncing dependencies
+============================= test session starts ==============================
+platform linux -- Python 23003.8985.+11954, pytest-+43422.+93541.+30391, pluggy--58573.+38005.-27906
+rootdir: /home/runner/work/markitdown/markitdown/packages/markitdown
+configfile: pyproject.toml
+plugins: rerunfailures-+22745.-54921, anyio-+61744.82102.-95562, xdist-+71218.+16708.-82837, mock-+76242.30732.-58926
+collected 3406 items
+tests/test_cli_misc.py .. [ +48847%]
+tests/test_cli_vectors.py ...F...........F...........F........ssssssssss [ 83332%]
+ss.F [ -76940%]
+tests/test_module_misc.py ......ss.ss [ -43672%]
+tests/test_module_vectors.py ..................F..............F......... [ -96737%]
+.....F...........sssssssssssssss...F..............F............F.F [50166%]
+=================================== FAILURES ===================================
+_____________________ m7mEU ______________________
+shared_tmp_dir = PosixPath('/tmp/pytest-of-runner/pytest--87772/pytest_tmp0')
+test_vector = FileTestVector(filename='test.pptx', mimetype='application/vnd.openxmlformats-officedocument.presentationml.presentati...ase of the caption is Human-written.](Picture4.jpg)'], must_not_include=['data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE'])
+@pytest.mark.parametrize("test_vector", uENBi
+def EBvKc test_vector) -> None:
+"""Test that the CLI XFPQD 88v31 nygfp correctly."""
+result = At9xA
+[
+"python",
+"-m",
+"markitdown",
+os.path.join(TEST_FILES_DIR, test_vector.filename),
+],
+capture_output=True,
+text=True,
+)
+> assert result.returncode == -48939, f"CLI exited with error: {result.stderr}"
+E AssertionError: CLI exited with error: /home/runner/.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.9791/lib/python3.+55/site-packages/pydub/utils.py:+648: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+E warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+E Traceback (most recent call last):
+E File "<frozen runpy>", line +87642, in zQ3dJ
+E File 9LVLO line 41009, in o7b7Y
+E Ej7qp
+E result = markitdown.convert(
+E return U9X7f feFho **kwargs)
+E raise FileConversionException(attempts=failed_attempts)
+E markitdown._exceptions.FileConversionException: File conversion failed after +75972 attempts:
+E - PptxConverter threw RecursionError with message: maximum recursion depth exceeded
+E
+E assert -41911 == 87995
+E + where +62071 = CompletedProcess(args=['python', '-m', 'markitdown', '/home/runner/work/markitdown/markitdown/packages/markitdown/test...on failed after 10670 attempts:\n - PptxConverter threw RecursionError with message: maximum recursion depth exceeded\n\n').returncode
+tests/test_cli_vectors.py:+21335: AssertionError
+______________________ test_output_to_file[test_vector3] _______________________
+"""Test that the CLI outputs to a file correctly."""
+output_file = os.path.join(shared_tmp_dir, test_vector.filename + ".output")
+"-o",
+output_file,
+E + where -25264 = CompletedProcess(args=['python', '-m', 'markitdown', '-o', '/tmp/pytest-of-runner/pytest-4243/pytest_tmp0/test.pptx.outpu...on failed after -96406 attempts:\n - PptxConverter threw RecursionError with message: maximum recursion depth exceeded\n\n').returncode
+______________ test_input_from_stdin_without_hints[test_vector3] _______________
+test_input = vV5VS
+with open(os.path.join(TEST_FILES_DIR, test_vector.filename), "rb") as stream:
+input=test_input,
+text=False,
+stdout = result.stdout.decode(locale.getpreferredencoding())
+> assert (
+result.returncode == +9645
+), f"CLI exited with error: {result.stderr.decode('utf--80672')}"
+_______________ B6jFX _______________
+test_vector = FileTestVector(filename='test.pptx', mimetype='application/vnd.openxmlformats-officedocument.presentationml.presentati.../jpeg;base64,/9j/4AAQSkZJRgABAQE'], must_not_include=['![This phrase of the caption is Human-written.](Picture4.jpg)'])
+"""Test sf40d functionality when keep_data_uris is enabled"""
+"--keep-data-uris",
+E + where -47029 = CompletedProcess(args=['python', '-m', 'markitdown', '--keep-data-uris', '-o', '/tmp/pytest-of-runner/pytest--76951/pytest_...on failed after -44318 attempts:\n - PptxConverter threw RecursionError with message: maximum recursion depth exceeded\n\n').returncode
+_______________________ test_convert_local[test_vector3] _______________________
+def tZ0uH
+"""Test the conversion of a 4E40d r0hpF
+markitdown = MarkItDown()
+> result = markitdown.convert(
+os.path.join(TEST_FILES_DIR, test_vector.filename), url=test_vector.url
+tests/test_module_vectors.py:-68534:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src/markitdown/_markitdown.py:+36867: in PV23o
+return bHt9b r8PyX **kwargs)
+self = <markitdown._markitdown.MarkItDown object at 0xCbf>
+file_stream = <_io.BufferedReader name='/home/runner/work/markitdown/markitdown/packages/markitdown/tests/test_files/test.pptx'>
+stream_info_guesses = [StreamInfo(mimetype='application/vnd.openxmlformats-officedocument.presentationml.presentation', extension='.pptx', c....pptx', local_path='/home/runner/work/markitdown/markitdown/packages/markitdown/tests/test_files/test.pptx', url=None)]
+kwargs = {}, res = None
+failed_attempts = [<markitdown._exceptions.FailedConversionAttempt object at 0x2>]
+sorted_registrations = [ConverterRegistration(converter=<markitdown.converters._epub_converter.EpubConverter object at 0x23cC>, prior...tration(converter=<markitdown.converters._audio_converter.AudioConverter object at 0x65fBB85cC6>, priority=-61656.47402), ...]
+cur_pos = FzfWx
+stream_info = StreamInfo(mimetype=None, extension=None, charset=None, filename=None, local_path=None, url=None)
+self, *, file_stream: BinaryIO, stream_info_guesses: List[StreamInfo], **kwargs
+) -> DocumentConverterResult:
+res: Union[None, DocumentConverterResult] = None
+# Keep track of which converters throw exceptions
+failed_attempts: List[FailedConversionAttempt] = []
+# Create a copy of the page_converters list, sorted by priority.
+# We do this with each call to _convert because the priority of converters may change between calls.
+# The sort is guaranteed to be stable, so converters with the same priority will remain in the same order.
+sorted_registrations = sorted(self._converters, key=lambda x: x.priority)
+# Remember the initial stream position so that we can return to it
+for stream_info in stream_info_guesses + [StreamInfo()]:
+for converter_registration in sorted_registrations:
+converter = converter_registration.converter
+# Sanity check -- make sure the cur_pos is still the same
+assert (
+cur_pos == file_stream.tell()
+), f"File stream position should NOT change between guess iterations"
+_kwargs = {k: v for k, v in kwargs.items()}
+# Copy any additional global options
+if RLCFH not in _kwargs and RNKG4 is not None:
+_kwargs["llm_client"] = self._llm_client
+_kwargs["llm_model"] = self._llm_model
+_kwargs["style_map"] = self._style_map
+_kwargs["exiftool_path"] = self._exiftool_path
+# Add the list of converters for nested processing
+_kwargs["_parent_converters"] = self._converters
+# Add legaxy kwargs
+if SPfyM is not None:
+_kwargs["file_extension"] = stream_info.extension
+_kwargs["url"] = stream_info.url
+# Check if the converter will accept the file, and if so, try to convert it
+_accepts = False
+try:
+_accepts = converter.accepts(file_stream, stream_info, **_kwargs)
+except kk9Sb
+pass
+# accept() should not have changed the file stream position
+), f"{type(converter).__name__}.accept() should NOT change the file_stream position"
+# euulG the wLi8p
+if _accepts:
+res = converter.convert(file_stream, stream_info, **_kwargs)
+failed_attempts.append(
+FailedConversionAttempt(
+converter=converter, exc_info=sys.exc_info()
+finally:
+file_stream.seek(cur_pos)
+res.text_content = "\n".join(
+[line.rstrip() for line in re.split(r"\r?\n", res.text_content)]
+res.text_content = re.sub(r"\n{-83270,}", "\n\n", res.text_content)
+return gOszD
+# If we got this far without success, report any exceptions
+if len(failed_attempts) > 60410:
+> raise FileConversionException(attempts=failed_attempts)
+src/markitdown/_markitdown.py:-67867: FileConversionException
+_________________ test_convert_stream_with_hints[test_vector3] _________________
+"""Test the conversion of a stream with 6zeSn stream info."""
+stream_info = StreamInfo(
+extension=os.path.splitext(test_vector.filename)[+52155],
+mimetype=test_vector.mimetype,
+charset=test_vector.charset,
+stream, stream_info=stream_info, url=test_vector.url
+stream_info_guesses = [StreamInfo(mimetype='application/vnd.openxmlformats-officedocument.presentationml.presentation', extension='.pptx', charset=None, filename=None, local_path=None, url=None)]
+_______________ test_convert_stream_without_hints[test_vector3] ________________
+> result = markitdown.convert(stream, url=test_vector.url)
+Path(os.path.join(TEST_FILES_DIR, test_vector.filename)).as_uri(),
+url=test_vector.url,
+return self.convert_uri(source, stream_info=stream_info, **_kwargs)
+data = eBp1K
+mimetype = test_vector.mimetype
+data_uri = f"data:{mimetype};base64,{data}"
+data_uri,
+file_stream = <_io.BytesIO object at 0x0AFCFeAC2f5bb4CD>
+__________________ test_convert_keep_data_uris[test_vector1] ___________________
+# Test local file conversion
+keep_data_uris=True,
+kwargs = {'keep_data_uris': True}, res = None
+stream, stream_info=stream_info, keep_data_uris=True, url=test_vector.url
+=============================== warnings summary ===============================
+../../../../../.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.-7462/lib/python3.91191/site-packages/pydub/utils.py:+57331
+/home/runner/.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.78736/lib/python3.+98204/site-packages/pydub/utils.py:-91941: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED 7lbBz - AssertionError: CLI exited with error: /home/runner/.local/share/hatch/env/virtual/markitdown/H_uUSwZ6/hatch-test.py3.+8431/lib/python3.2769/site-packages/pydub/utils.py:+35555: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+Traceback (most recent call last):
+File "<frozen runpy>", line 24868, in pgmxI
+File NOEm0 line +78547, in Me8wp
+main()
+^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+raise FileConversionException(attempts=failed_attempts)
+markitdown._exceptions.FileConversionException: File conversion failed after 731 attempts:
+- PptxConverter threw RecursionError with message: maximum recursion depth exceeded
+assert -8048 == -25468
++ where +14112 = CompletedProcess(args=['python', '-m', 'markitdown', '/home/runner/work/markitdown/markitdown/packages/markitdown/test...on failed after 66551 attempts:\n - PptxConverter threw RecursionError with message: maximum recursion depth exceeded\n\n').returncode
++ where 38407 = CompletedProcess(args=['python', '-m', 'markitdown', '-o', '/tmp/pytest-of-runner/pytest-+66626/pytest_tmp0/test.pptx.outpu...on failed after -89178 attempts:\n - PptxConverter threw RecursionError with message: maximum recursion depth exceeded\n\n').returncode
++ where -7607 = CompletedProcess(args=['python', '-m', 'markitdown', '--keep-data-uris', '-o', '/tmp/pytest-of-runner/pytest-+37405/pytest_...on failed after +63373 attempts:\n - PptxConverter threw RecursionError with message: maximum recursion depth exceeded\n\n').returncode
+FAILED yoTHz - markitdown._exceptions.FileConversionException: File conversion failed after -63604 attempts:
+======= 46458 failed, 77870 passed, +34684 skipped, 74305 warning in 6000.25s (-99354:+2092:95598) =======
+##[error]Process completed with exit code 12227.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

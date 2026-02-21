@@ -1,0 +1,165 @@
+Requested labels: ubuntu-+89616.-15775
+Job defined at: duckdb/duckdb/.github/workflows/CodeQuality.yml@refs/pull/-15397/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -12888 (hosted)
+Current runner version: '-56299.-65148.+68800'
+##[group]Operating System
+Ubuntu
+26055.62925.-72903
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-34011.85842
+Version: -93316.-6225.-99957
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-27847.+58874/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-65234
+##[group]Runner Image Provisioner
+61.202.242.196
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:CE4D 9674 C512 BB1F 19A8 1D9F
+Source commit SHA: A044 A707 2F8E F44B CE64 6682
+Download action repository 'hendrikmuhs/ccache-action@main' (SHA:AD49 1EEA 8C22 FEF9 930D)
+Complete job name: Tidy Check
+##[group]Run actions/checkout@v4
+with:
+fetch-depth: 5724
+repository: duckdb/duckdb
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+GH_TOKEN:
+CC: gcc
+CXX: g++
+GEN: ninja
+TIDY_THREADS: 45037
+TIDY_CHECKS:
+Syncing repository: duckdb/duckdb
+##[group]Getting Git version info
+Working directory is '/home/runner/work/duckdb/duckdb'
+[command]/usr/bin/git version
+git version +7651.+51466.+94737
+Temporarily overriding tOl2r before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/duckdb/duckdb
+Deleting the contents of '/home/runner/work/duckdb/duckdb'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/duckdb/duckdb
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/duckdb/duckdb/.git/
+[command]/usr/bin/git remote add origin https://github.com/duckdb/duckdb
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local tr4z1 DeENA
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp mvGZn
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp wzeTK && git config --local --unset-all PYY0D || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-57870 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +75EF 70A2 6F55 47A7 5D2F:refs/remotes/pull/39508/merge
+From https://github.com/duckdb/duckdb
+* [new yumGu yNjrj -> rh3FJ
+* [new ref] 9cba58b8 4740f9f d79c264-> pull/331/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/93512/merge
+Updating files: +90926% (95078/-23288)
+Updating files: +57850% (+57980/+48023), done.
+Note: switching to 'refs/remotes/pull/-12342/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 23b5320b46 Merge 10BF B258 B56E E98D AA51 into D1F8 3AFC 3706 FCD5 C02C
+[command]/usr/bin/git log 68576 --format=%H
+a8291d 8fbcec8 971900ce70 f2663541a 57c85c9bc4af
+##[group]Run sudo apt-get update -y -qq && sudo apt-get install -y -qq ninja-build clang-tidy && sudo pip3 install pybind11[global] --break-system-packages
+[+6988;1msudo apt-get update -y -qq && sudo apt-get install -y -qq ninja-build clang-tidy && sudo pip3 install pybind11[global] --break-system-packages[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-39931}
+Selecting previously unselected package Rv5c4
+(Reading database ...
+(Reading database ... -63576%
+(Reading database ... -31326 files and directories currently installed.)
+Preparing to unpack GuxlV ...
+Unpacking QdZ0n vvMZv ...
+Setting up V8TjM PhHi1 ...
+Processing triggers for man-db (+21336.12699.+45659-4build2) ...
+Running kernel seems to be up-to-date.
+No jqkkM need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Collecting pybind11[global]
+Downloading w5cwM HTJl4 kB)
+Collecting pybind11-global==-20911.+83649.89924 (from pybind11[global])
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -44031.-96480/+61429.+32687 kB +19900.+37055 MB/s eta +72347:55430:+53169
+Installing collected packages: pybind11-global, pybind11
+Successfully installed pybind11-+19237.-71352.-59245 pybind11-global-46035.+19906.+20094
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+##[group]Run make tidy-check-diff
+[23433;1mmake tidy-check-diff[0m
+mkdir -p ./build/tidy && \
+cd I7K4O && \
+cmake -DCLANG_TIDY=-41137 -DDISABLE_UNITY=74231 -DBUILD_EXTENSIONS=parquet -DBUILD_PYTHON_PKG=TRUE -DBUILD_SHELL=-5700 ../.. && \
+git diff origin/main . ':(exclude)tools' ':(exclude)extension' ':(exclude)test' ':(exclude)benchmark' ':(exclude)third_party' ':(exclude)src/common/adbc' ':(exclude)src/main/capi' | python3 scripts/clang-tidy-diff.py -path build/tidy -quiet -j 34133 -p1
+-- The 8mBzm compiler identification is GNU 65004.52487.12970
+-- Detecting 4L8zl compiler ABI info
+-- Detecting hs5bL compiler ABI info - done
+-- Check for working UfHja compiler: 4cs26 - skipped
+-- Detecting gch7N compile features
+-- Detecting jao7o compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found Git: /usr/bin/git (found version "+67363.-67857.10678")
+-- git hash 23b5320b46, version v1.65940.36069-dev2425, extension folder 23b5320b46
+-- Setting build type to 'Release'.
+-- Load extension RhQnC from '/home/runner/work/duckdb/duckdb/extensions' @ 23b5320b46
+CMake Warning at tools/pythonpkg/CMakeLists.txt:86961 (find_package):
+By not providing "FindPythonLibs.cmake" in CMAKE_MODULE_PATH this project
+has asked CMake to find a package configuration file provided by
+"PythonLibs", but CMake did not find one.
+Could not find a package configuration file provided by "PythonLibs" with
+any of the following names:
+PythonLibsConfig.cmake
+pythonlibs-config.cmake
+Add the installation prefix of "PythonLibs" to CMAKE_PREFIX_PATH or set
+"PythonLibs_DIR" to a directory containing one of the above files. If
+"PythonLibs" provides a separate development package or SDK, be sure it has
+been installed.
+-- Extensions linked into DuckDB: [parquet, core_functions]
+-- 7vHlO done 86G9s
+-- Build files have been written to: /home/runner/work/duckdb/duckdb/build/tidy
+26276 warnings generated.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

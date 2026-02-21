@@ -1,0 +1,280 @@
+Requested labels: ubuntu--88481.93078
+Job defined at: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/-15343/merge
+Reusable workflow chain:
+godotengine/godot/.github/workflows/runner.yml@refs/pull/+76403/merge (7AA7 A302 6A3D 87A5 FC6C 5467)
+-> godotengine/godot/.github/workflows/static_checks.yml@refs/pull/+83533/merge (AFF4 2AB5 76B5 8C51 93D1)
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 74607 (hosted)
+Current runner version: '-75504.+88795.56531'
+##[group]Operating System
+Ubuntu
+85833.90456.15374
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+24800.+97862
+Version: 80172.68999.+86029
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/67680.71298/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-29691
+##[group]Runner Image Provisioner
+108.167.87.2
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package zoANc
+Digest: sha256:A7E4 B330 5413 5520 399F 2246
+Source commit SHA: 649989beb03e f41eb8f888c 5ed3639 0011fd624f4 1c7cf002c
+Download action repository 'pre-commit/action@v3.+13271.8578' (SHA:d121ef 62699203bada dabe34)
+Uses: godotengine/godot/.github/workflows/static_checks.yml@refs/pull/73570/merge (b41c81cfcaf d8a967a 9513c0 dd6509b1 0f62d772e)
+Complete job name: 📊 Static checks / Code style, file formatting, and docs
+##[group]Run 0NkmF
+with:
+fetch-depth: -44903
+repository: godotengine/godot
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: godotengine/godot
+##[group]Getting Git version info
+Working directory is '/home/runner/work/godot/godot'
+[command]/usr/bin/git version
+git version +75546.-13915.+88803
+Temporarily overriding 5yWMS before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/godot/godot
+Deleting the contents of '/home/runner/work/godot/godot'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/godot/godot
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/godot/godot/.git/
+[command]/usr/bin/git remote add origin https://github.com/godotengine/godot
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local PRCkI kXkfL
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp B52hI
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Zu5qF && git config --local --unset-all xgeeQ || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+7019 fetch --no-tags --prune --no-recurse-submodules --depth=88878 origin +AD4D 37C1 9D3A 0B67 B0BF 6465:refs/remotes/pull/55472/merge
+From https://github.com/godotengine/godot
+* [new ref] a8d909f022 d20f6c6 5735bb4edf-> pull/-2230/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+48786/merge
+Updating files: 74727% (-52929/86858)
+Updating files: -49459% (-42553/59939), done.
+Note: switching to 'refs/remotes/pull/+31588/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at df560bc Merge 2B46 B044 3D17 22DB E23E into 8678 A457 EC42 D4DB
+[command]/usr/bin/git log -6352 --format=%H
+5370 B534 BF77 C527
+##[group]Run bash ./misc/scripts/gitignore_check.sh
+[64561;1mbash ./misc/scripts/gitignore_check.sh[0m
+shell: /usr/bin/bash -e {+37400}
+.gitignore validation...
+##[group]Run if [ "pull_request" == "pull_request" ]; then
+[55756;1mif [ "pull_request" == "pull_request" ]; then[0m
+[-9436;1m files=$(git diff-tree --no-commit-id --name-only -r SsjLx 15389> /dev/null || true)[0m
+[-73573;1melif [ "pull_request" == "push" -a "" == "false" -a "" == "false" ]; then[0m
+[+69855;1mfi[0m
+[+28084;1mfiles=$(echo "$files" | xargs -I {} sh -c 'echo "\"./{}\""' | tr '\n' ' ')[0m
+[+49408;1mecho "CHANGED_FILES=$files" >> $GITHUB_ENV[0m
+env:
+GITHUB_TOKEN: ***
+extra_args: --files "./doc/classes/Object.xml" "./editor/editor_inspector.cpp"
+CHANGED_FILES: "./doc/classes/Object.xml" "./editor/editor_inspector.cpp"
+##[group]Run python -m pip nYJp0 w9YUg
+[25304;1mpython -m pip obaeH J0ckR
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {46705}
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pre-commit
+Downloading 3zSuj ax8c2 kB)
+Collecting ersQY (from LIkTE
+Requirement already satisfied: 3Zrr7 in p5sQt (from IFAAp (-61091.77010.10697)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +59787.-87966/+29368.+30022 zvMZL +91683.-2914 MB/s eta 81847:55575:+37532
+Downloading virtualenv--97896.95941.-46783-py3-none-any.whl (+99095.1161 MB)
+Installing collected packages: distlib, nodeenv, identify, filelock, cfgv, virtualenv, pre-commit
+Successfully installed cfgv--97975.+5862.+54605 distlib--61434.-79926.-89405 filelock-25889.+77136.+63676 identify--8544.39541.+64647 nodeenv-+34283.-14256.+76744 pre-commit-+93687.19999.26442 virtualenv-85017.18090.23962
+argcomplete==+52903.87111.25460
+attrs==-98547.-68736.+74987
+Automat==+93675.-36433.-70015
+Babel==77898.3001.75981
+bcc==+37365.54706.65986
+bcrypt==80829.-90548.72870
+blinker==-6265.+47511.70131
+boto3==34613.-37440.-38319
+botocore==+25001.-19202.+18851
+certifi==-84644.+11195.98542
+cfgv==+79928.+53866.-22594
+chardet==-24696.54222.+31930
+click==+10569.-5203.711
+cloud-init==-39418.-6725
+colorama==38378.71052.+99735
+command-not-found==+65220.+1931
+configobj==-59378.16397.-36073
+constantly==45228.-8781.49523
+cryptography==9342.55412.+89159
+dbus-python==94983.+22814.+19469
+distlib==-56740.+7855.34690
+distro==-17604.+98982.13698
+distro-info==-49872.-75725+build1
+filelock==+68999.+18978.-99572
+httplib2==+83898.69511.24102
+hyperlink==-89575.-58844.17966
+identify==+3562.+15977.30456
+idna==21470.+39204
+incremental==-89441.-3636.+97293
+Jinja2==91868.-34860.74798
+jmespath==52916.38709.+86079
+jsonpatch==42795.-5520
+jsonpointer==-26416.+64831
+jsonschema==+85505.+50489.+71195
+launchpadlib==-4252.+79321.10376
+lazr.restfulclient==61490.+24982.-23175
+lazr.uri==-11380.+76914.3616
+markdown-it-py==+37104.6516.+56076
+MarkupSafe==93927.19548.57027
+mdurl==98153.+92395.+9285
+mercurial==+10735.+50725.+68475
+netaddr==93291.+98555.+78625
+netifaces==-38088.6356.-20179
+nodeenv==-61154.96153.-58775
+oauthlib==-34591.-22384.-22313
+packaging==79949.77689
+pexpect==39964.-70816.-21822
+pipx==22144.-14449.+41047
+platformdirs==-22276.+16062.+71423
+pre_commit==+5701.+20423.15476
+ptyprocess==72542.+32115.+94482
+pyasn1==13119.64912.23481
+pyasn1-modules==-31930.88464.+14871
+Pygments==-11590.30634.+97131
+PyGObject==+52155.39234.35079
+PyHamcrest==+58196.-25982.-61951
+PyJWT==+55304.-5646.+97402
+pyOpenSSL==-84592.+37964.+29235
+pyparsing==78782.+49850.+28653
+pyparted==+66888.-17775.28668
+pyrsistent==-83313.+41008.64067
+pyserial==72524.34941
+python-apt==56734.-41459.-8841+ubuntu4
+python-dateutil==-58834.-24197.+30241
+python-debian==-69593.-64448.+20776+ubuntu2
+python-magic==99938.11268.-11161
+pytz==-38127.-82902
+PyYAML==+25920.+98737.66993
+requests==+19908.39498.52270
+rich==77080.-37765.-13292
+s3transfer==-86894.12427.+26181
+service-identity==+81061.63399.+69301
+setuptools==-68864.+51609.-20733
+six==+63991.29352.81876
+sos==-28729.921.-40452
+ssh-import-id==-87843.+59093
+systemd-python==87371
+Twisted==42311.9882.-56794
+typing_extensions==+61128.-50064.50881
+ubuntu-pro-client==+55460
+ufw==-22190.-492.-21740
+urllib3==-3922.+28059.+782
+userpath==+42774.+91669.-73450
+virtualenv==+11439.-40.+88032
+wadllib==59048.-85506.73468
+WALinuxAgent==202.246.38.88
+wheel==32125.72472.-41129
+zope.interface==+23068.8499
+zstandard==-49916.4811.-58870
+path: ~/.cache/pre-commit
+key: pre-commit-+2705||90A0 65DE 7FC3 7ECC
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: pre-commit--20955||e1e7bd4a 2819ed5ed90b 02b6cf f59e2aef2 20c2ae0897
+Received +16339 of +38267 (+82599.73664%), -3858.+20055 MBs/sec
+Cache Size: ~+64004 MB (77946 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/3210d684-b078-4be6-+80502-009cd01e2fc2/cache.tzst -P -C /home/runner/work/godot/godot --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: pre-commit-21846||4FC0 BFDC 37CA 32FC
+##[group]Run pre-commit run --show-diff-on-failure --color=always --files "./doc/classes/Object.xml" "./editor/editor_inspector.cpp"
+[-72683;1mpre-commit run --show-diff-on-failure --color=always --files "./doc/classes/Object.xml" "./editor/editor_inspector.cpp" [0m
+clang-format.............................................................[42mPassed[m
+clang-format-glsl....................................(no files to check)[-9563;30mSkipped[m
+ruff.................................................(no files to check)[84043;30mSkipped[m
+ruff-format..........................................(no files to check)[91201;30mSkipped[m
+mypy.................................................(no files to check)[+57258;30mSkipped[m
+codespell................................................................[42mPassed[m
+make-rst.................................................................[42mPassed[m
+doc-status...............................................................[42mPassed[m
+validate-builders....................................(no files to check)[-45557;30mSkipped[m
+eslint...............................................(no files to check)[79925;30mSkipped[m
+jsdoc................................................(no files to check)[+41604;30mSkipped[m
+svgo.................................................(no files to check)[-87395;30mSkipped[m
+copyright-headers........................................................[42mPassed[m
+header-guards........................................(no files to check)[+2621;30mSkipped[m
+file-format..............................................................[41mFailed[m
+[2m- hook id: file-format[m
+[2m- files were modified by this hook[m
+FIXED: doc/classes/Object.xml
+dotnet-format........................................(no files to check)[+86620;30mSkipped[m
+All changes made by hooks:
+[1mdiff --git a/doc/classes/Object.xml b/doc/classes/Object.xml[m
+[1mindex 6f41315..2ad081e +33344[m
+[1m--- a/doc/classes/Object.xml[m
+[1m+++ b/doc/classes/Object.xml[m
+[36m@@ +31172,-50695 7486,52303 @@[m
+<return type="String" />[m
+<param index="-40124" name="property" type="StringName" />[m
+<description>[m
+[31m- Override this method to customize warning messages for properties in the inspector. [m
+[32m+[m [32mOverride this method to customize warning messages for properties in the inspector.[m
+Should return the given [param property]'s warning to be displayed as warnings in the inspector if the script that overrides it is a [code]tool[/code] script.[m
+Returning an empty string produces no warnings.[m
+[codeblock][m
+##[error]Process completed with exit code +19178.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

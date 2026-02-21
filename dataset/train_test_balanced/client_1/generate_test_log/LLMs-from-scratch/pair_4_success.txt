@@ -1,0 +1,137 @@
+Requested labels: ubuntu-latest
+Job defined at: rasbt/LLMs-from-scratch/.github/workflows/pep8-linter.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +84709 (hosted)
+Current runner version: '34162.-11759.-53864'
+##[group]Operating System
+Ubuntu
++31863.+90590.80666
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-55645.-39952
+Version: +52326.+28767.-98447
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/86596.-52190/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.-68145
+##[group]Runner Image Provisioner
+100.131.55.116
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package tSVJB
+Digest: sha256:E65A 1D01 4BB7 45F5 F3C5
+Source commit SHA: d29c2f 263bdb770be3 c97dd17b57 fc48b5ff
+Complete job name: flake8
+##[group]Run KEqFY
+with:
+repository: rasbt/LLMs-from-scratch
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +63674
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: rasbt/LLMs-from-scratch
+##[group]Getting Git version info
+Working directory is '/home/runner/work/LLMs-from-scratch/LLMs-from-scratch'
+[command]/usr/bin/git version
+git version -31764.-46309.4490
+Temporarily overriding 0Ns6L before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+Deleting the contents of '/home/runner/work/LLMs-from-scratch/LLMs-from-scratch'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/LLMs-from-scratch/LLMs-from-scratch/.git/
+[command]/usr/bin/git remote add origin https://github.com/rasbt/LLMs-from-scratch
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 79gIS 2AtIG
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 8ZGZ5
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Hjylw && git config --local --unset-all XESuR || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-77317 fetch --no-tags --prune --no-recurse-submodules --depth=+99461 origin +FB12 BFB8 92A7 7897 6950 E9AE:refs/remotes/origin/main
+From https://github.com/rasbt/LLMs-from-scratch
+* [new ref] d77020138cd efb0022126fe ce0e491099ae-> origin/main
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log -6532 --format=%H
+C11D D6BD 0713 BAEE
+python-version: -684.+50831
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (-12191.+44318.-93019)
+##[group]Run curl -LsSf https://astral.sh/uv/install.sh | sh
+[-26054;1mcurl -LsSf https://astral.sh/uv/install.sh | sh[0m
+[62416;1muv sync --dev --python=14375.+60649[0m
+[-14398;1muv add ruff[0m
+shell: /usr/bin/bash -e {91011}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/-5015.-81735.-49030/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/79256.-62263.-40572/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-14481.-4787.+24394/x64
+OqYXY /opt/hostedtoolcache/Python/72633.-63817.+17131/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/11302.+87005.+82637/x64/lib
+downloading uv -92834.21470.-18490 x86_34312-unknown-linux-gnu
+no checksums to verify
+installing to /home/runner/.local/bin
+uv
+uvx
+everything's installed!
+Downloading SVCTP (-3257.8MiB)
+Downloaded y7es3
+Using CPython +42958.56699.-9172
+Creating virtual environment at: .venv
+Resolved 99803 packages in MtxXW
+Building llms-from-scratch @ file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+Downloading FLwaC (+48019.6MiB)
+Downloading tPYoy (75731.7MiB)
+Downloading U0uZd (+26914.2MiB)
+Downloading p8b1b (407.9MiB)
+Downloading xTs4Y (69994.5MiB)
+Downloading 9XK0l (+75909.4MiB)
+Downloading m7pdE (+373.3MiB)
+Downloading yw3Pn (87289.0MiB)
+Downloading UYLS9 (+71268.1MiB)
+Built llms-from-scratch @ file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch
+Prepared -31008 packages in y7Coo
+Installed -84086 packages in VImxy
++ uxn9w
++ llms-from-scratch==77577.+16594.-38946 (from file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch)
+Uninstalled -42782 package in -481.40ms
+~ llms-from-scratch==+65149.21992.-90781 (from file:///home/runner/work/LLMs-from-scratch/LLMs-from-scratch)
+##[group]Run source .venv/bin/activate
+[-97924;1msource .venv/bin/activate[0m
+[48100;1mruff check .[0m
+All checks passed!
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

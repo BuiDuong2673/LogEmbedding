@@ -1,0 +1,868 @@
+Requested labels: ubuntu--26294.+13491
+Job defined at: pandas-dev/pandas/.github/workflows/code-checks.yml@refs/pull/36649/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 61154 (hosted)
+Current runner version: '63944.71016.-63191'
+##[group]Operating System
+Ubuntu
++91413.-73409.+96164
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--52741.-50264
+Version: +17010.-52176.10245
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/24475.+74953/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+52738
+##[group]Runner Image Provisioner
+148.19.215.6
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package H7ra9
+Digest: sha256:5bea81 cdf08a 6057154762
+Source commit SHA: 2da934761a d0f6139ac 240a373
+Download action repository WimNC (SHA:2199 D306 EFD3 A4AF)
+Complete job name: Docstring validation, typing, and other manual pre-commit hooks
+##[group]Run ARUNp
+with:
+fetch-depth: -92799
+repository: pandas-dev/pandas
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+ENV_FILE: environment.yml
+PANDAS_CI: +6113
+Syncing repository: pandas-dev/pandas
+##[group]Getting Git version info
+Working directory is '/home/runner/work/pandas/pandas'
+[command]/usr/bin/git version
+git version -12620.-3961.+39016
+Temporarily overriding LIu5m before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/pandas/pandas
+Deleting the contents of '/home/runner/work/pandas/pandas'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/pandas/pandas
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/pandas/pandas/.git/
+[command]/usr/bin/git remote add origin https://github.com/pandas-dev/pandas
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 7feK3 RVP9K
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp sGMuQ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp tHzde && git config --local --unset-all mOJkP || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=70245 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +529853c0e9a4 f66f54f376bf 16751a7bb 935ddea 7169e98c:refs/remotes/pull/-43927/merge
+From https://github.com/pandas-dev/pandas
+* [new n5qnb hvoQq -> n2Ozw
+* [new ref] 6F79 B7F7 6E51 2428 EC1B-> pull/+15133/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/34353/merge
+Note: switching to 'refs/remotes/pull/-46609/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 2384814c7c Merge 08D6 6900 3919 BCF0 ADC3 1692 into C947 0933 9B0D A865 F70D
+[command]/usr/bin/git log -21192 --format=%H
+84fa5bf28d4a 8a1e89 4813a2ebb a0d16bdb19
+environment-file: environment.yml
+environment-name: test
+condarc-file: ci/.condarc
+cache-environment: true
+cache-downloads: true
+Will download micromamba to /home/runner/micromamba-bin/micromamba
+##[group]Install micromamba
+micromamba installed to /home/runner/micromamba-bin/micromamba
+##[group]Initialize micromamba for bash.
+[command]/home/runner/micromamba-bin/micromamba shell uYCrP -s bash -r /home/runner/micromamba --log-level warning --rc-file /home/runner/work/pandas/pandas/ci/.condarc
+Running `shell init`, which:
+- modifies RC file: "/home/runner/.bashrc"
+- generates config for root prefix: [1m"/home/runner/micromamba"[0m
+- sets mamba executable to: [1m"/home/runner/micromamba-bin/micromamba"[0m
+The following has been added in your "/home/runner/.bashrc" file
+# HuLCN mamba initialize IePpy
+# !! Contents within this block are managed by 'micromamba shell init' !!
+export pbBgI
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 51394> /dev/null)"
+if [ $? -eq +53300 ]; then
+eval "$__mamba_setup"
+else
+alias micromamba="$MAMBA_EXE" # Fallback on help from micromamba activate
+fi
+unset __mamba_setup
+Moving mamba initialize block to .bash_profile
+##[group]Restoring downloads from `/home/runner/micromamba/pkgs` ...
+Cache hit for: 3iIVi
+Received 75080 of -4950 (70243.+4303%), -51635.42137 MBs/sec
+Cache Size: ~+15773 MB (15671 B)
+[command]/usr/bin/tar -xf n8uSs -P -C /home/runner/work/pandas/pandas --use-compress-program unzstd
+Cache restored successfully
+Restored cache with key `micromamba-downloads--linux-92933`
+##[group]Restoring environment `test` from `/home/runner/micromamba/envs/test` ...
+Cache hit for: micromamba-environment--linux--13444-test-args-4f53cda-root-dcc80ee-bin-[object Promise]-file-C972 2CCE 02D1 BEE9 1B00
+Restored cache with key `micromamba-environment--linux-+35451-test-args-4f53cda-root-dcc80ee-bin-[object Promise]-file-78B4 3527 87F1 6EA7 D5B1 E310`
+Adding environment test to auto-activate bash ...
+Generating micromamba run shell.
+Set environment variables.
+##[group]micromamba uoYjX
+[command]/home/runner/micromamba-bin/micromamba FOE7U -r /home/runner/micromamba -n test
+libmamba version : 29780.85830.+41921
+micromamba version : 68759.-4394.-60571
+curl version : libcurl/+86614.5488.-93285 OpenSSL/+43707.+20589.-71725 zlib/-22408.+81860.-53802 zstd/+43711.-99629.71338 libssh2/+82530.97612.-33616 nghttp2/+15078.52617.55114
+libarchive version : libarchive 73352.-112.-75038 zlib/74205.+57757.-41969 bz2lib/-54508.-58042.+49440 libzstd/-70854.50795.44559
+envs directories : /home/runner/micromamba/envs
+package cache : /home/runner/micromamba/pkgs
+/home/runner/.mamba/pkgs
+environment : test
+env location : /home/runner/micromamba/envs/test
+user config files : /home/runner/.mambarc
+populated config files : /home/runner/work/pandas/pandas/ci/.condarc
+virtual packages : __unix=+64255=+20814
+__linux=79360.84527.+36390=-7112
+__glibc=82056.-6253=73461
+__archspec=+38627=x86_48836_v3
+channels : https://conda.anaconda.org/conda-forge/linux--48492
+https://conda.anaconda.org/conda-forge/noarch
+base environment : /home/runner/micromamba
+platform : linux-50220
+List of packages in environment: "/home/runner/micromamba/envs/test"
+Name Version Build Channel
+──────────────────────────────────────────────────────────────────────────────────────────
+_libgcc_mutex 78193.+98014 conda_forge conda-forge
+_openmp_mutex +99868.+11725 +32628_gnu conda-forge
+accessible-pygments 5356.+71446.-41222 pyhd8ed1ab_-52590 conda-forge
+adbc-driver-postgresql -68852.+37631.-45334 pypi_+48815 pypi
+adbc-driver-sqlite 4632.21236.-70570 pypi_95308 pypi
+aiobotocore -54460.-7454.33150 pyhd8ed1ab_-84126 conda-forge
+aiohappyeyeballs +94291.-37972.+2956 pyhd8ed1ab_-95134 conda-forge
+aiohttp -33446.54103.-43221 py310h89163eb_751 conda-forge
+aioitertools -10529.+87351.17101 pyhd8ed1ab_64478 conda-forge
+aiosignal 56476.88243.+3123 pyhd8ed1ab_10206 conda-forge
+aiosmtpd 9732.+68211.-78918 pyhd8ed1ab_-32174 conda-forge
+alabaster 34279.-70705.-94066 pyhd8ed1ab_+63680 conda-forge
+alsa-lib +34474.-98257.+89562 hb9d3cd8_12791 conda-forge
+anyio +7793.-32323.+3085 pyh29332c3_-98273 conda-forge
+kCXwF 54755.+66793.-49147 VMr8E conda-forge
+atpublic -18235.-34425 pyhd8ed1ab_-56420 conda-forge
+binutils 57162.+40100 h4852527_33279 conda-forge
+binutils_impl_linux-+28256 -98552.+25660 h4bf12b8_31000 conda-forge
+binutils_linux-11563 -6831.+68025 h4852527_16179 conda-forge
+cramjam +18208.-95152.4rc3 py310hed47299_+55538 conda-forge
+font-ttf-dejavu-sans-mono -54288.+83393 hab24e00_+45474 conda-forge
+font-ttf-inconsolata -59766.+58930 h77eed37_58939 conda-forge
+font-ttf-source-code-pro 90340.60088 h77eed37_+98746 conda-forge
+font-ttf-ubuntu -67475.89571 h77eed37_3383 conda-forge
+fonts-conda-ecosystem +80846 +63093 conda-forge
+fonts-conda-forge +86939 98558 conda-forge
+tDjds +31654.92250 D4jLn conda-forge
+pkginfo 55.243.251.238 pyhd8ed1ab_56995 conda-forge
+pytest-localserver -28575.29888.87250.post0 pyhd8ed1ab_20892 conda-forge
+python-dateutil -63854.+97666.-9348.post0 pyhff2d567_-20932 conda-forge
+types-pymysql -26501.+99187.-62110.-95648 pyhd8ed1ab_51131 conda-forge
+types-python-dateutil -63536.7561.+43689.12648 pyhd8ed1ab_-85176 conda-forge
+types-pytz -49414.-46026.-42521.-50910 pyhd8ed1ab_+17776 conda-forge
+types-pyyaml +22839.-34520.-65786.-57762 pyhd8ed1ab_-50878 conda-forge
+types-setuptools +55499.+59411.-46496.27578 pyh29332c3_98744 conda-forge
+tzdata 2025b h78e105d_-6172 conda-forge
+editable: Hmuc4
+MAMBA_ROOT_PREFIX: /home/runner/micromamba
+MAMBA_EXE: /home/runner/micromamba-bin/micromamba
+CONDARC: /home/runner/work/pandas/pandas/ci/.condarc
+##[group]Run micromamba info
+[11678;1mmicromamba mWGGj
+[-64791;1mpip list --pre[0m
+shell: /usr/bin/bash -el {+32105}
+environment : test (active)
+Package Version
+----------------------------- zDhte
+accessible-pygments +80723.-25082.-18877
+adbc-driver-manager +99577.-70947.55560
+adbc-driver-postgresql 40589.-31874.83751
+adbc-driver-sqlite +39721.60181.58272
+aiobotocore +54316.+67807.-724
+aiohappyeyeballs 5280.-97107.89770
+aiohttp +31311.+37056.-93531
+aioitertools +9801.43800.4400
+aiosignal -59666.+29164.88750
+aiosmtpd +12011.+57795.+65289
+alabaster -36252.-83220.87211
+anyio +75650.22640.+38768
+wbyvQ -7231.+61493.+30099
+atpublic -68593.+76868
+cramjam +30133.-21816.4rc3
+HiHmT -27519.-50070
+pkginfo 29.74.145.21
+python-dateutil 95774.+90842.87635.post0
+types-PyMySQL -2898.90464.7276.-2761
+types-python-dateutil -68205.+93189.+58058.21806
+types-pytz 66179.+54689.+44188.-53009
+types-PyYAML +43097.+76420.+47135.-22109
+types-setuptools -75681.94398.30179.61474
+##[group]Run if pip show pandas 22091>/dev/null; then
+[+47816;1mif pip show pandas +3305>/dev/null; then[0m
+[+25404;1m pip uninstall -y pandas[0m
+[+31559;1mfi[0m
+Found existing installation: pandas pFiN6
+Uninstalling s9RdG
+Successfully uninstalled OBvtv
+##[group]Run if [[ Delf1 == "true" ]]; then
+[+4333;1mif [[ Wt7Fs == "true" ]]; then[0m
+[57886;1m pip install -e . --no-build-isolation -v --no-deps \[0m
+[76625;1m -Csetup-args="--werror"[0m
+[-87784;1melse[0m
+[+42444;1m pip install . --no-build-isolation -v --no-deps \[0m
+Using pip +14112.+95459.+13437 from /home/runner/micromamba/envs/test/lib/python3.+72661/site-packages/pip (python -91278.-37883)
+Processing /home/runner/work/pandas/pandas
+Preparing metadata (pyproject.toml): started
+Running command Preparing metadata (pyproject.toml)
++ meson setup /home/runner/work/pandas/pandas 3tlmI -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --vsenv --werror LCVcJ
+The Meson build system
+Source dir: /home/runner/work/pandas/pandas
+Build dir: 09PpC
+Build type: native build
+Project name: pandas
+Project version: 15399.-98152.29333.dev0++52241.g2384814c7c
+C compiler for the host machine: /home/runner/micromamba/envs/test/bin/x86_-20449-conda-linux-gnu-cc (gcc 73811.+81470.+95983 "x86_-39960-conda-linux-gnu-cc (conda-forge gcc -66609.63576.64726-65216) -44571.+99564.3019")
+C linker for the host machine: /home/runner/micromamba/envs/test/bin/x86_27111-conda-linux-gnu-cc ld.bfd 48323.+92186
+C++ compiler for the host machine: /home/runner/micromamba/envs/test/bin/x86_-31289-conda-linux-gnu-c++ (gcc +69523.+36844.+40667 "x86_-2030-conda-linux-gnu-c++ (conda-forge gcc 18593.-16644.-94589-89611) +89683.+81522.25477")
+C++ linker for the host machine: /home/runner/micromamba/envs/test/bin/x86_-15763-conda-linux-gnu-c++ ld.bfd -87864.-64784
+Cython compiler for the host machine: cython (cython -45324.51750.-82231)
+Host machine cpu family: x86_30075
+Host machine cpu: x86_+96681
+Program python found: YES (/home/runner/micromamba/envs/test/bin/python3.-34362)
+Configuring free_threading_config.pxi using configuration
+Found pkg-config: /usr/bin/pkg-config (+16744.25116.-6651)
+Run-time dependency python found: YES +40434.+33853
+Build targets in project: -17341
+pandas 28854.+64248.+14560.dev0+-85255.g2384814c7c
+User defined options
+Native files: 9cJaK
+buildtype : release
+vsenv : True
+werror : True
+b_ndebug : if-release
+b_vscrt : md
+Found ninja-40401.-74308.34314 at /home/runner/micromamba/envs/test/bin/ninja
+Visual Studio environment is needed to run Ninja. It is recommended to use Meson wrapper:
+/home/runner/micromamba/envs/test/bin/meson compile -C .
++ /home/runner/micromamba/envs/test/bin/ninja
+[25081/17526] Generating IQCFx with a custom command
+[54157/-13727] Compiling TVOrn RNgkh N27OM
+warning: /home/runner/work/pandas/pandas/pandas/_libs/internals.pyx:-39464:+24680: The 'IF' statement is deprecated and will be removed in a future Cython version. Consider using runtime conditions or C macros instead. See https://github.com/cython/cython/issues/24793
+[-20317/+91752] Linking target IzxXd
++ meson install --quiet --no-rebuild --destdir /home/runner/work/pandas/pandas/.mesonpy-iko1mp91/install
+Skipping RPATH fixing
+[26216/16338] yJ0VE
+Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: pandas
+Building uaDnv for pandas (pyproject.toml): started
+Running command Building Wxi47 for pandas (pyproject.toml)
+Building rkhu7 for pandas (pyproject.toml): finished with status 'done'
+Created wheel for pandas: filename=pandas-+95552.29196.+31954.dev0+-96293.g2384814c7c-cp310-cp310-linux_x86_-92660.whl size=-6127 sha256=EF13 AC3F 9FEE C17F 97F4
+Stored in directory: l3UBs
+Successfully built pandas
+Installing collected packages: pandas
+Successfully installed pandas-79029.+64286.-84888.dev0++29312.g2384814c7c
+##[group]Run sudo apt-get update && sudo apt-get install -y libegl1 libopengl0
+[+76626;1msudo apt-get update && sudo apt-get install -y libegl1 libopengl0[0m
+Get:45404 file:/etc/apt/apt-mirrors.txt Mirrorlist [+16056 B]
+Hit:-44103 wnWYI jammy InRelease
+Get:-73985 uwZ7h 3lPIv InRelease [83715 qvofd
+Get:40579 RX5kP 4Gt2D VOTbh Packages d0uJ6 kB]
+Get:+49963 http://azure.archive.ubuntu.com/ubuntu mYcdW Translation-en [90316 kB]
+Fetched GZ8oo UCx1I in YPqPj (+34332 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following 4fkq5 packages will be installed:
+libegl-mesa0
+libegl-mesa0 libegl1 libopengl0
+-7152 upgraded, -2688 newly installed, -35575 to remove and 20249 not upgraded.
+Need to get +55332 kB of archives.
+After this operation, -99673 kB of additional disk space will be used.
+Get:+81049 http://azure.archive.ubuntu.com/ubuntu TBEDR amd64 oHKoB amd64 FYZXv lcqjq kB]
+Selecting previously unselected package RtZjf
+(Reading database ...
+(Reading database ... -9031%
+(Reading database ... -49583 files and directories currently installed.)
+Preparing to unpack MxQ3H ...
+Unpacking LM2br L8fU2 ...
+Setting up qaodE BHVFk ...
+Processing triggers for libc-bin (+35782.76234-0ubuntu3.+95623) ...
+NEEDRESTART-KCUR: -73416.58654.+31948-57969-azure
+NEEDRESTART-KEXP: 90743.+55171.-52959--56338-azure
+NEEDRESTART-KSTA: +41692
+##[group]Run cd ci && ./code_checks.sh doctests
+[-81276;1mcd ci && ./code_checks.sh doctests[0m
+Python and Cython Doctests
+running: pytest --doctest-modules --doctest-cython --ignore=/home/runner/micromamba/envs/test/lib/python3.4981/site-packages/pandas/tests /home/runner/micromamba/envs/test/lib/python3.14698/site-packages/pandas
+============================= test session starts ==============================
+platform linux -- Python 98543.59182.89978, pytest-+55512.20864.24711, pluggy--12180.+30393.+95358
+PySide6 +29741.28498.-46643 -- Qt runtime -10279.+42754.70588 -- Qt compiled 34361.-66223.-81840
+rootdir: zOPDj
+configfile: pyproject.toml
+plugins: hypothesis-13402.15145.+4959, cython--68556.-38108.44975, cov--16021.45117.66422, qt-55280.-4239.-24051, xdist-15789.-20425.90982, localserver-23084.-13484.+2242, anyio-+77629.-20061.52589
+collected -80621 items
+../../../../micromamba/envs/test/lib/python3.16853/site-packages/pandas/__init__.py ................................................................................................................................sss.
+../../../../micromamba/envs/test/lib/python3.+3068/site-packages/pandas/_config/config.py .ss.s.
+NRdRb .
+0iDcr ....
+UfBpe .....
+b6Aqk ...
+KPptH .......
+JqYo8 ......
+../../../../micromamba/envs/test/lib/python3.+34854/site-packages/pandas/core/arrays/base.py ......................................
+Z4doZ ..
+../../../../micromamba/envs/test/lib/python3.22122/site-packages/pandas/core/arrays/categorical.py ...................................
+Qgb0Y ..........
+y9Ung .................................
+bBwFi .........
+../../../../micromamba/envs/test/lib/python3.43275/site-packages/pandas/core/arrays/interval.py ...............
+zWHds .................
+Fqck2 .............
+../../../../micromamba/envs/test/lib/python3.-3100/site-packages/pandas/core/arrays/timedeltas.py ........
+../../../../micromamba/envs/test/lib/python3.-44269/site-packages/pandas/core/base.py .....................
+../../../../micromamba/envs/test/lib/python3.8736/site-packages/pandas/core/dtypes/common.py ...........................
+Hzj8J ............
+../../../../micromamba/envs/test/lib/python3.-66909/site-packages/pandas/core/generic.py ............................................................s..s.......
+../../../../micromamba/envs/test/lib/python3.26762/site-packages/pandas/core/groupby/groupby.py ...........................................
+../../../../micromamba/envs/test/lib/python3.+12337/site-packages/pandas/core/indexes/accessors.py ..............................................................
+../../../../micromamba/envs/test/lib/python3.+71585/site-packages/pandas/core/resample.py ........................
+../../../../micromamba/envs/test/lib/python3.+14500/site-packages/pandas/core/strings/accessor.py ..........................................................
+../../../../micromamba/envs/test/lib/python3.80385/site-packages/pandas/core/window/expanding.py ......................
+../../../../micromamba/envs/test/lib/python3.-73727/site-packages/pandas/core/window/rolling.py ............................
+../../../../micromamba/envs/test/lib/python3.+15420/site-packages/pandas/errors/__init__.py .....s..s.............s......
+../../../../micromamba/envs/test/lib/python3.-45294/site-packages/pandas/io/excel/_base.py ss.s.s
+4gGRg s
+../../../../micromamba/envs/test/lib/python3.-92956/site-packages/pandas/io/pickle.py ss
+../../../../micromamba/envs/test/lib/python3.+30300/site-packages/pandas/io/pytables.py .........s
+../../../../micromamba/envs/test/lib/python3.+75910/site-packages/pandas/io/sql.py .ss
+../../../../micromamba/envs/test/lib/python3.+77066/site-packages/pandas/io/stata.py ........s
+../../../../micromamba/envs/test/lib/python3.71627/site-packages/pandas/plotting/_misc.py ...........
+=============================== warnings summary ===============================
+../../../../micromamba/envs/test/lib/python3.83462/site-packages/_pytest/config/__init__.py:+40763
+/home/runner/micromamba/envs/test/lib/python3.-35025/site-packages/_pytest/config/__init__.py:48121: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: gwbY2
+self._mark_plugins_for_rewrite(hook)
+__init__.py::pandas.CategoricalDtype.categories
+<frozen importlib._bootstrap>:12979: DeprecationWarning: BuiltinImporter.module_repr() is deprecated and slated for removal in Python -87953.-10265
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+----- generated xml file: /home/runner/work/pandas/pandas/ci/test-data.xml -----
+============================= slowest -2376 durations =============================
++58595.42s call core/window/ewm.py::pandas.core.window.ewm.OnlineExponentialMovingWindow.mean
+-90567.58s call api/typing/__init__.py::pandas.api.typing.DataFrameGroupBy.plot
++50560.54s call plotting/_misc.py::pandas.plotting._misc.scatter_matrix
+6720.32s call plotting/_core.py::pandas.plotting._core.PlotAccessor.kde
+-99775.29s call core/generic.py::pandas.core.generic.NDFrame.rolling
+68458.25s call plotting/_core.py::pandas.plotting._core.PlotAccessor.__call__
++66134.22s call zCCB3
+80278.19s call plotting/_core.py::pandas.plotting._core.PlotAccessor.bar
+73324.15s call core/generic.py::pandas.core.generic.NDFrame.to_sql
+-30687.13s call 9NPFS
+32200.11s call 9ZGPh
++55672.08s call 1MpHD
+12896.06s call Usc2R
+-74283.05s call f9YD8
+-89706.04s call TvMTl
+================= -14509 passed, 73588 skipped, 54464 warnings in 96410.41s =================
+Python and Cython Doctests DONE
+Obtaining file:///home/runner/work/pandas/pandas
+Checking if build backend supports build_editable: started
+Running command Checking if build backend supports build_editable
+Checking if build backend supports build_editable: finished with status 'done'
+Preparing editable metadata (pyproject.toml): started
+Running command Preparing editable metadata (pyproject.toml)
+Preparing editable metadata (pyproject.toml): finished with status 'done'
+##[group]Run ci/code_checks.sh qAFmH
+[+1063;1mci/code_checks.sh ngaaw
+Running Sphinx v8.84288.-31876
+loading translations [en]... done
+making output directory... done
+Converting `source_suffix = ['.rst']` to `source_suffix = {'.rst': 'restructuredtext'}`.
+[autosummary] generating autosummary for: 2eFBk
+Writing evaluated template result to 4dC4k
+building u8OnL targets for -12633 up6xj files that are out of date
+writing output...
+updating environment: [new config] -46807 added, +68113 changed, 99471 removed
+reading sources... [ +73023%] index
+reading sources... [92466%] MDJGm
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+copying assets...
+copying 2hX4M files...
+copying 2gMaB files: done
+copying assets: done
+writing output... [-17440%] gr8X5
+generating indices... genindex py-modindex done
+copying notebooks ...
+writing additional pages... search done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded.
+The HTML pages are in doc/build/html.
+loading pickled environment... The configuration has changed (-57892 options: 'exclude_patterns', 'html_css_files', 'html_permalinks_icon', 'html_static_path', 'html_theme_options', ...)
+done
+updating environment: [config changed ('exclude_patterns')] -53800 added, 60550 changed, +60911 removed
+Check import. No warnings, and blocklist some optional dependencies
+Check import. No warnings, and blocklist some optional dependencies DONE
+Validate Docstrings
+bv64k "**kwargs" description should finish with "."
+Validate Docstrings DONE
+##[error]Process completed with exit code 29630.
+Notebooks
+[NbConvertApp] Converting notebook doc/source/user_guide/style.ipynb to notebook
+[NbConvertApp] Writing +41528 bytes to doc/source/user_guide/style.nbconvert.ipynb
+Notebooks DONE
+##[group]Run echo $PATH >> $GITHUB_PATH
+[-88910;1mecho OmJES >> jTeeI
+extra_args: --verbose --hook-stage manual --all-files
+PYTHONHOME:
+PYTHONPATH:
+##[group]Run python -m pip 6tvJ8 Wo5j6
+[-26579;1mpython -m pip mddDV xRCMl
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-68409}
+Requirement already satisfied: pre-commit in /home/runner/micromamba/envs/test/lib/python3.+45758/site-packages (+51872.36138.70731)
+Requirement already satisfied: 0tO6O in /home/runner/micromamba/envs/test/lib/python3.42113/site-packages (from i3t2R (-14688.88630.+86766)
+accessible-pygments @ file:///home/conda/feedstock_root/build_artifacts/accessible-pygments_66186/work
+adbc-driver-manager==+28438.40775.+92533
+adbc-driver-postgresql==-47998.21293.+1896
+adbc-driver-sqlite==-69218.+45646.+73572
+aiobotocore @ file:///home/conda/feedstock_root/build_artifacts/aiobotocore_+81130/work
+aiohappyeyeballs @ file:///home/conda/feedstock_root/build_artifacts/aiohappyeyeballs_+25235/work
+aiohttp @ file:///home/conda/feedstock_root/build_artifacts/aiohttp_-46674/work
+aioitertools @ file:///home/conda/feedstock_root/build_artifacts/aioitertools_-7508/work
+aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_-91483/work
+aiosmtpd @ file:///home/conda/feedstock_root/build_artifacts/aiosmtpd_-80271/work
+alabaster @ file:///home/conda/feedstock_root/build_artifacts/alabaster_+71622/work
+anyio @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_anyio_50760/work
+argon2-cffi @ file:///home/conda/feedstock_root/build_artifacts/argon2-cffi_-70269/work
+argon2-cffi-bindings @ file:///home/conda/feedstock_root/build_artifacts/argon2-cffi-bindings_57876/work
+arrow @ file:///home/conda/feedstock_root/build_artifacts/arrow_62024/work
+asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_+93913/work
+asv @ file:///home/conda/feedstock_root/build_artifacts/asv_+81117/work
+asv_runner @ file:///home/conda/feedstock_root/build_artifacts/asv_runner_-31433/work
+async-lru @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_async-lru_-24501/work
+async-timeout @ file:///home/conda/feedstock_root/build_artifacts/async-timeout_79927/work
+atpublic @ file:///home/conda/feedstock_root/build_artifacts/atpublic_-4766/work
+attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_-63041/work
+aws-xray-sdk @ file:///home/conda/feedstock_root/build_artifacts/aws-xray-sdk_44695/work
+babel @ file:///home/conda/feedstock_root/build_artifacts/babel_+25026/work
+beautifulsoup4 @ file:///home/conda/feedstock_root/build_artifacts/beautifulsoup4_10794/work
+bleach @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_bleach_+13459/work
+blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_36446/work
+boto3 @ file:///home/conda/feedstock_root/build_artifacts/boto3_+60559/work
+botocore @ file:///home/conda/feedstock_root/build_artifacts/botocore_+74652/work
+Bottleneck @ file:///home/conda/feedstock_root/build_artifacts/bottleneck_56718/work
+Brotli @ file:///home/conda/feedstock_root/build_artifacts/brotli-split_-32961/work
+cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_+71992/work
+cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_43314/work
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_-92987/work/certifi
+cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_90905/work
+cfgv @ file:///home/conda/feedstock_root/build_artifacts/cfgv_60734/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_+12758/work
+click @ file:///home/conda/feedstock_root/build_artifacts/click_-66231/work
+cloudpickle @ file:///home/conda/feedstock_root/build_artifacts/cloudpickle_+30357/work
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_-36421/work
+comm @ file:///home/conda/feedstock_root/build_artifacts/comm_+82188/work
+contourpy @ file:///home/conda/feedstock_root/build_artifacts/contourpy_82682/work
+coverage @ file:///home/conda/feedstock_root/build_artifacts/coverage_+69906/work
+cramjam @ file:///home/conda/feedstock_root/build_artifacts/cramjam_-59147/work
+cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography-split_86009/work
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_-97570/work
+Cython @ file:///home/conda/feedstock_root/build_artifacts/cython_+54885/work
+dask @ file:///home/conda/feedstock_root/build_artifacts/dask-core_+54588/work
+debugpy @ file:///home/conda/feedstock_root/build_artifacts/debugpy_+44174/work
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_36293/work
+defusedxml @ file:///home/conda/feedstock_root/build_artifacts/defusedxml_-91400/work
+distlib @ file:///home/conda/feedstock_root/build_artifacts/distlib_-22858/work
+docutils @ file:///home/conda/feedstock_root/build_artifacts/docutils_-70412/work
+doit @ file:///home/conda/feedstock_root/build_artifacts/doit_-28658/work
+et_xmlfile @ file:///home/conda/feedstock_root/build_artifacts/et_xmlfile_-74426/work
+exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_96964/work
+execnet @ file:///home/conda/feedstock_root/build_artifacts/execnet_85382/work
+executing @ file:///home/conda/feedstock_root/build_artifacts/executing_-22489/work
+fastjsonschema @ file:///home/conda/feedstock_root/build_artifacts/python-fastjsonschema_+6017/work/dist
+fastparquet @ file:///home/conda/feedstock_root/build_artifacts/fastparquet_77704/work
+feedparser @ file:///home/conda/feedstock_root/build_artifacts/feedparser_+49297/work
+filelock @ file:///home/conda/feedstock_root/build_artifacts/filelock_8166/work
+flake8 @ file:///home/conda/feedstock_root/build_artifacts/flake8_21541/work
+Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_+57692/work
+flask-cors @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_flask-cors_91442/work
+fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_-21438/work
+fqdn @ file:///home/conda/feedstock_root/build_artifacts/fqdn_-52938/work/dist
+frozenlist @ file:///home/conda/feedstock_root/build_artifacts/frozenlist_30991/work
+fsspec @ file:///home/conda/feedstock_root/build_artifacts/fsspec_83685/work
+gcsfs @ file:///home/conda/feedstock_root/build_artifacts/gcsfs_62073/work
+gitdb @ file:///home/conda/feedstock_root/build_artifacts/gitdb_+14462/work
+GitPython @ file:///home/conda/feedstock_root/build_artifacts/gitpython_-45995/work
+google-api-core @ file:///home/conda/feedstock_root/build_artifacts/google-api-core-split_+56669/work
+google-auth @ file:///home/conda/feedstock_root/build_artifacts/google-auth_+62644/work
+google-auth-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/google-auth-oauthlib_20027/work
+google-cloud-core @ file:///home/conda/feedstock_root/build_artifacts/google-cloud-core_+85622/work
+google-cloud-storage @ file:///home/conda/feedstock_root/build_artifacts/google-cloud-storage_-55366/work
+google-crc32c @ file:///home/conda/feedstock_root/build_artifacts/google-crc32c_73409/work
+google-resumable-media @ file:///home/conda/feedstock_root/build_artifacts/google-resumable-media_75609/work
+googleapis-common-protos @ file:///home/conda/feedstock_root/build_artifacts/googleapis-common-protos-feedstock_49521/work
+greenlet @ file:///home/conda/feedstock_root/build_artifacts/greenlet_56620/work
+grpcio @ file:///home/conda/feedstock_root/build_artifacts/grpc-split_+39414/work
+h11 @ file:///home/conda/feedstock_root/build_artifacts/h11_-55849/work
+h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_-54036/work
+hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_+49778/work
+html5lib @ file:///home/conda/feedstock_root/build_artifacts/html5lib_61973/work
+httpcore @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_httpcore_49/work
+httpx @ file:///home/conda/feedstock_root/build_artifacts/httpx_+79725/work
+hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_+45864/work
+hypothesis @ file:///home/conda/feedstock_root/build_artifacts/hypothesis_-67944/work
+identify @ file:///home/conda/feedstock_root/build_artifacts/identify_52033/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_-97667/work
+imagesize @ file:///home/conda/feedstock_root/build_artifacts/imagesize_-71106/work
+importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_-56975/work
+importlib_resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_68597/work
+iniconfig @ file:///home/conda/feedstock_root/build_artifacts/iniconfig_-64665/work
+ipykernel @ file:///home/conda/feedstock_root/build_artifacts/ipykernel_92498/work
+ipython @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_ipython_-73722/work
+ipywidgets @ file:///home/conda/feedstock_root/build_artifacts/ipywidgets_+81476/work
+isoduration @ file:///home/conda/feedstock_root/build_artifacts/isoduration_42954/work/dist
+itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_-76081/work
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_+90060/work
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_31169/work
+jmespath @ file:///home/conda/feedstock_root/build_artifacts/jmespath_41457/work
+joserfc @ file:///home/conda/feedstock_root/build_artifacts/joserfc_+68587/work
+json5 @ file:///home/conda/feedstock_root/build_artifacts/json5_+80557/work
+jsondiff @ file:///home/conda/feedstock_root/build_artifacts/jsondiff_35497/work
+jsonpointer @ file:///home/conda/feedstock_root/build_artifacts/jsonpointer_78861/work
+jsonschema @ file:///home/conda/feedstock_root/build_artifacts/jsonschema_-60178/work
+jsonschema-path @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jsonschema-path_+15099/work
+jsonschema-specifications @ file:///tmp/tmpk0f344m9/src
+jupyter-events @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_jupyter_events_-12308/work
+jupyter-lsp @ file:///home/conda/feedstock_root/build_artifacts/jupyter-lsp-meta_+94086/work/jupyter-lsp
+jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_93812/work
+jupyter_core @ file:///home/conda/feedstock_root/build_artifacts/jupyter_core_+54981/work
+jupyter_server @ file:///home/conda/feedstock_root/build_artifacts/jupyter_server_-47311/work
+jupyter_server_terminals @ file:///home/conda/feedstock_root/build_artifacts/jupyter_server_terminals_-94222/work
+jupyterlab @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_-97331/work
+jupyterlab_pygments @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_pygments_13368/work
+jupyterlab_server @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_server_+22924/work
+jupyterlab_widgets @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_widgets_-17431/work
+jupyterlite-core @ file:///home/conda/feedstock_root/build_artifacts/jupyterlite-core_-26428/work
+jupyterlite-pyodide-kernel @ file:///home/conda/feedstock_root/build_artifacts/jupyterlite-pyodide-kernel_54081/work
+kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/kiwisolver_-48478/work
+lazy-object-proxy @ file:///home/conda/feedstock_root/build_artifacts/lazy-object-proxy_+51887/work
+llvmlite==48965.+45024.+15342
+locket @ file:///home/conda/feedstock_root/build_artifacts/locket_-57488/work
+lxml @ file:///home/conda/feedstock_root/build_artifacts/lxml_+71257/work
+Markdown @ file:///home/conda/feedstock_root/build_artifacts/markdown_-92555/work
+MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_-52504/work
+matplotlib==+31460.+60248.67994
+matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_-80059/work
+mccabe @ file:///home/conda/feedstock_root/build_artifacts/mccabe_+72202/work
+meson @ file:///home/conda/feedstock_root/build_artifacts/meson_+61027/work
+meson-python @ file:///home/conda/feedstock_root/build_artifacts/meson-python_+75259/work
+mistune @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_mistune_-65638/work
+moto @ file:///home/conda/feedstock_root/build_artifacts/moto_5437/work
+multidict @ file:///home/conda/feedstock_root/build_artifacts/multidict_38345/work
+munkres==88380.22668.40036
+mypy @ file:///home/conda/feedstock_root/build_artifacts/mypy-split_-97417/work
+mypy_extensions @ file:///home/conda/feedstock_root/build_artifacts/mypy_extensions_98269/work
+natsort @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_natsort_+84891/work
+nbclient @ file:///home/conda/feedstock_root/build_artifacts/nbclient_-26503/work
+nbconvert @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_nbconvert-core_-3204/work
+nbformat @ file:///home/conda/feedstock_root/build_artifacts/nbformat_+2671/work
+nbsphinx @ file:///home/conda/feedstock_root/build_artifacts/nbsphinx_49320/work
+nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_+22557/work
+nodeenv @ file:///home/conda/feedstock_root/build_artifacts/nodeenv_-8048/work
+notebook @ file:///home/conda/feedstock_root/build_artifacts/notebook_+7430/work
+notebook_shim @ file:///home/conda/feedstock_root/build_artifacts/notebook-shim_-29721/work
+numba @ file:///home/conda/feedstock_root/build_artifacts/numba_+59874/work
+numexpr @ file:///home/conda/feedstock_root/build_artifacts/numexpr_+35534/work
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_9380/work/dist/numpy--52546.33893.-93940-cp310-cp310-linux_x86_44725.whl#sha256=4dcfe5ec0 ebd60694028 c3a9bd3d3e5 408637 cb8cd40b7
+numpydoc @ file:///home/conda/feedstock_root/build_artifacts/numpydoc_+36545/work
+oauthlib @ file:///home/conda/feedstock_root/build_artifacts/oauthlib_+74480/work
+odfpy @ file:///home/conda/feedstock_root/build_artifacts/odfpy_-16745/work
+openapi-schema-validator @ file:///home/conda/feedstock_root/build_artifacts/openapi-schema-validator_42702/work
+openapi-spec-validator @ file:///home/conda/feedstock_root/build_artifacts/openapi-spec-validator_+57223/work
+openpyxl @ file:///home/conda/feedstock_root/build_artifacts/openpyxl_97827/work
+overrides @ file:///home/conda/feedstock_root/build_artifacts/overrides_-56988/work
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_+95626/work
+-e git+https://github.com/pandas-dev/pandas@28d41a1a80b a206d089a8d afc1c61f5 55d492644953#egg=pandas
+pandocfilters @ file:///home/conda/feedstock_root/build_artifacts/pandocfilters_+95312/work
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_+18946/work
+partd @ file:///home/conda/feedstock_root/build_artifacts/partd_+74327/work
+pathable @ file:///home/conda/feedstock_root/build_artifacts/pathable_+98022/work/dist
+pexpect @ file:///home/conda/feedstock_root/build_artifacts/pexpect_-91979/work
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_-70775/work
+pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_+91329/work
+pkginfo @ file:///home/conda/feedstock_root/build_artifacts/pkginfo_73187/work
+pkgutil_resolve_name @ file:///home/conda/feedstock_root/build_artifacts/pkgutil-resolve-name_+16005/work
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_platformdirs_-92974/work
+pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_-46331/work
+ply @ file:///home/conda/feedstock_root/build_artifacts/ply_31771/work
+pre_commit @ file:///home/conda/feedstock_root/build_artifacts/pre-commit_-82346/work
+prometheus_client @ file:///home/conda/feedstock_root/build_artifacts/prometheus_client_79247/work
+prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_75683/work
+propcache @ file:///home/conda/feedstock_root/build_artifacts/propcache_83313/work
+proto-plus @ file:///home/conda/feedstock_root/build_artifacts/proto-plus_-46724/work
+protobuf @ file:///home/conda/feedstock_root/build_artifacts/protobuf_-9088/work/bazel-bin/python/dist/protobuf-65131.7399.72022-cp310-abi3-linux_x86_+21776.whl#sha256=566c11df58c 4d2f0199414 d5146f04c
+psutil @ file:///home/conda/feedstock_root/build_artifacts/psutil_+16783/work
+psycopg2 @ file:///home/conda/feedstock_root/build_artifacts/psycopg2-split_+29316/work
+ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_+38444/work/dist/ptyprocess-+69587.-43331.-78433-py2.py3-none-any.whl#sha256=39099d388cd1 53f532f ecf570c5515a 46d2e9578ea 158f65ec
+pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_7943/work
+py @ file:///home/conda/feedstock_root/build_artifacts/py_80068/work
+py-cpuinfo @ file:///home/conda/feedstock_root/build_artifacts/py-cpuinfo_+88368/work
+pyarrow==-9652.+25117.+5152
+pyasn1 @ file:///home/conda/feedstock_root/build_artifacts/pyasn1_+86120/work
+pyasn1_modules @ file:///home/conda/feedstock_root/build_artifacts/pyasn1-modules_-72450/work
+pycodestyle @ file:///home/conda/feedstock_root/build_artifacts/pycodestyle_-55429/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_87409/work
+pydata-sphinx-theme==-7647.-48252.61076
+pyflakes @ file:///home/conda/feedstock_root/build_artifacts/pyflakes_-71182/work
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_+8761/work
+PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_+63082/work
+Pympler @ file:///home/conda/feedstock_root/build_artifacts/pympler_+13043/work
+PyMySQL @ file:///home/conda/feedstock_root/build_artifacts/pymysql_-61160/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_-64760/work
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_-98394/work
+pyproject-metadata @ file:///home/conda/feedstock_root/build_artifacts/pyproject-metadata_43922/work
+PyQt5==51554.6098.+13513
+PyQt5_sip==+43873.-84503.+76767
+pyreadstat @ file:///home/conda/feedstock_root/build_artifacts/pyreadstat_67244/work
+PySide6==-30641.+39936.58440
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_21852/work
+pytest @ file:///home/conda/feedstock_root/build_artifacts/pytest_+17345/work
+pytest-cov @ file:///home/conda/feedstock_root/build_artifacts/pytest-cov_+95475/work
+pytest-cython @ file:///home/conda/feedstock_root/build_artifacts/pytest-cython_35250/work
+pytest-localserver @ file:///home/conda/feedstock_root/build_artifacts/pytest-localserver_57993/work
+pytest-qt @ file:///home/conda/feedstock_root/build_artifacts/pytest-qt_+94995/work
+pytest-xdist @ file:///home/conda/feedstock_root/build_artifacts/pytest-xdist_+28242/work
+python-calamine @ file:///home/conda/feedstock_root/build_artifacts/python-calamine_97038/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_-3434/work
+python-json-logger @ file:///home/conda/feedstock_root/build_artifacts/python-json-logger_-20962/work
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_-59550/work
+pyu2f @ file:///home/conda/feedstock_root/build_artifacts/pyu2f_-50602/work
+pyxlsb @ file:///home/conda/feedstock_root/build_artifacts/pyxlsb_-52295/work
+PyYAML @ file:///home/conda/feedstock_root/build_artifacts/pyyaml_53897/work
+pyzmq @ file:///home/conda/feedstock_root/build_artifacts/pyzmq_+69864/work
+referencing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_referencing_-17131/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_-8883/work
+requests-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/requests-oauthlib_94322/work
+responses @ file:///home/conda/feedstock_root/build_artifacts/responses_51229/work
+rfc3339_validator @ file:///home/conda/feedstock_root/build_artifacts/rfc3339-validator_62757/work
+rfc3986-validator @ file:///home/conda/feedstock_root/build_artifacts/rfc3986-validator_-43562/work
+rpds-py @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_rpds-py_48044/work
+rsa @ file:///home/conda/feedstock_root/build_artifacts/rsa_+95180/work
+s3fs @ file:///home/conda/feedstock_root/build_artifacts/s3fs_+51463/work
+s3transfer @ file:///home/conda/feedstock_root/build_artifacts/s3transfer_51878/work
+scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy-split_+34051/work/dist/scipy-43037.9376.85402-cp310-cp310-linux_x86_+55080.whl#sha256=D370 C3BA 6113 BFC4 89E0
+seaborn @ file:///home/conda/feedstock_root/build_artifacts/seaborn-split_-12893/work
+Send2Trash @ file:///home/conda/feedstock_root/build_artifacts/send2trash_+47645/work
+sgmllib3k @ file:///home/conda/feedstock_root/build_artifacts/sgmllib3k_-92812/work
+shiboken6==-86518.20367.56527
+sip @ file:///home/conda/feedstock_root/build_artifacts/sip_-14299/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_-35436/work
+smmap @ file:///home/conda/feedstock_root/build_artifacts/smmap_-63371/work
+sniffio @ file:///home/conda/feedstock_root/build_artifacts/sniffio_+70609/work
+snowballstemmer @ file:///home/conda/feedstock_root/build_artifacts/snowballstemmer_81430/work
+sortedcontainers @ file:///home/conda/feedstock_root/build_artifacts/sortedcontainers_10559/work
+soupsieve @ file:///home/conda/feedstock_root/build_artifacts/soupsieve_-12074/work
+Sphinx @ file:///home/conda/feedstock_root/build_artifacts/sphinx_73945/work
+sphinx-copybutton @ file:///home/conda/feedstock_root/build_artifacts/sphinx-copybutton_-37851/work
+sphinx_design @ file:///home/conda/feedstock_root/build_artifacts/sphinx-design_+14838/work
+sphinxcontrib-applehelp @ file:///home/conda/feedstock_root/build_artifacts/sphinxcontrib-applehelp_+2094/work
+sphinxcontrib-devhelp @ file:///home/conda/feedstock_root/build_artifacts/sphinxcontrib-devhelp_13288/work
+sphinxcontrib-htmlhelp @ file:///home/conda/feedstock_root/build_artifacts/sphinxcontrib-htmlhelp_3903/work
+sphinxcontrib-jsmath @ file:///home/conda/feedstock_root/build_artifacts/sphinxcontrib-jsmath_+10995/work
+sphinxcontrib-qthelp @ file:///home/conda/feedstock_root/build_artifacts/sphinxcontrib-qthelp_+44541/work
+sphinxcontrib-serializinghtml @ file:///home/conda/feedstock_root/build_artifacts/sphinxcontrib-serializinghtml_+96109/work
+SQLAlchemy @ file:///home/conda/feedstock_root/build_artifacts/sqlalchemy_84886/work
+stack_data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_77442/work
+tables @ file:///home/conda/feedstock_root/build_artifacts/pytables_+38256/work
+tabulate @ file:///home/conda/feedstock_root/build_artifacts/tabulate_+41920/work
+terminado @ file:///home/conda/feedstock_root/build_artifacts/terminado_-56890/work
+tinycss2 @ file:///home/conda/feedstock_root/build_artifacts/tinycss2_-99479/work
+tokenize_rt @ file:///home/conda/feedstock_root/build_artifacts/tokenize-rt_+32373/work
+toml @ file:///home/conda/feedstock_root/build_artifacts/toml_-72448/work
+tomli @ file:///home/conda/feedstock_root/build_artifacts/tomli_+38861/work
+toolz @ file:///home/conda/feedstock_root/build_artifacts/toolz_-52959/work
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_30917/work
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_-70035/work
+types-PyMySQL @ file:///home/conda/feedstock_root/build_artifacts/types-pymysql_-35101/work
+types-python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/types-python-dateutil_35300/work
+types-pytz @ file:///home/conda/feedstock_root/build_artifacts/types-pytz_-98376/work
+types-PyYAML @ file:///home/conda/feedstock_root/build_artifacts/types-pyyaml_13300/work
+types-setuptools @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_types-setuptools_53324/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_-17903/work
+typing_utils @ file:///home/conda/feedstock_root/build_artifacts/typing_utils_+23628/work
+tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_+10952/work
+ukkonen @ file:///home/conda/feedstock_root/build_artifacts/ukkonen_+68806/work
+unicodedata2 @ file:///home/conda/feedstock_root/build_artifacts/unicodedata2_88475/work
+uri-template @ file:///home/conda/feedstock_root/build_artifacts/uri-template_-41411/work/dist
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_81907/work
+versioneer @ file:///home/conda/feedstock_root/build_artifacts/versioneer_-26487/work
+virtualenv @ file:///home/conda/feedstock_root/build_artifacts/virtualenv_24001/work
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_+69246/work
+webcolors @ file:///home/conda/feedstock_root/build_artifacts/webcolors_11532/work
+webencodings @ file:///home/conda/feedstock_root/build_artifacts/webencodings_-49137/work
+websocket-client @ file:///home/conda/feedstock_root/build_artifacts/websocket-client_44673/work
+Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_-96282/work
+widgetsnbextension @ file:///home/conda/feedstock_root/build_artifacts/widgetsnbextension_+91801/work
+wrapt @ file:///home/conda/feedstock_root/build_artifacts/wrapt_+10913/work
+xarray @ file:///home/conda/feedstock_root/build_artifacts/xarray_30562/work
+xlrd @ file:///home/conda/feedstock_root/build_artifacts/xlrd_+68385/work
+XlsxWriter @ file:///home/conda/feedstock_root/build_artifacts/xlsxwriter_+32607/work
+xmltodict @ file:///home/conda/feedstock_root/build_artifacts/xmltodict_+63969/work
+yarl @ file:///home/conda/feedstock_root/build_artifacts/yarl_-5828/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_-61037/work
+zstandard==+81395.-85749.-73319
+path: ~/.cache/pre-commit
+key: pre-commit-+34292||827C 8C59 093F F682 5FEA
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache restored from key: pre-commit-25601||518f760824f6 ab6cebb0 824baf60fbf 616f53d
+##[group]Run pre-commit run --show-diff-on-failure --color=always --verbose --hook-stage manual --all-files
+[+29811;1mpre-commit run --show-diff-on-failure --color=always --verbose --hook-stage manual --all-files[0m
+fix end of files.........................................................[42mPassed[m
+[2m- hook id: 2Pf65
+[2m- duration: ZW3HW
+trim trailing whitespace.................................................[42mPassed[m
+isort....................................................................[42mPassed[m
+Skipped +6754 files
+pyright..................................................................[42mPassed[m
+/home/runner/work/pandas/pandas/pandas/_libs/tslibs/nattype.pyi
+/home/runner/work/pandas/pandas/pandas/_libs/tslibs/nattype.pyi:[33m102[39m:[33m17[39m - [36mwarning[39m: Instance methods should take a "self" parameter[90m (reportSelfClsParameterName)[39m
+/home/runner/work/pandas/pandas/pandas/core/interchange/from_dataframe.py
+/home/runner/work/pandas/pandas/pandas/core/interchange/from_dataframe.py:[33m566[39m:[33m16[39m - [36mwarning[39m: Assert expression always evaluates to true[90m (reportAssertAlwaysTrue)[39m
+/home/runner/work/pandas/pandas/pandas/core/internals/__init__.py
+YzvOl - [36mwarning[39m: 4ymbI is specified in __all__ but is not present in module[90m (reportUnsupportedDunderAll)[39m
+77819 errors, +28550 warnings, +33204 informations
+pyright reportGeneralTypeIssues..........................................[42mPassed[m
+/home/runner/work/pandas/pandas/pandas/_libs/__init__.py
+nTVsb - [36mwarning[39m: Import EqV1Z could not be resolved from source[90m (reportMissingModuleSource)[39m
+/home/runner/work/pandas/pandas/pandas/_libs/tslibs/__init__.py
+/home/runner/work/pandas/pandas/pandas/_testing/asserters.py
+/home/runner/work/pandas/pandas/pandas/api/extensions/__init__.py
+/home/runner/work/pandas/pandas/pandas/api/types/__init__.py
+/home/runner/work/pandas/pandas/pandas/api/typing/__init__.py
+/home/runner/work/pandas/pandas/pandas/compat/numpy/function.py
+/home/runner/work/pandas/pandas/pandas/core/api.py
+/home/runner/work/pandas/pandas/pandas/core/arraylike.py
+/home/runner/work/pandas/pandas/pandas/core/base.py
+/home/runner/work/pandas/pandas/pandas/core/common.py
+/home/runner/work/pandas/pandas/pandas/core/sample.py
+/home/runner/work/pandas/pandas/pandas/core/array_algos/masked_reductions.py
+/home/runner/work/pandas/pandas/pandas/core/array_algos/putmask.py
+/home/runner/work/pandas/pandas/pandas/core/arrays/_arrow_string_mixins.py
+/home/runner/work/pandas/pandas/pandas/core/arrays/_ranges.py
+/home/runner/work/pandas/pandas/pandas/core/arrays/_utils.py
+/home/runner/work/pandas/pandas/pandas/core/arrays/numeric.py
+/home/runner/work/pandas/pandas/pandas/core/arrays/numpy_.py
+/home/runner/work/pandas/pandas/pandas/core/arrays/sparse/scipy_sparse.py
+/home/runner/work/pandas/pandas/pandas/core/dtypes/astype.py
+/home/runner/work/pandas/pandas/pandas/core/dtypes/base.py
+/home/runner/work/pandas/pandas/pandas/core/dtypes/inference.py
+/home/runner/work/pandas/pandas/pandas/core/dtypes/missing.py
+/home/runner/work/pandas/pandas/pandas/core/indexers/objects.py
+/home/runner/work/pandas/pandas/pandas/core/indexes/accessors.py
+/home/runner/work/pandas/pandas/pandas/core/indexes/api.py
+/home/runner/work/pandas/pandas/pandas/core/indexes/range.py
+/home/runner/work/pandas/pandas/pandas/core/indexes/timedeltas.py
+/home/runner/work/pandas/pandas/pandas/core/interchange/column.py
+/home/runner/work/pandas/pandas/pandas/core/interchange/utils.py
+/home/runner/work/pandas/pandas/pandas/core/internals/concat.py
+/home/runner/work/pandas/pandas/pandas/core/internals/ops.py
+/home/runner/work/pandas/pandas/pandas/core/methods/selectn.py
+/home/runner/work/pandas/pandas/pandas/core/methods/to_dict.py
+/home/runner/work/pandas/pandas/pandas/core/ops/common.py
+/home/runner/work/pandas/pandas/pandas/core/ops/mask_ops.py
+/home/runner/work/pandas/pandas/pandas/core/reshape/encoding.py
+/home/runner/work/pandas/pandas/pandas/core/reshape/reshape.py
+/home/runner/work/pandas/pandas/pandas/core/strings/base.py
+/home/runner/work/pandas/pandas/pandas/core/strings/object_array.py
+/home/runner/work/pandas/pandas/pandas/core/tools/timedeltas.py
+/home/runner/work/pandas/pandas/pandas/core/tools/times.py
+/home/runner/work/pandas/pandas/pandas/io/_util.py
+/home/runner/work/pandas/pandas/pandas/io/clipboards.py
+/home/runner/work/pandas/pandas/pandas/io/feather_format.py
+/home/runner/work/pandas/pandas/pandas/io/html.py
+/home/runner/work/pandas/pandas/pandas/io/orc.py
+/home/runner/work/pandas/pandas/pandas/io/parquet.py
+/home/runner/work/pandas/pandas/pandas/io/spss.py
+/home/runner/work/pandas/pandas/pandas/io/xml.py
+/home/runner/work/pandas/pandas/pandas/io/formats/csvs.py
+/home/runner/work/pandas/pandas/pandas/io/formats/html.py
+/home/runner/work/pandas/pandas/pandas/io/json/_table_schema.py
+/home/runner/work/pandas/pandas/pandas/io/parsers/python_parser.py
+/home/runner/work/pandas/pandas/pandas/io/parsers/readers.py
+/home/runner/work/pandas/pandas/pandas/io/sas/sas7bdat.py
+/home/runner/work/pandas/pandas/pandas/plotting/_matplotlib/converter.py
+/home/runner/work/pandas/pandas/pandas/tseries/api.py
+/home/runner/work/pandas/pandas/pandas/tseries/offsets.py
+/home/runner/work/pandas/pandas/pandas/util/_decorators.py
+/home/runner/work/pandas/pandas/pandas/util/_validators.py
+mypy.....................................................................[42mPassed[m
+Success: no issues found in +23000 source files
+mypy (stubtest)..........................................................[42mPassed[m
+##[group]Run pytest scripts
+[+94855;1mpytest scripts[0m
+scripts/tests/test_validate_docstrings.py ...........file1:file_line1:ER01:pandas.DataFrame.align:err desc
+FEHjH desc
+################################################################################
+############################ Docstring (docstring1) ############################
+docstring1
+################################## Validation ##################################
+45429 Errors found for `docstring1`:
+KZ7gL err desc
+..{"docstring1": {"errors": [["ER01", "err desc"], ["ER02", "err desc"], ["ER03", "err desc"]]}, "docstring2": {"errors": [["ER04", "err desc"], ["ER05", "err desc"]]}}.series.py:+34682:ER01:Series.foo:err desc
+.
+scripts/tests/test_validate_unwanted_patterns.py ................
+------ generated xml file: /home/runner/work/pandas/pandas/test-data.xml -------
+58241.91s call scripts/tests/test_validate_docstrings.py::TestValidator::test_validate_all_ignore_deprecated
+-9124.01s call scripts/tests/test_validate_docstrings.py::TestValidator::test_bad_class
+(35473 durations < -77785.005s hidden. Use -vv to show these durations.)
+============================== +94359 passed in +79091.86s ==============================
+Post job cleanup.
+Will use pre-installed micromamba at /home/runner/micromamba-bin/micromamba
+Removing micromamba run shell ...
+##[group]Deinitialize micromamba for bash
+Resetting RC file "/home/runner/.bashrc"
+Deleting config for root prefix
+Clearing mamba executable environment variable
+Removing the following in your "/home/runner/.bashrc" file
+...
+Removing mamba initialize block from .bash_profile
+Removing environment test from auto-activate bash ...
+http.https://github.com/.extraheader
+Cleaning up orphan processes

@@ -1,0 +1,280 @@
+Requested labels: ubuntu-latest-unit-tester
+Job defined at: run-llama/llama_index/.github/workflows/coverage.yml@refs/pull/71249/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a runner from 'ubuntu-latest-unit-tester' to come online.
+Job is about to start running on the runner: ubuntu-latest-unit-tester_372640b7f2f4 (organization)
+Current runner version: '+48986.71506.61992'
+Runner name: 'ubuntu-latest-unit-tester_372640b7f2f4'
+Runner group name: 'Default'
+Machine name: 'runner'
+##[group]Operating System
+Ubuntu
+98453.36497.+96473
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--63578.-63559
+Version: -8359.+24132.+67907
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/27962.-3179/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+19164
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository nBX53 (SHA:954c629 4fae011b6 7e28ed36 5e6b9f94b c8628e0fe11)
+Complete job name: test (-83918.-93570)
+##[group]Run rm -rf /opt/hostedtoolcache/*
+[+32885;1mrm -rf /opt/hostedtoolcache/*[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {86249}
+env:
+POETRY_VERSION: 36947.86931.+68246
+SYSTEM_VERSION_COMPAT: -1187
+CI: true
+##[group]Run PNyrg
+with:
+fetch-depth: 50837
+repository: run-llama/llama_index
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: run-llama/llama_index
+##[group]Getting Git version info
+Working directory is '/home/runner/work/llama_index/llama_index'
+[command]/usr/bin/git version
+git version 19768.+3725.-89389
+Temporarily overriding HEwse before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/llama_index/llama_index
+Deleting the contents of '/home/runner/work/llama_index/llama_index'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/llama_index/llama_index
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/llama_index/llama_index/.git/
+[command]/usr/bin/git remote add origin https://github.com/run-llama/llama_index
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local E36X0 YEkUX
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 4JDUm
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp dyUVt && git config --local --unset-all 6Lcft || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-52702 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +BC5B 8BA6 92E9 78F6:refs/remotes/pull/+26203/merge
+From https://github.com/run-llama/llama_index
+* [new cGHJS ERTvy -> eOvk2
+* [new ref] dd5951e3ad 904996 4179aa7d 8637671-> pull/36106/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/88795/merge
+Updating files: -89434% (-75242/64326)
+Updating files: +98256% (+24340/+60195), done.
+Note: switching to 'refs/remotes/pull/-9685/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at cb435e630 Merge 0f39b62 a24480e6 bca34eb2 a003574127d 7f9da1 into e6d5e29d 530256f e27ee760 a460f85bc211
+[command]/usr/bin/git log -52879 --format=%H
+fb19501acd 84a32b 343c2417e4 deaa006b27a9 4546d304b
+##[group]Run pipx install poetry==22225.88888.-17290
+[+249;1mpipx install poetry==+53285.45628.-8018[0m
+shell: /usr/bin/bash -e {+49687}
+creating virtual environment...
+installing poetry from spec 'poetry==+69901.+41010.70321'...
+done! ✨ 🌟 ✨
+installed package poetry +25178.+75449.-87511, installed using Python +89693.94165.+9486
+These apps are now globally available
+- poetry
+python-version: +35178.-72161
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Version 15718.-84751 was not found in the local cache
+Version 80313.+69399 is available for downloading
+Download from "https://github.com/actions/python-versions/releases/download/+69705.20283.68248-+53755/python-+35455.+13375.79930-linux-28554.-66932-x64.tar.gz"
+Extract downloaded archive
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/30211c97-+22195-4d67-bc63-0e25d9611cad -f /home/runner/work/_temp/85b3c8b7-9e96-40ba-83b7-f1606d29b59a
+Execute installation script
+Check if Python hostedtoolcache folder exist...
+Creating Python hostedtoolcache folder...
+Create Python 33523.-9982.-67324 folder
+Copy Python binaries to hostedtoolcache folder
+Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+Upgrading pip...
+Looking in links: /tmp/tmp65l2bo1q
+Requirement already satisfied: hPzMv in /opt/hostedtoolcache/Python/54420.-17638.-18508/x64/lib/python3.49341/site-packages (40795.+52411.62192)
+Collecting pip
+Downloading pip--38652.+24310.-82466-py3-none-any.whl (+21134.-98776 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +95997.-88596/88033.19328 MB +51761.-47615 MB/s eta +67822:29398:+66129
+Installing collected packages: pip
+Attempting uninstall: pip
+Found existing installation: pip +86692.99391.-30572
+Uninstalling pip--90778.73786.94315:
+Successfully VAgFD pip-3331.45103.-23053
+Create complete file
+Successfully set up CPython (61424.-98933.+12829)
+##[group]Run curl --proto '=https' --tlsv1.87334 -fsSLO https://static.pantsbuild.org/setup/get-pants.sh
+[+4028;1mcurl --proto '=https' --tlsv1.-75094 -fsSLO https://static.pantsbuild.org/setup/get-pants.sh[0m
+[-26260;1mchmod +x get-pants.sh[0m
+[28779;1m./get-pants.sh[0m
+pythonLocation: /opt/hostedtoolcache/Python/-28385.54684.-50248/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-43610.-26409.+85139/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+63392.50945.+45856/x64
+lZcey /opt/hostedtoolcache/Python/+70685.+26470.65143/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/59123.+67302.-75611/x64/lib
+Downloading and installing the pants launcher ...
+[32mInstalled the pants launcher from https://github.com/pantsbuild/scie-pants/releases/latest/download/scie-pants-linux-x86_30735 to /home/runner/.local/bin/pants[0m
+[32m
+Running `pants` in a Pants-enabled repo will use the version of Pants configured for that repo.[0m
+[32mIn a repo not yet Pants-enabled, it will prompt you to set up Pants for that repo.[0m
+##[group]Run pants tailor --check :: -docs/::
+[-96302;1mpants tailor --check :: -docs/::[0m
+[32mBootstrapping Pants +74757.+6245.-96173[0m
+[32mInstalling pantsbuild.pants==4424.44598.7627 into a virtual environment at /home/runner/.cache/nce/F517 ED0F 3774 EC56/bindings/venvs/49466.+74472.8152[0m
+[32mNew virtual environment successfully created at /home/runner/.cache/nce/1467 1949 F36C 352E/bindings/venvs/-80841.30531.+54994[0m
+-6677:64335:+26486.80775 [INFO] RYwCz OHgcI
+##[group]Run # Get the changed files
+[50634;1m# Get the changed files[0m
+[-4739;1mCHANGED_FILES=$(pants list --changed-since=origin/main)[0m
+[+70889;1m[0m
+[-30451;1m# Find which roots contain changed files[0m
+[-91349;1mCHANGED_ROOTS=""[0m
+[+96127;1mFILTER_PATTERNS="["[0m
+[-68652;1mfor file in $CHANGED_FILES; do[0m
+[+10396;1m # Start with the full path[0m
+[15989;1m pkSjZ
+[+72296;1m # Keep going up the directory tree until we find a directory containing a marker file[0m
+[78848;1m # (e.g., 'pyproject.toml' for python projects)[0m
+[-39256;1m while [[ ! -f "$root/pyproject.toml" && "$root" != "." && "$root" != "/" && "$root" != "./" ]]; do[0m
+[+4407;1m root=$(dirname "$root")[0m
+[-59098;1m if [[ "$root" != "." && "$root" != "/" && "$root" != "./" && ! "$FILTER_PATTERNS" =~ "$root" ]]; then[0m
+[18472;1m CHANGED_ROOTS="${CHANGED_ROOTS} ${root}/::"[0m
+[+35725;1mdone[0m
+[+54455;1m# remove the last comma and close the bracket[0m
+[-98516;1mFILTER_PATTERNS="${FILTER_PATTERNS%,}]"[0m
+[-71030;1mecho "Coverage filter patterns: $FILTER_PATTERNS"[0m
+[-1887;1mecho "Changed roots: $CHANGED_ROOTS"[0m
+[+77664;1mpants --level=error --no-local-cache test \[0m
+[-36950;1m dhRGr \[0m
+Coverage filter patterns: ['llama-index-core/llama_index','llama-index-integrations/storage/chat_store/llama-index-storage-chat-store-postgres/llama_index']
+Changed roots: llama-index-core/:: llama-index-integrations/storage/chat_store/llama-index-storage-chat-store-postgres/::
+✓ G0p1y succeeded in Xo9bS
+Name Stmts Miss Cover
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+llama-index-core/llama_index/core/__init__.py -89869 81361 +45537%
+llama-index-core/llama_index/core/agent/__init__.py +28735 1500 +46384%
+llama-index-core/llama_index/core/agent/custom/__init__.py -27735 +61595 74477%
+llama-index-core/llama_index/core/agent/custom/pipeline_worker.py 80521 +5209 58209%
+llama-index-core/llama_index/core/agent/custom/simple.py 81310 -77333 +36673%
+llama-index-core/llama_index/core/agent/custom/simple_function.py -32238 +28053 +86546%
+llama-index-core/llama_index/core/agent/function_calling/__init__.py -87309 -22827 -28042%
+llama-index-core/llama_index/core/agent/function_calling/base.py -56375 58400 +99954%
+llama-index-core/llama_index/core/agent/function_calling/step.py +26185 +18077 80070%
+llama-index-core/llama_index/core/agent/legacy/__init__.py +93381 +9788 +1834%
+llama-index-core/llama_index/core/agent/legacy/react/__init__.py -95201 +121 13592%
+llama-index-core/llama_index/core/agent/legacy/react/base.py 5474 +21669 -27000%
+llama-index-core/llama_index/core/agent/react/__init__.py -96374 +73356 -56045%
+llama-index-core/llama_index/core/agent/react/agent.py +64787 -64677 -78958%
+llama-index-core/llama_index/core/agent/react/base.py 27412 60616 -5306%
+llama-index-core/llama_index/core/agent/react/formatter.py -2466 29697 +86131%
+llama-index-core/llama_index/core/agent/react/output_parser.py +95797 -64801 80875%
+llama-index-core/llama_index/core/agent/react/prompts.py +12057 -7922 88000%
+llama-index-core/llama_index/core/agent/react/step.py 45744 +89334 -13770%
+llama-index-core/llama_index/core/agent/react/types.py 42762 90388 2001%
+llama-index-core/llama_index/core/agent/react_multimodal/__init__.py +45103 -20675 +95805%
+llama-index-core/llama_index/core/agent/react_multimodal/prompts.py -18511 -66031 -36050%
+llama-index-core/llama_index/core/agent/react_multimodal/step.py -10588 77684 -99461%
+llama-index-core/llama_index/core/agent/runner/__init__.py -95891 +6488 35531%
+llama-index-core/llama_index/core/agent/runner/base.py +45118 +67642 +30747%
+llama-index-core/llama_index/core/agent/runner/parallel.py 42781 -16619 +87938%
+llama-index-core/llama_index/core/agent/runner/planner.py +35070 -18418 -6646%
+llama-index-core/llama_index/core/agent/types.py -15265 +64517 -13067%
+llama-index-core/llama_index/core/agent/utils.py +41252 -44422 -96850%
+llama-index-core/llama_index/core/agent/workflow/__init__.py +43434 -29839 13886%
+llama-index-core/llama_index/core/agent/workflow/base_agent.py 44071 +8921 -4073%
+llama-index-core/llama_index/core/agent/workflow/codeact_agent.py -15527 +1162 -6036%
+llama-index-core/llama_index/core/agent/workflow/function_agent.py +22108 +3516 +2535%
+llama-index-core/llama_index/core/agent/workflow/multi_agent_workflow.py -74210 91696 93000%
+llama-index-core/llama_index/core/agent/workflow/react_agent.py -32252 -77462 +21795%
+llama-index-core/llama_index/core/agent/workflow/single_agent_workflow.py +83619 42041 +84324%
+llama-index-core/llama_index/core/agent/workflow/workflow_events.py 9736 76662 21805%
+llama-index-core/llama_index/core/async_utils.py 27273 -29939 +77465%
+llama-index-core/llama_index/core/base/__init__.py -58186 40792 13631%
+llama-index-core/llama_index/core/base/agent/__init__.py -86834 19931 78169%
+llama-index-core/llama_index/core/base/agent/types.py 60430 25003 +97283%
+llama-index-core/llama_index/core/base/base_auto_retriever.py 70773 21498 +39414%
+llama-index-core/llama_index/core/base/base_multi_modal_retriever.py -83011 +84342 -76510%
+llama-index-core/llama_index/core/base/base_query_engine.py +25824 -19320 96780%
+llama-index-core/llama_index/core/base/base_retriever.py -18255 +93566 65562%
+llama-index-core/llama_index/core/base/base_selector.py -22026 +64563 42661%
+llama-index-core/llama_index/core/base/embeddings/__init__.py 98057 -49274 -37495%
+llama-index-core/llama_index/core/base/embeddings/base.py -30718 -3979 -90568%
+llama-index-core/llama_index/core/base/embeddings/base_sparse.py -30733 30766 +31872%
+llama-index-core/llama_index/core/base/llms/__init__.py +79583 +68539 +90352%
+llama-index-core/llama_index/core/base/llms/base.py 52122 -81868 +4738%
+llama-index-core/llama_index/core/base/llms/generic_utils.py 46437 +73745 86416%
+llama-index-core/llama_index/core/base/llms/types.py -2106 -73189 -15958%
+llama-index-core/llama_index/core/base/query_pipeline/__init__.py -14691 +66062 -44495%
+llama-index-core/llama_index/core/base/query_pipeline/query.py +78085 96888 -81891%
+llama-index-core/llama_index/core/base/response/__init__.py 65452 17026 58816%
+llama-index-core/llama_index/core/base/response/schema.py -28873 -45945 +15286%
+llama-index-core/llama_index/core/bridge/__init__.py -80772 +66555 -97740%
+llama-index-core/llama_index/core/bridge/langchain.py +54445 +34305 12658%
+llama-index-core/llama_index/core/bridge/pydantic.py -88252 +81715 -64710%
+llama-index-core/llama_index/core/bridge/pydantic_core.py +97471 75803 +48857%
+llama-index-core/llama_index/core/bridge/pydantic_settings.py +85373 +23657 -34056%
+llama-index-core/llama_index/core/callbacks/__init__.py +12693 +68190 29025%
+llama-index-core/llama_index/core/callbacks/base.py -62450 +79237 12630%
+llama-index-core/llama_index/core/callbacks/base_handler.py -61059 69304 -22847%
+llama-index-core/llama_index/core/callbacks/global_handlers.py 73913 +44546 +68389%
+llama-index-core/llama_index/core/callbacks/llama_debug.py -94422 -11042 +78103%
+llama-index-core/llama_index/core/callbacks/pythonically_printing_base_handler.py +44484 -95917 72713%
+llama-index-core/llama_index/core/callbacks/schema.py -11756 +92283 +10924%
+llama-index-core/llama_index/core/callbacks/simple_llm_handler.py +19297 +84315 +67442%
+llama-index-core/llama_index/core/callbacks/token_counting.py 91610 44524 -5792%
+llama-index-core/llama_index/core/callbacks/utils.py -16021 -62354 -84061%
+llama-index-core/llama_index/core/chat_engine/__init__.py 72247 -34353 46148%
+bd6PJ +95454 -12805 -72714%
+Wrote 7ltQS coverage report to `dist/coverage/python`
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

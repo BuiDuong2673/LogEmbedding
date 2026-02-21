@@ -1,0 +1,20 @@
+2023-09-21T12:55:55.1205330Z ##[group]Run actions/cache@v3
+2023-09-21T12:55:55.1205976Z with:
+2023-09-21T12:55:55.1206475Z   path: hdf5_build
+2023-09-21T12:55:55.1207168Z   key: Linux-x86_64-deps-cache-559d11058464c382db80afdaa0f188a1419653e78ad7d33a8bd3e373cb2165a9-1.14.1-2-05dbd8c00cfcbecd86e75c08563f7506c0a0b80490b2d6094ef31c6d9b02af07
+2023-09-21T12:55:55.1208024Z   enableCrossOsArchive: false
+2023-09-21T12:55:55.1208413Z   fail-on-cache-miss: false
+2023-09-21T12:55:55.1208713Z   lookup-only: false
+2023-09-21T12:55:55.1209045Z env:
+2023-09-21T12:55:55.1209365Z   HDF5_VERSION: 1.14.1-2
+2023-09-21T12:55:55.1209777Z   MACOSX_DEPLOYMENT_TARGET: 10.9
+2023-09-21T12:55:55.1210809Z   CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-* 
+2023-09-21T12:55:55.1211235Z   CIBW_BUILD: cp*
+2023-09-21T12:55:55.1211588Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:55.1212084Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig
+2023-09-21T12:55:55.1212721Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:55.1213303Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:55.1214496Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:55.1215014Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.5/x64/lib
+2023-09-21T12:55:55.1215388Z ##[endgroup]
+2023-09-21T12:55:55.6640284Z Cache not found for input keys: Linux-x86_64-deps-cache-559d11058464c382db80afdaa0f188a1419653e78ad7d33a8bd3e373cb2165a9-1.14.1-2-05dbd8c00cfcbecd86e75c08563f7506c0a0b80490b2d6094ef31c6d9b02af07

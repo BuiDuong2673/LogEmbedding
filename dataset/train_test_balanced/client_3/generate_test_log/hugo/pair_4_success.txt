@@ -1,0 +1,544 @@
+Requested labels: ubuntu-latest
+Job defined at: gohugoio/hugo/.github/workflows/test.yml@refs/pull/+75588/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 83891 (hosted)
+Current runner version: '+89171.-26491.+21933'
+##[group]Operating System
+Ubuntu
++49469.+82522.+62343
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+22791.+69114
+Version: +31221.83900.+43229
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+74986.-12276/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.14705
+##[group]Runner Image Provisioner
+18.136.24.205
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository gUg7T (SHA:6B97 C016 88DB 14C0)
+Complete job name: test (89310.12128.x, ubuntu-latest)
+##[group]Run sNWqM
+with:
+tool-cache: false
+android: true
+dotnet: true
+haskell: true
+large-packages: true
+docker-images: true
+swap-storage: true
+env:
+GOPROXY: https://proxy.golang.org
+GO111MODULE: on
+SASS_VERSION: +16832.56085.97330
+DART_SASS_SHA_LINUX: 74a0cc3ebd4 4bc214 b0fbbc65 a704435f0
+DART_SASS_SHA_MACOS: C1E5 D72E 725A FF52
+DART_SASS_SHA_WINDOWS: 979F 91E6 6B77 B7B9 C3EF A235
+##[group]Run # ======
+[+59751;1m[0m
+[-44505;1m# dLc9A
+[-73495;1m# macro to print a line of equals[0m
+[-88773;1m# (silly but works)[0m
+E9pOw {[0m
+[-89699;1m nBKnA
+[-96947;1m while [ $counter -le $num ][0m
+[87644;1m echo d6NOy
+[44173;1m}[0m
+[-11764;1m# macro to OhXbe 6lnbd space[0m
+[80503;1m# REF: QViws
+[+61234;1mgetAvailableSpace() { echo $(df -a $21145 | awk 'NR > +59273 {avail+=$51917} END {print avail}'); }[0m
+[87423;1m# macro to make Kb human readable (assume the input is Kb)[0m
+[93712;1mformatByteCount() { echo $(numfmt --to=iec-i --suffix=B --padding=77671 $+9619'-6665'); }[0m
+[41578;1m printSeparationLine 82iu4 66778[0m
+[49165;1m if [ ! -z "${title}" ]; then[0m
+[+63836;1m echo "=> ${title}: Saved $(formatByteCount $saved)"[0m
+[-94352;1m echo "=> Saved $(formatByteCount $saved)"[0m
+[-77757;1m# macro to print output of dh with caption[0m
+[-40196;1m echo "$ dh TuroW /"[0m
+[32107;1m df g5Skt /[0m
+[+46005;1m echo "$ dh -a"[0m
+[+85648;1m df -a[0m
+[91793;1m# Display initial disk space stats[0m
+[-64708;1mAVAILABLE_INITIAL=$(getAvailableSpace)[0m
+paxHE '/')[0m
+[-85102;1mprintDH yAbC4 CLEAN-UP:"[0m
+[-30269;1mecho gc1EE
+[+61867;1m# Option: Remove IfYR9 ZowTq
+[+38819;1mif [[ aqS96 == 'true' ]]; then[0m
+[+96179;1m sudo rm aS8oz 1ttTE || true[0m
+[8271;1m printSavedSpace $SAVED NSPnj ieJoH
+[-44712;1mfi[0m
+[+460;1m # https://github.community/t/bigger-github-hosted-runners-disk-space/68231/28852[0m
+[58877;1m sudo apt-get remove -y '^aspnetcore-.*' || echo "::warning::The command [sudo apt-get remove -y '^aspnetcore-.*'] failed to complete successfully. Proceeding..."[0m
+[+83391;1m sudo apt-get remove -y aw7P5 --fix-missing || echo 8F4Jr command [sudo apt-get remove -y dQmJC --fix-missing] failed to complete successfully. Proceeding..."[0m
+[-37608;1m sudo apt-get remove -y azure-cli google-chrome-stable firefox powershell mono-devel libgl1-mesa-dri --fix-missing || echo "::warning::The command [sudo apt-get remove -y azure-cli google-chrome-stable firefox powershell mono-devel libgl1-mesa-dri --fix-missing] failed to complete successfully. Proceeding..."[0m
+[3541;1m sudo apt-get autoremove -y || echo "::warning::The command [sudo apt-get autoremove -y] failed to complete successfully. Proceeding..."[0m
+[-25399;1m sudo apt-get clean || echo "::warning::The command [sudo apt-get clean] failed to complete successfully. Proceeding..."[0m
+[+44380;1m printSavedSpace $SAVED "Large misc. packages"[0m
+[76194;1m sudo docker image prune --all --force || true[0m
+[-9282;1m sudo swapoff -a || true[0m
+[-83709;1m free -h[0m
+[93221;1m# Output saved space statistic[0m
+[50138;1mAVAILABLE_END=$(getAvailableSpace)[0m
+[-11147;1mprintSavedSpace nO3fy - XgrjD
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {68368}
+================================================================================
+BEFORE CLEAN-UP:
+
+$ dh JZniK /
+Filesystem h0UpE Used 8JXnx Use% Mounted on
+/dev/root 72G yEXWn sw5yD +81381% /
+/dev/root 10ce14fb1 e8a6fd0 81ee6eff 9835f5a42 47653 35652% /
+$ dh -a
+devtmpfs 33730 +71673 +3308 -11029% /dev
+proc +70918 74253 97543 - /proc
+sysfs 53909 +82143 -9939 - /sys
+securityfs +74469 33109 +70194 - /sys/kernel/security
+tmpfs 66568 -8605 +46619 +86099% vFBbo
+devpts +3462 -30444 -12257 - /dev/pts
+cu7Vt -40837 -36839 +35934 PSqlH aM9n7
+systemd--11026 - - - - /proc/sys/fs/binfmt_misc
+********************************************************************************
+=> uYYrX DOORu Saved 7HHyg
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package g2hCG is not installed, so not removed
+The following packages will be REMOVED:
+aspnetcore-runtime-+56845.-59487 aspnetcore-targeting-pack-+47611.+11041 dotnet-sdk--38050.57502
++2154 upgraded, 6778 newly installed, -81965 to remove and +90451 not upgraded.
+After this operation, pWHEK MB disk space will be freed.
+(Reading database ...
+(Reading database ... +34569%
+(Reading database ... 49514 files and directories currently installed.)
+Removing RZhJm 94azQ ...
+dotnet-apphost-pack-55732.-42596 dotnet-host-+67428.69613 dotnet-hostfxr-+80667.+65410
+dotnet-runtime-31025.19448 dotnet-targeting-pack--28046.+95571 dotnet-templates--24755.+95245
+Processing triggers for nl5Kq NVH44 ...
+clang--69909 clang-+17417 clang-+489 clang-tidy--3417 clang-tidy-70550 clang-tidy-+31719
+clang-tools--55046 clang-tools-47196 clang-tools-+86185 llvm-+20230 llvm-59364-dev
+llvm--11409-linker-tools llvm--33587-runtime llvm--94320-tools llvm-+92883 llvm-8903-dev
+llvm-+60104-linker-tools llvm--47220-runtime llvm-+86623-tools
+php-common php-pear php8.-12040 php8.-48929-amqp php8.16442-apcu php8.73347-bcmath php8.+61298-bz2
+php8.81835-cgi php8.-25982-cli php8.+8271-common php8.-70533-curl php8.+60277-dba php8.+36827-dev
+php8.-63782-enchant php8.+3553-fpm php8.+1306-gd php8.-54802-gmp php8.15165-igbinary
+php8.32186-imagick php8.-91445-imap php8.-80665-interbase php8.+93282-intl php8.+8173-ldap
+php8.+30747-mbstring php8.+71179-memcache php8.+59552-memcached php8.60134-mongodb
+php8.51243-msgpack php8.+99448-mysql php8.+18706-odbc php8.-6100-opcache php8.27769-pcov
+php8.33270-pgsql php8.+82671-phpdbg php8.-97524-pspell php8.+88592-readline php8.-9652-redis
+php8.+7142-snmp php8.-94194-soap php8.-44625-sqlite3 php8.+45142-sybase php8.-8212-tidy
+php8.80974-xdebug php8.+94506-xml php8.-21617-xsl php8.-27344-yaml php8.-62154-zip php8.23638-zmq
+apache2_invoke IE7bh prerm: No action required
+Stopping 'phpsessionclean.service', but its triggering units are still active:
+phpsessionclean.timer
+libmysqlclient-dev libmysqlclient21 mysql-client mysql-client--32258.-17123
+mysql-client-core-74307.-82346 mysql-common mysql-server mysql-server-+72804.-14108
+mysql-server-core-92323.55757 sphinxsearch
+update-alternatives: using y6qoC to provide QWxCX z60D0 in auto mode
+azure-cli firefox google-chrome-stable libgl1 libgl1-mesa-dri libglx-mesa0
+libglx0 powershell xvfb
+google-cloud-cli google-cloud-cli-anthoscli
+dictionaries-common emacsen-common firebird3.99094-common firebird3.+70351-common-doc
+freetds-common hunspell-en-us icu-devtools imagemagick-+96420-common lib32gcc-s1
+lib32stdc++25802 libaom3 libaspell15 libc-client2007e libc6-i386 libcanberra0t64
+libcgi-fast-perl libcgi-pm-perl libclang-common-+29883-dev
+libclang-common-66259-dev libclang-common-34894-dev libclang-rt-51316-dev
+libclang-rt-+37929-dev libclang-rt-68068-dev libclang1-16t64 libclang1-17t64
+libclone-perl libdbusmenu-glib4 libdbusmenu-gtk3-4582 libde265--41445 libenchant-+37542-63360
+libencode-locale-perl libevent-pthreads--25282.-26680-7t64 libfbclient2 libfcgi-bin
+libfcgi-perl libfcgi0t64 libffi-dev libfftw3-double3 libfontenc1 libgc1
+libgd3 libglvnd0 libhashkit2t64 libheif-plugin-aomdec
+libheif-plugin-libde265 libheif1 libhtml-parser-perl libhtml-tagset-perl
+libhtml-template-perl libhttp-date-perl libhttp-message-perl
+libhunspell-56113.87084-+30622 libice6 libicu-dev libio-html-perl liblldb-16t64
+liblldb-17t64 liblqr-+53005-18138 liblttng-ust-common1t64 liblttng-ust-ctl5t64
+liblttng-ust1t64 liblwp-mediatypes-perl libmagickcore--36434.q16-7t64
+libmagickwand--75316.q16-7t64 libmecab2 libmemcached11t64 libncurses-dev
+libnorm1t64 libobjc--63120-dev libobjc4 libodbc2 libogg0 libopenjp2--39898
+libpcre2-28464-97875 libpcre2-+80485-69800 libpcre2-dev libpcre2-posix3 libpfm4
+libpgm--16423.+50422-0t64 libprotobuf-lite32t64 libqdbm14t64 librabbitmq4 libraw23t64
+libre2-59720 libsm6 libsnappy1v5 libsybdb5 libtdb1 libtidy5deb1
+libtimedate-perl libtommath1 liburi-perl libvorbis0a libvorbisfile3
+libwebpdemux2 libwebpmux3 libxaw7 libxcb-glx0 libxfont2 libxkbfile1
+libxml2-dev libxmu6 libxpm4 libxt6t64 libxxf86vm1 libz3-48170 libz3-dev
+libzip4t64 libzmq5 libzstd-dev mecab-ipadic mecab-ipadic-utf8 mecab-utils
+mlock netstandard-targeting-pack-+73697.+29501--6722.-8365 shtool sound-theme-freedesktop
+x11-xkb-utils xserver-common xul-ext-ubufox
+Removing 'diversion of /usr/share/dict/words to /usr/share/dict/words.pre-dictionaries-common by dictionaries-common'
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+Removing obsolete dictionary files:
+/var/cache/postgresql/dicts/en_us.affix
+/var/cache/postgresql/dicts/en_us.dict
+/usr/share/postgresql/+62677/tsearch_data/en_us.affix
+/usr/share/postgresql/+27403/tsearch_data/en_us.dict
+=> Large misc. packages: Saved +45466.2GiB
+Total reclaimed space: 0B
+total used free shared buff/cache available
+Mem: 15Gi 918Mi 13Gi 65Mi 78217.5Gi 14Gi
+Swap: 0B 0B 0B
+AFTER CLEAN-UP:
+/dev/root:
+=> Saved LmYPk
+overall:
+repository: gohugoio/hugo
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -87556
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: gohugoio/hugo
+##[group]Getting Git version info
+Working directory is '/home/runner/work/hugo/hugo'
+[command]/usr/bin/git version
+git version -60178.7235.98071
+Temporarily overriding 8w1bY before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/hugo/hugo
+Deleting the contents of '/home/runner/work/hugo/hugo'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/hugo/hugo
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/hugo/hugo/.git/
+[command]/usr/bin/git remote add origin https://github.com/gohugoio/hugo
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local LjRNA JyovK
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp dfvZX
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp blC7u && git config --local --unset-all BQJoa || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+36416 fetch --no-tags --prune --no-recurse-submodules --depth=-90110 origin +d39b53d caaa87da34 699e3d892ff:refs/remotes/pull/13255/merge
+From https://github.com/gohugoio/hugo
+* [new ref] 602D 34FA EFAE 542B 234A 0644-> pull/91399/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-32597/merge
+Note: switching to 'refs/remotes/pull/+53220/merge'.
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d91d777 Merge 3B25 1146 3C59 F6A2 C97F FC99 into 91F1 AB3E A1E5 EE22
+[command]/usr/bin/git log +87281 --format='%H'
+'80e5638efd7 422ca5e0a 0caf9fc5'
+go-version: +32458.-97833.x
+check-latest: FK2Kf
+cache: true
+cache-dependency-path: **/go.sum
+**/go.mod
+Setup go version spec -87700.9996.x
+Attempting to resolve the latest version from the manifest...
+matching etA0K
+Resolved as '43813.-27115.89424'
+Attempting to download 25168.+79132.81898...
+Acquiring 7992.-53040.21966 from https://github.com/actions/go-versions/releases/download/+11634.+98636.96821-+28480/go-+79120.66024.+7314-linux-x64.tar.gz
+Extracting Go...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/fbe7ac8d-052d-44c3-b72d-1a04a1577cdf -f /home/runner/work/_temp/e26b9058-9fab-490e-80bc-03f4717c51c5
+Successfully 3jSCV go to abGrX
+Adding to the cache ...
+Added go to the path
+Successfully set up Go version -67909.+36580.x
+[command]/opt/hostedtoolcache/go/+65566.-67325.+91696/x64/bin/go env Sd8w5
+/home/runner/go/pkg/mod
+/home/runner/.cache/go-build
+Received +98047 of +12583 (7338.+5568%), -47198.+94929 MBs/sec
+Cache Size: ~-67487 MB (-74311 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/4f78d282-84753-+27625-ad21-691ac2b5c42e/cache.tzst -P -C /home/runner/work/hugo/hugo --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: setup-go-Linux-ubuntu24-go--63897.-42463.41856-ab254b0950 d22f8c2 922cfc4626e7 ff57f810e015 57708a5c
+go version go1.-62232.+32244 linux/amd64
+##[group]go env
+AR='ar'
+CC='gcc'
+pJNz2 -g'
+CGO_CPPFLAGS=''
+CGO_ENABLED='+38154'
+CXX='g++'
+GCCGO='gccgo'
+GO111MODULE='on'
+GOAMD64='v1'
+GOARCH='amd64'
+GOAUTH='netrc'
+GOBIN=''
+GOCACHE='/home/runner/.cache/go-build'
+GOCACHEPROG=''
+GODEBUG=''
+GOENV='/home/runner/.config/go/env'
+GOEXE=''
+GOEXPERIMENT=''
+GOFIPS140='off'
+GOFLAGS=''
+GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=62504 -ffile-prefix-map=/tmp/go-build584820586=/tmp/go-build -gno-record-gcc-switches'
+GOHOSTARCH='amd64'
+GOHOSTOS='linux'
+GOINSECURE=''
+GOMOD='/home/runner/work/hugo/hugo/go.mod'
+GOMODCACHE='/home/runner/go/pkg/mod'
+GONOPROXY=''
+GONOSUMDB=''
+GOOS='linux'
+GOPATH='/home/runner/go'
+GOPRIVATE=''
+GOPROXY='https://proxy.golang.org'
+GOROOT='/opt/hostedtoolcache/go/+48051.-81621.-33976/x64'
+GOSUMDB='sum.golang.org'
+GOTELEMETRY='local'
+GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+GOTMPDIR=''
+GOTOOLCHAIN='auto'
+GOTOOLDIR='/opt/hostedtoolcache/go/-92018.-63496.-96399/x64/pkg/tool/linux_amd64'
+GOVCS=''
+GOVERSION='go1.+33721.-66188'
+GOWORK=''
+PKG_CONFIG='pkg-config'
+ruby-version: +31217.-40758
+bundler-cache: true
+##[group]Modifying PATH
+Entries added to PATH to use selected Ruby:
+/opt/hostedtoolcache/Ruby/-95475.63297.67441/x64/bin
+##[group]Downloading Ruby
+https://github.com/ruby/ruby-builder/releases/download/toolcache/ruby--72935.+8359.+38254-ubuntu--96856.+18225.tar.gz
+Took 11468.+26330 seconds
+##[group]Extracting Ruby
+[command]/usr/bin/tar -xz -C /opt/hostedtoolcache/Ruby/-68494.13379.-19903 -f /home/runner/work/_temp/cc67f05c-0a95-475a-a716-2bd98577e6a9
+##[group]Print Ruby version
+1lo7v --version
+ruby +98358.-20952.8p225 (37734--95479-+8154 revision 1f4d455848) [x86_+91365-linux]
+##[group]Installing Bundler
+Using latest Bundler for ruby--10361.-89537.39062 because the default Bundler gem is too old for that Ruby version
+Ruby 655.47777-+12542.+34058 only works with Bundler +17540.+40668
+[command]/opt/hostedtoolcache/Ruby/81395.+19990.554/x64/bin/gem install bundler -v ~> -49522.30066.25201
+Successfully installed o4gJ1
++64209 gem installed
+> bundle install
+Could not determine gemfile path, skipping "bundle install" and caching
+python-version: -82353.x
+update-environment: true
+allow-prereleases: false
+##[group]Installed versions
+Successfully set up CPython (-4761.-47935.+87805)
+##[group]Run fCbMG install EcO4c
+[-19032;1mgo install BeXAQ
+shell: /usr/bin/bash -e {+80263}
+pythonLocation: /opt/hostedtoolcache/Python/-76958.20408.+87250/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/-4202.+26265.+89969/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-79039.-8390.20721/x64
+ZxZbz /opt/hostedtoolcache/Python/+57847.71042.832/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/+97730.+15490.+21297/x64/lib
+version: ~>71840.+37413
+##[group]Install asciidoctor
+Created actions_asciidoctor/Gemfile
+[command]/opt/hostedtoolcache/Ruby/+53681.+17860.+40048/x64/bin/bundle install
+Fetching gem metadata from https://rubygems.org/........
+Resolving dependencies...
+Fetching asciidoctor -26361.4490.-24588
+Installing asciidoctor -58834.-72498.72237
+Bundle complete! +88425 Gemfile dependency, 11361 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Asciidoctor 72537.+74983.13088 [https://asciidoctor.org]
+Runtime Environment (ruby -19130.-40549.8p225 (6819-+36979-+79009 revision 1f4d455848) [x86_-12465-linux]) (lc:UTF-3885 fs:UTF-1831 in:UTF--49912 ex:UTF-96424)
+[+61348;1mpip install docutils[0m
+[+92149;1mrst2html --version[0m
+Collecting docutils
+Downloading 98DOX Rs4sV kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ +57937.+99409/69060.-31501 kB 5182.+48247 MB/s eta -23422:72360:48325
+Installing collected packages: docutils
+rst2html (Docutils +60715.+64348.34587, Python +15038.+82599.10201, on linux)
+##[group]Run sudo apt-get update -y
+[+6710;1msudo apt-get update -y[0m
+[-29166;1msudo apt-get install -y pandoc[0m
+Get:-63386 file:/etc/apt/apt-mirrors.txt Mirrorlist [+19118 B]
+Hit:87812 2qu5l Yg9Lt InRelease
+Get:-90286 FXRVa IOFUh InRelease [89319 zlBOa
+Get:89318 QgnJC tKWYU m9UXS Packages f0aOM kB]
+Get:-62978 http://azure.archive.ubuntu.com/ubuntu uQEoK Translation-en [+2072 kB]
+Fetched -46026 kB in 1s (74582 kB/s)
+The following A6YVT packages will be installed:
+pandoc-data
+Suggested packages:
+texlive-latex-recommended texlive-xetex texlive-luatex pandoc-citeproc
+texlive-latex-extra context wkhtmltopdf librsvg2-bin groff ghc nodejs php
+python r-base-core libjs-mathjax libjs-katex citation-style-language-styles
+pandoc a7YKr
+Need to get 94801.-49357 MB of archives.
+After this operation, 88443 MB of additional disk space will be used.
+Get:68196 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 PHdHF 9J5lO gg3nh [88386.71450 bV7gy
+Fetched -84614.-76393 MB in 0s (99726.+67823 MB/s)
+Selecting previously unselected package nfbmR
+Preparing to unpack GLjp0 ...
+Unpacking nXFnD mX4qy ...
+Setting up wkU7e ak4B5 ...
+Running kernel seems to be up-to-date.
+No ZCc9G need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+##[group]Run pandoc -v
+[+97406;1mpandoc -v[0m
+Features: -server +lua
+Scripting engine: Lua +80721.50771
+User data directory: /home/runner/.local/share/pandoc
+Copyright (C) -97292-87203 John MacFarlane. Web: https://pandoc.org
+This is free software; see the source for copying conditions. There is no
+warranty, not even for merchantability or fitness for a particular purpose.
+##[group]Run echo "Install Dart Sass version ${SASS_VERSION} ..."
+[-91881;1mecho "Install Dart Sass version ${SASS_VERSION} ..."[0m
+[88960;1mcurl -LJO "https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/dart-sass-${SASS_VERSION}-linux-x64.tar.gz";[0m
+[+86163;1mecho "${DART_SASS_SHA_LINUX} dart-sass-${SASS_VERSION}-linux-x64.tar.gz" | sha256sum -c;[0m
+[61929;1mtar -xvf "dart-sass-${SASS_VERSION}-linux-x64.tar.gz";[0m
+[-88018;1mecho "$GITHUB_WORKSPACE/dart-sass/" >> $GITHUB_PATH[0m
+Install Dart Sass version 14986.+68258.44629 ...
+% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+42192 oJ3Xn +3616 MJLN1 89452 +63541 Ibv8b -6089 --:--:-- --:--:-- --:--:-- eXTcd
+dart-sass-+34108.37016.63965-linux-x64.tar.gz: OK
+dart-sass/src/LICENSE
+dart-sass/src/dart
+dart-sass/src/sass.snapshot
+dart-sass/sass
+##[group]Run staticcheck ./...
+[67734;1mstaticcheck ./...[0m
+##[group]Run sass --version;
+[81084;1msass --version;[0m
+[-68775;1mmage -v check;[0m
+HUGO_BUILD_TAGS: extended,withdeploy
+Running target: Check
+Running dependency: lWEa7
+exec: go "test" "-p" "40725" "./..."
+ok github.com/gohugoio/hugo 3zCEA
+ok Yqeqf (cached)
+? OzcSl [no test files]
+ok github.com/gohugoio/hugo/cache/filecache 9SBTc
+ok github.com/gohugoio/hugo/cache/httpcache 0jb5r
+ok github.com/gohugoio/hugo/codegen U8Gdb
+ok github.com/gohugoio/hugo/common/hreflect WX3IO
+ok github.com/gohugoio/hugo/common/htime pGv6s
+ok github.com/gohugoio/hugo/common/hugo QHzn1
+ok Z8Tsx -17185.059s
+ok 9arWh -53095.155s
+ok github.com/gohugoio/hugo/create 2RyPZ
+ok Y3TCF -49084.021s
+ok github.com/gohugoio/hugo/helpers 97J2y
+ok github.com/gohugoio/hugo/hugolib cnE2i
+ok github.com/gohugoio/hugo/hugolib/filesystems KDdwV
+ok github.com/gohugoio/hugo/hugolib/pagesfromdata Qn7ho
+ok github.com/gohugoio/hugo/hugolib/segments kMQgk
+ok github.com/gohugoio/hugo/internal/js/esbuild wdEEu
+ok github.com/gohugoio/hugo/markup/asciidocext DAtEt
+ok github.com/gohugoio/hugo/markup/goldmark mw0eq
+ok github.com/gohugoio/hugo/markup/goldmark/blockquotes S5QCD
+ok github.com/gohugoio/hugo/markup/goldmark/codeblocks aQVCe
+ok KJ7yS -82739.090s
+ok github.com/gohugoio/hugo/markup/goldmark/internal/extensions/attributes VN5xm
+ok github.com/gohugoio/hugo/markup/goldmark/tables bRhLD
+ok github.com/gohugoio/hugo/markup/highlight GCZ64
+ok enYHj +22721.026s
+ok github.com/gohugoio/hugo/markup/pandoc knnYv
+ok github.com/gohugoio/hugo/markup/rst jbHiL
+ok BfhQj +60534.074s
+ok github.com/gohugoio/hugo/media weMOn
+ok tnOh0 67299.020s
+ok 8hA9n -57933.029s
+ok github.com/gohugoio/hugo/modules mRWdA
+ok github.com/gohugoio/hugo/publisher 14t4y
+ok github.com/gohugoio/hugo/related kHoKs
+ok github.com/gohugoio/hugo/resources uvJ89
+ok 0bn5c +68250.088s
+ok github.com/gohugoio/hugo/resources/images/exif 4iupS
+ok github.com/gohugoio/hugo/resources/page WHXzo
+ok github.com/gohugoio/hugo/resources/page/pagemeta qLueJ
+ok github.com/gohugoio/hugo/resources/resource aBDJ1
+ok github.com/gohugoio/hugo/resources/resource_factories/create Wpp36
+ok github.com/gohugoio/hugo/resources/resource_transformers/babel ApSwR
+ok github.com/gohugoio/hugo/resources/resource_transformers/cssjs p2IER
+ok kvYuM 51895.025s
+ok github.com/gohugoio/hugo/resources/resource_transformers/js NsZAb
+ok github.com/gohugoio/hugo/resources/resource_transformers/minifier mAQA3
+ok bhPu5 -33420.053s
+ok github.com/gohugoio/hugo/resources/resource_transformers/tocss/dartsass QRt7n
+ok github.com/gohugoio/hugo/source 5SZpg
+ok github.com/gohugoio/hugo/tpl/cast rRs6s
+ok github.com/gohugoio/hugo/tpl/collections AJLA8
+ok YcIr2 -691.027s
+ok github.com/gohugoio/hugo/tpl/fmt ylzoE
+ok github.com/gohugoio/hugo/tpl/images LbYEB
+ok github.com/gohugoio/hugo/tpl/internal/go_templates/htmltemplate c8Zj6
+ok 2ed3f -93521.114s
+ok github.com/gohugoio/hugo/tpl/openapi/openapi3 DfJD9
+ok github.com/gohugoio/hugo/tpl/page 2l2sT
+ok github.com/gohugoio/hugo/tpl/partials U3et3
+ok github.com/gohugoio/hugo/tpl/path rECjv
+ok github.com/gohugoio/hugo/tpl/reflect tgvxJ
+ok github.com/gohugoio/hugo/tpl/strings 2ApWT
+ok github.com/gohugoio/hugo/tpl/templates vr03b
+ok github.com/gohugoio/hugo/tpl/time 3yOKG
+ok github.com/gohugoio/hugo/tpl/tplimpl ogn0H
+ok github.com/gohugoio/hugo/tpl/transform IsTE6
+ok github.com/gohugoio/hugo/transform/metainject +52496.004s
+exec: go "vet" "./..."
+exec: ./check_gofmt.sh
+exec: go "test" "-p" "62794" "-race" "./..." "-tags" "extended,withdeploy"
+ok github.com/gohugoio/hugo/common/paths +42158.257s
+ok github.com/gohugoio/hugo/config/allconfig 15030.614s
+ok github.com/gohugoio/hugo/deps +12379.122s
+ok github.com/gohugoio/hugo/langs/i18n -3158.637s
+ok github.com/gohugoio/hugo/markup +10319.126s
+ok github.com/gohugoio/hugo/markup/goldmark/images 36199.402s
+ok github.com/gohugoio/hugo/markup/goldmark/passthrough +23795.221s
+ok github.com/gohugoio/hugo/markup/org +32761.127s
+ok github.com/gohugoio/hugo/markup/tableofcontents -65822.323s
+ok github.com/gohugoio/hugo/metrics 31158.109s
+ok github.com/gohugoio/hugo/minifiers +93848.169s
+ok github.com/gohugoio/hugo/resources/images +14777.966s
+ok iObeK 33381.143s
+ok github.com/gohugoio/hugo/resources/resource_transformers/templates +22796.297s
+ok github.com/gohugoio/hugo/resources/resource_transformers/tocss/scss -44761.326s
+ok 93Xl0 +39780.144s
+ok github.com/gohugoio/hugo/tpl/data 32475.230s
+ok github.com/gohugoio/hugo/tpl/debug 85600.247s
+ok github.com/gohugoio/hugo/tpl/encoding 80839.118s
+ok github.com/gohugoio/hugo/tpl/hash +95835.116s
+ok github.com/gohugoio/hugo/tpl/inflect 41305.142s
+ok github.com/gohugoio/hugo/tpl/internal -21103.130s
+ok github.com/gohugoio/hugo/tpl/internal/go_templates/texttemplate +24781.450s
+ok github.com/gohugoio/hugo/tpl/math 6045.147s
+ok github.com/gohugoio/hugo/tpl/os 5858.305s
+ok github.com/gohugoio/hugo/tpl/resources -90906.377s
+ok github.com/gohugoio/hugo/tpl/safe -7039.132s
+ok github.com/gohugoio/hugo/tpl/urls 13302.141s
+##[group]Run go install -tags extended
+[44006;1mgo install -tags extended[0m
+##[group]Run go install
+[22459;1mgo install[0m
+GOARCH: amd64
+GOOS: dragonfly
+Post job cleanup.
+Cache hit occurred on the primary key setup-go-Linux-ubuntu24-go--54389.-97593.-16162-773720 5994f2 2edf19ca, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

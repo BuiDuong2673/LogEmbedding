@@ -1,0 +1,33 @@
+2023-09-21T13:32:18.6132100Z ##[group]Run actions/upload-artifact@v3
+2023-09-21T13:32:18.6132830Z with:
+2023-09-21T13:32:18.6133140Z   path: ./wheelhouse/*.whl
+./wheelhouse/*.txt
+
+2023-09-21T13:32:18.6133440Z   name: artifact
+2023-09-21T13:32:18.6133940Z   if-no-files-found: warn
+2023-09-21T13:32:18.6134210Z env:
+2023-09-21T13:32:18.6134470Z   HDF5_VERSION: 1.14.1-2
+2023-09-21T13:32:18.6134750Z   MACOSX_DEPLOYMENT_TARGET: 10.9
+2023-09-21T13:32:18.6135040Z   CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-* 
+2023-09-21T13:32:18.6135540Z   CIBW_BUILD: cp*
+2023-09-21T13:32:18.6135910Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:32:18.6136290Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig
+2023-09-21T13:32:18.6136690Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:32:18.6137410Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:32:18.6138600Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T13:32:18.6139070Z ##[endgroup]
+2023-09-21T13:32:18.7640770Z With the provided path, there will be 5 files uploaded
+2023-09-21T13:32:18.7644360Z Starting artifact upload
+2023-09-21T13:32:18.7645830Z For more detailed logs during the artifact upload process, enable step-debugging: https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging#enabling-step-debug-logging
+2023-09-21T13:32:18.7647020Z Artifact name is valid!
+2023-09-21T13:32:18.8457400Z Container for artifact "artifact" successfully created. Starting upload of file(s)
+2023-09-21T13:32:28.7027040Z Total size of all the files uploaded is 26202603 bytes
+2023-09-21T13:32:28.7027680Z File upload process has finished. Finalizing the artifact upload
+2023-09-21T13:32:28.7553150Z Artifact has been finalized. All files have been successfully uploaded!
+2023-09-21T13:32:28.7553580Z 
+2023-09-21T13:32:28.7553840Z The raw size of all the files that were specified for upload is 26289629 bytes
+2023-09-21T13:32:28.7554470Z The size of all the files that were uploaded is 26202603 bytes. This takes into account any gzip compression used to reduce the upload size, time and storage
+2023-09-21T13:32:28.7554830Z 
+2023-09-21T13:32:28.7555680Z Note: The size of downloaded zips can differ significantly from the reported size. For more information see: https://github.com/actions/upload-artifact#zipped-artifact-downloads 
+2023-09-21T13:32:28.7556270Z 
+2023-09-21T13:32:28.7556420Z Artifact artifact has been successfully uploaded!

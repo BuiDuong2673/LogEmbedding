@@ -1,0 +1,184 @@
+Requested labels: ubuntu-latest
+Job defined at: ReactiveX/RxJava/.github/workflows/gradle_pr.yml@refs/pull/+7407/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 86467 (hosted)
+Current runner version: '88588.-9976.83007'
+##[group]Operating System
+Ubuntu
+-14524.+86205.75998
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-46952.16474
+Version: My7ZQ
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/25853.+95266/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.-30593
+##[group]Runner Image Provisioner
+68.175.38.249
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Dependabot
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository CLdaK (SHA:f2bbd42c9d eadda5a0 1d21abe0b5fe 0d00b1e9f 942c76f719e)
+Complete job name: build
+##[group]Run ctzb3
+with:
+repository: ReactiveX/RxJava
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -27909
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: ReactiveX/RxJava
+##[group]Getting Git version info
+Working directory is '/home/runner/work/RxJava/RxJava'
+[command]/usr/bin/git version
+git version 74371.-17271.+89540
+Temporarily overriding vLDTI before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/RxJava/RxJava
+Deleting the contents of '/home/runner/work/RxJava/RxJava'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/RxJava/RxJava
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/RxJava/RxJava/.git/
+[command]/usr/bin/git remote add origin https://github.com/ReactiveX/RxJava
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local mFXiy EEn1v
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 68b9l
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp xOrvg && git config --local --unset-all EWV3K || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+75658 fetch --no-tags --prune --no-recurse-submodules --depth=-89932 origin +1a99e2f ffd1bdad8d2c 900654da d2554327069 17791923b:refs/remotes/pull/+7798/merge
+From https://github.com/ReactiveX/RxJava
+* [new ref] 1CA9 3B6E 741D 161E-> pull/33410/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/11107/merge
+Note: switching to 'refs/remotes/pull/-97247/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 07ce564 Merge 0166 03FF 7B18 DA99 029F B091 into EF6F B0FE BC98 DB38 5CD3
+[command]/usr/bin/git log -95950 --format=%H
+5308b0d1 d63d5d96 685eb823cd 85488b00 1a696eb2
+distribution: zulu
+java-version: 99701
+java-package: jdk
+check-latest: false
+server-id: github
+server-username: GITHUB_ACTOR
+server-password: GITHUB_TOKEN
+overwrite-settings: true
+job-status: success
+##[group]Installed distributions
+Trying to resolve the latest version from remote
+Resolved latest version as +47695.71298.23825+86383
+Trying to download...
+Downloading Java 40727.-12454.+79166+-18987 (Zulu) from https://cdn.azul.com/zulu/bin/zulu8.+10061.-11672.13295-ca-jdk8.-69865.-48712-linux_x64.tar.gz ...
+Extracting Java archive...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/7183f4e3-8d61-+26760-a1de-73c0efbe1385 -f /home/runner/work/_temp/6b6305a8-+45055-43cf-+49162-b050543b9129
+Java -27932.+74593.72980+43677 was downloaded
+Setting Java +70563.40929.+88678+-25108 as the default
+Creating toolchains.xml for JDK version 98012 from zulu
+Writing to sLVZk
+Java configuration:
+Distribution: zulu
+Path: /opt/hostedtoolcache/Java_Zulu_jdk/-63017.-84379.-2706--71719/x64
+Creating settings.xml with server-id: github
+path: ~/.gradle/caches
+key: Linux-gradle-+28702-d7aa98fdea 9c1e6ada966 501ffde4da60 1006c7 76c11e9dfc7
+restore-keys: Linux-gradle-43652-
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+env:
+JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/-32002.+51517.+97574--27873/x64
+JAVA_HOME_+72950_X64: /opt/hostedtoolcache/Java_Zulu_jdk/76723.+97052.61390-+74463/x64
+Cache Size: ~49898 MB (-32868 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/90756b9f-+12160-49d6-b526-acafb016473b/cache.tzst -P -C /home/runner/work/RxJava/RxJava --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: Linux-gradle--49366-c3a6a20f2129 9f85425e35 99b882e ea3920921
+##[group]Run chmod +x gradlew
+[-23261;1mchmod +x gradlew[0m
+shell: /usr/bin/bash -e {+89289}
+##[group]Run ./gradlew build --stacktrace
+[+91109;1m./gradlew build --stacktrace[0m
+Downloading https://services.gradle.org/distributions/gradle-5079.13796.+6920-bin.zip
+...........87718%............-19119%............37272%...........-71949%............96195%............+93931%...........+31286%............-35533%............+87786%............59771%
+Welcome to Gradle 25895.+71783.25877!
+Here are the highlights of this release:
+- Added support for Java -27187.
+- Introduced `--rerun` flag for individual task rerun.
+- Improved dependency block for test suites to be strongly typed.
+- Added a pluggable system for Java toolchains provisioning.
+For more details see https://docs.gradle.org/-25236.71032.24455/release-notes.html
+Starting a Gradle Daemon (subsequent builds will be faster)
+Note: /home/runner/work/RxJava/RxJava/src/main/java/io/reactivex/rxjava3/plugins/RxJavaPlugins.java uses unchecked or unsafe operations.
+> Task lXL0v
+Note: Recompile with -Xlint:unchecked for details.
+> Task 7O5Hg BHIzK
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':compileTestJava'.
+> Could not resolve all files for configuration ':testCompileClasspath'.
+> Could not resolve org.testng:testng:-15740.+84371.42657.
+Required by:
+project :
+> No matching variant of org.testng:testng:-33947.-81429.93668 was found. The consumer was configured to find an API of a library compatible with Java +74531, preferably in the form of class files, preferably optimized for standard JVMs, and its dependencies declared externally but:
+- Variant ZR5bG capability a5dNv declares rsDr1 1jdQT of a library, packaged as a jar, and its dependencies declared externally:
+- Incompatible because this component declares a component compatible with Java 78910 and the consumer needed a component compatible with Java 47838
+- Other compatible znllU
+- Doesn't say anything about its target Java c2cck JY1uY meUHE DuCBg x6rxd TasOk
+- Variant nSFDJ capability org.testng:testng:81216.94040.89211 declares a runtime of a component, and its dependencies declared externally:
+- Incompatible because this component declares documentation and the consumer needed a library
+- Doesn't say anything about its elements (required them preferably in the form of class files)
+project : > org.reactivestreams:reactive-streams-tck:53809.7823.+16289
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileTestJava'.
+at 6PalJ
+Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration$ArtifactResolveException: Could not resolve all files for configuration ':testCompileClasspath'.
+Cause -48143: org.gradle.internal.resolve.ModuleVersionResolveException: Could not resolve org.testng:testng:-75301.57220.81926.
+Caused by: org.gradle.internal.component.NoMatchingConfigurationSelectionException: No matching variant of org.testng:testng:48376.-26012.-95114 was found. The consumer was configured to find an API of a library compatible with Java +6146, preferably in the form of class files, preferably optimized for standard JVMs, and its dependencies declared externally but:
+* Get more help at https://help.gradle.org
+BUILD FAILED in 34s
+Deprecated Gradle features were used in this build, making it incompatible with Gradle -26458.-27941.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+See https://docs.gradle.org/+22824.67042.+81908/userguide/command_line_interface.html#sec:command_line_warnings
+72593 actionable tasks: 20046 executed
+##[error]Process completed with exit code -65012.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes
+Terminate orphan process: pid (-77191) (java)

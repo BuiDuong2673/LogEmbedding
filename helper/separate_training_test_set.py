@@ -7,10 +7,12 @@ from pathlib import Path
 
 class InternalTrainTestSeparator:
     """Separate clients datasets into training dataset and test dataset."""
-    def __init__(self):
+    def __init__(self, origin_path: str, train_test_path: str) -> None:
         """Initialize InternalTrainTestSeparator."""
-        self.client_list = ["d2klab", "logsage", "maryangel101"]
+        self.client_list = ["client_1", "client_2", "client_3"]
         self.test_ratio = 0.2  # the test dataset is 20% the size of the client dataset
+        self.origin_path = Path(origin_path)
+        self.train_test_path = Path(train_test_path)
 
     def collect_all_client_files(self, client_name: str) -> list[str]:
         """Get all log file paths in client dataset.
@@ -18,7 +20,7 @@ class InternalTrainTestSeparator:
         Args:
             client_name (str): name of client whose dataset we are analyzing.
         """
-        client_dataset = f"dataset/origin/{client_name}"
+        client_dataset = self.origin_path / Path(client_name)
         # Read all log file in the client_dataset folder
         dataset_paths = []  # Collect all folders inside client's overall dataset folder
         for subdir in os.listdir(client_dataset):
@@ -41,7 +43,7 @@ class InternalTrainTestSeparator:
         # Get the list of log files in client dataset
         file_path_list = self.collect_all_client_files(client_name=client_name)
         num_log_files = len(file_path_list)
-        # Check if client has only file, in which case we can split
+        # Check if client has only file, in which case we cannot split
         if num_log_files <= 1:
             print(f"WARNING: only {num_log_files} file in client dataset. No test file available.")
         # Get the number of test files we should have
@@ -64,7 +66,7 @@ class InternalTrainTestSeparator:
     def create_train_test_directory(self) -> None:
         """Create a folder directory storing the train and test files in separate folders."""
         
-        base_path = Path("dataset/train_test_internal")
+        base_path = self.train_test_path
         base_path.mkdir(exist_ok=True, parents=True)
 
         for client in self.client_list:
@@ -81,7 +83,7 @@ class InternalTrainTestSeparator:
             for train_file in train_files:
                 file_path = Path(train_file)
                 # Extract file path after dataset/origin/<client>
-                rel_path = file_path.relative_to(Path("dataset") / Path("origin") / client)
+                rel_path = file_path.relative_to(self.origin_path / Path(client))
                 # Full target path preserving folder structure
                 target_path = train_path / rel_path
                 # Create any missing directories in the target
@@ -92,7 +94,7 @@ class InternalTrainTestSeparator:
             for test_file in test_files:
                 file_path = Path(test_file)
                 # Extract file path after dataset/origin/<client>
-                rel_path = file_path.relative_to(Path("dataset") / Path("origin") / client)
+                rel_path = file_path.relative_to(self.origin_path / Path(client))
                 # Full target path preserving folder structure
                 target_path = test_path / rel_path
                 # Create any missing directories in the target
@@ -117,7 +119,10 @@ class InternalTrainTestSeparator:
             print("-" * 40)
 
 
-# if __name__ == "__main__":
-    # internal_train_test_separator = InternalTrainTestSeparator()
-    # internal_train_test_separator.create_train_test_directory()
+if __name__ == "__main__":
+    internal_train_test_separator = InternalTrainTestSeparator(
+        origin_path="dataset/balanced_data",
+        train_test_path="dataset/train_test_new"
+    )
+    internal_train_test_separator.create_train_test_directory()
 

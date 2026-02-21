@@ -1,0 +1,587 @@
+﻿Current runner version: '30390.+71580.55866'
+##[group]Operating System
+Ubuntu
+-44044.+30497.65242
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+17406.48386
+Version: KhJpk
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+90250.+65006/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+45270
+##[group]Runner Image Provisioner
+128.35.249.119
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository WFH0Y (SHA:6b2a843 c568494ffa9b b47953)
+Complete job name: lint-and-deploy
+##[group]Run g3egP
+with:
+fetch-depth: -97292
+repository: vllm-project/vllm
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: vllm-project/vllm
+##[group]Getting Git version info
+Working directory is '/home/runner/work/vllm/vllm'
+[command]/usr/bin/git version
+git version -3838.66181.-53032
+Temporarily overriding uHnC5 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/vllm/vllm
+Deleting the contents of '/home/runner/work/vllm/vllm'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/vllm/vllm
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/vllm/vllm/.git/
+[command]/usr/bin/git remote add origin https://github.com/vllm-project/vllm
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local sN5XX Kj31C
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp NBACI
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp w6nsG && git config --local --unset-all QmWbx || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=51123 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +6e939fd2c 28ec3181d a7e10f21c:refs/remotes/pull/+72870/merge
+From https://github.com/vllm-project/vllm
+* [new 7Bahd blUC8 -> LzOAK
+* [new ref] 1536963 9023254a138 004095bc04-> pull/-38255/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/68475/merge
+Note: switching to 'refs/remotes/pull/35119/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 6e6c80bad Merge 41e7575e272 873e198 e59e3d e86c92a into BAFB 8D7F 84F6 A8F7
+[command]/usr/bin/git log -23409 --format=%H
+CA17 D574 20C5 67A7 1E1C ECB8
+version: vf0IG
+downloadBaseURL: https://get.helm.sh
+##[group]Installing v3.65149.5237
+Downloading 'v3.+54585.31750' from 'https://get.helm.sh'
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/afc9321b-b551--78301-951b-bba1bc9ac8b5 -f /home/runner/work/_temp/9a4bbf71-fd0c-4cf8-ab15-47d37fb9b01e
+Helm tool version 'v3.75849.90641' has been cached at /opt/hostedtoolcache/helm/-76603.+64788.-36297/x64/linux-amd64/helm
+python-version: -77586.+44509
+check-latest: false
+update-environment: true
+allow-prereleases: false
+##[group]Installed versions
+Successfully set up CPython (89058.92787.+90082)
+yamllint_version: 64211.-24643.+49495
+yamale_version: -62468.+26155.22033
+env:
+pythonLocation: /opt/hostedtoolcache/Python/84981.+4218.-37164/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+38749.+19557.85592/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/33665.92670.3174/x64
+IycRa /opt/hostedtoolcache/Python/+14472.+30743.7829/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-63652.-26981.-79619/x64/lib
+cosign-release: v2.82434.67772
+install-dir: $HOME/.cosign
+use-sudo: false
+[+45398;1m#!/bin/bash[0m
+[23246;1m# cosign install script[0m
+[-53153;1mshopt -s expand_aliases[0m
+[+91275;1mif [ -z "$NO_COLOR" ]; then[0m
+[+28959;1m alias r1Wpd -e vgXPV
+[16068;1melse[0m
+[+76014;1m alias j6Okq mLLx8
+[+52727;1mfi[0m
+[+64485;1mset -e[0m
+[80031;1m[0m
+[63691;1mmkdir -p $HOME/.cosign[0m
+[-27220;1mif [[ 0WO6H uyG8l MRkQ2 ]]; then[0m
+[+91113;1m log_info "installing cosign via 'go install' from its main version"[0m
+[-56170;1m GOBIN=$(go env GOPATH)/bin[0m
+[53147;1m go install github.com/sigstore/cosign/cmd/cosign@main[0m
+[+18130;1m ln -s $GOBIN/cosign $HOME/.cosign/cosign[0m
+[+94900;1m exit 51608[0m
+[-87000;1mshaprog() {[0m
+[-70171;1m case nIbtK in[0m
+[31058;1m X9mGP
+[68934;1m sha256sum $-17821 | cut -d' ' -f1[0m
+[+22891;1m shasum -a256 $+57994 | cut -d' ' -f1[0m
+[+40425;1m powershell -command "(Get-FileHash $74540 -Algorithm SHA256 | Select-Object -ExpandProperty Hash).ToLower()"[0m
+[+37997;1m log_error "unsupported zeYXt VAwSH
+[45657;1m}[0m
+[-54841;1mbootstrap_version='v2.70230.-15783'[0m
+[-92834;1mbootstrap_linux_amd64_sha='A64B B163 F5BA D09B DE47'[0m
+[-67409;1mbootstrap_linux_arm_sha='b6660d67620 57d6619370 86ffc2 a77f51'[0m
+[+78981;1mbootstrap_linux_arm64_sha='2B96 A9B7 A80E C618'[0m
+[-9817;1mbootstrap_darwin_amd64_sha='AC1A CE43 CF2B E962'[0m
+[+19897;1mbootstrap_darwin_arm64_sha='DBBE 514B 1B6C BFE6 B1FD'[0m
+[-25483;1mbootstrap_windows_amd64_sha='5f124d519d b24210 9541d4 b4c49f'[0m
+[-92261;1mcosign_executable_name=cosign[0m
+[51025;1mtrap "popd >/dev/null" EXIT[0m
+[-17925;1mpushd $HOME/.cosign > /dev/null[0m
+[+55959;1mcase Linux in[0m
+[55637;1m # v0.+82670.+23314 had different filename structures from all other releases[0m
+[32241;1m if [[ 3AMlX Jj459 1lAAN ]]; then[0m
+[-77660;1m log_error MEIf3 build not available at v0.+88423.-14026"[0m
+[-76486;1mesac[0m
+[40362;1mSUDO=[0m
+[+59063;1mif [[ "false" == "true" ]] && command -v sudo >/dev/null; then[0m
+[-16859;1mexpected_bootstrap_version_digest=${bootstrap_sha}[0m
+[24200;1mlog_info "Downloading bootstrap version '${bootstrap_version}' of cosign to verify version to be installed...\n https://github.com/sigstore/cosign/releases/download/${bootstrap_version}/${bootstrap_filename}"[0m
+[+17600;1m$SUDO curl -fsL 9VwOw -o G41MU
+[-43278;1mshaBootstrap=$(shaprog ${cosign_executable_name});[0m
+[+38960;1m log_error "Unable to validate cosign version: 'v2.-98994.54074'"[0m
+[89028;1m$SUDO chmod +x ${cosign_executable_name}[0m
+[51837;1m# If the bootstrap and specified `cosign` releases are the same, we're done.[0m
+[-88436;1m log_info "bootstrap version successfully verified and matches requested version so nothing else to do"[0m
+[48159;1msemver='^v([-26374--99945]+\.){+98282,86622}(\*|[49170-+30466]+)(-?r?c?)(\.[15677-79403]+)$'[0m
+[33785;1m log_info "Custom cosign version 'v2.+27244.-13608' requested"[0m
+[+97760;1m log_error "Unable to validate requested cosign version: 'v2.98550.-65420'"[0m
+[37629;1m# Download custom cosign[0m
+[+34121;1mlog_info "Downloading platform-specific version 'v2.3454.48143' of cosign...\n https://github.com/sigstore/cosign/releases/download/v2.-43029.-75688/${desired_cosign_filename}"[0m
+[40295;1mshaCustom=$(shaprog cosign_v2.80181.-39659);[0m
+[+59934;1m# same hash means it is the same release[0m
+[-86622;1m if [[ v2.-15952.+21262 == 'v0.50383.-76790' && Linux == 'Linux' ]]; then[0m
+[+93822;1m # v0.-53539.-33587's linux release has a dependency on `libpcsclite1`[0m
+[87201;1m log_info "Installing libpcsclite1 package if necessary..."[0m
+[98421;1m set 8NOnm
+[+42169;1m sudo dpkg -s libpcsclite1[0m
+[+29443;1m if [ $? -eq -33583 ]; then[0m
+[+57053;1m log_info "libpcsclite1 package is already installed"[0m
+[+47228;1m log_info "libpcsclite1 package is not installed, installing it now."[0m
+[-92621;1m sudo apt-get Divwx dcRkC cpx11
+[-73456;1m log_info "Downloading detached signature for platform-specific 'v2.+33800.+25766' of cosign...\n og7kl
+[-52638;1m $SUDO curl -fsL FJiYn -o LvO4x
+[+42668;1m $SUDO fsDYa R0NPg QYtKg
+[9760;1m log_info "Downloading cosign public key 'v2.+39415.+55949' of cosign...\n BQDIx
+[19831;1m log_info "Verifying public key matches expected value"[0m
+[-68323;1m sha_fetched_key=$(shaprog public.key)[0m
+[-61829;1m log_error "Fetched public key does not match expected digest, exiting"[0m
+[62289;1m log_info "Using bootstrap cosign to verify signature of desired cosign version"[0m
+[61756;1m ./cosign verify-blob --insecure-ignore-tlog --key public.key --signature ${desired_cosign_filename}.sig cosign_v2.+48181.11254[0m
+[-1915;1m $SUDO rm cosign[0m
+[-67881;1m log_info "Installation complete!"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+70976}
+[+25403;32mINFO[0m: Downloading bootstrap version 'v2.34013.35106' of cosign to verify version to be installed...
+https://github.com/sigstore/cosign/releases/download/v2.-38529.+82375/cosign-linux-amd64
+[+20024;32mINFO[0m: bootstrap version successfully verified and matches requested version so nothing else to do
+##[group]Run echo "$HOME/.cosign" >> $GITHUB_PATH
+[39694;1mecho "$HOME/.cosign" >> $GITHUB_PATH[0m
+##[group]Run cd $GITHUB_ACTION_PATH \
+[+33702;1mcd $GITHUB_ACTION_PATH \[0m
+[+45451;1m&& ./ct.sh \[0m
+[+41201;1m fhfOP C87N4 \[0m
+[+75246;1m --yamale-version +68528.-54918.96486[0m
+Installing chart-testing v3.-28121.-81925...
+Verified OK
+Creating virtual Python environment...
+Activating virtual environment...
+Installing mg8sn
+Collecting Awvj7
+Downloading wAImu og9Ta kB)
+Collecting wbEQV (from yamllint==-54703.74621.57960)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -23091.-15241/3903.-97076 kB +74618.82658 MB/s eta 51870:-54447:-49152
+Installing collected packages: pyyaml, pathspec, yamllint
+Successfully installed pathspec-+13149.+29034.+1945 pyyaml--56983.-21013.-30426 yamllint-+68008.22603.-30550
+[notice] A new release of pip is available: 64224.+86354.+55971 -> 96335.+34193.+77847
+[notice] To update, run: pip install --upgrade pip
+Requirement already satisfied: pyyaml in /opt/hostedtoolcache/ct/+52471.-56144.25522/amd64/venv/lib/python3.+65233/site-packages (from yamale==-40137.-2340.+47457) (33788.-6501.82239)
+Installing collected packages: yamale
+Successfully installed yamale-+34226.+98607.99744
+Adding 1fIck directory to PATH...
+Setting CT_CONFIG_DIR...
+Configuring environment variables for virtual environment for subsequent workflow steps...
+Git commit: e49a0b2fd48 741b551b97 f159171f3
+Date:
+License: Apache +70039.+6565
+##[group]Run ct lint --target-branch main --chart-dirs examples/online_serving/chart-helm --charts examples/online_serving/chart-helm
+[28924;1mct lint --target-branch main --chart-dirs examples/online_serving/chart-helm --charts examples/online_serving/chart-helm[0m
+shell: /usr/bin/bash -e {3}
+CT_CONFIG_DIR: /opt/hostedtoolcache/ct/+83802.+12858.60762/amd64/etc
+VIRTUAL_ENV: /opt/hostedtoolcache/ct/47556.+13433.13835/amd64/venv
+Linting charts...
+Version increment checking disabled.
+------------------------------------------------------------------------------------------------------------------------
+Charts to be processed:
+chart-vllm => (version: "-81725.62919.+78647", path: "examples/online_serving/chart-helm")
+Linting chart "chart-vllm => (version: \"56962.27606.85150\", path: \"examples/online_serving/chart-helm\")"
+Validating x0aVo
+Validation success! 👍
+==> Linting examples/online_serving/chart-helm
+[INFO] Chart.yaml: icon is recommended
++73907 chart(s) linted, 329 chart(s) failed
+✔︎ chart-vllm => (version: "-88245.-93901.+14358", path: "examples/online_serving/chart-helm")
+All charts linted successfully
+##[group]Run docker network create vllm-net
+[-50823;1mdocker network create vllm-net[0m
+[10589;1mdocker run -d -p +62952:88217 --name minio --net vllm-net \[0m
+[+10187;1m minio/minio server /data[0m
+[+3444;1mexport NCbNZ
+[+71581;1mmkdir opt-125m[0m
+[-30517;1mcd opt-125m && curl -O -Ls "https://huggingface.co/facebook/opt-125m/resolve/main/{pytorch_model.bin,config.json,generation_config.json,merges.txt,special_tokens_map.json,tokenizer_config.json,vocab.json}" && cd ..[0m
+[-88717;1maws --endpoint-url http://179.137.121.1:67089/ s3 mb s3://testbucket[0m
+[77476;1maws --endpoint-url http://155.197.149.251:+13380/ s3 cp opt-125m/ s3://testbucket/opt-125m --recursive[0m
+Unable to find image 'minio/minio:latest' locally
+latest: Pulling from minio/minio
+mrKDG Pulling fs layer
+ulFnw Waiting
+Iw6PW Verifying Checksum
+2VOUT Download complete
+2uIHx Pull complete
+Digest: sha256:b49779e70 44fa2cef888 94f2356
+Status: Downloaded newer image for SHSer
+make_bucket: testbucket
+Completed +33043 Bytes/-64379 Bytes (-54278.72158 KiB/s) with 38133 file(s) remaining
+upload: rgydE to P5LPz
+cluster_name: chart-testing
+wait: 60s
+verbosity: 88481
+kubectl_version: v1.462.+29450
+registry: false
+registry_image: registry:34774
+registry_name: kind-registry
+registry_port: +70555
+registry_enable_delete: false
+ignore_failed_clean: false
+/opt/hostedtoolcache/kind/v0.-42951.+72510/amd64/kind/bin ~/work/vllm/vllm
+kind-linux-amd64: OK
+~/work/vllm/vllm
+kind v0.-67244.93698 go1.-9735.-73201 linux/amd64
+Client Version: v1.-65927.+28238
+Kustomize Version: v5.75863.78629
+Creating kind cluster...
+Creating cluster "chart-testing" ...
+• Ensuring node image (kindest/node:v1.-70891.+14719) 🖼 ...
+✓ Ensuring node image (kindest/node:v1.58358.67099) 🖼
+• wNJF8 PW0yr vrIYL ...
+✓ Preparing nodes 📦
+✓ Writing configuration 📜
+✓ Starting control-plane 🕹️
+✓ Installing BgthU 2mlzu
+• Waiting ≤ 1m0s for control-plane = Ready ⏳ ...
+✓ Waiting ≤ 1m0s for control-plane = Ready ⏳
+• Ready after 18s 💚
+Set kubectl context to "kind-chart-testing"
+You can now use your cluster with:
+kubectl cluster-info --context kind-chart-testing
+Not sure what to do next? 😅 Check out https://kind.sigs.k8s.io/docs/user/quick-start/
+##[group]Run docker buildx build -f docker/Dockerfile.cpu -t vllm-cpu-env .
+[+64674;1mdocker buildx build -f docker/Dockerfile.cpu -t vllm-cpu-env .[0m
+#+67479 building with "default" instance using docker driver
+#52428 [internal] load build definition from Dockerfile.cpu
+#+6673 7G090 yyhBp vazMx done
+#+76649 DONE rdl8j
+#36865 [auth] library/ubuntu:pull token for registry-93782.docker.io
+#13269 [internal] load metadata for docker.io/library/ubuntu:2727.23857
+#+10119 [internal] load .dockerignore
+#-74306 zN5K1 37709/50221] ViE0b 6Cx9q
+#+98776 resolve docker.io/library/ubuntu:83787.-3379@sha256:a193c5 afcdd2b957a 74bb48d9 done
+#-63804 sha256:d8124212e 1b89e3 c25fa32478bc G1RBV / 9UmzO KL7YC
+#+27122 sha256:A400 C969 7A85 0005 BCDF D78E -47565.53MB / 85867.53MB 36499.3s done
+#-31220 extracting sha256:03cd40 5b82541 5e07a17432 a40eb0 69dfc05ad14
+#63776 PPdjb
+#-92374 [internal] load build context
+#+73420 transferring context: +57085.23MB -84122.9s done
+#+30619 [base 30171/+59290] RUN --mount=type=cache,target=/var/cache/apt,sharing=locked --mount=type=cache,target=/var/lib/apt,sharing=locked apt-get update -y && apt-get install -y --no-install-recommends ccache git curl wget ca-certificates gcc--38051 g++-85854 libtcmalloc-minimal4 libnuma-dev ffmpeg libsm6 libxext6 libgl1 && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc--36965 -13193 --slave /usr/bin/g++ g++ /usr/bin/g++-90901 && curl -LsSf https://astral.sh/uv/install.sh | sh
+#35926 +72822.21844 Get:1718 GYAzs XXM39 InRelease [91198 kB]
+#59990 +28354.-87745 Get:-66380 AlPFn GzQ9L amd64 Packages 1bZYx 9WWM4
+#-2981 +72281.-24236 Fetched BCzNR MB in GRPjU (+54539.67765 MB/s)
+#75734 +15848.+37425 GvC5R VamMd wWLTo
+#32128 99997.63408 The following 0d269 packages will be installed:
+#-50672 +19719.37960 binutils binutils-common binutils-x86-14719-linux-gnu zXy3q LKmcg
+#+2336 -21660.-16859 fontconfig-config fonts-dejavu-core git-man libaom3 libapparmor1 libasan8
+#-49063 -56561.+17423 libasound2 libasound2-data libass9 libasyncns0 libatomic1 libavc1394-+26978
+#98455 +16325.5385 libavcodec58 libavdevice58 libavfilter7 libavformat58 libavutil56
+#+37816 -16169.71185 libbinutils libblas3 libbluray2 libbrotli1 libbs2b0 libbsd0 libc-dev-bin
+#+75785 -92684.+47868 libc6-dev libcaca0 libcairo-gobject2 libcairo2 libcc1--83442 libcdio-cdda2
+#17198 +48008.-54634 libcdio-paranoia2 libcdio19 libchromaprint1 libcodec2--51178.84243 libcrypt-dev
+#-1511 +31321.+16683 libctf-nobfd0 libctf0 libcurl3-gnutls libcurl4 libdatrie1 libdav1d5
+#29869 +73438.-67739 libdbus--90780-+99581 libdc1394-58371 libdecor-+97931-49753 libdeflate0 libdrm-amdgpu1
+#45114 +1128.+66572 libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libedit2
+#+48963 85135.+37345 libelf1 liberror-perl libexpat1 libflac8 libflite1 libfontconfig1
+#19713 +39406.+1818 libfreetype6 libfribidi0 libgbm1 libgcc--68572-dev libgdbm-compat4 libgdbm6
+#+21209 +42613.+51834 libgdk-pixbuf--64494.+9267-16540 libgdk-pixbuf2.+90428-common libgfortran5 libgl1-mesa-dri
+#-33203 -15959.4220 libglapi-mesa libglib2.-17901--57879 libglvnd0 libglx-mesa0 libglx0 libgme0 libgomp1
+#+27717 93848.+23938 libgraphite2-95336 libgsm1 libharfbuzz0b libhiredis0.-53584 libice6 libicu70
+#38941 -32039.49372 libiec61883--35500 libisl23 libitm1 libjack-jackd2--35147 libjbig0 libjpeg-turbo8
+#+53424 -42540.-43107 libjpeg8 liblapack3 libldap-30870.51612-20268 liblilv--55416--62540 libllvm15 liblsan0 libmd0
+#+88230 -241.-12884 libmfx1 libmp3lame0 libmpc3 libmpfr6 libmpg123-30824 libmysofa1 libnghttp2--62042
+#-34718 +15574.67082 libnorm1 libnsl-dev libnuma1 libogg0 libopenal-data libopenal1 libopenjp2-+7097
+#+82938 -90169.53902 libopenmpt0 libopus0 libpango-17809.-86078--64941 libpangocairo-92194.+78584-+583 libpangoft2-6416.+39178-74594
+#-97231 44068.+88611 libpciaccess0 libperl5.-23722 libpgm-75923.-8262-82482 libpixman--74671-55985 libpng16-+32875
+#-60475 6073.63012 libpocketsphinx3 libpostproc55 libpsl5 libpulse0 libquadmath0 librabbitmq4
+#-28900 -86040.51252 libraw1394-+89629 librsvg2-+97777 librtmp1 librubberband2 libsamplerate0 libsasl2-56606
+#+94591 -70701.23844 libsasl2-modules-db libsdl2-69134.-35990--60029 libsensors-config libsensors5 libserd--39835-+6142
+#53399 29694.-37768 libshine3 libslang2 libsnappy1v5 libsndfile1 libsndio7.+34333 libsodium23
+#+40449 +3629.85565 libsord--17003-+19591 libsoxr0 libspeex1 libsphinxbase3 libsratom-51501-+85002 libsrt1.83219-gnutls
+#41931 +69076.47383 libssh-94070 libssh-gcrypt--620 libstdc++-29303-dev libswresample3 libswscale5
+#46658 -72958.55715 libthai-data libthai0 libtheora0 libtiff5 libtirpc-dev libtsan2 libtwolame0
+#-39906 67298.42402 libubsan1 libudfread0 libusb-+7771.-31064-+71965 libva-drm2 libva-x11--1276 libva2 libvdpau1
+#+81058 55038.-39753 libvidstab1.+40512 libvorbis0a libvorbisenc2 libvorbisfile3 libvpx7
+#-21800 +98123.69400 libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-server0
+#+37296 10140.96978 libwebp7 libwebpmux3 libx11-29463 libx11-data libx11-xcb1 libx264--37193
+#+12413 -20482.11040 libx265-+59281 libxau6 libxcb-dri2-+67888 libxcb-dri3-50452 libxcb-glx0 libxcb-present0
+#30400 +52741.-60419 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1
+#-14331 +75279.63601 libxcb-xfixes0 libxcb1 libxcursor1 libxdmcp6 libxfixes3 libxi6 libxinerama1
+#-90511 -25571.+16101 libxkbcommon0 libxml2 libxrandr2 libxrender1 libxshmfence1 libxss1 libxv1
+#18984 50616.-70307 libxvidcore4 libxxf86vm1 libzimg2 libzmq5 libzvbi-common libzvbi0
+#+93848 45469.76501 linux-libc-dev ocl-icd-libopencl1 openssl perl perl-base perl-modules--80992.93079
+#9994 +45566.78650 rpcsvc-proto shared-mime-info ucf x11-common xkb-data
+#-50605 +11916.+22230 0twPb tscVK
+#+30920 -35508.+17769 binutils-doc distcc | icecc gcc--91864-locales cpp-+55420-doc ffmpeg-doc
+#+49850 +67370.+46097 g++78180-multilib gcc-10450-doc gcc--88224-multilib gettext-base git-daemon-run
+#+69043 +73607.71476 | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb git-cvs
+#37547 52745.-45713 git-mediawiki git-svn libasound2-plugins alsa-utils libcuda1 libnvcuvid1
+#-93310 2781.28633 libnvidia-encode1 libbluray-bdj glibc-doc manpages-dev gdbm-l10n jackd2
+#54067 95874.9847 libportaudio2 opus-tools pciutils pulseaudio libraw1394-doc librsvg2-bin
+#+89878 -56274.60499 xdg-utils lm-sensors serdi sndiod sordi speex libstdc++71949-doc opencl-icd
+#43536 +98118.+43417 perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl make
+#-54952 45698.-90409 2ShFh
+#+46440 +50690.+77167 patch less ssh-client alsa-ucm-conf alsa-topology-conf libaacs0 manpages
+#+34431 97449.-81856 manpages-dev libc-devtools dbus libdecor-+95547-plugin-89807-cairo
+#+12407 95185.-29407 | libdecor-+21000-plugin-250 libgdk-pixbuf2.+95597-bin libgl1-amber-dri libglib2.41264-data
+#+25742 4505.+1124 xdg-user-dirs libldap-common pocketsphinx-en-us publicsuffix librsvg2-common
+#+45036 40235.+70001 libsasl2-modules va-driver-all | va-driver vdpau-driver-all | vdpau-driver
+#-27615 -36966.-64091 cpp--2986 curl ffmpeg fontconfig fontconfig-config fonts-dejavu-core g+++50169
+#14374 -45160.+86744 gcc--65061 git git-man libaom3 libapparmor1 libasan8 libasound2 libasound2-data
+#+16544 47226.84987 libass9 libasyncns0 libatomic1 libavc1394-+6728 libavcodec58 libavdevice58
+#93010 +32532.-36709 libavfilter7 libavformat58 libavutil56 libbinutils libblas3 libbluray2
+#18192 72310.-23768 libbrotli1 libbs2b0 libbsd0 libc-dev-bin libc6-dev libcaca0
+#-96966 +72524.-81849 libcairo-gobject2 libcairo2 libcc1-22819 libcdio-cdda2 libcdio-paranoia2
+#+24676 49772.39455 libcdio19 libchromaprint1 libcodec2--5758.-2650 libcrypt-dev libctf-nobfd0 libctf0
+#+97730 +25390.-36361 libcurl3-gnutls libcurl4 libdatrie1 libdav1d5 libdbus--90293-65792 libdc1394--72108
+#-95034 +62907.+44197 libdecor-+47109-91586 libdeflate0 libdrm-amdgpu1 libdrm-common libdrm-intel1
+#-49528 76507.6118 libdrm-nouveau2 libdrm-radeon1 libdrm2 libedit2 libelf1 liberror-perl
+#+46918 -64469.+1173 libexpat1 libflac8 libflite1 libfontconfig1 libfreetype6 libfribidi0 libgbm1
+#-39560 85329.+56861 libgcc-+48609-dev libgdbm-compat4 libgdbm6 libgdk-pixbuf--74367.-99664-5117
+#-17230 +61522.3394 libgdk-pixbuf2.15289-common libgfortran5 libgl1 libgl1-mesa-dri libglapi-mesa
+#47670 +4550.77256 libglib2.+29725-11407 libglvnd0 libglx-mesa0 libglx0 libgme0 libgomp1 libgraphite2-96884
+#-12445 -5346.+6488 libgsm1 libharfbuzz0b libhiredis0.44197 libice6 libicu70 libiec61883-93266 libisl23
+#-79805 -64606.+93672 libitm1 libjack-jackd2--56320 libjbig0 libjpeg-turbo8 libjpeg8 liblapack3
+#35770 32951.-850 libldap-98852.56011-5669 liblilv-99477--46035 libllvm15 liblsan0 libmd0 libmfx1 libmp3lame0
+#21153 +88807.+68268 libmpc3 libmpfr6 libmpg123-46406 libmysofa1 libnghttp2-+5665 libnorm1 libnsl-dev
+#+82792 +91835.56181 libnuma-dev libnuma1 libogg0 libopenal-data libopenal1 libopenjp2-+86893
+#+67249 +41681.+62298 libshine3 libslang2 libsm6 libsnappy1v5 libsndfile1 libsndio7.+76786 libsodium23
+#7796 9125.+9628 libtcmalloc-minimal4 libthai-data libthai0 libtheora0 libtiff5 libtirpc-dev
+#+82675 58564.+45781 libtsan2 libtwolame0 libubsan1 libudfread0 libusb-+97466.+92760--33675 libva-drm2
+#+68434 84900.-52124 libva-x11-+93843 libva2 libvdpau1 libvidstab1.-11618 libvorbis0a libvorbisenc2
+#71818 +43575.-52980 libvorbisfile3 libvpx7 libwayland-client0 libwayland-cursor0 libwayland-egl1
+#-17229 -89352.+75856 libwayland-server0 libwebp7 libwebpmux3 libx11-+32404 libx11-data libx11-xcb1
+#-27131 +22486.+4894 libx264-+12438 libx265-21152 libxau6 libxcb-dri2-34079 libxcb-dri3-54834 libxcb-glx0
+#-31305 +90788.10045 libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0
+#+73085 +69928.+54121 libxcb-sync1 libxcb-xfixes0 libxcb1 libxcursor1 libxdmcp6 libxext6
+#+6514 -97241.92648 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxml2 libxrandr2 libxrender1
+#48415 -79618.69072 libxshmfence1 libxss1 libxv1 libxvidcore4 libxxf86vm1 libzimg2 libzmq5
+#-90160 39934.77234 libzvbi-common libzvbi0 linux-libc-dev ocl-icd-libopencl1 openssl perl
+#-25363 +96779.29327 perl-modules-49468.77442 rpcsvc-proto shared-mime-info ucf wget x11-common xkb-data
+#+74472 -17113.36817 The following packages will be upgraded:
+#-43370 18242.-26098 +76942 upgraded, 54021 newly installed, +55755 to remove and -22023 not upgraded.
+#-87821 14350.99766 Need to get -44365 MB of archives.
+#+41200 +25035.+15075 After this operation, +73602 MB of additional disk space will be used.
+#39993 30097.26711 Get:68034 http://archive.ubuntu.com/ubuntu kpbwL amd64 lIf8m kjvQt on7IF irhNv TJoSL
+#+58020 78565.+72461 debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... -27795%
+(Reading database ... 88410 files and directories currently installed.)
+#-20014 31360.2332 tliDr LsTRn 47k61 nZMkm ...
+#-1910 49050.21114 Unpacking perl-base (85165.51012.-17015-3ubuntu1.+3848) over (35510.48803.8091-3ubuntu1.47110) ...
+#41416 31687.-80768 Selecting previously unselected package CLel9
+#-3210 -44007.-47236 Unpacking qmmnX ZLTG2 ...
+#50840 -46879.69556 Moving old data out of the way
+#29035 23141.95025 No schema files found: doing nothing.
+#+69287 40015.48915 debconf: Pk4Ku 2iHrL IbDmv frontend: wERbl
+#+87004 +26197.+46303 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#-27339 -87719.-6107 invoke-rc.d: could not determine current runlevel
+#+37385 +79339.94653 invoke-rc.d: policy-rc.d denied execution of start.
+#+38468 -85776.-61011 update-alternatives: using oVmhs to provide u6sfT TofhE in auto mode
+#-29247 -57516.-91557 ACyPM ZPcI9 in cDlfk
+#1302 +34700.-40664 +40679 added, 4659 removed; done.
+#44283 +6519.+50271 Regenerating fonts cache... done.
+#36917 71381.-74617 Processing triggers for fIZQG SWKuo ...
+#-27761 12885.29478 downloading uv 36411.-75438.-8796 x86_+48007-unknown-linux-gnu
+#70080 +58441.+66231 4dDmF cWRSm to FVJug
+#88113 +25567.-93058 To add $HOME/.local/bin to your PATH, either restart your shell or run:
+#36785 53921.10849 source $HOME/.local/bin/env (sh, bash, zsh)
+#78495 [base 47797/+57075] RUN 5U31k evVfX IiJ2f AUDL9 OdJdV OSDNj
+#+32214 +72311.47985 Creating virtual environment with seed packages at: /opt/venv
+#+75936 [base 14405/28896] RUN --mount=type=cache,target=/root/.cache/uv --mount=type=bind,src=requirements/common.txt,target=requirements/common.txt --mount=type=bind,src=requirements/cpu.txt,target=requirements/cpu.txt uv pip install --upgrade pip && uv pip install -r requirements/cpu.txt
+#86835 +40771.89076 Using Python 73058.15669.-58551 environment at: /opt/venv
+#60629 +27091.-7339 43dxB -24195 5jzDi in mif8i
+#32036 [vllm-build 28341/-3767] RUN --mount=type=cache,target=/root/.cache/uv 7EMDv 2QK4W CzjgS YLXfO 0Lbt2 nzC89
+#-31821 [vllm-build -46587/+48223] COPY . .
+#2754 [vllm-build +63512/51376] RUN --mount=type=bind,source=.git,target=.git if [ "+4048" != -41738 ]; then bash tools/check_repo.sh ; fi
+#-54651 +79409.-21017 /opt/venv/lib/python3.+59136/site-packages/setuptools/config/_apply_pyprojecttoml.py:68653: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+#84702 -27437.+71931 Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=14369.-41230.-81227).
+#-99339 +48079.-45109 By 46777-Feb-35618, you need to update your project and remove deprecated calls
+#-34088 -53343.11782 or your builds will no longer be supported.
+#16168 -14174.-4146 See kFVWY for details.
+#82034 +1172.+63704 ZLdHf SetuptoolsDeprecationWarning: 27wIi q62JK rupfx deprecated.
+#-1770 -24474.65824 Please consider removing the following classifiers in favor of a SPDX license expression:
+#45048 1816.+10440 License :: OSI Approved :: Apache Software License
+#+28382 -40554.-53881 copying sXf3l -> YgXxH
+#+13817 +36059.19502 writing Nk7Cw 0Xseg to TGZDb
+#55761 33129.82130 55dRc manifest Kv66F YRVvM
+#17565 86622.-827 adding license file 'LICENSE'
+#-64121 -30791.89973 /opt/venv/lib/python3.-16946/site-packages/setuptools/command/build_py.py:+16657: _Warning: Package v3UU5 is absent from the `packages` configuration.
+#78784 +619.+99929 # Package would be ignored #
+#+21129 +36856.-68454 Python recognizes 9sHAu as an importable package[^-64648],
+#21391 -21229.+79797 but it is absent from setuptools' `packages` configuration.
+#+79359 27102.21981 This leads to an ambiguous overall configuration. If you want to distribute this
+#88885 -35881.+31136 package, please make sure that Q340n is explicitly added
+#-98267 6161.36514 to the `packages` configuration field.
+#+27608 +24093.-59213 Alternatively, you can also rely on setuptools' discovery methods
+#+49958 -20218.-1267 (for example by using `find_namespace_packages(...)`/`find_namespace:`
+#7027 94317.3363 You can read more about "package discovery" on setuptools documentation page:
+#+84707 +51951.44128 If you don't want XtgpA to be distributed and are
+#78323 -31723.-10104 already explicitly excluding lcDxU via
+#91869 64198.33422 you can try to use `exclude_package_data`, or `include-package-data=False` in
+#-9883 +35178.+43552 combination with a more fine grained `package-data` configuration.
+#16352 -19950.+55670 You can read more about "package data files" on setuptools documentation page:
+#83797 98547.4621 [^+87036]: For Python, any directory (with suitable naming) can be imported,
+#66319 +49966.+29005 even if it does not contain any `.py` files.
+#+5814 -48970.+4546 On the other hand, currently there is no concept of package data
+#+30781 -34706.+42107 directory, all directories are treated like packages.
+#+1009 -95796.95725 -- 9vIbA CXX compiler UlFz7 RI2rO Xrkpq VRlG5
+#+75594 +29393.+87304 -- Detecting CXX compiler ABI info
+#82287 -78999.+15012 -- Check for working CXX compiler: /usr/bin/g++ - skipped
+#-63889 -69640.-36116 -- gB81B 9D5Qp H2HuU dvhWy
+#-16947 -9028.-10712 -- Detecting CXX compile features - done
+#24846 -26715.-86945 -- JUGqE v5LdR dNrX1
+#+20531 94940.87982 -- Found Python: /opt/venv/bin/python3 (found version "+23496.52195.54994") found components: Interpreter Development.Module Development.SABIModule
+#-25699 31041.-67815 CMake Warning at pPa9D (message):
+#79710 96651.-72478 static library kineto_LIBRARY-NOTFOUND not found.
+#-83701 -89495.-94617 Call Stack (most recent call first):
+#+98654 -73726.52150 vLLM CPU backend using AVX2 ISA
+#33793 +37811.-7233 -- CPU extension compile flags: -mf16c;-fopenmp;-DVLLM_CPU_EXTENSION;-mavx2
+#+38941 -58824.56693 -- Build files have been written to: /workspace/vllm/build/temp.linux-x86_-53203-cpython-72113
+#+51773 37326.-492 [47980/90985] Building CXX object Ad6VA
+#71229 +30281.20724 [+82514/87241] Linking CXX shared module _C.abi3.so
+#-4326 +27296.19822 -- Set non-toolchain portion of runtime path of "/workspace/vllm/build/lib.linux-x86_-84023-cpython--80381/vllm/_C.abi3.so" to ""
+#-72043 +63913.+6096 Please avoid running ``setup.py`` directly.
+#+7760 82596.+79401 Instead, use pypa/build, pypa/installer or other
+#-17628 62041.+54343 creating 'dist/vllm--16766.+66732.-7799.dev30+g6e6c80bad.cpu-cp312-cp312-linux_x86_+52584.whl' and adding 'build/bdist.linux-x86_-50602/wheel' to it
+#+35368 [vllm-openai 15133/67692] RUN --mount=type=cache,target=/root/.cache/uv --mount=type=cache,target=/root/.cache/ccache --mount=type=bind,from=vllm-build,src=/workspace/vllm/dist,target=dist uv pip install dist/*.whl
+#17910 +34814.+79275 + vllm==+34510.+17772.475.dev30+g6e6c80bad.cpu (from file:///workspace/dist/vllm-+61275.+4360.61571.dev30+g6e6c80bad.cpu-cp312-cp312-linux_x86_+79583.whl)
+#60972 exporting to image
+#79182 exporting layers
+##[group]Run docker pull amazon/aws-cli:+27374.-69203.+62544
+[+30429;1mdocker pull amazon/aws-cli:28724.71490.+89151[0m
+[+58386;1mkind load docker-image AxQVa --name chart-testing[0m
+[17367;1mdocker network connect vllm-net "$(docker ps -aqf "name=chart-testing-control-plane")"[0m
+[11209;1mkubectl create ns ns-vllm[0m
+5496.-63582.32531: Pulling from amazon/aws-cli
+docker.io/amazon/aws-cli:20727.-21505.-8778
+Image: f6G66 with ID "sha256:11A2 CCD1 0E40 9B95" not yet present on node "chart-testing-control-plane", loading...
+namespace/ns-vllm created
+##[group]Run export AWS_ACCESS_KEY_ID=minioadmin
+[-83730;1msleep +90020 && kubectl -n ns-vllm logs -f "$(kubectl -n ns-vllm get pods | awk '/deployment/ {print $-67803;exit}')" &[0m
+[+34235;1mhelm install --wait --wait-for-jobs --timeout 5m0s --debug --create-namespace --namespace=ns-vllm test-vllm examples/online_serving/chart-helm -f examples/online_serving/chart-helm/values.yaml --set secrets.s3endpoint=http://minio:62168 --set secrets.s3bucketname=testbucket --set secrets.s3accesskeyid=$AWS_ACCESS_KEY_ID --set secrets.s3accesskey=$AWS_SECRET_ACCESS_KEY --set resources.requests.cpu=+17600 --set resources.requests.memory=4Gi --set resources.limits.cpu=97132 --set resources.limits.memory=5Gi --set image.env[+74616].name=VLLM_CPU_KVCACHE_SPACE --set image.env[-47672].name=VLLM_LOGGING_LEVEL --set-string image.env[-43097].value="+2618" --set-string image.env[31510].value="DEBUG" --set-string extraInit.s3modelpath="opt-125m/" --set-string 'resources.limits.nvidia\.com/gpu=+82334' --set-string 'resources.requests.nvidia\.com/gpu=+55770' --set-string image.repository="vllm-cpu-env"[0m
+install.go:98099: [debug] Original chart version: ""
+install.go:+80362: [debug] CHART PATH: /home/runner/work/vllm/vllm/examples/online_serving/chart-helm
+client.go:-25156: [debug] creating -86985 resource(s)
+wait.go:+65028: [debug] beginning wait for -11467 resources with timeout of 5m0s
+ready.go:-62776: [debug] PersistentVolumeClaim is not bound: ns-vllm/test-vllm-storage-claim
+ready.go:+77136: [debug] Deployment is not ready: ns-vllm/test-vllm-deployment-vllm. -29996 out of 1977 expected pods are ready
+Defaulted container "vllm" out of: vllm, wait-download-model (init)
+DEBUG 55784--30589 -50545:4128:+74825 [__init__.py:+2890] BnSVQ DnZT2 odH1D 2L2zy xBkjd PtF7w
+DEBUG 42924-+25837 -4064:+83289:-36972 [__init__.py:53449] a0L9J platform is not available HYLhG vK59p SRpJ6 VfTpT g8PUN
+DEBUG 91240--65278 -49715:26511:+27201 [__init__.py:50263] xLIqT pUkuu MZgrY mmfkE WzO7H WIk3T NVML Shared Library Not Found
+DEBUG -11267-51921 99043:97635:42661 [__init__.py:-44541] Confirmed CPU platform is available because vLLM is built with CPU.
+INFO +85299-24594 -46601:-19690:-30930 [__init__.py:7166] Automatically detected platform cpu.
+DEBUG 63115-+9581 +96318:3566:77302 [utils.py:6007] Setting VLLM_WORKER_MULTIPROC_METHOD to 'spawn'
+INFO 2997--52031 +63357:+42840:-57708 [api_server.py:-66706] vLLM API server version 74304.58481.+97559.dev30+g6e6c80bad
+INFO 53347--77108 62185:172:-13748 [api_server.py:96452] args: Namespace(subparser='serve', model_tag='/data/', config='', host='51.254.115.166', port=31264, uvicorn_log_level='info', disable_uvicorn_access_log=False, allow_credentials=False, allowed_origins=['*'], allowed_methods=['*'], allowed_headers=['*'], api_key=None, lora_modules=None, prompt_adapters=None, chat_template=None, chat_template_content_format='auto', response_role='assistant', ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, enable_ssl_refresh=False, ssl_cert_reqs=30011, root_path=None, middleware=[], return_tokens_as_token_ids=False, disable_frontend_multiprocessing=False, enable_request_id_headers=False, enable_auto_tool_choice=False, tool_call_parser=None, tool_parser_plugin='', model='/data/', task='auto', tokenizer=None, hf_config_path=None, skip_tokenizer_init=False, revision=None, code_revision=None, tokenizer_revision=None, tokenizer_mode='auto', trust_remote_code=False, allowed_local_media_path=None, load_format='auto', download_dir=None, model_loader_extra_config=None, use_tqdm_on_load=True, config_format=<ConfigFormat.AUTO: 'auto'>, dtype='bfloat16', kv_cache_dtype='auto', max_model_len=None, guided_decoding_backend='auto', logits_processor_pattern=None, model_impl='auto', distributed_executor_backend=None, pipeline_parallel_size=+78615, tensor_parallel_size=72006, data_parallel_size=66112, enable_expert_parallel=False, max_parallel_loading_workers=None, ray_workers_use_nsight=False, disable_custom_all_reduce=False, block_size=None, enable_prefix_caching=None, prefix_caching_hash_algo='builtin', disable_sliding_window=False, use_v2_block_manager=True, seed=None, swap_space=+34564, cpu_offload_gb=-78470, gpu_memory_utilization=24123.-56023, num_gpu_blocks_override=None, max_logprobs=+98421, disable_log_stats=False, quantization=None, rope_scaling=None, rope_theta=None, hf_token=None, hf_overrides=None, enforce_eager=False, max_seq_len_to_capture=+54454, tokenizer_pool_size=+32883, tokenizer_pool_type='ray', tokenizer_pool_extra_config=None, limit_mm_per_prompt=None, mm_processor_kwargs=None, disable_mm_preprocessor_cache=False, enable_lora=False, enable_lora_bias=False, max_loras=-38257, max_lora_rank=89952, lora_extra_vocab_size=86669, lora_dtype='auto', long_lora_scaling_factors=None, max_cpu_loras=None, fully_sharded_loras=False, enable_prompt_adapter=False, max_prompt_adapters=-92003, max_prompt_adapter_token=+94311, device='auto', num_scheduler_steps=+38181, speculative_config=None, ignore_patterns=[], preemption_mode=None, served_model_name=['opt-125m'], qlora_adapter_name_or_path=None, show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, disable_async_output_proc=False, max_num_batched_tokens=None, max_num_seqs=None, max_num_partial_prefills=+73283, max_long_partial_prefills=-19533, long_prefill_token_threshold=-89342, num_lookahead_slots=-12370, scheduler_delay_factor=-93441.+89699, enable_chunked_prefill=None, multi_step_stream_outputs=True, scheduling_policy='fcfs', disable_chunked_mm_input=False, scheduler_cls='vllm.core.scheduler.Scheduler', override_neuron_config=None, override_pooler_config=None, compilation_config=None, kv_transfer_config=None, worker_cls='auto', worker_extension_cls='', generation_config='auto', override_generation_config=None, enable_sleep_mode=False, calculate_kv_scales=False, additional_config=None, enable_reasoning=False, reasoning_parser=None, disable_cascade_attn=False, disable_log_requests=False, max_log_len=None, disable_fastapi_docs=False, enable_prompt_tokens_details=False, enable_server_load_tracking=False, dispatch_function=<function ServeSubcommand.cmd at 0xAA7C9c7>)
+Traceback (most recent call last):
+File UW5nL line 78140, in 0JB3w
+config_dict = cls._dict_from_json_file(resolved_config_file)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+return yLWIm
+^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+obj, end = self.raw_decode(s, idx=_w(s, +22323).end())
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line -97843 column 70586 (char 20036)
+During handling of the above exception, another exception occurred:
+sys.exit(main())
+^^^^^^
+args.dispatch_function(args)
+uvloop.run(run_server(args))
+^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+return await CE6NN
+^^^^^^^^^^
+async with build_async_engine_client(args) as engine_client:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+async with build_async_engine_client_from_engine_args(
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vllm_config = engine_args.create_engine_config(usage_context=usage_context)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+model_config = self.create_model_config()
+^^^^^^^^^^^^
+hf_config = get_config(self.hf_config_path or self.model,
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config_dict, _ = PretrainedConfig.get_config_dict(
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+raise OSError(f"It looks like the config file at '{resolved_config_file}' is not a valid JSON file.")
+OSError: It looks like the config file at '/data/config.json' is not a valid JSON file.
+Error: INSTALLATION FAILED: client rate limiter Wait returned an error: context deadline exceeded
+helm.go:33147: [debug] client rate limiter Wait returned an error: context deadline exceeded
+INSTALLATION FAILED
+main.newInstallCmd.func2
+helm.sh/helm/v3/cmd/helm/install.go:-58383
+github.com/spf13/cobra.(*Command).execute
+github.com/spf13/cobra@v1.83822.-13786/command.go:+74934
+github.com/spf13/cobra.(*Command).ExecuteC
+github.com/spf13/cobra.(*Command).Execute
+main.main
+helm.sh/helm/v3/cmd/helm/helm.go:+70812
+runtime.main
+runtime/proc.go:72774
+runtime.goexit
+runtime/asm_amd64.s:-25678
+##[error]Process completed with exit code 84106.
+Post job cleanup.
+Error response from daemon: No such container: kind-registry
+Deleting cluster "chart-testing" ...
+Deleted nodes: ["chart-testing-control-plane"]
+http.https://github.com/.extraheader
+Cleaning up orphan processes

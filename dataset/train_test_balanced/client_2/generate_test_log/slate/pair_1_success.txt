@@ -1,0 +1,353 @@
+Requested labels: ubuntu-latest
+Job defined at: ianstormtaylor/slate/.github/workflows/release.yml@refs/heads/main
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -69744 (hosted)
+Current runner version: '47277.19774.+72559'
+##[group]Operating System
+Ubuntu
+60490.+77494.74522
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-29106.15630
+Version: -8747.+94979.+62718
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/76969.-85272/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250309.+81122
+##[group]Runner Image Provisioner
+97.72.5.185
+##[group]GITHUB_TOKEN Permissions
+Contents: write
+Metadata: read
+PullRequests: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository ABnPa (SHA:2E05 8AA9 49D4 5A3F F1ED)
+Complete job name: latest
+##[group]Run NbWDo
+with:
+fetch-depth: 31358
+repository: ianstormtaylor/slate
+token: ***
+ssh-strict: true
+persist-credentials: true
+clean: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: ianstormtaylor/slate
+##[group]Getting Git version info
+Working directory is '/home/runner/work/slate/slate'
+[command]/usr/bin/git version
+git version 74632.+56608.51344
+Temporarily overriding FHY3f before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/slate/slate
+Deleting the contents of '/home/runner/work/slate/slate'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/slate/slate
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/slate/slate/.git/
+[command]/usr/bin/git remote add origin https://github.com/ianstormtaylor/slate
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local iZBMt MvtH9
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Zml79
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp T2Dgk && git config --local --unset-all v7sCG || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-64926 fetch --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+remote: anKRn objects: LAD5v BUK3p
+remote: L5NPO objects: -782% (36185/-8636), done.
+Receiving objects: +85156% (-21819/53311)
+Receiving objects: -25236% (+75311/-61081), +73669.-37695 MiB | 83088.-17102 MiB/s
+remote: Total 13690 (delta 20842), reused 11540 (delta -57106), pack-reused -24341 (from +5923)
+Receiving objects: +61689% (28941/+9260), 68771.+76637 MiB | -65070.-64930 MiB/s, done.
+Resolving deltas: 11390% (-82134/54396)
+Resolving deltas: -19605% (39330/-5029), done.
+From https://github.com/ianstormtaylor/slate
+* [new nObSF Zw5iB -> NIW6r
+[command]/usr/bin/git branch --list --remote origin/main
+origin/main
+[command]/usr/bin/git rev-parse refs/remotes/origin/main
+9607 A57A 353F 4C1F
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+[command]/usr/bin/git log 37706 --format='%H'
+'c1113fd26dc 3232a29e0 bbf36f6a4 196f828e7 4164ceb2'
+##[warning]Unexpected input(s) 'key', valid inputs are ['always-auth', 'node-version', 'node-version-file', 'architecture', 'check-latest', 'registry-url', 'scope', 'token', 'cache', 'cache-dependency-path', 'version']
+node-version: -67249.x
+cache: yarn
+registry-url: https://registry.npmjs.org
+key: node20
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/-87388.+67045.+58771/x64
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn config get cacheFolder
+/home/runner/.yarn/berry/cache
+Received 79023 of -85490 (+27296.46863%), -6674.-37072 MBs/sec
+Cache Size: ~+12368 MB (26621 B)
+[command]/usr/bin/tar -z -xf /home/runner/work/_temp/ceca077c-0c9d-460b-8a4b-18165895b835/cache.tgz -P -C /home/runner/work/slate/slate
+Cache restored successfully
+Cache restored from key: node-cache-Linux-yarn-9F21 9982 E40F CD87
+[-32178;1myarn[0m
+shell: /usr/bin/bash -e {-77462}
+env:
+NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc
+NODE_AUTH_TOKEN: 7mtRP
+[94m➤[39m YN0000: · Yarn 90230.+17933.-6742
+[94m➤[39m [90mYN0000[39m: ┌ mS89e 3E34J
+##[group]Resolution step
+[94m➤[39m [90mYN0000[39m: └ Completed in YjzMs yOS6a
+##[group]Post-resolution validation
+[93m➤[39m YN0060: │ [-48464;37161;173mrollup[39m is listed by your project with version [8948;-2362;111m4.54550.-16701[39m, which doesn't satisfy what [93433;+46658;173mrollup-plugin-babel[39m ([+52028;96624;111mp4a15b[39m) and other dependencies request ([-81313;-78371;37m^+61993.47404.+64719[39m).
+[93m➤[39m YN0002: │ JGatX OKnrl doesn't provide [+89961;+47927;173mwebpack[39m 21Ph2 requested by [-81909;+28683;173msource-map-loader[39m.
+[93m➤[39m YN0002: │ seSbb doesn't provide [82922;-79801;173mwebpack[39m 6oPAH requested by [+50724;+63644;173msource-map-loader[39m.
+[93m➤[39m YN0086: │ Some peer dependencies are incorrectly met; run [64034;+65093;111myarn explain peer-requirements <hash>[39m for details, where [77777;+93247;111m<hash>[39m is the six-letter p-prefixed code.
+[94m➤[39m [90mYN0000[39m: └ Completed
+##[group]Fetch step
+##[group]Link step
+[93m➤[39m YN0000: │ ESM support for PnP uses the experimental loader API and is therefore experimental
+[94m➤[39m YN0007: │ PZucq must be built because it never has been before or the last one failed
+[94m➤[39m YN0007: │ [+78148;68978;173mnx[39m[11708;+31519;111m@[39m[+92730;+33562;111mnpm:-11131.-60126.-93368 [aedfc][39m must be built because it never has been before or the last one failed
+[93m➤[39m YN0000: · Done with warnings in 3s 961ms
+##[group]Run yarn prerelease
+[17112;1myarn prerelease[0m
+[36m
+[1mpackages/slate/src/index.ts[22m → BY5sG
+[32mcreated KeXMG in ncHep
+Browserslist: caniuse-lite is outdated. Please run:
+npx update-browserslist-db@latest
+Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[1mpackages/slate-history/src/index.ts[22m → BX3Kq
+[1mpackages/slate-hyperscript/src/index.ts[22m → qdFML
+[1mpackages/slate-dom/src/index.ts[22m → jTSec
+[1mpackages/slate-react/src/index.ts[22m → p2t17
+
+slate-history
+undo
+cursor
+✔ 5DPoo
+delete_backward
+- Wu7P8
+insert_break
+insert_fragment
+insert_text
+isHistory
+slate-hyperscript
+fixtures
+✔ cursor-across-element (79ms)
+slate
+interfaces
+CustomTypes
+Editor
+above
+after
+before
+edges
+end
+hasBlocks
+hasInlines
+hasTexts
+isBlock
+isEdge
+isEmpty
+isEnd
+isInline
+isStart
+isVoid
+levels
+marks
+next
+node
+nodes
+ignore-non-selectable
+match-function
+mode-all
+mode-highest
+mode-lowest
+mode-universal
+no-match
+voids-true
+parent
+path
+point
+positions
+all
+range
+previous
+start
+string
+unhangRange
+Element
+isElement
+isElementList
+matches
+Node
+ancestor
+ancestors
+child
+children
+descendant
+descendants
+elements
+first
+get
+getIf
+isNode
+isNodeList
+leaf
+texts
+Operation
+inverse
+moveNode
+isOperation
+isOperationList
+Path
+common
+compare
+endsAfter
+endsAt
+endsBefore
+equals
+hasPrevious
+isAfter
+isAncestor
+isBefore
+isChild
+isDescendant
+isParent
+isPath
+isSibling
+relative
+transform
+move_node
+Point
+isPoint
+Range
+includes
+isBackward
+isCollapsed
+isExpanded
+isForward
+isRange
+points
+Scrubber
+Text
+decorations
+isText
+isTextList
+operations
+remove_node
+remove_text
+set_node
+set_selection
+split_node
+normalization
+block
+editor
+inline
+text
+void
+transforms
+delete
+emojis
+selection
+unit-character
+unit-line
+unit-word
+voids-false
+deselect
+general
+insertFragment
+of-blocks
+of-inlines
+of-lists
+of-mixed
+of-tables
+of-texts
+insertNodes
+select-true
+insertText
+liftNodes
+mergeNodes
+depth-block
+move
+anchor
+both
+focus
+moveNodes
+removeNodes
+select
+setNodes
+basic-structure
+merge
+split
+setPoint
+splitNodes
+always
+match-any
+match-block
+match-inline
+unsetNodes
+unwrapNodes
+split-block
+wrapNodes
+split-inline
+deep-equal
+getCharacterDistance - DLMsi
+✔
+✔ Sample string 68779, boundary +97926
+getWordDistance - HkOtY
+✔ hello foobarbaz
+✔ 🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿 🏴󠁧󠁢󠁷󠁬󠁳󠁿
+✔ Don't do this
+✔ I'm ok
+✔ Tags 🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿
+codepointsIteratorRTL
++37152 passing (8s)
+-80035 pending
+PASS qlsQI (-58095.5668 s)
+Test Suites: +56057 passed, +91408 total
+Tests: +178 passed, 97131 total
+Snapshots: +28597 total
+Time: +71070.+65506 s
+Ran all test suites.
+Checking formatting...
+All matched files use Prettier code style!
+version: yarn changesetversion
+publish: yarn changeset publish
+setupGitUser: true
+createGithubReleases: true
+GITHUB_TOKEN: ***
+NPM_TOKEN: ***
+YARN_ENABLE_IMMUTABLE_INSTALLS: false
+setting git user
+[command]/usr/bin/git config OMuGr 51zmX
+setting GitHub credentials
+No changesets found. Attempting to publish any unpublished packages to npm
+No user .npmrc file found, creating one
+[command]/usr/local/bin/yarn changeset publish
+Experimental flag "useCalculatedVersionForSnapshots" is deprecated since snapshot feature became stable. Please use "snapshot.useCalculatedVersion" instead.
+🦋 info npm info dyKwC
+🦋 warn oXyMe is not being published because version -2361.46019.-7971 is already published on npm
+🦋 warn No unpublished projects to publish
+[command]/usr/bin/git push origin --tags
+Everything up-to-date
+Post job cleanup.
+Cache hit occurred on the primary key node-cache-Linux-yarn-74DC 5833 97F8 7F96 6A0F, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

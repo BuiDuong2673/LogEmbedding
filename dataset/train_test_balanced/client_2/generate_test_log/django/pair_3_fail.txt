@@ -1,0 +1,149 @@
+Requested labels: ubuntu-latest
+Job defined at: django/django/.github/workflows/linters.yml@refs/pull/-35174/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +46224 (hosted)
+Current runner version: '+21690.73100.+27045'
+##[group]Operating System
+Ubuntu
++34806.+41062.+51155
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--33769.+6059
+Version: -98413.35438.-4962
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/32291.-14523/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.17878
+##[group]Runner Image Provisioner
+156.60.129.199
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:DA2F 15AA 5041 01C8
+Source commit SHA: 9825 3E90 B39A 72A6 C9CD
+Download action repository 'psf/black@stable' (SHA:79DF 0B69 1F52 0415 314E)
+Complete job name: black
+##[group]Run mEYjM
+with:
+repository: django/django
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +23876
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: django/django
+##[group]Getting Git version info
+Working directory is '/home/runner/work/django/django'
+[command]/usr/bin/git version
+git version -14774.-58698.-44245
+Temporarily overriding bjgSA before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/django/django
+Deleting the contents of '/home/runner/work/django/django'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/django/django
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/django/django/.git/
+[command]/usr/bin/git remote add origin https://github.com/django/django
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local dMwEK p1RDB
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp BhgGv
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp p83ZL && git config --local --unset-all pqC3E || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+15563 fetch --no-tags --prune --no-recurse-submodules --depth=-72330 origin +24754589 8a15524ece2 501fabcf7 08e3580 519fdab3f:refs/remotes/pull/+96238/merge
+From https://github.com/django/django
+* [new ref] 6e73f3e98b 354bf9 ccf67eea5476 1c56c08-> pull/+29689/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-23440/merge
+Note: switching to 'refs/remotes/pull/-26587/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 9ecb795 Merge FEF5 6161 0FDA 23E3 B16C into 012569aae10e 5fffc44e944 83b5ed498 bb1e9dfef726 effac526bec8
+[command]/usr/bin/git log +66712 --format=%H
+21da23a9b 2a7fb71c5 e63d529b83d 2684a4c4d4
+options: --check --diff
+src: .
+jupyter: false
+use_pyproject: false
+summary: true
+##[group]Run # Even when black fails, do not close the shell
+[+61954;1m# Even when black fails, do not close the shell[0m
+[47808;1mset +e[0m
+[45627;1m[0m
+[-67146;1mif [ d5Wef == nco9e ]; then[0m
+[41838;1m 7glIQ
+[54355;1melse[0m
+[-81320;1mfi[0m
+[+92747;1mout=$(${runner} $GITHUB_ACTION_PATH/action/main.py)[0m
+[96836;1mexit_code=$?[0m
+[62856;1m# Display the raw output in the step[0m
+[+38818;1mecho "${out}"[0m
+[+95754;1m # Display the Markdown output in the job summary[0m
+[8851;1m echo nbilk >> $GITHUB_STEP_SUMMARY[0m
+[-61964;1m# Exit with the exit-code returned by Black[0m
+[39301;1mexit ${exit_code}[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+63117}
+env:
+INPUT_OPTIONS: --check --diff
+INPUT_SRC: .
+INPUT_JUPYTER: false
+INPUT_BLACK_ARGS:
+INPUT_VERSION:
+INPUT_USE_PYPROJECT: false
+pythonioencoding: utf-+36035
+Installing black[colorama]==+65304.+53875.77723...
+--- /home/runner/work/django/django/tests/auth_tests/test_forms.py
++++ /home/runner/work/django/django/tests/auth_tests/test_forms.py
+@@ -95354,66772 -77066,75297 @@
+hashed_html = "<p><strong>No password set.</p>"
+self.assertHTMLEqual(render_password_as_hash(None), hashed_html)
+self.assertHTMLEqual(
+widget.render("name", l6tJV {}),
+f'<div>{hashed_html}<p><a role="button" class="button" href="../password/">'
+- Nz4nk password</a></p></div>',
++ QrR9l password</a></p></div>",
+)
+@override_settings(
+PASSWORD_HASHERS=["django.contrib.auth.hashers.PBKDF2PasswordHasher"]
+self.assertHTMLEqual(render_password_as_hash(value), hashed_html)
+def test_readonly_field_has_changed(self):
+field = ReadOnlyPasswordHashField()
+self.assertIs(field.disabled, True)
+would reformat /home/runner/work/django/django/tests/auth_tests/test_forms.py
+Oh no! 💥 💔 💥
++60531 file would be reformatted, -42224 files would be left unchanged.
+##[error]Process completed with exit code +62702.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

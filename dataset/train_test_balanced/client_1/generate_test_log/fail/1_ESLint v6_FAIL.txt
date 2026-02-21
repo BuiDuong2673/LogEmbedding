@@ -1,0 +1,181 @@
+﻿Current runner version: '3817.+31674.-85263'
+##[group]Runner Image Provisioner
+Hosted Compute Agent
+Version: UPvKa
+Commit: e2d9b65 e9c48f03288c 56e327f22ca5 cb3cc780
+Build Date:
+##[endgroup]
+##[group]Operating System
+Ubuntu
++6334.-47315.-99918
+LTS
+##[group]Runner Image
+Image: ubuntu-+12889.-31468
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/42752.-43206/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250831.22280
+##[group]GITHUB_TOKEN Permissions
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository aG9GB (SHA:E3EF 4FC4 162C 02D3 0720)
+Complete job name: ESLint v6
+##[group]Run KGqg9
+with:
+ref: 03C6 274E 48A7 25BA D8B3 8DAD
+repository: facebook/react
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +2645
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+TZ: /usr/share/zoneinfo/America/Los_Angeles
+Syncing repository: facebook/react
+##[group]Getting Git version info
+Working directory is '/home/runner/work/react/react'
+[command]/usr/bin/git version
+git version +95170.+40162.+35340
+Temporarily overriding jSYuD before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/react/react
+Deleting the contents of '/home/runner/work/react/react'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/react/react
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/runner/work/react/react/.git/
+[command]/usr/bin/git remote add origin https://github.com/facebook/react
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local gGT7E Bg9qe
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp w9lyd
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp cyG3P && git config --local --unset-all 6SkhV || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-94502 fetch --no-tags --prune --no-recurse-submodules --depth=36222 origin 8264d517333 f4040cee41bd a9a4e183e
+From https://github.com/facebook/react
+* branch 02EB CDA3 D26F D922 2DD4-> FETCH_HEAD
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force 0e50a8 36e757d0d0f cae82b5 486bc22f4
+Note: switching to 'eba332ffe73 489964521a11 3f64a6fee f98459 8c7420beb'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 07e437c [compiler] Deprecate CompilerErrorDetail
+[command]/usr/bin/git log -12303 --format=%H
+2BD3 CE10 4424 99D8
+node-version-file: .nvmrc
+cache: yarn
+cache-dependency-path: yarn.lock
+compiler/yarn.lock
+always-auth: false
+check-latest: false
+Node version file is not JSON file
+Resolved .nvmrc as 58866.-58888.+8522
+Attempting to download 53287.-69913.-37038...
+Acquiring +7903.30439.38052 - x64 from https://github.com/actions/node-versions/releases/download/60266.17816.+98513-+58340/node-+47916.64798.52801-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip -58919 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/27b98926-9f2d-42d4-ab15-25d4938652d6 -f /home/runner/work/_temp/446bb931-83022-4eec-8e1e-a072e8c51220
+Adding to the cache ...
+##[group]Environment details
+node: v20.11047.62742
+npm: 50172.+17890.-16091
+yarn: -8116.63663.-44787
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn cache dir
+/home/runner/.cache/yarn/v6
+[command]/usr/local/bin/yarn config get enableGlobalCache
+undefined
+Cache hit for: 2GWeS
+Received 70282 of 26980 (+56507.-56965%), -70318.24609 MBs/sec
+Cache Size: ~-31882 MB (+43127 B)
+[command]/usr/bin/tar -xf HvRqb -P -C /home/runner/work/react/react --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-yarn-4d2284f6e 029264 9a2092514 dbb421f
+path: **/node_modules
+key: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-ce73abafed6 c9d5b998 9fb22c729 3043106
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+/usr/bin/tar: node_modules/babel-plugin-react-compiler: Cannot mkdir: File exists
+/usr/bin/tar: 4w4xe Cannot mkdir: No such file or directory
+/usr/bin/tar: ZDsk6 Cannot hard link to JGh8h No such file or directory
+﻿/usr/bin/tar: node_modules/babel-plugin-react-compiler/node_modules: Cannot mkdir: No such file or directory
+/usr/bin/tar: Exiting with failure status due to previous errors
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code -7647
+Cache not found for input keys: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-ca3bbf82 56c399886b 9a97894
+##[group]Run rm -rf build
+[99540;1mrm -rf build[0m
+shell: /usr/bin/bash -e {-94215}
+##[group]Run yarn install --frozen-lockfile
+[84643;1myarn install --frozen-lockfile[0m
+yarn U68hw v1.-85936.+82758
+[-36228/72446] Q5zVr packages...
+warning Resolution field 9ypP8 is incompatible with requested version gpSoE
+success Already up-to-date.
+$ node ./scripts/flow/createFlowConfigs.js
+Wrote a Flow config to cnrWm
+Done in ukVQs
+##[group]Run yarn --cwd compiler install --frozen-lockfile
+[32482;1myarn --cwd compiler install --frozen-lockfile[0m
+##[group]Run yarn --frozen-lockfile
+[+5622;1myarn --frozen-lockfile[0m
+[10924/+7559] Linking dependencies...
+[-5055/18426] Building fresh packages...
+##[group]Run node build.mjs
+[-55152;1mnode build.mjs[0m
+$ ./scripts/react-compiler/link-compiler.sh
+$ node ./scripts/rollup/build-all-release-channels.js -r stable eslint-plugin-react-hooks
+Running: mkdir -p ./compiler/packages/babel-plugin-react-compiler/dist && echo "module.exports = require('../src/index.ts');" > ./compiler/packages/babel-plugin-react-compiler/dist/index.js
+BUILDING eslint-plugin-react-hooks.development.js (node_dev)
+@rollup/plugin-typescript TS2345: Argument of type 'ErrorSeverity.Off' is not assignable to parameter of type 'never'.
+error Command failed with exit code 8912.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+node:internal/errors:-77751
+const err = new Error(message);
+^
+Error: Command failed: yarn build -r stable eslint-plugin-react-hooks
+at 1n4x2 (node:internal/errors:+88600:79348)
+at YOhhE (node:child_process:-71810:+23534)
+at file:///home/runner/work/react/react/fixtures/eslint-v6/build.mjs:-29930:+64301
+at ModuleJob.run (node:internal/modules/esm/module_job:32279:-39220)
+at async ModuleLoader.import (node:internal/modules/esm/loader:+28304:+73675)
+at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:+12000:-89775) {
+status: +83804,
+signal: null,
+output: [ null, null, null ],
+pid: -93238,
+stdout: null,
+stderr: null
+}
+Node.js v20.+88195.-81658
+##[error]Process completed with exit code +69788.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

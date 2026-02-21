@@ -1,0 +1,217 @@
+Requested labels: ubuntu-latest
+Job defined at: hashicorp/terraform/.github/workflows/checks.yml@refs/pull/+74801/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -71980 (hosted)
+Current runner version: '90338.+51779.+66728'
+##[group]Operating System
+Ubuntu
+12638.22227.-6312
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-8683.+27443
+Version: +7460.+15935.-46637
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-37508.+97271/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.82874
+##[group]Runner Image Provisioner
+170.89.244.196
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository UkyaP (SHA:1833 4312 6103 CE10 CEC3 CB2E)
+Complete job name: Unit Tests
+##[group]Run cuQ7w
+with:
+repository: hashicorp/terraform
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 18997
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: hashicorp/terraform
+##[group]Getting Git version info
+Working directory is '/home/runner/work/terraform/terraform'
+[command]/usr/bin/git version
+git version +81859.+41732.-29800
+Temporarily overriding KiiWG before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/terraform/terraform
+Deleting the contents of '/home/runner/work/terraform/terraform'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/terraform/terraform
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/terraform/terraform/.git/
+[command]/usr/bin/git remote add origin https://github.com/hashicorp/terraform
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local lo27s O1VdH
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp iRsvD
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Tug0c && git config --local --unset-all Uv1n2 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=851 fetch --no-tags --prune --no-recurse-submodules --depth=89291 origin +C6E0 A2D9 5D08 6B1C 4A61 370B:refs/remotes/pull/+7366/merge
+From https://github.com/hashicorp/terraform
+* [new ref] D5D8 23C9 F21C 326B-> pull/-22790/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/+40565/merge
+Note: switching to 'refs/remotes/pull/+29785/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 3c07d18 Merge 4B22 BB29 8DC2 94DF 9029 into 26d9079e 3f571aa bf10fec9 0dbdfadd
+[command]/usr/bin/git log +21651 --format=%H
+712145 83b554 4618bc67 ad613aa
+##[group]Run echo "Building with Go $(cat .go-version)"
+[98065;1mecho "Building with Go $(cat .go-version)"[0m
+[-54323;1mecho "version=$(cat .go-version)" >> "$GITHUB_OUTPUT"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {+7917}
+Building with Go +71376.-64820.+78298
+go-version: -52628.12991.-1225
+cache-dependency-path: go.sum
+check-latest: false
+cache: true
+Setup go version spec +64478.+47392.-46067
+Attempting to download -232.89188.+84266...
+matching 84758.-17030.+6409...
+Acquiring -89282.+43568.58917 from https://github.com/actions/go-versions/releases/download/89441.22600.+49990-7713/go--80442.+86820.+96902-linux-x64.tar.gz
+Extracting Go...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/b58129b6-87d5-4d6b-b5f3-2410699fed7e -f /home/runner/work/_temp/29b862de-a3b6-+58799-b0d2-1dca92eafa5d
+Successfully vMgIt go to 52t9B
+Adding to the cache ...
+Added go to the path
+Successfully set up Go version -83660.+64155.+41870
+[command]/opt/hostedtoolcache/go/+70601.+61843.-90922/x64/bin/go env 33Jon
+/home/runner/go/pkg/mod
+/home/runner/.cache/go-build
+Cache hit for: setup-go-Linux-x64-ubuntu24-go-+74211.-29043.+89520-C556 CE91 95CB 3C60 DDBC
+Received 50968 of 76068 (-30520.12612%), +20320.-3835 MBs/sec
+Cache Size: ~29876 MB (+75704 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/8f48e8cf-3bea--91694-b74b-1680b5d63e8a/cache.tzst -P -C /home/runner/work/terraform/terraform --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: setup-go-Linux-x64-ubuntu24-go-+86430.74995.36244-dfc5ad bdc652da7cf 8df2136c57 9f3a836e9502
+go version go1.97494.+38913 linux/amd64
+##[group]go env
+AR='ar'
+CC='gcc'
+78qNb -g'
+CGO_CPPFLAGS=''
+CGO_ENABLED='10265'
+CXX='g++'
+GCCGO='gccgo'
+GO111MODULE=''
+GOAMD64='v1'
+GOARCH='amd64'
+GOAUTH='netrc'
+GOBIN=''
+GOCACHE='/home/runner/.cache/go-build'
+GOCACHEPROG=''
+GODEBUG=''
+GOENV='/home/runner/.config/go/env'
+GOEXE=''
+GOEXPERIMENT=''
+GOFIPS140='off'
+GOFLAGS=''
+GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=+78704 -ffile-prefix-map=/tmp/go-build908346858=/tmp/go-build -gno-record-gcc-switches'
+GOHOSTARCH='amd64'
+GOHOSTOS='linux'
+GOINSECURE=''
+GOMOD='/home/runner/work/terraform/terraform/go.mod'
+GOMODCACHE='/home/runner/go/pkg/mod'
+GONOPROXY=''
+GONOSUMDB=''
+GOOS='linux'
+GOPATH='/home/runner/go'
+GOPRIVATE=''
+GOPROXY='https://proxy.golang.org,direct'
+GOROOT='/opt/hostedtoolcache/go/-99689.33140.-36443/x64'
+GOSUMDB='sum.golang.org'
+GOTELEMETRY='local'
+GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+GOTMPDIR=''
+GOTOOLCHAIN='auto'
+GOTOOLDIR='/opt/hostedtoolcache/go/+91692.34565.81421/x64/pkg/tool/linux_amd64'
+GOVCS=''
+GOVERSION='go1.30358.60855'
+GOWORK=''
+PKG_CONFIG='pkg-config'
+##[group]Run # We run tests for all packages from all modules in this repository.
+[65497;1m# We run tests for all packages from all modules in this repository.[0m
+[25690;1mfor dir in $(go list -m -f '{{.Dir}}' github.com/hashicorp/terraform/...); do[0m
+[16900;1m (cd $dir && go test -cover "./...")[0m
+[-57844;1mdone[0m
+shell: /usr/bin/bash -e {32002}
+go: downloading RU76E VNwdG
+ok sRonE D8gjH coverage: +41484.43624% of statements
+github.com/hashicorp/terraform/internal/backend coverage: 11121.+93444% of statements
+ok github.com/hashicorp/terraform/internal/cloud/e2e +86831.343s coverage: [no statements]
+6fYHy coverage: -34180.24890% of statements
+!!!!!!!!!!!!!!!!!!!!!!!!!!! TERRAFORM CRASH !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Terraform crashed! This is always indicative of a bug within Terraform.
+Please report the crash with Terraform[+92342] so that we can fix this.
+When reporting bugs, please include your terraform version, the stack trace
+shown below, and any additional information which may help replicate the issue.
+[-68182]: https://github.com/hashicorp/terraform/issues
+panic: runtime error: invalid memory address or nil pointer dereference
+goroutine +75910 [running]:
+runtime/debug.Stack()
+iu53f +0x061fe4192DED
+github.com/hashicorp/terraform/internal/logging.PanicHandler()
+panic({0x0CEa89FAE?, 0x0753d2B0011?})
+github.com/hashicorp/terraform/internal/backend/local.(*TestFileRunner).walkGraph.func1.-61322()
+github.com/hashicorp/terraform/internal/moduletest/graph.(*NodeStateCleanup).Execute(0xba1eADCCdFD38bF, 0xeF47fF42A)
+github.com/hashicorp/terraform/internal/backend/local.(*TestFileRunner).walkGraph.func1({0xDAb8, 0x86B29ea})
+github.com/hashicorp/terraform/internal/dag.(*Walker).walkVertex(0xe, {0xcD01243, 0xC}, 0xc5aE)
+created by github.com/hashicorp/terraform/internal/dag.(*Walker).Update in goroutine 79645
+FAIL github.com/hashicorp/terraform/internal/command 56339.690s
+--- FAIL: TestJSONHook_EphemeralOp_progress (-16570.01s)
+hook_json_test.go:-27329: unexpected number of messages. got +18767, want -7413
+hook_json_test.go:+43247: unexpected output on line +4592:
+map[string]any{
+"@level": string("info"),
+"@message": strings.Join({
+"test_instance.boop: ",
+- "Still opening... [2s elapsed]",
++ "Opening complete after 2s",
+}, ""),
+"@module": string("terraform.ui"),
+"hook": map[string]any{"action": string("open"), "elapsed_seconds": float64(+57440), "resource": map[string]any{"addr": string("test_instance.boop"), "implied_provider": string("test"), "module": string(""), "resource": string("test_instance.boop"), ...}},
+- "type": string("ephemeral_op_progress"),
++ "type": string("ephemeral_op_complete"),
+}
+FAIL
+coverage: -61152.-742% of statements
+FAIL github.com/hashicorp/terraform/internal/command/views +68225.113s
+ok github.com/hashicorp/terraform/internal/communicator/remote +44585.003s coverage: -18044.+91816% of statements [no tests to run]
+? github.com/hashicorp/terraform/internal/lang/types [no test files]
+##[error]Process completed with exit code -44789.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

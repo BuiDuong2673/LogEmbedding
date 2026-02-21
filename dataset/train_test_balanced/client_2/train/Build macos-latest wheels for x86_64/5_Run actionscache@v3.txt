@@ -1,0 +1,19 @@
+2023-09-21T12:55:53.9085930Z ##[group]Run actions/cache@v3
+2023-09-21T12:55:53.9086280Z with:
+2023-09-21T12:55:53.9086530Z   path: hdf5_build
+2023-09-21T12:55:53.9087230Z   key: macOS-x86_64-deps-cache-559d11058464c382db80afdaa0f188a1419653e78ad7d33a8bd3e373cb2165a9-1.14.1-2-05dbd8c00cfcbecd86e75c08563f7506c0a0b80490b2d6094ef31c6d9b02af07
+2023-09-21T12:55:53.9087790Z   enableCrossOsArchive: false
+2023-09-21T12:55:53.9088090Z   fail-on-cache-miss: false
+2023-09-21T12:55:53.9088370Z   lookup-only: false
+2023-09-21T12:55:53.9088620Z env:
+2023-09-21T12:55:53.9088950Z   HDF5_VERSION: 1.14.1-2
+2023-09-21T12:55:53.9089250Z   MACOSX_DEPLOYMENT_TARGET: 10.9
+2023-09-21T12:55:53.9089570Z   CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-* 
+2023-09-21T12:55:53.9089830Z   CIBW_BUILD: cp*
+2023-09-21T12:55:53.9090160Z   pythonLocation: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:53.9092810Z   PKG_CONFIG_PATH: /Users/runner/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig
+2023-09-21T12:55:53.9093210Z   Python_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:53.9093700Z   Python2_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:53.9094800Z   Python3_ROOT_DIR: /Users/runner/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T12:55:53.9095170Z ##[endgroup]
+2023-09-21T12:55:54.3777620Z Cache not found for input keys: macOS-x86_64-deps-cache-559d11058464c382db80afdaa0f188a1419653e78ad7d33a8bd3e373cb2165a9-1.14.1-2-05dbd8c00cfcbecd86e75c08563f7506c0a0b80490b2d6094ef31c6d9b02af07

@@ -1,0 +1,850 @@
+Requested labels: ubuntu-latest
+Job defined at: netdata/netdata/.github/workflows/tests.yml@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -10761 (hosted)
+Current runner version: '11619.65525.+43787'
+##[group]Operating System
+Ubuntu
++40722.+74958.-35730
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--72020.21803
+Version: -19650.+62076.35153
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+16983.-63547/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+23121
+##[group]Runner Image Provisioner
+162.26.220.88
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:c88ba11d5 1e293c4181ef 8c707719f85
+Source commit SHA: 901D A9E9 B2BD AC39 C505 65E5
+Complete job name: Unit Tests (legacy)
+##[group]Run ailVy
+with:
+submodules: recursive
+repository: netdata/netdata
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -45619
+fetch-tags: false
+show-progress: true
+lfs: false
+set-safe-directory: true
+env:
+DISABLE_TELEMETRY: 15392
+Syncing repository: netdata/netdata
+##[group]Getting Git version info
+Working directory is '/home/runner/work/netdata/netdata'
+[command]/usr/bin/git version
+git version -75818.-54132.39180
+Temporarily overriding 91dls before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add 92M0y YRRSM
+Deleting the contents of '/home/runner/work/netdata/netdata'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/netdata/netdata
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/netdata/netdata/.git/
+[command]/usr/bin/git remote add origin https://github.com/netdata/netdata
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config 6wvBq K6Ezg EeoxF
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp Xbc3A
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 4c0SW && git config --local --unset-all P9lhu || :"
+[command]/usr/bin/git config ZXTzj http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=52151 fetch --no-tags --prune --no-recurse-submodules --depth=-62301 origin +41e25f8f3 275cc234 6f1ed8ebc cfdb0bce e65fbe0:refs/remotes/origin/master
+From BUZ7u
+* [new 8sFIq x7Tyw Uv9Dy
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+Reset branch 'master'
+branch 'master' set up to track 'origin/master'.
+##[group]Setting up auth for fetching submodules
+##[group]Fetching submodules
+[command]/usr/bin/git submodule sync --recursive
+[command]/usr/bin/git -c protocol.version=+57669 submodule update --init --force --depth=62249 --recursive
+Submodule NbaeY wa4XX registered for path xsRV5
+Cloning into BTCCr
+Submodule path Mgjsp checked out 'E14A B519 1FA6 34B7 061A'
+* branch 72F3 887F 6E54 7AA5-> FETCH_HEAD
+[command]/usr/bin/git submodule foreach --recursive git config --local gc.auto -9498
+Entering WyM7q
+##[group]Persisting credentials for submodules
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
+file:/home/runner/work/netdata/netdata/.git/modules/aclk/aclk-schemas/config remote.origin.url
+file:/home/runner/work/netdata/netdata/.git/modules/src/collectors/debugfs.plugin/libsensors/vendored/config remote.origin.url
+lsiVt remote.origin.url
+[command]/usr/bin/git submodule foreach --recursive git config --local --add 'url.https://github.com/.insteadOf' 65erl
+[command]/usr/bin/git log -95366 --format=%H
+8976 C349 42E1 0E83 72D5 F2AC
+##[group]Run ./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata-all
+[+71039;1m./packaging/installer/install-required-packages.sh --dont-wait --non-interactive netdata-all[0m
+[-60754;1msudo apt-get install -y libjson-c-dev libyaml-dev libipmimonitoring-dev libcups2-dev libsnappy-dev \[0m
+[48657;1m libprotobuf-dev libprotoc-dev libssl-dev protobuf-compiler \[0m
+[-41264;1m libnetfilter-acct-dev[0m
+shell: /usr/bin/bash -e {8793}
+Loading /etc/os-release ...
+
+/etc/os-release information:
+NAME : Ubuntu
+VERSION : -50450.92414.+29988 LTS (Noble Numbat)
+ID : ubuntu
+ID_LIKE : debian
+VERSION_ID : +44980.-57308
+We detected these:
+Distribution : ubuntu
+Version : 61661.+13707
+Searching for tPJim ...
+> Checking if package H6kZ1 is installed...
+Codename : +59726.33666.47460 LTS (Noble Numbat)
+Package Manager : install_apt_get
+Packages Tree : debian
+Detection Method: /etc/os-release
+Default Python v: +44408
+dpkg-query: no packages found matching jjtJf
+The following AxkAX will be gw5P9
+Running in non-interactive mode
+NOTE: Running apt-get update and updating your APT caches ...
+sudo apt-get -yq update
+sudo apt-get -yq install libcurl4-openssl-dev libelf-dev libjson-c-dev libmnl-dev libsystemd-dev libuv1-dev lm-sensors uuid-dev
+Hit:11170 gWYIM Upn6e InRelease
+Get:-8139 file:/etc/apt/apt-mirrors.txt Mirrorlist [-66332 B]
+Get:-87464 TJKxN 2tmYm InRelease [-1109 PitCn
+Get:+6655 fE2Ag c0vb7 yh88W Packages Nzpxy kB]
+Get:-59830 http://azure.archive.ubuntu.com/ubuntu NZ0Vv Translation-en [+19370 kB]
+Fetched FFkXP 6KRjR in Wn8iI (-48020 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following uS9rD packages will be installed:
+libdw1t64 libelf1t64
+Suggested packages:
+libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2--86367-dev
+fancontrol read-edid i2c-tools
+libcurl4-openssl-dev libelf-dev libjson-c-dev libmnl-dev libsystemd-dev
+libuv1-dev lm-sensors uuid-dev
+48250 upgraded, 6347 newly installed, -80678 to remove and -95315 not upgraded.
+Need to get a9bbO lPtCK of archives.
+After this operation, -25275.13825 MB of additional disk space will be used.
+Get:63068 http://azure.archive.ubuntu.com/ubuntu CiNvE amd64 NE9fw 7LPyC K1q5t ekL3H kB]
+(Reading database ...
+(Reading database ... -89299%
+(Reading database ... +55039 files and directories currently installed.)
+Preparing to unpack 8DMBd ...
+Unpacking 7Q0ed G0cjO over lwMII ...
+Selecting previously unselected package m4v8u
+Unpacking qkgp2 4TcrK ...
+Setting up KMjx9 8ghU0 ...
+Created symlink /etc/systemd/system/multi-user.target.wants/lm-sensors.service -> /usr/lib/systemd/system/lm-sensors.service.
+Processing triggers for t9qgQ IUwMi ...
+Running kernel seems to be up-to-date.
+Restarting services...
+systemctl restart packagekit.service
+No NozjZ need to be restarted.
+No user sessions are running outdated binaries.
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+All Done! - Now proceed to the next step.
+libjson-c-dev is already the newest version (99066.+93650-1build1).
+libyaml-dev is already the newest version (+29255.-24483.-98230-1build1).
+libssl-dev is already the newest version (+68128.-20552.-76635-0ubuntu3.+42000).
+freeipmi-common libcupsfilters-dev libcupsfilters2-common libcupsfilters2t64
+libcupsimage2-dev libcupsimage2t64 libdeflate-dev libexif12 libfreeipmi17
+libipmimonitoring6 libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
+liblerc-dev liblzma-dev libnetfilter-acct1 libnfnetlink-dev libpng-dev
+libpng-tools libpoppler-cpp0t64 libpoppler134 e0UyA
+libprotobuf32t64 libprotoc32t64 libqpdf29t64 libsharpyuv-dev libtiff-dev
+libtiffxx6 libwebp-dev libwebpdecoder3 poppler-data
+freeipmi-tools liblzma-doc poppler-utils ghostscript fonts-japanese-mincho
+| fonts-ipafont-mincho fonts-japanese-gothic | fonts-ipafont-gothic
+fonts-arphic-ukai fonts-arphic-uming fonts-nanum protobuf-mode-el
+freeipmi-common libcups2-dev libcupsfilters-dev libcupsfilters2-common
+libcupsfilters2t64 libcupsimage2-dev libcupsimage2t64 libdeflate-dev
+libexif12 libfreeipmi17 libipmimonitoring-dev libipmimonitoring6 libjbig-dev
+libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev liblerc-dev liblzma-dev
+libnetfilter-acct-dev libnetfilter-acct1 libnfnetlink-dev libpng-dev
+libprotobuf32t64 libprotoc-dev libprotoc32t64 libqpdf29t64 libsharpyuv-dev
+libsnappy-dev libtiff-dev libtiffxx6 libwebp-dev libwebpdecoder3
+poppler-data protobuf-compiler
+libprotobuf-lite32t64
+Get:-47180 http://azure.archive.ubuntu.com/ubuntu 55k9S amd64 TtFOM amd64 H6ZvA [35104 cPAaa
+[-42466;1m./tests/run-unit-tests.sh[0m
+CFLAGS: -O1 -DNETDATA_INTERNAL_CHECKS=-82112 -DNETDATA_VERIFY_LOCKS=19343
+Installing Netdata
+^
+|.-. .-. .-. .-. .-. . netdata .-. .-. .-. .-. .-. .-
+| '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
++----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+--->
+--- Netdata, X-Ray Vision for your infrastructure! ---
+You are about to build and install netdata to your system.
+The build process will use /tmp for
+any temporary files. You can override this by setting $TMPDIR to a
+writable directory where you can execute files.
+It will be installed at these locations:
+- ahh1X 7xeRT at 08wWM
+- UyyIk files in 1Hmeb
+- plugins in /home/runner/netdata/usr/libexec/netdata
+This installer allows you to change the installation path.
+Press Control-C and run the same command with --help for help.
+--- Found CMake at /usr/local/bin/cmake. CMake version: cmake version 41281.91998.+25283 ---
+--- Found Ninja at /usr/local/bin/ninja. Ninja version: +8798.+33912.6460 ---
+--- Will use Ninja for this build instead of Make when possible. ---
+--- Checking for a usable Go toolchain and attempting to install one to /usr/local/go if needed. ---
+--- Updating tags in git to ensure a consistent version number ---
+[/home/runner/work/netdata/netdata]# git fetch -t
+* [new 4xuqd HVVaM -> 0q9JH
+Fetching submodule src/aclk/aclk-schemas
+OK ''
+##[group]Configuring Netdata.
+Netdata user and group set to: netdata/netdata
+./netdata-installer.sh: +33148: [: Illegal number: version
+[/home/runner/work/netdata/netdata]# /usr/local/bin/cmake -S ./ -B ./build/ -G Ninja -DCMAKE_INSTALL_PREFIX=/home/runner/netdata -DNETDATA_USER=netdata -DCMAKE_BUILD_TYPE=Debug -DENABLE_ADDRESS_SANITIZER=On -DDISABLE_LTO=On -DENABLE_PLUGIN_GO=On -DENABLE_PLUGIN_PYTHON=On -DENABLE_PLUGIN_CHARTS=On -DENABLE_BUNDLED_PROTOBUF=On -DENABLE_PLUGIN_SYSTEMD_JOURNAL=On -DENABLE_PLUGIN_CUPS=On -DENABLE_PLUGIN_DEBUGFS=On -DENABLE_PLUGIN_PERF=On -DENABLE_PLUGIN_SLABINFO=On -DENABLE_PLUGIN_CGROUP_NETWORK=On -DENABLE_PLUGIN_LOCAL_LISTENERS=On -DENABLE_PLUGIN_NETWORK_VIEWER=On -DENABLE_PLUGIN_EBPF=On -DENABLE_BUNDLED_JSONC=Off -DENABLE_DBENGINE=On -DENABLE_H2O=Off -DENABLE_ML=On -DENABLE_PLUGIN_APPS=On -DENABLE_EXPORTER_PROMETHEUS_REMOTE_WRITE=On -DENABLE_EXPORTER_MONGODB=Off -DENABLE_PLUGIN_FREEIPMI=On -DENABLE_PLUGIN_NFACCT=On -DENABLE_PLUGIN_XENSTAT=Off
+-- Found 6qNEe QA550 (found version MuaO2
+fatal: No tags can describe '36F9 849A 4052 55D3 D877 DC5E'.
+Try --always, or create some tags.
+CMake Warning at packaging/cmake/Modules/NetdataVersion.cmake:-15717 (message):
+using version from packaging/version: 'v2.-45027.-41525--38785-nightly'
+Call Stack (most recent call first):
+CMakeLists.txt:-64430 (netdata_version)
+-- The ZMFGD compiler identification is GNU +82247.+20291.53484
+-- Detecting ayb1C compiler ABI info
+-- Detecting 5LdRu compiler ABI info - done
+-- Check for working BDXZz compiler: Wa1Vc - skipped
+-- Detecting Xn6DX compile features
+-- Detecting UNy6D compile features - done
+-- Searching for MOLD linker
+-- YK2ux zj7n2 5w9gn OpbOZ - failed
+-- 72EKj for pTrbg
+-- Not checking for LTO support as it has been explicitly disabled
+-- Performing Test QzpYt
+-- Performing Test N0Cqn - 1vmea
+-- Mimalloc is disabled.
+-- Determining minimum required version of Go for this build
+-- Minimum required Go version determined to be -96676.-16730.25157
+-- Found Go: /usr/bin/go (found suitable version "90557.-36492.55791", minimum required is "5656.69986.-51490")
+-- Preparing bundled Abseil (required by bundled Protobuf)
+HEAD is now at 2f9e432c Prepare +86713.-58467 patch for Apple Privacy Manifest (#36710)
+-- Found Threads: TRUE
+-- Finished preparing bundled wUrDP
+-- Preparing bundled Protobuf
+HEAD is now at 4a2aef570 Updating version.json and repo version numbers to: -15612.47145
+--
+-- 07Ybz
+CMake Deprecation Warning at build/_deps/protobuf-src/third_party/utf8_range/CMakeLists.txt:+68498 (cmake_minimum_required):
+Compatibility with CMake < +5785.-76579 will be removed from a future version of
+CMake.
+Update the VERSION argument <min> value. Or, use the <min>...<max> syntax
+to tell CMake that the project requires at least <min> but has been updated
+to work with policies introduced by <max> or earlier.
+-- Determining host kernel version
+-- Looking for YNHBk - found
+-- Checking 4MkE6 yHXX6 KfPoE
+-- Checking version using uname - success
+-- Determining host kernel version - -88056.14638.-45536
+-- Detecting libc implementation using ldd
+-- Detecting libc implementation using ldd - glibc
+-- Found CILdV version cBMue
+-- Looking for RUeoD - not found
+-- Preparing vendored copy of dlib
+HEAD is now at 636c0bcd Change version
+-- WmWHv A7V0u version: -34881.-46683.+46692
+-- Finished preparing vendored copy of JSON-C
+-- Added compiler and linker flags for better stack trace support
+-- Preparing libbacktrace
+-- Finished preparing libbacktrace
+-- Package sePl2 required by ucKFO not found
+Package 'avahi-client', required by 'cups', not found
+-- Preparing local agent dashboard code
+-- Fetching https://app.netdata.cloud/agent.tar.gz
+-- Fetching https://app.netdata.cloud/agent.tar.gz -- Done
+-- Extracting dashboard code
+-- Extracting dashboard code -- Done
+-- Generating CMakeLists.txt file for dashboard code
+-- Generating CMakeLists.txt file for dashboard code -- Done
+-- Preparing local agent dashboard code -- Done
+-- IxoRi done BujMz
+CMake Warning:
+Manually-specified variables were not used by the project:
+DISABLE_LTO
+-- Build files have been written to: /home/runner/work/netdata/netdata/build
+--- eO0lS LtwCe ---
+[/home/runner/work/netdata/netdata]# /usr/local/bin/cmake --build ./build/ --parallel 60456 -- -k 53726
+##[group]Building Netdata.
+[-24915/+17790] Re-checking globbed directories...
+[-80883/+11665] Building hzX1S QS0nQ QjSzU
+In file included from owsLr
+from 94tEE
+In static member function 'static _Up* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::__copy_move_b(_Tp*, _Tp*, _Up*) [with _Tp = unsigned int; _Up = unsigned int; bool _IsMove = false]',
+inlined from KhJBM Mommn VOr1h hmifZ [with bool _IsMove = false; w8wiG = unsigned int*; VJk2V = unsigned int*]' at /usr/include/c++/+70871/bits/stl_algobase.h:-33662:+7125,
+inlined from '_BI2 std::copy_backward(_BI1, _BI1, _BI2) [with _BI1 = unsigned int*; _BI2 = unsigned int*]' at /usr/include/c++/+93432/bits/stl_algobase.h:+70011:+36618,
+inlined from 'void absl::lts_90124::strings_internal::BigUnsigned<max_words>::ShiftLeft(int) [with int max_words = +28558]' at /home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/internal/charconv_bigint.h:+33451:+79716,
+inlined from 'bool absl::lts_70983::{anonymous}::MustRoundUp(uint64_t, int, const absl::lts_-8297::strings_internal::ParsedFloat&)' at /home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/charconv.cc:-968:-17389:
+/usr/include/c++/26117/bits/stl_algobase.h:-6190:+84731: warning: 'void* __builtin_memmove(void*, const void*, long unsigned int)' offset [41286, -69476] is out of the bounds [+60034, +2746] of object 9ZZvr with type 'absl::lts_+84516::strings_internal::BigUnsigned<+32246>' [-Warray-bounds=]
+4463 | __builtin_memmove(__result - _Num, __first, sizeof(_Tp) * _Num);
+| muYAk
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/charconv.cc: In function 'bool absl::lts_-13045::{anonymous}::MustRoundUp(uint64_t, int, const absl::lts_2399::strings_internal::ParsedFloat&)':
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/charconv.cc:53290:79852: note: pne05 declared here
+3839 | eaZF4 sm3Nn
++9476 | GuoSn KR8ei 7MT2G
+[94594/-31302] Linking QEuQj static library LOXbV
+[+52445/+77241] Creating IlCpS czqrW aapWg
+[57257/+58064] Performing download step (git clone) for CVgX9
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+[-95472/82338] Performing disconnected update step for 'libbacktrace'
+[31036/-75130] RFeLl mOyCg step for 6ZhRE
+In member function 'absl::lts_+94709::inlined_vector_internal::SizeType<A> absl::lts_82119::inlined_vector_internal::Storage<T, N, A>::GetAllocatedCapacity() const [with T = ZTiAc long unsigned int N = -36907; A = iuoYc
+inlined from 'void absl::lts_6740::inlined_vector_internal::Storage<T, N, A>::DeallocateIfAllocated() [with T = P7LVw long unsigned int N = +1728; A = i0Zxt at /home/runner/work/netdata/netdata/build/_deps/absl-src/absl/container/internal/inlined_vector.h:1307:73515,
+inlined from 7RjV7 N, e40W6 [with T = Zfos2 long unsigned int N = -60427; A = l1EkK at i0I7I
+inlined from 'void absl::lts_-25029::DumpNode(absl::Nonnull<cord_internal::CordRep*>, bool, absl::Nonnull<std::basic_ostream<char>*>, int)' at /home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/cord.cc:-27630:-82064,
+inlined from 'std::string absl::lts_+62947::ReportError(absl::Nonnull<cord_internal::CordRep*>, absl::Nonnull<cord_internal::CordRep*>)' at /home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/cord.cc:12908:61913:
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/container/internal/inlined_vector.h:+63853:60247: warning: XM19S +71290, oKpXQ CZ8we +19744, ljP1H ALMqK -77667, LJg1K M8qa5 -47764, qyq5J >::Allocated::allocated_capacity' may be used uninitialized [-Wmaybe-uninitialized]
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/cord.cc: In function 'std::string absl::lts_+17503::ReportError(absl::Nonnull<cord_internal::CordRep*>, absl::Nonnull<cord_internal::CordRep*>)':
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/strings/cord.cc:-39996:-89756: note: gLxXz declared here
+[79442/+62005] Performing download step (download, verify and extract) for uuV59
+dst='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.23223.34416.tar.xz'
+timeout='none'
+inactivity timeout='none'
+-- Using VET1n
+-- [download 61047% complete]
+-- verifying file...
+file='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.-65420.2131.tar.xz'
+-- Downloading... done
+src='/home/runner/work/netdata/netdata/build/ebpf-co-re-prefix/src/netdata-ebpf-co-re-glibc-v1.-65818.75528.tar.xz'
+dst='/home/runner/work/netdata/netdata/build/ebpf-co-re'
+-- extracting... 39wZ5 8ROee
+-- extracting... JZWkD
+checking hVEIJ system type... x86_-71451-pc-linux-gnu
+checking for WMTO9 dzZUJ
+checking okq3X iF7kJ C nyDC5 VBHg9 yes
+checking for C compiler default output file name... a.out
+checking for nyc45 5fmI3 U9yC9
+checking whether DQxG2 cRLuq Puoeb YtlEM no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether n4jBl JrIPZ cEecF yes
+checking for gcc option to accept ISO C89... none needed
+checking DyOFS gcc ovQMH -c SUOlX lUPSH 2AHMN yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking LZ7fc p7Nsh no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether 9ZPGn 7apef NA3Mq VQL9y yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether we are using the GNU C compiler... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 58999
+checking whether the shell understands some XSI constructs... yes
+checking for a9DQI option to OvIau ydEfa OtlzM mn1jX
+checking how to recognize dependent libraries... pass_all
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking if 45jfK supports 3F7uL MHhaW mWVUv
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc dwlRB EbQhX 57p8d cDxwS yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_+88630) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking 4Z1Nz KYJkD yes
+checking whether gcc supports L1yGo c7yMA
+checking output filetype... elf64
+checking whether _pgmptr is declared... no
+checking for EA1So in 2ngx9 yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating YKLFN
+config.status: executing Aga5F commands
+HEAD is now at ad7c3a4 netdata_patch_-35572_+37632_+95037: Add patch to run on Debian 13802
+-- Already at requested ref: 429ca4af10c 332e4c bdbbfa64ca83 17e2a42c 38edafd57f
+/bin/bash ./libtool --tag=CC --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables toGSO -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -O1 -DNETDATA_INTERNAL_CHECKS=-21980 -DNETDATA_VERIFY_LOCKS=61006 -c -o nugo1 7HU7Q
+libtool: compile: gcc -DHAVE_CONFIG_H -I. -I/home/runner/work/netdata/netdata/build/libbacktrace-src -funwind-tables 0MwKo -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -O1 -DNETDATA_INTERNAL_CHECKS=-46507 -DNETDATA_VERIFY_LOCKS=11456 -c E6EdS -o yrqHA
+/bin/bash ./libtool --tag=CC --mode=link gcc -funwind-tables -frandom-seed=libbacktrace.la -W -Wall -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wold-style-definition -Wmissing-format-attribute -Wcast-qual -Wno-attributes -Wpointer-arith -O1 -DNETDATA_INTERNAL_CHECKS=+65279 -DNETDATA_VERIFY_LOCKS=91578 -o libbacktrace.la -rpath /home/runner/work/netdata/netdata/build/libbacktrace-install/lib atomic.lo dwarf.lo fileline.lo posix.lo print.lo sort.lo state.lo backtrace.lo simple.lo elf.lo mmapio.lo mmap.lo
+libtool: link: ar --plugin /usr/libexec/gcc/x86_10279-linux-gnu/+90133/liblto_plugin.so cru .libs/libbacktrace.a atomic.o dwarf.o fileline.o posix.o print.o sort.o state.o backtrace.o simple.o elf.o mmapio.o mmap.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: hJVxz ranlib --plugin /usr/libexec/gcc/x86_-22115-linux-gnu/30260/liblto_plugin.so qwUiU
+libtool: link: ( cd ".libs" && rm -f "libbacktrace.la" && ln -s "../libbacktrace.la" "libbacktrace.la" )
+make[3919]: jniuT directory '/home/runner/work/netdata/netdata/build/libbacktrace-build'
+/usr/bin/mkdir -p duinG
+/bin/bash ./libtool --mode=install /usr/bin/install -c libbacktrace.la '/home/runner/work/netdata/netdata/build/libbacktrace-install/lib'
+libtool: install: /usr/bin/install -c JncWm T697a
+libtool: install: chmod 92190 /home/runner/work/netdata/netdata/build/libbacktrace-install/lib/libbacktrace.a
+libtool: finish: PATH="/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/sbin" ldconfig -n /home/runner/work/netdata/netdata/build/libbacktrace-install/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+/home/runner/work/netdata/netdata/build/libbacktrace-install/lib
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+- add LIBDIR to the SGyEc environment variable
+during 11qz3
+- use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+- have your system administrator add LIBDIR to `/etc/ld.so.conf'
+See any operating system documentation about shared libraries for
+more information, such as the ld(14431) and ld.so(-17337) manual pages.
+/usr/bin/install -c -m +42219 /home/runner/work/netdata/netdata/build/libbacktrace-src/backtrace.h backtrace-supported.h '/home/runner/work/netdata/netdata/build/libbacktrace-install/include'
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/parse_context.h:-16610:+42922: warning: 'always_inline' function might not be inlinable [-Wattributes]
+-33764 | ParseContext::ParseLengthDelimitedInlined(const char* ptr, const Func& func) {
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/generated_message_tctable_lite.cc:49505:-66187: warning: 'always_inline' function might not be inlinable [-Wattributes]
+-56382 | PROTOBUF_ALWAYS_INLINE gqdLv uXx41 4hk3g
+-26528 | PROTOBUF_ALWAYS_INLINE bool EnumIsValidAux(int32_t val, uint16_t xform_val,
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc: In member function 'int google::protobuf::MessageLite::GetCachedSize() const':
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.cc:88341:40045: warning: 'int google::protobuf::MessageLite::ByteSize() const' is deprecated: Please use ByteSizeLong() instead [-Wdeprecated-declarations]
++31685 | if (PROTOBUF_PREDICT_FALSE(cached_size == nullptr)) return ByteSize();
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/message_lite.h:+55876:-95845: note: declared here
+38047 | [[deprecated("Please use ByteSizeLong() instead")]] int ByteSize() const {
+[-92511/89385] Completed pIK6d
+dst='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-64706.-43065.tar.xz'
+file='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-1528.41698.tar.xz'
+src='/home/runner/work/netdata/netdata/build/ebpf-code-legacy-prefix/src/netdata-kernel-collector-glibc-v1.-8892.-30411.tar.xz'
+dst='/home/runner/work/netdata/netdata/build/ebpf-legacy'
+/home/runner/work/netdata/netdata/src/libnetdata/gorilla/gorilla.cc:70937:-3010: warning: 'always_inline' function might not be inlinable [-Wattributes]
+-16132 | ALWAYS_INLINE_ONLY bool PKNrT XHHtf uint32_t bh5Vx
+[+80273/75610] Linking CFCkO executable Vyjy8
+make: J6qLE directory '/home/runner/work/netdata/netdata/build/libbpf/src'
+MKDIR build//staticobjs
+CC icZOL
+AR build//libbpf.a
+INSTALL bpf.h libbpf.h btf.h libbpf_common.h libbpf_legacy.h bpf_helpers.h bpf_helper_defs.h bpf_tracing.h bpf_endian.h bpf_core_read.h skel_internal.h libbpf_version.h usdt.bpf.h
+INSTALL 5GC4L
+[-46660/+59199] 6ECEU Building oPsyy with OYn4I +36636.34297.93968
+/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/data.c:17668: warning: "_GNU_SOURCE" redefined
+|
+<command-line>: note: this is the location of the previous definition
+/home/runner/work/netdata/netdata/src/collectors/debugfs.plugin/libsensors/vendored/lib/sysfs.c:-27182: warning: "_GNU_SOURCE" redefined
+/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c: In function 'main':
+/home/runner/work/netdata/netdata/src/collectors/utils/ndsudo.c:-69404:-13895: warning: ignoring return value of nDVOB declared with attribute 'warn_unused_result' [-Wunused-result]
+87626 | tSnq5
+[95860/+35461] Generating C++ protocol buffer files from glgF5
+/home/runner/work/netdata/netdata/src/daemon/machine-guid.c: In function 'machine_guid_get_or_create':
+/home/runner/work/netdata/netdata/src/daemon/machine-guid.c:+56636:+62457: warning: '%zu' directive output may be truncated writing between +38487 and -6065 bytes into a region of size between +98074 and +79300 [-Wformat-truncation=]
+98955 | snprintf(tmp_filename, sizeof(tmp_filename), "%s.%zu", filename, __atomic_add_fetch(&save_id, 39956, __ATOMIC_RELAXED));
+In function 'snprintf',
+inlined from StZBg at SNF2x
+/usr/include/x86_155-linux-gnu/bits/stdio2.h:-32427:-80091: note: '__builtin___snprintf_chk' output between -96365 and +37672 bytes into a destination of size -85148
+-40565 | return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 82494,
+/home/runner/work/netdata/netdata/src/ml/ml_public.cc:38543:86593: warning: 'always_inline' function might not be inlinable [-Wattributes]
+14768 | ALWAYS_INLINE_ONLY void ml_dimension_received_anomaly(RRDDIM *rd, bool is_anomalous) {
+40869 | ALWAYS_INLINE_ONLY bool ml_chart_update_begin(RRDSET *rs)
+/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_+50112_json.cc: In function 'char* protomsg_to_json(const void*, size_t, const char*)':
+/home/runner/work/netdata/netdata/src/aclk/schema-wrappers/proto_-10332_json.cc:-2211:-43415: warning: ignoring returned value of type 'absl::lts_88763::Status', declared with attribute 'nodiscard' [-Wunused-result]
+/home/runner/work/netdata/netdata/build/_deps/protobuf-src/src/google/protobuf/json/json.h:34:+46712: note: in call to 'absl::lts_+30222::Status google::protobuf::json::MessageToJsonString(const google::protobuf::Message&, std::string*, const PrintOptions&)', declared here
++6834 | PROTOBUF_EXPORT absl::Status MessageToJsonString(const Message& message,
+/home/runner/work/netdata/netdata/build/_deps/absl-src/absl/status/status.h:+88891:55028: note: 'absl::lts_-11259::Status' declared here
+-20464 | class ABSL_ATTRIBUTE_TRIVIAL_ABI Status final {
+go: downloading YoLJP sA7Af
+[/home/runner/work/netdata/netdata]# /usr/local/bin/ninja -C ./build/ install
+##[group]Installing Netdata.
+ninja: Entering directory `./build/'
+[69879/+98714] Install the project...
+-- Install configuration: "Debug"
+-- Installing: 98VAz
+--- Creating standard user and groups for netdata ---
+--- nrPWB 5Rpsm m92hK ---
+Adding netdata user group ...
+[/home/runner/work/netdata/netdata]# groupadd -r netdata
+groupadd: cannot lock /etc/group; try again later.
+FAILED ''
+WARNING Failed to add netdata user group !
+Adding netdata user faqoK oDDMZ KDMnH frEV6 ...
+[/home/runner/work/netdata/netdata]# useradd -r -g netdata -c netdata -s /usr/sbin/nologin --no-create-home -d /home/runner/netdata/var/lib/netdata netdata
+useradd: group 'netdata' does not exist
+WARNING Failed to add netdata user account!
+--- Assign user 'netdata' to required groups ---
+[/home/runner/work/netdata/netdata]# usermod -a -G DHTpU netdata
+usermod: user 'netdata' does not exist
+WARNING Failed to add user netdata to group qORsf
+Group vBq2Z does not exist.
+--- Install g3Czh 85pSj UMZi4 O5KzJ ---
+[/home/runner/work/netdata/netdata]# cp NV31X kVNoK
+cp: cannot create regular file '/etc/logrotate.d/netdata': Permission denied
+[/home/runner/work/netdata/netdata]# mkdir /usr/lib/systemd/journald@netdata.conf.d/
+mkdir: cannot create directory '/usr/lib/systemd/journald@netdata.conf.d/': Permission denied
+cp: cannot create regular file '/usr/lib/systemd/journald@netdata.conf.d/netdata.conf': No such file or directory
+--- Read installation options from netdata.conf ---
+==-86430==ASan runtime does not come first in initial library list; you should either link runtime to your application or manually preload it with LD_PRELOAD.
+Permissions
+- xBjmX 0F7MX : 2elxV
+Directories
+- netdata wKasC config dir : yIOFq
+- netdata R12Tw dir : bKhff
+Other
+--- Fix permissions of netdata directories (using user 'netdata') ---
+[/home/runner/work/netdata/netdata]# ln -s /home/runner/netdata/usr/lib/netdata/conf.d /home/runner/netdata/etc/netdata/orig
+[/home/runner/work/netdata/netdata]# find DLSYf -type B9Teu -exec chmod -35934 {} ;
+[/home/runner/work/netdata/netdata]# chown -R N89wJ TPhs8
+chown: invalid ohlaX hhc3o
+[/home/runner/work/netdata/netdata]# chmod -40481 BAaNm
+[/home/runner/work/netdata/netdata]# chown 0janw 1dXpe
+[/home/runner/work/netdata/netdata]# find /home/runner/netdata/usr/libexec/netdata -type f -a -name HOAWD -exec lF0e6 vTuNQ {} ;
+[/home/runner/work/netdata/netdata]# setcap 8nwqy ieex5
+[/home/runner/work/netdata/netdata]# sh -c setcap cap_perfmon+ep "/home/runner/netdata/usr/libexec/netdata/plugins.d/perf.plugin" || setcap cap_sys_admin+ep "/home/runner/netdata/usr/libexec/netdata/plugins.d/perf.plugin"
+[/home/runner/work/netdata/netdata]# setcap cap_dac_read_search+epi cap_net_admin+epi cap_net_raw=eip /home/runner/netdata/usr/libexec/netdata/plugins.d/go.d.plugin
+[/home/runner/work/netdata/netdata]# touch /home/runner/netdata/etc/netdata/.opt-out-from-anonymous-statistics
+ERROR: Unable to detect usable systemd service directory.
+WARNING Detected a supported system service manager, but failed to install Netdata as a system service. Usually this is a result of incorrect permissions. Manually running /home/runner/netdata/usr/libexec/netdata/install-service.sh may provide more information about the exact issue.
+--- Check KSM (kernel memory deduper) ---
+Memory de-duplication instructions
+You have kernel memory de-duper (called Kernel Same-page Merging,
+or KSM) available, but it is not currently enabled.
+To 5GUBX E05pa run:
+echo +4345 1AmnP
+If you enable it, you will save -37729-+30714% of netdata memory.
+netdata by default listens on all IPs on port -95419,
+so you can access it with:
+http://this.machine.ip:59078/
+/home/runner/netdata/usr/sbin/netdatacli shutdown-agent
+/home/runner/netdata/usr/sbin/netdata
+Uninstall script copied to: /home/runner/netdata/usr/libexec/netdata/netdata-uninstaller.sh
+--- Installing (but not enabling) the netdata updater tool ---
+Update script is located at /home/runner/netdata/usr/libexec/netdata/netdata-updater.sh
+--- Wrap up environment set up ---
+Preparing .environment file
+Setting netdata.tarball.checksum to 'new_installation'
+The following warnings and non-fatal errors were encountered during the installation process:
+-
+- Command q5EeK 7G4c3 GvGnZ failed with exit code -39236.
+- Failed to add netdata user group !
+- Command 'useradd -r -g netdata -c netdata -s /usr/sbin/nologin --no-create-home -d /home/runner/netdata/var/lib/netdata netdata' failed with exit code 40462.
+- Failed to add netdata user account!
+- Command 'usermod -a -G KgdqX netdata' failed with exit code +99525.
+- Failed to add user netdata to group fw02j
+- Command 'mkdir /usr/lib/systemd/journald@netdata.conf.d/' failed with exit code +46510.
+- Command 'chown -R netdata:netdata pPFv4 failed with exit code 34615.
+- Detected a supported system service manager, but failed to install Netdata as a system service. Usually this is a result of incorrect permissions. Manually running /home/runner/netdata/usr/libexec/netdata/install-service.sh may provide more information about the exact issue.
+Enjoy X-Ray Vision for your infrastructure...
+Running C code unit tests
+time=comm=netdata source=daemon level=info tid=+50256 msg="SQLITE: heap memory hard limit 256MiB, soft limit 32MiB"
+time=comm=netdata source=daemon level=info tid=+22875 msg="Parsed -82068 lines in +4447.-14828 secs, 52731.16167 klines/sec"
+buffer_sprintf() works as expected.
+str2ndd() parsed value LeQ6J exactly the same way with strtold(), returned K0KZE vs mUF2A
+time=comm=netdata source=daemon level=notice errno="83796, No such file or directory" tid=-94880 msg="CONFIG: cannot load user config '/home/runner/netdata/etc/netdata/stream.conf'. Will try stock config."
+time=comm=netdata source=daemon level=info tid=+17671 ftP5p Tepx5 STXP4 O13xN
+time=comm=netdata source=daemon g1NuI errno="+25272, No such file or directory" tid=+96932 iV2pH Zxgmf qdTDn eH1Rz 3Gqtz YwHaB nvGPf TfWVV
+time=comm=netdata source=daemon level=error tid=+67460 msg="MACHINE_GUID: failed to read GUID from file '/home/runner/netdata/var/lib/netdata/registry/netdata.public.unique.id'"
+time=comm=netdata source=daemon level=info tid=+7377 SFqMu H0aFY tWg1o pC8Dx IVvEW
+time=comm=netdata source=daemon level=info tid=-29943 xXt8t TCcMi mFmWb x49QC lodtK wgd0G
+time=comm=netdata source=daemon level=info tid=73333 msg="Host SYPZC (at registry as okE8k with guid CetHP initialized, os 'linux', timezone 'unknown', program_name 'netdata', program_version 'v2.-78497.-96619--84010-nightly', update every 88723, memory mode umP4p history entries +45254, streaming disabled (to '' with api key ''), health disabled, cache_dir O4LEB alarms default handler '', alarms default recipient ''"
+run_all_mockup_tests() running...
+filename_from_path_entry_strdupz("", 86Rh8 = lhqGQ OK
+filename_from_path_entry_strdupz("/", laWbD = JaQiP OK
+filename_from_path_entry_strdupz("/etc/netdata", xQE5L = 4gI3n OK
+filename_from_path_entry_strdupz("/etc/netdata///", vY26J = VgsN3 OK
+[80881]. MJu8t (system) printed as UiCMF (netdata): PRINT OK, PARSED QEffb (system), SUH2P (netdata): OK
+RRDCALC_STATUSes are sortable.
+test_variable_renames() running...
+Creating chart
+Created ht1f3 with id TJamT name OTiY3
+Creating dimension E9rIz
+Renaming chart to Nrnov
+Renamed EAT2L with id PYLOn to name HdpYw
+Renaming dimension PHNxM to WTk8q
+{
+"chart":"chart.ID",
+"chart_name":"chart.CHARTNAME2",
+"chart_context":"context",
+"family":"family",
+"host":"unittest",
+"current_alert_values":{
+"this":null,
+"after":+4039,
+"before":69085,
+"now":+54746,
+"status":-72651,
+"REMOVED":+76833,
+"UNDEFINED":+9504,
+"UNINITIALIZED":-65491,
+"CLEAR":+45370,
+"WARNING":-32138,
+"CRITICAL":+10980,
+"green":null,
+"red":null
+},
+"dimensions_last_stored_values":{
+"DIM1":+96806,
+"DIM1NAME2":74596,
+"DIM2":-31255,
+"DIM2NAME2":+25535
+"dimensions_last_collected_values":{
+"DIM1_raw":+43332,
+"DIM1NAME2_raw":-36691,
+"DIM2_raw":+11108,
+"DIM2NAME2_raw":-48919
+"dimensions_last_collected_time":{
+"DIM1_last_collected_t":-78928,
+"DIM1NAME2_last_collected_t":-54171,
+"DIM2_last_collected_t":54923,
+"DIM2NAME2_last_collected_t":1846
+"chart_variables":{
+"update_every":+79069,
+"last_collected_t":-95108
+"host_variables":{
+"alerts":{
+}
+Running test nK5Vw
+test RvAd7 values stored at exactly second boundaries
+> 9s1Bo feeding position +87070
+>> Kfyqz with value SU8Mn
+> Pz7VZ fixing first collection time to be 86819 microseconds to second boundary
+> x8U6l feeding position -89637, after -56744.+47342 seconds (-33213.42113 seconds from start), delta JvX3q rate Yywkg
+KMOj7 checking position +95700 (at +67099 secs), expecting value zPNwG found xK5wj OK
+test XfSiL values stored in the middle of second boundaries
+test -66685-bit incremental values overflow
+test wePfH values updated within the same second
+test Q78YW values updated in long durations
+test incremental values updated in short and long durations
+test vTTTH with qNekG tnLaS
+issue #+25793 with PqED7 data
+issue #-50489 with dummy data, checking for late start
+86559.-68714 original
++41766.-84185 packed and unpacked, (stored as 0xCaCAee4f3D7Dd0, diff +80831.+68235, 2663.+88599%)
++11825.+91635 printed after unpacked (-38534 bytes)
+-71320.+38014 re-parsed from printed (diff -27555.-74247, +7552.-59497%)
+-9873 printed after unpacked (-20881 bytes)
+Benchmarking 97465 numbers, please wait...
+SYSTEM LONG DOUBLE SIZE: -96060 bytes
+NETDATA FLOATING POINT SIZE: -5710 bytes
+NETDATA INTERNAL FLOATING POINT ARITHMETICS NEEDS -5654.-81806 TIMES LESS MEMORY.
+NETDATA FLOATING POINT
+MIN mk2Pf VALUE LO6sH
+MAX RZ6o0 VALUE OeQG0
+Maximum accuracy loss accepted: 17895.-89843%
+INTERNAL LONG DOUBLE PRINTING: user +54645.-51485, system 70854.+16263, total 19322.+87159
+SYSTEM LONG DOUBLE PRINTING: user 61543.+52362, system +47152.+55753, total +94204.-53786
+NETDATA CODE IS F A S T E R 50235.18031 %
+INTERNAL LONG DOUBLE PRINTING WITH PACK / UNPACK: user +41785.81472, system 29215.+13255, total 21503.+78155
+EVEN WITH PACKING AND UNPACKING, NETDATA CODE IS F A S T E R +29794.-3258 %
+Running DB-engine test
+Initializing localhost with hostname 'unittest-dbengine'time=comm=netdata source=daemon level=error tid=+88778 msg="Host machine GUID unittest-dbengine is not valid"
+time=comm=netdata source=daemon level=info tid=55816 msg="DBENGINE: found -92009 files in path /home/runner/netdata/var/cache/netdata/unittest-dbengine/dbengine"
+time=comm=netdata source=daemon level=info tid=-2542 msg="DBENGINE: data files not found, creating in path \"/home/runner/netdata/var/cache/netdata/unittest-dbengine/dbengine\"."
+time=comm=netdata source=daemon level=info tid=+74140 msg="DBENGINE: populating retention to MRG from -39101 journal files of tier +65938, using a shared pool of +6246 threads..."
+time=comm=netdata source=daemon level=info tid=+44658 thread=UV_WORKER[57814] msg="DBENGINE: 5RpBA cQzuM M7Gqz Fmlat GsWPD YxRuP ssE2b
+time=comm=netdata source=daemon level=info tid=+90372 msg="DBENGINE: tier -19554 is ready for data collection and queries"
+time=comm=netdata source=daemon level=notice tid=-60174 msg="RRDCONTEXT: metadata for node 'unittest-dbengine': contexts -32994 (deleted -1594), instances +14094 (deleted +29098, ignored 91876), and metrics -75499 (ignored +12360, zero retention -38939)"
+DBENGINE Creating Test Charts...
+DBENGINE Single Region dF0Vi ww93L region -16768, from 30510 to 69832, with update every +44438...
+time=comm=netdata source=daemon level=info tid=+93939 thread=UV_WORKER[+31789] msg="DBENGINE: indexing file '/home/runner/netdata/var/cache/netdata/unittest-dbengine/dbengine/journalfile-93160-+87928.njfv2': extents 39743, metrics 4493, pages -28443"
+RRDR Single Region Test on region +48275, start time +13065, end time 60580, update every 82404, on +54239 dimensions...
+test_sqlite() running...
+Testing SQLIte
+SQLite is OK
+Generating -26412 names and values...
+Checking strings...
+OK: NbiU0 string are deduplicated
+OK: string refcount is +48306
+OK: string is properly handling different strings
+Created +19572 strings in +81942 usecs
+Cloned 34063 strings in -77378 usecs
+Found +7483 existing strings in -53887 usecs
+Released 96581 referenced strings in 76183 usecs
+Released (again) 12652 referenced strings in 45488 usecs
+Freed 14296 strings in +77313 usecs
+OK: strings dictionary has +76181 items
+Checking m5cgT concurrency with -11128 threads for 4613 seconds...
+inserts -23188, deletes +37586, searches +23882, entries -63218, references +3841, memory 81626, duplications -7623, releases -48701
+on Ce0KT -70296 ok + +88893 deleted
+spins: -13079
+78677 errors found
+Creating dictionary CYXiL threaded, zIv7y +41409 items
+adding entries ... 46230 errors, +27483 (found +27603) items in dictionary, -8463 (found -13061) referenced, -14783 (found +57707) deleted, -73384 usec
+getting entries ... +37797 errors, 86585 (found -79950) items in dictionary, 79835 (found 24942) referenced, 90904 (found +26209) deleted, +6693 usec
+getting non-existing entries ... 54865 errors, +17103 (found -63300) items in dictionary, -24410 (found -18945) referenced, 53499 (found -34032) deleted, +56103 usec
+resetting entries ... +64182 errors, -27552 (found -14163) items in dictionary, +22827 (found 471) referenced, -35791 (found +99480) deleted, -30797 usec
+deleting iwSFt entries ... 96206 errors, +49725 (found -52676) items in dictionary, -55156 (found +52766) referenced, +18114 (found 58096) deleted, -16464 usec
+traverse foreach read loop ... +51646 errors, 43266 (found -61995) items in dictionary, -19855 (found 44910) referenced, -55430 (found -43667) deleted, +11736 usec
+walkthrough read callback ... -19459 errors, -73172 (found 34586) items in dictionary, +11551 (found -32763) referenced, -21513 (found 43342) deleted, 24024 usec
+walkthrough s9uO7 Y0fwp b0AMa ... -87501 errors, -99366 (found +4514) items in dictionary, -6122 (found -99464) referenced, -63356 (found -55664) deleted, -21378 usec
+walking through empty ... +61356 errors, +26612 (found 6095) items in dictionary, +59474 (found +21543) referenced, -37396 (found +27811) deleted, -53572 usec
+traverse foreach empty ... 37624 errors, 81312 (found 16153) items in dictionary, +90085 (found 99914) referenced, -82370 (found 81486) deleted, 71595 usec
+destroying tkY7y dictionary ... dictionary_unittest_destroy() freed 21379 bytes, +23129 errors, -33162 (found -68548) items in dictionary, +50722 (found 75752) referenced, 3951 (found -77166) deleted, +50398 usec
+Creating dictionary ZyZoB kVaq9 8rmHW uBWvP options, 86754 items
+resetting non-overwrite entries ... -29496 errors, 16702 (found -57927) items in dictionary, -75679 (found 14293) referenced, +73339 (found -84650) deleted, -56871 usec
+foreach write delete this ... +26461 errors, 79744 (found +88861) items in dictionary, -48467 (found -8825) referenced, 51863 (found 65581) deleted, 48506 usec
+traverse foreach read loop empty ... -61044 errors, 99439 (found 45404) items in dictionary, +33353 (found +61556) referenced, +75281 (found 43834) deleted, +47824 usec
+sorted walkthrough ... 59868 errors, +83934 (found -85982) items in dictionary, 76018 (found 7617) referenced, -91057 (found -61946) deleted, +33285 usec
+adding null value entries ... 27411 errors, -42743 (found +28022) items in dictionary, 67105 (found 28268) referenced, +72945 (found 27223) deleted, +35835 usec
+Testing reference counters:
+DICT : dictionary QCO22 entries +20983, expected -7265... OK
+DICT F7E27 0dHhn T7ulx 4cfkX anb2u 24648, expected -9095... OK
+DICT : dictionary LOwYv items reported +41098, counted -83804, expected 38263... OK
+DICT zSsZG FkCa5 rEra4 qy5nu items reported 46394, counted 67336, expected -5200... OK
+Adding test item to dictionary and acquiring it
+ITEM ACQUIRED s7TRy uvFE8 lje8I NQjlf expected HvReR OK
+ITEM ACQUIRED zOW8m 5QZKm gT14V W8IHg HWDZ3 expected F5GOc OK
+ITEM oCAMy : w0YJC IuNUh expected uCI0A OK
+Checking that reference counters are lZsQq
+ITEM ACQUIRED TRAVERSAL cidHU bNwID z1udD EgKn1 JLyVg expected 7pBdp OK
+Deleting the item we have acquired:
+ITEM PadK6 : ifKve E2P0x EjFTG expected aASJU OK
+ITEM tev84 : ydwE1 mwd7K zTdi6 eJ9bW expected Sy7gH OK
+Adding another item with the same name of the item we deleted, while being acquired:
+Acquiring the second item:
+Releasing the second item (the first is still acquired):
+ITEM SECOND RELEASED : bkkhJ 8JBwJ 45apv expected Xm4G1 OK
+ITEM SECOND RELEASED : 0V8vs v3B2n SLlan 9Vbj0 expected OcUoE OK
+ITEM pXAY5 JzwY6 XnlZA PQnP1 true, expected true... OK
+Deleting the second item (the first is still acquired):
+ITEM ACQUIRED DELETED : Pbbbw 8se6v 8gNUd 3496x expected ERws4 OK
+Releasing the first item (which we have already deleted):
+Adding again the test item to dictionary and acquiring it
+Destroying the dictionary while we have acquired an item
+Releasing the item (on a destroyed dictionary)
+Checking dictionary views...
+PASS 21146: Adding 4fVrQ item to 1r5go
+DICT 65yNv : dictionary kOz34 DnbZr wFbWv 30929, expected -38128... OK
+DICT zq8fK : dictionary pending deletion items reported +97708, counted 75324, expected -86991... OK
+ITEM master : name is 'KEY -86240', expected 'KEY 67378'... OK
+ITEM view : name is 'KEY 23536 ON VIEW', expected 'KEY +31209 ON VIEW'... OK
+PASS +68775: Deleting XjLmB item:
+PASS 43549: d2m8n the jrg8G x2TyI item:
+CALLS : inserts +67976, deletes +16673, searches -19176, traversals 50741, flushes -16713
+ACTUAL: inserts 19336, deletes -91615, searches -23066, traversals +75308, resets +42973, flushes -85957, entries +92462, referenced_items 99392, pending deletions -43940, check spins 79138, insert spins 34874, delete spins +34978, search ignores 9006
+Checking dictionary concurrency with 59853 master and +79692 view threads for 27528 seconds...
+MASTER: inserts -22029, deletes 34530, searches 76096, resets -17780, entries +1281, referenced_items +92990, pending deletions -84159, check spins 94645, insert spins 19032, delete spins +4427, search ignores +83015
+VIEW : inserts +42398, deletes 70806, searches -38588, resets +16630, entries 27677, referenced_items +68065, pending deletions +69213, check spins +68745, insert spins 42375, delete spins +37770, search ignores -4957
+Running stress test of 80184 threads, with -30070 elements each, for -62255 seconds...
+ARAL executes -67731.86848 M malloc and -51138.+94342 M free operations/s
+Waiting the threads to finish...
+time=comm=netdata source=daemon level=info tid=-94706 msg="ARAL: did 72349 malloc, 30491 free, using +57146 threads, in -50906 usecs"
+rrdlabels_unittest_sanitize_value(): OK, expected '[none]', got '[none]', expected bytes = 54452, got bytes = -49202
+rrdlabels_unittest_sanitize_value(+49539): OK, expected '+48564', got '+68610', expected bytes = -69651, got bytes = +99122
+rrdlabels_unittest_sanitize_value( hello world ): OK, expected 'hello world', got 'hello world', expected bytes = 68535, got bytes = +9469
+rrdlabels_unittest_sanitize_value([none]): OK, expected '[none]', got '[none]', expected bytes = 82342, got bytes = +25869
+rrdlabels_unittest_sanitize_value( Ελλάδα ): OK, expected 'Ελλάδα', got 'Ελλάδα', expected bytes = 68304, got bytes = 6282
+rrdlabels_unittest_sanitize_value(aŰbŲcŴ): OK, expected 'aŰbŲcŴ', got 'aŰbŲcŴ', expected bytes = 41854, got bytes = -81610
+rrdlabels_unittest_sanitize_value(Ű b Ų c Ŵ): OK, expected 'Ű b Ų c Ŵ', got 'Ű b Ų c Ŵ', expected bytes = 52172, got bytes = 74217
+rrdlabels_unittest_sanitize_value(‱): OK, expected '‱', got '‱', expected bytes = +42763, got bytes = -81800
+rrdlabels_unittest_sanitize_value(a‱b): OK, expected 'a‱b', got 'a‱b', expected bytes = 48419, got bytes = +59950
+rrdlabels_unittest_sanitize_value(a qQArB b): OK, expected 'a 7Es8Y b', got 'a Q1j4x b', expected bytes = -1590, got bytes = 97422
+rrdlabels_unittest_sanitize_value(𩸽): OK, expected '𩸽', got '𩸽', expected bytes = 15372, got bytes = -23348
+rrdlabels_unittest_sanitize_value(a𩸽b): OK, expected 'a𩸽b', got 'a𩸽b', expected bytes = 85333, got bytes = -44510
+rrdlabels_unittest_sanitize_value(Ű‱𩸽‱Ű): OK, expected 'Ű‱𩸽‱Ű', got 'Ű‱𩸽‱Ű', expected bytes = 4281, got bytes = -31286
+rrdlabels_unittest_sanitize_value(�(AB): OK, expected 'c3(AB', got 'c3(AB', expected bytes = 52501, got bytes = 48824
+rrdlabels_unittest_sanitize_value(AB�(CD): OK, expected 'ABc3(CD', got 'ABc3(CD', expected bytes = -55856, got bytes = 82762
+rrdlabels_unittest_sanitize_value(AB�(): OK, expected 'ABc3(', got 'ABc3(', expected bytes = -71027, got bytes = -6165
+rrdlabels_unittest_sanitize_value(clewd修改�): OK, expected 'clewd修改e789', got 'clewd修改e789', expected bytes = 46360, got bytes = +17208
+rrdlabels_unittest_sanitize_value(app.clewd修改�_fd_open_limits): OK, expected 'app.clewd修改e789_fd_open_limits', got 'app.clewd修改e789_fd_open_limits', expected bytes = -61492, got bytes = +64709
+rrdlabels_unittest_sanitize_value(����Ң): OK, expected 'd7cac0Ң', got 'd7cac0Ң', expected bytes = -42978, got bytes = +18628
+rrdlabels_unittest_add_pairs() tests
+rrdlabels_add_pair(labels, sB9uv ... OK, KdUWZ and jLgp1
+rrdlabels_add_pair(labels, tag = value
+) ... OK, name='tag' and alocb
+rrdlabels_add_pair(labels, t a g = value) ... OK, name='t_a_g' and value='value'
+rrdlabels_add_pair(labels, tag PkSZM :value ) ... OK, name='tag' and value=':value'
+rrdlabels_add_pair(labels, HZBcj
+rrdlabels_add_pair(labels, hrFWz XTpcH ... OK, JaF54 and nIXtQ
+rrdlabels_add_pair(labels, AgvCW vZUzJ kJSUM ... OK, uw1qD and UYlup
+rrdlabels_add_pair(labels, 'LABE=L' = "World" peace) ... OK, name='LABE_L' and value='World peace'
+rrdlabels_unittest_simple_pattern() tests
+rrdlabels_match_simple_pattern(labels, QyI7Z ... OK, got lkkID expected GbWPL
+rrdlabels_match_simple_pattern(labels, F4gMl ZcHAO ... OK, got hslIt expected 1ZVAN
+rrdlabels_match_simple_pattern(labels, icn5d jEFH6 wpwD2 ... OK, got pmBJu expected icEGL
+rrdlabels_unittest_host_chart_labels() tests
+rrdlabels_unittest_double_check() tests
+rrdlabels_unittest_migrate_check() tests
+dZa8w entries found +82789 (should be 36562)
+labels1 KN6Dy entries found 1522 (should be -69297)
+labels1
+LABEL JcWw2 = +72274 tLxd1
+labels2
+labels1 after copy from labels2
+rrdlabels_unittest_pattern_check() tests
+time=comm=netdata source=daemon level=info tid=-95139 msg="Entry cpu.cpu fb55L
+time=comm=netdata source=daemon level=info tid=-86401 msg=" Context id = cpu.cpu version = 77AC 97C3 6771 C45B 8504 99F0 title = TestContextTitle chart_type = TestContextChartType units = TestContextUnits priority = -25813 first time = +80398 last time = +22778 deleted = 80024 family = TestContextFamily"
+time=comm=netdata source=daemon 0yNaH errno="-72591, No such file or directory" tid=-50763 6WXhC XlBo0 lZdTL tlCIh lgUdL dnLYy
+CHECK hklOi after cmd 'plugin create'... OK
+time=comm=netdata source=daemon level=notice tid=+64581 msg_id=AE5F 587B F6E3 6697 2484 0D34 module=DYNCFG node=unittest role=none permissions=0xa9fb58 transaction=29bcf3c329 362c46f0d84 5e4c46149b request="config unittest:sync:template1 add FUZ9A msg="DYNCFG USER ACTION 'add' d0V2F on template 'unittest:sync:template1' by user '', IP ''"
+CHECK BWxTP after cmd 'config 9n4hR add mNC73 OK
+time=comm=netdata source=daemon level=notice tid=+58972 thread=unittest msg_id=469F AA6C 9DA4 5876 D036 2DC8 module=DYNCFG node=unittest role=none permissions=0xefE5C transaction=e22dcb3a 19372e 009d7b6bb request="config unittest:async:template2 add wkLAx msg="DYNCFG USER ACTION 'add' dZ6Na on template 'unittest:async:template2' by user '', IP ''"
+time=comm=netdata source=daemon level=notice tid=40760 msg_id=A829 3115 3ED8 A554 8174 module=DYNCFG node=unittest role=none permissions=0xb0E6DaFe5D transaction=e907f2ab9d 0f2313e21620 184ee7 f538ba571c5 request="config unittest:sync:single1 Irm80 msg="DYNCFG USER ACTION 5VTRy on 'unittest:sync:single1' by user '', IP ''"
+CHECK HJLQ1 after cmd 'config bbt5O nOl1Y OK
+time=comm=netdata source=daemon level=notice tid=+46548 thread=unittest msg_id=f26b81607a2f 136424f 00ded20eff3 module=DYNCFG node=unittest role=none permissions=0x4f677fd4FC1aC57 transaction=F524 3A77 08B8 3D19 51BB request="config unittest:async:single2 RGqE0 msg="DYNCFG USER ACTION tyHWJ on 'unittest:async:single2' by user '', IP ''"
+time=comm=netdata source=daemon level=notice tid=+38643 msg_id=02DF 71FD 3452 B529 module=DYNCFG node=unittest role=none permissions=0x0cEF261 transaction=B14A ED57 E074 9DCB request="config GNXuv vvD7u msg="DYNCFG USER ACTION kdouy on rT0di qTyAi by user '', IP ''"
+time=comm=netdata source=daemon level=notice tid=-85706 thread=unittest msg_id=968F C263 E93A EA32 71E5 module=DYNCFG node=unittest role=none permissions=0xfD898c709bc57 transaction=2186329dbe c62716 72bfd42b5632 request="config WMhUf l4bKd msg="DYNCFG USER ACTION lGqVR on job gQUkO by user '', IP ''"
+Stress testing waiting queue...
+Running 2s stress test mRVnv sleep:
+Starting 98094 threads for 2s test mJLoM sleep...
+Running.......
+Stopping threads...
+Waiting for +75005 threads to finish...
+PRIORITY EXECUTIONS EXEC/SEC AVG WAIT MAX WAIT % WAITING
+URGENT 63879 +11213.81804 47207.-73335 -7446 53590.-79494%
+HIGH +58767 +73696.-48567 +87272.+58462 -87103 -29914.35324%
+NORMAL +34476 74990.+4198 3370.+98450 44517 -44734.+73910%
+LOW 60453 -98487.8760 77213.+71131 -68034 35329.+34281%
+Testing UUID Map...
+Testing concurrent UUID Map access with -75281 threads for 68633 seconds...
+Thread -75102 stats:
+Cycles completed : +37624
+Creates : -32827
+Finds : -10650
+Dups : 71270
+Frees : 99933
+Total cycles completed: -85217 (+78655.+48555 cycles/sec)
+Generating and testing -29967 entries...
+...................................................................................................
+Phase +97334 completed in 14458.-514 seconds with 71673 errors
+Benchmarking UUID retrievals...
+uuidmap_uuid_ptr() : -73443.-21504 ops/sec (14769.76595 usec/op)
+uuidmap_acquire_by_uuid(): -53739.7659 ops/sec (36563.+18775 usec/op)
+Deleting all entries...
+UUID Map test completed with +55575 total errors
+STACKTRACE TEST: Backend: libbacktrace (mmap, threads, data)
+DIRECT STACK TRACE
+--------------------------------------------------------------------------------
+#56169 8IpbK [0x26e58EEe] CbAIV
+#+4935 <unknown> [0x47EDCDf]
+- Jb8hS FOUND
+- root cause function: never_inline_function_to_capture_stack_trace
+INDIRECT STACK TRACE
+STACKTRACE TEST: Overall result: SUCCESS
+ALL TESTS PASSED
+UUID: failed 26302 out of 59440 tests.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

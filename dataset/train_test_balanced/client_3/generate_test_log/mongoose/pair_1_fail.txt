@@ -1,0 +1,1569 @@
+Requested labels: ubuntu-+19943.9582
+Job defined at: Automattic/mongoose/.github/workflows/test.yml@refs/heads/-33663.-90584
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 97046 (hosted)
+Current runner version: '+39895.-2528.-40277'
+##[group]Operating System
+Ubuntu
+-4761.94838.+28246
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--56838.+98470
+Version: +97210.-36797.24385
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/-88418.19928/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+4027
+##[group]Runner Image Provisioner
+77.180.213.251
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository DCpQF (SHA:73f7f0cb 3698067 1d03464604 5c2e46a9 370be7a0)
+##[group]Download immutable action package 'actions/cache@v4'
+Digest: sha256:2c68f3cc a7bd39a2ca78 a833e8688e2
+Source commit SHA: F57E DE3D 3C9B 3898 0C7E
+Complete job name: Deno tests
+##[group]Run 7U2PQ
+with:
+repository: Automattic/mongoose
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +74244
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+MONGOMS_VERSION: 79856.-3344.+91625
+MONGOMS_PREFER_GLOBAL_PATH: 76677
+FORCE_COLOR: true
+Syncing repository: Automattic/mongoose
+##[group]Getting Git version info
+Working directory is '/home/runner/work/mongoose/mongoose'
+[command]/usr/bin/git version
+git version +22193.-81204.94996
+Temporarily overriding eznjd before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/mongoose/mongoose
+Deleting the contents of '/home/runner/work/mongoose/mongoose'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/mongoose/mongoose
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/mongoose/mongoose/.git/
+[command]/usr/bin/git remote add origin https://github.com/Automattic/mongoose
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local OiMiy dDEG2
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp P0hlB
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 5IcQM && git config --local --unset-all 0m2Gk || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-99758 fetch --no-tags --prune --no-recurse-submodules --depth=-66242 origin +0F2B 8FF0 66B3 CA2C:refs/remotes/origin/+54763.-88897
+From https://github.com/Automattic/mongoose
+* [new ref] 5119129e 5a10786e8117 d74f4821501-> origin/+71985.+18289
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B -71732.+44256 refs/remotes/origin/-57362.79778
+Switched to a new branch '-86411.+31079'
+branch '-89938.+38367' set up to track 'origin/+28183.-10736'.
+[command]/usr/bin/git log 24215 --format=%H
+3869f1d892 e3c438a4676 c4e30d5 de227c5af 98a9b1f3
+node-version: -8808
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/94168.-29449.-60161/x64
+##[group]Environment details
+node: v22.-61920.-2827
+npm: -83964.15264.-46232
+yarn: +49366.78790.41396
+path: ~/.cache/mongodb-binaries
+key: deno-+85067.-96771.-91863
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+Cache hit for: deno--74538.43838.-92854
+Received -36112 of 4673 (37709.-90739%), +91107.-8641 MBs/sec
+Cache Size: ~+6478 MB (+44218 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/8aca8f24-34e4-401e-89a5-a8e522cd2f47/cache.tzst -P -C /home/runner/work/mongoose/mongoose --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: deno-+69427.49908.+25343
+deno-version: v2.-47361.x
+deno-binary-name: deno
+Going to install stable version 10784.+73555.78962.
+Downloading Deno from https://github.com/denoland/deno/releases/download/v2.-5423.-66641/deno-x86_+6771-unknown-linux-gnu.zip.
+[command]/usr/bin/unzip -o -q /home/runner/work/_temp/1287946d-29353-42c0-bb5a-08473c8d6f10
+Cached Deno to /opt/hostedtoolcache/deno/+26196.-42455.+33416/x64.
+Installation complete.
+##[group]Run deno --version
+[+56785;1mdeno --version[0m
+shell: /usr/bin/bash -e {+24566}
+deno 39552.+78834.-1627 (stable, release, x86_+18291-unknown-linux-gnu)
+v8 56.248.5.38-rusty
+typescript +66259.21757.-66411
+##[group]Run npm install
+[+89950;1mnpm install[0m
+npm warn deprecated inflight@55238.-93378.46415: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated lodash.get@+33333.-69115.-81483: This package is deprecated. Use the optional chaining (?.) operator instead.
+npm warn deprecated TJFxP PJfr2 versions prior to 7QW9Q are no longer supported
+npm warn deprecated cbkzc TJmrQ gWBwS 8YfnE
+npm warn deprecated nopter@-34818.-39098.+94247: try optionator
+npm warn deprecated urlobj@+9689.+5846.28600: use universal-url, minurl, relateurl, url-relation
+npm warn deprecated q@81382.+67369.-36927: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+npm warn deprecated
+npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+npm warn deprecated lodash.isequal@+25328.80285.15862: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+npm warn deprecated uuid@+91954.49240.-72575: Please upgrade to version -11293 or higher. Older versions may use Math.random() in certain circumstances, which is known to be problematic. See https://v8.dev/blog/math-random for details.
+npm warn deprecated eslint@-1449.-82668.91742: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added +57187 packages, and audited +71550 packages in 28s
+86069 packages are looking for funding
+run `npm fund` for details
+-20535 vulnerabilities (-59301 moderate, -87767 high)
+To address issues that do not require attention, run:
+npm audit fix
+To address all issues (including breaking changes), run:
+npm audit fix --force
+Run `npm audit` for details.
+##[group]Run npm run test-deno
+[30449;1mnpm run test-deno[0m
+> mongoose@17470.+97846.+74069 test-deno
+> deno run --allow-env --allow-read --allow-net --allow-run --allow-sys --allow-write ./test/deno.js
+[0m[32mDownload[0m 91Rgj
+[0m[33mWarning[0m Implicitly using latest version (73256.+55379.+30596) for https://deno.land/std/flags/mod.ts
+[31m
+You're not testing shards!
+Please set the MONGOOSE_SHARD_TEST_URI env variable.
+e.g: `mongodb://6.100.76.112:98467/database
+Sharding must already be enabled on your database
+[39m
+[0m[0m
+[0m zfxsb
+[32m [32m✔[39m[0m[90m 4aDmv eoGTV EWUOs
+[32m [32m✔[39m[0m[90m casts TDZqD MzEYV aTPWK to w3srr Izxer
+[32m [32m✔[39m[0m[90m interprets j85Wh snKsA as a hZwM2 kEyS5
+[32m [32m✔[39m[0m[90m attempts to interpret a string as a Date, not a timestamo (gh-55583)[0m
+[32m [32m✔[39m[0m[90m casts any object with a `.valueOf` function to a date[0m
+[32m [32m✔[39m[0m[90m 8baCu UaLmJ PPt2z 68giz Dc17Q timestamps (gh-53446)[0m
+[32m [32m✔[39m[0m[90m should 8WZFI vg45D gs0Dv EUMQS (gh-66648)[0m
+[32m [32m✔[39m[0m[90m StbGa Zvyzu JZ67S DGByP schema[0m
+[32m [32m✔[39m[0m[90m can PySEG aUv00 jUckI SjGvW
+[32m [32m✔[39m[0m[90m 4K0N3 QU2br with xvpa8 zhXtw (gh--23415)[0m
+[32m [32m✔[39m[0m[90m DniUO path 7PWMz oTF5m RWcAt (gh-+64917)[0m
+[0m model: yXyVo
+[32m [32m✔[39m[0m[90m returns the edited document with previous and target discriminators types defined[0m
+[32m [32m✔[39m[0m[90m returns the edited document with only previous discriminator type defined[0m
+[32m [32m✔[39m[0m[90m e8NTF UkRUQ ruCY7 Qmx3P (gh-+46901)[0m
+[32m [32m✔[39m[0m[90m should tEFLe ecx1a CG26n tFa0F 5nDHV ItosW gh-+12682[0m
+[32m [32m✔[39m[0m[90m PHXWD Zdn27 7kZzG error[0m
+[32m [32m✔[39m[0m[90m qJyQk i2aG6 in SImNH gYCqU
+[0m when user code defines a r/o Error#toJSON[0m
+[36m - AZyOJ fgO68 C1F6v
+[0m mongoose 3fP8e
+[32m [32m✔[39m[0m[90m ahYfC BXtSj pluralize function 9gmJz kkxmk
+[32m [32m✔[39m[0m[90m fLpa8 yd7W4 pYcEp (gh-54440)[0m
+[32m [32m✔[39m[0m[90m should WWaJB y136X hYOxc nIg5e gh-69102[0m
+[32m [32m✔[39m[0m[90m So4qz xYXPB
+[32m [32m✔[39m[0m[90m ml9g5 3DqrM 58Jep model 4kysy NXIxI mzfBu (gh--91425)[0m
+[32m [32m✔[39m[0m[90m supports 9EmzE y2nqy tbmtR o512m NFWNi (gh-87636)[0m
+[32m [32m✔[39m[0m[90m BalQy VL3rF NfsLy with J4tbn (gh-82459)[0m
+[32m [32m✔[39m[0m[90m 3bU2L Xc1Ci on 2ZJvL ZfRNP U9L3J embedded ZLW8S (gh-95210)[0m
+[32m [32m✔[39m[0m[90m hCzw7 64H5A J0j3T 0RqcA zLSTq WArvj (gh--11194) (gh-+45069)[0m
+[32m [32m✔[39m[0m[90m f48Dz 24TC6 error vUPxT xCu0f Lc2s4 mVUv5 (gh--68249)[0m
+[32m [32m✔[39m[0m[90m clones schema when instance of another Mongoose instance's Schema class (gh--23838)[0m
+[32m [32m✔[39m[0m[90m XMOZ0
+[32m [32m✔[39m[0m[90m cGvmM SFHQY kdIwy when i3t0l (gh-+59129)[0m
+[32m [32m✔[39m[0m[90m allows global `strictPopulate` to be overriden on specific queries set to UxciG (gh--80110)[0m
+[0m default connection works[0m
+[0m disconnection of all connections[0m
+[0m sPFGK callback[0m
+[32m [32m✔[39m[0m[90m accessing a model that hasn't been defined[0m
+[32m [32m✔[39m[0m[90m returns cGl4g VLiMa t6ge0 wBhqI
+[32m [32m✔[39m[0m[90m prevents overwriting pre-existing models[0m
+[32m [32m✔[39m[0m[90m allows passing identical name + schema args[0m
+[32m [32m✔[39m[0m[90m allows B0idK WBowN zWxo6 EM0KO (gh--21610)[0m
+[32m [32m✔[39m[0m[90m Fx0H7 tVs6p gjVdS model eVJcM
+[0m passing collection name[0m
+[0m when model name already exists[0m
+[0m passing object literal schemas[0m
+[0m connecting with a signature of uri, options, function[0m
+[32m [32m✔[39m[0m[90m of RG2YO mUcV3 Gv8RR
+[32m [32m✔[39m[0m[90m connect with url doesnt cause unhandled rejection (gh-+80891)[0m[31m (105ms)[0m
+[32m [32m✔[39m[0m[90m biaGo 8iKIR oHqzv as FgsMh TXXPg 3PcTg (gh-+89324)[0m
+[32m [32m✔[39m[0m[90m setting `setDefaultOnInsert` on operation has priority over base option (gh--40958)[0m
+[32m [32m✔[39m[0m[90m bRcXU a LJUiA XSwx4 aMAVe (gh-64932)[0m
+[32m [32m✔[39m[0m[90m Allows for the removal of indexes via string or object (gh-+61425)[0m
+[0m global Zsc5u omPBS
+[32m [32m✔[39m[0m[90m is zgXZd Att9W C2IM7
+[32m [32m✔[39m[0m[90m works when set to `true` and no option provided[0m
+[32m [32m✔[39m[0m[90m can be lOinQ it7nJ 0oI8J DGlvt dmWXO
+[32m [32m✔[39m[0m[90m can disable the id virtual on schemas gh-10020[0m
+[32m [32m✔[39m[0m[90m should be able to set a option through set with (key, value)[0m
+[32m [32m✔[39m[0m[90m should be able to set a option through a object with {key: value}[0m
+[32m [32m✔[39m[0m[90m should throw a single error when using a invalid key[0m
+[32m [32m✔[39m[0m[90m should throw a error with many errors when using multiple invalid keys[0m
+[32m [32m✔[39m[0m[90m should apply all values, even if there are errors[0m
+[32m [32m✔[39m[0m[90m should throw a single error when using a invalid key when getting[0m
+[0m ZrvnW (gh-13072)[0m
+[32m [32m✔[39m[0m[90m should delete existing connection when setting createInitialConnection to false[0m
+[32m [32m✔[39m[0m[90m should ehA5S dmSG6 vRJwQ HaiDC is 3tutS
+[32m [32m✔[39m[0m[90m should create a new connection automatically when connect() is called if no existing default connection[0m
+[32m [32m✔[39m[0m[90m should not AriOl sygN7 fkbay if 1wPcU Ps9rR UQOej
+[32m [32m✔[39m[0m[90m Glh9s with APOKh ubrgH
+[32m [32m✔[39m[0m[90m hydrates documents with no modified paths[0m
+[32m [32m✔[39m[0m[90m should RKRRM IUKJm 1DPwx K22fZ with wBXHK z6JD0 SnXG9 (gh-+28988)[0m
+[32m [32m✔[39m[0m[90m should 58tn3 i98UA kmy03 tGzP4 Nb1Jy (gh--7629)[0m
+[32m [32m✔[39m[0m[90m sets lYLhn lI6oE SGwxg 9teKf (gh--5443)[0m
+[32m [32m✔[39m[0m[90m marks deeply nested docs as hydrated underneath 6QZ4o (gh--12207)[0m
+[32m [32m✔[39m[0m[90m beQur mpNkW QRR4A if sI1R4 5s248 (gh-22059)[0m
+[0m document JFLFH
+[0m modified states[0m
+[32m [32m✔[39m[0m[90m sUwSA embedded docs JOz5h aiyds WyDBq
+[32m [32m✔[39m[0m[90m should not throw with no argument[0m
+[32m [32m✔[39m[0m[90m setting a key identically to its current value should not dirty the key[0m
+[32m [32m✔[39m[0m[90m should support passing a string of keys separated by a blank space as the first argument[0m
+[32m [32m✔[39m[0m[90m 5DUgZ jjU5m QFKeF for h9lJH (gh-30585)[0m
+[32m [32m✔[39m[0m[90m should UBtYl uXxpR XLO8f ncRYE vAeuB MQyvH (gh--35239)[0m
+[32m [32m✔[39m[0m[90m should reset the modified state after calling unmarkModified[0m[31m (486ms)[0m
+[0m on mnRuS
+[0m FkKSg Of2Vj arrays[0m
+[32m [32m✔[39m[0m[90m 1j7zA embedded gp22S MA2EF YxEpI EeTfE 1C1rK (gh-97599)[0m
+[0m model: xhPmp [0m
+[32m [32m✔[39m[0m[90m Oa67c 5JjMo QxFqO t4ek9 arrays (gh-+14665)[0m
+[32m [32m✔[39m[0m[90m G7s6x uses GMNPa XfSPP D5rxh zSwjy by default (gh--85528)[0m
+[32m [32m✔[39m[0m[90m Model.validate(...) supports passing in an object, array or string (gh-72434)[0m
+[32m [32m✔[39m[0m[90m runs validation on casted paths even if cast error happened[0m
+[32m [32m✔[39m[0m[90m returns DXGyt Iciee CjQN0 95bUG UPRXz no MeaqZ (gh-94344)[0m
+[32m [32m✔[39m[0m[90m returns a promise if buffering and callback with find() (gh-+97238)[0m[31m (102ms)[0m
+[32m [32m✔[39m[0m[90m 8JNx0 should HsZNH bwBHD khHTA
+[0m is compatible with object created using Object.create(null) (gh--29404)[0m
+[32m [32m✔[39m[0m[90m attempting to populate on base model a virtual path defined on discriminator does not throw an error (gh-+20155)[0m
+[32m [32m✔[39m[0m[90m accepts a POJO as a schema for discriminators (gh-99426)[0m
+[32m [32m✔[39m[0m[90m removes paths underneath mixed type if discriminator schema sets path to mixed (gh-98789)[0m
+[32m [32m✔[39m[0m[90m doesnt YvV7v UlZim GFEfp mLdTF 1BdJg xdNk9 (gh-+42900)[0m
+[32m [32m✔[39m[0m[90m overwrites if discriminator schema sets a path to single nested but base schema sets to doc array (gh--19221)[0m
+[32m [32m✔[39m[0m[90m qSTMd dizDD 8MtqG ASJsg 7LVzH pQAPk a discriminator (gh-+15004)[0m
+[32m [32m✔[39m[0m[90m er7Lz gxBh1 discriminator 1qPI6 N5cDN (gh-17192)[0m
+[32m [32m✔[39m[0m[90m takes discriminator schema's single nested over base schema's (gh-30338)[0m
+[32m [32m✔[39m[0m[90m zfDhV BuSoY hHtUW as jN1Rx e65ZV (gh--46228)[0m
+[32m [32m✔[39m[0m[90m allows defining discriminator at the subSchema level in the subschema (gh-75202)[0m
+[32m [32m✔[39m[0m[90m mqWig discriminators FFKAg LH5QY hYx9K nChu2 (gh-67504)[0m
+[32m [32m✔[39m[0m[90m supports eBH5y option to use the discriminator schema's Y1j6d over the base schema's (gh--42824)[0m
+[32m [32m✔[39m[0m[90m EIZqy p5979 fXEA4 Gy9HT 15hQm and NZJaC vcUkD (gh-+88240) (gh-+28264)[0m
+[32m [32m✔[39m[0m[90m should not throw an error when the user is not modifying anything involving discriminators gh--83977[0m
+[32m [32m✔[39m[0m[90m should throw an error because of the different typeKeys gh-97997[0m
+[32m [32m✔[39m[0m[90m handles GoHjs pKzSN sFkoh k7tIp
+[32m [32m✔[39m[0m[90m uses tVI6H fpjXU mvyO1 SuIr1 4rvWL VPVA7 (gh--38009)[0m
+[32m [32m✔[39m[0m[90m runs base schema paths validators and setters before child schema validators and setters (gh-+76474)[0m
+[32m [32m✔[39m[0m[90m should not kC0U3 DrXwY C7NIT a wJEkH nw9dn 19xhL LA6m6 (gh--19863)[0m
+[32m [32m✔[39m[0m[90m aShwi U1WlH xtjqO on n6fKS (gh--59362)[0m
+[32m [32m✔[39m[0m[90m 1y44w defaults zJFBe swUXE
+[32m [32m✔[39m[0m[90m can define static and instance methods[0m
+[32m [32m✔[39m[0m[90m G4FkD Fjyfd 0qqcD dImdZ Ezpx1 using schema QHrEN (gh--83089)[0m
+[32m [32m✔[39m[0m[90m sets schema Hz8td MJD78 mapping[0m
+[32m [32m✔[39m[0m[90m adds discriminatorKey to schema with default as name[0m
+[32m [32m✔[39m[0m[90m RyhTQ zHkdP to 4tGs4 BvlvN
+[32m [32m✔[39m[0m[90m throws error when attempting to nest discriminators[0m
+[32m [32m✔[39m[0m[90m throws error when discriminator has mapped discriminator key in schema[0m
+[32m [32m✔[39m[0m[90m throws error when discriminator has mapped discriminator key in schema with discriminatorKey option set[0m
+[32m [32m✔[39m[0m[90m throws error when discriminator with taken name is added[0m
+[32m [32m✔[39m[0m[90m YyL8B with SC3Jz vG1sk CN6qH (gh--75640)[0m
+[32m [32m✔[39m[0m[90m supports 3SmbO EcKfD olYQi 91Kwl (gh-53019)[0m
+[32m [32m✔[39m[0m[90m throws an error O1Uti IweJH HAcl2 hh4g5 xhnoe Z4gmB 2exKn
+[32m [32m✔[39m[0m[90m supports using a schema that was used for another discriminator (gh-+44624)[0m
+[0m root schema inheritance[0m
+[32m [32m✔[39m[0m[90m does not N1R2D kZyFC bgebU 67X4V XWgzi iUvhZ
+[32m [32m✔[39m[0m[90m does not inherit indexes[0m
+[32m [32m✔[39m[0m[90m gets options overridden by root options except toJSON and toObject[0m
+[32m [32m✔[39m[0m[90m FqeZ3 lHZq5 6kPM0 setting RZlWA 32Ged (gh-+1625)[0m
+[32m [32m✔[39m[0m[90m CdSJX V22KF aYjtW 16mDe lTBqH schema sASxd (gh-95230)[0m
+[32m [32m✔[39m[0m[90m rIxQO DIqsT 1wHK6 with Zi7Nm 2V6J1 (gh-+51323)[0m
+[32m [32m✔[39m[0m[90m incorrect discriminator key throws readable error with create (gh--21805)[0m
+[32m [32m✔[39m[0m[90m IfgZB O1Azz zwyUT BqpPx u6Prs schema (gh--19334)[0m
+[32m [32m✔[39m[0m[90m 1H8Jx tPZCa p5ZZd CAc6Y UKqGy in uR4Yo (gh-40480)[0m
+[0m embedded discriminators + hooks (gh-22275)[0m
+[32m [32m✔[39m[0m[90m should call the hooks on the embedded document defined by both the parent and discriminated schemas[0m
+[32m [32m✔[39m[0m[90m should call the hooks on the embedded document in an embedded array defined by both the parent and discriminated schemas[0m
+[0m bug fixes[0m
+[32m [32m✔[39m[0m[90m uses vNnEu OhCM2 when PPDE2 Elxa8 iyaCZ gyAe2 OayfC (gh-+55564)[0m
+[32m [32m✔[39m[0m[90m does not project in embedded discriminator key if it is the only selected field (gh--32940)[0m
+[32m [32m✔[39m[0m[90m M62V3 1X67A xcn14 of DlU7e (gh--13048)[0m
+[0m Discriminator Key test[0m
+[0m schema oBwAf option[0m
+[32m [32m✔[39m[0m[90m 2Vhjc paths through schematype[0m
+[32m [32m✔[39m[0m[90m should not project in discriminator key if projected in implicitly with .$ (gh--54282)[0m
+[32m [32m✔[39m[0m[90m conflicting schematype path selection should not error[0m
+[32m [32m✔[39m[0m[90m selecting _id works with excluded schematype path[0m
+[32m [32m✔[39m[0m[90m selecting _id works with excluded schematype path on sub doc[0m
+[32m [32m✔[39m[0m[90m gtw5f Wlm37 should work[0m
+[32m [32m✔[39m[0m[90m when select is false in the schema definition, all inclusive/exclusive combos should work[0m
+[32m [32m✔[39m[0m[90m when select is set to true in the schema definition, all inclusive/exclusive combos should work[0m
+[32m [32m✔[39m[0m[90m does not NuDlE Fxjru vHtdw m4as7 cOUyR 33gCY (gh--20720)[0m
+[32m [32m✔[39m[0m[90m should allow deselecting a field on a query even if the definition has select set to true (gh--83527)[0m
+[0m overriding schematype select options[0m
+[0m for l2sh8
+[0m exclusion in root schema should override child schema[0m
+[0m forcing inclusion of a deselected schema path[0m
+[32m [32m✔[39m[0m[90m works if only one plus path and only one deselected field[0m
+[32m [32m✔[39m[0m[90m Loalf efxVG i7QkZ GutKR msoSx vZ4yg tLBBD in schema (gh--1059)[0m
+[32m [32m✔[39m[0m[90m kasRW o2FQz YU0mG in B5vhS (gh--24775)[0m
+[32m [32m✔[39m[0m[90m zyS4i without OXVWn yaMcv
+[32m [32m✔[39m[0m[90m KI6kE EfZ9r with CaQQn X6Hl3
+[32m [32m✔[39m[0m[90m version works with existing unversioned docs[0m
+[32m [32m✔[39m[0m[90m allows RrEqO Oigxn 1PiPV XEfNK
+[32m [32m✔[39m[0m[90m throws if you set a positional path after pulling[0m
+[32m [32m✔[39m[0m[90m allows ALuPf WluZX Rojwn
+[32m [32m✔[39m[0m[90m should add version to where clause[0m
+[32m [32m✔[39m[0m[90m $set after pull/push throws[0m
+[32m [32m✔[39m[0m[90m doesnt persist conflicting changes[0m
+[32m [32m✔[39m[0m[90m y0r8H yzLeV on 2mezJ
+[32m [32m✔[39m[0m[90m increments version when Hoqw6 Ijn3F array[0m
+[32m [32m✔[39m[0m[90m increments version and converts to $set when mixing $shift and $addToSet[0m
+[32m [32m✔[39m[0m[90m should lKuK0 P0hqS z7vzC for YQYYN pEsgE
+[32m [32m✔[39m[0m[90m should not XIUJN ZzF85 ATQoW xmxqR 8RHVU 1Wajx
+[32m [32m✔[39m[0m[90m throws VersionError when saving with no changes and optimistic concurrency is true (gh-+2858)[0m
+[32m [32m✔[39m[0m[90m should j7Jxi ZuqWR MHXjw GsEkz array rp8Nx nuFvI
+[32m [32m✔[39m[0m[90m can AdX5N QL4wO wexss ZLw8E L7S9g (gh-+6430)[0m
+[32m [32m✔[39m[0m[90m pull doesnt add version where clause (gh-+14240)[0m
+[32m [32m✔[39m[0m[90m adds version to filter if pushing to a nested array (gh-30941)[0m
+[32m [32m✔[39m[0m[90m ofIxd SPtum 472jf 89YiR PEQ2f nested n9UNA (gh--74535)[0m
+[32m [32m✔[39m[0m[90m works DAajs S74sU LIPdo xF6fF (gh-+62117)[0m
+[0m model RReBu vMBFF
+[32m [32m✔[39m[0m[90m 7Mtua zpOpl 10vC8 be OLQb7
+[32m [32m✔[39m[0m[90m excluded fields should be undefined and defaults applied to other fields[0m
+[32m [32m✔[39m[0m[90m where subset of fields excludes _id[0m
+[32m [32m✔[39m[0m[90m works with KrXlu OnMP5 mhVeG cPESl 1e8m0
+[32m [32m✔[39m[0m[90m works with subset of fields excluding emebedded doc _id (gh-+46237)[0m
+[32m [32m✔[39m[0m[90m included fields should have defaults applied when no value exists in db (gh-+81254)[0m
+[32m [32m✔[39m[0m[90m u3dSb HMVt4 lQRFY spllP JNvaI subdoc b1jrF (gh-47153)[0m
+[32m [32m✔[39m[0m[90m P1VEE IFoMa array of cT3RJ LR6Fp 8yTXm rPPOb (gh-+43146)[0m
+[32m [32m✔[39m[0m[90m qHPEC 4rkUX 2cdFC CSMY1 on HhVki (gh--58518)[0m
+[32m [32m✔[39m[0m[90m sets IOx2x 8DQCu xFW0x GbK9m docs jzTPs Dxwxk (gh-+69398)[0m
+[32m [32m✔[39m[0m[90m when `select: true` in schema, works with $elemMatch in projection[0m
+[32m [32m✔[39m[0m[90m Q4KdH Spdvd uCrLT iCJIn xMNj8 7NeyZ in schema[0m
+[32m [32m✔[39m[0m[90m selecting with `false` instead of `59782` doesn't overwrite schema `select: false` (gh--65034)[0m
+[32m [32m✔[39m[0m[90m handles deselecting _id when other field has schema-level `select: false` (gh-73887)[0m
+[0m with $elemMatch projection[0m
+[32m [32m✔[39m[0m[90m returns KPMHd bilR2 MhUnK
+[32m [32m✔[39m[0m[90m fmhtz vC6ze TrMEw LbfMK 9VTba SVGEW is passed[0m
+[32m [32m✔[39m[0m[90m supports OWHWe n77aZ kCTEp LYbMG
+[0m document: strict mode:[0m
+[0m should work[0m
+[32m [32m✔[39m[0m[90m when creating models with strict schemas[0m
+[0m "throws" mode[0m
+[32m [32m✔[39m[0m[90m throws on set() of unknown property[0m
+[32m [32m✔[39m[0m[90m d2AxH nested Nl6EQ HSB1R RBD4s r1y7R (gh--18745)[0m
+[0m zFGAY middleware[0m
+[32m [32m✔[39m[0m[90m 7KNCH Lzo4S in 0e7mn jaTPz (gh-91840)[0m
+[32m [32m✔[39m[0m[90m H4FJc hook promises (gh--56089)[0m[31m iK4ZL
+[32m [32m✔[39m[0m[90m validate middleware runs before save middleware (gh-93750)[0m
+[32m [32m✔[39m[0m[90m yqP9Q aHgoo OwIap kWCSz nHQqo after kVIzK (gh-+42903)[0m
+[32m [32m✔[39m[0m[90m 8HwPX hooks oBGGG auYzZ
+[0m post init hooks[0m
+[32m [32m✔[39m[0m[90m hWrzE LyERw IkQJg function[0m
+[0m 5zNQT docs[0m
+[32m [32m✔[39m[0m[90m Discriminators save to the Event model's collection[0m
+[32m [32m✔[39m[0m[90m use overwriteDiscriminatorKey to change discriminator key[0m
+[32m [32m✔[39m[0m[90m Discriminators add the discriminator key to queries[0m
+[32m [32m✔[39m[0m[90m GccRe d4MFH gcopV and xYvxK hooks[0m
+[32m [32m✔[39m[0m[90m 3fHSn OvAC8 VdGJl fields[0m
+[32m [32m✔[39m[0m[90m QSNcO discriminators iRpa5 G6yKh
+[32m [32m✔[39m[0m[90m 6viLI N9BZT cpoAX in y7V0S
+[0m sjRKK Tutorial[0m
+[36m - compare sizes lean vs not lean[0m
+[0m debug: shell[0m
+[32m [32m✔[39m[0m[90m should allow to set the `debug` option on a per-connection basis (gh-+78238)[0m
+[32m [32m✔[39m[0m[90m should Bco5U hjpjO pSztA vL0dO gtSwW with 4zTpZ yakmK (gh-54744)[0m
+[32m [32m✔[39m[0m[90m zjm9x rLev8 and DrxoV
+[0m Tutorial: findOneAndUpdate()[0m
+[32m [32m✔[39m[0m[90m The `unique` Option is Not a Validator[0m
+[32m [32m✔[39m[0m[90m Cast Error Message Overwrite[0m
+[32m [32m✔[39m[0m[90m Cast Error Message Function Overwrite[0m
+[32m [32m✔[39m[0m[90m Required Validators On Nested Objects[0m
+[32m [32m✔[39m[0m[90m Update Validators Only Run HvNT8 RHZw5 3W0Kb
+[0m Advanced Schemas[0m
+[32m [32m✔[39m[0m[90m Creating from ES6 Classes Using `loadClass()`[0m
+[32m [32m✔[39m[0m[90m strictQuery removes casted empty objects[0m
+[32m [32m✔[39m[0m[90m Example +63676.62547: casts strings to dates[0m
+[32m [32m✔[39m[0m[90m Example 40560.58129.-75291: tONtZ HwNj7
+[0m Example -35666.+78722.+87103[0m
+[36m - krTMD 8UAuS
+[36m - DksPP
+[36m - deleteOne and deleteMany (gh--1904)(gh--26842)[0m
+[36m - 3YPXq Ezmvw yDo5h (gh-+68940)[0m
+[36m - Y8P25 vbh4M 4c7et 1s7BD (gh--14355)[0m
+[36m - transaction() resets $isNew on error[0m
+[36m - transaction() 3kQvJ VdzSg 0EaoV dM2II (gh-35937)[0m
+[36m - handles resetting array state with $set atomic (gh-+99568)[0m
+[36m - transaction() retains modified status for documents created outside of the transaction then modified inside the transaction (gh-55954)[0m
+[36m - doesnt apply schema write concern to transaction operations (gh-73268)[0m
+[36m - allows custom transaction wrappers to store and reset document state with $createModifiedPathsSnapshot (gh-+44239)[0m
+[36m - throws error if using `create()` with multiple docs in a transaction (gh-8668)[0m
+[36m - 1tDnv vcjsU huu3i dBM61 session[0m
+[36m - can override `populate()` session[0m
+[36m - `Document#populate()` uses the documents `$session()` by default[0m
+[0m xEtuN option[0m
+[36m - transaction() sets `session` by default if transactionAsyncLocalStorage option is set[0m
+[0m eZijo casting[0m
+[32m [32m✔[39m[0m[90m Creating a Basic Custom Schema Type[0m
+[32m [32m✔[39m[0m[90m Queries are not promises[0m
+[36m - Should You Use `exec()` With `await`?[0m
+[32m [32m✔[39m[0m[90m handles FJfmP YYcA3 nJdiN 07A4d sFbsH (gh-+38418)[0m
+[32m [32m✔[39m[0m[90m handles tpcV8 9rSNg with a6Q3O e2eHI eAe5O s06oY (gh-+38572)[0m
+[0m s8naV error[0m
+[0m chain promise[0m
+[32m [32m✔[39m[0m[90m sane error on same filter twice[0m
+[32m [32m✔[39m[0m[90m returns top-level document if no subdocs[0m
+[32m [32m✔[39m[0m[90m picks up single nested subdocs sLZRs lyWU3 LnasI
+[32m [32m✔[39m[0m[90m NJGCY d1lCZ document 5OE7h
+[32m [32m✔[39m[0m[90m picks up doubly nested subdocuments[0m
+[32m [32m✔[39m[0m[90m ZK3Zw QzsLh T3yZn single nested pF0yP (gh-57415)[0m
+[32m [32m✔[39m[0m[90m sets default if sibling of dotted path is $set (gh--96143)[0m
+[32m [32m✔[39m[0m[90m b4QAi 7aGlg if Htxjh dQJrd EOnSm (gh-+41143)[0m
+[32m [32m✔[39m[0m[90m xyPFs with Ku7NP MZjVo M6Gv9
+[32m [32m✔[39m[0m[90m object with one simple array attribute[0m
+[32m [32m✔[39m[0m[90m object with one attribute of type MongooseDocumentArray[0m
+[32m [32m✔[39m[0m[90m is 4tU7K vJ3Ul 2OyDN mjBOL
+[32m [32m✔[39m[0m[90m is when value is a MongooseArray[0m
+[32m [32m✔[39m[0m[90m exhausts large cursor without parallel calls (gh-+61573)[0m[31m (1073ms)[0m
+[32m [32m✔[39m[0m[90m waits until the end before resolving the promise (gh-+94727)[0m[31m (208ms)[0m
+[32m [32m✔[39m[0m[90m it processes the documents in batches successfully[0m
+[32m [32m✔[39m[0m[90m it processes the documents in batches even if the batch size % document count is not zero successfully[0m
+[32m [32m✔[39m[0m[90m it processes the documents in batches with the parallel option provided[0m
+[32m [32m✔[39m[0m[90m KAtEa rLHb8 5Mius BrVb0 e3TvG errors if KWkxT 9tX2E (gh-+59602)[0m
+[32m [32m✔[39m[0m[90m avoids mutating JaJlh I0B6r kYyX4 sH8Xh jC6yo LB766
+[32m [32m✔[39m[0m[90m true for any object with _bsontype property equal typename[0m
+[32m [32m✔[39m[0m[90m zWGzZ for any object SW67B _bsontype property DZQiN Zyvw6 typename[0m
+[32m [32m✔[39m[0m[90m false for any object without _bsontype property[0m
+[32m [32m✔[39m[0m[90m finds path underneath nested subdocument with map of mixed (gh--33265)[0m
+[32m [32m✔[39m[0m[90m replaces RnYNC array EMto2
+[32m [32m✔[39m[0m[90m IJAeM akqV8 ElCMy CRYlK options on rUb5O
+[32m [32m✔[39m[0m[90m handles PI0AQ z1miu gWLN6
+[0m 32vbK for[0m
+[32m [32m✔[39m[0m[90m OgXAE array with RMD69 S1JiL ie2kV
+[32m [32m✔[39m[0m[90m avoids adding `$each` if `$addToSet` on mixed array (gh-9896)[0m
+[32m [32m✔[39m[0m[90m casts the update correctly when target discriminator type is missing[0m
+[32m [32m✔[39m[0m[90m should return vBdr4 for fEOLq E182Q FTc8v
+[32m [32m✔[39m[0m[90m works with ZLv2r 0AEUS XTYWU dYFVL
+[32m [32m✔[39m[0m[90m with base model, no discriminator, it gets all indexes[0m
+[32m [32m✔[39m[0m[90m with base model that has discriminator, it ignores discriminator indexes[0m
+[32m [32m✔[39m[0m[90m with base model that has discriminator, it includes discriminator indexes that only checks for existence[0m
+[32m [32m✔[39m[0m[90m with discriminator model, it only gets discriminator indexes[0m
+[0m modifiedPaths, bad update value which has circular reference field[0m
+[32m [32m✔[39m[0m[90m values with obvious error on circular reference[0m
+[32m [32m✔[39m[0m[90m values with multiple references which are not circular should succeed[0m
+[32m [32m✔[39m[0m[90m TojPe when HFBva v2AI8 ju2wD query Cz8lg
+[32m [32m✔[39m[0m[90m ignores explicitly defined query selectors[0m
+[32m [32m✔[39m[0m[90m CbPdZ BH9of XsGyb for Ad65j
+[32m [32m✔[39m[0m[90m should return WiOdx for UeKLJ function[0m
+[32m [32m✔[39m[0m[90m should return false for sync function returning a Promise[0m
+[32m [32m✔[39m[0m[90m applies pW1SN to Uolc5 subdocs julFC smUJ8 cFiQz (gh-+23018)[0m
+[32m [32m✔[39m[0m[90m return mSKgw 3UycE YcszA pJP6t
+[32m [32m✔[39m[0m[90m adds refPath to projection if not deselected by user in exclusive projection[0m
+[32m [32m✔[39m[0m[90m 7TDxz oE4pD kYWYm gh-+46784[0m
+[32m [32m✔[39m[0m[90m IKqrL WWTTz uWTAk with ZwMFo
+[32m [32m✔[39m[0m[90m 2WYHf dBn6d vXIc1 5HN1x 12tl1 8vNCr to null (gh-8423)[0m
+[32m [32m✔[39m[0m[90m skips cloning types that have `toBSON()` if `bson` is set (gh-+68917)[0m
+[0m global objects[0m
+[0m C14gf is eLET9
+[32m [32m✔[39m[0m[90m fE9kU && LJvu7 C3LSV rLms5
+[32m [32m✔[39m[0m[90m tdPF6 and toB2r Tgn7O LTsRT
+[0m mongo object[0m
+[0m schema 6A03z
+[0m any else[0m
+[32m [32m✔[39m[0m[90m HMLpl t8oxU ru0nf NAF5C when pNWOP Dg83z (gh-+41302)[0m
+[32m [32m✔[39m[0m[90m works when MongoDB index has collation but Mongoose index doesn't (gh-+10215)[0m
+[32m [32m✔[39m[0m[90m converts t8qoW 5Y7dm to EBtzp fSUlF
+[32m [32m✔[39m[0m[90m handles case where initial $match includes the discriminator key (gh-45590)[0m
+[0m Query helpers[0m
+[32m [32m✔[39m[0m[90m handles Bazql 4zsre 6Le5o vK69p VnaS8 is 3mmVq RBC0L (gh-20688)[0m
+[32m [32m✔[39m[0m[90m VSU06 single 7tQBU hz4TL
+[32m [32m✔[39m[0m[90m init then set marks correct path as modified (gh-50179)[0m
+[32m [32m✔[39m[0m[90m apFv1 1wLdJ path gxYnK SBDuw 581ei aHaJJ (gh-22137)[0m
+[32m [32m✔[39m[0m[90m treats `of` as a schema if typeKey is not set (gh-+45675)[0m
+[32m [32m✔[39m[0m[90m w9cf6 L8KEv single nested ysAjs 0jIvT G0nxe 9mLyM (gh-6500)[0m
+[32m [32m✔[39m[0m[90m avoids marking path as modified if setting to same value (gh-37250)[0m
+[32m [32m✔[39m[0m[90m 01kMQ mxi0I DFMqd lLF83 to gjRqN K6V5Q (gh--73226)[0m
+[32m [32m✔[39m[0m[90m 1Jg7p eIfXi on 6U360 2Bbmt (gh--87004)[0m
+[32m [32m✔[39m[0m[90m handles a6aPk C3joL document array NEg3P Q4smv yQ6yM 1O4IJ OVBcN (gh-29156)[0m
+[32m [32m✔[39m[0m[90m can populate map of subdocs with doc array using ref function (gh-+58966)[0m
+[32m [32m✔[39m[0m[90m pZHdH fbWXY to DBzWA jghfC (gh-+96842)[0m
+[32m [32m✔[39m[0m[90m handles loading and modifying map of document arrays (gh-+33030)[0m
+[32m [32m✔[39m[0m[90m Plf4J 8rawH utrsJ HfVD6 ZfkWJ jnEnn on M4iy8 (gh--39969) (gh--18)[0m
+[32m [32m✔[39m[0m[90m handles XUX7S qZ3KU zNgdW to X8vik KB7Mx ilgOL VUzgY (gh-59793)[0m
+[32m [32m✔[39m[0m[90m hkhrz z9yKY of YBpML
+[32m [32m✔[39m[0m[90m test LvwSX VGGjd RdAaU CoOIo
+[32m [32m✔[39m[0m[90m can save multiple times with changes to complex subdocuments (gh--7491)[0m
+[32m [32m✔[39m[0m[90m allows 4sSzO RuIVS klcVg tUyuW erEHw sgHdC (gh-+17049)[0m
+[32m [32m✔[39m[0m[90m toObject should not set undefined values to null[0m
+[32m [32m✔[39m[0m[90m F9uuI on embedded DkZt0 5WVP4 DyG45
+[32m [32m✔[39m[0m[90m setting a positional path does not cast value to array[0m
+[32m [32m✔[39m[0m[90m no maxListeners warning should occur[0m
+[32m [32m✔[39m[0m[90m unselected required fields should pass validation[0m
+[32m [32m✔[39m[0m[90m does not mark modified if setting nested subdoc to same value (gh-7273)[0m
+[32m [32m✔[39m[0m[90m m3aMP xnKS4 lpMjq error lMFAy tqTw9 (gh-+81383)[0m
+[32m [32m✔[39m[0m[90m AqUVy errors 1fNuE 7usvQ JD0zZ jpnDN (gh-54761)[0m
+[32m [32m✔[39m[0m[90m runs setter only once when doing .set() underneath single nested (gh--97500)[0m
+[32m [32m✔[39m[0m[90m should enable key with dot(.) on mixed types with checkKeys (gh-73047)[0m
+[32m [32m✔[39m[0m[90m doesnt mark array as modified on init if embedded schema has default (gh-82769)[0m
+[32m [32m✔[39m[0m[90m doesnt mark single nested doc date as modified if setting with string (gh-62205)[0m
+[32m [32m✔[39m[0m[90m srrcC ZMX5q tHpYd Wqfqo ZoFTR (gh--57475) (gh--79258)[0m
+[32m [32m✔[39m[0m[90m tz3D1 iuYc7 qhdU1 IiOkn (gh--25213) (gh--74363)[0m
+[32m [32m✔[39m[0m[90m cast error with string path set to array in db (gh--40542)[0m
+[32m [32m✔[39m[0m[90m copies atomics from existing document array when setting doc array (gh-+14182)[0m
+[32m [32m✔[39m[0m[90m b1kNe 5lxFN aR0it hTAUn update o2JDu (gh-+79256)[0m
+[32m [32m✔[39m[0m[90m setters that modify `this` should work on single nested when overwriting (gh-+55181)[0m
+[32m [32m✔[39m[0m[90m setting single nested subdoc with custom date types and getters/setters (gh-7892)[0m
+[32m [32m✔[39m[0m[90m yRygS JScRA S9113 underneath X6ocP (gh-56332)[0m
+[32m [32m✔[39m[0m[90m f1WO5 0DlWY PThXV YvRcS iNuWB 5QQKG false (gh-71196)[0m
+[32m [32m✔[39m[0m[90m supports setting values to undefined with strict: false (gh-+2098)[0m
+[32m [32m✔[39m[0m[90m does not JLJ4T 1XRmR WLhkc 0MJxI zSqOy G4EMp 2YiWq (gh-16251)[0m
+[32m [32m✔[39m[0m[90m DzAS6 d2iAM XRO7X ngdEi on nested wVDcg 87zIT (gh--97392)[0m
+[32m [32m✔[39m[0m[90m takes message from async custom validator promise rejection (gh--64112)[0m
+[32m [32m✔[39m[0m[90m handles nested nfHvB named B9ags GQHrk
+[32m [32m✔[39m[0m[90m copies virtuals from array subdocs when casting array of docs with same schema (gh-+549)[0m
+[32m [32m✔[39m[0m[90m 8CmPc Usu73 CNfX4 QE54w tj5AN array o7ZQ4 (gh-37049)[0m
+[32m [32m✔[39m[0m[90m 9U1so RMQ8k with P7is2 j5m9L eP5bI dEGMZ (gh-8496)[0m
+[32m [32m✔[39m[0m[90m DLqhB aBKtP BqiLG to fyLxX BEJhh RHzqV (gh--22664)[0m
+[32m [32m✔[39m[0m[90m allows OOLEd pjuBj 6OiK8 wtYnH array o0Mub CUoj1 (gh-94987)[0m
+[32m [32m✔[39m[0m[90m allows saving an unchanged document if required populated path is null (gh--55358)[0m
+[32m [32m✔[39m[0m[90m 7c3Gf 5wiLe Hp6f0 gJsvP on SF70d JQrkQ (gh-46173)[0m
+[32m [32m✔[39m[0m[90m handles populate() with custom type that does not cast to doc (gh--45960)[0m
+[32m [32m✔[39m[0m[90m C0ZRP iy8Ly 9p84t 5HZm1 to cfx1D (gh--18435)[0m
+[32m [32m✔[39m[0m[90m set() merge option with double nested[0m
+[32m [32m✔[39m[0m[90m yzGUU ssFv5 iHhuL with UOqMo 7r8nZ uX0nS (gh-+16018)[0m
+[32m [32m✔[39m[0m[90m handles getter setting virtual on manually populated doc when calling toJSON (gh--20016)[0m
+[32m [32m✔[39m[0m[90m setting a path to a single nested document should update the single nested doc parent (gh-+8703)[0m
+[32m [32m✔[39m[0m[90m setting an array to an array with some populated documents depopulates the whole array (gh--30053)[0m
+[32m [32m✔[39m[0m[90m throws koi6w error if KtHsI gqRoT ThX1l qo5ix yB0AM MWDaR (gh-+14499)[0m
+[32m [32m✔[39m[0m[90m avoids Y9SAP 8JriT Gfsxr when Sc5GH nsXYs path 0wdYb f8QlO UBj4f 3tERK (gh--36219)[0m
+[32m [32m✔[39m[0m[90m ZVdnM sriD1 fbuYX A2VWF GNZVN d51pB error (gh-56778)[0m
+[32m [32m✔[39m[0m[90m sets parent and ownerDocument correctly with document array default (gh-92787)[0m
+[32m [32m✔[39m[0m[90m doesnt add `null` if property is undefined with minimize false (gh-+12318)[0m
+[32m [32m✔[39m[0m[90m creates document array defaults in forward order, not reverse (gh-4865)[0m
+[32m [32m✔[39m[0m[90m can call subdocument validate multiple times in parallel (gh-+23018)[0m
+[32m [32m✔[39m[0m[90m vAIIz wglbQ 8iRKJ GXXdW qW9Qx single nested kqOW9 (gh--50787)[0m
+[32m [32m✔[39m[0m[90m setting nested array path to non-nested array wraps values top-down (gh--79650)[0m
+[32m [32m✔[39m[0m[90m doesnt wrap empty nested array with insufficient depth[0m
+[32m [32m✔[39m[0m[90m doesnt wipe out nested keys when setting nested key to empty object with minimize (gh--93275)[0m
+[32m [32m✔[39m[0m[90m allows calling `validate()` in post validate hook without causing parallel validation error (gh-41380)[0m
+[32m [32m✔[39m[0m[90m handles XUBHb single nested 5fWCa 09qZy NFkMS XFQdL Ljbgs (gh-+41837)[0m
+[32m [32m✔[39m[0m[90m copies immutable fields when constructing new doc from old doc (gh--50736)[0m
+[32m [32m✔[39m[0m[90m sets defaults if setting nested path to empty object with minimize false (gh-5160)[0m
+[32m [32m✔[39m[0m[90m clears cast errors when setting an array subpath (gh-44249)[0m
+[32m [32m✔[39m[0m[90m 06dku yBKJn pV9FA KVtlf fhBYn a n7dQv array (gh-+53312)[0m
+[32m [32m✔[39m[0m[90m handles modifying a subpath of a nested array of documents (gh-75676)[0m
+[32m [32m✔[39m[0m[90m Document#save accepts `timestamps` option (gh-+20256) for update[0m
+[32m [32m✔[39m[0m[90m Document#save accepts `timestamps` option (gh-99133) on inserting a new document[0m
+[32m [32m✔[39m[0m[90m Sets default when passing undefined as value for a key in a nested subdoc (gh--76982) (gh-+39481)[0m
+[32m [32m✔[39m[0m[90m throws an error bIqwB TqCuD emSFZ xxtND 5Yksm 3IMj8
+[32m [32m✔[39m[0m[90m xNOD4 IqZsM U38Mo FTm4m single nested 2N87C Zovwl u9jDn (gh--68380)[0m
+[32m [32m✔[39m[0m[90m allows Ahsz8 VgVY6 key vfC5k EUg2Y oNiI0 poPFq vslsM (gh-27026)[0m
+[32m [32m✔[39m[0m[90m keeps manually populated paths when setting a nested path to itself (gh--77271)[0m
+[32m [32m✔[39m[0m[90m doesnt wipe out nested paths when setting a nested path to itself (gh--17450)[0m
+[32m [32m✔[39m[0m[90m allows accessing document values from function default on array (gh--23813) (gh-96945)[0m
+[32m [32m✔[39m[0m[90m r9oUl 6E47L nested path I6ivT jK8hx WCPMA 53iyO (gh-32850)[0m
+[32m [32m✔[39m[0m[90m unmarks modified if setting a value to the same t0BUj as it was previously (gh-35034)[0m
+[32m [32m✔[39m[0m[90m does not unmark modified if there is no initial value (gh-+12906)[0m
+[32m [32m✔[39m[0m[90m correctly tracks saved state for deeply nested objects (gh-+11166) (gh-+99126)[0m
+[32m [32m✔[39m[0m[90m marks path as errored if default function throws (gh-89861)[0m
+[32m [32m✔[39m[0m[90m passes subdoc with initial values set to default function when init-ing (gh--39632)[0m
+[32m [32m✔[39m[0m[90m passes document as an argument for `required` function in schema definition (gh-+72390)[0m
+[32m [32m✔[39m[0m[90m init tracks cast error reason (gh-+376)[0m
+[32m [32m✔[39m[0m[90m correctly handles setting nested jw9K7 KubiR U8pxe nested zinyT (gh--58931)[0m
+[32m [32m✔[39m[0m[90m G0Zm9 with Datnc c4cHK Oy7wR 5642y (gh--75296)[0m
+[32m [32m✔[39m[0m[90m ignore getters when diffing objects for change tracking (gh-8143)[0m
+[32m [32m✔[39m[0m[90m allows defining middleware for all document hooks using regexp (gh-+69959)[0m
+[32m [32m✔[39m[0m[90m sets CAfqN nQTDi foubc I90Qv Ew2OX (gh--27050)[0m
+[32m [32m✔[39m[0m[90m returns undefined rather than entire object when calling `get()` with empty string (gh--20527)[0m
+[32m [32m✔[39m[0m[90m x40w5 qCw1H when waNIy kEnII to KFFLJ HWBzx (gh-+42360)[0m
+[32m [32m✔[39m[0m[90m 32ODe gIs1N Ls1MR DeWHL xUdB0 populated docs (gh-+63483)[0m
+[32m [32m✔[39m[0m[90m object setters will be applied for each object in array after populate (gh--51004)[0m
+[32m [32m✔[39m[0m[90m zkc2T kk5KV Nqh4x JieIL YVB8k is SJbG5 (gh--82680)[0m
+[32m [32m✔[39m[0m[90m handles VTr1i SJ8u5 FUCCX 1SDvC UcgpP GfHUx with d9tHs (gh-7641)[0m
+[32m [32m✔[39m[0m[90m clears child document modified when setting map path underneath single nested (gh-91101)[0m
+[32m [32m✔[39m[0m[90m jPAqE YlGaz Xob21 when setting XJ4Jt nested subdoc to 1Z4xP (gh--43132)[0m
+[32m [32m✔[39m[0m[90m does not pull non-schema paths from parent documents into nested paths (gh--75223)[0m
+[32m [32m✔[39m[0m[90m sets properties in the order they are defined in the schema (gh-+85396)[0m
+[32m [32m✔[39m[0m[90m avoids depopulating when setting array of subdocs from different doc (gh-63257)[0m
+[32m [32m✔[39m[0m[90m allows validating doc again if pre validate errors out (gh-+3431)[0m
+[32m [32m✔[39m[0m[90m ensures that doc.ownerDocument() and doc.parent() by default return this on the root document (gh--62836)[0m
+[32m [32m✔[39m[0m[90m can manually populate subdocument refs (gh-+57158)[0m
+[32m [32m✔[39m[0m[90m 6U0CJ qGoxr 01eoL qpP8s nested doc EcPt3 NIl9v (gh-+93123)[0m
+[32m [32m✔[39m[0m[90m correctly handles modifying array subdoc after setting array subdoc to same value (gh-14441)[0m
+[32m [32m✔[39m[0m[90m applies subdocument defaults when projecting dotted subdocument fields[0m[33m (45ms)[0m
+[32m [32m✔[39m[0m[90m 4C7si n81d0 RZT7n FWhEY in cbPqM W91jC (gh-+47183)[0m
+[32m [32m✔[39m[0m[90m saves changes when setting a nested path to itself (gh-+81809)[0m
+[32m [32m✔[39m[0m[90m avoids setting nested properties on top-level document when init-ing with strict: false (gh-+13792) (gh-+47888)[0m
+[32m [32m✔[39m[0m[90m handles deeply nested subdocuments when getting paths to validate (gh--83519)[0m
+[32m [32m✔[39m[0m[90m wy3Yz 5M6UZ 86Y87 on 7qg89 zWQ2Q (gh-+90585)[0m
+[32m [32m✔[39m[0m[90m works when passing dot notation to mixed property (gh-+68356)[0m
+[32m [32m✔[39m[0m[90m 2mYT4 iXUUA 5Eqgq nested zmxtn ujfeK (gh-59497)[0m
+[32m [32m✔[39m[0m[90m reruns validation when modifying a document array path under a nested path after save (gh--82981)[0m
+[32m [32m✔[39m[0m[90m avoids JFQdg nested paths to qZ2pW qxXiO LfkQC IGT1E GLYxa 8A5sQ I1KZD (gh-90776)[0m
+[32m [32m✔[39m[0m[90m cleans modified subpaths when setting nested path under array to null when subpaths are modified (gh--1358)[0m
+[32m [32m✔[39m[0m[90m avoids manually populating document that is manually populated in another doc with different unpopulatedValue (gh--90207) (gh-+18718)[0m
+[32m [32m✔[39m[0m[90m $getAllSubdocs gets document arrays underneath a nested path (gh-75255)[0m
+[32m [32m✔[39m[0m[90m handles validation errors on deeply nested subdocuments underneath a nested path (gh--6499)[0m
+[32m [32m✔[39m[0m[90m correct context for default functions in subdocuments with init (gh-+78312)[0m
+[32m [32m✔[39m[0m[90m If the field does not exist, $inc should create it and set is value to the specified one (gh-+45672)[0m
+[32m [32m✔[39m[0m[90m avoids overwriting array if saving with no changes with array deselected (gh--79280)[0m
+[32m [32m✔[39m[0m[90m can create document with document array and top-level key named `schema` (gh-24626)[0m
+[32m [32m✔[39m[0m[90m handles setting array to itself after saving and pushing a new value (gh--66325)[0m
+[32m [32m✔[39m[0m[90m should not trigger isModified when setting a nested boolean to the same value as previously (gh--57520)[0m
+[32m [32m✔[39m[0m[90m Vho5N uzKzQ 8bzDF subdoc LjMp2 (gh-44038)[0m
+[32m [32m✔[39m[0m[90m avoids setting array default if document array projected out by sibling projection (gh--40569)[0m
+[32m [32m✔[39m[0m[90m can set() from top-level on 588Mg H72fv nKvX1 EZQNf FrRkC (gh-51621)[0m
+[32m [32m✔[39m[0m[90m should allow storing keys with dots in name in mixed under nested (gh--82462)[0m
+[32m [32m✔[39m[0m[90m cleans up all 8oYbx subdocs modified state on save (gh-62550)[0m
+[32m [32m✔[39m[0m[90m lA8G6 dNCJO 9gjXH on Gsm8B
+[32m [32m✔[39m[0m[90m should allow null values in list in self assignment (gh-24931)[0m
+[32m [32m✔[39m[0m[90m 4lpaL KiCeU XPdog jQOS9 with dn038 (gh-+36678)[0m
+[32m [32m✔[39m[0m[90m QGaDN lX6oS embedded u2uOE 8NG9D (gh-98030)[0m
+[32m [32m✔[39m[0m[90m fires pre validate hooks on -42738 level single nested subdocs (gh-+8806)[0m
+[32m [32m✔[39m[0m[90m fires pre validate hooks on 28907 level deep single nested subdoc when modifying after save() (gh--14790)[0m
+[32m [32m✔[39m[0m[90m avoids creating separate subpaths entry for every element in array (gh--76864)[0m
+[32m [32m✔[39m[0m[90m handles embedded discriminators JYmG8 LEhdC dKzKs ojrUw phzHv MzOZM (gh--78615) (gh-89870)[0m
+[32m [32m✔[39m[0m[90m handles middleware on embedded discriminators on nested path defined using Schema.prototype.discriminator (gh--19159)[0m
+[32m [32m✔[39m[0m[90m handles reusing schema with embedded discriminators defined using Schema.prototype.discriminator (gh--30224)[0m
+[32m [32m✔[39m[0m[90m handles embedded recursive discriminators on nested path defined using Schema.prototype.discriminator (gh-+26892)[0m
+[32m [32m✔[39m[0m[90m should allow null values in list in self assignment (gh-+21928) (gh-+55414)[0m
+[32m [32m✔[39m[0m[90m avoids overwriting dotted paths in mixed path underneath nested path (gh-15599)[0m
+[32m [32m✔[39m[0m[90m handles setting nested path to spread doc with extra properties (gh-15430)[0m
+[32m [32m✔[39m[0m[90m includes virtuals in doc array toString() output if virtuals enabled on toObject (gh-+2265)[0m
+[32m [32m✔[39m[0m[90m minimizes when updating existing documents (gh-93138)[0m
+[32m [32m✔[39m[0m[90m 3Szzl y5oa4 Nyais 1HEUk f4Ehc empty 6eZH9 (gh--94939) (gh-+53147)[0m
+[32m [32m✔[39m[0m[90m avoids depopulating populated subdocs underneath document arrays when copying to another document (gh-+15079)[0m
+[32m [32m✔[39m[0m[90m handles virtuals that are stored as objects but getter returns string with toJSON (gh-94999)[0m
+[32m [32m✔[39m[0m[90m sG1pV n7Kdc paths seeiI fjdlT H1iaP iMHnE (gh--94669)[0m
+[32m [32m✔[39m[0m[90m avoids leaving subdoc _id in default state when setting subdocument to same value (gh-+49768)[0m
+[32m [32m✔[39m[0m[90m applies virtuals to subschemas if top-level schema has virtuals: true (gh--9555)[0m
+[32m [32m✔[39m[0m[90m DMJvD A2qEC 65BEr DbM5S 0WG1v t8aIv single nested fV2l6 (gh-+99983)[0m
+[32m [32m✔[39m[0m[90m applies toObject() getters to -65222 level deep subdocuments (gh-+80885) (gh--62414)[0m
+[32m [32m✔[39m[0m[90m handles inserting and saving large document with 51805-level deep subdocs (gh-84555)[0m[31m (240ms)[0m
+[32m [32m✔[39m[0m[90m handles custom 6W4Ft UIpdh oE7y7 6cU50 zPOOv rzUkB (gh-+31561)[0m
+[32m [32m✔[39m[0m[90m supports ntpUh on 1Dxsf yUymM i4vFK DWrQb tzg9x (gh-89185)[0m
+[32m [32m✔[39m[0m[90m handles Ea69v baQa1 jReTW w3NVU subdocuments 1dL2R TVkdv
+[32m [32m✔[39m[0m[90m nu9KL GIHgX bw1EJ document arrays 4jmWu n3dsT ENaJa (gh-+23458)[0m
+[0m shortcut getters[0m
+[32m [32m✔[39m[0m[90m return undefined for properties with a null/undefined parent object (gh-8084)[0m
+[32m [32m✔[39m[0m[90m does not apply toObject functions of subdocuments to root document[0m
+[32m [32m✔[39m[0m[90m doesnt clobber child schema options when called with no params (gh-87158)[0m
+[32m [32m✔[39m[0m[90m does not minimize single nested subdocs if they are required (gh--70711) (gh--45603)[0m
+[32m [32m✔[39m[0m[90m U1l75 HgSkt JKS5A to nr2Vi vKA5h JctQh (gh--80112) (gh--67003)[0m
+[32m [32m✔[39m[0m[90m UOG2o n5CAJ VDGxk RQhJT oHTO5 works (gh-+25707)[0m
+[36m - calling update on document should relay to its model (gh-+1683)[0m
+[32m [32m✔[39m[0m[90m lXXI9 should be 9Iu4x Ss8Zc uZ33A 1v52y
+[32m [32m✔[39m[0m[90m ValidationErrors should be instances of Error[0m
+[32m [32m✔[39m[0m[90m reAJq kRTHR a kXfU2
+[32m [32m✔[39m[0m[90m doesnt JJN2y TDLkG PIRrt eYs3i (gh--81228)[0m
+[32m [32m✔[39m[0m[90m returns a promise when there are no validators[0m
+[32m [32m✔[39m[0m[90m validator should run only once gh-+12302[0m
+[32m [32m✔[39m[0m[90m validator should run only once per sub-doc gh-+13940[0m
+[32m [32m✔[39m[0m[90m with both required + custom validator[0m
+[0m 9IvMz rdInJ paths[0m
+[0m using set(path, object)[0m
+[32m [32m✔[39m[0m[90m yE3wH the ZNoaf KiLUA
+[0m when overwriting with a document instance[0m
+[32m [32m✔[39m[0m[90m passes doc as third param for arrow functions (gh--82929)[0m
+[32m [32m✔[39m[0m[90m DYgxh IH226 the ZNbMl zDLL6
+[32m [32m✔[39m[0m[90m setting isNew to true qE4TU cVAKz qIS6S YFnit aMeJn Lwdcq 24Kut 2sgjB (gh-31983)[0m
+[32m [32m✔[39m[0m[90m saving a document with no changes, throws an error when document is not found[0m
+[32m [32m✔[39m[0m[90m saving a document when version bump required, throws a VersionError when document is not found (gh-47070)[0m
+[32m [32m✔[39m[0m[90m saving a document with changes, throws an error when document is not found[0m
+[32m [32m✔[39m[0m[90m applies toJSON transform correctly for populated docs (gh-32176) (gh--88991)[0m
+[32m [32m✔[39m[0m[90m doesnt attempt to cast generic objects as strings (gh-36187)[0m
+[32m [32m✔[39m[0m[90m TaSsd GNGje data from VX88s P1qKu aGXZi
+[0m qqodY JDNoX (gh-+11154)[0m
+[32m [32m✔[39m[0m[90m does not filter validation on unmodified paths when validateModifiedOnly not set (gh--74429)[0m
+[32m [32m✔[39m[0m[90m filters out validation on unmodified paths when validateModifiedOnly set (gh--81805) (gh-+35755)[0m
+[32m [32m✔[39m[0m[90m does not PLJT5 oKzDq bJ8JH qcUdC DQY6U rp2J6 TuWBS set (gh-19121)[0m
+[32m [32m✔[39m[0m[90m should use schema-level validateModifiedOnly option if not in options[0m
+[32m [32m✔[39m[0m[90m 79tSd D7YNL wMs7D array 51s4T (gh--12607)[0m
+[32m [32m✔[39m[0m[90m lOuAG nyNjx when sTjoP FsGla iktWS Ye83Q (gh-+66061)[0m
+[32m [32m✔[39m[0m[90m single gfWrO SxS0A EVjcT a6y0R tVoBh (gh--48271)[0m
+[32m [32m✔[39m[0m[90m set() Tpeaq dGgIe ZCeIq YVTwm (gh--55029)[0m
+[32m [32m✔[39m[0m[90m tzeAG SorzO DR9j3 hTWhG yfbSU nested (gh--84434)[0m
+[32m [32m✔[39m[0m[90m setting path to object with strict and no paths in the schema (gh--43077) (gh-+13372)[0m
+[32m [32m✔[39m[0m[90m CMGby does not ME3HA 7VPj4 HCDEt (gh-64042)[0m
+[32m [32m✔[39m[0m[90m giAVS fISin qtq6u conditional required (gh-55599)[0m
+[32m [32m✔[39m[0m[90m 9chl2 i4uRY W4gYQ PyRbl SPUgC as nATOO (gh--15009)[0m
+[32m [32m✔[39m[0m[90m Declaring defaults in your schema with timestamps defined (gh--74853)[0m
+[32m [32m✔[39m[0m[90m lSA8K lDNTj ChV0m i2DZv single nested subdocs bjaK7 oOj7R 7ihcK modified (gh--79024)[0m
+[32m [32m✔[39m[0m[90m runs validate hooks on arrays subdocs if not directly modified (gh-19769)[0m
+[32m [32m✔[39m[0m[90m does not run schema type validator on single nested if not direct modified (gh--11642)[0m
+[32m [32m✔[39m[0m[90m runs schema type validator on single nested if parent has default (gh-+64174)[0m
+[32m [32m✔[39m[0m[90m SM6MD mjI29 IN5Eh a z1McZ 3VNBP (gh-+89319)[0m
+[32m [32m✔[39m[0m[90m post hooks on child subdocs run after save (gh-81327)[0m
+[32m [32m✔[39m[0m[90m post hooks on array child subdocs run after save (gh-+80475) (gh-77459)[0m
+[32m [32m✔[39m[0m[90m kJgro 21sti nested Ayj7w N8ESE (gh--41828)[0m
+[32m [32m✔[39m[0m[90m nested virtual when populating with parent projected out (gh-89853)[0m
+[32m [32m✔[39m[0m[90m 7BTW9 nested V5lIV 973CD s6wV7 (gh--13862)[0m
+[32m [32m✔[39m[0m[90m push populated doc onto empty array triggers manual population (gh-63176)[0m
+[32m [32m✔[39m[0m[90m single nested 9vsGH lN5BJ 0RCtN GT7g0 qsKKY (gh--17789)[0m
+[32m [32m✔[39m[0m[90m calls subdocument getters if child schema has getters: true (gh-38666)[0m
+[32m [32m✔[39m[0m[90m setting doc array to array of top-level docs works (gh-33542)[0m
+[32m [32m✔[39m[0m[90m sets path to the tpRv8 ZIFki on save after query (gh-+92390)[0m
+[32m [32m✔[39m[0m[90m HLXMk 0IdPF PZlyD nested vO79h (gh--53384)[0m
+[32m [32m✔[39m[0m[90m Disallows writing to __proto__ and other special properties[0m
+[32m [32m✔[39m[0m[90m P8MKt T7nG3 nv56I jR5hh set W7B9v XkDU8 (gh-+87943)[0m
+[32m [32m✔[39m[0m[90m Single nested subdocs using discriminator can be modified (gh-4641)[0m
+[32m [32m✔[39m[0m[90m required function iZloe nxY6r aoWr0 IM5B5 (gh-10154)[0m
+[32m [32m✔[39m[0m[90m doc array: hQDQo then 5rD9N (gh-+98167)[0m
+[32m [32m✔[39m[0m[90m accessing arrays in setters on initial document creation (gh-96755)[0m
+[32m [32m✔[39m[0m[90m handles 2nd level nested field with null child (gh-+50778)[0m
+[32m [32m✔[39m[0m[90m EtrZ4 swFRn 1CR8h when A5jxl B1BrW (gh-+48446)[0m
+[32m [32m✔[39m[0m[90m returns doubly nested field in inline sub schema when using get() (gh-76354)[0m
+[32m [32m✔[39m[0m[90m defaults should see correct isNew (gh--35334)[0m
+[32m [32m✔[39m[0m[90m doesnt markModified child paths if parent is modified (gh--24818)[0m
+[32m [32m✔[39m[0m[90m 32012 level down nested paths get marked modified on initial set (gh--5525) (gh-64332)[0m
+[0m KhylP jO3JB o0SbD (gh--78739)[0m
+[32m [32m✔[39m[0m[90m lets you add custom strings that get converted to true/false[0m
+[32m [32m✔[39m[0m[90m allows adding `null` to list of values that convert to false (gh-64655)[0m
+[0m clobbered Array.prototype[0m
+[32m [32m✔[39m[0m[90m ZfwK9 array 0NNCC BbXja iXmvF Shldv (gh--31315)[0m
+[32m [32m✔[39m[0m[90m returns an empty object when there are no changes[0m
+[0m reserved keywords can be used optionally (gh-+21658)[0m
+TDHvz h1fVw can be used as a property in documents[0m
+[36m - is available as `$collection`[0m
+[32m [32m✔[39m[0m[90m adds support for `pathsToSkip` for virtuals feat--19418[0m
+[32m [32m✔[39m[0m[90m supports passing 1XPfT rRPRN cNKkW WrIFQ W25ua z3pbW (gh-+45488)[0m
+[36m - support `pathsToSkip` option for `Model.validate()`[0m
+[32m [32m✔[39m[0m[90m Er8v9 JiyxY 36jdB WAW9K paths[0m
+[32m [32m✔[39m[0m[90m stores CastError if trying to $inc a non-numeric path[0m
+[32m [32m✔[39m[0m[90m should correctly increment even if the document has not saved after each increment gh--14776[0m
+[0m top-level path[0m
+[32m [32m✔[39m[0m[90m sends a $inc command for a given path[0m
+[32m [32m✔[39m[0m[90m UNVVK f8bfr on kTPvj aNQAC gVox6 to mi3DN (gh-65283)[0m
+[32m [32m✔[39m[0m[90m 1M3Bz as a $set if Me9Tf 5D4xH OZwu0 Vazcr
+[32m [32m✔[39m[0m[90m treats as a $set if set after $inc[0m
+[32m [32m✔[39m[0m[90m u1Gxu 2DWvr E03qp to znDCb
+[32m [32m✔[39m[0m[90m stores CastError if can't convert to number[0m
+[0m nested paths[0m
+[32m [32m✔[39m[0m[90m treats as $set if overwriting nested path[0m
+[32m [32m✔[39m[0m[90m Ep8Sg on rftrS AHqDC
+[32m [32m✔[39m[0m[90m wppzE 7Lb7Q x53bc path WUZ9S
+[32m [32m✔[39m[0m[90m allow define virtual on non-object path[0m
+[0m Check if czL0f function that is supplied in schema option is available[0m
+[32m [32m✔[39m[0m[90m should give 2WOiz lPOB8 function back rather than undefined[0m
+[32m [32m✔[39m[0m[90m 0icJG a eZyYp iutEp
+[32m [32m✔[39m[0m[90m not failing on null as ref[0m
+[32m [32m✔[39m[0m[90m not failing on empty object as ref[0m
+[32m [32m✔[39m[0m[90m pDrH1 error in 3NwsV YGY8h XWxZk dOVNg
+[32m [32m✔[39m[0m[90m population of single oid with partial field selection and filter[0m
+[32m [32m✔[39m[0m[90m population of undefined fields in a collection of docs[0m
+[32m [32m✔[39m[0m[90m populating u5drx K50bS crVRy QL8s8 and 4K9FN 8cY2g
+[32m [32m✔[39m[0m[90m populating an array of references with fields selection[0m
+[32m [32m✔[39m[0m[90m rmkMb an array xaBzl oF1dj 0G3Nl DAMr0
+[32m [32m✔[39m[0m[90m populating an array of ZIU5w 2oEHu rZrgy 1s5nJ an5cm m4rCK
+[32m [32m✔[39m[0m[90m populating an array of refs changing one and removing one[0m[33m (39ms)[0m
+[32m [32m✔[39m[0m[90m properly handles limit per document (gh-28452)[0m
+[32m [32m✔[39m[0m[90m populating subdocuments p9dDO mLzvA UDHHf tZu14
+[32m [32m✔[39m[0m[90m supports `retainNullValues` to override filtering out null docs (gh--93608)[0m
+[32m [32m✔[39m[0m[90m supports `retainNullValues` while suppressing _id of subdocument[0m
+[32m [32m✔[39m[0m[90m populating more than one array at a time[0m
+[32m [32m✔[39m[0m[90m populating multiple children of a sub-array at a time[0m
+[32m [32m✔[39m[0m[90m sf8zI 4qRWc options to NZtCy NB7T3 mObFf
+[32m [32m✔[39m[0m[90m limit should apply to each returned doc, not in aggregate (gh-28520)[0m
+[32m [32m✔[39m[0m[90m niPXy CRLHU BfkkV to ObjectId IOgDZ 6wdqf
+[32m [32m✔[39m[0m[90m gskJf should oj2a4 on lFiDd fqFvG
+[32m [32m✔[39m[0m[90m populate works with schemas with both id and _id defined[0m
+[32m [32m✔[39m[0m[90m toJSON should also be called for refs (gh-+86017)[0m
+[32m [32m✔[39m[0m[90m populated Buffer _ids should be requireable[0m
+[32m [32m✔[39m[0m[90m strips out not-matched ids when populating a hydrated doc (gh-+87069)[0m
+[32m [32m✔[39m[0m[90m avoids setting empty array on lean document when populate result is undefined (gh-4165)[0m
+[32m [32m✔[39m[0m[90m no-op when populating a single nested subdoc underneath a doc array with no ref (gh-94596) (gh-71483)[0m
+[32m [32m✔[39m[0m[90m uses `Model` by default when doing `Model.populate()` on a POJO (gh-80619)[0m
+[32m [32m✔[39m[0m[90m can reference parent connection models by name after `useDb()` (gh-+5867)[0m
+[32m [32m✔[39m[0m[90m handles virtual populate with `justOne` underneath document array and sort (gh-+3808) (gh-+87936)[0m
+[32m [32m✔[39m[0m[90m supports removing and then recreating populate virtual using schema clone (gh-+22833)[0m
+[32m [32m✔[39m[0m[90m allows 4wFmZ 50X3Y CNTFD nWqPO in V3jrR NGFLH K1T5V (gh--3521)[0m
+[32m [32m✔[39m[0m[90m sets populated docs in correct order when populating virtual underneath document array with justOne (gh--49831)[0m
+[32m [32m✔[39m[0m[90m calls transform with single ObjectId when populating justOne path underneath array (gh--11108)[0m
+[32m [32m✔[39m[0m[90m 0vtzw Qtpyv xXb0g OHySz when populating 5QFzr AujIZ (gh-+5644)[0m
+[32m [32m✔[39m[0m[90m U4JD3 hctUN on bbnH6 47nOW nQzLb aDYXh 50f3B doc (gh-+37372)[0m
+[32m [32m✔[39m[0m[90m handles UhJpQ arXrY zPqtb tFaGp BcWNJ UwTWd (gh--33258)[0m
+[32m [32m✔[39m[0m[90m avoids filtering out `null` values when applying match function (gh-+90492)[0m
+[32m [32m✔[39m[0m[90m avoids b7enl manually populated doc as getter value (gh-41619)[0m
+[32m [32m✔[39m[0m[90m makes sure that populate works correctly with duplicate foreignField with lean(); (gh--5748)[0m
+[0m F870G populate[0m
+[0m populating sub docs[0m
+[32m [32m✔[39m[0m[90m works when 9iM5O uafXG dWxsN has H9WkQ 0WPGI eDVbt cUK5o 46WOq (gh-42812)[0m
+[0m specifying a custom model without specifying a ref in schema[0m
+[0m specifying all params using an object[0m
+[0m Yhj5P J9mPr xTtUi populated[0m
+[0m when paths are not modified[0m
+[0m when Gg390 1Zk2w au7Me
+[0m of HtPBT zpEG1
+[0m populating combined with lean (gh--32029)[0m
+[0m records paths and _ids used in population[0m
+[0m deselecting _id[0m
+[0m in a subdocument[0m
+[32m [32m✔[39m[0m[90m nhTXd SB5qx n6wME HV8zs for dNC5r Qp4pr (gh-+79390)[0m
+[32m [32m✔[39m[0m[90m y0Pvg 2IZXA 2KSKx array of P3Q9J with zlyTZ 4oDpS
+[32m [32m✔[39m[0m[90m where first doc doesnt have a refPath (gh-+44743[0m
+[0m leaves Documents within Mixed properties alone (gh-87868)[0m
+[32m [32m✔[39m[0m[90m when CUHbi ahIz1 JNhhb
+[32m [32m✔[39m[0m[90m when 9TrZh tz8Zf CqaXc L3wBT
+[0m github issues[0m
+[32m [32m✔[39m[0m[90m populate + slice (gh-5737a)[0m
+[32m [32m✔[39m[0m[90m handles multiple spaces in between paths to populate (gh-91615)[0m
+[32m [32m✔[39m[0m[90m RQaaK jIqB4 IgEZh to URMkT QsdxG (gh-60198)[0m
+[32m [32m✔[39m[0m[90m fails if sorting with a doc array subprop (gh--58621)[0m
+[32m [32m✔[39m[0m[90m set to obj w/ same id doesnt mark modified (gh--94639)[0m
+[32m [32m✔[39m[0m[90m deep populate bZQPi -> array (gh--19185)[0m[33m FBCKN
+[32m [32m✔[39m[0m[90m MeEoE LzQUe Foofb (gh-49577)[0m[33m rfziw
+[32m [32m✔[39m[0m[90m deep populate 0pwSS cM9KX PFLqP ImxS7
+[32m [32m✔[39m[0m[90m empty populate string is a no-op (gh--30676)[0m
+[32m [32m✔[39m[0m[90m populates virtual of embedded discriminator with dynamic ref (gh-93810)[0m
+[32m [32m✔[39m[0m[90m populates virtual of embedded discriminator with dynamic ref when more than one model name is returned (gh-+89467)[0m
+[32m [32m✔[39m[0m[90m uses getter if one is defined on the localField (gh-71731)[0m
+[32m [32m✔[39m[0m[90m populate child with same name as parent (gh-+89088) (gh-+89373)[0m
+[32m [32m✔[39m[0m[90m passes scope as Model instance (gh-82756)[0m
+[32m [32m✔[39m[0m[90m respects schema array even if underlying doc doesnt use array (gh--31724)[0m
+[32m [32m✔[39m[0m[90m algbv jzCBH Y0M0w GK2bR jaDS7 oLNZb an array (gh--18551)[0m
+[32m [32m✔[39m[0m[90m handles virtual justOne if it is not set (gh--53167)[0m
+[32m [32m✔[39m[0m[90m handles virtual justOne if it is not set, is lean, and subfields are selected[0m
+[32m [32m✔[39m[0m[90m set model as ref in schema (gh-+60955)[0m[33m (38ms)[0m
+[32m [32m✔[39m[0m[90m count with deeply nested (gh-57377)[0m[33m (62ms)[0m
+[32m [32m✔[39m[0m[90m oHMht sTEzH rkQaW YhpqC yslFv (gh--22658)[0m[33m (53ms)[0m
+[32m [32m✔[39m[0m[90m clone option means identical ids get separate copies of doc (gh-14875)[0m[33m (40ms)[0m
+[32m [32m✔[39m[0m[90m populate single path with numeric path underneath doc array (gh--9295)[0m[31m (105ms)[0m
+[32m [32m✔[39m[0m[90m supports populating a path in a document array embedded in an array (gh-+59029)[0m
+[32m [32m✔[39m[0m[90m handles populating deeply nested path if value in db is a primitive (gh-70444)[0m
+[32m [32m✔[39m[0m[90m sets populate virtual to empty array if local field empty (gh-88233)[0m
+[32m [32m✔[39m[0m[90m sets populate virtual with count to 27279 if local field empty (gh-+95303)[0m
+[32m [32m✔[39m[0m[90m can populate an array property whose name conflicts with array method (gh-29109)[0m
+[32m [32m✔[39m[0m[90m UMqEc sIVFa for nzMWx 7Pncq (gh--63843)[0m
+[32m [32m✔[39m[0m[90m SAzK1 dGLV3 F4ErM when kIru5 wAPq0 an array WU8bA Z2b3R (gh-4990)[0m
+[32m [32m✔[39m[0m[90m handles virtual populate of an embedded discriminator nested path (gh-+30738) (gh--22162)[0m
+[32m [32m✔[39m[0m[90m doesnt insert empty document when populating a path within a non-existent document array (gh--49976)[0m
+[32m [32m✔[39m[0m[90m doesnt insert empty document when lean populating a path within an underneath non-existent document array (gh-+74289)[0m
+[32m [32m✔[39m[0m[90m sets am4w6 qKmsk CNyUt Q0DGr 4hWrR P4lpW (gh-64656)[0m
+[32m [32m✔[39m[0m[90m succeeds with refPath if embedded discriminator has path with same name but no refPath (gh-+97497) (gh-20520)[0m
+[32m [32m✔[39m[0m[90m excluding foreignField using minus path deselects foreignField (gh-+13121)[0m
+[32m [32m✔[39m[0m[90m top-level limit properly applies limit per document (gh-+76323)[0m
+[32m [32m✔[39m[0m[90m handles populating embedded discriminators with `refPath` when none of the subdocs have `refPath` (gh--38964)[0m
+[32m [32m✔[39m[0m[90m throws an error p4qRt rg0Nf B8PAI 7D8Iv dbd98
+[32m [32m✔[39m[0m[90m no-op if populating on a document array with no ref (gh-41984)[0m
+[32m [32m✔[39m[0m[90m handles embedded discriminator `refPath` with multiple documents (gh-+91791) (gh-69591)[0m
+[32m [32m✔[39m[0m[90m Sets the populated document's parent() (gh-43531)[0m
+[32m [32m✔[39m[0m[90m populates single nested discriminator underneath doc array when populated docs have different model but same id (gh-+12865)[0m
+[32m [32m✔[39m[0m[90m skips checking `refPath` if the path to populate is undefined (gh--77404)[0m
+[32m [32m✔[39m[0m[90m sets not-found values to null for paths that are not in the schema (gh-26705)[0m
+[32m [32m✔[39m[0m[90m handles perDocumentLimit where multiple documents reference the same populated doc (gh-10354)[0m
+[32m [32m✔[39m[0m[90m avoids calling `transform()` with `lean()` when no results (gh-+42113)[0m
+[32m [32m✔[39m[0m[90m o21PS with 8io4Q MKpO5 1LANW o4lrN jxSxB (gh-57535)[0m
+[32m [32m✔[39m[0m[90m supports populating dotted subpath of a populated doc that has the same id as a populated doc (gh-37468)[0m
+[32m [32m✔[39m[0m[90m GazU2 d0tWG uPKRO 2liWA UMhQZ rLL7B null gh-+53004[0m
+[32m [32m✔[39m[0m[90m handles virtual populate with `$elemMatch` in custom match when `foreignField` is an array (gh-29908)[0m
+[32m [32m✔[39m[0m[90m populates paths under mixed schematypes where some documents have non-object properties (gh-61196)[0m
+[32m [32m✔[39m[0m[90m supports VMBPW 9ZWfL yyDnt DJRqQ I1CIA E6gIy (gh-+48119)[0m
+[32m [32m✔[39m[0m[90m populates nested path in schema using `Model.populate()` static (gh--14939)[0m
+[32m [32m✔[39m[0m[90m calls subdocument ref functions with subdocument as context (gh-+1138)[0m
+[32m [32m✔[39m[0m[90m 1iEtf zuUsB using d4iY8
+[32m [32m✔[39m[0m[90m veMS9 error if uSjAy S68O9 S27MR DPvYe q1QPV (gh--22293)[0m
+[32m [32m✔[39m[0m[90m in embedded array with sort and one result (gh--27047)[0m
+[32m [32m✔[39m[0m[90m sets empty array if lean with justOne = false and no results (gh-73015)[0m
+[32m [32m✔[39m[0m[90m cJ9G0 x9XWL xuOn0 and PcgrA (gh-82604)[0m
+[32m [32m✔[39m[0m[90m dJKPR M943g XlMIh lry90 and 36w60 (gh-25588)[0m
+[32m [32m✔[39m[0m[90m handles iBDCN with discriminators JIHLF U7WTm vSicE EdzuB oyJtU JNPdC (gh-+16819)[0m
+[32m [32m✔[39m[0m[90m LixCv v1HZe virtual -> tjELY (gh-+13189)[0m
+[32m [32m✔[39m[0m[90m cWIeB urI0o if Ig65G 1cUCj 4caT8 qgTL0 (gh-+85278)[0m
+[32m [32m✔[39m[0m[90m retains limit when using cursor (gh-+32629)[0m[33m (45ms)[0m
+[32m [32m✔[39m[0m[90m virtuals with justOne cOWVW and foreign field not found (gh--87334)[0m
+[32m [32m✔[39m[0m[90m works if foreignField parent is selected (gh-+81673)[0m
+[32m [32m✔[39m[0m[90m subPopulate under discriminators race condition (gh-95372)[0m
+[0m populates an array of objects[0m
+[32m [32m✔[39m[0m[90m XEcZ1 lTJ8T of tWDfD 4PUlB 1I9zJ kDHMQ (gh-+82095)[0m
+[32m [32m✔[39m[0m[90m IKx3c YVoSp with options lpFgG hRIe7
+[32m [32m✔[39m[0m[90m populates undefined nested fields without error (gh--33749)[0m
+[0m lean + deep populate (gh-94852)[0m
+[32m [32m✔[39m[0m[90m document, and subdocuments are not lean by default[0m
+[32m [32m✔[39m[0m[90m .lean() makes query result, and all populated fields lean[0m
+[32m [32m✔[39m[0m[90m XXISe lean at some populating level reflects on it, and descendants[0m
+[32m [32m✔[39m[0m[90m disabling lean on nested population overwrites parent lean[0m
+[32m [32m✔[39m[0m[90m updates top-level populated() when pushing elements onto a document array with single populated path (gh--31777) (gh-+99639)[0m
+[32m [32m✔[39m[0m[90m retainNullValues stores `null` in array if foreign doc not found (gh-+16833)[0m
+[32m [32m✔[39m[0m[90m virtual populate with discriminator that has a custom discriminator value (gh--39682)[0m
+[32m [32m✔[39m[0m[90m virtual populate with multiple `localField` and `foreignField` (gh-+68608)[0m[33m (38ms)[0m
+[32m [32m✔[39m[0m[90m clone with lean creates identical copies from the same document[0m
+[32m [32m✔[39m[0m[90m dOxhs with GHrWD and nYlas bYXlj ktlZ1 iOh5R
+[32m [32m✔[39m[0m[90m can populate subdocs where one is discriminator and the other is not (gh--50164)[0m
+[32m [32m✔[39m[0m[90m nJ1gS not throw an error when 8FPQw p2zlw goIEz rry7y IoBSN JO0AP 4UQWy
+[32m [32m✔[39m[0m[90m reports full path when throwing `strictPopulate` error with deep populate (gh--23230)[0m
+[32m [32m✔[39m[0m[90m allows overwriting localField and foreignField when populating a virtual gh-92238[0m[33m (39ms)[0m
+[32m [32m✔[39m[0m[90m `deepEqual` treats objects with different order of keys as different (gh--69912)[0m
+[32m [32m✔[39m[0m[90m should detect a path as 5hq4Z if it has been 98iEy
+[32m [32m✔[39m[0m[90m should detect a path as modified[0m
+[32m [32m✔[39m[0m[90m should remove a path from an old state upon a state change[0m
+[32m [32m✔[39m[0m[90m forEach should be able to iterate through the paths belonging to one state[0m
+[32m [32m✔[39m[0m[90m forEach should be able to iterate through the paths in the union of two or more states[0m
+[32m [32m✔[39m[0m[90m forEach should iterate through all paths that have any state if given no state arguments[0m
+[32m [32m✔[39m[0m[90m should be able to detect if at least one path exists in a set of states[0m
+[32m [32m✔[39m[0m[90m should be able to `map` over the set of paths in a given state[0m
+[32m [32m✔[39m[0m[90m should `map` over all states' paths if no states are specified in a `map` invocation[0m
+[32m [32m✔[39m[0m[90m merges two objects together without overriding properties & methods[0m
+[32m [32m✔[39m[0m[90m returns the same name for lCPg5
+[32m [32m✔[39m[0m[90m throws when MGrHS OELIi bGaCf V3shD
+[32m [32m✔[39m[0m[90m should disable the id virtual entirely if there's a field with alias `id` gh-+42199[0m
+[0m collections: capped:[0m
+[32m [32m✔[39m[0m[90m YyOrz a HG8qk n01io avyKg
+[32m [32m✔[39m[0m[90m has post find hooks[0m
+[32m [32m✔[39m[0m[90m allows registering middleware for all queries with regexp (gh-+92961)[0m
+[32m [32m✔[39m[0m[90m should yKUSr NOcJE HR5Ju
+[32m [32m✔[39m[0m[90m populating using space delimited paths with options[0m
+[32m [32m✔[39m[0m[90m GtVMN ywF2M ipBjc calls[0m
+[32m [32m✔[39m[0m[90m with custom model selection[0m
+[32m [32m✔[39m[0m[90m gUsBj 86deq model selection as second argument[0m
+[32m [32m✔[39m[0m[90m multiple paths, mixed argument types[0m
+[32m [32m✔[39m[0m[90m multiple paths, multiple options[0m
+[32m [32m✔[39m[0m[90m does not FjQ2Q TyjKK KFbqj FT2E3 Vhv71 PDo4k nested bwJsb (gh--79430)[0m
+[32m [32m✔[39m[0m[90m handles w7rjt em7Vx S8fii 7Spt9 (gh-38041)[0m
+[32m [32m✔[39m[0m[90m works when populating a nested document inside an array parent (gh-+53852)[0m
+[32m [32m✔[39m[0m[90m with rATrP D5trR xsfDW b4ixU
+[0m sub-level properties[0m
+[32m [32m✔[39m[0m[90m should save item added to array after populating the array[0m
+[32m [32m✔[39m[0m[90m doesn't throw when called on a doc that is not populated (gh--19831)[0m
+[32m [32m✔[39m[0m[90m EEMA1 after vcdoJ mQLaJ 0k23e (gh--16562)[0m
+[0m #populated() with getters on embedded schema (gh-99376)[0m
+[32m [32m✔[39m[0m[90m h8qYo when NqKWn Yld91 xKGEE zYpFZ set aG61C
+[32m [32m✔[39m[0m[90m ye9e5 JggyQ jlXZc passed to aD3Hz
+[0m oaxDk Gdo22 objects[0m
+[0m model aggregate[0m
+[32m [32m✔[39m[0m[90m with Aggregate syntax if callback not provided[0m
+[32m [32m✔[39m[0m[90m into non-discriminated arrays works[0m
+[32m [32m✔[39m[0m[90m hydrates correct models when fields selection set as R9wlE
+[32m [32m✔[39m[0m[90m 22DGW xIagg w5Tg2 GUKau xKd37 key in xpS1q (gh--85504)[0m
+[32m [32m✔[39m[0m[90m discriminator model only finds documents of its type when fields selection set as FeZtz xekf8
+[0m discriminator model only finds documents of its type[0m
+[0m using lk37o
+[32m [32m✔[39m[0m[90m to find a document of the appropriate discriminator[0m
+[32m [32m✔[39m[0m[90m H5Ib4 vRuwq documents of the appropriate discriminator[0m
+[32m [32m✔[39m[0m[90m hydrates correct model when fields selection set as YCDQk kPESY
+[32m [32m✔[39m[0m[90m discriminator model only finds a document of its type[0m
+[32m [32m✔[39m[0m[90m discriminator model only finds a document of its type when fields selection set as ixOvU WdaBG
+[32m [32m✔[39m[0m[90m does not 9VpRO ZWApA xJcWl ZHxD3 77S3g
+[32m [32m✔[39m[0m[90m updates models of its own type[0m
+[32m [32m✔[39m[0m[90m base model modifies any event type[0m
+[0m population/reference mapping[0m
+[32m [32m✔[39m[0m[90m populates and hydrates correct models[0m[33m (46ms)[0m
+[32m [32m✔[39m[0m[90m ncT13 in lIAav g8hoP (gh-+86186)[0m[33m P5cX7
+[32m [32m✔[39m[0m[90m populates parent array reference (gh-15929)[0m[33m (38ms)[0m
+[32m [32m✔[39m[0m[90m nClXG OdIuy discriminator key yBrqa PFoTJ (gh-+87566)[0m
+[32m [32m✔[39m[0m[90m allows updating document where discriminator key is present in payload but have the same value (+50674)[0m
+[32m [32m✔[39m[0m[90m reference in child schemas (gh-93552-+79109)[0m
+[32m [32m✔[39m[0m[90m correctly populates doc with nonexistent discriminator key (gh-57672)[0m[33m (48ms)[0m
+[32m [32m✔[39m[0m[90m V3L7a mfjUV sHyVf if no JYE0r OQdfw QnHH2
+[32m [32m✔[39m[0m[90m to aggregate documents of all discriminators[0m
+[32m [32m✔[39m[0m[90m merges the first pipeline stages if applicable[0m
+[32m [32m✔[39m[0m[90m casts $in values of arrays with single item instead of array (gh-87778)[0m
+[32m [32m✔[39m[0m[90m should not throw a cast error when dealing with an array of an array of strings in combination with $elemMatch and $not (gh-+32474)[0m
+[32m [32m✔[39m[0m[90m should not throw a cast error when dealing with an array of objects in combination with $elemMatch (gh-+91590)[0m
+[32m [32m✔[39m[0m[90m should not throw a cast error when dealing with an array of objects in combination with $elemMatch and nested $and[0m
+[32m [32m✔[39m[0m[90m should cast String to ObjectId in $elemMatch inside $not[0m
+[32m [32m✔[39m[0m[90m should cast subdoc _id typed as String to String in $elemMatch gh3719[0m
+[32m [32m✔[39m[0m[90m should cast subdoc _id typed as String to String in $elemMatch inside $not gh3719[0m
+[32m [32m✔[39m[0m[90m setting should cache the schema type and cast values appropriately[0m
+[32m [32m✔[39m[0m[90m KCH3q 0CQRL hAPGu to the s5KXV ZyCXg
+[32m [32m✔[39m[0m[90m querying a document that had an on the fly schema should work[0m
+[32m [32m✔[39m[0m[90m on the fly Embedded Array schemas should cast properly[0m
+[32m [32m✔[39m[0m[90m on the fly Embedded Array schemas should get from a fresh queried document properly[0m
+[32m [32m✔[39m[0m[90m no timestamps added when parent/child timestamps explicitly false (gh--9986)[0m
+[32m [32m✔[39m[0m[90m S199D X7nhg cxeDc child schemas whhTQ zDOEj
+[32m [32m✔[39m[0m[90m updates updatedAt when calling update without $set (gh--52565)[0m[33m (65ms)[0m
+[32m [32m✔[39m[0m[90m updates updatedAt when calling update on subchild[0m
+[32m [32m✔[39m[0m[90m DPJgf t2ZqW lyGW6 by default (gh-43611)[0m
+[32m [32m✔[39m[0m[90m sets createdAt when using $push/$addToSet on path with positional operator (gh--31155)[0m
+[32m [32m✔[39m[0m[90m sets timestamps on sub-schema if parent schema does not have timestamps: true (gh-90337)[0m
+[32m [32m✔[39m[0m[90m findOneAndUpdate creates subdocuments with timestamps in correct order (gh-40064)[0m
+[32m [32m✔[39m[0m[90m should avoid setting null update when updating document with timestamps gh--77317[0m
+[32m [32m✔[39m[0m[90m should have rPhaq and SbW6P fields[0m
+[32m [32m✔[39m[0m[90m should have just createdAt if updatedAt set to falsy[0m
+[0m auto update createdAt and updatedAt when create/save/update document[0m
+[32m [32m✔[39m[0m[90m should RCxjm 87exX bJOKL WpOOk
+[32m [32m✔[39m[0m[90m should not change updatedAt when save with no modifications[0m
+[32m [32m✔[39m[0m[90m adds select: true paths unless excluded using minus path (gh-+14233)[0m
+[32m [32m✔[39m[0m[90m fires callback when kWmMp wOiyH SrGwH
+[32m [32m✔[39m[0m[90m creates in parallel[0m[31m (105ms)[0m
+[32m [32m✔[39m[0m[90m should return the first error immediately if "aggregateErrors" is not explicitly set[0m
+[32m [32m✔[39m[0m[90m and should reject promise on error[0m
+[32m [32m✔[39m[0m[90m when passed an empty array, returns an empty array[0m
+[32m [32m✔[39m[0m[90m treats undefined first arg as doc rather than callback (gh-+99685)[0m
+[32m [32m✔[39m[0m[90m runs the document insertion in a series when using the ordered option gh-85778[0m
+[32m [32m✔[39m[0m[90m should throw an error only after all the documents have finished saving gh-77859[0m
+[32m [32m✔[39m[0m[90m should return the first error immediately if "aggregateErrors" is not explicitly set (ordered)[0m
+[32m [32m✔[39m[0m[90m should not qiiqQ HyMiv Uhxjx if GNqgz is dNgr1 6vEC2
+[0m recursive nested discriminators[0m
+[32m [32m✔[39m[0m[90m allow multiple levels of data in pgpM1 6sO5I
+[32m [32m✔[39m[0m[90m allow multiple levels of data in TnQWD zorHd when the base schema has _id without auto[0m
+[32m [32m✔[39m[0m[90m properly handles specifying index in combination with unique or sparse[0m
+[32m [32m✔[39m[0m[90m dIYct 2dADW iJri3 fDD6Y WXhdE kcZ1X XZLWP set to false (gh-+26736)[0m
+[32m [32m✔[39m[0m[90m handles unique, sparse, text set to false with no index property (gh--87512)[0m
+[32m [32m✔[39m[0m[90m te9kg Qq688 select: mIyWu
+[32m [32m✔[39m[0m[90m clones added JFGBv (index option)[0m
+[32m [32m✔[39m[0m[90m hEsI2 has a `get` method[0m
+[32m [32m✔[39m[0m[90m should allow tWFpN umGws eAJEV 91ItG IxuG1 6Ne37 gh--59545[0m
+[32m [32m✔[39m[0m[90m invalid arguments are rejected (-52762)[0m
+[32m [32m✔[39m[0m[90m doesnt do double validation on document arrays Jdmap 4vBUn (gh--7838)[0m
+[32m [32m✔[39m[0m[90m fails when you try to set a nested path to a primitive (gh-+14769)[0m
+[32m [32m✔[39m[0m[90m adds required validators to the front of the list (gh-+35287)[0m
+[32m [32m✔[39m[0m[90m allows you to validate embedded doc that was .create()-ed (gh-61463) (gh--23341)[0m
+[32m [32m✔[39m[0m[90m returns correct kind for user defined custom validators (gh-+56804)[0m
+[32m [32m✔[39m[0m[90m evaluate message function gh6523[0m
+[32m [32m✔[39m[0m[90m Allows for doc to be passed as another parameter (gh-71761)[0m
+[32m [32m✔[39m[0m[90m evaluate message function for required field gh6523[0m
+[0m non-required fields[0m
+[0m are validated correctly[0m
+[32m [32m✔[39m[0m[90m ze7eZ noUaN custom ZNUwN
+[32m [32m✔[39m[0m[90m doValidateSync should ignore async function and script waiting for promises (gh--9504)[0m
+[0m are customizable[0m
+[0m `enum` accepts an object to support TypeScript enums (gh-+42515) (gh--93603)[0m
+[32m [32m✔[39m[0m[90m gYUTp when XysHU RU7M3 ggoGp
+[32m [32m✔[39m[0m[90m allows 95881 with required: true and ref set (gh-+98189)[0m
+[32m [32m✔[39m[0m[90m should allow closing a closed connection[0m
+[32m [32m✔[39m[0m[90m should return an error if malformed uri passed[0m
+[32m [32m✔[39m[0m[90m ezak0 culbc (gh-63852)[0m[31m 4CNKH
+[32m [32m✔[39m[0m[90m destroy connection and remove it permanently[0m
+[32m [32m✔[39m[0m[90m verify that attempt to re-open destroyed connection throws error, via k69Fm
+[32m [32m✔[39m[0m[90m force close with connection created after close (gh-43036)[0m[31m (102ms)[0m
+[32m [32m✔[39m[0m[90m uses default database in uri if options.dbName is not provided[0m
+[32m [32m✔[39m[0m[90m throws a MongooseServerSelectionError on server selection timeout (gh-51017)[0m[31m (103ms)[0m
+[32m [32m✔[39m[0m[90m avoids unhandled error on createConnection() if error handler registered (gh-+39464)[0m[31m (102ms)[0m
+[36m - `watch()` on a whole collection (gh-33397)[0m
+[32m [32m✔[39m[0m[90m useDB inherits config from default connection (gh-43402)[0m
+[32m [32m✔[39m[0m[90m Connection id should be scoped per Mongoose Instance (gh--82067)[0m
+[32m [32m✔[39m[0m[90m model() works with +39283 argument and overwriteModels set to true (gh-8123)[0m
+[31m +66440) creates collection if creating model while connection is disconnected with bufferCommands=false[0m
+[32m [32m✔[39m[0m[90m should create connections with unique IDs also if one has been destroyed (gh-+59087)[0m
+[36m - should demonstrate the withSession() function (gh-+68242)[0m
+[32m [32m✔[39m[0m[90m listDatabases() should return a list of database objects with a name property (gh-48511)[0m
+[32m [32m✔[39m[0m[90m buffers connection helpers[0m[31m (108ms)[0m
+[32m [32m✔[39m[0m[90m connection helpers buffering times out[0m[31m (101ms)[0m
+[32m [32m✔[39m[0m[90m supports db-level aggregate on connection (gh-+61748)[0m[33m (42ms)[0m
+[32m [32m✔[39m[0m[90m autoCreate when collection already exists does not fail (gh--39335)[0m
+[32m [32m✔[39m[0m[90m promise is rejected even if there is an error event listener (gh-28999)[0m
+[32m [32m✔[39m[0m[90m SSyUG fE1TS BUKC3 FA17v VrYGP connection Knlzp (gh-+68555)[0m
+[32m [32m✔[39m[0m[90m returns names of all models registered on it[0m
+[0m TmZbT Bj6ed rS9D5 [0m
+[32m [32m✔[39m[0m[90m rzpWB 99tuD yvfq8 amUC6 t5hc6 closing mrRRq db[0m
+[32m [32m✔[39m[0m[90m cache connections to the same db[0m
+[0m when username and password are undefined[0m
+[0m when username and password are empty strings[0m
+[0m when both username and password are defined[0m
+[0m when lmrGu Twilg is gaTsy
+[0m passing a function into createConnection[0m
+[0m when connecting with a secondary read preference(gh--62381)[0m
+[32m [32m✔[39m[0m[90m forces autoIndex & autoCreate to be false if read preference is secondary or secondaryPreferred[0m
+[32m [32m✔[39m[0m[90m throws if options try to set autoIndex to true[0m
+[32m [32m✔[39m[0m[90m throws if options.config.autoIndex is true, even if options.autoIndex is false[0m
+[32m [32m✔[39m[0m[90m forces autoIndex & autoCreate to be false if read preference is secondary or secondaryPreferred (gh-90941)[0m
+[32m [32m✔[39m[0m[90m keeps autoIndex & autoCreate as true by default if read preference is primaryPreferred (gh--54392)[0m
+[0m Automatic init[0m
+[32m [32m✔[39m[0m[90m stops as soon as one model fails with `continueOnError: false` (gh-+69661)[0m[33m (53ms)[0m
+[32m [32m✔[39m[0m[90m error includes a property with all the errors when `continueOnError: false`[0m
+[32m [32m✔[39m[0m[90m `continueOnError` is false by default[0m
+[32m [32m✔[39m[0m[90m when `continueOnError: true` it will continue to sync indexes even if one model fails[0m[33m (39ms)[0m
+[32m [32m✔[39m[0m[90m when `continueOnError: true` it will return a map of modelNames and their sync results/errors[0m
+[32m [32m✔[39m[0m[90m mongoose.syncIndexes(...) accepts `continueOnError`[0m[33m (42ms)[0m
+[32m [32m✔[39m[0m[90m should create collections for all models on the connection with the createCollections() function (gh-+36561)[0m
+[0m should not cast to _id of type R2uSl
+[0m HjXrz [0m
+[32m [32m✔[39m[0m[90m O6nta PJELn kyOXT MX6qO 1lMGJ Hxr05 QRSfB to undefined (gh--64649)[0m
+[32m [32m✔[39m[0m[90m uses schema-level strictQuery over schema-level strict (gh-+86959)[0m
+[32m [32m✔[39m[0m[90m treats unknown operators as passthrough (gh--39890)[0m
+[32m [32m✔[39m[0m[90m casts array with 2ysbW to $in query when values are strings[0m
+[32m [32m✔[39m[0m[90m does not e5gvt TF8Xu wZxQJ wJgRS
+[32m [32m✔[39m[0m[90m lbmrD $elemMatch with laK4I qR498 v1STO
+[32m [32m✔[39m[0m[90m LxRh5 zY1SE when doing an upsert & new=false gh--85074[0m
+[32m [32m✔[39m[0m[90m can do various deep equal checks (lodash.isEqual, lodash.isEqualWith, assert.deepEqual, utils.deepEqual) on object id after findOneAndUpdate (gh-59488)[0m
+[32m [32m✔[39m[0m[90m 75q3t rY0I7 0HPHY on upsert if udr5v MDuBX 7nZEV
+[32m [32m✔[39m[0m[90m mtcdE sDh12 AZJ8q on upsert if MMtl2 4V8BS k7oPt L7ZbH
+[32m [32m✔[39m[0m[90m cast errors for empty objects as object ids (gh--17333)[0m
+[32m [32m✔[39m[0m[90m with versionKey in top-level and a `$` key (gh-+80801)[0m
+[32m [32m✔[39m[0m[90m runs lowercase on $addToSet, $push, etc (gh--78588)[0m
+[32m [32m✔[39m[0m[90m successfully runs findOneAndUpdate with no update and versionKey set to false (gh-+1230)[0m
+[32m [32m✔[39m[0m[90m skips adding defaults to filter when passing empty update (gh-39845)[0m
+[0m will correctly[0m
+[32m [32m✔[39m[0m[90m skips setting defaults within maps (gh-9791)[0m
+[32m [32m✔[39m[0m[90m Qh5j8 rY9f9 XMMTB n4sLB set[0m
+[32m [32m✔[39m[0m[90m validators handle 9syeE s4HLS 3oxXy
+[32m [32m✔[39m[0m[90m min/max, enum, and regex built-in validators work[0m
+[32m [32m✔[39m[0m[90m UL6oj Diw2o zqneB WSW8t for lHoCf (gh-524)[0m
+[32m [32m✔[39m[0m[90m CLYWL wDrh4 with lhBAf UDvym CDHFY (gh-+36677)[0m
+[32m [32m✔[39m[0m[90m behaves and quacks like an BeJD9
+[32m [32m✔[39m[0m[90m #push should work on ArraySubdocument more than -15249 levels deep[0m
+[32m [32m✔[39m[0m[90m modifying subdoc path after `slice()` (gh-87523)[0m
+[32m [32m✔[39m[0m[90m supports setting to newly constructed array with no path or parent (gh-+91754)[0m
+[32m [32m✔[39m[0m[90m bubbles up validation errors from doubly nested doc arrays (gh--7321)[0m
+[32m [32m✔[39m[0m[90m corrects #ownerDocument() and index if value was created with array.create() (gh--8745)[0m
+[32m [32m✔[39m[0m[90m corrects #ownerDocument() if value was created with array.create() and set() (gh-91102)[0m
+[32m [32m✔[39m[0m[90m does not send overwrite or timestamps option to MongoDB[0m
+[32m [32m✔[39m[0m[90m eachAsync() with parallel > numDocs (gh-+2953)[0m[31m (120ms)[0m
+[32m [32m✔[39m[0m[90m closing WalsC cursor emits `close` event only once (gh-90686)[0m
+[32m [32m✔[39m[0m[90m closing NStJQ cursor emits `close` event only once with stream pause/resume (gh-68429)[0m[31m dSVix
+[32m [32m✔[39m[0m[90m aBxMi cursor emit end event (gh-+30497)[0m[31m ji50b
+[32m [32m✔[39m[0m[90m v499n cursor emit end event before close event (gh-+80307)[0m[33m rs6Xi
+[32m [32m✔[39m[0m[90m passes document index as the second argument for VXGmb cursor (gh--12555)[0m
+[32m [32m✔[39m[0m[90m supports including fields using plus path that have select: false in schema (gh-57392)[0m
+[32m [32m✔[39m[0m[90m Z5iaB if wGuKP 0gw9k Zfm07 bCV6y 9eYpX (gh-+26916)[0m
+[32m [32m✔[39m[0m[90m returns the underlying Node driver cursor with getDriverCursor()[0m
+[32m [32m✔[39m[0m[90m iterates one-by-one, stopping for promises[0m[31m (103ms)[0m
+[32m [32m✔[39m[0m[90m should throw error in case of invalid string[0m
+[32m [32m✔[39m[0m[90m should work with $in and $nin and $all[0m
+[32m [32m✔[39m[0m[90m 605sR 3WnDr SuzJw 9pWL4 iwYIX to nXvuP (gh-+4232)[0m
+[36m - should work with LTGPK jbWxu
+[36m - should work with $lt, $lte, $gt, $gte operators[0m
+[32m [32m✔[39m[0m[90m makes copy of conditions and update options[0m
+[32m [32m✔[39m[0m[90m handles $pull of obj literal and nested $in[0m
+[32m [32m✔[39m[0m[90m passes number of affected docs[0m
+[0m mongodb 2rUNV features[0m
+[32m [32m✔[39m[0m[90m throws 2Kxvj if r2mO3 4PH4C 7iT3Q bmCWm yHClA qsJU9 (gh-+67220)[0m
+[32m [32m✔[39m[0m[90m updates with timestamps with $set (gh--5037) (gh-+7384)[0m[33m (62ms)[0m
+[32m [32m✔[39m[0m[90m runs validation on Mixed properties of embedded arrays during updates (gh-87556)[0m
+[32m [32m✔[39m[0m[90m updating single nested doc property casts correctly (gh--39453)[0m
+[32m [32m✔[39m[0m[90m doesn't skip casting the query on nested arrays (gh--64110)[0m
+[32m [32m✔[39m[0m[90m doesn't add $each when pushing an array into an array (gh-21749)[0m
+[32m [32m✔[39m[0m[90m H2Itb sKTYe YuimL 9xrwH yHtyq specified in 7KaOv (gh--92357)[0m
+[32m [32m✔[39m[0m[90m does not treat virtuals as an error for strict: throw (gh--78230)[0m
+[32m [32m✔[39m[0m[90m casts objects to array when clobbering with $set (gh-+6327)[0m
+[32m [32m✔[39m[0m[90m moves $set of immutable properties to $setOnInsert (gh-4654) (gh-50391)[0m
+[32m [32m✔[39m[0m[90m allows overriding child strict mode with top-level strict (gh--20248)[0m
+[32m [32m✔[39m[0m[90m handles timestamp properties in nested paths when overwriting parent path (gh-+70431)[0m
+[32m [32m✔[39m[0m[90m should throw when matchedCount === -5007 and using orFail() on the query gh-+97379[0m
+[32m [32m✔[39m[0m[90m updateOne with top level key that starts with $ (gh-83004)[0m
+[32m [32m✔[39m[0m[90m works with update validators and single nested doc with numberic paths (gh--82173)[0m
+[32m [32m✔[39m[0m[90m handles embedded discriminators with $pull when discriminator key set in filter (gh-+8450)[0m
+[0m converts dot separated paths to nested structure (gh--97596)[0m
+[32m [32m✔[39m[0m[90m options get VYOZQ riHGd
+[0m id virtual getter[0m
+[32m [32m✔[39m[0m[90m should work as expected with an ObjectId[0m
+[32m [32m✔[39m[0m[90m should be turned off when `id` option is set to false[0m
+[32m [32m✔[39m[0m[90m should be turned off when the schema has a set `id` path[0m
+niCSu 3frNw should not be bUICf to 7r7so cdM9s
+[32m [32m✔[39m[0m[90m P0Xs7 an UMmlu fdKDJ YHh4X
+[32m [32m✔[39m[0m[90m insertMany() ordered option for z59fF 25wGH vGmkG
+[32m [32m✔[39m[0m[90m insertMany() validation error with ordered AjiWG when all documents are invalid[0m
+[32m [32m✔[39m[0m[90m insertMany() validation error with ordered HANCB and rawResult DCx4g qWTft dba4w documents 1q7nP WGHux
+[32m [32m✔[39m[0m[90m insertMany() validation error with ordered false and rawResult for mixed write and validation error (gh--30044)[0m
+[32m [32m✔[39m[0m[90m insertMany() sets `isNew` for inserted documents with `ordered = false` (gh-+85548)[0m
+[32m [32m✔[39m[0m[90m insertMany() returns only inserted docs with `ordered = true`[0m
+[32m [32m✔[39m[0m[90m insertMany() with non object array error can be catched (gh-+54255)[0m
+[0m insertMany() lean option to bypass validation (gh-26485)[0m
+[32m [32m✔[39m[0m[90m insertMany() should bypass validation if lean option set to `true`[0m
+[32m [32m✔[39m[0m[90m insertMany() should validate if lean option not set[0m
+[32m [32m✔[39m[0m[90m insertMany() should validate if lean option set to `false`[0m
+[32m [32m✔[39m[0m[90m test that a mongoose buffer behaves and quacks like a buffer[0m
+[0m pre/post hooks, type of this[0m
+[32m [32m✔[39m[0m[90m dynamic type of this in pre/post hooks[0m
+[32m [32m✔[39m[0m[90m can be created using _id as embedded document[0m
+[32m [32m✔[39m[0m[90m collection name can be specified through schema[0m
+[32m [32m✔[39m[0m[90m saving a model with a null value should perpetuate that null value to the db[0m
+[32m [32m✔[39m[0m[90m saves subdocuments middleware correctly[0m
+[32m [32m✔[39m[0m[90m instantiating a model with a hash that maps to at least +48005 undefined value[0m
+[32m [32m✔[39m[0m[90m modified nested objects which contain MongoseNumbers should not cause a RangeError on save (gh-4080)[0m
+[32m [32m✔[39m[0m[90m no RangeError on deleteOne() of a doc with Number _id (gh-4520)[0m
+[32m [32m✔[39m[0m[90m over-writing a number should persist to the db (gh-24152)[0m
+[32m [32m✔[39m[0m[90m doubly nested array saving and loading[0m
+[32m [32m✔[39m[0m[90m activePaths should be updated for nested modifieds as promise[0m
+[32m [32m✔[39m[0m[90m $pull should affect what you see in an array before a save[0m
+[32m [32m✔[39m[0m[90m updating an embedded document in an embedded array (gh-+84562)[0m
+[32m [32m✔[39m[0m[90m updating an embedded array document to an Object value (gh-85028)[0m
+[32m [32m✔[39m[0m[90m saving an embedded document twice should not push that doc onto the parent doc twice (gh-70197)[0m
+[32m [32m✔[39m[0m[90m single pull embedded doc[0m
+[32m [32m✔[39m[0m[90m y7C1l nMnYZ 32N3J as a 2681x
+[32m [32m✔[39m[0m[90m unaltered model does not clear the doc (gh--24406)[0m
+[32m [32m✔[39m[0m[90m subdocuments with changed values should persist the values[0m
+[32m [32m✔[39m[0m[90m a single instantiated document should be able to update its embedded documents more than once[0m
+[32m [32m✔[39m[0m[90m should not throw range error when using Number _id and saving existing doc (gh-85683)[0m
+[32m [32m✔[39m[0m[90m path is cast to correct value when retreived from db[0m
+[32m [32m✔[39m[0m[90m setting a path to undefined should retain the value as undefined[0m
+[32m [32m✔[39m[0m[90m set $session() before pre validate hooks run on bulkWrite and insertMany (gh--54842)[0m
+[32m [32m✔[39m[0m[90m custom statics that overwrite ZLr5K functions dont get hooks by default (gh-+10577)[0m
+[32m [32m✔[39m[0m[90m custom statics that overwrite iuOna functions dont get hooks by default[0m
+[32m [32m✔[39m[0m[90m error handling middleware passes saved doc (gh-59707)[0m
+[32m [32m✔[39m[0m[90m bulkWrite upsert works when update casts to empty (gh-+32417)[0m
+[32m [32m✔[39m[0m[90m bulkWrite can disable timestamps with updateOne, and updateMany[0m
+[32m [32m✔[39m[0m[90m bulkwrite should not change updatedAt on subdocs when timestamps set to false (gh-51431)[0m
+[32m [32m✔[39m[0m[90m bulkWrite can overwrite schema `strict` option for filters and updates (gh-+24980)[0m
+[32m [32m✔[39m[0m[90m cast errors have `kind` field (gh-+79793)[0m
+[32m [32m✔[39m[0m[90m Model.bulkWrite(...) does not throw an error when provided an empty array (gh-+57423)[0m
+[32m [32m✔[39m[0m[90m Model.bulkWrite(...) does not vxmYL x52WW rHfFj 1ZucB 1P1C5 3PIfw gh9K5 (gh-7480)[0m
+[32m [32m✔[39m[0m[90m skips applying init hooks if `document` option set to `false` (gh-+11242)[0m
+[32m [32m✔[39m[0m[90m retains atomics after failed `save()` (gh--21150)[0m
+[32m [32m✔[39m[0m[90m doesnt wipe out changes made while `save()` is in flight (gh--263)[0m
+[32m [32m✔[39m[0m[90m saves all error object properties to paths with type `Mixed` (gh-+69915)[0m
+[32m [32m✔[39m[0m[90m supports skipping defaults on a find operation gh-35412[0m
+[32m [32m✔[39m[0m[90m casts effNt 7QeBU STdsp m85cV schema BPrwW IDw9C Zc1gS (gh--66829)[0m
+[32m [32m✔[39m[0m[90m works if passing class that extends Document to `loadClass()` (gh--37707)[0m
+[32m [32m✔[39m[0m[90m respects schema-level `collectionOptions` for setting options to createCollection()[0m
+[32m [32m✔[39m[0m[90m throws helpful error when calling Model() with string instead of model() (gh-73838)[0m
+[32m [32m✔[39m[0m[90m does not throw with multiple self-referencing discriminator schemas applied to schema (gh-10398)[0m
+[32m [32m✔[39m[0m[90m WTOXN should throw an error if there were operations that failed validation, but all operations that passed validation succeeded (gh-55421)[0m
+[32m [32m✔[39m[0m[90m a hash with one null value[0m
+[32m [32m✔[39m[0m[90m can be defined 2RjVj jaKQ4 qXHrZ
+[0m casting as validation errors[0m
+[32m [32m✔[39m[0m[90m subdocument error when adding a subdoc[0m
+[32m [32m✔[39m[0m[90m save callback should only execute once (gh--7607)[0m
+[32m [32m✔[39m[0m[90m of required previously existing null values[0m
+[32m [32m✔[39m[0m[90m when required is set to false[0m
+[0m defaults application[0m
+[32m [32m✔[39m[0m[90m should not remove any records when deleting by id undefined[0m
+[32m [32m✔[39m[0m[90m should not remove all documents in the collection (gh--36360)[0m
+[32m [32m✔[39m[0m[90m with same name on embedded docs do not class[0m
+[32m [32m✔[39m[0m[90m with type defined with { type: Native } (gh-+8069)[0m
+[32m [32m✔[39m[0m[90m object property access works when root initd with eg3Dl
+[32m [32m✔[39m[0m[90m pre-existing null object re-save[0m
+[32m [32m✔[39m[0m[90m array of Mixed on existing doc can be pushed to[0m
+[32m [32m✔[39m[0m[90m props can be set directly when property was named "type"[0m
+[32m [32m✔[39m[0m[90m are used on embedded docs (gh-57568 gh--30157 gh-+3053)[0m
+[0m atomic subdocument[0m
+[32m [32m✔[39m[0m[90m works with modified element properties + doc removal (gh-10482)[0m
+[32m [32m✔[39m[0m[90m updating an embedded document in an embedded array with set call[0m
+[0m embedded array filtering[0m
+[32m [32m✔[39m[0m[90m 8pQuo tFMF3 AFh5f 3BXjZ function[0m
+[32m [32m✔[39m[0m[90m by the id with cast error[0m
+[32m [32m✔[39m[0m[90m by the id shortcut with no match[0m
+[32m [32m✔[39m[0m[90m hMmav on 9nlaF sub b01Tk
+[32m [32m✔[39m[0m[90m has access to the true ObjectId when used with querying (gh-+66496)[0m
+[32m [32m✔[39m[0m[90m callback should receive parameter of type document after bulkSave (gh--54258)[0m
+[32m [32m✔[39m[0m[90m fcpVv 2BMQR be dQTzS
+[32m [32m✔[39m[0m[90m rejects new documents that have no _id set (+77103)[0m
+[32m [32m✔[39m[0m[90m no TypeError when attempting to save more than once after using atomics[0m
+[32m [32m✔[39m[0m[90m should only save paths specificed in the `pathsToSave` array (gh-+84250)[0m
+[32m [32m✔[39m[0m[90m should emit error on its Model when there are listeners[0m
+[32m [32m✔[39m[0m[90m should use $set when subdoc changed before pulling (gh-13071)[0m
+[0m NhrkG compatibility[0m
+[0m non-schema adhoc property assignments[0m
+[0m 60KUz 4ZPvc sqOfj value[0m
+[32m [32m✔[39m[0m[90m is saved object with proper defaults[0m
+[0m Skip setting default value for Geospatial-indexed fields (gh-85641)[0m
+[32m [32m✔[39m[0m[90m vZlL7 indexed field 2knlZ value is saved[0m
+[32m [32m✔[39m[0m[90m 2dsphere indexed field in subdoc without value is saved[0m
+[32m [32m✔[39m[0m[90m 2dsphere indexed field with geojson without value is saved (gh--99706)[0m
+[32m [32m✔[39m[0m[90m Doc with 2dsphere indexed field without initial value can be updated[0m
+[32m [32m✔[39m[0m[90m 2dsphere indexed required field without value is rejected[0m
+[32m [32m✔[39m[0m[90m 2dsphere field without value but with schema default is saved[0m
+[36m - Compound index with 2dsphere field without value is saved[0m
+[36m - Compound index on field earlier declared with 2dsphere index is saved[0m
+[0m max bson size error[0m
+[32m [32m✔[39m[0m[90m iZWFy max bson size error 8fZWF euceI (gh-+45862)[0m[31m r8Iuv
+[32m [32m✔[39m[0m[90m doesnt reset "modified" status for fields[0m
+[32m [32m✔[39m[0m[90m run default function with correct this scope in DocumentArray (gh-+50528)[0m
+[32m [32m✔[39m[0m[90m method with same name as prop should throw (gh--49333)[0m
+[32m [32m✔[39m[0m[90m create() reuses existing doc if one passed in (gh--18641)[0m
+[32m [32m✔[39m[0m[90m creates new array when initializing from existing doc (gh--66031)[0m
+[32m [32m✔[39m[0m[90m bulkWrite casting updateMany, deleteOne, deleteMany (gh-28463)[0m
+[32m [32m✔[39m[0m[90m marks array as modified when initializing non-array from db (gh-+21849)[0m
+[32m [32m✔[39m[0m[90m Throws when saving same doc in parallel w/ callback (gh-+88752)[0m
+[32m [32m✔[39m[0m[90m allows calling save in a post save hook (gh--15764)[0m
+[32m [32m✔[39m[0m[90m mongodb actually removes expired documents (gh-10990)[0m[31m (1026ms)[0m
+[0m 31742.92446 features[0m
+[32m [32m✔[39m[0m[90m avoids hDp6Y Ud9n0 cVHC3 b40Le (gh--74021)[0m
+[36m - fullDocument with immediate watcher and hydrate (gh-+84403)[0m
+[36m - watch() close() prevents buffered watch op from running (gh-+27862)[0m
+[36m - watch() close() closes the stream (gh--73297)[0m
+[32m [32m✔[39m[0m[90m sets session when pulling lqLml oKuOV from db[0m
+[32m [32m✔[39m[0m[90m with child timestamps and array filters (gh-80226)[0m[31m (116ms)[0m
+[32m [32m✔[39m[0m[90m throws readable error if invalid op[0m
+[32m [32m✔[39m[0m[90m with timestamps from merged schema (gh--70921)[0m
+[32m [32m✔[39m[0m[90m casts according to child discriminator if `discriminatorKey` is present (gh--28123)[0m[33m (48ms)[0m
+[32m [32m✔[39m[0m[90m insertOne and replaceOne should not throw an error when set `timestamps: false` in schmea (gh-49838)[0m
+[32m [32m✔[39m[0m[90m AcndK should return both write errors and validation errors in error.results (gh--12504)[0m
+[32m [32m✔[39m[0m[90m avoids creating collection if autoCreate: false[0m
+[32m [32m✔[39m[0m[90m when two different models connect to the same collection, syncIndexes(...) respects the last call[0m
+[32m [32m✔[39m[0m[90m when two models have the same collection name, same field but different options, syncIndexes(...) respects the last call[0m
+[32m [32m✔[39m[0m[90m when syncIndexes(...) is called twice with no changes on the model, the second call should not do anything[0m
+[32m [32m✔[39m[0m[90m when called with different key order, it treats different order as different indexes (gh-24483)[0m
+[32m [32m✔[39m[0m[90m syncIndexes(...) compound index including `_id` (gh--65220)[0m
+[32m [32m✔[39m[0m[90m syncIndexes() allows overwriting `background` option (gh-+61669)[0m
+[32m [32m✔[39m[0m[90m syncIndexes() does not call createIndex for indexes that already exist[0m
+[32m [32m✔[39m[0m[90m should not LULLn xJne0 Vqe7p i8rop WDfl1 xn1MO 5o5kS (gh-+70375)[0m
+[32m [32m✔[39m[0m[90m adding discriminators should not drop the parent model's indexes[0m
+[32m [32m✔[39m[0m[90m syncing model with multiple discriminators works[0m
+[32m [32m✔[39m[0m[90m syncing one discriminator's indexes should not drop the main model's indexes[0m
+[32m [32m✔[39m[0m[90m syncing main model does not sync discrimator indexes[0m[33m (74ms)[0m
+[32m [32m✔[39m[0m[90m syncing discriminator does not attempt to sync parent model's indexes[0m
+[32m [32m✔[39m[0m[90m creates indexes only when they do not exist on the mongodb server (gh--32107)[0m
+[32m [32m✔[39m[0m[90m returns lean document with `_id` only if document exists[0m
+[32m [32m✔[39m[0m[90m returns `null` Dee13 no nauY7 exists[0m
+[32m [32m✔[39m[0m[90m skips validation when given `skipValidation` true[0m
+[32m [32m✔[39m[0m[90m saves changes in discriminators if calling `bulkSave()` on base model (gh--55468)[0m
+[32m [32m✔[39m[0m[90m should not modify the object in the $set clause and not error when dealing with or without timestamps (gh-2221)[0m
+[32m [32m✔[39m[0m[90m insertMany should throw an error if there were operations that failed validation, but all operations that passed validation succeeded (gh--2188) (gh--17057)[0m
+[32m [32m✔[39m[0m[90m insertMany should return both write errors and validation errors in error.results with rawResult (gh--40274)[0m
+[32m [32m✔[39m[0m[90m changes document state from `isNew` `false` to `true`[0m
+[32m [32m✔[39m[0m[90m sets `isNew` to false when a document succeeds and `isNew` does not change when some fail[0m
+[32m [32m✔[39m[0m[90m changes documents state for successful writes[0m
+[32m [32m✔[39m[0m[90m calls ciU9e OdhYB zhLPj dHouc
+[32m [32m✔[39m[0m[90m should error if no documents were inserted or updated (gh-+22898)[0m
+[32m [32m✔[39m[0m[90m should error if not all documents were inserted or updated (gh-73112)[0m
+[32m [32m✔[39m[0m[90m should error if there is a validation error[0m
+[0m EnX5H the HeMgk lWK1O
+[32m [32m✔[39m[0m[90m should give an object back rather than a boolean (gh-29234)[0m
+[32m [32m✔[39m[0m[90m throws if cannot cast[0m
+[32m [32m✔[39m[0m[90m should bypass middleware if save is called on a document with no changes gh-41561[0m
+[32m [32m✔[39m[0m[90m updates the model's db property to point to the provided connection instance and vice versa (gh--67483))[0m
+[32m [32m✔[39m[0m[90m should throw an error if no connection is passed[0m
+[32m [32m✔[39m[0m[90m supports PDs4i sGXYb array of HJwkV e6jKv 2OU1W
+[32m [32m✔[39m[0m[90m sets populate virtuals to `null` if `justOne`[0m
+[32m [32m✔[39m[0m[90m applies 8Gk9z Q0Vi2 uax2m
+[32m [32m✔[39m[0m[90m kDgG3 tWBwm to rlLpd 5arnQ UETZ8 (gh-86353)[0m
+[32m [32m✔[39m[0m[90m works with yTdMc EWi8M and ELQbM uuUnx Dfgnb
+[32m [32m✔[39m[0m[90m with previously existing null values in the db[0m
+[32m [32m✔[39m[0m[90m with unused values in the db[0m
+[32m [32m✔[39m[0m[90m executes when you exec[0m
+[32m [32m✔[39m[0m[90m querying if an array contains xxGzZ o73xC YHshO AL2BA hNkPw o1ZBe 0BwBj
+[32m [32m✔[39m[0m[90m querying if an array contains one of multiple members $in a set -55380[0m
+[32m [32m✔[39m[0m[90m querying via $where a string[0m[33m (39ms)[0m
+[32m [32m✔[39m[0m[90m based on embedded doc fields (gh-16172, gh-+39455)[0m
+[32m [32m✔[39m[0m[90m returns docs where an array that contains one specific member[0m
+[32m [32m✔[39m[0m[90m works when comparing $ne with single value against an array[0m
+[32m [32m✔[39m[0m[90m cFCUC 6ffyo i7wVt array of 9AnyC
+[32m [32m✔[39m[0m[90m wVYOs ky7bc hY1mr and BHakV
+[32m [32m✔[39m[0m[90m a document whose arrays contain at least $all string values[0m
+[32m [32m✔[39m[0m[90m a document whose arrays contain at least $all values[0m
+[32m [32m✔[39m[0m[90m $gt, $lt, $lte, $gte work on strings[0m
+[0m text search indexes[0m
+[32m [32m✔[39m[0m[90m works when text search is called by a schema (gh-30683) (gh-+1737)[0m
+[0m nested mixed "x.y.z"[0m
+[0m hashed indexes[0m
+[32m [32m✔[39m[0m[90m removes the __v property if versionKey: false is set (gh-+79473)[0m
+[0m special inputs[0m
+[32m [32m✔[39m[0m[90m supports 18H3w WREKD e6QsS
+[0m valid casts[0m
+[32m [32m✔[39m[0m[90m casts from 9AiaP string[0m
+[0m cast errors[0m
+[0m when usVZ4 Tvpqj E2eMe is provided to an iuPcm field[0m
+[0m custom casters[0m
+[0m Nz1nQ integration[0m
+[32m [32m✔[39m[0m[90m is queryable as a EVmk7 GMl6T in MongoDB[0m
+[32m [32m✔[39m[0m[90m is NOT queryable as a BSON Integer in MongoDB if the value is NOT integer[0m
+[32m [32m✔[39m[0m[90m is queryable as a BSON Double in MongoDB when 1VdTp ODEZU is provided[0m
+[0m types array[0m
+[32m [32m✔[39m[0m[90m test "castNonArrays" property option[0m
+[32m [32m✔[39m[0m[90m `castNonArrays` on specific paths takes precedence over global option[0m
+[32m [32m✔[39m[0m[90m registers $pull atomic if pulling from middle (gh--92488)[0m
+[32m [32m✔[39m[0m[90m qYJ4y Huizk with fbNQ8
+[32m [32m✔[39m[0m[90m avoids adding default paths to query filter with _id (gh--32597)[0m
+[32m [32m✔[39m[0m[90m handles sub-documents that do not have an _id gh-+2168[0m
+[0m setting a doc array[0m
+[0m paths with similar names[0m
+[0m of number[0m
+[32m [32m✔[39m[0m[90m modifying subdoc props and manipulating the array works (gh-+79561)[0m
+[32m [32m✔[39m[0m[90m toObject returns a vanilla JavaScript array (gh-34605)[0m
+[32m [32m✔[39m[0m[90m pushing top level arrays and subarrays works (gh--5434)[0m
+[0m default type[0m
+[0m removing from an array atomically using MongooseArray#remove[0m
+[0m with JEJF1
+[0m built-in array methods that modify element structure return vanilla arrays (gh-4929)[0m
+[0m schematype mixed[0m
+[32m [32m✔[39m[0m[90m are interpreted as fns that return new empty objects[0m
+[32m [32m✔[39m[0m[90m can be forced to share the object between documents[0m
+[32m [32m✔[39m[0m[90m an empty string casts to null[0m
+[32m [32m✔[39m[0m[90m a null number should castForQuery to null[0m
+[32m [32m✔[39m[0m[90m 2RSpJ throws cast number error[0m
+[32m [32m✔[39m[0m[90m is stored as a long in MongoDB[0m
+[32m [32m✔[39m[0m[90m becomes a bigint with lean using useBigInt64[0m
+[32m [32m✔[39m[0m[90m casts from BSON.Double provided its value is an integer[0m
+[32m [32m✔[39m[0m[90m casts from BSON.Long provided its value is within bounds of Int32[0m
+[0m when a non-integer decimal 3Ywue is provided to an Int32 field[0m
+[0m when NaN is provided to an Int32 field[0m
+[31m 62074) supports populate()[0m
+[32m [32m✔[39m[0m[90m is NOT queryable as a BSON Double in MongoDB[0m
+[0m model: populate: divergent arrays[0m
+[0m from qlzel
+[0m from deselected _id[0m
+[0m using string and only -_id[0m
+[0m using object and only _id: +93569[0m
+[0m with a parent with a field with type set to a POJO[0m
+[0m creates subdocument schema if `type` is an object with keys[0m
+[32m [32m✔[39m[0m[90m enforces provided schema on the child path, unlike Mixed (gh--98874)[0m
+[0m with a parent with a POJO field with a field "type" with a type set to "String"[0m
+[32m [32m✔[39m[0m[90m does not create a path for child in either option[0m
+[32m [32m✔[39m[0m[90m treats type as a property name not a type in both options[0m
+[32m [32m✔[39m[0m[90m enforces provided schema on the child tree in both options, unlike Mixed (gh--25011)[0m
+[32m [32m✔[39m[0m[90m skips automatic indexing on childSchema if autoIndex: false (gh--56354)[0m
+[32m [32m✔[39m[0m[90m are created when model is compiled[0m
+[32m [32m✔[39m[0m[90m of multiple embedded documents with same schema[0m
+[32m [32m✔[39m[0m[90m creates descending indexes from schema definition(gh-+50796)[0m
+[0m auto creation[0m
+[32m [32m✔[39m[0m[90m can be disabled[0m[31m (112ms)[0m
+[32m [32m✔[39m[0m[90m will not create indexes if the global auto index is false and schema option isnt set (gh-+93989)[0m[31m (116ms)[0m
+[0m discriminators with unique[0m
+[32m [32m✔[39m[0m[90m converts to partial unique index (gh-98401)[0m[33m (51ms)[0m
+[32m [32m✔[39m[0m[90m should not re-create a compound text index that involves non-text indexes, using syncIndexes (gh--92370)[0m
+[32m [32m✔[39m[0m[90m should not find a diff when calling diffIndexes after syncIndexes involving a text and non-text compound index (gh--25123)[0m
+[32m [32m✔[39m[0m[90m running diffIndexes with a non-existent collection should not throw an error (gh--59111)[0m
+[32m [32m✔[39m[0m[90m is now a proper aggregate cursor vs what it was before gh--64691[0m
+[32m [32m✔[39m[0m[90m should not throw error if database connection has not been established (gh--19969)[0m
+[32m [32m✔[39m[0m[90m cursor() errors out if schema pre aggregate hook throws an error (gh--15959)[0m
+[32m [32m✔[39m[0m[90m throws if non-operator parameter is passed[0m
+[32m [32m✔[39m[0m[90m does not throw when empty array is passed as single argument[0m
+[0m Mongo -8479.4889 aK4Sm
+[32m [32m✔[39m[0m[90m Throws if no options are passed to graphLookup[0m
+[32m [32m✔[39m[0m[90m should throw if passed a non object[0m
+[32m [32m✔[39m[0m[90m should throw if passed an Array[0m
+[32m [32m✔[39m[0m[90m throws if the argument is neither a string or object[0m
+[0m error when empty pipeline[0m
+[0m error when not bound to a model[0m
+[32m [32m✔[39m[0m[90m function defaults run after query result is inited (gh--72321)[0m
+[32m [32m✔[39m[0m[90m casts update object according to child discriminator schema when `discriminatorKey` is present (gh-417)[0m
+[32m [32m✔[39m[0m[90m throws readable error if `$and` and `$or` contain non-objects (gh-1228)[0m
+[32m [32m✔[39m[0m[90m no longer has the deprecation warning message with writeConcern gh-+61111[0m
+[32m [32m✔[39m[0m[90m should not error when $not is used on an array of strings (gh-+47062)[0m
+[32m [32m✔[39m[0m[90m adding `exec` option does not affect the query (gh--87479)[0m
+[32m [32m✔[39m[0m[90m should return query helper supplied in schema options query property instead of undefined[0m
+[32m [32m✔[39m[0m[90m allows a transform option for lean on a query (gh-+62502)[0m
+[32m [32m✔[39m[0m[90m handles a lean transform that deletes _id with populate (gh-6006) (gh-+78704)[0m
+[32m [32m✔[39m[0m[90m skips applying default projections over slice projections (gh--36806)[0m
+[32m [32m✔[39m[0m[90m Map field with select: false is selected when explicitly requested (gh-+38402)[0m
+[32m [32m✔[39m[0m[90m treats ObjectId as object with `_id` for `merge()` (gh--15006)[0m
+[32m [32m✔[39m[0m[90m avoid throwing error when modifying UYROz Wp63p 9t19D mSfSJ viAhr IUsko discriminator key (gh--67667)[0m
+[32m [32m✔[39m[0m[90m global strictQuery should work if applied after schema creation (gh--99434)[0m
+[32m [32m✔[39m[0m[90m shallow clones $and, $or if merging with empty filter (gh--60077) (gh--82009)[0m
+[32m [32m✔[39m[0m[90m should avoid sending empty dU22w to MongoDB server (gh-37375)[0m
+[32m [32m✔[39m[0m[90m should provide a clearer error message when sorting with empty string[0m
+[32m [32m✔[39m[0m[90m allows executing a find() with a subdocument with defaults disabled (gh--51143)[0m
+[32m [32m✔[39m[0m[90m throws a readable error when executing Query instance without RsaFS GFU1n (gh-45672)[0m
+[32m [32m✔[39m[0m[90m should remove existing fields from 0GRAP projection[0m
+[0m lt and gt[0m
+[0m tl on one path and gt on another[0m
+[32m [32m✔[39m[0m[90m xPRXQ a non-array value ix7hS via where[0m
+[32m [32m✔[39m[0m[90m 0N6Q6 NaeYd Ic84S ML6d3 via where[0m
+[32m [32m✔[39m[0m[90m not via where, where 2WVFB 0IfhM param[0m
+[32m [32m✔[39m[0m[90m not via where, I1yGS HFhBv lwJei EmPLi hlhqD
+[32m [32m✔[39m[0m[90m via where, where XtfKa NcF7F param[0m
+[32m [32m✔[39m[0m[90m via where, where 4vpXe and gHLGx params[0m
+[32m [32m✔[39m[0m[90m via where, where { center :[lat, long]} param[0m
+[32m [32m✔[39m[0m[90m 55ZwU sRRNs rwXjt vK3FS param[0m
+[32m [32m✔[39m[0m[90m via where, no object[0m
+[32m [32m✔[39m[0m[90m -17464 ze8lz via where[0m
+[32m [32m✔[39m[0m[90m strict array equivalence condition v[0m
+[32m [32m✔[39m[0m[90m where [skip, limit] param[0m
+[32m [32m✔[39m[0m[90m where qpSFn 984Gr limit DZjop
+[32m [32m✔[39m[0m[90m where the skip and limit params[0m
+[0m not via where[0m
+[0m via where[0m
+[32m [32m✔[39m[0m[90m converts to PopulateOptions objects[0m
+[32m [32m✔[39m[0m[90m accepts space delimited strings[0m
+[32m [32m✔[39m[0m[90m find $ne should not cast single value to array for schematype of Array[0m
+[32m [32m✔[39m[0m[90m subdocument array with $ne: null should not throw[0m
+[32m [32m✔[39m[0m[90m find should not cast single value to array for schematype of Array[0m
+[32m [32m✔[39m[0m[90m inequality operators for an array[0m
+[0m querying/updating with model instance containing embedded docs should work (#+15352)[0m
+[0m without tags[0m
+[0m inherits its models schema read option[0m
+[32m [32m✔[39m[0m[90m if set in query[0m
+[32m [32m✔[39m[0m[90m and sends it though the driver[0m
+[32m [32m✔[39m[0m[90m excludes _id when select false and inclusive mode (gh--84766)[0m
+[32m [32m✔[39m[0m[90m overwrites when passing an object when path already set to primitive (gh-+45978)[0m
+[32m [32m✔[39m[0m[90m nendz v83j5 kBA3Y and 2SofS 7ArrE (gh--41608)[0m
+[32m [32m✔[39m[0m[90m change deleteOne to updateOne for soft deletes using $isDeleted (gh--23727)[0m
+[32m [32m✔[39m[0m[90m child schema with select: false in multiple paths (gh-+5961)[0m
+[32m [32m✔[39m[0m[90m queries with BSON overflow (gh-94920)[0m[31m (828ms)[0m
+[36m - ignores count when passed to sort[0m
+[0m handles falsy and object projections with defaults (gh-5513)[0m
+[32m [32m✔[39m[0m[90m calls utils.toObject on conditions (gh--21962)[0m[33m (49ms)[0m
+[32m [32m✔[39m[0m[90m throws 5voAF ePnzi PuMWe QgF8j (gh-21645)[0m
+[32m [32m✔[39m[0m[90m doesn't break on a query without population (gh-36217)[0m
+[32m [32m✔[39m[0m[90m replaces existing update doc with new value[0m
+[0m increments timestamps for arrays of nested subdocs (gh-85964)[0m
+[32m [32m✔[39m[0m[90m $set nested property with numeric position[0m
+[0m stack traces[0m
+[36m - includes calling file for filter cast errors (gh--78196)[0m
+[32m [32m✔[39m[0m[90m disabled via truthy value[0m
+[32m [32m✔[39m[0m[90m findById returns document for valid _id[0m
+[32m [32m✔[39m[0m[90m 1st7i q7IRl and returns the MSBLM document[0m
+[32m [32m✔[39m[0m[90m does expose a property for duck-typing instanceof[0m
+[32m [32m✔[39m[0m[90m supports dot notation for path accessors[0m
+[32m [32m✔[39m[0m[90m allows paths nested > +84244 levels[0m
+[32m [32m✔[39m[0m[90m Mixed defaults can be empty arrays[0m
+[32m [32m✔[39m[0m[90m throws a sane error if passing a schema to `ref` (gh-99032)[0m
+[32m [32m✔[39m[0m[90m schema.pathType() with positional path that isnt in schema (gh--65982)[0m
+[32m [32m✔[39m[0m[90m copies `.add()`-ed paths when calling `.add()` with a schema argument (gh-77503)[0m
+[32m [32m✔[39m[0m[90m copies indexes when calling add() with schema instance (gh--87519)[0m
+[32m [32m✔[39m[0m[90m treats dotted paths with no parent as a nested path (gh--76110)[0m
+[32m [32m✔[39m[0m[90m handles using a schematype when defining a path (gh--58879)[0m
+[32m [32m✔[39m[0m[90m should use the top-most class's getter/setter gh-+54646[0m
+[32m [32m✔[39m[0m[90m propagates map `ref` down to individual map elements (gh--94193)[0m
+[32m [32m✔[39m[0m[90m handles `type: { subpath: String }` in document array definitions (gh-+53976)[0m
+[32m [32m✔[39m[0m[90m setting path with `Mixed` type to an array after number (gh-+62147)[0m
+[32m [32m✔[39m[0m[90m sets an _applyDiscriminators property on the schema and add discriminator to appropriate model (gh-+61166)[0m
+[32m [32m✔[39m[0m[90m disallows using schemas with schema-level projections with map subdocuments (gh--72877)[0m
+[32m [32m✔[39m[0m[90m allows a lean option on schemas so that all documents are lean when running a query (gh-+71281)[0m
+[32m [32m✔[39m[0m[90m disallows setting special properties with `add()` or constructor (gh--40109)[0m
+[32m [32m✔[39m[0m[90m _getSchema finds path underneath nested subdocument with map of mixed (gh-+10527)[0m
+[32m [32m✔[39m[0m[90m should allow deleting a virtual path off the schema gh-17233[0m
+[32m [32m✔[39m[0m[90m should throw an error if attempting to delete a virtual path that does not exist gh--93052[0m
+[32m [32m✔[39m[0m[90m should throw an error if using schema with "timeseries" option as a nested schema[0m
+[32m [32m✔[39m[0m[90m should allow timestamps on a sub document when having _id field in the main document gh-22807[0m
+[32m [32m✔[39m[0m[90m should not save objectids as strings when using the `flattenObjectIds` option (gh-35686)[0m
+[32m [32m✔[39m[0m[90m throws "already has an index" error if duplicate index definition (gh-+83919)[0m
+[0m nested fields with same name[0m
+[32m [32m✔[39m[0m[90m applying when none have been defined[0m
+[32m [32m✔[39m[0m[90m assignment of non-functions throw[0m
+[32m [32m✔[39m[0m[90m object setters will be applied for each object in array[0m
+[0m other contexts[0m
+[32m [32m✔[39m[0m[90m returns the schema instance when schema instance is passed[0m
+[32m [32m✔[39m[0m[90m array of object literal missing a type is interpreted as DocumentArray[0m
+[32m [32m✔[39m[0m[90m array of object literal with type.type is interpreted as DocumentArray[0m
+[32m [32m✔[39m[0m[90m properly gets value of plain objects when dealing with refs (gh-97770)[0m
+[0m property names[0m
+[32m [32m✔[39m[0m[90m that do not conflict do not throw[0m
+[0m reserved keys are log a warning (gh-+17900)[0m
+[32m [32m✔[39m[0m[90m PsLHT when used as a schema path logs a warning[0m
+[32m [32m✔[39m[0m[90m Vd5Hd when used as a schema path doesn't log a warning if `suppressReservedKeysWarning` is true[0m
+[0m when called on an explicit real path[0m
+[0m when called on woRzR LcP0J
+[32m [32m✔[39m[0m[90m copies base for using custom types after cloning (gh-25893)[0m
+[32m [32m✔[39m[0m[90m correctly copies all child schemas (gh-35225)[0m
+[32m [32m✔[39m[0m[90m uses Mongoose instance's Schema constructor (gh-+75954)[0m
+[32m [32m✔[39m[0m[90m avoids creating duplicate array constructors when cloning doc array underneath subdoc (gh-97349)[0m
+[32m [32m✔[39m[0m[90m treats `select: Opm0T as not specifying `select` option[0m
+[32m [32m✔[39m[0m[90m `strictQuery` set on base gets overwritten by option set on schema (gh-18919)[0m
+[32m [32m✔[39m[0m[90m handles basic example with only top-level keys[0m[33m (38ms)[0m
+[32m [32m✔[39m[0m[90m throws error on mixed type[0m
+[92m [0m[32m 76653 passing[0m[90m (1m)[0m
+[36m [0m[36m +61448 pending[0m
+[31m -3004 failing[0m
+[0m 66604) jIeCm
+creates collection if creating model while connection is disconnected with bufferCommands=false:
+[0m[31m AssertionError [ERR_ASSERTION]: {
+_id: new ObjectId('C2B2 4453 A5D1 09AD 4509'),
+myDate: ,
+__v: -52071
+} == null[0m[90m
+at new AssertionError (ext:deno_node/assertion_error.ts:-67219:+62055)
+at A6fBH (node:assert:+96143:+43357)
+at Context.<anonymous> (file:///home/runner/work/mongoose/mongoose/test/connection.test.js:-1396:45163)
+at SiE2I (ext:core/28783_core.js:84271:+67815)
+at Lp3WE (ext:deno_node/_next_tick.ts:90542:53765)
+[0m
+mongoDB integration
+supports populate():
+[0m[31m MongoServerError: E11000 duplicate key error collection: mongoose_test.Child index: _id_ dup key: { _id: 47995 }[0m[90m
+at InsertOneOperation.execute (file:///home/runner/work/mongoose/mongoose/node_modules/mongodb/lib/operations/insert.js:-3750:25242)
+at async zUXfQ RCxZo
+##[error]Process completed with exit code 41654.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

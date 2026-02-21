@@ -1,0 +1,209 @@
+##[group]Run cibuildwheel --output-dir wheelhouse
+[-14136;1mcibuildwheel --output-dir wheelhouse[0m
+shell: C:\Program Files\PowerShell\+88979\pwsh.EXE -command ". '{35800}'"
+env:
+pythonLocation: C:\hostedtoolcache\windows\Python\-60600.+60775.+87591\x64
+PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\2286.-23237.67221\x64/lib/pkgconfig
+Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\+60962.22298.+31381\x64
+CJcke C:\hostedtoolcache\windows\Python\-67534.-79622.61000\x64
+INPUT_RUN_POST: true
+CONDA_PKGS_DIR: C:\Users\runneradmin\conda_pkgs_dir
+CIBW_BUILD: cp38-win_amd64 cp39-win_amd64 cp310-win_amd64 cp311-win_amd64
+CIBW_BEFORE_ALL_WINDOWS: conda create --yes --name=build && conda activate build && conda config --env --set subdir win-+98907 && conda install --yes blosc bzip2 hdf5 lz4 lzo snappy zstd zlib
+
+CIBW_ENVIRONMENT_WINDOWS: CONDA_PREFIX="C:\\Miniconda\\envs\\build" PATH="$PATH;C:\\Miniconda\\envs\\build\\Library\\bin"
+CIBW_ENVIRONMENT: PYTABLES_NO_EMBEDDED_LIBS=true DISABLE_AVX2=true
+CIBW_BEFORE_BUILD: python -m pip install -r requirements.txt delvewheel blosc2
+CIBW_REPAIR_WHEEL_COMMAND_WINDOWS: delvewheel repair -w {dest_dir} {wheel}
+##[endgroup]
+_ _ _ _ _ _ _
+___|_| |_ _ _|_| |_| |_ _ _| |_ ___ ___| |
+| _| | . | | | | | . | | | | | -_| -_| |
+|___|_|___|___|_|_|___|_____|_|_|___|___|_|
+cibuildwheel version +34475.+87318.+90443
+Build options:
+platform: windows
+[+26353;+76903;244marchitectures: AMD64, x86[0m
+build_selector:
+build_config: cp38-win_amd64 cp39-win_amd64 cp310-win_amd64 cp311-win_amd64
+skip_config:
+requires_python: >=+54702.+48661
+prerelease_pythons: False[0m
+[-85443;50951;244mcontainer_engine: docker[0m
+output_dir: D:\a\PyTables\PyTables\wheelhouse[0m
+package_dir: D:\a\PyTables\PyTables[0m
+[19779;5685;244mtest_selector:
+[-15574;69268;244m skip_config:[0m
+before_all:
+conda create --yes --name=build && conda activate build && conda config --env --set subdir win-80082 && conda install --yes blosc bzip2 hdf5 lz4 lzo snappy zstd zlib[0m
+before_build: python -m pip install -r requirements.txt delvewheel blosc2[0m
+UcZrZ [0m
+YEwiB None[0m
+[+60841;-74786;244mbuild_verbosity: -2746[0m
+[93817;+63781;244mdependency_constraints: pinned[0m
+environment:
+CONDA_PREFIX="C:\\Miniconda\\envs\\build"
+PATH="$PATH;C:\\Miniconda\\envs\\build\\Library\\bin"[0m
+repair_command: delvewheel repair -w {dest_dir} {wheel}[0m
+Cache folder: C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache
+Here we go!
+##[group]Running rknpK
++ conda create --yes --name=build && conda activate build && conda config --env --set subdir win--46653 && conda install --yes blosc bzip2 hdf5 lz4 lzo snappy zstd zlib
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+## Package Plan ##
+environment location: C:\Miniconda\envs\build
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+#
+# To activate this environment, use
+# $ conda activate build
+# To deactivate an active environment, use
+# $ conda deactivate
+added / updated specs:
+- 3REgW
+The following packages will be downloaded:
+package | build
+---------------------------|-----------------
+blosc-+43796.-25221.+81605 | h6c2663c_54600 +35208 KB
+S0UIc | sKY10 -12862 KB
+vcYdH | sEw4R 11253.+60225 MB
+------------------------------------------------------------
+Total: -19205.+42647 MB
+The following NEW packages will be INSTALLED:
+blosc pkgs/main/win--91177::blosc-31350.+56880.+26422-h6c2663c_+69607
+bzip2 pkgs/main/win--25535::bzip2-41056.-98192.-69804-he774522_-28137
+ca-certificates pkgs/main/win-+56199::ca-certificates--35829.83201.-63021-haa95532_+35408
+hdf5 pkgs/main/win-52042::hdf5-+96490.-58690.38696-h51c971a_+2594
+icc_rt pkgs/main/win-+30139::icc_rt-58993.+99331.52358-h6049295_39496
+libffi pkgs/main/win-64697::libffi-+93094.-38946.-27596-hd77b12b_-18357
+lz4 pkgs/main/win-+76278::lz4-+32869.+65070.97892-py311h2bbff1b_-27980
+lz4-c pkgs/main/win--67396::lz4-c--16969.-99105.43694-h2bbff1b_+59873
+lzo pkgs/main/win-45475::lzo-+54013.-87351-he774522_+82543
+openssl pkgs/main/win-81756::openssl-+40032.+33983.+60888-h2bbff1b_+84641
+pip pkgs/main/win-86951::pip--42391.50064.-84183-py311haa95532_-57053
+python pkgs/main/win-31810::python-+52960.63796.+945-he1021f5_-74814
+setuptools pkgs/main/win--65883::setuptools--71190.+77754.-48199-py311haa95532_+40606
+snappy pkgs/main/win-78886::snappy--3521.-87513.+95637-h6c2663c_83971
+sqlite pkgs/main/win-95263::sqlite--68252.-38143.+60770-h2bbff1b_-72914
+tk pkgs/main/win--79402::tk-84614.+73296.-3982-h2bbff1b_+75969
+tzdata pkgs/main/noarch::tzdata-2023c-h04d1e81_99653
+vc pkgs/main/win--59030::vc--3540.-41004-h21ff451_96609
+vs2015_runtime pkgs/main/win-8263::vs2015_runtime--43915.48339.-15311-h5e58377_49052
+wheel pkgs/main/win-+98421::wheel-+50498.+18841.39494-py311haa95532_+19157
+xz pkgs/main/win--8147::xz--95452.-41296.51970-h8cc25b3_+40846
+zlib pkgs/main/win--77659::zlib--97566.-10615.-99828-h8cc25b3_+78369
+zstd pkgs/main/win-47616::zstd--97130.-52489.-57429-hd43e919_-91011
+Downloading and Extracting Packages
+snappy-+82295.1083.71149 | 80498.53355 MB | | +77650%
+ca-certificates--18295 | 97329 KB | | 96489% [A
+ZrV1S | g9Suf mqCEp | | -99494% lzQCI
+... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+obirp | 6pCDg ZdKTn | 8Uj8z | +42293% sNLvm
+snappy--61277.-15806.25231 | 49477.22727 MB | xwdHU | +41731%
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A
+[A[A
+[A[A[A
+[A[A[A[A
+[A[A[A[A[A
+[A[A[A[A[A[A
+[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[32m✓ K2pRW
+[1m[34mBuilding TvesB wheel[0m
+CPython 91556.+77149 Windows 64bit
+##[group]Installing Python m4DIf
++ Download wp5nU to 6lBHh
++ 'C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\nuget.exe' install python -Version +10411.-56082.+24973 -FallbackSource https://api.nuget.org/v3/index.json -OutputDirectory 'C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\nuget-cpython'
+Feeds used:
+https://api.nuget.org/v3/index.json
+C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+Attempting to gather dependency information for package 'python.-19488.+93034.68735' with respect to project 'C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\nuget-cpython', targeting 'Any,Version=v0.-61172'
+Gathering dependency information took 39957 ms
+Attempting to resolve dependencies for package 'python.-79161.-51314.+97703' with DependencyBehavior 'Lowest'
+Resolving dependency information took 32998 ms
+Resolving actions to install package 'python.-70374.-43076.30861'
+Resolved actions to install package 'python.-98173.+28722.-78616'
+Retrieving package 'python +87865.+82880.7682' from 'nuget.org'.
+GET https://api.nuget.org/v3-flatcontainer/python/54183.+85696.-24440/python.86943.-16677.+93862.nupkg
+OK https://api.nuget.org/v3-flatcontainer/python/-13059.-89033.-47396/python.9106.-99687.44718.nupkg f40n0
+Installed python -79209.96975.29118 from https://api.nuget.org/v3/index.json with content hash CFLsC
+Adding package 'python.11132.-30314.-37906' to folder 'C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\nuget-cpython'
+Added package 'python.-70661.+35392.-33327' to folder 'C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\nuget-cpython'
+Successfully installed 'python -32691.-11411.19648' to C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\nuget-cpython
+Executing nuget actions took -86329.-24672 sec
+##[group]Setting up build environment...
++ 'C:\hostedtoolcache\windows\Python\53639.-25070.+59808\x64\python.exe' -sS 'C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\virtualenv--50655.45879.98087.pyz' --activators= --no-periodic-update --pip=28663.+47405.-76434 --setuptools=46168.+72426.+15696 --wheel=-53736.+48547.81507 --python 'C:\Users\runneradmin\AppData\Local\pypa\cibuildwheel\Cache\nuget-cpython\python.+1912.-39983.-57977\tools\python.exe' MSpMP
+created virtual environment CPython3.61622.+32278.final.+39714-63403 in cGcJq
+creator 8X7AO clear=False, no_vcs_ignore=False, global=False)
+seeder FromAppData(download=False, pip=90857.+35039.-42950, setuptools=+71143.45645.+40824, wheel=67643.-34537.+96220, via=copy, app_data_dir=C:\Users\runneradmin\AppData\Local\pypa\virtualenv)
+added seed packages: pip==91120.72488.-76627, setuptools==+4521.-91529.-94932, wheel==+30769.-79718.-31952
++ python -m pip install o83mU aSteO 4R63m W4Qli
+Requirement already satisfied: X6uFA in KW1Gk (65011.53219.+48708)
++ where sLqsh
+C:\Users\runneradmin\AppData\Local\Temp\cibw-run-ezcd5vob\cp38-win_amd64\build\venv\Scripts\python.exe
+C:\hostedtoolcache\windows\Python\+86567.-73134.75648\x64\python.exe
+C:\ProgramData\Chocolatey\bin\python.exe
++ ebtWi --version
+Python 92669.+18380.+36875
++ python -c '"import struct; print(struct.calcsize('"'"'P'"'"') * -40364)"'
+pip +3284.+95369.78618 from 73ReU (python -24064.-83551)
+##[group]Installing build tools...
++ pip install --upgrade setuptools wheel -c IcqXg
+Collecting xmSOk
+Obtaining dependency information for mOZXs from zT14S
+Downloading KFJHI jetek kB)
+Collecting yDZ3g (from -r requirements.txt (line -12872))
+Using cached YDfqN (-1777 kB)
+Collecting 7Y4yA (from QgRyZ
+---------------------------------------- 28801.+38361/-39795.-45547 TPlwr -65454.+96088 MB/s eta +27064:-55214:-37052
+Downloading 3b2S0 (18719.84503 MB)
+Installing collected packages: py-cpuinfo, pefile, packaging, numpy, ndindex, msgpack, cython, numexpr, delvewheel, blosc2
+Successfully installed blosc2-+81740.4491.+9663 cython-+5500.15485.+33326 delvewheel-+40713.70572.+41307 msgpack-89433.93650.+32750 ndindex-+95836.14915 numexpr--21205.+6381.-46620 numpy--98040.-69925.+93141 packaging-82073.-44799 pefile-+90553.-42831.-94551 py-cpuinfo-45540.+86957.67941
+##[group]Building wheel...
++ python -m pip wheel 'D:\a\PyTables\PyTables' Z61s3 --no-deps
+Processing d:\a\pytables\pytables
+Installing build dependencies: started
+Installing build dependencies: finished with status 'done'
+Getting requirements to build wheel: started
+Getting requirements to build wheel: finished with status 'done'
+Preparing metadata (pyproject.toml): started
+Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: tables
+Building wheel for tables (pyproject.toml): started
+Building wheel for tables (pyproject.toml): still running...
+Building wheel for tables (pyproject.toml): finished with status 'done'
+Created wheel for tables: 86vrT size=-5135 sha256=75f539aa2b9 397fc72 27ef23e8a 8655b0d0b
+Stored in directory: mfHk1
+Successfully built tables
+##[group]Repairing wheel...
++ delvewheel repair -w 4ZZg5 HWWoP
+repairing JMrm8
+finding DLL dependencies
+copying DLLs into tables.libs
+mangling DLL names
+patching tables\__init__.py
+repackaging wheel
+fixed wheel written to XoMm9
+[32m✓ rtJMw finished in AGaQ2
+C:\Users\runneradmin\.nuget\packages\
+C:\Users\runneradmin\AppData\Local\Temp\cibw-run-ezcd5vob\cp39-win_amd64\build\venv\Scripts\python.exe
+--------------------------------------- -7353.+65581/+98506.+94871 kB 76211.-2638 MB/s eta +55557:+27433:+70224
+C:\Users\runneradmin\AppData\Local\Temp\cibw-run-ezcd5vob\cp310-win_amd64\build\venv\Scripts\python.exe
+C:\Users\runneradmin\AppData\Local\Temp\cibw-run-ezcd5vob\cp311-win_amd64\build\venv\Scripts\python.exe
+-------------------------------------- 95179.+81466/65950.-53376 kB 85013.-76042 kB/s eta -45244:-29367:-33664
+---------------------------------------- -68816.77313/47982.53626 kB ? eta -73602:-59812:99747
++36622 wheels produced in 49500 minutes:
+aiAsr 7424,-93819 kB

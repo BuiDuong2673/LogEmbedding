@@ -1,0 +1,42 @@
+2023-09-21T12:57:12.9075366Z ##[group]Run python -m pip install --upgrade cibuildwheel
+2023-09-21T12:57:12.9075943Z [36;1mpython -m pip install --upgrade cibuildwheel[0m
+2023-09-21T12:57:12.9147875Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2023-09-21T12:57:12.9148228Z env:
+2023-09-21T12:57:12.9148525Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:57:12.9148965Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.11.5\x64/lib/pkgconfig
+2023-09-21T12:57:12.9149390Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:57:12.9149771Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:57:12.9150176Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:57:12.9150489Z   INPUT_RUN_POST: true
+2023-09-21T12:57:12.9150801Z   CONDA_PKGS_DIR: C:\Users\runneradmin\conda_pkgs_dir
+2023-09-21T12:57:12.9151077Z ##[endgroup]
+2023-09-21T12:57:32.8315570Z Collecting cibuildwheel
+2023-09-21T12:57:32.8320378Z   Obtaining dependency information for cibuildwheel from https://files.pythonhosted.org/packages/a6/d3/6882ec437b47e7e5aca04ad1c604e06ee1c0a1c5ab0c4bebc25cfd93a4fa/cibuildwheel-2.16.0-py3-none-any.whl.metadata
+2023-09-21T12:57:33.1426091Z   Downloading cibuildwheel-2.16.0-py3-none-any.whl.metadata (22 kB)
+2023-09-21T12:57:33.2631131Z Collecting bashlex!=0.13 (from cibuildwheel)
+2023-09-21T12:57:33.2693112Z   Downloading bashlex-0.18-py2.py3-none-any.whl (69 kB)
+2023-09-21T12:57:33.3520111Z      -------------------------------------- 69.5/69.5 kB 956.4 kB/s eta 0:00:00
+2023-09-21T12:57:33.4093673Z Collecting bracex (from cibuildwheel)
+2023-09-21T12:57:33.4097087Z   Obtaining dependency information for bracex from https://files.pythonhosted.org/packages/2b/f5/8f99837b32e2badc189382774dbe6227fa01e1e928a7eff857fdc89d8a75/bracex-2.4-py3-none-any.whl.metadata
+2023-09-21T12:57:33.4165097Z   Downloading bracex-2.4-py3-none-any.whl.metadata (3.6 kB)
+2023-09-21T12:57:33.4680344Z Collecting certifi (from cibuildwheel)
+2023-09-21T12:57:33.4683606Z   Obtaining dependency information for certifi from https://files.pythonhosted.org/packages/4c/dd/2234eab22353ffc7d94e8d13177aaa050113286e93e7b40eae01fbf7c3d9/certifi-2023.7.22-py3-none-any.whl.metadata
+2023-09-21T12:57:33.4746840Z   Downloading certifi-2023.7.22-py3-none-any.whl.metadata (2.2 kB)
+2023-09-21T12:57:33.5251252Z Collecting filelock (from cibuildwheel)
+2023-09-21T12:57:33.5254361Z   Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/5e/5d/97afbafd9d584ff1b45fcb354a479a3609bd97f912f8f1f6c563cb1fae21/filelock-3.12.4-py3-none-any.whl.metadata
+2023-09-21T12:57:33.5351016Z   Downloading filelock-3.12.4-py3-none-any.whl.metadata (2.8 kB)
+2023-09-21T12:57:33.5899467Z Collecting packaging>=20.9 (from cibuildwheel)
+2023-09-21T12:57:33.5969648Z   Downloading packaging-23.1-py3-none-any.whl (48 kB)
+2023-09-21T12:57:33.6228148Z      ---------------------------------------- 48.9/48.9 kB 2.4 MB/s eta 0:00:00
+2023-09-21T12:57:33.6601725Z Collecting platformdirs (from cibuildwheel)
+2023-09-21T12:57:33.6606161Z   Obtaining dependency information for platformdirs from https://files.pythonhosted.org/packages/14/51/fe5a0d6ea589f0d4a1b97824fb518962ad48b27cd346dcdfa2405187997a/platformdirs-3.10.0-py3-none-any.whl.metadata
+2023-09-21T12:57:33.6667853Z   Downloading platformdirs-3.10.0-py3-none-any.whl.metadata (11 kB)
+2023-09-21T12:57:33.7356670Z Downloading cibuildwheel-2.16.0-py3-none-any.whl (71 kB)
+2023-09-21T12:57:33.7551839Z    ---------------------------------------- 71.1/71.1 kB 3.8 MB/s eta 0:00:00
+2023-09-21T12:57:33.7610814Z Downloading bracex-2.4-py3-none-any.whl (11 kB)
+2023-09-21T12:57:33.7792373Z Downloading certifi-2023.7.22-py3-none-any.whl (158 kB)
+2023-09-21T12:57:33.7963369Z    ---------------------------------------- 158.3/158.3 kB 9.3 MB/s eta 0:00:00
+2023-09-21T12:57:33.8021080Z Downloading filelock-3.12.4-py3-none-any.whl (11 kB)
+2023-09-21T12:57:33.8177015Z Downloading platformdirs-3.10.0-py3-none-any.whl (17 kB)
+2023-09-21T12:57:34.0297135Z Installing collected packages: platformdirs, packaging, filelock, certifi, bracex, bashlex, cibuildwheel
+2023-09-21T12:57:34.7336998Z Successfully installed bashlex-0.18 bracex-2.4 certifi-2023.7.22 cibuildwheel-2.16.0 filelock-3.12.4 packaging-23.1 platformdirs-3.10.0

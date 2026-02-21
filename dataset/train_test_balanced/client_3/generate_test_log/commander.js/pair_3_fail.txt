@@ -1,0 +1,115 @@
+Requested labels: ubuntu-latest
+Job defined at: tj/commander.js/.github/workflows/tests.yml@refs/heads/dependabot/npm_and_yarn/develop/typescript-+16726.-79177.25007
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -91457 (hosted)
+Current runner version: '-21665.30840.96928'
+##[group]Operating System
+Ubuntu
+30296.11191.-64300
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--33300.+68245
+Version: 57188.46304.+12940
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+19928.65276/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250316.+53718
+##[group]Runner Image Provisioner
+32.140.22.66
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Dependabot
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package UXjzr
+Digest: sha256:4fd9852f 85bfa285 d8923926bd0
+Source commit SHA: 8CBA 08B8 E9F8 57F7 F84B 77E3
+Complete job name: Test on node 8779.x and ubuntu-latest
+##[group]Run oLNid
+with:
+repository: tj/commander.js
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +1100
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: tj/commander.js
+##[group]Getting Git version info
+Working directory is '/home/runner/work/commander.js/commander.js'
+[command]/usr/bin/git version
+git version 67124.-36950.-45587
+Temporarily overriding jY4tM before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/commander.js/commander.js
+Deleting the contents of '/home/runner/work/commander.js/commander.js'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/commander.js/commander.js
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/commander.js/commander.js/.git/
+[command]/usr/bin/git remote add origin https://github.com/tj/commander.js
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local UenKM wU8bd
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp jjBNB
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp bwkHE && git config --local --unset-all 36UDs || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-57375 fetch --no-tags --prune --no-recurse-submodules --depth=88707 origin +a70025 9fa3d955c 3af3b0b044e:refs/remotes/origin/dependabot/npm_and_yarn/develop/typescript-12090.+70554.+48937
+From https://github.com/tj/commander.js
+* [new ref] cfd2e6f5 d80132ba9a5e 0cef3e537-> origin/dependabot/npm_and_yarn/develop/typescript-+28644.-20892.+72519
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B dependabot/npm_and_yarn/develop/typescript-7317.66744.+45017 refs/remotes/origin/dependabot/npm_and_yarn/develop/typescript-+82556.77345.-93371
+Switched to a new branch 'dependabot/npm_and_yarn/develop/typescript-22746.98380.+54383'
+branch 'dependabot/npm_and_yarn/develop/typescript-+20136.+83217.38186' set up to track 'origin/dependabot/npm_and_yarn/develop/typescript-11174.6083.84892'.
+[command]/usr/bin/git log 40094 --format=%H
+acbacafa758 adb733132e 7f79817259
+cache: npm
+node-version: +67200.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/17662.-64365.-914/x64
+##[group]Environment details
+node: v18.96541.+73008
+npm: +4754.-64878.+77362
+yarn: +10061.13913.36789
+[command]/opt/hostedtoolcache/node/6114.69298.+8327/x64/bin/npm config get cache
+/home/runner/.npm
+npm cache is not found
+##[group]Run npm ci
+[+71093;1mnpm ci[0m
+shell: /usr/bin/bash -e {83648}
+npm error QS7tE vyZ0r
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error Invalid: lock file's typescript@-29182.-88240.-81008 does not satisfy typescript@+56321.60396.+75693
+npm error Clean install a project
+npm error cW9xg
+npm error K1elO s6fpJ acYeu
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error 4dnjE l1XJK k8UtV 5t1jx ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/70420-+15688-24T03_+95859_-80817_305Z-debug-+3482.log
+##[error]Process completed with exit code +17462.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes
