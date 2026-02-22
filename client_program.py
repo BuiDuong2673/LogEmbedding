@@ -10,28 +10,34 @@ from embedding_techniques.word2vec import Word2Vec
 
 HOST = "127.0.0.1"
 PORT = 5000
-NUM_CONTEXT_WORDS = 2
 WHICH_TRAIN_SET = "train_test_balanced"
 
 class ClientProgram:
     """Handle client tasks."""
-    
-    def __init__(self, client_name: str, num_context_words: int):
+
+    def __init__(self, client_name: str, num_context_words: int, num_negative_samples: int):
         """Initialize ClientProgram class.
         
         Args:
             client_name (str): the name of the client.
             num_context_words (int): [EXPERIMENT] the number of words around central word that is considered similar.
+            num_negative_samples (int): [EXPERIMENT] the number of negative samples to use.
         """
         self.client_name = client_name
         self.word_dict = {}
         self.word_indices = []
         self.num_context_words = num_context_words
+        self.num_negative_samples = num_negative_samples
     
     def get_initial_vocab(self) -> tuple[dict, list]:
         """Get the initial word_dict and word_indices represented by global indices."""
-        vocab_extractor = VocabExtractor(client_name=self.client_name, which_train_set=WHICH_TRAIN_SET)
-        word_dict, word_indices = vocab_extractor.get_vocab(num_context_words=self.num_context_words)
+        vocab_extractor = VocabExtractor(
+            client_name=self.client_name,
+            which_train_set=WHICH_TRAIN_SET,
+            num_context_words=self.num_context_words,
+            num_negative_samples=self.num_negative_samples
+        )
+        word_dict, word_indices = vocab_extractor.get_vocab()
         return word_dict, word_indices
     
     def change_global_indices_to_internal(self, old_word_dict: dict, indice_map: dict) -> dict:
@@ -62,7 +68,7 @@ class ClientProgram:
         return new_word_dict, new_word_indices
     
     def train_word2vec(
-            self, word_dict, W1: np.array, W2: np.array, num_neg_samples: int=5,
+            self, word_dict, W1: np.array, W2: np.array,
             num_epochs: int=10, learning_rate: float=0.01) -> None:
         """Locally train a Word2Vec embedding model.
         
@@ -70,14 +76,13 @@ class ClientProgram:
             word_dict (dict): client's word dictionary.
             W1 (np.array): embedding matrix to embed words into vectors.
             W2 (np.array): context matrix (weight of the word being in a context).
-            num_neg_samples (int): number of negative samples should we consider.
             num_epochs (int): number of training epochs should we perform.
             learning_rate (float): Learning rate for the optimizer.
         """
         # Initialize word2vec model
         model = Word2Vec(W1, W2)
         # Adjust negative samples if vocabulary is small
-        actual_negative_samples = min(num_neg_samples, max(1, len(word_dict) - 2))
+        actual_negative_samples = min(self.num_negative_samples, max(1, len(word_dict) - 2))
         # Training loop
         for epoch in range(num_epochs):
             # Initialize number of pairs
@@ -110,7 +115,7 @@ class ClientProgram:
             print(f"Epoch {epoch + 1}/{num_epochs}, Average Loss: {avg_loss:.4f}")
         return avg_loss, W1, W2
     
-    def training(self, num_neg_samples: int=5, num_epochs: int=10, learning_rate: float=0.01) -> None:
+    def training(self, num_epochs: int=10, learning_rate: float=0.01) -> None:
         """Run the entire training process from Client side."""
         # Get initial vocab
         initial_word_dict, initial_word_indices = self.get_initial_vocab()
@@ -155,7 +160,6 @@ class ClientProgram:
                         word_dict=word_dict,
                         W1=initial_W1,
                         W2=initial_W2,
-                        num_neg_samples=num_neg_samples,
                         num_epochs=num_epochs,
                         learning_rate=learning_rate
                     )
@@ -199,7 +203,7 @@ if __name__ == "__main__":
         raise ValueError("Missing client name. Usage: python client_program.py <client_name>")
     client_name = sys.argv[1]
     # Call ClientProgram class to handle the traning process
-    client_program = ClientProgram(client_name=client_name, num_context_words=2)
+    client_program = ClientProgram(client_name=client_name, num_context_words=2, num_negative_samples=5)
     client_program.training(
-        num_neg_samples=5, num_epochs=3, learning_rate=0.01
+        num_epochs=3, learning_rate=0.01
     )
