@@ -325,7 +325,7 @@ class SelfTrainTester:
         print(f"Having similar generated log in top 5: {accuracy_rate:.4f}")
         # Calculate the accuracy of having most similar log in top 1
         accuracy_1_rate = accuracy_1_count / len(test_paths)
-        print(f"Having similar generated log in top 5: {accuracy_1_rate:.4f}")
+        print(f"Having similar generated log in top 1: {accuracy_1_rate:.4f}")
         print("=" * 50)
         
     def run(self):
