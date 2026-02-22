@@ -69,7 +69,7 @@ class ClientProgram:
     
     def train_word2vec(
             self, word_dict, W1: np.array, W2: np.array,
-            num_epochs: int=10, learning_rate: float=0.01) -> None:
+            num_epochs: int, learning_rate: float) -> None:
         """Locally train a Word2Vec embedding model.
         
         Args:
@@ -115,7 +115,7 @@ class ClientProgram:
             print(f"Epoch {epoch + 1}/{num_epochs}, Average Loss: {avg_loss:.4f}")
         return avg_loss, W1, W2
     
-    def training(self, num_epochs: int=10, learning_rate: float=0.01) -> None:
+    def training(self, num_epochs: int, learning_rate: float) -> None:
         """Run the entire training process from Client side."""
         # Get initial vocab
         initial_word_dict, initial_word_indices = self.get_initial_vocab()
@@ -205,5 +205,5 @@ if __name__ == "__main__":
     # Call ClientProgram class to handle the traning process
     client_program = ClientProgram(client_name=client_name, num_context_words=2, num_negative_samples=5)
     client_program.training(
-        num_epochs=3, learning_rate=0.01
+        num_epochs=3, learning_rate=0.001
     )
