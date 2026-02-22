@@ -13,12 +13,13 @@ PORT = 5000
 class CentralServerProgram:
     """Handle Central Server tasks."""
 
-    def __init__(self):
+    def __init__(self, model_name: str):
         """Initialize CentralServerProgram class."""
         self.client_list = ["client_1", "client_2", "client_3"]  # ["maryangel101", "d2klab", "logsage"]
         self.client_sockets = {}
         self.client_vocabs = {}
         self.indice_map = {}
+        self.model_name = model_name
         # Training coefficients
         self.embed_dimension = 300
         self.num_epochs = 10
@@ -44,7 +45,8 @@ class CentralServerProgram:
         print(f"Aggregated vocab: number of words: {len(indice_map)}")
 
         # Save for later inspection
-        save_path = "dataset/all_indice_map.json"
+        os.makedirs(f"models_balanced/{self.model_name}", exist_ok=True)
+        save_path = f"models_balanced/{self.model_name}/all_indice_map.json"
         with open(save_path, "w", encoding="utf-8") as json_file:
             json.dump(indice_map, json_file, indent=4, ensure_ascii=False)
         return indice_map
@@ -176,12 +178,13 @@ class CentralServerProgram:
                     print("Training completed. Sent final weights to clients.")
             
             # Save final weights
-            os.makedirs("models", exist_ok=True)
-            np.save("models/W1_word2vec.npy", W1)
-            np.save("models/W2_word2vec.npy", W2)
+            os.makedirs(f"models_balanced/{self.model_name}", exist_ok=True)
+            np.save(f"models_balanced/{self.model_name}/W1_word2vec.npy", W1)
+            np.save(f"models_balanced/{self.model_name}/W2_word2vec.npy", W2)
 
             print("Weights saved in models folder.")
 
 
 if __name__ == "__main__":
-    CentralServerProgram().run()
+    model_name = "10_3_epochs_300_dimensions_2_context_5_negative_01_learning_rate"
+    CentralServerProgram(model_name).run()
