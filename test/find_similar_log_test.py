@@ -628,7 +628,7 @@ class PreTrainTester:
         # Sort by similarity descending and take top-k
         similarities = []
         for doc, score in results:
-            similarities.append(doc.page_content, score)
+            similarities.append((doc.page_content, score))
         return similarities
     
     def run_test_for_client_google(self, client_name: str) -> None:
@@ -697,11 +697,11 @@ if __name__ == "__main__":
     test_clients = ["client_1", "client_2", "client_3"]
 
     # Test self-trained model
-    model_path = "models_balanced/20_3_epochs_300_dimensions_2_context_5_negative"
+    model_path = "models_balanced/10_3_epochs_200_dimensions_2_context_5_negative"
     train_clients = ["client_1", "client_2", "client_3"]
     self_train_tester = SelfTrainTester(train_clients=train_clients, test_clients=test_clients, model_path=model_path)
     self_train_tester.run()
 
-    # Test pretrained model
-    # pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="embeddinggemma-300m", k=5)
+    # Test pretrained model ("glove"/ "all-MiniLM-L6-v2" / "embeddinggemma-300m")
+    # pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="all-MiniLM-L6-v2", k=5)
     # pretrained_tester.run()

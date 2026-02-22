@@ -20,7 +20,7 @@ class CentralServerProgram:
         self.client_vocabs = {}
         self.indice_map = {}
         # Training coefficients
-        self.embed_dimension = 300
+        self.embed_dimension = 200
         self.num_epochs = 10
 
     def aggregate_vocab(self) -> dict:
