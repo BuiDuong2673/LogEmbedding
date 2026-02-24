@@ -186,5 +186,5 @@ class CentralServerProgram:
 
 
 if __name__ == "__main__":
-    model_name = "10_3_epochs_300_dimensions_4_context_4_negative_0001_learning_rate"
+    model_name = "10_3_epochs_300_dimensions_5_context_1_negative_0001_learning_rate"
     CentralServerProgram(model_name).run()
