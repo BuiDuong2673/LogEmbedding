@@ -203,14 +203,14 @@ class ClientProgram:
 
 if __name__ == "__main__":
     # Define the model name to save the word_dict to the model folder
-    model_name = "10_3_epochs_300_dimensions_3_context_1_negative_0001_learning_rate"
+    model_name = "10_3_epochs_300_dimensions_3_context_2_negative_0001_learning_rate"
     # Read the client name from system argument variables.
     if len(sys.argv) < 2:
         raise ValueError("Missing client name. Usage: python client_program.py <client_name>")
     client_name = sys.argv[1]
     # Call ClientProgram class to handle the traning process
     client_program = ClientProgram(
-        client_name=client_name, model_name=model_name, num_context_words=3, num_negative_samples=1)
+        client_name=client_name, model_name=model_name, num_context_words=3, num_negative_samples=2)
     client_program.training(
         num_epochs=3, learning_rate=0.001
     )
