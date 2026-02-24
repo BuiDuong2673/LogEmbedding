@@ -2,6 +2,7 @@
 import sys
 import socket
 import json
+import os
 import numpy as np
 from helper.vocab_extractor import VocabExtractor
 from helper.network_communication import send_message, receive_message
@@ -15,15 +16,17 @@ WHICH_TRAIN_SET = "train_test_balanced"
 class ClientProgram:
     """Handle client tasks."""
 
-    def __init__(self, client_name: str, num_context_words: int, num_negative_samples: int):
+    def __init__(self, client_name: str, model_name: str, num_context_words: int, num_negative_samples: int):
         """Initialize ClientProgram class.
         
         Args:
             client_name (str): the name of the client.
+            model_name (str): the name of the model.
             num_context_words (int): [EXPERIMENT] the number of words around central word that is considered similar.
             num_negative_samples (int): [EXPERIMENT] the number of negative samples to use.
         """
         self.client_name = client_name
+        self.model_name = model_name
         self.word_dict = {}
         self.word_indices = []
         self.num_context_words = num_context_words
@@ -69,7 +72,7 @@ class ClientProgram:
     
     def train_word2vec(
             self, word_dict, W1: np.array, W2: np.array,
-            num_epochs: int=10, learning_rate: float=0.01) -> None:
+            num_epochs: int, learning_rate: float) -> None:
         """Locally train a Word2Vec embedding model.
         
         Args:
@@ -115,7 +118,7 @@ class ClientProgram:
             print(f"Epoch {epoch + 1}/{num_epochs}, Average Loss: {avg_loss:.4f}")
         return avg_loss, W1, W2
     
-    def training(self, num_epochs: int=10, learning_rate: float=0.01) -> None:
+    def training(self, num_epochs: int, learning_rate: float) -> None:
         """Run the entire training process from Client side."""
         # Get initial vocab
         initial_word_dict, initial_word_indices = self.get_initial_vocab()
@@ -142,7 +145,8 @@ class ClientProgram:
             # Save the new vocab for later use
             self.word_dict = word_dict
             self.word_indices = word_indices
-            save_path = f"dataset/{self.client_name}_word_dict.json"
+            os.makedirs(f"models_balanced/{self.model_name}", exist_ok=True)
+            save_path = f"models_balanced/{self.model_name}/{self.client_name}_word_dict.json"
             with open(save_path, "w", encoding="utf-8") as json_file:
                 json.dump(word_dict, json_file, indent=4, ensure_ascii=False)
             print(f"Saved final client word dict to: {save_path}.")
@@ -198,12 +202,15 @@ class ClientProgram:
 
 
 if __name__ == "__main__":
+    # Define the model name to save the word_dict to the model folder
+    model_name = "10_3_epochs_300_dimensions_4_context_1_negative_0001_learning_rate"
     # Read the client name from system argument variables.
     if len(sys.argv) < 2:
         raise ValueError("Missing client name. Usage: python client_program.py <client_name>")
     client_name = sys.argv[1]
     # Call ClientProgram class to handle the traning process
-    client_program = ClientProgram(client_name=client_name, num_context_words=2, num_negative_samples=5)
+    client_program = ClientProgram(
+        client_name=client_name, model_name=model_name, num_context_words=4, num_negative_samples=1)
     client_program.training(
-        num_epochs=3, learning_rate=0.01
+        num_epochs=3, learning_rate=0.001
     )

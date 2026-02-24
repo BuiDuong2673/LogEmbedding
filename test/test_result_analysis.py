@@ -48,7 +48,7 @@ class TestResultAnalysis:
 
         # Regex patterns
         client_pattern = re.compile(
-            r"dataset/train_test_internal/([^/]+)/test/"
+            r"dataset/train_test_balanced/([^/]+)/test/"
         )
         true_pattern = re.compile(
             r"TRUE: included at rank (\d+)"
@@ -82,9 +82,9 @@ class TestResultAnalysis:
         """Compare the performance of the system across different learning rate."""
         # Define the path to the test result of different learning rate
         learning_rate_dict = {
-            "0.001": "test_result_2/2_clients_2_context_50_5_epochs_0001_learning_rate.txt",
-            "0.01": "test_result_2/2_clients_2_context_50_5_epochs.txt",
-            "0.1": "test_result_2/2_clients_2_context_50_5_epochs_01_learning_rate.txt"
+            "0.001": "test_result_balanced/10_3_epochs_300_dimensions_2_context_5_negative_0001_learning_rate.txt",
+            "0.01": "test_result_balanced/10_3_epochs_300_dimension_2_context_5_negative_001_learning_rate.txt",
+            "0.1": "test_result_balanced/10_3_epochs_300_dimensions_2_context_5_negative_01_learning_rate.txt"
         }
         # Prepare list of accuracies across learning rates for each client to plot
         client_results = {}
@@ -124,11 +124,11 @@ class TestResultAnalysis:
     def compare_num_context(self) -> None:
         """Compare the accuracy score across different number of context words."""
         num_context_dict = {
-            "1": "test_result_2/2_clients_1_context_50_5_epochs_001_learning_rate_5_neg.txt",
-            "2": "test_result_2/2_clients_2_context_50_5_epochs.txt",
-            "3": "test_result_2/2_clients_3_context_50_5_epochs.txt",
-            "4": "test_result_2/2_clients_4_context_50_5_epochs.txt",
-            "5": "test_result_2/2_clients_5_context_50_5_epochs.txt"
+            "1": "test_result_balanced/10_3_epochs_300_dimensions_1_context_5_negative_0001_learning_rate.txt",
+            "2": "test_result_balanced/10_3_epochs_300_dimensions_2_context_5_negative_0001_learning_rate.txt",
+            "3": "test_result_balanced/10_3_epochs_300_dimensions_3_context_5_negative_0001_learning_rate.txt",
+            "4": "test_result_balanced/10_3_epochs_300_dimensions_4_context_5_negative_0001_learning_rate.txt",
+            "5": "test_result_balanced/10_3_epochs_300_dimensions_5_context_5_negative_0001_learning_rate.txt"
         }
         # Prepare list of accuracies across learning rates for each client to plot
         client_results = {}
@@ -303,9 +303,9 @@ class TestResultAnalysis:
     def compare_models(self) -> None:
         """Compare the self-trained model with pretrained models accuracy scores."""
         model_dict = {
-            "Self-trained": "test_result_2/2_clients_2_context_50_5_epochs.txt",
-            "all-MiniLM-L6-v2": "test_result_2/all_MiniLM_L6_v2.txt",
-            "Glove": "test_result_2/glove.txt"
+            "Self-trained": "test_result_balanced/10_3_epochs_300_dimensions_1_context_5_negative_0001_learning_rate.txt",
+            "all-MiniLM-L6-v2": "test_result_balanced/all_MiniLM_L6_v2.txt",
+            "Glove": "test_result_balanced/glove.txt"
         }
         # Collect results
         client_results = {}
@@ -376,9 +376,9 @@ if __name__ == "__main__":
     #         print(f"Client: {client}. Score: {score:.4f}")
     #     print("-" * 50)
     
-    # analysis.compare_learning_rate()
-    # analysis.compare_num_context()
+    analysis.compare_learning_rate()
+    analysis.compare_num_context()
     # analysis.compare_num_neg_sample()
     # analysis.compare_num_epochs()
-    analysis.compare_num_clients()
+    # analysis.compare_num_clients()
     analysis.compare_models()
