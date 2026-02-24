@@ -53,9 +53,37 @@ def balance_dataset(origin_root, balanced_root, k, seed=42):
     print(f"Balanced dataset created with {k} clients at {balanced_root}")
 
 
+def count_files_per_client(origin_root):
+    """
+    Count and print how many files each client has in the original dataset.
+
+    origin_root: path to dataset/origin
+    """
+
+    origin_root = Path(origin_root)
+
+    # Step 1: Find all client directories
+    client_dirs = [d for d in origin_root.iterdir() if d.is_dir()]
+    if not client_dirs:
+        print("No client directories found in the origin dataset.")
+        return
+
+    # Step 2: Count .txt files for each client
+    total_files = 0
+    for client_dir in client_dirs:
+        # Count recursively all .txt files under this client
+        client_files = list(client_dir.rglob("*.txt"))
+        print(f"Client {client_dir.name}: {len(client_files)} files")
+        total_files += len(client_files)
+
+    print(f"Total .txt files in dataset: {total_files}")
+
+
 if __name__ == "__main__":
-    balance_dataset(
-        origin_root="dataset/origin",
-        balanced_root="dataset/balanced_data",
-        k=3
-    )
+    # balance_dataset(
+    #     origin_root="dataset/origin",
+    #     balanced_root="dataset/balanced_data",
+    #     k=3
+    # )
+
+    count_files_per_client("dataset/balanced_data")

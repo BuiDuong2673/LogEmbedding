@@ -118,11 +118,25 @@ class InternalTrainTestSeparator:
             print(f"  Test files:  {num_test_files}")
             print("-" * 40)
 
+    def count_train_test_split(self) -> None:
+        """Dry run: count how many files would be in train and test for each client.
+        This does NOT create any directories or copy files.
+        """
+        client_list = ["maryangel101", "d2klab", "logsage"]
+        for client in client_list:
+            train_files, test_files = self.select_train_test_files(client_name=client)
+
+            print(f"Client: {client}")
+            print(f"  Train files: {len(train_files)}")
+            print(f"  Test files:  {len(test_files)}")
+            print("-" * 40)
+
 
 if __name__ == "__main__":
     internal_train_test_separator = InternalTrainTestSeparator(
-        origin_path="dataset/balanced_data",
-        train_test_path="dataset/train_test_new"
+        origin_path="dataset/origin",
+        train_test_path="dataset/train_test_internal"
     )
-    internal_train_test_separator.create_train_test_directory()
+    # internal_train_test_separator.create_train_test_directory()
+    internal_train_test_separator.count_train_test_split()
 
