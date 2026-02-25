@@ -697,7 +697,7 @@ if __name__ == "__main__":
     test_clients = ["client_1", "client_2", "client_3"]
 
     # Test self-trained model
-    model_path = "models_balanced/10_3_epochs_300_dimensions_4_context_1_negative_0001_learning_rate"
+    model_path = "models_balanced/10_3_epochs_300_dimensions_5_context_4_negative_0001_learning_rate"
     train_clients = ["client_1", "client_2", "client_3"]
     self_train_tester = SelfTrainTester(train_clients=train_clients, test_clients=test_clients, model_path=model_path)
     self_train_tester.run()
