@@ -1,19 +1,19 @@
 """Involve test program for self-trained model and pretrained model."""
+
 import json
-from pathlib import Path
-import re
 import os
+import re
+from pathlib import Path
+
+import gensim.downloader as gensim_api
 import numpy as np
-from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer, AutoModel
 import torch
 import torch.nn.functional as F
-from huggingface_hub import login
-from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
+from langchain_core.documents import Document
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
-
-
+from sentence_transformers import SentenceTransformer
+from transformers import AutoModel, AutoTokenizer
 
 hf_token = os.getenv("HUGGINGFACE_TOKEN")
 
@@ -21,9 +21,9 @@ hf_token = os.getenv("HUGGINGFACE_TOKEN")
 class SelfTrainTester:
     """Test self-trained model ability in finding similar log."""
 
-    def __init__(self, train_clients: list[str], test_clients: list[str], model_path: str, k: int=5) -> None:
+    def __init__(self, train_clients: list[str], test_clients: list[str], model_path: str, k: int = 5) -> None:
         """Initialize SelfTrainTester.
-        
+
         Args:
             train_clients (list[str]): the list of clients involving in training.
             test_clients (list[str]): the list of clients whose datasets are used to test.
@@ -34,7 +34,7 @@ class SelfTrainTester:
         self.test_clients = test_clients
         self.model_path = model_path
         self.k_value = k
-        
+
         # Check if test_clients contains any clients that are not in train clients set
         invalid_clients = set(self.test_clients) - set(self.train_clients)
         if invalid_clients:
@@ -59,10 +59,10 @@ class SelfTrainTester:
         # Get the embedding model
         w1_path = Path(model_path) / Path("W1_word2vec.npy")
         self.W1 = np.load(w1_path)
-    
+
     def split_text_to_word(self, text: str) -> list[str]:
         """Split the given text to word so that it is searchable in the dictionary.
-        
+
         Args:
             text (str): the text which need extracting words.
         """
@@ -77,31 +77,31 @@ class SelfTrainTester:
         lines = text.splitlines()
         # Define timestampt pattern to be deleted
         timestamp_pattern = re.compile(
-            r'\d{4}-\d{2}-\d{2}'                   # YYYY-MM-DD
-            r'[T\s]'                               # T or space
-            r'\d{2}:\d{2}:\d{2}'                   # HH:MM:SS
-            r'(?:\.\d+)?'                          # optional .fractional seconds
-            r'(?:Z|[+-]\d{2}:\d{2})?'              # optional timezone (Z or +hh:mm)
-            r'\s*'                                 # trailing spaces
+            r"\d{4}-\d{2}-\d{2}"  # YYYY-MM-DD
+            r"[T\s]"  # T or space
+            r"\d{2}:\d{2}:\d{2}"  # HH:MM:SS
+            r"(?:\.\d+)?"  # optional .fractional seconds
+            r"(?:Z|[+-]\d{2}:\d{2})?"  # optional timezone (Z or +hh:mm)
+            r"\s*"  # trailing spaces
         )
         for line in lines:
             # Delete timestampt
-            line = timestamp_pattern.sub('', line).strip('\n')
+            line = timestamp_pattern.sub("", line).strip("\n")
             # Split on spaces, underscores, hyphens
-            parts = re.split(r'[\s_-]+', line)
+            parts = re.split(r"[\s_-]+", line)
             # Split camelCase
             for part in parts:
-                split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
+                split_camel = re.findall(r"[A-Z]?[a-z]+|[A-Z]+(?![a-z])", part)
                 words.update(split_camel)
         # Change the words from set to list
         words = [word.lower() for word in words if word]
         # Save the splitted text for later use
         self._word_cache[text] = words
         return words
-    
+
     def find_index_for_word_train(self, word: str, client_name: str) -> int:
         """Find the internal index corresponding to the word in case the word is from a trained client dataset.
-        
+
         Args:
             word (str): the word which need finding the index.
             client_name (str): the name of the trained client which has the word.
@@ -115,10 +115,10 @@ class SelfTrainTester:
             return -1
         word_index = word_info.get("index", -1)
         return word_index
-    
+
     def find_index_for_word_untrain(self, word: str) -> int:
         """Find the index for a word come from client who did not involve in training the model.
-        
+
         Args:
             word (str): the word to search for.
         """
@@ -133,7 +133,7 @@ class SelfTrainTester:
         if internal_index == -1:
             print(f"WARNING: word: {word} is not found in internal index.")
         return internal_index
-    
+
     def word_embedding_train(self, text: str, client_name: str) -> np.ndarray:
         """Embed the text which come from client involving in training process.
 
@@ -166,7 +166,7 @@ class SelfTrainTester:
         if word_list:
             text_vector /= len(word_list)
         return text_vector
-    
+
     def word_embedding_untrain(self, text: str) -> np.ndarray:
         """Embed the text which come from client did not involve in training process.
 
@@ -198,7 +198,7 @@ class SelfTrainTester:
         if word_list:
             text_vector /= len(word_list)
         return text_vector
-    
+
     def cosine_similarity(self, vector1: np.ndarray, vector2: np.ndarray) -> float:
         """Compute the distance between two text embeddings.
 
@@ -216,7 +216,7 @@ class SelfTrainTester:
 
     def find_k_similar_logs(self, original_vec: np.ndarray, generated_vecs: list[tuple[str, np.ndarray]]) -> str:
         """Find the most similar log in the generated logs.
-        
+
         Args:
             original_vec (np.ndarray): The vector representation of the original log.
             generated_vecs (list[tuple[str, np.ndarray]]): The list of (file_path, generated log vector) to compare against.
@@ -228,11 +228,11 @@ class SelfTrainTester:
             similarity_list.append((file_path, similarity))
         # Sort the similarity list so that the most similar log is first
         similarity_list.sort(key=lambda x: x[1], reverse=True)
-        return similarity_list[:self.k_value]
-    
+        return similarity_list[: self.k_value]
+
     def collect_all_files_from_folder(self, folder_path: str) -> list[str]:
         """Get paths to all files in a folder.
-        
+
         Args:
             folder_path (str): the path to the folder which we want to get all of its file paths.
         """
@@ -242,33 +242,30 @@ class SelfTrainTester:
         # Recursively collect all files
         file_paths = [str(path) for path in folder_path.rglob("*") if path.is_file()]
         return file_paths
-    
+
     def find_actual_similar_log_path(self, original_log_path: str) -> Path:
         """From the original log path, find the path to the generated log file which is actual similar.
-        
+
         Args:
             original_log_path (str): the path to the original log file.
         """
         original_path = Path(original_log_path)
         parts = original_path.parts
         test_idx = parts.index("test")
-        actual_similar_log_path = Path(
-            *parts[:test_idx],
-            "generate_test_log",
-            *parts[test_idx + 1:]
-        ).resolve()
+        actual_similar_log_path = Path(*parts[:test_idx], "generate_test_log", *parts[test_idx + 1 :]).resolve()
         return actual_similar_log_path
-    
+
     def run_test_for_client(self, client_name: str) -> float:
         """Run the finding similar log test for a client test data.
-        
+
         Args:
             client_name (str): the name of the client which test data is being used.
         """
         # Read the list of all test log files and generated test log files
         test_paths = self.collect_all_files_from_folder(f"dataset/train_test_balanced/{client_name}/test")
         generated_log_paths = self.collect_all_files_from_folder(
-            f"dataset/train_test_balanced/{client_name}/generate_test_log")
+            f"dataset/train_test_balanced/{client_name}/generate_test_log"
+        )
 
         # Check if client involve in training
         if client_name in self.train_clients:
@@ -299,7 +296,7 @@ class SelfTrainTester:
             else:
                 generated_vec = self.word_embedding_untrain(text=generated_log)
             generated_logs.append((generated_path, generated_vec))
-        
+
         # Initialize variables to count the accuracy time
         accuracy_count = 0
         accuracy_1_count = 0  # only in rank 1 is considered correct
@@ -327,7 +324,7 @@ class SelfTrainTester:
         accuracy_1_rate = accuracy_1_count / len(test_paths)
         print(f"Having similar generated log in top 1: {accuracy_1_rate:.4f}")
         print("=" * 50)
-        
+
     def run(self):
         for client in self.test_clients:
             self.run_test_for_client(client_name=client)
@@ -335,10 +332,10 @@ class SelfTrainTester:
 
 class PreTrainTester:
     """Test the pretrained models."""
-    
-    def __init__(self, test_clients: list[str], which_model: str, k: int=5) -> None:
+
+    def __init__(self, test_clients: list[str], which_model: str, k: int = 5) -> None:
         """Initialize PreTrainTester class.
-        
+
         Args:
             test_clients (list[str]): the list of clients whose test dataset will be used.
             which_model (str): the name of the pretrained model being tested.
@@ -347,25 +344,29 @@ class PreTrainTester:
         self.test_clients = test_clients
         self.which_model = which_model
         self.k_value = k
-        login(hf_token)
-    
+        # login(hf_token)
+
         if which_model == "glove":
             self._pretrained_model = SentenceTransformer("sentence-transformers/average_word_embeddings_glove.6B.300d")
         elif which_model == "all-MiniLM-L6-v2":
-            self._pretrained_model = AutoModel.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
-            self._tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
+            self._pretrained_model = AutoModel.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
+            self._tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L6-v2")
+        elif which_model == "fasttext":
+            self._pretrained_model = gensim_api.load("fasttext-wiki-news-subwords-300")
+        elif which_model in ["e5-base-v2", "intfloat/e5-base-v2"]:
+            self._pretrained_model = SentenceTransformer("intfloat/e5-base-v2")
         elif which_model == "embeddinggemma-300m":
             self._embedder = HuggingFaceEmbeddings(
                 model_name="google/embeddinggemma-300m",
                 query_encode_kwargs={"prompt_name": "query"},
-                encode_kwargs={"prompt_name": "document"}
+                encode_kwargs={"prompt_name": "document"},
             )
         else:
             raise ValueError(f"We do not have this model '{which_model}'.")
-    
+
     def split_text_to_word(self, text: str) -> list[str]:
         """Split the given text to word so that it is searchable in the dictionary.
-        
+
         Args:
             text (str): the text which need extracting words.
         """
@@ -380,28 +381,28 @@ class PreTrainTester:
         lines = text.splitlines()
         # Define timestampt pattern to be deleted
         timestamp_pattern = re.compile(
-            r'\d{4}-\d{2}-\d{2}'                   # YYYY-MM-DD
-            r'[T\s]'                               # T or space
-            r'\d{2}:\d{2}:\d{2}'                   # HH:MM:SS
-            r'(?:\.\d+)?'                          # optional .fractional seconds
-            r'(?:Z|[+-]\d{2}:\d{2})?'              # optional timezone (Z or +hh:mm)
-            r'\s*'                                 # trailing spaces
+            r"\d{4}-\d{2}-\d{2}"  # YYYY-MM-DD
+            r"[T\s]"  # T or space
+            r"\d{2}:\d{2}:\d{2}"  # HH:MM:SS
+            r"(?:\.\d+)?"  # optional .fractional seconds
+            r"(?:Z|[+-]\d{2}:\d{2})?"  # optional timezone (Z or +hh:mm)
+            r"\s*"  # trailing spaces
         )
         for line in lines:
             # Delete timestampt
-            line = timestamp_pattern.sub('', line).strip('\n')
+            line = timestamp_pattern.sub("", line).strip("\n")
             # Split on spaces, underscores, hyphens
-            parts = re.split(r'[\s_-]+', line)
+            parts = re.split(r"[\s_-]+", line)
             # Split camelCase
             for part in parts:
-                split_camel = re.findall(r'[A-Z]?[a-z]+|[A-Z]+(?![a-z])', part)
+                split_camel = re.findall(r"[A-Z]?[a-z]+|[A-Z]+(?![a-z])", part)
                 words.update(split_camel)
         # Change the words from set to list
         words = [word.lower() for word in words if word]
         # Save the splitted text for later use
         self._word_cache[text] = words
         return words
-    
+
     def split_text_to_sentences(self, text: str) -> list[str]:
         """Split log into sentences with timestampt deleted.
 
@@ -417,18 +418,18 @@ class PreTrainTester:
         lines = text.splitlines()
         # Define timestampt pattern to be deleted
         timestamp_pattern = re.compile(
-            r'\d{4}-\d{2}-\d{2}'                   # YYYY-MM-DD
-            r'[T\s]'                               # T or space
-            r'\d{2}:\d{2}:\d{2}'                   # HH:MM:SS
-            r'(?:\.\d+)?'                          # optional .fractional seconds
-            r'(?:Z|[+-]\d{2}:\d{2})?'              # optional timezone (Z or +hh:mm)
-            r'\s*'                                 # trailing spaces
+            r"\d{4}-\d{2}-\d{2}"  # YYYY-MM-DD
+            r"[T\s]"  # T or space
+            r"\d{2}:\d{2}:\d{2}"  # HH:MM:SS
+            r"(?:\.\d+)?"  # optional .fractional seconds
+            r"(?:Z|[+-]\d{2}:\d{2})?"  # optional timezone (Z or +hh:mm)
+            r"\s*"  # trailing spaces
         )
         # filtered timestampt lines
         new_lines = set()
         for line in lines:
             # Delete timestampt
-            line = timestamp_pattern.sub('', line).strip('\n')
+            line = timestamp_pattern.sub("", line).strip("\n")
             new_lines.update(line)
         # Save the splitted text for later use
         self._sentence_cache[text] = list(new_lines)
@@ -437,7 +438,7 @@ class PreTrainTester:
     def glove_embedding(self, text: str) -> np.ndarray:
         """Embed the log using glove model.
         Source: https://huggingface.co/sentence-transformers/average_word_embeddings_glove.6B.300d
-        
+
         Args:
             text (str): the log to be embedded into vector.
         """
@@ -446,11 +447,11 @@ class PreTrainTester:
             return np.zeros(300, dtype=np.float32)
         embeddings = self._pretrained_model.encode(sentences)
         return embeddings.mean(axis=0)
-    
+
     def all_MiniLM_L6_v2_embedding(self, text: str) -> np.ndarray:
         """Embed the log using all-MiniLM-L6-v2 model.
         Source: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
-        
+
         Args:
             text (str): the text to be embedded.
         """
@@ -459,12 +460,7 @@ class PreTrainTester:
         if not sentences:
             return np.zeros(384, dtype=np.float32)
 
-        encoded_input = self._tokenizer(
-            sentences,
-            padding=True,
-            truncation=True,
-            return_tensors="pt"
-        )
+        encoded_input = self._tokenizer(sentences, padding=True, truncation=True, return_tensors="pt")
 
         with torch.no_grad():
             model_output = self._pretrained_model(**encoded_input)
@@ -473,18 +469,72 @@ class PreTrainTester:
         attention_mask = encoded_input["attention_mask"]
 
         input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
-        sentence_embeddings = torch.sum(
-            token_embeddings * input_mask_expanded, 1
-        ) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
+        sentence_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(
+            input_mask_expanded.sum(1), min=1e-9
+        )
 
         sentence_embeddings = F.normalize(sentence_embeddings, p=2, dim=1)
 
         # Aggregate sentence embeddings into ONE log embedding
         return sentence_embeddings.mean(dim=0).cpu().numpy()
-    
+
+    def fasttext_embedding(self, text: str) -> np.ndarray:
+        """Embed the log using fastText model.
+        Source: https://github.com/facebookresearch/fastText/blob/main/docs/crawl-vectors.md
+
+        Args:
+            text (str): the text to be embedded.
+        """
+        words = self.split_text_to_word(text=text)
+        if not words:
+            return np.zeros(300, dtype=np.float32)
+
+        word_embeddings = []
+        for word in words:
+            try:
+                word_embeddings.append(self._pretrained_model.get_vector(word))
+            except KeyError:
+                continue
+
+        if not word_embeddings:
+            return np.zeros(300, dtype=np.float32)
+
+        return np.mean(np.array(word_embeddings), axis=0)
+
+    def e5_base_v2_embedding(self, text: str) -> np.ndarray:
+        """Embed the log using E5-base-v2 model.
+        Source: https://huggingface.co/intfloat/e5-base-v2
+
+        Args:
+            text (str): the text to be embedded.
+        """
+        lines = text.splitlines()
+        timestamp_pattern = re.compile(
+            r"\d{4}-\d{2}-\d{2}"
+            r"[T\s]"
+            r"\d{2}:\d{2}:\d{2}"
+            r"(?:\.\d+)?"
+            r"(?:Z|[+-]\d{2}:\d{2})?"
+            r"\s*"
+        )
+        cleaned_lines = []
+        for line in lines:
+            line = timestamp_pattern.sub("", line).strip()
+            if line:
+                cleaned_lines.append(line)
+
+        cleaned_text = " ".join(cleaned_lines).strip()
+        if not cleaned_text:
+            return np.zeros(768, dtype=np.float32)
+
+        embedding = self._pretrained_model.encode(
+            [f"passage: {cleaned_text}"], normalize_embeddings=True, convert_to_numpy=True
+        )
+        return embedding[0]
+
     def embedding_model(self, text: str, which_model: str) -> np.ndarray:
         """Using the selected model for embedding the text.
-        
+
         Args:
             text (str): the log to be embedded into vector.
             which_model (str): the name of the pretrained embedding model.
@@ -493,7 +543,12 @@ class PreTrainTester:
             return self.glove_embedding(text=text)
         elif which_model == "all-MiniLM-L6-v2":
             return self.all_MiniLM_L6_v2_embedding(text=text)
-    
+        elif which_model == "fasttext":
+            return self.fasttext_embedding(text=text)
+        elif which_model in ["e5-base-v2", "intfloat/e5-base-v2"]:
+            return self.e5_base_v2_embedding(text=text)
+        raise ValueError(f"We do not have this model '{which_model}'.")
+
     def cosine_similarity(self, vector1: np.ndarray, vector2: np.ndarray) -> float:
         """Compute the distance between two text embeddings.
 
@@ -511,7 +566,7 @@ class PreTrainTester:
 
     def find_k_similar_logs(self, original_vec: np.ndarray, generated_vecs: list[tuple[str, np.ndarray]]):
         """Find the most similar log in the generated logs.
-        
+
         Args:
             original_vec (np.ndarray): The vector representation of the original log.
             generated_vecs (list[tuple[str, np.ndarray]]): The list of (file_path, generated log vector) to compare against.
@@ -523,11 +578,11 @@ class PreTrainTester:
             similarity_list.append((file_path, similarity))
         # Sort the similarity list so that the most similar log is first
         similarity_list.sort(key=lambda x: x[1], reverse=True)
-        return similarity_list[:self.k_value]
-    
+        return similarity_list[: self.k_value]
+
     def collect_all_files_from_folder(self, folder_path: str) -> list[str]:
         """Get paths to all files in a folder.
-        
+
         Args:
             folder_path (str): the path to the folder which we want to get all of its file paths.
         """
@@ -537,33 +592,30 @@ class PreTrainTester:
         # Recursively collect all files
         file_paths = [str(path) for path in folder_path.rglob("*") if path.is_file()]
         return file_paths
-    
+
     def find_actual_similar_log_path(self, original_log_path: str) -> Path:
         """From the original log path, find the path to the generated log file which is actual similar.
-        
+
         Args:
             original_log_path (str): the path to the original log file.
         """
         original_path = Path(original_log_path)
         parts = original_path.parts
         test_idx = parts.index("test")
-        actual_similar_log_path = Path(
-            *parts[:test_idx],
-            "generate_test_log",
-            *parts[test_idx + 1:]
-        ).resolve()
+        actual_similar_log_path = Path(*parts[:test_idx], "generate_test_log", *parts[test_idx + 1 :]).resolve()
         return actual_similar_log_path
-    
+
     def run_test_for_client(self, client_name: str) -> float:
         """Run the finding similar log test for a client test data.
-        
+
         Args:
             client_name (str): the name of the client which test data is being used.
         """
         # Read the list of all test log files and generated test log files
         test_paths = self.collect_all_files_from_folder(f"dataset/train_test_balanced/{client_name}/test")
         generated_log_paths = self.collect_all_files_from_folder(
-            f"dataset/train_test_balanced/{client_name}/generate_test_log")
+            f"dataset/train_test_balanced/{client_name}/generate_test_log"
+        )
 
         # Collect all original logs and get their embedding.
         original_logs = []
@@ -582,7 +634,7 @@ class PreTrainTester:
                 generated_log = file.read()
             generated_vec = self.embedding_model(text=generated_log, which_model=self.which_model)
             generated_logs.append((generated_path, generated_vec))
-        
+
         # Initialize variables to count the accuracy time
         accuracy_count = 0
         accuracy_1_count = 0  # only in rank 1 is considered correct
@@ -610,11 +662,11 @@ class PreTrainTester:
         accuracy_1_rate = accuracy_1_count / len(test_paths)
         print(f"Having similar generated log in top 1: {accuracy_1_rate:.4f}")
         print("=" * 50)
-    
+
     def google_similarity(self, original_log: str, generated_logs: list[tuple[str, str]]):
         """Find the most similar log in the generated logs.
         Source: https://huggingface.co/blog/embeddinggemma
-        
+
         Args:
             original_log (str): The original log.
             generated_logs (list[tuple[str, str]]): The list of (file_path, generated log) to compare against.
@@ -630,17 +682,18 @@ class PreTrainTester:
         for doc, score in results:
             similarities.append((doc.page_content, score))
         return similarities
-    
+
     def run_test_for_client_google(self, client_name: str) -> None:
         """Run the test specifically for google model, since it has indepdent functions.
-        
+
         Args:
             client_name (str): the name of the client whose dataset being tested.
         """
         # Read the list of all test log files and generated test log files
         test_paths = self.collect_all_files_from_folder(f"dataset/train_test_balanced/{client_name}/test")
         generated_log_paths = self.collect_all_files_from_folder(
-            f"dataset/train_test_balanced/{client_name}/generate_test_log")
+            f"dataset/train_test_balanced/{client_name}/generate_test_log"
+        )
         # Collect all original logs and get their embedding.
         original_logs = []
         for test_path in test_paths:
@@ -682,7 +735,6 @@ class PreTrainTester:
         print(f"Having similar generated log in top 1: {accuracy_1_rate:.4f}")
         print("=" * 50)
 
-        
     def run(self):
         if self.which_model == "embeddinggemma-300m":
             for client in self.test_clients:
@@ -690,7 +742,6 @@ class PreTrainTester:
         else:
             for client in self.test_clients:
                 self.run_test_for_client(client_name=client)
-        
 
 
 if __name__ == "__main__":
@@ -699,9 +750,9 @@ if __name__ == "__main__":
     # Test self-trained model
     model_path = "models_balanced/10_3_epochs_300_dimensions_5_context_4_negative_0001_learning_rate"
     train_clients = ["client_1", "client_2", "client_3"]
-    self_train_tester = SelfTrainTester(train_clients=train_clients, test_clients=test_clients, model_path=model_path)
-    self_train_tester.run()
+    # self_train_tester = SelfTrainTester(train_clients=train_clients, test_clients=test_clients, model_path=model_path)
+    # self_train_tester.run()
 
-    # Test pretrained model ("glove"/ "all-MiniLM-L6-v2" / "embeddinggemma-300m")
-    # pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="all-MiniLM-L6-v2", k=5)
-    # pretrained_tester.run()
+    # Test pretrained model ("glove"/ "all-MiniLM-L6-v2" / "fasttext" / "e5-base-v2" / "embeddinggemma-300m")
+    pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="e5-base-v2", k=5)
+    pretrained_tester.run()
