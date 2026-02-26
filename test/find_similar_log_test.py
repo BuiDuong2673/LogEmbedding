@@ -754,5 +754,5 @@ if __name__ == "__main__":
     # self_train_tester.run()
 
     # Test pretrained model ("glove"/ "all-MiniLM-L6-v2" / "fasttext" / "e5-base-v2" / "embeddinggemma-300m")
-    pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="e5-base-v2", k=5)
+    pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="fasttext", k=5)
     pretrained_tester.run()
