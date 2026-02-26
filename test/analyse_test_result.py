@@ -63,7 +63,6 @@ class TestResultAnalyzer:
     def get_each_client_accuracy(self, file_path: str) -> dict[str, tuple[float, float]]:
         """Get the mean accuracy and standard deviation for each client plus the total average."""
         client_accuracies = self.get_ranking_scores(file_path)
-        print(f"Client accuracies for {file_path}: {client_accuracies}")
         
         all_scores = []
         processed_results = {}
@@ -128,7 +127,8 @@ class TestResultAnalyzer:
         pretrained_files = [
             "test_result_balanced/glove.txt",
             "test_result_balanced/all_MiniLM_L6_v2.txt",
-            "test_result_balanced/e5-base-v2.txt"
+            "test_result_balanced/e5-base-v2.txt",
+            "test_result_balanced/fasttext.txt"
         ]
         for file_path in file_paths:
             file_name = os.path.basename(file_path).replace(".txt", "")
@@ -291,16 +291,14 @@ class TestResultAnalyzer:
             ) -> None:
         """Draw the matrix experiment results for a specific client or 'All'."""
         
-        # 1. Prepare the grid (Contexts on Y-axis, Negatives on X-axis)
-        # Reverse contexts so larger values are at the top, or keep as is for 1 at the bottom
+        # Collect the possible context window size and number of negative samples
         contexts = sorted(possible_context_window, reverse=True)
         negatives = sorted(possible_negative_samples)
         
         grid = np.zeros((len(contexts), len(negatives)))
-        # To store std for annotation later
         std_grid = np.zeros((len(contexts), len(negatives)))
 
-        # 2. Fill the grid
+        # Collect the possible combinations and their test results
         for i, context in enumerate(contexts):
             for j, negative in enumerate(negatives):
                 key = (fixed_central_server_epochs, fixed_client_epochs,
@@ -312,7 +310,7 @@ class TestResultAnalyzer:
                 grid[i, j] = mean
                 std_grid[i, j] = std
 
-        # 3. Plotting
+        # Plot
         fig, ax = plt.subplots(figsize=(len(negatives) + 2, len(contexts) + 2))
         cax = ax.matshow(grid, cmap="viridis")
 
@@ -324,7 +322,7 @@ class TestResultAnalyzer:
                 
                 if mean > 0:
                     text = f"{mean:.2f}±{std:.2f}"
-                    # Dynamic text color for readability
+                    # Define the text color
                     if client == "client_1":
                         text_color = "white" if mean <= 0.85 else "black"
                     elif client == "client_2":
@@ -335,7 +333,7 @@ class TestResultAnalyzer:
                 else:
                     ax.text(j, i, "-", ha="center", va="center", color="white")
 
-        # Add bold black gridlines
+        # Add colors for cell borders
         for i in range(len(contexts)):
             for j in range(len(negatives)):
                 rect = plt.Rectangle((j - 0.5, i - 0.5), 1, 1, fill=False, edgecolor='white', linewidth=2)
@@ -364,7 +362,65 @@ class TestResultAnalyzer:
         os.makedirs(save_dir, exist_ok=True)
         plt.savefig(f"{save_dir}/matrix_experiment_{client}.pdf")
         plt.close()
+
+    def draw_model_comparison_experiment(
+            self, accuracy_scores: dict[str, dict[str, tuple[float, float]]],
+            best_trained_model_parameters: tuple[int, int, int, int, int, float],
+            pretrained_model_lists: list[str],
+            client_list: list[str]
+            ) -> None:
+        """Compare the best self-trained model with pretrained models using a grouped bar plot."""
         
+        # Collecting model accuracy results
+        model_names = ["self-trained"] + pretrained_model_lists
+        plot_data = {name: [] for name in model_names}
+        error_data = {name: [] for name in model_names}
+
+        for client in client_list:
+            # Get self-trained model result
+            st_mean, st_std = accuracy_scores.get(f"{best_trained_model_parameters}", {}).get(client, (0.0, 0.0))
+            plot_data["self-trained"].append(st_mean)
+            error_data["self-trained"].append(st_std)
+
+            # Get pretrained model results
+            for model in pretrained_model_lists:
+                p_mean, p_std = accuracy_scores.get(model, {}).get(client, (0.0, 0.0))
+                plot_data[model].append(p_mean)
+                error_data[model].append(p_std)
+
+        # Plotting the results of the models for each client
+        x = np.arange(len(client_list))
+        width = 0.2
+        multiplier = 0
+
+        fig, ax = plt.subplots(figsize=(8, 5))
+
+        # Create model bars in each client
+        for model_name in model_names:
+            offset = width * multiplier
+            means = plot_data[model_name]
+            stds = error_data[model_name]
+            
+            # Plot bars with error bars (yerr) for the std deviation
+            rects = ax.bar(x + offset, means, width, label=model_name, yerr=stds, capsize=4)
+            
+            # Add text labels on top of bars
+            ax.bar_label(rects, padding=3, fmt='%.2f', fontsize=8)
+            multiplier += 1
+
+        ax.set_ylabel('Mean Accuracy')
+        ax.set_title('Best Self-Trained vs. Pretrained Models')
+        ax.set_xticks(x + (width * (len(model_names) - 1) / 2))
+        ax.set_xticklabels(client_list)
+        ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.15), ncol=len(model_names))
+        # ax.set_ylim(0, 1.5)
+        
+        # plt.grid(axis='y', linestyle='--', alpha=0.7)
+        plt.tight_layout()
+
+        os.makedirs("test_analysis_result", exist_ok=True)
+        plt.savefig("test_analysis_result/model_comparison_experiment.pdf")
+        plt.close()
 
 def main_balance() -> None:
     """Do statistical analysis of the tests with balanced dataset."""
@@ -372,11 +428,17 @@ def main_balance() -> None:
     all_files = analyzer.get_all_files_in_folder()
     # all_scores = analyzer.get_ranking_score_for_all_files(all_files)
     accuracy_scores = analyzer.get_accuracy_score_for_all_files(all_files)
+    print(accuracy_scores)
     # analyzer.draw_learning_rate_experiment(accuracy_scores)
     # analyzer.draw_dimension_experiment(accuracy_scores)
-    analyzer.draw_matrix_experiment("client_1", accuracy_scores)
-    analyzer.draw_matrix_experiment("client_2", accuracy_scores)
-    analyzer.draw_matrix_experiment("client_3", accuracy_scores)
+    # analyzer.draw_matrix_experiment("client_1", accuracy_scores)
+    # analyzer.draw_matrix_experiment("client_2", accuracy_scores)
+    # analyzer.draw_matrix_experiment("client_3", accuracy_scores)
+
+    best_trained_model_parameters = (10, 3, 300, 1, 1, 0.001)
+    pretrained_model_lists = ["glove", "all_MiniLM_L6_v2", "fasttext"] # "e5-base-v2"
+    client_list = ["client_1", "client_2", "client_3"]
+    analyzer.draw_model_comparison_experiment(accuracy_scores, best_trained_model_parameters, pretrained_model_lists, client_list)
 
 if __name__ == "__main__":
     main_balance()
