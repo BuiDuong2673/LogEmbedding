@@ -1,0 +1,91 @@
+Requested labels: ubuntu-latest
+Job defined at: bigskysoftware/htmx/dynamic/dependabot/dependabot-updates@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +83512 (hosted)
+Current runner version: '76947.+17015.97190'
+##[group]Operating System
+Ubuntu
++79203.+18823.2372
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+49825.-32713
+Version: -96590.-77100.-13277
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/35224.33036/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250209.23644
+##[group]Runner Image Provisioner
+59.33.173.173
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:5c1e3c37d be6844d363 5e101b45037)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job-+62743-+19400
+[+22455;1mmkdir -p ./dependabot-job--5778-+63316[0m
+shell: /usr/bin/bash -e {22357}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: 65721
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: +72929
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image YSoy1 48554)...
+Pulled image FxxZh
+Starting update process
+Created proxy container: 21808db d98d041faca2 94806fa6f05 ea65d730 04561e9
+Created container: 2A7C 298E DFC3 4AFA
+proxy | -31682/-33185/30484 -79537:-35275:16155 aMUfZ TcHCP skR2r gynQn
+proxy | -37856/+13371/-26052 +27543:-47278:1395 Listening (:8470)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | +89093 added, -98262 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | 94026/+43375/-63727 +92542:-73876:+78628 INFO <job_17036> YD75q AZvbl UtDel
+-25980/197/60443 52905:-6632:+30012 INFO <job_+14238> JrOy0 vaPtr 3bLOL KFd8G mJpX3 gewG1
+updater | 80829/+95675/-58356 -95722:+53955:-8041 INFO <job_-80609> Started process PID: +64004 with command: {} git rKGvU gT7xd fSjuw 1bdLN xEyxm Ys6ro {}
+updater | -86675/35708/23877 +60248:42504:-75561 INFO <job_-12499> 5kmjz z9zT2 qr52V pRSHq with wqCIH 6hnv2 mJpPY LphK4 2pcae
+updater | 52928/-65286/+6287 +24197:+50820:-45512 INFO <job_4888> zuOCo vpHqI f1HUz NoF4z PCSGH
+updater | -74693/+80991/14056 72834:51058:71876 INFO <job_-16409> Started process PID: +19144 with command: {} git config --global EOg7e url.https://github.com/.insteadOf 5vnXr {}
++31763/+40049/+98354 +53565:+26649:16355 INFO <job_96363> WM3Ok lskbN BGGW1 B598M OaKO3
+updater | -23494/+18504/+48482 56558:+26576:+10496 INFO <job_31514> Started process PID: 12510 with command: {} ZN6tn ZrnE0 kZ3TR X8b7r llGhZ UyThX EWtyt ehnjm 8Q88i {}
+proxy | 78056/-37174/32410 -68195:-30521:-69996 [29214] FjJNe 6jIVV
+-34963/-8173/-16768 +97186:70960:-70196 [+27077] * authenticating git server request (host: github.com)
+updater | 22106/66444/-43092 +98646:67787:+8713 INFO <job_+39983> Started process PID: 16977 with command: {} git AJZ1V rMKZ5 3sLfE vQbZ3 {}
+updater | 96934/+73500/+56294 46749:-80246:+30247 INFO <job_+48545> Started process PID: 53485 with command: {} sCLbs a9fqc 3wIBF {}
+updater | 58445/-27956/-29475 64052:59748:46999 INFO <job_+17484> b1XGh ApaMd rI1p8 yT4vB
+updater | 69271/23439/84301 -60725:+63654:-50191 INFO <job_90598> a9Yhu aqhIs Q0ZT6 JoJMU 84QmC RU5Hd
+updater | 40864/+61876/+28903 7332:-10840:82901 INFO <job_21679> E0TYT JmTi0 rO7Y3 ssFCF lTvOa wMuUV PIde1 0o1WY
+63961/-95630/-7994 -32925:+19006:+35387 [22645] -45960 zn989
++93405/-71361/+36786 62390:+24380:-85345 [+2647] * authenticating github api request with token for api.github.com
+updater | -91019/81355/65216 54342:+18888:90768 INFO Results:
++--------------------------------------------------------------------------------------------------------------------------+
+| Changes to Dependabot Pull Requests |
++---------+----------------------------------------------------------------------------------------------------------------+
+| created | serialize-javascript ( from +2842.82404.46722 to -419.7287.+61298 ), mocha ( from -74693.-19338.29469 to 34326.49712.-24351 ), mocha ( from -28443.+8702.-86792 to 5166.+92782.17051 ) |
+Cleaned up container d6ba930e135 68458fe033d 5389b4b6bb
+6472/-97524/+19765 +19079:+54665:-9318 Posting metrics to remote API endpoint
+🤖 ~ finished ~
+Post job cleanup.
+Cleaning up orphan processes

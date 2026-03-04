@@ -1,0 +1,454 @@
+2023-09-21T12:56:00.8614399Z ##[group]Run conda-incubator/setup-miniconda@v2
+2023-09-21T12:56:00.8614927Z with:
+2023-09-21T12:56:00.8615278Z   channels: defaults,conda-forge
+2023-09-21T12:56:00.8615568Z   use-only-tar-bz2: true
+2023-09-21T12:56:00.8616091Z   activate-environment: test
+2023-09-21T12:56:00.8616434Z   auto-activate-base: true
+2023-09-21T12:56:00.8616980Z   auto-update-conda: false
+2023-09-21T12:56:00.8617288Z   remove-profiles: true
+2023-09-21T12:56:00.8617644Z   architecture: x64
+2023-09-21T12:56:00.8618002Z   clean-patched-environment-file: true
+2023-09-21T12:56:00.8618304Z   run-post: true
+2023-09-21T12:56:00.8618609Z env:
+2023-09-21T12:56:00.8619167Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:56:00.8619595Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.11.5\x64/lib/pkgconfig
+2023-09-21T12:56:00.8620080Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:56:00.8620529Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:56:00.8621090Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.11.5\x64
+2023-09-21T12:56:00.8621442Z ##[endgroup]
+2023-09-21T12:56:01.0692261Z ##[group]Gathering Inputs...
+2023-09-21T12:56:01.0747003Z ##[endgroup]
+2023-09-21T12:56:01.0752850Z ##[group]Creating bootstrap condarc file in C:\Users\runneradmin\.condarc...
+2023-09-21T12:56:01.0788392Z ##[endgroup]
+2023-09-21T12:56:01.0811458Z ##[group]Ensuring installer...
+2023-09-21T12:56:01.0838102Z Can we use bundled Miniconda?
+2023-09-21T12:56:01.0853272Z ... will use bundled Miniconda.
+2023-09-21T12:56:01.0854067Z ##[endgroup]
+2023-09-21T12:56:01.0854769Z ##[group]Setup environment variables...
+2023-09-21T12:56:01.0855263Z Add "C:\Miniconda\condabin" to PATH
+2023-09-21T12:56:01.0856122Z ##[endgroup]
+2023-09-21T12:56:01.0856707Z ##[group]Parsing environment...
+2023-09-21T12:56:01.0857422Z ##[endgroup]
+2023-09-21T12:56:01.0858265Z ##[group]Configuring conda package cache...
+2023-09-21T12:56:01.2628796Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --add pkgs_dirs C:\Users\runneradmin\conda_pkgs_dir"
+2023-09-21T12:56:55.3627618Z ##[endgroup]
+2023-09-21T12:56:55.3628693Z ##[group]Applying initial configuration...
+2023-09-21T12:56:55.3633708Z Adding channel 'conda-forge'
+2023-09-21T12:56:55.3645583Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --add channels conda-forge"
+2023-09-21T12:56:56.1307424Z Adding channel 'defaults'
+2023-09-21T12:56:56.1317224Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --add channels defaults"
+2023-09-21T12:56:56.8187051Z Warning: 'defaults' already in 'channels' list, moving to the top
+2023-09-21T12:56:56.8946125Z auto_activate_base: true
+2023-09-21T12:56:56.8953002Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --set auto_activate_base true"
+2023-09-21T12:56:57.6538558Z auto_update_conda: false
+2023-09-21T12:56:57.6547812Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --set auto_update_conda false"
+2023-09-21T12:56:58.4332976Z use_only_tar_bz2: true
+2023-09-21T12:56:58.4341519Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --set use_only_tar_bz2 true"
+2023-09-21T12:56:59.1970654Z always_yes: true
+2023-09-21T12:56:59.1981490Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --set always_yes true"
+2023-09-21T12:56:59.9784108Z changeps1: false
+2023-09-21T12:56:59.9807584Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --set changeps1 false"
+2023-09-21T12:57:00.7630982Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --show-sources"
+2023-09-21T12:57:01.4570514Z ==> C:\Users\runneradmin\.condarc <==
+2023-09-21T12:57:01.4571462Z auto_update_conda: False
+2023-09-21T12:57:01.4572049Z auto_activate_base: True
+2023-09-21T12:57:01.4572491Z notify_outdated_conda: False
+2023-09-21T12:57:01.4577310Z changeps1: False
+2023-09-21T12:57:01.4577763Z pkgs_dirs:
+2023-09-21T12:57:01.4578634Z   - C:\Users\runneradmin\conda_pkgs_dir
+2023-09-21T12:57:01.4579074Z channels:
+2023-09-21T12:57:01.4579550Z   - defaults
+2023-09-21T12:57:01.4580090Z   - conda-forge
+2023-09-21T12:57:01.4580479Z use_only_tar_bz2: True
+2023-09-21T12:57:01.4580914Z always_yes: True
+2023-09-21T12:57:01.4581217Z 
+2023-09-21T12:57:01.5363853Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat config --show"
+2023-09-21T12:57:02.3526383Z add_anaconda_token: True
+2023-09-21T12:57:02.3527194Z add_pip_as_python_dependency: True
+2023-09-21T12:57:02.3527877Z aggressive_update_packages:
+2023-09-21T12:57:02.3528727Z   - ca-certificates
+2023-09-21T12:57:02.3529239Z   - certifi
+2023-09-21T12:57:02.3529707Z   - openssl
+2023-09-21T12:57:02.3530114Z allow_conda_downgrades: False
+2023-09-21T12:57:02.3530630Z allow_cycles: True
+2023-09-21T12:57:02.3531104Z allow_non_channel_urls: False
+2023-09-21T12:57:02.3531551Z allow_softlinks: False
+2023-09-21T12:57:02.3532003Z allowlist_channels: []
+2023-09-21T12:57:02.3532468Z always_copy: False
+2023-09-21T12:57:02.3532931Z always_softlink: False
+2023-09-21T12:57:02.3533329Z always_yes: True
+2023-09-21T12:57:02.3534229Z anaconda_upload: None
+2023-09-21T12:57:02.3534692Z auto_activate_base: True
+2023-09-21T12:57:02.3535103Z auto_stack: 0
+2023-09-21T12:57:02.3535559Z auto_update_conda: False
+2023-09-21T12:57:02.3536064Z bld_path: 
+2023-09-21T12:57:02.3536441Z changeps1: False
+2023-09-21T12:57:02.3536957Z channel_alias: https://conda.anaconda.org
+2023-09-21T12:57:02.3537506Z channel_priority: flexible
+2023-09-21T12:57:02.3538089Z channel_settings: []
+2023-09-21T12:57:02.3538466Z channels:
+2023-09-21T12:57:02.3538955Z   - defaults
+2023-09-21T12:57:02.3539456Z   - conda-forge
+2023-09-21T12:57:02.3539848Z client_ssl_cert: None
+2023-09-21T12:57:02.3540297Z client_ssl_cert_key: None
+2023-09-21T12:57:02.3540732Z clobber: False
+2023-09-21T12:57:02.3541218Z conda_build: {}
+2023-09-21T12:57:02.3541829Z create_default_packages: []
+2023-09-21T12:57:02.3542432Z croot: C:\Miniconda\conda-bld
+2023-09-21T12:57:02.3542909Z custom_channels:
+2023-09-21T12:57:02.3543357Z   pkgs/main: https://repo.anaconda.com
+2023-09-21T12:57:02.3543857Z   pkgs/r: https://repo.anaconda.com
+2023-09-21T12:57:02.3544498Z   pkgs/msys2: https://repo.anaconda.com
+2023-09-21T12:57:02.3545030Z   pkgs/pro: https://repo.anaconda.com
+2023-09-21T12:57:02.3545529Z custom_multichannels:
+2023-09-21T12:57:02.3546031Z   defaults: 
+2023-09-21T12:57:02.3546672Z     - https://repo.anaconda.com/pkgs/main
+2023-09-21T12:57:02.3547487Z     - https://repo.anaconda.com/pkgs/r
+2023-09-21T12:57:02.3548067Z     - https://repo.anaconda.com/pkgs/msys2
+2023-09-21T12:57:02.3548568Z   local: 
+2023-09-21T12:57:02.3549069Z debug: False
+2023-09-21T12:57:02.3549615Z default_channels:
+2023-09-21T12:57:02.3550163Z   - https://repo.anaconda.com/pkgs/main
+2023-09-21T12:57:02.3550842Z   - https://repo.anaconda.com/pkgs/r
+2023-09-21T12:57:02.3551525Z   - https://repo.anaconda.com/pkgs/msys2
+2023-09-21T12:57:02.3551973Z default_python: 3.11
+2023-09-21T12:57:02.3552454Z default_threads: None
+2023-09-21T12:57:02.3552915Z deps_modifier: not_set
+2023-09-21T12:57:02.3553378Z dev: False
+2023-09-21T12:57:02.3553787Z disallowed_packages: []
+2023-09-21T12:57:02.3554269Z download_only: False
+2023-09-21T12:57:02.3554716Z dry_run: False
+2023-09-21T12:57:02.3555091Z enable_private_envs: False
+2023-09-21T12:57:02.3555555Z env_prompt: ({default_env}) 
+2023-09-21T12:57:02.3556003Z envs_dirs:
+2023-09-21T12:57:02.3556523Z   - C:\Miniconda\envs
+2023-09-21T12:57:02.3557021Z   - C:\Users\runneradmin\.conda\envs
+2023-09-21T12:57:02.3557672Z   - C:\Users\runneradmin\AppData\Local\conda\conda\envs
+2023-09-21T12:57:02.3558405Z error_upload_url: https://conda.io/conda-post/unexpected-error
+2023-09-21T12:57:02.3559555Z execute_threads: 1
+2023-09-21T12:57:02.3570660Z experimental: []
+2023-09-21T12:57:02.3572928Z extra_safety_checks: False
+2023-09-21T12:57:02.3573452Z fetch_threads: 5
+2023-09-21T12:57:02.3573945Z force: False
+2023-09-21T12:57:02.3574416Z force_32bit: False
+2023-09-21T12:57:02.3574876Z force_reinstall: False
+2023-09-21T12:57:02.3575374Z force_remove: False
+2023-09-21T12:57:02.3575903Z ignore_pinned: False
+2023-09-21T12:57:02.3576319Z json: False
+2023-09-21T12:57:02.3576793Z local_repodata_ttl: 1
+2023-09-21T12:57:02.3577419Z migrated_channel_aliases: []
+2023-09-21T12:57:02.3577953Z migrated_custom_channels: {}
+2023-09-21T12:57:02.3578411Z non_admin_enabled: True
+2023-09-21T12:57:02.3578911Z notify_outdated_conda: False
+2023-09-21T12:57:02.3579433Z number_channel_notices: 5
+2023-09-21T12:57:02.3579861Z offline: False
+2023-09-21T12:57:02.3581297Z override_channels_enabled: True
+2023-09-21T12:57:02.3581911Z path_conflict: clobber
+2023-09-21T12:57:02.3582411Z pinned_packages: []
+2023-09-21T12:57:02.3582887Z pip_interop_enabled: False
+2023-09-21T12:57:02.3583522Z pkgs_dirs:
+2023-09-21T12:57:02.3584422Z   - C:\Users\runneradmin\conda_pkgs_dir
+2023-09-21T12:57:02.3585297Z proxy_servers: {}
+2023-09-21T12:57:02.3585772Z quiet: False
+2023-09-21T12:57:02.3586231Z remote_backoff_factor: 1
+2023-09-21T12:57:02.3586916Z remote_connect_timeout_secs: 9.15
+2023-09-21T12:57:02.3587665Z remote_max_retries: 3
+2023-09-21T12:57:02.3588203Z remote_read_timeout_secs: 60.0
+2023-09-21T12:57:02.3588720Z repodata_fns:
+2023-09-21T12:57:02.3589230Z   - current_repodata.json
+2023-09-21T12:57:02.3589945Z   - repodata.json
+2023-09-21T12:57:02.3590656Z repodata_threads: None
+2023-09-21T12:57:02.3591117Z report_errors: None
+2023-09-21T12:57:02.3591588Z restore_free_channel: False
+2023-09-21T12:57:02.3592028Z rollback_enabled: True
+2023-09-21T12:57:02.3592420Z root_prefix: C:\Miniconda
+2023-09-21T12:57:02.3592851Z safety_checks: warn
+2023-09-21T12:57:02.3593294Z sat_solver: pycosat
+2023-09-21T12:57:02.3593685Z separate_format_cache: False
+2023-09-21T12:57:02.3594460Z shortcuts: True
+2023-09-21T12:57:02.3595040Z show_channel_urls: None
+2023-09-21T12:57:02.3595474Z signing_metadata_url_base: None
+2023-09-21T12:57:02.3595856Z solver: classic
+2023-09-21T12:57:02.3596284Z solver_ignore_timestamps: False
+2023-09-21T12:57:02.3596713Z ssl_verify: True
+2023-09-21T12:57:02.3597154Z subdir: win-64
+2023-09-21T12:57:02.3597593Z subdirs:
+2023-09-21T12:57:02.3598054Z   - win-64
+2023-09-21T12:57:02.3598669Z   - noarch
+2023-09-21T12:57:02.3599040Z target_prefix_override: 
+2023-09-21T12:57:02.3599479Z track_features: []
+2023-09-21T12:57:02.3599969Z unsatisfiable_hints: True
+2023-09-21T12:57:02.3600392Z unsatisfiable_hints_check_depth: 2
+2023-09-21T12:57:02.3601955Z update_modifier: update_specs
+2023-09-21T12:57:02.3602607Z use_index_cache: False
+2023-09-21T12:57:02.3603041Z use_local: False
+2023-09-21T12:57:02.3603449Z use_only_tar_bz2: True
+2023-09-21T12:57:02.3603874Z verbosity: 0
+2023-09-21T12:57:02.3604307Z verify_threads: 1
+2023-09-21T12:57:02.4325237Z ##[endgroup]
+2023-09-21T12:57:02.4326429Z ##[group]Initializing conda shell integration...
+2023-09-21T12:57:02.4333825Z Fixing condabin/ ownership
+2023-09-21T12:57:02.5808506Z [command]C:\Windows\system32\takeown.exe /f C:\Miniconda\condabin\ /r /d y
+2023-09-21T12:57:02.7896324Z 
+2023-09-21T12:57:02.7897592Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7905516Z 
+2023-09-21T12:57:02.7906353Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\activate.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7913687Z 
+2023-09-21T12:57:02.7914463Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\conda.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7924208Z 
+2023-09-21T12:57:02.7925098Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\conda_auto_activate.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7931028Z 
+2023-09-21T12:57:02.7931837Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\conda_hook.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7938996Z 
+2023-09-21T12:57:02.7940051Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\deactivate.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7947967Z 
+2023-09-21T12:57:02.7948809Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\rename_tmp.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7956956Z 
+2023-09-21T12:57:02.7957693Z SUCCESS: The file (or folder): "C:\Miniconda\condabin\_conda_activate.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.7978391Z Fixing Scripts/ ownership
+2023-09-21T12:57:02.9189521Z [command]C:\Windows\system32\takeown.exe /f C:\Miniconda\Scripts\ /r /d y
+2023-09-21T12:57:02.9317938Z 
+2023-09-21T12:57:02.9319201Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9327969Z 
+2023-09-21T12:57:02.9329547Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\2to3-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9340259Z 
+2023-09-21T12:57:02.9341052Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\2to3.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9348616Z 
+2023-09-21T12:57:02.9350056Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\activate" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9359175Z 
+2023-09-21T12:57:02.9359996Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\activate.bat" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9366696Z 
+2023-09-21T12:57:02.9367575Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\conda-content-trust-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9375213Z 
+2023-09-21T12:57:02.9376036Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\conda-content-trust.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9382917Z 
+2023-09-21T12:57:02.9383692Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\conda-env-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9391384Z 
+2023-09-21T12:57:02.9392095Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\conda-env.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9398583Z 
+2023-09-21T12:57:02.9399379Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\conda-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9406439Z 
+2023-09-21T12:57:02.9407140Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\conda.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9414918Z 
+2023-09-21T12:57:02.9415688Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\cph-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9422890Z 
+2023-09-21T12:57:02.9423614Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\cph.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9430191Z 
+2023-09-21T12:57:02.9430966Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\deactivate" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9437676Z 
+2023-09-21T12:57:02.9438601Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\idle-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9445140Z 
+2023-09-21T12:57:02.9445867Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\idle.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9453113Z 
+2023-09-21T12:57:02.9453777Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\jsondiff" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9461556Z 
+2023-09-21T12:57:02.9462405Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\jsonpatch" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9469607Z 
+2023-09-21T12:57:02.9470472Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\jsonpointer" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9477993Z 
+2023-09-21T12:57:02.9479176Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\menuinst-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9485460Z 
+2023-09-21T12:57:02.9486188Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\menuinst.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9494045Z 
+2023-09-21T12:57:02.9496216Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\normalizer-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9505362Z 
+2023-09-21T12:57:02.9506157Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\normalizer.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9513709Z 
+2023-09-21T12:57:02.9514519Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\pip-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9521645Z 
+2023-09-21T12:57:02.9522309Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\pip.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9529420Z 
+2023-09-21T12:57:02.9530106Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\pip3-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9537428Z 
+2023-09-21T12:57:02.9538509Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\pip3.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9545632Z 
+2023-09-21T12:57:02.9546373Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\pydoc-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9554287Z 
+2023-09-21T12:57:02.9555695Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\pydoc.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9563623Z 
+2023-09-21T12:57:02.9564356Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\tqdm-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9571750Z 
+2023-09-21T12:57:02.9572408Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\tqdm.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9579639Z 
+2023-09-21T12:57:02.9580406Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\wheel-script.py" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9588059Z 
+2023-09-21T12:57:02.9588806Z SUCCESS: The file (or folder): "C:\Miniconda\Scripts\wheel.exe" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:02.9608905Z Fixing shell/ ownership
+2023-09-21T12:57:03.0830306Z [command]C:\Windows\system32\takeown.exe /f C:\Miniconda\shell\ /r /d y
+2023-09-21T12:57:03.0983781Z 
+2023-09-21T12:57:03.0984928Z SUCCESS: The file (or folder): "C:\Miniconda\shell\" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:03.0998951Z 
+2023-09-21T12:57:03.0999775Z SUCCESS: The file (or folder): "C:\Miniconda\shell\condabin" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:03.1009632Z 
+2023-09-21T12:57:03.1010487Z SUCCESS: The file (or folder): "C:\Miniconda\shell\condabin\conda-hook.ps1" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:03.1019118Z 
+2023-09-21T12:57:03.1020102Z SUCCESS: The file (or folder): "C:\Miniconda\shell\condabin\Conda.psm1" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:03.1038354Z Fixing etc/profile.d/ ownership
+2023-09-21T12:57:03.2095692Z [command]C:\Windows\system32\takeown.exe /f C:\Miniconda\etc\profile.d\ /r /d y
+2023-09-21T12:57:03.2223427Z 
+2023-09-21T12:57:03.2224371Z SUCCESS: The file (or folder): "C:\Miniconda\etc\profile.d\" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:03.2233253Z 
+2023-09-21T12:57:03.2234032Z SUCCESS: The file (or folder): "C:\Miniconda\etc\profile.d\conda.csh" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:03.2242216Z 
+2023-09-21T12:57:03.2243040Z SUCCESS: The file (or folder): "C:\Miniconda\etc\profile.d\conda.sh" now owned by user "fv-az89-209\runneradmin".
+2023-09-21T12:57:03.2277540Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat init --all"
+2023-09-21T12:57:06.5642424Z no change     C:\Miniconda\Scripts\conda.exe
+2023-09-21T12:57:06.5645291Z no change     C:\Miniconda\Scripts\conda-env.exe
+2023-09-21T12:57:06.5646216Z no change     C:\Miniconda\Scripts\conda-script.py
+2023-09-21T12:57:06.5647021Z no change     C:\Miniconda\Scripts\conda-env-script.py
+2023-09-21T12:57:06.5647602Z no change     C:\Miniconda\condabin\conda.bat
+2023-09-21T12:57:06.5648172Z no change     C:\Miniconda\Library\bin\conda.bat
+2023-09-21T12:57:06.5648668Z no change     C:\Miniconda\condabin\_conda_activate.bat
+2023-09-21T12:57:06.5649233Z no change     C:\Miniconda\condabin\rename_tmp.bat
+2023-09-21T12:57:06.5649832Z no change     C:\Miniconda\condabin\conda_auto_activate.bat
+2023-09-21T12:57:06.5650391Z no change     C:\Miniconda\condabin\conda_hook.bat
+2023-09-21T12:57:06.5650868Z no change     C:\Miniconda\Scripts\activate.bat
+2023-09-21T12:57:06.5651408Z no change     C:\Miniconda\condabin\activate.bat
+2023-09-21T12:57:06.5651977Z no change     C:\Miniconda\condabin\deactivate.bat
+2023-09-21T12:57:06.5652518Z modified      C:\Miniconda\Scripts\activate
+2023-09-21T12:57:06.5653007Z modified      C:\Miniconda\Scripts\deactivate
+2023-09-21T12:57:06.5653549Z modified      C:\Miniconda\etc\profile.d\conda.sh
+2023-09-21T12:57:06.5654099Z modified      C:\Miniconda\etc\fish\conf.d\conda.fish
+2023-09-21T12:57:06.5655859Z no change     C:\Miniconda\shell\condabin\Conda.psm1
+2023-09-21T12:57:06.5656547Z modified      C:\Miniconda\shell\condabin\conda-hook.ps1
+2023-09-21T12:57:06.5657263Z no change     C:\Miniconda\Lib\site-packages\xontrib\conda.xsh
+2023-09-21T12:57:06.5657847Z modified      C:\Miniconda\etc\profile.d\conda.csh
+2023-09-21T12:57:06.5658418Z modified      C:\Users\runneradmin\.bash_profile
+2023-09-21T12:57:06.5658900Z modified      C:\Users\runneradmin\.zshrc
+2023-09-21T12:57:06.5659457Z modified      C:\Users\runneradmin\.config\fish\config.fish
+2023-09-21T12:57:06.5660004Z modified      C:\Users\runneradmin\.xonshrc
+2023-09-21T12:57:06.5660459Z modified      C:\Users\runneradmin\.tcshrc
+2023-09-21T12:57:06.5661105Z modified      C:\Users\runneradmin\Documents\WindowsPowerShell\profile.ps1
+2023-09-21T12:57:06.5661764Z modified      C:\Users\runneradmin\Documents\PowerShell\profile.ps1
+2023-09-21T12:57:06.5662407Z modified      HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun
+2023-09-21T12:57:06.5662838Z 
+2023-09-21T12:57:06.5663364Z ==> For changes to take effect, close and re-open your current shell. <==
+2023-09-21T12:57:06.5663783Z 
+2023-09-21T12:57:06.6527985Z Append to "C:\Users\runneradmin/.bash_profile":
+2023-09-21T12:57:06.6528670Z  
+2023-09-21T12:57:06.6529662Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6530279Z   # Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6530838Z   set -eo pipefail
+2023-09-21T12:57:06.6531311Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6531805Z   conda activate "test"
+2023-09-21T12:57:06.6532412Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6532838Z 
+2023-09-21T12:57:06.6536339Z Append to "C:\Users\runneradmin/.zshrc":
+2023-09-21T12:57:06.6536873Z  
+2023-09-21T12:57:06.6537561Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6611758Z   # Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6613664Z   set -eo pipefail
+2023-09-21T12:57:06.6616642Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6617445Z   conda activate "test"
+2023-09-21T12:57:06.6618195Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6618648Z 
+2023-09-21T12:57:06.6619291Z Append to "C:\Users\runneradmin/.config/fish/config.fish":
+2023-09-21T12:57:06.6619839Z  
+2023-09-21T12:57:06.6620498Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6621108Z   # Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6621734Z   set -eo pipefail
+2023-09-21T12:57:06.6622677Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6623231Z   conda activate "test"
+2023-09-21T12:57:06.6623930Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6624371Z 
+2023-09-21T12:57:06.6624741Z Append to "C:\Users\runneradmin/.tcshrc":
+2023-09-21T12:57:06.6625256Z  
+2023-09-21T12:57:06.6625892Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6626521Z   # Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6627116Z   set -eo pipefail
+2023-09-21T12:57:06.6627690Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6628227Z   conda activate "test"
+2023-09-21T12:57:06.6628914Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6629356Z 
+2023-09-21T12:57:06.6629701Z Append to "C:\Users\runneradmin/.xonshrc":
+2023-09-21T12:57:06.6630221Z  
+2023-09-21T12:57:06.6630860Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6631480Z   # Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6632086Z   set -eo pipefail
+2023-09-21T12:57:06.6632696Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6633288Z   conda activate "test"
+2023-09-21T12:57:06.6634311Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6634851Z 
+2023-09-21T12:57:06.6635273Z Append to "C:\Users\runneradmin/Documents/PowerShell/profile.ps1":
+2023-09-21T12:57:06.6635720Z  
+2023-09-21T12:57:06.6636224Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6636638Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6637034Z   conda activate "test"
+2023-09-21T12:57:06.6637548Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6637844Z 
+2023-09-21T12:57:06.6638168Z Append to "C:\Users\runneradmin/Documents/WindowsPowerShell/profile.ps1":
+2023-09-21T12:57:06.6638598Z  
+2023-09-21T12:57:06.6639055Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6639490Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6639880Z   conda activate "test"
+2023-09-21T12:57:06.6640378Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6640674Z 
+2023-09-21T12:57:06.6640937Z Append to "C:/Miniconda/etc/profile.d/conda.sh":
+2023-09-21T12:57:06.6641352Z  
+2023-09-21T12:57:06.6641811Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6642231Z   # Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6642690Z   set -eo pipefail
+2023-09-21T12:57:06.6643093Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6643468Z   conda activate "test"
+2023-09-21T12:57:06.6644015Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6644328Z 
+2023-09-21T12:57:06.6644594Z Append to "C:/Miniconda/etc/fish/conf.d/conda.fish":
+2023-09-21T12:57:06.6645270Z  
+2023-09-21T12:57:06.6645874Z   # ----------------------------------------------------------------------------
+2023-09-21T12:57:06.6646339Z   # Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6646790Z   set -eo pipefail
+2023-09-21T12:57:06.6647385Z   # Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6647883Z   conda activate "test"
+2023-09-21T12:57:06.6648575Z   # ---------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6648883Z 
+2023-09-21T12:57:06.6649134Z Append to "C:/Miniconda/condabin/conda_hook.bat":
+2023-09-21T12:57:06.6649508Z  
+2023-09-21T12:57:06.6650103Z   :: ---------------------------------------------------------------------------
+2023-09-21T12:57:06.6650544Z   :: Conda Setup Action: Activate base
+2023-09-21T12:57:06.6650951Z   @CALL "%CONDA_BAT%" activate base
+2023-09-21T12:57:06.6651661Z   :: Conda Setup Action: Custom activation
+2023-09-21T12:57:06.6652061Z   @CALL "%CONDA_BAT%" activate "test"
+2023-09-21T12:57:06.6652490Z   :: Conda Setup Action: Basic configuration
+2023-09-21T12:57:06.6652910Z   @SETLOCAL EnableExtensions
+2023-09-21T12:57:06.6653315Z   @SETLOCAL DisableDelayedExpansion
+2023-09-21T12:57:06.6653931Z   :: --------------------------------------------------------------------------- 
+2023-09-21T12:57:06.6657564Z 
+2023-09-21T12:57:06.6658365Z ##[endgroup]
+2023-09-21T12:57:06.6659146Z ##[group]Adding tools to 'base' env...
+2023-09-21T12:57:06.6659619Z Do we need to update conda?
+2023-09-21T12:57:06.6660015Z Do we need to update mamba?
+2023-09-21T12:57:06.6660412Z Do we need to update python?
+2023-09-21T12:57:06.6661016Z Do we need to update conda-build?
+2023-09-21T12:57:06.6661519Z No tools were installed in 'base' env.
+2023-09-21T12:57:06.6662070Z No post-install actions were taken on 'base' env.
+2023-09-21T12:57:06.6662635Z ##[endgroup]
+2023-09-21T12:57:06.6663276Z ##[group]Ensuring environment...
+2023-09-21T12:57:06.6663690Z Can we conda create (from explicit)?
+2023-09-21T12:57:06.6664069Z Can we conda create (simple)?
+2023-09-21T12:57:06.6664452Z ... will conda create (simple).
+2023-09-21T12:57:06.6665170Z ##[group]Updating 'test' env from conda create (simple)...
+2023-09-21T12:57:06.6666331Z [command]C:\Windows\system32\cmd.exe /D /S /C "C:\Miniconda\condabin\conda.bat create --name test"
+2023-09-21T12:57:10.0929816Z Collecting package metadata (repodata.json): ...working... done
+2023-09-21T12:57:10.1617245Z Solving environment: ...working... done
+2023-09-21T12:57:10.1624285Z 
+2023-09-21T12:57:10.1624690Z ## Package Plan ##
+2023-09-21T12:57:10.1625273Z 
+2023-09-21T12:57:10.1625733Z   environment location: C:\Miniconda\envs\test
+2023-09-21T12:57:10.1626064Z 
+2023-09-21T12:57:10.1626359Z 
+2023-09-21T12:57:10.1626891Z 
+2023-09-21T12:57:10.1633137Z Preparing transaction: ...working... done
+2023-09-21T12:57:12.7878140Z Verifying transaction: ...working... done
+2023-09-21T12:57:12.7901469Z Executing transaction: ...working... done
+2023-09-21T12:57:12.7913400Z #
+2023-09-21T12:57:12.7913957Z # To activate this environment, use
+2023-09-21T12:57:12.7914450Z #
+2023-09-21T12:57:12.7914864Z #     $ conda activate test
+2023-09-21T12:57:12.7915259Z #
+2023-09-21T12:57:12.7915650Z # To deactivate an active environment, use
+2023-09-21T12:57:12.7916174Z #
+2023-09-21T12:57:12.7916516Z #     $ conda deactivate
+2023-09-21T12:57:12.7916788Z 
+2023-09-21T12:57:12.8747798Z ##[endgroup]
+2023-09-21T12:57:12.8748724Z ##[endgroup]
+2023-09-21T12:57:12.8749580Z setup-miniconda ran successfully

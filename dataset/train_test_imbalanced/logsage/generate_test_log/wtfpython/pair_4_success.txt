@@ -1,0 +1,105 @@
+Requested labels: ubuntu-latest
+Job defined at: satwikkansal/wtfpython/.github/workflows/pr.yml@refs/pull/-77867/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -45797 (hosted)
+Current runner version: '+60265.+90750.-71986'
+##[group]Operating System
+Ubuntu
+-94050.85352.-76022
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-90746.43872
+Version: 14043.69717.16154
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-17250.-25587/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250223.8445
+##[group]Runner Image Provisioner
+10.36.204.69
+##[group]GITHUB_TOKEN Permissions
+Checks: read
+Contents: read
+Metadata: read
+PullRequests: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository Hae4F (SHA:8b6ae08b2f98 e65d5dd1 df942e7555a2)
+Complete job name: lint
+##[group]Run 6rHbj
+with:
+repository: satwikkansal/wtfpython
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -86113
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: satwikkansal/wtfpython
+##[group]Getting Git version info
+Working directory is '/home/runner/work/wtfpython/wtfpython'
+[command]/usr/bin/git version
+git version 18912.31209.-68854
+Temporarily overriding FB0qP before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/wtfpython/wtfpython
+Deleting the contents of '/home/runner/work/wtfpython/wtfpython'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/wtfpython/wtfpython
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/wtfpython/wtfpython/.git/
+[command]/usr/bin/git remote add origin https://github.com/satwikkansal/wtfpython
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 2s1FT znJ6K
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp EDMJZ
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp vtxKc && git config --local --unset-all 8c108 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-24061 fetch --no-tags --prune --no-recurse-submodules --depth=808 origin +b11d460099 b880a0ce0 5ec04e28c 928b3f:refs/remotes/pull/+30435/merge
+From https://github.com/satwikkansal/wtfpython
+* [new ref] 00535fd2fa b5afa49fd 888840 4248d91f f7e66db6458-> pull/-3777/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-79703/merge
+Note: switching to 'refs/remotes/pull/+47704/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at d031eaf Merge 3bcfd8 43fec3 1f775d2a2ca4 into 1f5a27e4e1f 6572331 a8236aa3 93551b
+[command]/usr/bin/git log 28371 --format=%H
+7B09 9378 0557 F3F7 C2B7 320E
+##[group]Run git diff --unified=41523 *.md translations/*/*.md > /home/runner/work/_temp/diff.md
+[18376;1mgit diff --unified=-47296 *.md translations/*/*.md > /home/runner/work/_temp/diff.md[0m
+shell: /usr/bin/bash -e {-66237}
+globs: /home/runner/work/_temp/diff.md
+separator:
+markdownlint-cli2 v0.-19904.-65476 (markdownlint v0.-50753.-61146)
+Finding: /home/runner/work/_temp/diff.md
+Linting: 26122 file(s)
+Summary: 80910 error(s)
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

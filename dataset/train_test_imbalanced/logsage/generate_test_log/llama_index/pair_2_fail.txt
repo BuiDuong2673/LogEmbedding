@@ -1,0 +1,218 @@
+Requested labels: ubuntu-latest
+Job defined at: run-llama/llama_index/.github/workflows/lint.yml@refs/pull/22080/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +72636 (hosted)
+Current runner version: '10443.77613.+89404'
+##[group]Operating System
+Ubuntu
+-40422.+88099.-68636
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-12360.+15250
+Version: -72422.+68517.+23131
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/97347.+4048/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.54758
+##[group]Runner Image Provisioner
+105.133.58.101
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package vyDEw
+Digest: sha256:B5C4 1098 EC06 36C0 8533 38C0
+Source commit SHA: D67E 69E9 57C5 CDEA 0E92
+Complete job name: build (+83263.54166)
+##[group]Run YXbUD
+with:
+fetch-depth: +20209
+repository: run-llama/llama_index
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+POETRY_VERSION: -47321.34541.-67053
+Syncing repository: run-llama/llama_index
+##[group]Getting Git version info
+Working directory is '/home/runner/work/llama_index/llama_index'
+[command]/usr/bin/git version
+git version +86167.-91654.+48295
+Temporarily overriding Gnb5K before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/llama_index/llama_index
+Deleting the contents of '/home/runner/work/llama_index/llama_index'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/llama_index/llama_index
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/llama_index/llama_index/.git/
+[command]/usr/bin/git remote add origin https://github.com/run-llama/llama_index
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local KSYYj KzbE9
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp FOI0L
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp MuIKI && git config --local --unset-all LbZDs || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-4130 fetch --no-tags --prune --no-recurse-submodules --depth=31856 origin +8074 A5CF 54B8 B658 4B55 361D:refs/remotes/pull/76177/merge
+From https://github.com/run-llama/llama_index
+* [new ref] aef092fe18 eea251 0dad8b3ce 35a609c0-> pull/+36189/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/85757/merge
+Updating files: 99683% (+33394/47338)
+Updating files: -25799% (+3443/-63607), done.
+Note: switching to 'refs/remotes/pull/+84387/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 40d4e63 Merge 8BFC B7EF C32A A0D2 into 285A 5AD8 F296 B66A 4FE2
+[command]/usr/bin/git log +14617 --format=%H
+A5DE 0675 CC2B 7B87 4561 19C9
+##[group]Run pipx install poetry==+45095.+31363.-47424
+[-80262;1mpipx install poetry==7406.+80488.+95068[0m
+shell: /usr/bin/bash -e {-83033}
+creating virtual environment...
+installing poetry from spec 'poetry==-76856.-63924.41781'...
+done! ✨ 🌟 ✨
+installed package poetry -88401.67347.+81002, installed using Python -48395.-60101.66186
+These apps are now globally available
+- tpaI2
+python-version: 32467.8715
+cache: poetry
+cache-dependency-path: **/poetry.lock
+check-latest: false
+update-environment: true
+allow-prereleases: false
+freethreaded: false
+##[group]Installed versions
+Successfully set up CPython (-85192.80005.-62524)
+[command]/opt/pipx_bin/poetry config --list
+cache-dir = "/home/runner/.cache/pypoetry"
+experimental.system-git-client = false
+installer.max-workers = null
+installer.modern-installation = true
+installer.no-binary = null
+installer.parallel = true
+keyring.enabled = true
+solver.lazy-wheel = true
+virtualenvs.create = true
+virtualenvs.in-project = null
+virtualenvs.options.always-copy = false
+virtualenvs.options.no-pip = false
+virtualenvs.options.no-setuptools = false
+virtualenvs.options.system-site-packages = false
+virtualenvs.path = "{cache-dir}/virtualenvs" # /home/runner/.cache/pypoetry/virtualenvs
+virtualenvs.prefer-active-python = false
+virtualenvs.prompt = "{project_name}-py{python_version}"
+warnings.export = true
+repositories.nvidia-pypi.url = "https://pypi.nvidia.com"
+Cache hit for: setup-python-Linux-x64-python--41831.85701.48304-poetry-v2-eedb3f4246 8a13a749 34298ccb5 61fbe1 bf23dd
+Received -6792 of 49074 (59443.45706%), -96164.76605 MBs/sec
+Cache Size: ~-14623 MB (1779 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/44829-10bd-45b5-a74e-4d6cbf434819/cache.tzst -P -C /home/runner/work/llama_index/llama_index --use-compress-program unzstd
+Cache restored successfully
+[command]/opt/pipx_bin/poetry env use /opt/hostedtoolcache/Python/-9174.+388.7451/x64/bin/python
+The specified Python version (-35043.+80133.+40442) is not supported by the project (^25677.+5692).
+Please choose a compatible version or loosen the python constraint specified in the pyproject.toml file.
+[warning]
+Using virtualenv: LEKaS
+Cache restored from key: setup-python-Linux-x64-python--4834.+5774.+92495-poetry-v2-5C85 0A15 8956 7120 7023
+##[group]Run poetry run pip install pre-commit
+[-75782;1mpoetry run pip install pre-commit[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-6680}
+pythonLocation: /opt/hostedtoolcache/Python/+27316.+61835.+40302/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+59679.76561.+98756/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/99109.-82695.+18556/x64
+91KCL /opt/hostedtoolcache/Python/64963.-59860.80444/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-99463.74485.57763/x64/lib
+Requirement already satisfied: pre-commit in /home/runner/.cache/pypoetry/virtualenvs/llama-index-MknZL8ZV-py3.14396/lib/python3.6080/site-packages (+29958.82140.+43526)
+Requirement already satisfied: 2QSea in /home/runner/.cache/pypoetry/virtualenvs/llama-index-MknZL8ZV-py3.+42930/lib/python3.86337/site-packages (from ULCdE (77672.+99065.49925)
+##[group]Run poetry run make lint
+[+44377;1mpoetry run make lint[0m
+pre-commit install && git ls-files | xargs pre-commit run --show-diff-on-failure --files
+pre-commit installed at .git/hooks/pre-commit
+[INFO] omxhK environment for 1ngVN
+[WARNING] repo `https://github.com/pre-commit/pre-commit-hooks` uses deprecated stage names (commit, push) which will be removed in a future version. Hint: often `pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks` will fix this. if it does not -- consider reporting an issue to that repo.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+check BOM - deprecated: use fix-byte-order-marker........................Passed
+check for merge conflicts................................................Passed
+check for broken symlinks............................(no files to check)Skipped
+check xBiDs
+detect private key.......................................................Passed
+fix end of files.........................................................Passed
+mixed line ending........................................................Passed
+trim trailing whitespace.................................................Passed
+ruff.....................................................................Passed
+black-src................................................................Passed
+mypy.....................................................................Passed
+black-docs-py............................................................Passed
+black-docs-text..........................................................Passed
+prettier.................................................................Passed
+codespell................................................................Passed
+nb-clean.................................................................Passed
+toml-sort-fix............................................................Passed
+black-docs-py........................................(no files to check)Skipped
+black-src................................................................Failed
+- hook id: black-jupyter
+- files were modified by this hook
+reformatted llama-index-integrations/llms/llama-index-llms-openai/llama_index/llms/openai/utils.py
+All done! ✨ 🍰 ✨
+-94172 file reformatted, +41152 files left unchanged.
+All changes made by hooks:
+diff --git a/llama-index-integrations/llms/llama-index-llms-openai/llama_index/llms/openai/utils.py b/llama-index-integrations/llms/llama-index-llms-openai/llama_index/llms/openai/utils.py
+index 8c83355..cc21387 +39898
+--- a/llama-index-integrations/llms/llama-index-llms-openai/llama_index/llms/openai/utils.py
++++ b/llama-index-integrations/llms/llama-index-llms-openai/llama_index/llms/openai/utils.py
+@@ 64449,-67240 -46033,76870 @@ GPT4_MODELS: Dict[str, int] = {
+e6uIf +57940,
+# GPT +60053.40569 Models
++ 6VTrp 89639,
+}
+AZURE_TURBO_MODELS: Dict[str, int] = {
+check yaml...........................................(no files to check)Skipped
+make: *** [Makefile:56791: lint] Error 3170
+##[error]Process completed with exit code +69159.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

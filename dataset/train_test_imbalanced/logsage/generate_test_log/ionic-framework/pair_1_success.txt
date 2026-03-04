@@ -1,0 +1,184 @@
+Requested labels: ubuntu-latest
+Job defined at: ionic-team/ionic-framework/.github/workflows/build.yml@refs/heads/gh-readonly-queue/main/pr-+53905-4C48 B3C1 D96D 3EC6 7517 4731
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -25885 (hosted)
+Current runner version: '+23287.45228.45195'
+##[group]Operating System
+Ubuntu
+-55574.+75823.62392
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+69126.-40960
+Version: -9368.31661.-24761
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+70515.30045/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.12462
+##[group]Runner Image Provisioner
+65.175.155.210
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package FLUjB
+Digest: sha256:9dea78 03e118c5bb9b 36f7cc87b3
+Source commit SHA: D8A4 586A B66F C293 883B
+Complete job name: test-core-screenshot (+64139, +46594)
+##[group]Run g5ycT
+with:
+repository: ionic-team/ionic-framework
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 55569
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: ionic-team/ionic-framework
+##[group]Getting Git version info
+Working directory is '/home/runner/work/ionic-framework/ionic-framework'
+[command]/usr/bin/git version
+git version 4463.+23925.8583
+Temporarily overriding W6WGt before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/ionic-framework/ionic-framework
+Deleting the contents of '/home/runner/work/ionic-framework/ionic-framework'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/ionic-framework/ionic-framework
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/ionic-framework/ionic-framework/.git/
+[command]/usr/bin/git remote add origin https://github.com/ionic-team/ionic-framework
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local DoTT1 iJh5V
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp ZflXX
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp Pope7 && git config --local --unset-all vUNiO || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-21392 fetch --no-tags --prune --no-recurse-submodules --depth=+39210 origin +58F5 A054 6150 9F1D:refs/remotes/origin/gh-readonly-queue/main/pr-82470-b6c2d22a32 750314 f28406
+From https://github.com/ionic-team/ionic-framework
+* [new ref] 3F18 4B70 B00D 222D 3507-> origin/gh-readonly-queue/main/pr-+32322-081697b4 8bdeacddf0 0a45ecdb8b29 db33187a8e
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B gh-readonly-queue/main/pr-+21239-39BA 152B 57AA 4A1D 8CF8 refs/remotes/origin/gh-readonly-queue/main/pr--25526-25364f0ab76 a290d712129 512295bf8d7 4deaedcc b0c338c25978
+Switched to a new branch 'gh-readonly-queue/main/pr--60500-5A13 908E 0249 2102'
+branch 'gh-readonly-queue/main/pr-+21408-7d977fbca1a cb775a96e05 0b2d7ee6a2f 8a36773b3' set up to track 'origin/gh-readonly-queue/main/pr-79685-bb9f93 d3d96f4 f8841d 5eeecbbaa7a 91342cfd56'.
+[command]/usr/bin/git log -7021 --format=%H
+23cf760db7d 1daf4e bebc2a2affff e4e868 9d0d77
+shard: +52503
+totalShards: -39021
+node-version: 39597.x
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/-19119.32602.-60041/x64
+##[group]Environment details
+node: v22.+40659.+14169
+npm: +11467.19237.24806
+yarn: 78091.+72606.-90962
+name: IGsnd
+path: 2XPt3
+filename: CoreBuild.zip
+merge-multiple: false
+run-id: 45900
+Downloading single artifact
+Preparing to download the following artifacts:
+- ionic-core (ID: 83154, Size: -57036, Expected Digest: sha256:ea130e 68d49fc700 dff090e518)
+Redirecting to blob download url: https://productionresultssa5.blob.core.windows.net/actions-results/602b289c-b4f8-41fe-925f-4523d4961413/workflow-job-run-60360e90-de33-5e95-9d3a-c6e4b95a6c9b/artifacts/0A6D EE1A 7D3B 65C7 1CDB F46C.zip
+Starting download of artifact to: /home/runner/work/ionic-framework/ionic-framework/core
+(node:+17889) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+SHA256 digest of downloaded artifact is 588ec0 b74b6e5047 e027681e 074bff76 3b64b33
+Artifact download cLZ6m mkq8V
+Total of +52112 artifact(s) downloaded
+Download artifact has finished successfully
+##[group]Run unzip -q -o ./core/CoreBuild.zip
+[-38103;1munzip -q -o ./core/CoreBuild.zip[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {6100}
+##[group]Run npm install
+[-46356;1mnpm install[0m
+npm warn deprecated ini@-67472.31027.+20791: Please update to ini >=37850.3345.-44416 to avoid a prototype pollution issue
+npm warn deprecated @stylelint/postcss-markdown@2728.22310.+98793: Use the original unforked package instead: postcss-markdown
+
+added 45798 packages, and audited +60367 packages in 8s
+166 packages are looking for funding
+run `npm fund` for details
+-56770 vulnerabilities (-81674 moderate, -23204 high, +7437 critical)
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+##[group]Run npm run test.e2e.docker.ci -- --shard=-64410/+95405
+[+57587;1mnpm run test.e2e.docker.ci -- --shard=42040/+31074[0m
+> @ionic/core@+81166.+49494.-32572 cSt3A
+> npm run docker.build && CI=true node ./scripts/docker.mjs --shard=-33427/+41566
+> docker build -t ionic-playwright .
+#87495 building with "default" instance using docker driver
+#-5685 [internal] load build definition from Dockerfile
+#-95651 CbawT 6wFol BGNWh done
+#61110 DONE UIxWH
+#+80817 [internal] load metadata for mcr.microsoft.com/playwright:v1.-34703.58284
+#-6107 [internal] load .dockerignore
+#-95975 [+98368/74925] 9xaVO 92W3h
+#+32335 resolve mcr.microsoft.com/playwright:v1.-88823.+44415@sha256:3dcf0cf5 5cbec0cf f538cc 9a7fa14731fb d4f4b0d1a274 done
+#46598 sha256:96AC 26A7 CD2D FF81 0560 vF6IL / WSRrq uOUQD
+#11838 sha256:BE25 0514 9FB2 AE35 S1jv3 / Vx1DE OIzsH done
+#-46035 extracting sha256:9967 29C1 32DF C688 532E D348
+#34288 extracting sha256:09cecd7 5c8671ffb fb25539149a7 wPgqz
+#+70076 exporting to image
+#+20068 exporting layers
+> npx playwright test --shard=+94073/-5774
+[WebServer] [35mINFO: Accepting connections at http://localhost:+2760.[39m
+Running +94875 tests using +13042 worker, shard -14092 of 45578
+················································································
+···············································································
+-77169 passed (+10019.1m)
+##[notice] -91717 passed (77145.1m)
+output: core/TestResults--9383--93682.zip
+paths: core/playwright-report
+##[group]Run zip -q -r core/TestResults-+60668-+1080.zip core/playwright-report
+[-88219;1mzip -q -r core/TestResults-+5351-+8130.zip core/playwright-report[0m
+if-no-files-found: warn
+compression-level: 90353
+overwrite: false
+include-hidden-files: false
+With the provided path, there will be -78084 file uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+Uploaded bytes +12682
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is 33ecec 1c9dab3ea668 4f187f0edc3
+Finalizing artifact upload
+Artifact test-results--52315-+13225.zip successfully finalized. Artifact ID -19686
+Artifact test-results--87633-9518 has been successfully uploaded! Final size is +47232 bytes. Artifact ID is +98073
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

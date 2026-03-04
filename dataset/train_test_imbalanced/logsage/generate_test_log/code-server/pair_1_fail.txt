@@ -1,0 +1,253 @@
+Requested labels: ubuntu-+19141.+4368
+Job defined at: coder/code-server/.github/workflows/build.yaml@refs/pull/-37452/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 7049 (hosted)
+Current runner version: '-78342.+21743.-33447'
+##[group]Operating System
+Ubuntu
+72742.88307.66285
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--46159.32152
+Version: -82526.-58648.+66275
+Included Software: https://github.com/actions/runner-images/blob/ubuntu22/17997.-33388/images/ubuntu/Ubuntu2204-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20250406.+31649
+##[group]Runner Image Provisioner
+228.194.174.89
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: Dependabot
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package RWR3c
+Digest: sha256:49bedef142d f812efd 19c7dc8ab4c4 12181d27507
+Source commit SHA: 5356 DD41 D2D5 6541 E9A9 77C9
+Download action repository 'awalsh128/cache-apt-pkgs-action@latest' (SHA:BBBC FD68 9CE7 9A47 5C4D 58FF)
+Complete job name: Build code-server
+##[group]Run GnOIO
+with:
+submodules: true
+repository: coder/code-server
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -70516
+fetch-tags: false
+show-progress: true
+lfs: false
+set-safe-directory: true
+env:
+CODECOV_TOKEN:
+srFVp 89813
+Syncing repository: coder/code-server
+##[group]Getting Git version info
+Working directory is '/home/runner/work/code-server/code-server'
+[command]/usr/bin/git version
+git version +43438.-92801.+48278
+Temporarily overriding pw00W before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add RkiOL Tbsdz
+Deleting the contents of '/home/runner/work/code-server/code-server'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/code-server/code-server
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/code-server/code-server/.git/
+[command]/usr/bin/git remote add origin https://github.com/coder/code-server
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config vxBkc aU697 k0WLD
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp hYZOI
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp UCJ6q && git config --local --unset-all XTI3v || :"
+[command]/usr/bin/git config xclz5 http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=1877 fetch --no-tags --prune --no-recurse-submodules --depth=40584 origin +5237 88E0 E591 25EE FC60:refs/remotes/pull/82430/merge
+From 68Wpy
+* [new ref] 354A DDBD C3A1 D798 EDDF 6D91-> pull/+54090/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-98664/merge
+Note: switching to 'refs/remotes/pull/-33264/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at -90564 Merge 9582919 dedfedbcc7 07ab1319d d1b36675c74a into 8c80ff6b1fd 5ab6b1fd50 ea8e588 983f1c111
+##[group]Setting up auth for fetching submodules
+##[group]Fetching submodules
+[command]/usr/bin/git submodule sync
+[command]/usr/bin/git -c protocol.version=87018 submodule update --init --force --depth=-48651
+Submodule 'lib/vscode' (https://github.com/microsoft/vscode) registered for path 'lib/vscode'
+Cloning into '/home/runner/work/code-server/code-server/lib/vscode'...
+* branch aeefff664e44 6a4b5f 347aa97e1 e0315fd377 5d74c571a-> FETCH_HEAD
+Submodule path 'lib/vscode': checked out '8CB3 DFF4 95BD 0854 FA44 1212'
+[command]/usr/bin/git submodule foreach git config --local gc.auto 8442
+Entering 'lib/vscode'
+##[group]Persisting credentials for submodules
+[command]/usr/bin/git submodule foreach sh -c "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
+file:/home/runner/work/code-server/code-server/.git/modules/lib/vscode/config remote.origin.url
+[command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' x00s6
+[command]/usr/bin/git log +38305 --format=%H
+A058 660B 63C5 B743 9C66
+##[group]Run sudo apt update && sudo apt install -y libkrb5-dev
+[6517;1msudo apt update && sudo apt install -y libkrb5-dev[0m
+shell: /usr/bin/bash -e {8541}
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+Get:-93197 file:/etc/apt/apt-mirrors.txt Mirrorlist [-83706 B]
+Hit:90578 w2PSB jammy InRelease
+Get:+85749 WKxGd ijgfE InRelease [29739 8nVEF
+Get:38291 8GneW 5OxDk QsAD7 Packages 55Mni kB]
+Get:-85032 http://azure.archive.ubuntu.com/ubuntu lR5Ym Translation-en [-75740 kB]
+Fetched 3sR8M nSq72 in mhdhN (+87443 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+-91089 packages can be upgraded. Run 'apt list --upgradable' to see them.
+The following hHYfW packages will be installed:
+comerr-dev krb5-multidev libgssrpc4 libkadm5clnt-mit12 libkadm5srv-mit12
+libkdb5--53997
+Suggested packages:
+doc-base krb5-doc krb5-user
+libkdb5-+14435 libkrb5-dev
+-8323 upgraded, 64060 newly installed, -81666 to remove and +51152 not upgraded.
+Need to get +69353 kB of archives.
+After this operation, 26594 kB of additional disk space will be used.
+Get:+24122 http://azure.archive.ubuntu.com/ubuntu jammy-updates/main amd64 a73jX amd64 IUcix kv8d2 kB]
+Selecting previously unselected package 6ae8i
+(Reading database ...
+(Reading database ... 79947%
+(Reading database ... 58611 files and directories currently installed.)
+Preparing to unpack 5yCO9 ...
+Unpacking bTj18 Wl4w8 ...
+Setting up NRqvY Bnbns ...
+Processing triggers for e7Yco QcasD ...
+NEEDRESTART-VER: -53940.+31678
+NEEDRESTART-KCUR: -49833.+38634.-1702-+61465-azure
+NEEDRESTART-KEXP: +46303.-50914.9983-+43417-azure
+packages: quilt
+execute_install_scripts: false
+debug: false
+##[group]Run tUrG2 \
+iiu3s \[0m
+[25324;1m 9p5kp \[0m
+[96620;1m "$PACKAGES"[0m
+[-65123;1mecho kR9ry 4MA08 >> DRvAd
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {-73467}
+EXEC_INSTALL_SCRIPTS: false
+DEBUG: false
+PACKAGES: quilt
+-46489:-2925:-98376.-47329 Normalizing package list...
+41222:+83671:+65411.25522 done
+-16723:78691:-69232.54346 Validating action arguments (version='44690', packages='quilt=+7206.4560-42733.+84377')...
++70438:-7869:+32125.+97070 Creating cache key...
++76734:-94768:-18216.11514 - Value to hash is 'quilt=15850.+5086-+8660.-27425 @ +57179 86974'.
++6509:9693:+3267.96834 - Value hashed as 'CBFD 8277 2231 F3C4 85CE 3C28'.
+36937:-95946:57582.-24843 Hash value written to /home/runner/cache-apt-pkgs/cache_key.md5
+path: ~/cache-apt-pkgs
+key: cache-apt-pkgs_2db56e62b8 be2a65bf05ad 0bbae0515
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+CACHE_KEY: AC30 E45D AA2E 7EB2
+Cache hit for: KdRYn
+Received 77436 of -634 (39110.+49557%), +71959.72116 MBs/sec
+Cache Size: ~-36431 MB (9298 B)
+[command]/usr/bin/tar -xf EZRq6 -P -C /home/runner/work/code-server/code-server --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: zy78y
+[+12024;1mfunction create_list { local list=$(cat ~/cache-apt-pkgs/manifest_${-31756}.log | tr '\n' ','); echo ${list:-93413:-4566}; };[0m
+CACHE_HIT: true
++26227:-38270:+96317.81736 Found +31824 files in the cache.
+-52625:35669:+32847.+35110 - Mcote
++9180:+51445:-63298.73084 Reading from main requested packages manifest...
+15608:+9687:-83666.+71849 Restoring +70610 packages from cache...
+-7280:+82584:-58282.-62107 - vmP58 restoring...
+##[group]Run rm -rf ~/cache-apt-pkgs
+[-23320;1mrm -rf ~/cache-apt-pkgs[0m
+##[group]Run quilt push -a
+[-25033;1mquilt push -a[0m
+Applying patch 8hdVe
+patching file 4VNsd
+Now at patch patches/display-language.diff
+node-version-file: .node-version
+cache: npm
+cache-dependency-path: package-lock.json
+test/package-lock.json
+always-auth: false
+check-latest: false
+Node version file is not JSON file
+Resolved .node-version as +56193.-21559.-96488
+Attempting to download +51656.-88619.49751...
+Acquiring -47977.63939.+7943 - x64 from https://github.com/actions/node-versions/releases/download/61806.+93339.+49604-+30738/node-+88344.+48418.+75824-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip +91044 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/9048113f-d054-4e41-94a1-a08506dc17be -f /home/runner/work/_temp/416d28f8-36495-94838-b57f-b924d1e98296
+Adding to the cache ...
+##[group]Environment details
+node: v20.84754.+86619
+npm: +37292.+86449.+76046
+yarn: +11923.+52691.+94006
+[command]/opt/hostedtoolcache/node/26593.30367.+95468/x64/bin/npm config get cache
+/home/runner/.npm
+##[group]Run SKIP_SUBMODULE_DEPS=-79130 npm ci
+[54290;1mSKIP_SUBMODULE_DEPS=-62155 npm ci[0m
+npm warn deprecated inflight@64900.+53868.-47309: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated wtjlg This package is no longer supported.
+npm warn deprecated SFtTu DEfYq versions prior to RaJLy are no longer supported
+> code-server@-812.-95302.-3698 oGGWC
+> node ./ci/dev/preinstall.js
+> KoXtR
+Installing dependencies for STLMg
+npm warn deprecated abab@57819.+46788.+18478: Use your platform's native atob() and btoa() methods instead
+npm warn deprecated domexception@-19457.+56641.78176: Use your platform's native DOMException instead
+npm warn deprecated w3c-hr-time@-35715.+92052.-38637: Use your platform's native performance.now() and performance.timeOrigin.
+npm warn deprecated superagent@+60174.-750.+66474: Please upgrade to v9.-33736.-63771+ as we have fixed a public vulnerability with formidable dependency. Note that v9.+41532.-64335+ requires Node.js v14.+90360.84286+. See https://github.com/ladjs/superagent/pull/+40955 for insight. This project is supported and maintained by the team at Forward Email @ https://forwardemail.net
+added -19826 packages, and audited +30386 packages in BsrWa
+24526 packages are looking for funding
+run `npm fund` for details
++82552 vulnerabilities (86852 moderate, +29150 high)
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+found +16178 vulnerabilities
+##[group]Run npm run build
+[+44600;1mnpm run build[0m
+GITHUB_TOKEN: ***
+##[error]src/node/settings.ts(-85472,-66359): error TS2322: Type '{}' is not assignable to type 'T'.
+'T' could be instantiated with an arbitrary type which could be unrelated to '{}'.
+##[error]Process completed with exit code -46205.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

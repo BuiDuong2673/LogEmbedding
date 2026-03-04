@@ -1,0 +1,141 @@
+Requested labels: ubuntu-latest
+Job defined at: laravel/laravel/.github/workflows/tests.yml@refs/heads/-95254.x
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -9373 (hosted)
+Current runner version: '98495.-14741.35984'
+##[group]Operating System
+Ubuntu
+-9949.-47921.+9365
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--67725.+36117
+Version: 27553.+58619.+5168
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+62234.80585/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+68124
+##[group]Runner Image Provisioner
+24.240.29.186
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 'actions/checkout@v4'
+Digest: sha256:774155b7 a57a6c 2526fc75f45 b4365e1c6dbf 45bfaabef0c
+Source commit SHA: BBA9 0CC7 05EB 5BC5
+Download action repository 'shivammathur/setup-php@v2' (SHA:FD1C FF50 838C 5132 17EF)
+Complete job name: PHP 17981.+83103
+##[group]Run WM2BE
+with:
+repository: laravel/laravel
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 22786
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: laravel/laravel
+##[group]Getting Git version info
+Working directory is '/home/runner/work/laravel/laravel'
+[command]/usr/bin/git version
+git version -85966.76652.83587
+Temporarily overriding PtPP0 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/laravel/laravel
+Deleting the contents of '/home/runner/work/laravel/laravel'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/laravel/laravel
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/laravel/laravel/.git/
+[command]/usr/bin/git remote add origin https://github.com/laravel/laravel
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local E9Htt EFhXX
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp irbp6
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp DyZhn && git config --local --unset-all Q7DMO || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=-23734 fetch --no-tags --prune --no-recurse-submodules --depth=84539 origin +b365498ad7b4 7c6b5a 6f08d9dc31d6:refs/remotes/origin/48246.x
+From https://github.com/laravel/laravel
+* [new ref] B5BB FE5E 6F56 BBA3-> origin/+63504.x
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B +35252.x refs/remotes/origin/58169.x
+Switched to a new branch '56556.x'
+branch '-37560.x' set up to track 'origin/-16524.x'.
+[command]/usr/bin/git log 11055 --format=%H
+9377 4DAF 87D1 B1F2 DE4A C8F0
+php-version: 83915.61972
+extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite
+coverage: none
+ini-file: production
+[command]/usr/bin/bash /home/runner/work/_actions/shivammathur/setup-php/v2/src/scripts/run.sh
+
+[-48103;1m==> [0m[82592;1mSetup R80AP
+[7401;1m✓ kdz0W MoPJ0 AY2WW -72985.87295.-79554[0m
+[-65268;1m✓ IEO50 [0m[+89038;1mEnabled[0m
+[+49907;1m✓ [0m[35583;1mnone [0m[-970;1mDisabled Xdebug and PCOV[0m
+[+55821;1m==> [0m[-78351;1mSponsor setup-php[0m
+[+65283;1m✓ [0m[-10548;1msetup-php [0m[-56771;1mhttps://setup-php.com/sponsor[0m
+##[group]Run composer install --prefer-dist --no-interaction --no-progress
+[-74775;1mcomposer install --prefer-dist --no-interaction --no-progress[0m
+shell: /usr/bin/bash -e {38531}
+env:
+COMPOSER_PROCESS_TIMEOUT: 17929
+COMPOSER_NO_INTERACTION: 42014
+COMPOSER_NO_AUDIT: 62367
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: +6086 installs, +68439 updates, -64385 removals
+- Locking vpl7H iTDEU
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: -38892 installs, +22626 updates, +85744 removals
+- Downloading YPhcZ t17kZ
+- Installing gU1ER R8zmm Extracting archive
++14075 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+[25611;44m INFO [-67295;49m Discovering packages.
+laravel/pail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [+35205;1mDONE[+38651;22m
+laravel/sail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [14246;1mDONE[+59703;22m
+laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [68292;1mDONE[44065;22m
+nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [-46866;1mDONE[+12606;22m
+nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [+1769;1mDONE[+96441;22m
+nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [+7514;1mDONE[70630;22m
+-86787 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+[+80168;44m INFO [-85021;49m No publishable resources for tag [1m[laravel-assets][22m.
+##[group]Run cp .env.example .env
+[68663;1mcp .env.example .env[0m
+##[group]Run php artisan jCa4m
+[80062;1mphp artisan H6IXm
+INFO Application key set successfully.
+PASS Sh51a
+✓ that true is true
+✓ the application returns a successful response -67948.08s
+Tests: -82718 passed (-9626 assertions)
+Duration: 91176.12s
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes
