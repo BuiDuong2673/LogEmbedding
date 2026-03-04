@@ -128,7 +128,8 @@ class TestResultAnalyzer:
             "test_result_balanced/glove.txt",
             "test_result_balanced/all_MiniLM_L6_v2.txt",
             "test_result_balanced/e5-base-v2.txt",
-            "test_result_balanced/fasttext.txt"
+            "test_result_balanced/fasttext.txt",
+            "test_result_balanced/embeddinggemma-300m.txt"
         ]
         for file_path in file_paths:
             file_name = os.path.basename(file_path).replace(".txt", "")
@@ -372,15 +373,15 @@ class TestResultAnalyzer:
         """Compare the best self-trained model with pretrained models using a grouped bar plot."""
         
         # Collecting model accuracy results
-        model_names = ["self-trained"] + pretrained_model_lists
+        model_names = ["our model"] + pretrained_model_lists
         plot_data = {name: [] for name in model_names}
         error_data = {name: [] for name in model_names}
 
         for client in client_list:
             # Get self-trained model result
             st_mean, st_std = accuracy_scores.get(f"{best_trained_model_parameters}", {}).get(client, (0.0, 0.0))
-            plot_data["self-trained"].append(st_mean)
-            error_data["self-trained"].append(st_std)
+            plot_data["our model"].append(st_mean)
+            error_data["our model"].append(st_std)
 
             # Get pretrained model results
             for model in pretrained_model_lists:
@@ -390,10 +391,10 @@ class TestResultAnalyzer:
 
         # Plotting the results of the models for each client
         x = np.arange(len(client_list))
-        width = 0.2
+        width = 0.15
         multiplier = 0
 
-        fig, ax = plt.subplots(figsize=(8, 5))
+        fig, ax = plt.subplots(figsize=(8, 6))
 
         # Create model bars in each client
         for model_name in model_names:
@@ -404,23 +405,180 @@ class TestResultAnalyzer:
             # Plot bars with error bars (yerr) for the std deviation
             rects = ax.bar(x + offset, means, width, label=model_name, yerr=stds, capsize=4)
             
-            # Add text labels on top of bars
-            ax.bar_label(rects, padding=3, fmt='%.2f', fontsize=8)
+            # Add text labels on top of bars with mean + standard deviation
+            # ax.bar_label(rects, padding=3, fmt='%.2f', fontsize=8)
+            labels = [f'{m:.2f} ± {s:.2f}' for m, s in zip(means, stds)]
+            ax.bar_label(rects, labels=labels, padding=3, fontsize=8)
             multiplier += 1
 
         ax.set_ylabel('Mean Accuracy')
-        ax.set_title('Best Self-Trained vs. Pretrained Models')
+        ax.set_title('Our Best Model vs. Pretrained Models')
         ax.set_xticks(x + (width * (len(model_names) - 1) / 2))
         ax.set_xticklabels(client_list)
-        ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.15), ncol=len(model_names))
+        ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.2), ncol=3)
         # ax.set_ylim(0, 1.5)
         
         # plt.grid(axis='y', linestyle='--', alpha=0.7)
         plt.tight_layout()
 
         os.makedirs("test_analysis_result", exist_ok=True)
-        plt.savefig("test_analysis_result/model_comparison_experiment.pdf")
+        plt.savefig("test_analysis_result/model_comparison_experiment.png")
         plt.close()
+
+
+class TestResultAnalyzerImbalanced:
+    """Analyze the test results with imbalanced dataset."""
+    def __init__(self, file_paths: list[str, str]) -> None:
+        """Initialize TestResultAnalyzerImbalanced."""
+        self.file_paths = file_paths
+
+    def get_all_files_in_folder(self, folder_name: str) -> list[str]:
+        """Get all files in the result folder."""
+        # Get all file paths in a folder
+        file_paths = [os.path.join(folder_name, f) for f in os.listdir(folder_name) if os.path.isfile(os.path.join(folder_name, f))]
+        return file_paths
+
+    def get_ranking_scores(self, file_path: str) -> dict[str, list[float]]:
+        score_dict = {"1": 1, "2": 0.8, "3": 0.6, "4": 0.4, "5": 0.2}
+        with open(file_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        client_scores = {}
+        temp_scores = []
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
+            # Detect each ranking mission
+            if line.startswith("Finding similar logs for"):
+                j = i + 1
+                rank_found = False
+                while j < len(lines):
+                    l = lines[j].strip()
+                    # Detect the end of each ranking mission
+                    if l.startswith("----"):
+                        break
+                    # Read the rank
+                    m = re.search(r"TRUE: included at rank\s+(\d+)", l, re.IGNORECASE)
+                    if m:
+                        rank_num = int(m.group(1))
+                        temp_scores.append(score_dict.get(str(rank_num), 0))
+                        rank_found = True
+                        break
+                    j += 1
+                if not rank_found:
+                    temp_scores.append(0.0)
+                i = j  # jump to end of block
+
+            # Detect the end of each client accuracy test
+            elif line.startswith("Accuracy rate for client"):
+                m = re.search(r"Accuracy rate for client (\S+):", line)
+                if m:
+                    client = m.group(1)
+                    client_scores[client] = temp_scores
+                    temp_scores = []
+            i += 1
+        return client_scores
+    
+    def get_each_client_accuracy(self, file_path: str) -> dict[str, tuple[float, float]]:
+        """Get the mean accuracy and standard deviation for each client plus the total average."""
+        client_accuracies = self.get_ranking_scores(file_path)
+        
+        all_scores = []
+        processed_results = {}
+
+        # Calculate for each client and collect all scores for the global average
+        for client, scores in client_accuracies.items():
+            processed_results[client] = (
+                float(round(np.mean(scores), 2)), 
+                float(round(np.std(scores), 2))
+            )
+            all_scores.extend(scores)
+
+        # Calculate the global mean and std if there is data
+        if all_scores:
+            processed_results["All"] = (
+                float(round(np.mean(all_scores), 2)), 
+                float(round(np.std(all_scores), 2))
+            )
+        return processed_results
+    
+    def get_accuracy_score_for_all_files(self, file_paths: dict[str, str]) -> dict[str, dict[str, tuple[float, float]]]:
+        """Get the accuracy scores for all files."""
+        all_scores = {}
+        for model_name, path in file_paths.items():
+            all_scores[model_name] = self.get_each_client_accuracy(path)
+        return all_scores
+    
+    def draw_learning_rate_experiment(
+            self, accuracy_scores: dict[str, dict[str, tuple[float, float]]],
+            fixed_client_num: int=2,
+            fixed_central_server_epochs: int=50,
+            fixed_client_epochs: int=5,
+            fixed_context_window: int=2,
+            fixed_negative_samples: int=5,
+            possible_learning_rates: list[float]=[0.001, 0.01, 0.1]
+            ) -> None:
+        """Draw the learning rate experiment results."""
+        # Use a dictionary of lists to store results per client
+        client_means = collections.defaultdict(list)
+        client_stds = collections.defaultdict(list)
+
+        for lr in possible_learning_rates:
+            key = (fixed_client_num, fixed_central_server_epochs, fixed_client_epochs, lr,
+                   fixed_context_window, fixed_negative_samples)
+
+            # Ensure you handle the string vs tuple key correctly based on your data
+            model_result = accuracy_scores.get(str(key), {}) 
+            
+            for client, (mean, std) in model_result.items():
+                client_means[client].append(mean)
+                client_stds[client].append(std)
+
+        plt.figure(figsize=(8, 5))
+        
+        # Now iterate through each client to plot their specific line
+        for client in client_means.keys():
+            if client == "All":
+                continue
+            means = client_means[client]
+            stds = client_stds[client]
+            
+            # Plot the line
+            plt.plot(possible_learning_rates, means, marker="o", label=client)
+            
+            # Add text labels for each point
+            for i, lr in enumerate(possible_learning_rates):
+                plt.text(lr, means[i], f"{means[i]}±{stds[i]}", 
+                        ha="left", va="bottom", fontsize=8)
+        
+        # Plot the Average accuracy of all clients
+        if "All" in client_means:
+            all_means = np.array(client_means["All"])
+            all_stds = np.array(client_stds["All"])
+            
+            # Draw the red dashed line
+            plt.plot(possible_learning_rates, all_means, color='red', linestyle='--', 
+                     linewidth=2.5, marker='s', label="Average Accuracy per Client")
+
+            # Add text labels for each point
+            for i, lr in enumerate(possible_learning_rates):
+                plt.text(lr, all_means[i], f"{all_means[i]:.2f}±{all_stds[i]:.2f}", 
+                        ha="left", va="top", color="red", fontweight='bold', fontsize=8)
+
+        plt.xticks(possible_learning_rates)
+        plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.15), ncol=len(client_means))
+
+        plt.title("Learning Rate Experiment")
+        plt.xlabel("Learning Rate")
+        plt.ylabel("Mean Accuracy")
+        # Set y to start at 0 and end at 1
+        # plt.ylim(bottom=0, top=1)
+
+        os.makedirs("test_analysis_result_imbalanced", exist_ok=True)
+        plt.savefig("test_analysis_result_imbalanced/learning_rate_experiment.png")
+        plt.close()
+    
+
+
 
 def main_balance() -> None:
     """Do statistical analysis of the tests with balanced dataset."""
@@ -436,9 +594,37 @@ def main_balance() -> None:
     # analyzer.draw_matrix_experiment("client_3", accuracy_scores)
 
     best_trained_model_parameters = (10, 3, 300, 1, 1, 0.001)
-    pretrained_model_lists = ["glove", "all_MiniLM_L6_v2", "fasttext"] # "e5-base-v2"
+    pretrained_model_lists = ["glove", "all_MiniLM_L6_v2", "fasttext", "e5-base-v2", "embeddinggemma-300m"]
     client_list = ["client_1", "client_2", "client_3"]
-    analyzer.draw_model_comparison_experiment(accuracy_scores, best_trained_model_parameters, pretrained_model_lists, client_list)
+    analyzer.draw_model_comparison_experiment(
+        accuracy_scores, best_trained_model_parameters, pretrained_model_lists, client_list)
+
+def main_imbalanced() -> None:
+    file_paths = {
+        '(2, 50, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_50_5_epochs.txt',
+        '(2, 50, 5, 0.01, 2, 2)': 'test_result_2/2_clients_2_context_50_5_epochs_2_neg.txt',
+        '(2, 50, 5, 0.01, 2, 3)': 'test_result_2/2_clients_2_context_50_5_epochs_3_neg.txt',
+        '(2, 50, 5, 0.01, 1, 5)': 'test_result_2/2_clients_1_context_50_5_epochs_001_learning_rate_5_neg.txt',
+        '(3, 10, 5, 0.01, 2, 5)': 'test_result_2/3_clients_2_context_10_5_epochs.txt',
+        '(2, 70, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_70_5_epochs_001_learning_rate_5_neg.txt',
+        '(2, 50, 5, 0.01, 2, 1)': 'test_result_2/2_clients_2_context_50_5_epochs_1_neg.txt',
+        '(2, 50, 5, 0.01, 5, 5)': 'test_result_2/2_clients_5_context_50_5_epochs.txt',
+        '(2, 30, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_30_5_epochs_001_learning_rate_5_neg.txt',
+        '(2, 10, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_10_5_epochs_001_learning_rate_5_neg.txt',
+        'all_MiniLM_L6_v2': 'test_result_2/all_MiniLM_L6_v2.txt',
+        '(2, 50, 5, 0.01, 2, 4)': 'test_result_2/2_clients_2_context_50_5_epochs_4_neg.txt',
+        '(2, 50, 5, 0.01, 3, 5)': 'test_result_2/2_clients_3_context_50_5_epochs.txt',
+        '(2, 50, 5, 0.001, 2, 5)': 'test_result_2/2_clients_2_context_50_5_epochs_0001_learning_rate.txt',
+        'glove': 'test_result_2/glove.txt',
+        '(2, 100, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_100_5_epochs.txt',
+        '(2, 50, 5, 0.01, 4, 5)': 'test_result_2/2_clients_4_context_50_5_epochs.txt',
+        '(2, 50, 5, 0.1, 2, 5)': 'test_result_2/2_clients_2_context_50_5_epochs_01_learning_rate.txt'
+    }
+    analyzer = TestResultAnalyzerImbalanced(file_paths)
+    accuracy_score = analyzer.get_accuracy_score_for_all_files(file_paths)
+    analyzer.draw_learning_rate_experiment(accuracy_score)
+
+    
 
 if __name__ == "__main__":
     main_balance()
