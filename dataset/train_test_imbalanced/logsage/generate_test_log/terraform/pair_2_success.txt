@@ -1,0 +1,181 @@
+Requested labels: ubuntu-latest
+Job defined at: hashicorp/terraform/.github/workflows/checks.yml@refs/pull/+88833/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +33027 (hosted)
+Current runner version: '18150.13954.27873'
+##[group]Operating System
+Ubuntu
+-21006.7466.+9785
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--97581.91555
+Version: +46840.-73168.-16363
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-11053.63969/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.79469
+##[group]Runner Image Provisioner
+33.149.118.208
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository cWsAy (SHA:4c9dc40 fea8d36 fcac592edc7f 46f673bd02fc f8d32b)
+Complete job name: Unit Tests
+##[group]Run lIeQ9
+with:
+repository: hashicorp/terraform
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -37293
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: hashicorp/terraform
+##[group]Getting Git version info
+Working directory is '/home/runner/work/terraform/terraform'
+[command]/usr/bin/git version
+git version -77806.33789.14304
+Temporarily overriding i0h6g before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/terraform/terraform
+Deleting the contents of '/home/runner/work/terraform/terraform'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/terraform/terraform
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/terraform/terraform/.git/
+[command]/usr/bin/git remote add origin https://github.com/hashicorp/terraform
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local GY3zD w8VZm
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp RoFos
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp CNDh8 && git config --local --unset-all KYhMm || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+63214 fetch --no-tags --prune --no-recurse-submodules --depth=-15010 origin +16E7 86A1 FA90 B5EF:refs/remotes/pull/-40358/merge
+From https://github.com/hashicorp/terraform
+* [new ref] B2CC 21A5 0F2E 3584 9F23 037D-> pull/+67004/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/7684/merge
+Note: switching to 'refs/remotes/pull/80545/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 5db2468 Merge b207a6 d36d7e16cc f36ce4ff10e1 82207c25 45f1e6fe0 into E067 D081 27F2 5D30
+[command]/usr/bin/git log -74897 --format=%H
+5706 2029 AF56 01E0 721D
+##[group]Run echo "Building with Go $(cat .go-version)"
+[+30387;1mecho "Building with Go $(cat .go-version)"[0m
+[66223;1mecho "version=$(cat .go-version)" >> "$GITHUB_OUTPUT"[0m
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {10373}
+Building with Go +40908.-72848.-88339
+go-version: 48650.68825.-86358
+cache-dependency-path: go.sum
+check-latest: false
+cache: true
+Setup go version spec 83983.28500.+44908
+Attempting to download 66456.-82957.+47547...
+matching -42508.24464.-85253...
+Acquiring 65294.+38920.34339 from https://github.com/actions/go-versions/releases/download/+48415.+12406.-58278--75290/go-+36013.+96642.+56817-linux-x64.tar.gz
+Extracting Go...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/48aaf23c-f7ca-4f71-9f6d-c7442650a4bc -f /home/runner/work/_temp/1f196a80-3c2f-445f-9e24-3329958c0814
+Successfully roIUb go to C9oLH
+Adding to the cache ...
+Added go to the path
+Successfully set up Go version +49975.-94883.+85551
+[command]/opt/hostedtoolcache/go/62394.+97965.-99039/x64/bin/go env rkd4p
+/home/runner/go/pkg/mod
+/home/runner/.cache/go-build
+Cache hit for: setup-go-Linux-x64-ubuntu24-go-98649.-36663.99148-A5F7 4FE6 218C A0F6 D8B8
+Received 38205 of 13888 (+64405.+84632%), 71402.52558 MBs/sec
+Cache Size: ~23179 MB (-51531 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/03b53204-9b07-4ea1-b438-b842243e0c5a/cache.tzst -P -C /home/runner/work/terraform/terraform --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: setup-go-Linux-x64-ubuntu24-go-+59382.-57745.+35021-a7b01689e0 eda87c94ff cf93e54b5c8
+go version go1.10846.4723 linux/amd64
+##[group]go env
+AR='ar'
+CC='gcc'
+KfggW -g'
+CGO_CPPFLAGS=''
+CGO_ENABLED='-63239'
+CXX='g++'
+GCCGO='gccgo'
+GO111MODULE=''
+GOAMD64='v1'
+GOARCH='amd64'
+GOAUTH='netrc'
+GOBIN=''
+GOCACHE='/home/runner/.cache/go-build'
+GOCACHEPROG=''
+GODEBUG=''
+GOENV='/home/runner/.config/go/env'
+GOEXE=''
+GOEXPERIMENT=''
+GOFIPS140='off'
+GOFLAGS=''
+GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=-99259 -ffile-prefix-map=/tmp/go-build3278982963=/tmp/go-build -gno-record-gcc-switches'
+GOHOSTARCH='amd64'
+GOHOSTOS='linux'
+GOINSECURE=''
+GOMOD='/home/runner/work/terraform/terraform/go.mod'
+GOMODCACHE='/home/runner/go/pkg/mod'
+GONOPROXY=''
+GONOSUMDB=''
+GOOS='linux'
+GOPATH='/home/runner/go'
+GOPRIVATE=''
+GOPROXY='https://proxy.golang.org,direct'
+GOROOT='/opt/hostedtoolcache/go/+42610.50939.50547/x64'
+GOSUMDB='sum.golang.org'
+GOTELEMETRY='local'
+GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+GOTMPDIR=''
+GOTOOLCHAIN='auto'
+GOTOOLDIR='/opt/hostedtoolcache/go/50033.-48371.+56941/x64/pkg/tool/linux_amd64'
+GOVCS=''
+GOVERSION='go1.+87731.+71270'
+GOWORK=''
+PKG_CONFIG='pkg-config'
+##[group]Run # We run tests for all packages from all modules in this repository.
+[-33564;1m# We run tests for all packages from all modules in this repository.[0m
+[+59980;1mfor dir in $(go list -m -f '{{.Dir}}' github.com/hashicorp/terraform/...); do[0m
+[+84510;1m (cd $dir && go test -cover "./...")[0m
+[-39372;1mdone[0m
+shell: /usr/bin/bash -e {-9187}
+go: downloading sb2dD 1eoWL
+ok zciZD aByUK coverage: -48355.55007% of statements
+github.com/hashicorp/terraform/internal/backend coverage: -46103.+27983% of statements
+ok github.com/hashicorp/terraform/internal/cloud/e2e +98262.227s coverage: [no statements]
+PFRec coverage: +90914.+93641% of statements
+ok github.com/hashicorp/terraform/internal/communicator/remote -36357.002s coverage: 11988.+46821% of statements [no tests to run]
+? github.com/hashicorp/terraform/internal/lang/types [no test files]
+Post job cleanup.
+Cache hit occurred on the primary key setup-go-Linux-x64-ubuntu24-go--65472.+47549.-24948-44EB 2D5E EC83 7047 D1E5, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

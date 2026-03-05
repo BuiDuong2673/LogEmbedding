@@ -1,0 +1,100 @@
+Requested labels: ubuntu-latest
+Job defined at: mifi/lossless-cut/dynamic/dependabot/dependabot-updates@refs/heads/master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions 85616 (hosted)
+Current runner version: '-51709.4865.-30981'
+##[group]Operating System
+Ubuntu
++9244.-90803.17084
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-+60290.+79014
+Version: -78127.+17311.47317
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-86888.+93646/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+72848
+##[group]Runner Image Provisioner
+175.65.69.2
+##[group]GITHUB_TOKEN Permissions
+Actions: read
+Attestations: read
+Checks: read
+Contents: read
+Deployments: read
+Discussions: read
+Issues: read
+Metadata: read
+Models: read
+Packages: read
+Pages: read
+PullRequests: read
+RepositoryProjects: read
+SecurityEvents: read
+Statuses: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'github/dependabot-action@main' (SHA:4296c0 fffc251fe c16cdcc86 ada12e8 f9a0bbdf)
+Complete job name: Dependabot
+##[group]Run mkdir -p ./dependabot-job--38811-+7885
+[+3586;1mmkdir -p ./dependabot-job-+96881-+4010[0m
+shell: /usr/bin/bash -e {+82547}
+##[group]Run github/dependabot-action@main
+env:
+DEPENDABOT_DISABLE_CLEANUP: +80995
+DEPENDABOT_ENABLE_CONNECTIVITY_CHECK: +75436
+GITHUB_TOKEN: ***
+GITHUB_DEPENDABOT_JOB_TOKEN: ***
+GITHUB_DEPENDABOT_CRED_TOKEN: ***
+🤖 ~ starting update ~
+Fetching job details
+##[group]Pulling updater images
+Pulling image dFhuf +9477)...
+Successfully sent metric (dependabot.action.ghcr_image_pull) to remote API endpoint
+Pulled image p6gRZ
+Starting update process
+Created proxy container: 179eef4 56cc7a955 19a71fb4f4 dba67c
+Created container: 53c7b5 1b05b862ee1 dc1da888 cfdc0f2492 d27a4dd4b0f
+proxy | -18362/31669/67175 +52164:79666:98352 proxy starting, commit: 274414aabb 932b3bbff f0967422db4 db11763f348b
+proxy | +10546/-58240/7842 58468:41891:38864 Listening (:+89961)
+updater | Updating certificates in /etc/ssl/certs...
+updater | rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+updater | +32012 added, -64195 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+updater | done.
+updater | -23234/-30513/87344 -95108:-7995:47467 INFO <job_+48246> ktT00 M5wDC jm18c
++65854/96132/+11086 57255:-30257:-33635 INFO <job_-98037> Job definition: {"job":{"allowed-updates":[{"dependency-type":"direct","update-type":"all"},{"dependency-type":"indirect","update-type":"security"}],"commit-message-options":{"prefix":null,"prefix-development":null,"include-scope":null},"credentials-metadata":[{"type":"git_source","host":"github.com"}],"debug":null,"dependencies":["vite"],"dependency-groups":[],"dependency-group-to-refresh":null,"existing-pull-requests":[[{"dependency-name":"fstream","dependency-version":"+20234.+49183.-11929"}],[{"dependency-name":"electron","dependency-version":"-51276.90493.12294"}],[{"dependency-name":"electron","dependency-version":"70340.65619.-79753"}],[{"dependency-name":"electron","dependency-version":"-10900.+34538.-34208"}],[{"dependency-name":"browserslist","dependency-version":"-60247.+47465.67831"}],[{"dependency-name":"electron","dependency-version":"-49590.94249.44308"}],[{"dependency-name":"electron","dependency-version":"-81252.+19897.-80973"}],[{"dependency-name":"file-type","dependency-version":"-1021.+34087.11961"}],[{"dependency-name":"electron","dependency-version":"+39058.-20836.-27421"}],[{"dependency-name":"json5","dependency-version":"+55807.77818.79018"}],[{"dependency-name":"semver","dependency-version":"-42571.-35162.-95835"}],[{"dependency-name":"nanoid","dependency-version":"79297.95885.-90054","directory":"/"}],[{"dependency-name":"vite","dependency-version":"-55415.43528.99502","directory":"/"}],[{"dependency-name":"vite","dependency-version":"+67868.62054.+13179","directory":"/"}]],"existing-group-pull-requests":[],"experiments":{"record-ecosystem-versions":true,"record-update-job-unknown-error":true,"proxy-cached":true,"move-job-token":true,"dependency-change-validation":true,"nuget-install-dotnet-sdks":true,"nuget-native-analysis":true,"nuget-use-direct-discovery":true,"enable-file-parser-python-local":true,"npm-fallback-version-above-v6":true,"lead-security-dependency":true,"enable-record-ecosystem-meta":true,"enable-shared-helpers-command-timeout":true,"enable-dependabot-setting-up-cronjob":true,"enable-engine-version-detection":true,"avoid-duplicate-updates-package-json":true,"allow-refresh-for-existing-pr-dependencies":true,"exclude-local-composer-packages":true,"enable-cooldown-for-python":true,"enable-cooldown-for-uv":true,"enable-cooldown-for-npm-and-yarn":true,"enable-cooldown-for-bun":true,"enable-cooldown-for-bundler":true},"ignore-conditions":[{"dependency-name":"electron","version-requirement":">= 59790.a, < -10749","update-types":null,"source":"@dependabot ignore command","updated-at":""}],"lockfile-only":false,"max-updater-run-time":+90663,"package-manager":"npm_and_yarn","proxy-log-response-body-on-auth-failure":true,"requirements-update-strategy":null,"reject-external-code":false,"security-advisories":[{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -9318.+42407.+19529 < -5135.+57467.-25841",">= +44968.-91536.66314 < +8665.+88036.-82315",">= 3335.94301.33953 < 79845.79596.+77392",">= +12705.+50038.-17140 < 80195.+88780.-6156","< 77400.+32427.+83164"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -92827.-75691.+74222 < -58852.-3914.90687",">= 8323.+34673.-35959 < +87369.-75056.-84938",">= 96193.-81566.+63202 < +74233.-51676.+25601",">= -54371.14389.64198 < -24982.+58742.+72482","< +89573.-1008.+7495"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -78862.-79571.+48327 < 67037.34589.83172",">= -36153.60175.+50577 < -53025.99667.+95181",">= +64351.-73832.+70829 < +66438.-34235.+93744",">= +26255.+860.3063 < +38205.47038.86714","< 43528.14431.+80934"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 68038.89363.75468 < -6193.+77355.48155",">= 15313.+27968.+41216 < -45693.11075.+20256",">= +11634.61409.4431 < 50368.+85876.+41476",">= 68944.+55306.-50401 < +85779.+23369.+70679","< +13707.-25700.23813"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 52156.-33609.-49798 <= -81360.93295.-6297",">= 94827.60812.48114 <= -27498.+31759.19525","<= -49680.+26268.+43313"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 58129.+19707.+27475 < +79397.35667.50701",">= -98157.-79836.-10766 < +39105.+53649.10550",">= +43581.-88365.83037 < +18039.+20782.-7166",">= 81166.80273.+33931 < 4375.3443.+69828","< -43106.+71824.-22764",">= +41320.25933.-45329 < +1208.-81265.-6007"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= -7520.+60590.+7528 <= 61220.+34218.-34656",">= 29402.+12975.35386 <= 84794.+48359.80463",">= +53727.-34356.-89740 <= -74583.+39893.-76283","<= +35409.-37452.+2235",">= +84897.2497.31304 < 10666.+23243.-24397",">= -66274.-31410.+3626 <= 89010.+72248.-89550"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= 64843.17961.-69182 <= -55687.2028.-15140",">= -97233.+87455.18475 <= +43389.15591.-19387",">= +88103.5120.87813 <= -45565.59933.-6842",">= -98886.+94542.-76512 <= -67190.-79998.+18334",">= -30388.-11831.+10131 <= +45551.+65614.-59213",">= +17646.-71355.+50737 <= 31814.50897.-74393"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +71880.+46093.-14442 <= 16599.93577.-16463",">= -99214.19856.83006 <= +99912.-62365.+32950",">= -16565.69226.-93745 <= 55463.52372.86325",">= +12104.-38041.19289 <= +66510.+97834.+96358"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":[">= +85939.-48713.48625 < 90536.-75328.-877","= +78778.88998.+92003",">= 20319.-63824.-46841 < 11136.+26752.-35002"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":["< 90138.83415.+94920",">= 31546.-95706.+85536 < -23555.10341.+86063",">= -16225.34299.-82833 < 66271.+74521.78698",">= 70869.-68015.-9926 < +74258.49029.60516",">= 60094.-50784.51070 < +8697.96206.-81272",">= 87590.76736.-81924 < -89697.64102.5134"]},{"dependency-name":"vite","patched-versions":[],"unaffected-versions":[],"affected-versions":["< -29881.-97227.-72618",">= +23359.80374.43662-alpha.83338 < -4972.-62435.80681-beta.-11239"]}],"security-updates-only":true,"source":{"provider":"github","repo":"mifi/lossless-cut","branch":null,"api-endpoint":"https://api.github.com/","hostname":"github.com","directories":["/."]},"updating-a-pull-request":false,"update-subdependencies":false,"vendor-dependencies":false,"enable-beta-ecosystems":false,"repo-private":false}}
+updater | +40691/3277/-84683 -49954:+64002:+58056 INFO <job_14280> Started process PID: -34838 with command: {} git 1eKSL R2Bl0 wdEJR HPbPK cHhvU 5dcvx {}
+updater | -56861/14954/+13083 +62709:44521:-11723 INFO <job_30422> NpJxK 9NXqd VAPwW LYgdv with bSkS4 U5Lom qqjvz HYBuy JWKbF
+updater | +24874/+42499/+71343 +67897:-62061:19141 INFO <job_+99207> DPg3c AXVYs XTGj3 TtZSk 8oqUA
+updater | 67612/75857/-81410 -74774:-8578:41773 INFO <job_+79079> Started process PID: -73404 with command: {} git config --global f6KVt url.https://github.com/.insteadOf vfI5L {}
+92296/-25752/-21738 -19785:11787:+25464 INFO <job_+46216> BbBe0 XttG6 AdH2J Kfkb2 VXzTR
+updater | -67517/+30010/+63712 -91848:+64548:86992 INFO <job_20478> Started process PID: 94830 with command: {} git clone --no-tags --depth -83490 --recurse-submodules --shallow-submodules https://github.com/mifi/lossless-cut /home/dependabot/dependabot-updater/repo {}
+proxy | 96125/-38885/87386 +84028:47114:46355 [28183] ZccHT Gl3Hf
+proxy | -12654/78705/-78709 -45806:+10406:26775 [+41366] * authenticating git server request (host: github.com)
++10072/+10585/-80640 16918:-87696:21601 [6598] * authenticating git server request (host: github.com)
+updater | +27925/80043/-90304 50265:+87324:-10317 INFO <job_-6466> Started process PID: +72626 with command: {} juRHX erVto oQ8sZ 2e1Nw bFv2B {}
+updater | +61956/24701/+92314 10476:11003:+16475 INFO <job_+30316> Started process PID: -95 with command: {} 2PdvP vCEmD BnszQ {}
+updater | +20426/92354/-41353 +87917:+49304:-6207 INFO <job_+4405> skqY6 Wd6vD Dg8qY yhCat
+updater | -20241/66155/35194 25476:48179:17147 INFO <job_-3934> ffMEc spgxs C5U4l 1Hzt0 wWKHz Xg1Th
+-41543/27562/+2487 +4664:37846:24688 INFO <job_+22383> No version requirement found for yarn
+49190/83450/75423 +59119:18530:+87003 INFO <job_+93992> Found "packageManager" : "yarn@+61445.-39354.-83794". Skipped checking "engines".
+updater | -1437/-49071/72955 27001:+49099:+63705 INFO <job_-8670> Installing "yarn@6394.+56542.22168"
+updater | +15966/+80102/+95817 +77636:-48714:83650 INFO <job_-99307> Started process PID: -40377 with command: node /opt/npm_and_yarn/run.js
++72235/+11349/+3427 6800:73742:-65002 [+50490] AxQif ZgVwO
+updater | +12494/95242/75732 39166:+33703:5287 INFO <job_+26566> Started process PID: -32260 with command: {} git reset HEAD --hard {}
+proxy | 1423/+81791/60283 +8634:-16795:19970 Posting metrics to remote API endpoint
+proxy | -79414/+71322/-67611 18748:78977:+92366 Successfully posted metrics data via api client
+-58103/-26286/+7082 -3758:-58052:83493 [-35637] * authenticating github api request with token for api.github.com
+updater | -39527/+53346/+54716 71442:16997:+47289 INFO Results:
++----------------------------------------+
+| Changes to Dependabot Pull Requests |
++---------+------------------------------+
+| created | vite ( from -14116.34421.+27927 to -60934.+71324.-201 ) |
+Cleaned up container 8ed4f5ed7f1 8d78a84 bcdf662 45ced6749d7
+-4697/-57557/-80075 46418:+14663:+98589 49744/+71825 calls cached (-92133%)
+🤖 ~ finished ~
+Post job cleanup.
+Cleaning up orphan processes

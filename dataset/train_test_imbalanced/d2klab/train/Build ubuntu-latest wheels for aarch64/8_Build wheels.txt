@@ -1,0 +1,711 @@
+2023-09-21T14:18:20.3203585Z ##[group]Run python -m cibuildwheel --output-dir wheelhouse
+2023-09-21T14:18:20.3204074Z [36;1mpython -m cibuildwheel --output-dir wheelhouse[0m
+2023-09-21T14:18:20.3274152Z shell: /usr/bin/bash -e {0}
+2023-09-21T14:18:20.3274405Z env:
+2023-09-21T14:18:20.3274622Z   HDF5_VERSION: 1.14.1-2
+2023-09-21T14:18:20.3274863Z   MACOSX_DEPLOYMENT_TARGET: 10.9
+2023-09-21T14:18:20.3275338Z   CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-* 
+2023-09-21T14:18:20.3275752Z   CIBW_BUILD: cp*
+2023-09-21T14:18:20.3276033Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T14:18:20.3276402Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.5/x64/lib/pkgconfig
+2023-09-21T14:18:20.3276762Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T14:18:20.3277085Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T14:18:20.3277604Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.5/x64
+2023-09-21T14:18:20.3277988Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.5/x64/lib
+2023-09-21T14:18:20.3278344Z   CFLAGS: -g0
+2023-09-21T14:18:20.3278610Z   CIBW_BUILD_VERBOSITY_MACOS: 3
+2023-09-21T14:18:20.3278884Z   CIBW_ARCHS: aarch64
+2023-09-21T14:18:20.3279345Z   CIBW_BEFORE_BUILD: python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2
+
+2023-09-21T14:18:20.3280069Z   CIBW_ENVIRONMENT: DISABLE_AVX2='TRUE' CFLAGS=-g0 HDF5_DIR=/tmp/hdf5 LD_LIBRARY_PATH="/tmp/hdf5/lib:${LD_LIBRARY_PATH}" PKG_CONFIG_PATH="/tmp/hdf5/lib/pkgconfig:${PKG_CONFIG_PATH}"
+2023-09-21T14:18:20.3281094Z   CIBW_ENVIRONMENT_MACOS: CC=/usr/bin/clang CXX=/usr/bin/clang HDF5_DIR=/tmp/hdf5 LZO_DIR=/tmp/hdf5 BZIP2_DIR=/tmp/hdf5 LD_LIBRARY_PATH="/tmp/hdf5/lib:${LD_LIBRARY_PATH}" PKG_CONFIG_PATH="/tmp/hdf5/lib/pkgconfig:${PKG_CONFIG_PATH}"
+2023-09-21T14:18:20.3281714Z   CIBW_BEFORE_ALL_MACOS: cp -r `pwd`/hdf5_build /tmp/hdf5
+2023-09-21T14:18:20.3282205Z   CIBW_BEFORE_ALL_LINUX: cp -r `pwd`/hdf5_build /tmp/hdf5 && yum -y update && yum install -y zlib-devel bzip2-devel lzo-devel
+
+2023-09-21T14:18:20.3282938Z   CIBW_REPAIR_WHEEL_COMMAND_MACOS: DYLD_FALLBACK_LIBRARY_PATH=/tmp/hdf5/lib delocate-listdeps {wheel} && DYLD_FALLBACK_LIBRARY_PATH=/tmp/hdf5/lib delocate-wheel --require-archs {delocate_archs} -w {dest_dir} {wheel}
+
+2023-09-21T14:18:20.3283503Z ##[endgroup]
+2023-09-21T14:18:20.6615345Z 
+2023-09-21T14:18:20.6615931Z      _ _       _ _   _       _           _
+2023-09-21T14:18:20.6616610Z  ___|_| |_ _ _|_| |_| |_ _ _| |_ ___ ___| |
+2023-09-21T14:18:20.6617426Z |  _| | . | | | | | . | | | |   | -_| -_| |
+2023-09-21T14:18:20.6617925Z |___|_|___|___|_|_|___|_____|_|_|___|___|_|
+2023-09-21T14:18:20.6618237Z 
+2023-09-21T14:18:20.6618489Z cibuildwheel version 2.16.0
+2023-09-21T14:18:20.6618819Z 
+2023-09-21T14:18:20.6619042Z Build options:
+2023-09-21T14:18:20.6619446Z   platform: linux
+2023-09-21T14:18:20.6706933Z   architectures: aarch64[0m
+2023-09-21T14:18:20.6707504Z   build_selector: 
+2023-09-21T14:18:20.6707958Z     build_config: cp*
+2023-09-21T14:18:20.6708587Z     skip_config: *-musllinux_* cp36-* cp37-* cp312-* 
+2023-09-21T14:18:20.6709545Z     requires_python: >=3.8
+2023-09-21T14:18:20.6710096Z     prerelease_pythons: False[0m
+2023-09-21T14:18:20.6710681Z   [38;5;244mcontainer_engine: docker[0m
+2023-09-21T14:18:20.6711371Z   output_dir: /home/runner/work/PyTables/PyTables/wheelhouse[0m
+2023-09-21T14:18:20.6712095Z   package_dir: /home/runner/work/PyTables/PyTables[0m
+2023-09-21T14:18:20.6712678Z   [38;5;244mtest_selector: 
+2023-09-21T14:18:20.6713249Z [38;5;244m    skip_config:[0m
+2023-09-21T14:18:20.6713645Z   before_all: 
+2023-09-21T14:18:20.6714425Z     cp -r `pwd`/hdf5_build /tmp/hdf5 && yum -y update && yum install -y zlib-devel bzip2-devel lzo-devel[0m
+2023-09-21T14:18:20.6715030Z   before_build: 
+2023-09-21T14:18:20.6715896Z     python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2[0m
+2023-09-21T14:18:20.6716657Z   [38;5;244mbefore_test: [0m
+2023-09-21T14:18:20.6717196Z   [38;5;244mbuild_frontend: None[0m
+2023-09-21T14:18:20.6718035Z   [38;5;244mbuild_verbosity: 0[0m
+2023-09-21T14:18:20.6718569Z   [38;5;244mconfig_settings: [0m
+2023-09-21T14:18:20.6719148Z   [38;5;244mdependency_constraints: pinned[0m
+2023-09-21T14:18:20.6719627Z   environment: 
+2023-09-21T14:18:20.6720110Z     DISABLE_AVX2='TRUE'
+2023-09-21T14:18:20.6720516Z     CFLAGS=-g0
+2023-09-21T14:18:20.6721057Z     HDF5_DIR=/tmp/hdf5
+2023-09-21T14:18:20.6721364Z     LD_LIBRARY_PATH="/tmp/hdf5/lib:${LD_LIBRARY_PATH}"
+2023-09-21T14:18:20.6721787Z     PKG_CONFIG_PATH="/tmp/hdf5/lib/pkgconfig:${PKG_CONFIG_PATH}"[0m
+2023-09-21T14:18:20.6722341Z   [38;5;244mmanylinux_images: 
+2023-09-21T14:18:20.6722802Z [38;5;244m    x86_64: quay.io/pypa/manylinux2014_x86_64:2023-09-17-ae90a16
+2023-09-21T14:18:20.6723298Z [38;5;244m    i686: quay.io/pypa/manylinux2014_i686:2023-09-17-ae90a16
+2023-09-21T14:18:20.6723784Z [38;5;244m    pypy_x86_64: quay.io/pypa/manylinux2014_x86_64:2023-09-17-ae90a16
+2023-09-21T14:18:20.6724294Z [38;5;244m    aarch64: quay.io/pypa/manylinux2014_aarch64:2023-09-17-ae90a16
+2023-09-21T14:18:20.6724988Z [38;5;244m    ppc64le: quay.io/pypa/manylinux2014_ppc64le:2023-09-17-ae90a16
+2023-09-21T14:18:20.6725558Z [38;5;244m    s390x: quay.io/pypa/manylinux2014_s390x:2023-09-17-ae90a16
+2023-09-21T14:18:20.6726129Z [38;5;244m    pypy_aarch64: quay.io/pypa/manylinux2014_aarch64:2023-09-17-ae90a16
+2023-09-21T14:18:20.6726728Z [38;5;244m    pypy_i686: quay.io/pypa/manylinux2014_i686:2023-09-17-ae90a16[0m
+2023-09-21T14:18:20.6727199Z   [38;5;244mmusllinux_images: 
+2023-09-21T14:18:20.6727707Z [38;5;244m    x86_64: quay.io/pypa/musllinux_1_1_x86_64:2023-09-17-ae90a16
+2023-09-21T14:18:20.6728238Z [38;5;244m    i686: quay.io/pypa/musllinux_1_1_i686:2023-09-17-ae90a16
+2023-09-21T14:18:20.6728818Z [38;5;244m    aarch64: quay.io/pypa/musllinux_1_1_aarch64:2023-09-17-ae90a16
+2023-09-21T14:18:20.6729403Z [38;5;244m    ppc64le: quay.io/pypa/musllinux_1_1_ppc64le:2023-09-17-ae90a16
+2023-09-21T14:18:20.6729975Z [38;5;244m    s390x: quay.io/pypa/musllinux_1_1_s390x:2023-09-17-ae90a16[0m
+2023-09-21T14:18:20.6730538Z   [38;5;244mrepair_command: auditwheel repair -w {dest_dir} {wheel}[0m
+2023-09-21T14:18:20.6731017Z   [38;5;244mtest_command: [0m
+2023-09-21T14:18:20.6731424Z   [38;5;244mtest_extras: [0m
+2023-09-21T14:18:20.6731814Z   [38;5;244mtest_requires: [0m
+2023-09-21T14:18:20.6732066Z 
+2023-09-21T14:18:20.6732298Z Cache folder: /home/runner/.cache/cibuildwheel
+2023-09-21T14:18:20.6788050Z 
+2023-09-21T14:18:20.6788201Z Here we go!
+2023-09-21T14:18:20.6788340Z 
+2023-09-21T14:18:20.7082493Z ##[group]Starting container image quay.io/pypa/manylinux2014_aarch64:2023-09-17-ae90a16...
+2023-09-21T14:18:20.7082750Z 
+2023-09-21T14:18:20.7083126Z info: This container will host the build for cp38-manylinux_aarch64, cp39-manylinux_aarch64, cp310-manylinux_aarch64, cp311-manylinux_aarch64...
+2023-09-21T14:18:20.7264881Z Unable to find image 'quay.io/pypa/manylinux2014_aarch64:2023-09-17-ae90a16' locally
+2023-09-21T14:18:20.9731753Z 2023-09-17-ae90a16: Pulling from pypa/manylinux2014_aarch64
+2023-09-21T14:18:20.9742961Z Digest: sha256:3add11d21a5a03084f52575ef360e025b23ed43046e6f640005937381ef90ddd
+2023-09-21T14:18:20.9762848Z Status: Downloaded newer image for quay.io/pypa/manylinux2014_aarch64:2023-09-17-ae90a16
+2023-09-21T14:18:21.0196382Z WARNING: The requested image's platform (linux/arm64/v8) does not match the detected host platform (linux/amd64/v4) and no specific platform was requested
+2023-09-21T14:18:21.0197131Z dd4d6d07f1e23fb8541a7d7176bdb8f9c05d80cb548ba5932c2fb689a9cc70f2
+2023-09-21T14:18:21.0218282Z     + /bin/true
+2023-09-21T14:18:21.5016484Z     + mkdir -p /project
+2023-09-21T14:18:21.5768183Z     + test -x /opt/python/cp38-cp38/bin/python
+2023-09-21T14:18:21.6508497Z     + test -x /opt/python/cp39-cp39/bin/python
+2023-09-21T14:18:21.7157724Z     + test -x /opt/python/cp310-cp310/bin/python
+2023-09-21T14:18:21.7814036Z     + test -x /opt/python/cp311-cp311/bin/python
+2023-09-21T14:18:21.8516296Z ##[endgroup]
+2023-09-21T14:18:21.8517789Z                                                               [32m✓ [0m1.14s
+2023-09-21T14:18:21.8518882Z ##[group]Copying project into container...
+2023-09-21T14:18:21.8519449Z 
+2023-09-21T14:18:21.8519795Z     + mkdir -p /project
+2023-09-21T14:18:22.4832252Z ##[endgroup]
+2023-09-21T14:18:22.4834254Z                                                               [32m✓ [0m0.63s
+2023-09-21T14:18:22.4834950Z ##[group]Running before_all...
+2023-09-21T14:18:22.4835221Z 
+2023-09-21T14:18:22.4835699Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, os; json.dump(os.environ.copy(), sys.stdout)'
+2023-09-21T14:18:23.4639114Z     + sh -c 'cp -r `pwd`/hdf5_build /tmp/hdf5 && yum -y update && yum install -y zlib-devel bzip2-devel lzo-devel
+2023-09-21T14:18:23.4642725Z '
+2023-09-21T14:18:24.9947082Z Loaded plugins: fastestmirror, ovl
+2023-09-21T14:18:26.1163689Z Determining fastest mirrors
+2023-09-21T14:18:28.4168568Z  * base: mirror.math.princeton.edu
+2023-09-21T14:18:28.4215545Z  * centos-sclo-rh: mirror.dal.nexril.net
+2023-09-21T14:18:28.4252551Z  * extras: mirror.math.princeton.edu
+2023-09-21T14:18:28.4293550Z  * updates: mirror.math.princeton.edu
+2023-09-21T14:18:40.0528030Z No packages marked for update
+2023-09-21T14:18:41.4644019Z Loaded plugins: fastestmirror, ovl
+2023-09-21T14:18:42.1210664Z Loading mirror speeds from cached hostfile
+2023-09-21T14:18:42.1370439Z  * base: mirror.math.princeton.edu
+2023-09-21T14:18:42.1452333Z  * centos-sclo-rh: mirror.dal.nexril.net
+2023-09-21T14:18:42.1491814Z  * extras: mirror.math.princeton.edu
+2023-09-21T14:18:42.1531238Z  * updates: mirror.math.princeton.edu
+2023-09-21T14:18:43.8032641Z Package zlib-devel-1.2.7-21.el7_9.aarch64 already installed and latest version
+2023-09-21T14:18:45.7030404Z Resolving Dependencies
+2023-09-21T14:18:45.7078046Z --> Running transaction check
+2023-09-21T14:18:45.7090155Z ---> Package bzip2-devel.aarch64 0:1.0.6-13.el7 will be installed
+2023-09-21T14:18:45.7202362Z ---> Package lzo-devel.aarch64 0:2.06-8.el7 will be installed
+2023-09-21T14:18:45.7251168Z --> Processing Dependency: lzo-minilzo = 2.06-8.el7 for package: lzo-devel-2.06-8.el7.aarch64
+2023-09-21T14:18:47.1699384Z --> Processing Dependency: lzo = 2.06-8.el7 for package: lzo-devel-2.06-8.el7.aarch64
+2023-09-21T14:18:47.1788092Z --> Processing Dependency: libminilzo.so.0()(64bit) for package: lzo-devel-2.06-8.el7.aarch64
+2023-09-21T14:18:47.1817681Z --> Processing Dependency: liblzo2.so.2()(64bit) for package: lzo-devel-2.06-8.el7.aarch64
+2023-09-21T14:18:47.1846102Z --> Running transaction check
+2023-09-21T14:18:47.1852920Z ---> Package lzo.aarch64 0:2.06-8.el7 will be installed
+2023-09-21T14:18:47.2097544Z ---> Package lzo-minilzo.aarch64 0:2.06-8.el7 will be installed
+2023-09-21T14:18:51.0349386Z --> Finished Dependency Resolution
+2023-09-21T14:18:51.1147132Z 
+2023-09-21T14:18:51.1147529Z Dependencies Resolved
+2023-09-21T14:18:51.1274563Z 
+2023-09-21T14:18:51.1274838Z ================================================================================
+2023-09-21T14:18:51.1275248Z  Package             Arch            Version                 Repository    Size
+2023-09-21T14:18:51.1275903Z ================================================================================
+2023-09-21T14:18:51.1276132Z Installing:
+2023-09-21T14:18:51.1276699Z  bzip2-devel         aarch64         1.0.6-13.el7            base         217 k
+2023-09-21T14:18:51.1277120Z  lzo-devel           aarch64         2.06-8.el7              base          32 k
+2023-09-21T14:18:51.1277426Z Installing for dependencies:
+2023-09-21T14:18:51.1277797Z  lzo                 aarch64         2.06-8.el7              base          52 k
+2023-09-21T14:18:51.1278199Z  lzo-minilzo         aarch64         2.06-8.el7              base          14 k
+2023-09-21T14:18:51.1278394Z 
+2023-09-21T14:18:51.1278486Z Transaction Summary
+2023-09-21T14:18:51.1278732Z ================================================================================
+2023-09-21T14:18:51.1279027Z Install  2 Packages (+2 Dependent packages)
+2023-09-21T14:18:51.1279372Z 
+2023-09-21T14:18:51.1292058Z Total download size: 315 k
+2023-09-21T14:18:51.1297365Z Installed size: 724 k
+2023-09-21T14:18:51.1302221Z Downloading packages:
+2023-09-21T14:18:52.3734284Z http://mirror.pit.teraswitch.com/centos-altarch/7.9.2009/os/aarch64/Packages/bzip2-devel-1.0.6-13.el7.aarch64.rpm: [Errno 14] curl#18 - "transfer closed with 222704 bytes remaining to read"
+2023-09-21T14:18:52.3763702Z Trying other mirror.
+2023-09-21T14:18:55.9971114Z --------------------------------------------------------------------------------
+2023-09-21T14:18:55.9991546Z Total                                               65 kB/s | 315 kB  00:04     
+2023-09-21T14:18:56.0230450Z Running transaction check
+2023-09-21T14:18:56.0566550Z Running transaction test
+2023-09-21T14:18:56.1221107Z Transaction test succeeded
+2023-09-21T14:18:56.1244092Z Running transaction
+2023-09-21T14:18:57.4247157Z   Installing : lzo-2.06-8.el7.aarch64                                       1/4 
+2023-09-21T14:18:58.3744347Z   Installing : lzo-minilzo-2.06-8.el7.aarch64                               2/4 
+2023-09-21T14:18:58.4686418Z   Installing : lzo-devel-2.06-8.el7.aarch64                                 3/4 
+2023-09-21T14:18:58.5012148Z   Installing : bzip2-devel-1.0.6-13.el7.aarch64                             4/4 
+2023-09-21T14:18:58.5308256Z   Verifying  : lzo-minilzo-2.06-8.el7.aarch64                               1/4 
+2023-09-21T14:18:58.5553607Z   Verifying  : bzip2-devel-1.0.6-13.el7.aarch64                             2/4 
+2023-09-21T14:18:58.5758869Z   Verifying  : lzo-devel-2.06-8.el7.aarch64                                 3/4 
+2023-09-21T14:18:58.9398323Z   Verifying  : lzo-2.06-8.el7.aarch64                                       4/4 
+2023-09-21T14:18:58.9398601Z 
+2023-09-21T14:18:58.9398671Z Installed:
+2023-09-21T14:18:58.9399082Z   bzip2-devel.aarch64 0:1.0.6-13.el7       lzo-devel.aarch64 0:2.06-8.el7      
+2023-09-21T14:18:58.9399306Z 
+2023-09-21T14:18:58.9399407Z Dependency Installed:
+2023-09-21T14:18:58.9399803Z   lzo.aarch64 0:2.06-8.el7           lzo-minilzo.aarch64 0:2.06-8.el7          
+2023-09-21T14:18:58.9400036Z 
+2023-09-21T14:18:58.9404095Z Complete!
+2023-09-21T14:18:59.0633658Z ##[endgroup]
+2023-09-21T14:18:59.0634359Z                                                              [32m✓ [0m36.58s
+2023-09-21T14:18:59.0634548Z 
+2023-09-21T14:18:59.0634743Z [1m[34mBuilding cp38-manylinux_aarch64 wheel[0m
+2023-09-21T14:18:59.0635037Z CPython 3.8 manylinux aarch64
+2023-09-21T14:18:59.0635197Z 
+2023-09-21T14:18:59.2667996Z ##[group]Setting up build environment...
+2023-09-21T14:18:59.2668929Z 
+2023-09-21T14:18:59.2670494Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, os; json.dump(os.environ.copy(), sys.stdout)'
+2023-09-21T14:18:59.7126773Z     + which python
+2023-09-21T14:18:59.7858844Z     + which pip
+2023-09-21T14:18:59.8603954Z ##[endgroup]
+2023-09-21T14:18:59.8605435Z                                                               [32m✓ [0m0.59s
+2023-09-21T14:18:59.8606946Z ##[group]Running before_build...
+2023-09-21T14:18:59.8607562Z 
+2023-09-21T14:18:59.8610260Z     + sh -c 'python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2
+2023-09-21T14:18:59.8611241Z '
+2023-09-21T14:19:11.7613313Z Requirement already satisfied: setuptools in /opt/_internal/cpython-3.8.18/lib/python3.8/site-packages (68.2.2)
+2023-09-21T14:19:15.4264603Z Requirement already satisfied: pip in /opt/_internal/cpython-3.8.18/lib/python3.8/site-packages (23.2.1)
+2023-09-21T14:19:16.2443945Z Requirement already satisfied: wheel in /opt/_internal/cpython-3.8.18/lib/python3.8/site-packages (0.41.2)
+2023-09-21T14:19:25.9964640Z Collecting cython>=0.29.32 (from -r requirements.txt (line 2))
+2023-09-21T14:19:25.9991155Z   Obtaining dependency information for cython>=0.29.32 from https://files.pythonhosted.org/packages/09/e7/ef831b87593165f07f906091617f5c069b7ab2d268af33f19db11af6da8e/Cython-3.0.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T14:19:26.1213600Z   Downloading Cython-3.0.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.1 kB)
+2023-09-21T14:19:29.0317644Z Collecting numpy>=1.19.0 (from -r requirements.txt (line 4))
+2023-09-21T14:19:29.0345802Z   Obtaining dependency information for numpy>=1.19.0 from https://files.pythonhosted.org/packages/25/6f/2586a50ad72e8dbb1d8381f837008a0321a3516dfd7cb57fc8cf7e4bb06b/numpy-1.24.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T14:19:29.0646966Z   Downloading numpy-1.24.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (5.6 kB)
+2023-09-21T14:19:29.8722841Z Collecting numexpr>=2.6.2 (from -r requirements.txt (line 5))
+2023-09-21T14:19:29.8753401Z   Obtaining dependency information for numexpr>=2.6.2 from https://files.pythonhosted.org/packages/68/00/c036f442c4fa5013b42d1609a5d934b6b4babe9def9076c75d39a015bc0b/numexpr-2.8.6-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T14:19:29.9032845Z   Downloading numexpr-2.8.6-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (8.0 kB)
+2023-09-21T14:19:29.9263098Z Requirement already satisfied: packaging in /opt/_internal/cpython-3.8.18/lib/python3.8/site-packages (from -r requirements.txt (line 6)) (23.1)
+2023-09-21T14:19:30.0236339Z Collecting py-cpuinfo (from -r requirements.txt (line 7))
+2023-09-21T14:19:30.0513990Z   Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+2023-09-21T14:19:30.4293422Z Downloading Cython-3.0.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.5 MB)
+2023-09-21T14:19:30.9011377Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 8.1 MB/s eta 0:00:00
+2023-09-21T14:19:30.9309494Z Downloading numpy-1.24.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.0 MB)
+2023-09-21T14:19:32.6499644Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.0/14.0 MB 8.3 MB/s eta 0:00:00
+2023-09-21T14:19:32.6822681Z Downloading numexpr-2.8.6-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (415 kB)
+2023-09-21T14:19:32.7630656Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 415.7/415.7 kB 7.5 MB/s eta 0:00:00
+2023-09-21T14:19:34.6788755Z Installing collected packages: py-cpuinfo, numpy, cython, numexpr
+2023-09-21T14:19:53.5034729Z Successfully installed cython-3.0.2 numexpr-2.8.6 numpy-1.24.4 py-cpuinfo-9.0.0
+2023-09-21T14:19:58.7087498Z Collecting blosc2
+2023-09-21T14:19:58.7115780Z   Obtaining dependency information for blosc2 from https://files.pythonhosted.org/packages/4a/2d/0525f1b7b3bd3bac31bc245cbfe3626e2b2cad26bb93e4876a53f52c70ca/blosc2-2.2.7-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T14:19:58.8394781Z   Downloading blosc2-2.2.7-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T14:19:59.7140447Z Collecting msgpack (from blosc2)
+2023-09-21T14:19:59.7170937Z   Obtaining dependency information for msgpack from https://files.pythonhosted.org/packages/ef/e6/326afafbdfc365dfffc1fd2328b637344f58fcdf75701ad99a5a557b0fa2/msgpack-1.0.6-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T14:19:59.7453217Z   Downloading msgpack-1.0.6-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T14:19:59.8488026Z Collecting ndindex>=1.4 (from blosc2)
+2023-09-21T14:19:59.8748493Z   Downloading ndindex-1.7-py3-none-any.whl (85 kB)
+2023-09-21T14:19:59.9378378Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.7/85.7 kB 3.6 MB/s eta 0:00:00
+2023-09-21T14:19:59.9634380Z Requirement already satisfied: numpy>=1.20.3 in /opt/_internal/cpython-3.8.18/lib/python3.8/site-packages (from blosc2) (1.24.4)
+2023-09-21T14:19:59.9679153Z Requirement already satisfied: py-cpuinfo in /opt/_internal/cpython-3.8.18/lib/python3.8/site-packages (from blosc2) (9.0.0)
+2023-09-21T14:20:00.0765789Z Downloading blosc2-2.2.7-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (4.2 MB)
+2023-09-21T14:20:00.6793048Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 7.3 MB/s eta 0:00:00
+2023-09-21T14:20:00.7127865Z Downloading msgpack-1.0.6-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (525 kB)
+2023-09-21T14:20:00.8190830Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 525.4/525.4 kB 6.7 MB/s eta 0:00:00
+2023-09-21T14:20:02.4101379Z Installing collected packages: ndindex, msgpack, blosc2
+2023-09-21T14:20:03.5483960Z Successfully installed blosc2-2.2.7 msgpack-1.0.6 ndindex-1.7
+2023-09-21T14:20:03.8629136Z ##[endgroup]
+2023-09-21T14:20:03.8630034Z                                                              [32m✓ [0m64.00s
+2023-09-21T14:20:03.8630743Z ##[group]Building wheel...
+2023-09-21T14:20:03.8630950Z 
+2023-09-21T14:20:03.8631180Z     + rm -rf /tmp/cibuildwheel/built_wheel
+2023-09-21T14:20:03.9347257Z     + mkdir -p /tmp/cibuildwheel/built_wheel
+2023-09-21T14:20:04.0108020Z     + python -m pip wheel /project --wheel-dir=/tmp/cibuildwheel/built_wheel --no-deps
+2023-09-21T14:20:07.7043231Z Processing /project
+2023-09-21T14:20:07.8129061Z   Installing build dependencies: started
+2023-09-21T14:20:53.1241310Z   Installing build dependencies: finished with status 'done'
+2023-09-21T14:20:53.1333597Z   Getting requirements to build wheel: started
+2023-09-21T14:21:51.2160800Z   Getting requirements to build wheel: finished with status 'done'
+2023-09-21T14:21:51.2436989Z   Preparing metadata (pyproject.toml): started
+2023-09-21T14:21:59.6257971Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2023-09-21T14:21:59.7177550Z Building wheels for collected packages: tables
+2023-09-21T14:21:59.7250233Z   Building wheel for tables (pyproject.toml): started
+2023-09-21T14:23:04.5822035Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:24:05.4140960Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:25:08.2681133Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:26:12.6246296Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:27:43.8227623Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:28:51.6425693Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:29:58.4427838Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:31:03.4579870Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:33:45.0590005Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:35:07.2308614Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:36:11.1597558Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:37:12.8498087Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:39:20.0108771Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:40:27.9536385Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:41:32.8312244Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:42:38.4037046Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:43:41.3153099Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:46:46.7363832Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:48:08.8054875Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:49:12.5051737Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:50:14.4172518Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:52:21.3589635Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:53:30.7438112Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:54:35.9836918Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:55:41.3469982Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:58:21.7825250Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T14:59:22.1490434Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:01:33.7193039Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:01:36.9158703Z   Building wheel for tables (pyproject.toml): finished with status 'done'
+2023-09-21T15:01:36.9775809Z   Created wheel for tables: filename=tables-3.8.1.dev0-cp38-cp38-linux_aarch64.whl size=3943191 sha256=6875bde94ed9152206dafd087eb1ac55923f8a0eb7d8d7f0bd8ada384e6deadb
+2023-09-21T15:01:36.9800166Z   Stored in directory: /tmp/pip-ephem-wheel-cache-7r2eq69w/wheels/d4/3a/c0/4dc152b1840724d5b992a8268bb4ef33fdbe42ffe1429b845c
+2023-09-21T15:01:37.0223609Z Successfully built tables
+2023-09-21T15:01:37.4854580Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/built_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T15:01:37.9401330Z     + rm -rf /tmp/cibuildwheel/repaired_wheel
+2023-09-21T15:01:38.0154449Z     + mkdir -p /tmp/cibuildwheel/repaired_wheel
+2023-09-21T15:01:38.0946932Z ##[endgroup]
+2023-09-21T15:01:38.0947700Z                                                            [32m✓ [0m2494.23s
+2023-09-21T15:01:38.0948319Z ##[group]Repairing wheel...
+2023-09-21T15:01:38.0948516Z 
+2023-09-21T15:01:38.0951823Z     + sh -c 'auditwheel repair -w /tmp/cibuildwheel/repaired_wheel /tmp/cibuildwheel/built_wheel/tables-3.8.1.dev0-cp38-cp38-linux_aarch64.whl'
+2023-09-21T15:01:45.8019080Z INFO:auditwheel.main_repair:Repairing tables-3.8.1.dev0-cp38-cp38-linux_aarch64.whl
+2023-09-21T15:01:57.0851939Z INFO:auditwheel.wheeltools:Previous filename tags: linux_aarch64
+2023-09-21T15:01:57.0853102Z INFO:auditwheel.wheeltools:New filename tags: manylinux_2_17_aarch64, manylinux2014_aarch64
+2023-09-21T15:01:57.0857979Z INFO:auditwheel.wheeltools:Previous WHEEL info tags: cp38-cp38-linux_aarch64
+2023-09-21T15:01:57.0863119Z INFO:auditwheel.wheeltools:New WHEEL info tags: cp38-cp38-manylinux_2_17_aarch64, cp38-cp38-manylinux2014_aarch64
+2023-09-21T15:02:00.6679706Z INFO:auditwheel.main_repair:
+2023-09-21T15:02:00.6681548Z Fixed-up wheel written to /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+2023-09-21T15:02:00.7870784Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/repaired_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T15:02:01.2666678Z     + mkdir -p /output
+2023-09-21T15:02:01.3502230Z     + mv /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl /output
+2023-09-21T15:02:01.4349985Z ##[endgroup]
+2023-09-21T15:02:01.4350704Z                                                              [32m✓ [0m23.34s
+2023-09-21T15:02:01.4350914Z 
+2023-09-21T15:02:01.4351179Z [32m✓ [0mcp38-manylinux_aarch64 finished in 2582.37s
+2023-09-21T15:02:01.4351403Z 
+2023-09-21T15:02:01.4351631Z [1m[34mBuilding cp39-manylinux_aarch64 wheel[0m
+2023-09-21T15:02:01.4351948Z CPython 3.9 manylinux aarch64
+2023-09-21T15:02:01.4352135Z 
+2023-09-21T15:02:01.6440411Z ##[group]Setting up build environment...
+2023-09-21T15:02:01.6441165Z 
+2023-09-21T15:02:01.6442046Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, os; json.dump(os.environ.copy(), sys.stdout)'
+2023-09-21T15:02:02.1388063Z     + which python
+2023-09-21T15:02:02.2225449Z     + which pip
+2023-09-21T15:02:02.3070395Z ##[endgroup]
+2023-09-21T15:02:02.3072138Z                                                               [32m✓ [0m0.66s
+2023-09-21T15:02:02.3073643Z ##[group]Running before_build...
+2023-09-21T15:02:02.3074145Z 
+2023-09-21T15:02:02.3076796Z     + sh -c 'python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2
+2023-09-21T15:02:02.3077655Z '
+2023-09-21T15:02:24.3057127Z Requirement already satisfied: setuptools in /opt/_internal/cpython-3.9.18/lib/python3.9/site-packages (68.2.2)
+2023-09-21T15:02:28.3937037Z Requirement already satisfied: pip in /opt/_internal/cpython-3.9.18/lib/python3.9/site-packages (23.2.1)
+2023-09-21T15:02:29.2510937Z Requirement already satisfied: wheel in /opt/_internal/cpython-3.9.18/lib/python3.9/site-packages (0.41.2)
+2023-09-21T15:02:40.8170874Z Collecting cython>=0.29.32 (from -r requirements.txt (line 2))
+2023-09-21T15:02:40.8207093Z   Obtaining dependency information for cython>=0.29.32 from https://files.pythonhosted.org/packages/80/b3/b26a0252660b44dc7380f0c28b9163bb77a1737f8dc26d4daf6e61173548/Cython-3.0.2-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:02:40.9581839Z   Downloading Cython-3.0.2-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.1 kB)
+2023-09-21T15:02:44.2829934Z Collecting numpy>=1.19.0 (from -r requirements.txt (line 4))
+2023-09-21T15:02:44.2862363Z   Obtaining dependency information for numpy>=1.19.0 from https://files.pythonhosted.org/packages/41/95/1145b9072e39ef4c40d62f76d0d80be65a7c383ba3ef9ccd2d9a97974752/numpy-1.26.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:02:44.3162169Z   Downloading numpy-1.26.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (58 kB)
+2023-09-21T15:02:44.3832364Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.5/58.5 kB 2.6 MB/s eta 0:00:00
+2023-09-21T15:02:45.2752870Z Collecting numexpr>=2.6.2 (from -r requirements.txt (line 5))
+2023-09-21T15:02:45.2786292Z   Obtaining dependency information for numexpr>=2.6.2 from https://files.pythonhosted.org/packages/55/ff/cb63c8441d863b080d56703554ad4863b3557f7f0d3998f570187ca53062/numexpr-2.8.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:02:45.3104586Z   Downloading numexpr-2.8.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (8.0 kB)
+2023-09-21T15:02:45.3405697Z Requirement already satisfied: packaging in /opt/_internal/cpython-3.9.18/lib/python3.9/site-packages (from -r requirements.txt (line 6)) (23.1)
+2023-09-21T15:02:45.4460441Z Collecting py-cpuinfo (from -r requirements.txt (line 7))
+2023-09-21T15:02:45.4623267Z   Using cached py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+2023-09-21T15:02:45.8838636Z Downloading Cython-3.0.2-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.4 MB)
+2023-09-21T15:02:46.3784992Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 7.4 MB/s eta 0:00:00
+2023-09-21T15:02:46.4128702Z Downloading numpy-1.26.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.2 MB)
+2023-09-21T15:02:48.3643592Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 7.2 MB/s eta 0:00:00
+2023-09-21T15:02:48.4002648Z Downloading numexpr-2.8.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (414 kB)
+2023-09-21T15:02:48.4902945Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 414.4/414.4 kB 6.9 MB/s eta 0:00:00
+2023-09-21T15:02:51.1340496Z Installing collected packages: py-cpuinfo, numpy, cython, numexpr
+2023-09-21T15:03:29.1090972Z Successfully installed cython-3.0.2 numexpr-2.8.6 numpy-1.26.0 py-cpuinfo-9.0.0
+2023-09-21T15:03:35.2686050Z Collecting blosc2
+2023-09-21T15:03:35.2721379Z   Obtaining dependency information for blosc2 from https://files.pythonhosted.org/packages/bc/e8/a92d462219284ddf767362c710b8cc4a52b351b29fbbf6ebab95e4e10355/blosc2-2.2.7-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:03:35.4165962Z   Downloading blosc2-2.2.7-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T15:03:36.3855855Z Collecting msgpack (from blosc2)
+2023-09-21T15:03:36.3887686Z   Obtaining dependency information for msgpack from https://files.pythonhosted.org/packages/47/50/24f8ce418d186b40be13f7ddfc2e207c78b86bdf72a18b793f11cac91377/msgpack-1.0.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:03:36.4211120Z   Downloading msgpack-1.0.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T15:03:36.5479291Z Collecting ndindex>=1.4 (from blosc2)
+2023-09-21T15:03:36.5707463Z   Using cached ndindex-1.7-py3-none-any.whl (85 kB)
+2023-09-21T15:03:36.6047017Z Requirement already satisfied: numpy>=1.20.3 in /opt/_internal/cpython-3.9.18/lib/python3.9/site-packages (from blosc2) (1.26.0)
+2023-09-21T15:03:36.6098659Z Requirement already satisfied: py-cpuinfo in /opt/_internal/cpython-3.9.18/lib/python3.9/site-packages (from blosc2) (9.0.0)
+2023-09-21T15:03:36.7395153Z Downloading blosc2-2.2.7-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (4.2 MB)
+2023-09-21T15:03:37.3934930Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 6.9 MB/s eta 0:00:00
+2023-09-21T15:03:37.4272738Z Downloading msgpack-1.0.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (522 kB)
+2023-09-21T15:03:37.5430237Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 522.4/522.4 kB 6.2 MB/s eta 0:00:00
+2023-09-21T15:03:39.3961274Z Installing collected packages: ndindex, msgpack, blosc2
+2023-09-21T15:03:41.1147373Z Successfully installed blosc2-2.2.7 msgpack-1.0.6 ndindex-1.7
+2023-09-21T15:03:41.5209776Z ##[endgroup]
+2023-09-21T15:03:41.5210800Z                                                              [32m✓ [0m99.21s
+2023-09-21T15:03:41.5211504Z ##[group]Building wheel...
+2023-09-21T15:03:41.5211752Z 
+2023-09-21T15:03:41.5211994Z     + rm -rf /tmp/cibuildwheel/built_wheel
+2023-09-21T15:03:41.6105900Z     + mkdir -p /tmp/cibuildwheel/built_wheel
+2023-09-21T15:03:41.7050284Z     + python -m pip wheel /project --wheel-dir=/tmp/cibuildwheel/built_wheel --no-deps
+2023-09-21T15:03:46.0567185Z Processing /project
+2023-09-21T15:03:46.1373918Z   Installing build dependencies: started
+2023-09-21T15:04:55.3143592Z   Installing build dependencies: still running...
+2023-09-21T15:04:55.8775771Z   Installing build dependencies: finished with status 'done'
+2023-09-21T15:04:55.8865145Z   Getting requirements to build wheel: started
+2023-09-21T15:05:07.2816577Z   Getting requirements to build wheel: finished with status 'done'
+2023-09-21T15:05:07.3138529Z   Preparing metadata (pyproject.toml): started
+2023-09-21T15:05:17.8914842Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2023-09-21T15:05:18.0047689Z Building wheels for collected packages: tables
+2023-09-21T15:05:18.0130827Z   Building wheel for tables (pyproject.toml): started
+2023-09-21T15:06:32.9042339Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:07:33.1702442Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:08:35.0874440Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:09:38.4911808Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:11:49.6731424Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:12:51.4781956Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:13:53.4662849Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:14:55.3351967Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:16:09.2527669Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:18:39.9886398Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:19:40.0955413Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:20:40.1290016Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:21:41.0355295Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:22:43.0329870Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:24:44.0070633Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:25:51.3901425Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:26:56.1402937Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:28:04.2066363Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:29:07.0107486Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:32:07.5998675Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:33:31.9964825Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:34:36.1225147Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:35:36.9672057Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:37:45.0326090Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:38:45.0470099Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:39:51.6227155Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:41:03.6111474Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:43:43.6679566Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:44:43.8306963Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:46:57.9866980Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:47:01.8398194Z   Building wheel for tables (pyproject.toml): finished with status 'done'
+2023-09-21T15:47:01.9131844Z   Created wheel for tables: filename=tables-3.8.1.dev0-cp39-cp39-linux_aarch64.whl size=3940393 sha256=91a31aa7bca84edb34007b33a9ef019a947258392645fc444039672af034b00f
+2023-09-21T15:47:01.9158842Z   Stored in directory: /tmp/pip-ephem-wheel-cache-etpkzmak/wheels/b1/d1/e9/62441f1a701c6dcdb0d9ccfd73a0bfbac93e8cf297e5312e15
+2023-09-21T15:47:01.9704475Z Successfully built tables
+2023-09-21T15:47:02.6028333Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/built_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T15:47:03.2193545Z     + rm -rf /tmp/cibuildwheel/repaired_wheel
+2023-09-21T15:47:03.3114914Z     + mkdir -p /tmp/cibuildwheel/repaired_wheel
+2023-09-21T15:47:03.4055588Z ##[endgroup]
+2023-09-21T15:47:03.4056475Z                                                            [32m✓ [0m2601.88s
+2023-09-21T15:47:03.4057124Z ##[group]Repairing wheel...
+2023-09-21T15:47:03.4057358Z 
+2023-09-21T15:47:03.4058006Z     + sh -c 'auditwheel repair -w /tmp/cibuildwheel/repaired_wheel /tmp/cibuildwheel/built_wheel/tables-3.8.1.dev0-cp39-cp39-linux_aarch64.whl'
+2023-09-21T15:47:05.1520367Z INFO:auditwheel.main_repair:Repairing tables-3.8.1.dev0-cp39-cp39-linux_aarch64.whl
+2023-09-21T15:47:18.5508571Z INFO:auditwheel.wheeltools:Previous filename tags: linux_aarch64
+2023-09-21T15:47:18.5511609Z INFO:auditwheel.wheeltools:New filename tags: manylinux_2_17_aarch64, manylinux2014_aarch64
+2023-09-21T15:47:18.5520370Z INFO:auditwheel.wheeltools:Previous WHEEL info tags: cp39-cp39-linux_aarch64
+2023-09-21T15:47:18.5529484Z INFO:auditwheel.wheeltools:New WHEEL info tags: cp39-cp39-manylinux_2_17_aarch64, cp39-cp39-manylinux2014_aarch64
+2023-09-21T15:47:22.8180275Z INFO:auditwheel.main_repair:
+2023-09-21T15:47:22.8181504Z Fixed-up wheel written to /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+2023-09-21T15:47:22.9694614Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/repaired_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T15:47:23.5189217Z     + mkdir -p /output
+2023-09-21T15:47:23.6103902Z     + mv /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl /output
+2023-09-21T15:47:23.7015420Z ##[endgroup]
+2023-09-21T15:47:23.7016312Z                                                              [32m✓ [0m20.30s
+2023-09-21T15:47:23.7016578Z 
+2023-09-21T15:47:23.7016905Z [32m✓ [0mcp39-manylinux_aarch64 finished in 2722.27s
+2023-09-21T15:47:23.7017190Z 
+2023-09-21T15:47:23.7017484Z [1m[34mBuilding cp310-manylinux_aarch64 wheel[0m
+2023-09-21T15:47:23.7017889Z CPython 3.10 manylinux aarch64
+2023-09-21T15:47:23.7018120Z 
+2023-09-21T15:47:23.9348087Z ##[group]Setting up build environment...
+2023-09-21T15:47:23.9392215Z 
+2023-09-21T15:47:23.9393961Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, os; json.dump(os.environ.copy(), sys.stdout)'
+2023-09-21T15:47:24.4810483Z     + which python
+2023-09-21T15:47:24.5646169Z     + which pip
+2023-09-21T15:47:24.6623439Z ##[endgroup]
+2023-09-21T15:47:24.6624335Z                                                               [32m✓ [0m0.73s
+2023-09-21T15:47:24.6625569Z ##[group]Running before_build...
+2023-09-21T15:47:24.6625818Z 
+2023-09-21T15:47:24.6626465Z     + sh -c 'python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2
+2023-09-21T15:47:24.6627043Z '
+2023-09-21T15:47:44.3725823Z Requirement already satisfied: setuptools in /opt/_internal/cpython-3.10.13/lib/python3.10/site-packages (68.2.2)
+2023-09-21T15:47:48.5861691Z Requirement already satisfied: pip in /opt/_internal/cpython-3.10.13/lib/python3.10/site-packages (23.2.1)
+2023-09-21T15:47:49.4761239Z Requirement already satisfied: wheel in /opt/_internal/cpython-3.10.13/lib/python3.10/site-packages (0.41.2)
+2023-09-21T15:48:00.4590653Z Collecting cython>=0.29.32 (from -r requirements.txt (line 2))
+2023-09-21T15:48:00.4625868Z   Obtaining dependency information for cython>=0.29.32 from https://files.pythonhosted.org/packages/e9/fa/d7246d6623899d25d4510fe1abc6281e5b61d59378b342d53f9f339e3a2c/Cython-3.0.2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:48:00.5976624Z   Downloading Cython-3.0.2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.1 kB)
+2023-09-21T15:48:03.7689978Z Collecting numpy>=1.19.0 (from -r requirements.txt (line 4))
+2023-09-21T15:48:03.7727220Z   Obtaining dependency information for numpy>=1.19.0 from https://files.pythonhosted.org/packages/6a/c7/dc05fb56c0536f499d75ef4e201c37facb75e1ad1f416b98a9939f89f6f1/numpy-1.26.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:48:03.8120231Z   Downloading numpy-1.26.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (58 kB)
+2023-09-21T15:48:03.8779222Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.5/58.5 kB 2.8 MB/s eta 0:00:00
+2023-09-21T15:48:04.7544461Z Collecting numexpr>=2.6.2 (from -r requirements.txt (line 5))
+2023-09-21T15:48:04.7577199Z   Obtaining dependency information for numexpr>=2.6.2 from https://files.pythonhosted.org/packages/ba/23/2f52015c3bc14b958ff3e033385c475f921b7a79019ce4b4cc923b119e62/numexpr-2.8.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:48:04.7878502Z   Downloading numexpr-2.8.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (8.0 kB)
+2023-09-21T15:48:04.8116877Z Requirement already satisfied: packaging in /opt/_internal/cpython-3.10.13/lib/python3.10/site-packages (from -r requirements.txt (line 6)) (23.1)
+2023-09-21T15:48:04.9294201Z Collecting py-cpuinfo (from -r requirements.txt (line 7))
+2023-09-21T15:48:04.9461327Z   Using cached py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+2023-09-21T15:48:05.3289808Z Downloading Cython-3.0.2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.4 MB)
+2023-09-21T15:48:05.8128253Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 7.6 MB/s eta 0:00:00
+2023-09-21T15:48:05.8432428Z Downloading numpy-1.26.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.2 MB)
+2023-09-21T15:48:07.7189830Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 7.5 MB/s eta 0:00:00
+2023-09-21T15:48:07.7498019Z Downloading numexpr-2.8.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (415 kB)
+2023-09-21T15:48:07.8376135Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 415.3/415.3 kB 6.9 MB/s eta 0:00:00
+2023-09-21T15:48:09.5936539Z Installing collected packages: py-cpuinfo, numpy, cython, numexpr
+2023-09-21T15:48:47.8654401Z Successfully installed cython-3.0.2 numexpr-2.8.6 numpy-1.26.0 py-cpuinfo-9.0.0
+2023-09-21T15:48:54.2074327Z Collecting blosc2
+2023-09-21T15:48:54.2112867Z   Obtaining dependency information for blosc2 from https://files.pythonhosted.org/packages/ac/1f/2d34a917cdd4e1aa4ba068cc533c1da134b462ac5f20caaec8008f113974/blosc2-2.2.7-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:48:54.3563162Z   Downloading blosc2-2.2.7-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T15:48:55.3757326Z Collecting msgpack (from blosc2)
+2023-09-21T15:48:55.3790590Z   Obtaining dependency information for msgpack from https://files.pythonhosted.org/packages/b8/11/aee418a1f38bf820b76e3b84c30deab4e415502917ddbfefbc78ae3b1172/msgpack-1.0.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T15:48:55.4088357Z   Downloading msgpack-1.0.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T15:48:55.5314906Z Collecting ndindex>=1.4 (from blosc2)
+2023-09-21T15:48:55.5509724Z   Using cached ndindex-1.7-py3-none-any.whl (85 kB)
+2023-09-21T15:48:55.5853518Z Requirement already satisfied: numpy>=1.20.3 in /opt/_internal/cpython-3.10.13/lib/python3.10/site-packages (from blosc2) (1.26.0)
+2023-09-21T15:48:55.5903566Z Requirement already satisfied: py-cpuinfo in /opt/_internal/cpython-3.10.13/lib/python3.10/site-packages (from blosc2) (9.0.0)
+2023-09-21T15:48:56.2236163Z Downloading blosc2-2.2.7-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (4.2 MB)
+2023-09-21T15:48:56.8683210Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 7.1 MB/s eta 0:00:00
+2023-09-21T15:48:56.9006755Z Downloading msgpack-1.0.6-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (522 kB)
+2023-09-21T15:48:57.0189053Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 522.5/522.5 kB 6.1 MB/s eta 0:00:00
+2023-09-21T15:48:58.3565728Z Installing collected packages: ndindex, msgpack, blosc2
+2023-09-21T15:49:00.0208189Z Successfully installed blosc2-2.2.7 msgpack-1.0.6 ndindex-1.7
+2023-09-21T15:49:00.4437546Z ##[endgroup]
+2023-09-21T15:49:00.4438419Z                                                              [32m✓ [0m95.78s
+2023-09-21T15:49:00.4439134Z ##[group]Building wheel...
+2023-09-21T15:49:00.4439338Z 
+2023-09-21T15:49:00.4439567Z     + rm -rf /tmp/cibuildwheel/built_wheel
+2023-09-21T15:49:00.5304317Z     + mkdir -p /tmp/cibuildwheel/built_wheel
+2023-09-21T15:49:00.6166856Z     + python -m pip wheel /project --wheel-dir=/tmp/cibuildwheel/built_wheel --no-deps
+2023-09-21T15:49:05.1890735Z Processing /project
+2023-09-21T15:49:05.2547978Z   Installing build dependencies: started
+2023-09-21T15:50:15.1125558Z   Installing build dependencies: still running...
+2023-09-21T15:50:15.7248945Z   Installing build dependencies: finished with status 'done'
+2023-09-21T15:50:15.7351837Z   Getting requirements to build wheel: started
+2023-09-21T15:50:27.2118083Z   Getting requirements to build wheel: finished with status 'done'
+2023-09-21T15:50:27.2422596Z   Preparing metadata (pyproject.toml): started
+2023-09-21T15:50:37.5771148Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2023-09-21T15:50:37.6914651Z Building wheels for collected packages: tables
+2023-09-21T15:50:37.6997699Z   Building wheel for tables (pyproject.toml): started
+2023-09-21T15:51:51.6476029Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:52:51.9927355Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:53:53.1764596Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:54:54.8863374Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:57:04.7467343Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:58:06.4279145Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T15:59:07.4149573Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:00:07.6989235Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:01:22.2248363Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:03:48.4885924Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:04:48.8807395Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:05:52.4100002Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:06:53.5026460Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:08:14.1615941Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:09:47.8181139Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:10:56.1800365Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:12:00.2019279Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:13:05.9443973Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:14:10.1257460Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:17:04.7875021Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:18:28.1289908Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:19:29.4360851Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:20:31.6735655Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:21:32.5175879Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:22:46.4444719Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:23:49.4521703Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:24:50.2723598Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:25:58.4633215Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:26:58.9038415Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:29:17.4552110Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:30:25.0397351Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:31:26.7944408Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:32:48.7171755Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:32:52.5342024Z   Building wheel for tables (pyproject.toml): finished with status 'done'
+2023-09-21T16:32:52.6066394Z   Created wheel for tables: filename=tables-3.8.1.dev0-cp310-cp310-linux_aarch64.whl size=3938671 sha256=1021f85e3087a4e86e26dd4f796fc3abe718f80246aec810e4d173571334862f
+2023-09-21T16:32:52.6091344Z   Stored in directory: /tmp/pip-ephem-wheel-cache-phrqf8rv/wheels/0a/fd/6e/ed6d1e02e17eb494db42d66b1007518be7f0a60e5b839ebd00
+2023-09-21T16:32:52.6609865Z Successfully built tables
+2023-09-21T16:32:53.2709255Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/built_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T16:32:53.7991756Z     + rm -rf /tmp/cibuildwheel/repaired_wheel
+2023-09-21T16:32:53.8910771Z     + mkdir -p /tmp/cibuildwheel/repaired_wheel
+2023-09-21T16:32:53.9763195Z ##[endgroup]
+2023-09-21T16:32:53.9764469Z                                                            [32m✓ [0m2633.53s
+2023-09-21T16:32:53.9766690Z ##[group]Repairing wheel...
+2023-09-21T16:32:53.9767151Z 
+2023-09-21T16:32:53.9768316Z     + sh -c 'auditwheel repair -w /tmp/cibuildwheel/repaired_wheel /tmp/cibuildwheel/built_wheel/tables-3.8.1.dev0-cp310-cp310-linux_aarch64.whl'
+2023-09-21T16:32:55.6204878Z INFO:auditwheel.main_repair:Repairing tables-3.8.1.dev0-cp310-cp310-linux_aarch64.whl
+2023-09-21T16:33:08.5630698Z INFO:auditwheel.wheeltools:Previous filename tags: linux_aarch64
+2023-09-21T16:33:08.5631434Z INFO:auditwheel.wheeltools:New filename tags: manylinux_2_17_aarch64, manylinux2014_aarch64
+2023-09-21T16:33:08.5632416Z INFO:auditwheel.wheeltools:Previous WHEEL info tags: cp310-cp310-linux_aarch64
+2023-09-21T16:33:08.5637286Z INFO:auditwheel.wheeltools:New WHEEL info tags: cp310-cp310-manylinux_2_17_aarch64, cp310-cp310-manylinux2014_aarch64
+2023-09-21T16:33:12.6473302Z INFO:auditwheel.main_repair:
+2023-09-21T16:33:12.6474561Z Fixed-up wheel written to /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+2023-09-21T16:33:12.7911697Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/repaired_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T16:33:13.3353939Z     + mkdir -p /output
+2023-09-21T16:33:13.4240438Z     + mv /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl /output
+2023-09-21T16:33:13.5276267Z ##[endgroup]
+2023-09-21T16:33:13.5277094Z                                                              [32m✓ [0m19.55s
+2023-09-21T16:33:13.5277325Z 
+2023-09-21T16:33:13.5277608Z [32m✓ [0mcp310-manylinux_aarch64 finished in 2749.82s
+2023-09-21T16:33:13.5277838Z 
+2023-09-21T16:33:13.5278093Z [1m[34mBuilding cp311-manylinux_aarch64 wheel[0m
+2023-09-21T16:33:13.5278450Z CPython 3.11 manylinux aarch64
+2023-09-21T16:33:13.5278649Z 
+2023-09-21T16:33:13.7499598Z ##[group]Setting up build environment...
+2023-09-21T16:33:13.7500465Z 
+2023-09-21T16:33:13.7501286Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, os; json.dump(os.environ.copy(), sys.stdout)'
+2023-09-21T16:33:14.2738209Z     + which python
+2023-09-21T16:33:14.3564712Z     + which pip
+2023-09-21T16:33:14.4413896Z ##[endgroup]
+2023-09-21T16:33:14.4414633Z                                                               [32m✓ [0m0.69s
+2023-09-21T16:33:14.4415217Z ##[group]Running before_build...
+2023-09-21T16:33:14.4415415Z 
+2023-09-21T16:33:14.4415914Z     + sh -c 'python -m pip install -U setuptools pip wheel && python -m pip install -r requirements.txt && python -m pip install blosc2
+2023-09-21T16:33:14.4416386Z '
+2023-09-21T16:33:38.4081070Z Requirement already satisfied: setuptools in /opt/python/cp311-cp311/lib/python3.11/site-packages (68.2.2)
+2023-09-21T16:33:42.0886087Z Requirement already satisfied: pip in /opt/python/cp311-cp311/lib/python3.11/site-packages (23.2.1)
+2023-09-21T16:33:42.8902097Z Requirement already satisfied: wheel in /opt/python/cp311-cp311/lib/python3.11/site-packages (0.41.2)
+2023-09-21T16:33:54.4826985Z Collecting cython>=0.29.32 (from -r requirements.txt (line 2))
+2023-09-21T16:33:54.4870604Z   Obtaining dependency information for cython>=0.29.32 from https://files.pythonhosted.org/packages/16/f3/84a88021acbee12378c00f2faea196c1469efda1b66797e68d9b6debc403/Cython-3.0.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T16:33:54.6514131Z   Downloading Cython-3.0.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.1 kB)
+2023-09-21T16:33:57.8245443Z Collecting numpy>=1.19.0 (from -r requirements.txt (line 4))
+2023-09-21T16:33:57.8279000Z   Obtaining dependency information for numpy>=1.19.0 from https://files.pythonhosted.org/packages/a9/84/baf694be765d68c73f0f8a9d52151c339aed5f2d64205824a6f29021170c/numpy-1.26.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T16:33:57.8587225Z   Downloading numpy-1.26.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (58 kB)
+2023-09-21T16:33:57.9343172Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.5/58.5 kB 2.6 MB/s eta 0:00:00
+2023-09-21T16:33:58.9475619Z Collecting numexpr>=2.6.2 (from -r requirements.txt (line 5))
+2023-09-21T16:33:58.9521307Z   Obtaining dependency information for numexpr>=2.6.2 from https://files.pythonhosted.org/packages/f2/10/5bed544e9087cf4fd76f38b0b6bc3f048cf9adfedecdaaea8676ea6eb777/numexpr-2.8.6-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T16:33:58.9820574Z   Downloading numexpr-2.8.6-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (8.0 kB)
+2023-09-21T16:33:59.0253943Z Requirement already satisfied: packaging in /opt/python/cp311-cp311/lib/python3.11/site-packages (from -r requirements.txt (line 6)) (23.1)
+2023-09-21T16:33:59.1246850Z Collecting py-cpuinfo (from -r requirements.txt (line 7))
+2023-09-21T16:33:59.1398568Z   Using cached py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+2023-09-21T16:33:59.5107767Z Downloading Cython-3.0.2-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.5 MB)
+2023-09-21T16:34:00.0104192Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 7.3 MB/s eta 0:00:00
+2023-09-21T16:34:00.0387909Z Downloading numpy-1.26.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (14.2 MB)
+2023-09-21T16:34:01.8617898Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.2/14.2 MB 7.7 MB/s eta 0:00:00
+2023-09-21T16:34:01.8891643Z Downloading numexpr-2.8.6-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (417 kB)
+2023-09-21T16:34:01.9737725Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 417.9/417.9 kB 7.1 MB/s eta 0:00:00
+2023-09-21T16:34:03.8741101Z Installing collected packages: py-cpuinfo, numpy, cython, numexpr
+2023-09-21T16:34:42.0522106Z Successfully installed cython-3.0.2 numexpr-2.8.6 numpy-1.26.0 py-cpuinfo-9.0.0
+2023-09-21T16:34:48.2775934Z Collecting blosc2
+2023-09-21T16:34:48.2813877Z   Obtaining dependency information for blosc2 from https://files.pythonhosted.org/packages/9d/1e/6e0c01d76aa2b5a7a2e8dc63ae423f8427765198affe182abc26b64d44f5/blosc2-2.2.7-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T16:34:48.4193196Z   Downloading blosc2-2.2.7-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T16:34:49.3041092Z Collecting msgpack (from blosc2)
+2023-09-21T16:34:49.3071838Z   Obtaining dependency information for msgpack from https://files.pythonhosted.org/packages/f7/79/0cc0663821c845e2fe3b2dcf4a286e94104c32e34192705ba674031fdcc0/msgpack-1.0.6-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata
+2023-09-21T16:34:49.3360533Z   Downloading msgpack-1.0.6-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.1 kB)
+2023-09-21T16:34:49.4575190Z Collecting ndindex>=1.4 (from blosc2)
+2023-09-21T16:34:49.4724913Z   Using cached ndindex-1.7-py3-none-any.whl (85 kB)
+2023-09-21T16:34:49.5910830Z Requirement already satisfied: numpy>=1.20.3 in /opt/python/cp311-cp311/lib/python3.11/site-packages (from blosc2) (1.26.0)
+2023-09-21T16:34:49.5997038Z Requirement already satisfied: py-cpuinfo in /opt/python/cp311-cp311/lib/python3.11/site-packages (from blosc2) (9.0.0)
+2023-09-21T16:34:49.7793034Z Downloading blosc2-2.2.7-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (4.2 MB)
+2023-09-21T16:34:50.3801221Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 7.5 MB/s eta 0:00:00
+2023-09-21T16:34:50.4135590Z Downloading msgpack-1.0.6-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (549 kB)
+2023-09-21T16:34:50.5252493Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 549.5/549.5 kB 6.7 MB/s eta 0:00:00
+2023-09-21T16:34:52.0615507Z Installing collected packages: ndindex, msgpack, blosc2
+2023-09-21T16:34:53.8847972Z Successfully installed blosc2-2.2.7 msgpack-1.0.6 ndindex-1.7
+2023-09-21T16:34:54.3856933Z ##[endgroup]
+2023-09-21T16:34:54.3858047Z                                                              [32m✓ [0m99.94s
+2023-09-21T16:34:54.3858821Z ##[group]Building wheel...
+2023-09-21T16:34:54.3859242Z 
+2023-09-21T16:34:54.3859594Z     + rm -rf /tmp/cibuildwheel/built_wheel
+2023-09-21T16:34:54.4746289Z     + mkdir -p /tmp/cibuildwheel/built_wheel
+2023-09-21T16:34:54.5644950Z     + python -m pip wheel /project --wheel-dir=/tmp/cibuildwheel/built_wheel --no-deps
+2023-09-21T16:34:58.8242647Z Processing /project
+2023-09-21T16:34:58.9688658Z   Installing build dependencies: started
+2023-09-21T16:36:07.5934424Z   Installing build dependencies: still running...
+2023-09-21T16:36:08.3229307Z   Installing build dependencies: finished with status 'done'
+2023-09-21T16:36:08.3308305Z   Getting requirements to build wheel: started
+2023-09-21T16:36:19.7599093Z   Getting requirements to build wheel: finished with status 'done'
+2023-09-21T16:36:19.8542085Z   Preparing metadata (pyproject.toml): started
+2023-09-21T16:36:30.1159421Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2023-09-21T16:36:30.2384315Z Building wheels for collected packages: tables
+2023-09-21T16:36:30.2468846Z   Building wheel for tables (pyproject.toml): started
+2023-09-21T16:37:45.3204891Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:38:47.3303250Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:39:49.1236255Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:40:52.4235652Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:43:06.3714807Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:44:09.8783488Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:45:12.2958987Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:46:13.9685508Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:47:26.6799718Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:49:57.2494896Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:51:00.7521494Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:52:01.7580983Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:53:01.7725387Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:54:26.0635829Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:56:07.7518364Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:57:11.1438751Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:58:14.5754617Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T16:59:24.8151681Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:00:26.7445236Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:04:02.9095170Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:05:34.0893088Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:06:35.7851526Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:07:47.3720040Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:08:54.0541242Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:10:19.9422778Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:11:23.3205729Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:12:27.8022076Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:13:29.5340288Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:14:45.9827658Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:17:12.8302143Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:18:22.9485617Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:19:25.4389762Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:20:50.8892611Z   Building wheel for tables (pyproject.toml): still running...
+2023-09-21T17:20:55.0235251Z   Building wheel for tables (pyproject.toml): finished with status 'done'
+2023-09-21T17:20:55.1056341Z   Created wheel for tables: filename=tables-3.8.1.dev0-cp311-cp311-linux_aarch64.whl size=3936787 sha256=8d7191a126c554a2bb6d9855cd356d1346bbeb3b0a2456caa9850f3c8b8a91b2
+2023-09-21T17:20:55.1093778Z   Stored in directory: /tmp/pip-ephem-wheel-cache-b9fngrar/wheels/aa/0c/49/7c4d39428e78274ff9f1db5b9c539aa0d6bd6becda70207fa7
+2023-09-21T17:20:55.1660989Z Successfully built tables
+2023-09-21T17:20:55.8605233Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/built_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T17:20:56.4319211Z     + rm -rf /tmp/cibuildwheel/repaired_wheel
+2023-09-21T17:20:56.5209539Z     + mkdir -p /tmp/cibuildwheel/repaired_wheel
+2023-09-21T17:20:56.6130411Z ##[endgroup]
+2023-09-21T17:20:56.6131464Z                                                            [32m✓ [0m2762.23s
+2023-09-21T17:20:56.6132056Z ##[group]Repairing wheel...
+2023-09-21T17:20:56.6132242Z 
+2023-09-21T17:20:56.6132794Z     + sh -c 'auditwheel repair -w /tmp/cibuildwheel/repaired_wheel /tmp/cibuildwheel/built_wheel/tables-3.8.1.dev0-cp311-cp311-linux_aarch64.whl'
+2023-09-21T17:20:58.3666309Z INFO:auditwheel.main_repair:Repairing tables-3.8.1.dev0-cp311-cp311-linux_aarch64.whl
+2023-09-21T17:21:11.4371824Z INFO:auditwheel.wheeltools:Previous filename tags: linux_aarch64
+2023-09-21T17:21:11.4372533Z INFO:auditwheel.wheeltools:New filename tags: manylinux_2_17_aarch64, manylinux2014_aarch64
+2023-09-21T17:21:11.4376581Z INFO:auditwheel.wheeltools:Previous WHEEL info tags: cp311-cp311-linux_aarch64
+2023-09-21T17:21:11.4382793Z INFO:auditwheel.wheeltools:New WHEEL info tags: cp311-cp311-manylinux_2_17_aarch64, cp311-cp311-manylinux2014_aarch64
+2023-09-21T17:21:15.8526036Z INFO:auditwheel.main_repair:
+2023-09-21T17:21:15.8527066Z Fixed-up wheel written to /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+2023-09-21T17:21:15.9957743Z     + /opt/python/cp38-cp38/bin/python -c 'import sys, json, glob; json.dump(glob.glob('"'"'/tmp/cibuildwheel/repaired_wheel/*.whl'"'"'), sys.stdout)'
+2023-09-21T17:21:16.5842024Z     + mkdir -p /output
+2023-09-21T17:21:16.6797405Z     + mv /tmp/cibuildwheel/repaired_wheel/tables-3.8.1.dev0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl /output
+2023-09-21T17:21:16.7713273Z ##[endgroup]
+2023-09-21T17:21:16.7723539Z                                                              [32m✓ [0m20.16s
+2023-09-21T17:21:16.7728753Z 
+2023-09-21T17:21:16.7733577Z [32m✓ [0mcp311-manylinux_aarch64 finished in 2883.25s
+2023-09-21T17:21:16.7734922Z ##[group]Copying wheels back to host...
+2023-09-21T17:21:16.7735181Z 
+2023-09-21T17:21:17.0708283Z ##[endgroup]
+2023-09-21T17:21:17.0709358Z                                                               [32m✓ [0m0.30s
+2023-09-21T17:21:17.7898914Z 
+2023-09-21T17:21:17.7899774Z 4 wheels produced in 183 minutes:
+2023-09-21T17:21:17.7902215Z   tables-3.8.1.dev0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl   6,316 kB
+2023-09-21T17:21:17.7948804Z   tables-3.8.1.dev0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl   6,315 kB
+2023-09-21T17:21:17.7952052Z   tables-3.8.1.dev0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl     6,321 kB
+2023-09-21T17:21:17.7955241Z   tables-3.8.1.dev0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl     6,318 kB

@@ -1,0 +1,335 @@
+Requested labels: ubuntu-latest
+Job defined at: square/retrofit/.github/workflows/build.yml@refs/pull/+78220/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions -87938 (hosted)
+Current runner version: '59795.52264.-49423'
+##[group]Operating System
+Ubuntu
+43493.-23236.+27103
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--93569.98884
+Version: mEWLy
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-79190.+92464/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250406.+7023
+##[group]Runner Image Provisioner
+101.31.81.137
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package w3u7R
+Digest: sha256:5EA3 BF1F 0605 0B7F BFE2 7A2B
+Source commit SHA: 3121 6C4C 6CFC 46C2
+Download action repository dRSiq (SHA:4034921cf 26ad8ac215a cb85d8f5 f68f54099)
+Complete job name: android (+99920)
+##[group]Run echo 'KERNEL=="kvm", GROUP="kvm", MODE="-13082", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/67364-kvm4all.rules
+[55835;1mecho 'KERNEL=="kvm", GROUP="kvm", MODE="+73336", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/1091-kvm4all.rules[0m
+[-62552;1msudo udevadm KcZv0 xhx4O
+[60525;1mls /dev/kvm[0m
+shell: /usr/bin/bash -e {+63738}
+env:
+GRADLE_OPTS: -Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false
+KERNEL=="kvm", GROUP="kvm", MODE="27524", OPTIONS+="static_node=kvm"
+/dev/kvm
+##[group]Run Rmrd7
+with:
+repository: square/retrofit
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +42807
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: square/retrofit
+##[group]Getting Git version info
+Working directory is '/home/runner/work/retrofit/retrofit'
+[command]/usr/bin/git version
+git version 96831.+57491.+70771
+Temporarily overriding QNRhT before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/retrofit/retrofit
+Deleting the contents of '/home/runner/work/retrofit/retrofit'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/retrofit/retrofit
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/retrofit/retrofit/.git/
+[command]/usr/bin/git remote add origin https://github.com/square/retrofit
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local 5wWGj atdqv
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp jfsBp
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp RelOb && git config --local --unset-all OK0D1 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+48429 fetch --no-tags --prune --no-recurse-submodules --depth=34251 origin +917ff69154e0 a7d7def17 9bba42ffaed 3305c091298:refs/remotes/pull/69382/merge
+From https://github.com/square/retrofit
+* [new ref] cee4f380e7 f1e849c2b 6828b9807-> pull/46600/merge
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force refs/remotes/pull/-25686/merge
+Note: switching to 'refs/remotes/pull/81725/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 2c56094 Merge 4d6e28d 6e0b15892502 d968d49 8043de7d7 into 54c4a1c45c1f 714185c8431 3ec18c75
+[command]/usr/bin/git log +42502 --format=%H
+f6f4c349e 2f576c7 4a3a43
+distribution: zulu
+java-version-file: .github/workflows/.java-version
+java-package: jdk
+check-latest: false
+server-id: github
+server-username: GITHUB_ACTOR
+server-password: GITHUB_TOKEN
+overwrite-settings: true
+job-status: success
+##[group]Installed distributions
+Trying to resolve the latest version from remote
+Resolved latest version as +22359.+61522.+190+-5182
+Trying to download...
+Downloading Java -47584.6799.-9639++63821 (Zulu) from https://cdn.azul.com/zulu/bin/zulu23.24845.-72916-ca-crac-jdk23.+85110.71359-linux_x64.tar.gz ...
+Extracting Java archive...
+[command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/7a25a27d-74dd-437b-b508-7e2c43e89f73 -f /home/runner/work/_temp/98d3dea3--5204-475e-94a7-a1ac41dd5ec9
+Java 20829.36163.32025+31436 was downloaded
+Setting Java +85874.+54545.-97136++10044 as the default
+Creating toolchains.xml for JDK version -61505 from zulu
+Writing to SxImf
+Java configuration:
+Distribution: zulu
+Path: /opt/hostedtoolcache/Java_Zulu_jdk/-76650.+20187.-81636-+57156/x64
+Creating settings.xml with server-id: github
+cache-disabled: false
+cache-read-only: true
+cache-write-only: false
+cache-overwrite-existing: false
+cache-cleanup: on-success
+gradle-home-cache-includes: caches
+notifications
+add-job-summary: always
+add-job-summary-as-pr-comment: never
+dependency-graph: disabled
+dependency-graph-report-dir: dependency-graph-reports
+dependency-graph-continue-on-failure: true
+build-scan-publish: false
+validate-wrappers: true
+allow-snapshot-wrappers: false
+gradle-home-cache-strict-match: false
+workflow-job-context: {
+"api-level": 26578
+}
+github-token: ***
+JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/2958.-87475.62982--83165/x64
+JAVA_HOME_-97465_X64: /opt/hostedtoolcache/Java_Zulu_jdk/63785.-39156.53672-48266/x64
+Merged default JDK locations into /home/runner/.m2/toolchains.xml
+##[group]Restore Gradle state from cache
+Cache hit for: CURNF
+Received -91357 of -32754 (36349.-86320%), 61930.-94949 MBs/sec
+Cache Size: ~+20822 MB (+60940 B)
+[command]/usr/bin/tar -xf yRoBK -P -C /home/runner/work/retrofit/retrofit --use-compress-program unzstd
+Cache restored successfully
+Restored cache entry with key 5jHiR to ZdiaI in apSO2
+##[group]All Gradle Wrapper jars are valid
+✓ Found known Gradle Wrapper JAR files:
+928E 5404 C95D C360 5092 AD0F gradle/wrapper/gradle-wrapper.jar
+api-level: +53831
+script: ./gradlew connectedCheck --stacktrace
+target: default
+arch: x86
+cores: 59313
+avd-name: test
+force-avd-creation: true
+emulator-boot-timeout: +82574
+emulator-port: +14596
+emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+disable-animations: true
+disable-spellchecker: false
+disable-linux-hw-accel: auto
+enable-hw-keyboard: false
+channel: stable
+GRADLE_ACTION_ID: gradle/actions/setup-gradle
+GRADLE_USER_HOME: /home/runner/.gradle
+GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+DEVELOCITY_INJECTION_INIT_SCRIPT_NAME: gradle-actions.inject-develocity.init.gradle
+DEVELOCITY_AUTO_INJECTION_CUSTOM_VALUE: gradle-actions
+GITHUB_DEPENDENCY_GRAPH_ENABLED: false
+API_LEVEL: 84996
+##[group]Configure emulator
+API level: +20211
+System image API level: 62854
+CPU architecture: x86
+Hardware profile:
+Cores: +87603
+RAM size:
+Heap size:
+SD card path or size:
+Disk size:
+AVD name: test
+force avd creation: true
+Emulator boot timeout: -37191
+emulator port: +61197
+emulator options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+disable animations: true
+disable spellchecker: false
+disable Linux hardware acceleration: false
+enable hardware keyboard: false
+Channel: 24329 (stable)
+Script:
+./gradlew connectedCheck --stacktrace
+Pre emulator launch script:
+##[group]Install Android SDK
+[command]/usr/bin/sh -c \yes | sdkmanager --licenses > /dev/null
+Warning: Errors during XML parse:
+Warning: Additionally, the fallback loader failed to parse the XML.
+Installing latest build tools, platform tools, and platform.
+[command]/usr/bin/sh -c \sdkmanager --install vtAne m02Az fkjcX /dev/null
+Installing latest emulator.
+Installing system images.
+##[group]Launch Emulator
+Creating AVD.
+[command]/usr/bin/sh -c \echo no | avdmanager create avd --force -n test --abi 'default/x86' --package 'system-images;android-+23027;default;x86'
+Loading local repository...
+[========= ] 99545% R5u7v 5XKpr repository...
+[=======================================] 41351% Fetch remote repository...
+Do you wish to create a custom hardware profile? [no] [command]/usr/bin/sh -c \printf 'hw.cpu.ncore=-39978
+' >> /home/runner/.android/avd/test.avd/config.ini
+Starting emulator.
+[command]/usr/bin/sh -c \/usr/local/lib/android/sdk/emulator/emulator -port 25816 -avd test -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim &
+INFO | Android emulator version 122.161.216.228 (build_id +94254) (CL:N/A)
+INFO | P1L11 3jjh8 vtrAq
+I0410 13392:-21702:68381.56923 -49579 opengles.cpp:15317] android_startOpenglesRenderer: gpu info
+I0410 +31727:39733:65128.+70103 -49648 opengles.cpp:+17194]
+WARNING: could not open libX11.so, try libX11.so.70621
+WARNING: cannnot unmap ptr 0x1Ba1dedf1ddb1fE as it is in the protected range from 0x17AD2c9Eb6c79 to 0x7bAD399953846
+INFO | Increasing RAM size to 1024MB
+INFO | f4IU1 7uBOv
+INFO | Ok: TSidF J8t3P requirements to run avd: `test` are NnEZD
+INFO | Ok: System requirements to run avd: `test` are met
+WARNING | encryption is off
+WARNING | FeatureControl is requesting a non existing feature.
+ERROR | Unable to connect to adb daemon on port: -6242
+INFO | Storing crashdata in: /tmp/android-runner/emu-crash--36995.71107.+35693.db, detection is enabled for process: +57101
+INFO | Guest Driver: Auto (ext controls)
+library_mode swiftshader_indirect gpu mode swiftshader_indirect
+INFO | Initializing hardware OpenGLES emulation support
+INFO | Not raising nofile soft limit from 49618.
+INFO | SharedLibrary::open for LL13d not found in map, open for the first time
+INFO | SharedLibrary::open for Ivdoj (posix): begin
+INFO | SharedLibrary::open for Dzi5d (posix,linux): call dlopen on AEOnw
+INFO | SharedLibrary::open for [libX11] failed (posix). dlerror: []
+INFO | Graphics Adapter Vendor Google (Google Inc.)
+INFO | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+INFO | Graphics API Version OpenGL ES -91867.+87370 (OpenGL ES -61896.81127 SwiftShader 130.110.185.60)
+INFO | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888
+INFO | Graphics Device Extensions N/A
+INFO | Verified boot params were not found.
+INFO | 8z3j0
+INFO | Monitoring duration of emulator setup.
+INFO | Setting display: +58238 configuration to: 320x640, dpi: 160x160
+##############################################################################
+## WARNING - ACTION REQUIRED ##
+## Consider using the '-metrics-collection' flag to help improve the ##
+## emulator by sending anonymized usage data. Or use the '-no-metrics' ##
+## flag to bypass this warning and turn off the metrics collection. ##
+## In a future release this warning will turn into a one-time blocking ##
+## prompt to ask for explicit user input regarding metrics collection. ##
+## ##
+## Please see '-help-metrics-collection' for more details. You can use ##
+## '-metrics-to-file' or '-metrics-to-console' flags to see what type of ##
+## data is being collected by emulator as part of usage statistics. ##
+USER_INFO | Emulator is performing a full startup. This may take upto two minutes, or more.
+WARNING | Failed to process .ini file /home/runner/.android/emu-update-last-check.ini for reading.
+[command]/usr/local/lib/android/sdk/platform-tools/adb -s emulator-13435 shell getprop sys.boot_completed
+* daemon not running; starting now at tcp:96912
+* daemon started successfully
+-73441
+Emulator booted.
+[command]/usr/local/lib/android/sdk/platform-tools/adb -s emulator-54903 shell input keyevent -42220
+Disabling animations.
+[command]/usr/local/lib/android/sdk/platform-tools/adb -s emulator-+30448 shell settings put global vErps -18825.-91044
+[command]/usr/bin/sh -c ./gradlew connectedCheck --stacktrace
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/64463.52030/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+Type-safe project accessors is an incubating feature.
+> Configure project :retrofit-converters:kotlinx-serialization
+warning: Dokka Gradle plugin V1 is deprecated
+Dokka Gradle plugin V1 is deprecated, and will be removed in Dokka version -30434.+45697.+12632
+Please migrate to Dokka Gradle plugin V2. This will require updating your project.
+To learn about migrating read the migration guide https://kotl.in/dokka-gradle-migration
+To start migrating to Dokka Gradle plugin V2 add
+org.jetbrains.dokka.experimental.gradle.pluginMode=V2EnabledWithHelpers
+into your project's `gradle.properties` file.
+We would appreciate your feedback!
+- Please report any feedback or problems https://kotl.in/dokka-issues
+- Chat with the community visit #dokka in https://kotlinlang.slack.com/ (To sign up visit https://kotl.in/slack)
+> Task fHfek VsUrv
+> Task 2gf4u
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[EmulatorConsole]: Failed to start Emulator console for 6209
+additionalTestOutput is not supported on this device running API level 12505 because the additional test output directory could not be found
+Starting 56329 tests on emulator--38097 - 57289.+82768
+Finished -45506 tests on emulator-+67041 - +15666.-6703
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__reactivecircus_android-emulator-runner-24131.json
+[Incubating] Problems report is available at: file:///home/runner/work/retrofit/retrofit/build/reports/problems/problems-report.html
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 98144.-75586.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/+27406.-47242/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+BUILD SUCCESSFUL in 1m 4s
+65227 actionable tasks: 76962 executed
+##[group]Terminate Emulator
+[command]/usr/local/lib/android/sdk/platform-tools/adb -s emulator-+55360 emu kill
+OK: killing emulator, bye bye
+OK
+INFO | Wait for emulator (pid -4488) 26902 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (+77627 seconds)
+USER_INFO | Snapshots have been disabled by the user, save request is ignored.
+ERROR | stop: Not implemented
+WARNING | Emulator client has not yet been configured.. Call configure me first!
+Post job cleanup.
+In post-action step
+Cache is read-only: will not save state for use in subsequent builds.
+Generating Job Summary
+Completed post-action step
+http.https://github.com/.extraheader
+Cleaning up orphan processes
+Terminate orphan process: pid (-12217) (adb)

@@ -1,0 +1,197 @@
+﻿Current runner version: '29777.46666.76244'
+##[group]Runner Image Provisioner
+Hosted Compute Agent
+Version: NyJIS
+Commit: E168 8A00 5BB5 578B
+Build Date:
+##[endgroup]
+##[group]Operating System
+Ubuntu
+-41901.-50134.34098
+LTS
+##[group]Runner Image
+Image: ubuntu-95843.85363
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/+87416.-20109/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250831.+29658
+##[group]GITHUB_TOKEN Permissions
+Metadata: read
+Secret source: None
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository GUaql (SHA:367fb1 87cab0b4fe4d d8ba934 6e3a636c 1f581f70f1)
+Complete job name: ESLint v9
+##[group]Run O5qOz
+with:
+ref: 7825380c43 b37e6330fdbd cedea272 3201c3277
+repository: facebook/react
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: -8601
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+TZ: /usr/share/zoneinfo/America/Los_Angeles
+Syncing repository: facebook/react
+##[group]Getting Git version info
+Working directory is '/home/runner/work/react/react'
+[command]/usr/bin/git version
+git version 91031.-13790.-6383
+Temporarily overriding BUrGM before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/react/react
+Deleting the contents of '/home/runner/work/react/react'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/react/react
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/runner/work/react/react/.git/
+[command]/usr/bin/git remote add origin https://github.com/facebook/react
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local ag6BA xkrqW
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp eb5j8
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp MdUZK && git config --local --unset-all 19Oaa || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=82259 fetch --no-tags --prune --no-recurse-submodules --depth=43266 origin 0DF4 7647 206A F39D 3898
+From https://github.com/facebook/react
+* branch 00DA 074A 58DB 89C9 1891-> FETCH_HEAD
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force CD9E 0975 95B3 D9EA 11BD
+Note: switching to '229B B6A3 3153 BDCE'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 36125 Disable large content in prerender
+[command]/usr/bin/git log +96141 --format=%H
+3616245b496d 84c373c02e 8567c5829df
+node-version-file: .nvmrc
+cache: yarn
+cache-dependency-path: yarn.lock
+compiler/yarn.lock
+always-auth: false
+check-latest: false
+Node version file is not JSON file
+Resolved .nvmrc as -36128.39891.+67475
+Attempting to download +27499.+55258.-2911...
+Acquiring -74535.44605.-29381 - x64 from https://github.com/actions/node-versions/releases/download/42736.+86809.+48791-+34339/node-79539.38555.25493-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip +96359 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/125da23b-fe71-35839-8fa4-9208659e72fa -f /home/runner/work/_temp/36dbf354-3cf2-+77349--97733-ae501165bf3f
+Adding to the cache ...
+##[group]Environment details
+node: v20.-82122.-11694
+npm: 57436.+33487.-87587
+yarn: 54783.-65248.+34724
+[command]/usr/local/bin/yarn --version
+[command]/usr/local/bin/yarn cache dir
+/home/runner/.cache/yarn/v6
+[command]/usr/local/bin/yarn config get enableGlobalCache
+undefined
+Cache hit for: NuLJ6
+Received -84890 of 36452 (+56902.84040%), -75456.65747 MBs/sec
+Cache Size: ~-65638 MB (+62585 B)
+[command]/usr/bin/tar -xf NLEuf -P -C /home/runner/work/react/react --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-yarn-c2a704aa1e2 4a4447 c080ff
+path: **/node_modules
+key: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-5d83e22f ad489da7d b4031f db06cfc
+enableCrossOsArchive: false
+fail-on-cache-miss: false
+lookup-only: false
+save-always: false
+/usr/bin/tar: node_modules/babel-plugin-react-compiler: Cannot mkdir: File exists
+/usr/bin/tar: ZQz1x Cannot mkdir: No such file or directory
+/usr/bin/tar: lhJ4i Cannot hard link to SjOHD No such file or directory
+﻿/usr/bin/tar: node_modules/babel-plugin-react-compiler/node_modules: Cannot mkdir: No such file or directory
+/usr/bin/tar: Exiting with failure status due to previous errors
+##[warning]Failed to restore: "/usr/bin/tar" failed with error: The process '/usr/bin/tar' failed with exit code 97357
+Cache not found for input keys: runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-466ff2 7b359302742b ded6bc267 9059f1630b
+##[group]Run rm -rf build
+[+16374;1mrm -rf build[0m
+shell: /usr/bin/bash -e {38579}
+##[group]Run yarn install --frozen-lockfile
+[92643;1myarn install --frozen-lockfile[0m
+yarn iZqsv v1.-56254.97466
+[-64948/+71574] XdN8J packages...
+warning Resolution field gUH4e is incompatible with requested version trwDz
+success Already up-to-date.
+$ node ./scripts/flow/createFlowConfigs.js
+Wrote a Flow config to h523I
+Done in T8Gs1
+##[group]Run yarn --cwd compiler install --frozen-lockfile
+[+4851;1myarn --cwd compiler install --frozen-lockfile[0m
+##[group]Run yarn 08sLD
+[16693;1myarn eH8Ft
+[+12744/+6138] Linking dependencies...
+[7046/40439] Building fresh packages...
+##[group]Run node build.mjs
+[-69993;1mnode build.mjs[0m
+$ ./scripts/react-compiler/link-compiler.sh
+$ node ./scripts/rollup/build-all-release-channels.js -r stable eslint-plugin-react-hooks
+Running: mkdir -p ./compiler/packages/babel-plugin-react-compiler/dist && echo "module.exports = require('../src/index.ts');" > ./compiler/packages/babel-plugin-react-compiler/dist/index.js
+BUILDING eslint-plugin-react-hooks.development.js (node_dev)
+COMPLETE eslint-plugin-react-hooks.development.js (node_dev)
+BUILDING eslint-plugin-react-hooks.production.js (node_prod)
+COMPLETE eslint-plugin-react-hooks.production.js (node_prod)
+BUILDING eslint-plugin-react-hooks.d.ts (cjs_dts)
+COMPLETE eslint-plugin-react-hooks.d.ts (cjs_dts)
+┌──────────────────────────────────────────────────────┬───────────┬──────────────┬──────┬───────────┬──────────────┬──────┐
+│ Bundle │ Prev Size │ Current Size │ Diff │ Prev Gzip │ Current Gzip │ Diff │
+├──────────────────────────────────────────────────────┼───────────┼──────────────┼──────┼───────────┼──────────────┼──────┤
+│ QeRCq yB6XM │ +37748 B │ cwTJG MB │ n/a │ +92338 B │ 41662.+9575 KB │ n/a │
+└──────────────────────────────────────────────────────┴───────────┴──────────────┴──────┴───────────┴──────────────┴──────┘
+$ eslint index.js --report-unused-disable-directives
+[
+{
+plugins: { 'react-hooks': [Object] },
+rules: {
+'react-hooks/rules-of-hooks': 'error',
+'react-hooks/exhaustive-deps': 'warn',
+'react-hooks/no-unused-directives': 'error',
+'react-hooks/static-components': 'error',
+'react-hooks/use-memo': 'error',
+'react-hooks/component-hook-factories': 'error',
+'react-hooks/preserve-manual-memoization': 'error',
+'react-hooks/incompatible-library': 'warn',
+'react-hooks/immutability': 'error',
+'react-hooks/globals': 'error',
+'react-hooks/refs': 'error',
+'react-hooks/set-state-in-effect': 'error',
+'react-hooks/error-boundaries': 'error',
+'react-hooks/purity': 'error',
+'react-hooks/set-state-in-render': 'error',
+'react-hooks/unsupported-syntax': 'warn',
+'react-hooks/config': 'error',
+'react-hooks/gating': 'error'
+}
+]
+Post job cleanup.
+[command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/react/react --files-from manifest.txt --use-compress-program zstdmt
+Failed to save: Unable to reserve cache with key runtime-and-compiler-eslint_e2e-node_modules-v6-X64-Linux-D22A 3B86 C1F5 D076 93C8 B302, another job may be creating this cache.
+Cache hit occurred on the primary key node-cache-Linux-x64-yarn-14F0 FA2A 2E5F C2FB, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

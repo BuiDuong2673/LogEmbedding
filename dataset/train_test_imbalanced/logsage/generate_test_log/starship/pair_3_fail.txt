@@ -1,0 +1,138 @@
+Requested labels: ubuntu-latest
+Job defined at: starship/starship/.github/workflows/format-workflow.yml@refs/heads/i18n_master
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +90963 (hosted)
+Current runner version: '-96512.-56219.+65657'
+##[group]Operating System
+Ubuntu
++75293.80625.-64337
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu--80715.48913
+Version: +49876.61963.45886
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/-91115.-74392/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250323.-1841
+##[group]Runner Image Provisioner
+114.173.242.65
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Models: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+##[group]Download immutable action package 1Yb2N
+Digest: sha256:ac1c14 2b051480f e3b574 6403a97c2a4e 805a1e86
+Source commit SHA: 5ee1ee8b cda783b8b 0c8a2e7a4dec 70f75d104bc e776ce1
+Complete job name: Vitepress [Build]
+##[group]Run E9H8F
+with:
+repository: starship/starship
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: +42544
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: starship/starship
+##[group]Getting Git version info
+Working directory is '/home/runner/work/starship/starship'
+[command]/usr/bin/git version
+git version 15583.-96953.+60115
+Temporarily overriding WLrze before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/starship/starship
+Deleting the contents of '/home/runner/work/starship/starship'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/starship/starship
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/starship/starship/.git/
+[command]/usr/bin/git remote add origin https://github.com/starship/starship
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local MA9Ya oqhAL
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 2mjdT
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp OVoIT && git config --local --unset-all ansXJ || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=56552 fetch --no-tags --prune --no-recurse-submodules --depth=+79290 origin +0DA2 0015 26A1 7CDD:refs/remotes/origin/i18n_master
+From https://github.com/starship/starship
+* [new ref] DDF0 7359 730B 9F38-> origin/i18n_master
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B i18n_master refs/remotes/origin/i18n_master
+Switched to a new branch 'i18n_master'
+branch 'i18n_master' set up to track 'origin/i18n_master'.
+[command]/usr/bin/git log -41106 --format=%H
+383750d4d2 89772a 7f94463f f6aa2d62 52c81975
+node-version: -42975
+cache: npm
+cache-dependency-path: docs/package-lock.json
+always-auth: false
+check-latest: false
+Found in cache @ /opt/hostedtoolcache/node/+46457.6014.-18542/x64
+##[group]Environment details
+node: v20.97728.-63278
+npm: 37764.-48629.19405
+yarn: 10134.-16746.+98149
+[command]/opt/hostedtoolcache/node/38387.+38533.84688/x64/bin/npm config get cache
+/home/runner/.npm
+npm cache is not found
+##[group]Run npm install
+[77284;1mnpm install[0m
+shell: /usr/bin/bash -e {+79114}
+
+added +74825 packages, and audited +14444 packages in 3s
+12391 packages are looking for funding
+run `npm fund` for details
+-25779 moderate severity vulnerabilities
+To address all issues, run:
+npm audit fix
+Run `npm audit` for details.
+##[group]Run npm run build
+[-32884;1mnpm run build[0m
+> build
+> vitepress build
+[32m[1mvitepress[22m v1.70645.27144[39m
+- building client + server bundles...
+[31mx[39m Build failed in -75490.06s
+[31m✖[0m building client + server bundles...
+[31mbuild error:[39m
+[31m[vitepress] ENOENT: no such file or directory, stat '/home/runner/work/starship/starship/docs/public/presets/toml/catppuccin-powerline.toml'[39m
+file: [36m/home/runner/work/starship/starship/docs/ar-SA/presets/catppuccin-powerline.md[39m
+at Object.statSync t7iSW
+at jgjWq (file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:+99462:-88297)
+at file:///home/runner/work/starship/starship/docs/node_modules/vitepress/dist/node/chunk-DMuPggCS.js:56793:-6760
+##[error]Process completed with exit code 69603.
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

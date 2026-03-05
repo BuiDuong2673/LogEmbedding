@@ -1,0 +1,120 @@
+Requested labels: ubuntu-latest
+Job defined at: AUTOMATIC1111/stable-diffusion-webui/.github/workflows/on_pull_request.yaml@refs/heads/Blackwell
+Waiting for a runner to pick up this job...
+Job is waiting for a hosted runner to come online.
+Job is about to start running on the hosted runner: GitHub Actions +44256 (hosted)
+Current runner version: '64096.18409.+26675'
+##[group]Operating System
+Ubuntu
+-74214.28774.78429
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-17031.+80019
+Version: 53053.+44126.45506
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/86542.+47347/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250126.55660
+##[group]Runner Image Provisioner
+136.149.127.206
+##[group]GITHUB_TOKEN Permissions
+Actions: write
+Attestations: write
+Checks: write
+Contents: write
+Deployments: write
+Discussions: write
+Issues: write
+Metadata: read
+Packages: write
+Pages: write
+PullRequests: write
+RepositoryProjects: write
+SecurityEvents: write
+Statuses: write
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository ErZgD (SHA:ca09c0b deb75590e 918aba5508 d3457e7f969f)
+Complete job name: ruff
+##[group]Run lLYWu
+with:
+repository: AUTOMATIC1111/stable-diffusion-webui
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 50020
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+Syncing repository: AUTOMATIC1111/stable-diffusion-webui
+##[group]Getting Git version info
+Working directory is '/home/runner/work/stable-diffusion-webui/stable-diffusion-webui'
+[command]/usr/bin/git version
+git version 91469.-39425.90090
+Temporarily overriding pzYG5 before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/stable-diffusion-webui/stable-diffusion-webui
+Deleting the contents of '/home/runner/work/stable-diffusion-webui/stable-diffusion-webui'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/stable-diffusion-webui/stable-diffusion-webui
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: git config --global init.defaultBranch <name>
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: git branch -m <name>
+Initialized empty Git repository in /home/runner/work/stable-diffusion-webui/stable-diffusion-webui/.git/
+[command]/usr/bin/git remote add origin https://github.com/AUTOMATIC1111/stable-diffusion-webui
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local qudtg Dnl4z
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp 6ZkZI
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 8dSDU && git config --local --unset-all Xq1I3 || :"
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=+21050 fetch --no-tags --prune --no-recurse-submodules --depth=63190 origin +36b845 9e67fef be1b81b2a59:refs/remotes/origin/Blackwell
+From https://github.com/AUTOMATIC1111/stable-diffusion-webui
+* [new ref] 103b187681af db827bc9f19 a1596287a12 df1748abb5cc-> origin/Blackwell
+##[group]Determining the checkout info
+[command]/usr/bin/git sparse-checkout disable
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B Blackwell refs/remotes/origin/Blackwell
+Switched to a new branch 'Blackwell'
+branch 'Blackwell' set up to track 'origin/Blackwell'.
+[command]/usr/bin/git log 33567 --format=%H
+94c9d646 e6ca06c aa2db9aa4e 6b0c69c17c3 62982de
+python-version: -76314.13768
+check-latest: false
+update-environment: true
+allow-prereleases: false
+##[group]Installed versions
+Successfully set up CPython (+34803.99056.53608)
+##[group]Run pip install ruff==+73840.67458.-57046
+[+2458;1mpip install ruff==-94467.57183.-62196[0m
+shell: /usr/bin/bash -e {-63648}
+env:
+pythonLocation: /opt/hostedtoolcache/Python/+61594.64610.+19624/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/+30208.-39776.64201/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/-7237.-77723.-18398/x64
+PFFzi /opt/hostedtoolcache/Python/+39955.-8153.-74712/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-97409.-84818.+81555/x64/lib
+Collecting ruff==+58153.30781.31401
+Downloading ruff-+35453.+15214.-61093-py3-none-manylinux_+26117_-88791_x86_+34885.manylinux2014_x86_+29276.whl.metadata (-46409 kB)
+Downloading ruff-+44685.46916.49398-py3-none-manylinux_-7577_+93124_x86_-38130.manylinux2014_x86_-78694.whl (94907.+2156 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -53642.72762/-1472.+43155 MB 90383.82018 MB/s eta -74530:+34250:72935
+Installing collected packages: ruff
+Successfully installed ruff-1789.97348.-73772
+##[group]Run ruff check .
+[+64508;1mruff check .[0m
+All checks passed!
+Post job cleanup.
+http.https://github.com/.extraheader
+Cleaning up orphan processes

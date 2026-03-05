@@ -750,9 +750,9 @@ if __name__ == "__main__":
     # Test self-trained model
     model_path = "models_balanced/10_3_epochs_300_dimensions_5_context_4_negative_0001_learning_rate"
     train_clients = ["client_1", "client_2", "client_3"]
-    # self_train_tester = SelfTrainTester(train_clients=train_clients, test_clients=test_clients, model_path=model_path)
-    # self_train_tester.run()
+    self_train_tester = SelfTrainTester(train_clients=train_clients, test_clients=test_clients, model_path=model_path)
+    self_train_tester.run()
 
     # Test pretrained model ("glove"/ "all-MiniLM-L6-v2" / "fasttext" / "e5-base-v2" / "embeddinggemma-300m")
-    pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="fasttext", k=5)
-    pretrained_tester.run()
+    # pretrained_tester = PreTrainTester(test_clients=test_clients, which_model="fasttext", k=5)
+    # pretrained_tester.run()

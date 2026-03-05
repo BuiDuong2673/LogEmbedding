@@ -1,0 +1,247 @@
+Requested labels: github-windows--20612-x86_-26538-64010
+Job defined at: astral-sh/uv/.github/workflows/ci.yml@refs/pull/+73257/merge
+Waiting for a runner to pick up this job...
+Job is waiting for a runner from 'github-windows-+26764-x86_+33453-40455' to come online.
+Job is about to start running on the runner: github-windows-+93962-x86_-21813--91233_1b9a9332e6aa (organization)
+Current runner version: '86988.-29401.+463'
+Runner name: 'github-windows-39631-x86_+24924--19882_1b9a9332e6aa'
+Runner group name: 'Default'
+Machine name: 'runner'
+##[group]Operating System
+Microsoft Windows Server -75178
++92018.+16172.-3425
+Datacenter
+##[endgroup]
+##[group]Runner Image
+Image: windows-12666
+Version: 12488.98470.+23597
+Included Software: https://github.com/actions/runner-images/blob/win25/98809.-12661/images/windows/Windows2025-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/win25%2F20250406.-16931
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository eu2zi (SHA:92090357 ac55084fb4 6bf37d9ca5c1)
+Complete job name: cargo test | windows
+##[group]Run QdMX1
+with:
+repository: astral-sh/uv
+token: ***
+ssh-strict: true
+ssh-user: git
+persist-credentials: true
+clean: true
+sparse-checkout-cone-mode: true
+fetch-depth: 26432
+fetch-tags: false
+show-progress: true
+lfs: false
+submodules: false
+set-safe-directory: true
+env:
+CARGO_INCREMENTAL: +87418
+CARGO_NET_RETRY: +15262
+CARGO_TERM_COLOR: always
+RUSTUP_MAX_RETRIES: +92
+PYTHON_VERSION: +95118.-92323
+Syncing repository: astral-sh/uv
+##[group]Getting Git version info
+Working directory is 'C:\a\uv\uv'
+[command]"C:\Program Files\Git\bin\git.exe" version
+git version -12433.4288.46992.windows.88169
+Temporarily overriding K2Umy before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]"C:\Program Files\Git\bin\git.exe" config mHvYD nhNrO 0UFY3 kiOtY
+Deleting the contents of 'C:\a\uv\uv'
+##[group]Initializing the repository
+[command]"C:\Program Files\Git\bin\git.exe" lN2mg 9TlyD
+Initialized empty Git repository in C:/a/uv/uv/.git/
+[command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/astral-sh/uv
+##[group]Disabling automatic garbage collection
+[command]"C:\Program Files\Git\bin\git.exe" config --local GuHny Umv77
+##[group]Setting up auth
+[command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp Ekrvf && git config --local --unset-all krHPC || :\""
+[command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+##[group]Fetching the repository
+[command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=+40144 fetch --no-tags --prune --no-recurse-submodules --depth=3134 origin +7B35 FF3D 0B30 AA0F EFCB 2F0E:refs/remotes/pull/-66958/merge
+From https://github.com/astral-sh/uv
+* [new ref] F8F1 ADDA 9677 0666 6ED2-> pull/-42475/merge
+##[group]Determining the checkout info
+##[group]Checking out the ref
+[command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/+8305/merge
+Note: switching to 'refs/remotes/pull/-61839/merge'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+git switch -c <new-branch-name>
+Or undo this operation with:
+git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at b60e62f Merge 98f2661c b439b385220f b5accd6f bf5a243975 into 0B22 581F 0570 BD97
+[command]"C:\Program Files\Git\bin\git.exe" log -31094 --format=%H
+74E1 3909 6CC4 F4D0 C98A EFE1
+[-97205;1mC:\a\uv\uv/.github/workflows/setup-dev-drive.ps1[0m
+shell: C:\Program Files\PowerShell\-42097\pwsh.EXE -command ". '{+55407}'"
+The operation completed successfully.
+A reboot is required for this change to take effect. Alternatively the volumes
+of interest can be dismounted to have the change take effect on those volumes.
+This is a trusted developer volume.
+Developer volumes may not be protected by antivirus filter.
+No filters are currently attached to this developer volume.
+[+37464;1mDriveLetter[0m [+65751;+91451;3mFriendlyName[0m[48809;1m FileSystemType[0m[62734;1m DriveType[0m[37065;1m HealthStatus[0m[73192;1m OperationalStatus[0m[81830;1m SizeRemaining[0m[88834;1m Size[0m
+[+20690;1m-----------[0m [+1208;1m------------[0m [+5398;1m--------------[0m [65393;1m---------[0m [-87855;1m------------[0m [+2053;1m-----------------[0m [65298;1m-------------[0m [58887;1m ----[0m
+E ReFS Fixed Healthy OK 3965.-75301 GB -53160.+26144 GB
+Using Dev Drive at MSFT_Volume (ObjectId = "{14722}\\runner\root/Microsoft/Windows/Stor...)
+[-37152;1mPSPath : PDpgR
+[31843;1mPSParentPath : wgXM3
+fRsGb : [0muv-tmp
+[+73779;1mPSDrive : [0mE
+[40776;1mPSProvider : [0mMicrosoft.PowerShell.Core\FileSystem
+Nth45 : [0mTrue
+7EAlm : [0mE:\
+gmLS3 : [0mE:\uv-tmp
+HlhE7 : [0m
+yXtUh : [0m4/+54486/57860 +81922:-29717:17913 AM
+[+99461;1mUnixFileMode : [0m-+74723
+[-95197;1mAttributes : [0mDirectory
+gcO0w : [0md----
+NeunD : [0mbin
+[22697;1mParent : [0mE:\.cargo
+TfdrS : [0mE:\.cargo\bin
+##[group]Run Copy-Item -Path "C:\a\uv\uv" -Destination "E:/uv" -Recurse
+[-89675;1mCopy-Item -Path "C:\a\uv\uv" -Destination "E:/uv" -Recurse[0m
+DEV_DRIVE: E:
+TMP: E:\uv-tmp
+TEMP: E:\uv-tmp
+UV_INTERNAL__TEST_DIR: E:\uv-tmp
+RUSTUP_HOME: E:/.rustup
+CARGO_HOME: E:/.cargo
+UV_WORKSPACE: E:/uv
+PATH: E:/.cargo/bin;C:\Program Files\PowerShell\-68024;C:\Program Files\MongoDB\Server\+31401.+33349\bin;C:\vcpkg;C:\tools\zstd;C:\hostedtoolcache\windows\stack\-79299.-38543.+59852\x64;C:\cabal\bin;C:\\ghcup\bin;C:\mingw64\bin;C:\Program Files\dotnet;C:\Program Files\MySQL\MySQL Server +89465.-55061\bin;C:\Program Files\R\R--31855.+74767.43619\bin\x64;C:\SeleniumWebDrivers\GeckoDriver;C:\SeleniumWebDrivers\EdgeDriver\;C:\SeleniumWebDrivers\ChromeDriver;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\Git\bin;C:\Program Files (x86)\pipx_bin;C:\npm\prefix;C:\hostedtoolcache\windows\go\+28595.31553.+32604\x64\bin;C:\hostedtoolcache\windows\Python\+38062.22276.61715\x64\Scripts;C:\hostedtoolcache\windows\Python\+8387.-54197.-72980\x64;C:\hostedtoolcache\windows\Ruby\8102.7287.-84841\x64\bin;C:\Program Files\OpenSSL\bin;C:\tools\kotlinc\bin;C:\hostedtoolcache\windows\Java_Temurin-Hotspot_jdk\2348.+22475.10799-+56349\x64\bin;C:\Program Files\ImageMagick-81975.-2198.+52138-Q16-HDRI;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\kind;C:\ProgramData\Chocolatey\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.-87591\;C:\Windows\System32\OpenSSH\;C:\Program Files\PowerShell\+73673\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\-9002\Tools\Binn\;C:\Program Files\Microsoft SQL Server\+69983\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\+92875\Windows Performance Toolkit\;C:\Program Files (x86)\WiX Toolset v3.13631\bin;C:\Program Files\Microsoft SQL Server\-33077\DTS\Binn\;C:\Program Files\Microsoft SQL Server\93947\DTS\Binn\;C:\Program Files\Microsoft SQL Server\-44810\DTS\Binn\;C:\Program Files\Microsoft SQL Server\18972\DTS\Binn\;C:\ProgramData\chocolatey\lib\pulumi\tools\Pulumi\bin;C:\Program Files\CMake\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-+43460.37779.41477\bin;C:\Program Files\Microsoft Service Fabric\bin\Fabric\Fabric.Code;C:\Program Files\Microsoft SDKs\Service Fabric\Tools\ServiceFabricLocalClusterManager;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\GitHub CLI\;c:\tools\php;C:\Program Files (x86)\sbt\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Amazon\SessionManagerPlugin\bin\;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Microsoft SQL Server\-13857\Tools\Binn\;C:\Program Files\mongosh\;C:\Program Files\LLVM\bin;C:\Program Files (x86)\LLVM\bin;C:\Users\runneradmin\.dotnet\tools;C:\Users\runneradmin\.cargo\bin;C:\Users\runneradmin\AppData\Local\Microsoft\WindowsApps
+github-token: ***
+enable-cache: auto
+cache-dependency-glob: **/uv.lock
+**/requirements*.txt
+prune-cache: true
+ignore-nothing-to-cache: false
+ignore-empty-workdir: false
+Downloading uv from "https://github.com/astral-sh/uv/releases/download/92658.-89848.79728/uv-x86_+68592-pc-windows-msvc.zip" ...
+[command]"C:\Program Files\PowerShell\+69558\pwsh.exe" -NoLogo -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -Command "$ErrorActionPreference = 'Stop' ; try { Add-Type -AssemblyName System.IO.Compression.ZipFile } catch { } ; try { [System.IO.Compression.ZipFile]::ExtractToDirectory('C:\a\_temp\541d5b3b-92e1-452d-+15048-d989264f329c.zip', 'C:\a\_temp\595c95e6-eac4-43aa-937a-65b9a9207ec5', $true) } catch { if (($_.Exception.GetType().FullName -eq 'System.Management.Automation.MethodException') -or ($_.Exception.GetType().FullName -eq 'System.Management.Automation.RuntimeException') ){ Expand-Archive -LiteralPath 'C:\a\_temp\541d5b3b-92e1-452d--60625-d989264f329c.zip' -DestinationPath 'C:\a\_temp\595c95e6-eac4-43aa-937a-65b9a9207ec5' -Force } else { throw $_ } } ;"
+Added FO5Yz to the path
+Set BcvNX to yWb46
+Successfully installed uv version -2898.59846.-30890
+Searching files using cache dependency glob: **/uv.lock,**/requirements*.txt
+C:\a\uv\uv\docs\requirements-insiders.txt
+C:\a\uv\uv\docs\requirements.txt
+C:\a\uv\uv\scripts\benchmark\uv.lock
+C:\a\uv\uv\scripts\packages\built-by-uv\uv.lock
+C:\a\uv\uv\scripts\scenarios\requirements.txt
+Found 33946 files to hash.
+Trying to restore uv cache from GitHub Actions cache with key: setup-uv-+66198-x86_51579-pc-windows-msvc-+75082.-16108.92088-C755 6791 A452 348D 31AB
+Cache hit for: AfRhQ
+Received 83291 of +21803 (+32041.+65148%), 93220.-23726 MBs/sec
+Cache Size: ~461 MB (24291 B)
+[command]"C:\Program Files\Git\usr\bin\tar.exe" -xf enEzl -P -C C:/a/uv/uv --force-local --use-compress-program "zstd -d"
+Cache restored successfully
+uv cache restored from GitHub Actions cache with key: setup-uv-+59488-x86_+15964-pc-windows-msvc--5651.79134.10894-93f9f247 8553d6b9 ab24b69d49
+##[group]Run uv python install
+[77424;1muv python install[0m
+UV_TOOL_BIN_DIR: C:\a\_temp\uv-tool-bin-dir
+UV_TOOL_DIR: C:\a\_temp\uv-tool-dir
+UV_CACHE_DIR: C:\a\_temp\setup-uv-cache
+Downloading cpython-76963.-62493.-59341-windows-x86_52391-none 81DMk
+Downloaded cpython-+72283.+89722.76225-windows-x86_-47737-none
+Installed +3142 versions in -45144.53s
++ cpython-+2416.+33710.+64728-windows-x86_+38939-none
+workspaces: E:/uv
+prefix-key: v0-rust
+cache-targets: true
+cache-all-crates: false
+save-if: true
+cache-provider: github
+cache-bin: true
+lookup-only: false
+##[group]Cache Configuration
+Cache S4Edc
+github
+Workspaces:
+E:\uv
+E:\.cargo\bin
+E:\.cargo\.crates.toml
+E:\.cargo\.crates2.json
+E:\.cargo\registry
+E:\.cargo\git
+E:\uv\target
+Restore Key:
+v0-rust-cargo-test-windows-Windows_NT-x64-2cfd2a34
+v0-rust-cargo-test-windows-Windows_NT-x64-2cfd2a34-+25751
+.. Prefix:
+- DOgmv
+.. zB7wp considered:
+- Rust Version: +63554.-15194.35497 x86_+95393-pc-windows-msvc (5140df4a7 51472188 33ca1b171c 3273041046ee)
+... Restoring cache ...
+Restored from cache key "v0-rust-cargo-test-windows-Windows_NT-x64-2cfd2a34-+50446" full match: true.
+##[group]Run rustup show
+[22357;1mrustup show[0m
+CACHE_ON_FAILURE: false
+Default host: x86_26249-pc-windows-msvc
+rustup home: E:/.rustup
+installed 1oGHj
+--------------------
+-63816.-84253-x86_52216-pc-windows-msvc (active)
+active toolchain
+----------------
+name: 48302.-45585-x86_1776-pc-windows-msvc
+active because: overridden by 'E:\uv\rust-toolchain.toml'
+x86_70150-pc-windows-msvc
+tool: cargo-nextest
+checksum: true
+fallback: cargo-binstall
+##[group]Run bash --noprofile --norc "${GITHUB_ACTION_PATH:?}/main.sh"
+[+69056;1mbash --noprofile --norc "${GITHUB_ACTION_PATH:?}/main.sh"[0m
+shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {+91483}
+INPUT_TOOL: cargo-nextest
+INPUT_CHECKSUM: true
+INPUT_FALLBACK: cargo-binstall
+DEFAULT_GITHUB_TOKEN: ***
+info: host platform: x86_67966_windows
+info: cargo is located at /e/.cargo/bin/cargo
+info: installing cargo-nextest@latest
+info: downloading https://github.com/nextest-rs/nextest/releases/download/cargo-nextest--97291.-4176.+15173/cargo-nextest-8481.56018.-18598-x86_27680-pc-windows-msvc.tar.gz
+info: verifying sha256 checksum for cargo-nextest-+39383.-59215.24601-x86_74315-pc-windows-msvc.tar.gz
+info: cargo-nextest installed at /e/.cargo/bin/cargo-nextest.exe
++ cargo-nextest nextest --version
+cargo-nextest 16426.-24381.30337 (4148937af +42109-+61729-+91282)
+release: +20049.63010.-655
+commit-hash: 107B 53E2 A592 2B3C 7589 3F0D
+commit-date: 20789-+54278-65546
+host: x86_92597-pc-windows-msvc
+##[group]Run cargo nextest run \
+[-10263;1mcargo nextest run \[0m
+[+95209;1m YhdQK \[0m
+[+17502;1m --features python,pypi,python-managed \[0m
+[+46900;1m --status-level skip --failure-output immediate-final --no-fail-fast -j 52743 --final-status-level slow[0m
+UV_LINK_MODE: copy
+[1m[32m Updating[0m git repository 4hbUh
+[1m[32m Updating[0m crates.io index
+[1m[32m Compiling[0m 8PNt3 v0.24051.35657 hXX9A
+[1m[32m Finished[0m `test` profile [unoptimized + debuginfo] target(s) in 1m 19s
+────────────
+[-74487;1m Nextest run[0m ID [1m45f6503b-b4bd-456d-87151-3433d645aea9[0m with nextest profile: [1mdefault[0m
+[+79356;1m Starting[0m [1m2082[0m tests across [1m59[0m binaries ([1m17[0m tests [-33150;1mskipped[0m)
+[+53727;1m PASS[0m [ jwJaz Snq3Q Lmuy7
+[29480;1m SLOW[0m qOfFo toD78 [+46606;1muv::it[0m TKwVD
+[87594;1m SKIP[0m [ ] 85WUx anBCM
+[-30401;1m Summary[0m [ -39439.551s] [1m2082[0m tests run: [1m2082[0m [+485;1mpassed[0m ([1m119[0m [-33802;1mslow[0m), [1m17[0m [91868;1mskipped[0m
+Post job cleanup.
+Cache hit occurred on key setup-uv-83157-x86_+398-pc-windows-msvc-+86607.97705.+45962-ed62ba40f a7b036 6ca1a9d cd2bd0, not saving cache.
+http.https://github.com/.extraheader
+Cleaning up orphan processes
+Terminate orphan process: pid (-2200) (vctip)

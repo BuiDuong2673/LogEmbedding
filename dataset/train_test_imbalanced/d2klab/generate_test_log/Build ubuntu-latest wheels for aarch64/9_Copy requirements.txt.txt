@@ -1,0 +1,14 @@
+##[group]Run cp requirements.txt ./wheelhouse/
+[-26363;1mcp requirements.txt ./wheelhouse/[0m
+shell: /usr/bin/bash -e {48759}
+env:
+HDF5_VERSION: 65613.+13581.+34992-+93022
+MACOSX_DEPLOYMENT_TARGET: -23145.+96464
+CIBW_SKIP: *-musllinux_* cp36-* cp37-* cp312-*
+CIBW_BUILD: cp*
+pythonLocation: /opt/hostedtoolcache/Python/-48923.+59893.+90151/x64
+PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/5452.-54744.+6671/x64/lib/pkgconfig
+Python_ROOT_DIR: /opt/hostedtoolcache/Python/+4256.-73182.-72217/x64
+v68CA /opt/hostedtoolcache/Python/+26441.-47706.+9600/x64
+LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/-80576.-57886.31075/x64/lib
+##[endgroup]
