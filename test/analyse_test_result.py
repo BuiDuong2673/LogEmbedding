@@ -598,32 +598,6 @@ def main_balance() -> None:
     client_list = ["client_1", "client_2", "client_3"]
     analyzer.draw_model_comparison_experiment(
         accuracy_scores, best_trained_model_parameters, pretrained_model_lists, client_list)
-
-def main_imbalanced() -> None:
-    file_paths = {
-        '(2, 50, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_50_5_epochs.txt',
-        '(2, 50, 5, 0.01, 2, 2)': 'test_result_2/2_clients_2_context_50_5_epochs_2_neg.txt',
-        '(2, 50, 5, 0.01, 2, 3)': 'test_result_2/2_clients_2_context_50_5_epochs_3_neg.txt',
-        '(2, 50, 5, 0.01, 1, 5)': 'test_result_2/2_clients_1_context_50_5_epochs_001_learning_rate_5_neg.txt',
-        '(3, 10, 5, 0.01, 2, 5)': 'test_result_2/3_clients_2_context_10_5_epochs.txt',
-        '(2, 70, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_70_5_epochs_001_learning_rate_5_neg.txt',
-        '(2, 50, 5, 0.01, 2, 1)': 'test_result_2/2_clients_2_context_50_5_epochs_1_neg.txt',
-        '(2, 50, 5, 0.01, 5, 5)': 'test_result_2/2_clients_5_context_50_5_epochs.txt',
-        '(2, 30, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_30_5_epochs_001_learning_rate_5_neg.txt',
-        '(2, 10, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_10_5_epochs_001_learning_rate_5_neg.txt',
-        'all_MiniLM_L6_v2': 'test_result_2/all_MiniLM_L6_v2.txt',
-        '(2, 50, 5, 0.01, 2, 4)': 'test_result_2/2_clients_2_context_50_5_epochs_4_neg.txt',
-        '(2, 50, 5, 0.01, 3, 5)': 'test_result_2/2_clients_3_context_50_5_epochs.txt',
-        '(2, 50, 5, 0.001, 2, 5)': 'test_result_2/2_clients_2_context_50_5_epochs_0001_learning_rate.txt',
-        'glove': 'test_result_2/glove.txt',
-        '(2, 100, 5, 0.01, 2, 5)': 'test_result_2/2_clients_2_context_100_5_epochs.txt',
-        '(2, 50, 5, 0.01, 4, 5)': 'test_result_2/2_clients_4_context_50_5_epochs.txt',
-        '(2, 50, 5, 0.1, 2, 5)': 'test_result_2/2_clients_2_context_50_5_epochs_01_learning_rate.txt'
-    }
-    analyzer = TestResultAnalyzerImbalanced(file_paths)
-    accuracy_score = analyzer.get_accuracy_score_for_all_files(file_paths)
-    analyzer.draw_learning_rate_experiment(accuracy_score)
-
     
 
 if __name__ == "__main__":
