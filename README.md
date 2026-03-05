@@ -10,7 +10,8 @@ logembedding/
 │   ├── train_test_balanced/            # train and test sets, 80:20 from balanced_data/
 │   ├── english_word_dictionary.txt     # The set of English words
 │   ├── global_vocab_imbalance.json     # Global dictionary of train set in train_test_imbalanced
-│   └── global_vocab_balanced.json      # Global dictionary of train set in train_test_balanced
+│   ├── global_vocab_balanced.json      # Global dictionary of train set in train_test_balanced
+│   └── log_common_words.txt            # A set of words that are not included in english dataset but included in all our three public datasets
 │
 ├── embedding_techniques/    
 │   ├── __init__.py
