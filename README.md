@@ -6,10 +6,10 @@ logembedding/
 ├── dataset/                            # Contains all data used for training and testing
 │   ├── origin/                         # Contains datasets collected from public datasets
 │   ├── balanced_data/                  # Split origin dataset into 3 clients' datasets
-│   ├── train_test_imbalanced/          # train and test sets if each public dataset is a client
+│   ├── train_test_imbalanced/          # train and test sets if each public dataset is a client (old approach)
 │   ├── train_test_balanced/            # train and test sets, 80:20 from balanced_data/
 │   ├── english_word_dictionary.txt     # The set of English words
-│   ├── global_vocab_imbalance.json     # Global dictionary of train set in train_test_imbalanced
+│   ├── global_vocab_imbalance.json     # Global dictionary of train set in train_test_imbalanced (old approach)
 │   ├── global_vocab_balanced.json      # Global dictionary of train set in train_test_balanced
 │   └── log_common_words.txt            # A set of words that are not included in english dataset but included in all our three public datasets
 │
@@ -35,13 +35,13 @@ logembedding/
 │   ├── find_similar_log_test.py        # Test the models' accuracies in finding most similar logs
 │   └── generate_similar_logs.py        # Generate similar logs for logs in clients' test sets
 │
-├── models_imbalanced/                  # Models which trained with dataset/train_test_imbalanced/
+├── models_imbalanced/                  # Models which trained with dataset/train_test_imbalanced/ (old approach)
 ├── models_balanced/                    # Models which trained with dataset/train_test_balanced/
 │
-├── test_result_imbalanced_.../         # The old models' test results
+├── test_result_imbalanced_.../         # The old models' test results (old approach)
 ├── test_result_balanced/               # The models' test results
 │
-├── test_analysis_result_imbalanced     # The analysis result of test_result_imbalanced/
+├── test_analysis_result_imbalanced     # The analysis result of test_result_imbalanced/ (old approach)
 ├── test_analysis_result_balanced       # The analysis result of test_result_balanced/
 │
 ├── central_server_program.py           # set the actions for central server in the training process
@@ -53,7 +53,7 @@ logembedding/
 
 ## Dataset
 
-This file shows the sources of `dataset/` folder.
+There are 3 public datasets of CI/CD logs which we used to train our model.
 
 ### maryangel101: ci-cd-failure-detector
 
@@ -101,11 +101,11 @@ HUGGINGFACE_TOKEN=[YOUR HUGGINGFACE TOKEN HERE]
 
 ## Training
 
-You can set the embedding dimension and number of epochs in central server in the `__init__` function of central_server_program.py.
+You can set the embedding dimension and number of epochs in central server in the `__init__` function of `central_server_program.py`.
 
-You can set the context window size, number of negative samples, learning rate, number of epochs in client's training in the main program of the client_program.py.
+You can set the context window size, number of negative samples, learning rate, number of epochs in client's training in the main program of the `client_program.py`.
 
-To save the model, please provide the its name in the `model_name` variable in the main program of central_server_program.py and client_program.py. Note that the model_name in central_server_program.py and the model_name in client_program.py should be similar.
+To save the model, please provide its name in the `model_name` variable in the main program of `central_server_program.py` and `client_program.py`. Note that the `model_name` in `central_server_program.py` and the `model_name` in `client_program.py` should be similar.
 
 After setting these variables, we can run the training process. We have to run central server program and client programs at the same time. This can be done by:
 
@@ -136,13 +136,13 @@ Client: client_3
 ```
 
 ## Testing
-To test the model, first enter the path to the model `model_path`. Then, run the following command:
+To test the model, first enter the path to the model in `model_path`. Then, run the following command:
 
 ```cmd
 python -m test.find_similar_log_test > test_result/[name of the model being tested].txt
 ```
 
-This command execute the test program and save the output to a file for later analysis.
+This command executes the test program and saves the output to a file for later analysis.
 
 *  Because the files storing matrices W1, W2 of the model are too big to be pushed to GitHub, we use Git LFS to store W1, W2 files instead of using normal Git storage. Therefore, to test the models that are uploaded to GitHub, you may need `git lfs pull` instead of `git pull`.
 
@@ -156,4 +156,3 @@ Then execute `analyse_test_result.py`.
 ```bash
 python test/analyze_test_result.py
 ```
-
