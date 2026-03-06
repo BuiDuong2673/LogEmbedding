@@ -1,11 +1,4 @@
-"""New vocab extractor method which flexibily and meaningfully list
-the context words and negative samples for each words.
-
-The context words are the words in the same file as the central word, ordered in the way that the nearer, the closer.
-The negative samples are the words that are not in the same file as the central word.
-Of course, we will not consider all words in these sets while training, but only choose a specified number of words
-from these sets.
-"""
+"""Extract words, and its context and negative samples from the dataset."""
 
 import re
 import os
